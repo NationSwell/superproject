@@ -1,0 +1,17 @@
+# TEAM
+
+    Andrew Sprouse -- Developer
+    David Chapman  -- Developer
+    Mark Catalano  -- Developer
+
+# THANKS
+
+    Roberto's snowboard
+    Construction sites
+    Sturdy bamboo construction technologies
+    Babies
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
