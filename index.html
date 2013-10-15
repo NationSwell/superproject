@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Nationswell</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="stylesheet" href="css/main.css">-->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <style>
+        * {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .pages {
+            margin-bottom: 80px;
+        }
+
+        .pages a {
+            text-decoration: underline;
+        }
+
+        .pages a:hover {
+            opacity: 0.6;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .not-started { color: red; }
+        .in-progress { color: orange; }
+        .in-review { color: blue; }
+        .complete { color: green; }
+    </style>
+</head>
+<body>
+
+<h1>NationSwell Pages</h1>
+
+<ul class="pages">
+    <li><a href="homepage.html" target="_blank" class="not-started">Homepage</a></li>
+    <li><a href="category.html" target="_blank" class="not-started">Category</a></li>
+    <li><a href="series.html" target="_blank" class="not-started">Series</a></li>
+    <li><a href="search.html" target="_blank" class="not-started">Search</a></li>
+    <li><a href="story.html" target="_blank" class="not-started">Basic Story</a></li>
+    <li><a href="story-video.html" target="_blank" class="not-started">Story with Video</a></li>
+    <li><a href="story-gallery.html" target="_blank" class="not-started">Story with Carousel</a></li>
+    <li><a href="story-interview.html" target="_blank" class="not-started">Interview (Story w/o photo)</a></li>
+    <li><a href="story-photo.html" target="_blank" class="not-started">Photo Story</a></li>
+</ul>
+
+<h2>Color Key</h2>
+
+<ul>
+    <li><a class="not-started">Not started</a></li>
+    <li><a class="in-progress">In progress</a></li>
+    <li><a class="in-review">In review</a></li>
+    <li><a class="complete">Complete</a></li>
+</ul>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+</body>
+</html>
