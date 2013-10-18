@@ -1,8 +1,20 @@
 # TEAM
 
-    Andrew Sprouse -- Developer
-    David Chapman  -- Developer
-    Mark Catalano  -- Developer
+    RONIK DESIGN
+
+    http://www.ronikdesign.com
+    solutions@ronikdesign.com
+
+
+    Mark Catalano      --  Lead Developer
+    Andrew Sprouse     --  Senior Developer
+
+    David Chapman      --  Developer + Designer
+
+    Nicole Barth       --  Lead Designer
+    Roberto Rodriguez  --  Lead Designer
+    Julia Gordon       --  Junior Designer
+    Christina Buquid   --  Junior Designer
 
 # THANKS
 
@@ -13,5 +25,7 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+    HTML5, CSS3, Ruby, Node.js, Grunt
+    Bourbon, Neat
     jQuery, Modernizr
+

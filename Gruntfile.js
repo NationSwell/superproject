@@ -34,7 +34,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-webfont');
 
-    // Default task(s).
     grunt.registerTask('default', ['uglify','concat']);
     grunt.registerTask('icons', 'webfont');
 };
