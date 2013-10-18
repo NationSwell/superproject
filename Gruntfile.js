@@ -16,14 +16,25 @@ module.exports = function(grunt) {
                 src: [],
                 dest: ''
             }
+        },
+        webfont: {
+            icons: {
+                src: 'icons/*.svg',
+                dest: 'fonts',
+                destCss: 'scss/partials',
+                options: {
+                    stylesheet: 'scss',
+                    htmlDemo: false
+                }
+            }
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-webfont');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify','concat']);
+    grunt.registerTask('default', ['webfont']);
 
 };
