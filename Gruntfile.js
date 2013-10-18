@@ -35,6 +35,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-webfont');
 
     // Default task(s).
-    grunt.registerTask('default', ['webfont']);
-
+    grunt.registerTask('default', ['uglify','concat']);
+    grunt.registerTask('icons', 'webfont');
 };
