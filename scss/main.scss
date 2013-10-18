@@ -6,12 +6,19 @@
 // Modules and variables
 @import "partials/base";
 
-// Partials
+// Agnostic partials
 @import "partials/reset";
 @import "partials/grid";
+@import "partials/utility";
+@import "partials/ads";
+@import "partials/headings";
 @import "partials/typography";
 @import "partials/icons";
 @import "partials/buttons";
+@import "partials/components";
+
+// Page partials
+@import "partials/homepage";
 
 // Third-party
 // ...
