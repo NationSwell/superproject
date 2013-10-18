@@ -1,0 +1,19 @@
+{
+  "name": "NationSwell",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ronik Design",
+    "email": "solutions@ronikdesign.com",
+    "url": "https://github.com/ronik-design/"
+  },
+  "description": "NationSwell is a new digital media company focused on high-quality stories about American renewal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronik-design/nationswell.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
