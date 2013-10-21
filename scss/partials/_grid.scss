@@ -12,7 +12,7 @@
   }
 
   &.river--two-col {
-    .story-list {
+    .story-teases {
       @include span-columns(8);
     }
 

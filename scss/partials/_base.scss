@@ -3,14 +3,16 @@ $light: 300;
 $regular: 400;
 $bold: 600;
 
+// Fonts
+$gudea: 'Gudea', Arial, sans-serif;
+$montserrat: 'Montserrat', Arial, sans-serif;
+$oswald: 'Oswald', Arial, sans-serif;
+
 // Base font
 $base-font-color: #333;
-$base-font-family: sans-serif;
+$base-font-family: $gudea;
 $base-font-weight: $regular;
 $base-font-size: 16px;
-$base-line-height: 1.4;
-
-// Headings
-$header-font-weight: $bold;
+$base-line-height: 1.618;
 
 @import "modules/all";
