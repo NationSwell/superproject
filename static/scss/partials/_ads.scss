@@ -1,0 +1,24 @@
+#top-leaderboard {
+  background-color: $ns_navy1;
+  padding: 1.8rem 0;
+}
+
+.ad {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+
+  &.ad--300 {
+    &:after {
+      content: 'Advertisement';
+      text-transform: uppercase;
+    }
+  }
+
+  .ad__container {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+}
