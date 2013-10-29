@@ -1,5 +1,47 @@
-#more-stories {
-  &.collapsed {
-    display: none;
+#page-header {
+  background-color: $ns_navy2;
+}
+
+.site-logo {
+  &.site-logo--header {}
+}
+
+.social-links {
+  li {}
+}
+
+.social-links__link {
+  &:hover {}
+}
+
+.trending-topics {
+  background-color: $ns_navy1;
+}
+
+.trending-topics__heading {
+  color: $ns_navy5;
+  font-family: $montserrat;
+  font-size: 1.4rem;
+  font-weight: $bold;
+  display: inline-block;
+  margin: 0 3.4rem;
+}
+
+.trending-topics__list {
+  display: inline-block;
+
+  li {
+    display: inline-block;
   }
+}
+
+.trending-topics__topic {
+  color: $ns_white;
+  font-family: $montserrat;
+  font-size: 1.4rem;
+  font-weight: $regular;
+  display: inline-block;
+  margin-right: 3.4rem;
+
+  &:hover {}
 }
