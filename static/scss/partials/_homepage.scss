@@ -74,3 +74,31 @@
     }
   }
 }
+
+/* river */
+.river--two-col {
+  .story--tease {
+    margin-bottom: 6.8rem;
+  }
+
+  .story__feature {
+    margin-right: 8rem;
+  }
+
+  .story__hed {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.story--tease {
+  .story__dek {
+    color: $ns_black;
+    font-family: $gudea;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .support-cause {
+    margin-top: 1.8rem;
+  }
+}
