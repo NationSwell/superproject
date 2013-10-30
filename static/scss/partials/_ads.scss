@@ -3,6 +3,10 @@
   padding: 1.8rem 0;
 }
 
+#top-billboard {
+  background-color: $gray5;
+}
+
 .ad {
   margin: 0 auto;
   position: relative;
@@ -16,9 +20,13 @@
   }
 
   .ad__container {
-    display: inline-block;
-    margin: 0 auto;
+    display: block;
     position: relative;
     text-align: center;
+
+    > img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
