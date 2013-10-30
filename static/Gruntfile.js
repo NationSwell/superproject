@@ -24,6 +24,7 @@ module.exports = function(grunt) {
                 destCss: 'scss/partials',
                 options: {
                     stylesheet: 'scss',
+                    relativeFontPath: '/static/fonts',
                     htmlDemo: false
                 }
             }
