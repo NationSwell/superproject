@@ -1,5 +1,59 @@
 /* hero */
-.hero__content {
-  @include span-columns(7);
-  @include shift(2);
+.hero {
+  background-color: $ns_navy3;
+  position: relative;
+}
+
+/* rubric */
+.rubric {
+  background-color: $ns_red;
+  color: $white;
+  display: inline-block;
+  font-family: $montserrat;
+  font-size: 1.4rem;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+/* support cause */
+.support-cause--hero {
+  background-color: $ns_red;
+  display: inline-block;
+  padding: 1.4rem;
+
+  .support-cause__heading {
+    margin-bottom: 1.4rem;
+  }
+
+  .support-cause__data {
+    color: $white;
+    font-family: $oswald;
+    font-size: 3.4rem;
+    line-height: 3.4rem;
+    vertical-align: middle;
+
+    .super {
+      font-size: 2rem;
+      font-weight: $regular;
+      position: relative;
+      top: -14px;
+    }
+  }
+
+  .support-cause__label {
+    color: $white;
+    font-family: $oswald;
+    font-size: 2rem;
+    font-weight: $light;
+    position: relative;
+    top: -4px;
+  }
+
+  .support-cause__separator {
+    color: white;
+    font-size: 5.8rem;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 2.4rem;
+  }
 }
