@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("../../fonts/icons-4c2ea574274bac24b801853714bf98dd.eot");
-	src:url("../../fonts/icons-4c2ea574274bac24b801853714bf98dd.eot?#iefix") format("embedded-opentype"),
-		url("../../fonts/icons-4c2ea574274bac24b801853714bf98dd.woff") format("woff"),
-		url("../../fonts/icons-4c2ea574274bac24b801853714bf98dd.ttf") format("truetype"),
-		url("../../fonts/icons-4c2ea574274bac24b801853714bf98dd.svg?#icons") format("svg");
+	src:url("/static/fonts/icons-cb754aca83cb4547656a96198079e2d1.eot");
+	src:url("/static/fonts/icons-cb754aca83cb4547656a96198079e2d1.eot?#iefix") format("embedded-opentype"),
+		url("/static/fonts/icons-cb754aca83cb4547656a96198079e2d1.woff") format("woff"),
+		url("/static/fonts/icons-cb754aca83cb4547656a96198079e2d1.ttf") format("truetype"),
+		url("/static/fonts/icons-cb754aca83cb4547656a96198079e2d1.svg?#icons") format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -26,40 +26,40 @@
 
 
 // Icons
-.icon_arrow:before {
+.icon_arrow-circle:before {
 	content:"\f100";
 }
-.icon_camera:before {
+.icon_arrow:before {
 	content:"\f101";
 }
-.icon_cart:before {
+.icon_camera:before {
 	content:"\f102";
 }
-.icon_close:before {
+.icon_cart:before {
 	content:"\f103";
 }
-.icon_comment:before {
+.icon_close:before {
 	content:"\f104";
 }
-.icon_donate:before {
+.icon_comment:before {
 	content:"\f105";
 }
-.icon_envelope:before {
+.icon_donate:before {
 	content:"\f106";
 }
-.icon_facebook:before {
+.icon_envelope:before {
 	content:"\f107";
 }
-.icon_fullscreen:before {
+.icon_facebook:before {
 	content:"\f108";
 }
-.icon_nationswell-flag:before {
+.icon_fullscreen:before {
 	content:"\f109";
 }
-.icon_nationswell-logo:before {
+.icon_hamburger:before {
 	content:"\f10a";
 }
-.icon_nationswell-logotype:before {
+.icon_nationswell-flag:before {
 	content:"\f10b";
 }
 .icon_play:before {
@@ -71,21 +71,24 @@
 .icon_search:before {
 	content:"\f10e";
 }
-.icon_series:before {
+.icon_separator:before {
 	content:"\f10f";
 }
-.icon_star:before {
+.icon_series:before {
 	content:"\f110";
 }
-.icon_tumblr:before {
+.icon_star:before {
 	content:"\f111";
 }
-.icon_twitter:before {
+.icon_tumblr:before {
 	content:"\f112";
 }
-.icon_volume:before {
+.icon_twitter:before {
 	content:"\f113";
 }
-.icon_write:before {
+.icon_volume:before {
 	content:"\f114";
+}
+.icon_write:before {
+	content:"\f115";
 }

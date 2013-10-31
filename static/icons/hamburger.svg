@@ -3,5 +3,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1000px" height="750px" viewBox="0 0 1000 750" enable-background="new 0 0 1000 750" xml:space="preserve">
-<polygon points="158.191,75 158.191,489.574 485.619,489.574 720.381,675 720.381,489.574 841.809,489.574 841.809,75 "/>
+<g>
+	<rect x="140.199" y="553.405" width="719.601" height="121.595"/>
+	<rect x="140.199" y="314.203" width="719.601" height="121.595"/>
+	<rect x="140.199" y="75" width="719.601" height="121.595"/>
+</g>
 </svg>
