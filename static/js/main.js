@@ -12,7 +12,7 @@ $(function() {
         var isPhotoStory = $this.hasClass('carousel--photo');
 
         $carousel.carouFredSel({
-            responsive: true,
+            responsive: isPhotoStory ? false : true,
             width: '100%',
             transition: true,
             items: {

@@ -231,9 +231,57 @@
       padding-bottom: 1.2rem;
     }
 
+    .story-list {
+      li {
+        padding: 1.8rem 0;
+        border-bottom: 1px solid $gray6;
+
+        &:last-child {
+          border-bottom: 0 none;
+        }
+      }
+    }
+
     .story--link {
-      padding: 1.8rem 0;
-      border-bottom: 1px solid $gray6;
+      &:hover {
+
+      }
+    }
+
+    .story__hed {
+      margin-bottom: 1rem;
+    }
+
+    .source {
+      font-family: $gudea;
+      font-size: 1.4rem;
+      font-weight: $regular;
+
+      &:before {
+        content: '';
+        height: 1.6rem;
+        width: 1.6rem;
+        display: inline-block;
+        margin-right: 0.6rem;
+        position: relative;
+        top: 2px;
+      }
+
+      &.source--nyt:before {
+        content: url(../img/src_nyt.jpg);
+      }
+
+      &.source--npr:before {
+        content: url(../img/src_npr.jpg);
+      }
+
+      &.source--time:before {
+        content: url(../img/src_time.jpg);
+      }
+
+      &.source--mashable:before {
+        content: url(../img/src_mashable.jpg);
+      }
     }
   }
 }

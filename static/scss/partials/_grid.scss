@@ -7,7 +7,7 @@
 }
 
 .river {
-  .story-list {
+  > .story-list {
     @include span-columns(12);
   }
 
