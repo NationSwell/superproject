@@ -25,3 +25,14 @@
   width: 100%;
   display: block;
 }
+
+.v-center {
+  display: table;
+  position: absolute;
+}
+
+.v-center__inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
