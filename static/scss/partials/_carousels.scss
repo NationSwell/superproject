@@ -93,10 +93,7 @@
   .carousel-item {
     width: 94rem;
     height: 54rem;
-
-    &:nth-child(2) {
-        box-shadow: inset -2px 0 0 $white, inset 2px 0 0 $white;
-    }
+    box-shadow: -2px 0 0 $white;
   }
 
   .carousel--photo__image {
