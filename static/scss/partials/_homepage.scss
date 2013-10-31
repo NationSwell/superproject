@@ -75,6 +75,31 @@
   }
 }
 
+.support-cause--hero {
+  background-color: $ns_red;
+  display: inline-block;
+  padding: 1.4rem;
+
+  .support-cause__heading {
+    color: $white;
+  }
+
+  .support-cause__data {
+    color: $white;
+  }
+
+  .support-cause__label {
+    color: $white;
+  }
+
+  .support-cause__separator {
+    color: $white;
+    font-size: 5.8rem;
+    line-height: 2.4rem;
+    margin: 0;
+  }
+}
+
 /* river */
 .river--two-col {
   .story--tease {

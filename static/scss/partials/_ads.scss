@@ -8,14 +8,29 @@
 }
 
 .ad {
+  display: block;
   margin: 0 auto;
   position: relative;
   text-align: center;
 
   &.ad--300 {
+    display: block;
+    margin-bottom: 7.4rem;
+    width: 32rem;
+
     &:after {
+      color: $gray1;
+      display: block;
+      font-family: $gudea;
+      font-size: 1.4rem;
       content: 'Advertisement';
+      margin-top: 2rem;
       text-transform: uppercase;
+    }
+
+    .ad__container {
+      background-color: $gray6;
+      padding: 1rem;
     }
   }
 
