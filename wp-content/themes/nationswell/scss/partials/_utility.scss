@@ -26,13 +26,16 @@
   display: block;
 }
 
-.v-center {
+.v-align {
   display: table;
   position: absolute;
 }
 
-.v-center__inner {
+.v-align__inner {
   display: table-cell;
-  vertical-align: middle;
   text-align: center;
+
+  &.v-align__inner--bottom {
+    vertical-align: bottom;
+  }
 }

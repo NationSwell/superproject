@@ -88,17 +88,20 @@
   }
 
   &.indicator--carousel {
-    width: 9.8rem;
-    height: 9.8rem;
+    width: 7.6rem;
+    height: 7.6rem;
     position: relative;
     top: 1.4rem;
 
     &:before {
-      font-size: 5.6rem;
-      line-height: 2;
+      font-size: 5rem;
+      line-height: 1.74;
     }
 
     &.indicator--text {
+      width: 9.8rem;
+      height: 9.8rem;
+
       &:before {
         font-size: 5rem;
         line-height: 1.5;
@@ -253,6 +256,7 @@
     }
 
     .source {
+      color: $ns_black;
       font-family: $gudea;
       font-size: 1.4rem;
       font-weight: $regular;
