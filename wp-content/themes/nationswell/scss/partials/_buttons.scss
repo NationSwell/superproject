@@ -1,3 +1,10 @@
+.btn-container {
+  clear: both;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
 .btn {
   &.btn--bar {
     color: $white;
@@ -62,6 +69,38 @@
 
     &:after {
       background-color: #209bcb;
+    }
+  }
+
+  &.btn--load-more {
+    color: $ns_red;
+    font-family: $oswald;
+    font-size: 2.2rem;
+    font-weight: $bold;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+
+    @include transition(all 0.3s ease-in-out);
+
+    &:before {
+      color: $ns_blue1;
+      font-family: 'icons';
+      font-size: 10.5rem;
+      font-weight: $regular;
+      position: absolute;
+      bottom: -10.4rem;
+
+      @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+      top: 0.4rem;
+
+      &:before {
+        bottom: -11rem;
+      }
     }
   }
 }

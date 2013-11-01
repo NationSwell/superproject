@@ -21,16 +21,7 @@
       position: relative;
       float: left;
 
-      .rubric,
-      .support-cause {
-        @include transition(all 0.3s ease-in-out);
-      }
-
       &:hover {
-        .rubric,
-        .support-cause {
-          background-color: $ns_blue1;
-        }
       }
 
       &.hero__entry--1 {
@@ -108,7 +99,7 @@
   .support-cause__separator {
     color: $white;
     font-size: 5.8rem;
-    line-height: 2.4rem;
+    line-height: 3rem;
     margin: 0;
   }
 }
@@ -120,6 +111,12 @@
       &:hover {
         background-color: $gray7;
         box-shadow: 2rem 0 0 $gray7, -2rem 0 0 $gray7;
+
+        .story__feature {
+          &:before {
+            height: 0.7rem;
+          }
+        }
       }
 
       .sponsor {
@@ -128,7 +125,7 @@
         padding: 0.8rem 1.6rem;
         position: absolute;
         left: -1rem;
-        bottom: 2.6rem;
+        bottom: 4.6rem;
         text-align: left;
         display: inline-block;
       }
@@ -136,6 +133,20 @@
 
     .story__feature {
       margin-right: 8rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        background-color: $ns_blue1;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        display: block;
+
+        @include transition(all 0.3s ease-in-out);
+      }
 
       img {
         display: block;
@@ -161,17 +172,11 @@
   @include transition(all 0.3s ease-in-out);
 
   &:hover {
-    .rubric {
-      background-color: $ns_blue1;
-    }
-
     .story__hed {
       color: $ns_blue1;
     }
   }
 
-  .story__feature,
-  .rubric,
   .story__hed {
     @include transition(all 0.15s ease-in-out);
   }
