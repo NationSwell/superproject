@@ -91,9 +91,16 @@
 
 .carousel--photo {
   .carousel-item {
+    display: block;
     width: 94rem;
     height: 54rem;
     box-shadow: -2px 0 0 $white;
+
+    &.active {
+      .carousel-item__overlay {
+        display: table;
+      }
+    }
   }
 
   .carousel--photo__image {
@@ -104,5 +111,7 @@
     background-position: center;
   }
 
-
+  .carousel-item__overlay {
+    display: none;
+  }
 }

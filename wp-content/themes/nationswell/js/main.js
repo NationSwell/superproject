@@ -1,41 +1,53 @@
-(function($){
-    $(function() {
-        // expand/collapse header search field
-        $("[for='search']").on("click", function() {
-            $('#search').toggleClass('open');
-        });
+$(function() {
+    // expand/collapse header search field
+    $("[for='search']").on("click", function() {
+        $('#search').toggleClass('open');
+    });
 
-        // init slideshows
-        $(".carousel").each(function(){
-            var $this = $(this),
-                $carousel = $this.find(".carousel__items");
+    // init slideshows
+    $(".carousel").each(function(){
+        var $this = $(this),
+            $carousel = $this.find(".carousel__items");
 
-            var isPhotoStory = $this.hasClass('carousel--photo');
+        var isPeek = $this.hasClass('carousel--peek');
 
-            console.log($.fn.jquery);
+        function highlight( items ) {
+            items.filter(":eq(1)").addClass('active');
+            return items;
+        }
 
-            $carousel.carouFredSel({
-                responsive: isPhotoStory ? false : true,
-                width: '100%',
-                transition: true,
-                items: {
-                    visible: isPhotoStory ? 3 : 1,
-                    start: isPhotoStory ? -1 : 1
+        function unhighlight( items ) {
+            items.removeClass('active');
+            return items;
+        }
+
+        $carousel.carouFredSel({
+            responsive: isPeek ? false : true,
+            width: '100%',
+            transition: true,
+            items: {
+                visible: isPeek ? 3 : 1,
+                start: isPeek ? -1 : 1
+            },
+            scroll: {
+                items: 1,
+                duration: 300,
+                onBefore: function(data) {
+                    unhighlight(data.items.old);
                 },
-                scroll: {
-                    items: 1,
-                    duration: 300
-                },
-                auto: {
-                    play: false
-                },
-                prev: {
-                    button: $this.find('.carousel__control--prev')
-                },
-                next: {
-                    button: $this.find('.carousel__control--next')
+                onAfter: function(data) {
+                    highlight(data.items.visible);
                 }
-            });
+            },
+            auto: {
+                play: false
+            },
+            prev: {
+                button: $this.find('.carousel__control--prev')
+            },
+            next: {
+                button: $this.find('.carousel__control--next')
+            }
         });
     });
-})(jQuery);
+});
