@@ -91,14 +91,14 @@
 
 .carousel--photo {
   .carousel-item {
-    display: block;
     width: 94rem;
     height: 54rem;
     box-shadow: -2px 0 0 $white;
 
     &.active {
       .carousel-item__overlay {
-        display: table;
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -112,6 +112,9 @@
   }
 
   .carousel-item__overlay {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+
+    @include transition(all 0.15s ease-in-out);
   }
 }

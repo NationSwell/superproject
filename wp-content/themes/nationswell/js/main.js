@@ -9,7 +9,7 @@ $(function() {
         var $this = $(this),
             $carousel = $this.find(".carousel__items");
 
-        var isPeek = $this.hasClass('carousel--peek');
+        var isPhotoStory = $this.hasClass('carousel--photo');
 
         function highlight( items ) {
             items.filter(":eq(1)").addClass('active');
@@ -22,12 +22,12 @@ $(function() {
         }
 
         $carousel.carouFredSel({
-            responsive: isPeek ? false : true,
+            responsive: isPhotoStory ? false : true,
             width: '100%',
             transition: true,
             items: {
-                visible: isPeek ? 3 : 1,
-                start: isPeek ? -1 : 1
+                visible: isPhotoStory ? 3 : 1,
+                start: isPhotoStory ? -1 : 1
             },
             scroll: {
                 items: 1,
