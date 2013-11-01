@@ -27,7 +27,14 @@ $(function() {
                 play: false
             },
             prev: {
-                button: $this.find('.carousel__control--prev')
+                button: $this.find('.carousel__control--prev'),
+                onBefore:
+                    function() {
+                        var pos = $carousel.triggerHandler("currentPosition");
+                        alert(pos);
+                        $carousel.children().removeClass('active');
+                        $carousel.children(':nth-child('+ pos +')').addClass('active');
+                    }
             },
             next: {
                 button: $this.find('.carousel__control--next')

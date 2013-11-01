@@ -104,5 +104,16 @@
     background-position: center;
   }
 
+  .carousel-item__overlay {
+    display: none;
+  }
 
+  .carousel-item {
+
+    &:nth-child(2) {
+      .carousel-item__overlay {
+        display: table;
+      }
+    }
+  }
 }
