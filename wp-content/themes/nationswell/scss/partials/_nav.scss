@@ -1,0 +1,169 @@
+#page-header {
+  background-color: $ns_navy2;
+  height: 7.2rem;
+}
+
+/* logo and slogan */
+.site-logo {
+  text-decoration: none;
+
+  &.site-logo--header {
+    margin-top: 1.6rem;
+  }
+
+  .slogan {
+    color: $white;
+    display: block;
+    position: relative;
+    font-family: $montserrat;
+    font-size: 1.4rem;
+    font-weight: $regular;
+    text-decoration: none;
+    left: 2.2rem;
+    top: -0.4rem;
+
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* more stories toggle */
+.more-stories-toggle {
+  color: $white;
+  font-size: 4.4rem;
+  padding-top: 2.3rem;
+  vertical-align: middle;
+
+  &:hover {}
+}
+
+/* social links */
+.social-links {
+  border-right: 2px solid $ns_navy1;
+  display: block;
+  height: 7.2rem;
+  margin-right: 3.4rem;
+  padding-top: 2.8rem;
+  padding-right: 0.6rem;
+  position: relative;
+
+  li {
+    display: inline-block;
+    margin-right: 2.8rem;
+  }
+}
+
+.social-links__link {
+  display: block;
+  color: $white;
+  font-size: 3.2rem;
+  position: relative;
+  vertical-align: middle;
+
+  &:hover {}
+}
+
+/* search */
+.search {
+  &#page-search {}
+
+  margin-right: 2.8rem;
+  position: relative;
+
+  label {
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 7.2rem;
+    left: 0;
+    padding-top: 2.8rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 3.8rem;
+
+    @include transition(all 0.15s ease-in-out);
+
+    &:active,
+    &:focus {
+      outline: 0 none;
+    }
+
+    &:before {
+      font-size: 3.2rem;
+    }
+  }
+
+  input[type="text"] {
+    background-color: transparent;
+    border: 0 none;
+    font-family: $montserrat;
+    width: 3.8rem;
+    height: 7.2rem;
+    padding-left: 3.8rem;
+
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: $white;
+
+    @include transition(all 0.3s ease-in-out);
+    @include appearance(none);
+
+    @include placeholder {
+      color: $ns_navy5;
+    }
+
+    &:focus,
+    &:active {
+      outline: 0 none;
+    }
+
+    &.open {
+      opacity: 1;
+      outline: 0 none;
+      padding-right: 3.4rem;
+      width: 30rem;
+    }
+  }
+}
+
+
+/* trending topics */
+.trending-topics {
+  background-color: $ns_navy1;
+  padding: 0.8rem 0;
+}
+
+.trending-topics__heading {
+  color: $ns_navy5;
+  font-family: $montserrat;
+  font-size: 1.4rem;
+  font-weight: $bold;
+  display: inline-block;
+  margin: 0 3.4rem 0 2.2rem;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.trending-topics__list {
+  display: inline-block;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.trending-topics__topic {
+  color: $white;
+  font-family: $montserrat;
+  font-size: 1.4rem;
+  font-weight: $regular;
+  text-decoration: none;
+
+  display: inline-block;
+  margin-right: 3.4rem;
+
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {}
+}

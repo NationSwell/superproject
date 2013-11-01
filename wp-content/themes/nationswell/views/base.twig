@@ -1,47 +1,61 @@
-{% include 'html-header.twig' %}
-{% block head %}
-{% endblock %}
+<!doctype html>
+<html class="no-js" {{ language_attributes }}>
+<head>
+    {% include 'html-header.twig' %}
+    {% block head %}
+    {% endblock %}
 </head>
-    <body class="{{body_class}}" data-source="base.twig">
-        <header class="header" >
-            {% block header %}
-            <div class="wrapper">
+<body class="{{ body_class }}" data-source="base.twig">
+<div id="page-wrapper">
 
-                <h1 class="hdr-logo" role="banner">
-                    <a class="hdr-logo-link" href="/" title="Timber" rel="home">{{bloginfo('name')}}</a>
-                </h1>
-                <nav id="access" class="main-navigation" role="navigation">
-                    <ul>
-                    {% for item in menu.items %}
-                        <li id="menu-item-{{item.ID}}" class="menu-item menu-item-type-{{item.type}} menu-item-object-{{item.object}} menu-item-{{item.ID}}">
-                            <a href="{{item.link}}">{{item.title}}</a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </nav><!-- #access -->
+    <div id="top-leaderboard" class="ad ad--leaderboard">
+        <div class="ad__container">
+            <img src="http://placehold.it/728x90"/>
+        </div>
+    </div>
 
-            </div>
-            {% endblock %}
-        </header>
+    {% include 'nav.twig' %}
+
+    <div class="trending-topics">
+        <div class="container">
+            <h3 class="trending-topics__heading">Trending Topics:</h3>
+
+            <ul class="trending-topics__list">
+                <li><a href="#" class="trending-topics__topic">Social Mobility</a></li>
+                <li><a href="#" class="trending-topics__topic">Infrastructure</a></li>
+                <li><a href="#" class="trending-topics__topic">Environment</a></li>
+                <li><a href="#" class="trending-topics__topic">Health Care</a></li>
+                <li><a href="#" class="trending-topics__topic">Economy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--<div id="top-billboard" class="ad ad--billboard">
+        <div class="ad__container">
+            <img src="http://placehold.it/970x250"/>
+        </div>
+    </div>-->
+
+    <div id="page-content">
+        {% block content %}
+            Sorry, no content
+        {% endblock %}
+    </div>
+
+    {% include 'footer.twig' %}
+</div>
 
 
-        <section id="content" role="main" class="content-wrapper">
-            {% if title %}<h1>{{title}}</h1>{% endif %}
-            <div class="wrapper {{sidebar_class}}">
-                {% block content %}
-                    Sorry, no content
-                {% endblock %}
-            </div>
-            {% if sidebar %}
-                <aside class="layout-sidebar">
-                    {{sidebar}}
-                </aside>
-            {% endif %}
-        </section>
+<div id="page-overlay">
+</div>
 
-        <footer id="footer">
-            {% include 'footer.twig' %}
-        </footer>
-        {{ function('wp_footer') }}
-    </body>
+{{ function('wp_footer') }}
+
+{# TODO: Integrate these files into the theme#}
+<script src="/{{ theme_dir }}/js/vendor/jquery.transit.min.js"></script>
+<script src="/{{ theme_dir }}/js/vendor/jquery.touchSwipe.min.js"></script>
+<script src="/{{ theme_dir }}/js/vendor/jquery.carouFredSel-6.2.1.min.js"></script>
+
+<script src="/{{ theme_dir }}/js/main.js"></script>
+</body>
 </html>

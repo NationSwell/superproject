@@ -1,8 +1,476 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<h2>{{foo}}</h2>
-	<p>{{qux}}</p>
+    <!--<div class="hero hero--homepage hero--single" style="background-image: url(http://placehold.it/1366x768);">
+        <a href="#" class="link-wrapper">
+            <div class="container">
+                <div class="hero__entry hero__entry--1">
+                    <span class="rubric">Environment</span>
+                    <h1 class="hd-a">Pumping More Solar Power in Sunny New Mexico</h1>
+
+                    <div class="support-cause support-cause--hero">
+                        <h4 class="hd-c support-cause__heading">Support this cause</h4>
+
+                        <div class="support-cause__content">
+                            <span class="support-cause__data">45<sup class="super">%</sup></span>
+                            <span class="support-cause__label">from goal</span>
+
+                            <span class="support-cause__separator"></span>
+
+                            <span class="support-cause__data">2</span>
+                            <span class="support-cause__label">days to go</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>-->
+
+    <div class="hero hero--homepage hero--grid">
+        <div class="hero__entry hero__entry--1" style="background-image: url(http://lorempixel.com/1366/768);">
+            <a href="#" class="link-wrapper">
+                <article class="story story--hero z1">
+                    <span class="rubric">Environment</span>
+                    <h1 class="hd-a story__hed">Pumping More Solar Power in Sunny New Mexico</h1>
+
+                    <div class="support-cause support-cause--hero">
+                        <h4 class="hd-c support-cause__heading">Support this cause</h4>
+
+                        <div class="support-cause__content">
+                            <span class="support-cause__data">45<sup class="super">%</sup></span>
+                            <span class="support-cause__label">from goal</span>
+
+                            <span class="support-cause__separator icon icon_separator"></span>
+
+                            <span class="support-cause__data">4</span>
+                            <span class="support-cause__label">days to go</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </div>
+
+        <div class="hero__entry hero__entry--2" style="background-image: url(http://lorempixel.com/1366/767);">
+            <a href="#" class="link-wrapper">
+                <article class="story story--hero z1">
+                    <span class="rubric">Business</span>
+                    <h1 class="hd-b story__hed">Daycare Center in Danger of Closing its Doors</h1>
+
+                    <div class="support-cause support-cause--hero">
+                        <h4 class="hd-c support-cause__heading">This cause still needs your help!</h4>
+
+                        <div class="support-cause__content">
+                            <span class="support-cause__data">45<sup class="super">%</sup></span>
+                            <span class="support-cause__label">from goal</span>
+
+                            <span class="support-cause__separator icon icon_separator"></span>
+
+                            <span class="support-cause__data">2</span>
+                            <span class="support-cause__label">days to go</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </div>
+
+        <div class="hero__entry hero__entry--3" style="background-image: url(http://lorempixel.com/1365/768);">
+            <a href="#" class="link-wrapper">
+                <article class="story story--hero z1">
+                    <span class="rubric">NationSwell</span>
+                    <h1 class="hd-b story__hed">An Interview With the Founder, Greg Behrman</h1>
+                </article>
+            </a>
+        </div>
+    </div>
+
+    <div class="river river--two-col">
+        <div class="container">
+            <ul class="story-teases">
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/city"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+                            </header>
+                        </a>
+                    </article></li>
+
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/people"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+
+                                <div class="support-cause support-cause--urgent">
+                                    <h4 class="hd-c support-cause__heading">This cause still needs your help!</h4>
+
+                                    <div class="support-cause__content">
+                                        <span class="support-cause__data support-cause__data--red">45<sup class="super">%</sup></span>
+                                        <span class="support-cause__label">from goal</span>
+
+                                        <span class="support-cause__separator icon icon_separator"></span>
+
+                                        <span class="support-cause__data support-cause__data--blue">2</span>
+                                        <span class="support-cause__label">days to go</span>
+                                    </div>
+                                </div>
+                            </header>
+                        </a>
+                    </article></li>
+
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/transport"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+                            </header>
+                        </a>
+                    </article></li>
+            </ul>
+
+            <div class="sidebar">
+                <div class="ad ad--300">
+                    <div class="ad__container">
+                        <img src="http://placehold.it/300x600"/>
+                    </div>
+                </div>
+
+                <div class="module module--bg module--sidebar module--blue join-us">
+                    <header>
+                        <div class="indicator indicator--module icon icon_nationswell-flag"></div>
+                        <h3 class="hd-e module__heading">Join us</h3>
+                    </header>
+
+                    <p>Meet the people renewing America. Follow us on Facebook and Twitter for the latest updates on the American renewal.</p>
+
+                    <a href="#" class="btn btn--bar btn--facebook icon icon_facebook">Follow on Facebook</a>
+                    <a href="#" class="btn btn--bar btn--twitter icon icon_twitter">Follow on Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel carousel--series">
+        <ul class="carousel__items">
+            <li class="carousel-item"><a href="#" class="link-wrapper">
+                    <div class="carousel--series__images cf">
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1361/768);"></div>
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1362/767);"></div>
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1363/768);"></div>
+                    </div>
+
+                    <div class="carousel-item__overlay v-center">
+                        <div class="v-center__inner">
+                            <div class="indicator indicator--carousel indicator--text icon icon_series">
+                                <h5 class="indicator__heading">Series</h5>
+                                <h5 class="indicator__subheading">7 Stories</h5>
+                            </div>
+
+                            <h2 class="hd-f carousel-item__title"><span>Wealth in an Era of Economic Inequality</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="carousel-item"><a href="#" class="link-wrapper">
+                    <div class="carousel--series__images">
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1364/768);"></div>
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1365/767);"></div>
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1366/768);"></div>
+                    </div>
+
+                    <div class="carousel-item__overlay v-center">
+                        <div class="v-center__inner">
+                            <div class="indicator indicator--carousel indicator--text icon icon_series">
+                                <h5 class="indicator__heading">Series</h5>
+                                <h5 class="indicator__subheading">7 Stories</h5>
+                            </div>
+
+                            <h2 class="hd-f carousel-item__title"><span>Wealth in an Era of Economic Inequality</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="carousel-item"><a href="#" class="link-wrapper">
+                    <div class="carousel--series__images">
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1367/768);"></div>
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1368/767);"></div>
+                        <div class="carousel--series__image" style="background-image: url(http://lorempixel.com/1369/768);"></div>
+                    </div>
+
+                    <div class="carousel-item__overlay v-center">
+                        <div class="v-center__inner">
+                            <div class="indicator indicator--carousel indicator--text icon icon_series">
+                                <h5 class="indicator__heading">Series</h5>
+                                <h6 class="indicator__subheading">7 Stories</h6>
+                            </div>
+
+                            <h2 class="hd-f carousel-item__title"><span>Wealth in an Era of Economic Inequality</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+        </ul>
+
+        <ul class="carousel__controls">
+            <li class="carousel__control carousel__control--prev">
+                <a class="icon icon_arrow-circle"></a>
+            </li>
+
+            <li class="carousel__control carousel__control--next">
+                <a class="icon icon_arrow-circle"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="river river--two-col">
+        <div class="container">
+            <ul class="story-teases">
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/animals"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+                            </header>
+                        </a>
+                    </article></li>
+
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/food"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+                            </header>
+                        </a>
+                    </article></li>
+
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/nature"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+
+                                <div class="support-cause support-cause--urgent">
+                                    <h4 class="hd-c support-cause__heading">This cause still needs your help!</h4>
+
+                                    <div class="support-cause__content">
+                                        <span class="support-cause__data support-cause__data--red">39<sup class="super">%</sup></span>
+                                        <span class="support-cause__label">from goal</span>
+                                    </div>
+                                </div>
+                            </header>
+                        </a>
+                    </article></li>
+            </ul>
+
+            <div class="sidebar">
+                <div class="ad ad--300">
+                    <div class="ad__container">
+                        <img src="http://placehold.it/300x250"/>
+                    </div>
+                </div>
+
+                <div class="module module--list module--sidebar from-our-partners">
+                    <h3 class="hd-g module__heading">From Our Partners</h3>
+
+                    <ul class="story-list">
+                        <li><article class="story story--link">
+                                <a href="#" class="link-wrapper">
+                                    <header class="story__header">
+                                        <h4 class="hd-h story__hed">8 States Teaming Up to Support Electric Cars</h4>
+                                        <span class="source source--nyt">The New York Times</span>
+                                    </header>
+                                </a>
+                            </article></li>
+
+                        <li><article class="story story--link">
+                                <a href="#" class="link-wrapper">
+                                    <header class="story__header">
+                                        <h4 class="hd-h story__hed">Why Hiking The Age For Medicare Eligibility Wouldn't Save Much</h4>
+                                        <span class="source source--npr">NPR</span>
+                                    </header>
+                                </a>
+                            </article></li>
+
+                        <li><article class="story story--link">
+                                <a href="#" class="link-wrapper">
+                                    <header class="story__header">
+                                        <h4 class="hd-h story__hed">America's Mood Map: An Interactive Guide to the United States of Attitude</h4>
+                                        <span class="source source--time">Time Magazine</span>
+                                    </header>
+                                </a>
+                            </article></li>
+
+                        <li><article class="story story--link">
+                                <a href="#" class="link-wrapper">
+                                    <header class="story__header">
+                                        <h4 class="hd-h story__hed">10 Actions You Can Take Today to Reduce Your Carbon Footprint</h4>
+                                        <span class="source source--mashable">Mashable</span>
+                                    </header>
+                                </a>
+                            </article></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel carousel--photo">
+        <ul class="carousel__items">
+            <li class="carousel-item"><a href="#" class="link-wrapper v-center">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/city);"></div>
+
+                    <div class="v-center__inner">
+                        <div class="carousel-item__overlay">
+                            <div class="indicator indicator--carousel icon icon_camera"></div>
+
+                            <h2 class="hd-f carousel-item__title"><span>Fixing America's Aging Infrastructure</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="carousel-item"><a href="#" class="link-wrapper v-center">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/business);"></div>
+
+                    <div class="v-center__inner">
+                        <div class="carousel-item__overlay">
+                            <div class="indicator indicator--carousel icon icon_camera"></div>
+
+                            <h2 class="hd-f carousel-item__title"><span>Fixing America's Aging Infrastructure</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="carousel-item"><a href="#" class="link-wrapper">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/fashion);"></div>
+
+                    <div class="v-center__inner">
+                        <div class="carousel-item__overlay">
+                            <div class="indicator indicator--carousel icon icon_camera"></div>
+
+                            <h2 class="hd-f carousel-item__title"><span>Fixing America's Aging Infrastructure</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+
+            <li class="carousel-item"><a href="#" class="link-wrapper">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/animals);"></div>
+
+                    <div class="v-center__inner">
+                        <div class="carousel-item__overlay">
+                            <div class="indicator indicator--carousel icon icon_camera"></div>
+
+                            <h2 class="hd-f carousel-item__title"><span>Fixing America's Aging Infrastructure</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+        </ul>
+
+        <ul class="carousel__controls">
+            <li class="carousel__control carousel__control--prev">
+                <a class="icon icon_arrow-circle"></a>
+            </li>
+
+            <li class="carousel__control carousel__control--next">
+                <a class="icon icon_arrow-circle"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="river river--two-col">
+        <div class="container">
+            <ul class="story-teases">
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-c story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+
+                                <div class="support-cause support-cause--urgent">
+                                    <h4 class="hd-c support-cause__heading">This cause still needs your help!</h4>
+
+                                    <div class="support-cause__content">
+                                        <span class="support-cause__data support-cause__data--red">45<sup class="super">%</sup></span>
+                                        <span class="support-cause__label">from goal</span>
+
+                                        <span class="support-cause__separator"></span>
+
+                                        <span class="support-cause__data support-cause__data--blue">2</span>
+                                        <span class="support-cause__label">days to go</span>
+                                    </div>
+                                </div>
+                            </header>
+                        </a>
+                    </article></li>
+
+                <li><article class="story story--tease">
+                        <a href="#" class="link-wrapper">
+                            <figure class="story__feature fl">
+                                <img src="http://lorempixel.com/330/330/"/>
+                            </figure>
+
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-c story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+                            </header>
+                        </a>
+                    </article></li>
+            </ul>
+
+            <div class="sidebar">
+                <div class="module module--image-overlay featured-story" style="background-image: url(http://placehold.it/300x600);">
+                    <article class="story story--featured">
+                        <a href="#" class="link-wrapper">
+                            <header class="story__header">
+                                <span class="rubric">Economy</span>
+                                <h2 class="hd-c story__hed">Keys to Success for Sustainable Economies</h2>
+                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+                            </header>
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn--load-more">Load more</a>
+        </div>
+    </div>
+
+
+
 	{% for post in posts %}
 		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 	{% endfor %}
