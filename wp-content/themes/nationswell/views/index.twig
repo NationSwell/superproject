@@ -410,6 +410,8 @@
                                 <img src="http://lorempixel.com/330/330/"/>
                             </figure>
 
+                            <div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm.png" class="sponsor__logo"/></div>
+
                             <header class="story__header">
                                 <span class="rubric">Economy</span>
                                 <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
@@ -448,27 +450,27 @@
             </ul>
 
             <div class="sidebar">
-                <div class="module module--image-overlay featured-story" style="background-image: url(http://placehold.it/300x600);">
-                    <article class="story story--featured">
+                <div class="module module--image-overlay module--sidebar featured-story cf" style="background-image: url(http://lorempixel.com/1366/767);">
+                    <article class="story story--tease story--featured">
                         <a href="#" class="link-wrapper">
                             <header class="story__header">
-                                <span class="rubric">Economy</span>
-                                <h2 class="hd-d story__hed">Keys to Success for Sustainable Economies</h2>
-                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Underlying this are deep long-term trends such as population growth, climate change, persistent poverty and poor health. Governments and business are beginning to take action.</p>
+                                <span class="rubric">Environment</span>
+                                <h2 class="hd-d story__hed">A Renewable Energy Tax Credit May Die At The End Of This Year</h2>
+                                <p class="story__dek">A tax credit promoting wind energy and other renewables is set to die at the end of the year, and for the moment there's no obvious way to resurrect it.</p>
                             </header>
+
+                            <div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm.png" class="sponsor__logo"/></div>
                         </a>
                     </article>
                 </div>
             </div>
 
-            <a href="#" class="btn btn--load-more">Load more</a>
+            {#<a href="#" class="btn btn--load-more">Load more</a>#}
         </div>
     </div>
 
-
-
-	{% for post in posts %}
+    {#{% for post in posts %}
 		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-	{% endfor %}
+	{% endfor %}#}
 
 {% endblock %}

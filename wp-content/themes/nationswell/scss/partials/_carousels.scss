@@ -1,5 +1,5 @@
 .carousel {
-  background-color: $ns_black;
+  background-color: $ns_navy3;
   position: relative;
   margin-bottom: 6.8rem;
 }
@@ -14,6 +14,25 @@
   height: 46rem;
   position: relative;
   text-align: center;
+
+  .v-align__inner {
+    opacity: 0;
+    visibility: hidden;
+    padding-bottom: 1rem;
+
+    @include transition(all 0.15s ease-in-out);
+  }
+
+  &.active {
+    .v-align__inner {
+      opacity: 1;
+      visibility: visible;
+      padding-bottom: 3.4rem;
+
+      @include transition(all 0.3s ease-in-out);
+      @include transition-delay(.15s);
+    }
+  }
 }
 
 .carousel-item__overlay {
@@ -31,10 +50,6 @@
 
 .carousel-item__title {
   margin-bottom: 3.4rem;
-}
-
-.v-align__inner {
-  padding-bottom: 3.4rem;
 }
 
 .carousel__controls {
@@ -74,6 +89,7 @@
 }
 
 .carousel--series {
+
   .carousel--series__images {
     display: block;
     width: 100%;
@@ -89,12 +105,33 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    &:after {
+      content: '';
+      background-image: url("../img/overlay_mesh.png");
+      background-repeat: repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
     &:first-child {
       box-shadow: inset -2px 0 0 $white;
+
+      &:after {
+        padding-right: 2px;
+      }
     }
 
     &:last-child {
       box-shadow: inset 2px 0 0 $white;
+
+      &:after {
+        padding-left: 2px;
+      }
     }
   }
 }
@@ -104,19 +141,13 @@
     width: 94rem;
     height: 54rem;
     box-shadow: -2px 0 0 $white;
+    pointer-events: none;
 
     &.active {
+      pointer-events: all;
+
       .carousel-item__overlay {
         background-color: transparent;
-      }
-
-      .v-align__inner {
-        opacity: 1;
-        visibility: visible;
-        padding-bottom: 3.4rem;
-
-        @include transition(all 0.3s ease-in-out);
-        @include transition-delay(.15s);
       }
     }
   }
@@ -130,17 +161,9 @@
   }
 
   .carousel-item__overlay {
-    background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0,0,0, 0.5);
 
     @include transition(all 0.3s ease-in-out);
-  }
-
-  .v-align__inner {
-    opacity: 0;
-    visibility: hidden;
-    padding-bottom: 1rem;
-
-    @include transition(all 0.15s ease-in-out);
   }
 
   .carousel__control {

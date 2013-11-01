@@ -13,7 +13,12 @@
             var isPhotoStory = $this.hasClass('carousel--photo');
 
             function highlight(items) {
-                items.filter(":eq(1)").addClass('active');
+                if(isPhotoStory) {
+                    items.filter(":eq(1)").addClass('active');
+                } else {
+                    items.addClass('active');
+                }
+
                 return items;
             }
 

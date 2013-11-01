@@ -21,6 +21,18 @@
       position: relative;
       float: left;
 
+      .rubric,
+      .support-cause {
+        @include transition(all 0.3s ease-in-out);
+      }
+
+      &:hover {
+        .rubric,
+        .support-cause {
+          background-color: $ns_blue1;
+        }
+      }
+
       &.hero__entry--1 {
         height: 56rem;
         width: 50%;
@@ -64,6 +76,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        pointer-events: none;
       }
 
       .story--hero {
@@ -102,25 +115,73 @@
 
 /* river */
 .river--two-col {
-  .story--tease {
-    margin-bottom: 6.8rem;
+  .story-teases {
+    .story--tease {
+      &:hover {
+        background-color: $gray7;
+        box-shadow: 2rem 0 0 $gray7, -2rem 0 0 $gray7;
+      }
+
+      .sponsor {
+        background-color: $ns_blue1;
+        color: $ns_blue6;
+        padding: 0.8rem 1.6rem;
+        position: absolute;
+        left: -1rem;
+        bottom: 2.6rem;
+        text-align: left;
+        display: inline-block;
+      }
+    }
+
+    .story__feature {
+      margin-right: 8rem;
+
+      img {
+        display: block;
+      }
+    }
   }
 
-  .story__feature {
-    margin-right: 8rem;
+  .story-teases {
+    margin-bottom: 2.8rem;
+
+    .story__hed {
+      margin-bottom: 1.2rem;
+    }
   }
 
-  .story__hed {
-    margin-bottom: 1.2rem;
-  }
 }
 
 .story--tease {
+  background-color: transparent;
+  padding: 2rem 0;
+  position: relative;
+
+  @include transition(all 0.3s ease-in-out);
+
+  &:hover {
+    .rubric {
+      background-color: $ns_blue1;
+    }
+
+    .story__hed {
+      color: $ns_blue1;
+    }
+  }
+
+  .story__feature,
+  .rubric,
+  .story__hed {
+    @include transition(all 0.15s ease-in-out);
+  }
+
   .story__dek {
     color: $ns_black;
     font-family: $gudea;
     font-size: 1.5rem;
     line-height: 1.4;
+    overflow: hidden;
   }
 
   .support-cause {
@@ -129,10 +190,50 @@
 }
 
 /* join us module */
-
 .join-us {
   .btn--bar {
     margin-bottom: 2.1rem;
     width: auto;
   }
+}
+
+/* from our partners module */
+.story__hed {
+  margin-bottom: 1rem;
+}
+
+.source {
+  color: $gray1;
+  font-family: $gudea;
+  font-size: 1.4rem;
+  font-weight: $regular;
+
+  &:before {
+    content: '';
+    height: 1.6rem;
+    width: 1.6rem;
+    display: inline-block;
+    margin-right: 0.6rem;
+    position: relative;
+    top: 2px;
+  }
+
+  &.source--nyt:before {
+    content: url(../img/src_nyt.jpg);
+  }
+
+  &.source--npr:before {
+    content: url(../img/src_npr.jpg);
+  }
+
+  &.source--time:before {
+    content: url(../img/src_time.jpg);
+  }
+
+  &.source--mashable:before {
+    content: url(../img/src_mashable.jpg);
+  }
+}
+
+.featured-story {
 }

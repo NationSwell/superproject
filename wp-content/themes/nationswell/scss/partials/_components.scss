@@ -65,6 +65,19 @@
   }
 }
 
+.sponsor {
+  font-family: $gudea;
+  font-size: 1.3rem;
+  font-weight: $bold;
+  text-transform: uppercase;
+
+  .sponsor__logo {
+    display: inline-block;
+    margin-left: 1.6rem;
+    vertical-align: middle;
+  }
+}
+
 /* indicator */
 .indicator {
   background-color: $ns_blue1;
@@ -246,46 +259,41 @@
     }
 
     .story--link {
+      .story__hed {
+        @include transition(all 0.3s ease-in-out);
+      }
+
       &:hover {
-
+        .story__hed {
+          color: $ns_blue1;
+        }
       }
     }
+  }
 
-    .story__hed {
-      margin-bottom: 1rem;
+  &.module--image-overlay {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .story {
+      background-color: rgba(0,0,0, 0.5);
+      padding: 3.4rem;
+      display: block;
+      float: none;
+      margin: 0;
     }
 
-    .source {
-      color: $ns_black;
-      font-family: $gudea;
-      font-size: 1.4rem;
-      font-weight: $regular;
+    .story__hed,
+    .story__dek {
+      color: $white;
+    }
 
-      &:before {
-        content: '';
-        height: 1.6rem;
-        width: 1.6rem;
-        display: inline-block;
-        margin-right: 0.6rem;
-        position: relative;
-        top: 2px;
-      }
-
-      &.source--nyt:before {
-        content: url(../img/src_nyt.jpg);
-      }
-
-      &.source--npr:before {
-        content: url(../img/src_npr.jpg);
-      }
-
-      &.source--time:before {
-        content: url(../img/src_time.jpg);
-      }
-
-      &.source--mashable:before {
-        content: url(../img/src_mashable.jpg);
-      }
+    .sponsor {
+      color: $white;
+      display: block;
+      margin-top: 12rem;
     }
   }
 }

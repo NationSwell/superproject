@@ -89,6 +89,10 @@
       outline: 0 none;
     }
 
+    &:hover {
+      color: $ns_blue1;
+    }
+
     &:before {
       font-size: 3.2rem;
     }
@@ -101,6 +105,8 @@
     width: 3.8rem;
     height: 7.2rem;
     padding-left: 3.8rem;
+    position: relative;
+    top: 0.5rem;
 
     font-weight: 300;
     font-size: 1.4rem;
