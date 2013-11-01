@@ -83,8 +83,6 @@
     right: 6rem;
   }
 
-  &:hover {}
-
   .icon {
     color: $white;
     font-size: 10rem;
@@ -95,13 +93,12 @@
     @include transition(all 0.15s ease-in-out);
 
     &:hover {
-      color: $ns_blue1;
+      color: $ns_blue5;
     }
   }
 }
 
 .carousel--series {
-
   .carousel--series__images {
     display: block;
     width: 100%;
