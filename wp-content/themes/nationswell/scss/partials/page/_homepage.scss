@@ -1,18 +1,9 @@
 /* hero */
 .hero--homepage {
   height: 56rem;
-  margin-bottom: 5rem;
-
-  &.hero--single {
-    /*.hero__content {
-      @include span-columns(7);
-      @include shift(2);
-    }*/
-  }
 
   &.hero--grid {
     .hero__entry {
-      background-color: $ns_navy3;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

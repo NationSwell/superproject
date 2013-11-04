@@ -2,17 +2,328 @@
 
 {% block content %}
 
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.post_title}}</h1>
-				
-				<div class="article-body">
-					{{post.get_content}}
-				</div>
-			</section>
+    {#<div class="content-wrapper">
+        <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            <section class="article-content">
+                <h1 class="article-h1">{{post.post_title}}</h1>
 
-		</article>
-	</div> <!-- /content-wrapper -->
+                <div class="article-body">
+                    {{post.get_content}}
+                </div>
+            </section>
+
+        </article>
+    </div> <!-- /content-wrapper -->#}
+
+    <div class="hero hero--story hero--image" style="background-image: url(http://lorempixel.com/1920/1080);"></div>
+    <article class="story story--page">
+    <div class="container">
+    <div class="story__sticky">
+        placeholder sticky content
+    </div>
+
+    <div class="story__content">
+    <header>
+        <h1 class="hd-j story__hed">How Harriet Tubman Is Saving Black Women's Lives</h1>
+
+        <h3 class="hd-k story__dek">The founders of GirlTrek are channeling African-American pride to tackle the health
+            crisis among black women, one march at a time.</h3>
+    </header>
+
+    <p>The trouble started in grade school. Mom had changed shifts at the local hosiery factory. Dad was working long
+        hours as a mechanic. Big brother had left town after enlisting in the army. So Vonda Vass Summers would come
+        home each day to an empty house in Henderson, North Carolina. Alone and bored, Vonda found solace in bologna
+        sandwiches and boxes of mac n' cheese. She binged, then hid the evidence, hoping no one would see what she'd
+        done.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit porttitor quam, vel rhoncus orci vehicula
+        et. Donec sagittis sollicitudin odio ac feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Nam semper ipsum ac tempor luctus. Ut consequat suscipit felis. Ut placerat enim vel aliquet eleifend.
+        Suspendisse dictum sed nulla eget egestas. Nam nunc nisi, condimentum et imperdiet quis, rutrum ut tortor.</p>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eget ornare
+        libero, vitae convallis orci. Cras est tortor, auctor at erat sed, varius rutrum purus. Duis imperdiet diam
+        nisi, vel convallis arcu tristique sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Ut iaculis, elit sed scelerisque condimentum, metus purus congue orci, sed eleifend velit nisi
+        pulvinar odio. Sed dignissim ligula ut euismod faucibus. Vivamus nec elit quam. Ut ultrices urna nibh, et
+        lobortis risus commodo eget. Quisque sagittis, ligula non porttitor auctor, nisi eros imperdiet nibh, eget
+        pharetra odio nisi nec ante. Vestibulum venenatis est felis, id volutpat ante dictum a. Morbi et tempor
+        turpis.</p>
+
+    <p>Cras aliquam, risus eu scelerisque adipiscing, lectus enim lobortis libero, in bibendum nunc arcu eget ipsum.
+        Vivamus id elementum odio. Cras lacinia aliquet ultrices. Praesent facilisis augue vel adipiscing posuere. Donec
+        tortor arcu, molestie pretium lacus nec, egestas laoreet nibh. Maecenas dignissim, velit luctus vehicula
+        volutpat, nibh lacus fermentum leo, at malesuada felis leo eu ipsum. Mauris ornare rhoncus nisi non venenatis.
+        Vestibulum viverra magna lacus, non dapibus nibh placerat ac. Proin eget sapien libero. Cras nibh tellus, mattis
+        id eleifend in, malesuada eu massa.</p>
+
+    <aside class="pullquote">
+        <h2 class="hd-k pullquote__quote">It is very difficult to take care of others when you don't have the ability to
+            take care of yourself.</h2>
+        <span class="pullquote__attribution">Vonda Vass Summers</span>
+    </aside>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit porttitor quam, vel rhoncus orci vehicula
+        et. Donec sagittis sollicitudin odio ac feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Nam semper ipsum ac tempor luctus. Ut consequat suscipit felis. Ut placerat enim vel aliquet eleifend.
+        Suspendisse dictum sed nulla eget egestas. Nam nunc nisi, condimentum et imperdiet quis, rutrum ut tortor.</p>
+
+    <div class="module module--list related-stories fr">
+        <h3 class="hd- module__heading">Related Stories</h3>
+
+        <ul class="story-list">
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">Trekkers Featured On Fox</h4>
+                            <span class="byline">by Cathy Sharick</span>
+                        </header>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">GirlTrek City Reps Train To Lead Walking Revolution</h4>
+                            <span class="byline">by Greg Behrman</span>
+                        </header>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">Students at LCS in Newark Pay Tribute to Expedition</h4>
+                            <span class="byline">by Cathy Sharick</span>
+                        </header>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </div>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eget ornare
+        libero, vitae convallis orci. Cras est tortor, auctor at erat sed, varius rutrum purus. Duis imperdiet diam
+        nisi, vel convallis arcu tristique sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Ut iaculis, elit sed scelerisque condimentum, metus purus congue orci, sed eleifend velit nisi
+        pulvinar odio. Sed dignissim ligula ut euismod faucibus. Vivamus nec elit quam. Ut ultrices urna nibh, et
+        lobortis risus commodo eget. Quisque sagittis, ligula non porttitor auctor, nisi eros imperdiet nibh, eget
+        pharetra odio nisi nec ante. Vestibulum venenatis est felis, id volutpat ante dictum a. Morbi et tempor
+        turpis.</p>
+
+    <p>Cras aliquam, risus eu scelerisque adipiscing, lectus enim lobortis libero, in bibendum nunc arcu eget ipsum.
+        Vivamus id elementum odio. Cras lacinia aliquet ultrices. Praesent facilisis augue vel adipiscing posuere. Donec
+        tortor arcu, molestie pretium lacus nec, egestas laoreet nibh. Maecenas dignissim, velit luctus vehicula
+        volutpat, nibh lacus fermentum leo, at malesuada felis leo eu ipsum. Mauris ornare rhoncus nisi non venenatis.
+        Vestibulum viverra magna lacus, non dapibus nibh placerat ac. Proin eget sapien libero. Cras nibh tellus, mattis
+        id eleifend in, malesuada eu massa.</p>
+
+    <figure class="multimedia multimedia--gallery">
+        <div class="carousel carousel--gallery">
+            <div class="carousel__container">
+                <ul class="carousel__items">
+                    <li class="carousel-item"><a href="#" class="link-wrapper">
+                            <figure class="carousel__image">
+                                <img src="http://placehold.it/940x530">
+                            </figure>
+                        </a></li>
+
+                    <li class="carousel-item"><a href="#" class="link-wrapper">
+                            <figure class="carousel__image">
+                                <img src="http://placehold.it/940x530">
+                            </figure>
+                        </a></li>
+
+                    <li class="carousel-item"><a href="#" class="link-wrapper">
+                            <figure class="carousel__image">
+                                <img src="http://placehold.it/940x530">
+                            </figure>
+                        </a></li>
+                </ul>
+            </div>
+
+            <ul class="carousel__controls">
+                <li class="carousel__control carousel__control--prev">
+                    <a class="icon icon_arrow"></a>
+                </li>
+
+                <li class="carousel__control carousel__control--next">
+                    <a class="icon icon_arrow"></a>
+                </li>
+            </ul>
+        </div>
+
+        <figcaption class="credit">Bill Smith / NationSwell</figcaption>
+    </figure>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit porttitor quam, vel rhoncus orci vehicula
+        et. Donec sagittis sollicitudin odio ac feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Nam semper ipsum ac tempor luctus. Ut consequat suscipit felis. Ut placerat enim vel aliquet eleifend.
+        Suspendisse dictum sed nulla eget egestas. Nam nunc nisi, condimentum et imperdiet quis, rutrum ut tortor.</p>
+
+    <aside class="note fr">
+        <h3 class="hd- note__title">Morgan Dixon</h3>
+
+        <p class="note__content">Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat
+            ligula nec tortor. Integer eget sem.</p>
+    </aside>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eget ornare
+        libero, vitae convallis orci. Cras est tortor, auctor at erat sed, varius rutrum purus. Duis imperdiet diam
+        nisi, vel convallis arcu tristique sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Ut iaculis, elit sed scelerisque condimentum, metus purus congue orci, sed eleifend velit nisi
+        pulvinar odio. Sed dignissim ligula ut euismod faucibus. Vivamus nec elit quam. Ut ultrices urna nibh, et
+        lobortis risus commodo eget. Quisque sagittis, ligula non porttitor auctor, nisi eros imperdiet nibh, eget
+        pharetra odio nisi nec ante. Vestibulum venenatis est felis, id volutpat ante dictum a. Morbi et tempor
+        turpis.</p>
+
+    <div class="module module--list most-popular">
+        <h3 class="hd- module__heading">Popular Stories</h3>
+
+        <ul class="story-list">
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">Pumping More Solar Power in Sunny New Mexico</h4>
+                            <span class="byline">by Cathy Sharick</span>
+                        </header>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">Pumping More Solar Power in Sunny New Mexico</h4>
+                            <span class="byline">by Cathy Sharick</span>
+                        </header>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">Pumping More Solar Power in Sunny New Mexico</h4>
+                            <span class="byline">by Cathy Sharick</span>
+                        </header>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </div>
+
+    <p>Cras aliquam, risus eu scelerisque adipiscing, lectus enim lobortis libero, in bibendum nunc arcu eget ipsum.
+        Vivamus id elementum odio. Cras lacinia aliquet ultrices. Praesent facilisis augue vel adipiscing posuere. Donec
+        tortor arcu, molestie pretium lacus nec, egestas laoreet nibh. Maecenas dignissim, velit luctus vehicula
+        volutpat, nibh lacus fermentum leo, at malesuada felis leo eu ipsum. Mauris ornare rhoncus nisi non venenatis.
+        Vestibulum viverra magna lacus, non dapibus nibh placerat ac. Proin eget sapien libero. Cras nibh tellus, mattis
+        id eleifend in, malesuada eu massa.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit porttitor quam, vel rhoncus orci vehicula
+        et. Donec sagittis sollicitudin odio ac feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Nam semper ipsum ac tempor luctus. Ut consequat suscipit felis. Ut placerat enim vel aliquet eleifend.
+        Suspendisse dictum sed nulla eget egestas. Nam nunc nisi, condimentum et imperdiet quis, rutrum ut tortor.</p>
+
+    <div class="module module--bg module--red statistics">
+        <h3 class="hd- module__heading">Some GirlTrek Facts</h3>
+
+        <div class="statistic">
+            <h4 class="hd- statistic__data">15<sub>K</sub></h4>
+            <span class="statistic__label">Members</span>
+        </div>
+
+        <div class="statistic">
+            <h4 class="hd- statistic__data">150<sub>K</sub></h4>
+            <span class="statistic__label">Facebook Fans</span>
+        </div>
+    </div>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eget ornare
+        libero, vitae convallis orci. Cras est tortor, auctor at erat sed, varius rutrum purus. Duis imperdiet diam
+        nisi, vel convallis arcu tristique sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Ut iaculis, elit sed scelerisque condimentum, metus purus congue orci, sed eleifend velit nisi
+        pulvinar odio. Sed dignissim ligula ut euismod faucibus. Vivamus nec elit quam. Ut ultrices urna nibh, et
+        lobortis risus commodo eget. Quisque sagittis, ligula non porttitor auctor, nisi eros imperdiet nibh, eget
+        pharetra odio nisi nec ante. Vestibulum venenatis est felis, id volutpat ante dictum a. Morbi et tempor
+        turpis.</p>
+
+    <figure class="multimedia multimedia-audio">
+        <!-- Audio player -->
+        <figcaption class="credit">Bill Smith / NationSwell</figcaption>
+    </figure>
+
+    <p>Cras aliquam, risus eu scelerisque adipiscing, lectus enim lobortis libero, in bibendum nunc arcu eget ipsum.
+        Vivamus id elementum odio. Cras lacinia aliquet ultrices. Praesent facilisis augue vel adipiscing posuere. Donec
+        tortor arcu, molestie pretium lacus nec, egestas laoreet nibh. Maecenas dignissim, velit luctus vehicula
+        volutpat, nibh lacus fermentum leo, at malesuada felis leo eu ipsum. Mauris ornare rhoncus nisi non venenatis.
+        Vestibulum viverra magna lacus, non dapibus nibh placerat ac. Proin eget sapien libero. Cras nibh tellus, mattis
+        id eleifend in, malesuada eu massa.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit porttitor quam, vel rhoncus orci vehicula
+        et. Donec sagittis sollicitudin odio ac feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Nam semper ipsum ac tempor luctus. Ut consequat suscipit felis. Ut placerat enim vel aliquet eleifend.
+        Suspendisse dictum sed nulla eget egestas. Nam nunc nisi, condimentum et imperdiet quis, rutrum ut tortor.</p>
+
+    <div class="module module--list related-series fr">
+        <h3 class="hd- module__heading">Related Series</h3>
+
+        <ul class="story-list">
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">Trekkers Featured On Fox</h4>
+                        </header>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article class="story story--link">
+                    <a href="#" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd- story__hed">GirlTrek City Reps Train To Lead Walking Revolution</h4>
+                            <span class="byline">by Greg Behrman</span>
+                        </header>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </div>
+
+    <figure class="multimedia multimedia--with-caption multimedia--video">
+        <!-- Video player-->
+
+        <div class="caption">Angela Dixon, Living With Multiple Sclerosis</div>
+        <figcaption class="credit">Bill Smith / NationSwell</figcaption>
+    </figure>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eget ornare
+        libero, vitae convallis orci. Cras est tortor, auctor at erat sed, varius rutrum purus. Duis imperdiet diam
+        nisi, vel convallis arcu tristique sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Ut iaculis, elit sed scelerisque condimentum, metus purus congue orci, sed eleifend velit nisi
+        pulvinar odio. Sed dignissim ligula ut euismod faucibus. Vivamus nec elit quam. Ut ultrices urna nibh, et
+        lobortis risus commodo eget. Quisque sagittis, ligula non porttitor auctor, nisi eros imperdiet nibh, eget
+        pharetra odio nisi nec ante. Vestibulum venenatis est felis, id volutpat ante dictum a. Morbi et tempor
+        turpis.</p>
+
+    <p>Cras aliquam, risus eu scelerisque adipiscing, lectus enim lobortis libero, in bibendum nunc arcu eget ipsum.
+        Vivamus id elementum odio. Cras lacinia aliquet ultrices. Praesent facilisis augue vel adipiscing posuere. Donec
+        tortor arcu, molestie pretium lacus nec, egestas laoreet nibh. Maecenas dignissim, velit luctus vehicula
+        volutpat, nibh lacus fermentum leo, at malesuada felis leo eu ipsum. Mauris ornare rhoncus nisi non venenatis.
+        Vestibulum viverra magna lacus, non dapibus nibh placerat ac. Proin eget sapien libero. Cras nibh tellus, mattis
+        id eleifend in, malesuada eu massa.</p>
+    </div>
+    </div>
+    </article>
 
 {% endblock %}

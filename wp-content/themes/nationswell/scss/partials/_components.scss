@@ -1,7 +1,15 @@
 /* hero */
 .hero {
   background-color: $ns_navy3;
+  margin-bottom: 5rem;
+  height: 42.6rem;
   position: relative;
+
+  &.hero--image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /* rubric */
