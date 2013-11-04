@@ -70,9 +70,7 @@
 
   &.carousel__control--prev {
     left: 6rem;
-
-    &:hover {
-    }
+    text-shadow: 0px -2px 4px rgba(0,0,0, 0.4);
 
     .icon {
       @include transform(rotate(180deg));
@@ -81,6 +79,7 @@
 
   &.carousel__control--next {
     right: 6rem;
+    text-shadow: 0px 2px 4px rgba(0,0,0, 0.4);
   }
 
   .icon {
