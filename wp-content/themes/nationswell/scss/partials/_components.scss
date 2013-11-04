@@ -60,7 +60,7 @@
     font-size: 4.4rem;
     display: inline-block;
     vertical-align: bottom;
-    line-height: 3rem;
+    line-height: 3.4rem;
     margin: 0 1rem;
   }
 }
@@ -96,7 +96,7 @@
 
     &:before {
       font-size: 5.8rem;
-      line-height: 1.74;
+      line-height: 1.5;
     }
   }
 
@@ -185,7 +185,8 @@
         speak: none;
         font-family: 'icons';
         font-size: 1.5rem;
-        content:"\f111";
+        /* check is correct character after icon font additions */
+        content:"\f112";
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing:antialiased;
         -moz-osx-font-smoothing:grayscale;
@@ -294,6 +295,12 @@
       color: $white;
       display: block;
       margin-top: 12rem;
+    }
+
+    &:hover {
+      .story__hed {
+        color: $ns_blue4;
+      }
     }
   }
 }

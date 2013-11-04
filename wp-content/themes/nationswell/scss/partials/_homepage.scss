@@ -22,6 +22,13 @@
       float: left;
 
       &:hover {
+        .story__hed {
+          color: $ns_blue5;
+        }
+      }
+
+      .story__hed {
+        @include transition(all 0.3s ease-in-out);
       }
 
       &.hero__entry--1 {
@@ -167,6 +174,7 @@
 .story--tease {
   background-color: transparent;
   padding: 2rem 0;
+  margin-bottom: 3.4rem;
   position: relative;
 
   @include transition(all 0.3s ease-in-out);
