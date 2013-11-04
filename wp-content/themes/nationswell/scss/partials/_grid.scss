@@ -6,6 +6,16 @@
   @include outer-container;
 }
 
+#more-stories {
+  .category-list {
+    @include span-columns(2);
+  }
+
+  .most-popular {
+    @include span-columns(10);
+  }
+}
+
 .river {
   > .story-list {
     @include span-columns(12);
@@ -24,5 +34,4 @@
       @include span-columns(4);
     }
   }
-
 }

@@ -6,6 +6,29 @@
 }
 
 .btn {
+  &.btn--view-all {
+    background-color: $ns_navy0;
+    color: $ns_blue1;
+    display: inline-block;
+    font-family: $gudea;
+    font-size: 1.6rem;
+    font-weight: $bold;
+    padding: 1.2rem 3.4rem 1.2rem 1.2rem;
+    position: relative;
+
+    &:before {
+      font-family: 'icons';
+      font-size: 2rem;
+      position: absolute;
+      right: 1.2rem;
+    }
+
+    &:hover {
+      background-color: $ns_blue1;
+      color: $white;
+    }
+  }
+
   &.btn--bar {
     color: $white;
     display: block;

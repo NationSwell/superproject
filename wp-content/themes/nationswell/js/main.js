@@ -5,6 +5,28 @@
             $('#search').toggleClass('open');
         });
 
+        // toggle more stories panel
+        $(".toggle-collapse").on("click", function(e) {
+            var $this = $(this),
+                target = $this.data("target"),
+                $target = $(target),
+                scrolled = $target.offset().top < $(document).scrollTop(),
+                open = $target.hasClass('open');
+
+            if(scrolled && !open) {
+                $target.ScrollTo({
+                    duration: 600,
+                    easing: 'swing',
+                    offsetTop: '80px'
+                });
+            }
+
+            $this.toggleClass('toggled');
+            $target.toggleClass('open');
+
+            e.preventDefault();
+        });
+
         // init slideshows
         $(".carousel").each(function () {
             var $this = $(this),
