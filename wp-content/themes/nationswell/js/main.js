@@ -9,17 +9,7 @@
         $(".toggle-collapse").on("click", function(e) {
             var $this = $(this),
                 target = $this.data("target"),
-                $target = $(target),
-                scrolled = $target.offset().top < $(document).scrollTop(),
-                open = $target.hasClass('open');
-
-            if(scrolled && !open) {
-                $target.ScrollTo({
-                    duration: 600,
-                    easing: 'swing',
-                    offsetTop: '80px'
-                });
-            }
+                $target = $(target);
 
             $this.toggleClass('toggled');
             $target.toggleClass('open');
