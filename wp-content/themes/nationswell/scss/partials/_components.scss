@@ -73,6 +73,7 @@
   }
 }
 
+/* sponsor */
 .sponsor {
   font-family: $gudea;
   font-size: 1.3rem;
@@ -149,6 +150,7 @@
 
 /* module */
 .module {
+  display: block;
   position: relative;
   width: auto;
 
@@ -235,6 +237,11 @@
       .indicator {
         background-color: $ns_red;
       }
+
+      .module__heading {
+        background-color: $ns_red0;
+        box-shadow: 0 2px 0 $gray6, 0 5px 0 $ns_red0;
+      }
     }
   }
 
@@ -292,8 +299,9 @@
   }
 
   &.module--pull {
-    /* hiding for now until I can arrange them around real styled content */
-    display: none;
+    float: right;
+    margin: -37.6rem;
+    width: 32rem;
   }
 
   &.module--image-overlay {
@@ -333,6 +341,7 @@
   }
 }
 
+/* pullquote */
 .pullquote {
   position: relative;
   margin: 4.2rem 0 5rem;
@@ -365,5 +374,20 @@
     font-weight: $bold;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* tags */
+.tag {
+  background-color: $ns_red;
+  color: $white;
+  display: block;
+  font-family: $montserrat;
+  font-size: 1.4rem;
+  padding: 0.6rem 0.8rem;
+
+  &:hover {
+    background-color: $ns_blue1;
+    color: $white;
   }
 }

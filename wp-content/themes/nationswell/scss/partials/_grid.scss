@@ -58,10 +58,6 @@
   @include span-columns(6);
 }
 
-.story__content {
-  @include span-columns(6 of 6);
-}
-
 // multimedia
 .multimedia {
   .caption {
@@ -86,5 +82,12 @@
         @include span-columns(2 of 6);
       }
     }
+  }
+}
+
+// story social buttons
+.story__social {
+  .btn--bar {
+    @include span-columns(3 of 6);
   }
 }
