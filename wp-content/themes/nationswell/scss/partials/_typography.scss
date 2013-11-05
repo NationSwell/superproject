@@ -7,3 +7,18 @@ a {
     color: $ns_blue1;
   }
 }
+
+.caption {
+  color: $gray0;
+  font-family: $gudea;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.credit,
+.byline {
+  color: $gray1;
+  font-family: $gudea;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}

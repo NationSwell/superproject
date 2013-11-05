@@ -111,3 +111,14 @@
   font-weight: $regular;
   -webkit-font-smoothing: antialiased;
 }
+
+.hd-m {
+  background-color: $ns_red;
+  color: $white;
+  display: inline-block;
+  font-family: $oswald;
+  font-size: 2.2rem;
+  font-weight: $regular;
+  -webkit-font-smoothing: antialiased;
+  padding: 1rem 1.6rem;
+}

@@ -6,12 +6,16 @@
 }
 
 .story--page {
-  .story__hed {
-    margin-bottom: 3.4rem;
-  }
+  .story__container {
+    > header {
+      .story__hed {
+        margin-bottom: 3.4rem;
+      }
 
-  .story__dek {
-    margin-bottom: 4.6rem;
+      .story__dek {
+        margin-bottom: 4.6rem;
+      }
+    }
   }
 
   .story__content {
@@ -40,4 +44,20 @@
       }
     }
   }
+}
+
+.multimedia {
+  margin: 5rem 0;
+
+  figcaption {
+    margin-top: 0.8rem;
+  }
+
+  .credit {
+    text-align: right;
+  }
+}
+
+.multimedia__heading {
+  margin-bottom: 2.2rem;
 }

@@ -61,3 +61,30 @@
 .story__content {
   @include span-columns(6 of 6);
 }
+
+// multimedia
+.multimedia {
+  .caption {
+    @include span-columns(4 of 6);
+
+    + .credit {
+      @include shift(0);
+    }
+  }
+
+  .credit {
+    @include span-columns(2 of 6);
+    @include shift(4);
+  }
+}
+
+// modules
+.module {
+  &.module--list {
+    &.module--horizontal {
+      li {
+        @include span-columns(2 of 6);
+      }
+    }
+  }
+}
