@@ -278,6 +278,17 @@
         }
       }
     }
+
+    &.module--horizontal {
+      margin: 5rem 0;
+
+      .story-list {
+        li {
+          display: inline-block;
+          border-bottom: 0 none;
+        }
+      }
+    }
   }
 
   &.module--pull {
