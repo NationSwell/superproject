@@ -17,13 +17,14 @@
 @import "partials/icons";
 @import "partials/buttons";
 @import "partials/nav";
+@import "partials/more-stories";
 @import "partials/footer";
 @import "partials/components";
 @import "partials/carousels";
 
 // Page partials
-@import "partials/homepage";
+@import "partials/page/homepage";
+@import "partials/page/story";
 
 // Third-party
 // ...
-

@@ -36,11 +36,11 @@
         </div>
     </div>-->
 
-    <div id="page-content">
+    <main id="page-content" role="main">
         {% block content %}
             Sorry, no content
         {% endblock %}
-    </div>
+    </main>
 
     {% include 'footer.twig' %}
 </div>
@@ -55,6 +55,7 @@
 <script src="/{{ theme_dir }}/js/vendor/jquery.transit.min.js"></script>
 <script src="/{{ theme_dir }}/js/vendor/jquery.touchSwipe.min.js"></script>
 <script src="/{{ theme_dir }}/js/vendor/jquery.carouFredSel-6.2.1.min.js"></script>
+<script src="/{{ theme_dir }}/js/vendor/jquery.scrollto.js"></script>
 
 <script src="/{{ theme_dir }}/js/main.js"></script>
 </body>

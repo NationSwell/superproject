@@ -33,7 +33,11 @@
   padding-top: 2.3rem;
   vertical-align: middle;
 
-  &:hover {}
+
+  &.toggled {
+    @include transform(rotate(90deg) scale(0.6, 1.4));
+    @include transform-origin(54% 60%);
+  }
 }
 
 /* social links */

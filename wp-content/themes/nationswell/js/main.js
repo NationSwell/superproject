@@ -5,6 +5,18 @@
             $('#search').toggleClass('open');
         });
 
+        // toggle more stories panel
+        $(".toggle-collapse").on("click", function(e) {
+            var $this = $(this),
+                target = $this.data("target"),
+                $target = $(target);
+
+            $this.toggleClass('toggled');
+            $target.toggleClass('open');
+
+            e.preventDefault();
+        });
+
         // init slideshows
         $(".carousel").each(function () {
             var $this = $(this),

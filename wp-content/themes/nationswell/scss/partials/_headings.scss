@@ -4,6 +4,7 @@
   font-size: 6rem;
   line-height: 1;
   font-weight: $regular;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hd-b {
@@ -12,6 +13,7 @@
   font-size: 3.4rem;
   line-height: 1.2;
   font-weight: $regular;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hd-c {
@@ -20,6 +22,7 @@
   font-size: 1.4rem;
   line-height: 1;
   font-weight: $bold;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hd-d {
@@ -36,8 +39,9 @@
   font-family: $oswald;
   font-size: 1.8rem;
   line-height: 1;
-  font-weight: $light;
+  font-weight: $regular;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hd-f {
@@ -50,6 +54,7 @@
   font-weight: $bold;
   line-height: 1.8;
   padding: 1rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hd-g {
@@ -59,6 +64,7 @@
   font-weight: $regular;
   line-height: 1;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hd-h {
@@ -67,4 +73,41 @@
   font-size: 1.8rem;
   font-weight: $bold;
   line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hd-i {
+  color: $white;
+  font-family: $oswald;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: $regular;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hd-j {
+  color: $ns_black;
+  font-family: $oswald;
+  font-size: 5.4rem;
+  font-weight: $regular;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hd-k {
+  color: $ns_black;
+  font-family: $gudea;
+  font-size: 2.4rem;
+  font-weight: $regular;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hd-l {
+  color: $ns_black;
+  font-family: $oswald;
+  font-size: 3.4rem;
+  line-height: 1.3;
+  font-weight: $regular;
+  -webkit-font-smoothing: antialiased;
 }

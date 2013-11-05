@@ -1,7 +1,15 @@
 /* hero */
 .hero {
   background-color: $ns_navy3;
+  margin-bottom: 5rem;
+  height: 42.6rem;
   position: relative;
+
+  &.hero--image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /* rubric */
@@ -60,7 +68,7 @@
     font-size: 4.4rem;
     display: inline-block;
     vertical-align: bottom;
-    line-height: 3rem;
+    line-height: 3.4rem;
     margin: 0 1rem;
   }
 }
@@ -96,7 +104,7 @@
 
     &:before {
       font-size: 5.8rem;
-      line-height: 1.74;
+      line-height: 1.5;
     }
   }
 
@@ -185,7 +193,8 @@
         speak: none;
         font-family: 'icons';
         font-size: 1.5rem;
-        content:"\f111";
+        /* check is correct character after icon font additions */
+        content:"\f112";
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing:antialiased;
         -moz-osx-font-smoothing:grayscale;
@@ -271,6 +280,11 @@
     }
   }
 
+  &.module--pull {
+    /* hiding for now until I can arrange them around real styled content */
+    display: none;
+  }
+
   &.module--image-overlay {
     background-size: cover;
     background-position: center;
@@ -285,6 +299,10 @@
       margin: 0;
     }
 
+    .story__hed {
+      text-shadow: 0px 1px 2px rgba(0,0,0, 0.2);
+    }
+
     .story__hed,
     .story__dek {
       color: $white;
@@ -295,5 +313,46 @@
       display: block;
       margin-top: 12rem;
     }
+
+    &:hover {
+      .story__hed {
+        color: $ns_blue4;
+      }
+    }
+  }
+}
+
+.pullquote {
+  position: relative;
+  margin: 4.2rem 0 5rem;
+  padding-left: 7.8rem;
+
+  &:before {
+    background-color: $ns_red;
+    font-family: 'icons';
+    color: $white;
+    font-size: 4.2rem;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.46;
+    width: 5.6rem;
+    height: 5.6rem;
+    position: absolute;
+    left: 0;
+    top: -1.2rem;
+  }
+
+  .pullquote__quote {
+    margin-bottom: 2rem;
+  }
+
+  .pullquote__attribution {
+    color: $ns_red;
+    font-family: $oswald;
+    font-size: 1.8rem;
+    font-weight: $bold;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
   }
 }

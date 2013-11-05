@@ -1,0 +1,43 @@
+.hero--story {
+  &.hero--image {
+    height: 42.6rem;
+    width: 100%;
+  }
+}
+
+.story--page {
+  .story__hed {
+    margin-bottom: 3.4rem;
+  }
+
+  .story__dek {
+    margin-bottom: 4.6rem;
+  }
+
+  .story__content {
+    > p {
+      font-family: $gudea;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      margin-bottom: 2.2rem;
+
+      /* drop cap */
+      &:first-child:first-letter {
+        float: left;
+        font-family: $oswald ;
+        font-size: 7.8rem;
+        line-height: 1;
+        margin-right: 2.6rem;
+      }
+
+      a {
+        color: $ns_blue1;
+        font-weight: $bold;
+
+        &:hover {
+          color: $ns_red;
+        }
+      }
+    }
+  }
+}

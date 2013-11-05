@@ -1,5 +1,6 @@
 .idea
 .sass-cache/
+nationswell/css
 icons-*.*
 
 node_modules
@@ -105,6 +106,3 @@ wp-content/mysql.sql
 *.asf
 *.wmv
 *.avi
-
-#theme specific
-wp-content/themes/nationswell/css
