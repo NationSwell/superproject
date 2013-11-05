@@ -19,6 +19,8 @@
   }
 
   .story__content {
+    margin-bottom: 7.2rem;
+
     > p {
       font-family: $gudea;
       font-size: 1.8rem;
@@ -46,18 +48,169 @@
   }
 }
 
+/* multimedia */
 .multimedia {
   margin: 5rem 0;
 
+  .multimedia__content {
+    display: block;
+  }
+
   figcaption {
-    margin-top: 0.8rem;
+    margin-top: 1rem;
   }
 
   .credit {
     text-align: right;
   }
+
+  &.multimedia--audio {
+    .multimedia__content {
+      border-bottom: 1px solid $gray6;
+    }
+  }
 }
 
 .multimedia__heading {
   margin-bottom: 2.2rem;
+}
+
+/* tags */
+.story__tags {
+  border-bottom: 3px solid $gray6;
+  margin-bottom: 5rem;
+  padding-bottom: 1.4rem;
+
+  .tags-list {
+    &:before {
+      content: 'View more NationSwell stories in:';
+      display: inline-block;
+      color: $gray1;
+      font-family: $gudea;
+      font-size: 1.6rem;
+      margin-right: 1.8rem;
+      vertical-align: middle;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}
+
+/* author */
+.author {
+  background-color: $gray7;
+  margin-bottom: 7.2rem;
+  padding: 2.6rem 3.4rem;
+}
+
+.author__portrait {
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.author__contact {}
+
+.author__a {
+  text-align: center;
+}
+
+.author__b {
+  padding-top: 0.6rem;
+  padding-left: 3.4rem;
+  overflow: hidden;
+}
+
+.author__url {
+  color: $ns_blue1;
+  text-align: center;
+  font-family: $gudea;
+  font-size: 1.4rem;
+  font-weight: $bold;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    color: $ns_red;
+  }
+}
+
+.author__social {
+  margin-top: 1.2rem;
+
+  li {
+    display: inline-block;
+    border-left: 1px solid $gray6;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+    &:first-child {
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+
+  .icon {
+    color: $gray4;
+    font-size: 2rem;
+    text-align: center;
+
+    &:hover {
+      color: $ns_blue1;
+    }
+  }
+}
+
+.author__byline {
+  &:before {
+    color: $ns_red;
+    content: 'Written by';
+    display: block;
+    font-family: $montserrat;
+    font-size: 1.8rem;
+    font-weight: $bold;
+    margin-bottom: 0.4rem;
+  }
+
+  margin-bottom: 1.4rem;
+}
+
+.author__bio {
+  color: $gray1;
+  font-family: $gudea;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+// social
+.story__social {
+  display: block;
+  margin-bottom: 5rem;
+}
+
+// take action
+.take-action {
+  .take-action__heading {
+    text-align: center;
+    margin-bottom: 3.4rem;
+  }
+
+  .take-action__a {
+    float: left;
+    width: 25.6rem;
+  }
+
+  .take-action__b {
+    padding-left: 2.4rem;
+    overflow: hidden;
+  }
+
+  p {
+    color: $ns_black;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 2.2rem;
+  }
 }
