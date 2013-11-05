@@ -22,3 +22,36 @@ a {
   font-size: 1.4rem;
   line-height: 1.4;
 }
+
+.source {
+  color: $gray1;
+  font-family: $gudea;
+  font-size: 1.4rem;
+  font-weight: $regular;
+
+  &:before {
+    content: '';
+    height: 1.6rem;
+    width: 1.6rem;
+    display: inline-block;
+    margin-right: 0.6rem;
+    position: relative;
+    top: 2px;
+  }
+
+  &.source--nyt:before {
+    content: url(../img/src_nyt.jpg);
+  }
+
+  &.source--npr:before {
+    content: url(../img/src_npr.jpg);
+  }
+
+  &.source--time:before {
+    content: url(../img/src_time.jpg);
+  }
+
+  &.source--mashable:before {
+    content: url(../img/src_mashable.jpg);
+  }
+}

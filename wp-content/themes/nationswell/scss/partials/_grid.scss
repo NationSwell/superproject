@@ -91,3 +91,12 @@
     @include span-columns(3 of 6);
   }
 }
+
+// more stories
+.story-list {
+  @include span-columns(12);
+
+  li {
+    @include span-columns(4 of 12);
+  }
+}

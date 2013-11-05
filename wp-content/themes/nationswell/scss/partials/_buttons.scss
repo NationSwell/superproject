@@ -6,6 +6,21 @@
 }
 
 .btn {
+  &.btn--solid {
+    background-color: $ns_red;
+    color: $white;
+    display: inline-block;
+    font-family: $oswald;
+    font-size: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      background-color: $ns_blue1;
+    }
+  }
+
   &.btn--view-all {
     background-color: $ns_navy0;
     color: $ns_blue1;

@@ -161,38 +161,6 @@
       margin-bottom: 1.2rem;
     }
   }
-
-}
-
-.story--tease {
-  background-color: transparent;
-  padding: 2rem 0;
-  margin-bottom: 3.4rem;
-  position: relative;
-
-  @include transition(all 0.3s ease-in-out);
-
-  &:hover {
-    .story__hed {
-      color: $ns_blue1;
-    }
-  }
-
-  .story__hed {
-    @include transition(all 0.15s ease-in-out);
-  }
-
-  .story__dek {
-    color: $ns_black;
-    font-family: $gudea;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    overflow: hidden;
-  }
-
-  .support-cause {
-    margin-top: 1.8rem;
-  }
 }
 
 /* join us module */
@@ -201,45 +169,4 @@
     margin-bottom: 2.1rem;
     width: auto;
   }
-}
-
-/* from our partners module */
-.story__hed {
-  margin-bottom: 1rem;
-}
-
-.source {
-  color: $gray1;
-  font-family: $gudea;
-  font-size: 1.4rem;
-  font-weight: $regular;
-
-  &:before {
-    content: '';
-    height: 1.6rem;
-    width: 1.6rem;
-    display: inline-block;
-    margin-right: 0.6rem;
-    position: relative;
-    top: 2px;
-  }
-
-  &.source--nyt:before {
-    content: url(../img/src_nyt.jpg);
-  }
-
-  &.source--npr:before {
-    content: url(../img/src_npr.jpg);
-  }
-
-  &.source--time:before {
-    content: url(../img/src_time.jpg);
-  }
-
-  &.source--mashable:before {
-    content: url(../img/src_mashable.jpg);
-  }
-}
-
-.featured-story {
 }

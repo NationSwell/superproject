@@ -23,6 +23,48 @@
   margin-bottom: 1.8rem;
 }
 
+.story--tease {
+  background-color: transparent;
+  padding: 2rem 0;
+  margin-bottom: 3.4rem;
+  position: relative;
+
+  @include transition(all 0.3s ease-in-out);
+
+  &:hover {
+    .story__hed {
+      color: $ns_blue1;
+    }
+  }
+
+  .story__feature {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .story__hed {
+    @include transition(all 0.15s ease-in-out);
+  }
+
+  .story__dek {
+    color: $ns_black;
+    font-family: $gudea;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    overflow: hidden;
+  }
+
+  .support-cause {
+    margin-top: 1.8rem;
+  }
+}
+
+.story__hed {
+  margin-bottom: 1rem;
+}
+
 /* support cause */
 .support-cause {
   .support-cause__heading {

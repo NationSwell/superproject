@@ -142,7 +142,7 @@
 
   li {
     display: inline-block;
-    border-left: 1px solid $gray6;
+    border-left: 1px solid $gray5;
     padding-left: 1rem;
     margin-left: 1rem;
 
@@ -156,6 +156,9 @@
     color: $gray4;
     font-size: 2rem;
     text-align: center;
+    line-height: 0.6;
+    vertical-align: middle;
+    height: 1.2rem;
 
     &:hover {
       color: $ns_blue1;
@@ -187,11 +190,14 @@
 // social
 .story__social {
   display: block;
-  margin-bottom: 5rem;
+  margin-bottom: 7.2rem;
 }
 
 // take action
-.take-action {
+.module.take-action {
+  margin-bottom: 5rem;
+  padding-bottom: 3.4rem;
+
   .take-action__heading {
     text-align: center;
     margin-bottom: 3.4rem;
@@ -203,7 +209,7 @@
   }
 
   .take-action__b {
-    padding-left: 2.4rem;
+    padding-left: 3.4rem;
     overflow: hidden;
   }
 
@@ -212,5 +218,38 @@
     font-size: 1.8rem;
     line-height: 1.4;
     margin-bottom: 2.2rem;
+  }
+}
+
+/* read next */
+.read-next {
+  padding-bottom: 2.2rem;
+
+  .read-next__heading {
+    display: block;
+    border-bottom: 3px solid $ns_black;
+    padding-bottom: 1.2rem;
+  }
+
+  li {
+    padding: 0 0.5rem;
+
+    &:first-child {
+      padding-left: 0;
+      padding-right: 1rem;
+    }
+
+    &:last-child {
+      padding-left: 1rem;
+      padding-right: 0;
+    }
+  }
+
+  .story--tease {
+    margin-bottom: 3.4rem;
+
+    .story__feature {
+      margin-bottom: -1.4rem;
+    }
   }
 }
