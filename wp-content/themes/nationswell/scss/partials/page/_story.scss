@@ -221,6 +221,23 @@
   }
 }
 
+/* prev/next */
+.prev-next {
+  .story--link {}
+
+  .prev-next__link {
+    &.prev-next__link--prev {}
+
+    &.prev-next__link--next {}
+  }
+
+  .story__header {}
+
+  .story__hed {}
+
+  .story__dek { }
+}
+
 /* read next */
 .read-next {
   padding-bottom: 2.2rem;
