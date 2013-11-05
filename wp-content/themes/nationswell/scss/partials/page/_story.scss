@@ -7,11 +7,11 @@
 
 .story--page {
   .story__hed {
-    margin-bottom: 1rem;
+    margin-bottom: 3.4rem;
   }
 
   .story__dek {
-    margin-bottom: 3rem;
+    margin-bottom: 4.6rem;
   }
 
   .story__content {
@@ -24,10 +24,19 @@
       /* drop cap */
       &:first-child:first-letter {
         float: left;
-        font-family: $gudea ;
+        font-family: $oswald ;
         font-size: 7.8rem;
-        line-height: 1.4;
-        margin-right: 2.2rem;
+        line-height: 1;
+        margin-right: 2.6rem;
+      }
+
+      a {
+        color: $ns_blue1;
+        font-weight: $bold;
+
+        &:hover {
+          color: $ns_red;
+        }
       }
     }
   }

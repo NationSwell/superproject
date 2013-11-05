@@ -41,11 +41,12 @@
     .story--tease {
       @include span-columns(8 of 8);
     }
-
-    .sidebar {
-      @include span-columns(4);
-    }
   }
+}
+
+// sidebar
+.sidebar {
+  @include span-columns(4);
 }
 
 // stories
@@ -53,6 +54,10 @@
   @include span-columns(2);
 }
 
-.story__content {
+.story__container {
   @include span-columns(6);
+}
+
+.story__content {
+  @include span-columns(6 of 6);
 }

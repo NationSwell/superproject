@@ -280,6 +280,11 @@
     }
   }
 
+  &.module--pull {
+    /* hiding for now until I can arrange them around real styled content */
+    display: none;
+  }
+
   &.module--image-overlay {
     background-size: cover;
     background-position: center;
@@ -314,5 +319,40 @@
         color: $ns_blue4;
       }
     }
+  }
+}
+
+.pullquote {
+  position: relative;
+  margin: 4.2rem 0 5rem;
+  padding-left: 7.8rem;
+
+  &:before {
+    background-color: $ns_red;
+    font-family: 'icons';
+    color: $white;
+    font-size: 4.2rem;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.46;
+    width: 5.6rem;
+    height: 5.6rem;
+    position: absolute;
+    left: 0;
+    top: -1.2rem;
+  }
+
+  .pullquote__quote {
+    margin-bottom: 2rem;
+  }
+
+  .pullquote__attribution {
+    color: $ns_red;
+    font-family: $oswald;
+    font-size: 1.8rem;
+    font-weight: $bold;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
   }
 }
