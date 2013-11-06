@@ -102,3 +102,9 @@
     }
   }
 }
+
+.prev-next {
+  li {
+    @include span-columns(3 of 6);
+  }
+}

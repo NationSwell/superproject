@@ -238,7 +238,7 @@
         font-family: 'icons';
         font-size: 1.5rem;
         /* check is correct character after icon font additions */
-        content:"\f112";
+        content:"\f114";
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing:antialiased;
         -moz-osx-font-smoothing:grayscale;
@@ -431,5 +431,94 @@
   &:hover {
     background-color: $ns_blue1;
     color: $white;
+  }
+}
+
+/* prev/next */
+.prev-next {
+  border-top: 7px solid $black;
+  padding-top: 2rem;
+  margin-bottom: 7.2rem;
+
+  li {
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  .story--link {
+    .story__hed {
+      @include transition(all 0.15s ease-in-out);
+    }
+
+    &:hover {
+      .story__hed {
+        color: $ns_blue1;
+      }
+    }
+  }
+
+  .prev-next__link {
+    color: $ns_blue1;
+    font-family: $montserrat;
+    font-size: 1.4rem;
+    font-weight: $bold;
+    margin-bottom: 0.4rem;
+    -webkit-font-smoothing: antialiased;
+
+    .icon {
+      font-size: 2.6rem;
+      line-height: 0.74;
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    &.prev-next__link--prev {
+      .icon {
+        margin-right: 0.6rem;
+      }
+    }
+
+    &.prev-next__link--next {
+      .icon {
+        margin-left: 0.6rem;
+      }
+    }
+  }
+
+  .story__hed {}
+
+  .story__dek { }
+}
+
+/* read next */
+.read-next {
+  padding-bottom: 2.2rem;
+
+  .read-next__heading {
+    display: block;
+    border-bottom: 3px solid $ns_black;
+    padding-bottom: 1.2rem;
+  }
+
+  li {
+    padding: 0 0.5rem;
+
+    &:first-child {
+      padding-left: 0;
+      padding-right: 1rem;
+    }
+
+    &:last-child {
+      padding-left: 1rem;
+      padding-right: 0;
+    }
+  }
+
+  .story--tease {
+    margin-bottom: 3.4rem;
+
+    .story__feature {
+      margin-bottom: -1.4rem;
+    }
   }
 }

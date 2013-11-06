@@ -128,4 +128,14 @@
   font-family: $oswald;
   font-size: 3.4rem;
   font-weight: $regular;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hd-o {
+  color: $ns_navy2;
+  font-family: $oswald;
+  font-size: 1.8rem;
+  font-weight: $regular;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
