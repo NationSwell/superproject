@@ -52,9 +52,13 @@
     padding: 1.4rem 0 1rem;
     position: relative;
     text-align: center;
-    width: 28.1625rem;
 
     @include transition(none);
+
+    &.btn--facebook,
+    &.btn--twitter {
+      width: 28.1625rem;
+    }
 
     &:before {
       font-family: 'icons';
@@ -178,6 +182,53 @@
 
       &:before {
         bottom: -11rem;
+      }
+    }
+  }
+
+  &.btn--take-action {
+    background-color: $ns_red;
+    color: $white;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: $oswald;
+    padding: 1.2rem;
+    position: relative;
+    top: 2.4rem;
+    margin-bottom: -1rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+
+    @include transition(none);
+
+    &:after {
+      background-color: $ns_red1;
+      content: '';
+      display: block;
+      height: 0.5rem;
+      width: 100%;
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+    }
+
+    &:hover {
+      top: 2.6rem;
+
+      &:after {
+        height: 0.3rem;
+        bottom: -0.3rem;
+      }
+    }
+
+    &:active {
+      top: 2.9rem;
+      box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0,0,0, 0.2);
+
+      &:after {
+        height: 0;
+        bottom: 0;
       }
     }
   }

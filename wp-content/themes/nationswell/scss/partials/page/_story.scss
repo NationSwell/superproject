@@ -78,7 +78,37 @@
 
 /* sticky */
 .story__sticky {
+  display: block;
+  position: relative;
+  padding: 0 1rem;
+}
 
+.sticky-social {
+  margin-bottom: 5rem;
+}
+
+.sticky-take-action {
+  background-color: $ns_navy2;
+  /* pragmatic, for z-index and reasonable vert-centering */
+  background-image: url(../img/take-action-flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.sticky-take-action__heading {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.sticky-take-action__action {
+  position: relative;
+  color: $white;
+  font-family: $gudea;
+  font-size: 1.6rem;
+  line-height: 1.25;
 }
 
 /* tags */
