@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("../fonts/icons-05359c723d0b04321bf9d9ee23d3a727.eot");
-	src:url("../fonts/icons-05359c723d0b04321bf9d9ee23d3a727.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/icons-05359c723d0b04321bf9d9ee23d3a727.woff") format("woff"),
-		url("../fonts/icons-05359c723d0b04321bf9d9ee23d3a727.ttf") format("truetype"),
-		url("../fonts/icons-05359c723d0b04321bf9d9ee23d3a727.svg?#icons") format("svg");
+	src:url("../fonts/icons-284d8c66af403723076bbad1668d88d2.eot");
+	src:url("../fonts/icons-284d8c66af403723076bbad1668d88d2.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/icons-284d8c66af403723076bbad1668d88d2.woff") format("woff"),
+		url("../fonts/icons-284d8c66af403723076bbad1668d88d2.ttf") format("truetype"),
+		url("../fonts/icons-284d8c66af403723076bbad1668d88d2.svg?#icons") format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -26,78 +26,66 @@
 
 
 // Icons
-.icon_arrow-circle-left:before {
+.icon_camera:before {
 	content:"\f100";
 }
-.icon_arrow-circle-right:before {
+.icon_cart:before {
 	content:"\f101";
 }
-.icon_arrow-left:before {
+.icon_close:before {
 	content:"\f102";
 }
-.icon_arrow-right:before {
+.icon_comment:before {
 	content:"\f103";
 }
-.icon_camera:before {
+.icon_donate:before {
 	content:"\f104";
 }
-.icon_cart:before {
+.icon_envelope:before {
 	content:"\f105";
 }
-.icon_close:before {
+.icon_facebook:before {
 	content:"\f106";
 }
-.icon_comment:before {
+.icon_fullscreen:before {
 	content:"\f107";
 }
-.icon_donate:before {
+.icon_hamburger:before {
 	content:"\f108";
 }
-.icon_envelope:before {
+.icon_load-more:before {
 	content:"\f109";
 }
-.icon_facebook:before {
+.icon_nationswell-flag:before {
 	content:"\f10a";
 }
-.icon_fullscreen:before {
+.icon_play:before {
 	content:"\f10b";
 }
-.icon_hamburger:before {
+.icon_quote:before {
 	content:"\f10c";
 }
-.icon_load-more:before {
+.icon_search:before {
 	content:"\f10d";
 }
-.icon_nationswell-flag:before {
+.icon_separator:before {
 	content:"\f10e";
 }
-.icon_play:before {
+.icon_series:before {
 	content:"\f10f";
 }
-.icon_quote:before {
+.icon_star:before {
 	content:"\f110";
 }
-.icon_search:before {
+.icon_tumblr:before {
 	content:"\f111";
 }
-.icon_separator:before {
+.icon_twitter:before {
 	content:"\f112";
 }
-.icon_series:before {
+.icon_volume:before {
 	content:"\f113";
 }
-.icon_star:before {
-	content:"\f114";
-}
-.icon_tumblr:before {
-	content:"\f115";
-}
-.icon_twitter:before {
-	content:"\f116";
-}
-.icon_volume:before {
-	content:"\f117";
-}
 .icon_write:before {
-	content:"\f118";
+	content:"\f114";
 }
