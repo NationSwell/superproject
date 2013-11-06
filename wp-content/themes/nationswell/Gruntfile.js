@@ -3,18 +3,11 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        uglify: {
-            options: {},
-            build: {
-                src: '',
-                dest: ''
-            }
-        },
-        concat: {
-            options: {},
-            build: {
-                src: [],
-                dest: ''
+        compass: {
+            dist: {
+                options: {
+                    config: 'config.rb'
+                }
             }
         },
         webfont: {
@@ -28,13 +21,29 @@ module.exports = function(grunt) {
                     htmlDemo: false
                 }
             }
+        },
+        watch: {
+            css: {
+                files: '**/*.scss',
+                tasks: ['compass']
+            },
+            icons: {
+                files: ['icons/*.svg'],
+                tasks: ['icons']
+            }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-webfont');
 
-    grunt.registerTask('default', ['uglify','concat']);
-    grunt.registerTask('icons', 'webfont');
+
+    grunt.event.on('watch', function(action, filepath, target) {
+        grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+    });
+
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-webfont');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+
+    grunt.registerTask('default', ['webfont','compass']);
+    grunt.registerTask('icons', ['webfont','compass']);
 };
