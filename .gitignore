@@ -1,7 +1,5 @@
 .idea
 .sass-cache/
-nationswell/css
-icons-*.*
 
 node_modules
 
@@ -71,6 +69,7 @@ wp-content/mysql.sql
 /wp-content/themes/twentytwelve/
 /wp-content/themes/index.php
 /wp-content/plugins/index.php
+/media
 
 # large/disallowed file types
 # a CDN should be used for these
