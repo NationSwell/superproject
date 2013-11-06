@@ -92,11 +92,13 @@
   }
 }
 
-// more stories
-.story-list {
-  @include span-columns(12);
+// read next
+.read-next {
+  .story-list {
+    @include span-columns(12);
 
-  li {
-    @include span-columns(4 of 12);
+    li {
+      @include span-columns(4 of 12);
+    }
   }
 }
