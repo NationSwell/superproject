@@ -94,6 +94,46 @@
     }
   }
 
+  &.btn--square {
+    color: $white;
+    display: block;
+    font-family: $oswald;
+    font-size: 1.6rem;
+    font-weight: $regular;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto 0.3rem;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 0rem;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include transition(all 0.15s ease-in-out);
+    }
+
+    &:before {
+      display: block;
+      font-family: 'icons';
+      font-size: 5rem;
+      padding-top: 1.6rem;
+    }
+
+    &:hover {
+      &:after {
+        height: 0.5rem;
+      }
+    }
+  }
+
   &.btn--facebook {
     background-color: #5973aa;
 

@@ -131,7 +131,6 @@
 
 /* indicator */
 .indicator {
-  background-color: $ns_blue1;
   margin: 0 auto;
   display: block;
   border-radius: 50%;
@@ -139,6 +138,14 @@
 
   &:before {
     color: $white;
+  }
+
+  &.indicator--blue {
+    background-color: $ns_blue1;
+  }
+
+  &.indicator--red {
+    background-color: $ns_red;
   }
 
   &.indicator--module {
@@ -187,6 +194,14 @@
         font-weight: $regular;
       }
     }
+  }
+
+  &.indicator--take-action {
+    width: 5.2rem;
+    height: 5.2rem;
+    position: relative;
+    top: -2rem;
+    margin: 0 auto;
   }
 }
 
