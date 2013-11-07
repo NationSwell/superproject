@@ -70,25 +70,10 @@
             });
         });
 
-        $('.story__sticky-container').waypoint('sticky', {
-            wrapper: '<div class="story__stick" />',
-            stuckClass: 'stuck',
-            offset: 50
-        });
-
-        var $storyContainer = $('.story--page'),
-            $sharebar = $('.story__sticky-container');
-
-        $storyContainer.waypoint(function(direction){
-            $(this).toggleClass('bottomed', direction === 'down');
-        }, {
-            offset:function() {
-                return  $sharebar.outerHeight() - $(this).outerHeight() + 50;
-            }
-        });
+        var $sharebar = $('.story__sticky-container');
 
         $sharebar.waypoint('sticky', {
-            wrapper: '<div class="story__stick" />',
+            wrapper: '<div class="story__sticky" />',
             stuckClass: 'stuck',
             offset: 50
         });
