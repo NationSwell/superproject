@@ -1,25 +1,61 @@
 {% extends "base.twig" %}
 
 {% block content %}
-
     {% if story_page_header is not empty %}
+    <!-- image hero -->
+    {#<div class="hero hero--story hero--image" style="background-image: url({{ story_page_header[0].url|resize(1300, 600) }});">
+        <div class="hero-information">
+            <span class="icon icon_information hero-information__toggle z1"></span>
+            <div class="hero-information__outer">
+                <div class="container">
+                    <div class="hero-information__content">
+                        <p class="hero-information__caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <span class="hero-information__credit">Bill Smith / NationSwell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>#}
+
+    <!-- video hero -->
+    {#<div class="hero hero--story hero--video">
+        <div class="hero--video__container">
+            <script type="text/javascript" src="http://content.bitsontherun.com/players/IFdMpi2Y-1VeqOjCu.js"></script>
+        </div>
+
+        <div class="hero-information">
+            <span class="icon icon_information hero-information__toggle z1"></span>
+            <div class="hero-information__outer">
+                <div class="container">
+                    <div class="hero-information__content">
+                        <p class="hero-information__caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <span class="hero-information__credit">Bill Smith / NationSwell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>#}
+
+    <!-- carousel hero -->
     <div class="hero hero--story hero--carousel">
-        <div class="carousel carousel--full-width carousel--photo">
+        <div class="carousel carousel--full-width carousel--peek">
             <ul class="carousel__items">
                 <li class="carousel-item">
-                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/business);"></div>
+                    <div class="carousel-item__content">
+                        <div class="carousel--peek__image" style="background-image: url(http://lorempixel.com/1367/768/business);"></div>
+                    </div>
                 </li>
 
                 <li class="carousel-item">
-                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/768/1367/animals);"></div>
+                    <div class="carousel--peek__image" style="background-image: url(http://lorempixel.com/768/1367/animals);"></div>
                 </li>
 
                 <li class="carousel-item">
-                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/people);"></div>
+                    <div class="carousel--peek__image" style="background-image: url(http://lorempixel.com/1367/768/people);"></div>
                 </li>
 
                 <li class="carousel-item">
-                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/768/768/city);"></div>
+                    <div class="carousel--peek__image" style="background-image: url(http://lorempixel.com/768/768/city);"></div>
                 </li>
             </ul>
 
@@ -38,7 +74,10 @@
             <span class="icon icon_information hero-information__toggle z1"></span>
             <div class="hero-information__outer">
                 <div class="container">
-                    <p class="hero-information__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="hero-information__content">
+                        <p class="hero-information__caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <span class="hero-information__credit">Bill Smith / NationSwell</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,18 +88,20 @@
         <div class="container">
 
             <div class="story__sticky">
-                <div class="sticky-social">
-                    <a href="#" class="btn btn--facebook btn--square icon icon_facebook">share</a>
-                    <a href="#" class="btn btn--twitter btn--square icon icon_twitter">tweet</a>
-                </div>
+                <div class="story__sticky-container">
+                    <div class="sticky-social">
+                        <a href="#" class="btn btn--facebook btn--square icon icon_facebook">share</a>
+                        <a href="#" class="btn btn--twitter btn--square icon icon_twitter">tweet</a>
+                    </div>
 
-                <div class="sticky-take-action">
-                    <div class="indicator indicator--red indicator--take-action icon icon_write"></div>
+                    <div class="sticky-take-action">
+                        <div class="indicator indicator--red indicator--take-action icon icon_write"></div>
 
-                    <h4 class="hd-e sticky-take-action__heading">Support the school</h4>
-                    <span class="sticky-take-action__action">Write to your Congressman</span>
+                        <h4 class="hd-e sticky-take-action__heading">Support the school</h4>
+                        <span class="sticky-take-action__action">Write to your Congressman</span>
 
-                    <a href="#" class="btn btn--take-action">Take Action</a>
+                        <a href="#" class="btn btn--take-action">Take Action</a>
+                    </div>
                 </div>
             </div>
 
@@ -164,7 +205,7 @@
                     <p>And history — her history, the history of black women—was central from the start. The road trip traced the path of Harriet Tubman, from a Maryland general store where the trailblazer was hit on the head for trying to help another slave, to the civil-rights heroine’s Auburn, New York home—to her gravestone, which reads “Servant of God, Well Done.” If Tubman could rally the conscience of a nation, maybe her memory could help her spiritual descendents get women off the couch and on the road toward a better life.</p>
                     <p>“The inward idea of a personal fitness goal is not what motivates our members,” says Garrison, who was raised by her grandmother, along with 11 other kids, and has a slew of cousins who struggle with all manner of health woes. “We are not a workout group. We are an army of women who are sick and tired of being sick and tired.”</p>
 
-                    <figure class="multimedia multimedia--gallery">
+                    {#<figure class="multimedia multimedia--gallery">
                         <h3 class="hd-m multimedia__heading">GirlTrek Through The Years</h3>
 
                         <div class="carousel carousel--inline">
@@ -196,7 +237,7 @@
                         <figcaption class="cf">
                             <span class="credit">Bill Smith / NationSwell</span>
                         </figcaption>
-                    </figure>
+                    </figure>#}
 
                     <p>GirlTrek took its first steps in Bridgeport, Connecticut, where Dixon was working with a charter school at the time. Girls signed up; hikes were had. But something was wrong.  The founders quickly realized the program would require discipline and follow-through—the sort of thing that would be hard to accomplish without the support of the girls’ parents. “While it was seemingly transformative for a lot of the girls who went on these hikes with us, it didn’t seem fair to those girls that they had to be the health advocates in their families,” Dixon said.  Dixon and Garrison decided to tweak the formula: target the mothers. The cubs will fall in line.</p>
 
@@ -219,7 +260,7 @@
                         <h3 class="hd-m multimedia__heading">Angela Dixon, Living with Multiple Sclerosis</h3>
 
                         <div class="multimedia__content">
-                            <img src="http://lorempixel.com/588/302">
+                            <script type="text/javascript" src="http://content.bitsontherun.com/players/IFdMpi2Y-1VeqOjCu.js"></script>
                         </div>
 
                         <figcaption class="cf">

@@ -22,11 +22,11 @@
             var $this = $(this),
                 $carousel = $this.find(".carousel__items");
 
-            var isPhoto = $this.hasClass('carousel--photo'),
+            var isPeek = $this.hasClass('carousel--peek'),
                 isSeries = $this.hasClass('carousel--series');
 
             function highlight(items) {
-                if(isPhoto) {
+                if(isPeek) {
                     items.filter(":eq(1)").addClass('active');
                 } else {
                     items.addClass('active');
@@ -45,8 +45,8 @@
                 width: '100%',
                 transition: true,
                 items: {
-                    visible: isPhoto ? 3 : 1,
-                    start: isPhoto ? -1 : 1
+                    visible: isPeek ? 3 : 1,
+                    start: isPeek ? -1 : 1
                 },
                 scroll: {
                     items: 1,
@@ -68,6 +68,12 @@
                     button: $this.find('.carousel__control--next')
                 }
             });
+        });
+
+        $('.story__sticky-container').waypoint('sticky', {
+            wrapper: '<div class="story__stick" />',
+            stuckClass: 'stuck',
+            offset: 60
         });
     });
 })(jQuery);

@@ -1,15 +1,8 @@
 /* hero */
 .hero {
-  background-color: $ns_navy3;
+  background-color: $ns_navy0;
   margin-bottom: 5rem;
-  height: 42.6rem;
   position: relative;
-
-  &.hero--image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
 /* rubric */
@@ -370,7 +363,8 @@
     position: relative;
 
     .story {
-      background-color: rgba(0,0,0, 0.5);
+      // $ns_navy0 in rgba
+      background-color: rgba(6,24,34, 0.6);
       padding: 3.4rem;
       display: block;
       float: none;

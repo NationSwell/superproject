@@ -168,7 +168,7 @@
   }
 }
 
-.carousel--photo {
+.carousel--peek {
   .carousel-item {
     width: 94rem;
     height: 54rem;
@@ -184,7 +184,7 @@
     }
   }
 
-  .carousel--photo__image {
+  .carousel--peek__image {
     width: 94rem;
     height: 54rem;
     background-repeat: no-repeat;
@@ -193,7 +193,8 @@
   }
 
   .carousel-item__overlay {
-    background-color: rgba(0,0,0, 0.5);
+    // $ns_navy0 in rgba
+    background-color: rgba(6,24,34, 0.6);
 
     @include transition(all 0.3s ease-in-out);
   }
