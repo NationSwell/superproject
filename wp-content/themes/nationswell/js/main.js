@@ -22,7 +22,8 @@
             var $this = $(this),
                 $carousel = $this.find(".carousel__items");
 
-            var isPhotoStory = $this.hasClass('carousel--photo');
+            var isPhotoStory = $this.hasClass('carousel--photo'),
+                isSeries = $this.hasClass('carousel--series');
 
             function highlight(items) {
                 if(isPhotoStory) {
@@ -40,7 +41,7 @@
             }
 
             $carousel.carouFredSel({
-                responsive: isPhotoStory ? false : true,
+                responsive: isSeries ? true : false,
                 width: '100%',
                 transition: true,
                 items: {
