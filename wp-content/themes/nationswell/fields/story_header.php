@@ -35,6 +35,16 @@ if(function_exists("register_field_group"))
             'title' => 'Story Page Header',
             'fields' => array (
                 array (
+                    'key' => 'field_527c0555270ef',
+                    'label' => 'Dek',
+                    'name' => 'dek',
+                    'type' => 'textarea',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'maxlength' => '',
+                    'formatting' => 'none',
+                ),
+                array (
                     'key' => 'field_52742d44fb739',
                     'label' => 'Story Page Header',
                     'name' => 'story_page_header',

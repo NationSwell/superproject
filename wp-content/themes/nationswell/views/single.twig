@@ -1,7 +1,6 @@
 {% extends "base.twig" %}
 
 {% block content %}
-    {% if story_page_header is not empty %}
     <!-- image hero -->
     {#<div class="hero hero--story hero--image" style="background-image: url({{ story_page_header[0].url|resize(1300, 600) }});">
         <div class="hero-information">
@@ -82,7 +81,6 @@
             </div>
         </div>
     </div>
-    {% endif %}
 
     <article class="story story--page">
         <div class="container">
