@@ -41,6 +41,7 @@ include_once('advanced-custom-fields/acf.php');
 function my_register_fields() {
     include_once('acf-flexible-content/flexible-content.php');
     include_once('fields/story_header.php');
+    include_once('fields/home_page.php');
 }
 add_action('acf/register_fields', 'my_register_fields');
 
