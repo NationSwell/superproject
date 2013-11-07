@@ -22,11 +22,11 @@
             var $this = $(this),
                 $carousel = $this.find(".carousel__items");
 
-            var isPhotoStory = $this.hasClass('carousel--photo'),
+            var isPhoto = $this.hasClass('carousel--photo'),
                 isSeries = $this.hasClass('carousel--series');
 
             function highlight(items) {
-                if(isPhotoStory) {
+                if(isPhoto) {
                     items.filter(":eq(1)").addClass('active');
                 } else {
                     items.addClass('active');
@@ -45,8 +45,8 @@
                 width: '100%',
                 transition: true,
                 items: {
-                    visible: isPhotoStory ? 3 : 1,
-                    start: isPhotoStory ? -1 : 1
+                    visible: isPhoto ? 3 : 1,
+                    start: isPhoto ? -1 : 1
                 },
                 scroll: {
                     items: 1,

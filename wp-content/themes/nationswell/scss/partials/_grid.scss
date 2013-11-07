@@ -25,6 +25,13 @@
       @include shift(2);
     }
   }
+
+  .hero-information {
+    .hero-information__content {
+      @include span-columns(6);
+      @include shift(2);
+    }
+  }
 }
 
 // rivers
@@ -103,6 +110,7 @@
   }
 }
 
+// prev-next
 .prev-next {
   li {
     @include span-columns(3 of 6);

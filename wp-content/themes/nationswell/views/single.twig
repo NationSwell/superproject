@@ -3,8 +3,48 @@
 {% block content %}
 
     {% if story_page_header is not empty %}
-    <div class="hero hero--story hero--image" style="background-image: url({{ story_page_header[0].url|resize(1300, 600) }});"></div>
+    <div class="hero hero--story hero--carousel">
+        <div class="carousel carousel--full-width carousel--photo">
+            <ul class="carousel__items">
+                <li class="carousel-item">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/business);"></div>
+                </li>
+
+                <li class="carousel-item">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/768/1367/animals);"></div>
+                </li>
+
+                <li class="carousel-item">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/1367/768/people);"></div>
+                </li>
+
+                <li class="carousel-item">
+                    <div class="carousel--photo__image" style="background-image: url(http://lorempixel.com/768/768/city);"></div>
+                </li>
+            </ul>
+
+            <ul class="carousel__controls">
+                <li class="carousel__control carousel__control--prev">
+                    <a class="icon icon_arrow-circle-left"></a>
+                </li>
+
+                <li class="carousel__control carousel__control--next">
+                    <a class="icon icon_arrow-circle-right"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero-information">
+            <span class="icon icon_information hero-information__toggle z1"></span>
+            <div class="hero-information__outer">
+                <div class="container">
+                    <p class="hero-information__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     {% endif %}
+
     <article class="story story--page">
         <div class="container">
 
