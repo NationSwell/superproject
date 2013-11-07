@@ -18,7 +18,8 @@ module.exports = function(grunt) {
                 options: {
                     stylesheet: 'scss',
                     relativeFontPath: '../fonts',
-                    htmlDemo: false
+                    htmlDemo: false,
+                    hashes: false
                 }
             }
         },

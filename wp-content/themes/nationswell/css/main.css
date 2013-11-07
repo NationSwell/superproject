@@ -681,8 +681,8 @@ a:hover {
 
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons-1b1041c295d7d500585c1adf8e5cb92d.eot");
-  src: url("../fonts/icons-1b1041c295d7d500585c1adf8e5cb92d.eot?#iefix") format("embedded-opentype"), url("../fonts/icons-1b1041c295d7d500585c1adf8e5cb92d.woff") format("woff"), url("../fonts/icons-1b1041c295d7d500585c1adf8e5cb92d.ttf") format("truetype"), url("../fonts/icons-1b1041c295d7d500585c1adf8e5cb92d.svg?#icons") format("svg");
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg?#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2537,17 +2537,24 @@ a:hover {
   padding: 0 1rem;
 }
 
-/* line 210, ../scss/partials/page/_story.scss */
+/* line 209, ../scss/partials/page/_story.scss */
+.bottomed .story__sticky-container {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+
+/* line 215, ../scss/partials/page/_story.scss */
 .story__sticky-container {
   width: 16rem;
 }
 
-/* line 214, ../scss/partials/page/_story.scss */
+/* line 219, ../scss/partials/page/_story.scss */
 .sticky-social {
   margin-bottom: 5rem;
 }
 
-/* line 218, ../scss/partials/page/_story.scss */
+/* line 223, ../scss/partials/page/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -2559,13 +2566,13 @@ a:hover {
   width: 100%;
 }
 
-/* line 229, ../scss/partials/page/_story.scss */
+/* line 234, ../scss/partials/page/_story.scss */
 .sticky-take-action__heading {
   position: relative;
   margin-bottom: 0.8rem;
 }
 
-/* line 234, ../scss/partials/page/_story.scss */
+/* line 239, ../scss/partials/page/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -2575,13 +2582,13 @@ a:hover {
 }
 
 /* tags */
-/* line 243, ../scss/partials/page/_story.scss */
+/* line 248, ../scss/partials/page/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
   margin-bottom: 5rem;
   padding-bottom: 1.4rem;
 }
-/* line 249, ../scss/partials/page/_story.scss */
+/* line 254, ../scss/partials/page/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   display: inline-block;
@@ -2591,40 +2598,40 @@ a:hover {
   margin-right: 1.8rem;
   vertical-align: middle;
 }
-/* line 259, ../scss/partials/page/_story.scss */
+/* line 264, ../scss/partials/page/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
   margin-right: 1rem;
 }
 
 /* author */
-/* line 267, ../scss/partials/page/_story.scss */
+/* line 272, ../scss/partials/page/_story.scss */
 .author {
   background-color: #f6f6f6;
   margin-bottom: 7.2rem;
   padding: 2.6rem 3.4rem;
 }
 
-/* line 273, ../scss/partials/page/_story.scss */
+/* line 278, ../scss/partials/page/_story.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin-bottom: 1.2rem;
 }
 
-/* line 281, ../scss/partials/page/_story.scss */
+/* line 286, ../scss/partials/page/_story.scss */
 .author__a {
   text-align: center;
 }
 
-/* line 285, ../scss/partials/page/_story.scss */
+/* line 290, ../scss/partials/page/_story.scss */
 .author__b {
   padding-top: 0.6rem;
   padding-left: 3.4rem;
   overflow: hidden;
 }
 
-/* line 291, ../scss/partials/page/_story.scss */
+/* line 296, ../scss/partials/page/_story.scss */
 .author__url {
   color: #0098d8;
   text-align: center;
@@ -2633,28 +2640,28 @@ a:hover {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 299, ../scss/partials/page/_story.scss */
+/* line 304, ../scss/partials/page/_story.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 304, ../scss/partials/page/_story.scss */
+/* line 309, ../scss/partials/page/_story.scss */
 .author__social {
   margin-top: 1.2rem;
 }
-/* line 307, ../scss/partials/page/_story.scss */
+/* line 312, ../scss/partials/page/_story.scss */
 .author__social li {
   display: inline-block;
   border-left: 1px solid #dbdbdb;
   padding-left: 1rem;
   margin-left: 1rem;
 }
-/* line 313, ../scss/partials/page/_story.scss */
+/* line 318, ../scss/partials/page/_story.scss */
 .author__social li:first-child {
   padding-left: 0;
   border-left: 0;
 }
-/* line 319, ../scss/partials/page/_story.scss */
+/* line 324, ../scss/partials/page/_story.scss */
 .author__social .icon {
   color: #b7b7b7;
   font-size: 2rem;
@@ -2663,16 +2670,16 @@ a:hover {
   vertical-align: middle;
   height: 1.2rem;
 }
-/* line 327, ../scss/partials/page/_story.scss */
+/* line 332, ../scss/partials/page/_story.scss */
 .author__social .icon:hover {
   color: #0098d8;
 }
 
-/* line 333, ../scss/partials/page/_story.scss */
+/* line 338, ../scss/partials/page/_story.scss */
 .author__byline {
   margin-bottom: 1.4rem;
 }
-/* line 334, ../scss/partials/page/_story.scss */
+/* line 339, ../scss/partials/page/_story.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'Written by';
@@ -2683,7 +2690,7 @@ a:hover {
   margin-bottom: 0.4rem;
 }
 
-/* line 347, ../scss/partials/page/_story.scss */
+/* line 352, ../scss/partials/page/_story.scss */
 .author__bio {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
@@ -2691,33 +2698,33 @@ a:hover {
   line-height: 1.5;
 }
 
-/* line 355, ../scss/partials/page/_story.scss */
+/* line 360, ../scss/partials/page/_story.scss */
 .story__social {
   display: block;
   margin-bottom: 7.2rem;
 }
 
-/* line 361, ../scss/partials/page/_story.scss */
+/* line 366, ../scss/partials/page/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 3.4rem;
 }
-/* line 365, ../scss/partials/page/_story.scss */
+/* line 370, ../scss/partials/page/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
   margin-bottom: 3.4rem;
 }
-/* line 370, ../scss/partials/page/_story.scss */
+/* line 375, ../scss/partials/page/_story.scss */
 .module.take-action .take-action__a {
   float: left;
   width: 25.6rem;
 }
-/* line 375, ../scss/partials/page/_story.scss */
+/* line 380, ../scss/partials/page/_story.scss */
 .module.take-action .take-action__b {
   padding-left: 3.4rem;
   overflow: hidden;
 }
-/* line 380, ../scss/partials/page/_story.scss */
+/* line 385, ../scss/partials/page/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
   font-size: 1.8rem;
