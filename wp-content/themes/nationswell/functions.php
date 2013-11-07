@@ -32,6 +32,10 @@ function load_scripts(){
     wp_enqueue_script('jquery');
 }
 
+// Custom Taxonomies
+include_once('taxonomies/series.php');
+
+// Custom Fields
 include_once('advanced-custom-fields/acf.php');
 
 function my_register_fields() {
