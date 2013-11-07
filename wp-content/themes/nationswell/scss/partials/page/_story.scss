@@ -127,10 +127,10 @@
   }
 }
 
-.story--page {
+.story__container {
   margin-top: 5rem;
 
-  .story__container {
+  .story--page {
     > header {
       .story__hed {
         margin-bottom: 3.4rem;
@@ -206,6 +206,7 @@
   position: relative;
   padding: 0 1rem;
 }
+
 .bottomed .story__sticky-container {
   position: absolute;
   bottom: 0;
