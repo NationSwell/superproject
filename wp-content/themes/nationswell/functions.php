@@ -35,11 +35,14 @@ function load_scripts(){
 // Custom Taxonomies
 include_once('taxonomies/series.php');
 
+// Timber
+include_once('lib/plugins/timber/timber.php');
+
 // Custom Fields
-include_once('advanced-custom-fields/acf.php');
+include_once('lib/plugins/advanced-custom-fields/acf.php');
 
 function my_register_fields() {
-    include_once('acf-flexible-content/flexible-content.php');
+    include_once('lib/plugins/acf-flexible-content/flexible-content.php');
     include_once('fields/attachment.php');
     include_once('fields/home_page.php');
     include_once('fields/story_header.php');

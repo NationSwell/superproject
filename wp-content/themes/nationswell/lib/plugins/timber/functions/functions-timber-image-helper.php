@@ -45,7 +45,7 @@
 			}
 			// Download file to temp location
 			if (!function_exists('download_url')){
-				require_once(ABSPATH.'/wp-admin/includes/file.php');
+				require_once(ABSPATH . '/wp-admin/includes/file.php');
 			}
 			$tmp = download_url($file);
 			preg_match('/[^\?]+\.(jpe?g|jpe|gif|png)\b/i', $file, $matches);
