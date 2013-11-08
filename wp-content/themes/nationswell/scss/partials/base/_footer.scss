@@ -1,48 +1,24 @@
-#page-footer {
-  height: 14rem;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-
-  .container {
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: 14rem;
-  }
-}
-
 .site-logo--footer {
   display: block;
-  margin-top: 4.6rem;
 }
 
 .copyright {
   color: $gray3;
   display: block;
   font-family: $gudea;
-  font-size: 1.3rem;
   position: relative;
-  top: -0.3rem;
-  left: 2.2rem;
 }
 
 .footer-links {
   display: inline-block;
-  margin-top: 6rem;
   vertical-align: middle;
 
   li {
     display: inline-block;
-    margin-left: 1.8rem;
   }
 }
 
 .footer-links__link {
   color: $gray3;
   font-family: $gudea;
-  font-size: 1.4rem;
-
-  &:hover {}
 }

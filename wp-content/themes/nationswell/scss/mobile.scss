@@ -1,5 +1,17 @@
 // Base
 @import "partials/main";
 
-// Mobile-specific partials
+// mobile-specific partials
 @import "partials/mobile/grid";
+@import "partials/mobile/ads";
+@import "partials/mobile/headings";
+@import "partials/mobile/buttons";
+@import "partials/mobile/nav";
+@import "partials/mobile/more-stories";
+@import "partials/mobile/footer";
+@import "partials/mobile/components";
+@import "partials/mobile/carousels";
+
+// mobile page partials
+@import "partials/mobile/homepage";
+@import "partials/mobile/story";

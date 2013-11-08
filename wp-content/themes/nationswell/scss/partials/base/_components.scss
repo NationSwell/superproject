@@ -1,7 +1,5 @@
 /* hero */
 .hero {
-  background-color: $ns_navy0;
-  margin-bottom: 5rem;
   position: relative;
 }
 
@@ -11,15 +9,10 @@
   color: $white;
   display: inline-block;
   font-family: $montserrat;
-  font-size: 1.4rem;
-  padding: 0.6rem 0.8rem;
-  margin-bottom: 1.8rem;
 }
 
 .story--tease {
   background-color: transparent;
-  padding: 2rem 0;
-  margin-bottom: 3.4rem;
   position: relative;
 
   @include transition(all 0.3s ease-in-out);
@@ -48,31 +41,18 @@
   .story__dek {
     color: $ns_black;
     font-family: $gudea;
-    font-size: 1.5rem;
-    line-height: 1.4;
     overflow: hidden;
   }
-
-  .support-cause {
-    margin-top: 1.8rem;
-  }
-}
-
-.story__hed {
-  margin-bottom: 1rem;
 }
 
 /* support cause */
 .support-cause {
   .support-cause__heading {
     color: $ns_red;
-    margin-bottom: 1.4rem;
   }
 
   .support-cause__data {
     font-family: $oswald;
-    font-size: 3.4rem;
-    line-height: 3.4rem;
     vertical-align: middle;
 
     &.support-cause__data--red {
@@ -84,44 +64,35 @@
     }
 
     .super {
-      font-size: 2rem;
       font-weight: $regular;
       position: relative;
-      top: -1.4rem;
     }
   }
 
   .support-cause__label {
     color: $ns_black;
     font-family: $oswald;
-    font-size: 2rem;
     font-weight: $light;
     position: relative;
-    top: -4px;
 
     -webkit-font-smoothing:antialiased;
   }
 
   .support-cause__separator {
     color: $gray5;
-    font-size: 4.4rem;
     display: inline-block;
     vertical-align: bottom;
-    line-height: 3.4rem;
-    margin: 0 1rem;
   }
 }
 
 /* sponsor */
 .sponsor {
   font-family: $gudea;
-  font-size: 1.3rem;
   font-weight: $bold;
   text-transform: uppercase;
 
   .sponsor__logo {
     display: inline-block;
-    margin-left: 1.6rem;
     vertical-align: middle;
   }
 }
@@ -145,62 +116,27 @@
     background-color: $ns_red;
   }
 
-  &.indicator--module {
-    width: 7.6rem;
-    height: 7.6rem;
-
-    &:before {
-      font-size: 5.8rem;
-      line-height: 1.5;
-    }
-  }
-
   &.indicator--carousel {
-    width: 7.6rem;
-    height: 7.6rem;
     position: relative;
-    top: 1.4rem;
-
-    &:before {
-      font-size: 5rem;
-      line-height: 1.74;
-    }
 
     &.indicator--text {
-      width: 9.8rem;
-      height: 9.8rem;
-
-      &:before {
-        font-size: 5rem;
-        line-height: 1.5;
-      }
-
       .indicator__heading {
         color: $white;
         font-family: $montserrat;
-        font-size: 1.4rem;
         font-weight: $bold;
-        line-height: 1.4;
-        margin-top: -2.6rem;
       }
 
       .indicator__subheading {
         color: $white;
         font-family: $montserrat;
-        font-size: 1.2rem;
         font-weight: $regular;
       }
     }
   }
 
   &.indicator--take-action {
-    width: 5.2rem;
-    height: 5.2rem;
     position: relative;
-    top: -4rem;
-    font-size: 4rem;
-    margin: 0 auto -2rem;
-    line-height: 5.8rem;
+    margin: 0 auto;
   }
 }
 
@@ -211,19 +147,15 @@
   width: auto;
 
   &.module--sidebar {
-    width: 32rem;
-    display: block;
-    margin: 0 auto 7.6rem;
+    margin: 0 auto;
   }
 
   &.module--bg {
     background-color: $gray6;
-    padding: 1.6rem;
 
     &:before {
       content: '';
       display: block;
-      height: 0.7rem;
       width: 100%;
       position: absolute;
       top: 0;
@@ -231,17 +163,13 @@
     }
 
     header {
-      margin-top: -4.5rem;
-      margin-bottom: 2rem;
       position: relative;
       text-align: center;
     }
 
     .module__heading {
       display: inline-block;
-      padding: 0.8rem 0.8rem 0.4rem;
       position: relative;
-      top: -1rem;
 
       &:before,
       &:after {
@@ -250,29 +178,17 @@
         font-style: normal;
         speak: none;
         font-family: 'icons';
-        font-size: 1.5rem;
         /* check is correct character after icon font additions */
         content:"\f115";
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing:antialiased;
         -moz-osx-font-smoothing:grayscale;
       }
-
-      &:before {
-        margin-right: 1.2rem;
-      }
-
-      &:after {
-        margin-left: 1.2rem;
-      }
     }
 
     p {
       color: $ns_black;
       font-family: $gudea;
-      font-size: 1.8rem;
-      line-height: 1.4;
-      margin-bottom: 3rem;
       -webkit-font-smoothing:antialiased;
     }
 
@@ -306,22 +222,18 @@
       background-color: $gray6;
       content: '';
       display: block;
-      height: 0.7rem;
       width: 100%;
       position: absolute;
-      bottom: -0.7rem;
       left: 0;
     }
 
     .module__heading {
       display: block;
       border-bottom: 3px solid $ns_black;
-      padding-bottom: 1.2rem;
     }
 
     .story-list {
       li {
-        padding: 1.8rem 0;
         border-bottom: 1px solid $gray6;
 
         &:last-child {
@@ -343,8 +255,6 @@
     }
 
     &.module--horizontal {
-      margin: 5rem 0;
-
       .story-list {
         li {
           display: inline-block;
@@ -356,8 +266,6 @@
 
   &.module--pull {
     float: right;
-    margin: -37.6rem;
-    width: 32rem;
   }
 
   &.module--image-overlay {
@@ -369,7 +277,6 @@
     .story {
       // $ns_navy0 in rgba
       background-color: rgba(6,24,34, 0.6);
-      padding: 3.4rem;
       display: block;
       float: none;
       margin: 0;
@@ -387,7 +294,6 @@
     .sponsor {
       color: $white;
       display: block;
-      margin-top: 12rem;
     }
 
     &:hover {
@@ -401,33 +307,21 @@
 /* pullquote */
 .pullquote {
   position: relative;
-  margin: 4.2rem 0 5rem;
-  padding-left: 7.8rem;
 
   &:before {
     background-color: $ns_red;
     font-family: 'icons';
     color: $white;
-    font-size: 4.2rem;
     display: block;
     border-radius: 50%;
     text-align: center;
-    line-height: 1.46;
-    width: 5.6rem;
-    height: 5.6rem;
     position: absolute;
     left: 0;
-    top: -1.2rem;
-  }
-
-  .pullquote__quote {
-    margin-bottom: 2rem;
   }
 
   .pullquote__attribution {
     color: $ns_red;
     font-family: $oswald;
-    font-size: 1.8rem;
     font-weight: $bold;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
@@ -440,8 +334,6 @@
   color: $white;
   display: block;
   font-family: $montserrat;
-  font-size: 1.4rem;
-  padding: 0.6rem 0.8rem;
 
   &:hover {
     background-color: $ns_blue1;
@@ -452,8 +344,6 @@
 /* prev/next */
 .prev-next {
   border-top: 7px solid $black;
-  padding-top: 2rem;
-  margin-bottom: 7.2rem;
 
   li {
     &:last-child {
@@ -476,64 +366,29 @@
   .prev-next__link {
     color: $ns_blue1;
     font-family: $montserrat;
-    font-size: 1.4rem;
     font-weight: $bold;
-    margin-bottom: 0.4rem;
     -webkit-font-smoothing: antialiased;
 
     .icon {
-      font-size: 2.6rem;
-      line-height: 0.74;
       -webkit-font-smoothing: subpixel-antialiased;
     }
-
-    &.prev-next__link--prev {
-      .icon {
-        margin-right: 0.6rem;
-      }
-    }
-
-    &.prev-next__link--next {
-      .icon {
-        margin-left: 0.6rem;
-      }
-    }
   }
-
-  .story__hed {}
-
-  .story__dek { }
 }
 
 /* read next */
 .read-next {
-  padding-bottom: 2.2rem;
-
   .read-next__heading {
     display: block;
     border-bottom: 3px solid $ns_black;
-    padding-bottom: 1.2rem;
   }
 
   li {
-    padding: 0 0.5rem;
-
     &:first-child {
       padding-left: 0;
-      padding-right: 1rem;
     }
 
     &:last-child {
-      padding-left: 1rem;
       padding-right: 0;
-    }
-  }
-
-  .story--tease {
-    margin-bottom: 3.4rem;
-
-    .story__feature {
-      margin-bottom: -1.4rem;
     }
   }
 }

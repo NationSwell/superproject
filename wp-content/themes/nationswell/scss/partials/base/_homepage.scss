@@ -1,7 +1,5 @@
 /* hero */
 .hero--homepage {
-  height: 56rem;
-
   &.hero--grid {
     .hero__entry {
       background-color: $ns_navy3;
@@ -26,17 +24,11 @@
       }
 
       &.hero__entry--1 {
-        height: 56rem;
         width: 50%;
         box-shadow: inset -2px 0 0 $white;
 
         &:after {
           margin-right: 2px;
-        }
-
-        .story__hed {
-          max-width: 70rem;
-          margin-bottom: 3.4rem;
         }
       }
 
@@ -50,13 +42,7 @@
 
       &.hero__entry--2,
       &.hero__entry--3 {
-        height: 28rem;
         width: 50%;
-
-        .story__hed {
-          margin-bottom: 1.8rem;
-          max-width: 50rem;
-        }
       }
 
       &:after {
@@ -74,7 +60,6 @@
       .story--hero {
         position: absolute;
         bottom: 0;
-        padding: 2.4rem 4.4rem;
       }
     }
   }
@@ -83,7 +68,6 @@
 .support-cause--hero {
   background-color: $ns_red;
   display: inline-block;
-  padding: 1.4rem;
 
   .support-cause__heading {
     color: $white;
@@ -99,8 +83,6 @@
 
   .support-cause__separator {
     color: $white;
-    font-size: 5.8rem;
-    line-height: 3rem;
     margin: 0;
   }
 }
@@ -112,28 +94,18 @@
       &:hover {
         background-color: $gray7;
         box-shadow: 2rem 0 0 $gray7, -2rem 0 0 $gray7;
-
-        .story__feature {
-          &:before {
-            height: 0.7rem;
-          }
-        }
       }
 
       .sponsor {
         background-color: $ns_blue1;
         color: $ns_blue6;
-        padding: 0.8rem 1.6rem;
         position: absolute;
-        left: -1rem;
-        bottom: 4.6rem;
         text-align: left;
         display: inline-block;
       }
     }
 
     .story__feature {
-      margin-right: 8rem;
       position: relative;
 
       &:before {
@@ -154,20 +126,11 @@
       }
     }
   }
-
-  .story-teases {
-    margin-bottom: 2.8rem;
-
-    .story__hed {
-      margin-bottom: 1.2rem;
-    }
-  }
 }
 
 /* join us module */
 .join-us {
   .btn--bar {
-    margin-bottom: 2.1rem;
     width: auto;
   }
 }
