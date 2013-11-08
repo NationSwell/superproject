@@ -40,8 +40,9 @@ include_once('advanced-custom-fields/acf.php');
 
 function my_register_fields() {
     include_once('acf-flexible-content/flexible-content.php');
-    include_once('fields/story_header.php');
+    include_once('fields/attachment.php');
     include_once('fields/home_page.php');
+    include_once('fields/story_header.php');
 }
 add_action('acf/register_fields', 'my_register_fields');
 
@@ -61,6 +62,7 @@ class NationSwellPost extends TimberPost {
                 );
                 if($layout == "image") { // layout: Content
                     $item = array_merge(get_sub_field('image'), $item);
+                    $item['credit'] = get_field('credit', $item['id']);
                 }
                 elseif($layout == "video") { // layout: File
                     $item['video_url'] = get_sub_field('video_url');
