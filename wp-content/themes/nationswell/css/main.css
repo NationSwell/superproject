@@ -106,7 +106,21 @@ table {
 .hero.hero--image .hero__content:last-child {
   margin-right: 0;
 }
-/* line 30, ../scss/partials/_grid.scss */
+@media screen and (max-width: 576px) {
+  /* line 23, ../scss/partials/_grid.scss */
+  .hero.hero--image .hero__content {
+    display: block;
+    float: left;
+    margin-right: 4.16667%;
+    width: 65.27778%;
+    margin-left: 0%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .hero.hero--image .hero__content:last-child {
+    margin-right: 0;
+  }
+}
+/* line 35, ../scss/partials/_grid.scss */
 .hero .hero-information .hero-information__content {
   display: block;
   float: left;
@@ -118,19 +132,22 @@ table {
 .hero .hero-information .hero-information__content:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 576px) {
+  /* line 35, ../scss/partials/_grid.scss */
+  .hero .hero-information .hero-information__content {
+    display: block;
+    float: left;
+    margin-right: 4.16667%;
+    width: 82.63889%;
+    margin-left: 17.36111%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .hero .hero-information .hero-information__content:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 39, ../scss/partials/_grid.scss */
-.river > .story-list {
-  display: block;
-  float: left;
-  margin-right: 2.04082%;
-  width: 100%;
-}
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-.river > .story-list:last-child {
-  margin-right: 0;
-}
-/* line 44, ../scss/partials/_grid.scss */
+/* line 50, ../scss/partials/_grid.scss */
 .river.river--two-col .story-teases {
   display: block;
   float: left;
@@ -141,7 +158,34 @@ table {
 .river.river--two-col .story-teases:last-child {
   margin-right: 0;
 }
-/* line 48, ../scss/partials/_grid.scss */
+@media screen and (max-width: 576px) {
+  /* line 50, ../scss/partials/_grid.scss */
+  .river.river--two-col .story-teases {
+    display: block;
+    float: left;
+    margin-right: 4.16667%;
+    width: 100%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .river.river--two-col .story-teases:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 50, ../scss/partials/_grid.scss */
+  .river.river--two-col .story-teases {
+    display: block;
+    float: left;
+    margin-right: 2.04082%;
+    width: 82.9932%;
+    margin-left: 8.5034%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .river.river--two-col .story-teases:last-child {
+    margin-right: 0;
+  }
+}
+/* line 63, ../scss/partials/_grid.scss */
 .river.river--two-col .story--tease {
   display: block;
   float: left;
@@ -152,8 +196,21 @@ table {
 .river.river--two-col .story--tease:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 576px) {
+  /* line 63, ../scss/partials/_grid.scss */
+  .river.river--two-col .story--tease {
+    display: block;
+    float: left;
+    margin-right: 4.16667%;
+    width: 100%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .river.river--two-col .story--tease:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 55, ../scss/partials/_grid.scss */
+/* line 74, ../scss/partials/_grid.scss */
 .sidebar {
   display: block;
   float: left;
@@ -164,8 +221,35 @@ table {
 .sidebar:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 576px) {
+  /* line 74, ../scss/partials/_grid.scss */
+  .sidebar {
+    display: block;
+    float: left;
+    margin-right: 4.16667%;
+    width: 100%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .sidebar:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 74, ../scss/partials/_grid.scss */
+  .sidebar {
+    display: block;
+    float: left;
+    margin-right: 2.04082%;
+    width: 82.9932%;
+    margin-left: 8.5034%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .sidebar:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 60, ../scss/partials/_grid.scss */
+/* line 88, ../scss/partials/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -176,8 +260,34 @@ table {
 .story__sticky:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 576px) {
+  /* line 88, ../scss/partials/_grid.scss */
+  .story__sticky {
+    display: block;
+    float: left;
+    margin-right: 4.16667%;
+    width: 100%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .story__sticky:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 88, ../scss/partials/_grid.scss */
+  .story__sticky {
+    display: block;
+    float: left;
+    margin-right: 2.04082%;
+    width: 23.46939%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .story__sticky:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 64, ../scss/partials/_grid.scss */
+/* line 100, ../scss/partials/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -188,8 +298,21 @@ table {
 .story__main-column:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  /* line 100, ../scss/partials/_grid.scss */
+  .story__main-column {
+    display: block;
+    float: left;
+    margin-right: 2.04082%;
+    width: 65.98639%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .story__main-column:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 70, ../scss/partials/_grid.scss */
+/* line 110, ../scss/partials/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -200,11 +323,24 @@ table {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 73, ../scss/partials/_grid.scss */
+@media screen and (max-width: 768px) {
+  /* line 110, ../scss/partials/_grid.scss */
+  .multimedia .caption {
+    display: block;
+    float: left;
+    margin-right: 3.09278%;
+    width: 61.34021%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .multimedia .caption:last-child {
+    margin-right: 0;
+  }
+}
+/* line 117, ../scss/partials/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 78, ../scss/partials/_grid.scss */
+/* line 122, ../scss/partials/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -216,8 +352,22 @@ table {
 .multimedia .credit:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  /* line 122, ../scss/partials/_grid.scss */
+  .multimedia .credit {
+    display: block;
+    float: left;
+    margin-right: 3.09278%;
+    width: 35.56701%;
+    margin-left: 64.43299%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .multimedia .credit:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 88, ../scss/partials/_grid.scss */
+/* line 137, ../scss/partials/_grid.scss */
 .module.module--list.module--horizontal li {
   display: block;
   float: left;
@@ -229,7 +379,7 @@ table {
   margin-right: 0;
 }
 
-/* line 97, ../scss/partials/_grid.scss */
+/* line 146, ../scss/partials/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -240,8 +390,34 @@ table {
 .story__social .btn--bar:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 576px) {
+  /* line 146, ../scss/partials/_grid.scss */
+  .story__social .btn--bar {
+    display: block;
+    float: left;
+    margin-right: 4.16667%;
+    width: 100%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .story__social .btn--bar:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 146, ../scss/partials/_grid.scss */
+  .story__social .btn--bar {
+    display: block;
+    float: left;
+    margin-right: 3.09278%;
+    width: 48.45361%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .story__social .btn--bar:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 104, ../scss/partials/_grid.scss */
+/* line 161, ../scss/partials/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -252,7 +428,20 @@ table {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 107, ../scss/partials/_grid.scss */
+@media screen and (max-width: 768px) {
+  /* line 161, ../scss/partials/_grid.scss */
+  .read-next .story-list {
+    display: block;
+    float: left;
+    margin-right: 2.04082%;
+    width: 65.98639%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .read-next .story-list:last-child {
+    margin-right: 0;
+  }
+}
+/* line 168, ../scss/partials/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -263,8 +452,21 @@ table {
 .read-next .story-list li:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  /* line 168, ../scss/partials/_grid.scss */
+  .read-next .story-list li {
+    display: block;
+    float: left;
+    margin-right: 3.09278%;
+    width: 48.45361%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .read-next .story-list li:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 115, ../scss/partials/_grid.scss */
+/* line 181, ../scss/partials/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -274,6 +476,19 @@ table {
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .prev-next li:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 181, ../scss/partials/_grid.scss */
+  .prev-next li {
+    display: block;
+    float: left;
+    margin-right: 3.09278%;
+    width: 48.45361%;
+  }
+  /* line 33, ../scss/neat/grid/_span-columns.scss */
+  .prev-next li:last-child {
+    margin-right: 0;
+  }
 }
 
 /* line 1, ../scss/partials/_structure.scss */
