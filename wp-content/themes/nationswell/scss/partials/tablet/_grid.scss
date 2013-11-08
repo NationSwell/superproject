@@ -1,0 +1,109 @@
+// more stories panel
+#more-stories {
+  .category-list {
+    @include span-columns(2);
+  }
+
+  .most-popular {
+    @include span-columns(10);
+  }
+}
+
+// heroes
+.hero {
+  &.hero--image {
+    .hero__content {
+      @include span-columns(7);
+      @include shift(2);
+    }
+  }
+
+  .hero-information {
+    .hero-information__content {
+      @include span-columns(6);
+      @include shift(2);
+    }
+  }
+}
+
+// rivers
+.river {
+  &.river--two-col {
+    .story-teases {
+      @include span-columns(10);
+      @include shift(1);
+    }
+
+    .story--tease {
+      @include span-columns(8 of 8);
+    }
+  }
+}
+
+// sidebar
+.sidebar {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+// stories
+.story__sticky {
+  @include span-columns(3);
+}
+
+.story__main-column {
+  @include span-columns(8);
+}
+
+// multimedia
+.multimedia {
+  .caption {
+    @include span-columns(5 of 8);
+
+    + .credit {
+      @include shift(0);
+    }
+  }
+
+  .credit {
+    @include span-columns(3 of 8);
+    @include shift(5);
+  }
+}
+
+// modules
+.module {
+  &.module--list {
+    &.module--horizontal {
+      li {
+        @include span-columns(2 of 6);
+      }
+    }
+  }
+}
+
+// story social buttons
+.story__social {
+  .btn--bar {
+    @include span-columns(4 of 8);
+  }
+}
+
+// read next
+.read-next {
+  .story-list {
+    @include span-columns(8);
+
+    li {
+      // third is hidden
+      @include span-columns(4 of 8);
+    }
+  }
+}
+
+// prev-next
+.prev-next {
+  li {
+    @include span-columns(4 of 8);
+  }
+}

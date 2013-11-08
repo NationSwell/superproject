@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             icons: {
                 src: 'icons/*.svg',
                 dest: 'fonts',
-                destCss: 'scss/partials',
+                destCss: 'scss/partials/base',
                 options: {
                     stylesheet: 'scss',
                     relativeFontPath: '../fonts',
