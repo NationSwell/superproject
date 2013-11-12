@@ -403,6 +403,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 126, ../scss/partials/base/_headings.scss */
+.hd-p {
+  color: #003046;
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* line 1, ../scss/partials/base/_typography.scss */
 a {
   text-decoration: none;
@@ -1520,27 +1529,22 @@ a:hover {
 }
 
 /* line 5, ../scss/partials/base/_carousels.scss */
-.carousel--full-width {
-  background-color: #355a6b;
-}
-
-/* line 9, ../scss/partials/base/_carousels.scss */
 .carousel__items {
   display: block;
 }
 
-/* line 13, ../scss/partials/base/_carousels.scss */
+/* line 9, ../scss/partials/base/_carousels.scss */
 .carousel-item {
   display: block;
   float: left;
   position: relative;
   text-align: center;
 }
-/* line 20, ../scss/partials/base/_carousels.scss */
+/* line 16, ../scss/partials/base/_carousels.scss */
 .carousel-item:hover .carousel-item__title {
   color: #95d6ef;
 }
-/* line 25, ../scss/partials/base/_carousels.scss */
+/* line 21, ../scss/partials/base/_carousels.scss */
 .carousel-item .v-align__inner {
   opacity: 0;
   visibility: hidden;
@@ -1548,7 +1552,7 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 33, ../scss/partials/base/_carousels.scss */
+/* line 29, ../scss/partials/base/_carousels.scss */
 .carousel-item.active .v-align__inner {
   opacity: 1;
   visibility: visible;
@@ -1560,7 +1564,7 @@ a:hover {
   transition-delay: 0.15s;
 }
 
-/* line 43, ../scss/partials/base/_carousels.scss */
+/* line 39, ../scss/partials/base/_carousels.scss */
 .carousel-item__overlay {
   position: absolute;
   left: 0;
@@ -1574,38 +1578,38 @@ a:hover {
   height: 100%;
 }
 
-/* line 56, ../scss/partials/base/_carousels.scss */
+/* line 52, ../scss/partials/base/_carousels.scss */
 .carousel-item__title {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-/* line 60, ../scss/partials/base/_carousels.scss */
+/* line 56, ../scss/partials/base/_carousels.scss */
 .carousel__control {
   cursor: pointer;
   position: absolute;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
-/* line 65, ../scss/partials/base/_carousels.scss */
+/* line 61, ../scss/partials/base/_carousels.scss */
 .carousel__control .icon {
   color: white;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 70, ../scss/partials/base/_carousels.scss */
+/* line 66, ../scss/partials/base/_carousels.scss */
 .carousel__control .icon:hover {
   color: #95d6ef;
 }
 
-/* line 77, ../scss/partials/base/_carousels.scss */
+/* line 73, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__images {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 83, ../scss/partials/base/_carousels.scss */
+/* line 79, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image {
   display: block;
   height: 100%;
@@ -1613,7 +1617,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 90, ../scss/partials/base/_carousels.scss */
+/* line 86, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:after {
   content: '';
   background-image: url("../img/overlay_mesh.png");
@@ -1626,48 +1630,48 @@ a:hover {
   opacity: 0.5;
   pointer-events: none;
 }
-/* line 103, ../scss/partials/base/_carousels.scss */
+/* line 99, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:first-child {
   box-shadow: inset -2px 0 0 white;
 }
-/* line 106, ../scss/partials/base/_carousels.scss */
+/* line 102, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:first-child:after {
   padding-right: 2px;
 }
-/* line 111, ../scss/partials/base/_carousels.scss */
+/* line 107, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:last-child {
   box-shadow: inset 2px 0 0 white;
 }
-/* line 114, ../scss/partials/base/_carousels.scss */
+/* line 110, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:last-child:after {
   padding-left: 2px;
 }
 
-/* line 122, ../scss/partials/base/_carousels.scss */
+/* line 118, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item {
   box-shadow: -2px 0 0 white;
   pointer-events: none;
 }
-/* line 126, ../scss/partials/base/_carousels.scss */
+/* line 122, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active {
   pointer-events: all;
 }
-/* line 129, ../scss/partials/base/_carousels.scss */
+/* line 125, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active .carousel-item__overlay {
   background-color: transparent;
 }
-/* line 135, ../scss/partials/base/_carousels.scss */
+/* line 131, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 141, ../scss/partials/base/_carousels.scss */
+/* line 137, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item__overlay {
   background-color: rgba(6, 24, 34, 0.6);
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* hero */
