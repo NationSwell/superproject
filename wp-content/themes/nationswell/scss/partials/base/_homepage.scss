@@ -23,28 +23,6 @@
         @include transition(all 0.3s ease-in-out);
       }
 
-      &.hero__entry--1 {
-        width: 50%;
-        box-shadow: inset -2px 0 0 $white;
-
-        &:after {
-          margin-right: 2px;
-        }
-      }
-
-      &.hero__entry--2 {
-        box-shadow: inset 0 -2px 0 $white;
-
-        &:after {
-          margin-bottom: 2px;
-        }
-      }
-
-      &.hero__entry--2,
-      &.hero__entry--3 {
-        width: 50%;
-      }
-
       &:after {
         content: '';
         background-image: url('../img/overlay_mesh.png');
@@ -107,19 +85,6 @@
 
     .story__feature {
       position: relative;
-
-      &:before {
-        content: '';
-        background-color: $ns_blue1;
-        content: '';
-        position: absolute;
-        bottom: 0;
-        height: 0;
-        width: 100%;
-        display: block;
-
-        @include transition(all 0.3s ease-in-out);
-      }
 
       img {
         display: block;

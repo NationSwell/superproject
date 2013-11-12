@@ -1,6 +1,8 @@
 #top-leaderboard {
   background-color: $ns_navy1;
   padding: 1.8rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 #top-billboard {

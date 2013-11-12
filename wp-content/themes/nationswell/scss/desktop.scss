@@ -1,10 +1,14 @@
+@import "modules/desktop-grid-settings";
+
 // Base
 @import "partials/main";
 
 // Desktop-specific partials
 @import "partials/desktop/grid";
+@import "partials/desktop/structure";
 @import "partials/desktop/ads";
 @import "partials/desktop/headings";
+@import "partials/desktop/typography";
 @import "partials/desktop/buttons";
 @import "partials/desktop/nav";
 @import "partials/desktop/more-stories";

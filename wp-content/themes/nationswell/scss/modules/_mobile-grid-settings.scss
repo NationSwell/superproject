@@ -2,7 +2,6 @@
 @import "../bourbon/bourbon";
 @import "../neat/neat-helpers";
 
-
 // Grid settings (TEMP: fake retina)
 $column: 80px;
 $gutter: 24px;
@@ -17,5 +16,5 @@ $grid-columns: 6;
 $max-width: em(312);
 */
 
-// Init Neat
+// Neat
 @import "../neat/neat";

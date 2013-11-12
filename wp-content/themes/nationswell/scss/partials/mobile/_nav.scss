@@ -1,81 +1,16 @@
 #page-header {
-  height: 7.2rem;
+  height: 13rem;
 }
 
 /* logo and slogan */
 .site-logo {
   &.site-logo--header {
-    margin-top: 1.6rem;
-  }
-
-  .slogan {
-    margin-left: 2.1rem;
+    margin-top: 4.6rem;
   }
 }
 
 /* more stories toggle */
 .more-stories-toggle {
-  font-size: 4.4rem;
-  padding-top: 2.3rem;
-}
-
-/* social links */
-.social-links {
-  height: 7.2rem;
-  margin-right: 3.4rem;
-  padding-top: 2.8rem;
-  padding-right: 0.6rem;
-
-  li {
-    margin-right: 2.8rem;
-  }
-}
-
-.social-links__link {
-  font-size: 3.2rem;
-}
-
-/* search */
-.search {
-  margin-right: 2.8rem;
-
-  label {
-    height: 7.2rem;
-    padding-top: 2.8rem;
-    width: 3.8rem;
-
-    &:before {
-      font-size: 3.2rem;
-    }
-  }
-
-  input[type="text"] {
-    width: 3.8rem;
-    height: 7.2rem;
-    padding-left: 3.8rem;
-    top: 0.5rem;
-    font-size: 1.4rem;
-
-    &.open {
-      padding-right: 3.4rem;
-      width: 30rem;
-    }
-  }
-}
-
-
-/* trending topics */
-.trending-topics {
-  background-color: $ns_navy1;
-  padding: 0.8rem 0;
-}
-
-.trending-topics__heading {
-  font-size: 1.4rem;
-  margin: 0 3.4rem 0 2.2rem;
-}
-
-.trending-topics__topic {
-  font-size: 1.4rem;
-  margin-right: 3.4rem;
+  font-size: 6rem;
+  padding-top: 3.8rem;
 }

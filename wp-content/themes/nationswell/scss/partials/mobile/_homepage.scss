@@ -2,42 +2,62 @@
 .hero--homepage {
   height: 56rem;
 
-  &.hero--grid {
+  &.mobile-carousel--hero {
+    // Allowing support cause block to bleed over
+    .caroufredsel_wrapper {
+      overflow: visible !important;
+    }
+
     .hero__entry {
-      &.hero__entry--1 {
-        height: 56rem;
-        width: 50%;
+      height: 56rem;
+      width: 100%;
 
-        .story__hed {
-          max-width: 70rem;
-          margin-bottom: 3.4rem;
-        }
-      }
-
-      &.hero__entry--2,
-      &.hero__entry--3 {
-        height: 28rem;
-        width: 50%;
-
-        .story__hed {
-          margin-bottom: 1.8rem;
-          max-width: 50rem;
-        }
+      .story__hed {
+        max-width: 70rem;
+        margin-bottom: 3.4rem;
       }
 
       .story--hero {
+        bottom: -7.8rem;
         padding: 2.4rem 4.4rem;
+      }
+    }
+
+    .carousel__pagination {
+      position: absolute;
+      right: 4.4rem;
+      bottom: -3.6rem;
+
+      a {
+        background-color: $ns_navy6;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 0;
+        height: 1.3rem;
+        margin-left: 1.6rem;
+        width: 1.3rem;
+
+
+        @include transition(all 0.15s ease-in-out);
+
+        &.selected {
+          background-color: $black;
+        }
       }
     }
   }
 }
 
 .support-cause--hero {
-  padding: 1.4rem;
+  padding: 1.6rem;
+
+  .support-cause__heading {
+    margin-bottom: 1.4rem;
+  }
 
   .support-cause__separator {
-    font-size: 5.8rem;
-    line-height: 3rem;
+    font-size: 8.8rem;
+    line-height: 3.4rem;
   }
 }
 
@@ -61,7 +81,12 @@
     }
 
     .story__feature {
-      margin-right: 8rem;
+      width: 100%;
+    }
+
+    .story__header {
+      position: relative;
+      top: -2.4rem;
     }
   }
 
@@ -69,7 +94,7 @@
     margin-bottom: 2.8rem;
 
     .story__hed {
-      margin-bottom: 1.2rem;
+      margin-bottom: 2.8rem;
     }
   }
 }

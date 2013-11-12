@@ -1,5 +1,7 @@
 #page-header {
   background-color: $ns_navy2;
+  position: relative;
+  z-index: 1;
 }
 
 /* logo and slogan */

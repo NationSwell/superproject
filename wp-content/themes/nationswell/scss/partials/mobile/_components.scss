@@ -1,14 +1,13 @@
 /* hero */
 .hero {
-  background-color: $ns_navy0;
-  margin-bottom: 5rem;
+  margin-bottom: 12rem;
 }
 
 /* rubric */
 .rubric {
-  font-size: 1.4rem;
-  padding: 0.6rem 0.8rem;
-  margin-bottom: 1.8rem;
+  font-size: 2rem;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .story--tease {
@@ -16,12 +15,13 @@
   margin-bottom: 3.4rem;
 
   .story__dek {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     line-height: 1.4;
+    margin-top: 1.4rem;
   }
 
   .support-cause {
-    margin-top: 1.8rem;
+    margin-top: 2.8rem;
   }
 }
 
@@ -32,28 +32,27 @@
 /* support cause */
 .support-cause {
   .support-cause__heading {
-    margin-bottom: 1.4rem;
+    margin-bottom: 2.8rem;
   }
 
   .support-cause__data {
-    font-size: 3.4rem;
-    line-height: 3.4rem;
+    font-size: 5rem;
 
     .super {
-      font-size: 2rem;
-      top: -1.4rem;
+      font-size: 2.5rem;
+      top: -2.5rem;
     }
   }
 
   .support-cause__label {
-    font-size: 2rem;
-    top: -4px;
+    font-size: 2.5rem;
+    top: -0.8rem;
 
     -webkit-font-smoothing:antialiased;
   }
 
   .support-cause__separator {
-    font-size: 4.4rem;
+    font-size: 8.8rem;
     line-height: 3.4rem;
     margin: 0 1rem;
   }
@@ -123,13 +122,9 @@
 
 /* module */
 .module {
-  display: block;
-  position: relative;
-  width: auto;
-
   &.module--sidebar {
-    width: 32rem;
-    margin-bottom: 7.6rem;
+    width: 100%;
+    margin-bottom: 12rem;
   }
 
   &.module--bg {
@@ -181,7 +176,7 @@
 
     .story-list {
       li {
-        padding: 1.8rem 0;
+        padding: 4rem 0;
       }
     }
 

@@ -3,32 +3,32 @@
 {% block content %}
 
     {% if featured %}
-        <div class="hero hero--homepage hero--grid">
-            {% for feature in featured %}
-                <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ feature.thumbnail.src|resize(1300,600) }});">
-                    <a href="{{ feature.permalink }}" class="link-wrapper">
-                        <article class="story story--hero z1">
-                            <span class="rubric">Environment</span>
-                            <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ feature.post_title }}</h1>
+        <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--hero">
+        {% for feature in featured %}
+            <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ feature.thumbnail.src|resize(1300,600) }});">
+                <a href="{{ feature.permalink }}" class="link-wrapper">
+                    <article class="story story--hero z1">
+                        <span class="rubric">Environment</span>
+                        <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ feature.post_title }}</h1>
 
-                            <div class="support-cause support-cause--hero">
-                                <h4 class="hd-c support-cause__heading">Support this cause</h4>
+                        <div class="support-cause support-cause--hero z2">
+                            <h4 class="hd-c support-cause__heading">Support this cause</h4>
 
-                                <div class="support-cause__content">
-                                    <span class="support-cause__data">45<sup class="super">%</sup></span>
-                                    <span class="support-cause__label">from goal</span>
+                            <div class="support-cause__content">
+                                <span class="support-cause__data">45<sup class="super">%</sup></span>
+                                <span class="support-cause__label">from goal</span>
 
-                                    <span class="support-cause__separator icon icon_separator"></span>
+                                <span class="support-cause__separator icon icon_separator"></span>
 
-                                    <span class="support-cause__data">4</span>
-                                    <span class="support-cause__label">days to go</span>
-                                </div>
+                                <span class="support-cause__data">4</span>
+                                <span class="support-cause__label">days to go</span>
                             </div>
+                        </div>
 
-                        </article>
-                    </a>
-                </div>
-            {% endfor %}
+                    </article>
+                </a>
+            </div>
+        {% endfor %}
         </div>
     {% endif %}
 
@@ -41,7 +41,7 @@
             </ul>
 
             <div class="sidebar">
-                <div class="ad ad--300">
+                <div class="ad ad--300 hide_mobile">
                     <div class="ad__container">
                         <img src="http://placehold.it/300x600"/>
                     </div>
@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <div class="carousel carousel--full-width carousel--series">
+    <div class="carousel carousel--full-width carousel--series mobile-carousel mobile-carousel--peek">
         <ul class="carousel__items">
             {% for series in series_carousel %}
                 <li class="carousel-item">
@@ -98,7 +98,7 @@
             </ul>
 
             <div class="sidebar">
-                <div class="ad ad--300">
+                <div class="ad ad--300 hide_mobile">
                     <div class="ad__container">
                         <img src="http://placehold.it/300x250"/>
                     </div>
@@ -149,7 +149,7 @@
         </div>
     </div>
 
-    <div class="carousel carousel--full-width carousel--peek">
+    <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek">
         <ul class="carousel__items">
             {% for post in stories_carousel %}
                 <li class="carousel-item"><a href="{{ post.permalink }}" class="link-wrapper">
