@@ -4,8 +4,10 @@
 
 /* logo and slogan */
 .site-logo {
-  width: 16.8rem;
-  height: auto;
+  img {
+    width: 16.8rem;
+    height: auto;
+  }
 
   &.site-logo--header {
     margin-top: 1.6rem;

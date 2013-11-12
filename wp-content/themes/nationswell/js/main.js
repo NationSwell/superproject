@@ -26,7 +26,9 @@
                 // init slideshows
                 $(".mobile-carousel").each(function () {
                     var $this = $(this),
-                        $carousel = $this.find(".carousel__items");
+                        $carousel = $this.find(".carousel__items"),
+                        $externalContainer = $this.find('.mobile-carousel__external-container'),
+                        $externalCaption = $externalContainer.find('.carousel-item__title');
 
                     if (!$carousel.length) {
                         $this.wrapInner('<ul class="carousel__items" />');
@@ -34,7 +36,8 @@
                     }
 
                     var isPeek = $this.hasClass('mobile-carousel--peek'),
-                        isHero = $this.hasClass('mobile-carousel--hero');
+                        isHero = $this.hasClass('mobile-carousel--hero'),
+                        isSeries = $this.hasClass('carousel--series');
 
                     if (isHero) {
                         $this.append('<div class="carousel__pagination z3" />');
@@ -42,7 +45,17 @@
 
                     function highlight(items) {
                         if(isPeek) {
-                            items.filter(":eq(1)").addClass('active');
+                            var $activeSlide = items.filter(":eq(1)"),
+                                $activeCaption = $activeSlide.find('.carousel-item__title > span').text();
+
+                            $externalCaption.html($activeCaption).fadeIn(300);
+
+                            if (isSeries) {
+                                var $indicator;
+                            }
+
+                            $activeSlide.addClass('active');
+
                         } else {
                             items.addClass('active');
                         }
@@ -52,6 +65,11 @@
 
                     function unhighlight(items) {
                         items.removeClass('active');
+
+                        if(isPeek) {
+                            $externalCaption.fadeOut(300);
+                        }
+
                         return items;
                     }
 

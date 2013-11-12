@@ -32,10 +32,19 @@
     }
   }
 
+  .caroufredsel_wrapper {
+    overflow: visible;
+  }
+
   .carousel-item {
     box-shadow: -20px 0 0 white;
     width: 52.6rem;
     height: 30.2rem;
+    overflow: hidden;
+
+    &.active {
+      overflow: visible;
+    }
 
     .carousel--peek__image {
       width: 52.6rem;
@@ -46,11 +55,21 @@
       width: 52.6rem;
       height: 30.2rem;
     }
+  }
 
-    &:nth-child(3) {
-      .carousel-item__overlay {
+  .carousel-item__overlay {
+    @include transition(background-color 0.3s ease-in-out);
+  }
 
-      }
+  .mobile-carousel__external-container {
+    .carousel-item__title {
+      text-align: center;
     }
+
+    .indicator {}
+  }
+
+  .mobile-carousel__caption {
+    text-align: center;
   }
 }

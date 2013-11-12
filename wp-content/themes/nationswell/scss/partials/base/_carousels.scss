@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.carousel--full-width {
-  background-color: $ns_navy3;
-}
-
 .carousel__items {
   display: block;
 }
@@ -142,6 +138,6 @@
     // $ns_navy0 in rgba
     background-color: rgba(6,24,34, 0.6);
 
-    @include transition(color 0.3s ease-in-out);
+    @include transition(background-color 0.3s ease-in-out);
   }
 }

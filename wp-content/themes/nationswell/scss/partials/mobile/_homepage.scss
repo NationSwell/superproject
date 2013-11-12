@@ -64,6 +64,8 @@
 /* river */
 .river--two-col {
   .story-teases {
+    margin-bottom: 2.8rem;
+
     .story--tease {
       &:hover {
         .story__feature {
@@ -88,10 +90,6 @@
       position: relative;
       top: -2.4rem;
     }
-  }
-
-  .story-teases {
-    margin-bottom: 2.8rem;
 
     .story__hed {
       margin-bottom: 2.8rem;

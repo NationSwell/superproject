@@ -396,6 +396,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 126, ../scss/partials/base/_headings.scss */
+.hd-p {
+  color: #003046;
+  font-family: "Noto Serif", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* line 1, ../scss/partials/base/_typography.scss */
 a {
   text-decoration: none;
@@ -1513,27 +1522,22 @@ a:hover {
 }
 
 /* line 5, ../scss/partials/base/_carousels.scss */
-.carousel--full-width {
-  background-color: #355a6b;
-}
-
-/* line 9, ../scss/partials/base/_carousels.scss */
 .carousel__items {
   display: block;
 }
 
-/* line 13, ../scss/partials/base/_carousels.scss */
+/* line 9, ../scss/partials/base/_carousels.scss */
 .carousel-item {
   display: block;
   float: left;
   position: relative;
   text-align: center;
 }
-/* line 20, ../scss/partials/base/_carousels.scss */
+/* line 16, ../scss/partials/base/_carousels.scss */
 .carousel-item:hover .carousel-item__title {
   color: #95d6ef;
 }
-/* line 25, ../scss/partials/base/_carousels.scss */
+/* line 21, ../scss/partials/base/_carousels.scss */
 .carousel-item .v-align__inner {
   opacity: 0;
   visibility: hidden;
@@ -1541,7 +1545,7 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 33, ../scss/partials/base/_carousels.scss */
+/* line 29, ../scss/partials/base/_carousels.scss */
 .carousel-item.active .v-align__inner {
   opacity: 1;
   visibility: visible;
@@ -1553,7 +1557,7 @@ a:hover {
   transition-delay: 0.15s;
 }
 
-/* line 43, ../scss/partials/base/_carousels.scss */
+/* line 39, ../scss/partials/base/_carousels.scss */
 .carousel-item__overlay {
   position: absolute;
   left: 0;
@@ -1567,38 +1571,38 @@ a:hover {
   height: 100%;
 }
 
-/* line 56, ../scss/partials/base/_carousels.scss */
+/* line 52, ../scss/partials/base/_carousels.scss */
 .carousel-item__title {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-/* line 60, ../scss/partials/base/_carousels.scss */
+/* line 56, ../scss/partials/base/_carousels.scss */
 .carousel__control {
   cursor: pointer;
   position: absolute;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
-/* line 65, ../scss/partials/base/_carousels.scss */
+/* line 61, ../scss/partials/base/_carousels.scss */
 .carousel__control .icon {
   color: white;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 70, ../scss/partials/base/_carousels.scss */
+/* line 66, ../scss/partials/base/_carousels.scss */
 .carousel__control .icon:hover {
   color: #95d6ef;
 }
 
-/* line 77, ../scss/partials/base/_carousels.scss */
+/* line 73, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__images {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 83, ../scss/partials/base/_carousels.scss */
+/* line 79, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image {
   display: block;
   height: 100%;
@@ -1606,7 +1610,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 90, ../scss/partials/base/_carousels.scss */
+/* line 86, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:after {
   content: '';
   background-image: url("../img/overlay_mesh.png");
@@ -1619,48 +1623,48 @@ a:hover {
   opacity: 0.5;
   pointer-events: none;
 }
-/* line 103, ../scss/partials/base/_carousels.scss */
+/* line 99, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:first-child {
   box-shadow: inset -2px 0 0 white;
 }
-/* line 106, ../scss/partials/base/_carousels.scss */
+/* line 102, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:first-child:after {
   padding-right: 2px;
 }
-/* line 111, ../scss/partials/base/_carousels.scss */
+/* line 107, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:last-child {
   box-shadow: inset 2px 0 0 white;
 }
-/* line 114, ../scss/partials/base/_carousels.scss */
+/* line 110, ../scss/partials/base/_carousels.scss */
 .carousel--series .carousel--series__image:last-child:after {
   padding-left: 2px;
 }
 
-/* line 122, ../scss/partials/base/_carousels.scss */
+/* line 118, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item {
   box-shadow: -2px 0 0 white;
   pointer-events: none;
 }
-/* line 126, ../scss/partials/base/_carousels.scss */
+/* line 122, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active {
   pointer-events: all;
 }
-/* line 129, ../scss/partials/base/_carousels.scss */
+/* line 125, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active .carousel-item__overlay {
   background-color: transparent;
 }
-/* line 135, ../scss/partials/base/_carousels.scss */
+/* line 131, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 141, ../scss/partials/base/_carousels.scss */
+/* line 137, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item__overlay {
   background-color: rgba(6, 24, 34, 0.6);
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* hero */
@@ -2480,61 +2484,61 @@ a:hover {
 }
 
 /* logo and slogan */
-/* line 6, ../scss/partials/desktop/_nav.scss */
-.site-logo {
+/* line 7, ../scss/partials/desktop/_nav.scss */
+.site-logo img {
   width: 16.8rem;
   height: auto;
 }
-/* line 10, ../scss/partials/desktop/_nav.scss */
+/* line 12, ../scss/partials/desktop/_nav.scss */
 .site-logo.site-logo--header {
   margin-top: 1.6rem;
 }
-/* line 14, ../scss/partials/desktop/_nav.scss */
+/* line 16, ../scss/partials/desktop/_nav.scss */
 .site-logo .slogan {
   margin-left: 2.1rem;
 }
 
 /* more stories toggle */
-/* line 20, ../scss/partials/desktop/_nav.scss */
+/* line 22, ../scss/partials/desktop/_nav.scss */
 .more-stories-toggle {
   font-size: 4.4rem;
   padding-top: 2.3rem;
 }
 
 /* social links */
-/* line 26, ../scss/partials/desktop/_nav.scss */
+/* line 28, ../scss/partials/desktop/_nav.scss */
 .social-links {
   height: 7.2rem;
   margin-right: 3.4rem;
   padding-top: 2.8rem;
   padding-right: 0.6rem;
 }
-/* line 32, ../scss/partials/desktop/_nav.scss */
+/* line 34, ../scss/partials/desktop/_nav.scss */
 .social-links li {
   margin-right: 2.8rem;
 }
 
-/* line 37, ../scss/partials/desktop/_nav.scss */
+/* line 39, ../scss/partials/desktop/_nav.scss */
 .social-links__link {
   font-size: 3.2rem;
 }
 
 /* search */
-/* line 42, ../scss/partials/desktop/_nav.scss */
+/* line 44, ../scss/partials/desktop/_nav.scss */
 .search {
   margin-right: 2.8rem;
 }
-/* line 45, ../scss/partials/desktop/_nav.scss */
+/* line 47, ../scss/partials/desktop/_nav.scss */
 .search label {
   height: 7.2rem;
   padding-top: 2.8rem;
   width: 3.8rem;
 }
-/* line 50, ../scss/partials/desktop/_nav.scss */
+/* line 52, ../scss/partials/desktop/_nav.scss */
 .search label:before {
   font-size: 3.2rem;
 }
-/* line 55, ../scss/partials/desktop/_nav.scss */
+/* line 57, ../scss/partials/desktop/_nav.scss */
 .search input[type="text"] {
   width: 3.8rem;
   height: 7.2rem;
@@ -2542,26 +2546,26 @@ a:hover {
   top: 0.5rem;
   font-size: 1.4rem;
 }
-/* line 62, ../scss/partials/desktop/_nav.scss */
+/* line 64, ../scss/partials/desktop/_nav.scss */
 .search input[type="text"].open {
   padding-right: 3.4rem;
   width: 30rem;
 }
 
 /* trending topics */
-/* line 71, ../scss/partials/desktop/_nav.scss */
+/* line 73, ../scss/partials/desktop/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 76, ../scss/partials/desktop/_nav.scss */
+/* line 78, ../scss/partials/desktop/_nav.scss */
 .trending-topics__heading {
   font-size: 1.4rem;
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 81, ../scss/partials/desktop/_nav.scss */
+/* line 83, ../scss/partials/desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;
@@ -2902,83 +2906,84 @@ a:hover {
 
 /* line 1, ../scss/partials/desktop/_carousels.scss */
 .carousel--full-width {
+  background-color: #355a6b;
   margin-bottom: 6.8rem;
 }
-/* line 4, ../scss/partials/desktop/_carousels.scss */
+/* line 5, ../scss/partials/desktop/_carousels.scss */
 .carousel--full-width .carousel__control {
   top: 20rem;
 }
-/* line 7, ../scss/partials/desktop/_carousels.scss */
+/* line 8, ../scss/partials/desktop/_carousels.scss */
 .carousel--full-width .carousel__control.carousel__control--prev {
   left: 6rem;
 }
-/* line 11, ../scss/partials/desktop/_carousels.scss */
+/* line 12, ../scss/partials/desktop/_carousels.scss */
 .carousel--full-width .carousel__control.carousel__control--next {
   right: 6rem;
 }
-/* line 15, ../scss/partials/desktop/_carousels.scss */
+/* line 16, ../scss/partials/desktop/_carousels.scss */
 .carousel--full-width .carousel__control .icon {
   font-size: 10rem;
 }
 
-/* line 22, ../scss/partials/desktop/_carousels.scss */
+/* line 23, ../scss/partials/desktop/_carousels.scss */
 .carousel--inline .carousel__control {
   top: 12.4rem;
 }
-/* line 25, ../scss/partials/desktop/_carousels.scss */
+/* line 26, ../scss/partials/desktop/_carousels.scss */
 .carousel--inline .carousel__control.carousel__control--prev {
   left: 3rem;
 }
-/* line 29, ../scss/partials/desktop/_carousels.scss */
+/* line 30, ../scss/partials/desktop/_carousels.scss */
 .carousel--inline .carousel__control.carousel__control--next {
   right: 3rem;
 }
-/* line 33, ../scss/partials/desktop/_carousels.scss */
+/* line 34, ../scss/partials/desktop/_carousels.scss */
 .carousel--inline .carousel__control .icon {
   font-size: 6rem;
 }
-/* line 38, ../scss/partials/desktop/_carousels.scss */
+/* line 39, ../scss/partials/desktop/_carousels.scss */
 .carousel--inline .carousel-item {
   width: 58.8rem;
   height: 30.2rem;
 }
 
-/* line 45, ../scss/partials/desktop/_carousels.scss */
+/* line 46, ../scss/partials/desktop/_carousels.scss */
 .carousel-item .v-align__inner {
   padding-bottom: 1rem;
 }
-/* line 50, ../scss/partials/desktop/_carousels.scss */
+/* line 51, ../scss/partials/desktop/_carousels.scss */
 .carousel-item.active .v-align__inner {
   padding-bottom: 3.4rem;
 }
 
-/* line 56, ../scss/partials/desktop/_carousels.scss */
+/* line 57, ../scss/partials/desktop/_carousels.scss */
 .carousel-item__title {
   margin-bottom: 3.4rem;
 }
 
-/* line 61, ../scss/partials/desktop/_carousels.scss */
+/* line 62, ../scss/partials/desktop/_carousels.scss */
 .carousel--series .carousel-item {
   height: 46rem;
 }
-/* line 65, ../scss/partials/desktop/_carousels.scss */
+/* line 66, ../scss/partials/desktop/_carousels.scss */
 .carousel--series .carousel--series__image {
   float: left;
   width: 33.3334%;
 }
 
-/* line 72, ../scss/partials/desktop/_carousels.scss */
+/* line 73, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel-item {
   box-shadow: -2px 0 0 white;
   width: 94rem;
   height: 54rem;
 }
-/* line 78, ../scss/partials/desktop/_carousels.scss */
+/* line 79, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   width: 94rem;
   height: 54rem;
 }
-/* line 83, ../scss/partials/desktop/_carousels.scss */
+/* line 84, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel__control {
   top: 24rem;
 }
