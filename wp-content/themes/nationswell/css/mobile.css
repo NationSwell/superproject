@@ -2856,24 +2856,29 @@ html, body {
 }
 
 /* line 23, ../scss/partials/mobile/_carousels.scss */
-.mobile-carousel-peek.carousel--series .carousel--series__image {
+.mobile-carousel--peek.carousel--series .carousel--series__image {
   display: none;
   visiblity: hidden;
 }
 /* line 27, ../scss/partials/mobile/_carousels.scss */
-.mobile-carousel-peek.carousel--series .carousel--series__image:first-child {
+.mobile-carousel--peek.carousel--series .carousel--series__image:first-child {
   width: 100%;
   display: block;
   visibility: visible;
 }
 /* line 35, ../scss/partials/mobile/_carousels.scss */
-.mobile-carousel-peek .carousel-item {
+.mobile-carousel--peek .carousel-item {
   box-shadow: -20px 0 0 white;
   width: 52.6rem;
   height: 30.2rem;
 }
-/* line 46, ../scss/partials/mobile/_carousels.scss */
-.mobile-carousel-peek .carousel-item .carousel--peek__image {
+/* line 40, ../scss/partials/mobile/_carousels.scss */
+.mobile-carousel--peek .carousel-item .carousel--peek__image {
+  width: 52.6rem;
+  height: 30.2rem;
+}
+/* line 45, ../scss/partials/mobile/_carousels.scss */
+.mobile-carousel--peek .carousel-item .carousel--series__images {
   width: 52.6rem;
   height: 30.2rem;
 }
