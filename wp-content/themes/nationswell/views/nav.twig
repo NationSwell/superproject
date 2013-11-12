@@ -2,18 +2,18 @@
     <div class="container">
         <a href="/" class="site-logo site-logo--header fl">
             <img src="/{{ theme_dir }}/img/site-logo.png" alt=""/>
-            <span class="slogan">Meet the people renewing America</span>
+            <span class="slogan hide_mobile">Meet the people renewing America</span>
         </a>
 
-        <a href="#" class="toggle-collapse more-stories-toggle icon icon_hamburger fr" data-target="#more-stories"></a>
+        <a href="#" class="toggle-collapse more-stories-toggle icon icon_hamburger fr" data-mobile-target="#mobile-more-stories" data-desktop-target="#more-stories"></a>
 
-        <ul class="social-links fr">
+        <ul class="social-links fr hide_mobile">
             <li><a href="#" class="icon icon_facebook social-links__link"></a></li>
             <li><a href="#" class="icon icon_twitter social-links__link"></a></li>
             <li><a href="#" class="icon icon_envelope social-links__link"></a></li>
         </ul>
 
-        <form action="#" method="post" class="fr">
+        <form action="#" method="post" class="fr hide_mobile">
             <ul id="page-search" class="search">
                 <li><label for="search" class="icon icon_search z1">&nbsp;</label></li>
                 <li><input type="text" id="search" name="search" placeholder="Search NationSwell"></li>
@@ -22,7 +22,7 @@
     </div>
 </header>
 
-<div id="more-stories" class="collapse z2">
+<div id="more-stories" class="collapse z2 hide_mobile">
     <div class="container">
         <ul class="category-list">
             <li><a class="category-list__category active" href="#category-education">Education</a></li>

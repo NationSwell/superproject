@@ -1,0 +1,20 @@
+.caption {
+   font-size: 2.5rem;
+   line-height: 1.4;
+ }
+
+.credit,
+.byline {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.source {
+  font-size: 2.5rem;
+
+  &:before {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-right: 1.2rem;
+  }
+}

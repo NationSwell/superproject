@@ -11,32 +11,23 @@ a {
 .caption {
   color: $gray0;
   font-family: $gudea;
-  font-size: 1.4rem;
-  line-height: 1.4;
 }
 
 .credit,
 .byline {
   color: $gray1;
   font-family: $gudea;
-  font-size: 1.4rem;
-  line-height: 1.4;
 }
 
 .source {
   color: $gray1;
   font-family: $gudea;
-  font-size: 1.4rem;
   font-weight: $regular;
 
   &:before {
     content: '';
-    height: 1.6rem;
-    width: 1.6rem;
     display: inline-block;
-    margin-right: 0.6rem;
     position: relative;
-    top: 2px;
   }
 
   &.source--nyt:before {

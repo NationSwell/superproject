@@ -142,6 +142,6 @@
     // $ns_navy0 in rgba
     background-color: rgba(6,24,34, 0.6);
 
-    @include transition(all 0.3s ease-in-out);
+    @include transition(color 0.3s ease-in-out);
   }
 }

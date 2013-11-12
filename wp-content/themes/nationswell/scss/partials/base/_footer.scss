@@ -9,16 +9,6 @@
   position: relative;
 }
 
-.footer-links {
-  display: inline-block;
-  vertical-align: middle;
-
-  li {
-    display: inline-block;
-  }
-}
-
 .footer-links__link {
-  color: $gray3;
   font-family: $gudea;
 }

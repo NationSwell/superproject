@@ -1,0 +1,56 @@
+.carousel--full-width {
+  margin-bottom: 6.8rem;
+}
+
+.carousel-item {
+  .v-align__inner {
+    padding-bottom: 1rem;
+  }
+
+  &.active {
+    .v-align__inner {
+      padding-bottom: 3.4rem;
+    }
+  }
+}
+
+.carousel-item__title {
+  margin-bottom: 3.4rem;
+}
+
+.mobile-carousel--peek {
+  &.carousel--series {
+    .carousel--series__image {
+      display: none;
+      visiblity: hidden;
+
+      &:first-child {
+        width: 100%;
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+
+  .carousel-item {
+    box-shadow: -20px 0 0 white;
+    width: 52.6rem;
+    height: 30.2rem;
+
+    .carousel--peek__image {
+      width: 52.6rem;
+      height: 30.2rem;
+    }
+
+    .carousel--series__images {
+      width: 52.6rem;
+      height: 30.2rem;
+    }
+
+    &:nth-child(3) {
+      .carousel-item__overlay {
+
+      }
+    }
+  }
+}

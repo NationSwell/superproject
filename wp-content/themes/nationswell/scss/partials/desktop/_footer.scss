@@ -2,7 +2,6 @@
   height: 14rem;
   position: absolute;
   width: 100%;
-  z-index: -1;
 
   .container {
     position: fixed;
@@ -14,23 +13,31 @@
 }
 
 .site-logo--footer {
+  float: left;
   margin-top: 4.6rem;
 }
 
 .copyright {
+  float: left;
   font-size: 1.3rem;
   top: -0.3rem;
-  left: 2.2rem;
+  left: 3.8rem;
+  clear: both;
 }
 
 .footer-links {
+  float: right;
   margin-top: 6rem;
+  display: inline-block;
+  vertical-align: middle;
 
   li {
+    display: inline-block;
     margin-left: 1.8rem;
   }
 }
 
 .footer-links__link {
+  color: $gray3;
   font-size: 1.4rem;
 }

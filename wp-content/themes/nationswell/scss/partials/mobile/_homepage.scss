@@ -1,0 +1,107 @@
+/* hero */
+.hero--homepage {
+  height: 56rem;
+
+  &.mobile-carousel--hero {
+    // Allowing support cause block to bleed over
+    .caroufredsel_wrapper {
+      overflow: visible !important;
+    }
+
+    .hero__entry {
+      height: 56rem;
+      width: 100%;
+
+      .story__hed {
+        max-width: 70rem;
+        margin-bottom: 3.4rem;
+      }
+
+      .story--hero {
+        bottom: -7.8rem;
+        padding: 2.4rem 4.4rem;
+      }
+    }
+
+    .carousel__pagination {
+      position: absolute;
+      right: 4.4rem;
+      bottom: -3.6rem;
+
+      a {
+        background-color: $ns_navy6;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 0;
+        height: 1.3rem;
+        margin-left: 1.6rem;
+        width: 1.3rem;
+
+
+        @include transition(all 0.15s ease-in-out);
+
+        &.selected {
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
+
+.support-cause--hero {
+  padding: 1.6rem;
+
+  .support-cause__heading {
+    margin-bottom: 1.4rem;
+  }
+
+  .support-cause__separator {
+    font-size: 8.8rem;
+    line-height: 3.4rem;
+  }
+}
+
+/* river */
+.river--two-col {
+  .story-teases {
+    .story--tease {
+      &:hover {
+        .story__feature {
+          &:before {
+            height: 0.7rem;
+          }
+        }
+      }
+
+      .sponsor {
+        padding: 0.8rem 1.6rem;
+        left: -1rem;
+        bottom: 4.6rem;
+      }
+    }
+
+    .story__feature {
+      width: 100%;
+    }
+
+    .story__header {
+      position: relative;
+      top: -2.4rem;
+    }
+  }
+
+  .story-teases {
+    margin-bottom: 2.8rem;
+
+    .story__hed {
+      margin-bottom: 2.8rem;
+    }
+  }
+}
+
+/* join us module */
+.join-us {
+  .btn--bar {
+    margin-bottom: 2.1rem;
+  }
+}
