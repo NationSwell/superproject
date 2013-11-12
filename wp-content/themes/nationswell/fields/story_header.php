@@ -38,7 +38,7 @@ if(function_exists("register_field_group"))
                     'key' => 'field_527c0555270ef',
                     'label' => 'Dek',
                     'name' => 'dek',
-                    'type' => 'textarea',
+                    'type' => 'text',
                     'default_value' => '',
                     'placeholder' => '',
                     'maxlength' => '',

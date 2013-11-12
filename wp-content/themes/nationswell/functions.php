@@ -42,13 +42,17 @@ include_once('lib/plugins/timber/timber.php');
 include_once('lib/plugins/advanced-custom-fields/acf.php');
 
 function my_register_fields() {
+    include_once('lib/plugins/acf-repeater/acf-repeater.php');
     include_once('lib/plugins/acf-flexible-content/flexible-content.php');
     include_once('fields/attachment.php');
     include_once('fields/home_page.php');
     include_once('fields/story_header.php');
+    include_once('fields/story_content.php');
 }
 add_action('acf/register_fields', 'my_register_fields');
 
+
+include_once('shortcodes.php');
 
 class NationSwellPost extends TimberPost {
     private $story_header_cache = null;
