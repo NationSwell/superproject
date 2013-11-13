@@ -115,6 +115,16 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Wordpress Importer',
+            'slug' => 'wordpress-importer',
+            'source' => get_stylesheet_directory() . '/lib/plugins/wordpress-importer.0.6.1.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
