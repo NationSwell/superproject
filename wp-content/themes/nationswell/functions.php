@@ -59,13 +59,13 @@ include_once('lib/shortcodes/placeholder.php');
 include_once('lib/classes/NationSwellPost.php');
 
 // Configure Menus
-include_once('menu.php');
+include_once('lib/menu/menu.php');
 
 // Configure Sidebar
-include_once('sidebar.php');
+include_once('lib/sidebar/sidebar.php');
 
 // Custom Widgets
-include_once('widgets.php');
+include_once('lib/widgets/widgets.php');
 
 // Plugin Activation
-include_once('plugin-activation.php');
+include_once('lib/tgm-plugin-activation/tgm-config.php');
