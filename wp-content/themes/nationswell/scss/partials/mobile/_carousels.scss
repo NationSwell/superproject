@@ -62,11 +62,22 @@
   }
 
   .mobile-carousel__external-container {
+    margin-top: -5.6rem;
+    opacity: 1;
+    position: relative;
+    top: 0;
+
+    @include transition(all 0.3s ease-in-out);
+
     .carousel-item__title {
+      margin: 2.4rem 0;
       text-align: center;
     }
 
-    .indicator {}
+    &.transitioning {
+      opacity: 0;
+      top: 1.2rem;
+    }
   }
 
   .mobile-carousel__caption {

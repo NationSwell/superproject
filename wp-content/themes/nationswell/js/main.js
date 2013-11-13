@@ -28,7 +28,8 @@
                     var $this = $(this),
                         $carousel = $this.find(".carousel__items"),
                         $externalContainer = $this.find('.mobile-carousel__external-container'),
-                        $externalCaption = $externalContainer.find('.carousel-item__title');
+                        $externalCaption = $externalContainer.find('.carousel-item__title'),
+                        $externalIndicator = $externalContainer.find('.indicator');
 
                     if (!$carousel.length) {
                         $this.wrapInner('<ul class="carousel__items" />');
@@ -43,31 +44,41 @@
                         $this.append('<div class="carousel__pagination z3" />');
                     }
 
-                    function highlight(items) {
+                    function unhighlight(items) {
+                        items.removeClass('active');
+
                         if(isPeek) {
-                            var $activeSlide = items.filter(":eq(1)"),
-                                $activeCaption = $activeSlide.find('.carousel-item__title > span').text();
-
-                            $externalCaption.html($activeCaption).fadeIn(300);
-
-                            if (isSeries) {
-                                var $indicator;
-                            }
-
-                            $activeSlide.addClass('active');
-
-                        } else {
-                            items.addClass('active');
+                            // fade out external content
+                            $externalContainer.addClass('transitioning');
                         }
 
                         return items;
                     }
 
-                    function unhighlight(items) {
-                        items.removeClass('active');
-
+                    function highlight(items) {
                         if(isPeek) {
-                            $externalCaption.fadeOut(300);
+                            var $activeSlide = items.filter(":eq(1)"),
+                                $activeCaption = $activeSlide.find('.carousel-item__title > span').text(),
+                                $activeIndicator = $activeSlide.find('.indicator').detach().removeClass('hide_mobile'),
+                                $externalContainerLink = $externalContainer.find('.link-wrapper'),
+                                activeHref = $activeSlide.find('.link-wrapper').attr('href');
+
+                            $externalCaption.html($activeCaption);
+
+                            if($externalIndicator && $activeIndicator) {
+                                $externalIndicator.replaceWith($activeIndicator);
+                            }
+
+                            if($externalContainerLink.length) {
+                                $externalContainerLink.attr('href', activeHref);
+                            }
+
+                            // fade in updated external content
+                            $externalContainer.removeClass('transitioning');
+
+                            $activeSlide.addClass('active');
+                        } else {
+                            items.addClass('active');
                         }
 
                         return items;
