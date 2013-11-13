@@ -33,8 +33,3 @@ if (function_exists('register_sidebar')) {
         )
     );
 }
-
-Timber::render(array('sidebar.twig'), $data);
-
-?>
-
