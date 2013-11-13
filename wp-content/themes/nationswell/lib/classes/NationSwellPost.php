@@ -1,12 +1,10 @@
 <?php
 if (class_exists('TimberPost')) {
-    class NationSwellPost extends TimberPost
-    {
+    class NationSwellPost extends TimberPost {
         private $story_header_cache = null;
 
 
-        function story_header()
-        {
+        function story_header() {
             if ($this->story_header_cache == null) {
 
                 $this->story_header_cache = array();
@@ -27,6 +25,21 @@ if (class_exists('TimberPost')) {
             }
 
             return $this->story_header_cache;
+        }
+
+        function author() {
+            $author = parent::author();
+            $author->mug_shot = get_field('mug_shot', 'user_' . $author->ID);
+
+            if(isset($author->user_url)) {
+                $url = preg_replace('/https?:\/\//', '', $author->user_url);
+
+                if(($pos = strpos($url,'/')) !== false) {
+                    $url = substr($url, 0, $pos);
+                }
+                $author->display_url = $url;
+            }
+            return $author;
         }
     }
 }
