@@ -1,7 +1,7 @@
-<div class="module module--list module--horizontal popular-stories">
+<div class="module module--list module--{{ position }} popular-stories">
     <h3 class="hd-g module__heading">Related Stories</h3>
 
-    <ul class="story-list cf">
+    <ul class="story-list cf {{ class }}">
         {% for  post in related_posts %}
         <li>
             <article class="story story--link">

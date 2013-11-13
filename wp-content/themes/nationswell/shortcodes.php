@@ -39,8 +39,20 @@ function placeholder_shortcode($attr) {
                 $component['credit'] = get_sub_field('credit');
             }
             elseif($layout == "related") {
-                $component['related_posts'] = Timber::get_posts(get_sub_field('related'));
-                $component['position'] = get_sub_field('position');
+                $position = get_sub_field('position');
+                $sidebar = $position == 'sidebar';
+
+                $component['position'] = $sidebar ? 'pull' : 'horizontal';
+
+                $related_ids = get_sub_field('related');
+
+                if(count($related_ids) > 0) {
+                    $component['related_posts'] = Timber::get_posts($sidebar ? $related_ids : array_slice($related_ids, 0, 3));
+                    $post_count = count($component['related_posts']);
+
+                    $numbers = array(0 => '', 1 => 'one', 2 => 'two', 3 => 'three');
+                    $component['class'] = $sidebar ? '' : $numbers[$post_count];
+                }
             }
 
             $component_cache[] = $component;
