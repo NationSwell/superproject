@@ -243,10 +243,12 @@
   }
 
   .take-action__a {
+    float: left;
     width: 25.6rem;
   }
 
   .take-action__b {
+    overflow: hidden;
     padding-left: 3.4rem;
   }
 

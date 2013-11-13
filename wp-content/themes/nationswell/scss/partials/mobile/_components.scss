@@ -70,12 +70,12 @@
 /* indicator */
 .indicator {
   &.indicator--module {
-    width: 7.6rem;
-    height: 7.6rem;
+    width: 13.6rem;
+    height: 13.6rem;
 
     &:before {
-      font-size: 5.8rem;
-      line-height: 1.5;
+      font-size: 8rem;
+      line-height: 1.88;
     }
   }
 
@@ -124,32 +124,34 @@
   }
 
   &.module--bg {
-    padding: 2rem;
+    padding: 4rem;
 
     &:before {
       height: 0.7rem;
     }
 
     header {
-      margin-top: -4.5rem;
+      margin-top: -10.4rem;
       margin-bottom: 2rem;
     }
 
     .module__heading {
-      padding: 0.8rem 0.8rem 0.4rem;
-      top: -1rem;
+      padding: 1rem 2rem 0.2rem;
+      top: -3rem;
 
       &:before,
       &:after {
-        font-size: 1.5rem;
+        font-size: 2.6rem;
+        position: relative;
+        top: -0.6rem;
       }
 
       &:before {
-        margin-right: 1.2rem;
+        margin-right: 1.8rem;
       }
 
       &:after {
-        margin-left: 1.2rem;
+        margin-left: 1.8rem;
       }
     }
 
@@ -157,6 +159,19 @@
       font-size: 1.8rem;
       line-height: 1.4;
       margin-bottom: 3rem;
+    }
+
+    &.module--blue {
+      .module__heading {
+        box-shadow: 0 4px 0 $gray6, 0 9px 0 $ns_navy1;
+      }
+    }
+
+    &.module--red {
+      .module__heading {
+        box-shadow: 0 4px 0 $gray6, 0 9px 0 $ns_red0;
+      }
+
     }
   }
 
@@ -199,7 +214,7 @@
 
 /* pullquote */
 .pullquote {
-  margin: 3.2rem 0 6.6rem;
+  margin: 3.2rem 0 7.6rem;
 
   &:before {
     font-size: 5.78rem;

@@ -631,108 +631,68 @@ a:hover {
   color: white;
   display: inline-block;
   font-family: "Oswald", Arial, sans-serif;
-  font-size: 2rem;
-  padding: 1rem;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 19, ../scss/partials/base/_buttons.scss */
+/* line 18, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid:hover {
   background-color: #0098d8;
 }
-/* line 24, ../scss/partials/base/_buttons.scss */
+/* line 23, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all {
   background-color: #061822;
   color: #0098d8;
   display: inline-block;
   font-family: "Gudea", Arial, sans-serif;
-  font-size: 1.6rem;
   font-weight: 700;
-  padding: 1.2rem 3.4rem 1.2rem 1.2rem;
   position: relative;
 }
-/* line 34, ../scss/partials/base/_buttons.scss */
+/* line 31, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:before {
   font-family: 'icons';
-  font-size: 2rem;
   position: absolute;
-  right: 1.2rem;
 }
-/* line 41, ../scss/partials/base/_buttons.scss */
+/* line 36, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:hover {
   background-color: #0098d8;
   color: white;
 }
-/* line 47, ../scss/partials/base/_buttons.scss */
+/* line 42, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar {
   color: white;
   display: block;
-  font-size: 2.2rem;
   font-family: "Oswald", Arial, sans-serif;
-  padding: 1.4rem 0 1rem;
   position: relative;
   text-align: center;
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
 }
-/* line 59, ../scss/partials/base/_buttons.scss */
-.btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
-  width: 28.1625rem;
-}
-/* line 63, ../scss/partials/base/_buttons.scss */
+/* line 51, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:before {
   font-family: 'icons';
-  font-size: 3.6rem;
   vertical-align: text-bottom;
-  line-height: 2.5rem;
-  margin-right: 1.6rem;
 }
-/* line 71, ../scss/partials/base/_buttons.scss */
+/* line 56, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:after {
   content: '';
   display: block;
-  height: 0.5rem;
   width: 100%;
   position: absolute;
-  bottom: -0.5rem;
   left: 0;
 }
-/* line 81, ../scss/partials/base/_buttons.scss */
-.btn.btn--bar:hover {
-  top: 0.2rem;
-}
-/* line 84, ../scss/partials/base/_buttons.scss */
-.btn.btn--bar:hover:after {
-  height: 0.3rem;
-  bottom: -0.3rem;
-}
-/* line 90, ../scss/partials/base/_buttons.scss */
-.btn.btn--bar:active {
-  top: 0.5rem;
-  box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
-}
-/* line 94, ../scss/partials/base/_buttons.scss */
-.btn.btn--bar:active:after {
-  height: 0;
-  bottom: 0;
-}
-/* line 101, ../scss/partials/base/_buttons.scss */
+/* line 65, ../scss/partials/base/_buttons.scss */
 .btn.btn--square {
   color: white;
   display: block;
   font-family: "Oswald", Arial, sans-serif;
-  font-size: 1.6rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   position: relative;
-  width: 10rem;
-  height: 10rem;
-  margin: 0 auto 0.3rem;
   text-transform: uppercase;
 }
-/* line 115, ../scss/partials/base/_buttons.scss */
+/* line 75, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:after {
   content: '';
   display: block;
@@ -745,78 +705,56 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 127, ../scss/partials/base/_buttons.scss */
+/* line 87, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:before {
   display: block;
   font-family: 'icons';
-  font-size: 5rem;
-  padding-top: 1.6rem;
 }
-/* line 135, ../scss/partials/base/_buttons.scss */
-.btn.btn--square:hover:after {
-  height: 0.5rem;
-}
-/* line 141, ../scss/partials/base/_buttons.scss */
+/* line 93, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 144, ../scss/partials/base/_buttons.scss */
+/* line 96, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 149, ../scss/partials/base/_buttons.scss */
+/* line 101, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 152, ../scss/partials/base/_buttons.scss */
+/* line 104, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 157, ../scss/partials/base/_buttons.scss */
+/* line 109, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
-  font-size: 2.2rem;
   font-weight: 700;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 10rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 169, ../scss/partials/base/_buttons.scss */
+/* line 119, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
-  font-size: 10.5rem;
   font-weight: 400;
   position: absolute;
-  bottom: -10.4rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 180, ../scss/partials/base/_buttons.scss */
-.btn.btn--load-more:hover {
-  top: 0.4rem;
-}
-/* line 183, ../scss/partials/base/_buttons.scss */
-.btn.btn--load-more:hover:before {
-  bottom: -11rem;
-}
-/* line 189, ../scss/partials/base/_buttons.scss */
+/* line 129, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
   display: inline-block;
-  font-size: 2rem;
   font-family: "Oswald", Arial, sans-serif;
-  padding: 1.2rem;
   position: relative;
-  top: 2.4rem;
-  margin-bottom: -1rem;
   text-align: center;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
@@ -824,35 +762,14 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 205, ../scss/partials/base/_buttons.scss */
+/* line 142, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
   display: block;
-  height: 0.5rem;
   width: 100%;
   position: absolute;
-  bottom: -0.5rem;
   left: 0;
-}
-/* line 216, ../scss/partials/base/_buttons.scss */
-.btn.btn--take-action:hover {
-  top: 2.6rem;
-}
-/* line 219, ../scss/partials/base/_buttons.scss */
-.btn.btn--take-action:hover:after {
-  height: 0.3rem;
-  bottom: -0.3rem;
-}
-/* line 225, ../scss/partials/base/_buttons.scss */
-.btn.btn--take-action:active {
-  top: 2.9rem;
-  box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
-}
-/* line 229, ../scss/partials/base/_buttons.scss */
-.btn.btn--take-action:active:after {
-  height: 0;
-  bottom: 0;
 }
 
 /* line 1, ../scss/partials/base/_nav.scss */
@@ -1361,9 +1278,8 @@ a:hover {
 /* line 214, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red .module__heading {
   background-color: #832f2d;
-  box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #832f2d;
 }
-/* line 222, ../scss/partials/base/_components.scss */
+/* line 221, ../scss/partials/base/_components.scss */
 .module.module--list:after {
   background-color: #eeeeee;
   content: '';
@@ -1372,73 +1288,73 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 231, ../scss/partials/base/_components.scss */
+/* line 230, ../scss/partials/base/_components.scss */
 .module.module--list .module__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 237, ../scss/partials/base/_components.scss */
+/* line 236, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li {
   border-bottom: 1px solid #eeeeee;
 }
-/* line 240, ../scss/partials/base/_components.scss */
+/* line 239, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li:last-child {
   border-bottom: 0 none;
 }
-/* line 247, ../scss/partials/base/_components.scss */
+/* line 246, ../scss/partials/base/_components.scss */
 .module.module--list .story--link .story__hed {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 252, ../scss/partials/base/_components.scss */
+/* line 251, ../scss/partials/base/_components.scss */
 .module.module--list .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 260, ../scss/partials/base/_components.scss */
+/* line 259, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
 }
-/* line 268, ../scss/partials/base/_components.scss */
+/* line 267, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 274, ../scss/partials/base/_components.scss */
+/* line 273, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 282, ../scss/partials/base/_components.scss */
+/* line 281, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 287, ../scss/partials/base/_components.scss */
+/* line 286, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
 }
-/* line 291, ../scss/partials/base/_components.scss */
+/* line 290, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: white;
   display: block;
 }
-/* line 297, ../scss/partials/base/_components.scss */
+/* line 296, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
 
 /* pullquote */
-/* line 305, ../scss/partials/base/_components.scss */
+/* line 304, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 308, ../scss/partials/base/_components.scss */
+/* line 307, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1447,7 +1363,7 @@ a:hover {
   border-radius: 50%;
   text-align: center;
 }
-/* line 317, ../scss/partials/base/_components.scss */
+/* line 316, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1457,61 +1373,61 @@ a:hover {
 }
 
 /* tags */
-/* line 327, ../scss/partials/base/_components.scss */
+/* line 326, ../scss/partials/base/_components.scss */
 .tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 333, ../scss/partials/base/_components.scss */
+/* line 332, ../scss/partials/base/_components.scss */
 .tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* prev/next */
-/* line 340, ../scss/partials/base/_components.scss */
+/* line 339, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 344, ../scss/partials/base/_components.scss */
+/* line 343, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 350, ../scss/partials/base/_components.scss */
+/* line 349, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 355, ../scss/partials/base/_components.scss */
+/* line 354, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 361, ../scss/partials/base/_components.scss */
+/* line 360, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 367, ../scss/partials/base/_components.scss */
+/* line 366, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 375, ../scss/partials/base/_components.scss */
+/* line 374, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 381, ../scss/partials/base/_components.scss */
+/* line 380, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 385, ../scss/partials/base/_components.scss */
+/* line 384, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
@@ -2031,14 +1947,13 @@ a:hover {
   text-align: center;
 }
 /* line 265, ../scss/partials/base/_story.scss */
-.module.take-action .take-action__a {
-  float: left;
+.module.take-action .take-action__img {
+  display: block;
+  width: 100%;
+  max-width: 38rem;
+  height: auto;
 }
-/* line 269, ../scss/partials/base/_story.scss */
-.module.take-action .take-action__b {
-  overflow: hidden;
-}
-/* line 273, ../scss/partials/base/_story.scss */
+/* line 272, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
@@ -2283,7 +2198,7 @@ html, body {
 
 /* line 18, ../scss/partials/mobile/_headings.scss */
 .hd-e {
-  font-size: 1.8rem;
+  font-size: 4.4rem;
 }
 
 /* line 22, ../scss/partials/mobile/_headings.scss */
@@ -2372,6 +2287,123 @@ html, body {
   height: 1.6rem;
   width: 1.6rem;
   margin-right: 1.2rem;
+}
+
+/* line 2, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--solid {
+  font-size: 4rem;
+  padding: 2.6rem;
+}
+/* line 7, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--view-all {
+  font-size: 1.6rem;
+  padding: 1.2rem 3.4rem 1.2rem 1.2rem;
+}
+/* line 11, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--view-all:before {
+  font-size: 2rem;
+  right: 1.2rem;
+}
+/* line 17, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--bar {
+  font-size: 4rem;
+  padding: 2.4rem 0 1.6rem;
+}
+/* line 21, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--bar:before {
+  font-size: 5.6rem;
+  line-height: 4.8rem;
+  margin-right: 3.4rem;
+}
+/* line 27, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--bar:after {
+  height: 0.5rem;
+  bottom: -0.5rem;
+}
+/* line 32, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--bar:hover {
+  top: 0.2rem;
+}
+/* line 35, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--bar:hover:after {
+  height: 0.3rem;
+  bottom: -0.3rem;
+}
+/* line 41, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--bar:active {
+  top: 0.5rem;
+  box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+/* line 45, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--bar:active:after {
+  height: 0;
+  bottom: 0;
+}
+/* line 52, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--square {
+  font-size: 1.6rem;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 0.3rem;
+}
+/* line 58, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--square:before {
+  font-size: 5rem;
+  padding-top: 1.6rem;
+}
+/* line 64, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--square:hover:after {
+  height: 0.5rem;
+}
+/* line 70, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--load-more {
+  font-size: 2.2rem;
+  margin-bottom: 10rem;
+}
+/* line 74, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--load-more:before {
+  font-size: 10.5rem;
+  bottom: -10.4rem;
+}
+/* line 79, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--load-more:hover {
+  top: 0.4rem;
+}
+/* line 82, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--load-more:hover:before {
+  bottom: -11rem;
+}
+/* line 88, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--take-action {
+  font-size: 2rem;
+  padding: 1.2rem;
+  top: 2.4rem;
+  margin-bottom: -1rem;
+}
+/* line 94, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--take-action:after {
+  height: 0.5rem;
+  position: absolute;
+  bottom: -0.5rem;
+}
+/* line 100, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--take-action:hover {
+  top: 2.6rem;
+}
+/* line 103, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--take-action:hover:after {
+  height: 0.3rem;
+  bottom: -0.3rem;
+}
+/* line 109, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--take-action:active {
+  top: 2.9rem;
+  box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+/* line 113, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--take-action:active:after {
+  height: 0;
+  bottom: 0;
 }
 
 /* line 1, ../scss/partials/mobile/_nav.scss */
@@ -2516,13 +2548,13 @@ html, body {
 /* indicator */
 /* line 72, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--module {
-  width: 7.6rem;
-  height: 7.6rem;
+  width: 13.6rem;
+  height: 13.6rem;
 }
 /* line 76, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--module:before {
-  font-size: 5.8rem;
-  line-height: 1.5;
+  font-size: 8rem;
+  line-height: 1.88;
 }
 /* line 82, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--carousel {
@@ -2567,7 +2599,7 @@ html, body {
 }
 /* line 126, ../scss/partials/mobile/_components.scss */
 .module.module--bg {
-  padding: 2rem;
+  padding: 4rem;
 }
 /* line 129, ../scss/partials/mobile/_components.scss */
 .module.module--bg:before {
@@ -2575,69 +2607,79 @@ html, body {
 }
 /* line 133, ../scss/partials/mobile/_components.scss */
 .module.module--bg header {
-  margin-top: -4.5rem;
+  margin-top: -10.4rem;
   margin-bottom: 2rem;
 }
 /* line 138, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading {
-  padding: 0.8rem 0.8rem 0.4rem;
-  top: -1rem;
+  padding: 1rem 2rem 0.2rem;
+  top: -3rem;
 }
 /* line 143, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
-  font-size: 1.5rem;
+  font-size: 2.6rem;
+  position: relative;
+  top: -0.6rem;
 }
-/* line 147, ../scss/partials/mobile/_components.scss */
+/* line 149, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:before {
-  margin-right: 1.2rem;
+  margin-right: 1.8rem;
 }
-/* line 151, ../scss/partials/mobile/_components.scss */
+/* line 153, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:after {
-  margin-left: 1.2rem;
+  margin-left: 1.8rem;
 }
-/* line 156, ../scss/partials/mobile/_components.scss */
+/* line 158, ../scss/partials/mobile/_components.scss */
 .module.module--bg p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 3rem;
 }
-/* line 164, ../scss/partials/mobile/_components.scss */
+/* line 165, ../scss/partials/mobile/_components.scss */
+.module.module--bg.module--blue .module__heading {
+  box-shadow: 0 4px 0 #eeeeee, 0 9px 0 #002130;
+}
+/* line 171, ../scss/partials/mobile/_components.scss */
+.module.module--bg.module--red .module__heading {
+  box-shadow: 0 4px 0 #eeeeee, 0 9px 0 #832f2d;
+}
+/* line 179, ../scss/partials/mobile/_components.scss */
 .module.module--list:after {
   height: 0.7rem;
   bottom: -0.7rem;
 }
-/* line 169, ../scss/partials/mobile/_components.scss */
+/* line 184, ../scss/partials/mobile/_components.scss */
 .module.module--list .module__heading {
   padding-bottom: 1.2rem;
 }
-/* line 174, ../scss/partials/mobile/_components.scss */
+/* line 189, ../scss/partials/mobile/_components.scss */
 .module.module--list .story-list li {
   padding: 4rem 0;
 }
-/* line 179, ../scss/partials/mobile/_components.scss */
+/* line 194, ../scss/partials/mobile/_components.scss */
 .module.module--list.module--horizontal {
   margin: 5rem 0;
 }
-/* line 184, ../scss/partials/mobile/_components.scss */
+/* line 199, ../scss/partials/mobile/_components.scss */
 .module.module--pull {
   margin: -37.6rem;
   width: 32rem;
 }
-/* line 190, ../scss/partials/mobile/_components.scss */
+/* line 205, ../scss/partials/mobile/_components.scss */
 .module.module--image-overlay .story {
   padding: 3.4rem;
 }
-/* line 194, ../scss/partials/mobile/_components.scss */
+/* line 209, ../scss/partials/mobile/_components.scss */
 .module.module--image-overlay .sponsor {
   margin-top: 12rem;
 }
 
 /* pullquote */
-/* line 201, ../scss/partials/mobile/_components.scss */
+/* line 216, ../scss/partials/mobile/_components.scss */
 .pullquote {
-  margin: 3.2rem 0 6.6rem;
+  margin: 3.2rem 0 7.6rem;
 }
-/* line 204, ../scss/partials/mobile/_components.scss */
+/* line 219, ../scss/partials/mobile/_components.scss */
 .pullquote:before {
   font-size: 5.78rem;
   line-height: 1.54;
@@ -2645,69 +2687,69 @@ html, body {
   height: 8rem;
   margin-bottom: 2.2rem;
 }
-/* line 212, ../scss/partials/mobile/_components.scss */
+/* line 227, ../scss/partials/mobile/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 3.4rem;
 }
-/* line 216, ../scss/partials/mobile/_components.scss */
+/* line 231, ../scss/partials/mobile/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 4rem;
 }
 
 /* tags */
-/* line 222, ../scss/partials/mobile/_components.scss */
+/* line 237, ../scss/partials/mobile/_components.scss */
 .tag {
   font-size: 2.5rem;
   padding: 0.8rem 1rem;
 }
 
 /* prev/next */
-/* line 228, ../scss/partials/mobile/_components.scss */
+/* line 243, ../scss/partials/mobile/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 232, ../scss/partials/mobile/_components.scss */
+/* line 247, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 236, ../scss/partials/mobile/_components.scss */
+/* line 251, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 242, ../scss/partials/mobile/_components.scss */
+/* line 257, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 248, ../scss/partials/mobile/_components.scss */
+/* line 263, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 256, ../scss/partials/mobile/_components.scss */
+/* line 271, ../scss/partials/mobile/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 259, ../scss/partials/mobile/_components.scss */
+/* line 274, ../scss/partials/mobile/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 264, ../scss/partials/mobile/_components.scss */
+/* line 279, ../scss/partials/mobile/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 268, ../scss/partials/mobile/_components.scss */
+/* line 283, ../scss/partials/mobile/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 273, ../scss/partials/mobile/_components.scss */
+/* line 288, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 276, ../scss/partials/mobile/_components.scss */
+/* line 291, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
@@ -2956,7 +2998,7 @@ html, body {
 }
 /* line 67, ../scss/partials/mobile/_story.scss */
 .story__container .story__content {
-  margin-bottom: 7.2rem;
+  margin-bottom: 22.6rem;
 }
 /* line 70, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > p {
@@ -3066,7 +3108,7 @@ html, body {
 /* line 169, ../scss/partials/mobile/_story.scss */
 .author__url {
   font-size: 2.4rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.6rem;
 }
 /* line 173, ../scss/partials/mobile/_story.scss */
 .author__url:hover {
@@ -3075,21 +3117,21 @@ html, body {
 
 /* line 178, ../scss/partials/mobile/_story.scss */
 .author__social {
-  margin-bottom: 3.4rem;
+  margin-bottom: 2.6rem;
 }
 /* line 181, ../scss/partials/mobile/_story.scss */
 .author__social li {
-  margin-left: 1rem;
+  margin-left: 3.4rem;
 }
 /* line 185, ../scss/partials/mobile/_story.scss */
 .author__social .icon {
   border-radius: 50%;
   background-color: #b7b7b7;
   color: #f6f6f6;
-  font-size: 2.6rem;
+  font-size: 5.2rem;
   line-height: 1.74;
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
 }
 /* line 195, ../scss/partials/mobile/_story.scss */
 .author__social .icon:hover, .author__social .icon:active {
@@ -3114,33 +3156,35 @@ html, body {
   font-size: 3.2rem;
   line-height: 1.3;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 221, ../scss/partials/mobile/_story.scss */
+/* line 223, ../scss/partials/mobile/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
-
 /* line 226, ../scss/partials/mobile/_story.scss */
+.story__social .btn--bar {
+  margin-bottom: 2.4rem;
+}
+
+/* line 232, ../scss/partials/mobile/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
-  padding-bottom: 3.4rem;
+  padding-bottom: 5rem;
+  text-align: center;
 }
-/* line 230, ../scss/partials/mobile/_story.scss */
+/* line 237, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__heading {
-  margin-bottom: 3.4rem;
+  margin-bottom: 4rem;
 }
-/* line 234, ../scss/partials/mobile/_story.scss */
-.module.take-action .take-action__a {
-  width: 25.6rem;
+/* line 241, ../scss/partials/mobile/_story.scss */
+.module.take-action .take-action__img {
+  margin: 0 auto 4rem;
 }
-/* line 238, ../scss/partials/mobile/_story.scss */
-.module.take-action .take-action__b {
-  padding-left: 3.4rem;
-}
-/* line 242, ../scss/partials/mobile/_story.scss */
+/* line 245, ../scss/partials/mobile/_story.scss */
 .module.take-action p {
-  font-size: 1.8rem;
-  line-height: 1.4;
-  margin-bottom: 2.2rem;
+  font-size: 3.2rem;
+  line-height: 1.32;
+  margin-bottom: 3.4rem;
 }

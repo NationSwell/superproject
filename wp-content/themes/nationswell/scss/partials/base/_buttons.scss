@@ -11,9 +11,8 @@
     color: $white;
     display: inline-block;
     font-family: $oswald;
-    font-size: 2rem;
-    padding: 1rem;
     text-transform: uppercase;
+
     -webkit-font-smoothing: antialiased;
 
     &:hover {
@@ -26,16 +25,12 @@
     color: $ns_blue1;
     display: inline-block;
     font-family: $gudea;
-    font-size: 1.6rem;
     font-weight: $bold;
-    padding: 1.2rem 3.4rem 1.2rem 1.2rem;
     position: relative;
 
     &:before {
       font-family: 'icons';
-      font-size: 2rem;
       position: absolute;
-      right: 1.2rem;
     }
 
     &:hover {
@@ -47,54 +42,23 @@
   &.btn--bar {
     color: $white;
     display: block;
-    font-size: 2.2rem;
     font-family: $oswald;
-    padding: 1.4rem 0 1rem;
     position: relative;
     text-align: center;
 
     @include transition(none);
 
-    &.btn--facebook,
-    &.btn--twitter {
-      width: 28.1625rem;
-    }
-
     &:before {
       font-family: 'icons';
-      font-size: 3.6rem;
       vertical-align: text-bottom;
-      line-height: 2.5rem;
-      margin-right: 1.6rem;
     }
 
     &:after {
       content: '';
       display: block;
-      height: 0.5rem;
       width: 100%;
       position: absolute;
-      bottom: -0.5rem;
       left: 0;
-    }
-
-    &:hover {
-      top: 0.2rem;
-
-      &:after {
-        height: 0.3rem;
-        bottom: -0.3rem;
-      }
-    }
-
-    &:active {
-      top: 0.5rem;
-      box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0,0,0, 0.2);
-
-      &:after {
-        height: 0;
-        bottom: 0;
-      }
     }
   }
 
@@ -102,14 +66,10 @@
     color: $white;
     display: block;
     font-family: $oswald;
-    font-size: 1.6rem;
     font-weight: $regular;
     -webkit-font-smoothing: antialiased;
     text-align: center;
     position: relative;
-    width: 10rem;
-    height: 10rem;
-    margin: 0 auto 0.3rem;
     text-transform: uppercase;
 
     &:after {
@@ -127,14 +87,6 @@
     &:before {
       display: block;
       font-family: 'icons';
-      font-size: 5rem;
-      padding-top: 1.6rem;
-    }
-
-    &:hover {
-      &:after {
-        height: 0.5rem;
-      }
     }
   }
 
@@ -157,32 +109,20 @@
   &.btn--load-more {
     color: $ns_red;
     font-family: $oswald;
-    font-size: 2.2rem;
     font-weight: $bold;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 10rem;
 
     @include transition(all 0.3s ease-in-out);
 
     &:before {
       color: $ns_blue1;
       font-family: 'icons';
-      font-size: 10.5rem;
       font-weight: $regular;
       position: absolute;
-      bottom: -10.4rem;
 
       @include transition(all 0.3s ease-in-out);
-    }
-
-    &:hover {
-      top: 0.4rem;
-
-      &:before {
-        bottom: -11rem;
-      }
     }
   }
 
@@ -190,14 +130,11 @@
     background-color: $ns_red;
     color: $white;
     display: inline-block;
-    font-size: 2rem;
     font-family: $oswald;
-    padding: 1.2rem;
     position: relative;
-    top: 2.4rem;
-    margin-bottom: -1rem;
     text-align: center;
     text-transform: uppercase;
+
     -webkit-font-smoothing: antialiased;
 
     @include transition(none);
@@ -206,30 +143,9 @@
       background-color: $ns_red1;
       content: '';
       display: block;
-      height: 0.5rem;
       width: 100%;
       position: absolute;
-      bottom: -0.5rem;
       left: 0;
-    }
-
-    &:hover {
-      top: 2.6rem;
-
-      &:after {
-        height: 0.3rem;
-        bottom: -0.3rem;
-      }
-    }
-
-    &:active {
-      top: 2.9rem;
-      box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0,0,0, 0.2);
-
-      &:after {
-        height: 0;
-        bottom: 0;
-      }
     }
   }
 }

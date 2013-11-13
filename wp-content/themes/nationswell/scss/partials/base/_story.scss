@@ -262,12 +262,11 @@
     text-align: center;
   }
 
-  .take-action__a {
-    float: left;
-  }
-
-  .take-action__b {
-    overflow: hidden;
+  .take-action__img {
+    display: block;
+    width: 100%;
+    max-width: 38rem;
+    height: auto;
   }
 
   p {
