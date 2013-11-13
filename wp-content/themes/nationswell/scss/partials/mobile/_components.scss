@@ -80,32 +80,28 @@
   }
 
   &.indicator--carousel {
-    width: 7.6rem;
-    height: 7.6rem;
-    top: 1.4rem;
+    width: 11.5rem;
+    height: 11.5rem;
 
     &:before {
-      font-size: 5rem;
-      line-height: 1.74;
+      font-size: 7rem;
+      line-height: 1.8;
     }
 
     &.indicator--text {
-      width: 9.8rem;
-      height: 9.8rem;
-
       &:before {
-        font-size: 5rem;
+        font-size: 6.6rem;
         line-height: 1.5;
       }
 
       .indicator__heading {
-        font-size: 1.4rem;
+        font-size: 2rem;
         line-height: 1.4;
         margin-top: -2.6rem;
       }
 
       .indicator__subheading {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
       }
     }
   }
