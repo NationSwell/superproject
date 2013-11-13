@@ -1,33 +1,17 @@
 .hero--story {
-  max-height: 42.6rem;
   position: relative;
 
   &.hero--image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 42.6rem;
   }
 
   &.hero--carousel {
-    .carousel {
-      background-color: $ns_navy0;
-      height: 42.6rem;
-    }
-
-    .carousel__control {
-      top: 16.6rem;
-    }
-
     .carousel-item {
       position: relative;
-      height: 42.6rem;
-      width: 82rem;
       margin: 0 auto;
-      min-width: 82rem;
       box-shadow: none;
-
-      @include transition(all 0.15s ease-in-out);
 
       &.active {
         .carousel--peek__image {
@@ -37,8 +21,6 @@
     }
 
     .carousel--peek__image {
-      height: 42.6rem;
-      width: 82rem;
       background-size: contain;
       opacity: 0.4;
 
@@ -48,7 +30,6 @@
 
   &.hero--video {
     .hero--video__container {
-      max-width: 67.8rem;
       display: block;
       margin: 0 auto;
       position: relative;
@@ -85,8 +66,6 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0.8rem 6rem;
-    font-size: 4rem;
     color: $white;
     text-shadow: 0px 1px 2px rgba(0,0,0, 0.2);
 
@@ -98,7 +77,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 2.2rem;
     background-color: rgba(6,24,34, 0.6);
     visibility: hidden;
     opacity: 0;
@@ -115,50 +93,27 @@
   .hero-information__caption {
     color: $white;
     font-family: $gudea;
-    font-size: 1.8rem;
     line-height: 1.3;
   }
 
   .hero-information__credit {
     color: $ns_navy5;
     font-family: $gudea;
-    font-size: 1.4rem;
     line-height: 1.1;
-    margin-top: 1rem;
   }
 }
 
 .story__container {
-  margin-top: 5rem;
-
-  .story--page {
-    > header {
-      .story__hed {
-        margin-bottom: 3.4rem;
-      }
-
-      .story__dek {
-        margin-bottom: 4.6rem;
-      }
-    }
-  }
-
   .story__content {
-    margin-bottom: 7.2rem;
-
     > p {
       font-family: $gudea;
-      font-size: 1.8rem;
       line-height: 1.5;
-      margin-bottom: 2.2rem;
 
       /* drop cap */
       &:first-child:first-letter {
         float: left;
         font-family: $oswald ;
-        font-size: 7.8rem;
         line-height: 1;
-        margin-right: 2.6rem;
       }
 
       a {
@@ -175,14 +130,8 @@
 
 /* multimedia */
 .multimedia {
-  margin: 5rem 0;
-
   .multimedia__content {
     display: block;
-  }
-
-  figcaption {
-    margin-top: 1rem;
   }
 
   .credit {
@@ -192,34 +141,14 @@
   &.multimedia--audio {
     .multimedia__content {
       border-bottom: 1px solid $gray6;
-      padding-bottom: 2.2rem;
     }
   }
-}
-
-.multimedia__heading {
-  margin-bottom: 2.2rem;
 }
 
 /* sticky */
 .story__sticky {
   display: block;
   position: relative;
-  padding: 0 1rem;
-}
-
-.bottomed .story__sticky-container {
-  position: absolute;
-  bottom: 0;
-  top: auto;
-}
-
-.story__sticky-container {
-  width: 16rem;
-}
-
-.sticky-social {
-  margin-bottom: 5rem;
 }
 
 .sticky-take-action {
@@ -228,29 +157,24 @@
   background-image: url(../img/take-action-flag.png);
   background-position: center;
   background-repeat: no-repeat;
-  padding: 1.6rem;
   text-align: center;
   width: 100%;
 }
 
 .sticky-take-action__heading {
   position: relative;
-  margin-bottom: 0.8rem;
 }
 
 .sticky-take-action__action {
   position: relative;
   color: $white;
   font-family: $gudea;
-  font-size: 1.6rem;
   line-height: 1.25;
 }
 
 /* tags */
 .story__tags {
   border-bottom: 3px solid $gray6;
-  margin-bottom: 5rem;
-  padding-bottom: 1.4rem;
 
   .tags-list {
     &:before {
@@ -258,14 +182,11 @@
       display: inline-block;
       color: $gray1;
       font-family: $gudea;
-      font-size: 1.6rem;
-      margin-right: 1.8rem;
       vertical-align: middle;
     }
 
     li {
       display: inline-block;
-      margin-right: 1rem;
     }
   }
 }
@@ -273,25 +194,14 @@
 /* author */
 .author {
   background-color: $gray7;
-  margin-bottom: 7.2rem;
-  padding: 2.6rem 3.4rem;
 }
 
 .author__portrait {
   border-radius: 50%;
   display: block;
-  margin-bottom: 1.2rem;
-}
-
-.author__contact {}
-
-.author__a {
-  text-align: center;
 }
 
 .author__b {
-  padding-top: 0.6rem;
-  padding-left: 3.4rem;
   overflow: hidden;
 }
 
@@ -299,7 +209,6 @@
   color: $ns_blue1;
   text-align: center;
   font-family: $gudea;
-  font-size: 1.4rem;
   font-weight: $bold;
   -webkit-font-smoothing: antialiased;
 
@@ -314,8 +223,6 @@
   li {
     display: inline-block;
     border-left: 1px solid $gray5;
-    padding-left: 1rem;
-    margin-left: 1rem;
 
     &:first-child {
       padding-left: 0;
@@ -325,11 +232,8 @@
 
   .icon {
     color: $gray4;
-    font-size: 2rem;
     text-align: center;
-    line-height: 0.6;
     vertical-align: middle;
-    height: 1.2rem;
 
     &:hover {
       color: $ns_blue1;
@@ -343,51 +247,35 @@
     content: 'Written by';
     display: block;
     font-family: $montserrat;
-    font-size: 1.8rem;
     font-weight: $bold;
-    margin-bottom: 0.4rem;
   }
-
-  margin-bottom: 1.4rem;
 }
 
 .author__bio {
   color: $gray1;
   font-family: $gudea;
-  font-size: 1.5rem;
-  line-height: 1.5;
 }
 
 // social
 .story__social {
   display: block;
-  margin-bottom: 7.2rem;
 }
 
 // take action module
 .module.take-action {
-  margin-bottom: 5rem;
-  padding-bottom: 3.4rem;
-
   .take-action__heading {
     text-align: center;
-    margin-bottom: 3.4rem;
   }
 
   .take-action__a {
     float: left;
-    width: 25.6rem;
   }
 
   .take-action__b {
-    padding-left: 3.4rem;
     overflow: hidden;
   }
 
   p {
     color: $ns_black;
-    font-size: 1.8rem;
-    line-height: 1.4;
-    margin-bottom: 2.2rem;
   }
 }
