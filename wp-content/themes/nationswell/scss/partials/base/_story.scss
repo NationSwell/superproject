@@ -107,7 +107,6 @@
   .story__content {
     > p {
       font-family: $gudea;
-      line-height: 1.5;
 
       /* drop cap */
       &:first-child:first-letter {
@@ -136,6 +135,13 @@
 
   .credit {
     text-align: right;
+  }
+
+  &.multimedia--image {
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   &.multimedia--audio {
@@ -179,7 +185,6 @@
   .tags-list {
     &:before {
       content: 'View more NationSwell stories in:';
-      display: inline-block;
       color: $gray1;
       font-family: $gudea;
       vertical-align: middle;
@@ -201,12 +206,9 @@
   display: block;
 }
 
-.author__b {
-  overflow: hidden;
-}
-
 .author__url {
   color: $ns_blue1;
+  display: block;
   text-align: center;
   font-family: $gudea;
   font-weight: $bold;
@@ -218,26 +220,20 @@
 }
 
 .author__social {
-  margin-top: 1.2rem;
+  margin: 1.2rem auto 0;
+  display: block;
+  text-align: center;
 
   li {
     display: inline-block;
-    border-left: 1px solid $gray5;
 
     &:first-child {
-      padding-left: 0;
-      border-left: 0;
+      margin-left: 0;
     }
   }
 
   .icon {
-    color: $gray4;
     text-align: center;
-    vertical-align: middle;
-
-    &:hover {
-      color: $ns_blue1;
-    }
   }
 }
 
@@ -252,7 +248,6 @@
 }
 
 .author__bio {
-  color: $gray1;
   font-family: $gudea;
 }
 

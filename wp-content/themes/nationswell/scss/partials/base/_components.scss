@@ -265,10 +265,6 @@
     }
   }
 
-  &.module--pull {
-    float: right;
-  }
-
   &.module--image-overlay {
     background-size: cover;
     background-position: center;
@@ -316,8 +312,6 @@
     display: block;
     border-radius: 50%;
     text-align: center;
-    position: absolute;
-    left: 0;
   }
 
   .pullquote__attribution {

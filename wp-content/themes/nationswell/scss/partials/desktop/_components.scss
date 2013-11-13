@@ -190,6 +190,7 @@
   }
 
   &.module--pull {
+    float: right;
     margin: -37.6rem;
     width: 32rem;
   }
@@ -211,6 +212,8 @@
   padding-left: 7.8rem;
 
   &:before {
+    position: absolute;
+    left: 0;
     font-size: 4.2rem;
     line-height: 1.46;
     width: 5.6rem;

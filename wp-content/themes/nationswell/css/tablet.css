@@ -370,12 +370,11 @@ body {
 .hd-l {
   color: #2d2d2d;
   font-family: "Oswald", Arial, sans-serif;
-  line-height: 1.3;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 101, ../scss/partials/base/_headings.scss */
+/* line 100, ../scss/partials/base/_headings.scss */
 .hd-m {
   background-color: #fc3b40;
   color: white;
@@ -386,7 +385,7 @@ body {
   padding: 1rem 1.6rem;
 }
 
-/* line 111, ../scss/partials/base/_headings.scss */
+/* line 110, ../scss/partials/base/_headings.scss */
 .hd-n {
   color: #003046;
   font-family: "Oswald", Arial, sans-serif;
@@ -394,7 +393,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 118, ../scss/partials/base/_headings.scss */
+/* line 117, ../scss/partials/base/_headings.scss */
 .hd-o {
   color: #003046;
   font-family: "Oswald", Arial, sans-serif;
@@ -403,7 +402,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 126, ../scss/partials/base/_headings.scss */
+/* line 125, ../scss/partials/base/_headings.scss */
 .hd-p {
   color: #003046;
   font-family: "Noto Serif", Georgia, serif;
@@ -1402,48 +1401,44 @@ a:hover {
   border-bottom: 0 none;
 }
 /* line 268, ../scss/partials/base/_components.scss */
-.module.module--pull {
-  float: right;
-}
-/* line 272, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 278, ../scss/partials/base/_components.scss */
+/* line 274, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 286, ../scss/partials/base/_components.scss */
+/* line 282, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 291, ../scss/partials/base/_components.scss */
+/* line 287, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
 }
-/* line 295, ../scss/partials/base/_components.scss */
+/* line 291, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: white;
   display: block;
 }
-/* line 301, ../scss/partials/base/_components.scss */
+/* line 297, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
 
 /* pullquote */
-/* line 309, ../scss/partials/base/_components.scss */
+/* line 305, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 312, ../scss/partials/base/_components.scss */
+/* line 308, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1451,10 +1446,8 @@ a:hover {
   display: block;
   border-radius: 50%;
   text-align: center;
-  position: absolute;
-  left: 0;
 }
-/* line 323, ../scss/partials/base/_components.scss */
+/* line 317, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1464,61 +1457,61 @@ a:hover {
 }
 
 /* tags */
-/* line 333, ../scss/partials/base/_components.scss */
+/* line 327, ../scss/partials/base/_components.scss */
 .tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 339, ../scss/partials/base/_components.scss */
+/* line 333, ../scss/partials/base/_components.scss */
 .tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* prev/next */
-/* line 346, ../scss/partials/base/_components.scss */
+/* line 340, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 350, ../scss/partials/base/_components.scss */
+/* line 344, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 356, ../scss/partials/base/_components.scss */
+/* line 350, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 361, ../scss/partials/base/_components.scss */
+/* line 355, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 367, ../scss/partials/base/_components.scss */
+/* line 361, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 373, ../scss/partials/base/_components.scss */
+/* line 367, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 381, ../scss/partials/base/_components.scss */
+/* line 375, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 387, ../scss/partials/base/_components.scss */
+/* line 381, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 391, ../scss/partials/base/_components.scss */
+/* line 385, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
@@ -1884,47 +1877,51 @@ a:hover {
 /* line 108, ../scss/partials/base/_story.scss */
 .story__container .story__content > p {
   font-family: "Gudea", Arial, sans-serif;
-  line-height: 1.5;
   /* drop cap */
 }
-/* line 113, ../scss/partials/base/_story.scss */
+/* line 112, ../scss/partials/base/_story.scss */
 .story__container .story__content > p:first-child:first-letter {
   float: left;
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
 }
-/* line 119, ../scss/partials/base/_story.scss */
+/* line 118, ../scss/partials/base/_story.scss */
 .story__container .story__content > p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 123, ../scss/partials/base/_story.scss */
+/* line 122, ../scss/partials/base/_story.scss */
 .story__container .story__content > p a:hover {
   color: #fc3b40;
 }
 
 /* multimedia */
-/* line 133, ../scss/partials/base/_story.scss */
+/* line 132, ../scss/partials/base/_story.scss */
 .multimedia .multimedia__content {
   display: block;
 }
-/* line 137, ../scss/partials/base/_story.scss */
+/* line 136, ../scss/partials/base/_story.scss */
 .multimedia .credit {
   text-align: right;
 }
-/* line 142, ../scss/partials/base/_story.scss */
+/* line 141, ../scss/partials/base/_story.scss */
+.multimedia.multimedia--image img {
+  display: block;
+  width: 100%;
+}
+/* line 148, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   border-bottom: 1px solid #eeeeee;
 }
 
 /* sticky */
-/* line 149, ../scss/partials/base/_story.scss */
+/* line 155, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
   position: relative;
 }
 
-/* line 154, ../scss/partials/base/_story.scss */
+/* line 160, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -1935,12 +1932,12 @@ a:hover {
   width: 100%;
 }
 
-/* line 164, ../scss/partials/base/_story.scss */
+/* line 170, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 168, ../scss/partials/base/_story.scss */
+/* line 174, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -1949,79 +1946,68 @@ a:hover {
 }
 
 /* tags */
-/* line 176, ../scss/partials/base/_story.scss */
+/* line 182, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 180, ../scss/partials/base/_story.scss */
+/* line 186, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
-  display: inline-block;
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 188, ../scss/partials/base/_story.scss */
+/* line 193, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
 /* author */
-/* line 195, ../scss/partials/base/_story.scss */
+/* line 200, ../scss/partials/base/_story.scss */
 .author {
   background-color: #f6f6f6;
 }
 
-/* line 199, ../scss/partials/base/_story.scss */
+/* line 204, ../scss/partials/base/_story.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
 }
 
-/* line 204, ../scss/partials/base/_story.scss */
-.author__b {
-  overflow: hidden;
-}
-
-/* line 208, ../scss/partials/base/_story.scss */
+/* line 209, ../scss/partials/base/_story.scss */
 .author__url {
   color: #0098d8;
+  display: block;
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 215, ../scss/partials/base/_story.scss */
+/* line 217, ../scss/partials/base/_story.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 220, ../scss/partials/base/_story.scss */
+/* line 222, ../scss/partials/base/_story.scss */
 .author__social {
-  margin-top: 1.2rem;
-}
-/* line 223, ../scss/partials/base/_story.scss */
-.author__social li {
-  display: inline-block;
-  border-left: 1px solid #dbdbdb;
+  margin: 1.2rem auto 0;
+  display: block;
+  text-align: center;
 }
 /* line 227, ../scss/partials/base/_story.scss */
+.author__social li {
+  display: inline-block;
+}
+/* line 230, ../scss/partials/base/_story.scss */
 .author__social li:first-child {
-  padding-left: 0;
-  border-left: 0;
+  margin-left: 0;
 }
-/* line 233, ../scss/partials/base/_story.scss */
+/* line 235, ../scss/partials/base/_story.scss */
 .author__social .icon {
-  color: #b7b7b7;
   text-align: center;
-  vertical-align: middle;
-}
-/* line 238, ../scss/partials/base/_story.scss */
-.author__social .icon:hover {
-  color: #0098d8;
 }
 
-/* line 245, ../scss/partials/base/_story.scss */
+/* line 241, ../scss/partials/base/_story.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'Written by';
@@ -2030,30 +2016,29 @@ a:hover {
   font-weight: 700;
 }
 
-/* line 254, ../scss/partials/base/_story.scss */
+/* line 250, ../scss/partials/base/_story.scss */
 .author__bio {
-  color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 260, ../scss/partials/base/_story.scss */
+/* line 255, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 266, ../scss/partials/base/_story.scss */
+/* line 261, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 270, ../scss/partials/base/_story.scss */
+/* line 265, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__a {
   float: left;
 }
-/* line 274, ../scss/partials/base/_story.scss */
+/* line 269, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__b {
   overflow: hidden;
 }
-/* line 278, ../scss/partials/base/_story.scss */
+/* line 273, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
