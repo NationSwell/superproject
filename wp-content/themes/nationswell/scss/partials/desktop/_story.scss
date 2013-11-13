@@ -40,6 +40,10 @@
     font-size: 4rem;
   }
 
+  .hero-information__outer {
+    padding: 2.2rem;
+  }
+
   .hero-information__caption {
     font-size: 1.8rem;
   }
@@ -69,13 +73,13 @@
 
     > p {
       font-size: 1.8rem;
+      line-height: 1.5;
       margin-bottom: 2.2rem;
 
       /* drop cap */
       &:first-child:first-letter {
-        float: left;
-        font-family: $oswald ;
-        line-height: 1;
+        font-size: 7.8rem;
+        margin-right: 2.6rem;
       }
 
       a {
@@ -141,6 +145,7 @@
 
   .tags-list {
     &:before {
+      display: inline-block;
       font-size: 1.6rem;
       margin-right: 1.8rem;
     }
@@ -157,13 +162,20 @@
   padding: 2.6rem 3.4rem;
 }
 
-.author__portrait {
-  margin-bottom: 1.2rem;
+.author__a {
+  float: left;
 }
 
 .author__b {
+  overflow: hidden;
   padding-top: 0.6rem;
   padding-left: 3.4rem;
+}
+
+.author__portrait {
+  margin-bottom: 1.2rem;
+  width: 13.4rem;
+  height: 13.4rem;
 }
 
 .author__url {
@@ -178,14 +190,26 @@
   margin-top: 1.2rem;
 
   li {
+    border-left: 1px solid $gray5;
     padding-left: 1rem;
     margin-left: 1rem;
+
+    &:first-child {
+      padding-left: 0;
+      border-left: 0;
+    }
   }
 
   .icon {
+    color: $gray4;
     font-size: 2rem;
     line-height: 0.6;
     height: 1.2rem;
+    vertical-align: middle;
+
+    &:hover {
+      color: $ns_blue1;
+    }
   }
 }
 
@@ -199,6 +223,7 @@
 }
 
 .author__bio {
+  color: $gray1;
   font-size: 1.5rem;
   line-height: 1.5;
 }
