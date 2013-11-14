@@ -66,7 +66,7 @@ function placeholder_shortcode($attr) {
         if($component) {
             $context = $component;
         }
-        $template = ['component-' . $component['type'] .'.twig', 'empty.twig'];
+        $template = array('component-' . $component['type'] .'.twig', 'empty.twig');
     }
     else {
         $template = is_user_logged_in() ? 'component-extraneous.twig' : 'empty.twig';

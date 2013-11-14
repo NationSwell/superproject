@@ -116,8 +116,9 @@
 
                 <div class="story__tags">
                     <ul class="tags-list">
-                        <li><a href="#" class="tag">Economy</a></li>
-                        <li><a href="#" class="tag">Global</a></li>
+                        {% for  category in post.categories %}
+                            <li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>
+                    {%  endfor %}
                     </ul>
                 </div>
 
@@ -178,19 +179,30 @@
                 </div>
 
                 <ul class="prev-next cf">
-                    <li><article class="story story--link">
-                            <a href="#" class="link-wrapper">
-                                <div class="prev-next__link prev-next__link--prev cf"><span class="icon icon_arrow-circle-left fl"></span> Previous Story</div>
-                                <h4 class="hd-o story__hed">Trekkers Featured on Fox</h4>
-                            </a>
-                        </article></li>
-
-                    <li><article class="story story--link">
-                            <a href="#" class="link-wrapper">
-                                <div class="prev-next__link prev-next__link--next cf"><span class="icon icon_arrow-circle-right fr"></span> Next Story</div>
-                                <h4 class="hd-o story__hed">GirlTrek City Reps Train to Lead Walking Revolution</h4>
-                            </a>
-                        </article></li>
+                    {% if post.next is not empty %}
+                        <li>
+                            <article class="story story--link">
+                                <a href="{{ post.prev.permalink }}" class="link-wrapper">
+                                    <div class="prev-next__link prev-next__link--prev cf">
+                                        <span class="icon icon_arrow-circle-left fl"></span> Previous Story
+                                    </div>
+                                    <h4 class="hd-o story__hed">{{ post.prev.post_title }}</h4>
+                                </a>
+                            </article>
+                        </li>
+                    {%  endif %}
+                    {% if post.next is not empty %}
+                        <li>
+                            <article class="story story--link">
+                                <a href="{{ post.next.permalink }}" class="link-wrapper">
+                                    <div class="prev-next__link prev-next__link--next cf">
+                                        <span class="icon icon_arrow-circle-right fr"></span> Next Story
+                                    </div>
+                                    <h4 class="hd-o story__hed">{{ post.next.post_title }}</h4>
+                                </a>
+                            </article>
+                        </li>
+                    {%  endif %}
                 </ul>
             </main>
 

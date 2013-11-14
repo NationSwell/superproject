@@ -63,9 +63,6 @@ include_once('lib/classes/NationSwellPost.php');
 // Configure Menus
 include_once('lib/menu/menu.php');
 
-// Configure Sidebar
-include_once('lib/sidebar/sidebar.php');
-
 // Custom Widgets
 include_once('lib/widgets/widgets.php');
 
