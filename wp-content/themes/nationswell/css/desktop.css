@@ -2092,16 +2092,7 @@ a:hover {
   margin-right: 0;
 }
 
-/*.module {
-  &.module--list {
-    &.module--horizontal {
-      li {
-        @include span-columns(2 of 6);
-      }
-    }
-  }
-}*/
-/* line 85, ../scss/partials/desktop/_grid.scss */
+/* line 74, ../scss/partials/desktop/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -2113,7 +2104,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 92, ../scss/partials/desktop/_grid.scss */
+/* line 81, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -2124,7 +2115,7 @@ a:hover {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 95, ../scss/partials/desktop/_grid.scss */
+/* line 84, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -2136,7 +2127,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 103, ../scss/partials/desktop/_grid.scss */
+/* line 92, ../scss/partials/desktop/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -3096,17 +3087,16 @@ a:hover {
   margin: 5rem 0;
 }
 /* line 101, ../scss/partials/desktop/_story.scss */
+.multimedia .multimedia__content {
+  margin-top: 2.2rem;
+}
+/* line 105, ../scss/partials/desktop/_story.scss */
 .multimedia figcaption {
   margin-top: 1rem;
 }
-/* line 106, ../scss/partials/desktop/_story.scss */
+/* line 110, ../scss/partials/desktop/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
-}
-
-/* line 112, ../scss/partials/desktop/_story.scss */
-.multimedia__heading {
-  margin-bottom: 2.2rem;
 }
 
 /* sticky */

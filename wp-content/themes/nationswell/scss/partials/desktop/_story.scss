@@ -98,6 +98,10 @@
 .multimedia {
   margin: 5rem 0;
 
+  .multimedia__content {
+    margin-top: 2.2rem;
+  }
+
   figcaption {
     margin-top: 1rem;
   }
@@ -107,10 +111,6 @@
       padding-bottom: 2.2rem;
     }
   }
-}
-
-.multimedia__heading {
-  margin-bottom: 2.2rem;
 }
 
 /* sticky */

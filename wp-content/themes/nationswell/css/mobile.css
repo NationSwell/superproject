@@ -2099,16 +2099,7 @@ a:hover {
   margin-right: 0;
 }
 
-/*.module {
-  &.module--list {
-    &.module--horizontal {
-      li {
-        @include span-columns(6 of 6);
-      }
-    }
-  }
-}*/
-/* line 85, ../scss/partials/mobile/_grid.scss */
+/* line 74, ../scss/partials/mobile/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -2120,7 +2111,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 92, ../scss/partials/mobile/_grid.scss */
+/* line 81, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -2131,7 +2122,7 @@ a:hover {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 95, ../scss/partials/mobile/_grid.scss */
+/* line 84, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -2143,7 +2134,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 103, ../scss/partials/mobile/_grid.scss */
+/* line 92, ../scss/partials/mobile/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -2244,21 +2235,22 @@ html, body {
 
 /* line 53, ../scss/partials/mobile/_headings.scss */
 .hd-m {
+  box-shadow: 2rem 0 0 #fc3b40, -2rem 0 0 #fc3b40;
   font-size: 4rem;
-  padding: 1rem 1.6rem;
+  padding: 0 0 0.2rem;
 }
 
-/* line 58, ../scss/partials/mobile/_headings.scss */
+/* line 59, ../scss/partials/mobile/_headings.scss */
 .hd-n {
   font-size: 6rem;
 }
 
-/* line 62, ../scss/partials/mobile/_headings.scss */
+/* line 63, ../scss/partials/mobile/_headings.scss */
 .hd-o {
   font-size: 1.8rem;
 }
 
-/* line 66, ../scss/partials/mobile/_headings.scss */
+/* line 67, ../scss/partials/mobile/_headings.scss */
 .hd-p {
   font-size: 6rem;
 }
@@ -2971,39 +2963,40 @@ html, body {
 
 /* line 34, ../scss/partials/mobile/_story.scss */
 .hero-information .hero-information__toggle {
-  padding: 0.8rem 6rem;
-  font-size: 4rem;
+  padding: 0rem 6rem;
+  font-size: 10rem;
 }
 /* line 39, ../scss/partials/mobile/_story.scss */
 .hero-information .hero-information__outer {
-  padding: 2.2rem;
+  padding: 3rem;
 }
 /* line 43, ../scss/partials/mobile/_story.scss */
 .hero-information .hero-information__caption {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
 }
-/* line 47, ../scss/partials/mobile/_story.scss */
+/* line 48, ../scss/partials/mobile/_story.scss */
 .hero-information .hero-information__credit {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
-/* line 52, ../scss/partials/mobile/_story.scss */
+/* line 53, ../scss/partials/mobile/_story.scss */
 .story__container {
   margin-top: 7.6rem;
 }
-/* line 57, ../scss/partials/mobile/_story.scss */
+/* line 58, ../scss/partials/mobile/_story.scss */
 .story__container .story--page > header .story__hed {
   margin-bottom: 4.8rem;
 }
-/* line 61, ../scss/partials/mobile/_story.scss */
+/* line 62, ../scss/partials/mobile/_story.scss */
 .story__container .story--page > header .story__dek {
   margin-bottom: 4.6rem;
 }
-/* line 67, ../scss/partials/mobile/_story.scss */
+/* line 68, ../scss/partials/mobile/_story.scss */
 .story__container .story__content {
   margin-bottom: 22.6rem;
 }
-/* line 70, ../scss/partials/mobile/_story.scss */
+/* line 71, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > p {
   font-size: 3.2rem;
   line-height: 1.32;
@@ -3012,121 +3005,132 @@ html, body {
   /* drop cap */
   /* drop cap */
 }
-/* line 78, ../scss/partials/mobile/_story.scss */
+/* line 79, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > p:first-child:first-letter {
   font-size: 12.5rem;
   margin-right: 2.6rem;
 }
-/* line 83, ../scss/partials/mobile/_story.scss */
+/* line 84, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 87, ../scss/partials/mobile/_story.scss */
+/* line 88, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > p a:hover {
   color: #fc3b40;
 }
 
 /* multimedia */
-/* line 96, ../scss/partials/mobile/_story.scss */
+/* line 97, ../scss/partials/mobile/_story.scss */
 .multimedia {
   margin: 7.6rem 0;
 }
-/* line 99, ../scss/partials/mobile/_story.scss */
+/* line 100, ../scss/partials/mobile/_story.scss */
+.multimedia .multimedia__heading {
+  display: inline;
+  position: relative;
+  left: 2rem;
+  line-height: 1.5;
+}
+/* line 107, ../scss/partials/mobile/_story.scss */
+.multimedia .multimedia__content {
+  margin-top: 3.4rem;
+}
+/* line 111, ../scss/partials/mobile/_story.scss */
 .multimedia figcaption {
   margin-top: 2.6rem;
 }
-/* line 104, ../scss/partials/mobile/_story.scss */
+/* line 116, ../scss/partials/mobile/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
 }
 
-/* line 110, ../scss/partials/mobile/_story.scss */
+/* line 122, ../scss/partials/mobile/_story.scss */
 .multimedia__heading {
   margin-bottom: 2.4rem;
 }
 
 /* sticky */
-/* line 115, ../scss/partials/mobile/_story.scss */
+/* line 127, ../scss/partials/mobile/_story.scss */
 .story__sticky {
   padding: 0 1rem;
 }
 
-/* line 119, ../scss/partials/mobile/_story.scss */
+/* line 131, ../scss/partials/mobile/_story.scss */
 .story__sticky-container {
   width: 16rem;
 }
 
-/* line 123, ../scss/partials/mobile/_story.scss */
+/* line 135, ../scss/partials/mobile/_story.scss */
 .sticky-social {
   margin-bottom: 5rem;
 }
 
-/* line 127, ../scss/partials/mobile/_story.scss */
+/* line 139, ../scss/partials/mobile/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
 }
 
-/* line 131, ../scss/partials/mobile/_story.scss */
+/* line 143, ../scss/partials/mobile/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 135, ../scss/partials/mobile/_story.scss */
+/* line 147, ../scss/partials/mobile/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 140, ../scss/partials/mobile/_story.scss */
+/* line 152, ../scss/partials/mobile/_story.scss */
 .story__tags {
   margin-bottom: 7.6rem;
 }
-/* line 144, ../scss/partials/mobile/_story.scss */
+/* line 156, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list:before {
   display: block;
   font-size: 3.2rem;
   margin-bottom: 2.2rem;
 }
-/* line 150, ../scss/partials/mobile/_story.scss */
+/* line 162, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list li {
   margin-right: 1.4rem;
   margin-bottom: 2.2rem;
 }
 
 /* author */
-/* line 158, ../scss/partials/mobile/_story.scss */
+/* line 170, ../scss/partials/mobile/_story.scss */
 .author {
   margin-bottom: 7.2rem;
   padding: 4rem;
 }
 
-/* line 163, ../scss/partials/mobile/_story.scss */
+/* line 175, ../scss/partials/mobile/_story.scss */
 .author__portrait {
   margin: 0 auto 2.2rem;
   width: 23rem;
   height: 23rem;
 }
 
-/* line 169, ../scss/partials/mobile/_story.scss */
+/* line 181, ../scss/partials/mobile/_story.scss */
 .author__url {
   font-size: 2.4rem;
   margin-bottom: 2.6rem;
 }
-/* line 173, ../scss/partials/mobile/_story.scss */
+/* line 185, ../scss/partials/mobile/_story.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 178, ../scss/partials/mobile/_story.scss */
+/* line 190, ../scss/partials/mobile/_story.scss */
 .author__social {
   margin-bottom: 2.6rem;
 }
-/* line 181, ../scss/partials/mobile/_story.scss */
+/* line 193, ../scss/partials/mobile/_story.scss */
 .author__social li {
   margin-left: 3.4rem;
 }
-/* line 185, ../scss/partials/mobile/_story.scss */
+/* line 197, ../scss/partials/mobile/_story.scss */
 .author__social .icon {
   border-radius: 50%;
   background-color: #b7b7b7;
@@ -3136,24 +3140,24 @@ html, body {
   width: 8rem;
   height: 8rem;
 }
-/* line 195, ../scss/partials/mobile/_story.scss */
+/* line 207, ../scss/partials/mobile/_story.scss */
 .author__social .icon:hover, .author__social .icon:active {
   background-color: #0098d8;
   color: white;
 }
 
-/* line 202, ../scss/partials/mobile/_story.scss */
+/* line 214, ../scss/partials/mobile/_story.scss */
 .author__byline {
   text-align: center;
   margin-bottom: 3.4rem;
 }
-/* line 205, ../scss/partials/mobile/_story.scss */
+/* line 217, ../scss/partials/mobile/_story.scss */
 .author__byline:before {
   font-size: 2.5rem;
   margin-bottom: 0.8rem;
 }
 
-/* line 213, ../scss/partials/mobile/_story.scss */
+/* line 225, ../scss/partials/mobile/_story.scss */
 .author__bio {
   color: #333333;
   font-size: 3.2rem;
@@ -3162,30 +3166,30 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 223, ../scss/partials/mobile/_story.scss */
+/* line 235, ../scss/partials/mobile/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
-/* line 226, ../scss/partials/mobile/_story.scss */
+/* line 238, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar {
   margin-bottom: 2.4rem;
 }
 
-/* line 232, ../scss/partials/mobile/_story.scss */
+/* line 244, ../scss/partials/mobile/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 5rem;
   text-align: center;
 }
-/* line 237, ../scss/partials/mobile/_story.scss */
+/* line 249, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 4rem;
 }
-/* line 241, ../scss/partials/mobile/_story.scss */
+/* line 253, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__img {
   margin: 0 auto 4rem;
 }
-/* line 245, ../scss/partials/mobile/_story.scss */
+/* line 257, ../scss/partials/mobile/_story.scss */
 .module.take-action p {
   font-size: 3.2rem;
   line-height: 1.32;

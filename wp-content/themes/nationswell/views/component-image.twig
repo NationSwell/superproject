@@ -1,6 +1,9 @@
 <figure class="multimedia multimedia--image">
     <h3 class="hd-m multimedia__heading">{{ title }}</h3>
-    <img src="{{ url|resize(584, 302) }}">
+
+    <div class="multimedia__content">
+        <img src="{{ url|resize(584, 302) }}">
+    </div>
 
     <figcaption class="cf">
         <span class="caption">{{ caption }}</span>

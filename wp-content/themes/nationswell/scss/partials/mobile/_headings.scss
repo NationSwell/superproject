@@ -51,8 +51,9 @@
 }
 
 .hd-m {
+  box-shadow: 2rem 0 0 $ns_red, -2rem 0 0 $ns_red;
   font-size: 4rem;
-  padding: 1rem 1.6rem;
+  padding: 0 0 0.2rem;
 }
 
 .hd-n {

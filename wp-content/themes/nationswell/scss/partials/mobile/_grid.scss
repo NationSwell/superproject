@@ -69,17 +69,6 @@
   }
 }
 
-// modules
-/*.module {
-  &.module--list {
-    &.module--horizontal {
-      li {
-        @include span-columns(6 of 6);
-      }
-    }
-  }
-}*/
-
 // story social buttons
 .story__social {
   .btn--bar {

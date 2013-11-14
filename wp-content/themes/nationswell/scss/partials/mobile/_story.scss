@@ -32,20 +32,21 @@
 
 .hero-information {
   .hero-information__toggle {
-    padding: 0.8rem 6rem;
-    font-size: 4rem;
+    padding: 0rem 6rem;
+    font-size: 10rem;
   }
 
   .hero-information__outer {
-    padding: 2.2rem;
+    padding: 3rem;
   }
 
   .hero-information__caption {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
   }
 
   .hero-information__credit {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -95,6 +96,17 @@
 /* multimedia */
 .multimedia {
   margin: 7.6rem 0;
+
+  .multimedia__heading {
+    display: inline;
+    position: relative;
+    left: 2rem;
+    line-height: 1.5;
+  }
+
+  .multimedia__content {
+    margin-top: 3.4rem;
+  }
 
   figcaption {
     margin-top: 2.6rem;
