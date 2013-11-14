@@ -85,8 +85,8 @@
             <div class="story__sticky hide_mobile">
                 <div class="story__sticky-container">
                     <div class="sticky-social">
-                        <a href="#" class="btn btn--facebook btn--square icon icon_facebook">share</a>
-                        <a href="#" class="btn btn--twitter btn--square icon icon_twitter">tweet</a>
+                        <a href="{{ post.facebook_share_url }}" class="btn btn--facebook btn--square icon icon_facebook">Facebook Share</a>
+                        <a href="{{ post.twitter_share_url }}" class="btn btn--twitter btn--square icon icon_twitter">tweet</a>
                     </div>
 
                     <div class="sticky-take-action">
@@ -155,8 +155,8 @@
                 </div>
 
                 <div class="story__social cf">
-                    <a href="#" class="btn btn--bar btn--facebook icon icon_facebook">Follow on Facebook</a>
-                    <a href="#" class="btn btn--bar btn--twitter icon icon_twitter">Follow on Twitter</a>
+                    <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook icon icon_facebook">Share on Facebook</a>
+                    <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter icon icon_twitter">Share on Twitter</a>
                 </div>
 
                 <div class="module module--bg module--red take-action take-action--buy cf">
