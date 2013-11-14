@@ -125,6 +125,16 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Google Analytics Dashbarod',
+            'slug' => 'google-analytics-dashboard',
+            'source' => get_stylesheet_directory() . '/lib/plugins/google-analytics-dashboard.2.0.5.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
