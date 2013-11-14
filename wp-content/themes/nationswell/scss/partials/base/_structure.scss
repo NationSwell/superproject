@@ -25,7 +25,12 @@ body {
 }
 
 #page-content {
+  padding-bottom: 8rem;
   position: relative;
   background: $white;
   z-index: 1;
+}
+
+.container {
+  position: relative;
 }

@@ -79,7 +79,7 @@
     }
   }
 
-  &.indicator--carousel {
+  &.indicator--title {
     width: 11.5rem;
     height: 11.5rem;
 
@@ -89,8 +89,9 @@
     }
 
     &.indicator--text {
+      margin-bottom: -1.2rem;
       &:before {
-        font-size: 6.6rem;
+        font-size: 5rem;
         line-height: 1.5;
       }
 

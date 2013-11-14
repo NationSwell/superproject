@@ -104,9 +104,15 @@ body {
 
 /* line 27, ../scss/partials/base/_structure.scss */
 #page-content {
+  padding-bottom: 8rem;
   position: relative;
   background: white;
   z-index: 1;
+}
+
+/* line 34, ../scss/partials/base/_structure.scss */
+.container {
+  position: relative;
 }
 
 /* line 1, ../scss/partials/base/_utility.scss */
@@ -191,8 +197,12 @@ body {
 .v-align__inner.v-align__inner--bottom {
   vertical-align: bottom;
 }
+/* line 42, ../scss/partials/base/_utility.scss */
+.v-align__inner.v-align__inner--center {
+  vertical-align: middle;
+}
 
-/* line 43, ../scss/partials/base/_utility.scss */
+/* line 47, ../scss/partials/base/_utility.scss */
 .stuck {
   position: fixed;
   top: 60px;
@@ -404,6 +414,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 133, ../scss/partials/base/_headings.scss */
+.hd-q {
+  color: #003046;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+}
+
 /* line 1, ../scss/partials/base/_typography.scss */
 a {
   text-decoration: none;
@@ -541,73 +558,83 @@ a:hover {
 }
 
 /* line 65, ../scss/partials/base/_icons.scss */
-.icon_hamburger:before {
+.icon_google-plus:before {
   content: "\f10c";
 }
 
 /* line 68, ../scss/partials/base/_icons.scss */
-.icon_information:before {
+.icon_hamburger:before {
   content: "\f10d";
 }
 
 /* line 71, ../scss/partials/base/_icons.scss */
-.icon_load-more:before {
+.icon_information:before {
   content: "\f10e";
 }
 
 /* line 74, ../scss/partials/base/_icons.scss */
-.icon_nationswell-flag:before {
+.icon_instagram:before {
   content: "\f10f";
 }
 
 /* line 77, ../scss/partials/base/_icons.scss */
-.icon_play:before {
+.icon_load-more:before {
   content: "\f110";
 }
 
 /* line 80, ../scss/partials/base/_icons.scss */
-.icon_quote:before {
+.icon_nationswell-flag:before {
   content: "\f111";
 }
 
 /* line 83, ../scss/partials/base/_icons.scss */
-.icon_search:before {
+.icon_play:before {
   content: "\f112";
 }
 
 /* line 86, ../scss/partials/base/_icons.scss */
-.icon_separator:before {
+.icon_quote:before {
   content: "\f113";
 }
 
 /* line 89, ../scss/partials/base/_icons.scss */
-.icon_series:before {
+.icon_search:before {
   content: "\f114";
 }
 
 /* line 92, ../scss/partials/base/_icons.scss */
-.icon_star:before {
+.icon_separator:before {
   content: "\f115";
 }
 
 /* line 95, ../scss/partials/base/_icons.scss */
-.icon_tumblr:before {
+.icon_series:before {
   content: "\f116";
 }
 
 /* line 98, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
+.icon_star:before {
   content: "\f117";
 }
 
 /* line 101, ../scss/partials/base/_icons.scss */
-.icon_volume:before {
+.icon_tumblr:before {
   content: "\f118";
 }
 
 /* line 104, ../scss/partials/base/_icons.scss */
-.icon_write:before {
+.icon_twitter:before {
   content: "\f119";
+}
+
+/* line 107, ../scss/partials/base/_icons.scss */
+.icon_volume:before {
+  content: "\f11a";
+}
+
+/* line 110, ../scss/partials/base/_icons.scss */
+.icon_write:before {
+  content: "\f11b";
 }
 
 /* line 1, ../scss/partials/base/_buttons.scss */
@@ -1061,10 +1088,13 @@ a:hover {
 /* line 2, ../scss/partials/base/_components.scss */
 .hero {
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* rubric */
-/* line 7, ../scss/partials/base/_components.scss */
+/* line 10, ../scss/partials/base/_components.scss */
 .rubric {
   background-color: #fc3b40;
   color: white;
@@ -1072,7 +1102,7 @@ a:hover {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-/* line 14, ../scss/partials/base/_components.scss */
+/* line 17, ../scss/partials/base/_components.scss */
 .story--tease {
   background-color: transparent;
   position: relative;
@@ -1080,26 +1110,26 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 21, ../scss/partials/base/_components.scss */
+/* line 24, ../scss/partials/base/_components.scss */
 .story--tease:hover .story__hed {
   color: #0098d8;
 }
-/* line 26, ../scss/partials/base/_components.scss */
+/* line 29, ../scss/partials/base/_components.scss */
 .story--tease .link-wrapper {
   height: auto;
 }
-/* line 31, ../scss/partials/base/_components.scss */
+/* line 34, ../scss/partials/base/_components.scss */
 .story--tease .story__feature img {
   display: block;
   width: 100%;
 }
-/* line 37, ../scss/partials/base/_components.scss */
+/* line 40, ../scss/partials/base/_components.scss */
 .story--tease .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 41, ../scss/partials/base/_components.scss */
+/* line 44, ../scss/partials/base/_components.scss */
 .story--tease .story__dek {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
@@ -1107,30 +1137,30 @@ a:hover {
 }
 
 /* support cause */
-/* line 50, ../scss/partials/base/_components.scss */
+/* line 53, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__heading {
   color: #fc3b40;
 }
-/* line 54, ../scss/partials/base/_components.scss */
+/* line 57, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__data {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 59, ../scss/partials/base/_components.scss */
+/* line 62, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__data.support-cause__data--red {
   color: #fc3b40;
 }
-/* line 63, ../scss/partials/base/_components.scss */
+/* line 66, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__data.support-cause__data--blue {
   color: #0098d8;
 }
-/* line 67, ../scss/partials/base/_components.scss */
+/* line 70, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__data .super {
   font-weight: 400;
   position: relative;
 }
-/* line 73, ../scss/partials/base/_components.scss */
+/* line 76, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__label {
   color: #2d2d2d;
   font-family: "Oswald", Arial, sans-serif;
@@ -1138,7 +1168,7 @@ a:hover {
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
-/* line 82, ../scss/partials/base/_components.scss */
+/* line 85, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__separator {
   color: #dbdbdb;
   display: inline-block;
@@ -1146,76 +1176,76 @@ a:hover {
 }
 
 /* sponsor */
-/* line 90, ../scss/partials/base/_components.scss */
+/* line 93, ../scss/partials/base/_components.scss */
 .sponsor {
   font-family: "Gudea", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 95, ../scss/partials/base/_components.scss */
+/* line 98, ../scss/partials/base/_components.scss */
 .sponsor .sponsor__logo {
   display: inline-block;
   vertical-align: middle;
 }
 
 /* indicator */
-/* line 102, ../scss/partials/base/_components.scss */
+/* line 105, ../scss/partials/base/_components.scss */
 .indicator {
   margin: 0 auto;
   display: block;
   border-radius: 50%;
   text-align: center;
 }
-/* line 108, ../scss/partials/base/_components.scss */
+/* line 111, ../scss/partials/base/_components.scss */
 .indicator:before {
   color: white;
 }
-/* line 112, ../scss/partials/base/_components.scss */
+/* line 115, ../scss/partials/base/_components.scss */
 .indicator.indicator--blue {
   background-color: #0098d8;
 }
-/* line 116, ../scss/partials/base/_components.scss */
+/* line 119, ../scss/partials/base/_components.scss */
 .indicator.indicator--red {
   background-color: #fc3b40;
 }
-/* line 120, ../scss/partials/base/_components.scss */
-.indicator.indicator--carousel {
+/* line 123, ../scss/partials/base/_components.scss */
+.indicator.indicator--title {
   position: relative;
 }
-/* line 124, ../scss/partials/base/_components.scss */
-.indicator.indicator--carousel.indicator--text .indicator__heading {
+/* line 127, ../scss/partials/base/_components.scss */
+.indicator.indicator--title.indicator--text .indicator__heading {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
 }
-/* line 130, ../scss/partials/base/_components.scss */
-.indicator.indicator--carousel.indicator--text .indicator__subheading {
+/* line 133, ../scss/partials/base/_components.scss */
+.indicator.indicator--title.indicator--text .indicator__subheading {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 400;
 }
-/* line 138, ../scss/partials/base/_components.scss */
+/* line 141, ../scss/partials/base/_components.scss */
 .indicator.indicator--take-action {
   position: relative;
   margin: 0 auto;
 }
 
 /* module */
-/* line 145, ../scss/partials/base/_components.scss */
+/* line 148, ../scss/partials/base/_components.scss */
 .module {
   display: block;
   position: relative;
   width: auto;
 }
-/* line 150, ../scss/partials/base/_components.scss */
+/* line 153, ../scss/partials/base/_components.scss */
 .module.module--sidebar {
   margin: 0 auto;
 }
-/* line 154, ../scss/partials/base/_components.scss */
+/* line 157, ../scss/partials/base/_components.scss */
 .module.module--bg {
   background-color: #eeeeee;
 }
-/* line 157, ../scss/partials/base/_components.scss */
+/* line 160, ../scss/partials/base/_components.scss */
 .module.module--bg:before {
   content: '';
   display: block;
@@ -1224,17 +1254,17 @@ a:hover {
   top: 0;
   left: 0;
 }
-/* line 166, ../scss/partials/base/_components.scss */
+/* line 169, ../scss/partials/base/_components.scss */
 .module.module--bg header {
   position: relative;
   text-align: center;
 }
-/* line 171, ../scss/partials/base/_components.scss */
+/* line 174, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading {
   display: inline-block;
   position: relative;
 }
-/* line 176, ../scss/partials/base/_components.scss */
+/* line 179, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1247,32 +1277,32 @@ a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 190, ../scss/partials/base/_components.scss */
+/* line 193, ../scss/partials/base/_components.scss */
 .module.module--bg p {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 198, ../scss/partials/base/_components.scss */
+/* line 201, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
 }
-/* line 202, ../scss/partials/base/_components.scss */
+/* line 205, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue .module__heading {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 210, ../scss/partials/base/_components.scss */
+/* line 213, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
 }
-/* line 214, ../scss/partials/base/_components.scss */
+/* line 217, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red .module__heading {
   background-color: #832f2d;
 }
-/* line 221, ../scss/partials/base/_components.scss */
+/* line 224, ../scss/partials/base/_components.scss */
 .module.module--list:after {
   background-color: #eeeeee;
   content: '';
@@ -1281,79 +1311,79 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 230, ../scss/partials/base/_components.scss */
+/* line 233, ../scss/partials/base/_components.scss */
 .module.module--list .module__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 236, ../scss/partials/base/_components.scss */
+/* line 239, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li {
   border-bottom: 1px solid #eeeeee;
 }
-/* line 239, ../scss/partials/base/_components.scss */
+/* line 242, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li:last-child {
   border-bottom: 0 none;
 }
-/* line 246, ../scss/partials/base/_components.scss */
+/* line 249, ../scss/partials/base/_components.scss */
 .module.module--list .story--link .story__hed {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 251, ../scss/partials/base/_components.scss */
+/* line 254, ../scss/partials/base/_components.scss */
 .module.module--list .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 259, ../scss/partials/base/_components.scss */
+/* line 262, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
   margin-right: 4.25%;
   vertical-align: top;
 }
-/* line 265, ../scss/partials/base/_components.scss */
+/* line 268, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li:last-child {
   margin-right: 0;
 }
-/* line 273, ../scss/partials/base/_components.scss */
+/* line 276, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 279, ../scss/partials/base/_components.scss */
+/* line 282, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 287, ../scss/partials/base/_components.scss */
+/* line 290, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 292, ../scss/partials/base/_components.scss */
+/* line 295, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
 }
-/* line 296, ../scss/partials/base/_components.scss */
+/* line 299, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: white;
   display: block;
 }
-/* line 302, ../scss/partials/base/_components.scss */
+/* line 305, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
 
 /* pullquote */
-/* line 310, ../scss/partials/base/_components.scss */
+/* line 313, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 313, ../scss/partials/base/_components.scss */
+/* line 316, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1362,7 +1392,7 @@ a:hover {
   border-radius: 50%;
   text-align: center;
 }
-/* line 322, ../scss/partials/base/_components.scss */
+/* line 325, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1372,61 +1402,61 @@ a:hover {
 }
 
 /* tags */
-/* line 332, ../scss/partials/base/_components.scss */
+/* line 335, ../scss/partials/base/_components.scss */
 .tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 338, ../scss/partials/base/_components.scss */
+/* line 341, ../scss/partials/base/_components.scss */
 .tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* prev/next */
-/* line 345, ../scss/partials/base/_components.scss */
+/* line 348, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 349, ../scss/partials/base/_components.scss */
+/* line 352, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 355, ../scss/partials/base/_components.scss */
+/* line 358, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 360, ../scss/partials/base/_components.scss */
+/* line 363, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 366, ../scss/partials/base/_components.scss */
+/* line 369, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 372, ../scss/partials/base/_components.scss */
+/* line 375, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 380, ../scss/partials/base/_components.scss */
+/* line 383, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 386, ../scss/partials/base/_components.scss */
+/* line 389, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 390, ../scss/partials/base/_components.scss */
+/* line 393, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
@@ -1887,9 +1917,10 @@ a:hover {
 .author__portrait {
   border-radius: 50%;
   display: block;
+  margin: 0 auto;
 }
 
-/* line 209, ../scss/partials/base/_story.scss */
+/* line 210, ../scss/partials/base/_story.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -1898,31 +1929,31 @@ a:hover {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 217, ../scss/partials/base/_story.scss */
+/* line 218, ../scss/partials/base/_story.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 222, ../scss/partials/base/_story.scss */
+/* line 223, ../scss/partials/base/_story.scss */
 .author__social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 227, ../scss/partials/base/_story.scss */
+/* line 228, ../scss/partials/base/_story.scss */
 .author__social li {
   display: inline-block;
 }
-/* line 230, ../scss/partials/base/_story.scss */
+/* line 231, ../scss/partials/base/_story.scss */
 .author__social li:first-child {
   margin-left: 0;
 }
-/* line 235, ../scss/partials/base/_story.scss */
+/* line 236, ../scss/partials/base/_story.scss */
 .author__social .icon {
   text-align: center;
 }
 
-/* line 241, ../scss/partials/base/_story.scss */
+/* line 242, ../scss/partials/base/_story.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'Written by';
@@ -1931,37 +1962,92 @@ a:hover {
   font-weight: 700;
 }
 
-/* line 250, ../scss/partials/base/_story.scss */
+/* line 251, ../scss/partials/base/_story.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 255, ../scss/partials/base/_story.scss */
+/* line 256, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 261, ../scss/partials/base/_story.scss */
+/* line 262, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 265, ../scss/partials/base/_story.scss */
+/* line 266, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 272, ../scss/partials/base/_story.scss */
+/* line 273, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
 
 /* line 1, ../scss/partials/base/_series.scss */
-.hero--series {
+.hero--archive {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* line 6, ../scss/partials/base/_series.scss */
+.hero--archive .sponsor {
+  background-color: white;
+  color: #002130;
+  display: inline-block;
+  padding: 0.6rem 3rem;
+}
+/* line 13, ../scss/partials/base/_series.scss */
+.hero--archive.hero--series {
+  text-align: center;
+}
+/* line 17, ../scss/partials/base/_series.scss */
+.hero--archive.hero--category {
+  text-align: center;
+}
+/* line 20, ../scss/partials/base/_series.scss */
+.hero--archive.hero--category .container {
+  padding: 2rem 12rem;
+}
+/* line 24, ../scss/partials/base/_series.scss */
+.hero--archive.hero--category .hero--category__count {
+  color: white;
+  display: block;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 33, ../scss/partials/base/_series.scss */
+.hero--archive.hero--category:after {
+  content: '';
+  background-image: url("../img/overlay_mesh.png");
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+/* line 47, ../scss/partials/base/_series.scss */
+.hero--archive.hero--author {
+  background-color: transparent;
+}
+/* line 50, ../scss/partials/base/_series.scss */
+.hero--archive.hero--author .container {
+  border-bottom: 0.7rem solid #eeeeee;
+}
+/* line 54, ../scss/partials/base/_series.scss */
+.hero--archive.hero--author .author__count {
+  color: #fc3b40;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
 }
 
 /* line 3, ../scss/partials/desktop/_grid.scss */
@@ -2261,6 +2347,11 @@ a:hover {
 /* line 61, ../scss/partials/desktop/_headings.scss */
 .hd-o {
   font-size: 1.8rem;
+}
+
+/* line 65, ../scss/partials/desktop/_headings.scss */
+.hd-q {
+  font-size: 5.8rem;
 }
 
 /* line 1, ../scss/partials/desktop/_typography.scss */
@@ -2635,34 +2726,34 @@ a:hover {
   line-height: 1.5;
 }
 /* line 82, ../scss/partials/desktop/_components.scss */
-.indicator.indicator--carousel {
+.indicator.indicator--title {
   width: 7.6rem;
   height: 7.6rem;
   top: 1.4rem;
 }
 /* line 87, ../scss/partials/desktop/_components.scss */
-.indicator.indicator--carousel:before {
+.indicator.indicator--title:before {
   font-size: 5rem;
   line-height: 1.74;
 }
 /* line 92, ../scss/partials/desktop/_components.scss */
-.indicator.indicator--carousel.indicator--text {
+.indicator.indicator--title.indicator--text {
   width: 9.8rem;
   height: 9.8rem;
 }
 /* line 96, ../scss/partials/desktop/_components.scss */
-.indicator.indicator--carousel.indicator--text:before {
+.indicator.indicator--title.indicator--text:before {
   font-size: 5rem;
   line-height: 1.5;
 }
 /* line 101, ../scss/partials/desktop/_components.scss */
-.indicator.indicator--carousel.indicator--text .indicator__heading {
+.indicator.indicator--title.indicator--text .indicator__heading {
   font-size: 1.4rem;
   line-height: 1.4;
   margin-top: -2.6rem;
 }
 /* line 107, ../scss/partials/desktop/_components.scss */
-.indicator.indicator--carousel.indicator--text .indicator__subheading {
+.indicator.indicator--title.indicator--text .indicator__subheading {
   font-size: 1.2rem;
 }
 /* line 113, ../scss/partials/desktop/_components.scss */
@@ -2734,114 +2825,103 @@ a:hover {
 }
 /* line 182, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list li {
-  padding: 2.2rem 0;
+  padding: 1.8rem 0;
 }
 /* line 187, ../scss/partials/desktop/_components.scss */
-.module.module--list .story-list.two li {
-  width: 47.5%;
-}
-/* line 193, ../scss/partials/desktop/_components.scss */
-.module.module--list .story-list.three li {
-  width: 30%;
-}
-/* line 199, ../scss/partials/desktop/_components.scss */
 .module.module--list.module--horizontal {
   margin: 5rem 0;
 }
-/* line 204, ../scss/partials/desktop/_components.scss */
+/* line 192, ../scss/partials/desktop/_components.scss */
 .module.module--pull {
-  float: right;
   margin: -37.6rem;
   width: 32rem;
 }
-/* line 211, ../scss/partials/desktop/_components.scss */
+/* line 198, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .story {
   padding: 3.4rem;
 }
-/* line 215, ../scss/partials/desktop/_components.scss */
+/* line 202, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .sponsor {
   margin-top: 12rem;
 }
 
 /* pullquote */
-/* line 222, ../scss/partials/desktop/_components.scss */
+/* line 209, ../scss/partials/desktop/_components.scss */
 .pullquote {
   margin: 4.2rem 0 5rem;
   padding-left: 7.8rem;
 }
-/* line 226, ../scss/partials/desktop/_components.scss */
+/* line 213, ../scss/partials/desktop/_components.scss */
 .pullquote:before {
-  position: absolute;
-  left: 0;
   font-size: 4.2rem;
   line-height: 1.46;
   width: 5.6rem;
   height: 5.6rem;
   top: -1.2rem;
 }
-/* line 236, ../scss/partials/desktop/_components.scss */
+/* line 221, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 2rem;
 }
-/* line 240, ../scss/partials/desktop/_components.scss */
+/* line 225, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 1.8rem;
 }
 
 /* tags */
-/* line 246, ../scss/partials/desktop/_components.scss */
+/* line 231, ../scss/partials/desktop/_components.scss */
 .tag {
   font-size: 1.4rem;
   padding: 0.6rem 0.8rem;
 }
 
 /* prev/next */
-/* line 252, ../scss/partials/desktop/_components.scss */
+/* line 237, ../scss/partials/desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 256, ../scss/partials/desktop/_components.scss */
+/* line 241, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 260, ../scss/partials/desktop/_components.scss */
+/* line 245, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 266, ../scss/partials/desktop/_components.scss */
+/* line 251, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 272, ../scss/partials/desktop/_components.scss */
+/* line 257, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 280, ../scss/partials/desktop/_components.scss */
+/* line 265, ../scss/partials/desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 283, ../scss/partials/desktop/_components.scss */
+/* line 268, ../scss/partials/desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 288, ../scss/partials/desktop/_components.scss */
+/* line 273, ../scss/partials/desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 292, ../scss/partials/desktop/_components.scss */
+/* line 277, ../scss/partials/desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 297, ../scss/partials/desktop/_components.scss */
+/* line 282, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 300, ../scss/partials/desktop/_components.scss */
+/* line 285, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
@@ -3296,17 +3376,64 @@ a:hover {
 }
 
 /* line 1, ../scss/partials/desktop/_series.scss */
-.hero--series {
+.hero--archive {
   min-height: 28.5rem;
-  text-align: center;
-  padding: 4rem 12rem 4rem;
 }
-/* line 6, ../scss/partials/desktop/_series.scss */
-.hero--series .hero--series__title {
-  margin-bottom: 2rem;
+/* line 4, ../scss/partials/desktop/_series.scss */
+.hero--archive .sponsor {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+/* line 11, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--series .container {
+  padding: 2rem 12rem;
+}
+/* line 16, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--category {
+  text-align: center;
+}
+/* line 19, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--category .hero--category__title {
+  margin-top: 8rem;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 24, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--category .hero--category__count {
+  font-size: 1.8rem;
+  margin-top: 2.4rem;
+}
+/* line 30, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--author {
+  background-color: transparent;
+}
+/* line 33, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--author .container {
+  padding: 4rem 12rem;
+}
+/* line 37, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--author .author__b {
+  padding-left: 6rem;
+}
+/* line 41, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--author .author__count {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+/* line 46, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--author .author__name {
+  margin-bottom: 2.2rem;
+}
+/* line 50, ../scss/partials/desktop/_series.scss */
+.hero--archive.hero--author .author__bio {
+  color: #2d2d2d;
+  font-family: "Gudea", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.46;
 }
 
-/* line 12, ../scss/partials/desktop/_series.scss */
+/* line 61, ../scss/partials/desktop/_series.scss */
 .river .story__feature {
   margin-bottom: -1.4rem;
 }

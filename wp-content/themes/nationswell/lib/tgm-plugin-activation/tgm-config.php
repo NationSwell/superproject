@@ -126,7 +126,7 @@ function my_theme_register_required_plugins()
             'external_url' => '',
         ),
         array(
-            'name' => 'Google Analytics Dashbarod',
+            'name' => 'Google Analytics Dashboard',
             'slug' => 'google-analytics-dashboard',
             'source' => get_stylesheet_directory() . '/lib/plugins/google-analytics-dashboard.2.0.5.zip',
             'required' => true,
