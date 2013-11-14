@@ -1654,12 +1654,12 @@ a:hover {
 
 /* river */
 /* line 72, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story--tease:hover {
+.river--one-col .story-teases .story--tease:hover {
   background-color: #f6f6f6;
   box-shadow: 2rem 0 0 #f6f6f6, -2rem 0 0 #f6f6f6;
 }
 /* line 77, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story--tease .sponsor {
+.river--one-col .story-teases .story--tease .sponsor {
   background-color: #0098d8;
   color: #ddedf8;
   position: absolute;
@@ -1667,11 +1667,11 @@ a:hover {
   display: inline-block;
 }
 /* line 86, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story__feature {
+.river--one-col .story-teases .story__feature {
   position: relative;
 }
 /* line 89, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story__feature img {
+.river--one-col .story-teases .story__feature img {
   display: block;
 }
 
@@ -1964,6 +1964,13 @@ a:hover {
   color: #2d2d2d;
 }
 
+/* line 1, ../scss/partials/base/_series.scss */
+.hero--series {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* line 3, ../scss/partials/tablet/_grid.scss */
 #more-stories .category-list {
   display: block;
@@ -2013,7 +2020,7 @@ a:hover {
 }
 
 /* line 32, ../scss/partials/tablet/_grid.scss */
-.river.river--two-col .story-teases {
+.river.river--one-col .story-teases {
   display: block;
   float: left;
   margin-right: 3.7037%;
@@ -2021,18 +2028,18 @@ a:hover {
   margin-left: 8.64198%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
-.river.river--two-col .story-teases:last-child {
+.river.river--one-col .story-teases:last-child {
   margin-right: 0;
 }
 /* line 37, ../scss/partials/tablet/_grid.scss */
-.river.river--two-col .story--tease {
+.river.river--one-col .story--tease {
   display: block;
   float: left;
   margin-right: 5.66038%;
   width: 100%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
-.river.river--two-col .story--tease:last-child {
+.river.river--one-col .story--tease:last-child {
   margin-right: 0;
 }
 
