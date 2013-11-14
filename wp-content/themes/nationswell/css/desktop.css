@@ -1308,46 +1308,52 @@ a:hover {
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
+  margin-right: 4.25%;
+  vertical-align: top;
 }
-/* line 267, ../scss/partials/base/_components.scss */
+/* line 265, ../scss/partials/base/_components.scss */
+.module.module--list.module--horizontal .story-list li:last-child {
+  margin-right: 0;
+}
+/* line 273, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 273, ../scss/partials/base/_components.scss */
+/* line 279, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 281, ../scss/partials/base/_components.scss */
+/* line 287, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 286, ../scss/partials/base/_components.scss */
+/* line 292, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
 }
-/* line 290, ../scss/partials/base/_components.scss */
+/* line 296, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: white;
   display: block;
 }
-/* line 296, ../scss/partials/base/_components.scss */
+/* line 302, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
 
 /* pullquote */
-/* line 304, ../scss/partials/base/_components.scss */
+/* line 310, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 307, ../scss/partials/base/_components.scss */
+/* line 313, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1356,7 +1362,7 @@ a:hover {
   border-radius: 50%;
   text-align: center;
 }
-/* line 316, ../scss/partials/base/_components.scss */
+/* line 322, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1366,61 +1372,61 @@ a:hover {
 }
 
 /* tags */
-/* line 326, ../scss/partials/base/_components.scss */
+/* line 332, ../scss/partials/base/_components.scss */
 .tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 332, ../scss/partials/base/_components.scss */
+/* line 338, ../scss/partials/base/_components.scss */
 .tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* prev/next */
-/* line 339, ../scss/partials/base/_components.scss */
+/* line 345, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 343, ../scss/partials/base/_components.scss */
+/* line 349, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 349, ../scss/partials/base/_components.scss */
+/* line 355, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 354, ../scss/partials/base/_components.scss */
+/* line 360, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 360, ../scss/partials/base/_components.scss */
+/* line 366, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 366, ../scss/partials/base/_components.scss */
+/* line 372, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 374, ../scss/partials/base/_components.scss */
+/* line 380, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 380, ../scss/partials/base/_components.scss */
+/* line 386, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 384, ../scss/partials/base/_components.scss */
+/* line 390, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
@@ -2086,18 +2092,15 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 76, ../scss/partials/desktop/_grid.scss */
-.module.module--list.module--horizontal li {
-  display: block;
-  float: left;
-  margin-right: 4.16667%;
-  width: 30.55556%;
-}
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-.module.module--list.module--horizontal li:last-child {
-  margin-right: 0;
-}
-
+/*.module {
+  &.module--list {
+    &.module--horizontal {
+      li {
+        @include span-columns(2 of 6);
+      }
+    }
+  }
+}*/
 /* line 85, ../scss/partials/desktop/_grid.scss */
 .story__social .btn--bar {
   display: block;
@@ -2703,34 +2706,42 @@ a:hover {
 }
 /* line 182, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list li {
-  padding: 1.8rem 0;
+  padding: 2.2rem 0;
 }
 /* line 187, ../scss/partials/desktop/_components.scss */
+.module.module--list .story-list.two li {
+  width: 47.5%;
+}
+/* line 193, ../scss/partials/desktop/_components.scss */
+.module.module--list .story-list.three li {
+  width: 30%;
+}
+/* line 199, ../scss/partials/desktop/_components.scss */
 .module.module--list.module--horizontal {
   margin: 5rem 0;
 }
-/* line 192, ../scss/partials/desktop/_components.scss */
+/* line 204, ../scss/partials/desktop/_components.scss */
 .module.module--pull {
   float: right;
   margin: -37.6rem;
   width: 32rem;
 }
-/* line 199, ../scss/partials/desktop/_components.scss */
+/* line 211, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .story {
   padding: 3.4rem;
 }
-/* line 203, ../scss/partials/desktop/_components.scss */
+/* line 215, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .sponsor {
   margin-top: 12rem;
 }
 
 /* pullquote */
-/* line 210, ../scss/partials/desktop/_components.scss */
+/* line 222, ../scss/partials/desktop/_components.scss */
 .pullquote {
   margin: 4.2rem 0 5rem;
   padding-left: 7.8rem;
 }
-/* line 214, ../scss/partials/desktop/_components.scss */
+/* line 226, ../scss/partials/desktop/_components.scss */
 .pullquote:before {
   position: absolute;
   left: 0;
@@ -2740,69 +2751,69 @@ a:hover {
   height: 5.6rem;
   top: -1.2rem;
 }
-/* line 224, ../scss/partials/desktop/_components.scss */
+/* line 236, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 2rem;
 }
-/* line 228, ../scss/partials/desktop/_components.scss */
+/* line 240, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 1.8rem;
 }
 
 /* tags */
-/* line 234, ../scss/partials/desktop/_components.scss */
+/* line 246, ../scss/partials/desktop/_components.scss */
 .tag {
   font-size: 1.4rem;
   padding: 0.6rem 0.8rem;
 }
 
 /* prev/next */
-/* line 240, ../scss/partials/desktop/_components.scss */
+/* line 252, ../scss/partials/desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 244, ../scss/partials/desktop/_components.scss */
+/* line 256, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 248, ../scss/partials/desktop/_components.scss */
+/* line 260, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 254, ../scss/partials/desktop/_components.scss */
+/* line 266, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 260, ../scss/partials/desktop/_components.scss */
+/* line 272, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 268, ../scss/partials/desktop/_components.scss */
+/* line 280, ../scss/partials/desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 271, ../scss/partials/desktop/_components.scss */
+/* line 283, ../scss/partials/desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 276, ../scss/partials/desktop/_components.scss */
+/* line 288, ../scss/partials/desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 280, ../scss/partials/desktop/_components.scss */
+/* line 292, ../scss/partials/desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 285, ../scss/partials/desktop/_components.scss */
+/* line 297, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 288, ../scss/partials/desktop/_components.scss */
+/* line 300, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }

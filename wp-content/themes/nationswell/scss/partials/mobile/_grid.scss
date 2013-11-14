@@ -70,15 +70,15 @@
 }
 
 // modules
-.module {
+/*.module {
   &.module--list {
     &.module--horizontal {
       li {
-        @include span-columns(2 of 6);
+        @include span-columns(6 of 6);
       }
     }
   }
-}
+}*/
 
 // story social buttons
 .story__social {

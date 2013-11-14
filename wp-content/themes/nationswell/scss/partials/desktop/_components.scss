@@ -180,7 +180,19 @@
 
     .story-list {
       li {
-        padding: 1.8rem 0;
+        padding: 2.2rem 0;
+      }
+
+      &.two {
+        li {
+          width: 47.5%;
+        }
+      }
+
+      &.three {
+        li {
+          width: 30%;
+        }
       }
     }
 

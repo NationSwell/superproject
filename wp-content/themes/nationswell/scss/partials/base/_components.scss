@@ -259,6 +259,12 @@
         li {
           display: inline-block;
           border-bottom: 0 none;
+          margin-right: 4.25%;
+          vertical-align: top;
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
