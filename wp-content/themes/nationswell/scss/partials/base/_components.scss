@@ -1,6 +1,9 @@
 /* hero */
 .hero {
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* rubric */
@@ -117,7 +120,7 @@
     background-color: $ns_red;
   }
 
-  &.indicator--carousel {
+  &.indicator--title {
     position: relative;
 
     &.indicator--text {

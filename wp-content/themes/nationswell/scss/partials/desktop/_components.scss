@@ -79,7 +79,7 @@
     }
   }
 
-  &.indicator--carousel {
+  &.indicator--title {
     width: 7.6rem;
     height: 7.6rem;
     top: 1.4rem;
@@ -180,19 +180,7 @@
 
     .story-list {
       li {
-        padding: 2.2rem 0;
-      }
-
-      &.two {
-        li {
-          width: 47.5%;
-        }
-      }
-
-      &.three {
-        li {
-          width: 30%;
-        }
+        padding: 1.8rem 0;
       }
     }
 
@@ -202,7 +190,6 @@
   }
 
   &.module--pull {
-    float: right;
     margin: -37.6rem;
     width: 32rem;
   }
@@ -224,8 +211,6 @@
   padding-left: 7.8rem;
 
   &:before {
-    position: absolute;
-    left: 0;
     font-size: 4.2rem;
     line-height: 1.46;
     width: 5.6rem;
