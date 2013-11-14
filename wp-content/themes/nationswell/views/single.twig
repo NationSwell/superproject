@@ -114,8 +114,9 @@
 
                 <div class="story__tags">
                     <ul class="tags-list">
-                        <li><a href="#" class="tag">Economy</a></li>
-                        <li><a href="#" class="tag">Global</a></li>
+                        {% for  category in post.categories %}
+                            <li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>
+                    {%  endfor %}
                     </ul>
                 </div>
 
