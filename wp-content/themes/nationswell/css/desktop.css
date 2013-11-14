@@ -1859,14 +1859,34 @@ a:hover {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* sticky */
+/* Elastic video */
 /* line 155, ../scss/partials/base/_story.scss */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 164, ../scss/partials/base/_story.scss */
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* sticky */
+/* line 174, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
   position: relative;
 }
 
-/* line 160, ../scss/partials/base/_story.scss */
+/* line 179, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -1877,12 +1897,12 @@ a:hover {
   width: 100%;
 }
 
-/* line 170, ../scss/partials/base/_story.scss */
+/* line 189, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 174, ../scss/partials/base/_story.scss */
+/* line 193, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -1891,36 +1911,36 @@ a:hover {
 }
 
 /* tags */
-/* line 182, ../scss/partials/base/_story.scss */
+/* line 201, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 186, ../scss/partials/base/_story.scss */
+/* line 205, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 193, ../scss/partials/base/_story.scss */
+/* line 212, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
 /* author */
-/* line 200, ../scss/partials/base/_story.scss */
+/* line 219, ../scss/partials/base/_story.scss */
 .author {
   background-color: #f6f6f6;
 }
 
-/* line 204, ../scss/partials/base/_story.scss */
+/* line 223, ../scss/partials/base/_story.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 210, ../scss/partials/base/_story.scss */
+/* line 229, ../scss/partials/base/_story.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -1929,31 +1949,31 @@ a:hover {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 218, ../scss/partials/base/_story.scss */
+/* line 237, ../scss/partials/base/_story.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 223, ../scss/partials/base/_story.scss */
+/* line 242, ../scss/partials/base/_story.scss */
 .author__social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 228, ../scss/partials/base/_story.scss */
+/* line 247, ../scss/partials/base/_story.scss */
 .author__social li {
   display: inline-block;
 }
-/* line 231, ../scss/partials/base/_story.scss */
+/* line 250, ../scss/partials/base/_story.scss */
 .author__social li:first-child {
   margin-left: 0;
 }
-/* line 236, ../scss/partials/base/_story.scss */
+/* line 255, ../scss/partials/base/_story.scss */
 .author__social .icon {
   text-align: center;
 }
 
-/* line 242, ../scss/partials/base/_story.scss */
+/* line 261, ../scss/partials/base/_story.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'Written by';
@@ -1962,28 +1982,28 @@ a:hover {
   font-weight: 700;
 }
 
-/* line 251, ../scss/partials/base/_story.scss */
+/* line 270, ../scss/partials/base/_story.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 256, ../scss/partials/base/_story.scss */
+/* line 275, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 262, ../scss/partials/base/_story.scss */
+/* line 281, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 266, ../scss/partials/base/_story.scss */
+/* line 285, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 273, ../scss/partials/base/_story.scss */
+/* line 292, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
