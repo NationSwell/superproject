@@ -1647,12 +1647,12 @@ a:hover {
 
 /* river */
 /* line 72, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story--tease:hover {
+.river--one-col .story-teases .story--tease:hover {
   background-color: #f6f6f6;
   box-shadow: 2rem 0 0 #f6f6f6, -2rem 0 0 #f6f6f6;
 }
 /* line 77, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story--tease .sponsor {
+.river--one-col .story-teases .story--tease .sponsor {
   background-color: #0098d8;
   color: #ddedf8;
   position: absolute;
@@ -1660,11 +1660,11 @@ a:hover {
   display: inline-block;
 }
 /* line 86, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story__feature {
+.river--one-col .story-teases .story__feature {
   position: relative;
 }
 /* line 89, ../scss/partials/base/_homepage.scss */
-.river--two-col .story-teases .story__feature img {
+.river--one-col .story-teases .story__feature img {
   display: block;
 }
 
@@ -1957,6 +1957,13 @@ a:hover {
   color: #2d2d2d;
 }
 
+/* line 1, ../scss/partials/base/_series.scss */
+.hero--series {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* line 3, ../scss/partials/desktop/_grid.scss */
 #more-stories .category-list {
   display: block;
@@ -2005,22 +2012,52 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 32, ../scss/partials/desktop/_grid.scss */
-.river.river--two-col .story-teases {
+/* line 31, ../scss/partials/desktop/_grid.scss */
+.river .story-teases {
   display: block;
   float: left;
   margin-right: 2.04082%;
   width: 65.98639%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
-.river.river--two-col .story-teases:last-child {
+.river .story-teases:last-child {
   margin-right: 0;
 }
 /* line 36, ../scss/partials/desktop/_grid.scss */
-.river.river--two-col .story--tease {
+.river.river--one-col .story--tease {
   display: block;
   float: left;
   margin-right: 3.09278%;
+  width: 100%;
+}
+/* line 33, ../scss/neat/grid/_span-columns.scss */
+.river.river--one-col .story--tease:last-child {
+  margin-right: 0;
+}
+/* line 42, ../scss/partials/desktop/_grid.scss */
+.river.river--two-col li {
+  display: block;
+  float: left;
+  margin-right: 3.09278%;
+  width: 48.45361%;
+}
+/* line 33, ../scss/neat/grid/_span-columns.scss */
+.river.river--two-col li:last-child {
+  margin-right: 0;
+}
+/* line 70, ../scss/neat/grid/_omega.scss */
+.river.river--two-col li:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 75, ../scss/neat/grid/_omega.scss */
+.river.river--two-col li:nth-child(2n+1) {
+  clear: left;
+}
+/* line 47, ../scss/partials/desktop/_grid.scss */
+.river.river--two-col .story--tease {
+  display: block;
+  float: left;
+  margin-right: 6.38298%;
   width: 100%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
@@ -2028,7 +2065,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 43, ../scss/partials/desktop/_grid.scss */
+/* line 54, ../scss/partials/desktop/_grid.scss */
 .sidebar {
   display: block;
   float: left;
@@ -2040,7 +2077,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 48, ../scss/partials/desktop/_grid.scss */
+/* line 59, ../scss/partials/desktop/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -2052,7 +2089,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 52, ../scss/partials/desktop/_grid.scss */
+/* line 63, ../scss/partials/desktop/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -2064,7 +2101,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 58, ../scss/partials/desktop/_grid.scss */
+/* line 69, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -2075,11 +2112,11 @@ a:hover {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 61, ../scss/partials/desktop/_grid.scss */
+/* line 72, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 66, ../scss/partials/desktop/_grid.scss */
+/* line 77, ../scss/partials/desktop/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -2092,7 +2129,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 74, ../scss/partials/desktop/_grid.scss */
+/* line 85, ../scss/partials/desktop/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -2104,7 +2141,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 81, ../scss/partials/desktop/_grid.scss */
+/* line 92, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -2115,7 +2152,7 @@ a:hover {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 84, ../scss/partials/desktop/_grid.scss */
+/* line 95, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -2127,7 +2164,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 92, ../scss/partials/desktop/_grid.scss */
+/* line 103, ../scss/partials/desktop/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -2948,23 +2985,23 @@ a:hover {
 
 /* river */
 /* line 65, ../scss/partials/desktop/_homepage.scss */
-.river--two-col .story-teases .story--tease:hover .story__feature:before {
+.river--one-col .story-teases .story--tease:hover .story__feature:before {
   height: 0.7rem;
 }
 /* line 71, ../scss/partials/desktop/_homepage.scss */
-.river--two-col .story-teases .story--tease .sponsor {
+.river--one-col .story-teases .story--tease .sponsor {
   padding: 0.8rem 1.6rem;
   left: -1rem;
   bottom: 4.6rem;
 }
 /* line 78, ../scss/partials/desktop/_homepage.scss */
-.river--two-col .story-teases .story__feature {
+.river--one-col .story-teases .story__feature {
   float: left;
   width: 33rem;
   margin-right: 8rem;
 }
 /* line 83, ../scss/partials/desktop/_homepage.scss */
-.river--two-col .story-teases .story__feature:before {
+.river--one-col .story-teases .story__feature:before {
   content: '';
   background-color: #0098d8;
   content: '';
@@ -2978,11 +3015,11 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 /* line 98, ../scss/partials/desktop/_homepage.scss */
-.river--two-col .story-teases {
+.river--one-col .story-teases {
   margin-bottom: 2.8rem;
 }
 /* line 101, ../scss/partials/desktop/_homepage.scss */
-.river--two-col .story-teases .story__hed {
+.river--one-col .story-teases .story__hed {
   margin-bottom: 1.2rem;
 }
 
@@ -3256,4 +3293,20 @@ a:hover {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 2.2rem;
+}
+
+/* line 1, ../scss/partials/desktop/_series.scss */
+.hero--series {
+  min-height: 28.5rem;
+  text-align: center;
+  padding: 4rem 12rem 4rem;
+}
+/* line 6, ../scss/partials/desktop/_series.scss */
+.hero--series .hero--series__title {
+  margin-bottom: 2rem;
+}
+
+/* line 12, ../scss/partials/desktop/_series.scss */
+.river .story__feature {
+  margin-bottom: -1.4rem;
 }

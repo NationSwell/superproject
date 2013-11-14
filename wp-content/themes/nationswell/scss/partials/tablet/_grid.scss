@@ -28,7 +28,7 @@
 
 // rivers
 .river {
-  &.river--two-col {
+  &.river--one-col {
     .story-teases {
       @include span-columns(10);
       @include shift(1);

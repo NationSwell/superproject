@@ -5,6 +5,7 @@
     {% if post.story_header|length == 1 %}
         {% if post.story_header[0].type == 'image' %}
             <div class="hero hero--story hero--image" style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});">
+                {% if post.story_header[0].caption or post.story_header[0].credit %}
                 <div class="hero-information">
                     <span class="icon icon_information hero-information__toggle z1"></span>
                     <div class="hero-information__outer">
@@ -16,6 +17,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
             </div>
         {% elseif post.story_header[0].type == 'video' %}
             <!-- video hero -->
@@ -194,12 +196,6 @@
 
             <div class="sidebar hide_mobile">
                 {{ sidebar_story }}
-                
-                {#<div class="ad ad--300">
-                    <div class="ad__container">
-                        <img src="http://placehold.it/300x600"/>
-                    </div>
-                </div>#}
             </div>
         </div>
     </div>

@@ -1,0 +1,33 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <div class="hero hero--series" style="background-image: url(http://lorempixel.com/1300/600/city)">
+        <div class="indicator indicator--blue indicator--carousel indicator--text icon icon_series">
+            <h5 class="indicator__heading">Series</h5>
+            <h5 class="indicator__subheading">7 {{ series.count }} Stories</h5>
+        </div>
+
+        <h2 class="hd-f hero--series__title"><span>Wealth in an Era of Economic Inequality {{ series.name }}</span></h2>
+    </div>
+
+    <div class="river river--two-col">
+        <div class="container">
+            <ul class="story-teases">
+                {% for post in posts|slice(0, 3) %}
+                    <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
+                {% endfor %}
+            </ul>
+
+            <div class="sidebar">
+                <div class="ad ad--300 hide_mobile">
+                    <div class="ad__container">
+                        <img src="http://placehold.it/300x600"/>
+                    </div>
+                </div>
+
+                {% include 'sidebar-popular.twig' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

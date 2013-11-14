@@ -28,13 +28,14 @@
 
 // rivers
 .river {
+  &.river--one-col,
   &.river--two-col {
     .story-teases {
       @include span-columns(6);
-    }
 
-    .story--tease {
-      @include span-columns(6 of 6);
+      li {
+        @include span-columns(6 of 6);
+      }
     }
   }
 }
