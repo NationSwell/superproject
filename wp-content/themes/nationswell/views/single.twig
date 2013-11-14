@@ -5,6 +5,7 @@
     {% if post.story_header|length == 1 %}
         {% if post.story_header[0].type == 'image' %}
             <div class="hero hero--story hero--image" style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});">
+                {% if post.story_header[0].caption or post.story_header[0].credit %}
                 <div class="hero-information">
                     <span class="icon icon_information hero-information__toggle z1"></span>
                     <div class="hero-information__outer">
@@ -16,6 +17,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
             </div>
         {% elseif post.story_header[0].type == 'video' %}
             <!-- video hero -->
@@ -83,8 +85,8 @@
             <div class="story__sticky hide_mobile">
                 <div class="story__sticky-container">
                     <div class="sticky-social">
-                        <a href="#" class="btn btn--facebook btn--square icon icon_facebook">share</a>
-                        <a href="#" class="btn btn--twitter btn--square icon icon_twitter">tweet</a>
+                        <a href="{{ post.facebook_share_url }}" class="btn btn--facebook btn--square icon icon_facebook">Facebook Share</a>
+                        <a href="{{ post.twitter_share_url }}" class="btn btn--twitter btn--square icon icon_twitter">tweet</a>
                     </div>
 
                     <div class="sticky-take-action">
@@ -154,8 +156,8 @@
                 </div>
 
                 <div class="story__social cf">
-                    <a href="#" class="btn btn--bar btn--facebook icon icon_facebook">Follow on Facebook</a>
-                    <a href="#" class="btn btn--bar btn--twitter icon icon_twitter">Follow on Twitter</a>
+                    <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook icon icon_facebook">Share on Facebook</a>
+                    <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter icon icon_twitter">Share on Twitter</a>
                 </div>
 
                 <div class="module module--bg module--red take-action take-action--buy cf">
@@ -195,12 +197,6 @@
 
             <div class="sidebar hide_mobile">
                 {{ sidebar_story }}
-                
-                {#<div class="ad ad--300">
-                    <div class="ad__container">
-                        <img src="http://placehold.it/300x600"/>
-                    </div>
-                </div>#}
             </div>
         </div>
     </div>

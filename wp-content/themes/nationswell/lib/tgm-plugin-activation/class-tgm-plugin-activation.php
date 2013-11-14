@@ -1996,7 +1996,7 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET[sanitize_key( 'page' )] )
 	 		 *
 	 		 * @since 2.2.0
 	 		 */
-			public function after() {
+			public function after($title = '') {
 
 				/** Close install strings */
 				echo '</p></div>';

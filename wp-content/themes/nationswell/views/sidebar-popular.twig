@@ -1,8 +1,8 @@
-<div class="module module--list module--{{ position }} related-stories">
-    <h3 class="hd-g module__heading">Related Stories</h3>
+<div class="module module--list module--{{ position }} popular-stories">
+    <h3 class="hd-g module__heading">Most Popular</h3>
 
     <ul class="story-list cf {{ class }}">
-        {% for  post in related_posts %}
+        {% for  post in popular_posts %}
             <li>
                 <article class="story story--link">
                     <a href="{{ post.permalink }}" class="link-wrapper">
