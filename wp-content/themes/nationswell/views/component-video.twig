@@ -2,7 +2,11 @@
     <h3 class="hd-m multimedia__heading">{{ title }}</h3>
 
     <div class="multimedia__content">
-        <script type="text/javascript" src="http://content.bitsontherun.com/players/IFdMpi2Y-1VeqOjCu.js"></script>
+        <div class="video-container">
+            <iframe class="ytplayer" type="text/html" width="800" height="500"
+                    src="{{ video_url }}?autoplay=0&autohide=1&controls=2&enablejsapi=1&modestbranding=1&rel=0&theme=light&color=fc3b40&showinfo=0"
+                    frameborder="0"/>
+        </div>
     </div>
 
     <figcaption class="cf">
