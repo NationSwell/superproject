@@ -2887,7 +2887,7 @@ a:hover {
 }
 /* line 197, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list.three li {
-  width: 31.25%;
+  width: 30%;
 }
 /* line 203, ../scss/partials/desktop/_components.scss */
 .module.module--list.module--horizontal {
@@ -2895,7 +2895,7 @@ a:hover {
 }
 /* line 208, ../scss/partials/desktop/_components.scss */
 .module.module--pull {
-  margin: -37.6rem;
+  margin-right: -37.6rem;
   width: 32rem;
 }
 /* line 214, ../scss/partials/desktop/_components.scss */
@@ -3055,7 +3055,7 @@ a:hover {
   margin-bottom: -1.4rem;
 }
 
-/* line 291, ../scss/partials/desktop/_components.scss */
+/* line 368, ../scss/partials/desktop/_components.scss */
 #flyout {
   padding: 10px;
   background-color: #FFFFFF;
@@ -3071,7 +3071,7 @@ a:hover {
   -ms-transition: right 1s ease-in-out;
   transition: right 1s ease-in-out;
 }
-/* line 306, ../scss/partials/desktop/_components.scss */
+/* line 383, ../scss/partials/desktop/_components.scss */
 #flyout.hiding {
   right: -450px;
 }

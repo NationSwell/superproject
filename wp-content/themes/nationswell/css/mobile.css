@@ -2568,7 +2568,7 @@ html, body {
 }
 
 /* line 18, ../scss/partials/mobile/_nav.scss */
-.panel {
+.more-stories-drawer {
   background-color: #003046;
   height: 100%;
   width: 32rem;
@@ -2602,25 +2602,26 @@ body.panel-open #page-wrapper #page-content {
 /* line 11, ../scss/partials/mobile/_footer.scss */
 .copyright {
   font-size: 2rem;
+  margin-bottom: 4rem;
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 18, ../scss/partials/mobile/_footer.scss */
+/* line 19, ../scss/partials/mobile/_footer.scss */
 .footer-links {
   margin: 3.8rem 0 4.2rem;
 }
-/* line 21, ../scss/partials/mobile/_footer.scss */
+/* line 22, ../scss/partials/mobile/_footer.scss */
 .footer-links li {
   padding: 1.8rem 0 1.8rem 1.4rem;
   border-top: 1px solid #003046;
 }
-/* line 25, ../scss/partials/mobile/_footer.scss */
+/* line 26, ../scss/partials/mobile/_footer.scss */
 .footer-links li:first-child {
   border-top: 0 none;
 }
 
-/* line 31, ../scss/partials/mobile/_footer.scss */
+/* line 32, ../scss/partials/mobile/_footer.scss */
 .footer-links__link {
   color: white;
   font-size: 3.2rem;
