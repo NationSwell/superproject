@@ -76,6 +76,9 @@
 }
 
 .trending-topics__heading {
+  display: inline-block;
+  color: $ns_navy5;
+  font-weight: $bold;
   font-size: 1.4rem;
   margin: 0 3.4rem 0 2.2rem;
 }
