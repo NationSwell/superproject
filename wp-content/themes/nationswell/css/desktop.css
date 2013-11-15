@@ -2562,11 +2562,11 @@ a:hover {
   height: auto;
 }
 /* line 12, ../scss/partials/desktop/_nav.scss */
-.site-logo.site-logo--header {
+.site-logo.site-logo--slogan {
   margin-top: 1.6rem;
 }
-/* line 16, ../scss/partials/desktop/_nav.scss */
-.site-logo .slogan {
+/* line 15, ../scss/partials/desktop/_nav.scss */
+.site-logo.site-logo--slogan .slogan {
   margin-left: 2.1rem;
 }
 

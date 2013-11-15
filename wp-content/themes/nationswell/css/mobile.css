@@ -2551,39 +2551,55 @@ html, body {
 /* line 1, ../scss/partials/mobile/_nav.scss */
 #page-header {
   height: 13rem;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
 }
 
 /* logo and slogan */
-/* line 7, ../scss/partials/mobile/_nav.scss */
-.site-logo.site-logo--header {
+/* line 9, ../scss/partials/mobile/_nav.scss */
+.site-logo.site-logo--slogan {
   margin-top: 4.6rem;
+}
+/* line 12, ../scss/partials/mobile/_nav.scss */
+.site-logo.site-logo--slogan .slogan {
+  margin-left: 3.6rem;
 }
 
 /* more stories toggle */
-/* line 13, ../scss/partials/mobile/_nav.scss */
+/* line 19, ../scss/partials/mobile/_nav.scss */
 .more-stories-toggle {
   font-size: 6rem;
   padding-top: 3.8rem;
 }
 
-/* line 18, ../scss/partials/mobile/_nav.scss */
+/* line 24, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer {
   background-color: #003046;
   height: 100%;
-  width: 32rem;
+  width: 47rem;
   position: absolute;
   right: 0;
+  padding: 4rem 3rem 0 7.6rem;
 }
 
 /* mobile panel */
-/* line 28, ../scss/partials/mobile/_nav.scss */
+/* line 35, ../scss/partials/mobile/_nav.scss */
 body.panel-open #page-wrapper {
   overflow-x: hidden;
-  right: 32rem;
+  right: 47rem;
 }
-/* line 32, ../scss/partials/mobile/_nav.scss */
+/* line 39, ../scss/partials/mobile/_nav.scss */
 body.panel-open #page-wrapper #page-content {
   pointer-events: none;
+}
+/* line 44, ../scss/partials/mobile/_nav.scss */
+body.panel-open #page-header {
+  background-color: white;
+}
+/* line 47, ../scss/partials/mobile/_nav.scss */
+body.panel-open #page-header .more-stories-toggle {
+  color: #003046;
 }
 
 /* line 1, ../scss/partials/mobile/_footer.scss */
