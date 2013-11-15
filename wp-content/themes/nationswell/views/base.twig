@@ -7,6 +7,18 @@
 </head>
 <body class="{{ body_class }}" data-source="base.twig">
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=283384575022710";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="page-wrapper">
+
 <div class="panel">
     content
 </div>
@@ -25,7 +37,7 @@
             <h3 class="trending-topics__heading">Trending Topics:</h3>
 
             <ul class="trending-topics__list">
-                <li><a href="#panel-more-stories" class="trending-topics__topic">Social Mobility</a></li>
+                <li><a href="#" class="trending-topics__topic">Social Mobility</a></li>
                 <li><a href="#" class="trending-topics__topic">Infrastructure</a></li>
                 <li><a href="#" class="trending-topics__topic">Environment</a></li>
                 <li><a href="#" class="trending-topics__topic">Health Care</a></li>

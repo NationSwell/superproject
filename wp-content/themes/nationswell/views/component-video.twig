@@ -1,13 +1,13 @@
 <figure class="multimedia multimedia--video">
     <h3 class="hd-m multimedia__heading">{{ title }}</h3>
 
+    {% if video_url is not empty %}
     <div class="multimedia__content">
         <div class="video-container">
-            <iframe class="ytplayer" type="text/html" width="800" height="500"
-                    src="{{ video_url }}?autoplay=0&autohide=1&controls=2&enablejsapi=1&modestbranding=1&rel=0&theme=light&color=fc3b40&showinfo=0"
-                    frameborder="0"/>
+            <iframe class="ytplayer" type="text/html" width="800" height="500" src="{{ video_url }}" frameborder="0"></iframe>
         </div>
     </div>
+    {% endif %}
 
     <figcaption class="cf">
         <span class="credit">{{ credit }}</span>

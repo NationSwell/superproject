@@ -1,5 +1,10 @@
 <?php
 
+if (WP_DEBUG && WP_DEBUG_DISPLAY)
+{
+    ini_set('error_reporting', E_ALL & ~E_STRICT & ~E_DEPRECATED);
+}
+
 add_theme_support('post-formats');
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
@@ -65,6 +70,7 @@ include_once('lib/menu/menu.php');
 
 // Custom Widgets
 include_once('lib/widgets/widgets.php');
+include_once('lib/widgets/widget-joinus.php');
 
 // Plugin Activation
 include_once('lib/tgm-plugin-activation/tgm-config.php');

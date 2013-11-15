@@ -364,3 +364,23 @@
     }
   }
 }
+
+#flyout {
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  font-size: 13px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 400px;
+  -webkit-transition: right 1s ease-in-out;
+  -moz-transition: right 1s ease-in-out;
+  -o-transition: right 1s ease-in-out;
+  -ms-transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out;
+
+  &.hiding {
+    right: -450px;
+  }
+}

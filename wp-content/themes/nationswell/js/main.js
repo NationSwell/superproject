@@ -5,6 +5,15 @@
             $('#search').toggleClass('open');
         });
 
+        // flyout box
+        $('.story__container').waypoint(function (direction) {
+            $('#flyout').toggleClass('hiding', direction === "up");
+        }, {
+            offset: function () {
+                return $.waypoints('viewportHeight') - $(this).height() + 200;
+            }
+        });
+
         enquire.register("screen and (max-width: 959px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
