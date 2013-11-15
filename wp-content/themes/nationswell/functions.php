@@ -71,6 +71,7 @@ include_once('lib/menu/menu.php');
 // Custom Widgets
 include_once('lib/widgets/widgets.php');
 include_once('lib/widgets/widget-joinus.php');
+include_once('lib/widgets/widget-subscribe.php');
 
 // Plugin Activation
 include_once('lib/tgm-plugin-activation/tgm-config.php');
