@@ -155,6 +155,16 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Edit Flow',
+            'slug' => 'edit-flow',
+            'source' => get_stylesheet_directory() . '/lib/plugins/edit-flow.0.7.6.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
