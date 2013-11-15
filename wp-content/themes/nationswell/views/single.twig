@@ -1,7 +1,7 @@
 {% extends "base.twig" %}
 
 {% block content %}
-    <!-- image hero -->
+    {# image hero #}
     {% if post.story_header|length == 1 %}
         {% if post.story_header[0].type == 'image' %}
             <div class="hero hero--story hero--image" style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});">
@@ -20,7 +20,7 @@
                 {% endif %}
             </div>
         {% elseif post.story_header[0].type == 'video' %}
-            <!-- video hero -->
+            {# video hero #}
             <div class="hero hero--story hero--video">
                 <div class="hero--video__container">
                     <script type="text/javascript" src="http://content.bitsontherun.com/players/IFdMpi2Y-1VeqOjCu.js"></script>
@@ -40,7 +40,7 @@
             </div>
         {% endif %}
     {% elseif post.story_header|length > 1 %}
-        <!-- carousel hero -->
+        {# carousel hero #}
         <div class="hero hero--story hero--carousel">
             <div class="carousel carousel--full-width carousel--peek">
                 <ul class="carousel__items">
@@ -261,5 +261,7 @@
             </ul>
         </div>
     </div>
+
+    {% include 'flyout.twig' %}
 
 {% endblock %}

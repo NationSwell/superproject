@@ -2946,6 +2946,27 @@ a:hover {
   margin-bottom: -1.4rem;
 }
 
+/* line 291, ../scss/partials/desktop/_components.scss */
+#flyout {
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  font-size: 13px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 400px;
+  -webkit-transition: right 1s ease-in-out;
+  -moz-transition: right 1s ease-in-out;
+  -o-transition: right 1s ease-in-out;
+  -ms-transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out;
+}
+/* line 306, ../scss/partials/desktop/_components.scss */
+#flyout.hiding {
+  right: -450px;
+}
+
 /* line 1, ../scss/partials/desktop/_carousels.scss */
 .carousel--full-width {
   background-color: #355a6b;
