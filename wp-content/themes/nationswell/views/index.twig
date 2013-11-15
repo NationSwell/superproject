@@ -8,7 +8,7 @@
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ feature.thumbnail.src|resize(1300,600) }});">
                 <a href="{{ feature.permalink }}" class="link-wrapper">
                     <article class="story story--hero z1">
-                        <span class="rubric">Environment</span>
+                        <span class="rubric">{{ feature.category }}</span>
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ feature.post_title }}</h1>
 
                         <div class="support-cause support-cause--hero z2">
