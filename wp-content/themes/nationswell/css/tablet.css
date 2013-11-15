@@ -1948,28 +1948,111 @@ a:hover {
 .story__container .story__content > p a:hover {
   color: #fc3b40;
 }
+/* line 128, ../scss/partials/base/_story.scss */
+.story__container .story__content > h1 {
+  color: #5ec2e8;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 3px solid lightgray;
+  text-transform: capitalize;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 138, ../scss/partials/base/_story.scss */
+.story__container .story__content > h2 {
+  color: #1fade0;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 146, ../scss/partials/base/_story.scss */
+.story__container .story__content > h3 {
+  color: #fc3b40;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: capitalize;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 153, ../scss/partials/base/_story.scss */
+.story__container .story__content > h4 {
+  color: #2d2d2d;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 161, ../scss/partials/base/_story.scss */
+.story__container .story__content > h5 {
+  color: #2d2d2d;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: capitalize;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 168, ../scss/partials/base/_story.scss */
+.story__container .story__content > h6 {
+  color: #2d2d2d;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-transform: capitalize;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 175, ../scss/partials/base/_story.scss */
+.story__container .story__content > ol {
+  counter-reset: li;
+}
+/* line 178, ../scss/partials/base/_story.scss */
+.story__container .story__content > ol li {
+  color: #2d2d2d;
+  font-family: "Montserrat", Arial, sans-serif;
+  position: relative;
+}
+/* line 183, ../scss/partials/base/_story.scss */
+.story__container .story__content > ol li:before {
+  background-color: #fc3b40;
+  counter-increment: li;
+  content: counter(li,decimal-leading-zero);
+  color: white;
+  display: inline-block;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+}
+/* line 198, ../scss/partials/base/_story.scss */
+.story__container .story__content > ul li {
+  color: #2d2d2d;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.2;
+  position: relative;
+}
+/* line 204, ../scss/partials/base/_story.scss */
+.story__container .story__content > ul li:before {
+  color: #0098d8;
+  font-family: 'icons';
+  content: '\f117';
+  position: absolute;
+}
 
 /* multimedia */
-/* line 132, ../scss/partials/base/_story.scss */
+/* line 217, ../scss/partials/base/_story.scss */
 .multimedia .multimedia__content {
   display: block;
 }
-/* line 136, ../scss/partials/base/_story.scss */
+/* line 221, ../scss/partials/base/_story.scss */
 .multimedia .credit {
   text-align: right;
 }
-/* line 141, ../scss/partials/base/_story.scss */
+/* line 226, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--image img {
   display: block;
   width: 100%;
 }
-/* line 148, ../scss/partials/base/_story.scss */
+/* line 233, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   border-bottom: 1px solid #eeeeee;
 }
 
 /* Elastic video */
-/* line 155, ../scss/partials/base/_story.scss */
+/* line 240, ../scss/partials/base/_story.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1977,7 +2060,7 @@ a:hover {
   height: 0;
   overflow: hidden;
 }
-/* line 164, ../scss/partials/base/_story.scss */
+/* line 249, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -1989,13 +2072,13 @@ a:hover {
 }
 
 /* sticky */
-/* line 174, ../scss/partials/base/_story.scss */
+/* line 259, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
   position: relative;
 }
 
-/* line 179, ../scss/partials/base/_story.scss */
+/* line 264, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -2006,12 +2089,12 @@ a:hover {
   width: 100%;
 }
 
-/* line 189, ../scss/partials/base/_story.scss */
+/* line 274, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 193, ../scss/partials/base/_story.scss */
+/* line 278, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -2020,39 +2103,39 @@ a:hover {
 }
 
 /* tags */
-/* line 201, ../scss/partials/base/_story.scss */
+/* line 286, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 205, ../scss/partials/base/_story.scss */
+/* line 290, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 212, ../scss/partials/base/_story.scss */
+/* line 297, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
-/* line 219, ../scss/partials/base/_story.scss */
+/* line 304, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 225, ../scss/partials/base/_story.scss */
+/* line 310, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 229, ../scss/partials/base/_story.scss */
+/* line 314, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 236, ../scss/partials/base/_story.scss */
+/* line 321, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
