@@ -212,54 +212,32 @@
         </div>
     </div>
 
-    <div class="read-next">
-        <div class="container">
-            <h3 class="hd-g read-next__heading">Read Next</h3>
+    {% if post.more_stories is not empty %}
+        <div class="read-next">
+            <div class="container">
+                <h3 class="hd-g read-next__heading">Read Next</h3>
 
-            <ul class="story-list">
-                <li><article class="story story--tease">
-                        <a href="#" class="link-wrapper">
-                            <figure class="story__feature fl">
-                                <img src="http://lorempixel.com/600/330/business"/>
-                            </figure>
+                <ul class="story-list">
+                    {% for story in post.more_stories %}
+                        <li>
+                            <article class="story story--tease">
+                                <a href="#" class="link-wrapper">
+                                    <figure class="story__feature fl">
+                                        <img src="{{ story.thumbnail.src|resize(600, 330) }}"/>
+                                    </figure>
 
-                            <header class="story__header">
-                                <span class="rubric">Economy</span>
-                                <h2 class="hd-d story__hed">World Faces “Perfect Storm” Of Problems By 2030</h2>
-                                <p class="story__dek">John Beddington talks of a ‘perfect storm’ of food, energy and water shortages converging in 2030. Governments and business are beginning to take action.</p>
-                            </header>
-                        </a>
-                    </article></li>
-
-                <li><article class="story story--tease">
-                        <a href="#" class="link-wrapper">
-                            <figure class="story__feature fl">
-                                <img src="http://lorempixel.com/600/330/people"/>
-                            </figure>
-
-                            <header class="story__header">
-                                <span class="rubric">Environment</span>
-                                <h2 class="hd-d story__hed">Pumping More Solar Power in Sunny New Mexico</h2>
-                                <p class="story__dek">New Mexico basks in more than 300 days of sunshine every year, an average that gives it the highest potential for solar energy than almost anywhere else in the country. And yet, in sunny New Mexico, coal is still king.</p>
-                            </header>
-                        </a>
-                    </article></li>
-
-                <li><article class="story story--tease">
-                        <a href="#" class="link-wrapper">
-                            <figure class="story__feature fl">
-                                <img src="http://lorempixel.com/600/330/animals"/>
-                            </figure>
-
-                            <header class="story__header">
-                                <span class="rubric">Health</span>
-                                <h2 class="hd-d story__hed">How Grocery Stores Are Tricking Us to Eat Well</h2>
-                                <p class="story__dek">Scientists are getting clever. They want us to buy more fruit at the store, to make us more healthy. How can they trick us into doing that?</p>
-                            </header>
-                        </a>
-                    </article></li>
-            </ul>
+                                    <header class="story__header">
+                                        <span class="rubric">{{ story.category }}</span>
+                                        <h2 class="hd-d story__hed">{{ story.post_title }}</h2>
+                                        <p class="story__dek">{{ story.dek }}</p>
+                                    </header>
+                                </a>
+                            </article>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    </div>
+    {% endif %}
 
 {% endblock %}
