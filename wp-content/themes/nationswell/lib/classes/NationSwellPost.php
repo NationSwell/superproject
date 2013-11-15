@@ -1,11 +1,12 @@
 <?php
 if (class_exists('TimberPost')) {
     class NationSwellPost extends TimberPost {
-        private $story_header_cache = null;
+        private $story_header_cache;
+        private $more_stories_cache;
 
 
         function story_header() {
-            if ($this->story_header_cache == null) {
+            if (!isset($this->story_header_cache)) {
 
                 $this->story_header_cache = array();
                 while (has_sub_field("story_page_header", $this->ID)) {
@@ -40,6 +41,39 @@ if (class_exists('TimberPost')) {
                 $author->display_url = $url;
             }
             return $author;
+        }
+
+        function more_stories() {
+            if(!isset($this->more_stories_cache)) {
+                $this->more_stories_cache = array();
+                $categories = get_the_category($this->ID);
+
+                if(!empty($categories)) {
+                    $this->more_stories_cache = $this->get_more_stories($categories[0]->term_id);
+                }
+
+            }
+
+            return $this->more_stories_cache;
+        }
+
+        private function get_more_stories($term_id) {
+            $query = new WP_Query(array(
+                'fields' => 'ids',
+                'posts_per_page' => 3,
+                'post_type' => 'post',
+                'orderby' => 'date',
+                'order' => 'DESC',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'category',
+                        'field' => 'id',
+                        'terms' => $term_id
+                    )
+                )
+            ));
+
+            return Timber::get_posts($query->posts, 'NationSwellPost');
         }
 
         function facebook_share_url(){

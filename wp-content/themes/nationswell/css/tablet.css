@@ -99,13 +99,12 @@ html {
 
 /* line 17, ../scss/partials/base/_structure.scss */
 body {
-  background-color: #002130;
+  background-color: white;
   font-size: 1.6rem;
 }
 
 /* line 22, ../scss/partials/base/_structure.scss */
 #page-wrapper {
-  background-color: white;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -115,12 +114,13 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 32, ../scss/partials/base/_structure.scss */
+/* line 31, ../scss/partials/base/_structure.scss */
 #page-content {
   padding-bottom: 8rem;
   position: relative;
   background: white;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 /* line 39, ../scss/partials/base/_structure.scss */
@@ -432,6 +432,15 @@ body {
   color: #003046;
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 400;
+}
+
+/* line 139, ../scss/partials/base/_headings.scss */
+.hd-r {
+  color: #fc3b40;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* line 1, ../scss/partials/base/_typography.scss */
@@ -948,23 +957,20 @@ a:hover {
 
 /* line 114, ../scss/partials/base/_nav.scss */
 .trending-topics__heading {
-  color: #9aacb5;
   font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 700;
-  display: inline-block;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 123, ../scss/partials/base/_nav.scss */
+/* line 119, ../scss/partials/base/_nav.scss */
 .trending-topics__list {
   display: inline-block;
 }
-/* line 126, ../scss/partials/base/_nav.scss */
+/* line 122, ../scss/partials/base/_nav.scss */
 .trending-topics__list li {
   display: inline-block;
 }
 
-/* line 131, ../scss/partials/base/_nav.scss */
+/* line 127, ../scss/partials/base/_nav.scss */
 .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1079,12 +1085,18 @@ a:hover {
   color: #ccd6da;
 }
 
-/* line 1, ../scss/partials/base/_footer.scss */
+/* line 2, ../scss/partials/base/_footer.scss */
+#page-footer,
+#page-footer .container {
+  background-color: #002130;
+}
+
+/* line 6, ../scss/partials/base/_footer.scss */
 .site-logo--footer {
   display: block;
 }
 
-/* line 5, ../scss/partials/base/_footer.scss */
+/* line 10, ../scss/partials/base/_footer.scss */
 .copyright {
   color: #a7a7a7;
   display: block;
@@ -1092,7 +1104,7 @@ a:hover {
   position: relative;
 }
 
-/* line 12, ../scss/partials/base/_footer.scss */
+/* line 17, ../scss/partials/base/_footer.scss */
 .footer-links__link {
   font-family: "Gudea", Arial, sans-serif;
 }
@@ -1866,7 +1878,7 @@ a:hover {
 .hero-information .hero-information__toggle {
   cursor: pointer;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   color: white;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);

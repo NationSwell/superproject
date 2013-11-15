@@ -9,12 +9,12 @@
     height: auto;
   }
 
-  &.site-logo--header {
+  &.site-logo--slogan {
     margin-top: 1.6rem;
-  }
 
-  .slogan {
-    margin-left: 2.1rem;
+    .slogan {
+      margin-left: 2.1rem;
+    }
   }
 }
 
@@ -76,6 +76,9 @@
 }
 
 .trending-topics__heading {
+  display: inline-block;
+  color: $ns_navy5;
+  font-weight: $bold;
   font-size: 1.4rem;
   margin: 0 3.4rem 0 2.2rem;
 }

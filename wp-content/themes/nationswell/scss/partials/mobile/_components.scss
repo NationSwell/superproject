@@ -298,29 +298,31 @@
 
 /* prev/next */
 .prev-next {
-  padding-top: 2rem;
-  margin-bottom: 7.2rem;
+  padding-top: 3.4rem;
+  margin-bottom: 0.6rem;
 
   .prev-next__link {
-    font-size: 1.4rem;
-    margin-bottom: 0.4rem;
+    font-size: 0;
 
     .icon {
-      font-size: 2.6rem;
-      line-height: 0.74;
+      font-size: 26.6rem;
     }
 
     &.prev-next__link--prev {
       .icon {
-        margin-right: 0.6rem;
+        margin-left: 6.6rem;
       }
     }
 
     &.prev-next__link--next {
       .icon {
-        margin-left: 0.6rem;
+        margin-right: 6.6rem;
       }
     }
+  }
+
+  .story__hed {
+    display: none;
   }
 }
 
