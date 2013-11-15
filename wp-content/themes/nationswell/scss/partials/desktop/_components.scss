@@ -181,6 +181,22 @@
     .story-list {
       li {
         padding: 1.8rem 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &.two {
+        li {
+          width: 47.5%;
+        }
+      }
+
+      &.three {
+        li {
+          width: 31.25%;
+        }
       }
     }
 

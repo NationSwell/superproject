@@ -8,7 +8,7 @@
 
   @include transition(all 0.3s ease-in-out);
 
-  &.open {
+  &.panel-open {
     height: 46rem;
   }
 

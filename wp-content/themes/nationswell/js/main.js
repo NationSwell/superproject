@@ -15,10 +15,8 @@
                         target = $this.data("mobile-target"),
                         $target = $(target);
 
-                    if($target.length) {
-                        $this.toggleClass('toggled');
-                        $target.toggleClass('open');
-                    }
+                    $this.toggleClass('toggled');
+                    $target.toggleClass('panel-open');
 
                     e.preventDefault();
                 });
@@ -150,7 +148,7 @@
                         $target = $(target);
 
                     $this.toggleClass('toggled');
-                    $target.toggleClass('open');
+                    $target.toggleClass('panel-open');
 
                     e.preventDefault();
                 });

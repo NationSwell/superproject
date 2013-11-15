@@ -14,3 +14,23 @@
   font-size: 6rem;
   padding-top: 3.8rem;
 }
+
+.panel {
+  background-color: $ns_navy2;
+  height: 100%;
+  width: 32rem;
+  position: absolute;
+  right: 0;
+}
+
+/* mobile panel */
+body.panel-open {
+  #page-wrapper {
+    overflow-x: hidden;
+    right: 32rem;
+
+    #page-content {
+      pointer-events: none;
+    }
+  }
+}
