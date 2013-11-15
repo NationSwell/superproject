@@ -17,6 +17,7 @@ class Subscribe_Widget extends WP_Widget {
         $this->WP_Widget( 'subscribe-widget', 'NationSwell Subscribe Widget', $widget_ops, $control_ops );
     }
 
+
     function widget( $args, $instance) {
         extract( $args );
 
