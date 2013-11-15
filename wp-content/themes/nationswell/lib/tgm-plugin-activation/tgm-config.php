@@ -135,6 +135,26 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Google Analytics Top Posts',
+            'slug' => 'google-analytics-top-posts-widget',
+            'source' => get_stylesheet_directory() . '/lib/plugins/google-analytics-top-posts-widget.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
+        array(
+            'name' => 'Ad Code Manager',
+            'slug' => 'ad-code-manager',
+            'source' => get_stylesheet_directory() . '/lib/plugins/ad-code-manager.0.4.1.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
