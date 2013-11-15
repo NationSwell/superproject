@@ -1866,7 +1866,7 @@ a:hover {
 .hero-information .hero-information__toggle {
   cursor: pointer;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   color: white;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -2148,14 +2148,13 @@ a:hover {
   float: left;
   margin-right: 4%;
   width: 82.66667%;
-  margin-left: 17.33333%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .hero .hero-information .hero-information__content:last-child {
   margin-right: 0;
 }
 
-/* line 33, ../scss/partials/mobile/_grid.scss */
+/* line 32, ../scss/partials/mobile/_grid.scss */
 .river.river--one-col .story-teases, .river.river--two-col .story-teases {
   display: block;
   float: left;
@@ -2166,7 +2165,7 @@ a:hover {
 .river.river--one-col .story-teases:last-child, .river.river--two-col .story-teases:last-child {
   margin-right: 0;
 }
-/* line 36, ../scss/partials/mobile/_grid.scss */
+/* line 35, ../scss/partials/mobile/_grid.scss */
 .river.river--one-col .story-teases li, .river.river--two-col .story-teases li {
   display: block;
   float: left;
@@ -2178,7 +2177,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 44, ../scss/partials/mobile/_grid.scss */
+/* line 43, ../scss/partials/mobile/_grid.scss */
 .sidebar {
   display: block;
   float: left;
@@ -2190,7 +2189,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 49, ../scss/partials/mobile/_grid.scss */
+/* line 48, ../scss/partials/mobile/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -2202,7 +2201,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 53, ../scss/partials/mobile/_grid.scss */
+/* line 52, ../scss/partials/mobile/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -2214,7 +2213,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 59, ../scss/partials/mobile/_grid.scss */
+/* line 58, ../scss/partials/mobile/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -2225,11 +2224,11 @@ a:hover {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 62, ../scss/partials/mobile/_grid.scss */
+/* line 61, ../scss/partials/mobile/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 67, ../scss/partials/mobile/_grid.scss */
+/* line 66, ../scss/partials/mobile/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -2242,7 +2241,7 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 75, ../scss/partials/mobile/_grid.scss */
+/* line 74, ../scss/partials/mobile/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -2254,30 +2253,30 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 82, ../scss/partials/mobile/_grid.scss */
+/* line 81, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
   margin-right: 4%;
-  width: 204%;
+  width: 100%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 85, ../scss/partials/mobile/_grid.scss */
+/* line 84, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
-  margin-right: 1.96078%;
-  width: 32.02614%;
+  margin-right: 4%;
+  width: 100%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .read-next .story-list li:last-child {
   margin-right: 0;
 }
 
-/* line 93, ../scss/partials/mobile/_grid.scss */
+/* line 92, ../scss/partials/mobile/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -2925,50 +2924,52 @@ body.panel-open #page-wrapper #page-content {
 /* prev/next */
 /* line 300, ../scss/partials/mobile/_components.scss */
 .prev-next {
-  padding-top: 2rem;
-  margin-bottom: 7.2rem;
+  padding-top: 3.4rem;
+  margin-bottom: 0.6rem;
 }
 /* line 304, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link {
-  font-size: 1.4rem;
-  margin-bottom: 0.4rem;
+  font-size: 0;
 }
-/* line 308, ../scss/partials/mobile/_components.scss */
+/* line 307, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link .icon {
-  font-size: 2.6rem;
-  line-height: 0.74;
+  font-size: 26.6rem;
 }
-/* line 314, ../scss/partials/mobile/_components.scss */
+/* line 312, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
-  margin-right: 0.6rem;
+  margin-left: 6.6rem;
 }
-/* line 320, ../scss/partials/mobile/_components.scss */
+/* line 318, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
-  margin-left: 0.6rem;
+  margin-right: 6.6rem;
+}
+/* line 324, ../scss/partials/mobile/_components.scss */
+.prev-next .story__hed {
+  display: none;
 }
 
 /* read next */
-/* line 328, ../scss/partials/mobile/_components.scss */
+/* line 330, ../scss/partials/mobile/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 331, ../scss/partials/mobile/_components.scss */
+/* line 333, ../scss/partials/mobile/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 336, ../scss/partials/mobile/_components.scss */
+/* line 338, ../scss/partials/mobile/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 340, ../scss/partials/mobile/_components.scss */
+/* line 342, ../scss/partials/mobile/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 345, ../scss/partials/mobile/_components.scss */
+/* line 347, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 348, ../scss/partials/mobile/_components.scss */
+/* line 350, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
@@ -3324,7 +3325,7 @@ body.panel-open #page-wrapper #page-content {
 
 /* line 170, ../scss/partials/mobile/_story.scss */
 .story__social {
-  margin-bottom: 7.2rem;
+  margin-bottom: 18rem;
 }
 /* line 173, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar {
@@ -3333,7 +3334,7 @@ body.panel-open #page-wrapper #page-content {
 
 /* line 179, ../scss/partials/mobile/_story.scss */
 .module.take-action {
-  margin-bottom: 5rem;
+  margin-bottom: 7.6rem;
   padding-bottom: 5rem;
   text-align: center;
 }
@@ -3350,6 +3351,11 @@ body.panel-open #page-wrapper #page-content {
   font-size: 3.2rem;
   line-height: 1.32;
   margin-bottom: 3.4rem;
+}
+
+/* line 200, ../scss/partials/mobile/_story.scss */
+#flyout {
+  display: none;
 }
 
 /* line 1, ../scss/partials/mobile/_series.scss */
