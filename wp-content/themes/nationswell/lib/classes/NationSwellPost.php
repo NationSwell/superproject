@@ -62,6 +62,7 @@ if (class_exists('TimberPost')) {
                 'fields' => 'ids',
                 'posts_per_page' => 3,
                 'post_type' => 'post',
+                'post__not_in' => array($this->ID),
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'tax_query' => array(

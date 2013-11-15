@@ -1,77 +1,26 @@
 <?php
-/**
- *  Install Add-ons
- *
- *  The following code will include all 4 premium Add-Ons in your theme.
- *  Please do not attempt to include a file which does not exist. This will produce an error.
- *
- *  The following code assumes you have a folder 'add-ons' inside your theme.
- *
- *  IMPORTANT
- *  Add-ons may be included in a premium theme/plugin as outlined in the terms and conditions.
- *  For more information, please read:
- *  - http://www.advancedcustomfields.com/terms-conditions/
- *  - http://www.advancedcustomfields.com/resources/getting-started/including-lite-mode-in-a-plugin-theme/
- */
-
-// Add-ons
-// include_once('add-ons/acf-repeater/acf-repeater.php');
-// include_once('add-ons/acf-gallery/acf-gallery.php');
-// include_once('add-ons/acf-flexible-content/acf-flexible-content.php');
-// include_once( 'add-ons/acf-options-page/acf-options-page.php' );
-
-
-/**
- *  Register Field Groups
- *
- *  The register_field_group function accepts 1 array which holds the relevant data to register a field group
- *  You may edit the array as you see fit. However, this may result in errors if the array is not compatible with ACF
- */
-
 if(function_exists("register_field_group"))
 {
     register_field_group(array (
-            'id' => 'acf_story-fields',
-            'title' => 'Story Fields',
+            'id' => 'acf_hero',
+            'title' => 'Hero',
             'fields' => array (
                 array (
-                    'key' => 'field_527c0555270ef',
-                    'label' => 'Dek',
-                    'name' => 'dek',
-                    'type' => 'text',
-                    'default_value' => '',
-                    'placeholder' => '',
-                    'maxlength' => '',
-                    'formatting' => 'none',
-                ),
-                array (
-                    'key' => 'field_5286879ca3e12',
-                    'label' => __('Content Type'),
-                    'name' => 'content_type',
-                    'type' => 'select',
-                    'choices' => array (
-                        'story' => 'Story',
-                        'video' => 'Video',
-                        'gallery' => 'Gallery',
-                    ),
-                    'default_value' => 'story',
-                    'allow_null' => 0,
-                    'multiple' => 0,
-                ),
-                array (
                     'key' => 'field_52742d44fb739',
-                    'label' => 'Hero',
+                    'label' => __('Hero'),
                     'name' => 'hero',
                     'type' => 'flexible_content',
                     'layouts' => array (
                         array (
-                            'label' => 'Image',
+                            'label' => __('Image'),
                             'name' => 'image',
                             'display' => 'row',
+                            'min' => '',
+                            'max' => '',
                             'sub_fields' => array (
                                 array (
                                     'key' => 'field_52742d6cfb73a',
-                                    'label' => 'Image',
+                                    'label' => __('Image'),
                                     'name' => 'image',
                                     'type' => 'image',
                                     'column_width' => '',
@@ -82,13 +31,15 @@ if(function_exists("register_field_group"))
                             ),
                         ),
                         array (
-                            'label' => 'Video',
+                            'label' => __('Video'),
                             'name' => 'video',
                             'display' => 'row',
+                            'min' => '',
+                            'max' => '',
                             'sub_fields' => array (
                                 array (
                                     'key' => 'field_52742d8ffb73c',
-                                    'label' => 'Video URL',
+                                    'label' => __('Video URL'),
                                     'name' => 'video_url',
                                     'type' => 'text',
                                     'column_width' => '',
@@ -99,10 +50,38 @@ if(function_exists("register_field_group"))
                                     'formatting' => 'html',
                                     'maxlength' => '',
                                 ),
+                                array (
+                                    'key' => 'field_5286a66eeac48',
+                                    'label' => __('Caption'),
+                                    'name' => 'caption',
+                                    'type' => 'text',
+                                    'column_width' => '',
+                                    'default_value' => '',
+                                    'placeholder' => '',
+                                    'prepend' => '',
+                                    'append' => '',
+                                    'formatting' => 'none',
+                                    'maxlength' => '',
+                                ),
+                                array (
+                                    'key' => 'field_5286a67ceac49',
+                                    'label' => __('Credit'),
+                                    'name' => 'credit',
+                                    'type' => 'text',
+                                    'column_width' => '',
+                                    'default_value' => '',
+                                    'placeholder' => '',
+                                    'prepend' => '',
+                                    'append' => '',
+                                    'formatting' => 'none',
+                                    'maxlength' => '',
+                                ),
                             ),
                         ),
                     ),
                     'button_label' => 'Add Row',
+                    'min' => '',
+                    'max' => '',
                 ),
             ),
             'location' => array (

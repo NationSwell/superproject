@@ -54,7 +54,9 @@ function my_register_fields()
     include_once('lib/fields/home_page.php');
     include_once('lib/fields/mug_shot.php');
     include_once('lib/fields/social_accounts.php');
-    include_once('lib/fields/story_header.php');
+    include_once('lib/fields/dek.php');
+    include_once('lib/fields/content_type.php');
+    include_once('lib/fields/hero.php');
     include_once('lib/fields/story_content.php');
 }
 
@@ -71,6 +73,7 @@ include_once('lib/menu/menu.php');
 // Custom Widgets
 include_once('lib/widgets/widgets.php');
 include_once('lib/widgets/widget-joinus.php');
+include_once('lib/widgets/widget-subscribe.php');
 
 // Plugin Activation
 include_once('lib/tgm-plugin-activation/tgm-config.php');
