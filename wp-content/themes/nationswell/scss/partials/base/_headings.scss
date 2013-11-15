@@ -135,3 +135,11 @@
   font-family: $oswald;
   font-weight: $regular;
 }
+
+.hd-r {
+  color: $ns_red;
+  font-family: $montserrat;
+  font-weight: $regular;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
