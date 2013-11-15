@@ -1,11 +1,12 @@
 <div class="module module--bg module--sidebar module--blue join-us hide_mobile">
     <header>
         <div class="indicator indicator--blue indicator--module icon icon_nationswell-flag"></div>
-        <h3 class="hd-e module__heading">Join us</h3>
+        <h3 class="hd-e module__heading">{{ title }}</h3>
     </header>
 
-    <p>Meet the people renewing America. Follow us on Facebook and Twitter for the latest updates on the American renewal.</p>
+    <p>{{ description }}</p>
+    {#<p>Meet the people renewing America. Follow us on Facebook and Twitter for the latest updates on the American renewal.</p>#}
 
-    <a href="https://www.facebook.com/nationswell" class="btn btn--bar btn--facebook icon icon_facebook">Follow on Facebook</a>
-    <a href="https://twitter.com/nationswell" class="btn btn--bar btn--twitter icon icon_twitter">Follow on Twitter</a>
+    <a href="{{ facebook }}" class="btn btn--bar btn--facebook icon icon_facebook" target="_blank">Follow on Facebook</a>
+    <a href="{{ twitter }}" class="btn btn--bar btn--twitter icon icon_twitter" target="_blank">Follow on Twitter</a>
 </div>
