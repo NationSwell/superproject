@@ -21,41 +21,20 @@ function placeholder_shortcode($attr) {
 
     if($component_cache === null) {
         $component_cache = array();
-        while(has_sub_field("story_content", $post->ID)) {
-            $layout = get_row_layout();
-            $component = array('type' => $layout);
+        $story_content = get_field('story_content', $post->ID);
 
-            if($layout == "image") {
-                $component = array_merge(get_sub_field('image'), $component);
-                $component['credit'] = get_field('credit', $component['id']);
-            }
-            elseif($layout == "video") {
-                $component['title'] = get_sub_field('title');
-                $component['video_url'] = get_sub_field('video_url');
-                $component['credit'] = get_sub_field('credit');
-            }
-            elseif($layout == "pull_quote") {
-                $component['text'] = get_sub_field('text');
-                $component['credit'] = get_sub_field('credit');
-            }
-            elseif($layout == "related") {
-                $position = get_sub_field('position');
-                $sidebar = $position == 'sidebar';
+        if($story_content !== false) {
+            foreach($story_content as $content) {
+                $layout = $content['acf_fc_layout'];
+                $component = array('type' => $layout);
+                $fun = 'component_' . $layout;
 
-                $component['position'] = $sidebar ? 'pull' : 'horizontal';
-
-                $related_ids = get_sub_field('related');
-
-                if(count($related_ids) > 0) {
-                    $component['related_posts'] = Timber::get_posts($sidebar ? $related_ids : array_slice($related_ids, 0, 3));
-                    $post_count = count($component['related_posts']);
-
-                    $numbers = array(0 => '', 1 => 'one', 2 => 'two', 3 => 'three');
-                    $component['class'] = $sidebar ? '' : $numbers[$post_count];
+                if(function_exists($fun)) {
+                    $component = call_user_func($fun, $content, $component);
                 }
-            }
 
-            $component_cache[] = $component;
+                $component_cache[] = $component;
+            }
         }
     }
 
@@ -81,4 +60,63 @@ function placeholder_shortcode($attr) {
 
     return $output;
 
+}
+
+
+function component_image($content, $component) {
+    $component = array_merge($content['image'], $component);
+    $component['credit'] = get_field('credit', $component['id']);
+
+    return $component;
+}
+
+function component_video($content, $component) {
+    $component['title'] = $content['title'];
+
+    if(!empty($content['video_url'])) {
+        $component['video_url'] = normalize_youtube_url($content['video_url']) .
+            '?origin=' . urlencode(get_site_url()) . '&autoplay=0&autohide=1' .
+            '&controls=2&enablejsapi=1&modestbranding=1&rel=0&theme=light&color=fc3b40&showinfo=0';
+    }
+
+    $component['credit'] = $content['credit'];
+
+    return $component;
+}
+
+function normalize_youtube_url($url) {
+    if (strpos('//www.youtube.com/embed/', $url) === false  &&
+        (preg_match("/\/\/www.youtube.com\/watch\?.*v=([^&#]+)/", $url, $matches) ||
+            preg_match("/\/\/youtu.be\/([^&#]+)/", $url, $matches))) {
+
+        $url = '//www.youtube.com/embed/' . $matches[1];
+    }
+
+    return $url;
+}
+
+function component_pull_quote($content, $component) {
+    $component['text'] = $content['text'];
+    $component['credit'] = $content['credit'];
+
+    return $component;
+}
+
+function component_related($content, $component) {
+    $position = $content['position'];
+    $sidebar = $position == 'sidebar';
+
+    $component['position'] = $sidebar ? 'pull' : 'horizontal';
+
+    $related_ids = $content['related'];
+
+    if(count($related_ids) > 0) {
+        $component['related_posts'] = Timber::get_posts($sidebar ? $related_ids : array_slice($related_ids, 0, 3));
+        $post_count = count($component['related_posts']);
+
+        $numbers = array(0 => '', 1 => 'one', 2 => 'two', 3 => 'three');
+        $component['class'] = $sidebar ? '' : $numbers[$post_count];
+    }
+
+    return $component;
 }
