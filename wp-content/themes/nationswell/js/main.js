@@ -5,6 +5,15 @@
             $('#search').toggleClass('open');
         });
 
+        // flyout box
+        $('.story__container').waypoint(function (direction) {
+            $('#flyout').toggleClass('hiding', direction === "up");
+        }, {
+            offset: function () {
+                return $.waypoints('viewportHeight') - $(this).height() + 200;
+            }
+        });
+
         enquire.register("screen and (max-width: 959px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
@@ -15,10 +24,8 @@
                         target = $this.data("mobile-target"),
                         $target = $(target);
 
-                    if($target.length) {
-                        $this.toggleClass('toggled');
-                        $target.toggleClass('open');
-                    }
+                    $this.toggleClass('toggled');
+                    $target.toggleClass('panel-open');
 
                     e.preventDefault();
                 });
@@ -150,7 +157,7 @@
                         $target = $(target);
 
                     $this.toggleClass('toggled');
-                    $target.toggleClass('open');
+                    $target.toggleClass('panel-open');
 
                     e.preventDefault();
                 });
