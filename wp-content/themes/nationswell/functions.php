@@ -54,7 +54,9 @@ function my_register_fields()
     include_once('lib/fields/home_page.php');
     include_once('lib/fields/mug_shot.php');
     include_once('lib/fields/social_accounts.php');
-    include_once('lib/fields/story_header.php');
+    include_once('lib/fields/dek.php');
+    include_once('lib/fields/content_type.php');
+    include_once('lib/fields/hero.php');
     include_once('lib/fields/story_content.php');
 }
 
