@@ -1,4 +1,4 @@
-<div class="module module--bg module--sidebar module--blue join-us hide_mobile">
+<div class="module module--bg module--sidebar module--blue newsletter-subscribe hide_mobile">
     <header>
         <div class="indicator indicator--blue indicator--module icon icon_nationswell-flag"></div>
         <h3 class="hd-e module__heading">{{ title }}</h3>
@@ -10,13 +10,17 @@
         <form action="{{ mailchimp_form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
             <div class="mc-field-group">
-                <label for="mce-EMAIL">Email Address </label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <input type="email" value="" placeholder="Enter your email address" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
+
             <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <p class="response" id="mce-error-response" style="display:none"></p>
+                <p class="response" id="mce-success-response" style="display:none"></p>
+            </div>
+
+            <div class="cf">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--solid">
+            </div>
         </form>
     </div>
 </div>

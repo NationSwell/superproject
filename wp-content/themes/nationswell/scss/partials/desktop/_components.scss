@@ -219,6 +219,30 @@
       margin-top: 12rem;
     }
   }
+
+  /* join us module */
+  &.join-us {
+    .btn--bar {
+      margin-bottom: 2.1rem;
+    }
+  }
+
+  /* subscribe module */
+  &.newsletter-subscribe {
+    .btn--solid {
+      background-color: $ns_blue1;
+      float: right;
+
+      &:hover {
+        background-color: $ns_red;
+      }
+    }
+
+    input[type="email"] {
+      margin-bottom: 2.2rem;
+      width: 100%;
+    }
+  }
 }
 
 /* pullquote */
@@ -407,7 +431,6 @@
     cursor: pointer;
 
     @include transition(color 0.15s ease-in-out);
-    @include appearance(none);
 
     &:hover {
       color: $ns_blue1;

@@ -122,3 +122,12 @@
     }
   }
 }
+
+button,
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  @include appearance(none);
+
+  @include transition(all 0.15s ease-in-out);
+}

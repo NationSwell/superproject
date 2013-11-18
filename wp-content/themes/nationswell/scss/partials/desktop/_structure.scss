@@ -4,3 +4,8 @@
   display: none !important;
   visibility: hidden;
 }
+
+// force chrome bug: hardware acceleration and redraw
+html *:not(svg) {
+  @include transform(translate3d(0,0,0));
+}
