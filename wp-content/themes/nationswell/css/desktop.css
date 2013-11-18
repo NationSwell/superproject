@@ -2472,15 +2472,10 @@ a:hover {
   visibility: hidden;
 }
 
-/* line 9, ../scss/partials/desktop/_structure.scss */
+/*
 html *:not(svg) {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
+  @include transform(translateZ(0));
+}*/
 /* line 1, ../scss/partials/desktop/_headings.scss */
 .hd-a {
   font-size: 6rem;
@@ -2567,7 +2562,7 @@ html *:not(svg) {
 
 /* line 69, ../scss/partials/desktop/_headings.scss */
 .hd-s {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 /* line 1, ../scss/partials/desktop/_typography.scss */
@@ -2848,26 +2843,21 @@ input[type="email"] {
 
 /* line 1, ../scss/partials/desktop/_footer.scss */
 #page-footer {
-  height: 14rem;
-  position: absolute;
+  height: 13rem;
   width: 100%;
 }
-/* line 6, ../scss/partials/desktop/_footer.scss */
+/* line 5, ../scss/partials/desktop/_footer.scss */
 #page-footer .container {
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  height: 14rem;
+  height: 13rem;
 }
 
-/* line 15, ../scss/partials/desktop/_footer.scss */
+/* line 10, ../scss/partials/desktop/_footer.scss */
 .site-logo--footer {
   float: left;
   margin-top: 4.6rem;
 }
 
-/* line 20, ../scss/partials/desktop/_footer.scss */
+/* line 15, ../scss/partials/desktop/_footer.scss */
 .copyright {
   float: left;
   font-size: 1.3rem;
@@ -2876,20 +2866,20 @@ input[type="email"] {
   clear: both;
 }
 
-/* line 28, ../scss/partials/desktop/_footer.scss */
+/* line 23, ../scss/partials/desktop/_footer.scss */
 .footer-links {
   float: right;
   margin-top: 6rem;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 34, ../scss/partials/desktop/_footer.scss */
+/* line 29, ../scss/partials/desktop/_footer.scss */
 .footer-links li {
   display: inline-block;
   margin-left: 1.8rem;
 }
 
-/* line 40, ../scss/partials/desktop/_footer.scss */
+/* line 35, ../scss/partials/desktop/_footer.scss */
 .footer-links__link {
   color: #a7a7a7;
   font-size: 1.4rem;
@@ -3019,8 +3009,13 @@ input[type="email"] {
   line-height: 5.8rem;
 }
 
+/* line 123, ../scss/partials/desktop/_components.scss */
+.sidebar > li {
+  list-style: none;
+}
+
 /* module */
-/* line 124, ../scss/partials/desktop/_components.scss */
+/* line 128, ../scss/partials/desktop/_components.scss */
 .module {
   display: block;
   position: relative;
@@ -3028,115 +3023,115 @@ input[type="email"] {
   /* join us module */
   /* subscribe module */
 }
-/* line 129, ../scss/partials/desktop/_components.scss */
+/* line 133, ../scss/partials/desktop/_components.scss */
 .module.module--sidebar {
   width: 32rem;
   margin-bottom: 7.6rem;
 }
-/* line 134, ../scss/partials/desktop/_components.scss */
+/* line 138, ../scss/partials/desktop/_components.scss */
 .module.module--bg {
   padding: 2rem;
 }
-/* line 137, ../scss/partials/desktop/_components.scss */
+/* line 141, ../scss/partials/desktop/_components.scss */
 .module.module--bg:before {
   height: 0.7rem;
 }
-/* line 141, ../scss/partials/desktop/_components.scss */
+/* line 145, ../scss/partials/desktop/_components.scss */
 .module.module--bg header {
   margin-top: -4.5rem;
   margin-bottom: 2rem;
 }
-/* line 146, ../scss/partials/desktop/_components.scss */
+/* line 150, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading {
   padding: 0.8rem 0.8rem 0.4rem;
   top: -1rem;
 }
-/* line 151, ../scss/partials/desktop/_components.scss */
+/* line 155, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   font-size: 1.5rem;
 }
-/* line 155, ../scss/partials/desktop/_components.scss */
+/* line 159, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading:before {
   margin-right: 1.2rem;
 }
-/* line 159, ../scss/partials/desktop/_components.scss */
+/* line 163, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading:after {
   margin-left: 1.2rem;
 }
-/* line 164, ../scss/partials/desktop/_components.scss */
+/* line 168, ../scss/partials/desktop/_components.scss */
 .module.module--bg p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 3rem;
 }
-/* line 172, ../scss/partials/desktop/_components.scss */
+/* line 176, ../scss/partials/desktop/_components.scss */
 .module.module--list:after {
   height: 0.7rem;
   bottom: -0.7rem;
 }
-/* line 177, ../scss/partials/desktop/_components.scss */
+/* line 181, ../scss/partials/desktop/_components.scss */
 .module.module--list .module__heading {
   padding-bottom: 1.2rem;
 }
-/* line 182, ../scss/partials/desktop/_components.scss */
+/* line 186, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list li {
   padding: 1.8rem 0;
 }
-/* line 185, ../scss/partials/desktop/_components.scss */
+/* line 189, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list li:last-child {
   margin-right: 0;
 }
-/* line 191, ../scss/partials/desktop/_components.scss */
+/* line 195, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list.two li {
   width: 47.5%;
 }
-/* line 197, ../scss/partials/desktop/_components.scss */
+/* line 201, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list.three li {
   width: 30%;
 }
-/* line 203, ../scss/partials/desktop/_components.scss */
+/* line 207, ../scss/partials/desktop/_components.scss */
 .module.module--list.module--horizontal {
   margin: 5rem 0;
 }
-/* line 208, ../scss/partials/desktop/_components.scss */
+/* line 212, ../scss/partials/desktop/_components.scss */
 .module.module--pull {
   margin-right: -37.6rem;
   width: 32rem;
 }
-/* line 214, ../scss/partials/desktop/_components.scss */
+/* line 218, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .story {
   padding: 3.4rem;
 }
-/* line 218, ../scss/partials/desktop/_components.scss */
+/* line 222, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .sponsor {
   margin-top: 12rem;
 }
-/* line 225, ../scss/partials/desktop/_components.scss */
+/* line 229, ../scss/partials/desktop/_components.scss */
 .module.join-us .btn--bar {
   margin-bottom: 2.1rem;
 }
-/* line 232, ../scss/partials/desktop/_components.scss */
+/* line 236, ../scss/partials/desktop/_components.scss */
 .module.newsletter-subscribe .btn--solid {
   background-color: #0098d8;
   float: right;
 }
-/* line 236, ../scss/partials/desktop/_components.scss */
+/* line 240, ../scss/partials/desktop/_components.scss */
 .module.newsletter-subscribe .btn--solid:hover {
   background-color: #fc3b40;
 }
-/* line 241, ../scss/partials/desktop/_components.scss */
+/* line 245, ../scss/partials/desktop/_components.scss */
 .module.newsletter-subscribe input[type="email"] {
   margin-bottom: 2.2rem;
   width: 100%;
 }
 
 /* pullquote */
-/* line 249, ../scss/partials/desktop/_components.scss */
+/* line 253, ../scss/partials/desktop/_components.scss */
 .pullquote {
   margin: 4.2rem 0 5rem;
   padding-left: 7.8rem;
 }
-/* line 253, ../scss/partials/desktop/_components.scss */
+/* line 257, ../scss/partials/desktop/_components.scss */
 .pullquote:before {
   font-size: 4.2rem;
   line-height: 1.46;
@@ -3146,83 +3141,83 @@ input[type="email"] {
   top: -1.2rem;
   left: 0;
 }
-/* line 263, ../scss/partials/desktop/_components.scss */
+/* line 267, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 2rem;
 }
-/* line 267, ../scss/partials/desktop/_components.scss */
+/* line 271, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 1.8rem;
 }
 
 /* tags */
-/* line 273, ../scss/partials/desktop/_components.scss */
+/* line 277, ../scss/partials/desktop/_components.scss */
 .tag {
   font-size: 1.4rem;
   padding: 0.6rem 0.8rem;
 }
 
 /* author */
-/* line 279, ../scss/partials/desktop/_components.scss */
+/* line 283, ../scss/partials/desktop/_components.scss */
 .author {
   margin-bottom: 7.2rem;
   padding: 2.6rem 3.4rem;
 }
 
-/* line 284, ../scss/partials/desktop/_components.scss */
+/* line 288, ../scss/partials/desktop/_components.scss */
 .author__a {
   float: left;
 }
 
-/* line 288, ../scss/partials/desktop/_components.scss */
+/* line 292, ../scss/partials/desktop/_components.scss */
 .author__b {
   overflow: hidden;
   padding-top: 0.6rem;
   padding-left: 3.4rem;
 }
 
-/* line 294, ../scss/partials/desktop/_components.scss */
+/* line 298, ../scss/partials/desktop/_components.scss */
 .author__portrait {
   margin-bottom: 1.2rem;
   width: 13.4rem;
   height: 13.4rem;
 }
 
-/* line 300, ../scss/partials/desktop/_components.scss */
+/* line 304, ../scss/partials/desktop/_components.scss */
 .author__url {
   font-size: 1.4rem;
 }
-/* line 303, ../scss/partials/desktop/_components.scss */
+/* line 307, ../scss/partials/desktop/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 308, ../scss/partials/desktop/_components.scss */
+/* line 312, ../scss/partials/desktop/_components.scss */
 .author__social {
   margin-top: 1.2rem;
 }
-/* line 312, ../scss/partials/desktop/_components.scss */
+/* line 316, ../scss/partials/desktop/_components.scss */
 .author__social li:first-child {
   border-left: 0;
 }
-/* line 317, ../scss/partials/desktop/_components.scss */
+/* line 321, ../scss/partials/desktop/_components.scss */
 .author__social .icon {
   font-size: 2.6rem;
   height: 3rem;
   width: 3rem;
 }
 
-/* line 324, ../scss/partials/desktop/_components.scss */
+/* line 328, ../scss/partials/desktop/_components.scss */
 .author__byline {
   margin-bottom: 1.4rem;
 }
-/* line 325, ../scss/partials/desktop/_components.scss */
+/* line 329, ../scss/partials/desktop/_components.scss */
 .author__byline:before {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
 }
 
-/* line 333, ../scss/partials/desktop/_components.scss */
+/* line 337, ../scss/partials/desktop/_components.scss */
 .author__bio {
   color: #7e7e7e;
   font-size: 1.5rem;
@@ -3230,57 +3225,57 @@ input[type="email"] {
 }
 
 /* prev/next */
-/* line 340, ../scss/partials/desktop/_components.scss */
+/* line 344, ../scss/partials/desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 344, ../scss/partials/desktop/_components.scss */
+/* line 348, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 348, ../scss/partials/desktop/_components.scss */
+/* line 352, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 354, ../scss/partials/desktop/_components.scss */
+/* line 358, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 360, ../scss/partials/desktop/_components.scss */
+/* line 364, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 368, ../scss/partials/desktop/_components.scss */
+/* line 372, ../scss/partials/desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 371, ../scss/partials/desktop/_components.scss */
+/* line 375, ../scss/partials/desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 376, ../scss/partials/desktop/_components.scss */
+/* line 380, ../scss/partials/desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 380, ../scss/partials/desktop/_components.scss */
+/* line 384, ../scss/partials/desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 385, ../scss/partials/desktop/_components.scss */
+/* line 389, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 388, ../scss/partials/desktop/_components.scss */
+/* line 392, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
 
-/* line 394, ../scss/partials/desktop/_components.scss */
+/* line 398, ../scss/partials/desktop/_components.scss */
 #flyout {
   background-color: white;
   position: fixed;
@@ -3291,62 +3286,63 @@ input[type="email"] {
   -moz-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
 }
-/* line 403, ../scss/partials/desktop/_components.scss */
+/* line 407, ../scss/partials/desktop/_components.scss */
 #flyout header {
   background-color: #003046;
-  padding: 1.6rem 1.6rem 1rem;
+  padding: 1.2rem 1.6rem 0.6rem;
   position: relative;
 }
-/* line 409, ../scss/partials/desktop/_components.scss */
+/* line 413, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 414, ../scss/partials/desktop/_components.scss */
+/* line 418, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading:before {
   color: #fc3b40;
   display: inline-block;
   font-family: 'icons';
   margin-right: 1.6rem;
-  font-size: 3.8rem;
+  font-size: 2.6rem;
   vertical-align: middle;
 }
-/* line 424, ../scss/partials/desktop/_components.scss */
+/* line 428, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close {
   background-color: transparent;
   border: none;
   color: white;
   float: right;
-  font-size: 3.2rem;
+  font-size: 2rem;
+  font-weight: 700;
   outline: none;
   cursor: pointer;
   -webkit-transition: color 0.15s ease-in-out;
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 435, ../scss/partials/desktop/_components.scss */
+/* line 440, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close:hover {
   color: #0098d8;
 }
-/* line 440, ../scss/partials/desktop/_components.scss */
+/* line 445, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content {
   border-left: 1px solid #ccd6da;
   border-bottom: 1px solid #ccd6da;
   padding: 1.6rem;
 }
-/* line 445, ../scss/partials/desktop/_components.scss */
+/* line 450, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content p {
   color: #002130;
-  font-family: "Noto Serif", Georgia, serif;
+  font-family: "Gudea", Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
-/* line 452, ../scss/partials/desktop/_components.scss */
+/* line 457, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content .fb-like {
   margin-bottom: 0.6rem;
 }
-/* line 457, ../scss/partials/desktop/_components.scss */
+/* line 462, ../scss/partials/desktop/_components.scss */
 #flyout.hiding {
   right: -40rem;
 }
