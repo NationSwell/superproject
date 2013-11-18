@@ -19,8 +19,10 @@
     {% elseif post.story_header[0].type == 'video' %}
         {# video hero #}
         <div class="hero hero--story hero--video">
-            <div class="hero--video__container">
-                <script type="text/javascript" src="http://content.bitsontherun.com/players/IFdMpi2Y-1VeqOjCu.js"></script>
+            <div class="container hero--video__container">
+                <div class="video-container">
+                    <iframe class="ytplayer" type="text/html" src="//www.youtube.com/embed/3YR4CseY9pk" frameborder="0"></iframe>
+                </div>
             </div>
 
             <div class="hero-information">
@@ -39,7 +41,7 @@
 {% elseif post.story_header|length > 1 %}
     {# carousel hero #}
     <div class="hero hero--story hero--carousel">
-        <div class="carousel carousel--full-width carousel--peek">
+        <div class="carousel carousel--full-width carousel--peek mobile-carousel--peek">
             <ul class="carousel__items">
                 {% for  item in post.story_header %}
                     {% if item.type == 'image' %}
@@ -47,6 +49,18 @@
                             <div class="carousel-item__content">
                                 <div class="carousel--peek__image" style="background-image: url({{ item.url|resize(1300, 600) }});"></div>
                             </div>
+                        </li>
+                    {% endif %}
+
+                    {% if item.type == 'video' %}
+                        <li class="carousel-item">
+                            <div class="carousel-item__content">
+                                <div class="video-container hero--video__container">
+                                    <iframe class="ytplayer" type="text/html" src="{{ item.video_url }}" frameborder="0"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item__overlay"></div>
                         </li>
                     {% endif %}
                 {% endfor %}

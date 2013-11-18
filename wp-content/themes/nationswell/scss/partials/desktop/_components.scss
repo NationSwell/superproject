@@ -228,6 +228,7 @@
   &.join-us {
     .btn--bar {
       margin-bottom: 2.1rem;
+      width: 100%;
     }
   }
 
@@ -401,6 +402,7 @@
   bottom: 10rem;
   right: 0;
   width: 40rem;
+  z-index: 5;
 
   @include transition(right 0.6s ease-in-out);
 
