@@ -185,6 +185,16 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Optimizely',
+            'slug' => 'optimizely',
+            'source' => get_stylesheet_directory() . '/lib/plugins/optimizely.1.0.1.zip',
+            'required' => true,
+            'version' => '1.0.1',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
 //        array(
 //            'name' => 'Google Analytics Dashboard',
 //            'slug' => 'google-analytics-dashboard',
