@@ -120,3 +120,11 @@ function component_related($content, $component) {
 
     return $component;
 }
+
+function component_list($content, $component) {
+    $component['heading'] = $content['list_item_heading'];
+    $component['body'] = $content['list_item_body'];
+    $component['rank'] = $content['list_item_rank'];
+
+    return $component;
+}

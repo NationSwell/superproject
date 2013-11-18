@@ -1,9 +1,6 @@
 (function ($) {
-    $(function () {
-        // expand/collapse header search field
-        $("[for='search']").on("click", function () {
-            $('#search').toggleClass('open');
-        });
+
+    $(window).load(function(){
 
         // flyout box
         $('.story__container').waypoint(function (direction) {
@@ -12,6 +9,14 @@
             offset: function () {
                 return $.waypoints('viewportHeight') - $(this).height() + 200;
             }
+        });
+
+    });
+
+    $(function () {
+        // expand/collapse header search field
+        $("[for='search']").on("click", function () {
+            $('#search').toggleClass('open');
         });
 
         enquire.register("screen and (max-width: 959px)", {

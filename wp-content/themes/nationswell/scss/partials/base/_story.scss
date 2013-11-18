@@ -107,7 +107,18 @@
   position: relative;
 
   .story__content {
-    > p {
+
+      em,
+      i {
+        font-style: italic;
+      }
+
+      strong,
+      b {
+        font-weight: 700;
+      }
+
+      p {
       font-family: $gudea;
 
       /* drop cap */
