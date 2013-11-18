@@ -399,6 +399,10 @@
 }
 
 .author__byline {
+  a {
+    color: inherit;
+  }
+
   &:before {
     color: $ns_red;
     content: 'Written by';

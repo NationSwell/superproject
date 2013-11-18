@@ -1511,6 +1511,10 @@ a:hover {
 }
 
 /* line 402, ../scss/partials/base/_components.scss */
+.author__byline a {
+  color: inherit;
+}
+/* line 406, ../scss/partials/base/_components.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'Written by';
@@ -1519,53 +1523,53 @@ a:hover {
   font-weight: 700;
 }
 
-/* line 411, ../scss/partials/base/_components.scss */
+/* line 415, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 416, ../scss/partials/base/_components.scss */
+/* line 420, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 420, ../scss/partials/base/_components.scss */
+/* line 424, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 426, ../scss/partials/base/_components.scss */
+/* line 430, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 431, ../scss/partials/base/_components.scss */
+/* line 435, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 437, ../scss/partials/base/_components.scss */
+/* line 441, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 443, ../scss/partials/base/_components.scss */
+/* line 447, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 451, ../scss/partials/base/_components.scss */
+/* line 455, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 457, ../scss/partials/base/_components.scss */
+/* line 461, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 461, ../scss/partials/base/_components.scss */
+/* line 465, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }

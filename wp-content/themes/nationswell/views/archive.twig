@@ -2,66 +2,16 @@
 
 {% block content %}
 
-    <div class="hero hero--archive hero--series" style="background-image: url(http://lorempixel.com/1300/600/city)">
-        <div class="container">
-            <div class="indicator indicator--blue indicator--title indicator--text icon icon_series">
-                <h5 class="indicator__heading">Series</h5>
-                <h5 class="indicator__subheading">7 {{ series.count }} Stories</h5>
-            </div>
-
-            <h2 class="hd-f hero--series__title"><span>Wealth in an Era of Economic Inequality {{ series.name }}</span></h2>
-
-            <div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm-dark.png" class="sponsor__logo"/></div>
-        </div>
-    </div>
-
-    {#<div class="hero hero--archive hero--category" style="background-image: url(http://lorempixel.com/1300/600/city)">
+    {% block header %}
+    <div class="hero hero--archive hero--category" style="background-image: url(http://lorempixel.com/1300/600/city)">
         <div class="container z1">
             <h2 class="hd-a hero--category__title">Strengthening Infrastructure</h2>
             <span class="hero--category__count">16 Stories</span>
 
             <div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm-dark.png" class="sponsor__logo"/></div>
         </div>
-    </div>#}
-
-    {#<div class="hero hero--archive hero--author">
-        <div class="container">
-            <div class="author__a">
-                &#123;&#35;<img src="{{ post.author.mug_shot.url|resize(134,134) }}" class="author__portrait">&#35;&#125;
-                <img src="http://lorempixel.com/230/230/people" class="author__portrait">
-
-                <div class="author__contact">
-                    &#123;&#35;<a href="{{ post.author.user_url }}" class="author__url">{{ post.author.display_url }}</a>&#35;&#125;
-                    <a href="#" class="author__url">www.catcheny.com</a>
-
-                    <ul class="author__social">
-                        &#123;&#35;{% if post.author.facebook is not empty %}
-                            <li><a href="http://www.facebook.com/{{ post.author.facebook }}" class="icon icon_facebook"></a></li>
-                        {% endif %}
-                        {% if post.author.twitter is not empty %}
-                            <li><a href="http://www.twitter.com/{{ post.author.twitter }}" class="icon icon_twitter"></a></li>
-                        {% endif %}
-                        {% if post.author.tumblr is not empty %}
-                            <li><a href="{{ post.author.tumblr }}" class="icon icon_tumblr"></a></li>
-                        {% endif %}&#35;&#125;
-
-                        <li><a href="#" class="btn btn--social icon icon_facebook"></a></li>
-                        <li><a href="#" class="btn btn--social icon icon_twitter"></a></li>
-                        <li><a href="#" class="btn btn--social icon icon_google-plus"></a></li>
-                        <li><a href="#" class="btn btn--social icon icon_instagram"></a></li>
-                        <li><a href="#" class="btn btn--social icon icon_tumblr"></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="author__b">
-                <div class="author__count">26 Stories by</div>
-                <div class="author__name hd-q">General Electric</div>
-
-                <p class="author__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in consequat enim. Aliquam iaculis porta ornare. Nunc rutrum id elit et consectetur. Duis purus sem, faucibus egestas sem at, tempor posuere enim. Donec non elementum eros, a dictum ligula. Praesent sagittis, justo in imperdiet vestibulum, erat arcu.</p>
-            </div>
-        </div>
-    </div>#}
+    </div>
+    {% endblock %}
 
     <div class="river river--two-col">
         <div class="container">
