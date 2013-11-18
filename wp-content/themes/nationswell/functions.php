@@ -46,6 +46,17 @@ function load_scripts()
 }
 
 // Custom Taxonomies
+
+function setup_series_query($query) {
+    // not an admin page and it is the main query
+    if (is_tax() && $query->is_main_query()){
+        // show 50 posts on series pages
+        $query->set('posts_per_page', 50);
+    }
+}
+
+add_action('pre_get_posts', 'setup_series_query');
+
 include_once('lib/taxonomies/series.php');
 
 function my_register_fields()
