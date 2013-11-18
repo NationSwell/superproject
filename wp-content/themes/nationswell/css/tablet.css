@@ -1733,14 +1733,15 @@ a:hover {
 /* line 125, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active .carousel-item__overlay {
   background-color: transparent;
+  pointer-events: none;
 }
-/* line 131, ../scss/partials/base/_carousels.scss */
+/* line 132, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 137, ../scss/partials/base/_carousels.scss */
+/* line 138, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item__overlay {
   background-color: rgba(6, 24, 34, 0.6);
   -webkit-transition: background-color 0.3s ease-in-out;
