@@ -64,6 +64,7 @@ function placeholder_shortcode($attr) {
 
 
 function component_image($content, $component) {
+    print_r($content);
     $component = array_merge($content['image'], $component);
     $component['credit'] = get_field('credit', $component['id']);
 
@@ -125,6 +126,16 @@ function component_list($content, $component) {
     $component['heading'] = $content['list_item_heading'];
     $component['body'] = $content['list_item_body'];
     $component['rank'] = $content['list_item_rank'];
+
+    $component['mediaType'] = $content['list_item_media'][0]['acf_fc_layout'];
+
+    if($component['mediaType'] == 'image') {
+        $component['media'] = component_image($content['list_item_media'][0], $component);
+    } elseif ($content['list_item_media'][0]['acf_fc_layout'] == 'video') {
+        $component['media'] = component_video($content['list_item_media'][0], $component);
+    }
+
+
 
     return $component;
 }
