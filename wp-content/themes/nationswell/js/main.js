@@ -222,6 +222,15 @@
                     stuckClass: 'stuck',
                     offset: 50
                 });
+
+                var $mainContainer = $('.story__container');
+                $mainContainer.waypoint(function(direction){
+                    $(this).toggleClass('bottomed', direction === 'down');
+                }, {
+                    offset:function() {
+                        return  $sharebar.outerHeight() - $(this).outerHeight() + 60;
+                    }
+                });
             },
 
             // OPTIONAL

@@ -183,7 +183,14 @@
 }
 
 .story__sticky-container {
+  margin-bottom: 75px;
   width: 16rem;
+
+  .bottomed & {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+  }
 }
 
 .sticky-social {

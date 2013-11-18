@@ -104,6 +104,8 @@
 }
 
 .story__container {
+  position: relative;
+
   .story__content {
     > p {
       font-family: $gudea;
@@ -258,7 +260,6 @@
 /* sticky */
 .story__sticky {
   display: block;
-  position: relative;
 }
 
 .sticky-take-action {

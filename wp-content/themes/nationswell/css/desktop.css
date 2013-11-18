@@ -1921,27 +1921,31 @@ a:hover {
   line-height: 1.1;
 }
 
-/* line 108, ../scss/partials/base/_story.scss */
+/* line 106, ../scss/partials/base/_story.scss */
+.story__container {
+  position: relative;
+}
+/* line 110, ../scss/partials/base/_story.scss */
 .story__container .story__content > p {
   font-family: "Gudea", Arial, sans-serif;
   /* drop cap */
 }
-/* line 112, ../scss/partials/base/_story.scss */
+/* line 114, ../scss/partials/base/_story.scss */
 .story__container .story__content > p:first-child:first-letter {
   float: left;
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
 }
-/* line 118, ../scss/partials/base/_story.scss */
+/* line 120, ../scss/partials/base/_story.scss */
 .story__container .story__content > p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 122, ../scss/partials/base/_story.scss */
+/* line 124, ../scss/partials/base/_story.scss */
 .story__container .story__content > p a:hover {
   color: #fc3b40;
 }
-/* line 128, ../scss/partials/base/_story.scss */
+/* line 130, ../scss/partials/base/_story.scss */
 .story__container .story__content > h1 {
   color: #5ec2e8;
   font-family: "Oswald", Arial, sans-serif;
@@ -1951,7 +1955,7 @@ a:hover {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 138, ../scss/partials/base/_story.scss */
+/* line 140, ../scss/partials/base/_story.scss */
 .story__container .story__content > h2 {
   color: #1fade0;
   font-family: "Oswald", Arial, sans-serif;
@@ -1959,14 +1963,14 @@ a:hover {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 146, ../scss/partials/base/_story.scss */
+/* line 148, ../scss/partials/base/_story.scss */
 .story__container .story__content > h3 {
   color: #fc3b40;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 153, ../scss/partials/base/_story.scss */
+/* line 155, ../scss/partials/base/_story.scss */
 .story__container .story__content > h4 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1974,31 +1978,31 @@ a:hover {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 161, ../scss/partials/base/_story.scss */
+/* line 163, ../scss/partials/base/_story.scss */
 .story__container .story__content > h5 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 168, ../scss/partials/base/_story.scss */
+/* line 170, ../scss/partials/base/_story.scss */
 .story__container .story__content > h6 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 175, ../scss/partials/base/_story.scss */
+/* line 177, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol {
   counter-reset: li;
 }
-/* line 178, ../scss/partials/base/_story.scss */
+/* line 180, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   position: relative;
 }
-/* line 183, ../scss/partials/base/_story.scss */
+/* line 185, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol li:before {
   background-color: #fc3b40;
   counter-increment: li;
@@ -2010,14 +2014,14 @@ a:hover {
   position: absolute;
   text-align: center;
 }
-/* line 198, ../scss/partials/base/_story.scss */
+/* line 200, ../scss/partials/base/_story.scss */
 .story__container .story__content > ul li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.2;
   position: relative;
 }
-/* line 204, ../scss/partials/base/_story.scss */
+/* line 206, ../scss/partials/base/_story.scss */
 .story__container .story__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
@@ -2026,26 +2030,26 @@ a:hover {
 }
 
 /* multimedia */
-/* line 217, ../scss/partials/base/_story.scss */
+/* line 219, ../scss/partials/base/_story.scss */
 .multimedia .multimedia__content {
   display: block;
 }
-/* line 221, ../scss/partials/base/_story.scss */
+/* line 223, ../scss/partials/base/_story.scss */
 .multimedia .credit {
   text-align: right;
 }
-/* line 226, ../scss/partials/base/_story.scss */
+/* line 228, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--image img {
   display: block;
   width: 100%;
 }
-/* line 233, ../scss/partials/base/_story.scss */
+/* line 235, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   border-bottom: 1px solid #eeeeee;
 }
 
 /* Elastic video */
-/* line 240, ../scss/partials/base/_story.scss */
+/* line 242, ../scss/partials/base/_story.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -2053,7 +2057,7 @@ a:hover {
   height: 0;
   overflow: hidden;
 }
-/* line 249, ../scss/partials/base/_story.scss */
+/* line 251, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -2065,13 +2069,12 @@ a:hover {
 }
 
 /* sticky */
-/* line 259, ../scss/partials/base/_story.scss */
+/* line 261, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
-  position: relative;
 }
 
-/* line 264, ../scss/partials/base/_story.scss */
+/* line 265, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -2082,12 +2085,12 @@ a:hover {
   width: 100%;
 }
 
-/* line 274, ../scss/partials/base/_story.scss */
+/* line 275, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 278, ../scss/partials/base/_story.scss */
+/* line 279, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -2096,39 +2099,39 @@ a:hover {
 }
 
 /* tags */
-/* line 286, ../scss/partials/base/_story.scss */
+/* line 287, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 290, ../scss/partials/base/_story.scss */
+/* line 291, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 297, ../scss/partials/base/_story.scss */
+/* line 298, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
-/* line 304, ../scss/partials/base/_story.scss */
+/* line 305, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 310, ../scss/partials/base/_story.scss */
+/* line 311, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 314, ../scss/partials/base/_story.scss */
+/* line 315, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 321, ../scss/partials/base/_story.scss */
+/* line 322, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
@@ -3538,71 +3541,78 @@ a:hover {
 
 /* line 185, ../scss/partials/desktop/_story.scss */
 .story__sticky-container {
+  margin-bottom: 75px;
   width: 16rem;
 }
-
 /* line 189, ../scss/partials/desktop/_story.scss */
+.bottomed .story__sticky-container {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+
+/* line 196, ../scss/partials/desktop/_story.scss */
 .sticky-social {
   margin-bottom: 5rem;
 }
 
-/* line 193, ../scss/partials/desktop/_story.scss */
+/* line 200, ../scss/partials/desktop/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
 }
 
-/* line 197, ../scss/partials/desktop/_story.scss */
+/* line 204, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 201, ../scss/partials/desktop/_story.scss */
+/* line 208, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 206, ../scss/partials/desktop/_story.scss */
+/* line 213, ../scss/partials/desktop/_story.scss */
 .story__tags {
   margin-bottom: 5rem;
   padding-bottom: 1.4rem;
 }
-/* line 211, ../scss/partials/desktop/_story.scss */
+/* line 218, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list:before {
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 1.8rem;
 }
-/* line 217, ../scss/partials/desktop/_story.scss */
+/* line 224, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list li {
   margin-right: 1rem;
 }
 
-/* line 224, ../scss/partials/desktop/_story.scss */
+/* line 231, ../scss/partials/desktop/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
 
-/* line 229, ../scss/partials/desktop/_story.scss */
+/* line 236, ../scss/partials/desktop/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 3.4rem;
 }
-/* line 233, ../scss/partials/desktop/_story.scss */
+/* line 240, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 3.4rem;
 }
-/* line 237, ../scss/partials/desktop/_story.scss */
+/* line 244, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__a {
   float: left;
   width: 25.6rem;
 }
-/* line 242, ../scss/partials/desktop/_story.scss */
+/* line 249, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__b {
   overflow: hidden;
   padding-left: 3.4rem;
 }
-/* line 247, ../scss/partials/desktop/_story.scss */
+/* line 254, ../scss/partials/desktop/_story.scss */
 .module.take-action p {
   font-size: 1.8rem;
   line-height: 1.4;
