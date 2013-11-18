@@ -13,29 +13,45 @@
  * @subpackage 	Timber
  * @since 		Timber 0.2
  */
-	
+global $wp_query;
 
-		$templates = array('archive.twig', 'index.twig');
+$term = $wp_query->queried_object;
+$templates = array('archive.twig', 'index.twig');
 
-		$data = Timber::get_context();
+$context = Timber::get_context();
 
-		$data['title'] = 'Archive';
-		if (is_day()){
-			$data['title'] = 'Archive: '.get_the_date( 'D M Y' );	
-		} else if (is_month()){
-			$data['title'] = 'Archive: '.get_the_date( 'M Y' );	
-		} else if (is_year()){
-			$data['title'] = 'Archive: '.get_the_date( 'Y' );	
-		} else if (is_tag()){
-			$data['title'] = single_tag_title('', false);
-		} else if (is_category()){
-			$data['title'] = single_cat_title('', false);
-			array_unshift($templates, 'archive-'.get_query_var('cat').'.twig');
-		} else if (is_post_type_archive()){
-			$data['title'] = post_type_archive_title('', false);
-			array_unshift($templates, 'archive-'.get_post_type().'.twig');
-		}
-		
-		$data['posts'] = Timber::get_posts();
-		
-		Timber::render($templates, $data);
+$context['title'] = 'Archive';
+if (is_day()){
+    $context['title'] = 'Archive: '.get_the_date( 'D M Y' );
+}
+elseif (is_month()){
+    $context['title'] = 'Archive: '.get_the_date( 'M Y' );
+}
+elseif (is_year()){
+    $context['title'] = 'Archive: '.get_the_date( 'Y' );
+}
+elseif (is_tag()){
+    $context['title'] = single_tag_title('', false);
+}
+elseif (is_category()){
+    $context['title'] = single_cat_title('', false);
+    array_unshift($templates, 'archive-'.get_query_var('cat').'.twig');
+}
+elseif (is_tax()){
+    $context['title'] = single_term_title('', false);
+    array_unshift($templates, 'archive-' . $term->taxonomy .'.twig');
+}
+elseif (is_post_type_archive()){
+    $context['title'] = post_type_archive_title('', false);
+    array_unshift($templates, 'archive-'.get_post_type().'.twig');
+}
+
+if(is_tag() || is_category() || is_tax()) {
+    $context['header_image'] = get_field('header_image', $term->taxonomy . '_' . $term->term_id);
+    $context['total_posts'] = $wp_query->found_posts;
+}
+
+
+$context['posts'] = Timber::get_posts();
+
+Timber::render($templates, $context);
