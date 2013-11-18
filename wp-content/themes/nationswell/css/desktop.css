@@ -2058,8 +2058,27 @@ a:hover {
   border-bottom: 1px solid #eeeeee;
 }
 
+/* line 252, ../scss/partials/base/_story.scss */
+.list-item {
+  margin: 0 0 7.5rem;
+}
+/* line 255, ../scss/partials/base/_story.scss */
+.list-item .list-item-heading {
+  margin: 0 0 1.5rem;
+}
+/* line 259, ../scss/partials/base/_story.scss */
+.list-item .list-item-rank {
+  display: inline-block;
+  background: #fc3b40;
+  width: 5.2rem;
+  height: 5.2rem;
+  line-height: 5.2rem;
+  text-align: center;
+  margin: 0 .5rem 0 0;
+}
+
 /* Elastic video */
-/* line 253, ../scss/partials/base/_story.scss */
+/* line 271, ../scss/partials/base/_story.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -2067,7 +2086,7 @@ a:hover {
   height: 0;
   overflow: hidden;
 }
-/* line 262, ../scss/partials/base/_story.scss */
+/* line 280, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -2079,12 +2098,12 @@ a:hover {
 }
 
 /* sticky */
-/* line 272, ../scss/partials/base/_story.scss */
+/* line 290, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
 }
 
-/* line 276, ../scss/partials/base/_story.scss */
+/* line 294, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -2095,12 +2114,12 @@ a:hover {
   width: 100%;
 }
 
-/* line 286, ../scss/partials/base/_story.scss */
+/* line 304, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 290, ../scss/partials/base/_story.scss */
+/* line 308, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -2109,39 +2128,39 @@ a:hover {
 }
 
 /* tags */
-/* line 298, ../scss/partials/base/_story.scss */
+/* line 316, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 302, ../scss/partials/base/_story.scss */
+/* line 320, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 309, ../scss/partials/base/_story.scss */
+/* line 327, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
-/* line 316, ../scss/partials/base/_story.scss */
+/* line 334, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 322, ../scss/partials/base/_story.scss */
+/* line 340, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 326, ../scss/partials/base/_story.scss */
+/* line 344, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 333, ../scss/partials/base/_story.scss */
+/* line 351, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }

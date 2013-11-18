@@ -249,6 +249,24 @@
   }
 }
 
+.list-item {
+  margin: 0 0 7.5rem;
+
+  .list-item-heading {
+    margin: 0 0 1.5rem;
+  }
+
+  .list-item-rank {
+    display: inline-block;
+    background: $ns_red;
+    width: 5.2rem;
+    height: 5.2rem;
+    line-height: 5.2rem;
+    text-align: center;
+    margin: 0 .5rem 0 0;
+  }
+}
+
 /* Elastic video */
 .video-container {
   position: relative;
