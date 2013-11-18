@@ -64,7 +64,6 @@ function placeholder_shortcode($attr) {
 
 
 function component_image($content, $component) {
-    print_r($content);
     $component = array_merge($content['image'], $component);
     $component['credit'] = get_field('credit', $component['id']);
 

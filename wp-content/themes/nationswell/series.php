@@ -14,7 +14,9 @@ $args = array(
     'post_type' => 'post',
     'tax_query' => array(
         array(
-            'taxonomy' => 'series'
+            'taxonomy' => 'series',
+            'field' => 'slug',
+            'terms' => $category->slug
         )
     )
 );
