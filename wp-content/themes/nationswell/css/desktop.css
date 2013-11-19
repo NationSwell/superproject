@@ -1831,6 +1831,40 @@ body.locked {
 }
 
 /* line 69, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__email {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  float: left;
+  position: relative;
+}
+/* line 75, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__email input {
+  border: 0 none;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  line-height: 1.2;
+}
+/* line 83, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__email:before {
+  color: #eeeeee;
+  display: block;
+  position: absolute;
+}
+/* line 90, ../scss/partials/base/_modal.scss */
+.modal--join-us .btn--subscribe {
+  background-color: #fd6464;
+  color: white;
+  margin: 0;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  float: left;
+}
+/* line 98, ../scss/partials/base/_modal.scss */
+.modal--join-us .btn--subscribe:hover {
+  background-color: #0098d8;
+}
+/* line 103, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
   color: white;
   display: block;
@@ -1840,12 +1874,12 @@ body.locked {
   text-align: center;
   width: 100%;
 }
-/* line 78, ../scss/partials/base/_modal.scss */
+/* line 112, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 82, ../scss/partials/base/_modal.scss */
+/* line 116, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a:hover {
   color: #fc3b40;
 }
@@ -3583,54 +3617,32 @@ input[type="email"] {
 }
 /* line 36, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__email {
-  background-color: white;
-  border: 1px solid #dbdbdb;
-  position: relative;
   font-size: 2.4rem;
   line-height: 5.4rem;
-  float: left;
   height: 5.4rem;
-  padding-left: 6rem;
+  padding-left: 6.6rem;
   padding-right: 2.8rem;
   width: 46.9rem;
 }
-/* line 48, ../scss/partials/desktop/_modal.scss */
+/* line 44, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__email input {
-  border: 0 none;
-  box-shadow: none;
   border-radius: 0;
   font-size: 2.4rem;
-  outline: none;
-  padding: 0;
-  line-height: 1.2;
 }
-/* line 58, ../scss/partials/desktop/_modal.scss */
+/* line 49, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__email:before {
-  color: #eeeeee;
-  font-size: 6rem;
-  display: block;
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
+  font-size: 3rem;
+  left: 2.2rem;
+  top: 0.4rem;
 }
-/* line 68, ../scss/partials/desktop/_modal.scss */
+/* line 56, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .btn--subscribe {
-  background-color: #fc3b40;
-  color: white;
-  font-family: "Oswald", Arial, sans-serif;
   font-size: 2.4rem;
-  font-weight: 400;
   line-height: 5.4rem;
-  margin: 0;
   padding: 0 2.8rem;
-  float: left;
   height: 5.4rem;
 }
-/* line 80, ../scss/partials/desktop/_modal.scss */
-.modal--join-us .btn--subscribe:hover {
-  background-color: #0098d8;
-}
-/* line 85, ../scss/partials/desktop/_modal.scss */
+/* line 63, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
   bottom: -3.4rem;
   font-size: 1.8rem;
