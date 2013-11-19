@@ -18,7 +18,10 @@ if (class_exists('TimberPost')) {
                         $item = array_merge(get_sub_field('image'), $item);
                         $item['credit'] = get_field('credit', $item['id']);
                     } elseif ($layout == "video") { // layout: File
-                        $item['video_url'] = get_sub_field('video_url');
+                        // TODO: Generating a proper YouTube URL should be abstracted. Duplicated in placeholder.php
+                        $item['video_url'] = normalize_youtube_url(get_sub_field('video_url')) .
+                            '?origin=' . urlencode(get_site_url()) . '&autoplay=0&autohide=1' .
+                            '&controls=2&enablejsapi=1&modestbranding=1&rel=0&theme=light&color=fc3b40&showinfo=0';
                     }
 
                     $this->story_header_cache[] = $item;

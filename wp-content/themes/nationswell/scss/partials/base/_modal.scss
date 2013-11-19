@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 64rem;
+  min-width: 30rem;
+  height: auto;
+  z-index: 9;
+  visibility: hidden;
+  backface-visibility: hidden;
+
+  @include transform(translateX(-50%) translateY(-50%));
+}
+
+.modal--is-visible {
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  opacity: 0;
+  background: rgba(0,48,70, 0.8);
+
+  @include transition(all 0.3s ease-in-out);
+}
+
+.modal--is-visible ~ .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  opacity: 0;
+  background-color: $white;
+
+  @include transform(scale(0.7));
+  @include transition(all 0.3s ease-in-out);
+}
+
+.modal__heading {
+  text-align: center;
+}
+
+.modal--is-visible .modal__content {
+  opacity: 1;
+
+  @include transform(scale(1));
+}
+
+body.locked {
+  overflow: hidden;
+}

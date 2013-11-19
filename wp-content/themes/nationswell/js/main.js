@@ -1,7 +1,5 @@
 (function ($) {
-
-    $(window).load(function(){
-
+    $(function () {
         // flyout box
         $('.story__container').waypoint(function (direction) {
             $('#flyout').toggleClass('hiding', direction === "up");
@@ -11,31 +9,28 @@
             }
         });
 
-    });
-
-    $(function () {
-
-        // Subscribe / Follow Dialog
-        var dialog = $('#join-us-dialog');
-
-        if (!document.createElement('dialog').showModal) {
-            dialogPolyfill.registerDialog(dialog[0]);
-        }
-
-        $('#show-dialog').on("click", function() {
-            console.log("open");
-            dialog[0].show();
-        });
-
-        $('#close-dialog').on("click", function() {
-            console.log("close");
-            dialog[0].close();
-        });
-
-
         // expand/collapse header search field
-        $("[for='search']").on("click", function () {
+        $("[for='search']").on("click", function() {
             $('#search').toggleClass('open');
+        });
+
+        // modal
+        $("[data-modal]").on("click", function(e) {
+            var modalType = $(this).attr('data-modal'),
+                $modal = $('.modal--' + modalType);
+
+            $modal.addClass('modal--is-visible');
+            $('body').addClass('locked');
+
+
+            e.preventDefault();
+        });
+
+        var $modalClose = $(".modal-overlay, .modal__close");
+
+        $modalClose.on('click', function() {
+            $('.modal').removeClass('modal--is-visible');
+            $('body').removeClass('locked');
         });
 
         enquire.register("screen and (max-width: 959px)", {
@@ -242,7 +237,6 @@
                 var $sharebar = $('.story__sticky-container');
 
                 $sharebar.waypoint('sticky', {
-                    wrapper: '<div class="story__sticky" />',
                     stuckClass: 'stuck',
                     offset: 50
                 });

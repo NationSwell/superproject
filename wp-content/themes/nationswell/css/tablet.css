@@ -1750,43 +1750,84 @@ a:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 1, ../scss/partials/base/_dialog.scss */
-dialog {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border: solid;
-  padding: 1em;
-  background: white;
-  color: black;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
-  height: fit-content;
-  display: none;
-  z-index: 10000000;
-}
-
-/* line 26, ../scss/partials/base/_dialog.scss */
-dialog[open] {
-  display: block;
-}
-
-/* line 31, ../scss/partials/base/_dialog.scss */
-dialog::backdrop,
-dialog + .backdrop {
+/* line 1, ../scss/partials/base/_modal.scss */
+.modal {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 64rem;
+  min-width: 30rem;
+  height: auto;
+  z-index: 9;
+  visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 16, ../scss/partials/base/_modal.scss */
+.modal--is-visible {
+  visibility: visible;
+}
+
+/* line 20, ../scss/partials/base/_modal.scss */
+.modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 8;
+  opacity: 0;
+  background: rgba(0, 48, 70, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 34, ../scss/partials/base/_modal.scss */
+.modal--is-visible ~ .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 39, ../scss/partials/base/_modal.scss */
+.modal__content {
+  opacity: 0;
+  background-color: white;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 47, ../scss/partials/base/_modal.scss */
+.modal__heading {
+  text-align: center;
+}
+
+/* line 51, ../scss/partials/base/_modal.scss */
+.modal--is-visible .modal__content {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 57, ../scss/partials/base/_modal.scss */
+body.locked {
+  overflow: hidden;
 }
 
 /* hero */
