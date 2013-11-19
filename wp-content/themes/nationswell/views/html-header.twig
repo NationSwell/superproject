@@ -4,7 +4,7 @@
 <title>{{ wp_title }}</title>
 
 <meta name="description" content="{{ bloginfo('description') }}">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
 
 <link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic|Oswald:400,700|Montserrat:400,700|Noto+Serif:400,700'
       rel='stylesheet' type='text/css'>
@@ -13,9 +13,9 @@
 {# TODO: Integrate these files into the theme#}
 
 {# TEMP: Simpler fake switching for construction #}
-<link rel="stylesheet" type="text/css" media="screen and (max-width: 959px)" href="/{{ theme_dir }}/css/mobile.css"/>
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 960px) and (max-width: 1024px)" href="/{{ theme_dir }}/css/tablet.css"/>
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="/{{ theme_dir }}/css/desktop.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width : 767px)" href="/{{ theme_dir }}/css/mobile.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width : 768px) and (max-device-width : 1199px)" href="/{{ theme_dir }}/css/tablet.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)" href="/{{ theme_dir }}/css/desktop.css"/>
 
 <script src="/wp-content/themes/nationswell/js/vendor/modernizr-2.6.2.min.js"></script>
 
