@@ -52,7 +52,6 @@
                             <a href="{{ post.author.user_url }}" class="author__url">{{ post.author.display_url }}</a>
 
                             <ul class="author__social">
-                                {{ dump(post.author) }}
                                 {% if post.author.facebook_username is not empty %}
                                     <li><a href="http://www.facebook.com/{{ post.author.facebook_username }}" class="icon icon_facebook"></a></li>
                                 {% endif %}
