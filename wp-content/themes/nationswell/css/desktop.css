@@ -1459,7 +1459,7 @@ a:hover {
 
 /* author */
 /* line 368, ../scss/partials/base/_components.scss */
-.author {
+.author-box {
   background-color: #f6f6f6;
 }
 
@@ -1741,6 +1741,45 @@ a:hover {
   -webkit-transition: background-color 0.3s ease-in-out;
   -moz-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1, ../scss/partials/base/_dialog.scss */
+dialog {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: solid;
+  padding: 1em;
+  background: white;
+  color: black;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  display: none;
+  z-index: 10000000;
+}
+
+/* line 26, ../scss/partials/base/_dialog.scss */
+dialog[open] {
+  display: block;
+}
+
+/* line 31, ../scss/partials/base/_dialog.scss */
+dialog::backdrop,
+dialog + .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* hero */
@@ -3163,7 +3202,7 @@ input[type="email"] {
 
 /* author */
 /* line 284, ../scss/partials/desktop/_components.scss */
-.author {
+.author-box {
   margin-bottom: 7.2rem;
   padding: 2.6rem 3.4rem;
 }
@@ -3283,7 +3322,7 @@ input[type="email"] {
 #flyout {
   background-color: white;
   position: fixed;
-  bottom: 10rem;
+  bottom: 15rem;
   right: 0;
   width: 40rem;
   z-index: 5;
@@ -3755,7 +3794,7 @@ input[type="email"] {
 }
 /* line 225, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list li {
-  margin-right: 1rem;
+  margin: 0 1rem 1rem 0;
 }
 
 /* line 232, ../scss/partials/desktop/_story.scss */

@@ -52,11 +52,12 @@
                             <a href="{{ post.author.user_url }}" class="author__url">{{ post.author.display_url }}</a>
 
                             <ul class="author__social">
-                                {% if post.author.facebook is not empty %}
-                                    <li><a href="http://www.facebook.com/{{ post.author.facebook }}" class="icon icon_facebook"></a></li>
+                                {{ dump(post.author) }}
+                                {% if post.author.facebook_username is not empty %}
+                                    <li><a href="http://www.facebook.com/{{ post.author.facebook_username }}" class="icon icon_facebook"></a></li>
                                 {% endif %}
-                                {% if post.author.twitter is not empty %}
-                                    <li><a href="http://www.twitter.com/{{ post.author.twitter }}" class="icon icon_twitter"></a></li>
+                                {% if post.author.twitter_username is not empty %}
+                                    <li><a href="http://www.twitter.com/{{ post.author.twitter_username }}" class="icon icon_twitter"></a></li>
                                 {% endif %}
                                 {% if post.author.tumblr is not empty %}
                                     <li><a href="{{ post.author.tumblr }}" class="icon icon_tumblr"></a></li>
