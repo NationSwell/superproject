@@ -13,6 +13,7 @@ function create_post_type()
             ),
             'public' => true,
             'has_archive' => true,
+            'supports' => false
         )
     );
 }

@@ -70,6 +70,8 @@ function my_register_fields()
     include_once('lib/fields/content_type.php');
     include_once('lib/fields/hero.php');
     include_once('lib/fields/story_content.php');
+    include_once('lib/fields/call_to_action.php');
+    include_once('lib/fields/call_to_action_link.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
