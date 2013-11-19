@@ -1,4 +1,89 @@
+.modal {
+  max-width: 77.2rem;
+}
+
 .modal__heading {
   margin-bottom: 3.4rem;
 }
 
+.modal__close {
+  font-size: 3rem;
+  top: -3rem;
+  right: -4rem;
+}
+
+// join us
+.modal--join-us {
+  width: 77.2rem;
+
+  .module {
+    padding: 2rem 7.6rem 4rem;
+  }
+
+  .modal--join-us__social {
+    margin-bottom: 2.8rem;
+
+    .btn--bar {
+      display: inline-block;
+      margin-right: 3.3334%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .modal--join-us__email {
+    background-color: $white;
+    border: 1px solid $gray5;
+    position: relative;
+    font-size: 2.4rem;
+    line-height: 5.4rem;
+    float: left;
+    height: 5.4rem;
+    padding-left: 6rem;
+    padding-right: 2.8rem;
+    width: 46.9rem;
+
+    input {
+      border: 0 none;
+      box-shadow: none;
+      border-radius: 0;
+      font-size: 2.4rem;
+      outline: none;
+      padding: 0;
+      line-height: 1.2;
+    }
+
+    &:before {
+      color: $gray6;
+      font-size: 6rem;
+      display: block;
+      position: absolute;
+      left: 2rem;
+      top: 2rem;
+    }
+  }
+
+  .btn--subscribe {
+    background-color: $ns_red;
+    color: $white;
+    font-family: $oswald;
+    font-size: 2.4rem;
+    font-weight: $regular;
+    line-height: 5.4rem;
+    margin: 0;
+    padding: 0 2.8rem;
+    float: left;
+    height: 5.4rem;
+
+    &:hover {
+      background-color: $ns_blue1;
+    }
+  }
+
+  .modal--join-us__opt-out {
+    bottom: -3.4rem;
+    font-size: 1.8rem;
+  }
+}
