@@ -2,9 +2,8 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50%;
-  max-width: 64rem;
   min-width: 30rem;
+  width: 80%;
   height: auto;
   z-index: 9;
   visibility: hidden;
@@ -44,16 +43,45 @@
   @include transition(all 0.3s ease-in-out);
 }
 
-.modal__heading {
-  text-align: center;
-}
-
 .modal--is-visible .modal__content {
   opacity: 1;
 
   @include transform(scale(1));
 }
 
+.modal__heading {
+  text-align: center;
+}
+
+.modal__close {
+  background-color: transparent;
+  color: $white;
+  position: absolute;
+  outline: none;
+}
+
 body.locked {
   overflow: hidden;
+}
+
+// join us
+.modal--join-us {
+  .modal--join-us__opt-out {
+    color: $white;
+    display: block;
+    font-family: $gudea;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+    a {
+      color: $ns_blue1;
+      font-weight: $bold;
+
+      &:hover {
+        color: $ns_red;
+      }
+    }
+  }
 }

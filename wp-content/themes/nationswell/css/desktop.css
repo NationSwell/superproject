@@ -1748,9 +1748,8 @@ a:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50%;
-  max-width: 64rem;
   min-width: 30rem;
+  width: 80%;
   height: auto;
   z-index: 9;
   visibility: hidden;
@@ -1762,12 +1761,12 @@ a:hover {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 16, ../scss/partials/base/_modal.scss */
+/* line 15, ../scss/partials/base/_modal.scss */
 .modal--is-visible {
   visibility: visible;
 }
 
-/* line 20, ../scss/partials/base/_modal.scss */
+/* line 19, ../scss/partials/base/_modal.scss */
 .modal-overlay {
   position: fixed;
   width: 100%;
@@ -1783,13 +1782,13 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 34, ../scss/partials/base/_modal.scss */
+/* line 33, ../scss/partials/base/_modal.scss */
 .modal--is-visible ~ .modal-overlay {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 39, ../scss/partials/base/_modal.scss */
+/* line 38, ../scss/partials/base/_modal.scss */
 .modal__content {
   opacity: 0;
   background-color: white;
@@ -1803,12 +1802,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 47, ../scss/partials/base/_modal.scss */
-.modal__heading {
-  text-align: center;
-}
-
-/* line 51, ../scss/partials/base/_modal.scss */
+/* line 46, ../scss/partials/base/_modal.scss */
 .modal--is-visible .modal__content {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1818,9 +1812,42 @@ a:hover {
   transform: scale(1);
 }
 
-/* line 57, ../scss/partials/base/_modal.scss */
+/* line 52, ../scss/partials/base/_modal.scss */
+.modal__heading {
+  text-align: center;
+}
+
+/* line 56, ../scss/partials/base/_modal.scss */
+.modal__close {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  outline: none;
+}
+
+/* line 63, ../scss/partials/base/_modal.scss */
 body.locked {
   overflow: hidden;
+}
+
+/* line 69, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__opt-out {
+  color: white;
+  display: block;
+  font-family: "Gudea", Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 78, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__opt-out a {
+  color: #0098d8;
+  font-weight: 700;
+}
+/* line 82, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__opt-out a:hover {
+  color: #fc3b40;
 }
 
 /* hero */
@@ -3517,8 +3544,96 @@ input[type="email"] {
 }
 
 /* line 1, ../scss/partials/desktop/_modal.scss */
+.modal {
+  max-width: 77.2rem;
+}
+
+/* line 5, ../scss/partials/desktop/_modal.scss */
 .modal__heading {
   margin-bottom: 3.4rem;
+}
+
+/* line 9, ../scss/partials/desktop/_modal.scss */
+.modal__close {
+  font-size: 3rem;
+  top: -3rem;
+  right: -4rem;
+}
+
+/* line 16, ../scss/partials/desktop/_modal.scss */
+.modal--join-us {
+  width: 77.2rem;
+}
+/* line 19, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .module {
+  padding: 2rem 7.6rem 4rem;
+}
+/* line 23, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__social {
+  margin-bottom: 2.8rem;
+}
+/* line 26, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__social .btn--bar {
+  display: inline-block;
+  margin-right: 3.3334%;
+}
+/* line 30, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__social .btn--bar:last-child {
+  margin-right: 0;
+}
+/* line 36, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__email {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  position: relative;
+  font-size: 2.4rem;
+  line-height: 5.4rem;
+  float: left;
+  height: 5.4rem;
+  padding-left: 6rem;
+  padding-right: 2.8rem;
+  width: 46.9rem;
+}
+/* line 48, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__email input {
+  border: 0 none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 2.4rem;
+  outline: none;
+  padding: 0;
+  line-height: 1.2;
+}
+/* line 58, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__email:before {
+  color: #eeeeee;
+  font-size: 6rem;
+  display: block;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+/* line 68, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .btn--subscribe {
+  background-color: #fc3b40;
+  color: white;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 5.4rem;
+  margin: 0;
+  padding: 0 2.8rem;
+  float: left;
+  height: 5.4rem;
+}
+/* line 80, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .btn--subscribe:hover {
+  background-color: #0098d8;
+}
+/* line 85, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__opt-out {
+  bottom: -3.4rem;
+  font-size: 1.8rem;
 }
 
 /* hero */
