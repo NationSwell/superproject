@@ -180,7 +180,7 @@
 
 /* sticky */
 .story__sticky {
-  padding: 0 1rem;
+  /*padding: 0 1rem;*/
 }
 
 .story__sticky-container {
@@ -256,5 +256,35 @@
     font-size: 1.8rem;
     line-height: 1.4;
     margin-bottom: 2.2rem;
+  }
+}
+
+.story__container {
+  .story__social {
+    opacity: 0;
+    visiblity: hidden;
+
+    @include transition(opacity 0.3s ease-in-out);
+  }
+
+  .take-action {
+    opacity: 0;
+    visibility: hidden;
+
+    @include transition(opacity 0.3s ease-in-out);
+  }
+}
+
+.bottomed {
+  .story__container {
+    .story__social {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .take-action {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }

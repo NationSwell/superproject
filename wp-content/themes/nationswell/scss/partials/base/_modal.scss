@@ -27,7 +27,7 @@
   opacity: 0;
   background: rgba(0,48,70, 0.8);
 
-  @include transition(all 0.3s ease-in-out);
+  @include transition(opacity 0.3s ease-in-out);
 }
 
 .modal--is-visible ~ .modal-overlay {
@@ -118,4 +118,9 @@ body.locked {
       }
     }
   }
+}
+
+// take action
+.modal--take-action {
+
 }
