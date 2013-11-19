@@ -1,28 +1,29 @@
 <?php
-if (function_exists("register_field_group")) {
-    register_field_group(
-        array(
+
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
             'id' => 'acf_call-to-action',
             'title' => 'Call to Action',
-            'fields' => array(
-                array(
+            'fields' => array (
+                array (
                     'key' => 'field_528bcb5146eda',
                     'label' => __('Type'),
                     'name' => 'type',
                     'type' => 'select',
                     'required' => 1,
-                    'choices' => array(
-                        'freeform: Freeform' => 'freeform: Freeform',
-                        'petition: Change.org Petition' => 'petition: Change.org Petition',
-                        'donation: Rally Donation' => 'donation',
-                        'subscribe: MailChimp Signup' => 'subscribe: MailChimp Signup',
-                        'email: Email a Politician' => 'email: Email a Politician',
+                    'choices' => array (
+                        'freeform' => 'Freeform',
+                        'petition' => 'Change.org Petition',
+                        'donation' => 'Rally Donation',
+                        'subscribe' => 'MailChimp Signup',
+                        'email' => 'Email a Politician',
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
                     'multiple' => 0,
                 ),
-                array(
+                array (
                     'key' => 'field_528bcfb546edb',
                     'label' => __('Tout Heading'),
                     'name' => 'tout_heading',
@@ -35,7 +36,7 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
-                array(
+                array (
                     'key' => 'field_528bd0d346edc',
                     'label' => __('Tout Sub Heading'),
                     'name' => 'tout_sub_heading',
@@ -48,21 +49,21 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
-                array(
+                array (
                     'key' => 'field_528bd11746edd',
                     'label' => __('Image'),
                     'name' => 'image',
                     'type' => 'image',
                     'instructions' => __('Image the appears in the Take Action Panel'),
-                    'conditional_logic' => array(
+                    'conditional_logic' => array (
                         'status' => 1,
-                        'rules' => array(
-                            array(
+                        'rules' => array (
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'freeform',
                             ),
-                            array(
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'donation',
@@ -74,23 +75,21 @@ if (function_exists("register_field_group")) {
                     'preview_size' => 'thumbnail',
                     'library' => 'all',
                 ),
-                array(
+                array (
                     'key' => 'field_528bd2c346ede',
                     'label' => __('Description'),
                     'name' => 'description',
                     'type' => 'wysiwyg',
-                    'instructions' => __(
-                        'Describe this action to the user. This field appears in the Take Action Panel'
-                    ),
-                    'conditional_logic' => array(
+                    'instructions' => __('Describe this action to the user. This field appears in the Take Action Panel'),
+                    'conditional_logic' => array (
                         'status' => 1,
-                        'rules' => array(
-                            array(
+                        'rules' => array (
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'freeform',
                             ),
-                            array(
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'donation',
@@ -102,16 +101,16 @@ if (function_exists("register_field_group")) {
                     'toolbar' => 'basic',
                     'media_upload' => 'no',
                 ),
-                array(
+                array (
                     'key' => 'field_528bd34946edf',
                     'label' => __('External LInk'),
                     'name' => 'external_link',
                     'type' => 'text',
                     'instructions' => __('A link to an external web page. This field appears in the Take Action Panel'),
-                    'conditional_logic' => array(
+                    'conditional_logic' => array (
                         'status' => 1,
-                        'rules' => array(
-                            array(
+                        'rules' => array (
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'freeform',
@@ -126,18 +125,16 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
-                array(
+                array (
                     'key' => 'field_528bd7735938b',
                     'label' => __('Rally Id'),
                     'name' => 'rally_id',
                     'type' => 'text',
-                    'instructions' => __(
-                        'The Rally ID from https://rally.org/ You can get this from the URL of a rally page.'
-                    ),
-                    'conditional_logic' => array(
+                    'instructions' => __('The Rally ID from https://rally.org/ You can get this from the URL of a rally page.'),
+                    'conditional_logic' => array (
                         'status' => 1,
-                        'rules' => array(
-                            array(
+                        'rules' => array (
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'donation',
@@ -152,16 +149,16 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
-                array(
+                array (
                     'key' => 'field_528bd8175938c',
                     'label' => __('Change.org URL'),
                     'name' => 'change_url',
                     'type' => 'text',
                     'instructions' => __('The URL of a Petition on Change.org'),
-                    'conditional_logic' => array(
+                    'conditional_logic' => array (
                         'status' => 1,
-                        'rules' => array(
-                            array(
+                        'rules' => array (
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'petition',
@@ -176,18 +173,16 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
-                array(
+                array (
                     'key' => 'field_528bd87f5938d',
                     'label' => __('MailChimp ID'),
                     'name' => 'mailchimp_id',
                     'type' => 'text',
-                    'instructions' => __(
-                        'The form action string from MailChimp. This is a long URL that you need to get out of an embeddable MailChimp subscribe form.'
-                    ),
-                    'conditional_logic' => array(
+                    'instructions' => __('The form action string from MailChimp. This is a long URL that you need to get out of an embeddable MailChimp subscribe form.'),
+                    'conditional_logic' => array (
                         'status' => 1,
-                        'rules' => array(
-                            array(
+                        'rules' => array (
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'subscribe',
@@ -202,17 +197,17 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
-                array(
+                array (
                     'key' => 'field_528bddd2d2efd',
                     'label' => __('Freeform Type'),
                     'name' => 'freeform_type',
                     'type' => 'select',
                     'instructions' => __('This determines the Icon that appears along with the Take Action Panel'),
                     'required' => 1,
-                    'conditional_logic' => array(
+                    'conditional_logic' => array (
                         'status' => 1,
-                        'rules' => array(
-                            array(
+                        'rules' => array (
+                            array (
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'freeform',
@@ -220,7 +215,7 @@ if (function_exists("register_field_group")) {
                         ),
                         'allorany' => 'all',
                     ),
-                    'choices' => array(
+                    'choices' => array (
                         'link: Link' => 'link: Link',
                         'purchase: Purchase' => 'purchase: Purchase',
                     ),
@@ -229,9 +224,9 @@ if (function_exists("register_field_group")) {
                     'multiple' => 0,
                 ),
             ),
-            'location' => array(
-                array(
-                    array(
+            'location' => array (
+                array (
+                    array (
                         'param' => 'post_type',
                         'operator' => '==',
                         'value' => 'ns_call_to_action',
@@ -240,12 +235,12 @@ if (function_exists("register_field_group")) {
                     ),
                 ),
             ),
-            'options' => array(
+            'options' => array (
                 'position' => 'normal',
                 'layout' => 'no_box',
-                'hide_on_screen' => array(),
+                'hide_on_screen' => array (
+                ),
             ),
             'menu_order' => 0,
-        )
-    );
+        ));
 }
