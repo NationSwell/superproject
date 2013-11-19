@@ -90,3 +90,22 @@ include_once('lib/widgets/widget-story.php');
 
 // Plugin Activation
 include_once('lib/tgm-plugin-activation/tgm-config.php');
+
+//add_action ( 'after_setup_theme', 'setup_pages' );
+//
+//function setup_pages()
+//{
+//
+//    $post = array(
+//        'comment_status' => 'closed',
+//        'ping_status' => 'closed',
+//        'post_status' => 'publish',
+//        'post_title' => 'About',
+//        'post_type' => 'page',
+//    );
+//
+//    // Insert the post into the database
+//    wp_insert_post( $post );
+//    update_post_meta( $id, '_wp_page_template', 'page-static.php' );
+//
+//}
