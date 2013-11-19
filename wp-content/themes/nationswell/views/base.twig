@@ -61,10 +61,13 @@
 <div id="page-overlay">
 </div>
 
+{% include 'dialog.twig' %}
+
 {{ function('wp_footer') }}
 
 {# TODO: Integrate these files into the theme#}
 <script src="/{{ theme_dir }}/js/vendor/enquire.js"></script>
+<script src="/{{ theme_dir }}/js/vendor/dialog-polyfill.js"></script>
 <script src="/{{ theme_dir }}/js/vendor/jquery.transit.min.js"></script>
 <script src="/{{ theme_dir }}/js/vendor/jquery.touchSwipe.min.js"></script>
 <script src="/{{ theme_dir }}/js/vendor/jquery.carouFredSel-6.2.1.min.js"></script>

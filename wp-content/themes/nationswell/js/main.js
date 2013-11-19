@@ -14,6 +14,25 @@
     });
 
     $(function () {
+
+        // Subscribe / Follow Dialog
+        var dialog = $('#join-us-dialog');
+
+        if (!document.createElement('dialog').showModal) {
+            dialogPolyfill.registerDialog(dialog[0]);
+        }
+
+        $('#show-dialog').on("click", function() {
+            console.log("open");
+            dialog[0].show();
+        });
+
+        $('#close-dialog').on("click", function() {
+            console.log("close");
+            dialog[0].close();
+        });
+
+
         // expand/collapse header search field
         $("[for='search']").on("click", function () {
             $('#search').toggleClass('open');
