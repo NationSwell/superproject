@@ -89,5 +89,14 @@ if (class_exists('TimberPost')) {
             return 'https://twitter.com/share?url='
             . urlencode($this->permalink()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
         }
+
+        function call_to_action(){
+            $cta_id = get_field('call_to_action_link', $this->ID);
+
+            if(!empty($cta_id)) {
+                return Timber::get_post($cta_id);
+            }
+            return false;
+        }
     }
 }
