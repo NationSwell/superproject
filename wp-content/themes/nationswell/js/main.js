@@ -234,6 +234,7 @@
                     });
                 });
 
+                // sticky sharebar
                 var $sharebar = $('.story__sticky-container');
 
                 $sharebar.waypoint('sticky', {

@@ -1777,9 +1777,9 @@ a:hover {
   z-index: 8;
   opacity: 0;
   background: rgba(0, 48, 70, 0.8);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* line 33, ../scss/partials/base/_modal.scss */
@@ -3918,7 +3918,7 @@ input[type="email"] {
 /* sticky */
 /* line 182, ../scss/partials/desktop/_story.scss */
 .story__sticky {
-  padding: 0 1rem;
+  /*padding: 0 1rem;*/
 }
 
 /* line 186, ../scss/partials/desktop/_story.scss */
@@ -3999,6 +3999,34 @@ input[type="email"] {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 2.2rem;
+}
+
+/* line 263, ../scss/partials/desktop/_story.scss */
+.story__container .story__social {
+  opacity: 0;
+  visiblity: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+/* line 270, ../scss/partials/desktop/_story.scss */
+.story__container .take-action {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 280, ../scss/partials/desktop/_story.scss */
+.bottomed .story__container .story__social {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 285, ../scss/partials/desktop/_story.scss */
+.bottomed .story__container .take-action {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* line 1, ../scss/partials/desktop/_series.scss */
