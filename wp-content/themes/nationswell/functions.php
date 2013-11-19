@@ -91,6 +91,15 @@ include_once('lib/widgets/widget-story.php');
 // Plugin Activation
 include_once('lib/tgm-plugin-activation/tgm-config.php');
 
+// Custom Post Types
+include_once('lib/custom_post_types/call_to_action.php');
+
+
+
+
+
+
+
 //add_action ( 'after_setup_theme', 'setup_pages' );
 //
 //function setup_pages()
