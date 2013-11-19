@@ -36,7 +36,7 @@
         <div class="container">
             <ul class="story-teases">
                 {% for post in posts|slice(0, 3) %}
-                    <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
+                    <li class="cf">{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
 
@@ -95,7 +95,7 @@
         <div class="container">
             <ul class="story-teases">
                 {% for post in posts|slice(3, 3) %}
-                    <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
+                    <li class="cf">{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
 
@@ -189,7 +189,7 @@
         <div class="container">
             <ul class="story-teases">
                 {% for post in posts|slice(6, 2) %}
-                    <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
+                    <li class="cf">{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
 
