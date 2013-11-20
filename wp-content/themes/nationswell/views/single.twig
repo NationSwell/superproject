@@ -77,14 +77,14 @@
                     </div>
                 </div>
 
+                {% if post.call_to_action is not empty %}
+                    {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
+                {% endif %}
+                
                 <div class="story__social cf">
                     <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook icon icon_facebook">Share on Facebook</a>
                     <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter icon icon_twitter">Share on Twitter</a>
                 </div>
-
-                {% if post.call_to_action is not empty %}
-                    {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
-                {% endif %}
 
                 <ul class="prev-next cf">
                     {% if post.next is not empty %}
