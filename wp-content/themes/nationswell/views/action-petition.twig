@@ -1,6 +1,13 @@
 {% extends "action.twig" %}
 
 {% block action_body %}
+    <header>
+        <div class="indicator indicator--blue indicator--module icon icon_email"></div>
+        <h3 class="hd-e module__heading">Take Action</h3>
+    </header>
+
+    <h2 class="hd-l take-action__heading">{{ post.call_to_action.heading }}</h2>
+
     <div class="take-action__a">
         <img src="http://lorempixel.com/256/256" class="take-action__img">
     </div>

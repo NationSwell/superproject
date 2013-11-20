@@ -153,7 +153,7 @@
                     });
                 });
             }
-        }).register("screen and (min-width:1024px)", {
+        }).register("screen and (min-device-width:1024px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
             match : function() {
@@ -214,10 +214,12 @@
                             play: false
                         },
                         prev: {
-                            button: $this.find('.carousel__control--prev')
+                            button: $this.find('.carousel__control--prev'),
+                            key: "left"
                         },
                         next: {
-                            button: $this.find('.carousel__control--next')
+                            button: $this.find('.carousel__control--next'),
+                            key: "right"
                         }
                     });
                 });
