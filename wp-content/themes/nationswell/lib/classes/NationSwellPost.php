@@ -9,7 +9,7 @@ if (class_exists('TimberPost')) {
             if (!isset($this->story_header_cache)) {
 
                 $this->story_header_cache = array();
-                while (has_sub_field("story_page_header", $this->ID)) {
+                while (has_sub_field("hero", $this->ID)) {
                     $layout = get_row_layout();
                     $item = array(
                         'type' => $layout
@@ -88,6 +88,15 @@ if (class_exists('TimberPost')) {
         function twitter_share_url(){
             return 'https://twitter.com/share?url='
             . urlencode($this->permalink()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
+        }
+
+        function call_to_action(){
+            $cta_id = get_field('call_to_action_link', $this->ID);
+
+            if(!empty($cta_id)) {
+                return Timber::get_post($cta_id);
+            }
+            return false;
         }
     }
 }

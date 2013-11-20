@@ -77,24 +77,10 @@
                     </div>
                 </div>
 
-                <div class="module module--bg module--red story__take-action take-action take-action--buy cf">
-                    <header>
-                        <div class="indicator indicator--blue indicator--module icon icon_write"></div>
-                        <h3 class="hd-e module__heading">Take Action</h3>
-                    </header>
-
-                    <h2 class="hd-l take-action__heading">Buy a GirlTrek T-Shirt</h2>
-
-                    <div class="take-action__a">
-                        <img src="http://lorempixel.com/256/256" class="take-action__img">
-                    </div>
-
-                    <div class="take-action__b">
-                        <p>Show your support for the group’s mission and buy a superhero-blue GirlTrek t-shirt. Wear it out whenever you go walking in your community, particularly on Saturdays.</p>
-                        <a href="#" class="btn btn--solid">Buy now</a>
-                    </div>
-                </div>
-
+                {% if post.call_to_action is not empty %}
+                    {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
+                {% endif %}
+                
                 <div class="story__social cf">
                     <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook icon icon_facebook">Share on Facebook</a>
                     <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter icon icon_twitter">Share on Twitter</a>
