@@ -9,7 +9,7 @@ if (class_exists('TimberPost')) {
             if (!isset($this->story_header_cache)) {
 
                 $this->story_header_cache = array();
-                while (has_sub_field("story_page_header", $this->ID)) {
+                while (has_sub_field("hero", $this->ID)) {
                     $layout = get_row_layout();
                     $item = array(
                         'type' => $layout
