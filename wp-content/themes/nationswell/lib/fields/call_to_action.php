@@ -139,6 +139,18 @@ if (function_exists("register_field_group")) {
                     'maxlength' => '',
                 ),
                 array(
+                    'key' => 'field_528d3245014b8',
+                    'label' => __('External Link Text'),
+                    'name' => 'external_link_text',
+                    'type' => 'text',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'html',
+                    'maxlength' => '',
+                ),
+                array(
                     'key' => 'field_528bd7735938b',
                     'label' => __('Rally Id'),
                     'name' => 'rally_id',
