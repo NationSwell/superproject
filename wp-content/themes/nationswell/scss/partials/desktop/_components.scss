@@ -404,6 +404,8 @@
   width: 40rem;
   z-index: 5;
 
+  -webkit-transform: translate3d(0,0,0);
+
   @include transition(right 0.6s ease-in-out);
 
   header {

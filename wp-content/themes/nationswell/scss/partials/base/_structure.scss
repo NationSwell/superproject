@@ -12,6 +12,8 @@ html, body {
 
 html {
   font-size: 62.5%;
+  // force scrollbar show during modal display
+  overflow-y: scroll;
 }
 
 body {

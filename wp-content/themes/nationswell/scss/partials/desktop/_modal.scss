@@ -12,6 +12,10 @@
   right: -4rem;
 }
 
+.modal--take-action {
+  width: 58.8rem;
+}
+
 // join us
 .modal--join-us {
   width: 77.2rem;
@@ -38,12 +42,19 @@
     line-height: 5.4rem;
     height: 5.4rem;
     padding-left: 6.6rem;
-    padding-right: 2.8rem;
-    width: 46.9rem;
 
-    input {
+    input[type="email"] {
       border-radius: 0;
       font-size: 2.4rem;
+    }
+
+    .btn--subscribe {
+      font-size: 2.4rem;
+      line-height: 5.4rem;
+      padding: 0 2.8rem;
+      height: 5.4rem;
+      position: relative;
+      top: -1px;
     }
 
     &:before {
@@ -51,13 +62,6 @@
       left: 2.2rem;
       top: 0.4rem;
     }
-  }
-
-  .btn--subscribe {
-    font-size: 2.4rem;
-    line-height: 5.4rem;
-    padding: 0 2.8rem;
-    height: 5.4rem;
   }
 
   .modal--join-us__opt-out {

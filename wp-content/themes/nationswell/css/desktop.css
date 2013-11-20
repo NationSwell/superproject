@@ -88,15 +88,16 @@ html, body {
 /* line 13, ../scss/partials/base/_structure.scss */
 html {
   font-size: 62.5%;
+  overflow-y: scroll;
 }
 
-/* line 17, ../scss/partials/base/_structure.scss */
+/* line 19, ../scss/partials/base/_structure.scss */
 body {
   background-color: white;
   font-size: 1.6rem;
 }
 
-/* line 22, ../scss/partials/base/_structure.scss */
+/* line 24, ../scss/partials/base/_structure.scss */
 #page-wrapper {
   background-color: white;
   position: relative;
@@ -108,7 +109,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 32, ../scss/partials/base/_structure.scss */
+/* line 34, ../scss/partials/base/_structure.scss */
 #page-content {
   padding-bottom: 8rem;
   position: relative;
@@ -117,7 +118,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 40, ../scss/partials/base/_structure.scss */
+/* line 42, ../scss/partials/base/_structure.scss */
 .container {
   position: relative;
 }
@@ -185,31 +186,30 @@ body {
   outline: 0px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   width: 100%;
-  /* height: 100%; */
   display: block;
 }
 
-/* line 29, ../scss/partials/base/_utility.scss */
+/* line 28, ../scss/partials/base/_utility.scss */
 .v-align {
   display: table;
   position: absolute;
 }
 
-/* line 34, ../scss/partials/base/_utility.scss */
+/* line 33, ../scss/partials/base/_utility.scss */
 .v-align__inner {
   display: table-cell;
   text-align: center;
 }
-/* line 38, ../scss/partials/base/_utility.scss */
+/* line 37, ../scss/partials/base/_utility.scss */
 .v-align__inner.v-align__inner--bottom {
   vertical-align: bottom;
 }
-/* line 42, ../scss/partials/base/_utility.scss */
+/* line 41, ../scss/partials/base/_utility.scss */
 .v-align__inner.v-align__inner--center {
   vertical-align: middle;
 }
 
-/* line 47, ../scss/partials/base/_utility.scss */
+/* line 46, ../scss/partials/base/_utility.scss */
 .stuck {
   position: fixed;
   top: 60px;
@@ -1376,7 +1376,7 @@ a:hover {
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
-  margin-right: 4.25%;
+  margin-right: 4.2%;
   vertical-align: top;
 }
 /* line 276, ../scss/partials/base/_components.scss */
@@ -1834,37 +1834,39 @@ body.locked {
 .modal--join-us .modal--join-us__email {
   background-color: white;
   border: 1px solid #dbdbdb;
-  float: left;
+  border-right-width: 0px;
   position: relative;
+  width: 100%;
 }
-/* line 75, ../scss/partials/base/_modal.scss */
-.modal--join-us .modal--join-us__email input {
+/* line 76, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__email input[type="email"] {
   border: 0 none;
   box-shadow: none;
   outline: none;
-  padding: 0;
+  padding: 1.2rem 0 0 0;
   line-height: 1.2;
+  width: 70%;
 }
-/* line 83, ../scss/partials/base/_modal.scss */
-.modal--join-us .modal--join-us__email:before {
-  color: #eeeeee;
-  display: block;
-  position: absolute;
-}
-/* line 90, ../scss/partials/base/_modal.scss */
-.modal--join-us .btn--subscribe {
+/* line 85, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__email .btn--subscribe {
   background-color: #fd6464;
   color: white;
   margin: 0;
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 400;
-  float: left;
+  float: right;
 }
-/* line 98, ../scss/partials/base/_modal.scss */
-.modal--join-us .btn--subscribe:hover {
+/* line 93, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__email .btn--subscribe:hover {
   background-color: #0098d8;
 }
-/* line 103, ../scss/partials/base/_modal.scss */
+/* line 98, ../scss/partials/base/_modal.scss */
+.modal--join-us .modal--join-us__email:before {
+  color: #eeeeee;
+  display: block;
+  position: absolute;
+}
+/* line 105, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
   color: white;
   display: block;
@@ -1874,12 +1876,12 @@ body.locked {
   text-align: center;
   width: 100%;
 }
-/* line 112, ../scss/partials/base/_modal.scss */
+/* line 114, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 116, ../scss/partials/base/_modal.scss */
+/* line 118, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a:hover {
   color: #fc3b40;
 }
@@ -3428,23 +3430,24 @@ input[type="email"] {
   right: 0;
   width: 40rem;
   z-index: 5;
+  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: right 0.6s ease-in-out;
   -moz-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
 }
-/* line 409, ../scss/partials/desktop/_components.scss */
+/* line 411, ../scss/partials/desktop/_components.scss */
 #flyout header {
   background-color: #003046;
   padding: 1.2rem 1.6rem 0.6rem;
   position: relative;
 }
-/* line 415, ../scss/partials/desktop/_components.scss */
+/* line 417, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 420, ../scss/partials/desktop/_components.scss */
+/* line 422, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading:before {
   color: #fc3b40;
   display: inline-block;
@@ -3453,7 +3456,7 @@ input[type="email"] {
   font-size: 2.6rem;
   vertical-align: middle;
 }
-/* line 430, ../scss/partials/desktop/_components.scss */
+/* line 432, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close {
   background-color: transparent;
   border: none;
@@ -3467,28 +3470,28 @@ input[type="email"] {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 442, ../scss/partials/desktop/_components.scss */
+/* line 444, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close:hover {
   color: #0098d8;
 }
-/* line 447, ../scss/partials/desktop/_components.scss */
+/* line 449, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content {
   border-left: 1px solid #ccd6da;
   border-bottom: 1px solid #ccd6da;
   padding: 1.6rem;
 }
-/* line 452, ../scss/partials/desktop/_components.scss */
+/* line 454, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content p {
   color: #002130;
   font-family: "Gudea", Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
-/* line 459, ../scss/partials/desktop/_components.scss */
+/* line 461, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content .fb-like {
   margin-bottom: 0.6rem;
 }
-/* line 464, ../scss/partials/desktop/_components.scss */
+/* line 466, ../scss/partials/desktop/_components.scss */
 #flyout.hiding {
   right: -40rem;
 }
@@ -3594,55 +3597,60 @@ input[type="email"] {
   right: -4rem;
 }
 
-/* line 16, ../scss/partials/desktop/_modal.scss */
+/* line 15, ../scss/partials/desktop/_modal.scss */
+.modal--take-action {
+  width: 58.8rem;
+}
+
+/* line 20, ../scss/partials/desktop/_modal.scss */
 .modal--join-us {
   width: 77.2rem;
 }
-/* line 19, ../scss/partials/desktop/_modal.scss */
+/* line 23, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .module {
   padding: 2rem 7.6rem 4rem;
 }
-/* line 23, ../scss/partials/desktop/_modal.scss */
+/* line 27, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__social {
   margin-bottom: 2.8rem;
 }
-/* line 26, ../scss/partials/desktop/_modal.scss */
+/* line 30, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__social .btn--bar {
   display: inline-block;
   margin-right: 3.3334%;
 }
-/* line 30, ../scss/partials/desktop/_modal.scss */
+/* line 34, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__social .btn--bar:last-child {
   margin-right: 0;
 }
-/* line 36, ../scss/partials/desktop/_modal.scss */
+/* line 40, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__email {
   font-size: 2.4rem;
   line-height: 5.4rem;
   height: 5.4rem;
   padding-left: 6.6rem;
-  padding-right: 2.8rem;
-  width: 46.9rem;
 }
-/* line 44, ../scss/partials/desktop/_modal.scss */
-.modal--join-us .modal--join-us__email input {
+/* line 46, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__email input[type="email"] {
   border-radius: 0;
   font-size: 2.4rem;
 }
-/* line 49, ../scss/partials/desktop/_modal.scss */
+/* line 51, ../scss/partials/desktop/_modal.scss */
+.modal--join-us .modal--join-us__email .btn--subscribe {
+  font-size: 2.4rem;
+  line-height: 5.4rem;
+  padding: 0 2.8rem;
+  height: 5.4rem;
+  position: relative;
+  top: -1px;
+}
+/* line 60, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__email:before {
   font-size: 3rem;
   left: 2.2rem;
   top: 0.4rem;
 }
-/* line 56, ../scss/partials/desktop/_modal.scss */
-.modal--join-us .btn--subscribe {
-  font-size: 2.4rem;
-  line-height: 5.4rem;
-  padding: 0 2.8rem;
-  height: 5.4rem;
-}
-/* line 63, ../scss/partials/desktop/_modal.scss */
+/* line 67, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
   bottom: -3.4rem;
   font-size: 1.8rem;
@@ -3808,72 +3816,76 @@ input[type="email"] {
   margin-bottom: 4.6rem;
 }
 /* line 72, ../scss/partials/desktop/_story.scss */
+.story__container .story__main-column {
+  overflow: hidden;
+}
+/* line 76, ../scss/partials/desktop/_story.scss */
 .story__container .story__content {
   margin-bottom: 7.2rem;
 }
-/* line 75, ../scss/partials/desktop/_story.scss */
+/* line 79, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 2.2rem;
   /* drop cap */
 }
-/* line 81, ../scss/partials/desktop/_story.scss */
+/* line 85, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   font-size: 7.8rem;
   margin-right: 2.6rem;
 }
-/* line 86, ../scss/partials/desktop/_story.scss */
+/* line 90, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 90, ../scss/partials/desktop/_story.scss */
+/* line 94, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 96, ../scss/partials/desktop/_story.scss */
+/* line 100, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 102, ../scss/partials/desktop/_story.scss */
+/* line 106, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
-/* line 107, ../scss/partials/desktop/_story.scss */
+/* line 111, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h3 {
   font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
-/* line 112, ../scss/partials/desktop/_story.scss */
+/* line 116, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 117, ../scss/partials/desktop/_story.scss */
+/* line 121, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 122, ../scss/partials/desktop/_story.scss */
+/* line 126, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 127, ../scss/partials/desktop/_story.scss */
+/* line 131, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 131, ../scss/partials/desktop/_story.scss */
+/* line 135, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol li {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
 }
-/* line 135, ../scss/partials/desktop/_story.scss */
+/* line 139, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol li:before {
   font-size: 1.2rem;
   width: 2.4rem;
@@ -3882,151 +3894,156 @@ input[type="email"] {
   margin-right: 1.4rem;
   left: -4.2rem;
 }
-/* line 146, ../scss/partials/desktop/_story.scss */
+/* line 150, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 150, ../scss/partials/desktop/_story.scss */
+/* line 154, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul li {
   font-size: 1.8rem;
   margin-bottom: 1.4rem;
 }
-/* line 154, ../scss/partials/desktop/_story.scss */
+/* line 158, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul li:before {
   left: -3.4rem;
 }
 
 /* multimedia */
-/* line 163, ../scss/partials/desktop/_story.scss */
+/* line 167, ../scss/partials/desktop/_story.scss */
 .multimedia {
   margin: 5rem 0;
 }
-/* line 166, ../scss/partials/desktop/_story.scss */
+/* line 170, ../scss/partials/desktop/_story.scss */
 .multimedia .multimedia__content {
   margin-top: 2.2rem;
 }
-/* line 170, ../scss/partials/desktop/_story.scss */
+/* line 174, ../scss/partials/desktop/_story.scss */
 .multimedia figcaption {
   margin-top: 1rem;
 }
-/* line 175, ../scss/partials/desktop/_story.scss */
+/* line 179, ../scss/partials/desktop/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
 }
 
 /* sticky */
-/* line 182, ../scss/partials/desktop/_story.scss */
-.story__sticky {
-  /*padding: 0 1rem;*/
-}
-
 /* line 186, ../scss/partials/desktop/_story.scss */
 .story__sticky-container {
   margin-bottom: 75px;
   width: 16rem;
+  padding-bottom: 2.2rem;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
-/* line 190, ../scss/partials/desktop/_story.scss */
+/* line 194, ../scss/partials/desktop/_story.scss */
 .bottomed .story__sticky-container {
   position: absolute;
   bottom: 0;
   top: auto;
 }
 
-/* line 197, ../scss/partials/desktop/_story.scss */
+/* line 201, ../scss/partials/desktop/_story.scss */
 .sticky-social {
+  position: relative;
   margin-bottom: 5rem;
+  left: 0;
+  -webkit-transition: left 0.15s ease-in-out;
+  -moz-transition: left 0.15s ease-in-out;
+  transition: left 0.15s ease-in-out;
+}
+/* line 208, ../scss/partials/desktop/_story.scss */
+.sticky-social.is-hidden {
+  left: 20rem;
 }
 
-/* line 201, ../scss/partials/desktop/_story.scss */
+/* line 213, ../scss/partials/desktop/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.15s ease-in-out;
+  -moz-transition: left 0.15s ease-in-out;
+  transition: left 0.15s ease-in-out;
+}
+/* line 220, ../scss/partials/desktop/_story.scss */
+.sticky-take-action.is-hidden {
+  left: 20rem;
 }
 
-/* line 205, ../scss/partials/desktop/_story.scss */
+/* line 225, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 209, ../scss/partials/desktop/_story.scss */
+/* line 229, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 214, ../scss/partials/desktop/_story.scss */
+/* line 234, ../scss/partials/desktop/_story.scss */
 .story__tags {
   margin-bottom: 5rem;
   padding-bottom: 1.4rem;
 }
-/* line 219, ../scss/partials/desktop/_story.scss */
+/* line 239, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list:before {
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 1.8rem;
 }
-/* line 225, ../scss/partials/desktop/_story.scss */
+/* line 245, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list li {
   margin: 0 1rem 1rem 0;
 }
 
-/* line 232, ../scss/partials/desktop/_story.scss */
+/* line 252, ../scss/partials/desktop/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
 
-/* line 237, ../scss/partials/desktop/_story.scss */
+/* line 257, ../scss/partials/desktop/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 3.4rem;
 }
-/* line 241, ../scss/partials/desktop/_story.scss */
+/* line 261, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 3.4rem;
 }
-/* line 245, ../scss/partials/desktop/_story.scss */
+/* line 265, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__a {
   float: left;
   width: 25.6rem;
 }
-/* line 250, ../scss/partials/desktop/_story.scss */
+/* line 270, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__b {
   overflow: hidden;
   padding-left: 3.4rem;
 }
-/* line 255, ../scss/partials/desktop/_story.scss */
+/* line 275, ../scss/partials/desktop/_story.scss */
 .module.take-action p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 2.2rem;
 }
 
-/* line 263, ../scss/partials/desktop/_story.scss */
-.story__container .story__social {
-  opacity: 0;
-  visiblity: hidden;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+/* line 284, ../scss/partials/desktop/_story.scss */
+.story__container .story__social,
+.story__container .story__take-action {
+  clear: both;
+  position: relative;
+  left: -100%;
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
-/* line 270, ../scss/partials/desktop/_story.scss */
-.story__container .take-action {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* line 280, ../scss/partials/desktop/_story.scss */
-.bottomed .story__container .story__social {
-  opacity: 1;
-  visibility: visible;
-}
-/* line 285, ../scss/partials/desktop/_story.scss */
-.bottomed .story__container .take-action {
-  opacity: 1;
-  visibility: visible;
+/* line 289, ../scss/partials/desktop/_story.scss */
+.story__container .story__social.is-visible,
+.story__container .story__take-action.is-visible {
+  left: 0;
+  height: auto;
 }
 
 /* line 1, ../scss/partials/desktop/_series.scss */

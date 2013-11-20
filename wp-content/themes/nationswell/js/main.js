@@ -1,5 +1,8 @@
 (function ($) {
     $(function () {
+        $('.modal--join-us').addClass('modal--is-visible');
+        $('body').addClass('locked');
+
         // flyout box
         $('.story__container').waypoint(function (direction) {
             $('#flyout').toggleClass('hiding', direction === "up");
@@ -17,11 +20,16 @@
         // modal
         $("[data-modal]").on("click", function(e) {
             var modalType = $(this).attr('data-modal'),
-                $modal = $('.modal--' + modalType);
+                $modal = $('.modal--' + modalType),
+                $modalContent = $modal.find('.modal__content');
+
+            if(modalType === 'take-action') {
+                var taContent = $('.story__take-action').html();
+                $modalContent.empty().append(taContent);
+            }
 
             $modal.addClass('modal--is-visible');
             $('body').addClass('locked');
-
 
             e.preventDefault();
         });
@@ -144,27 +152,7 @@
                         }
                     });
                 });
-            },
-
-            // OPTIONAL
-            // If supplied, triggered when the media query transitions
-            // *from a matched state to an unmatched state*.
-            unmatch : function() {},
-
-            // OPTIONAL
-            // If supplied, triggered once, when the handler is registered.
-            setup : function() {},
-
-            // OPTIONAL, defaults to false
-            // If set to true, defers execution of the setup function
-            // until the first time the media query is matched
-            deferSetup : true,
-
-            // OPTIONAL
-            // If supplied, triggered when handler is unregistered.
-            // Place cleanup code here
-            destroy : function() {}
-
+            }
         }).register("screen and (min-width:1024px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
@@ -235,43 +223,56 @@
                 });
 
                 // sticky sharebar
-                var $sharebar = $('.story__sticky-container');
+                var $stickyBar = $('.story__sticky-container'),
+                    $stickySocial = $('.sticky-social'),
+                    $stickyTakeAction = $('.sticky-take-action');
 
-                $sharebar.waypoint('sticky', {
+                $stickyBar.waypoint('sticky', {
                     stuckClass: 'stuck',
-                    offset: 50
+                    offset: 60
                 });
 
-                var $mainContainer = $('.story__container');
+                /*var $mainContainer = $('.story__container');
                 $mainContainer.waypoint(function(direction){
                     $(this).toggleClass('bottomed', direction === 'down');
                 }, {
                     offset:function() {
-                        return  $sharebar.outerHeight() - $(this).outerHeight() + 60;
+                        return  $stickyBar.outerHeight() - $(this).outerHeight() + 60;
+                    }
+                });*/
+
+                var $storySocial = $('.story__social');
+                $storySocial.waypoint(function(direction){
+                    $storySocial.toggleClass('is-visible', direction === 'down');
+                    $stickySocial.toggleClass('is-hidden', direction === 'down');
+                }, {
+                    offset:function() {
+                        var offsetHeight;
+
+                        if(!$stickyTakeAction.length) {
+                            offsetHeight = .8 * $stickyBar.outerHeight();
+                        } else {
+                            offsetHeight = $stickyBar.outerHeight() - (1.2 * $stickySocial.outerHeight());
+                        }
+
+                        return offsetHeight;
                     }
                 });
-            },
 
-            // OPTIONAL
-            // If supplied, triggered when the media query transitions
-            // *from a matched state to an unmatched state*.
-            unmatch : function() {
-            },
+                var $storyTakeAction = $('.story__take-action');
+                if ($storyTakeAction.length) {
+                    $storyTakeAction.waypoint(function(direction) {
+                        $storyTakeAction.toggleClass('is-visible', direction === 'down');
+                        $stickyTakeAction.toggleClass('is-hidden', direction === 'down');
+                    }, {
+                        offset: function() {
+                            var offsetHeight = .8 * $stickyBar.outerHeight();
+                            return offsetHeight;
+                        }
+                    });
+                }
 
-            // OPTIONAL
-            // If supplied, triggered once, when the handler is registered.
-            setup : function() {},
-
-            // OPTIONAL, defaults to false
-            // If set to true, defers execution of the setup function
-            // until the first time the media query is matched
-            deferSetup : true,
-
-            // OPTIONAL
-            // If supplied, triggered when handler is unregistered.
-            // Place cleanup code here
-            destroy : function() {}
-
+            }
         });
     });
 })(jQuery);
