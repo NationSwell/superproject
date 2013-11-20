@@ -16,7 +16,6 @@ if (function_exists("register_field_group")) {
                         'petition' => 'Change.org Petition',
                         'donation' => 'Rally Donation',
                         'subscribe' => 'MailChimp Signup',
-                        'email' => 'Email a Politician',
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
@@ -234,8 +233,8 @@ if (function_exists("register_field_group")) {
                         'allorany' => 'all',
                     ),
                     'choices' => array(
-                        'link: Link' => 'link: Link',
-                        'purchase: Purchase' => 'purchase: Purchase',
+                        'link' => 'Link',
+                        'purchase' => 'Purchase',
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
