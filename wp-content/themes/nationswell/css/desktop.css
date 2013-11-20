@@ -2887,9 +2887,10 @@ input[type="submit"] {
   transition: all 0.15s ease-in-out;
 }
 
-/* line 2, ../scss/partials/desktop/_forms.scss */
+/* line 7, ../scss/partials/desktop/_forms.scss */
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   background-color: white;
   border: 1px solid #e6e6e6;
   border-radius: 0.2rem;
