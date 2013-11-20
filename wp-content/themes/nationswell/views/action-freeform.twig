@@ -2,11 +2,11 @@
 
 {% block action_body %}
     <div class="take-action__a">
-        <img src="http://lorempixel.com/256/256" class="take-action__img">
+        <img src="{{ post.call_to_action.image.url }}" class="take-action__img">
     </div>
 
     <div class="take-action__b">
-        <p>Show your support for the group’s mission and buy a superhero-blue GirlTrek t-shirt. Wear it out whenever you go walking in your community, particularly on Saturdays.</p>
-        <a href="#" class="btn btn--solid">Buy now</a>
+        <p>{{ post.call_to_action.description }}</p>
+        <a href="{{ post.call_to_action.external_link }}" class="btn btn--solid">{{ post.call_to_action.external_link_text }}</a>
     </div>
 {% endblock %}
