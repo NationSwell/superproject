@@ -94,8 +94,17 @@ if (class_exists('TimberPost')) {
             $cta_id = get_field('call_to_action_link', $this->ID);
 
             if(!empty($cta_id)) {
-                return Timber::get_post($cta_id);
+
+                $cta = Timber::get_post($cta_id);
+
+//                if ($cta['image']) { // layout: Content
+                    $image = get_sub_field('image');
+                    $cta->blah = $image;
+//                }
+
+                return $cta;
             }
+
             return false;
         }
     }

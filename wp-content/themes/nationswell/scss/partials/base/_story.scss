@@ -356,4 +356,25 @@
   p {
     color: $ns_black;
   }
+
+  small {
+    color: $gray1;
+    display: block;
+    font-family: $gudea;
+    font-weight: $regular;
+    overflow: hidden;
+    line-height: 1.56;
+  }
+
+  strong {
+    font-weight: $bold;
+  }
+
+  em {
+    color: $gray1;
+    font-family: $gudea;
+    font-weight: $regular;
+    font-style: italic;
+    line-height: 1.56;
+  }
 }
