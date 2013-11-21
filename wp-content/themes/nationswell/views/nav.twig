@@ -25,8 +25,8 @@
 <div id="more-stories" class="collapse z2 hide_mobile">
     <div class="container">
         <ul class="category-list">
-            {% for item in menu.get_items %}
-            <li><a class="category-list__category active" href="{{item.get_path}}">{{item.title}}</a></li>
+            {% for item in menu_main.get_items %}
+            <li><a class="category-list__category" href="{{item.get_path}}">{{item.title}}</a></li>
             {% endfor %}
         </ul>
 

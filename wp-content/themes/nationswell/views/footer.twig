@@ -5,12 +5,9 @@
         </a>
 
         <ul class="footer-links">
-            <li><a href="#" class="footer-links__link">About</a></li>
-            <li><a href="#" class="footer-links__link">Contact</a></li>
-            <li><a href="#" class="footer-links__link">Advertise</a></li>
-            <li><a href="#" class="footer-links__link">Terms of Service</a></li>
-            <li><a href="#" class="footer-links__link">Privacy Policy</a></li>
-            <li><a href="#" class="footer-links__link">Jobs</a></li>
+            {% for item in menu_footer.get_items %}
+                <li><a href="{{item.get_path}}" class="footer-links__link">{{item.title}}</a></li>
+            {% endfor %}
         </ul>
 
         <small class="copyright">All content copyright &copy;{{"now"|date('Y')}} NationSwell. All rights reserved.</small>
