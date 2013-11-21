@@ -3443,7 +3443,7 @@ textarea {
   background-color: white;
   position: fixed;
   bottom: 15rem;
-  right: 0;
+  right: -40rem;
   width: 40rem;
   z-index: 5;
   -webkit-transform: translate3d(0, 0, 0);
@@ -3508,8 +3508,8 @@ textarea {
   margin-bottom: 0.6rem;
 }
 /* line 466, ../scss/partials/desktop/_components.scss */
-#flyout.hiding {
-  right: -40rem;
+#flyout.showing {
+  right: 0;
 }
 
 /* line 1, ../scss/partials/desktop/_carousels.scss */
