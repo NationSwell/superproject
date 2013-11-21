@@ -53,11 +53,15 @@
 
         // flyout box
         $('.story__container').waypoint(function (direction) {
-            $('#flyout').toggleClass('hiding', direction === "up");
+            $('#flyout').toggleClass('showing', direction === "down");
         }, {
             offset: function () {
                 return $.waypoints('viewportHeight') - $(this).height() + 200;
             }
+        });
+
+        $("[data-flyout-action='close']").on('click', function(){
+            $(this).closest('#flyout').remove();
         });
 
         // expand/collapse header search field
