@@ -1,21 +1,71 @@
 (function ($) {
+    $(function () {
 
-    $(window).load(function(){
+        // Modal
+        $.each($("[data-modal-pageload='true']"), function(index, value){
+
+            if(!$.cookie($(this).data("modal")))  {
+
+                $(this).addClass('modal--is-visible');
+                $('body').addClass('locked');
+
+            }
+
+        });
+
+        $("[data-modal-target]").on("click", function(e) {
+            var modalType = $(this).attr('data-modal'),
+                $modal = $('.modal--' + modalType),
+                $modalContent = $modal.find('.modal__content');
+
+            if(modalType === 'take-action') {
+                var taContent = $('.story__take-action').html();
+                $modalContent.empty().append(taContent);
+            }
+
+            $modal.addClass('modal--is-visible');
+            $('body').addClass('locked');
+
+            e.preventDefault();
+        });
+
+        $("[data-modal]").on("disable", function(event){
+
+            event.stopPropagation();
+
+            $.cookie($(this).data("modal"), 'disabled', { expires: 5, path: '/' });
+
+        });
+
+        var $modalClose = $(".modal-overlay, [data-modal-action='close']");
+
+        $modalClose.on('click', function() {
+            $('.modal').removeClass('modal--is-visible');
+            $('body').removeClass('locked');
+
+            if($(this).data('modal-disable')){
+                $(this).trigger("disable");
+            }
+        });
+
+
+
 
         // flyout box
         $('.story__container').waypoint(function (direction) {
-            $('#flyout').toggleClass('hiding', direction === "up");
+            $('#flyout').toggleClass('showing', direction === "down");
         }, {
             offset: function () {
                 return $.waypoints('viewportHeight') - $(this).height() + 200;
             }
         });
 
-    });
+        $("[data-flyout-action='close']").on('click', function(){
+            $(this).closest('#flyout').remove();
+        });
 
-    $(function () {
         // expand/collapse header search field
-        $("[for='search']").on("click", function () {
+        $("[for='search']").on("click", function() {
             $('#search').toggleClass('open');
         });
 
@@ -130,28 +180,8 @@
                         }
                     });
                 });
-            },
-
-            // OPTIONAL
-            // If supplied, triggered when the media query transitions
-            // *from a matched state to an unmatched state*.
-            unmatch : function() {},
-
-            // OPTIONAL
-            // If supplied, triggered once, when the handler is registered.
-            setup : function() {},
-
-            // OPTIONAL, defaults to false
-            // If set to true, defers execution of the setup function
-            // until the first time the media query is matched
-            deferSetup : true,
-
-            // OPTIONAL
-            // If supplied, triggered when handler is unregistered.
-            // Place cleanup code here
-            destroy : function() {}
-
-        }).register("screen and (min-width:1024px)", {
+            }
+        }).register("screen and (min-device-width:1024px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
             match : function() {
@@ -212,52 +242,67 @@
                             play: false
                         },
                         prev: {
-                            button: $this.find('.carousel__control--prev')
+                            button: $this.find('.carousel__control--prev'),
+                            key: "left"
                         },
                         next: {
-                            button: $this.find('.carousel__control--next')
+                            button: $this.find('.carousel__control--next'),
+                            key: "right"
                         }
                     });
                 });
 
-                var $sharebar = $('.story__sticky-container');
+                // sticky sharebar
+                var $stickyBar = $('.story__sticky-container'),
+                    $stickySocial = $('.sticky-social'),
+                    $stickyTakeAction = $('.sticky-take-action');
 
-                $sharebar.waypoint('sticky', {
-                    wrapper: '<div class="story__sticky" />',
+                $stickyBar.waypoint('sticky', {
                     stuckClass: 'stuck',
-                    offset: 50
+                    offset: 60
                 });
 
-                var $mainContainer = $('.story__container');
+                /*var $mainContainer = $('.story__container');
                 $mainContainer.waypoint(function(direction){
                     $(this).toggleClass('bottomed', direction === 'down');
                 }, {
                     offset:function() {
-                        return  $sharebar.outerHeight() - $(this).outerHeight() + 60;
+                        return  $stickyBar.outerHeight() - $(this).outerHeight() + 60;
+                    }
+                });*/
+
+                var $storySocial = $('.story__social');
+                $storySocial.waypoint(function(direction){
+                    $storySocial.toggleClass('is-visible', direction === 'down');
+                    $stickySocial.toggleClass('is-hidden', direction === 'down');
+                }, {
+                    offset:function() {
+                        var offsetHeight;
+
+                        if(!$stickyTakeAction.length) {
+                            offsetHeight = .8 * $stickyBar.outerHeight();
+                        } else {
+                            offsetHeight = $stickyBar.outerHeight() - (1.2 * $stickySocial.outerHeight());
+                        }
+
+                        return offsetHeight;
                     }
                 });
-            },
 
-            // OPTIONAL
-            // If supplied, triggered when the media query transitions
-            // *from a matched state to an unmatched state*.
-            unmatch : function() {
-            },
+                var $storyTakeAction = $('.story__take-action');
+                if ($storyTakeAction.length) {
+                    $storyTakeAction.waypoint(function(direction) {
+                        $storyTakeAction.toggleClass('is-visible', direction === 'down');
+                        $stickyTakeAction.toggleClass('is-hidden', direction === 'down');
+                    }, {
+                        offset: function() {
+                            var offsetHeight = .8 * $stickyBar.outerHeight();
+                            return offsetHeight;
+                        }
+                    });
+                }
 
-            // OPTIONAL
-            // If supplied, triggered once, when the handler is registered.
-            setup : function() {},
-
-            // OPTIONAL, defaults to false
-            // If set to true, defers execution of the setup function
-            // until the first time the media query is matched
-            deferSetup : true,
-
-            // OPTIONAL
-            // If supplied, triggered when handler is unregistered.
-            // Place cleanup code here
-            destroy : function() {}
-
+            }
         });
     });
 })(jQuery);

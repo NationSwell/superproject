@@ -9,7 +9,7 @@ if (class_exists('TimberPost')) {
             if (!isset($this->story_header_cache)) {
 
                 $this->story_header_cache = array();
-                while (has_sub_field("story_page_header", $this->ID)) {
+                while (has_sub_field("hero", $this->ID)) {
                     $layout = get_row_layout();
                     $item = array(
                         'type' => $layout
@@ -18,7 +18,10 @@ if (class_exists('TimberPost')) {
                         $item = array_merge(get_sub_field('image'), $item);
                         $item['credit'] = get_field('credit', $item['id']);
                     } elseif ($layout == "video") { // layout: File
-                        $item['video_url'] = get_sub_field('video_url');
+                        // TODO: Generating a proper YouTube URL should be abstracted. Duplicated in placeholder.php
+                        $item['video_url'] = normalize_youtube_url(get_sub_field('video_url')) .
+                            '?origin=' . urlencode(get_site_url()) . '&autoplay=0&autohide=1' .
+                            '&controls=2&enablejsapi=1&modestbranding=1&rel=0&theme=light&color=fc3b40&showinfo=0';
                     }
 
                     $this->story_header_cache[] = $item;
@@ -41,6 +44,10 @@ if (class_exists('TimberPost')) {
                 $author->display_url = $url;
             }
             return $author;
+        }
+
+        function petiton() {
+
         }
 
         function more_stories() {
@@ -85,6 +92,15 @@ if (class_exists('TimberPost')) {
         function twitter_share_url(){
             return 'https://twitter.com/share?url='
             . urlencode($this->permalink()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
+        }
+
+        function call_to_action(){
+            $cta_id = get_field('call_to_action_link', $this->ID);
+
+            if(!empty($cta_id)) {
+                return Timber::get_post($cta_id, 'CallToAction');
+            }
+            return false;
         }
     }
 }

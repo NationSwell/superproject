@@ -1,5 +1,10 @@
+.form-element {}
+
+label {}
+
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   background-color: $white;
   border: 1px solid #e6e6e6;
   border-radius: 0.2rem;

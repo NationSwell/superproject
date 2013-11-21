@@ -14,7 +14,7 @@
         </ul>
 
         <form action="#" method="post" class="fr hide_mobile">
-            <ul id="page-search" class="search">
+            <ul id="page-search" class="search form-element">
                 <li><label for="search" class="icon icon_search z1">&nbsp;</label></li>
                 <li><input type="text" id="search" name="search" placeholder="Search NationSwell"></li>
             </ul>
@@ -25,19 +25,9 @@
 <div id="more-stories" class="collapse z2 hide_mobile">
     <div class="container">
         <ul class="category-list">
-            {% for item in menu.get_items %}
-            <li><a class="category-list__category active" href="{{item.get_path}}">{{item.title}}</a></li>
+            {% for item in menu_main.get_items %}
+            <li><a class="category-list__category" href="{{item.get_path}}">{{item.title}}</a></li>
             {% endfor %}
-            {#<li><a class="category-list__category active" href="#category-education">Education</a></li>#}
-            {#<li><a class="category-list__category"href="#category-economy">Economy</a></li>#}
-            {#<li><a class="category-list__category" href="#category-social-mobility">Social Mobility</a></li>#}
-            {#<li><a class="category-list__category" href="#category-services">Services</a></li>#}
-            {#<li><a class="category-list__category" href="#category-government">Government</a></li>#}
-            {#<li><a class="category-list__category" href="#category-health">Health</a></li>#}
-            {#<li><a class="category-list__category" href="#category-environment">Environment</a></li>#}
-            {#<li><a class="category-list__category" href="#category-immigration">Immigration</a></li>#}
-            {#<li><a class="category-list__category" href="#category-family">Family</a></li>#}
-            {#<li><a class="category-list__category" href="#category-infrastructure">Infrastructure</a></li>#}
         </ul>
 
         <div class="most-popular">

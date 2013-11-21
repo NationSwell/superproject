@@ -1,0 +1,15 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <div class="container">
+        <main class="story__main-column" role="main">
+            {{ post.post_content }}
+        </main>
+
+        <div class="sidebar hide_mobile">
+            {{ sidebar_story }}
+        </div>
+    </div>
+
+{% endblock %}

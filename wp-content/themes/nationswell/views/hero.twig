@@ -1,0 +1,92 @@
+{# image hero #}
+{% if post.story_header|length == 1 %}
+    {% if post.story_header[0].type == 'image' %}
+        <div class="hero hero--story hero--image" style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});">
+            {% if post.story_header[0].caption or post.story_header[0].credit %}
+                <div class="hero-information">
+                    <span class="icon icon_information hero-information__toggle z1"></span>
+                    <div class="hero-information__outer">
+                        <div class="container">
+                            <div class="hero-information__content">
+                                <p class="hero-information__caption">{{ post.story_header[0].caption }}</p>
+                                <span class="hero-information__credit">{{ post.story_header[0].credit }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    {% elseif post.story_header[0].type == 'video' %}
+        {# video hero #}
+        <div class="hero hero--story hero--video">
+            <div class="container hero--video__container">
+                <div class="video-container">
+                    <iframe class="ytplayer" type="text/html" src="//www.youtube.com/embed/3YR4CseY9pk" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="hero-information">
+                <span class="icon icon_information hero-information__toggle z1"></span>
+                <div class="hero-information__outer">
+                    <div class="container">
+                        <div class="hero-information__content">
+                            <p class="hero-information__caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            <span class="hero-information__credit">Bill Smith / NationSwell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% elseif post.story_header|length > 1 %}
+    {# carousel hero #}
+    <div class="hero hero--story hero--carousel">
+        <div class="carousel carousel--full-width carousel--peek mobile-carousel--peek">
+            <ul class="carousel__items">
+                {% for  item in post.story_header %}
+                    {% if item.type == 'image' %}
+                        <li class="carousel-item">
+                            <div class="carousel-item__content">
+                                <div class="carousel--peek__image" style="background-image: url({{ item.url|resize(1300, 600) }});"></div>
+                            </div>
+                        </li>
+                    {% endif %}
+
+                    {% if item.type == 'video' %}
+                        <li class="carousel-item">
+                            <div class="carousel-item__content">
+                                <div class="video-container hero--video__container">
+                                    <iframe class="ytplayer" type="text/html" src="{{ item.video_url }}" frameborder="0"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item__overlay"></div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul class="carousel__controls">
+                <li class="carousel__control carousel__control--prev">
+                    <a class="icon icon_arrow-circle-left"></a>
+                </li>
+
+                <li class="carousel__control carousel__control--next">
+                    <a class="icon icon_arrow-circle-right"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero-information">
+            <span class="icon icon_information hero-information__toggle z1"></span>
+            <div class="hero-information__outer">
+                <div class="container">
+                    <div class="hero-information__content">
+                        <p class="hero-information__caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <span class="hero-information__credit">Bill Smith / NationSwell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%  endif %}

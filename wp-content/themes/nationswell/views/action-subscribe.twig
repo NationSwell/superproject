@@ -1,0 +1,19 @@
+{% extends "action.twig" %}
+
+{% block action_body %}
+    <div class="take-action__a">
+        <p>Enter your email address to sign up to our mailing list and receive exclusive updates.</p>
+        <small>* Privacy Policy copy goes here. Fusce luctus convalis justo</small>
+    </div>
+
+    <div class="take-action__b">
+        <form>
+            <div class="form-element">
+                <label for="take-action__input--email">Email Address</label>
+                <input type="email" id="ta-email" class="take-action__input--email" placeholder="Enter email address">
+            </div>
+        </form>
+
+        <a href="#" class="btn btn--solid">Sign up</a>
+    </div>
+{% endblock %}

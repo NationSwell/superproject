@@ -1,0 +1,12 @@
+{% extends "action.twig" %}
+
+{% block action_body %}
+    <div class="take-action__a">
+        <img src="{{ post.call_to_action.image.url }}" class="take-action__img">
+    </div>
+
+    <div class="take-action__b">
+        <p>{{ post.call_to_action.description }}</p>
+        <a href="{{ post.call_to_action.external_link }}" class="btn btn--solid btn--external icon icon_external">{{ post.call_to_action.external_link_text }}</a>
+    </div>
+{% endblock %}

@@ -12,6 +12,8 @@ html, body {
 
 html {
   font-size: 62.5%;
+  // force scrollbar show during modal display
+  overflow-y: scroll;
 }
 
 body {
@@ -20,6 +22,7 @@ body {
 }
 
 #page-wrapper {
+  background-color: $white;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -31,7 +34,7 @@ body {
 #page-content {
   padding-bottom: 8rem;
   position: relative;
-  background: $white;
+  background0-color: $white;
   z-index: 1;
   overflow-x: hidden;
 }

@@ -191,10 +191,11 @@
         speak: none;
         font-family: 'icons';
         /* check is correct character after icon font additions */
-        content:"\f117";
-        text-rendering:optimizeLegibility;
-        -webkit-font-smoothing:antialiased;
-        -moz-osx-font-smoothing:grayscale;
+        content:"\f11a";
+
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
     }
 
@@ -270,7 +271,7 @@
         li {
           display: inline-block;
           border-bottom: 0 none;
-          margin-right: 4.25%;
+          margin-right: 4.2%;
           vertical-align: top;
 
           &:last-child {
@@ -365,7 +366,7 @@
 }
 
 /* author */
-.author {
+.author-box {
   background-color: $gray7;
 }
 
