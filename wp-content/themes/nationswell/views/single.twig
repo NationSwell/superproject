@@ -73,11 +73,11 @@
                     </div>
                 </div>
 
-                <div class="ad ad--300 ad--pull">
-                    <div class="ad__container">
-                        <img src="http://placehold.it/300x250"/>
-                    </div>
-                </div>
+                {#<div class="ad ad--300 ad--pull">#}
+                    {#<div class="ad__container">#}
+                        {#<img src="http://placehold.it/300x250"/>#}
+                    {#</div>#}
+                {#</div>#}
 
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
