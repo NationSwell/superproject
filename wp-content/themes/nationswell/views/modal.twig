@@ -1,4 +1,4 @@
-<div class="modal modal--join-us">
+<div class="modal modal--join-us" data-modal="join-us" data-modal-pageload="true">
     <div class="modal__content module module--bg module--blue">
         <header>
             <div class="indicator indicator--blue indicator--module icon icon_nationswell-flag"></div>
@@ -28,13 +28,13 @@
             </form>
         </div>
 
-        <span class="modal--join-us__opt-out">Already following and subscribing to us? <a href="#">Don't ask again.</a></span>
+        <span class="modal--join-us__opt-out">Already following and subscribing to us? <a data-modal-action="close" data-modal-disable="true" href="#">Don't ask again.</a></span>
 
-        <button class="btn btn--close icon icon_close modal__close"></button>
+        <button class="btn btn--close icon icon_close modal__close" data-modal-action="close"></button>
     </div>
 </div>
 
-<div class="modal modal--take-action">
+<div class="modal modal--take-action" data-modal="take-action">
     <div class="modal__content module module--bg module--red take-action cf">
 
     </div>

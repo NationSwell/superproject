@@ -1,24 +1,19 @@
 (function ($) {
     $(function () {
-        $('.modal--join-us').addClass('modal--is-visible');
-        $('body').addClass('locked');
 
-        // flyout box
-        $('.story__container').waypoint(function (direction) {
-            $('#flyout').toggleClass('hiding', direction === "up");
-        }, {
-            offset: function () {
-                return $.waypoints('viewportHeight') - $(this).height() + 200;
+        // Modal
+        $.each($("[data-modal-pageload='true']"), function(index, value){
+
+            if(!$.cookie($(this).data("modal")))  {
+
+                $(this).addClass('modal--is-visible');
+                $('body').addClass('locked');
+
             }
+
         });
 
-        // expand/collapse header search field
-        $("[for='search']").on("click", function() {
-            $('#search').toggleClass('open');
-        });
-
-        // modal
-        $("[data-modal]").on("click", function(e) {
+        $("[data-modal-target]").on("click", function(e) {
             var modalType = $(this).attr('data-modal'),
                 $modal = $('.modal--' + modalType),
                 $modalContent = $modal.find('.modal__content');
@@ -34,11 +29,40 @@
             e.preventDefault();
         });
 
-        var $modalClose = $(".modal-overlay, .modal__close");
+        $("[data-modal]").on("disable", function(event){
+
+            event.stopPropagation();
+
+            $.cookie($(this).data("modal"), 'disabled', { expires: 5, path: '/' });
+
+        });
+
+        var $modalClose = $(".modal-overlay, [data-modal-action='close']");
 
         $modalClose.on('click', function() {
             $('.modal').removeClass('modal--is-visible');
             $('body').removeClass('locked');
+
+            if($(this).data('modal-disable')){
+                $(this).trigger("disable");
+            }
+        });
+
+
+
+
+        // flyout box
+        $('.story__container').waypoint(function (direction) {
+            $('#flyout').toggleClass('hiding', direction === "up");
+        }, {
+            offset: function () {
+                return $.waypoints('viewportHeight') - $(this).height() + 200;
+            }
+        });
+
+        // expand/collapse header search field
+        $("[for='search']").on("click", function() {
+            $('#search').toggleClass('open');
         });
 
         enquire.register("screen and (max-width: 959px)", {
