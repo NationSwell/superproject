@@ -46,6 +46,10 @@ if (class_exists('TimberPost')) {
             return $author;
         }
 
+        function petiton() {
+
+        }
+
         function more_stories() {
             if(!isset($this->more_stories_cache)) {
                 $this->more_stories_cache = array();
@@ -94,7 +98,7 @@ if (class_exists('TimberPost')) {
             $cta_id = get_field('call_to_action_link', $this->ID);
 
             if(!empty($cta_id)) {
-                return Timber::get_post($cta_id);
+                return Timber::get_post($cta_id, 'CallToAction');
             }
             return false;
         }

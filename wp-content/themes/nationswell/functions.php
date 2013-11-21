@@ -80,7 +80,10 @@ add_action('acf/register_fields', 'my_register_fields');
 // Shortcodes
 include_once('lib/shortcodes/placeholder.php');
 
+include_once('lib/classes/ChangeOrgPetition.php');
+include_once('lib/classes/CallToAction.php');
 include_once('lib/classes/NationSwellPost.php');
+
 
 // Configure Menus
 include_once('lib/menu/menu.php');
@@ -98,8 +101,18 @@ include_once('lib/tgm-plugin-activation/tgm-config.php');
 include_once('lib/custom_post_types/call_to_action.php');
 
 
+// Change.org
+function save_petition_data($post_id) {
+    if ($_POST['post_type'] === 'ns_call_to_action') {
+        $cta_type = get_post_meta($post_id, 'type', true);
+        if($cta_type === 'petition'){
+            $petition = new ChangeOrgPetition($post_id);
+            $petition->fetch();
+        }
+    }
+}
 
-
+add_action( 'acf/save_post', 'save_petition_data', 20);
 
 
 
