@@ -116,21 +116,40 @@ add_action( 'acf/save_post', 'save_petition_data', 20);
 
 
 
-//add_action ( 'after_setup_theme', 'setup_pages' );
-//
-//function setup_pages()
-//{
-//
-//    $post = array(
-//        'comment_status' => 'closed',
-//        'ping_status' => 'closed',
-//        'post_status' => 'publish',
-//        'post_title' => 'About',
-//        'post_type' => 'page',
-//    );
-//
-//    // Insert the post into the database
-//    wp_insert_post( $post );
-//    update_post_meta( $id, '_wp_page_template', 'page-static.php' );
-//
-//}
+// Automatically Create the Inital Pages for the Site and set the Homepage to be the Front Page
+if (isset($_GET['activated']) && is_admin()){
+    add_action('init', 'create_initial_pages');
+}
+
+function create_initial_pages() {
+    $pages = array(
+        'home' => 'Home',
+        'about' => 'About',
+        'contact' => 'Contact',
+        'advertise' => 'Advertise',
+        'termsofservice' => 'Terms of Service',
+        'privacy' => 'Privacy Policy',
+        'jobs' => 'Jobs'
+    );
+    foreach($pages as $key => $value) {
+        $id = get_page_by_title($value);
+        $page = array(
+            'post_type'   => 'page',
+            'post_title'  => $value,
+            'post_name'   => $key,
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_parent' => ''
+        );
+        if (!isset($id)) {
+            $post_id = wp_insert_post($page);
+            update_post_meta($post_id, '_wp_page_template', 'page-static.php');
+
+            if($value == 'Home') {
+                update_option( 'show_on_front', 'page' );
+                update_option( 'page_on_front', $post_id);
+            }
+
+        }
+    };
+}
