@@ -74,6 +74,7 @@ function my_register_fields()
     include_once('lib/fields/story_content.php');
     include_once('lib/fields/call_to_action.php');
     include_once('lib/fields/call_to_action_link.php');
+    include_once('lib/fields/tout_options.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');

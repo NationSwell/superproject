@@ -1,0 +1,13 @@
+{% if menu_topic.name %}
+<div class="trending-topics hide_mobile">
+    <div class="container">
+        <h3 class="trending-topics__heading">{{ menu_topic.name }}:</h3>
+
+        <ul class="trending-topics__list">
+            {% for item in menu_topic.get_items %}
+                <li><a href="{{item.get_path}}" class="trending-topics__topic">{{item.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endif %}
