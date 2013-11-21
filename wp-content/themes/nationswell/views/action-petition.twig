@@ -1,9 +1,17 @@
 {% extends "action.twig" %}
 
 {% block action_body %}
+    {% set petition = post.call_to_action.petition %}
     <div class="take-action__a">
-        <p>The following petition will be delivered to <strong>Senator Chuck Schumer (NY-D)</strong>:</p>
-        <small>We urge you to explain to the American  public that the growing population and success in alleviating poverty in developing countries will trigger a surge in demand for food, water and energy over the next two decades, at a time when governments must also make major progress in combating climate change.</small>
+        {% spaceless %}
+            <p>The following petition will be delivered to
+                {% for target in petition.content.targets %}
+                    {% if not loop.first %},{% endif %}
+                    <strong>{{ target.name }}</strong>
+                {% endfor %}:
+            </p>
+        {% endspaceless %}
+        <small>{{ petition.content.letter_body }}</small>
     </div>
 
     <div class="take-action__b">
