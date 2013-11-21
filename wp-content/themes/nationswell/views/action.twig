@@ -1,14 +1,37 @@
 <div class="module module--bg module--red story__take-action take-action cf">
-
     <header>
         <div class="indicator indicator--blue indicator--module icon icon_write"></div>
         <h3 class="hd-e module__heading">Take Action</h3>
     </header>
 
-    <h2 class="hd-l take-action__heading">{{ post.call_to_action.heading }}</h2>
+    <div class="take-action__action">
+        <h2 class="hd-l take-action__heading">{{ post.call_to_action.heading }}</h2>
 
-    <div class="take-action__inner">
         {% block action_body %}
         {% endblock %}
+    </div>
+
+    <div class="take-action__thank-you" style="display: none;">
+        <h2 class="hd-l take-action__heading">{{ post.call_to_action.thank-you-heading }}</h2>
+
+        <p></p>
+
+        <ul class="social author__social">
+            {% if post.call_to_action.facebook_username is not empty %}
+                <li><a href="http://www.facebook.com/{{ post.call_to_action.facebook_username }}" class="btn btn--social icon icon_facebook"></a></li>
+            {% endif %}
+            {% if post.call_to_action.twitter_username is not empty %}
+                <li><a href="http://www.twitter.com/{{ post.call_to_action.twitter_username }}" class="btn btn--social icon icon_twitter"></a></li>
+            {% endif %}
+            {% if post.call_to_action.tumblr is not empty %}
+                <li><a href="{{ post.call_to_action.tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>
+            {% endif %}
+            {% if post.call_to_action.instagram is not empty %}
+                <li><a href="{{ post.call_to_action.instagram }}" class="btn btn--social icon icon_instagram"></a></li>
+            {% endif %}
+            {% if post.call_to_action.google is not empty %}
+                <li><a href="{{ post.call_to_action.google }}" class="btn btn--social icon icon_google-plus"></a></li>
+            {% endif %}
+        </ul>
     </div>
 </div>

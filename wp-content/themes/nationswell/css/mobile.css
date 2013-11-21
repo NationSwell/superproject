@@ -1846,7 +1846,7 @@ a:hover {
   transform: translateX(-50%) translateY(-50%);
 }
 /* line 14, ../scss/partials/base/_modal.scss */
-.modal .is-visible {
+.modal.is-visible {
   visibility: visible;
 }
 
@@ -2695,7 +2695,7 @@ html, body {
 
 /* line 5, ../scss/partials/mobile/_structure.scss */
 .container {
-  padding: 0;
+  padding: 0 2rem;
 }
 
 /* line 11, ../scss/partials/mobile/_structure.scss */
@@ -2989,41 +2989,40 @@ html, body {
   top: 0;
   bottom: 0;
   overflow-y: scroll;
-  z-index: -1;
 }
-/* line 36, ../scss/partials/mobile/_nav.scss */
+/* line 35, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit {
   display: block;
   padding: 4.2rem 3.2rem 4.2rem 6.2rem;
 }
-/* line 40, ../scss/partials/mobile/_nav.scss */
+/* line 39, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--dark {
   background-color: #002130;
 }
-/* line 45, ../scss/partials/mobile/_nav.scss */
+/* line 44, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .site-logo {
   display: block;
   margin: 0 0 3.2rem;
 }
-/* line 50, ../scss/partials/mobile/_nav.scss */
+/* line 49, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .search {
   position: relative;
   background-color: #002130;
   padding: 1.4rem;
   padding-left: 5rem;
 }
-/* line 56, ../scss/partials/mobile/_nav.scss */
+/* line 55, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .search label {
   top: 1.4rem;
   left: 1.4rem;
   font-size: 3rem;
 }
-/* line 65, ../scss/partials/mobile/_nav.scss */
+/* line 64, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 70, ../scss/partials/mobile/_nav.scss */
+/* line 69, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -3032,12 +3031,12 @@ html, body {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 83, ../scss/partials/mobile/_nav.scss */
+/* line 82, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 88, ../scss/partials/mobile/_nav.scss */
+/* line 87, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list .categories__category {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -3048,20 +3047,20 @@ html, body {
 }
 
 /* mobile panel */
-/* line 102, ../scss/partials/mobile/_nav.scss */
+/* line 101, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper {
   overflow-x: hidden;
   right: 47rem;
 }
-/* line 106, ../scss/partials/mobile/_nav.scss */
+/* line 105, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper #page-content {
   pointer-events: none;
 }
-/* line 111, ../scss/partials/mobile/_nav.scss */
+/* line 110, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header {
   background-color: white;
 }
-/* line 114, ../scss/partials/mobile/_nav.scss */
+/* line 113, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header .more-stories-toggle {
   color: #003046;
 }
@@ -3561,8 +3560,8 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 /* line 20, ../scss/partials/mobile/_homepage.scss */
 .hero--homepage.mobile-carousel--hero .hero__entry .story--hero {
-  bottom: -7.8rem;
-  padding: 2.4rem 4.4rem;
+  bottom: 0rem;
+  padding: 2.4rem 4.4rem 1.2rem;
 }
 /* line 26, ../scss/partials/mobile/_homepage.scss */
 .hero--homepage.mobile-carousel--hero .carousel__pagination {

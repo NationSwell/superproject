@@ -21,8 +21,8 @@
         // pageload modals
         $.each($("[data-modal-pageload='true']"), function(index, value){
             if(!$.cookie($(this).data("modal")))  {
-                $(this).addClass('modal--is-visible');
-                $('body').addClass('locked');
+                $(this).addClass('is-visible');
+                $('body').addClass('is-locked');
             }
         });
 
@@ -57,8 +57,8 @@
                     });
                 }
 
-                $modal.addClass('modal--is-visible');
-                $('body').addClass('locked');
+                $modal.addClass('is-visible');
+                $('body').addClass('is-locked');
             }
 
             e.preventDefault();
@@ -210,7 +210,7 @@
                             }
                         },
                         auto: {
-                            play: true,
+                            play: false,
                             timeoutDuration: 8000
                         },
                         swipe: {
