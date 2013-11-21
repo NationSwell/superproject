@@ -1,10 +1,26 @@
 (function ($) {
     $(function () {
     // universal code
+        
+        // share popup window
+        $('.btn--facebook, .btn--twitter').click(function (event) {
+            var width = 575,
+                height = 400,
+                left = ($(window).width() - width) / 2,
+                top = ($(window).height() - height) / 2,
+                url = this.href,
+                opts = 'status=1' +
+                    ',width=' + width +
+                    ',height=' + height +
+                    ',top=' + top +
+                    ',left=' + left;
+            window.open(url, 'twitter', opts);
+            return false;
+        });
 
         // pageload modals
-        $.each($("[data-modal-pageload='true']"), function(index, value) {
-            if(!$.cookie($(this).data("modal"))) {
+        $.each($("[data-modal-pageload='true']"), function(index, value){
+            if(!$.cookie($(this).data("modal")))  {
                 $(this).addClass('modal--is-visible');
                 $('body').addClass('locked');
             }
@@ -173,7 +189,8 @@
 
                         return items;
                     }
-
+                    
+                    // init slideshows
                     $carousel.carouFredSel({
                         responsive: isHero ? true : false,
                         width: '100%',
@@ -209,6 +226,7 @@
 
         // desktop code
         }).register("screen and (min-device-width:1024px)", {
+            // If supplied, triggered when a media query matches.
             match : function() {
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.toggle-collapse", function(e) {
@@ -245,6 +263,7 @@
                         return items;
                     }
 
+                    // init slideshows
                     $carousel.carouFredSel({
                         responsive: isSeries ? true : false,
                         width: '100%',
