@@ -1619,7 +1619,7 @@ a:hover {
 /* line 427, ../scss/partials/base/_components.scss */
 .author__byline:before {
   color: #fc3b40;
-  content: 'Written by';
+  content: 'by';
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;

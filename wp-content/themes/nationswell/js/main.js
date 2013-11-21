@@ -218,7 +218,7 @@
                         },
                         pagination: {
                             container: $this.find('.carousel__pagination'),
-                            deviation: isPeek ? 0 : -1
+                            deviation: isPeek ? 1 : 0
                         }
                     });
                 });
