@@ -8,8 +8,8 @@
 
         <header class="story__header">
             <span class="rubric">{{ post.category }}</span>
-            <h2 class="hd-d story__hed">{{ post.post_title }}</h2>
-            <p class="story__dek">{{ post.dek }}</p>
+            <h2 class="hd-d story__hed">{% if post.tout_heading %}{{ post.tout_heading }} {% else %} {{ post.title }} {% endif %}</h2>
+            <p class="story__dek">{% if post.tout_dek %}{{ post.tout_dek}} {% else %} {{ post.dek }} {% endif %}</p>
 
             {#<div class="support-cause support-cause--urgent">
                 <h4 class="hd-c support-cause__heading">This cause still needs your help!</h4>
