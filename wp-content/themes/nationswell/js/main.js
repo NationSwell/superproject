@@ -1,15 +1,16 @@
 (function ($) {
     $(function () {
-        // Modal
-        $.each($("[data-modal-pageload='true']"), function(index, value){
-            if(!$.cookie($(this).data("modal")))  {
+    // universal code
 
+        // pageload modals
+        $.each($("[data-modal-pageload='true']"), function(index, value) {
+            if(!$.cookie($(this).data("modal"))) {
                 $(this).addClass('modal--is-visible');
                 $('body').addClass('locked');
-
             }
         });
 
+        // resizing take action modals
         var fitTakeAction= function(modal) {
             var windowHeight = $(window).height(),
                 currModalHeight = modal.outerHeight(),
@@ -18,11 +19,11 @@
             console.log('windowHeight: ' + windowHeight + '; currModalHeight: ' + currModalHeight + '; $taContent: ' + $taContent);
 
             if ((windowHeight - currModalHeight) < (.2 * windowHeight)) {
-                console.log('bing.');
                 $taContent.css('height', .44 * windowHeight);
             }
         };
 
+        // opening modals via button press
         $("[data-modal-target]").on("click", function(e) {
             var modalType = $(this).attr('data-modal-target'),
                 $modal = $('.modal--' + modalType),
@@ -47,19 +48,19 @@
             e.preventDefault();
         });
 
-        $("[data-modal]").on("disable", function(event){
-
+        // disabling modals
+        $("[data-modal]").on("disable", function(event) {
             event.stopPropagation();
 
             $.cookie($(this).data("modal"), 'disabled', { expires: 5, path: '/' });
-
         });
 
+        // closing modals
         var $modalClose = $(".modal-overlay, [data-modal-action='close']");
 
         $modalClose.on('click', function() {
-            $('.modal').removeClass('modal--is-visible');
-            $('body').removeClass('locked');
+            $('.modal').removeClass('is-visible');
+            $('body').removeClass('is-locked');
 
             $(window).off('.resizeModal');
 
@@ -68,13 +69,14 @@
             }
         });
 
+        // clearing textarea placeholder text
         $('body').on('focus.textareaClear', 'textarea', function() {
             $(this).empty().unbind('.textareaClear');
         });
 
         // flyout box
         $('.story__container').waypoint(function (direction) {
-            $('#flyout').toggleClass('showing', direction === "down");
+            $('#flyout').toggleClass('is-visible', direction === "down");
         }, {
             offset: function () {
                 return $.waypoints('viewportHeight') - $(this).height() + 200;
@@ -86,10 +88,14 @@
         });
 
         // expand/collapse header search field
-        $("[for='search']").on("click", function() {
-            $('#search').toggleClass('open');
+        $('[for*="search"]').on('click', function() {
+            var input = $(this).attr('for');
+            $('#' + input).toggleClass('is-open');
         });
 
+    // responsive code
+
+        // mobile code
         enquire.register("screen and (max-width: 959px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
@@ -100,13 +106,13 @@
                         target = $this.data("mobile-target"),
                         $target = $(target);
 
-                    $this.toggleClass('toggled');
-                    $target.toggleClass('panel-open');
+                    $this.toggleClass('is-toggled');
+                    $target.toggleClass('panel--is-open');
 
                     e.preventDefault();
                 });
 
-                // init slideshows
+                // slideshows
                 $(".mobile-carousel").each(function () {
                     var $this = $(this),
                         $carousel = $this.find(".carousel__items"),
@@ -139,6 +145,7 @@
                     }
 
                     function highlight(items) {
+                        // external slide titles
                         if(isPeek) {
                             var $activeSlide = items.filter(":eq(1)"),
                                 $activeCaption = $activeSlide.find('.carousel-item__title > span').text(),
@@ -186,25 +193,22 @@
                             }
                         },
                         auto: {
-                            // TEMP: styling
-                            play: false,
+                            play: true,
                             timeoutDuration: 8000
                         },
                         swipe: {
-                            onTouch: true,
-                            // TEMP: styling
-                            onMouse: true
+                            onTouch: true
                         },
                         pagination: {
                             container: $this.find('.carousel__pagination'),
-                            deviation: isPeek ? 1 : -1
+                            deviation: isPeek ? 0 : -1
                         }
                     });
                 });
             }
+
+        // desktop code
         }).register("screen and (min-device-width:1024px)", {
-            // OPTIONAL
-            // If supplied, triggered when a media query matches.
             match : function() {
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.toggle-collapse", function(e) {
@@ -212,13 +216,13 @@
                         target = $this.data("desktop-target"),
                         $target = $(target);
 
-                    $this.toggleClass('toggled');
-                    $target.toggleClass('panel-open');
+                    $this.toggleClass('is-toggled');
+                    $target.toggleClass('panel--is-open');
 
                     e.preventDefault();
                 });
 
-                // init slideshows
+                // slideshows
                 $(".carousel").each(function () {
                     var $this = $(this),
                         $carousel = $this.find(".carousel__items");
@@ -283,6 +287,7 @@
                     offset: 60
                 });
 
+                // bottoming out sharebar at end of article
                 /*var $mainContainer = $('.story__container');
                 $mainContainer.waypoint(function(direction){
                     $(this).toggleClass('bottomed', direction === 'down');
@@ -292,6 +297,7 @@
                     }
                 });*/
 
+                // sliding social buttons
                 var $storySocial = $('.story__social');
                 $storySocial.waypoint(function(direction){
                     $storySocial.toggleClass('is-visible', direction === 'down');
@@ -310,6 +316,7 @@
                     }
                 });
 
+                // sliding take action module
                 var $storyTakeAction = $('.story__take-action');
                 if ($storyTakeAction.length) {
                     $storyTakeAction.waypoint(function(direction) {
@@ -322,7 +329,6 @@
                         }
                     });
                 }
-
             }
         });
     });

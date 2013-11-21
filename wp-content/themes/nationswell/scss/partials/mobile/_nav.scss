@@ -98,7 +98,7 @@
 }
 
 /* mobile panel */
-body.panel-open {
+body.panel--is-open {
   #page-wrapper {
     overflow-x: hidden;
     right: 47rem;

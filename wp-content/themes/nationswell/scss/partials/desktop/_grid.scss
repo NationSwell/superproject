@@ -46,6 +46,10 @@
 
     .story--tease {
       @include span-columns(4 of 4);
+
+      header {
+        margin-top: -1.2rem;
+      }
     }
   }
 }

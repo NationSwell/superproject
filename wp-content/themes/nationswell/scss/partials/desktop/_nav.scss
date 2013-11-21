@@ -13,7 +13,9 @@
     margin-top: 1.6rem;
 
     .slogan {
-      margin-left: 2.1rem;
+      margin-left: 2.2rem;
+      margin-top: -0.4rem;
+      font-size: 1.4rem;
     }
   }
 }
@@ -61,7 +63,7 @@
     top: 0.5rem;
     font-size: 1.4rem;
 
-    &.open {
+    &.is-open {
       padding-right: 3.4rem;
       width: 30rem;
     }

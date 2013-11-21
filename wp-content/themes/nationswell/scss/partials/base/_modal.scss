@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  top: 50%;
+  top: 56%;
   left: 50%;
   min-width: 30rem;
   width: 80%;
@@ -10,10 +10,10 @@
   backface-visibility: hidden;
 
   @include transform(translateX(-50%) translateY(-50%));
-}
 
-.modal--is-visible {
-  visibility: visible;
+  .is-visible {
+    visibility: visible;
+  }
 }
 
 .modal-overlay {
@@ -30,7 +30,7 @@
   @include transition(opacity 0.3s ease-in-out);
 }
 
-.modal--is-visible ~ .modal-overlay {
+.modal.is-visible ~ .modal-overlay {
   opacity: 1;
   visibility: visible;
 }
@@ -43,7 +43,7 @@
   @include transition(all 0.3s ease-in-out);
 }
 
-.modal--is-visible .modal__content {
+.modal.is-visible .modal__content {
   opacity: 1;
 
   @include transform(scale(1));
@@ -60,7 +60,7 @@
   outline: none;
 }
 
-body.locked {
+body.is-locked {
   overflow: hidden;
 }
 
