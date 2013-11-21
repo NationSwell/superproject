@@ -68,6 +68,10 @@
             }
         });
 
+        $('body').on('focus.textareaClear', 'textarea', function() {
+            $(this).empty().unbind('.textareaClear');
+        });
+
         // flyout box
         $('.story__container').waypoint(function (direction) {
             $('#flyout').toggleClass('showing', direction === "down");

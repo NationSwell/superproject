@@ -289,7 +289,9 @@
   .story__take-action {
     clear: both;
     position: relative;
-    left: -100%;
+    left: -110%;
+
+    -webkit-transform: translate3d(0, 0, 0);
 
     &.is-visible {
       left: 0;

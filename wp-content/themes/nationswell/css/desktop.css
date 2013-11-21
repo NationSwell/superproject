@@ -4159,12 +4159,13 @@ input[type="submit"] {
 .story__container .story__take-action {
   clear: both;
   position: relative;
-  left: -100%;
+  left: -110%;
+  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: left 0.3s ease-in-out;
   -moz-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
 }
-/* line 294, ../scss/partials/desktop/_story.scss */
+/* line 296, ../scss/partials/desktop/_story.scss */
 .story__container .story__social.is-visible,
 .story__container .story__take-action.is-visible {
   left: 0;
