@@ -1,30 +1,48 @@
 (function ($) {
     $(function () {
-
         // Modal
         $.each($("[data-modal-pageload='true']"), function(index, value){
-
             if(!$.cookie($(this).data("modal")))  {
 
                 $(this).addClass('modal--is-visible');
                 $('body').addClass('locked');
 
             }
-
         });
 
+        var fitTakeAction= function(modal) {
+            var windowHeight = $(window).height(),
+                currModalHeight = modal.outerHeight(),
+                $taContent = modal.find('.take-action__inner');
+
+            console.log('windowHeight: ' + windowHeight + '; currModalHeight: ' + currModalHeight + '; $taContent: ' + $taContent);
+
+            if ((windowHeight - currModalHeight) < (.2 * windowHeight)) {
+                console.log('bing.');
+                $taContent.css('height', .44 * windowHeight);
+            }
+        };
+
         $("[data-modal-target]").on("click", function(e) {
-            var modalType = $(this).attr('data-modal'),
+            var modalType = $(this).attr('data-modal-target'),
                 $modal = $('.modal--' + modalType),
                 $modalContent = $modal.find('.modal__content');
 
-            if(modalType === 'take-action') {
-                var taContent = $('.story__take-action').html();
-                $modalContent.empty().append(taContent);
-            }
+            if($modal.length) {
+                if(modalType === 'take-action') {
+                    var taContent = $('.story__take-action').html();
+                    $modalContent.empty().append(taContent);
 
-            $modal.addClass('modal--is-visible');
-            $('body').addClass('locked');
+                    fitTakeAction($modal);
+
+                    $(window).on('resize.resizeModal', function() {
+                        fitTakeAction($modal);
+                    });
+                }
+
+                $modal.addClass('modal--is-visible');
+                $('body').addClass('locked');
+            }
 
             e.preventDefault();
         });
@@ -43,13 +61,12 @@
             $('.modal').removeClass('modal--is-visible');
             $('body').removeClass('locked');
 
+            $(window).off('.resizeModal');
+
             if($(this).data('modal-disable')){
                 $(this).trigger("disable");
             }
         });
-
-
-
 
         // flyout box
         $('.story__container').waypoint(function (direction) {

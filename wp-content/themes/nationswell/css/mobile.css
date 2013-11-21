@@ -838,11 +838,7 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 152, ../scss/partials/base/_buttons.scss */
-.btn.btn--external {
-  padding: 0rem 1rem 1rem;
-}
-/* line 155, ../scss/partials/base/_buttons.scss */
+/* line 153, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -2414,17 +2410,21 @@ body.locked {
   text-align: center;
 }
 /* line 349, ../scss/partials/base/_story.scss */
+.module.take-action .take-action__inner {
+  overflow-y: scroll;
+}
+/* line 353, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 356, ../scss/partials/base/_story.scss */
+/* line 360, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
-/* line 360, ../scss/partials/base/_story.scss */
+/* line 364, ../scss/partials/base/_story.scss */
 .module.take-action small {
   color: #7e7e7e;
   display: block;
@@ -2433,11 +2433,11 @@ body.locked {
   overflow: hidden;
   line-height: 1.56;
 }
-/* line 369, ../scss/partials/base/_story.scss */
+/* line 373, ../scss/partials/base/_story.scss */
 .module.take-action strong {
   font-weight: 700;
 }
-/* line 373, ../scss/partials/base/_story.scss */
+/* line 377, ../scss/partials/base/_story.scss */
 .module.take-action em {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
