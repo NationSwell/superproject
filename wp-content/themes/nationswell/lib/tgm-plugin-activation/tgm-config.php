@@ -185,6 +185,16 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Chartbeat',
+            'slug' => 'chartbeat',
+            'source' => get_stylesheet_directory() . '/lib/plugins/chartbeat.2.0.3.zip',
+            'required' => true,
+            'version' => '1.0.1',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
