@@ -2,11 +2,59 @@
 
 {% block action_body %}
     <div class="take-action__a">
-        <img src="http://lorempixel.com/256/256" class="take-action__img">
+        <p>The following petition will be delivered to <strong>Senator Chuck Schumer (NY-D)</strong>:</p>
+        <small>We urge you to explain to the American  public that the growing population and success in alleviating poverty in developing countries will trigger a surge in demand for food, water and energy over the next two decades, at a time when governments must also make major progress in combating climate change.</small>
     </div>
 
     <div class="take-action__b">
-        <p>Show your support for the group’s mission and buy a superhero-blue GirlTrek t-shirt. Wear it out whenever you go walking in your community, particularly on Saturdays.</p>
-        <a href="#" class="btn btn--solid">Buy now</a>
+        <form>
+            <div class="form-element">
+                <label for="ta-first-name">First Name</label>
+                <input type="text" id="ta-first-name" class="take-action__input--text">
+            </div>
+
+            <div class="form-element">
+                <label for="ta-last-name">Last Name</label>
+                <input type="text" id="ta-last-name" class="take-action__input--text">
+            </div>
+
+            <div class="form-element">
+                <label for="ta-email">Email</label>
+                <input type="text" id="ta-email" class="take-action__input--email">
+            </div>
+
+            <div class="form-element">
+                <label for="ta-address">Street Address</label>
+                <input type="text" id="ta-address" class="take-action__input--text">
+            </div>
+
+            <div class="form-element">
+                <label for="ta-city">City</label>
+                <input type="text" id="ta-city" class="take-action__input--text">
+            </div>
+
+            <div class="form-element">
+                <label for="ta-city">City</label>
+                <input type="text" id="ta-city" class="take-action__input--text">
+            </div>
+
+            <div class="form-element form-element--one-third">
+                <label for="ta-state">State</label>
+                <input type="text" id="ta-state" class="take-action__input--text">
+            </div>
+
+            <div class="form-element form-element--two-third form-element--right">
+                <label for="ta-state">Zip Code</label>
+                <input type="text" id="ta-zip" class="take-action__input--text">
+            </div>
+
+            <div class="form element">
+                <textarea>Why is this important to you?</textarea>
+            </div>
+        </form>
+
+        <a href="#" class="btn btn--solid btn--external icon icon_external">Sign up</a>
+
+        <small>By signing, you accept the terms of service and privacy policy</small>
     </div>
 {% endblock %}

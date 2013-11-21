@@ -568,98 +568,113 @@ a:hover {
 }
 
 /* line 56, ../scss/partials/base/_icons.scss */
-.icon_envelope:before {
+.icon_email:before {
   content: "\f109";
 }
 
 /* line 59, ../scss/partials/base/_icons.scss */
-.icon_facebook:before {
+.icon_envelope:before {
   content: "\f10a";
 }
 
 /* line 62, ../scss/partials/base/_icons.scss */
-.icon_fullscreen:before {
+.icon_external:before {
   content: "\f10b";
 }
 
 /* line 65, ../scss/partials/base/_icons.scss */
-.icon_google-plus:before {
+.icon_facebook:before {
   content: "\f10c";
 }
 
 /* line 68, ../scss/partials/base/_icons.scss */
-.icon_hamburger:before {
+.icon_fullscreen:before {
   content: "\f10d";
 }
 
 /* line 71, ../scss/partials/base/_icons.scss */
-.icon_information:before {
+.icon_google-plus:before {
   content: "\f10e";
 }
 
 /* line 74, ../scss/partials/base/_icons.scss */
-.icon_instagram:before {
+.icon_hamburger:before {
   content: "\f10f";
 }
 
 /* line 77, ../scss/partials/base/_icons.scss */
-.icon_load-more:before {
+.icon_information:before {
   content: "\f110";
 }
 
 /* line 80, ../scss/partials/base/_icons.scss */
-.icon_nationswell-flag:before {
+.icon_instagram:before {
   content: "\f111";
 }
 
 /* line 83, ../scss/partials/base/_icons.scss */
-.icon_play:before {
+.icon_link:before {
   content: "\f112";
 }
 
 /* line 86, ../scss/partials/base/_icons.scss */
-.icon_quote:before {
+.icon_load-more:before {
   content: "\f113";
 }
 
 /* line 89, ../scss/partials/base/_icons.scss */
-.icon_search:before {
+.icon_nationswell-flag:before {
   content: "\f114";
 }
 
 /* line 92, ../scss/partials/base/_icons.scss */
-.icon_separator:before {
+.icon_play:before {
   content: "\f115";
 }
 
 /* line 95, ../scss/partials/base/_icons.scss */
-.icon_series:before {
+.icon_quote:before {
   content: "\f116";
 }
 
 /* line 98, ../scss/partials/base/_icons.scss */
-.icon_star:before {
+.icon_search:before {
   content: "\f117";
 }
 
 /* line 101, ../scss/partials/base/_icons.scss */
-.icon_tumblr:before {
+.icon_separator:before {
   content: "\f118";
 }
 
 /* line 104, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
+.icon_series:before {
   content: "\f119";
 }
 
 /* line 107, ../scss/partials/base/_icons.scss */
-.icon_volume:before {
+.icon_star:before {
   content: "\f11a";
 }
 
 /* line 110, ../scss/partials/base/_icons.scss */
-.icon_write:before {
+.icon_tumblr:before {
   content: "\f11b";
+}
+
+/* line 113, ../scss/partials/base/_icons.scss */
+.icon_twitter:before {
+  content: "\f11c";
+}
+
+/* line 116, ../scss/partials/base/_icons.scss */
+.icon_volume:before {
+  content: "\f11d";
+}
+
+/* line 119, ../scss/partials/base/_icons.scss */
+.icon_write:before {
+  content: "\f11e";
 }
 
 /* line 1, ../scss/partials/base/_buttons.scss */
@@ -1310,37 +1325,37 @@ a:hover {
   speak: none;
   font-family: 'icons';
   /* check is correct character after icon font additions */
-  content: "\f117";
+  content: "\f11a";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 201, ../scss/partials/base/_components.scss */
+/* line 202, ../scss/partials/base/_components.scss */
 .module.module--bg p {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 209, ../scss/partials/base/_components.scss */
+/* line 210, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
 }
-/* line 213, ../scss/partials/base/_components.scss */
+/* line 214, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue .module__heading {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 221, ../scss/partials/base/_components.scss */
+/* line 222, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
 }
-/* line 225, ../scss/partials/base/_components.scss */
+/* line 226, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red .module__heading {
   background-color: #832f2d;
 }
-/* line 232, ../scss/partials/base/_components.scss */
+/* line 233, ../scss/partials/base/_components.scss */
 .module.module--list:after {
   background-color: #eeeeee;
   content: '';
@@ -1349,83 +1364,83 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 241, ../scss/partials/base/_components.scss */
+/* line 242, ../scss/partials/base/_components.scss */
 .module.module--list .module__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 247, ../scss/partials/base/_components.scss */
+/* line 248, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li {
   border-bottom: 1px solid #eeeeee;
 }
-/* line 250, ../scss/partials/base/_components.scss */
+/* line 251, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li:last-child {
   border-bottom: 0 none;
 }
-/* line 257, ../scss/partials/base/_components.scss */
+/* line 258, ../scss/partials/base/_components.scss */
 .module.module--list .story--link .story__hed {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 262, ../scss/partials/base/_components.scss */
+/* line 263, ../scss/partials/base/_components.scss */
 .module.module--list .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 270, ../scss/partials/base/_components.scss */
+/* line 271, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
   margin-right: 4.2%;
   vertical-align: top;
 }
-/* line 276, ../scss/partials/base/_components.scss */
+/* line 277, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li:last-child {
   margin-right: 0;
 }
-/* line 284, ../scss/partials/base/_components.scss */
+/* line 285, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 290, ../scss/partials/base/_components.scss */
+/* line 291, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 298, ../scss/partials/base/_components.scss */
+/* line 299, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 303, ../scss/partials/base/_components.scss */
+/* line 304, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
 }
-/* line 307, ../scss/partials/base/_components.scss */
+/* line 308, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: white;
   display: block;
 }
-/* line 313, ../scss/partials/base/_components.scss */
+/* line 314, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
-/* line 321, ../scss/partials/base/_components.scss */
+/* line 322, ../scss/partials/base/_components.scss */
 .module .join-us .btn--bar {
   width: auto;
 }
 
 /* pullquote */
-/* line 333, ../scss/partials/base/_components.scss */
+/* line 334, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 336, ../scss/partials/base/_components.scss */
+/* line 337, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1434,7 +1449,7 @@ a:hover {
   border-radius: 50%;
   text-align: center;
 }
-/* line 345, ../scss/partials/base/_components.scss */
+/* line 346, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1444,33 +1459,33 @@ a:hover {
 }
 
 /* tags */
-/* line 355, ../scss/partials/base/_components.scss */
+/* line 356, ../scss/partials/base/_components.scss */
 .tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 361, ../scss/partials/base/_components.scss */
+/* line 362, ../scss/partials/base/_components.scss */
 .tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* author */
-/* line 368, ../scss/partials/base/_components.scss */
+/* line 369, ../scss/partials/base/_components.scss */
 .author-box {
   background-color: #f6f6f6;
 }
 
-/* line 372, ../scss/partials/base/_components.scss */
+/* line 373, ../scss/partials/base/_components.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 378, ../scss/partials/base/_components.scss */
+/* line 379, ../scss/partials/base/_components.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -1479,26 +1494,26 @@ a:hover {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 386, ../scss/partials/base/_components.scss */
+/* line 387, ../scss/partials/base/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 391, ../scss/partials/base/_components.scss */
+/* line 392, ../scss/partials/base/_components.scss */
 .author__social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 396, ../scss/partials/base/_components.scss */
+/* line 397, ../scss/partials/base/_components.scss */
 .author__social li {
   display: inline-block;
 }
-/* line 399, ../scss/partials/base/_components.scss */
+/* line 400, ../scss/partials/base/_components.scss */
 .author__social li:first-child {
   margin-left: 0;
 }
-/* line 404, ../scss/partials/base/_components.scss */
+/* line 405, ../scss/partials/base/_components.scss */
 .author__social .icon {
   background-color: #dbdbdb;
   color: white;
@@ -1506,32 +1521,32 @@ a:hover {
   text-align: center;
   vertical-align: middle;
 }
-/* line 412, ../scss/partials/base/_components.scss */
+/* line 413, ../scss/partials/base/_components.scss */
 .author__social .icon:hover.icon_facebook {
   background-color: #5973aa;
 }
-/* line 413, ../scss/partials/base/_components.scss */
+/* line 414, ../scss/partials/base/_components.scss */
 .author__social .icon:hover.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 414, ../scss/partials/base/_components.scss */
+/* line 415, ../scss/partials/base/_components.scss */
 .author__social .icon:hover.icon_google-plus {
   background-color: #d34836;
 }
-/* line 415, ../scss/partials/base/_components.scss */
+/* line 416, ../scss/partials/base/_components.scss */
 .author__social .icon:hover.icon_instagram {
   background-color: #37668d;
 }
-/* line 416, ../scss/partials/base/_components.scss */
+/* line 417, ../scss/partials/base/_components.scss */
 .author__social .icon:hover.icon_tumblr {
   background-color: #2c4762;
 }
 
-/* line 422, ../scss/partials/base/_components.scss */
+/* line 423, ../scss/partials/base/_components.scss */
 .author__byline a {
   color: inherit;
 }
-/* line 426, ../scss/partials/base/_components.scss */
+/* line 427, ../scss/partials/base/_components.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'Written by';
@@ -1540,53 +1555,53 @@ a:hover {
   font-weight: 700;
 }
 
-/* line 435, ../scss/partials/base/_components.scss */
+/* line 436, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 440, ../scss/partials/base/_components.scss */
+/* line 441, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 444, ../scss/partials/base/_components.scss */
+/* line 445, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 450, ../scss/partials/base/_components.scss */
+/* line 451, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 455, ../scss/partials/base/_components.scss */
+/* line 456, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 461, ../scss/partials/base/_components.scss */
+/* line 462, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 467, ../scss/partials/base/_components.scss */
+/* line 468, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 475, ../scss/partials/base/_components.scss */
+/* line 476, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 481, ../scss/partials/base/_components.scss */
+/* line 482, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 485, ../scss/partials/base/_components.scss */
+/* line 486, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
@@ -2872,9 +2887,10 @@ input[type="submit"] {
   transition: all 0.15s ease-in-out;
 }
 
-/* line 2, ../scss/partials/desktop/_forms.scss */
+/* line 7, ../scss/partials/desktop/_forms.scss */
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   background-color: white;
   border: 1px solid #e6e6e6;
   border-radius: 0.2rem;

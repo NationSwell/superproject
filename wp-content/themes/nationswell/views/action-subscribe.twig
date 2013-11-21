@@ -2,11 +2,18 @@
 
 {% block action_body %}
     <div class="take-action__a">
-        <img src="http://lorempixel.com/256/256" class="take-action__img">
+        <p>Enter your email address to sign up to our mailing list and receive exclusive updates.</p>
+        <small>* Privacy Policy copy goes here. Fusce luctus convalis justo</small>
     </div>
 
     <div class="take-action__b">
-        <p>Show your support for the group’s mission and buy a superhero-blue GirlTrek t-shirt. Wear it out whenever you go walking in your community, particularly on Saturdays.</p>
-        <a href="#" class="btn btn--solid">Buy now</a>
+        <form>
+            <div class="form-element">
+                <label for="take-action__input--email">Email Address</label>
+                <input type="email" id="ta-email" class="take-action__input--email" placeholder="Enter email address">
+            </div>
+        </form>
+
+        <a href="#" class="btn btn--solid">Sign up</a>
     </div>
 {% endblock %}
