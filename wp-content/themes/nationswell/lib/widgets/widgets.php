@@ -35,9 +35,10 @@ if (function_exists('register_sidebar')) {
 
     register_sidebar(
         array(
-            'name' => 'Global Includes',
-            'id' => 'global_widgets',
+            'name' => 'Information Page Sidebar',
+            'id' => 'sidebar_static',
             'description' => 'Widget Area',
         )
     );
+
 }

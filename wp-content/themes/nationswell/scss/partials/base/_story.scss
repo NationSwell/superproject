@@ -110,7 +110,7 @@
   .story__meta {
     display: block;
     font-family: $gudea;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
 
     li {
       color: $gray4;
@@ -118,17 +118,20 @@
 
       &:first-child {
         &:after {
-          content: '|';
+          content: '\a0\b7\a0';
           display: inline-block;
         }
       }
     }
 
     a {
-      color: $ns_red;
+      color: $gray3;
+      border-bottom: 1px solid $gray3;
+      padding-bottom: 0.1rem;
 
       &:hover {
-        color: $ns_blue1;
+        border-color: $ns_red;
+        color: $ns_red;
       }
     }
   }
@@ -241,7 +244,7 @@
         &:before {
           color: $ns_blue1;
           font-family: 'icons';
-          content: '\f117';
+          content: '\f11a';
           position: absolute;
         }
       }
