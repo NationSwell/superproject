@@ -4486,56 +4486,62 @@ input[type="submit"] {
   margin-bottom: 7.2rem;
 }
 /* line 20, ../scss/partials/desktop/_static.scss */
+.static__container .static__content p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2.2rem;
+}
+/* line 26, ../scss/partials/desktop/_static.scss */
 .static__container .static__content a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 24, ../scss/partials/desktop/_static.scss */
+/* line 30, ../scss/partials/desktop/_static.scss */
 .static__container .static__content a:hover {
   color: #fc3b40;
 }
-/* line 29, ../scss/partials/desktop/_static.scss */
+/* line 35, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 35, ../scss/partials/desktop/_static.scss */
+/* line 41, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
-/* line 40, ../scss/partials/desktop/_static.scss */
+/* line 46, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > h3 {
   font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
-/* line 45, ../scss/partials/desktop/_static.scss */
+/* line 51, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 50, ../scss/partials/desktop/_static.scss */
+/* line 56, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 55, ../scss/partials/desktop/_static.scss */
+/* line 61, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 60, ../scss/partials/desktop/_static.scss */
+/* line 66, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > ol {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 64, ../scss/partials/desktop/_static.scss */
+/* line 70, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > ol li {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
 }
-/* line 68, ../scss/partials/desktop/_static.scss */
+/* line 74, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > ol li:before {
   font-size: 1.2rem;
   width: 2.4rem;
@@ -4544,17 +4550,17 @@ input[type="submit"] {
   margin-right: 1.4rem;
   left: -4.2rem;
 }
-/* line 79, ../scss/partials/desktop/_static.scss */
+/* line 85, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > ul {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 83, ../scss/partials/desktop/_static.scss */
+/* line 89, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > ul li {
   font-size: 1.8rem;
   margin-bottom: 1.4rem;
 }
-/* line 87, ../scss/partials/desktop/_static.scss */
+/* line 93, ../scss/partials/desktop/_static.scss */
 .static__container .static__content > ul li:before {
   left: -3.4rem;
 }

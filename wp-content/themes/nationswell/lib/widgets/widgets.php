@@ -33,4 +33,12 @@ if (function_exists('register_sidebar')) {
         )
     );
 
+    register_sidebar(
+        array(
+            'name' => 'Information Page Sidebar',
+            'id' => 'sidebar_static',
+            'description' => 'Widget Area',
+        )
+    );
+
 }
