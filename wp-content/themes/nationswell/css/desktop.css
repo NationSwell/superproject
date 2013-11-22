@@ -3132,61 +3132,62 @@ input[type="submit"] {
 /* logo and slogan */
 /* line 7, ../scss/partials/desktop/_nav.scss */
 .site-logo img {
-  width: 16.8rem;
+  width: 24.8rem;
+  margin-left: -1.1rem;
   height: auto;
 }
-/* line 12, ../scss/partials/desktop/_nav.scss */
+/* line 13, ../scss/partials/desktop/_nav.scss */
 .site-logo.site-logo--slogan {
-  margin-top: 1.6rem;
+  margin-top: 1.2rem;
 }
-/* line 15, ../scss/partials/desktop/_nav.scss */
+/* line 16, ../scss/partials/desktop/_nav.scss */
 .site-logo.site-logo--slogan .slogan {
   margin-left: 2.2rem;
-  margin-top: -0.4rem;
-  font-size: 1.4rem;
+  margin-top: -1rem;
+  font-size: 1.2rem;
 }
 
 /* more stories toggle */
-/* line 24, ../scss/partials/desktop/_nav.scss */
+/* line 25, ../scss/partials/desktop/_nav.scss */
 .more-stories-toggle {
   font-size: 4.4rem;
   padding-top: 2.3rem;
 }
 
 /* social links */
-/* line 30, ../scss/partials/desktop/_nav.scss */
+/* line 31, ../scss/partials/desktop/_nav.scss */
 .social-links {
   height: 7.2rem;
   margin-right: 3.4rem;
   padding-top: 2.8rem;
   padding-right: 0.6rem;
 }
-/* line 36, ../scss/partials/desktop/_nav.scss */
+/* line 37, ../scss/partials/desktop/_nav.scss */
 .social-links li {
   margin-right: 2.8rem;
 }
 
-/* line 41, ../scss/partials/desktop/_nav.scss */
+/* line 42, ../scss/partials/desktop/_nav.scss */
 .social-links__link {
   font-size: 3.2rem;
 }
 
 /* search */
-/* line 46, ../scss/partials/desktop/_nav.scss */
+/* line 47, ../scss/partials/desktop/_nav.scss */
 .search {
   margin-right: 2.8rem;
 }
-/* line 49, ../scss/partials/desktop/_nav.scss */
+/* line 50, ../scss/partials/desktop/_nav.scss */
 .search label {
   height: 7.2rem;
   padding-top: 2.8rem;
   width: 3.8rem;
 }
-/* line 54, ../scss/partials/desktop/_nav.scss */
+/* line 55, ../scss/partials/desktop/_nav.scss */
 .search label:before {
   font-size: 3.2rem;
 }
-/* line 59, ../scss/partials/desktop/_nav.scss */
+/* line 60, ../scss/partials/desktop/_nav.scss */
 .search input[type="text"] {
   width: 3.8rem;
   height: 7.2rem;
@@ -3194,20 +3195,20 @@ input[type="submit"] {
   top: 0.5rem;
   font-size: 1.4rem;
 }
-/* line 66, ../scss/partials/desktop/_nav.scss */
+/* line 67, ../scss/partials/desktop/_nav.scss */
 .search input[type="text"].is-open {
   padding-right: 3.4rem;
   width: 30rem;
 }
 
 /* trending topics */
-/* line 75, ../scss/partials/desktop/_nav.scss */
+/* line 76, ../scss/partials/desktop/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 80, ../scss/partials/desktop/_nav.scss */
+/* line 81, ../scss/partials/desktop/_nav.scss */
 .trending-topics__heading {
   display: inline-block;
   color: #9aacb5;
@@ -3216,7 +3217,7 @@ input[type="submit"] {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 88, ../scss/partials/desktop/_nav.scss */
+/* line 89, ../scss/partials/desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;
@@ -4311,6 +4312,11 @@ input[type="submit"] {
 .story__container .story__take-action.is-visible {
   left: 0;
   height: auto;
+}
+
+/* line 326, ../scss/partials/desktop/_story.scss */
+.fb-comments {
+  margin-bottom: 7.2rem;
 }
 
 /* line 1, ../scss/partials/desktop/_archive.scss */
