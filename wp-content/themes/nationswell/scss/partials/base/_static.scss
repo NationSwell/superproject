@@ -1,20 +1,22 @@
 .static__container {
-  header {
-    position: relative;
-    margin-bottom: 3.4rem;
+  .static__main-column {
+    header {
+      position: relative;
+      margin-bottom: 3.4rem;
 
-    &:after {
-      background-color: $gray5;
-      content: '';
-      display: block;
-      width: 20%;
-      height: 0.7rem;
-    }
+      &:after {
+        background-color: $gray5;
+        content: '';
+        display: block;
+        width: 20%;
+        height: 0.7rem;
+      }
 
-    .static__last-updated {
-      color: $ns_black;
-      font-family: $gudea;
-      font-weight: $regular;
+      .static__last-updated {
+        color: $ns_black;
+        font-family: $gudea;
+        font-weight: $regular;
+      }
     }
   }
 

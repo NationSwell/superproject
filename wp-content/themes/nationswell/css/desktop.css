@@ -2513,47 +2513,47 @@ body.is-locked {
   line-height: 1.56;
 }
 
-/* line 2, ../scss/partials/base/_static.scss */
-.static__container header {
+/* line 3, ../scss/partials/base/_static.scss */
+.static__container .static__main-column header {
   position: relative;
   margin-bottom: 3.4rem;
 }
-/* line 6, ../scss/partials/base/_static.scss */
-.static__container header:after {
+/* line 7, ../scss/partials/base/_static.scss */
+.static__container .static__main-column header:after {
   background-color: #dbdbdb;
   content: '';
   display: block;
   width: 20%;
   height: 0.7rem;
 }
-/* line 14, ../scss/partials/base/_static.scss */
-.static__container header .static__last-updated {
+/* line 15, ../scss/partials/base/_static.scss */
+.static__container .static__main-column header .static__last-updated {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
   font-weight: 400;
 }
-/* line 21, ../scss/partials/base/_static.scss */
+/* line 23, ../scss/partials/base/_static.scss */
 .static__container .static__content {
   font-family: "Gudea", Arial, sans-serif;
 }
-/* line 24, ../scss/partials/base/_static.scss */
+/* line 26, ../scss/partials/base/_static.scss */
 .static__container .static__content a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 28, ../scss/partials/base/_static.scss */
+/* line 30, ../scss/partials/base/_static.scss */
 .static__container .static__content a:hover {
   color: #fc3b40;
 }
-/* line 33, ../scss/partials/base/_static.scss */
+/* line 35, ../scss/partials/base/_static.scss */
 .static__container .static__content em, .static__container .static__content i {
   font-style: italic;
 }
-/* line 37, ../scss/partials/base/_static.scss */
+/* line 39, ../scss/partials/base/_static.scss */
 .static__container .static__content strong, .static__container .static__content b {
   font-weight: 700;
 }
-/* line 41, ../scss/partials/base/_static.scss */
+/* line 43, ../scss/partials/base/_static.scss */
 .static__container .static__content > h1 {
   color: #5ec2e8;
   font-family: "Oswald", Arial, sans-serif;
@@ -2563,7 +2563,7 @@ body.is-locked {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 51, ../scss/partials/base/_static.scss */
+/* line 53, ../scss/partials/base/_static.scss */
 .static__container .static__content > h2 {
   color: #1fade0;
   font-family: "Oswald", Arial, sans-serif;
@@ -2571,14 +2571,14 @@ body.is-locked {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 59, ../scss/partials/base/_static.scss */
+/* line 61, ../scss/partials/base/_static.scss */
 .static__container .static__content > h3 {
   color: #fc3b40;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 66, ../scss/partials/base/_static.scss */
+/* line 68, ../scss/partials/base/_static.scss */
 .static__container .static__content > h4 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
@@ -2586,21 +2586,21 @@ body.is-locked {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 74, ../scss/partials/base/_static.scss */
+/* line 76, ../scss/partials/base/_static.scss */
 .static__container .static__content > h5 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 81, ../scss/partials/base/_static.scss */
+/* line 83, ../scss/partials/base/_static.scss */
 .static__container .static__content > h6 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 88, ../scss/partials/base/_static.scss */
+/* line 90, ../scss/partials/base/_static.scss */
 .static__container .static__content hr {
   border: 0;
   height: 0.3rem;
@@ -2608,17 +2608,17 @@ body.is-locked {
   width: 100%;
   display: block;
 }
-/* line 96, ../scss/partials/base/_static.scss */
+/* line 98, ../scss/partials/base/_static.scss */
 .static__container .static__content > ol {
   counter-reset: li;
 }
-/* line 99, ../scss/partials/base/_static.scss */
+/* line 101, ../scss/partials/base/_static.scss */
 .static__container .static__content > ol li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   position: relative;
 }
-/* line 104, ../scss/partials/base/_static.scss */
+/* line 106, ../scss/partials/base/_static.scss */
 .static__container .static__content > ol li:before {
   background-color: #fc3b40;
   counter-increment: li;
@@ -2630,14 +2630,14 @@ body.is-locked {
   position: absolute;
   text-align: center;
 }
-/* line 119, ../scss/partials/base/_static.scss */
+/* line 121, ../scss/partials/base/_static.scss */
 .static__container .static__content > ul li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.2;
   position: relative;
 }
-/* line 125, ../scss/partials/base/_static.scss */
+/* line 127, ../scss/partials/base/_static.scss */
 .static__container .static__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
@@ -3279,61 +3279,62 @@ input[type="submit"] {
 /* logo and slogan */
 /* line 7, ../scss/partials/desktop/_nav.scss */
 .site-logo img {
-  width: 16.8rem;
+  width: 24.8rem;
+  margin-left: -1.1rem;
   height: auto;
 }
-/* line 12, ../scss/partials/desktop/_nav.scss */
+/* line 13, ../scss/partials/desktop/_nav.scss */
 .site-logo.site-logo--slogan {
-  margin-top: 1.6rem;
+  margin-top: 1.2rem;
 }
-/* line 15, ../scss/partials/desktop/_nav.scss */
+/* line 16, ../scss/partials/desktop/_nav.scss */
 .site-logo.site-logo--slogan .slogan {
   margin-left: 2.2rem;
-  margin-top: -0.4rem;
-  font-size: 1.4rem;
+  margin-top: -1rem;
+  font-size: 1.2rem;
 }
 
 /* more stories toggle */
-/* line 24, ../scss/partials/desktop/_nav.scss */
+/* line 25, ../scss/partials/desktop/_nav.scss */
 .more-stories-toggle {
   font-size: 4.4rem;
   padding-top: 2.3rem;
 }
 
 /* social links */
-/* line 30, ../scss/partials/desktop/_nav.scss */
+/* line 31, ../scss/partials/desktop/_nav.scss */
 .social-links {
   height: 7.2rem;
   margin-right: 3.4rem;
   padding-top: 2.8rem;
   padding-right: 0.6rem;
 }
-/* line 36, ../scss/partials/desktop/_nav.scss */
+/* line 37, ../scss/partials/desktop/_nav.scss */
 .social-links li {
   margin-right: 2.8rem;
 }
 
-/* line 41, ../scss/partials/desktop/_nav.scss */
+/* line 42, ../scss/partials/desktop/_nav.scss */
 .social-links__link {
   font-size: 3.2rem;
 }
 
 /* search */
-/* line 46, ../scss/partials/desktop/_nav.scss */
+/* line 47, ../scss/partials/desktop/_nav.scss */
 .search {
   margin-right: 2.8rem;
 }
-/* line 49, ../scss/partials/desktop/_nav.scss */
+/* line 50, ../scss/partials/desktop/_nav.scss */
 .search label {
   height: 7.2rem;
   padding-top: 2.8rem;
   width: 3.8rem;
 }
-/* line 54, ../scss/partials/desktop/_nav.scss */
+/* line 55, ../scss/partials/desktop/_nav.scss */
 .search label:before {
   font-size: 3.2rem;
 }
-/* line 59, ../scss/partials/desktop/_nav.scss */
+/* line 60, ../scss/partials/desktop/_nav.scss */
 .search input[type="text"] {
   width: 3.8rem;
   height: 7.2rem;
@@ -3341,20 +3342,20 @@ input[type="submit"] {
   top: 0.5rem;
   font-size: 1.4rem;
 }
-/* line 66, ../scss/partials/desktop/_nav.scss */
+/* line 67, ../scss/partials/desktop/_nav.scss */
 .search input[type="text"].is-open {
   padding-right: 3.4rem;
   width: 30rem;
 }
 
 /* trending topics */
-/* line 75, ../scss/partials/desktop/_nav.scss */
+/* line 76, ../scss/partials/desktop/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 80, ../scss/partials/desktop/_nav.scss */
+/* line 81, ../scss/partials/desktop/_nav.scss */
 .trending-topics__heading {
   display: inline-block;
   color: #9aacb5;
@@ -3363,7 +3364,7 @@ input[type="submit"] {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 88, ../scss/partials/desktop/_nav.scss */
+/* line 89, ../scss/partials/desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;
@@ -4458,6 +4459,11 @@ input[type="submit"] {
 .story__container .story__take-action.is-visible {
   left: 0;
   height: auto;
+}
+
+/* line 326, ../scss/partials/desktop/_story.scss */
+.fb-comments {
+  margin-bottom: 7.2rem;
 }
 
 /* line 1, ../scss/partials/desktop/_static.scss */

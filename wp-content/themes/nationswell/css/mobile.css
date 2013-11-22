@@ -2520,47 +2520,47 @@ body.is-locked {
   line-height: 1.56;
 }
 
-/* line 2, ../scss/partials/base/_static.scss */
-.static__container header {
+/* line 3, ../scss/partials/base/_static.scss */
+.static__container .static__main-column header {
   position: relative;
   margin-bottom: 3.4rem;
 }
-/* line 6, ../scss/partials/base/_static.scss */
-.static__container header:after {
+/* line 7, ../scss/partials/base/_static.scss */
+.static__container .static__main-column header:after {
   background-color: #dbdbdb;
   content: '';
   display: block;
   width: 20%;
   height: 0.7rem;
 }
-/* line 14, ../scss/partials/base/_static.scss */
-.static__container header .static__last-updated {
+/* line 15, ../scss/partials/base/_static.scss */
+.static__container .static__main-column header .static__last-updated {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
   font-weight: 400;
 }
-/* line 21, ../scss/partials/base/_static.scss */
+/* line 23, ../scss/partials/base/_static.scss */
 .static__container .static__content {
   font-family: "Gudea", Arial, sans-serif;
 }
-/* line 24, ../scss/partials/base/_static.scss */
+/* line 26, ../scss/partials/base/_static.scss */
 .static__container .static__content a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 28, ../scss/partials/base/_static.scss */
+/* line 30, ../scss/partials/base/_static.scss */
 .static__container .static__content a:hover {
   color: #fc3b40;
 }
-/* line 33, ../scss/partials/base/_static.scss */
+/* line 35, ../scss/partials/base/_static.scss */
 .static__container .static__content em, .static__container .static__content i {
   font-style: italic;
 }
-/* line 37, ../scss/partials/base/_static.scss */
+/* line 39, ../scss/partials/base/_static.scss */
 .static__container .static__content strong, .static__container .static__content b {
   font-weight: 700;
 }
-/* line 41, ../scss/partials/base/_static.scss */
+/* line 43, ../scss/partials/base/_static.scss */
 .static__container .static__content > h1 {
   color: #5ec2e8;
   font-family: "Oswald", Arial, sans-serif;
@@ -2570,7 +2570,7 @@ body.is-locked {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 51, ../scss/partials/base/_static.scss */
+/* line 53, ../scss/partials/base/_static.scss */
 .static__container .static__content > h2 {
   color: #1fade0;
   font-family: "Oswald", Arial, sans-serif;
@@ -2578,14 +2578,14 @@ body.is-locked {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 59, ../scss/partials/base/_static.scss */
+/* line 61, ../scss/partials/base/_static.scss */
 .static__container .static__content > h3 {
   color: #fc3b40;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 66, ../scss/partials/base/_static.scss */
+/* line 68, ../scss/partials/base/_static.scss */
 .static__container .static__content > h4 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
@@ -2593,21 +2593,21 @@ body.is-locked {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 74, ../scss/partials/base/_static.scss */
+/* line 76, ../scss/partials/base/_static.scss */
 .static__container .static__content > h5 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 81, ../scss/partials/base/_static.scss */
+/* line 83, ../scss/partials/base/_static.scss */
 .static__container .static__content > h6 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 88, ../scss/partials/base/_static.scss */
+/* line 90, ../scss/partials/base/_static.scss */
 .static__container .static__content hr {
   border: 0;
   height: 0.3rem;
@@ -2615,17 +2615,17 @@ body.is-locked {
   width: 100%;
   display: block;
 }
-/* line 96, ../scss/partials/base/_static.scss */
+/* line 98, ../scss/partials/base/_static.scss */
 .static__container .static__content > ol {
   counter-reset: li;
 }
-/* line 99, ../scss/partials/base/_static.scss */
+/* line 101, ../scss/partials/base/_static.scss */
 .static__container .static__content > ol li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   position: relative;
 }
-/* line 104, ../scss/partials/base/_static.scss */
+/* line 106, ../scss/partials/base/_static.scss */
 .static__container .static__content > ol li:before {
   background-color: #fc3b40;
   counter-increment: li;
@@ -2637,14 +2637,14 @@ body.is-locked {
   position: absolute;
   text-align: center;
 }
-/* line 119, ../scss/partials/base/_static.scss */
+/* line 121, ../scss/partials/base/_static.scss */
 .static__container .static__content > ul li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.2;
   position: relative;
 }
-/* line 125, ../scss/partials/base/_static.scss */
+/* line 127, ../scss/partials/base/_static.scss */
 .static__container .static__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
