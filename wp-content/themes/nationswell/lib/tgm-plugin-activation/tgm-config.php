@@ -88,9 +88,9 @@ function my_theme_register_required_plugins()
         array(
             'name' => 'Codepress Admin Columns: Pro',
             'slug' => 'cac-addon-pro',
-            'source' => get_stylesheet_directory() . '/lib/plugins/cac-addon-pro-104.zip',
+            'source' => get_stylesheet_directory() . '/lib/plugins/cac-addon-pro-105.zip',
             'required' => true,
-            'version' => '1.0.4',
+            'version' => '1.0.5',
             'force_activation' => true,
             'force_deactivation' => true,
             'external_url' => '',
