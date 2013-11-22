@@ -55,7 +55,7 @@ class ChangeOrgApi {
             'source_description' => 'This is a test description.', // Something human readable.
             'source' => 'test_source', // Eventually included in every signature submitted with the auth key obtained with this request.
             'requester_email' => 'mark@ronikdesign.com', // The email associated with your API key and Change.org account.
-            'timestamp' => gmdate("Y-m-d\TH:i:s\Z"), // ISO-8601-formtted timestamp at UTC
+            'timestamp' => gmdate("Y-m-d\TH:i:s\Z"), // ISO-8601-formatted timestamp at UTC
             'endpoint' => $endpoint
         );
         
