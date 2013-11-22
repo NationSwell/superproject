@@ -41,17 +41,17 @@
             </ul>
 
             <div class="sidebar">
+                {{ sidebar_homepage_1 }}
                 {#<div class="ad ad--300 hide_mobile">#}
                     {#<div class="ad__container">#}
                         {#<img src="http://placehold.it/300x600"/>#}
                     {#</div>#}
                 {#</div>#}
-
-                {% include 'widget-joinus.twig' %}
             </div>
         </div>
     </div>
 
+    {% if series_carousel %}
     <div class="carousel carousel--full-width carousel--series mobile-carousel mobile-carousel--peek">
         <ul class="carousel__items">
             {% for series in series_carousel %}
@@ -90,6 +90,7 @@
             </li>
         </ul>
     </div>
+    {% endif %}
 
     <div class="river river--one-col">
         <div class="container">
@@ -100,6 +101,7 @@
             </ul>
 
             <div class="sidebar">
+                {{ sidebar_homepage_2 }}
                 {#<div class="ad ad--300 hide_mobile">#}
                     {#<div class="ad__container">#}
                         {#<img src="http://placehold.it/300x250"/>#}
@@ -151,6 +153,7 @@
         </div>
     </div>
 
+    {% if stories_carousel %}
     <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek">
         <ul class="carousel__items">
             {% for post in stories_carousel %}
@@ -184,6 +187,7 @@
             </li>
         </ul>
     </div>
+    {% endif %}
 
     <div class="river river--one-col">
         <div class="container">
@@ -194,19 +198,20 @@
             </ul>
 
             <div class="sidebar">
-                <div class="module module--image-overlay module--sidebar featured-story cf" style="background-image: url(http://lorempixel.com/1366/767);">
-                    <article class="story story--tease story--featured">
-                        <a href="#" class="link-wrapper">
-                            <header class="story__header">
-                                <span class="rubric">Environment</span>
-                                <h2 class="hd-d story__hed">A Renewable Energy Tax Credit May Die At The End Of This Year</h2>
-                                <p class="story__dek">A tax credit promoting wind energy and other renewables is set to die at the end of the year, and for the moment there's no obvious way to resurrect it.</p>
-                            </header>
+                {{ sidebar_homepage_3 }}
+                {#<div class="module module--image-overlay module--sidebar featured-story cf" style="background-image: url(http://lorempixel.com/1366/767);">#}
+                    {#<article class="story story--tease story--featured">#}
+                        {#<a href="#" class="link-wrapper">#}
+                            {#<header class="story__header">#}
+                                {#<span class="rubric">Environment</span>#}
+                                {#<h2 class="hd-d story__hed">A Renewable Energy Tax Credit May Die At The End Of This Year</h2>#}
+                                {#<p class="story__dek">A tax credit promoting wind energy and other renewables is set to die at the end of the year, and for the moment there's no obvious way to resurrect it.</p>#}
+                            {#</header>#}
 
-                            <div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm.png" class="sponsor__logo"/></div>
-                        </a>
-                    </article>
-                </div>
+                            {#<div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm.png" class="sponsor__logo"/></div>#}
+                        {#</a>#}
+                    {#</article>#}
+                {#</div>#}
             </div>
         </div>
     </div>

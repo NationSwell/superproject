@@ -5,8 +5,10 @@
   visibility: hidden;
 }
 
-// force chrome bug: hardware acceleration and redraw
-/*
-html *:not(svg) {
-  @include transform(translateZ(0));
-}*/
+.container {
+  width: 75em;
+}
+
+.river {
+  padding-top: 5rem;
+}

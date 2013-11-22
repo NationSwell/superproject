@@ -6,7 +6,7 @@
     .hero__entry {
       &.hero__entry--1 {
         height: 56rem;
-        width: 50%;
+        width: 60%;
         box-shadow: inset -2px 0 0 $white;
 
         &:after {
@@ -32,7 +32,7 @@
       &.hero__entry--2,
       &.hero__entry--3 {
         height: 28rem;
-        width: 50%;
+        width: 40%;
 
         .story__hed {
           margin-bottom: 1.8rem;

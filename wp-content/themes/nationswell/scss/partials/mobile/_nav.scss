@@ -31,7 +31,6 @@
   top: 0;
   bottom: 0;
   overflow-y: scroll;
-  z-index: -1;
 
   .drawer-unit {
     display: block;
@@ -98,7 +97,7 @@
 }
 
 /* mobile panel */
-body.panel-open {
+body.panel--is-open {
   #page-wrapper {
     overflow-x: hidden;
     right: 47rem;

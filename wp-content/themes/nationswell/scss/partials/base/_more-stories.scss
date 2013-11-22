@@ -8,7 +8,7 @@
 
   @include transition(all 0.3s ease-in-out);
 
-  &.panel-open {
+  &.panel--is-open {
     height: 46rem;
   }
 
@@ -43,6 +43,7 @@
     display: block;
     font-family: $montserrat;
     font-size: 1.4rem;
+    line-height: 1.4;
     font-weight: $regular;
     padding: 1.2rem 0 1.2rem 3rem;
 
