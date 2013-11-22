@@ -1,19 +1,19 @@
 <?php
 
 class ChangeOrgPetition {
-    private $debug = true;
-    private $api_key = '937ae45924510660d19d71f3622aee68810b8e8969c418da92afdde2e618be8f';
-    private $secret = '9955d60df46358b12c33646352e54c50a28ea2f54fdc45fe4d7457307d847cf5';
+    private $debug = false;
+
+    private $post_id;
+    private $change_org_api;
 
     private $url;
-    private $post_id;
-
     private $id;
     private $auth_key;
     private $content;
 
-    function __construct($post_id) {
+    function __construct($post_id, $change_org_api = false) {
         $this->post_id = $post_id;
+        $this->change_org_api = $change_org_api;
 
         $this->url = get_post_meta($this->post_id, 'change_url',true);
         $this->id = $this->get_post_field('id');
@@ -59,30 +59,44 @@ class ChangeOrgPetition {
     }
 
     public function fetch() {
-        if($this->should_fetch()) {
-            $this->log("updating");
+        if($this->change_org_api) {
+            $api = $this->change_org_api;
 
-            $id = $this->fetch_id();
-            if($id) {
-                $auth_key = $this->fetch_auth_key();
-                if($auth_key) {
-                    $this->set_id('id', $id);
-                    $this->set_auth_key($auth_key);
-                    $this->set_post_field('hash', $this->hash());
+            if($this->should_fetch()) {
+                $this->log("updating");
+
+                $id = $api->get_id($this->url);
+                if($id) {
+                    $auth_key = $api->get_auth_key($id);
+                    if($auth_key) {
+                        $this->set_id($id);
+                        $this->set_auth_key($auth_key);
+                        $this->set_post_field('hash', $this->hash());
+                    }
                 }
             }
+            else {
+                $this->log("not updated");
+            }
+
+            $petition_content = $api->get_petition_json($this->id);
+            if($petition_content) {
+                $this->log("updated content");
+                $this->set_content($petition_content);
+            }
+
+            $this->log($this);
         }
-        else {
-            $this->log("not updated");
+    }
+
+    public function sign() {
+        $result = false;
+        if($this->change_org_api) {
+
+            $result = $this->change_org_api->sign_petition($this->id, $this->auth_key);
         }
 
-        $petition_content = $this->fetch_content();
-        if($petition_content) {
-            $this->log("updated content");
-            $this->set_content($petition_content);
-        }
-
-        $this->log(get_post_meta($this->post_id));
+        return $result;
     }
 
     private function should_fetch() {
@@ -107,72 +121,7 @@ class ChangeOrgPetition {
         update_post_meta($this->post_id, '_change_' . $name, $value);
     }
 
-    private function fetch_id() {
-        $query_string = http_build_query(array('api_key' => $this->api_key, 'petition_url' => $this->url));
-        $response = file_get_contents("https://api.change.org/v1/petitions/get_id?" . $query_string);
-
-        $result = false;
-        if($response) {
-            $json_response = json_decode($response, true);
-            if($json_response) {
-                $result = $json_response['petition_id'];
-            }
-        }
-
-        return $result;
-    }
-
-    private function fetch_content() {
-        return file_get_contents('https://api.change.org/v1/petitions/' . $this->id . '?api_key=' . $this->api_key);
-    }
-
     private function hash() {
         return md5($this->url . $this->id . $this->auth_key);
     }
-
-    private function fetch_auth_key() {
-        $host = 'https://api.change.org';
-        $endpoint = "/v1/petitions/" . $this->id . "/auth_keys";
-        $request_url = $host . $endpoint;
-
-        $params = array();
-        $params['api_key'] = $this->api_key;
-        $params['source_description'] = 'This is a test description.'; // Something human readable.
-        $params['source'] = 'test_source'; // Eventually included in every signature submitted with the auth key obtained with this request.
-        $params['requester_email'] = 'mark@ronikdesign.com'; // The email associated with your API key and Change.org account.
-        $params['timestamp'] = gmdate("Y-m-d\TH:i:s\Z"); // ISO-8601-formtted timestamp at UTC
-        $params['endpoint'] = $endpoint;
-
-        // Build request signature and add it as a parameter
-        $query_string_with_secret_and_auth_key = http_build_query($params) . $this->secret;
-        $params['rsig'] = hash('sha256', $query_string_with_secret_and_auth_key);
-
-        // Final request body
-        $query = http_build_query($params);
-
-        // Make the request
-        $curl_session = curl_init();
-        curl_setopt_array($curl_session, array(
-                CURLOPT_POST => 1,
-                CURLOPT_URL => $request_url,
-                CURLOPT_POSTFIELDS => $query,
-                CURLOPT_RETURNTRANSFER => true
-            ));
-
-        $result = false;
-
-        $response = curl_exec($curl_session);
-
-        curl_close($curl_session);
-
-        if($response) {
-            $json_response = json_decode($response, true);
-            if($json_response) {
-                $result = $json_response['auth_key'];
-            }
-        }
-        return $result;
-    }
-
-
 }

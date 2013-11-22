@@ -14,8 +14,7 @@
         js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=283384575022710";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 {% include 'panel-more-stories.twig' %}
 
@@ -39,10 +38,17 @@
     {% include 'footer.twig' %}
 </div>
 
+{% block modals %}
+{% if modal_joinus_enabled %}
+    {% include 'modal-joinus.twig' %}
+{% endif %}
+
 {% include 'modal.twig' %}
+{% endblock %}
 
 {{ wp_footer }}
 
+{% block body_includes %}
 {# TODO: Integrate these files into the theme#}
 <script src="/{{ theme_dir }}/js/vendor/jquery.cookie.js"></script>
 <script src="/{{ theme_dir }}/js/vendor/enquire.js"></script>
@@ -78,6 +84,7 @@
                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
     })();
 </script>
+{% endblock %}
 
 </body>
 </html>

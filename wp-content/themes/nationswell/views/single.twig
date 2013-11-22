@@ -42,13 +42,13 @@
                     </div>
                 </article>
 
-                <div class="story__tags">
-                    <ul class="tags-list">
-                        {% for  category in post.categories %}
-                            dump                          <li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>
-                    {%  endfor %}
-                    </ul>
-                </div>
+                {#<div class="story__tags">#}
+                    {#<ul class="tags-list">#}
+                        {#{% for  category in post.categories %}#}
+                            {#<li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>#}
+                    {#{%  endfor %}#}
+                    {#</ul>#}
+                {#</div>#}
 
                 <div class="author-box cf">
                     <div class="author__a">
@@ -77,6 +77,12 @@
                     </div>
                 </div>
 
+                {#<div class="ad ad--300 ad--pull">#}
+                    {#<div class="ad__container">#}
+                        {#<img src="http://placehold.it/300x250"/>#}
+                    {#</div>#}
+                {#</div>#}
+
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
                 {% endif %}
@@ -85,6 +91,8 @@
                     <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook icon icon_facebook">Share on Facebook</a>
                     <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter icon icon_twitter">Share on Twitter</a>
                 </div>
+
+                {% include('comments.twig') %}
 
                 <ul class="prev-next cf">
                     {% if post.next is not empty %}
@@ -123,7 +131,7 @@
     {% if post.more_stories is not empty %}
         <div class="read-next">
             <div class="container">
-                <h3 class="hd-g read-next__heading">Read More in {{ post.category }}</h3>
+                <h3 class="hd-g read-next__heading">More Stories in {{ post.category }}</h3>
 
                 <ul class="story-list">
                     {% for story in post.more_stories %}
@@ -135,6 +143,7 @@
                                     </figure>
 
                                     <header class="story__header">
+                                        {#<span class="rubric">{{ story.category }}</span>#}
                                         <h2 class="hd-d story__hed">{{ story.post_title }}</h2>
                                         <p class="story__dek">{{ story.dek }}</p>
                                     </header>
@@ -149,4 +158,9 @@
 
     {% include 'flyout.twig' %}
 
+{% endblock %}
+
+{% block modals %}
+    {% include('modal-action.twig') %}
+    {{ parent() }}
 {% endblock %}

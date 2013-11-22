@@ -1,7 +1,7 @@
 <article class="tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
 	{% block content %}
-		<h2 class="h2"><a href="{{post.get_path}}">{% if post.tout_heading %}{{ post.tout_heading }} {% else %} {{ post.title }} {% endif %}</a></h2>
-		<p>{{post.tout_dek or post_dek}}</p>
+		<h2 class="h2"><a href="{{post.get_path}}">{{ post.tout_title }}</a></h2>
+		<p>{{ post.tout_dek_text }}</p>
 
 		{% if post.get_thumbnail %}
 			<img src="{{post.get_thumbnail.get_url}}" />

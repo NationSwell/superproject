@@ -21,8 +21,14 @@
         // pageload modals
         $.each($("[data-modal-pageload='true']"), function(index, value){
             if(!$.cookie($(this).data("modal")))  {
-                $(this).addClass('is-visible');
-                $('body').addClass('is-locked');
+
+                var that = this;
+
+                setTimeout(function(){
+                    $(that).addClass('is-visible');
+                    $('body').addClass('is-locked');
+                }, 1500);
+
             }
         });
 
@@ -261,7 +267,7 @@
                     var $this = $(this),
                         $carousel = $this.find(".carousel__items");
 
-                    var isPeek = $this.hasClass('carousel--peek'),
+                    var isPeek = $this.hasClass('carousel--peek') && $carousel.children().length > 3,
                         isSeries = $this.hasClass('carousel--series');
 
                     function highlight(items) {
