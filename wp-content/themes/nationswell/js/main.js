@@ -21,8 +21,14 @@
         // pageload modals
         $.each($("[data-modal-pageload='true']"), function(index, value){
             if(!$.cookie($(this).data("modal")))  {
-                $(this).addClass('is-visible');
-                $('body').addClass('is-locked');
+
+                var that = this;
+
+                setTimeout(function(){
+                    $(that).addClass('is-visible');
+                    $('body').addClass('is-locked');
+                }, 1500);
+
             }
         });
 
