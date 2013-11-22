@@ -39,15 +39,11 @@
 </div>
 
 {% block modals %}
-
-    {{ dump(modal_joinus_enabled) }}
-
 {% if modal_joinus_enabled %}
     {% include 'modal-joinus.twig' %}
 {% endif %}
 
 {% include 'modal.twig' %}
-
 {% endblock %}
 
 {{ wp_footer }}
