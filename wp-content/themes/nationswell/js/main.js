@@ -261,7 +261,7 @@
                     var $this = $(this),
                         $carousel = $this.find(".carousel__items");
 
-                    var isPeek = $this.hasClass('carousel--peek'),
+                    var isPeek = $this.hasClass('carousel--peek') && $carousel.children().length > 3,
                         isSeries = $this.hasClass('carousel--series');
 
                     function highlight(items) {

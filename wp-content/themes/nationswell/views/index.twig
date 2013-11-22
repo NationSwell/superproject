@@ -153,6 +153,7 @@
         </div>
     </div>
 
+    {% if stories_carousel %}
     <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek">
         <ul class="carousel__items">
             {% for post in stories_carousel %}
@@ -186,6 +187,7 @@
             </li>
         </ul>
     </div>
+    {% endif %}
 
     <div class="river river--one-col">
         <div class="container">
