@@ -406,18 +406,30 @@
     color: $white;
     text-align: center;
     vertical-align: middle;
+
+    &.icon_facebook { background-color: #5973aa; }
+    &.icon_twitter { background-color: #2fb8ed; }
+    &.icon_google-plus { background-color: #d34836; }
+    &.icon_instagram { background-color: #37668d; }
+    &.icon_tumblr { background-color: #2c4762; }
   }
 
   &.author__social {
     .icon {
       line-height: 1.4;
+    }
 
-      &:hover {
-        &.icon_facebook { background-color: #5973aa; }
-        &.icon_twitter { background-color: #2fb8ed; }
-        &.icon_google-plus { background-color: #d34836; }
-        &.icon_instagram { background-color: #37668d; }
-        &.icon_tumblr { background-color: #2c4762; }
+    &.author__social--page {
+      .icon {
+        background-color: $gray5;
+
+        &:hover {
+          &.icon_facebook { background-color: #5973aa; }
+          &.icon_twitter { background-color: #2fb8ed; }
+          &.icon_google-plus { background-color: #d34836; }
+          &.icon_instagram { background-color: #37668d; }
+          &.icon_tumblr { background-color: #2c4762; }
+        }
       }
     }
   }
@@ -425,12 +437,6 @@
   &.take-action__social {
     .icon {
       line-height: 1.6;
-
-      &.icon_facebook { background-color: #5973aa; }
-      &.icon_twitter { background-color: #2fb8ed; }
-      &.icon_google-plus { background-color: #d34836; }
-      &.icon_instagram { background-color: #37668d; }
-      &.icon_tumblr { background-color: #2c4762; }
     }
   }
 }

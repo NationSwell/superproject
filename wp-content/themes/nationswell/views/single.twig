@@ -28,8 +28,12 @@
             <main class="story__main-column" role="main">
                 <article class="story story--page">
                     <header>
-                        <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
+                        <ul class="story__meta">
+                            <li>Appears in <a href="{{ post.category.url }}">{{ post.category }}</a></li>
+                            <li>Written by <a href="{{ post.author.url }}">{{ post.author.name }}</a> on {{ post.post_date|date('F j, Y') }}</li>
+                        </ul>
 
+                        <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
                         <h3 class="hd-k story__dek">{{ post.dek }}</h3>
                     </header>
 
@@ -41,7 +45,7 @@
                 <div class="story__tags">
                     <ul class="tags-list">
                         {% for  category in post.categories %}
-                            <li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>
+                            dump                          <li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>
                     {%  endfor %}
                     </ul>
                 </div>
@@ -53,7 +57,7 @@
                         <div class="author__contact">
                             <a href="{{ post.author.user_url }}" class="author__url">{{ post.author.display_url }}</a>
 
-                            <ul class="author__social">
+                            <ul class="social author__social">
                                 {% if post.author.facebook_username is not empty %}
                                     <li><a href="http://www.facebook.com/{{ post.author.facebook_username }}" class="icon icon_facebook"></a></li>
                                 {% endif %}
@@ -72,12 +76,6 @@
                         <p class="author__bio">{{ post.author.description }}</p>
                     </div>
                 </div>
-
-                {#<div class="ad ad--300 ad--pull">#}
-                    {#<div class="ad__container">#}
-                        {#<img src="http://placehold.it/300x250"/>#}
-                    {#</div>#}
-                {#</div>#}
 
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
@@ -125,7 +123,7 @@
     {% if post.more_stories is not empty %}
         <div class="read-next">
             <div class="container">
-                <h3 class="hd-g read-next__heading">Read Next</h3>
+                <h3 class="hd-g read-next__heading">Read More in {{ post.category }}</h3>
 
                 <ul class="story-list">
                     {% for story in post.more_stories %}
@@ -137,7 +135,6 @@
                                     </figure>
 
                                     <header class="story__header">
-                                        <span class="rubric">{{ story.category }}</span>
                                         <h2 class="hd-d story__hed">{{ story.post_title }}</h2>
                                         <p class="story__dek">{{ story.dek }}</p>
                                     </header>

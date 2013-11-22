@@ -107,19 +107,42 @@
 .story__container {
   position: relative;
 
+  .story__meta {
+    display: block;
+    font-family: $gudea;
+    margin-bottom: 1.2rem;
+
+    li {
+      color: $gray4;
+      display: inline-block;
+
+      &:first-child {
+        &:after {
+          content: '|';
+          display: inline-block;
+        }
+      }
+    }
+
+    a {
+      color: $ns_red;
+
+      &:hover {
+        color: $ns_blue1;
+      }
+    }
+  }
+
   .story__content {
+    em, i {
+      font-style: italic;
+    }
 
-      em,
-      i {
-        font-style: italic;
-      }
+    strong, b {
+      font-weight: $bold;
+    }
 
-      strong,
-      b {
-        font-weight: 700;
-      }
-
-      p {
+    p {
       font-family: $gudea;
 
       /* drop cap */
