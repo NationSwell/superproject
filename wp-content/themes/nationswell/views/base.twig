@@ -38,10 +38,21 @@
     {% include 'footer.twig' %}
 </div>
 
+{% block modals %}
+
+    {{ dump(modal_joinus_enabled) }}
+
+{% if modal_joinus_enabled %}
+    {% include 'modal-joinus.twig' %}
+{% endif %}
+
 {% include 'modal.twig' %}
+
+{% endblock %}
 
 {{ wp_footer }}
 
+{% block body_includes %}
 {# TODO: Integrate these files into the theme#}
 <script src="/{{ theme_dir }}/js/vendor/jquery.cookie.js"></script>
 <script src="/{{ theme_dir }}/js/vendor/enquire.js"></script>
@@ -77,6 +88,7 @@
                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
     })();
 </script>
+{% endblock %}
 
 </body>
 </html>

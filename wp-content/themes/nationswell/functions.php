@@ -22,6 +22,8 @@ function add_to_context($data)
     $data['menu_footer'] = new TimberMenu('menu_footer');
     $data['menu_topic'] = new TimberMenu('menu_topic');
 
+    $data['modal_joinus_enabled'] = get_field('modal_joinus_enabled', 'option');
+
     $data['nationswell_mailchimp_daily'] = get_field('nationswell_mailchimp_daily', 'option');
 
     return $data;
@@ -79,6 +81,7 @@ function my_register_fields()
     include_once('lib/fields/tout_options.php');
 
     include_once('lib/fields/mailing_lists.php');
+    include_once('lib/fields/modal_options.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');

@@ -155,3 +155,8 @@
     {% include 'flyout.twig' %}
 
 {% endblock %}
+
+{% block modals %}
+    {% include('modal-action.twig') %}
+    {{ parent() }}
+{% endblock %}
