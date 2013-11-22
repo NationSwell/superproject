@@ -76,6 +76,11 @@ foreach($series_carousel_terms as $series_term) {
 
 $data['series_carousel'] = $series_carousel;
 
+// Get the Sidebars
+$data['sidebar_homepage_1'] = Timber::get_widgets('sidebar_homepage_1');
+$data['sidebar_homepage_2'] = Timber::get_widgets('sidebar_homepage_2');
+$data['sidebar_homepage_3'] = Timber::get_widgets('sidebar_homepage_3');
+
 Timber::render('index.twig', $data);
 
 
