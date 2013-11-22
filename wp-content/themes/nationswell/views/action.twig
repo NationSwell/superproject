@@ -4,34 +4,66 @@
         <h3 class="hd-e module__heading">Take Action</h3>
     </header>
 
-    <div class="take-action__action">
-        <h2 class="hd-l take-action__heading">{{ post.call_to_action.heading }}</h2>
+    <div class="take-action__inner">
+        <div class="take-action__action take-action__tab">
+            <h2 class="hd-l take-action__heading">{{ post.call_to_action.heading }}</h2>
 
-        {% block action_body %}
-        {% endblock %}
-    </div>
+            {% block action_body %}
+            {% endblock %}
+        </div>
 
-    <div class="take-action__thank-you" style="display: none;">
-        <h2 class="hd-l take-action__heading">{{ post.call_to_action.thank-you-heading }}</h2>
+        <div class="take-action__thank-you take-action__tab is-hidden" style="display: none;">
+            {#<h2 class="hd-l take-action__heading">{{ post.call_to_action.thank-you-heading }}</h2>#}
 
-        <p></p>
+            <h2 class="hd-l take-action__heading">Thanks for your support!</h2>
 
-        <ul class="social author__social">
-            {% if post.call_to_action.facebook_username is not empty %}
+            {#<p>{{ post.call_to_action.thank-you-text }}</p>#}
+
+            <p>Thank you for supporting this cause! Help spread the word by sharing this article to your social networks, and watch the cause grow.</p>
+
+            {#<ul class="social take-action__social">
+                {% if post.call_to_action.facebook_username is not empty %}
+                    <li><a href="http://www.facebook.com/{{ post.call_to_action.facebook_username }}" class="btn btn--social icon icon_facebook"></a></li>
+                {% endif %}
+                {% if post.call_to_action.twitter_username is not empty %}
+                    <li><a href="http://www.twitter.com/{{ post.call_to_action.twitter_username }}" class="btn btn--social icon icon_twitter"></a></li>
+                {% endif %}
+                {% if post.call_to_action.tumblr is not empty %}
+                    <li><a href="{{ post.call_to_action.tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>
+                {% endif %}
+                {% if post.call_to_action.instagram is not empty %}
+                    <li><a href="{{ post.call_to_action.instagram }}" class="btn btn--social icon icon_instagram"></a></li>
+                {% endif %}
+                {% if post.call_to_action.google is not empty %}
+                    <li><a href="{{ post.call_to_action.google }}" class="btn btn--social icon icon_google-plus"></a></li>
+                {% endif %}
+            </ul>#}
+
+            <ul class="social take-action__social">
                 <li><a href="http://www.facebook.com/{{ post.call_to_action.facebook_username }}" class="btn btn--social icon icon_facebook"></a></li>
-            {% endif %}
-            {% if post.call_to_action.twitter_username is not empty %}
                 <li><a href="http://www.twitter.com/{{ post.call_to_action.twitter_username }}" class="btn btn--social icon icon_twitter"></a></li>
-            {% endif %}
-            {% if post.call_to_action.tumblr is not empty %}
                 <li><a href="{{ post.call_to_action.tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>
-            {% endif %}
-            {% if post.call_to_action.instagram is not empty %}
                 <li><a href="{{ post.call_to_action.instagram }}" class="btn btn--social icon icon_instagram"></a></li>
-            {% endif %}
-            {% if post.call_to_action.google is not empty %}
                 <li><a href="{{ post.call_to_action.google }}" class="btn btn--social icon icon_google-plus"></a></li>
-            {% endif %}
-        </ul>
+            </ul>
+
+            <p>Sign up to the NationSwell newsletter and stay updated on the latest content</p>
+
+            <div id="mc_embed_signup">
+                <form action="{{ mailchimp_form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="mc-field-group cf">
+                        <div class="join-us__email icon icon_envelope">
+                            <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mce-EMAIL">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl">
+                        </div>
+                    </div>
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>

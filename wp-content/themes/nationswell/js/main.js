@@ -32,8 +32,6 @@
                 currModalHeight = modal.outerHeight(),
                 $taContent = modal.find('.take-action__inner');
 
-            console.log('windowHeight: ' + windowHeight + '; currModalHeight: ' + currModalHeight + '; $taContent: ' + $taContent);
-
             if ((windowHeight - currModalHeight) < (.2 * windowHeight)) {
                 $taContent.css('height', .44 * windowHeight);
             }
@@ -73,7 +71,6 @@
 
         // closing modals
         var $modalClose = $(".modal-overlay, [data-modal-action='close']");
-
         $modalClose.on('click', function() {
             $('.modal').removeClass('is-visible');
             $('body').removeClass('is-locked');
@@ -107,6 +104,25 @@
         $('[for*="search"]').on('click', function() {
             var input = $(this).attr('for');
             $('#' + input).toggleClass('is-open');
+        });
+
+        // take action submission
+        $('body').on('click.taSubmit', '.take-action__submit', function(e) {
+            var $taAction = $('.take-action__action'),
+                $taThankYou = $('.take-action__thank-you');
+
+            $taAction.toggleClass('is-hidden');
+
+            window.setTimeout(function() {
+                $taAction.css('display', 'none');
+
+                $taThankYou.css('display', 'block');
+                $taThankYou.toggleClass('is-hidden');
+            }, 300);
+
+            $(window).off('.taSubmit');
+
+            e.preventDefault();
         });
 
     // responsive code

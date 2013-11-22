@@ -348,6 +348,24 @@
 
   .take-action__inner {
     overflow-y: scroll;
+
+    @include transition(all 0.3s ease-in-out);
+  }
+
+  .take-action__tab {
+    opacity: 1;
+
+    @include transition(all 0.3s ease-in-out);
+
+    &.is-hidden {
+      opacity: 0;
+    }
+  }
+
+  .take-action__thank-you {
+    p {
+      text-align: center;
+    }
   }
 
   .take-action__img {

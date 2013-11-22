@@ -272,10 +272,16 @@
     padding-left: 3.4rem;
   }
 
+  .take-action__action {
+    .btn {
+      margin-top: 1.8rem;
+    }
+  }
+
   p {
     font-size: 1.8rem;
     line-height: 1.4;
-    margin-bottom: 2.2rem;
+    margin: 1.8rem 0;
   }
 
   small {
