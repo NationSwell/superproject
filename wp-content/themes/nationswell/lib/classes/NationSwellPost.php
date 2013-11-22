@@ -84,14 +84,20 @@ if (class_exists('TimberPost')) {
             return Timber::get_posts($query->posts, 'NationSwellPost');
         }
 
+        function short_url() {
+            global $bitly;
+            // if bitly plugin is disabled fallback on the permalink
+            return isset($bitly) ? $bitly->get_bitly_link_for_post_id($this->ID) : $this->permalink();
+        }
+
         function facebook_share_url(){
             return 'https://www.facebook.com/sharer/sharer.php?u='
-            . urlencode($this->permalink()) .'&title=' . urlencode($this->title());
+            . urlencode($this->short_url()) .'&title=' . urlencode($this->title());
         }
 
         function twitter_share_url(){
             return 'https://twitter.com/share?url='
-            . urlencode($this->permalink()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
+            . urlencode($this->short_url()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
         }
 
         function call_to_action(){
