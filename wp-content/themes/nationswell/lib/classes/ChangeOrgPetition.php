@@ -89,11 +89,10 @@ class ChangeOrgPetition {
         }
     }
 
-    public function sign() {
+    public function sign($signer) {
         $result = false;
         if($this->change_org_api) {
-
-            $result = $this->change_org_api->sign_petition($this->id, $this->auth_key);
+            $result = $this->change_org_api->sign_petition($this->id, $this->auth_key, $signer);
         }
 
         return $result;

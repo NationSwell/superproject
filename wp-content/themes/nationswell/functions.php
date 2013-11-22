@@ -116,9 +116,10 @@ global $change_org_api;
 
 $change_org_api_key = '937ae45924510660d19d71f3622aee68810b8e8969c418da92afdde2e618be8f';
 $change_org_secret = '9955d60df46358b12c33646352e54c50a28ea2f54fdc45fe4d7457307d847cf5';
+$email = 'mark@ronikdesign.com';
 $source = 'nationswell.com';
 $description = 'Meet the People Renewing America. Join the Movement.';
-$change_org_api= new ChangeOrgApi($change_org_api_key, $change_org_secret, $source, $description);
+$change_org_api= new ChangeOrgApi($change_org_api_key, $change_org_secret, $email, $source, $description);
 
 function is_petition($cta_id) {
     return get_post_meta($cta_id, 'type', true) === 'petition';
@@ -135,6 +136,16 @@ function save_petition_data($cta_id) {
 
 add_action( 'acf/save_post', 'save_petition_data', 20);
 
+function copy_from_request($keys) {
+    $result = array();
+    foreach($keys as $key) {
+        if(isset($_REQUEST[$key])) {
+            $result[$key] = $_REQUEST[$key];
+        }
+    }
+    return $result;
+}
+
 function handle_sign_petition() {
     global $change_org_api;
 
@@ -142,7 +153,10 @@ function handle_sign_petition() {
 
     if(is_petition($cta_id)) {
         $petition = new ChangeOrgPetition($cta_id, $change_org_api);
-        $response = $petition->sign();
+
+        $signer = copy_from_request(array('email','first_name', 'last_name', 'city', 'postal_code', 'country_code'));
+
+        $response = $petition->sign($signer);
         wp_send_json($response);
     }
     else {

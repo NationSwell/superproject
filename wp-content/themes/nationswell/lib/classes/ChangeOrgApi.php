@@ -7,15 +7,16 @@ class ChangeOrgApi {
     private $source;
     private $description;
 
-    function __construct($api_key, $secret, $source, $description) {
+    function __construct($api_key, $secret, $email, $source, $description) {
         $this->api_key = $api_key;
         $this->description = $description;
+        $this->email = $email;
         $this->secret = $secret;
         $this->source = $source;
     }
 
 
-    private static function parseJson($json, $attr = '') {
+    private static function parse_json($json, $attr = '') {
         $result = false;
 
         if($json) {
@@ -34,7 +35,7 @@ class ChangeOrgApi {
     }
 
     public function get_id($url) {
-        return ChangeOrgApi::parseJson($this->get_id_json($url), 'petition_id');
+        return $this->parse_json($this->get_id_json($url), 'petition_id');
     }
 
     public function get_petition_json($id) {
@@ -42,7 +43,7 @@ class ChangeOrgApi {
     }
 
     public function get_petition($id) {
-        return ChangeOrgApi::parseJson($this->get_petition_json($id));
+        return $this->parse_json($this->get_petition_json($id));
     }
 
     public function get_auth_key_json($id) {
@@ -52,10 +53,10 @@ class ChangeOrgApi {
 
         $params = array(
             'api_key' => $this->api_key,
-            'source_description' => 'This is a test description.', // Something human readable.
-            'source' => 'test_source', // Eventually included in every signature submitted with the auth key obtained with this request.
-            'requester_email' => 'mark@ronikdesign.com', // The email associated with your API key and Change.org account.
-            'timestamp' => gmdate("Y-m-d\TH:i:s\Z"), // ISO-8601-formtted timestamp at UTC
+            'source_description' => $this->description,
+            'source' => $this->source,
+            'requester_email' => $this->email,
+            'timestamp' => gmdate("Y-m-d\TH:i:s\Z"),
             'endpoint' => $endpoint
         );
         
@@ -82,10 +83,11 @@ class ChangeOrgApi {
     }
 
     public function get_auth_key($id) {
-        return ChangeOrgApi::parseJson($this->get_auth_key_json($id), 'auth_key');
+        return $this->parse_json($this->get_auth_key_json($id), 'auth_key');
     }
-    
+
     public function sign_petition($id, $auth_key, $signer) {
+
         // Set up the endpoint and URL.
         $base_url = "https://api.change.org";
         $endpoint = "/v1/petitions/" . $id . "/signatures";
@@ -97,15 +99,9 @@ class ChangeOrgApi {
             'timestamp' => gmdate("Y-m-d\TH:i:s\Z"), // ISO-8601-formtted timestamp at UTC
             'endpoint' => $endpoint,
             'source' => $this->source,
-            'email' => 'person@example.com',
-            'first_name' => 'John',
-            'last_name' => 'Doe',
-            //'address' => '1 Market St',
-            'city' => 'Philadelphia',
-            //'state_province' => 'PA',
-            'postal_code' => '19144',
-            'country_code' => 'US'
         );
+
+        $parameters = array_merge($signer, $parameters);
 
         // Build request signature.
         $query_string_with_secret_and_auth_key = http_build_query($parameters) . $this->secret . $auth_key;
@@ -129,7 +125,7 @@ class ChangeOrgApi {
 
         curl_close($curl_session);
 
-        return ChangeOrgApi::parseJson($result);
+        return $this->parse_json($result);
     }
 
 }
