@@ -5,17 +5,18 @@
 /* logo and slogan */
 .site-logo {
   img {
-    width: 16.8rem;
+    width: 24.8rem;
+    margin-left: -1.1rem;
     height: auto;
   }
 
   &.site-logo--slogan {
-    margin-top: 1.6rem;
+    margin-top: 1.2rem;
 
     .slogan {
       margin-left: 2.2rem;
-      margin-top: -0.4rem;
-      font-size: 1.4rem;
+      margin-top: -1rem;
+      font-size: 1.2rem;
     }
   }
 }
