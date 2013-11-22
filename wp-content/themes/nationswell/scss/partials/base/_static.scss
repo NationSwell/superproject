@@ -1,0 +1,134 @@
+.static__container {
+  header {
+    position: relative;
+    margin-bottom: 3.4rem;
+
+    &:after {
+      background-color: $gray5;
+      content: '';
+      display: block;
+      width: 20%;
+      height: 0.7rem;
+    }
+
+    .static__last-updated {
+      color: $ns_black;
+      font-family: $gudea;
+      font-weight: $regular;
+    }
+  }
+
+  .static__content {
+    font-family: $gudea;
+
+    a {
+      color: $ns_blue1;
+      font-weight: $bold;
+
+      &:hover {
+        color: $ns_red;
+      }
+    }
+
+    em, i {
+      font-style: italic;
+    }
+
+    strong, b {
+      font-weight: $bold;
+    }
+
+    > h1 {
+      color: $ns_blue3;
+      font-family: $oswald;
+      font-weight: $bold;
+      display: inline-block;
+      border-bottom: 3px solid lightgray;
+      text-transform: capitalize;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    > h2 {
+      color: $ns_blue2;
+      font-family: $oswald;
+      font-weight: $bold;
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    > h3 {
+      color: $ns_red;
+      font-family: $montserrat;
+      text-transform: capitalize;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    > h4 {
+      color: $ns_black;
+      font-family: $montserrat;
+      font-weight: $regular;
+      text-transform: capitalize;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    > h5 {
+      color: $ns_black;
+      font-family: $montserrat;
+      text-transform: capitalize;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    > h6 {
+      color: $ns_black;
+      font-family: $montserrat;
+      text-transform: capitalize;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    hr {
+      border: 0;
+      height: 0.3rem;
+      background-color: $gray5;
+      width: 100%;
+      display: block;
+    }
+
+    > ol {
+      counter-reset: li;
+
+      li {
+        color: $ns_black;
+        font-family: $montserrat;
+        position: relative;
+
+        &:before {
+          background-color: $ns_red;
+          counter-increment: li;
+          content: counter(li, decimal-leading-zero);
+          color: $white;
+          display: inline-block;
+          font-family: $oswald;
+          font-weight: $bold;
+          position: absolute;
+          text-align: center;
+        }
+      }
+    }
+
+    > ul {
+      li {
+        color: $ns_black;
+        font-family: $montserrat;
+        line-height: 1.2;
+        position: relative;
+
+        &:before {
+          color: $ns_blue1;
+          font-family: 'icons';
+          content: '\f11a';
+          position: absolute;
+        }
+      }
+    }
+  }
+}

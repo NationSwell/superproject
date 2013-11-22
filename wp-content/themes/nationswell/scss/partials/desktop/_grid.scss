@@ -68,6 +68,11 @@
   @include span-columns(6);
 }
 
+// static
+.static__main-column {
+  @include span-columns(8);
+}
+
 // multimedia
 .multimedia {
   .caption {
