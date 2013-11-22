@@ -32,4 +32,12 @@ if (function_exists('register_sidebar')) {
             'description' => 'Widget Area',
         )
     );
+
+    register_sidebar(
+        array(
+            'name' => 'Global Includes',
+            'id' => 'global_widgets',
+            'description' => 'Widget Area',
+        )
+    );
 }

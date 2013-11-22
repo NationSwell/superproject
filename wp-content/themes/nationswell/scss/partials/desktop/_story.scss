@@ -69,6 +69,21 @@
     }
   }
 
+  .story__meta {
+    display: block;
+    margin-bottom: 1.2rem;
+
+    li {
+      font-size: 1.4rem;
+
+      &:first-child {
+        &:after {
+          margin-left: 0.4rem;
+        }
+      }
+    }
+  }
+
   .story__main-column {
     overflow: hidden;
   }

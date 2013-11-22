@@ -28,8 +28,12 @@
             <main class="story__main-column" role="main">
                 <article class="story story--page">
                     <header>
-                        <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
+                        <ul class="story__meta">
+                            <li>Appears in <a href="{{ post.category.url }}">{{ post.category }}</a></li>
+                            <li>Written by <a href="{{ post.author.url }}">{{ post.author.name }}</a> on {{ post.post_date|date('F j, Y') }}</li>
+                        </ul>
 
+                        <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
                         <h3 class="hd-k story__dek">{{ post.dek }}</h3>
                     </header>
 
@@ -38,13 +42,13 @@
                     </div>
                 </article>
 
-                <div class="story__tags">
-                    <ul class="tags-list">
-                        {% for  category in post.categories %}
-                            <li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>
-                    {%  endfor %}
-                    </ul>
-                </div>
+                {#<div class="story__tags">#}
+                    {#<ul class="tags-list">#}
+                        {#{% for  category in post.categories %}#}
+                            {#<li><a href="{{ category.link }}" class="tag">{{ category.name }}</a></li>#}
+                    {#{%  endfor %}#}
+                    {#</ul>#}
+                {#</div>#}
 
                 <div class="author-box cf">
                     <div class="author__a">
@@ -53,7 +57,7 @@
                         <div class="author__contact">
                             <a href="{{ post.author.user_url }}" class="author__url">{{ post.author.display_url }}</a>
 
-                            <ul class="author__social">
+                            <ul class="social author__social">
                                 {% if post.author.facebook_username is not empty %}
                                     <li><a href="http://www.facebook.com/{{ post.author.facebook_username }}" class="icon icon_facebook"></a></li>
                                 {% endif %}
@@ -154,4 +158,9 @@
 
     {% include 'flyout.twig' %}
 
+{% endblock %}
+
+{% block modals %}
+    {% include('modal-action.twig') %}
+    {{ parent() }}
 {% endblock %}
