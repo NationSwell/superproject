@@ -103,5 +103,13 @@ if (class_exists('TimberPost')) {
 
             return false;
         }
+
+        function tout_title(){
+            return $this->tout_heading ? $this->tout_heading : $this->post_title;
+        }
+
+        function tout_dek_text(){
+            return $this->tout_dek ? $this->tout_dek : $this->dek;
+        }
     }
 }
