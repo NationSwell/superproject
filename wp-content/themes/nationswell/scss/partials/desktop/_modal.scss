@@ -2,6 +2,33 @@
   max-width: 77.2rem;
 }
 
+.join-us__email {
+  font-size: 2.4rem;
+  line-height: 5.4rem;
+  height: 5.4rem;
+  padding-left: 6.6rem;
+
+  input[type="email"] {
+    border-radius: 0;
+    font-size: 2.4rem;
+  }
+
+  .btn--subscribe {
+    font-size: 2.4rem;
+    line-height: 5.4rem;
+    padding: 0 2.8rem;
+    height: 5.4rem;
+    position: relative;
+    top: -1px;
+  }
+
+  &:before {
+    font-size: 3rem;
+    left: 2.2rem;
+    top: 0.4rem;
+  }
+}
+
 .modal__heading {
   margin-bottom: 3.4rem;
 }
@@ -34,33 +61,6 @@
       &:last-child {
         margin-right: 0;
       }
-    }
-  }
-
-  .modal--join-us__email {
-    font-size: 2.4rem;
-    line-height: 5.4rem;
-    height: 5.4rem;
-    padding-left: 6.6rem;
-
-    input[type="email"] {
-      border-radius: 0;
-      font-size: 2.4rem;
-    }
-
-    .btn--subscribe {
-      font-size: 2.4rem;
-      line-height: 5.4rem;
-      padding: 0 2.8rem;
-      height: 5.4rem;
-      position: relative;
-      top: -1px;
-    }
-
-    &:before {
-      font-size: 3rem;
-      left: 2.2rem;
-      top: 0.4rem;
     }
   }
 

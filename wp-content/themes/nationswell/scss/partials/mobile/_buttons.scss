@@ -116,4 +116,13 @@
       }
     }
   }
+
+  &.btn--external {
+    padding: 1rem 2.6rem 2rem;
+
+    &:before {
+      font-size: 6rem;
+      top: 1.2rem;
+    }
+  }
 }

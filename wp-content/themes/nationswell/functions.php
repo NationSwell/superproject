@@ -22,6 +22,8 @@ function add_to_context($data)
     $data['menu_footer'] = new TimberMenu('menu_footer');
     $data['menu_topic'] = new TimberMenu('menu_topic');
 
+    $data['nationswell_mailchimp_daily'] = get_field('nationswell_mailchimp_daily', 'option');
+
     return $data;
 }
 
@@ -75,6 +77,8 @@ function my_register_fields()
     include_once('lib/fields/call_to_action.php');
     include_once('lib/fields/call_to_action_link.php');
     include_once('lib/fields/tout_options.php');
+
+    include_once('lib/fields/mailing_lists.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
@@ -82,6 +86,7 @@ add_action('acf/register_fields', 'my_register_fields');
 // Shortcodes
 include_once('lib/shortcodes/placeholder.php');
 
+include_once('lib/classes/ChangeOrgApi.php');
 include_once('lib/classes/ChangeOrgPetition.php');
 include_once('lib/classes/CallToAction.php');
 include_once('lib/classes/NationSwellPost.php');
@@ -104,18 +109,47 @@ include_once('lib/custom_post_types/call_to_action.php');
 
 
 // Change.org
-function save_petition_data($post_id) {
-    if ($_POST['post_type'] === 'ns_call_to_action') {
-        $cta_type = get_post_meta($post_id, 'type', true);
-        if($cta_type === 'petition'){
-            $petition = new ChangeOrgPetition($post_id);
-            $petition->fetch();
-        }
+global $change_org_api;
+
+$change_org_api_key = '937ae45924510660d19d71f3622aee68810b8e8969c418da92afdde2e618be8f';
+$change_org_secret = '9955d60df46358b12c33646352e54c50a28ea2f54fdc45fe4d7457307d847cf5';
+$source = 'nationswell.com';
+$description = 'Meet the People Renewing America. Join the Movement.';
+$change_org_api= new ChangeOrgApi($change_org_api_key, $change_org_secret, $source, $description);
+
+function is_petition($cta_id) {
+    return get_post_meta($cta_id, 'type', true) === 'petition';
+}
+
+function save_petition_data($cta_id) {
+    global $change_org_api;
+
+    if ($_POST['post_type'] === 'ns_call_to_action' && is_petition($cta_id)) {
+        $petition = new ChangeOrgPetition($cta_id, $change_org_api);
+        $petition->fetch();
     }
 }
 
 add_action( 'acf/save_post', 'save_petition_data', 20);
 
+function handle_sign_petition() {
+    global $change_org_api;
+
+    $cta_id = (int)$_REQUEST['cta_id'];
+
+    if(is_petition($cta_id)) {
+        $petition = new ChangeOrgPetition($cta_id, $change_org_api);
+        $response = $petition->sign();
+        wp_send_json($response);
+    }
+    else {
+        http_response_code(404);
+    }
+    die();
+}
+
+add_action('wp_ajax_sign_petition', 'handle_sign_petition');
+add_action('wp_ajax_nopriv_sign_petition', 'handle_sign_petition');
 
 
 // Automatically Create the Inital Pages for the Site and set the Homepage to be the Front Page

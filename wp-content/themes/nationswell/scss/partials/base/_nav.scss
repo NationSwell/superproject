@@ -25,7 +25,7 @@
   color: $white;
   vertical-align: middle;
 
-  &.toggled {
+  &.is-toggled {
     @include transform(rotate(90deg) scale(0.6, 1.4));
     @include transform-origin(54% 60%);
   }
@@ -97,7 +97,7 @@
       outline: 0 none;
     }
 
-    &.open {
+    &.is-open {
       opacity: 1;
       outline: 0 none;
     }

@@ -1,0 +1,21 @@
+.form-element {
+  margin-bottom: 2.2rem;
+
+  label {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    margin-left: 1.2rem;
+    text-align: left;
+  }
+
+  .text-input {
+    font-size: 2.4rem;
+    padding: 1.4rem 1.6rem;
+  }
+
+  .text-area {
+    font-size: 2.4rem;
+    min-height: 18rem;
+    padding: 1.4rem 1.6rem;
+  }
+}

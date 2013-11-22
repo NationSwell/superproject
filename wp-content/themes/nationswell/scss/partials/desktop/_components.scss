@@ -1,7 +1,6 @@
 /* hero */
 .hero {
   background-color: $ns_navy0;
-  margin-bottom: 5rem;
 }
 
 /* rubric */
@@ -310,19 +309,31 @@
   }
 }
 
-.author__social {
-  margin-top: 1.2rem;
-
+.social {
   li {
     &:first-child {
       border-left: 0;
     }
   }
 
-  .icon {
-    font-size: 2.6rem;
-    height: 3rem;
-    width: 3rem;
+  &.author__social {
+    margin-top: 1.2rem;
+
+    .icon {
+      font-size: 2.6rem;
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  &.take-action__social {
+    margin-top: 1.2rem;
+
+    .icon {
+      font-size: 4rem;
+      height: 5.4rem;
+      width: 5.4rem;
+    }
   }
 }
 
@@ -391,14 +402,8 @@
     margin-bottom: 3.4rem;
 
     .story__feature {
-      margin-bottom: -1.4rem;
+      margin-bottom: 1rem;
     }
-  }
-}
-
-.module.take-action {
-  .btn {
-    margin-top: 1.8rem;
   }
 }
 
@@ -469,7 +474,7 @@
     }
   }
 
-  &.showing {
+  &.is-visible {
     right: 0;
   }
 }

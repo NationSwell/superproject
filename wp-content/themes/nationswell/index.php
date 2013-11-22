@@ -18,11 +18,13 @@
 	}
 	$data = Timber::get_context();
 	$data['posts'] = Timber::get_posts();
-	$data['foo'] = 'bar';
+
 	$templates = array('index.twig');
+
 	if (is_home()){
 		array_unshift($templates, 'home.twig');
 	}
+
 	Timber::render('index.twig', $data);
 
 
