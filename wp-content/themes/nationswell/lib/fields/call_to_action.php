@@ -7,7 +7,7 @@ if (function_exists("register_field_group")) {
             'fields' => array(
                 array(
                     'key' => 'field_528bcb5146eda',
-                    'label' => __('Type'),
+                    'label' => 'Type',
                     'name' => 'type',
                     'type' => 'select',
                     'required' => 1,
@@ -23,10 +23,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bcfb546edb',
-                    'label' => __('Tout Heading'),
+                    'label' => 'Tout Heading',
                     'name' => 'tout_heading',
                     'type' => 'text',
-                    'instructions' => __('Heading the appears in the Call to Action Sidebar Tout'),
+                    'instructions' => 'Heading the appears in the Call to Action Sidebar Tout',
                     'default_value' => '',
                     'placeholder' => 'Show your Support',
                     'prepend' => '',
@@ -36,10 +36,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd0d346edc',
-                    'label' => __('Tout Sub Heading'),
+                    'label' => 'Tout Sub Heading',
                     'name' => 'tout_sub_heading',
                     'type' => 'text',
-                    'instructions' => __('Sub heading the appears in the Call to Action Sidebar Tout'),
+                    'instructions' => 'Sub heading the appears in the Call to Action Sidebar Tout',
                     'default_value' => '',
                     'placeholder' => 'Donate to the New Energy Economy',
                     'prepend' => '',
@@ -49,10 +49,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bf225d4221',
-                    'label' => __('Heading'),
+                    'label' => 'Heading',
                     'name' => 'heading',
                     'type' => 'text',
-                    'instructions' => __('This appears in the Panel'),
+                    'instructions' => 'This appears in the Panel',
                     'default_value' => '',
                     'placeholder' => 'Donate to Change.org',
                     'prepend' => '',
@@ -62,12 +62,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd2c346ede',
-                    'label' => __('Description'),
+                    'label' => 'Description',
                     'name' => 'description',
                     'type' => 'wysiwyg',
-                    'instructions' => __(
-                        'Describe this action to the user. This field appears in the Take Action Panel'
-                    ),
+                    'instructions' => 'Describe this action to the user. This field appears in the Take Action Panel',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -90,10 +88,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd11746edd',
-                    'label' => __('Image'),
+                    'label' => 'Image',
                     'name' => 'image',
                     'type' => 'image',
-                    'instructions' => __('Image the appears in the Take Action Panel'),
+                    'instructions' => 'Image the appears in the Take Action Panel',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -116,10 +114,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd34946edf',
-                    'label' => __('External LInk'),
+                    'label' => 'External LInk',
                     'name' => 'external_link',
                     'type' => 'text',
-                    'instructions' => __('A link to an external web page. This field appears in the Take Action Panel'),
+                    'instructions' => 'A link to an external web page. This field appears in the Take Action Panel',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -140,7 +138,7 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528d3245014b8',
-                    'label' => __('External Link Text'),
+                    'label' => 'External Link Text',
                     'name' => 'external_link_text',
                     'type' => 'text',
                     'conditional_logic' => array(
@@ -163,12 +161,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd7735938b',
-                    'label' => __('Rally Id'),
+                    'label' => 'Rally Id',
                     'name' => 'rally_id',
                     'type' => 'text',
-                    'instructions' => __(
-                        'The Rally ID from https://rally.org/ You can get this from the URL of a rally page.'
-                    ),
+                    'instructions' => 'The Rally ID from https://rally.org/ You can get this from the URL of a rally page.',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -189,10 +185,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd8175938c',
-                    'label' => __('Change.org URL'),
+                    'label' => 'Change.org URL',
                     'name' => 'change_url',
                     'type' => 'text',
-                    'instructions' => __('The URL of a Petition on Change.org'),
+                    'instructions' => 'The URL of a Petition on Change.org',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -213,12 +209,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd87f5938d',
-                    'label' => __('MailChimp ID'),
+                    'label' => 'MailChimp ID',
                     'name' => 'mailchimp_id',
                     'type' => 'text',
-                    'instructions' => __(
-                        'The form action string from MailChimp. This is a long URL that you need to get out of an embeddable MailChimp subscribe form.'
-                    ),
+                    'instructions' => 'The form action string from MailChimp. This is a long URL that you need to get out of an embeddable MailChimp subscribe form.',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -239,10 +233,10 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bddd2d2efd',
-                    'label' => __('Freeform Type'),
+                    'label' => 'Freeform Type',
                     'name' => 'freeform_type',
                     'type' => 'select',
-                    'instructions' => __('This determines the Icon that appears along with the Take Action Panel'),
+                    'instructions' => 'This determines the Icon that appears along with the Take Action Panel',
                     'required' => 1,
                     'conditional_logic' => array(
                         'status' => 1,
@@ -262,6 +256,44 @@ if (function_exists("register_field_group")) {
                     'default_value' => '',
                     'allow_null' => 0,
                     'multiple' => 0,
+                ),
+                array(
+                    'key' => 'field_528fec3946b30',
+                    'label' => 'Goal Date',
+                    'name' => 'goal_date',
+                    'type' => 'date_picker',
+                    'date_format' => 'yymmdd',
+                    'display_format' => 'dd/mm/yy',
+                    'first_day' => 1,
+                ),
+                array(
+                    'key' => 'field_528fec7a46b31',
+                    'label' => 'Goal Amount',
+                    'name' => 'goal_amount',
+                    'type' => 'number',
+                    'conditional_logic' => array(
+                        'status' => 1,
+                        'rules' => array(
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'petition',
+                            ),
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'subscribe',
+                            ),
+                        ),
+                        'allorany' => 'any',
+                    ),
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'min' => '',
+                    'max' => '',
+                    'step' => '',
                 ),
             ),
             'location' => array(
