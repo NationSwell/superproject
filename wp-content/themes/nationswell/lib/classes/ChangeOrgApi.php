@@ -15,7 +15,7 @@ class ChangeOrgApi {
     }
 
 
-    private static function parseJson($json, $attr = '') {
+    private static function parse_json($json, $attr = '') {
         $result = false;
 
         if($json) {
@@ -34,7 +34,7 @@ class ChangeOrgApi {
     }
 
     public function get_id($url) {
-        return ChangeOrgApi::parseJson($this->get_id_json($url), 'petition_id');
+        return $this->parse_json($this->get_id_json($url), 'petition_id');
     }
 
     public function get_petition_json($id) {
@@ -42,7 +42,7 @@ class ChangeOrgApi {
     }
 
     public function get_petition($id) {
-        return ChangeOrgApi::parseJson($this->get_petition_json($id));
+        return $this->parse_json($this->get_petition_json($id));
     }
 
     public function get_auth_key_json($id) {
@@ -82,7 +82,7 @@ class ChangeOrgApi {
     }
 
     public function get_auth_key($id) {
-        return ChangeOrgApi::parseJson($this->get_auth_key_json($id), 'auth_key');
+        return $this->parse_json($this->get_auth_key_json($id), 'auth_key');
     }
     
     public function sign_petition($id, $auth_key, $signer) {
@@ -129,7 +129,7 @@ class ChangeOrgApi {
 
         curl_close($curl_session);
 
-        return ChangeOrgApi::parseJson($result);
+        return $this->parse_json($result);
     }
 
 }
