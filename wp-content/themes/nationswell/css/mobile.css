@@ -4184,56 +4184,63 @@ body.panel--is-open #page-header .more-stories-toggle {
   -webkit-font-smoothing: antialiased;
 }
 /* line 19, ../scss/partials/mobile/_static.scss */
+.static__container .static__content p {
+  font-size: 3.2rem;
+  line-height: 1.32;
+  margin-bottom: 3.2rem;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 26, ../scss/partials/mobile/_static.scss */
 .static__container .static__content a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 23, ../scss/partials/mobile/_static.scss */
+/* line 30, ../scss/partials/mobile/_static.scss */
 .static__container .static__content a:hover {
   color: #fc3b40;
 }
-/* line 28, ../scss/partials/mobile/_static.scss */
+/* line 35, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 34, ../scss/partials/mobile/_static.scss */
+/* line 41, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
   margin-bottom: 2.2rem;
 }
-/* line 37, ../scss/partials/mobile/_static.scss */
+/* line 44, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > h2 > h3 {
   font-size: 2.4rem;
 }
-/* line 44, ../scss/partials/mobile/_static.scss */
+/* line 51, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 49, ../scss/partials/mobile/_static.scss */
+/* line 56, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 54, ../scss/partials/mobile/_static.scss */
+/* line 61, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 59, ../scss/partials/mobile/_static.scss */
+/* line 66, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > ol {
   margin: 7.6rem 0;
   padding-left: 11rem;
 }
-/* line 63, ../scss/partials/mobile/_static.scss */
+/* line 70, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > ol li {
   font-size: 3.2rem;
   margin-bottom: 4.2rem;
 }
-/* line 67, ../scss/partials/mobile/_static.scss */
+/* line 74, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > ol li:before {
   font-size: 2.4rem;
   width: 4rem;
@@ -4242,17 +4249,17 @@ body.panel--is-open #page-header .more-stories-toggle {
   left: -7.6rem;
   top: -0.4rem;
 }
-/* line 80, ../scss/partials/mobile/_static.scss */
+/* line 87, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > ul {
   margin: 7.6rem 0;
   padding-left: 11rem;
 }
-/* line 84, ../scss/partials/mobile/_static.scss */
+/* line 91, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > ul li {
   font-size: 3.2rem;
   margin-bottom: 4.2rem;
 }
-/* line 88, ../scss/partials/mobile/_static.scss */
+/* line 95, ../scss/partials/mobile/_static.scss */
 .static__container .static__content > ul li:before {
   font-size: 3.6rem;
   top: 0rem;

@@ -143,6 +143,17 @@ if (function_exists("register_field_group")) {
                     'label' => __('External Link Text'),
                     'name' => 'external_link_text',
                     'type' => 'text',
+                    'conditional_logic' => array(
+                        'status' => 1,
+                        'rules' => array(
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'freeform',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
                     'default_value' => '',
                     'placeholder' => '',
                     'prepend' => '',

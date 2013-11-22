@@ -25,5 +25,9 @@
 
 $context = Timber::get_context();
 $post = new TimberPost();
+
+$context['page_content'] = wpautop($post->post_content);
 $context['post'] = $post;
+$context['sidebar_static'] = Timber::get_widgets('sidebar_static');
+
 Timber::render(array('static.twig'), $context);
