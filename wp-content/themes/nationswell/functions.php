@@ -26,6 +26,12 @@ function add_to_context($data)
 
     $data['nationswell_mailchimp_daily'] = get_field('nationswell_mailchimp_daily', 'option');
 
+    $data['nationswell_facebook'] = get_field('nationswell_facebook', 'option');
+    $data['nationswell_twitter'] = get_field('nationswell_twitter', 'option');
+    $data['nationswell_instagram'] = get_field('nationswell_instagram', 'option');
+    $data['nationswell_tumblr'] = get_field('nationswell_tumblr', 'option');
+    $data['nationswell_google'] = get_field('nationswell_google', 'option');
+
     return $data;
 }
 
@@ -83,6 +89,7 @@ function my_register_fields()
     include_once('lib/fields/mailing_lists.php');
     include_once('lib/fields/modal_options.php');
     include_once('lib/fields/display_options.php');
+    include_once('lib/fields/social_links.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');

@@ -100,6 +100,11 @@ if (class_exists('TimberPost')) {
             . urlencode($this->short_url()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
         }
 
+        function google_share_url(){
+            return 'https://plus.google.com/share?url='
+            . urlencode($this->short_url());
+        }
+
         function call_to_action(){
             $cta_id = get_field('call_to_action_link', $this->ID);
 

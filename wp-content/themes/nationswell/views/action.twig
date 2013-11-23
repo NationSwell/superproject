@@ -19,34 +19,34 @@
 
             {#<p>{{ post.call_to_action.thank-you-text }}</p>#}
 
+            {% if nationswell_facebook or nationswell_twitter or nationswell_tumblr or nationswell_instagram or nationswell_google %}
             <p>Thank you for supporting this cause! Help spread the word by sharing this article to your social networks, and watch the cause grow.</p>
 
-            {#<ul class="social take-action__social">
-                {% if post.call_to_action.facebook_username is not empty %}
-                    <li><a href="http://www.facebook.com/{{ post.call_to_action.facebook_username }}" class="btn btn--social icon icon_facebook"></a></li>
-                {% endif %}
-                {% if post.call_to_action.twitter_username is not empty %}
-                    <li><a href="http://www.twitter.com/{{ post.call_to_action.twitter_username }}" class="btn btn--social icon icon_twitter"></a></li>
-                {% endif %}
-                {% if post.call_to_action.tumblr is not empty %}
-                    <li><a href="{{ post.call_to_action.tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>
-                {% endif %}
-                {% if post.call_to_action.instagram is not empty %}
-                    <li><a href="{{ post.call_to_action.instagram }}" class="btn btn--social icon icon_instagram"></a></li>
-                {% endif %}
-                {% if post.call_to_action.google is not empty %}
-                    <li><a href="{{ post.call_to_action.google }}" class="btn btn--social icon icon_google-plus"></a></li>
-                {% endif %}
-            </ul>#}
-
             <ul class="social take-action__social">
-                <li><a href="http://www.facebook.com/{{ post.call_to_action.facebook_username }}" class="btn btn--social icon icon_facebook"></a></li>
-                <li><a href="http://www.twitter.com/{{ post.call_to_action.twitter_username }}" class="btn btn--social icon icon_twitter"></a></li>
-                <li><a href="{{ post.call_to_action.tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>
-                <li><a href="{{ post.call_to_action.instagram }}" class="btn btn--social icon icon_instagram"></a></li>
-                <li><a href="{{ post.call_to_action.google }}" class="btn btn--social icon icon_google-plus"></a></li>
+                {% if nationswell_facebook is not empty %}
+                    <li><a href="{{ nationswell_facebook }}" class="btn btn--social icon icon_facebook"></a></li>
+                {% endif %}
+                {% if nationswell_twitter is not empty %}
+                    <li><a href="{{ nationswell_twitter }}" class="btn btn--social icon icon_twitter"></a></li>
+                {% endif %}
+                {% if nationswell_tumblr is not empty %}
+                    <li><a href="{{ nationswell_tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>
+                {% endif %}
+                {% if nationswell_instagram is not empty %}
+                    <li><a href="{{ nationswell_instagram }}" class="btn btn--social icon icon_instagram"></a></li>
+                {% endif %}
+                {% if nationswell_google is not empty %}
+                    <li><a href="{{ nationswell_google }}" class="btn btn--social icon icon_google-plus"></a></li>
+                {% endif %}
+                {#<li><a href="http://www.facebook.com/{{ post.call_to_action.facebook_username }}" class="btn btn--social icon icon_facebook"></a></li>#}
+                {#<li><a href="http://www.twitter.com/{{ post.call_to_action.twitter_username }}" class="btn btn--social icon icon_twitter"></a></li>#}
+                {#<li><a href="{{ post.call_to_action.tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>#}
+                {#<li><a href="{{ post.call_to_action.instagram }}" class="btn btn--social icon icon_instagram"></a></li>#}
+                {#<li><a href="{{ post.call_to_action.google }}" class="btn btn--social icon icon_google-plus"></a></li>#}
             </ul>
+            {% endif %}
 
+            {% if nationswell_mailchimp_daily %}
             <p>Sign up to the NationSwell newsletter and stay updated on the latest content</p>
 
             <div id="mc_embed_signup">
@@ -60,6 +60,8 @@
                     </div>
                 </form>
             </div>
+            {% endif %}
+
         </div>
     </div>
 </div>
