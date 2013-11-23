@@ -1,0 +1,5 @@
+{% extends "tease-post.twig" %}
+
+{% block dek %}
+<p class="story__dek">{{ post.get_preview(50) }}</p>
+{% endblock %}
