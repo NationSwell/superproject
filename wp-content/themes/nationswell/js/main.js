@@ -1,7 +1,19 @@
 (function ($) {
     $(function () {
-    // universal code
-        
+
+        $('.mc-form').ajaxChimp({
+            callback: function(resp){
+                if(resp.result === 'success') {
+                    console.log(resp.msg);
+                    console.log(this);
+                } else if (resp.result === 'error') {
+                    console.log(resp.msg);
+                    console.log(this);
+                }
+
+            }
+        });
+
         // share popup window
         $('.btn--facebook, .btn--twitter').click(function (event) {
             var width = 575,
@@ -94,13 +106,18 @@
         });
 
         // flyout box
-        $('.story__container').waypoint(function (direction) {
-            $('#flyout').toggleClass('is-visible', direction === "down");
-        }, {
-            offset: function () {
-                return $.waypoints('viewportHeight') - $(this).height() + 200;
-            }
-        });
+//        $('.story__container').waypoint(function (direction) {
+//            $('#flyout').toggleClass('is-visible', direction === "down");
+//        }, {
+//            offset: function () {
+//                return $.waypoints('viewportHeight') - $(this).height() + 200;
+//            }
+//        });
+
+        setTimeout(function(){
+            $('#flyout').toggleClass('is-visible');
+        }, 15000);
+
 
         $("[data-flyout-action='close']").on('click', function(){
             $(this).closest('#flyout').remove();
