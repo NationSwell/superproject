@@ -9,7 +9,8 @@
         <header class="story__header">
             <span class="rubric">{{ post.category }}</span>
             <h2 class="hd-d story__hed">{{ post.tout_title }}</h2>
-            <p class="story__dek">{{ post.tout_dek_text }}</p>
+            <p class="story__dek">{{ post.get_preview(50) }}</p>
+
 
             {#<div class="support-cause support-cause--urgent">
                 <h4 class="hd-c support-cause__heading">This cause still needs your help!</h4>

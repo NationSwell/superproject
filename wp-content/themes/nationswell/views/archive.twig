@@ -21,14 +21,8 @@
                 {% endfor %}
             </ul>
 
-            <div class="sidebar">
-                {#<div class="ad ad--300 hide_mobile">#}
-                    {#<div class="ad__container">#}
-                        {#<img src="http://placehold.it/300x600"/>#}
-                    {#</div>#}
-                {#</div>#}
-
-                {% include 'widget-popular.twig' %}
+            <div class="sidebar hide-mobile">
+                {{ sidebar_static }}
             </div>
         </div>
     </div>

@@ -8,12 +8,16 @@
  * @subpackage 	Timber
  * @since 		Timber 0.1
  */
-  
 
-	$templates = array('archive.twig', 'index.twig');
+
+    global $wp_query;
+
+	$templates = array('search.twig', 'archive.twig', 'index.twig');
 	$data = Timber::get_context();
 
+    $data['total_results'] = $wp_query->found_posts;
 	$data['title'] = 'Search results for '. get_search_query();
 	$data['posts'] = Timber::get_posts();
+    $data['sidebar_static'] = Timber::get_widgets('sidebar_static');
 	
 	Timber::render($templates, $data);

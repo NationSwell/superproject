@@ -1280,7 +1280,7 @@ a:hover {
 /* line 42, ../scss/partials/base/_components.scss */
 .story--tease .story__feature img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 /* line 48, ../scss/partials/base/_components.scss */
 .story--tease .story__hed {

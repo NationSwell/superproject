@@ -117,5 +117,9 @@ if (class_exists('TimberPost')) {
         function tout_dek_text(){
             return $this->tout_dek ? $this->tout_dek : $this->dek;
         }
+
+        function excerpt(){
+            return $this->get_preview(50);
+        }
     }
 }
