@@ -82,6 +82,7 @@ function my_register_fields()
 
     include_once('lib/fields/mailing_lists.php');
     include_once('lib/fields/modal_options.php');
+    include_once('lib/fields/display_options.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
