@@ -1741,16 +1741,17 @@ a:hover {
 /* Subscribe Status */
 /* line 516, ../scss/partials/base/_components.scss */
 .mc-email-status {
+  display: block;
   clear: both;
   font-size: 1.4rem;
   line-height: 1;
   padding: .5rem 0 0 0;
 }
-/* line 522, ../scss/partials/base/_components.scss */
+/* line 523, ../scss/partials/base/_components.scss */
 .mc-email-status.valid {
   color: #00b233;
 }
-/* line 526, ../scss/partials/base/_components.scss */
+/* line 527, ../scss/partials/base/_components.scss */
 .mc-email-status.error {
   color: #b20000;
 }

@@ -50,17 +50,13 @@
             <p>Sign up to the NationSwell newsletter and stay updated on the latest content</p>
 
             <div id="mc_embed_signup">
-                <form action="{{ mailchimp_form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <form action="{{ nationswell_mailchimp_daily }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
                     <div class="mc-field-group cf">
                         <div class="join-us__email icon icon_envelope">
-                            <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mce-EMAIL">
+                            <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mc-email">
                             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl">
+                            <label for="mc-email" class="mc-email-status"></label>
                         </div>
-                    </div>
-
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display: none;"></div>
-                        <div class="response" id="mce-success-response" style="display: none;"></div>
                     </div>
                 </form>
             </div>
