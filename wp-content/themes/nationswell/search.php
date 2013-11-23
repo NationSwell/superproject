@@ -17,7 +17,7 @@
 
     $data['total_results'] = $wp_query->found_posts;
 	$data['title'] = 'Search results for '. get_search_query();
-	$data['posts'] = Timber::get_posts();
+	$data['posts'] = Timber::get_posts(array(), 'NationSwellPost');
     $data['sidebar_static'] = Timber::get_widgets('sidebar_static');
 	
 	Timber::render($templates, $data);
