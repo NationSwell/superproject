@@ -138,3 +138,9 @@ function component_list($content, $component) {
 
     return $component;
 }
+
+function component_audio($content, $component){
+    $component['audio_url'] = $content['audio'];
+
+    return $component;
+}

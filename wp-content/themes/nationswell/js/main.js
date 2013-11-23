@@ -1,17 +1,18 @@
 (function ($) {
     $(function () {
 
+        // Ajaxify Subscribe Forms
         $('.mc-form').ajaxChimp({
             callback: function(resp){
                 if(resp.result === 'success') {
-                    console.log(resp.msg);
-                    console.log(this);
                 } else if (resp.result === 'error') {
-                    console.log(resp.msg);
-                    console.log(this);
                 }
 
             }
+        });
+
+        audiojs.events.ready(function() {
+            var as = audiojs.createAll();
         });
 
         // share popup window
