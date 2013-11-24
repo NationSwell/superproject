@@ -38,6 +38,7 @@ $data['posts'] = Timber::get_posts(array(
         'post_type' => 'post',
         'post__not_in' => array_unique($excludes),
         'meta_query' => array(
+            'relation' => 'OR',
             array(
                 'key' => 'hide_on_home_page',
                 'value' => '1',
