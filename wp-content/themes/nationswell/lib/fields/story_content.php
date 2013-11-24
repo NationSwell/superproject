@@ -221,6 +221,21 @@ if (function_exists("register_field_group")) {
                                             ),
                                         ),
                                         array(
+                                            'label' => 'Audio',
+                                            'name' => 'audio',
+                                            'display' => 'row',
+                                            'sub_fields' => array(
+                                                array(
+                                                    'key' => 'field_5290e5738cac0',
+                                                    'label' => 'Audio',
+                                                    'name' => 'audio',
+                                                    'type' => 'file',
+                                                    'save_format' => 'url',
+                                                    'library' => 'all',
+                                                ),
+                                            ),
+                                        ),
+                                        array(
                                             'label' => 'Video',
                                             'name' => 'video',
                                             'display' => 'row',
