@@ -3974,24 +3974,29 @@ input[type="submit"] {
 .carousel--series .carousel-item {
   height: 46rem;
 }
-/* line 65, ../scss/partials/desktop/_carousels.scss */
+/* line 64, ../scss/partials/desktop/_carousels.scss */
+.carousel--series .carousel-item .link-wrapper {
+  height: 100%;
+}
+/* line 70, ../scss/partials/desktop/_carousels.scss */
 .carousel--series .carousel--series__image {
   float: left;
   width: 33.3334%;
+  background-size: cover;
 }
 
-/* line 72, ../scss/partials/desktop/_carousels.scss */
+/* line 78, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel-item {
   box-shadow: -2px 0 0 white;
   width: 94rem;
   height: 54rem;
 }
-/* line 78, ../scss/partials/desktop/_carousels.scss */
+/* line 84, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   width: 94rem;
   height: 54rem;
 }
-/* line 83, ../scss/partials/desktop/_carousels.scss */
+/* line 89, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel__control {
   top: 24rem;
 }

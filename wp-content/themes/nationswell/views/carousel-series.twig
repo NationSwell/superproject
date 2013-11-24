@@ -4,7 +4,7 @@
             <li class="carousel-item">
                 <a href="{{ series.permalink }}" class="link-wrapper">
                     <div class="carousel--series__images cf">
-                        {% for post in series_carousel.posts %}
+                        {% for post in series_carousel[0].posts %}
                             <div class="carousel--series__image" style="background-image: url({{ post.thumbnail.src|resize(1300, 600) }});"></div>
                         {% endfor %}
                     </div>
