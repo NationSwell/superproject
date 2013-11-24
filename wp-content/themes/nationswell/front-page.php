@@ -29,7 +29,7 @@ if($featured_ids !== false) {
 
 $stories_carousel_ids = get_field('stories_carousel');
 if($stories_carousel_ids !== false) {
-    $data['stories_carousel'] = Timber::get_posts($stories_carousel_ids);
+    $data['stories_carousel'] = Timber::get_posts($stories_carousel_ids, 'NationSwellPost');
     $excludes = array_merge($excludes, $stories_carousel_ids);
 }
 

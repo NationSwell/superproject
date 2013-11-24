@@ -3,7 +3,7 @@
 {% block content %}
 
     {% if featured %}
-        <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--hero">
+    <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--hero">
         {% for feature in featured %}
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ feature.thumbnail.src|resize(1300,600) }});">
                 <a href="{{ feature.permalink }}" class="link-wrapper">
@@ -47,44 +47,7 @@
     </div>
 
     {% if series_carousel %}
-    <div class="carousel carousel--full-width carousel--series mobile-carousel mobile-carousel--peek">
-        <ul class="carousel__items">
-            {% for series in series_carousel %}
-                <li class="carousel-item">
-                    <a href="{{ series.permalink }}" class="link-wrapper">
-                        <div class="carousel--series__images cf">
-                            {% for post in series_carousel.posts %}
-                            <div class="carousel--series__image" style="background-image: url({{ post.thumbnail.src|resize(1300, 600) }});"></div>
-                            {% endfor %}
-                        </div>
-
-                        <div class="carousel-item__overlay v-align">
-                            <div class="v-align__inner v-align__inner--bottom">
-                                <div class="indicator indicator--blue indicator--title indicator--text icon icon_series">
-                                    <h5 class="indicator__heading">Series</h5>
-                                    <h5 class="indicator__subheading">{{ series.count }} Stories</h5>
-                                </div>
-
-                                <h2 class="hd-f carousel-item__title hide_mobile"><span>{{ series.name }}</span></h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
-
-        <h3 class="mobile-carousel__caption show_mobile hd-h"></h3>
-
-        <ul class="carousel__controls">
-            <li class="carousel__control carousel__control--prev">
-                <a class="icon icon_arrow-circle-left"></a>
-            </li>
-
-            <li class="carousel__control carousel__control--next">
-                <a class="icon icon_arrow-circle-right"></a>
-            </li>
-        </ul>
-    </div>
+    {% include 'carousel-series.twig' %}
     {% endif %}
 
     <div class="river river--one-col">
@@ -144,39 +107,7 @@
     </div>
 
     {% if stories_carousel %}
-    <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek">
-        <ul class="carousel__items">
-            {% for post in stories_carousel %}
-                <li class="carousel-item"><a href="{{ post.permalink }}" class="link-wrapper">
-                        <div class="carousel--peek__image" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});"></div>
-
-                        <div class="carousel-item__overlay v-align">
-                            <div class="v-align__inner v-align__inner--bottom">
-                                <div class="indicator indicator--blue indicator--title icon icon_camera hide_mobile"></div>
-                                <h2 class="hide_mobile hd-f carousel-item__title hide_mobile"><span>{{ post.post_title }}</span></h2>
-                            </div>
-                        </div>
-                    </a></li>
-            {% endfor %}
-        </ul>
-
-        <div class="mobile-carousel__external-container container show_mobile">
-            <a href="#" class="link-wrapper">
-                <div class="indicator indicator--blue indicator--title icon icon_camera"></div>
-                <h3 class="carousel-item__title hd-p"></h3>
-            </a>
-         </div>
-
-        <ul class="carousel__controls hide_mobile">
-            <li class="carousel__control carousel__control--prev">
-                <a class="icon icon_arrow-circle-left"></a>
-            </li>
-
-            <li class="carousel__control carousel__control--next">
-                <a class="icon icon_arrow-circle-right"></a>
-            </li>
-        </ul>
-    </div>
+    {% include 'carousel-stories.twig' %}
     {% endif %}
 
     <div class="river river--one-col">
@@ -205,4 +136,5 @@
             </div>
         </div>
     </div>
+
 {% endblock %}

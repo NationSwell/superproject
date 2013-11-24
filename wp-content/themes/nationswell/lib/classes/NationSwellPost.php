@@ -1,11 +1,13 @@
 <?php
 if (class_exists('TimberPost')) {
-    class NationSwellPost extends TimberPost {
+    class NationSwellPost extends TimberPost
+    {
         private $story_header_cache;
         private $more_stories_cache;
 
 
-        function story_header() {
+        function story_header()
+        {
             if (!isset($this->story_header_cache)) {
 
                 $this->story_header_cache = array();
@@ -31,31 +33,35 @@ if (class_exists('TimberPost')) {
             return $this->story_header_cache;
         }
 
-        function author() {
+        function author()
+        {
             $author = parent::author();
             $author->mug_shot = get_field('mug_shot', 'user_' . $author->ID);
 
-            if(isset($author->user_url)) {
+            if (isset($author->user_url)) {
                 $url = preg_replace('/https?:\/\//', '', $author->user_url);
 
-                if(($pos = strpos($url,'/')) !== false) {
+                if (($pos = strpos($url, '/')) !== false) {
                     $url = substr($url, 0, $pos);
                 }
                 $author->display_url = $url;
             }
+
             return $author;
         }
 
-        function petiton() {
+        function petiton()
+        {
 
         }
 
-        function more_stories() {
-            if(!isset($this->more_stories_cache)) {
+        function more_stories()
+        {
+            if (!isset($this->more_stories_cache)) {
                 $this->more_stories_cache = array();
                 $categories = get_the_category($this->ID);
 
-                if(!empty($categories)) {
+                if (!empty($categories)) {
                     $this->more_stories_cache = $this->get_more_stories($categories[0]->term_id);
                 }
 
@@ -64,7 +70,8 @@ if (class_exists('TimberPost')) {
             return $this->more_stories_cache;
         }
 
-        private function get_more_stories($term_id) {
+        private function get_more_stories($term_id)
+        {
             $query = new WP_Query(array(
                 'fields' => 'ids',
                 'posts_per_page' => 3,
@@ -84,47 +91,59 @@ if (class_exists('TimberPost')) {
             return Timber::get_posts($query->posts, 'NationSwellPost');
         }
 
-        function short_url() {
+        function short_url()
+        {
             global $bitly;
+
             // if bitly plugin is disabled fallback on the permalink
             return isset($bitly) ? $bitly->get_bitly_link_for_post_id($this->ID) : $this->permalink();
         }
 
-        function facebook_share_url(){
+        function facebook_share_url()
+        {
             return 'https://www.facebook.com/sharer/sharer.php?u='
-            . urlencode($this->short_url()) .'&title=' . urlencode($this->title());
+            . urlencode($this->short_url()) . '&title=' . urlencode($this->title());
         }
 
-        function twitter_share_url(){
+        function twitter_share_url()
+        {
             return 'https://twitter.com/share?url='
             . urlencode($this->short_url()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
         }
 
-        function google_share_url(){
+        function google_share_url()
+        {
             return 'https://plus.google.com/share?url='
             . urlencode($this->short_url());
         }
 
-        function call_to_action(){
+        function call_to_action()
+        {
             $cta_id = get_field('call_to_action_link', $this->ID);
 
-            if(!empty($cta_id)) {
+            if (!empty($cta_id)) {
                 return Timber::get_post($cta_id, 'CallToAction');
             }
 
             return false;
         }
 
-        function tout_title(){
+        function tout_title()
+        {
             return $this->tout_heading ? $this->tout_heading : $this->post_title;
         }
 
-        function tout_dek_text(){
-            return $this->tout_dek ? $this->tout_dek : $this->dek;
+        function tout_dek_text()
+        {
+
+            if ($this->tout_dek) {
+                return $this->tout_dek;
+            } elseif ($this->dek) {
+                return $this->dek;
+            }
+
+            return $this->get_preview(20, false, '');
         }
 
-        function excerpt(){
-            return $this->get_preview(50);
-        }
     }
 }
