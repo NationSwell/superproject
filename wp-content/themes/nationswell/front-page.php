@@ -23,7 +23,7 @@ $excludes = array();
 
 $featured_ids = get_field('featured');
 if($featured_ids !== false) {
-    $data['featured'] = Timber::get_posts($featured_ids);
+    $data['featured'] = Timber::get_posts($featured_ids, 'NationSwellPost');
     $excludes = array_merge($excludes, $featured_ids);
 }
 
