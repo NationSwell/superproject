@@ -96,6 +96,16 @@ function my_theme_register_required_plugins()
             'external_url' => '',
         ),
         array(
+            'name' => 'Co-Authors-Plus',
+            'slug' => 'co-authors-plus',
+            'source' => get_stylesheet_directory() . '/lib/plugins/Co-Authors-Plus.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
+        array(
             'name' => 'Simple Menu Delete',
             'slug' => 'simple-menu-delete',
             'source' => get_stylesheet_directory() . '/lib/plugins/simple-menu-delete.0.2.zip',
