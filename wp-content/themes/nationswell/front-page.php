@@ -64,7 +64,7 @@ $query = new WP_Query(array(
     ),
 ));
 
-$data['more'] = $query->found_posts > $posts_per_page;
+$data['more'] = $query->max_num_pages > $page;
 $data['posts'] = Timber::get_posts($query->posts, 'NationSwellPost');
 
 

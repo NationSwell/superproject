@@ -52,7 +52,7 @@ if($term && (is_tag() || is_category() || is_tax())) {
 }
 
 $context['posts'] = Timber::get_posts(false, 'NationSwellPost');
-$context['more'] = $wp_query->found_posts > $posts_per_page;
+$context['more'] = $wp_query->max_num_pages > $wp_query->query_vars['paged'];
 $context['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
 
