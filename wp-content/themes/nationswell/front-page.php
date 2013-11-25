@@ -44,7 +44,6 @@ if($stories_carousel_ids !== false) {
 
 $posts_per_page = 9;
 $query = new WP_Query(array(
-    'fields' => 'ids',
     'posts_per_page' => $posts_per_page,
     'offset' => ($page - 1) * $posts_per_page,
     'post_type' => 'post',
@@ -70,7 +69,6 @@ $data['posts'] = Timber::get_posts($query->posts, 'NationSwellPost');
 
 function get_series_preview($term) {
     $query = new WP_Query(array(
-        'fields' => 'ids',
         'posts_per_page' => 3,
         'post_type' => 'post',
         'tax_query' => array(
