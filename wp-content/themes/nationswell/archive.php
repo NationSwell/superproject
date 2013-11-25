@@ -50,7 +50,6 @@ if($term && (is_tag() || is_category() || is_tax())) {
     $context['header_image'] = get_field('header_image', $term->taxonomy . '_' . $term->term_id);
     $context['total_posts'] = $wp_query->found_posts;
 }
-print_r($_REQUEST);
 
 $context['posts'] = Timber::get_posts(false, 'NationSwellPost');
 $context['sidebar_static'] = Timber::get_widgets('sidebar_static');
