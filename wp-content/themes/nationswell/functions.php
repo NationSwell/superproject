@@ -23,6 +23,7 @@ function add_to_context($data)
     $data['menu_topic'] = new TimberMenu('menu_topic');
 
     $data['modal_joinus_enabled'] = get_field('modal_joinus_enabled', 'option');
+    $data['flyout_social_enabled'] = get_field('flyout_social_enabled', 'option');
 
     $data['nationswell_mailchimp_daily'] = get_field('nationswell_mailchimp_daily', 'option');
 
@@ -89,6 +90,7 @@ function my_register_fields()
     include_once('lib/fields/mailing_lists.php');
     include_once('lib/fields/modal_options.php');
     include_once('lib/fields/display_options.php');
+    include_once('lib/fields/flyout_options.php');
     include_once('lib/fields/social_links.php');
 }
 
