@@ -131,15 +131,15 @@ if (class_exists('TimberPost')) {
 
         function tout_title()
         {
-            return $this->tout_heading ? $this->tout_heading : $this->post_title;
+            return !empty($this->tout_heading) ? $this->tout_heading : $this->post_title;
         }
 
         function tout_dek_text()
         {
 
-            if ($this->tout_dek) {
+            if (!empty($this->tout_dek)) {
                 return $this->tout_dek;
-            } elseif ($this->dek) {
+            } elseif (!empty($this->dek)) {
                 return $this->dek;
             }
 
