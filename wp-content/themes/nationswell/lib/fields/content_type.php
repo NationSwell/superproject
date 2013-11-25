@@ -15,6 +15,7 @@ if(function_exists("register_field_group"))
                         'video' => 'Video',
                         'audio' => 'Audio',
                         'slideshow' => 'Slideshow',
+                        'listory' => 'Listory',
                     ),
                     'default_value' => 'story',
                     'allow_null' => 0,
