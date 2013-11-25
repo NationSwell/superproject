@@ -42,7 +42,7 @@ if($stories_carousel_ids !== false) {
     $excludes = array_merge($excludes, $stories_carousel_ids);
 }
 
-$posts_per_page = 8;
+$posts_per_page = 9;
 $query = new WP_Query(array(
     'fields' => 'ids',
     'posts_per_page' => $posts_per_page,
