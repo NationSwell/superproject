@@ -43,7 +43,8 @@ if($stories_carousel_ids !== false) {
 }
 
 $posts_per_page = 8;
-$query = array(
+$query = new WP_Query(array(
+    'fields' => 'ids',
     'posts_per_page' => $posts_per_page,
     'offset' => ($page - 1) * $posts_per_page,
     'post_type' => 'post',
@@ -61,9 +62,10 @@ $query = array(
             'compare' => 'NOT EXISTS'
         ),
     ),
-);
+));
 
-$data['posts'] = Timber::get_posts($query, 'NationSwellPost');
+$data['more'] = $query->found_posts > $posts_per_page;
+$data['posts'] = Timber::get_posts($query->posts, 'NationSwellPost');
 
 
 function get_series_preview($term) {
