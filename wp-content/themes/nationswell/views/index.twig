@@ -113,7 +113,7 @@
     <div class="river river--one-col">
         <div class="container">
             <ul class="story-teases">
-                {% for post in posts|slice(6, 2) %}
+                {% for post in posts|slice(6) %}
                     <li class="cf">{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
