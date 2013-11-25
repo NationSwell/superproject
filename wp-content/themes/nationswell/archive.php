@@ -54,4 +54,6 @@ if($term && (is_tag() || is_category() || is_tax())) {
 $context['posts'] = Timber::get_posts(false, 'NationSwellPost');
 $context['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
-Timber::render($templates, $context);
+$more = isset($_GET['ajax-more']);
+
+Timber::render($more ?'archive-more.twig' : $templates, $context);
