@@ -37,6 +37,7 @@ if (class_exists('TimberPost')) {
         {
             $author = parent::author();
             $author->mug_shot = get_field('mug_shot', 'user_' . $author->ID);
+            $author->author_page = get_author_posts_url($author->ID);
 
             if (isset($author->user_url)) {
                 $url = preg_replace('/https?:\/\//', '', $author->user_url);

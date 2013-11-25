@@ -1,7 +1,7 @@
 <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek">
     <ul class="carousel__items">
         {% for post in stories_carousel %}
-            <li class="carousel-item"><a href="{{ post.permalink }}" class="link-wrapper">
+            <li class="carousel-item carousel-item-{{ post.content_type }}"><a href="{{ post.permalink }}" class="link-wrapper ">
                     <div class="carousel--peek__image" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});"></div>
 
                     <div class="carousel-item__overlay v-align">
