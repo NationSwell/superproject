@@ -1,7 +1,20 @@
 (function ($) {
     $(function () {
-    // universal code
-        
+
+        // Ajaxify Subscribe Forms
+        $('.mc-form').ajaxChimp({
+            callback: function(resp){
+                if(resp.result === 'success') {
+                } else if (resp.result === 'error') {
+                }
+
+            }
+        });
+
+        audiojs.events.ready(function() {
+            var as = audiojs.createAll();
+        });
+
         // share popup window
         $('.btn--facebook, .btn--twitter').click(function (event) {
             var width = 575,
@@ -94,13 +107,18 @@
         });
 
         // flyout box
-        $('.story__container').waypoint(function (direction) {
-            $('#flyout').toggleClass('is-visible', direction === "down");
-        }, {
-            offset: function () {
-                return $.waypoints('viewportHeight') - $(this).height() + 200;
-            }
-        });
+//        $('.story__container').waypoint(function (direction) {
+//            $('#flyout').toggleClass('is-visible', direction === "down");
+//        }, {
+//            offset: function () {
+//                return $.waypoints('viewportHeight') - $(this).height() + 200;
+//            }
+//        });
+
+        setTimeout(function(){
+            $('#flyout').toggleClass('is-visible');
+        }, 15000);
+
 
         $("[data-flyout-action='close']").on('click', function(){
             $(this).closest('#flyout').remove();

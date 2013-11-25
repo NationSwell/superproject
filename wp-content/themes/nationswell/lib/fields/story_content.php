@@ -28,24 +28,24 @@
  *  You may edit the array as you see fit. However, this may result in errors if the array is not compatible with ACF
  */
 
-if(function_exists("register_field_group"))
-{
-    register_field_group(array (
+if (function_exists("register_field_group")) {
+    register_field_group(
+        array(
             'id' => 'acf_story-content',
             'title' => 'Story Content',
-            'fields' => array (
-                array (
+            'fields' => array(
+                array(
                     'key' => 'field_52828faaf0ad5',
                     'label' => 'Story Content',
                     'name' => 'story_content',
                     'type' => 'flexible_content',
-                    'layouts' => array (
-                        array (
+                    'layouts' => array(
+                        array(
                             'label' => 'Image',
                             'name' => 'image',
                             'display' => 'row',
-                            'sub_fields' => array (
-                                array (
+                            'sub_fields' => array(
+                                array(
                                     'key' => 'field_52828fe8f0ad6',
                                     'label' => 'image',
                                     'name' => 'image',
@@ -57,12 +57,27 @@ if(function_exists("register_field_group"))
                                 ),
                             ),
                         ),
-                        array (
+                        array(
+                            'label' => 'Audio',
+                            'name' => 'audio',
+                            'display' => 'row',
+                            'sub_fields' => array(
+                                array(
+                                    'key' => 'field_5290e5738cac0',
+                                    'label' => 'Audio',
+                                    'name' => 'audio',
+                                    'type' => 'file',
+                                    'save_format' => 'url',
+                                    'library' => 'all',
+                                ),
+                            ),
+                        ),
+                        array(
                             'label' => 'Video',
                             'name' => 'video',
                             'display' => 'row',
-                            'sub_fields' => array (
-                                array (
+                            'sub_fields' => array(
+                                array(
                                     'key' => 'field_528292d7f0adc',
                                     'label' => 'Title',
                                     'name' => 'title',
@@ -75,7 +90,7 @@ if(function_exists("register_field_group"))
                                     'formatting' => 'none',
                                     'maxlength' => '',
                                 ),
-                                array (
+                                array(
                                     'key' => 'field_5282934cf0add',
                                     'label' => 'Video Url',
                                     'name' => 'video_url',
@@ -88,7 +103,7 @@ if(function_exists("register_field_group"))
                                     'formatting' => 'none',
                                     'maxlength' => '',
                                 ),
-                                array (
+                                array(
                                     'key' => 'field_5282935cf0ade',
                                     'label' => 'Credit',
                                     'name' => 'credit',
@@ -103,12 +118,12 @@ if(function_exists("register_field_group"))
                                 ),
                             ),
                         ),
-                        array (
+                        array(
                             'label' => 'Pull Quote',
                             'name' => 'pull_quote',
                             'display' => 'row',
-                            'sub_fields' => array (
-                                array (
+                            'sub_fields' => array(
+                                array(
                                     'key' => 'field_528290fff0ada',
                                     'label' => 'Text',
                                     'name' => 'text',
@@ -119,7 +134,7 @@ if(function_exists("register_field_group"))
                                     'maxlength' => '',
                                     'formatting' => 'none',
                                 ),
-                                array (
+                                array(
                                     'key' => 'field_5282927cf0adb',
                                     'label' => 'Credit',
                                     'name' => 'credit',
@@ -134,40 +149,40 @@ if(function_exists("register_field_group"))
                                 ),
                             ),
                         ),
-                        array (
+                        array(
                             'label' => 'Related',
                             'name' => 'related',
                             'display' => 'row',
-                            'sub_fields' => array (
-                                array (
+                            'sub_fields' => array(
+                                array(
                                     'key' => 'field_5282ac370fb35',
                                     'label' => 'Related Posts',
                                     'name' => 'related',
                                     'type' => 'relationship',
                                     'column_width' => '',
                                     'return_format' => 'id',
-                                    'post_type' => array (
+                                    'post_type' => array(
                                         0 => 'post',
                                     ),
-                                    'taxonomy' => array (
+                                    'taxonomy' => array(
                                         0 => 'all',
                                     ),
-                                    'filters' => array (
+                                    'filters' => array(
                                         0 => 'search',
                                     ),
-                                    'result_elements' => array (
+                                    'result_elements' => array(
                                         0 => 'post_type',
                                         1 => 'post_title',
                                     ),
                                     'max' => '',
                                 ),
-                                array (
+                                array(
                                     'key' => 'field_5282ad4c70f12',
                                     'label' => 'Position',
                                     'name' => 'position',
                                     'type' => 'select',
                                     'column_width' => '',
-                                    'choices' => array (
+                                    'choices' => array(
                                         'inline' => 'Inline',
                                         'sidebar' => 'Sidebar',
                                     ),
@@ -188,12 +203,12 @@ if(function_exists("register_field_group"))
                                     'name' => 'list_item_media',
                                     'type' => 'flexible_content',
                                     'layouts' => array(
-                                        array (
+                                        array(
                                             'label' => 'Image',
                                             'name' => 'image',
                                             'display' => 'row',
-                                            'sub_fields' => array (
-                                                array (
+                                            'sub_fields' => array(
+                                                array(
                                                     'key' => 'field_52828fe8f0ad6',
                                                     'label' => 'image',
                                                     'name' => 'image',
@@ -205,12 +220,27 @@ if(function_exists("register_field_group"))
                                                 ),
                                             ),
                                         ),
-                                        array (
+                                        array(
+                                            'label' => 'Audio',
+                                            'name' => 'audio',
+                                            'display' => 'row',
+                                            'sub_fields' => array(
+                                                array(
+                                                    'key' => 'field_5290e5738cac0',
+                                                    'label' => 'Audio',
+                                                    'name' => 'audio',
+                                                    'type' => 'file',
+                                                    'save_format' => 'url',
+                                                    'library' => 'all',
+                                                ),
+                                            ),
+                                        ),
+                                        array(
                                             'label' => 'Video',
                                             'name' => 'video',
                                             'display' => 'row',
-                                            'sub_fields' => array (
-                                                array (
+                                            'sub_fields' => array(
+                                                array(
                                                     'key' => 'field_528292d7f0adc',
                                                     'label' => 'Title',
                                                     'name' => 'title',
@@ -223,7 +253,7 @@ if(function_exists("register_field_group"))
                                                     'formatting' => 'none',
                                                     'maxlength' => '',
                                                 ),
-                                                array (
+                                                array(
                                                     'key' => 'field_5282934cf0add',
                                                     'label' => 'Video Url',
                                                     'name' => 'video_url',
@@ -236,7 +266,7 @@ if(function_exists("register_field_group"))
                                                     'formatting' => 'none',
                                                     'maxlength' => '',
                                                 ),
-                                                array (
+                                                array(
                                                     'key' => 'field_5282935cf0ade',
                                                     'label' => 'Credit',
                                                     'name' => 'credit',
@@ -296,9 +326,9 @@ if(function_exists("register_field_group"))
                     'button_label' => 'Add Content',
                 ),
             ),
-            'location' => array (
-                array (
-                    array (
+            'location' => array(
+                array(
+                    array(
                         'param' => 'post_type',
                         'operator' => '==',
                         'value' => 'post',
@@ -307,12 +337,12 @@ if(function_exists("register_field_group"))
                     ),
                 ),
             ),
-            'options' => array (
+            'options' => array(
                 'position' => 'normal',
                 'layout' => 'no_box',
-                'hide_on_screen' => array (
-                ),
+                'hide_on_screen' => array(),
             ),
             'menu_order' => 0,
-        ));
+        )
+    );
 }

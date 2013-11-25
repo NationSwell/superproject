@@ -60,11 +60,17 @@
 .carousel--series {
   .carousel-item {
     height: 46rem;
+
+    .link-wrapper {
+      height: 100%;
+    }
+
   }
 
   .carousel--series__image {
     float: left;
     width: 33.3334%;
+    background-size: cover;
   }
 }
 

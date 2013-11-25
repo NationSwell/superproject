@@ -23,20 +23,28 @@ $excludes = array();
 
 $featured_ids = get_field('featured');
 if($featured_ids !== false) {
-    $data['featured'] = Timber::get_posts($featured_ids);
+    $data['featured'] = Timber::get_posts($featured_ids, 'NationSwellPost');
     $excludes = array_merge($excludes, $featured_ids);
 }
 
 $stories_carousel_ids = get_field('stories_carousel');
 if($stories_carousel_ids !== false) {
-    $data['stories_carousel'] = Timber::get_posts($stories_carousel_ids);
+    $data['stories_carousel'] = Timber::get_posts($stories_carousel_ids, 'NationSwellPost');
     $excludes = array_merge($excludes, $stories_carousel_ids);
 }
 
 $data['posts'] = Timber::get_posts(array(
         'posts_per_page' => 8,
         'post_type' => 'post',
-        'post__not_in' => array_unique($excludes)
+        'post__not_in' => array_unique($excludes),
+        'meta_query' => array(
+            'relation' => 'OR',
+            array(
+                'key' => 'hide_on_home_page',
+                'value' => '1',
+                'compare' => '!='
+            ),
+        ),
     ), 'NationSwellPost');
 
 // Series carousel:

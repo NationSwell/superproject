@@ -11,7 +11,7 @@
 global $wp_query;
 
 $data = Timber::get_context();
-$data['posts'] = Timber::get_posts();
+$data['posts'] = Timber::get_posts(false, 'NationSwellPost');
 
 $author = new TimberUser($wp_query->query_vars['author']);
 $data['author'] = $author;

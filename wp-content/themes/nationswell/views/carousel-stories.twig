@@ -1,0 +1,33 @@
+<div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek">
+    <ul class="carousel__items">
+        {% for post in stories_carousel %}
+            <li class="carousel-item carousel-item-{{ post.content_type }}"><a href="{{ post.permalink }}" class="link-wrapper ">
+                    <div class="carousel--peek__image" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});"></div>
+
+                    <div class="carousel-item__overlay v-align">
+                        <div class="v-align__inner v-align__inner--bottom">
+                            <div class="indicator indicator--blue indicator--title icon icon_camera hide_mobile"></div>
+                            <h2 class="hide_mobile hd-f carousel-item__title hide_mobile"><span>{{ post.post_title }}</span></h2>
+                        </div>
+                    </div>
+                </a></li>
+        {% endfor %}
+    </ul>
+
+    <div class="mobile-carousel__external-container container show_mobile">
+        <a href="#" class="link-wrapper">
+            <div class="indicator indicator--blue indicator--title icon icon_camera"></div>
+            <h3 class="carousel-item__title hd-p"></h3>
+        </a>
+    </div>
+
+    <ul class="carousel__controls hide_mobile">
+        <li class="carousel__control carousel__control--prev">
+            <a class="icon icon_arrow-circle-left"></a>
+        </li>
+
+        <li class="carousel__control carousel__control--next">
+            <a class="icon icon_arrow-circle-right"></a>
+        </li>
+    </ul>
+</div>

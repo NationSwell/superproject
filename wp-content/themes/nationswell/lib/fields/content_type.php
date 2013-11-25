@@ -13,7 +13,8 @@ if(function_exists("register_field_group"))
                     'choices' => array (
                         'story' => 'Story',
                         'video' => 'Video',
-                        'gallery' => 'Gallery',
+                        'audio' => 'Audio',
+                        'slideshow' => 'Slideshow',
                     ),
                     'default_value' => 'story',
                     'allow_null' => 0,

@@ -7,13 +7,21 @@
     </div>
 
     <div class="take-action__b">
-        <form>
-            <div class="form-element">
-                <label for="take-action__input--email">Email Address</label>
-                <input type="email" id="ta-email" class="text-input" placeholder="Enter email address">
-            </div>
 
-            <button type="submit" href="#" class="btn btn--solid take-action__submit">Sign up</button>
-        </form>
+        <div id="mc_embed_signup">
+            <form action="{{ post.call_to_action.mailchimp_id }}" method="post" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
+                <div class="mc-field-group">
+                    <div class="form-element">
+                        <input type="email" value="" placeholder="Enter your email address" name="EMAIL" class="required email text-input" id="mc-email">
+                        <label for="mc-email" class="mc-email-status"></label>
+                    </div>
+                </div>
+
+                <div class="cf">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--solid take-action__submit">
+                </div>
+            </form>
+        </div>
+
     </div>
 {% endblock %}

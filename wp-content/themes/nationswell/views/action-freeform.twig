@@ -2,7 +2,7 @@
 
 {% block action_body %}
     <div class="take-action__a">
-        <img src="{{ post.call_to_action.image.url }}" class="take-action__img">
+        <img src="{{ post.call_to_action.image.url|resize(256) }}" class="take-action__img">
     </div>
 
     <div class="take-action__b">

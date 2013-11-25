@@ -36,12 +36,13 @@
 
   .link-wrapper {
     height: auto;
+    color: $ns_black;
   }
 
   .story__feature {
     img {
       display: block;
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -508,5 +509,22 @@
     &:last-child {
       padding-right: 0;
     }
+  }
+}
+
+/* Subscribe Status */
+.mc-email-status {
+  display: block;
+  clear: both;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: .5rem 0 0 0;
+
+  &.valid {
+    color: $green1;
+  }
+
+  &.error {
+    color: $red3;
   }
 }
