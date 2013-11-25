@@ -33,19 +33,26 @@ if($stories_carousel_ids !== false) {
     $excludes = array_merge($excludes, $stories_carousel_ids);
 }
 
-$data['posts'] = Timber::get_posts(array(
-        'posts_per_page' => 8,
-        'post_type' => 'post',
-        'post__not_in' => array_unique($excludes),
-        'meta_query' => array(
-            'relation' => 'OR',
-            array(
-                'key' => 'hide_on_home_page',
-                'value' => '1',
-                'compare' => '!='
-            ),
+$query = array(
+    'posts_per_page' => 8,
+    'post_type' => 'post',
+    'post__not_in' => array_unique($excludes),
+    'meta_query' => array(
+        'relation' => 'OR',
+        array(
+            'key' => 'hide_on_home_page',
+            'value' => '1',
+            'compare' => '!='
         ),
-    ), 'NationSwellPost');
+        array(
+            'key' => 'hide_on_home_page',
+            'value' => '1',
+            'compare' => 'NOT EXISTS'
+        ),
+    ),
+);
+
+$data['posts'] = Timber::get_posts($query, 'NationSwellPost');
 
 // Series carousel:
 $series_carousel_terms = array();
