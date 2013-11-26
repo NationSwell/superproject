@@ -3602,7 +3602,7 @@ input[type="submit"] {
 /* line 86, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title:before {
   font-size: 5rem;
-  line-height: 1.85;
+  line-height: 1.7;
 }
 /* line 91, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title.indicator--text {
