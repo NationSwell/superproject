@@ -930,8 +930,12 @@ a:hover {
   -o-appearance: none;
   appearance: none;
 }
+/* line 53, ../scss/partials/base/_forms.scss */
+.form-element select {
+  width: 100%;
+}
 
-/* line 56, ../scss/partials/base/_forms.scss */
+/* line 58, ../scss/partials/base/_forms.scss */
 .join-us__email {
   background-color: white;
   border: 1px solid #dbdbdb;
@@ -939,7 +943,7 @@ a:hover {
   position: relative;
   width: 100%;
 }
-/* line 63, ../scss/partials/base/_forms.scss */
+/* line 65, ../scss/partials/base/_forms.scss */
 .join-us__email input[type="email"] {
   border: 0 none;
   box-shadow: none;
@@ -948,7 +952,7 @@ a:hover {
   line-height: 1.2;
   width: 70%;
 }
-/* line 72, ../scss/partials/base/_forms.scss */
+/* line 74, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe {
   background-color: #fd6464;
   color: white;
@@ -957,11 +961,11 @@ a:hover {
   font-weight: 400;
   float: right;
 }
-/* line 80, ../scss/partials/base/_forms.scss */
+/* line 82, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe:hover {
   background-color: #0098d8;
 }
-/* line 85, ../scss/partials/base/_forms.scss */
+/* line 87, ../scss/partials/base/_forms.scss */
 .join-us__email:before {
   color: #eeeeee;
   display: block;
@@ -1033,11 +1037,11 @@ a:hover {
 
 /* search */
 /* line 53, ../scss/partials/base/_nav.scss */
-.search-field {
+.expand-field {
   position: relative;
 }
 /* line 56, ../scss/partials/base/_nav.scss */
-.search-field label {
+.expand-field label {
   color: white;
   cursor: pointer;
   display: block;
@@ -1051,15 +1055,15 @@ a:hover {
   transition: all 0.15s ease-in-out;
 }
 /* line 69, ../scss/partials/base/_nav.scss */
-.search-field label:active, .search-field label:focus {
+.expand-field label:active, .expand-field label:focus {
   outline: 0 none;
 }
 /* line 73, ../scss/partials/base/_nav.scss */
-.search-field label:hover {
+.expand-field label:hover {
   color: #0098d8;
 }
 /* line 78, ../scss/partials/base/_nav.scss */
-.search-field input[type="text"] {
+.expand-field input {
   background-color: transparent;
   border: 0 none;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1077,27 +1081,27 @@ a:hover {
   appearance: none;
 }
 /* line 8, ../scss/bourbon/css3/_placeholder.scss */
-.search-field input[type="text"]::-webkit-input-placeholder {
+.expand-field input::-webkit-input-placeholder {
   color: #9aacb5;
 }
 /* line 14, ../scss/bourbon/css3/_placeholder.scss */
-.search-field input[type="text"]:-moz-placeholder {
+.expand-field input:-moz-placeholder {
   color: #9aacb5;
 }
 /* line 19, ../scss/bourbon/css3/_placeholder.scss */
-.search-field input[type="text"]::-moz-placeholder {
+.expand-field input::-moz-placeholder {
   color: #9aacb5;
 }
 /* line 24, ../scss/bourbon/css3/_placeholder.scss */
-.search-field input[type="text"]:-ms-input-placeholder {
+.expand-field input:-ms-input-placeholder {
   color: #9aacb5;
 }
 /* line 96, ../scss/partials/base/_nav.scss */
-.search-field input[type="text"]:focus, .search-field input[type="text"]:active {
+.expand-field input:focus, .expand-field input:active {
   outline: 0 none;
 }
 /* line 100, ../scss/partials/base/_nav.scss */
-.search-field input[type="text"].is-open {
+.expand-field input.is-open {
   opacity: 1;
   outline: 0 none;
 }
@@ -1774,22 +1778,25 @@ a:hover {
   padding-right: 0;
 }
 
-/* Subscribe Status */
+/* subscribe status */
 /* line 516, ../scss/partials/base/_components.scss */
 .mc-email-status {
-  display: block;
-  clear: both;
-  font-size: 1.4rem;
   line-height: 1;
   padding: .5rem 0 0 0;
 }
-/* line 523, ../scss/partials/base/_components.scss */
+/* line 520, ../scss/partials/base/_components.scss */
 .mc-email-status.valid {
   color: #00b233;
 }
-/* line 527, ../scss/partials/base/_components.scss */
+/* line 524, ../scss/partials/base/_components.scss */
 .mc-email-status.error {
   color: #b20000;
+}
+
+/* line 529, ../scss/partials/base/_components.scss */
+.module.mc-email-status {
+  display: block;
+  clear: both;
 }
 
 /* line 1, ../scss/partials/base/_carousels.scss */

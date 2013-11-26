@@ -24,7 +24,7 @@
 /* more stories toggle */
 .more-stories-toggle {
   font-size: 4.4rem;
-  padding-top: 2.3rem;
+  padding-top: 1.8rem;
 }
 
 /* social links */
@@ -44,30 +44,60 @@
 }
 
 /* search */
-.search-field {
-  margin-right: 2.8rem;
+.expand-field {
+  &#page-search {
+    margin-right: 0.8rem;
+
+    label {
+      width: 2.8rem;
+
+      &:before {
+        font-size: 3.2rem;
+      }
+    }
+
+    input {
+      width: 2.8rem;
+      padding-left: 3.8rem;
+
+      &.is-open {
+        padding-right: 3.4rem;
+        width: 30rem;
+      }
+    }
+  }
+
+  &#page-subscribe {
+    margin-right: 1.4rem;
+
+    label {
+      width: 3.8rem;
+
+      &:before {
+        font-size: 3rem;
+      }
+    }
+
+    input {
+      width: 3.8rem;
+      padding-left: 4.8rem;
+
+      &.is-open {
+        padding-right: 3.4rem;
+        width: 30rem;
+      }
+    }
+  }
 
   label {
     height: 7.2rem;
     padding-top: 2.8rem;
-    width: 3.8rem;
-
-    &:before {
-      font-size: 3.2rem;
-    }
   }
 
-  input[type="text"] {
-    width: 3.8rem;
+  input {
     height: 7.2rem;
-    padding-left: 3.8rem;
     top: 0.5rem;
     font-size: 1.4rem;
-
-    &.is-open {
-      padding-right: 3.4rem;
-      width: 30rem;
-    }
   }
 }
 

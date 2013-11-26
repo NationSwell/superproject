@@ -10,13 +10,20 @@
         <ul class="social-links fr hide_mobile">
             <li><a href="{{ nationswell_facebook }}" class="icon icon_facebook social-links__link" target="_blank"></a></li>
             <li><a href="{{ nationswell_twitter }}" class="icon icon_twitter social-links__link" target="_blank"></a></li>
-            <li><a href="#" class="icon icon_envelope social-links__link"></a></li>
         </ul>
 
+        <form action="{{ mailchimp_form_action }}" method="post" class="mc-form validate fr hide_mobile" novalidate>
+            <ul id="page-subscribe" class="expand-field">
+                <li><label for="nav-subscribe" class="icon icon_envelope z1">&nbsp;</label></li>
+                <li><input type="email" id="nav-subscribe" placeholder="Subscribe to our Newsletter" class="required"></li>
+                <li><span class="mc-email-status"></span></li>
+            </ul>
+        </form>
+
         <form action="/" method="get" class="fr hide_mobile">
-            <ul id="page-search" class="search-field">
+            <ul id="page-search" class="expand-field">
                 <li><label for="nav-search" class="icon icon_search z1">&nbsp;</label></li>
-                <li><input type="text" id="nav-search" name="s" placeholder="Search NationSwell"></li>
+                <li><input type="text" id="nav-search" placeholder="Search NationSwell"></li>
             </ul>
         </form>
     </div>
