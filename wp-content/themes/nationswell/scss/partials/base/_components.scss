@@ -512,11 +512,8 @@
   }
 }
 
-/* Subscribe Status */
+/* subscribe status */
 .mc-email-status {
-  display: block;
-  clear: both;
-  font-size: 1.4rem;
   line-height: 1;
   padding: .5rem 0 0 0;
 
@@ -527,4 +524,9 @@
   &.error {
     color: $red3;
   }
+}
+
+.module.mc-email-status {
+  display: block;
+  clear: both;
 }

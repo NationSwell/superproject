@@ -50,7 +50,7 @@
 }
 
 /* search */
-.search-field {
+.expand-field {
   position: relative;
 
   label {
@@ -75,7 +75,7 @@
     }
   }
 
-  input[type="text"] {
+  input {
     background-color: transparent;
     border: 0 none;
     font-family: $montserrat;

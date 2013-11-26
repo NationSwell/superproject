@@ -124,10 +124,15 @@
             $(this).closest('#flyout').remove();
         });
 
-        // expand/collapse header search field
-        $('[for*="search"]').on('click', function() {
-            var input = $(this).attr('for');
-            $('#' + input).toggleClass('is-open');
+        // expand/collapse header fields
+        $('[for*="nav-"]').on('click', function() {
+            var input = $(this).attr('for'),
+                $field = $('#' + input),
+                isOpen = $field.hasClass('is-open');
+
+            $('[id*="nav-"]').removeClass('is-open');
+
+            !isOpen ? $field.addClass('is-open') : $.noop();
         });
 
         // take action submission
