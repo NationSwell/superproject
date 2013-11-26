@@ -90,5 +90,10 @@
         display: block;
       }
     }
+
+    // force block layout
+    .story__header {
+      overflow: hidden;
+    }
   }
 }
