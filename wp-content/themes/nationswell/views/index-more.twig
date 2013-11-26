@@ -11,7 +11,7 @@
         </div>
     </div>
 </div>
-{% if more %}
+{% if more is not empty %}
 <div class="btn-container">
     <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">Load more</a>
 </div>

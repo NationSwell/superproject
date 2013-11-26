@@ -1,6 +1,6 @@
 <article class="story story--tease story--tease--{{ post.content_type }}">
     <a href="{{ post.permalink }}" class="link-wrapper">
-        {% if post.thumbnail %}
+        {% if post.thumbnail is not empty %}
         <figure class="story__feature">
             <img src="{{ post.thumbnail.src|resize(330, 330) }}"/>
         </figure>

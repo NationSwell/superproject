@@ -3,7 +3,7 @@
 		<h2 class="h2"><a href="{{post.get_path}}">{{ post.tout_title }}</a></h2>
 		<p>{{ post.tout_dek_text }}</p>
 
-		{% if post.get_thumbnail %}
+		{% if post.get_thumbnail is not empty %}
 			<img src="{{post.get_thumbnail.get_url}}" />
 		{% endif %}
 	{% endblock %}

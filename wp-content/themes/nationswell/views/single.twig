@@ -12,7 +12,7 @@
                         <a href="{{ post.twitter_share_url }}" class="btn btn--twitter btn--square icon icon_twitter">Tweet</a>
                     </div>
 
-                    {% if post.call_to_action %}
+                    {% if post.call_to_action is not empty %}
                     <div class="sticky-take-action">
                         <div class="indicator indicator--red indicator--take-action icon icon_write"></div>
 
