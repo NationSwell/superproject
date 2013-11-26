@@ -46,6 +46,11 @@
     }
   }
 
+  // force block layout
+  .story__header {
+    overflow: hidden;
+  }
+
   .story__hed {
     @include transition(all 0.15s ease-in-out);
   }
