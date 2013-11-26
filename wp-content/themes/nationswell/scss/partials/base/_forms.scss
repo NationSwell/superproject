@@ -49,6 +49,10 @@
 
     @include appearance(none);
   }
+
+  select {
+    width: 100%;
+  }
 }
 
 .join-us__email {

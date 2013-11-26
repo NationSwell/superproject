@@ -127,7 +127,7 @@
         &:before {
           color: $ns_blue1;
           font-family: 'icons';
-          content: '\f11c';
+          content: $icon_star;
           position: absolute;
         }
       }
