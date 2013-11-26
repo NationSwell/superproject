@@ -930,8 +930,12 @@ a:hover {
   -o-appearance: none;
   appearance: none;
 }
+/* line 53, ../scss/partials/base/_forms.scss */
+.form-element select {
+  width: 100%;
+}
 
-/* line 56, ../scss/partials/base/_forms.scss */
+/* line 58, ../scss/partials/base/_forms.scss */
 .join-us__email {
   background-color: white;
   border: 1px solid #dbdbdb;
@@ -939,7 +943,7 @@ a:hover {
   position: relative;
   width: 100%;
 }
-/* line 63, ../scss/partials/base/_forms.scss */
+/* line 65, ../scss/partials/base/_forms.scss */
 .join-us__email input[type="email"] {
   border: 0 none;
   box-shadow: none;
@@ -948,7 +952,7 @@ a:hover {
   line-height: 1.2;
   width: 70%;
 }
-/* line 72, ../scss/partials/base/_forms.scss */
+/* line 74, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe {
   background-color: #fd6464;
   color: white;
@@ -957,11 +961,11 @@ a:hover {
   font-weight: 400;
   float: right;
 }
-/* line 80, ../scss/partials/base/_forms.scss */
+/* line 82, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe:hover {
   background-color: #0098d8;
 }
-/* line 85, ../scss/partials/base/_forms.scss */
+/* line 87, ../scss/partials/base/_forms.scss */
 .join-us__email:before {
   color: #eeeeee;
   display: block;
@@ -1598,14 +1602,14 @@ a:hover {
 
 /* tags */
 /* line 357, ../scss/partials/base/_components.scss */
-.tag {
+.tag-tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
 /* line 363, ../scss/partials/base/_components.scss */
-.tag:hover {
+.tag-tag:hover {
   background-color: #0098d8;
   color: white;
 }

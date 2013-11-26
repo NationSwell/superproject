@@ -1595,14 +1595,14 @@ a:hover {
 
 /* tags */
 /* line 357, ../scss/partials/base/_components.scss */
-.tag {
+.tag-tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
 /* line 363, ../scss/partials/base/_components.scss */
-.tag:hover {
+.tag-tag:hover {
   background-color: #0098d8;
   color: white;
 }
@@ -3738,7 +3738,7 @@ input[type="submit"] {
 
 /* tags */
 /* line 277, ../scss/partials/desktop/_components.scss */
-.tag {
+.tag-tag {
   font-size: 1.4rem;
   padding: 0.6rem 0.8rem;
 }
