@@ -931,7 +931,7 @@ a:hover {
   appearance: none;
 }
 
-/* line 54, ../scss/partials/base/_forms.scss */
+/* line 56, ../scss/partials/base/_forms.scss */
 .join-us__email {
   background-color: white;
   border: 1px solid #dbdbdb;
@@ -939,7 +939,7 @@ a:hover {
   position: relative;
   width: 100%;
 }
-/* line 61, ../scss/partials/base/_forms.scss */
+/* line 63, ../scss/partials/base/_forms.scss */
 .join-us__email input[type="email"] {
   border: 0 none;
   box-shadow: none;
@@ -948,7 +948,7 @@ a:hover {
   line-height: 1.2;
   width: 70%;
 }
-/* line 70, ../scss/partials/base/_forms.scss */
+/* line 72, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe {
   background-color: #fd6464;
   color: white;
@@ -957,11 +957,11 @@ a:hover {
   font-weight: 400;
   float: right;
 }
-/* line 78, ../scss/partials/base/_forms.scss */
+/* line 80, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe:hover {
   background-color: #0098d8;
 }
-/* line 83, ../scss/partials/base/_forms.scss */
+/* line 85, ../scss/partials/base/_forms.scss */
 .join-us__email:before {
   color: #eeeeee;
   display: block;
@@ -1463,7 +1463,7 @@ a:hover {
   speak: none;
   font-family: 'icons';
   /* check is correct character after icon font additions */
-  content: "\f11a";
+  content: "\f11c";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2391,7 +2391,7 @@ body.is-locked {
 .story__container .story__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
-  content: '\f11a';
+  content: "\f11c";
   position: absolute;
 }
 
@@ -2696,7 +2696,7 @@ body.is-locked {
 .static__container .static__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
-  content: '\f11a';
+  content: "\f11c";
   position: absolute;
 }
 

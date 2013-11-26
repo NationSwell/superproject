@@ -2,9 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Tue Nov 26 10:02:41 2013
- By Mark Catalano
-Created by Mark Catalano with FontForge 2.0 (http://fontforge.sf.net)
+Created by FontForge 20120731 at Tue Nov 26 10:41:26 2013
+ By David Chapman
+Created by David Chapman with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
 <defs>
 <font id="icons" horiz-adv-x="307" >
@@ -55,8 +55,8 @@ d="M196 240q7 -4 7 -13q0 -15 -15 -19q-2 -1 -6 -1v38q13 -4 14 -5zM134 301q0 8 9 1
 q29 29 69.5 29t69.5 -29zM218 193q18 15 18 37q0 21 -15 33q-9 8 -28 12l-11 2v41h2q13 -6 14 -21h32q-2 26 -19 39q-14 10 -29 13v15h-28v-15q-23 -3 -35 -14q-16 -15 -16 -36q0 -23 16 -35q11 -7 35 -13v-44q-10 3 -15 9t-6 16h-33q0 -24 19 -40q13 -10 35 -13v-17h28v17
 q24 3 36 14z" />
     <glyph glyph-name="uniF109" unicode="&#xf109;" horiz-adv-x="280" 
-d="M149 410q131 0 131 -117q0 -67 -30 -93q-15 -12 -34 -18q-16 -5 -46 -5l-3 24q-3 -3 -7.5 -7t-5.5 -5q-4 -4 -16 -9t-22 -5q-23 0 -33 14q-11 16 -11 40q0 27 7 48q7 23 20 35q24 26 49 26q14 0 21 -4l10 -6q6 -4 11 -9l6 15h17l-27 -137q31 0 50 22q20 23 20 75
-q0 91 -108 91q-63 0 -93 -38q-29 -36 -29 -114q0 -57 22 -82q23 -26 73 -26h64l1 -20q-32 -3 -67 -3q-119 0 -119 122q0 186 149 186zM168 227l15 71q-2 1 -4 3l-3 3l-1 2l-6 3q-8 5 -19 5q-25 0 -40 -26t-15 -59q0 -32 25 -32q14 0 23 6q3 2 25 24z" />
+d="M149 410q131 0 131 -117q0 -67 -30 -93q-15 -12 -34 -18q-16 -5 -46 -5l-3 24q-3 -3 -7.5 -7t-5.5 -5q-4 -4 -16 -9t-22 -5q-23 0 -33 14q-11 16 -11 40q0 27 7 48q7 23 20 35q24 26 49 26q14 0 21 -4q2 -1 5 -3q4 -2 5 -3q6 -4 11 -9l6 15h17l-27 -137q31 0 50 22
+q20 23 20 75q0 91 -108 91q-63 0 -93 -38q-29 -36 -29 -114q0 -57 22 -82q23 -26 73 -26h64l1 -20q-32 -3 -67 -3q-119 0 -119 122q0 186 149 186zM168 227l15 71q-2 1 -4 3l-3 3l-1 2l-6 3q-8 5 -19 5q-25 0 -40 -26t-15 -59q0 -32 25 -32q14 0 23 6q3 2 25 24z" />
     <glyph glyph-name="uniF10A" unicode="&#xf10a;" horiz-adv-x="464" 
 d="M437 410l-205 -193l-203 193h407h1zM463 387q1 -2 1 -6v-250q0 -7 -2 -11l-142 132zM1 389l144 -136l-143 -131q-2 6 -2 10v249q0 5 1 8zM232 170l62 59l136 -127h-399l139 127z" />
     <glyph glyph-name="uniF10B" unicode="&#xf10b;" 
