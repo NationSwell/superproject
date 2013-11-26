@@ -4,7 +4,7 @@
 		<p>{{ post.tout_dek_text }}</p>
 
 		{% if post.get_thumbnail is not empty %}
-			<img src="{{post.get_thumbnail.get_url}}" />
+			<img src="{{post.get_thumbnail.get_url}}" alt="{{ post.get_thumbnail._wp_attachment_image_alt }}"/>
 		{% endif %}
 	{% endblock %}
 </article>

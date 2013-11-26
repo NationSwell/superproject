@@ -147,7 +147,12 @@ if (class_exists('TimberPost')) {
         }
 
         function coauthors(){
-            return coauthors_posts_links(null, null, null, null, false);
+
+            if(function_exists(coauthors_posts_links)) {
+                return coauthors_posts_links(null, null, null, null, false);
+            } else {
+                return author();
+            }
         }
 
     }

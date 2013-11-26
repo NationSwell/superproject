@@ -52,7 +52,7 @@
 
                 <div class="author-box cf">
                     <div class="author__a">
-                        <img src="{{ post.author.mug_shot.url|resize(134,134) }}" class="author__portrait">
+                        <img src="{{ post.author.mug_shot.url|resize(134,134) }}" class="author__portrait" alt="{{ post.author.mug_shot._wp_attachment_image_alt }}">
 
                         <div class="author__contact">
                             <a href="{{ post.author.user_url }}" class="author__url">{{ post.author.display_url }}</a>
@@ -133,7 +133,7 @@
                             <article class="story story--tease">
                                 <a href="#" class="link-wrapper">
                                     <figure class="story__feature fl">
-                                        <img src="{{ story.thumbnail.src|resize(600, 330) }}"/>
+                                        <img src="{{ story.thumbnail.src|resize(600, 330) }}" alt="{{ story.thumbnail._wp_attachment_image_alt }}"/>
                                     </figure>
 
                                     <header class="story__header">

@@ -10,6 +10,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'js/build/combined.min.js': [
+                        'js/src/vendor/matchMedia.js',
                         'js/src/vendor/enquire.js',
                         'js/src/vendor/jquery.cookie.js',
                         'js/src/vendor/jquery.ajaxchimp.js',

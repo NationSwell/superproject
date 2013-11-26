@@ -2,7 +2,7 @@
     <a href="{{ post.permalink }}" class="link-wrapper">
         {% if post.thumbnail is not empty %}
         <figure class="story__feature">
-            <img src="{{ post.thumbnail.src|resize(330, 330) }}"/>
+            <img src="{{ post.thumbnail.src|resize(330, 330) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}"/>
         </figure>
         {% endif %}
 
