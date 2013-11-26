@@ -513,20 +513,17 @@
 }
 
 /* subscribe status */
-.mc-email-status {
+.module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
+  display: block;
+  clear: both;
 
   &.valid {
     color: $green1;
   }
 
   &.error {
-    color: $red3;
+    color: $ns_red;
   }
-}
-
-.module.mc-email-status {
-  display: block;
-  clear: both;
 }

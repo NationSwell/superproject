@@ -126,13 +126,20 @@
 
         // expand/collapse header fields
         $('[for*="nav-"]').on('click', function() {
-            var input = $(this).attr('for'),
+            var $this = $(this),
+                input = $(this).attr('for'),
                 $field = $('#' + input),
                 isOpen = $field.hasClass('is-open');
 
             $('[id*="nav-"]').removeClass('is-open');
 
-            !isOpen ? $field.addClass('is-open') : $.noop();
+            if(!isOpen) {
+                $field.addClass('is-open');
+            }
+
+            if($this.attr('for', 'nav-subscribe')) {
+                $this.removeClass('error valid');
+            }
         });
 
         // take action submission

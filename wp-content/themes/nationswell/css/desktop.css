@@ -1773,23 +1773,19 @@ a:hover {
 
 /* subscribe status */
 /* line 516, ../scss/partials/base/_components.scss */
-.mc-email-status {
+.module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
-}
-/* line 520, ../scss/partials/base/_components.scss */
-.mc-email-status.valid {
-  color: #00b233;
-}
-/* line 524, ../scss/partials/base/_components.scss */
-.mc-email-status.error {
-  color: #b20000;
-}
-
-/* line 529, ../scss/partials/base/_components.scss */
-.module.mc-email-status {
   display: block;
   clear: both;
+}
+/* line 522, ../scss/partials/base/_components.scss */
+.module.mc-email-status.valid {
+  color: #46b525;
+}
+/* line 526, ../scss/partials/base/_components.scss */
+.module.mc-email-status.error {
+  color: #fc3b40;
 }
 
 /* line 1, ../scss/partials/base/_carousels.scss */
@@ -3378,7 +3374,7 @@ input[type="submit"] {
 /* search */
 /* line 48, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-search {
-  margin-right: 0.8rem;
+  margin-right: 1rem;
 }
 /* line 51, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-search label {
@@ -3400,36 +3396,45 @@ input[type="submit"] {
 }
 /* line 70, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe {
-  margin-right: 1.4rem;
+  margin-right: 0.6rem;
+  position: relative;
 }
-/* line 73, ../scss/partials/desktop/_nav.scss */
+/* line 74, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label {
   width: 3.8rem;
 }
-/* line 76, ../scss/partials/desktop/_nav.scss */
+/* line 77, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label:before {
   font-size: 3rem;
 }
-/* line 81, ../scss/partials/desktop/_nav.scss */
+/* line 82, ../scss/partials/desktop/_nav.scss */
+.expand-field#page-subscribe label.valid, .expand-field#page-subscribe label.error {
+  text-indent: -9999em;
+}
+/* line 86, ../scss/partials/desktop/_nav.scss */
+.expand-field#page-subscribe label.valid {
+  color: #46b525;
+}
+/* line 90, ../scss/partials/desktop/_nav.scss */
+.expand-field#page-subscribe label.error {
+  color: #fc3b40;
+}
+/* line 95, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe input {
   width: 3.8rem;
   padding-left: 4.8rem;
 }
-/* line 85, ../scss/partials/desktop/_nav.scss */
+/* line 99, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe input.is-open {
   padding-right: 3.4rem;
   width: 30rem;
 }
-/* line 91, ../scss/partials/desktop/_nav.scss */
-.expand-field#page-subscribe .mc-email-status {
-  display: none;
-}
-/* line 96, ../scss/partials/desktop/_nav.scss */
+/* line 106, ../scss/partials/desktop/_nav.scss */
 .expand-field label {
   height: 7.2rem;
   padding-top: 2.8rem;
 }
-/* line 101, ../scss/partials/desktop/_nav.scss */
+/* line 111, ../scss/partials/desktop/_nav.scss */
 .expand-field input {
   height: 7.2rem;
   top: 0.5rem;
@@ -3437,13 +3442,13 @@ input[type="submit"] {
 }
 
 /* trending topics */
-/* line 110, ../scss/partials/desktop/_nav.scss */
+/* line 120, ../scss/partials/desktop/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 115, ../scss/partials/desktop/_nav.scss */
+/* line 125, ../scss/partials/desktop/_nav.scss */
 .trending-topics__heading {
   display: inline-block;
   color: #9aacb5;
@@ -3452,7 +3457,7 @@ input[type="submit"] {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 123, ../scss/partials/desktop/_nav.scss */
+/* line 133, ../scss/partials/desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;

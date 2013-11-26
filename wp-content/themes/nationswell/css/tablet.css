@@ -1780,23 +1780,19 @@ a:hover {
 
 /* subscribe status */
 /* line 516, ../scss/partials/base/_components.scss */
-.mc-email-status {
+.module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
-}
-/* line 520, ../scss/partials/base/_components.scss */
-.mc-email-status.valid {
-  color: #00b233;
-}
-/* line 524, ../scss/partials/base/_components.scss */
-.mc-email-status.error {
-  color: #b20000;
-}
-
-/* line 529, ../scss/partials/base/_components.scss */
-.module.mc-email-status {
   display: block;
   clear: both;
+}
+/* line 522, ../scss/partials/base/_components.scss */
+.module.mc-email-status.valid {
+  color: #46b525;
+}
+/* line 526, ../scss/partials/base/_components.scss */
+.module.mc-email-status.error {
+  color: #fc3b40;
 }
 
 /* line 1, ../scss/partials/base/_carousels.scss */

@@ -46,7 +46,7 @@
 /* search */
 .expand-field {
   &#page-search {
-    margin-right: 0.8rem;
+    margin-right: 1rem;
 
     label {
       width: 2.8rem;
@@ -68,13 +68,27 @@
   }
 
   &#page-subscribe {
-    margin-right: 1.4rem;
+    margin-right: 0.6rem;
+    position: relative;
 
     label {
       width: 3.8rem;
 
       &:before {
         font-size: 3rem;
+      }
+
+      &.valid,
+      &.error {
+        text-indent: -9999em;
+      }
+
+      &.valid {
+        color: $green1;
+      }
+
+      &.error {
+        color: $ns_red;
       }
     }
 
@@ -86,10 +100,6 @@
         padding-right: 3.4rem;
         width: 30rem;
       }
-    }
-
-    .mc-email-status {
-      display: none;
     }
   }
 
