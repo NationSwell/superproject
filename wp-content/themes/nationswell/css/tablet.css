@@ -2074,16 +2074,16 @@ body.is-locked {
 }
 /* line 15, ../scss/partials/base/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry:hover .story__hed {
-  color: #cbeaf7;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
-/* line 20, ../scss/partials/base/_homepage.scss */
+/* line 21, ../scss/partials/base/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 26, ../scss/partials/base/_homepage.scss */
+/* line 27, ../scss/partials/base/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry:after {
   content: '';
   background-image: url("../img/overlay_mesh.png");
@@ -2094,43 +2094,44 @@ body.is-locked {
   right: 0;
   bottom: 0;
   pointer-events: none;
+  opacity: 0.6;
 }
-/* line 38, ../scss/partials/base/_homepage.scss */
+/* line 40, ../scss/partials/base/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry .story--hero {
   position: absolute;
   bottom: 0;
 }
 
-/* line 46, ../scss/partials/base/_homepage.scss */
+/* line 48, ../scss/partials/base/_homepage.scss */
 .support-cause--hero {
   background-color: rgba(6, 24, 34, 0.6);
   display: inline-block;
 }
-/* line 50, ../scss/partials/base/_homepage.scss */
+/* line 52, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__heading {
   color: white;
 }
-/* line 54, ../scss/partials/base/_homepage.scss */
+/* line 56, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__data {
   color: white;
 }
-/* line 58, ../scss/partials/base/_homepage.scss */
+/* line 60, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__label {
   color: white;
 }
-/* line 62, ../scss/partials/base/_homepage.scss */
+/* line 64, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__separator {
   color: white;
   margin: 0;
 }
 
 /* river */
-/* line 72, ../scss/partials/base/_homepage.scss */
+/* line 74, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease:hover {
   background-color: #f6f6f6;
   box-shadow: 2rem 0 0 #f6f6f6, -2rem 0 0 #f6f6f6;
 }
-/* line 77, ../scss/partials/base/_homepage.scss */
+/* line 79, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease .sponsor {
   background-color: #0098d8;
   color: #ddedf8;
@@ -2138,11 +2139,11 @@ body.is-locked {
   text-align: left;
   display: inline-block;
 }
-/* line 86, ../scss/partials/base/_homepage.scss */
+/* line 88, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature {
   position: relative;
 }
-/* line 89, ../scss/partials/base/_homepage.scss */
+/* line 91, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature img {
   display: block;
 }
