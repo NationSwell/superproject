@@ -146,5 +146,9 @@ if (class_exists('TimberPost')) {
             return $this->get_preview(20, false, '');
         }
 
+        function coauthors(){
+            return coauthors_posts_links(null, null, null, null, false);
+        }
+
     }
 }

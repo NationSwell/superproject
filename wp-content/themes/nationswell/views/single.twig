@@ -30,7 +30,7 @@
                     <header>
                         <ul class="story__meta">
                             <li>Appears in <a href="{{ post.category.url }}">{{ post.category }}</a></li>
-                            <li>Written by <a href="{{ post.author.author_page }}">{{ post.author.name }}</a> on {{ post.post_date|date('F j, Y') }}</li>
+                            <li>Written by {{ post.coauthors }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
