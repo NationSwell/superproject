@@ -1,5 +1,9 @@
 (function ($) {
     $(function () {
+        // sticky nav
+        var $fullNavBar = $('.full-header');
+
+        $fullNavBar.waypoint('sticky', { stuckClass: 'stuck' });
 
         // Ajaxify Subscribe Forms
         $('.mc-form').ajaxChimp({
@@ -164,7 +168,7 @@
     // responsive code
 
         // mobile code
-        enquire.register("screen and (max-width: 959px)", {
+        enquire.register("screen and (max-device-width: 767px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
             match : function() {
@@ -277,7 +281,7 @@
             }
 
         // desktop code
-        }).register("screen and (min-device-width:1024px)", {
+        }).register("screen and (min-device-width:768px)", {
             // If supplied, triggered when a media query matches.
             match : function() {
                 // toggle more stories panel
@@ -355,7 +359,7 @@
 
                 $stickyBar.waypoint('sticky', {
                     stuckClass: 'stuck',
-                    offset: 60
+                    offset: 132
                 });
 
                 // bottoming out sharebar at end of article

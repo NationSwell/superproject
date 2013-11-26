@@ -1,85 +1,87 @@
-<header id="page-header">
-    <div class="container">
-        <a href="/" class="site-logo site-logo--slogan fl">
-            <img src="/{{ theme_dir }}/img/site-logo.png" alt=""/>
-            <span class="slogan hide_mobile">Meet the people renewing America</span>
-        </a>
+<div class="full-header">
+    <header id="page-header">
+        <div class="container">
+            <a href="/" class="site-logo site-logo--slogan fl">
+                <img src="/{{ theme_dir }}/img/site-logo.png" alt=""/>
+                <span class="slogan hide_mobile">Meet the people renewing America</span>
+            </a>
 
-        <a href="#" class="toggle-collapse more-stories-toggle icon icon_hamburger fr" data-mobile-target="body" data-desktop-target="#more-stories"></a>
+            <a href="#" class="toggle-collapse more-stories-toggle icon icon_hamburger fr" data-mobile-target="body" data-desktop-target="#more-stories"></a>
 
-        <ul class="social-links fr hide_mobile">
-            <li><a href="{{ nationswell_facebook }}" class="icon icon_facebook social-links__link" target="_blank"></a></li>
-            <li><a href="{{ nationswell_twitter }}" class="icon icon_twitter social-links__link" target="_blank"></a></li>
-        </ul>
-
-        <form action="http://nationswell.us6.list-manage1.com/subscribe/post?u=5f8740745b&id=8eaa257d1b" method="post" class="mc-form validate fr hide_mobile" novalidate>
-            <ul id="page-subscribe" class="expand-field">
-                <li><label for="nav-subscribe" class="mc-email-status icon icon_envelope z1">Enter your email address</label></li>
-                <li><input type="email" id="nav-subscribe" placeholder="Subscribe to our Newsletter" class="required"></li>
-                <li><span class="mc-email-status"></span></li>
+            <ul class="social-links fr hide_mobile">
+                <li><a href="{{ nationswell_facebook }}" class="icon icon_facebook social-links__link" target="_blank"></a></li>
+                <li><a href="{{ nationswell_twitter }}" class="icon icon_twitter social-links__link" target="_blank"></a></li>
             </ul>
-        </form>
 
-        <form action="/" method="get" class="fr hide_mobile">
-            <ul id="page-search" class="expand-field">
-                <li><label for="nav-search" class="icon icon_search z1"></label></li>
-                <li><input type="text" id="nav-search" placeholder="Search NationSwell"></li>
+            <form action="http://nationswell.us6.list-manage1.com/subscribe/post?u=5f8740745b&id=8eaa257d1b" method="post" class="mc-form validate fr hide_mobile" novalidate>
+                <ul id="page-subscribe" class="expand-field">
+                    <li><label for="nav-subscribe" class="mc-email-status icon icon_envelope z1">Enter your email address</label></li>
+                    <li><input type="email" id="nav-subscribe" placeholder="Subscribe to our Newsletter" class="required"></li>
+                    <li><span class="mc-email-status"></span></li>
+                </ul>
+            </form>
+
+            <form action="/" method="get" class="fr hide_mobile">
+                <ul id="page-search" class="expand-field">
+                    <li><label for="nav-search" class="icon icon_search z1"></label></li>
+                    <li><input type="text" id="nav-search" placeholder="Search NationSwell"></li>
+                </ul>
+            </form>
+        </div>
+    </header>
+
+    <div id="more-stories" class="collapse z2 hide_mobile">
+        <div class="container">
+            <ul class="category-list">
+                {% for item in menu_main.get_items %}
+                    <li><a class="category-list__category" href="{{item.get_path}}">{{item.title}}</a></li>
+                {% endfor %}
             </ul>
-        </form>
-    </div>
-</header>
 
-<div id="more-stories" class="collapse z2 hide_mobile">
-    <div class="container">
-        <ul class="category-list">
-            {% for item in menu_main.get_items %}
-            <li><a class="category-list__category" href="{{item.get_path}}">{{item.title}}</a></li>
-            {% endfor %}
-        </ul>
+            <div class="most-popular">
+                <header class="cf">
+                    <h3 class="hd-g more-stories__heading fl">Most Popular</h3>
+                    {#<a href="#" class="btn btn--view-all fr icon icon_arrow-right">View all environment</a>#}
+                </header>
 
-        <div class="most-popular">
-            <header class="cf">
-                <h3 class="hd-g more-stories__heading fl">Most Popular</h3>
-                {#<a href="#" class="btn btn--view-all fr icon icon_arrow-right">View all environment</a>#}
-            </header>
+                <ul class="most-popular-list cf">
+                    <li><article class="story story--tease">
+                            <a href="#" class="link-wrapper">
+                                <figure class="story__feature">
+                                    <img src="http://lorempixel.com/260/146/city">
+                                </figure>
 
-            <ul class="most-popular-list cf">
-                <li><article class="story story--tease">
-                    <a href="#" class="link-wrapper">
-                        <figure class="story__feature">
-                            <img src="http://lorempixel.com/260/146/city">
-                        </figure>
+                                <header class="story__header">
+                                    <span class="rubric">Education</span>
+                                    <h2 class="hd-i story__hed">How Grocery Stores are Tricking Us to Eat Well</h2>
+                                </header>
+                            </a>
+                        </article></li>
 
-                        <header class="story__header">
-                            <span class="rubric">Education</span>
-                            <h2 class="hd-i story__hed">How Grocery Stores are Tricking Us to Eat Well</h2>
-                        </header>
-                    </a>
-                </article></li>
+                    <li><article class="story story--tease">
+                            <a href="#" class="link-wrapper">
+                                <figure class="story__feature">
+                                    <img src="http://lorempixel.com/260/146/animals">
+                                </figure>
 
-                <li><article class="story story--tease">
-                    <a href="#" class="link-wrapper">
-                        <figure class="story__feature">
-                            <img src="http://lorempixel.com/260/146/animals">
-                        </figure>
+                                <header class="story__header">
+                                    <span class="rubric">Education</span>
+                                    <h2 class="hd-i story__hed">Wealth in an Era of Economic Recovery</h2>
+                                </header>
+                            </a>
+                        </article></li>
 
-                        <header class="story__header">
-                            <span class="rubric">Education</span>
-                            <h2 class="hd-i story__hed">Wealth in an Era of Economic Recovery</h2>
-                        </header>
-                    </a>
-                </article></li>
-
-                <li><article class="story story--tease story--no-photo">
-                    <a href="#" class="link-wrapper">
-                        <header class="story__header">
-                            <span class="rubric">Education</span>
-                            <h2 class="hd-b story__hed">Daycare in Danger of Closing Its Doors</h2>
-                            <p class="story__dek">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </header>
-                    </a>
-                </article></li>
-            </ul>
+                    <li><article class="story story--tease story--no-photo">
+                            <a href="#" class="link-wrapper">
+                                <header class="story__header">
+                                    <span class="rubric">Education</span>
+                                    <h2 class="hd-b story__hed">Daycare in Danger of Closing Its Doors</h2>
+                                    <p class="story__dek">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </header>
+                            </a>
+                        </article></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

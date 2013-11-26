@@ -206,10 +206,14 @@
 
   -webkit-transform: translate3d(0,0,0);
 
-  .bottomed & {
+  /*.bottomed {
     position: absolute;
     bottom: 0;
     top: auto;
+  }*/
+
+  &.stuck {
+    top: 150px;
   }
 }
 
