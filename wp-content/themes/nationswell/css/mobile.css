@@ -461,6 +461,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 163, ../scss/partials/base/_headings.scss */
+.hd-u {
+  color: #003046;
+  font-family: "Oswald", Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* line 1, ../scss/partials/base/_typography.scss */
 a {
   text-decoration: none;
@@ -3085,6 +3094,11 @@ html, body {
 /* line 75, ../scss/partials/mobile/_headings.scss */
 .hd-r {
   font-size: 2.5rem;
+}
+
+/* line 79, ../scss/partials/mobile/_headings.scss */
+.hd-u {
+  font-size: 4.2rem;
 }
 
 /* line 1, ../scss/partials/mobile/_typography.scss */

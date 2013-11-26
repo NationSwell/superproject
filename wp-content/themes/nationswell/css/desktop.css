@@ -454,6 +454,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 163, ../scss/partials/base/_headings.scss */
+.hd-u {
+  color: #003046;
+  font-family: "Oswald", Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* line 1, ../scss/partials/base/_typography.scss */
 a {
   text-decoration: none;
@@ -3099,6 +3108,11 @@ body.is-locked {
 /* line 73, ../scss/partials/desktop/_headings.scss */
 .hd-t {
   font-size: 1.2rem;
+}
+
+/* line 77, ../scss/partials/desktop/_headings.scss */
+.hd-u {
+  font-size: 2.6rem;
 }
 
 /* line 1, ../scss/partials/desktop/_typography.scss */
