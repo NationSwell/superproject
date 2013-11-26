@@ -3248,12 +3248,8 @@ body.is-locked {
   height: 0;
   bottom: 0;
 }
-/* line 125, ../scss/partials/desktop/_buttons.scss */
-.btn.btn--external {
-  padding: 0.2rem 1rem 1rem;
-}
 
-/* line 131, ../scss/partials/desktop/_buttons.scss */
+/* line 129, ../scss/partials/desktop/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -3424,12 +3420,16 @@ input[type="submit"] {
   padding-right: 3.4rem;
   width: 30rem;
 }
-/* line 92, ../scss/partials/desktop/_nav.scss */
+/* line 91, ../scss/partials/desktop/_nav.scss */
+.expand-field#page-subscribe .mc-email-status {
+  display: none;
+}
+/* line 96, ../scss/partials/desktop/_nav.scss */
 .expand-field label {
   height: 7.2rem;
   padding-top: 2.8rem;
 }
-/* line 97, ../scss/partials/desktop/_nav.scss */
+/* line 101, ../scss/partials/desktop/_nav.scss */
 .expand-field input {
   height: 7.2rem;
   top: 0.5rem;
@@ -3437,13 +3437,13 @@ input[type="submit"] {
 }
 
 /* trending topics */
-/* line 106, ../scss/partials/desktop/_nav.scss */
+/* line 110, ../scss/partials/desktop/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 111, ../scss/partials/desktop/_nav.scss */
+/* line 115, ../scss/partials/desktop/_nav.scss */
 .trending-topics__heading {
   display: inline-block;
   color: #9aacb5;
@@ -3452,7 +3452,7 @@ input[type="submit"] {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 119, ../scss/partials/desktop/_nav.scss */
+/* line 123, ../scss/partials/desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;
