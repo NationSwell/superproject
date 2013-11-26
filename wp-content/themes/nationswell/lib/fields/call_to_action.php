@@ -263,7 +263,7 @@ if (function_exists("register_field_group")) {
                     'name' => 'goal_date',
                     'type' => 'date_picker',
                     'date_format' => 'yymmdd',
-                    'display_format' => 'dd/mm/yy',
+                    'display_format' => 'yy-mm-dd',
                     'first_day' => 1,
                 ),
                 array(
