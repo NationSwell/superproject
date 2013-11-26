@@ -12,7 +12,7 @@
                         <a href="{{ post.twitter_share_url }}" class="btn btn--twitter btn--square icon icon_twitter">Tweet</a>
                     </div>
 
-                    {% if post.call_to_action %}
+                    {% if post.call_to_action is not empty %}
                     <div class="sticky-take-action">
                         <div class="indicator indicator--red indicator--take-action icon icon_write"></div>
 
@@ -30,7 +30,7 @@
                     <header>
                         <ul class="story__meta">
                             <li>Appears in <a href="{{ post.category.url }}">{{ post.category }}</a></li>
-                            <li>Written by <a href="{{ post.author.author_page }}">{{ post.author.name }}</a> on {{ post.post_date|date('F j, Y') }}</li>
+                            <li>Written by {{ post.coauthors }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>

@@ -17,7 +17,7 @@
     <div class="container">
         <div class="river river--two-col">
             <ul class="story-teases">
-                {% for post in posts|slice(0, 10) %}
+                {% for post in posts %}
                     <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
@@ -28,7 +28,7 @@
     </div>
     {% if more %}
         <div class="btn-container">
-            <a href="#" class="btn btn--load-more icon icon_load-more">Load more</a>
+            <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">Load more</a>
         </div>
     {% endif %}
 

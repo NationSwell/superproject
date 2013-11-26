@@ -446,6 +446,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 155, ../scss/partials/base/_headings.scss */
+.hd-t {
+  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* line 1, ../scss/partials/base/_typography.scss */
 a {
   text-decoration: none;
@@ -548,92 +557,92 @@ a:hover {
 }
 
 /* line 44, ../scss/partials/base/_icons.scss */
-.icon_camera:before {
+.icon_cart:before {
   content: "\f105";
 }
 
 /* line 47, ../scss/partials/base/_icons.scss */
-.icon_cart:before {
+.icon_close:before {
   content: "\f106";
 }
 
 /* line 50, ../scss/partials/base/_icons.scss */
-.icon_close:before {
+.icon_comment:before {
   content: "\f107";
 }
 
 /* line 53, ../scss/partials/base/_icons.scss */
-.icon_comment:before {
+.icon_donate:before {
   content: "\f108";
 }
 
 /* line 56, ../scss/partials/base/_icons.scss */
-.icon_donate:before {
+.icon_email:before {
   content: "\f109";
 }
 
 /* line 59, ../scss/partials/base/_icons.scss */
-.icon_email:before {
+.icon_envelope:before {
   content: "\f10a";
 }
 
 /* line 62, ../scss/partials/base/_icons.scss */
-.icon_envelope:before {
+.icon_external:before {
   content: "\f10b";
 }
 
 /* line 65, ../scss/partials/base/_icons.scss */
-.icon_external:before {
+.icon_facebook:before {
   content: "\f10c";
 }
 
 /* line 68, ../scss/partials/base/_icons.scss */
-.icon_facebook:before {
+.icon_fullscreen:before {
   content: "\f10d";
 }
 
 /* line 71, ../scss/partials/base/_icons.scss */
-.icon_fullscreen:before {
+.icon_google-plus:before {
   content: "\f10e";
 }
 
 /* line 74, ../scss/partials/base/_icons.scss */
-.icon_google-plus:before {
+.icon_hamburger:before {
   content: "\f10f";
 }
 
 /* line 77, ../scss/partials/base/_icons.scss */
-.icon_hamburger:before {
+.icon_information:before {
   content: "\f110";
 }
 
 /* line 80, ../scss/partials/base/_icons.scss */
-.icon_information:before {
+.icon_instagram:before {
   content: "\f111";
 }
 
 /* line 83, ../scss/partials/base/_icons.scss */
-.icon_instagram:before {
+.icon_link:before {
   content: "\f112";
 }
 
 /* line 86, ../scss/partials/base/_icons.scss */
-.icon_link:before {
+.icon_listory:before {
   content: "\f113";
 }
 
 /* line 89, ../scss/partials/base/_icons.scss */
-.icon_listicle:before {
+.icon_load-more:before {
   content: "\f114";
 }
 
 /* line 92, ../scss/partials/base/_icons.scss */
-.icon_load-more:before {
+.icon_nationswell-flag:before {
   content: "\f115";
 }
 
 /* line 95, ../scss/partials/base/_icons.scss */
-.icon_nationswell-flag:before {
+.icon_photo:before {
   content: "\f116";
 }
 
@@ -2076,7 +2085,7 @@ body.is-locked {
 
 /* line 46, ../scss/partials/base/_homepage.scss */
 .support-cause--hero {
-  background-color: #fc3b40;
+  background-color: rgba(6, 24, 34, 0.6);
   display: inline-block;
 }
 /* line 50, ../scss/partials/base/_homepage.scss */
@@ -3081,6 +3090,11 @@ body.is-locked {
   font-size: 1.8rem;
 }
 
+/* line 73, ../scss/partials/desktop/_headings.scss */
+.hd-t {
+  font-size: 1.2rem;
+}
+
 /* line 1, ../scss/partials/desktop/_typography.scss */
 .caption {
   font-size: 1.4rem;
@@ -3490,11 +3504,11 @@ input[type="submit"] {
 /* support cause */
 /* line 33, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__heading {
-  margin-bottom: 1.4rem;
+  margin-bottom: .75rem;
 }
 /* line 37, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__data {
-  font-size: 3.4rem;
+  font-size: 2.4rem;
 }
 /* line 40, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__data .super {
@@ -3503,7 +3517,7 @@ input[type="submit"] {
 }
 /* line 46, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__label {
-  font-size: 2rem;
+  font-size: 1.8rem;
   top: -0.4rem;
   -webkit-font-smoothing: antialiased;
 }
@@ -3544,7 +3558,7 @@ input[type="submit"] {
 /* line 86, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title:before {
   font-size: 5rem;
-  line-height: 1.74;
+  line-height: 1.85;
 }
 /* line 91, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title.indicator--text {
@@ -4143,12 +4157,12 @@ input[type="submit"] {
 
 /* line 50, ../scss/partials/desktop/_homepage.scss */
 .support-cause--hero {
-  padding: 1.4rem;
+  padding: 1rem;
 }
 /* line 53, ../scss/partials/desktop/_homepage.scss */
 .support-cause--hero .support-cause__separator {
-  font-size: 5.8rem;
-  line-height: 3rem;
+  font-size: 3.8rem;
+  line-height: 2.5rem;
 }
 
 /* river */

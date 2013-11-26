@@ -12,6 +12,15 @@ if (class_exists('TimberPost')) {
             }
         }
 
+        public function days_until(){
+            $datetime1 = new DateTime(date('Y-m-d'));
+
+            $datetime2 = new DateTime($this->goal_date);
+
+            $interval = $datetime1->diff($datetime2);
+            return $interval->format('%a');
+        }
+
         public function petition() {
             if(!isset($this->petition)) {
                 $this->petition = $this->type === 'petition' ? new ChangeOrgPetition($this->ID) : false;

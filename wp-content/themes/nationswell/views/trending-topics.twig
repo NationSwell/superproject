@@ -1,4 +1,4 @@
-{% if menu_topic.name %}
+{% if menu_topic.name is not empty %}
 <div class="trending-topics hide_mobile">
     <div class="container">
         <h3 class="trending-topics__heading">{{ menu_topic.name }}:</h3>

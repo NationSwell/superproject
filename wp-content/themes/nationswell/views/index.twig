@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {% if featured %}
+    {% if featured is not empty %}
     <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--hero">
         {% for feature in featured %}
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ feature.thumbnail.src|resize(1300,600) }});">
@@ -11,8 +11,8 @@
                         <span class="rubric">{{ feature.category }}</span>
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ feature.tout_title }}</h1>
 
-                        {#<div class="support-cause support-cause--hero z2">
-                            <h4 class="hd-c support-cause__heading">Support this cause</h4>
+                        <div class="support-cause support-cause--hero z2">
+                            <h4 class="hd-t support-cause__heading">Support this cause</h4>
 
                             <div class="support-cause__content">
                                 <span class="support-cause__data">45<sup class="super">%</sup></span>
@@ -20,10 +20,10 @@
 
                                 <span class="support-cause__separator icon icon_separator"></span>
 
-                                <span class="support-cause__data">4</span>
+                                <span class="support-cause__data">{{ feature.call_to_action.days_until }}</span>
                                 <span class="support-cause__label">days to go</span>
                             </div>
-                        </div>#}
+                        </div>
 
                     </article>
                 </a>
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    {% if series_carousel %}
+    {% if series_carousel is not empty %}
     {% include 'carousel-series.twig' %}
     {% endif %}
 
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    {% if stories_carousel %}
+    {% if stories_carousel is not empty %}
     {% include 'carousel-stories.twig' %}
     {% endif %}
 
@@ -138,7 +138,7 @@
     </div>
     {% if more %}
         <div class="btn-container">
-            <a href="#" class="btn btn--load-more icon icon_load-more">Load more</a>
+            <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">Load more</a>
         </div>
     {% endif %}
 

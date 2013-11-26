@@ -391,21 +391,13 @@
             }
         });
 
-        var page = 1;
         $('#page-content').on('click','.btn--load-more', function(e){
-            var $btn = $(this).parent('.btn-container'),
-                url =  window.location.origin + window.location.pathname,
-                index = url.lastIndexOf('/page/');
-
-            if(index !== -1) {
-                url =  url.substr(0, index + 1);
-            }
-
-            page += 1;
-            url =  url + '/page/' + page + '?ajax-more=true';
+            var $link = $(this),
+                $container = $link.parent('.btn-container'),
+                url = $link.attr('href') + '?ajax-more=true';
 
             $.get(url, function(html){
-                $btn.replaceWith(html);
+                $container.replaceWith(html);
             });
 
             e.preventDefault();

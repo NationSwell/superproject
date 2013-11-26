@@ -51,8 +51,14 @@ if($term && (is_tag() || is_category() || is_tax())) {
     $context['total_posts'] = $wp_query->found_posts;
 }
 
+function get_next_page_link($current) {
+    return remove_query_arg('ajax-more', get_pagenum_link($current));
+}
+
+$page = max($wp_query->query_vars['paged'], 1);
+$context['more'] = $wp_query->max_num_pages > $page ? get_next_page_link($page + 1) : false;
 $context['posts'] = Timber::get_posts(false, 'NationSwellPost');
-$context['more'] = $wp_query->max_num_pages > $wp_query->query_vars['paged'];
+
 $context['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
 

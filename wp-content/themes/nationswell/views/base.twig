@@ -39,7 +39,7 @@
 </div>
 
 {% block modals %}
-{% if modal_joinus_enabled %}
+{% if modal_joinus_enabled is not empty %}
     {% include 'modal-joinus.twig' %}
 {% endif %}
 

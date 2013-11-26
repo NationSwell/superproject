@@ -137,7 +137,7 @@
 
   .carousel-item__overlay {
     // $ns_navy0 in rgba
-    background-color: rgba(6,24,34, 0.6);
+    background-color: $ns_navy0_transparent;
 
     @include transition(background-color 0.3s ease-in-out);
   }
