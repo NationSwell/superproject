@@ -58,6 +58,11 @@
 .story__container {
   margin-top: 7.6rem;
 
+  .story__meta {
+    margin-bottom: 2rem;
+    font-size: 2rem
+  }
+
   .story--page {
     > header {
       .story__hed {

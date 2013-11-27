@@ -2,6 +2,12 @@
   background-color: $ns_navy2;
   position: relative;
   z-index: 1;
+  width: 100%;
+}
+
+.full-header {
+  z-index: 8;
+  width: 100%;
 }
 
 /* logo and slogan */

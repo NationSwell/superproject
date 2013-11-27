@@ -985,14 +985,21 @@ a:hover {
   background-color: #003046;
   position: relative;
   z-index: 1;
+  width: 100%;
+}
+
+/* line 8, ../scss/partials/base/_nav.scss */
+.full-header {
+  z-index: 8;
+  width: 100%;
 }
 
 /* logo and slogan */
-/* line 8, ../scss/partials/base/_nav.scss */
+/* line 14, ../scss/partials/base/_nav.scss */
 .site-logo {
   text-decoration: none;
 }
-/* line 11, ../scss/partials/base/_nav.scss */
+/* line 17, ../scss/partials/base/_nav.scss */
 .site-logo .slogan {
   color: white;
   display: block;
@@ -1004,12 +1011,12 @@ a:hover {
 }
 
 /* more stories toggle */
-/* line 24, ../scss/partials/base/_nav.scss */
+/* line 30, ../scss/partials/base/_nav.scss */
 .more-stories-toggle {
   color: white;
   vertical-align: middle;
 }
-/* line 28, ../scss/partials/base/_nav.scss */
+/* line 34, ../scss/partials/base/_nav.scss */
 .more-stories-toggle.is-toggled {
   -webkit-transform: rotate(90deg) scale(0.6, 1.4);
   -moz-transform: rotate(90deg) scale(0.6, 1.4);
@@ -1024,18 +1031,18 @@ a:hover {
 }
 
 /* social links */
-/* line 35, ../scss/partials/base/_nav.scss */
+/* line 41, ../scss/partials/base/_nav.scss */
 .social-links {
   border-right: 2px solid #002130;
   display: block;
   position: relative;
 }
-/* line 40, ../scss/partials/base/_nav.scss */
+/* line 46, ../scss/partials/base/_nav.scss */
 .social-links li {
   display: inline-block;
 }
 
-/* line 45, ../scss/partials/base/_nav.scss */
+/* line 51, ../scss/partials/base/_nav.scss */
 .social-links__link {
   display: block;
   color: white;
@@ -1044,11 +1051,11 @@ a:hover {
 }
 
 /* search */
-/* line 53, ../scss/partials/base/_nav.scss */
+/* line 59, ../scss/partials/base/_nav.scss */
 .expand-field {
   position: relative;
 }
-/* line 56, ../scss/partials/base/_nav.scss */
+/* line 62, ../scss/partials/base/_nav.scss */
 .expand-field label {
   color: white;
   cursor: pointer;
@@ -1062,15 +1069,15 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 69, ../scss/partials/base/_nav.scss */
+/* line 75, ../scss/partials/base/_nav.scss */
 .expand-field label:active, .expand-field label:focus {
   outline: 0 none;
 }
-/* line 73, ../scss/partials/base/_nav.scss */
+/* line 79, ../scss/partials/base/_nav.scss */
 .expand-field label:hover {
   color: #0098d8;
 }
-/* line 78, ../scss/partials/base/_nav.scss */
+/* line 84, ../scss/partials/base/_nav.scss */
 .expand-field input {
   background-color: transparent;
   border: 0 none;
@@ -1104,39 +1111,39 @@ a:hover {
 .expand-field input:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 96, ../scss/partials/base/_nav.scss */
+/* line 102, ../scss/partials/base/_nav.scss */
 .expand-field input:focus, .expand-field input:active {
   outline: 0 none;
 }
-/* line 100, ../scss/partials/base/_nav.scss */
+/* line 106, ../scss/partials/base/_nav.scss */
 .expand-field input.is-open {
   opacity: 1;
   outline: 0 none;
 }
 
 /* trending topics */
-/* line 109, ../scss/partials/base/_nav.scss */
+/* line 115, ../scss/partials/base/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 114, ../scss/partials/base/_nav.scss */
+/* line 120, ../scss/partials/base/_nav.scss */
 .trending-topics__heading {
   font-family: "Montserrat", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 119, ../scss/partials/base/_nav.scss */
+/* line 125, ../scss/partials/base/_nav.scss */
 .trending-topics__list {
   display: inline-block;
 }
-/* line 122, ../scss/partials/base/_nav.scss */
+/* line 128, ../scss/partials/base/_nav.scss */
 .trending-topics__list li {
   display: inline-block;
 }
 
-/* line 127, ../scss/partials/base/_nav.scss */
+/* line 133, ../scss/partials/base/_nav.scss */
 .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -2147,7 +2154,7 @@ body.is-locked {
 .river--one-col .story-teases .story__feature img {
   display: block;
 }
-/* line 95, ../scss/partials/base/_homepage.scss */
+/* line 97, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__header {
   overflow: hidden;
 }
@@ -3283,30 +3290,31 @@ html, body {
 /* line 1, ../scss/partials/mobile/_nav.scss */
 #page-header {
   height: 13rem;
+  width: 100%;
   -webkit-transition: background-color 0.15s ease-in-out;
   -moz-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
 
 /* logo and slogan */
-/* line 9, ../scss/partials/mobile/_nav.scss */
+/* line 10, ../scss/partials/mobile/_nav.scss */
 .site-logo.site-logo--slogan {
   margin-top: 4.6rem;
 }
-/* line 12, ../scss/partials/mobile/_nav.scss */
+/* line 13, ../scss/partials/mobile/_nav.scss */
 .site-logo.site-logo--slogan .slogan {
   margin-left: 3.6rem;
 }
 
 /* more stories toggle */
-/* line 19, ../scss/partials/mobile/_nav.scss */
+/* line 20, ../scss/partials/mobile/_nav.scss */
 .more-stories-toggle {
   font-size: 6rem;
   padding-top: 3.8rem;
 }
 
 /* more stories mobile panel */
-/* line 25, ../scss/partials/mobile/_nav.scss */
+/* line 26, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer {
   background-color: #003046;
   height: 100%;
@@ -3317,39 +3325,53 @@ html, body {
   bottom: 0;
   overflow-y: scroll;
 }
-/* line 35, ../scss/partials/mobile/_nav.scss */
+/* line 36, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit {
   display: block;
   padding: 4.2rem 3.2rem 4.2rem 6.2rem;
 }
-/* line 39, ../scss/partials/mobile/_nav.scss */
+/* line 40, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--dark {
   background-color: #002130;
 }
-/* line 44, ../scss/partials/mobile/_nav.scss */
+/* line 45, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .site-logo {
   display: block;
   margin: 0 0 3.2rem;
 }
-/* line 49, ../scss/partials/mobile/_nav.scss */
-.more-stories-drawer .search-field {
+/* line 50, ../scss/partials/mobile/_nav.scss */
+.more-stories-drawer #page-search {
+  position: relative;
+}
+/* line 54, ../scss/partials/mobile/_nav.scss */
+.more-stories-drawer #page-search [for='panel-search'] {
+  font-size: 6rem;
+  position: absolute;
+  right: 0;
+  top: .4rem;
+  color: white;
+}
+/* line 62, ../scss/partials/mobile/_nav.scss */
+.more-stories-drawer #page-search .search-field {
   position: relative;
   background-color: #002130;
   padding: 1.4rem;
   padding-left: 5rem;
+  width: 100%;
+  font-size: 2.4rem;
 }
-/* line 55, ../scss/partials/mobile/_nav.scss */
-.more-stories-drawer .search-field label {
+/* line 70, ../scss/partials/mobile/_nav.scss */
+.more-stories-drawer #page-search .search-field label {
   top: 1.4rem;
   left: 1.4rem;
   font-size: 3rem;
 }
-/* line 64, ../scss/partials/mobile/_nav.scss */
+/* line 82, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 69, ../scss/partials/mobile/_nav.scss */
+/* line 87, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -3358,12 +3380,12 @@ html, body {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 82, ../scss/partials/mobile/_nav.scss */
+/* line 100, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 87, ../scss/partials/mobile/_nav.scss */
+/* line 105, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list .categories__category {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -3374,20 +3396,20 @@ html, body {
 }
 
 /* mobile panel */
-/* line 101, ../scss/partials/mobile/_nav.scss */
+/* line 119, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper {
   overflow-x: hidden;
   right: 47rem;
 }
-/* line 105, ../scss/partials/mobile/_nav.scss */
+/* line 123, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper #page-content {
   pointer-events: none;
 }
-/* line 110, ../scss/partials/mobile/_nav.scss */
+/* line 128, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header {
   background-color: white;
 }
-/* line 113, ../scss/partials/mobile/_nav.scss */
+/* line 131, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header .more-stories-toggle {
   color: #003046;
 }
@@ -4013,19 +4035,24 @@ body.panel--is-open #page-header .more-stories-toggle {
 .story__container {
   margin-top: 7.6rem;
 }
-/* line 63, ../scss/partials/mobile/_story.scss */
+/* line 61, ../scss/partials/mobile/_story.scss */
+.story__container .story__meta {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+/* line 68, ../scss/partials/mobile/_story.scss */
 .story__container .story--page > header .story__hed {
   margin-bottom: 4.8rem;
 }
-/* line 67, ../scss/partials/mobile/_story.scss */
+/* line 72, ../scss/partials/mobile/_story.scss */
 .story__container .story--page > header .story__dek {
   margin-bottom: 4.6rem;
 }
-/* line 73, ../scss/partials/mobile/_story.scss */
+/* line 78, ../scss/partials/mobile/_story.scss */
 .story__container .story__content {
   margin-bottom: 22.6rem;
 }
-/* line 76, ../scss/partials/mobile/_story.scss */
+/* line 81, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p {
   font-size: 3.2rem;
   line-height: 1.32;
@@ -4033,62 +4060,62 @@ body.panel--is-open #page-header .more-stories-toggle {
   -webkit-font-smoothing: antialiased;
   /* drop cap */
 }
-/* line 83, ../scss/partials/mobile/_story.scss */
+/* line 88, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   font-size: 12.5rem;
   margin-right: 2.6rem;
 }
-/* line 88, ../scss/partials/mobile/_story.scss */
+/* line 93, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 92, ../scss/partials/mobile/_story.scss */
+/* line 97, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 98, ../scss/partials/mobile/_story.scss */
+/* line 103, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 104, ../scss/partials/mobile/_story.scss */
+/* line 109, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
-/* line 109, ../scss/partials/mobile/_story.scss */
+/* line 114, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h3 {
   font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
-/* line 114, ../scss/partials/mobile/_story.scss */
+/* line 119, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 119, ../scss/partials/mobile/_story.scss */
+/* line 124, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 124, ../scss/partials/mobile/_story.scss */
+/* line 129, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 129, ../scss/partials/mobile/_story.scss */
+/* line 134, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ol {
   margin: 7.6rem 0;
   padding-left: 11rem;
 }
-/* line 133, ../scss/partials/mobile/_story.scss */
+/* line 138, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ol li {
   font-size: 3.2rem;
   margin-bottom: 4.2rem;
 }
-/* line 137, ../scss/partials/mobile/_story.scss */
+/* line 142, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ol li:before {
   font-size: 2.4rem;
   width: 4rem;
@@ -4097,17 +4124,17 @@ body.panel--is-open #page-header .more-stories-toggle {
   left: -7.6rem;
   top: -0.4rem;
 }
-/* line 150, ../scss/partials/mobile/_story.scss */
+/* line 155, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ul {
   margin: 7.6rem 0;
   padding-left: 11rem;
 }
-/* line 154, ../scss/partials/mobile/_story.scss */
+/* line 159, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ul li {
   font-size: 3.2rem;
   margin-bottom: 4.2rem;
 }
-/* line 158, ../scss/partials/mobile/_story.scss */
+/* line 163, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ul li:before {
   font-size: 3.6rem;
   top: 0rem;
@@ -4115,119 +4142,119 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* multimedia */
-/* line 169, ../scss/partials/mobile/_story.scss */
+/* line 174, ../scss/partials/mobile/_story.scss */
 .multimedia {
   margin: 7.6rem 0;
 }
-/* line 172, ../scss/partials/mobile/_story.scss */
+/* line 177, ../scss/partials/mobile/_story.scss */
 .multimedia .multimedia__heading {
   display: inline;
   position: relative;
   left: 2rem;
   line-height: 1.5;
 }
-/* line 179, ../scss/partials/mobile/_story.scss */
+/* line 184, ../scss/partials/mobile/_story.scss */
 .multimedia .multimedia__content {
   margin-top: 3.4rem;
 }
-/* line 183, ../scss/partials/mobile/_story.scss */
+/* line 188, ../scss/partials/mobile/_story.scss */
 .multimedia figcaption {
   margin-top: 2.6rem;
 }
-/* line 188, ../scss/partials/mobile/_story.scss */
+/* line 193, ../scss/partials/mobile/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
 }
 
-/* line 194, ../scss/partials/mobile/_story.scss */
+/* line 199, ../scss/partials/mobile/_story.scss */
 .multimedia__heading {
   margin-bottom: 2.4rem;
 }
 
 /* sticky */
-/* line 199, ../scss/partials/mobile/_story.scss */
+/* line 204, ../scss/partials/mobile/_story.scss */
 .story__sticky {
   padding: 0 1rem;
 }
 
-/* line 203, ../scss/partials/mobile/_story.scss */
+/* line 208, ../scss/partials/mobile/_story.scss */
 .story__sticky-container {
   width: 16rem;
 }
 
-/* line 207, ../scss/partials/mobile/_story.scss */
+/* line 212, ../scss/partials/mobile/_story.scss */
 .sticky-social {
   margin-bottom: 5rem;
 }
 
-/* line 211, ../scss/partials/mobile/_story.scss */
+/* line 216, ../scss/partials/mobile/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
 }
 
-/* line 215, ../scss/partials/mobile/_story.scss */
+/* line 220, ../scss/partials/mobile/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 219, ../scss/partials/mobile/_story.scss */
+/* line 224, ../scss/partials/mobile/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 224, ../scss/partials/mobile/_story.scss */
+/* line 229, ../scss/partials/mobile/_story.scss */
 .story__tags {
   margin-bottom: 7.6rem;
 }
-/* line 228, ../scss/partials/mobile/_story.scss */
+/* line 233, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list:before {
   display: block;
   font-size: 3.2rem;
   margin-bottom: 2.2rem;
 }
-/* line 234, ../scss/partials/mobile/_story.scss */
+/* line 239, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list li {
   margin-right: 1.4rem;
   margin-bottom: 2.2rem;
 }
 
-/* line 242, ../scss/partials/mobile/_story.scss */
+/* line 247, ../scss/partials/mobile/_story.scss */
 .story__social {
   margin-bottom: 18rem;
 }
-/* line 245, ../scss/partials/mobile/_story.scss */
+/* line 250, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar {
   margin-bottom: 2.4rem;
 }
 
-/* line 251, ../scss/partials/mobile/_story.scss */
+/* line 256, ../scss/partials/mobile/_story.scss */
 .module.take-action {
   margin-bottom: 7.6rem;
   padding-bottom: 5rem;
   text-align: center;
 }
-/* line 256, ../scss/partials/mobile/_story.scss */
+/* line 261, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 4rem;
 }
-/* line 260, ../scss/partials/mobile/_story.scss */
+/* line 265, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__img {
   margin: 0 auto 4rem;
 }
-/* line 264, ../scss/partials/mobile/_story.scss */
+/* line 269, ../scss/partials/mobile/_story.scss */
 .module.take-action p {
   font-size: 3.2rem;
   line-height: 1.32;
   margin-bottom: 3.4rem;
 }
-/* line 270, ../scss/partials/mobile/_story.scss */
+/* line 275, ../scss/partials/mobile/_story.scss */
 .module.take-action small {
   font-size: 2.2rem;
   margin: 2rem 0;
 }
 
-/* line 277, ../scss/partials/mobile/_story.scss */
+/* line 282, ../scss/partials/mobile/_story.scss */
 #flyout {
   display: none;
 }

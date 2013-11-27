@@ -1,5 +1,6 @@
 #page-header {
   height: 13rem;
+  width: 100%;
 
   @include transition(background-color 0.15s ease-in-out);
 }
@@ -46,18 +47,35 @@
     margin: 0 0 3.2rem;
   }
 
-  .search-field {
-    position: relative;
-    background-color: #002130;
-    padding: 1.4rem;
-    padding-left: 5rem;
+  #page-search {
 
-    label {
-      top: 1.4rem;
-      left: 1.4rem;
-      font-size: 3rem;
+    position: relative;
+
+    [for='panel-search'] {
+      font-size: 6rem;
+      position: absolute;
+      right: 0;
+      top: .4rem;
+      color: $white;
     }
+
+    .search-field {
+      position: relative;
+      background-color: #002130;
+      padding: 1.4rem;
+      padding-left: 5rem;
+      width: 100%;
+      font-size: 2.4rem;
+
+      label {
+        top: 1.4rem;
+        left: 1.4rem;
+        font-size: 3rem;
+      }
+    }
+
   }
+
 
   .trending-topics {
     .trending-topics__list {
