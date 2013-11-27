@@ -11,6 +11,10 @@
                         <span class="rubric">{{ feature.category }}</span>
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ feature.tout_title }}</h1>
 
+                        {% if loop.index == 1 and feature.thumbnail.credit is not empty %}
+                        <span class="credit">{{ feature.thumbnail.credit }}</span>
+                        {% endif %}
+
                         <div class="support-cause support-cause--hero z2">
                             <h4 class="hd-t support-cause__heading">Support this cause</h4>
 
