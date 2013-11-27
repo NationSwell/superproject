@@ -295,6 +295,18 @@ if (function_exists("register_field_group")) {
                     'max' => '',
                     'step' => '',
                 ),
+                array (
+                    'key' => 'field_52962ad392b7f',
+                    'label' => 'Social Share Text',
+                    'name' => 'social_share_text',
+                    'type' => 'text',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => 140,
+                ),
             ),
             'location' => array(
                 array(

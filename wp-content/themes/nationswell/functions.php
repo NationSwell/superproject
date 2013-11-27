@@ -49,6 +49,10 @@ function add_to_context($data)
     $data['facebook_like_url'] = get_field('facebook_like_url', 'option');
     $data['main_menu_header'] = get_field('main_menu_header', 'option');
 
+    $data['take_action_thanks_header'] = get_field('take_action_thanks_header', 'option');
+    $data['take_action_thanks_text'] = get_field('take_action_thanks_text', 'option');
+    $data['take_action_thanks_subscribe_text'] = get_field('take_action_thanks_subscribe_text', 'option');
+
     return $data;
 }
 
