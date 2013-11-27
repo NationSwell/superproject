@@ -127,6 +127,7 @@ include_once('lib/widgets/widget-joinus.php');
 include_once('lib/widgets/widget-subscribe.php');
 include_once('lib/widgets/widget-story.php');
 include_once('lib/widgets/widget-popular.php');
+include_once('lib/widgets/widget-stories.php');
 
 
 // Plugin Activation
@@ -134,6 +135,15 @@ include_once('lib/tgm-plugin-activation/tgm-config.php');
 
 // Custom Post Types
 include_once('lib/custom_post_types/call_to_action.php');
+include_once('lib/custom_post_types/story_list.php');
+
+// Remove the SEO MetaBox from Custom Post Types
+function prefix_remove_wp_seo_meta_box() {
+    remove_meta_box( 'wpseo_meta', 'ns_story_list', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_call_to_action', 'normal' );
+}
+add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
+
 
 
 // Change.org
