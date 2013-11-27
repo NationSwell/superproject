@@ -22,16 +22,27 @@ function add_to_context($data)
     $data['menu_footer'] = new TimberMenu('menu_footer');
     $data['menu_topic'] = new TimberMenu('menu_topic');
 
+    // Global Site Options
     $data['modal_joinus_enabled'] = get_field('modal_joinus_enabled', 'option');
     $data['flyout_social_enabled'] = get_field('flyout_social_enabled', 'option');
-
     $data['nationswell_mailchimp_daily'] = get_field('nationswell_mailchimp_daily', 'option');
-
     $data['nationswell_facebook'] = get_field('nationswell_facebook', 'option');
     $data['nationswell_twitter'] = get_field('nationswell_twitter', 'option');
     $data['nationswell_instagram'] = get_field('nationswell_instagram', 'option');
     $data['nationswell_tumblr'] = get_field('nationswell_tumblr', 'option');
     $data['nationswell_google'] = get_field('nationswell_google', 'option');
+
+    $data['site_tag_line'] = get_field('site_tag_line', 'option');
+    $data['facebook_button_expanded_text'] = get_field('facebook_button_expanded_text', 'option');
+    $data['twitter_button_expanded_text'] = get_field('twitter_button_expanded_text', 'option');
+    $data['twitter_button_bingo_text'] = get_field('twitter_button_bingo_text', 'option');
+    $data['facebook_button_bingo_text'] = get_field('facebook_button_bingo_text', 'option');
+    $data['take_action_header_text'] = get_field('take_action_header_text', 'option');
+    $data['more_stories_heading_prefix'] = get_field('more_stories_heading_prefix', 'option');
+    $data['load_more_button_text'] = get_field('load_more_button_text', 'option');
+    $data['nav_search_placeholder_text'] = get_field('nav_search_placeholder_text', 'option');
+    $data['nav_subscribe_placeholder_text'] = get_field('nav_subscribe_placeholder_text', 'option');
+    $data['byline_prefix_text'] = get_field('byline_prefix_text', 'option');
 
     return $data;
 }
@@ -92,6 +103,7 @@ function my_register_fields()
     include_once('lib/fields/display_options.php');
     include_once('lib/fields/flyout_options.php');
     include_once('lib/fields/social_links.php');
+    include_once('lib/fields/site_text.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
