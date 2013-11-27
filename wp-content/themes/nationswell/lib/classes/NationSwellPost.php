@@ -148,7 +148,7 @@ if (class_exists('TimberPost')) {
 
         function coauthors(){
 
-            if(function_exists(coauthors_posts_links)) {
+            if(function_exists('coauthors_posts_links')) {
                 return coauthors_posts_links(null, null, null, null, false);
             } else {
                 return author();
