@@ -215,6 +215,26 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Disable Comments Query',
+            'slug' => 'disable-comments-query',
+            'source' => get_stylesheet_directory() . '/lib/plugins/disable-comments-query.zip',
+            'required' => true,
+            'version' => '0.1',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
+        array(
+            'name' => 'Post-to-Post Links II',
+            'slug' => 'start',
+            'source' => get_stylesheet_directory() . '/lib/plugins/post-to-post-links-ii.1.2.1.zip',
+            'required' => true,
+            'version' => '1.2.1',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
