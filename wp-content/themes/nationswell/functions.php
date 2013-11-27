@@ -31,7 +31,6 @@ function add_to_context($data)
     $data['nationswell_instagram'] = get_field('nationswell_instagram', 'option');
     $data['nationswell_tumblr'] = get_field('nationswell_tumblr', 'option');
     $data['nationswell_google'] = get_field('nationswell_google', 'option');
-
     $data['site_tag_line'] = get_field('site_tag_line', 'option');
     $data['facebook_button_expanded_text'] = get_field('facebook_button_expanded_text', 'option');
     $data['twitter_button_expanded_text'] = get_field('twitter_button_expanded_text', 'option');
@@ -44,6 +43,11 @@ function add_to_context($data)
     $data['nav_subscribe_placeholder_text'] = get_field('nav_subscribe_placeholder_text', 'option');
     $data['byline_prefix_text'] = get_field('byline_prefix_text', 'option');
     $data['category_prefix_text'] = get_field('category_prefix_text', 'option');
+    $data['take_action_privacy_policy_text'] = get_field('take_action_privacy_policy_text', 'option');
+    $data['flyout_header_text'] = get_field('flyout_header_text', 'option');
+    $data['flyout_message_text'] = get_field('flyout_message_text', 'option');
+    $data['facebook_like_url'] = get_field('facebook_like_url', 'option');
+    $data['main_menu_header'] = get_field('main_menu_header', 'option');
 
     return $data;
 }

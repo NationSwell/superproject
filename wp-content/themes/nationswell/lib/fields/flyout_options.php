@@ -12,6 +12,75 @@ if (function_exists("register_field_group")) {
                 'message' => '',
                 'default_value' => 1,
             ),
+            array (
+                'key' => 'field_52961750301b1',
+                'label' => 'Flyout Header Text',
+                'name' => 'flyout_header_text',
+                'type' => 'text',
+                'conditional_logic' => array (
+                    'status' => 1,
+                    'rules' => array (
+                        array (
+                            'field' => 'field_5293ab9ca6467',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => 'Go Social!',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array (
+                'key' => 'field_52961774301b2',
+                'label' => 'Flyout Message Text',
+                'name' => 'flyout_message_text',
+                'type' => 'text',
+                'conditional_logic' => array (
+                    'status' => 1,
+                    'rules' => array (
+                        array (
+                            'field' => 'field_5293ab9ca6467',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => 'Like NationSwell on Facebook',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array (
+                'key' => 'field_529617ac301b3',
+                'label' => 'Facebook Like Url',
+                'name' => 'facebook_like_url',
+                'type' => 'text',
+                'conditional_logic' => array (
+                    'status' => 1,
+                    'rules' => array (
+                        array (
+                            'field' => 'field_5293ab9ca6467',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => 'http://nationswell.com',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
         ),
         'location' => array(
             array(
