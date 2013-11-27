@@ -24,10 +24,11 @@ class Stories_Widget extends WP_Widget
     {
         extract($args);
 
+        $context = array();
+
         if (!empty($instance['post_id'])) {
 
             //Our variables from the widget settings.
-            $context = array();
             $post_id = intval($instance['post_id']);
 
             $post = Timber::get_post(array($post_id));
