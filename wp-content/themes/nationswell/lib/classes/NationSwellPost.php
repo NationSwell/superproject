@@ -102,14 +102,20 @@ if (class_exists('TimberPost')) {
 
         function facebook_share_url()
         {
+
+            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->title();
+
             return 'https://www.facebook.com/sharer/sharer.php?u='
-            . urlencode($this->short_url()) . '&title=' . urlencode($this->title());
+            . urlencode($this->short_url()) . '&title=' . urlencode($this->title()) . '&caption=' . urlencode($facebook_share_text);
         }
 
         function twitter_share_url()
         {
+
+            $twitter_share_text = !empty($this->twitter_share) ? $this->twitter_share : $this->title();
+
             return 'https://twitter.com/share?url='
-            . urlencode($this->short_url()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
+            . urlencode($this->short_url()) . '&text=' . urlencode($twitter_share_text) . '&via=nationswell';
         }
 
         function google_share_url()
