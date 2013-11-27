@@ -1,6 +1,6 @@
 <div class="read-next">
     <div class="container">
-        <h3 class="hd-g read-next__heading">{{ more_stories_heading_prefix }} {{ post.category }}</h3>
+        <h3 class="hd-g read-next__heading">{{ more_stories_heading_prefix }}{#{{ post.category }}#}</h3>
 
         <ul class="story-list">
             {% for story in post.more_stories %}
@@ -12,7 +12,7 @@
                             </figure>
 
                             <header class="story__header">
-                                {#<span class="rubric">{{ story.category }}</span>#}
+                                <span class="rubric">{{ story.category }}</span>
                                 <h2 class="hd-u story__hed">{{ story.post_title }}</h2>
                                 <p class="story__dek">{{ story.dek }}</p>
                             </header>
