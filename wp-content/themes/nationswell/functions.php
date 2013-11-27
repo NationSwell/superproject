@@ -43,6 +43,7 @@ function add_to_context($data)
     $data['nav_search_placeholder_text'] = get_field('nav_search_placeholder_text', 'option');
     $data['nav_subscribe_placeholder_text'] = get_field('nav_subscribe_placeholder_text', 'option');
     $data['byline_prefix_text'] = get_field('byline_prefix_text', 'option');
+    $data['category_prefix_text'] = get_field('category_prefix_text', 'option');
 
     return $data;
 }

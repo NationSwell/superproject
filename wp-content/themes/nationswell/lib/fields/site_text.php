@@ -136,6 +136,18 @@ if (function_exists("register_field_group")) {
                 'formatting' => 'html',
                 'maxlength' => '',
             ),
+            array (
+                'key' => 'field_529564594a5f8',
+                'label' => 'Category Prefix Text',
+                'name' => 'category_prefix_text',
+                'type' => 'text',
+                'default_value' => 'Appears in',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
         ),
         'location' => array(
             array(

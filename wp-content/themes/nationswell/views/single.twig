@@ -29,7 +29,7 @@
                 <article class="story story--page">
                     <header>
                         <ul class="story__meta">
-                            <li>Appears in <a href="{{ post.category.url }}">{{ post.category }}</a></li>
+                            <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a></li>
                             <li>{{ byline_prefix_text }} {{ post.coauthors }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
