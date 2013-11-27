@@ -105,6 +105,8 @@ function my_register_fields()
     include_once('lib/fields/flyout_options.php');
     include_once('lib/fields/social_links.php');
     include_once('lib/fields/site_text.php');
+    include_once('lib/fields/story_list.php');
+    include_once('lib/fields/widget_popular.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
