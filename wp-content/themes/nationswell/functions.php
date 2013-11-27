@@ -126,6 +126,8 @@ include_once('lib/widgets/widgets.php');
 include_once('lib/widgets/widget-joinus.php');
 include_once('lib/widgets/widget-subscribe.php');
 include_once('lib/widgets/widget-story.php');
+include_once('lib/widgets/widget-popular.php');
+
 
 // Plugin Activation
 include_once('lib/tgm-plugin-activation/tgm-config.php');
