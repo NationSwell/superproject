@@ -151,6 +151,7 @@ include_once('lib/custom_post_types/story_list.php');
 function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_story_list', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_call_to_action', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'guest-author', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
