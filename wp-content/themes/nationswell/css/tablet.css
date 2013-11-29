@@ -1167,32 +1167,34 @@ a:hover {
 }
 /* line 11, ../scss/partials/base/_more-stories.scss */
 #more-stories.panel--is-open {
-  height: 46rem;
+  min-height: 46rem;
+  height: auto;
 }
-/* line 17, ../scss/partials/base/_more-stories.scss */
+/* line 18, ../scss/partials/base/_more-stories.scss */
 #more-stories .container:before, #more-stories .container:after {
   display: table;
   content: '';
 }
-/* line 22, ../scss/partials/base/_more-stories.scss */
+/* line 23, ../scss/partials/base/_more-stories.scss */
 #more-stories .container:after {
   clear: both;
 }
-/* line 27, ../scss/partials/base/_more-stories.scss */
+/* line 28, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list {
   background-color: #003046;
   position: relative;
-  height: 46rem;
+  min-height: 46rem;
+  height: auto;
   display: block;
   border-top: 2px solid #002130;
   padding: 2rem 0;
 }
-/* line 35, ../scss/partials/base/_more-stories.scss */
+/* line 37, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list li {
   display: block;
   margin-bottom: 0.2rem;
 }
-/* line 41, ../scss/partials/base/_more-stories.scss */
+/* line 43, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list__category {
   color: white;
   display: block;
@@ -1205,35 +1207,35 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 53, ../scss/partials/base/_more-stories.scss */
+/* line 55, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list__category:hover, #more-stories .category-list__category.active {
   color: #0098d8;
 }
-/* line 57, ../scss/partials/base/_more-stories.scss */
+/* line 59, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list__category.active {
   background-color: #002130;
 }
-/* line 62, ../scss/partials/base/_more-stories.scss */
+/* line 64, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular {
   padding-top: 5rem;
   padding-left: 2.2rem;
 }
-/* line 67, ../scss/partials/base/_more-stories.scss */
+/* line 69, ../scss/partials/base/_more-stories.scss */
 #more-stories header {
   margin-bottom: 1rem;
 }
-/* line 71, ../scss/partials/base/_more-stories.scss */
+/* line 73, ../scss/partials/base/_more-stories.scss */
 #more-stories .more-stories__heading {
   /* aligning vertically with view all button */
   line-height: 4rem;
 }
-/* line 76, ../scss/partials/base/_more-stories.scss */
+/* line 78, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 79, ../scss/partials/base/_more-stories.scss */
+/* line 81, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list li {
   float: left;
   margin-left: 9.6rem;
@@ -1241,20 +1243,20 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 85, ../scss/partials/base/_more-stories.scss */
+/* line 87, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list li:first-child {
   margin-left: 0;
 }
-/* line 90, ../scss/partials/base/_more-stories.scss */
+/* line 92, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story--tease {
   width: 26rem;
   margin-bottom: 0;
 }
-/* line 95, ../scss/partials/base/_more-stories.scss */
+/* line 97, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story__feature {
   margin-bottom: 1.8rem;
 }
-/* line 99, ../scss/partials/base/_more-stories.scss */
+/* line 101, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story__dek {
   color: #ccd6da;
 }
