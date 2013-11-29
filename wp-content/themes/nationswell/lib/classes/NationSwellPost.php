@@ -58,17 +58,12 @@ if (class_exists('TimberPost')) {
 
         function more_stories()
         {
-            if (!isset($this->more_stories_cache)) {
-                $this->more_stories_cache = array();
-                $categories = get_the_category($this->ID);
 
-                if (!empty($categories)) {
-                    $this->more_stories_cache = $this->get_more_stories($categories[0]->term_id);
-                }
+            $page = get_page_by_path( 'home' );
+            $featured_ids = get_field('featured', $page->ID);
+            $featured_posts = Timber::get_posts($featured_ids, 'NationSwellPost');
 
-            }
-
-            return $this->more_stories_cache;
+            return $featured_posts;
         }
 
         private function get_more_stories($term_id)
