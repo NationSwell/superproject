@@ -42,6 +42,14 @@ if($stories_carousel_ids !== false) {
     $excludes = array_merge($excludes, $stories_carousel_ids);
 }
 
+$stories_carousel_b_ids = get_field('stories_carousel_b');
+if($stories_carousel_b_ids !== false) {
+    if($first_page) {
+        $data['stories_carousel_b'] = Timber::get_posts($stories_carousel_b_ids, 'NationSwellPost');
+    }
+    $excludes = array_merge($excludes, $stories_carousel_b_ids);
+}
+
 $posts_per_page = 9;
 $query = new WP_Query(array(
     'posts_per_page' => $posts_per_page,

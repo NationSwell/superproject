@@ -51,7 +51,14 @@
     </div>
 
     {% if series_carousel is not empty %}
-    {% include 'carousel-series.twig' %}
+
+        {% include 'carousel-series.twig' %}
+
+    {% elseif stories_carousel_b is not empty %}
+
+        {% set vars = {'stories_carousel': stories_carousel_b} %}
+        {% include 'carousel-stories.twig' with vars only %}
+
     {% endif %}
 
     <div class="river river--one-col">
@@ -111,7 +118,7 @@
     </div>
 
     {% if stories_carousel is not empty %}
-    {% include 'carousel-stories.twig' %}
+        {% include 'carousel-stories.twig' %}
     {% endif %}
 
     <div class="river river--one-col">
@@ -140,6 +147,7 @@
             </div>
         </div>
     </div>
+
     {% if more %}
         <div class="btn-container">
             <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">{{ load_more_button_text }}</a>

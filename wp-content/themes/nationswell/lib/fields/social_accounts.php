@@ -76,13 +76,11 @@ if(function_exists("register_field_group"))
                         'group_no' => 0,
                     ),
                     array (
-                        array (
-                            'param' => 'post_type',
-                            'operator' => '==',
-                            'value' => 'guest-author',
-                            'order_no' => 0,
-                            'group_no' => 1,
-                        ),
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'guest-author',
+                        'order_no' => 0,
+                        'group_no' => 0,
                     ),
                 ),
             ),
