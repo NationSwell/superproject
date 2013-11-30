@@ -235,6 +235,16 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Editorial Calendar',
+            'slug' => 'edcal',
+            'source' => get_stylesheet_directory() . '/lib/plugins/editorial-calendar.2.9.zip',
+            'required' => true,
+            'version' => '2.9',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
