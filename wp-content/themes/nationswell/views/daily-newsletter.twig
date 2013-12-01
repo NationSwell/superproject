@@ -18,7 +18,8 @@
         <item>
             <title>{{ post.tout_title }}</title>
             <link>{{ post.permalink }}</link>
-            <description><![CDATA[ {{ post.tout_dek_text }} ]]></description>
+            <description><![CDATA[{{ post.tout_dek_text }}]]></description>
+            <content:encoded><![CDATA[{{ post.tout_dek_text }}]]></content:encoded>
             <guid isPermaLink="false">{{ post.permalink }}</guid>
             <pubDate>{{ post.post_date }}</pubDate>
             <dc:creator><![CDATA[{{ post.author.name }}]]></dc:creator>
