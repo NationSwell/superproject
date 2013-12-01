@@ -115,6 +115,7 @@ function my_register_fields()
     include_once('lib/fields/site_text.php');
     include_once('lib/fields/story_list.php');
     include_once('lib/fields/widget_popular.php');
+    include_once('lib/fields/daily_newsletter_posts.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
@@ -126,6 +127,7 @@ include_once('lib/classes/ChangeOrgApi.php');
 include_once('lib/classes/ChangeOrgPetition.php');
 include_once('lib/classes/CallToAction.php');
 include_once('lib/classes/NationSwellPost.php');
+include_once('lib/classes/MailChimpFeed.php');
 
 
 // Configure Menus
@@ -146,12 +148,14 @@ include_once('lib/tgm-plugin-activation/tgm-config.php');
 // Custom Post Types
 include_once('lib/custom_post_types/call_to_action.php');
 include_once('lib/custom_post_types/story_list.php');
+include_once('lib/custom_post_types/daily_newsletter.php');
 
 // Remove the SEO MetaBox from Custom Post Types
 function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_story_list', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_call_to_action', 'normal' );
     remove_meta_box( 'wpseo_meta', 'guest-author', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
