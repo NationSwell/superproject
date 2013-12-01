@@ -35,7 +35,9 @@ class MailChimpFeed
             'post_status' => 'publish',
         );
         $query = new WP_Query( $args );
-        $post = Timber::get_post($query->posts, 'NationSwellPost');
+        $post = Timber::get_post($query->posts);
+        $context['feed_modified_date'] = $post->post_modified;
+        $context['title'] = $post->post_title;
         $posts = get_field('daily_newsletter_posts', $post->ID);
         $context['posts'] = Timber::get_posts($posts, 'NationSwellPost');
 

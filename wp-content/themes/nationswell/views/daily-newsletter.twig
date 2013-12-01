@@ -9,16 +9,22 @@
 
      xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
-        <title>{{ function('bloginfo_rss', 'name') }}</title>
+        <title>{{ title }}</title>
         <link>{{ function('bloginfo_rss', 'url') }}</link>
         <description>{{ function('bloginfo_rss', 'description') }}</description>
         <language>{{ function('bloginfo_rss', 'language') }}</language>
+        <lastBuildDate>{{ feed_modified_date }}</lastBuildDate>
         {% for post in posts %}
         <item>
             <title>{{ post.tout_title }}</title>
             <link>{{ post.permalink }}</link>
             <description><![CDATA[ {{ post.tout_dek_text }} ]]></description>
             <guid isPermaLink="false">{{ post.permalink }}</guid>
+            <pubDate>{{ post.post_date }}</pubDate>
+            <dc:creator><![CDATA[{{ post.author.name }}]]></dc:creator>
+            {% for term in post.terms('category') %}
+            <category>{{term.name}}</category>
+            {% endfor %}
             <media:content url="{{ post.thumbnail.src|resize(600, 330) }}" medium="image" />
         </item>
         {% endfor %}
