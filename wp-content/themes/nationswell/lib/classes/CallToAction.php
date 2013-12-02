@@ -1,6 +1,8 @@
 <?php
 if (class_exists('TimberPost')) {
+
     class CallToAction extends TimberPost {
+
         private $petition;
 
         function __construct($pid = null) {
@@ -22,8 +24,11 @@ if (class_exists('TimberPost')) {
         }
 
         public function petition() {
+            global $change_org_api;
+
             if(!isset($this->petition)) {
-                $this->petition = $this->type === 'petition' ? new ChangeOrgPetition($this->ID) : false;
+                $this->petition = $this->type === 'petition' ?
+                    $change_org_api->get_petition_from_post($this->ID) : false;
             }
 
             return $this->petition;
