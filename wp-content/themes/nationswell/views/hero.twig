@@ -41,7 +41,7 @@
 {% elseif post.story_header|length > 1 %}
     {# carousel hero #}
     <div class="hero hero--story hero--carousel">
-        <div class="carousel carousel--full-width carousel--peek mobile-carousel--hero">
+        <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--hero">
             <ul class="carousel__items">
                 {% for  item in post.story_header %}
                     {% if item.type == 'image' %}

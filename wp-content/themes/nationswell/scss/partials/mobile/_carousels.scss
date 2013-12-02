@@ -18,6 +18,37 @@
   margin-bottom: 3.4rem;
 }
 
+.mobile-carousel {
+  .carousel__pagination {
+    position: absolute;
+    right: 4.4rem;
+    bottom: 0rem;
+
+    a {
+      background-color: $ns_navy6;
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 0;
+      height: 1.3rem;
+      margin-left: 1.6rem;
+      width: 1.3rem;
+
+
+      @include transition(all 0.15s ease-in-out);
+
+      &.selected {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.hero--story {
+  .carousel__pagination {
+    bottom: -4rem;
+  }
+}
+
 .mobile-carousel--peek {
   &.carousel--series {
     .carousel--series__image {
