@@ -179,8 +179,8 @@ function save_petition_data($cta_id) {
     global $change_org_api;
 
     if ($_POST['post_type'] === 'ns_call_to_action' && is_petition($cta_id)) {
-        $petition = new ChangeOrgPetition($cta_id, $change_org_api);
-        $petition->fetch();
+        $petition = new ChangeOrgPetition($cta_id);
+        $change_org_api->fetch($petition);
     }
 }
 
@@ -202,11 +202,11 @@ function handle_sign_petition() {
     $cta_id = (int)$_REQUEST['cta_id'];
 
     if(is_petition($cta_id)) {
-        $petition = new ChangeOrgPetition($cta_id, $change_org_api);
+        $petition = new ChangeOrgPetition($cta_id);
 
         $signer = copy_from_request(array('email','first_name', 'last_name', 'city', 'postal_code', 'country_code'));
 
-        $response = $petition->sign($signer);
+        $response = $change_org_api->sign($petition, $signer);
         wp_send_json($response);
     }
     else {
