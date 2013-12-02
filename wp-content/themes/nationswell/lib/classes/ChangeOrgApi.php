@@ -13,9 +13,43 @@ class ChangeOrgApi {
         $this->email = $email;
         $this->secret = $secret;
         $this->source = $source;
+
+        $this->poll_frequency = 60;
+        $this->fetch_frequency = 60;
+
+        add_filter('cron_schedules', array($this, 'cron_add_cta_schedule'));
+        add_action('wp', array($this,'schedule_petition_fetch'));
+        add_action('petition_fetch_event', array($this, 'scheduled_petition_fetch'));
     }
 
+    // CRON
+    function cron_add_cta_schedule( $schedules ) {
+        $schedules['changeorg'] = array(
+            'interval' => $this->poll_frequency,
+            'display' => __('Change.org Fetch')
+        );
+        return $schedules;
+    }
 
+    function schedule_petition_fetch() {
+        // Schedule petition fetching
+        if (!wp_next_scheduled('petition_fetch_event')) {
+            wp_schedule_event(time(), 'changeorg', 'petition_fetch_event');
+        }
+    }
+
+    function scheduled_petition_fetch() {
+        $ids = get_transient('ns_petition_cta_ids');
+        if(!empty($ids)) {
+            delete_transient('ns_petition_cta_ids');
+            foreach($ids as $id) {
+                $petition = new ChangeOrgPetition($id);
+                $this->fetch($petition);
+            }
+        }
+    }
+
+    // API
     private static function parse_json($json, $attr = '') {
         $result = false;
 
@@ -59,7 +93,7 @@ class ChangeOrgApi {
             'timestamp' => gmdate("Y-m-d\TH:i:s\Z"),
             'endpoint' => $endpoint
         );
-        
+
         // Build request signature and add it as a parameter
         $query_string_with_secret_and_auth_key = http_build_query($params) . $this->secret;
         $params['rsig'] = hash('sha256', $query_string_with_secret_and_auth_key);
@@ -70,11 +104,11 @@ class ChangeOrgApi {
         // Make the request
         $curl_session = curl_init();
         curl_setopt_array($curl_session, array(
-                CURLOPT_POST => 1,
-                CURLOPT_URL => $request_url,
-                CURLOPT_POSTFIELDS => $query,
-                CURLOPT_RETURNTRANSFER => true
-            ));
+            CURLOPT_POST => 1,
+            CURLOPT_URL => $request_url,
+            CURLOPT_POSTFIELDS => $query,
+            CURLOPT_RETURNTRANSFER => true
+        ));
 
         $response = curl_exec($curl_session);
 
@@ -115,11 +149,11 @@ class ChangeOrgApi {
         // POST the parameters to the petition's signatures endpoint.
         $curl_session = curl_init();
         curl_setopt_array($curl_session, array(
-                CURLOPT_POST => 1,
-                CURLOPT_URL => $url,
-                CURLOPT_POSTFIELDS => $data,
-                CURLOPT_RETURNTRANSFER => true
-            ));
+            CURLOPT_POST => 1,
+            CURLOPT_URL => $url,
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_RETURNTRANSFER => true
+        ));
 
         $result = curl_exec($curl_session);
 
@@ -128,4 +162,44 @@ class ChangeOrgApi {
         return $this->parse_json($result);
     }
 
+    public function get_petition_from_post($cta_id) {
+        $petition = new ChangeOrgPetition($cta_id);
+        if(time() - $petition->last_updated() > $this->fetch_frequency) {
+
+            $ids = get_transient('ns_petition_cta_ids');
+            $ids = $ids === false ? array() : $ids;
+
+            $ids[] = $cta_id;
+
+            set_transient('ns_petition_cta_ids', array_unique($ids),0);
+        }
+
+
+        return $petition;
+    }
+
+    public function sign($petition, $signer) {
+        return $this->sign_petition($petition->id(), $petition->auth_key(), $signer);
+    }
+
+    public function fetch($petition) {
+
+        if($petition->should_update()) {
+
+            $id = $this->get_id($this->url);
+            if($id) {
+                $auth_key = $this->get_auth_key($id);
+                if($auth_key) {
+                    $petition->set_id($id);
+                    $petition->set_auth_key($auth_key);
+                    $petition->set_hash();
+                }
+            }
+        }
+
+        $petition_content = $this->get_petition_json($petition->id());
+        if($petition_content) {
+            $petition->set_content($petition_content);
+        }
+    }
 }
