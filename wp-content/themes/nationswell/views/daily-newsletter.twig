@@ -27,7 +27,7 @@
             <category>{{term.name}}</category>
             {% endfor %}
             <media:content url="{{ post.thumbnail.src|resize(524, 524) }}" medium="image" />
-            <enclosure url="{{ post.thumbnail.src|resize(524, 524) }}" type="image/*" />
+            <enclosure length="1000" url="{{ post.thumbnail.src|resize(524, 524) }}" type="image/*" />
         </item>
         {% endfor %}
     </channel>
