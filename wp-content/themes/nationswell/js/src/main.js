@@ -2,7 +2,6 @@
     $(function () {
         // sticky nav
         var $fullNavBar = $('.full-header');
-
         $fullNavBar.waypoint('sticky', { stuckClass: 'stuck' });
 
         // Ajaxify Subscribe Forms

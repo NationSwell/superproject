@@ -68,19 +68,19 @@
   }
 
   &.btn--load-more {
-    font-size: 2.2rem;
-    margin-bottom: 10rem;
+    font-size: 4.2rem;
+    margin-bottom: 16rem;
 
     &:before {
-      font-size: 10.5rem;
-      bottom: -10.4rem;
+      font-size: 19.6rem;
+      bottom: -18.4rem;
     }
 
     &:hover {
-      top: 0.4rem;
+      top: 0.8rem;
 
       &:before {
-        bottom: -11rem;
+        bottom: -19.4rem;
       }
     }
   }

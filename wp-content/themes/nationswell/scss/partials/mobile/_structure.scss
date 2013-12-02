@@ -1,4 +1,4 @@
-html, body {
+html {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -15,7 +15,6 @@ html, body {
 }
 
 #page-wrapper {
-  -webkit-overflow-scrolling: touch;
   z-index: 9;
 }
 

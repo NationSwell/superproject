@@ -19,8 +19,14 @@
 
       .story--hero {
         bottom: 0rem;
-        padding: 2.4rem 4.4rem 1.2rem;
+        padding: 2.4rem 4.4rem 2.4rem;
         z-index: 99999;
+      }
+
+      .credit {
+        color: $white;
+        display: block;
+        margin-top: 2.8rem;
       }
     }
 
@@ -89,7 +95,6 @@
 
     .story__header {
       position: relative;
-      top: -2.4rem;
     }
 
     .story__hed {

@@ -219,6 +219,7 @@ body {
 /* line 46, ../scss/partials/base/_utility.scss */
 .stuck {
   position: fixed;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* line 1, ../scss/partials/base/_ads.scss */
