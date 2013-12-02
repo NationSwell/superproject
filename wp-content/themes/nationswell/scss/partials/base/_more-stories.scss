@@ -9,7 +9,8 @@
   @include transition(all 0.3s ease-in-out);
 
   &.panel--is-open {
-    height: 46rem;
+    min-height: 46rem;
+    height: auto;
   }
 
   .container {
@@ -27,7 +28,8 @@
   .category-list {
     background-color: $ns_navy2;
     position: relative;
-    height: 46rem;
+    min-height: 46rem;
+    height: auto;
     display: block;
     border-top: 2px solid $ns_navy1;
     padding: 2rem 0;

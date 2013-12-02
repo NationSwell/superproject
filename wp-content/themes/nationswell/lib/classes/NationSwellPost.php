@@ -58,17 +58,12 @@ if (class_exists('TimberPost')) {
 
         function more_stories()
         {
-            if (!isset($this->more_stories_cache)) {
-                $this->more_stories_cache = array();
-                $categories = get_the_category($this->ID);
 
-                if (!empty($categories)) {
-                    $this->more_stories_cache = $this->get_more_stories($categories[0]->term_id);
-                }
+            $page = get_page_by_path( 'home' );
+            $featured_ids = get_field('featured', $page->ID);
+            $featured_posts = Timber::get_posts($featured_ids, 'NationSwellPost');
 
-            }
-
-            return $this->more_stories_cache;
+            return $featured_posts;
         }
 
         private function get_more_stories($term_id)
@@ -102,14 +97,20 @@ if (class_exists('TimberPost')) {
 
         function facebook_share_url()
         {
+
+            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->title();
+
             return 'https://www.facebook.com/sharer/sharer.php?u='
-            . urlencode($this->short_url()) . '&title=' . urlencode($this->title());
+            . urlencode($this->short_url()) . '&title=' . urlencode($this->title()) . '&caption=' . urlencode($facebook_share_text);
         }
 
         function twitter_share_url()
         {
+
+            $twitter_share_text = !empty($this->twitter_share) ? $this->twitter_share : $this->title();
+
             return 'https://twitter.com/share?url='
-            . urlencode($this->short_url()) . '&text=' . urlencode($this->title()) . '&via=nationswell';
+            . urlencode($this->short_url()) . '&text=' . urlencode($twitter_share_text) . '&via=nationswell';
         }
 
         function google_share_url()
@@ -148,7 +149,7 @@ if (class_exists('TimberPost')) {
 
         function coauthors(){
 
-            if(function_exists(coauthors_posts_links)) {
+            if(function_exists('coauthors_posts_links')) {
                 return coauthors_posts_links(null, null, null, null, false);
             } else {
                 return author();

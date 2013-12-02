@@ -22,16 +22,36 @@ function add_to_context($data)
     $data['menu_footer'] = new TimberMenu('menu_footer');
     $data['menu_topic'] = new TimberMenu('menu_topic');
 
+    // Global Site Options
     $data['modal_joinus_enabled'] = get_field('modal_joinus_enabled', 'option');
     $data['flyout_social_enabled'] = get_field('flyout_social_enabled', 'option');
-
     $data['nationswell_mailchimp_daily'] = get_field('nationswell_mailchimp_daily', 'option');
-
     $data['nationswell_facebook'] = get_field('nationswell_facebook', 'option');
     $data['nationswell_twitter'] = get_field('nationswell_twitter', 'option');
     $data['nationswell_instagram'] = get_field('nationswell_instagram', 'option');
     $data['nationswell_tumblr'] = get_field('nationswell_tumblr', 'option');
     $data['nationswell_google'] = get_field('nationswell_google', 'option');
+    $data['site_tag_line'] = get_field('site_tag_line', 'option');
+    $data['facebook_button_expanded_text'] = get_field('facebook_button_expanded_text', 'option');
+    $data['twitter_button_expanded_text'] = get_field('twitter_button_expanded_text', 'option');
+    $data['twitter_button_bingo_text'] = get_field('twitter_button_bingo_text', 'option');
+    $data['facebook_button_bingo_text'] = get_field('facebook_button_bingo_text', 'option');
+    $data['take_action_header_text'] = get_field('take_action_header_text', 'option');
+    $data['more_stories_heading_prefix'] = get_field('more_stories_heading_prefix', 'option');
+    $data['load_more_button_text'] = get_field('load_more_button_text', 'option');
+    $data['nav_search_placeholder_text'] = get_field('nav_search_placeholder_text', 'option');
+    $data['nav_subscribe_placeholder_text'] = get_field('nav_subscribe_placeholder_text', 'option');
+    $data['byline_prefix_text'] = get_field('byline_prefix_text', 'option');
+    $data['category_prefix_text'] = get_field('category_prefix_text', 'option');
+    $data['take_action_privacy_policy_text'] = get_field('take_action_privacy_policy_text', 'option');
+    $data['flyout_header_text'] = get_field('flyout_header_text', 'option');
+    $data['flyout_message_text'] = get_field('flyout_message_text', 'option');
+    $data['facebook_like_url'] = get_field('facebook_like_url', 'option');
+    $data['main_menu_header'] = get_field('main_menu_header', 'option');
+
+    $data['take_action_thanks_header'] = get_field('take_action_thanks_header', 'option');
+    $data['take_action_thanks_text'] = get_field('take_action_thanks_text', 'option');
+    $data['take_action_thanks_subscribe_text'] = get_field('take_action_thanks_subscribe_text', 'option');
 
     return $data;
 }
@@ -92,6 +112,10 @@ function my_register_fields()
     include_once('lib/fields/display_options.php');
     include_once('lib/fields/flyout_options.php');
     include_once('lib/fields/social_links.php');
+    include_once('lib/fields/site_text.php');
+    include_once('lib/fields/story_list.php');
+    include_once('lib/fields/widget_popular.php');
+    include_once('lib/fields/daily_newsletter_posts.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
@@ -103,6 +127,7 @@ include_once('lib/classes/ChangeOrgApi.php');
 include_once('lib/classes/ChangeOrgPetition.php');
 include_once('lib/classes/CallToAction.php');
 include_once('lib/classes/NationSwellPost.php');
+include_once('lib/classes/MailChimpFeed.php');
 
 
 // Configure Menus
@@ -113,12 +138,27 @@ include_once('lib/widgets/widgets.php');
 include_once('lib/widgets/widget-joinus.php');
 include_once('lib/widgets/widget-subscribe.php');
 include_once('lib/widgets/widget-story.php');
+include_once('lib/widgets/widget-popular.php');
+include_once('lib/widgets/widget-stories.php');
+
 
 // Plugin Activation
 include_once('lib/tgm-plugin-activation/tgm-config.php');
 
 // Custom Post Types
 include_once('lib/custom_post_types/call_to_action.php');
+include_once('lib/custom_post_types/story_list.php');
+include_once('lib/custom_post_types/daily_newsletter.php');
+
+// Remove the SEO MetaBox from Custom Post Types
+function prefix_remove_wp_seo_meta_box() {
+    remove_meta_box( 'wpseo_meta', 'ns_story_list', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_call_to_action', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'guest-author', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
+}
+add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
+
 
 
 // Change.org

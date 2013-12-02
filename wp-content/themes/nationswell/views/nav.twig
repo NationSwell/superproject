@@ -3,7 +3,7 @@
         <div class="container">
             <a href="/" class="site-logo site-logo--slogan fl">
                 <img src="/{{ theme_dir }}/img/site-logo.png" alt=""/>
-                <span class="slogan hide_mobile">Meet the people renewing America</span>
+                <span class="slogan hide_mobile">{{ site_tag_line }}</span>
             </a>
 
             <a href="#" class="toggle-collapse more-stories-toggle icon icon_hamburger fr" data-mobile-target="body" data-desktop-target="#more-stories"></a>
@@ -16,7 +16,7 @@
             <form action="http://nationswell.us6.list-manage1.com/subscribe/post?u=5f8740745b&id=8eaa257d1b" method="post" class="mc-form validate fr hide_mobile" novalidate>
                 <ul id="page-subscribe" class="expand-field">
                     <li><label for="nav-subscribe" class="mc-email-status icon icon_envelope z1">Enter your email address</label></li>
-                    <li><input type="email" id="nav-subscribe" placeholder="Subscribe to our Newsletter" class="required"></li>
+                    <li><input type="email" id="nav-subscribe" placeholder="{{ nav_subscribe_placeholder_text }}" class="required"></li>
                     <li><span class="mc-email-status"></span></li>
                 </ul>
             </form>
@@ -24,7 +24,7 @@
             <form action="/" method="get" class="fr hide_mobile">
                 <ul id="page-search" class="expand-field">
                     <li><label for="nav-search" class="icon icon_search z1"></label></li>
-                    <li><input type="text" id="nav-search" placeholder="Search NationSwell" name="s"></li>
+                    <li><input type="text" id="nav-search" placeholder="{{ nav_search_placeholder_text }}" name="s"></li>
                 </ul>
             </form>
         </div>
@@ -40,7 +40,7 @@
 
             <div class="most-popular">
                 <header class="cf">
-                    <h3 class="hd-g more-stories__heading fl">Most Popular</h3>
+                    <h3 class="hd-g more-stories__heading fl">{{ main_menu_header }}</h3>
                     {#<a href="#" class="btn btn--view-all fr icon icon_arrow-right">View all environment</a>#}
                 </header>
 

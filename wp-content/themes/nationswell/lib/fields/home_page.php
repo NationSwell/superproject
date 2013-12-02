@@ -100,8 +100,31 @@ if(function_exists("register_field_group"))
                         0 => 'search',
                     ),
                     'result_elements' => array (
-                        0 => 'post_type',
-                        1 => 'post_title',
+                        0 => 'featured_image',
+                        1 => 'post_type',
+                        2 => 'post_title',
+                    ),
+                    'max' => '',
+                ),
+                array (
+                    'key' => 'field_52992f4b5f27a',
+                    'label' => 'Stories Carousel B',
+                    'name' => 'stories_carousel_b',
+                    'type' => 'relationship',
+                    'return_format' => 'id',
+                    'post_type' => array (
+                        0 => 'post',
+                    ),
+                    'taxonomy' => array (
+                        0 => 'all',
+                    ),
+                    'filters' => array (
+                        0 => 'search',
+                    ),
+                    'result_elements' => array (
+                        0 => 'featured_image',
+                        1 => 'post_type',
+                        2 => 'post_title',
                     ),
                     'max' => '',
                 ),

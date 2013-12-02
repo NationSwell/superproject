@@ -11,6 +11,10 @@
                         <span class="rubric">{{ feature.category }}</span>
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ feature.tout_title }}</h1>
 
+                        {% if loop.index == 1 and feature.thumbnail.credit is not empty %}
+                        <span class="credit">{{ feature.thumbnail.credit }}</span>
+                        {% endif %}
+
                         <div class="support-cause support-cause--hero z2">
                             <h4 class="hd-t support-cause__heading">Support this cause</h4>
 
@@ -47,7 +51,14 @@
     </div>
 
     {% if series_carousel is not empty %}
-    {% include 'carousel-series.twig' %}
+
+        {% include 'carousel-series.twig' %}
+
+    {% elseif stories_carousel_b is not empty %}
+
+        {% set vars = {'stories_carousel': stories_carousel_b} %}
+        {% include 'carousel-stories.twig' with vars only %}
+
     {% endif %}
 
     <div class="river river--one-col">
@@ -107,7 +118,7 @@
     </div>
 
     {% if stories_carousel is not empty %}
-    {% include 'carousel-stories.twig' %}
+        {% include 'carousel-stories.twig' %}
     {% endif %}
 
     <div class="river river--one-col">
@@ -136,9 +147,10 @@
             </div>
         </div>
     </div>
+
     {% if more %}
         <div class="btn-container">
-            <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">Load more</a>
+            <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">{{ load_more_button_text }}</a>
         </div>
     {% endif %}
 

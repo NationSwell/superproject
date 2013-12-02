@@ -8,8 +8,8 @@
             <div class="story__sticky hide_mobile">
                 <div class="story__sticky-container">
                     <div class="sticky-social">
-                        <a href="{{ post.facebook_share_url }}" class="btn btn--facebook btn--square icon icon_facebook">Share</a>
-                        <a href="{{ post.twitter_share_url }}" class="btn btn--twitter btn--square icon icon_twitter">Tweet</a>
+                        <a href="{{ post.facebook_share_url }}" class="btn btn--facebook btn--square icon icon_facebook">{{ facebook_button_bingo_text }}</a>
+                        <a href="{{ post.twitter_share_url }}" class="btn btn--twitter btn--square icon icon_twitter">{{ twitter_button_bingo_text }}</a>
                     </div>
 
                     {% if post.call_to_action is not empty %}
@@ -19,7 +19,7 @@
                         <h4 class="hd-e sticky-take-action__heading">{{ post.call_to_action.tout_heading }}</h4>
                         <span class="sticky-take-action__action">{{ post.call_to_action.tout_sub_heading }}</span>
 
-                        <a href="#" class="btn btn--take-action" data-modal-target="take-action">Take Action</a>
+                        <a href="#" class="btn btn--take-action" data-modal-target="take-action">{{ take_action_header_text }}</a>
                     </div>
                     {% endif %}
                 </div>
@@ -29,8 +29,8 @@
                 <article class="story story--page">
                     <header>
                         <ul class="story__meta">
-                            <li>Appears in <a href="{{ post.category.url }}">{{ post.category }}</a></li>
-                            <li>Written by {{ post.coauthors }} on {{ post.post_date|date('F j, Y') }}</li>
+                            <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a></li>
+                            <li>{{ byline_prefix_text }} {{ post.coauthors }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
@@ -82,8 +82,8 @@
                 {% endif %}
                 
                 <div class="story__social cf">
-                    <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook icon icon_facebook">Share on Facebook</a>
-                    <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter icon icon_twitter">Share on Twitter</a>
+                    <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook icon icon_facebook">{{ facebook_button_expanded_text }}</a>
+                    <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter icon icon_twitter">{{ twitter_button_expanded_text }}</a>
                 </div>
 
                 {% include('comments.twig') %}
@@ -123,31 +123,7 @@
     </div>
 
     {% if post.more_stories is not empty %}
-        <div class="read-next">
-            <div class="container">
-                <h3 class="hd-g read-next__heading">More Stories in {{ post.category }}</h3>
-
-                <ul class="story-list">
-                    {% for story in post.more_stories %}
-                        <li>
-                            <article class="story story--tease">
-                                <a href="#" class="link-wrapper">
-                                    <figure class="story__feature fl">
-                                        <img src="{{ story.thumbnail.src|resize(600, 330) }}" alt="{{ story.thumbnail._wp_attachment_image_alt }}"/>
-                                    </figure>
-
-                                    <header class="story__header">
-                                        {#<span class="rubric">{{ story.category }}</span>#}
-                                        <h2 class="hd-u story__hed">{{ story.post_title }}</h2>
-                                        <p class="story__dek">{{ story.dek }}</p>
-                                    </header>
-                                </a>
-                            </article>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+    {% include 'more-stories.twig' %}
     {% endif %}
 
     {% if(flyout_social_enabled) %}
