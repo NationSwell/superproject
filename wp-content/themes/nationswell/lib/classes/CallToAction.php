@@ -14,6 +14,23 @@ if (class_exists('TimberPost')) {
             if(isset($this->image)) {
                 unset($this->image);
             }
+
+            $this->get_stats();
+        }
+
+        private function get_stats() {
+            $petition = $this->petition();
+            if($petition) {
+                $content = $petition->content();
+
+                $this->current = $content->signature_count;
+                $this->goal = $content->goal;
+                $this->goal_date = $content->end_at;
+            }
+            else {
+                $this->current = 0;
+                $this->goal = 0;
+            }
         }
 
         public function days_until(){
@@ -26,33 +43,11 @@ if (class_exists('TimberPost')) {
         }
 
         public function current() {
-            if(!isset($this->current)) {
-                $this->get_stats();
-            }
-
             return $this->current;
         }
 
         public function goal() {
-            if(!isset($this->goal)) {
-                $this->get_stats();
-            }
-
             return $this->goal;
-        }
-
-        private function get_stats() {
-            $petition = $this->petition();
-            if($petition) {
-                $content = $petition->content();
-
-                $this->current = $content->signature_count;
-                $this->goal = $content->goal;
-            }
-            else {
-                $this->current = 0;
-                $this->goal = 0;
-            }
         }
 
         public function petition() {
