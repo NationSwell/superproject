@@ -146,6 +146,7 @@ include_once('lib/widgets/widget-subscribe.php');
 include_once('lib/widgets/widget-story.php');
 include_once('lib/widgets/widget-popular.php');
 include_once('lib/widgets/widget-stories.php');
+include_once('lib/widgets/widget-contact.php');
 
 
 // Plugin Activation
