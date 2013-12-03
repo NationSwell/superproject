@@ -58,13 +58,6 @@
 // join us
 .modal--join-us {
   .modal--join-us__opt-out {
-    bottom: -3.4rem;
-  }
-}
-
-// join us
-.modal--join-us {
-  .modal--join-us__opt-out {
     color: $white;
     display: block;
     font-family: $gudea;
@@ -72,6 +65,8 @@
     left: 0;
     text-align: center;
     width: 100%;
+    bottom: -7rem;
+    font-size: 3rem;
 
     a {
       color: $ns_blue1;

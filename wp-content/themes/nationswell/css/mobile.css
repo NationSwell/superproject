@@ -4028,11 +4028,6 @@ body.panel--is-open #page-header .more-stories-toggle {
 
 /* line 60, ../scss/partials/mobile/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
-  bottom: -3.4rem;
-}
-
-/* line 67, ../scss/partials/mobile/_modal.scss */
-.modal--join-us .modal--join-us__opt-out {
   color: white;
   display: block;
   font-family: "Gudea", Arial, sans-serif;
@@ -4040,13 +4035,15 @@ body.panel--is-open #page-header .more-stories-toggle {
   left: 0;
   text-align: center;
   width: 100%;
+  bottom: -7rem;
+  font-size: 3rem;
 }
-/* line 76, ../scss/partials/mobile/_modal.scss */
+/* line 71, ../scss/partials/mobile/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 80, ../scss/partials/mobile/_modal.scss */
+/* line 75, ../scss/partials/mobile/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a:hover {
   color: #fc3b40;
 }
