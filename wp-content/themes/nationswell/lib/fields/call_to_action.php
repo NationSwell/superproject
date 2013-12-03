@@ -233,25 +233,19 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bddd2d2efd',
-                    'label' => 'Freeform Type',
-                    'name' => 'freeform_type',
+                    'label' => 'Icon',
+                    'name' => 'icon',
                     'type' => 'select',
                     'instructions' => 'This determines the Icon that appears along with the Take Action Panel',
                     'required' => 1,
-                    'conditional_logic' => array(
-                        'status' => 1,
-                        'rules' => array(
-                            array(
-                                'field' => 'field_528bcb5146eda',
-                                'operator' => '==',
-                                'value' => 'freeform',
-                            ),
-                        ),
-                        'allorany' => 'all',
-                    ),
                     'choices' => array(
                         'link' => 'Link',
                         'purchase' => 'Purchase',
+                        'donate' => 'Donate',
+                        'donate' => 'Donate',
+                        'cta-signup' => 'Signup',
+                        'cta-speak-out' => 'Speak Out',
+                        'email' => '@ Symbol',
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
