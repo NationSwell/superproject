@@ -304,8 +304,8 @@ if (function_exists("register_field_group")) {
                 ),
                 array (
                     'key' => 'field_529e601de97a5',
-                    'label' => 'Goal Amount Dispaly',
-                    'name' => 'goal_amount_dispaly',
+                    'label' => 'Goal Amount Display',
+                    'name' => 'goal_amount_display',
                     'type' => 'radio',
                     'choices' => array (
                         'absolute' => 'Absolute Total',
