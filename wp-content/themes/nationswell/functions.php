@@ -186,10 +186,10 @@ function save_petition_data($cta_id) {
 
 add_action( 'acf/save_post', 'save_petition_data', 20);
 
-function copy_from_request($keys) {
+function copy_from_post($keys) {
     $result = array();
     foreach($keys as $key) {
-        if(isset($_REQUEST[$key])) {
+        if(isset($_POST[$key])) {
             $result[$key] = $_REQUEST[$key];
         }
     }
@@ -204,9 +204,13 @@ function handle_sign_petition() {
     if(is_petition($cta_id)) {
         $petition = new ChangeOrgPetition($cta_id);
 
-        $signer = copy_from_request(array('email','first_name', 'last_name', 'city', 'postal_code', 'country_code'));
+        $signer = copy_from_post(array('email','first_name', 'last_name', 'city', 'postal_code', 'country_code', 'reason'));
 
         $response = $change_org_api->sign($petition, $signer);
+
+        http_response_code($response['response_code']);
+        unset($response['response_code']);
+
         wp_send_json($response);
     }
     else {

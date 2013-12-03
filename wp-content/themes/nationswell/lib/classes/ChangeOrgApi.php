@@ -76,6 +76,11 @@ class ChangeOrgApi {
         return file_get_contents('https://api.change.org/v1/petitions/' . $id . '?api_key=' . $this->api_key);
     }
 
+    public function get_petitions($ids) {
+        $url = 'https://api.change.org/v1/petitions/?petition_ids=' . implode(',', $ids) . '&api_key=' . $this->api_key;
+        return $this->parse_json(file_get_contents($url));
+    }
+
     public function get_petition($id) {
         return $this->parse_json($this->get_petition_json($id));
     }
@@ -156,10 +161,15 @@ class ChangeOrgApi {
         ));
 
         $result = curl_exec($curl_session);
-
+        $response_code = curl_getinfo($curl_session, CURLINFO_HTTP_CODE);
         curl_close($curl_session);
 
-        return $this->parse_json($result);
+
+        $parsed = json_decode($result, true);
+        $parsed = $parsed ? $parsed : array();
+        $parsed['response_code'] = $response_code;
+
+        return $parsed;
     }
 
     public function get_petition_from_post($cta_id) {

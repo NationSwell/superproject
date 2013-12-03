@@ -15,45 +15,35 @@
     </div>
 
     <div class="take-action__b">
-        <form class="cf">
+        <form id="change-org-petition" data-cta-id="{{ post.call_to_action.ID }}" class="cf">
             <div class="form-element">
                 <label for="ta-first-name">First Name</label>
-                <input type="text" id="ta-first-name" class="text-input text-input--thin text-input text-input--thin--thin">
+                <input name="first_name" type="text" id="ta-first-name" class="text-input text-input--thin text-input text-input--thin--thin" required>
             </div>
 
             <div class="form-element">
                 <label for="ta-last-name">Last Name</label>
-                <input type="text" id="ta-last-name" class="text-input text-input--thin">
+                <input name="last_name" type="text" id="ta-last-name" class="text-input text-input--thin" required>
             </div>
 
             <div class="form-element">
                 <label for="ta-email">Email</label>
-                <input type="text" id="ta-email" class="text-input text-input--thin">
+                <input name="email" type="email" id="ta-email" class="text-input text-input--thin" required>
             </div>
-
-            {#<div class="form-element">#}
-            {#<label for="ta-address">Street Address</label>#}
-            {#<input type="text" id="ta-address" class="text-input text-input--thin">#}
-            {#</div>#}
 
             <div class="form-element">
                 <label for="ta-city">City</label>
-                <input type="text" id="ta-city" class="text-input text-input--thin">
+                <input name="city" ype="text" id="ta-city" class="text-input text-input--thin" required>
             </div>
-
-            {#<div class="form-element form-element--one-third">#}
-            {#<label for="ta-state">State</label>#}
-            {#<input type="text" id="ta-state" class="text-input text-input--thin">#}
-            {#</div>#}
 
             <div class="form-element">
                 <label for="ta-zip">Zip Code</label>
-                <input type="text" id="ta-zip" class="text-input text-input--thin"/>
+                <input name="postal_code" type="text" id="ta-zip" class="text-input text-input--thin" required>
             </div>
 
             <div class="form-element">
                 <label for="ta-country">Country</label>
-                <select id="ta-country">
+                <select name="country_code" id="ta-country">
                     <option value="US">United States of America</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
@@ -312,11 +302,12 @@
             </div>
 
             <div class="form-element">
-                <textarea class="text-area">Why is this important to you?</textarea>
+                <textarea name="reason" id="ta-reason" class="text-area">Why is this important to you?</textarea>
             </div>
-        </form>
 
-        <a href="#" class="btn btn--solid btn--external icon">Sign Petition</a>
+
+            <button type="submit" class="btn btn--solid btn--external icon">Sign Petition</button>
+        </form>
 
         <small>{{ take_action_privacy_policy_text }}</small>
     </div>

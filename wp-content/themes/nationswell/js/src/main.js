@@ -145,25 +145,6 @@
             }
         });
 
-        // take action submission
-        $('body').on('click.taSubmit', '.take-action__submit', function(e) {
-            var $taAction = $('.take-action__action'),
-                $taThankYou = $('.take-action__thank-you');
-
-            $taAction.toggleClass('is-hidden');
-
-            window.setTimeout(function() {
-                $taAction.css('display', 'none');
-
-                $taThankYou.css('display', 'block');
-                $taThankYou.toggleClass('is-hidden');
-            }, 300);
-
-            $(window).off('.taSubmit');
-
-            e.preventDefault();
-        });
-
     // responsive code
 
         // mobile code
@@ -417,6 +398,48 @@
 
             e.preventDefault();
         });
+
+        // Call to Action:
+
+        function showThankYou() {
+            var $taAction = $('.take-action__action'),
+                $taThankYou = $('.take-action__thank-you');
+
+            $taAction.toggleClass('is-hidden');
+
+            window.setTimeout(function() {
+                $taAction.css('display', 'none');
+
+                $taThankYou.css('display', 'block');
+                $taThankYou.toggleClass('is-hidden');
+            }, 300);
+        }
+
+        // take action submission
+        $('body').on('click.taSubmit', '.take-action__submit', function(e) {
+            showThankYou();
+
+            $(window).off('.taSubmit');
+
+            e.preventDefault();
+        });
+
+
+        $('#change-org-petition').submit(function(e){
+            var $form = $(this),
+                url = '/wp-admin/admin-ajax.php?action=sign_petition&cta_id=' + $form.attr('data-cta-id'),
+                data = $form.serialize();
+
+            $.post(url, data)
+                .done(function(data) {
+                    showThankYou();
+                })
+                .fail(function(data) {
+                    console.log(data);
+                });
+
+            e.preventDefault();
+        }).validate();
 
 
     });
