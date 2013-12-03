@@ -242,8 +242,10 @@ function create_initial_pages() {
         'advertise' => 'Advertise',
         'termsofservice' => 'Terms of Service',
         'privacy' => 'Privacy Policy',
-        'jobs' => 'Jobs'
+        'jobs' => 'Jobs',
+        'main_menu_story_list' => 'Main Menu'
     );
+
     foreach($pages as $key => $value) {
         $id = get_page_by_title($value);
         $page = array(
@@ -254,8 +256,11 @@ function create_initial_pages() {
             'post_author' => 1,
             'post_parent' => ''
         );
+
         if (!isset($id)) {
+
             $post_id = wp_insert_post($page);
+
             update_post_meta($post_id, '_wp_page_template', 'page-static.php');
 
             if($value == 'Home') {
@@ -264,5 +269,6 @@ function create_initial_pages() {
             }
 
         }
+
     };
 }

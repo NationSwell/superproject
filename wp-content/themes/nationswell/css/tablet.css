@@ -573,153 +573,223 @@ a:hover {
 }
 
 /* line 44, ../scss/partials/base/_icons.scss */
-.icon_cart:before {
+.icon_audio_stream:before {
   content: "\f105";
 }
 
 /* line 47, ../scss/partials/base/_icons.scss */
-.icon_close:before {
+.icon_cart:before {
   content: "\f106";
 }
 
 /* line 50, ../scss/partials/base/_icons.scss */
-.icon_comment:before {
+.icon_circle_alpha_stream:before {
   content: "\f107";
 }
 
 /* line 53, ../scss/partials/base/_icons.scss */
-.icon_donate:before {
+.icon_close:before {
   content: "\f108";
 }
 
 /* line 56, ../scss/partials/base/_icons.scss */
-.icon_email:before {
+.icon_comment:before {
   content: "\f109";
 }
 
 /* line 59, ../scss/partials/base/_icons.scss */
-.icon_envelope:before {
+.icon_contact:before {
   content: "\f10a";
 }
 
 /* line 62, ../scss/partials/base/_icons.scss */
-.icon_external:before {
+.icon_cta-signup:before {
   content: "\f10b";
 }
 
 /* line 65, ../scss/partials/base/_icons.scss */
-.icon_facebook:before {
+.icon_cta-speak-out-chat:before {
   content: "\f10c";
 }
 
 /* line 68, ../scss/partials/base/_icons.scss */
-.icon_fullscreen:before {
+.icon_cta-speak-out:before {
   content: "\f10d";
 }
 
 /* line 71, ../scss/partials/base/_icons.scss */
-.icon_google-plus:before {
+.icon_donate:before {
   content: "\f10e";
 }
 
 /* line 74, ../scss/partials/base/_icons.scss */
-.icon_hamburger:before {
+.icon_email:before {
   content: "\f10f";
 }
 
 /* line 77, ../scss/partials/base/_icons.scss */
-.icon_information:before {
+.icon_envelope:before {
   content: "\f110";
 }
 
 /* line 80, ../scss/partials/base/_icons.scss */
-.icon_instagram:before {
+.icon_external:before {
   content: "\f111";
 }
 
 /* line 83, ../scss/partials/base/_icons.scss */
-.icon_link:before {
+.icon_facebook:before {
   content: "\f112";
 }
 
 /* line 86, ../scss/partials/base/_icons.scss */
-.icon_listory:before {
+.icon_fullscreen:before {
   content: "\f113";
 }
 
 /* line 89, ../scss/partials/base/_icons.scss */
-.icon_load-more:before {
+.icon_google-plus:before {
   content: "\f114";
 }
 
 /* line 92, ../scss/partials/base/_icons.scss */
-.icon_nationswell-flag:before {
+.icon_hamburger:before {
   content: "\f115";
 }
 
 /* line 95, ../scss/partials/base/_icons.scss */
-.icon_photo:before {
+.icon_information:before {
   content: "\f116";
 }
 
 /* line 98, ../scss/partials/base/_icons.scss */
-.icon_play:before {
+.icon_instagram:before {
   content: "\f117";
 }
 
 /* line 101, ../scss/partials/base/_icons.scss */
-.icon_quote:before {
+.icon_link:before {
   content: "\f118";
 }
 
 /* line 104, ../scss/partials/base/_icons.scss */
-.icon_search:before {
+.icon_listcicle_stream:before {
   content: "\f119";
 }
 
 /* line 107, ../scss/partials/base/_icons.scss */
-.icon_separator:before {
+.icon_listory:before {
   content: "\f11a";
 }
 
 /* line 110, ../scss/partials/base/_icons.scss */
-.icon_series:before {
+.icon_load-more:before {
   content: "\f11b";
 }
 
 /* line 113, ../scss/partials/base/_icons.scss */
-.icon_star:before {
+.icon_nationswell-flag:before {
   content: "\f11c";
 }
 
 /* line 116, ../scss/partials/base/_icons.scss */
-.icon_story:before {
+.icon_photo:before {
   content: "\f11d";
 }
 
 /* line 119, ../scss/partials/base/_icons.scss */
-.icon_tumblr:before {
+.icon_photo_stream-01:before {
   content: "\f11e";
 }
 
 /* line 122, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
+.icon_photo_stream:before {
   content: "\f11f";
 }
 
 /* line 125, ../scss/partials/base/_icons.scss */
-.icon_video:before {
+.icon_play:before {
   content: "\f120";
 }
 
 /* line 128, ../scss/partials/base/_icons.scss */
-.icon_volume:before {
+.icon_quote:before {
   content: "\f121";
 }
 
 /* line 131, ../scss/partials/base/_icons.scss */
-.icon_write:before {
+.icon_search:before {
   content: "\f122";
+}
+
+/* line 134, ../scss/partials/base/_icons.scss */
+.icon_separator:before {
+  content: "\f123";
+}
+
+/* line 137, ../scss/partials/base/_icons.scss */
+.icon_series:before {
+  content: "\f124";
+}
+
+/* line 140, ../scss/partials/base/_icons.scss */
+.icon_series_stream:before {
+  content: "\f125";
+}
+
+/* line 143, ../scss/partials/base/_icons.scss */
+.icon_star:before {
+  content: "\f126";
+}
+
+/* line 146, ../scss/partials/base/_icons.scss */
+.icon_story:before {
+  content: "\f127";
+}
+
+/* line 149, ../scss/partials/base/_icons.scss */
+.icon_story_stream_01:before {
+  content: "\f128";
+}
+
+/* line 152, ../scss/partials/base/_icons.scss */
+.icon_story_stream_02:before {
+  content: "\f129";
+}
+
+/* line 155, ../scss/partials/base/_icons.scss */
+.icon_story_stream_03:before {
+  content: "\f12a";
+}
+
+/* line 158, ../scss/partials/base/_icons.scss */
+.icon_tumblr:before {
+  content: "\f12b";
+}
+
+/* line 161, ../scss/partials/base/_icons.scss */
+.icon_twitter:before {
+  content: "\f12c";
+}
+
+/* line 164, ../scss/partials/base/_icons.scss */
+.icon_video:before {
+  content: "\f12d";
+}
+
+/* line 167, ../scss/partials/base/_icons.scss */
+.icon_video_stream:before {
+  content: "\f12e";
+}
+
+/* line 170, ../scss/partials/base/_icons.scss */
+.icon_volume:before {
+  content: "\f12f";
+}
+
+/* line 173, ../scss/partials/base/_icons.scss */
+.icon_write:before {
+  content: "\f130";
 }
 
 /* line 1, ../scss/partials/base/_buttons.scss */
@@ -1508,7 +1578,7 @@ input[type="submit"] {
   speak: none;
   font-family: 'icons';
   /* check is correct character after icon font additions */
-  content: "\f11c";
+  content: "\f126";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2439,7 +2509,7 @@ body.is-locked {
 .story__container .story__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
-  content: "\f11c";
+  content: "\f126";
   position: absolute;
 }
 
@@ -2744,7 +2814,7 @@ body.is-locked {
 .static__container .static__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
-  content: "\f11c";
+  content: "\f126";
   position: absolute;
 }
 
