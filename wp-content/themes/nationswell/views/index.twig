@@ -3,22 +3,21 @@
 {% block content %}
     {% if featured is not empty %}
     <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--single">
-        {% for feature in featured %}
-            <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ feature.thumbnail.src|resize(1300,600) }});">
-                <a href="{{ feature.permalink }}" class="link-wrapper">
+        {% for post in featured %}
+            <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});">
+                <a href="{{ post.permalink }}" class="link-wrapper">
                     {% if loop.index == 1 %}<span class="icon icon_photo type-indicator type-indicator--photo"></span>{% endif %}
                     
                     <article class="story story--hero z1">
-                        {#<span class="rubric">{{ feature.category }}</span>#}
+                        {#<span class="rubric">{{ post.category }}</span>#}
+                        <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ post.tout_title }}</h1>
 
-                        <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ feature.tout_title }}</h1>
-
-                        {% if feature.call_to_action is not empty %}
+                        {% if post.call_to_action is not empty %}
                         {% include 'action-stats.twig' %}
                         {% endif %}
 
-                        {% if loop.index == 1 and feature.thumbnail.credit is not empty %}
-                            <span class="credit">{{ feature.thumbnail.credit }}</span>
+                        {% if loop.index == 1 and post.thumbnail.credit is not empty %}
+                            <span class="credit">{{ post.thumbnail.credit }}</span>
                         {% endif %}
                     </article>
                 </a>
