@@ -12,11 +12,11 @@
 
 <link rel="stylesheet" href="{{ stylesheet_uri }}" type="text/css" media="screen"/>
 
-<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 767px)" href="/{{ theme_dir }}/css/mobile.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 767px)" href="/{{ theme_dir }}/css/mobile.css?{{ version }}"/>
 {#<link rel="stylesheet" type="text/css" media="screen and (min-device-width : 768px) and (max-device-width : 1199px)" href="/{{ theme_dir }}/css/tablet.css"/>#}
-<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px)" href="/{{ theme_dir }}/css/desktop.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px)" href="/{{ theme_dir }}/css/desktop.css?{{ version }}"/>
 
-<script src="/wp-content/themes/nationswell/js/src/vendor/modernizr.custom.13580.js"></script>
+<script src="/{{ theme_dir }}/js/src/vendor/modernizr.custom.13580.js"></script>
 
 <link rel="pingback" href="{{ bloginfo('pingback_url') }}"/>
 

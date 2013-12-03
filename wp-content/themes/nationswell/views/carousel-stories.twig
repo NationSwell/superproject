@@ -1,3 +1,4 @@
+{% if stories_carousel|length > 1 %}
 <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek">
     <ul class="carousel__items">
         {% for post in stories_carousel %}
@@ -16,8 +17,8 @@
 
     <div class="mobile-carousel__external-container container show_mobile">
         <a href="#" class="link-wrapper">
-            <div class="indicator indicator--blue indicator--title icon icon_camera"></div>
-            <h3 class="carousel-item__title hd-p"></h3>
+            <div class="indicator indicator--blue indicator--title icon icon_{{ stories_carousel[0].content_type }}"></div>
+            <h3 class="carousel-item__title hd-p">{{ stories_carousel[0].post_title }}</h3>
         </a>
     </div>
 
@@ -31,3 +32,4 @@
         </li>
     </ul>
 </div>
+{% endif %}

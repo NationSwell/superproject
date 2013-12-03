@@ -1,5 +1,7 @@
 <?php
 
+define('VERSION', file_get_contents(get_template_directory() . '/version.txt'));
+
 if (WP_DEBUG && WP_DEBUG_DISPLAY)
 {
     ini_set('error_reporting', E_ALL & ~E_STRICT & ~E_DEPRECATED);
@@ -17,6 +19,8 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 define('THEME_URL', get_template_directory_uri());
 function add_to_context($data)
 {
+    $data['version'] = VERSION;
+
     /* this is where you can add your own data to Timber's context object */
     $data['menu_main'] = new TimberMenu('menu_main');
     $data['menu_footer'] = new TimberMenu('menu_footer');
