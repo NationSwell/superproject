@@ -2,7 +2,7 @@
   height: 13rem;
   width: 100%;
 
-  @include transition(background-color 0.15s ease-in-out);
+  @include transition(all 0.15s ease-in-out);
 }
 
 /* logo and slogan */
@@ -48,7 +48,6 @@
   }
 
   #page-search {
-
     position: relative;
 
     [for='panel-search'] {
@@ -59,7 +58,7 @@
       color: $white;
     }
 
-    .search-field {
+    #panel-search {
       border: 0 none;
       border-radius: 0;
       position: relative;
@@ -130,6 +129,7 @@ body.panel--is-open {
 
   #page-header {
     background-color: $white;
+    right: 47rem;
 
     .more-stories-toggle {
       color: $ns_navy2;

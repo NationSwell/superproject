@@ -19,3 +19,39 @@
     padding: 1.4rem 1.6rem;
   }
 }
+
+.join-us__email {
+  background-color: $white;
+  border: 1px solid $gray5;
+  border-right-width: 0px;
+  position: relative;
+  width: 100%;
+
+  input[type="email"] {
+    border: 0 none;
+    box-shadow: none;
+    outline: none;
+    padding: 1.2rem 0 0 0;
+    line-height: 1.2;
+    width: 54%;
+  }
+
+  .btn--subscribe {
+    background-color: $ns_red2;
+    color: $white;
+    margin: 0;
+    font-family: $oswald;
+    font-weight: $regular;
+    float: right;
+
+    &:hover {
+      background-color: $ns_blue1;
+    }
+  }
+
+  &:before {
+    color: $gray6;
+    display: block;
+    position: absolute;
+  }
+}

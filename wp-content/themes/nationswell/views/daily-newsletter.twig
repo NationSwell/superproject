@@ -21,7 +21,7 @@
             <description><![CDATA[{{ post.tout_dek_text }}]]></description>
             <content:encoded><![CDATA[{{ post.tout_dek_text }}]]></content:encoded>
             <guid isPermaLink="false">{{ post.permalink }}</guid>
-            <pubDate>{{ post.post_date }}</pubDate>
+            <pubDate>{{ post.post_date|date("D, d M Y H:i:s O") }}</pubDate>
             <dc:creator><![CDATA[{{ post.author.name }}]]></dc:creator>
             {% for term in post.terms('category') %}
             <category>{{term.name}}</category>

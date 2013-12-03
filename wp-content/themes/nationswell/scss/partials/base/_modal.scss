@@ -1,6 +1,5 @@
 .modal {
   position: fixed;
-  top: 56%;
   left: 50%;
   min-width: 30rem;
   width: 80%;
@@ -15,8 +14,6 @@
     visibility: visible;
   }
 }
-
-
 
 .modal-overlay {
   position: fixed;
