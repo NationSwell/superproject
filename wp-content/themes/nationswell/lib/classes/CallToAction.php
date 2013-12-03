@@ -4,6 +4,8 @@ if (class_exists('TimberPost')) {
     class CallToAction extends TimberPost {
 
         private $petition;
+        private $current;
+        private $goal;
 
         function __construct($pid = null) {
             parent::__construct($pid);
@@ -21,6 +23,36 @@ if (class_exists('TimberPost')) {
 
             $interval = $datetime1->diff($datetime2);
             return $interval->format('%a');
+        }
+
+        public function current() {
+            if(!isset($this->current)) {
+                $this->get_stats();
+            }
+
+            return $this->current;
+        }
+
+        public function goal() {
+            if(!isset($this->goal)) {
+                $this->get_stats();
+            }
+
+            return $this->goal;
+        }
+
+        private function get_stats() {
+            $petition = $this->petition();
+            if($petition) {
+                $content = $petition->content();
+
+                $this->current = $content->signature_count;
+                $this->goal = $content->goal;
+            }
+            else {
+                $this->current = 0;
+                $this->goal = 0;
+            }
         }
 
         public function petition() {
