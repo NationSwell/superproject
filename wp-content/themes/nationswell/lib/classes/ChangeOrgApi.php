@@ -50,42 +50,53 @@ class ChangeOrgApi {
     }
 
     // API
-    private static function parse_json($json, $attr = '') {
-        $result = false;
+    private static function get_request($url, $json = false) {
+        $curl_session = curl_init();
+        curl_setopt_array($curl_session, array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 5
+        ));
 
-        if($json) {
-            $parsed = json_decode($json, true);
-            if($parsed) {
-                $result = !empty($attr) ? $parsed[$attr] : $parsed;
-            }
+        $result = curl_exec($curl_session);
+        $response_code = curl_getinfo($curl_session, CURLINFO_HTTP_CODE);
+        curl_close($curl_session);
+
+        if(!$json) {
+            $result = @json_decode($result, true);
+            $result = $result ? $result : false;
         }
 
-        return $result;
+        return array(
+            'data' => $result,
+            'response_code' => $response_code
+        );
     }
 
-    public function get_id_json($url) {
-        $query_string = http_build_query(array('api_key' => $this->api_key, 'petition_url' => $url));
-        return file_get_contents("https://api.change.org/v1/petitions/get_id?" . $query_string);
+    private static function get_response_property($response, $attr) {
+        return $response ? $response['data'][$attr] : false;
     }
 
     public function get_id($url) {
-        return $this->parse_json($this->get_id_json($url), 'petition_id');
+        $query_string = http_build_query(array('api_key' => $this->api_key, 'petition_url' => $url));
+        $response = $this->get_request("https://api.change.org/v1/petitions/get_id?" . $query_string);
+
+        return $this->get_response_property($response, 'petition_id');
     }
 
-    public function get_petition_json($id) {
-        return file_get_contents('https://api.change.org/v1/petitions/' . $id . '?api_key=' . $this->api_key);
+//    public function get_petitions($ids) {
+//        $url = 'https://api.change.org/v1/petitions/?petition_ids=' . implode(',', $ids) . '&api_key=' . $this->api_key;
+//        return $this->parse_json(file_get_contents($url));
+//    }
+
+    public function get_petition($id, $json = false) {
+        $response = $this->get_request(
+            'https://api.change.org/v1/petitions/' . $id . '?api_key=' . $this->api_key, $json);
+
+        return $json ? $response['data'] : $this->get_response_property($response, 'petition_id');
     }
 
-    public function get_petitions($ids) {
-        $url = 'https://api.change.org/v1/petitions/?petition_ids=' . implode(',', $ids) . '&api_key=' . $this->api_key;
-        return $this->parse_json(file_get_contents($url));
-    }
-
-    public function get_petition($id) {
-        return $this->parse_json($this->get_petition_json($id));
-    }
-
-    public function get_auth_key_json($id) {
+    public function get_auth_key($id) {
         $host = 'https://api.change.org';
         $endpoint = "/v1/petitions/" . $id . "/auth_keys";
         $request_url = $host . $endpoint;
@@ -115,14 +126,20 @@ class ChangeOrgApi {
             CURLOPT_RETURNTRANSFER => true
         ));
 
-        $response = curl_exec($curl_session);
+        $json = curl_exec($curl_session);
 
         curl_close($curl_session);
-        return $response;
-    }
 
-    public function get_auth_key($id) {
-        return $this->parse_json($this->get_auth_key_json($id), 'auth_key');
+        $result = false;
+
+        if($json) {
+            $parsed = @json_decode($json, true);
+            if($parsed) {
+                $result = $parsed['auth_key'];
+            }
+        }
+
+        return $result;
     }
 
     public function sign_petition($id, $auth_key, $signer) {
@@ -193,10 +210,9 @@ class ChangeOrgApi {
     }
 
     public function fetch($petition) {
-
         if($petition->should_update()) {
 
-            $id = $this->get_id($this->url);
+            $id = $this->get_id($petition->url());
             if($id) {
                 $auth_key = $this->get_auth_key($id);
                 if($auth_key) {
@@ -207,7 +223,7 @@ class ChangeOrgApi {
             }
         }
 
-        $petition_content = $this->get_petition_json($petition->id());
+        $petition_content = $this->get_petition($petition->id(), true);
         if($petition_content) {
             $petition->set_content($petition_content);
         }
