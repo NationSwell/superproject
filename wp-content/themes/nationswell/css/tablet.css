@@ -1726,12 +1726,18 @@ input[type="submit"] {
   width: auto;
 }
 
+/* sidebar */
+/* line 374, ../scss/partials/base/_components.scss */
+.sidebar li {
+  list-style: none;
+}
+
 /* pullquote */
-/* line 373, ../scss/partials/base/_components.scss */
+/* line 381, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 376, ../scss/partials/base/_components.scss */
+/* line 384, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1740,7 +1746,7 @@ input[type="submit"] {
   border-radius: 50%;
   text-align: center;
 }
-/* line 385, ../scss/partials/base/_components.scss */
+/* line 393, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1750,33 +1756,33 @@ input[type="submit"] {
 }
 
 /* tags */
-/* line 395, ../scss/partials/base/_components.scss */
+/* line 403, ../scss/partials/base/_components.scss */
 .tag-tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 401, ../scss/partials/base/_components.scss */
+/* line 409, ../scss/partials/base/_components.scss */
 .tag-tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* author */
-/* line 408, ../scss/partials/base/_components.scss */
+/* line 416, ../scss/partials/base/_components.scss */
 .author-box {
   background-color: #f6f6f6;
 }
 
-/* line 412, ../scss/partials/base/_components.scss */
+/* line 420, ../scss/partials/base/_components.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 418, ../scss/partials/base/_components.scss */
+/* line 426, ../scss/partials/base/_components.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -1785,89 +1791,89 @@ input[type="submit"] {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 426, ../scss/partials/base/_components.scss */
+/* line 434, ../scss/partials/base/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 431, ../scss/partials/base/_components.scss */
+/* line 439, ../scss/partials/base/_components.scss */
 .social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 436, ../scss/partials/base/_components.scss */
+/* line 444, ../scss/partials/base/_components.scss */
 .social li {
   display: inline-block;
 }
-/* line 439, ../scss/partials/base/_components.scss */
+/* line 447, ../scss/partials/base/_components.scss */
 .social li:first-child {
   margin-left: 0;
 }
-/* line 444, ../scss/partials/base/_components.scss */
+/* line 452, ../scss/partials/base/_components.scss */
 .social .icon {
   color: white;
   text-align: center;
   vertical-align: middle;
 }
-/* line 449, ../scss/partials/base/_components.scss */
+/* line 457, ../scss/partials/base/_components.scss */
 .social .icon.icon_facebook {
   background-color: #5973aa;
 }
-/* line 450, ../scss/partials/base/_components.scss */
+/* line 458, ../scss/partials/base/_components.scss */
 .social .icon.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 451, ../scss/partials/base/_components.scss */
+/* line 459, ../scss/partials/base/_components.scss */
 .social .icon.icon_google-plus {
   background-color: #d34836;
 }
-/* line 452, ../scss/partials/base/_components.scss */
+/* line 460, ../scss/partials/base/_components.scss */
 .social .icon.icon_instagram {
   background-color: #37668d;
 }
-/* line 453, ../scss/partials/base/_components.scss */
+/* line 461, ../scss/partials/base/_components.scss */
 .social .icon.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 457, ../scss/partials/base/_components.scss */
+/* line 465, ../scss/partials/base/_components.scss */
 .social.author__social .icon {
   line-height: 1.4;
 }
-/* line 462, ../scss/partials/base/_components.scss */
+/* line 470, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon {
   background-color: #dbdbdb;
 }
-/* line 466, ../scss/partials/base/_components.scss */
+/* line 474, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_facebook {
   background-color: #5973aa;
 }
-/* line 467, ../scss/partials/base/_components.scss */
+/* line 475, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 468, ../scss/partials/base/_components.scss */
+/* line 476, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_google-plus {
   background-color: #d34836;
 }
-/* line 469, ../scss/partials/base/_components.scss */
+/* line 477, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_instagram {
   background-color: #37668d;
 }
-/* line 470, ../scss/partials/base/_components.scss */
+/* line 478, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 477, ../scss/partials/base/_components.scss */
+/* line 485, ../scss/partials/base/_components.scss */
 .social.take-action__social .icon {
   line-height: 1.6;
 }
 
-/* line 484, ../scss/partials/base/_components.scss */
+/* line 492, ../scss/partials/base/_components.scss */
 .author__byline a {
   color: inherit;
 }
-/* line 488, ../scss/partials/base/_components.scss */
+/* line 496, ../scss/partials/base/_components.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'by';
@@ -1876,70 +1882,70 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-/* line 497, ../scss/partials/base/_components.scss */
+/* line 505, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 502, ../scss/partials/base/_components.scss */
+/* line 510, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 506, ../scss/partials/base/_components.scss */
+/* line 514, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 512, ../scss/partials/base/_components.scss */
+/* line 520, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 517, ../scss/partials/base/_components.scss */
+/* line 525, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 523, ../scss/partials/base/_components.scss */
+/* line 531, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 529, ../scss/partials/base/_components.scss */
+/* line 537, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 537, ../scss/partials/base/_components.scss */
+/* line 545, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 543, ../scss/partials/base/_components.scss */
+/* line 551, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 547, ../scss/partials/base/_components.scss */
+/* line 555, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
 
 /* subscribe status */
-/* line 554, ../scss/partials/base/_components.scss */
+/* line 562, ../scss/partials/base/_components.scss */
 .module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
   display: block;
   clear: both;
 }
-/* line 560, ../scss/partials/base/_components.scss */
+/* line 568, ../scss/partials/base/_components.scss */
 .module.mc-email-status.valid {
   color: #46b525;
 }
-/* line 564, ../scss/partials/base/_components.scss */
+/* line 572, ../scss/partials/base/_components.scss */
 .module.mc-email-status.error {
   color: #fc3b40;
 }
