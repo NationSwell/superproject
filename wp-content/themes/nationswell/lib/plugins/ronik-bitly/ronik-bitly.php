@@ -2,7 +2,7 @@
 /*
 Plugin Name: Ronik Bitly Plug-in
 Description: A fork of the official bitly plugin which doesn't hijack get_permalink. A plugin that replaces shared links with Bitly short urls and gives you the option of placing a widget on your site that shows your popular or most recent bitmarks, or the top results from a search of all currently popular bitly links.  Please visit the plug-in settings page to authorize your Bitly account.  For the widget, please find 'Bitly Bitmarks' under the Available Widgets area.
-Version: 1.1.0
+Version: 1.1.1
 Author: Ronik
 */
 
@@ -265,35 +265,42 @@ ENDBUTTON;
         if ( !$domain = bitly_settings( 'domain' ) )
             $domain = 'bit.ly';
 
-        // in theory this should never fail
-        if ( ($data = $this->shorten($permalink, $domain)) )
+        try
         {
-            // verify it doesn't exist already
-            $meta = get_post_meta($post_id);
-
-            // update
-            if ( isset($meta['bitly_url']) )
+            if ( ($data = $this->shorten($permalink, $domain)) )
             {
-                update_post_meta($post_id, 'bitly_url', $data['url']);
-                update_post_meta($post_id, 'bitly_hash', $data['hash']);
-                update_post_meta($post_id, 'bitly_long_url', $permalink);
+                // verify it doesn't exist already
+                $meta = get_post_meta($post_id);
+
+                // update
+                if ( isset($meta['bitly_url']) )
+                {
+                    update_post_meta($post_id, 'bitly_url', $data['url']);
+                    update_post_meta($post_id, 'bitly_hash', $data['hash']);
+                    update_post_meta($post_id, 'bitly_long_url', $permalink);
+                }
+                // add
+                else
+                {
+                    add_post_meta($post_id, 'bitly_url', $data['url'], true);
+                    add_post_meta($post_id, 'bitly_hash', $data['hash'], true);
+                    add_post_meta($post_id, 'bitly_long_url', $permalink, true);
+                }
+
+                return $data['url'];
             }
-            // add
             else
             {
-                add_post_meta($post_id, 'bitly_url', $data['url'], true);
-                add_post_meta($post_id, 'bitly_hash', $data['hash'], true);
-                add_post_meta($post_id, 'bitly_long_url', $permalink, true);
+                // TODO: throw error
+                error_log("Unable to get a bit.ly link for permalink '$permalink' and post id '$post_id'!", 0);
+
+                return NULL;
             }
 
-            return $data['url'];
         }
-        else
+        catch (Exception $e)
         {
-            // TODO: throw error
-            error_log("Unable to get a bit.ly link for permalink '$permalink' and post id '$post_id'!", 0);
-
-            return NULL;
+            error_log("Unable to get a bit.ly link for permalink '$permalink' and post id '$post_id'!: " . $e->getMessage(), 0);
         }
 
         return NULL;
