@@ -22,7 +22,7 @@
         });
 
         // share popup window
-        $('.btn--facebook, .btn--twitter').click(function (event) {
+        $('.btn--share').click(function (event) {
             var width = 575,
                 height = 400,
                 left = ($(window).width() - width) / 2,
@@ -112,15 +112,6 @@
             $(this).empty().unbind('.textareaClear');
         });
 
-        // flyout box
-//        $('.story__container').waypoint(function (direction) {
-//            $('#flyout').toggleClass('is-visible', direction === "down");
-//        }, {
-//            offset: function () {
-//                return $.waypoints('viewportHeight') - $(this).height() + 200;
-//            }
-//        });
-
         setTimeout(function () {
             $('#flyout').toggleClass('is-visible');
         }, 15000);
@@ -131,20 +122,22 @@
         });
 
         // expand/collapse header fields
-        $('[for*="nav-"]').on('click', function () {
+        $('[for*="nav-"]').on('click', function (e) {
             var $this = $(this),
-                input = $(this).attr('for'),
+                input = $this.attr('for'),
                 $field = $('#' + input),
                 isOpen = $field.hasClass('is-open');
 
             $('[id*="nav-"]').removeClass('is-open');
 
-            if (!isOpen) {
-                $field.addClass('is-open');
+            if ($this.attr('for') === 'nav-subscribe') {
+                $this.removeClass('error valid');
             }
 
-            if ($this.attr('for', 'nav-subscribe')) {
-                $this.removeClass('error valid');
+            if (!isOpen) {
+                $field.addClass('is-open');
+            } else {
+                e.preventDefault();
             }
         });
 

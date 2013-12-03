@@ -1,6 +1,5 @@
 html {
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 .container {
@@ -10,6 +9,6 @@ html {
 .hide_mobile,
 .show_desktop,
 .show_tablet {
-  display: none !important;
-  visibility: hidden;
-}
+   display: none !important;
+   visibility: hidden;
+ }
