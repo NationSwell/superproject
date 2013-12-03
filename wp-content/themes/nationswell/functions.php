@@ -53,6 +53,12 @@ function add_to_context($data)
     $data['take_action_thanks_text'] = get_field('take_action_thanks_text', 'option');
     $data['take_action_thanks_subscribe_text'] = get_field('take_action_thanks_subscribe_text', 'option');
 
+    $data['modal_joinus_header'] = get_field('modal_joinus_header', 'option');
+    $data['modal_joinus_body_text'] = get_field('modal_joinus_body_text', 'option');
+    $data['modal_joinus_opt_out_text'] = get_field('modal_joinus_opt_out_text', 'option');
+    $data['modal_joinus_opt_out_button_text'] = get_field('modal_joinus_opt_out_button_text', 'option');
+
+
     return $data;
 }
 
