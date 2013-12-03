@@ -908,6 +908,7 @@ a:hover {
 }
 /* line 112, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
+  background-color: transparent;
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 700;
@@ -918,7 +919,7 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 122, ../scss/partials/base/_buttons.scss */
+/* line 123, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -928,7 +929,7 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 132, ../scss/partials/base/_buttons.scss */
+/* line 133, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -942,7 +943,7 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 145, ../scss/partials/base/_buttons.scss */
+/* line 146, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -951,7 +952,7 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 156, ../scss/partials/base/_buttons.scss */
+/* line 157, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -961,7 +962,7 @@ a:hover {
   top: 0.8rem;
 }
 
-/* line 168, ../scss/partials/base/_buttons.scss */
+/* line 169, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
