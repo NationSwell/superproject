@@ -61,6 +61,40 @@
 
 /* support cause */
 .support-cause {
+
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  background-color: $ns_navy0_transparent;
+  height: 4.3rem;
+  border-radius: 2.1rem;
+
+  .indicator {
+
+    &.indicator--module{
+      display: inline-block;
+      width: 4.2rem;
+      height: 4.2rem;
+      vertical-align: middle;
+    }
+
+    &.indicator--module:before {
+      font-size: 3.4rem;
+    }
+
+  }
+
+  span {
+    vertical-align: bottom;
+  }
+
+  .support-cause__content {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 9px;
+  }
+
   .support-cause__heading {
     color: $ns_red;
   }
@@ -89,6 +123,8 @@
     font-family: $oswald;
     font-weight: $light;
     position: relative;
+
+    margin-right: 22px;
 
     -webkit-font-smoothing:antialiased;
   }
