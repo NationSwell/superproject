@@ -796,9 +796,10 @@ a:hover {
 /* line 8, ../scss/partials/base/_buttons.scss */
 .btn {
   border-radius: 0;
-  background-color: #0098d8;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
-/* line 12, ../scss/partials/base/_buttons.scss */
+/* line 13, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid {
   background-color: #fc3b40;
   color: white;
@@ -807,11 +808,11 @@ a:hover {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 21, ../scss/partials/base/_buttons.scss */
+/* line 22, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid:hover {
   background-color: #0098d8;
 }
-/* line 26, ../scss/partials/base/_buttons.scss */
+/* line 27, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all {
   background-color: #061822;
   color: #0098d8;
@@ -820,17 +821,17 @@ a:hover {
   font-weight: 700;
   position: relative;
 }
-/* line 34, ../scss/partials/base/_buttons.scss */
+/* line 35, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:before {
   font-family: 'icons';
   position: absolute;
 }
-/* line 39, ../scss/partials/base/_buttons.scss */
+/* line 40, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:hover {
   background-color: #0098d8;
   color: white;
 }
-/* line 45, ../scss/partials/base/_buttons.scss */
+/* line 46, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar {
   color: white;
   display: block;
@@ -841,12 +842,12 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 54, ../scss/partials/base/_buttons.scss */
+/* line 55, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:before {
   font-family: 'icons';
   vertical-align: text-bottom;
 }
-/* line 59, ../scss/partials/base/_buttons.scss */
+/* line 60, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:after {
   content: '';
   display: block;
@@ -854,7 +855,7 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 68, ../scss/partials/base/_buttons.scss */
+/* line 69, ../scss/partials/base/_buttons.scss */
 .btn.btn--square {
   color: white;
   display: block;
@@ -865,7 +866,7 @@ a:hover {
   position: relative;
   text-transform: uppercase;
 }
-/* line 78, ../scss/partials/base/_buttons.scss */
+/* line 79, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:after {
   content: '';
   display: block;
@@ -878,28 +879,32 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 90, ../scss/partials/base/_buttons.scss */
+/* line 91, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:before {
   display: block;
   font-family: 'icons';
 }
-/* line 96, ../scss/partials/base/_buttons.scss */
+/* line 97, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 99, ../scss/partials/base/_buttons.scss */
+/* line 100, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 104, ../scss/partials/base/_buttons.scss */
+/* line 105, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 107, ../scss/partials/base/_buttons.scss */
+/* line 108, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 112, ../scss/partials/base/_buttons.scss */
+/* line 113, ../scss/partials/base/_buttons.scss */
+.btn.btn--blue {
+  background-color: #0098d8;
+}
+/* line 117, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -912,7 +917,7 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 123, ../scss/partials/base/_buttons.scss */
+/* line 128, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -922,7 +927,7 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 133, ../scss/partials/base/_buttons.scss */
+/* line 138, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -936,7 +941,7 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 146, ../scss/partials/base/_buttons.scss */
+/* line 151, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -945,7 +950,7 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 157, ../scss/partials/base/_buttons.scss */
+/* line 162, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -955,7 +960,7 @@ a:hover {
   top: 0.8rem;
 }
 
-/* line 169, ../scss/partials/base/_buttons.scss */
+/* line 174, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
