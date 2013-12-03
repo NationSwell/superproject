@@ -2098,7 +2098,7 @@ body.is-locked {
   transition: all 0.3s ease-in-out;
 }
 /* line 27, ../scss/partials/base/_homepage.scss */
-.hero--homepage.hero--grid .hero__entry:after {
+.hero--homepage.hero--grid .hero__entry:before {
   content: '';
   background-image: url("../img/overlay_mesh.png");
   background-repeat: repeat;
@@ -2107,45 +2107,44 @@ body.is-locked {
   left: 0;
   right: 0;
   bottom: 0;
-  pointer-events: none;
   opacity: 0.6;
 }
-/* line 40, ../scss/partials/base/_homepage.scss */
+/* line 39, ../scss/partials/base/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry .story--hero {
   position: absolute;
   bottom: 0;
 }
 
-/* line 48, ../scss/partials/base/_homepage.scss */
+/* line 47, ../scss/partials/base/_homepage.scss */
 .support-cause--hero {
   background-color: rgba(6, 24, 34, 0.6);
   display: inline-block;
 }
-/* line 52, ../scss/partials/base/_homepage.scss */
+/* line 51, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__heading {
   color: white;
 }
-/* line 56, ../scss/partials/base/_homepage.scss */
+/* line 55, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__data {
   color: white;
 }
-/* line 60, ../scss/partials/base/_homepage.scss */
+/* line 59, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__label {
   color: white;
 }
-/* line 64, ../scss/partials/base/_homepage.scss */
+/* line 63, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__separator {
   color: white;
   margin: 0;
 }
 
 /* river */
-/* line 74, ../scss/partials/base/_homepage.scss */
+/* line 73, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease:hover {
   background-color: #f6f6f6;
   box-shadow: 2rem 0 0 #f6f6f6, -2rem 0 0 #f6f6f6;
 }
-/* line 79, ../scss/partials/base/_homepage.scss */
+/* line 78, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease .sponsor {
   background-color: #0098d8;
   color: #ddedf8;
@@ -2153,15 +2152,15 @@ body.is-locked {
   text-align: left;
   display: inline-block;
 }
-/* line 88, ../scss/partials/base/_homepage.scss */
+/* line 87, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature {
   position: relative;
 }
-/* line 91, ../scss/partials/base/_homepage.scss */
+/* line 90, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature img {
   display: block;
 }
-/* line 97, ../scss/partials/base/_homepage.scss */
+/* line 96, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__header {
   overflow: hidden;
 }
