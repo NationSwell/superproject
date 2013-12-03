@@ -58,7 +58,7 @@ class ChangeOrgPetition {
 
     public function set_content($content) {
         $this->content = $content;
-        $this->set_post_field('content', $content);
+        $this->set_post_field('content', json_encode($content));
         $this->set_post_field('timestamp', time());
     }
 

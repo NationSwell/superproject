@@ -39,21 +39,39 @@ class ChangeOrgApi {
     }
 
     function scheduled_petition_fetch() {
-        $ids = get_transient('ns_petition_cta_ids');
-        if(!empty($ids)) {
+        $cta_ids = get_transient('ns_petition_cta_ids');
+        if(!empty($cta_ids)) {
             delete_transient('ns_petition_cta_ids');
-            foreach($ids as $id) {
-                $petition = new ChangeOrgPetition($id);
-                $this->fetch($petition);
+
+            // Get all the petition ids and map them to petition objects
+            $ids = array();
+            $petition_posts = array();
+            foreach($cta_ids as $cta_id) {
+                $petition_post = new ChangeOrgPetition($cta_id);
+                $id = $petition_post->id();
+                if(!empty($id)) {
+                    $ids[] = $id;
+                    $petition_posts[$id] = $petition_post;
+                }
+            }
+
+            // request updated information and update the petition objects
+            $petitions = $this->get_petitions($ids);
+            foreach($petitions as $petition) {
+                $id = $petition['petition_id'];
+                if(isset($petition_posts[$id])) {
+                    $petition_posts[$id]->set_content($petition);
+                }
             }
         }
     }
 
     // API
-    private static function get_request($url, $json = false) {
+    private static function get_request($url) {
         $curl_session = curl_init();
         curl_setopt_array($curl_session, array(
             CURLOPT_URL => $url,
+            CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => 5
         ));
@@ -62,13 +80,10 @@ class ChangeOrgApi {
         $response_code = curl_getinfo($curl_session, CURLINFO_HTTP_CODE);
         curl_close($curl_session);
 
-        if(!$json) {
-            $result = @json_decode($result, true);
-            $result = $result ? $result : false;
-        }
+        $result = @json_decode($result, true);
 
         return array(
-            'data' => $result,
+            'data' => $result ? $result : false,
             'response_code' => $response_code
         );
     }
@@ -84,10 +99,12 @@ class ChangeOrgApi {
         return $this->get_response_property($response, 'petition_id');
     }
 
-//    public function get_petitions($ids) {
-//        $url = 'https://api.change.org/v1/petitions/?petition_ids=' . implode(',', $ids) . '&api_key=' . $this->api_key;
-//        return $this->parse_json(file_get_contents($url));
-//    }
+    public function get_petitions($ids) {
+        $url = 'https://api.change.org/v1/petitions/?petition_ids=' . implode(',', $ids) . '&api_key=' . $this->api_key;
+        $response = $this->get_request($url);;
+
+        return $response['data']['petitions'];
+    }
 
     public function get_petition($id, $json = false) {
         $response = $this->get_request(
@@ -223,7 +240,7 @@ class ChangeOrgApi {
             }
         }
 
-        $petition_content = $this->get_petition($petition->id(), true);
+        $petition_content = $this->get_petition($petition->id());
         if($petition_content) {
             $petition->set_content($petition_content);
         }
