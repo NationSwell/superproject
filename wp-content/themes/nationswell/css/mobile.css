@@ -2923,30 +2923,7 @@ body.is-locked {
   font-weight: 700;
 }
 
-/* line 3, ../scss/partials/mobile/_grid.scss */
-#more-stories .category-list {
-  display: block;
-  float: left;
-  margin-right: 4%;
-  width: 30.66667%;
-}
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-#more-stories .category-list:last-child {
-  margin-right: 0;
-}
-/* line 7, ../scss/partials/mobile/_grid.scss */
-#more-stories .most-popular {
-  display: block;
-  float: left;
-  margin-right: 4%;
-  width: 169.33333%;
-}
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-#more-stories .most-popular:last-child {
-  margin-right: 0;
-}
-
-/* line 15, ../scss/partials/mobile/_grid.scss */
+/* line 4, ../scss/partials/mobile/_grid.scss */
 .hero.hero--image .hero__content {
   display: block;
   float: left;
@@ -2958,7 +2935,7 @@ body.is-locked {
 .hero.hero--image .hero__content:last-child {
   margin-right: 0;
 }
-/* line 22, ../scss/partials/mobile/_grid.scss */
+/* line 11, ../scss/partials/mobile/_grid.scss */
 .hero .hero-information .hero-information__content {
   display: block;
   float: left;
@@ -2970,7 +2947,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 32, ../scss/partials/mobile/_grid.scss */
+/* line 21, ../scss/partials/mobile/_grid.scss */
 .river.river--one-col .story-teases, .river.river--two-col .story-teases {
   display: block;
   float: left;
@@ -2981,7 +2958,7 @@ body.is-locked {
 .river.river--one-col .story-teases:last-child, .river.river--two-col .story-teases:last-child {
   margin-right: 0;
 }
-/* line 35, ../scss/partials/mobile/_grid.scss */
+/* line 24, ../scss/partials/mobile/_grid.scss */
 .river.river--one-col .story-teases li, .river.river--two-col .story-teases li {
   display: block;
   float: left;
@@ -2993,7 +2970,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 43, ../scss/partials/mobile/_grid.scss */
+/* line 32, ../scss/partials/mobile/_grid.scss */
 .sidebar {
   display: block;
   float: left;
@@ -3005,7 +2982,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 48, ../scss/partials/mobile/_grid.scss */
+/* line 37, ../scss/partials/mobile/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -3017,7 +2994,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 52, ../scss/partials/mobile/_grid.scss */
+/* line 41, ../scss/partials/mobile/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -3029,7 +3006,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 57, ../scss/partials/mobile/_grid.scss */
+/* line 46, ../scss/partials/mobile/_grid.scss */
 .static__main-column {
   display: block;
   float: left;
@@ -3041,7 +3018,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 63, ../scss/partials/mobile/_grid.scss */
+/* line 52, ../scss/partials/mobile/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -3052,11 +3029,11 @@ body.is-locked {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 66, ../scss/partials/mobile/_grid.scss */
+/* line 55, ../scss/partials/mobile/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 71, ../scss/partials/mobile/_grid.scss */
+/* line 60, ../scss/partials/mobile/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -3069,7 +3046,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 79, ../scss/partials/mobile/_grid.scss */
+/* line 68, ../scss/partials/mobile/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -3081,7 +3058,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 86, ../scss/partials/mobile/_grid.scss */
+/* line 75, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -3092,7 +3069,7 @@ body.is-locked {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 89, ../scss/partials/mobile/_grid.scss */
+/* line 78, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -3104,7 +3081,7 @@ body.is-locked {
   margin-right: 0;
 }
 
-/* line 97, ../scss/partials/mobile/_grid.scss */
+/* line 86, ../scss/partials/mobile/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -4182,27 +4159,27 @@ body.panel--is-open #page-header .more-stories-toggle {
   pointer-events: all;
 }
 /* line 12, ../scss/partials/mobile/_homepage.scss */
-.hero--homepage.mobile-carousel--hero .caroufredsel_wrapper {
+.hero--homepage.mobile-carousel--single .caroufredsel_wrapper {
   height: 56rem !important;
   overflow: visible !important;
 }
 /* line 17, ../scss/partials/mobile/_homepage.scss */
-.hero--homepage.mobile-carousel--hero .hero__entry {
+.hero--homepage.mobile-carousel--single .hero__entry {
   height: 56rem;
   width: 100%;
 }
 /* line 21, ../scss/partials/mobile/_homepage.scss */
-.hero--homepage.mobile-carousel--hero .hero__entry .story__hed {
+.hero--homepage.mobile-carousel--single .hero__entry .story__hed {
   max-width: 70rem;
   margin-bottom: 3.4rem;
 }
 /* line 26, ../scss/partials/mobile/_homepage.scss */
-.hero--homepage.mobile-carousel--hero .hero__entry .story--hero {
+.hero--homepage.mobile-carousel--single .hero__entry .story--hero {
   bottom: 0rem;
   padding: 2.4rem 4.4rem 2.4rem;
 }
 /* line 31, ../scss/partials/mobile/_homepage.scss */
-.hero--homepage.mobile-carousel--hero .hero__entry .credit {
+.hero--homepage.mobile-carousel--single .hero__entry .credit {
   color: white;
   display: block;
   margin-top: 2.8rem;
