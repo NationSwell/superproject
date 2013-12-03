@@ -24,7 +24,7 @@
 /* more stories toggle */
 .more-stories-toggle {
   font-size: 4.4rem;
-  padding-top: 1.8rem;
+  padding-top: 2rem;
 }
 
 /* social links */
@@ -35,7 +35,7 @@
   padding-right: 0.6rem;
 
   li {
-    margin-right: 2.8rem;
+    margin-right: 1.8rem;
   }
 }
 
@@ -45,9 +45,9 @@
 
 /* search */
 .expand-field {
-  &#page-search {
-    margin-right: 1rem;
+  overflow: hidden;
 
+  &#page-search {
     label {
       width: 2.8rem;
 
@@ -68,26 +68,22 @@
   }
 
   &#page-subscribe {
-    margin-right: 0.6rem;
     position: relative;
 
     label {
+      color: $ns_navy2;
       width: 3.8rem;
 
       &:before {
+        color: $white;
         font-size: 3rem;
       }
 
-      &.valid,
-      &.error {
-        text-indent: -9999em;
-      }
-
-      &.valid {
+      &.valid:before {
         color: $green1;
       }
 
-      &.error {
+      &.error:before {
         color: $ns_red;
       }
     }
