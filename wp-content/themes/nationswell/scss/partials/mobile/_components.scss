@@ -31,6 +31,17 @@
 
 /* support cause */
 .support-cause {
+
+  height: 6.2rem;
+  border-radius: 3.1rem;
+
+  .indicator {
+    &.indicator--module {
+      height: 6.2rem;
+      width: 6.2rem;
+    }
+  }
+
   .support-cause__heading {
     margin-bottom: 2.8rem;
   }
