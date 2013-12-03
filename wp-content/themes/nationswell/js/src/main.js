@@ -233,7 +233,7 @@
                         transition: true,
                         items: {
                             visible: isPeek ? 3 : 1,
-                            start: isPeek ? -1 : 1
+                            start: isPeek ? -1 : 0
                         },
                         scroll: {
                             items: 1,
