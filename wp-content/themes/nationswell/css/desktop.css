@@ -4349,7 +4349,7 @@ body.is-locked {
 
 /* line 57, ../scss/partials/desktop/_story.scss */
 .story__container {
-  padding-top: 5rem;
+  margin-top: 5rem;
 }
 /* line 62, ../scss/partials/desktop/_story.scss */
 .story__container .story--page > header .story__hed {
