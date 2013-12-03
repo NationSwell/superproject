@@ -416,11 +416,10 @@
 
         $('#change-org-petition').submit(function (e) {
             var $form = $(this),
-                url = '/wp-admin/admin-ajax.php?action=sign_petition&cta_id=' + $form.attr('data-cta-id'),
-                data = $form.serialize();
+                url = '/wp-admin/admin-ajax.php?action=sign_petition&cta_id=' + $form.attr('data-cta-id');
 
-            $.post(url, data)
-                .done(function (data) {
+            $.post(url, $form.serialize())
+                .done(function () {
                     showThankYou();
                 })
                 .fail(function (data) {
