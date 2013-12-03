@@ -3096,15 +3096,14 @@ body.is-locked {
 /* line 1, ../scss/partials/mobile/_structure.scss */
 html {
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
-/* line 6, ../scss/partials/mobile/_structure.scss */
+/* line 5, ../scss/partials/mobile/_structure.scss */
 .container {
   padding: 0 2rem;
 }
 
-/* line 12, ../scss/partials/mobile/_structure.scss */
+/* line 11, ../scss/partials/mobile/_structure.scss */
 .hide_mobile,
 .show_desktop,
 .show_tablet {
