@@ -3658,26 +3658,36 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* support cause */
-/* line 34, ../scss/partials/mobile/_components.scss */
+/* line 33, ../scss/partials/mobile/_components.scss */
+.support-cause {
+  height: 6.2rem;
+  border-radius: 3.1rem;
+}
+/* line 39, ../scss/partials/mobile/_components.scss */
+.support-cause .indicator.indicator--module {
+  height: 6.2rem;
+  width: 6.2rem;
+}
+/* line 45, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__heading {
   margin-bottom: 2.8rem;
 }
-/* line 38, ../scss/partials/mobile/_components.scss */
+/* line 49, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__data {
   font-size: 5rem;
 }
-/* line 41, ../scss/partials/mobile/_components.scss */
+/* line 52, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__data .super {
   font-size: 2.5rem;
   top: -2.5rem;
 }
-/* line 47, ../scss/partials/mobile/_components.scss */
+/* line 58, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__label {
   font-size: 2.5rem;
   top: -0.8rem;
   -webkit-font-smoothing: antialiased;
 }
-/* line 54, ../scss/partials/mobile/_components.scss */
+/* line 65, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__separator {
   font-size: 8.8rem;
   line-height: 3.4rem;
@@ -3685,56 +3695,56 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* sponsor */
-/* line 62, ../scss/partials/mobile/_components.scss */
+/* line 73, ../scss/partials/mobile/_components.scss */
 .sponsor {
   font-size: 1.3rem;
 }
-/* line 65, ../scss/partials/mobile/_components.scss */
+/* line 76, ../scss/partials/mobile/_components.scss */
 .sponsor .sponsor__logo {
   margin-left: 1.6rem;
 }
 
 /* indicator */
-/* line 72, ../scss/partials/mobile/_components.scss */
+/* line 83, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--module {
   width: 13.6rem;
   height: 13.6rem;
 }
-/* line 76, ../scss/partials/mobile/_components.scss */
+/* line 87, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--module:before {
   font-size: 8rem;
   line-height: 1.88;
 }
-/* line 82, ../scss/partials/mobile/_components.scss */
+/* line 93, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title {
   width: 11.5rem;
   height: 11.5rem;
 }
-/* line 86, ../scss/partials/mobile/_components.scss */
+/* line 97, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title:before {
   font-size: 7rem;
   line-height: 1.8;
 }
-/* line 91, ../scss/partials/mobile/_components.scss */
+/* line 102, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text {
   margin-bottom: -1.2rem;
 }
-/* line 93, ../scss/partials/mobile/_components.scss */
+/* line 104, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text:before {
   font-size: 5rem;
   line-height: 1.5;
 }
-/* line 98, ../scss/partials/mobile/_components.scss */
+/* line 109, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__heading {
   font-size: 2rem;
   line-height: 1.4;
   margin-top: -2.6rem;
 }
-/* line 104, ../scss/partials/mobile/_components.scss */
+/* line 115, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__subheading {
   font-size: 1.6rem;
 }
-/* line 110, ../scss/partials/mobile/_components.scss */
+/* line 121, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--take-action {
   width: 5.2rem;
   height: 5.2rem;
@@ -3745,94 +3755,94 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* module */
-/* line 122, ../scss/partials/mobile/_components.scss */
+/* line 133, ../scss/partials/mobile/_components.scss */
 .module.module--sidebar {
   width: 100%;
   margin-bottom: 12rem;
 }
-/* line 127, ../scss/partials/mobile/_components.scss */
+/* line 138, ../scss/partials/mobile/_components.scss */
 .module.module--bg {
   padding: 4rem;
 }
-/* line 130, ../scss/partials/mobile/_components.scss */
+/* line 141, ../scss/partials/mobile/_components.scss */
 .module.module--bg:before {
   height: 0.7rem;
 }
-/* line 134, ../scss/partials/mobile/_components.scss */
+/* line 145, ../scss/partials/mobile/_components.scss */
 .module.module--bg header {
   margin-top: -10.4rem;
   margin-bottom: 2rem;
 }
-/* line 139, ../scss/partials/mobile/_components.scss */
+/* line 150, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading {
   padding: 1rem 2rem 0.2rem;
   top: -3rem;
 }
-/* line 144, ../scss/partials/mobile/_components.scss */
+/* line 155, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   font-size: 2.6rem;
   position: relative;
   top: -0.6rem;
 }
-/* line 150, ../scss/partials/mobile/_components.scss */
+/* line 161, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:before {
   margin-right: 1.8rem;
 }
-/* line 154, ../scss/partials/mobile/_components.scss */
+/* line 165, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:after {
   margin-left: 1.8rem;
 }
-/* line 159, ../scss/partials/mobile/_components.scss */
+/* line 170, ../scss/partials/mobile/_components.scss */
 .module.module--bg p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 3rem;
 }
-/* line 166, ../scss/partials/mobile/_components.scss */
+/* line 177, ../scss/partials/mobile/_components.scss */
 .module.module--bg.module--blue .module__heading {
   box-shadow: 0 4px 0 #eeeeee, 0 9px 0 #002130;
 }
-/* line 172, ../scss/partials/mobile/_components.scss */
+/* line 183, ../scss/partials/mobile/_components.scss */
 .module.module--bg.module--red .module__heading {
   box-shadow: 0 4px 0 #eeeeee, 0 9px 0 #832f2d;
 }
-/* line 180, ../scss/partials/mobile/_components.scss */
+/* line 191, ../scss/partials/mobile/_components.scss */
 .module.module--list:after {
   height: 0.7rem;
   bottom: -0.7rem;
 }
-/* line 185, ../scss/partials/mobile/_components.scss */
+/* line 196, ../scss/partials/mobile/_components.scss */
 .module.module--list .module__heading {
   padding-bottom: 1.2rem;
 }
-/* line 190, ../scss/partials/mobile/_components.scss */
+/* line 201, ../scss/partials/mobile/_components.scss */
 .module.module--list .story-list li {
   padding: 4rem 0;
 }
-/* line 195, ../scss/partials/mobile/_components.scss */
+/* line 206, ../scss/partials/mobile/_components.scss */
 .module.module--list.module--horizontal {
   margin: 7.6rem 0;
 }
-/* line 200, ../scss/partials/mobile/_components.scss */
+/* line 211, ../scss/partials/mobile/_components.scss */
 .module.module--pull {
   margin: -37.6rem;
   width: 32rem;
 }
-/* line 206, ../scss/partials/mobile/_components.scss */
+/* line 217, ../scss/partials/mobile/_components.scss */
 .module.module--image-overlay .story {
   padding: 3.4rem;
 }
-/* line 210, ../scss/partials/mobile/_components.scss */
+/* line 221, ../scss/partials/mobile/_components.scss */
 .module.module--image-overlay .sponsor {
   margin-top: 12rem;
 }
 
 /* pullquote */
-/* line 217, ../scss/partials/mobile/_components.scss */
+/* line 228, ../scss/partials/mobile/_components.scss */
 .pullquote {
   margin: 3.2rem 0 7.6rem;
 }
-/* line 220, ../scss/partials/mobile/_components.scss */
+/* line 231, ../scss/partials/mobile/_components.scss */
 .pullquote:before {
   font-size: 5.78rem;
   line-height: 1.54;
@@ -3840,74 +3850,74 @@ body.panel--is-open #page-header .more-stories-toggle {
   height: 8rem;
   margin-bottom: 2.2rem;
 }
-/* line 228, ../scss/partials/mobile/_components.scss */
+/* line 239, ../scss/partials/mobile/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 3.4rem;
 }
-/* line 232, ../scss/partials/mobile/_components.scss */
+/* line 243, ../scss/partials/mobile/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 4rem;
 }
 
 /* tags */
-/* line 238, ../scss/partials/mobile/_components.scss */
+/* line 249, ../scss/partials/mobile/_components.scss */
 .tag-tag {
   font-size: 2.5rem;
   padding: 0.8rem 1rem;
 }
 
 /* author */
-/* line 244, ../scss/partials/mobile/_components.scss */
+/* line 255, ../scss/partials/mobile/_components.scss */
 .author-box {
   margin-bottom: 7.2rem;
   padding: 4rem;
 }
 
-/* line 249, ../scss/partials/mobile/_components.scss */
+/* line 260, ../scss/partials/mobile/_components.scss */
 .author__portrait {
   margin: 0 auto 2.2rem;
   width: 23rem;
   height: 23rem;
 }
 
-/* line 255, ../scss/partials/mobile/_components.scss */
+/* line 266, ../scss/partials/mobile/_components.scss */
 .author__url {
   font-size: 2.4rem;
   margin-bottom: 2.6rem;
 }
-/* line 259, ../scss/partials/mobile/_components.scss */
+/* line 270, ../scss/partials/mobile/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 264, ../scss/partials/mobile/_components.scss */
+/* line 275, ../scss/partials/mobile/_components.scss */
 .social {
   margin-bottom: 4rem;
 }
-/* line 267, ../scss/partials/mobile/_components.scss */
+/* line 278, ../scss/partials/mobile/_components.scss */
 .social li {
   margin-left: 0.6rem;
   margin-bottom: 0.6rem;
 }
-/* line 272, ../scss/partials/mobile/_components.scss */
+/* line 283, ../scss/partials/mobile/_components.scss */
 .social .icon {
   font-size: 5rem;
   height: 6rem;
   width: 6rem;
 }
 
-/* line 279, ../scss/partials/mobile/_components.scss */
+/* line 290, ../scss/partials/mobile/_components.scss */
 .author__byline {
   text-align: center;
   margin-bottom: 3.4rem;
 }
-/* line 282, ../scss/partials/mobile/_components.scss */
+/* line 293, ../scss/partials/mobile/_components.scss */
 .author__byline:before {
   font-size: 2.5rem;
   margin-bottom: 0.8rem;
 }
 
-/* line 290, ../scss/partials/mobile/_components.scss */
+/* line 301, ../scss/partials/mobile/_components.scss */
 .author__bio {
   color: #333333;
   font-size: 3.2rem;
@@ -3917,46 +3927,46 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* prev/next */
-/* line 300, ../scss/partials/mobile/_components.scss */
+/* line 311, ../scss/partials/mobile/_components.scss */
 .prev-next {
   padding-top: 3.4rem;
   margin-bottom: 0.6rem;
 }
-/* line 304, ../scss/partials/mobile/_components.scss */
+/* line 315, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link {
   font-size: 0;
 }
-/* line 307, ../scss/partials/mobile/_components.scss */
+/* line 318, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 26.6rem;
 }
-/* line 312, ../scss/partials/mobile/_components.scss */
+/* line 323, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-left: 6.6rem;
 }
-/* line 318, ../scss/partials/mobile/_components.scss */
+/* line 329, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-right: 6.6rem;
 }
-/* line 324, ../scss/partials/mobile/_components.scss */
+/* line 335, ../scss/partials/mobile/_components.scss */
 .prev-next .story__hed {
   display: none;
 }
 
 /* read next */
-/* line 330, ../scss/partials/mobile/_components.scss */
+/* line 341, ../scss/partials/mobile/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 333, ../scss/partials/mobile/_components.scss */
+/* line 344, ../scss/partials/mobile/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 337, ../scss/partials/mobile/_components.scss */
+/* line 348, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 340, ../scss/partials/mobile/_components.scss */
+/* line 351, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
@@ -4192,10 +4202,6 @@ body.panel--is-open #page-header .more-stories-toggle {
   margin-top: 2.8rem;
 }
 
-/* line 40, ../scss/partials/mobile/_homepage.scss */
-.support-cause--hero {
-  padding: 1.6rem;
-}
 /* line 43, ../scss/partials/mobile/_homepage.scss */
 .support-cause--hero .support-cause__heading {
   margin-bottom: 1.4rem;
