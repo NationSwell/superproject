@@ -24,6 +24,8 @@ if (class_exists('TimberPost')) {
                         $item['video_url'] = normalize_youtube_url(get_sub_field('video_url')) .
                             '?origin=' . urlencode(get_site_url()) . '&autoplay=0&autohide=1' .
                             '&controls=2&enablejsapi=1&modestbranding=1&rel=0&theme=light&color=fc3b40&showinfo=0';
+                        $item['credit'] = get_sub_field('credit');
+                        $item['caption'] = get_sub_field('caption');
                     }
 
                     $this->story_header_cache[] = $item;
