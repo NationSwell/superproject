@@ -35,11 +35,16 @@
       }
     }
   }
+
+  .hero__entry--1 {
+    .type-indicator {
+      margin-top: 4.4rem;
+      margin-left: 4.4rem;
+    }
+  }
 }
 
 .support-cause--hero {
-//  padding: 1.6rem;
-
   .support-cause__heading {
     margin-bottom: 1.4rem;
   }

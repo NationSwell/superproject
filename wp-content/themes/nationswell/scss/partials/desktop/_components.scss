@@ -11,9 +11,20 @@
   margin-bottom: 1.8rem;
 }
 
+/* story tease */
 .story--tease {
   padding: 2rem 0;
   margin-bottom: 3.4rem;
+
+  .type-indicator {
+    opacity: 0;
+
+    @include transition(opacity 0.3s ease-in-out);
+  }
+
+  .type-indicator-container {
+    margin-top: 6.8rem;
+  }
 
   .story__dek {
     font-size: 1.8rem;
@@ -22,6 +33,12 @@
 
   .support-cause {
     margin-top: 1.8rem;
+  }
+
+  &:hover {
+    .type-indicator {
+      opacity: 1;
+    }
   }
 }
 
@@ -115,6 +132,16 @@
     font-size: 4rem;
     margin-bottom: -2rem;
     line-height: 5.8rem;
+  }
+}
+
+/* type indicator */
+.type-indicator {
+  width: 7.4rem;
+  height: 7.4rem;
+
+  &:before {
+    font-size: 5rem;
   }
 }
 
