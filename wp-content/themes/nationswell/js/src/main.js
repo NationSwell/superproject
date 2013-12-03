@@ -1,5 +1,7 @@
 (function ($) {
     $(function () {
+        var $body = $('body');
+
         // sticky nav
         var $fullNavBar = $('.full-header');
         $fullNavBar.waypoint('sticky', { stuckClass: 'stuck' });
@@ -42,7 +44,7 @@
 
                 setTimeout(function(){
                     $(that).addClass('is-visible');
-                    $('body').addClass('is-locked');
+                    $body.addClass('is-locked');
                 }, 1500);
 
             }
@@ -78,7 +80,7 @@
                 }
 
                 $modal.addClass('is-visible');
-                $('body').addClass('is-locked');
+                $body.addClass('is-locked');
             }
 
             e.preventDefault();
@@ -95,7 +97,7 @@
         var $modalClose = $(".modal-overlay, [data-modal-action='close']");
         $modalClose.on('click', function() {
             $('.modal').removeClass('is-visible');
-            $('body').removeClass('is-locked');
+            $body.removeClass('is-locked');
 
             $(window).off('.resizeModal');
 
@@ -105,7 +107,7 @@
         });
 
         // clearing textarea placeholder text
-        $('body').on('focus.textareaClear', 'textarea', function() {
+        $body.on('focus.textareaClear', 'textarea', function() {
             $(this).empty().unbind('.textareaClear');
         });
 
@@ -172,18 +174,21 @@
                         $externalCaption = $externalContainer.find('.carousel-item__title'),
                         $externalIndicator = $externalContainer.find('.indicator');
 
+                    // wrap homepage hero grid in caroufredsel container
                     if (!$carousel.length) {
                         $this.wrapInner('<ul class="carousel__items" />');
                         $carousel = $this.find(".carousel__items");
                     }
 
                     var isPeek = $this.hasClass('mobile-carousel--peek'),
-                        isHero = $this.hasClass('mobile-carousel--hero'),
-                        isSeries = $this.hasClass('carousel--series');
+                        isFullPeek = isPeek && $carousel.children().length > 3,
+                        isSingle = $this.hasClass('mobile-carousel--single');
 
-                    if (isHero) {
+                    if (isSingle) {
                         $this.append('<div class="carousel__pagination z3" />');
                     }
+
+                    $carousel.find('.carousel-item').first().addClass('active');
 
                     function unhighlight(items) {
                         items.removeClass('active');
@@ -199,7 +204,7 @@
                     function highlight(items) {
                         // external slide titles
                         if(isPeek) {
-                            var $activeSlide = items.filter(":eq(1)"),
+                            var $activeSlide = isFullPeek ? items.filter(":eq(1)") : items.filter(":eq(0)"),
                                 $activeCaption = $activeSlide.find('.carousel-item__title > span').text(),
                                 $activeIndicator = $activeSlide.find('.indicator').detach().removeClass('hide_mobile'),
                                 $externalContainerLink = $externalContainer.find('.link-wrapper'),
@@ -228,12 +233,12 @@
                     
                     // init slideshows
                     $carousel.carouFredSel({
-                        responsive: isHero ? true : false,
+                        responsive: isSingle ? true : false,
                         width: '100%',
                         transition: true,
                         items: {
-                            visible: isPeek ? 3 : 1,
-                            start: isPeek ? -1 : 0
+                            visible: isFullPeek ? 3 : 1,
+                            start: isFullPeek ? -1 : 0
                         },
                         scroll: {
                             items: 1,
@@ -246,15 +251,15 @@
                             }
                         },
                         auto: {
-                            play: false,
-                            timeoutDuration: 8000
+                            play: true,
+                            timeoutDuration: 6000
                         },
                         swipe: {
                             onTouch: true
                         },
                         pagination: {
                             container: $this.find('.carousel__pagination'),
-                            deviation: isPeek ? 1 : 0
+                            deviation: isFullPeek ? 1 : 0
                         }
                     });
                 });
@@ -342,16 +347,6 @@
                     offset: 132
                 });
 
-                // bottoming out sharebar at end of article
-                /*var $mainContainer = $('.story__container');
-                $mainContainer.waypoint(function(direction){
-                    $(this).toggleClass('bottomed', direction === 'down');
-                }, {
-                    offset:function() {
-                        return  $stickyBar.outerHeight() - $(this).outerHeight() + 60;
-                    }
-                });*/
-
                 // sliding social buttons
                 var $storySocial = $('.story__social');
                 $storySocial.waypoint(function(direction){
@@ -387,6 +382,7 @@
             }
         });
 
+        // load more button
         $('#page-content').on('click','.btn--load-more', function(e){
             var $link = $(this),
                 $container = $link.parent('.btn-container'),
@@ -399,8 +395,7 @@
             e.preventDefault();
         });
 
-        // Call to Action:
-
+        // call to action
         function showThankYou() {
             var $taAction = $('.take-action__action'),
                 $taThankYou = $('.take-action__thank-you');
@@ -416,7 +411,7 @@
         }
 
         // take action submission
-        $('body').on('click.taSubmit', '.take-action__submit', function(e) {
+        $body.on('click.taSubmit', '.take-action__submit', function(e) {
             showThankYou();
 
             $(window).off('.taSubmit');

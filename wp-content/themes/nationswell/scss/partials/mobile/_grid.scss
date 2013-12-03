@@ -1,14 +1,3 @@
-// more stories panel
-#more-stories {
-  .category-list {
-    @include span-columns(2);
-  }
-
-  .most-popular {
-    @include span-columns(10);
-  }
-}
-
 // heroes
 .hero {
   &.hero--image {

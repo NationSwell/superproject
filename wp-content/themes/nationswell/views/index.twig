@@ -2,7 +2,7 @@
 
 {% block content %}
     {% if featured is not empty %}
-    <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--hero">
+    <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--single">
         {% for feature in featured %}
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ feature.thumbnail.src|resize(1300,600) }});">
                 <a href="{{ feature.permalink }}" class="link-wrapper">
