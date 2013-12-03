@@ -11,17 +11,17 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'js/build/combined.min.js': [
-                        'js/src/vendor/matchMedia.js',
-                        'js/src/vendor/matchMedia.addListener.js',
                         'js/src/vendor/enquire.js',
                         'js/src/vendor/jquery.cookie.js',
                         'js/src/vendor/jquery.ajaxchimp.js',
                         'js/src/vendor/jquery.transit.min.js',
                         'js/src/vendor/jquery.touchSwipe.min.js',
                         'js/src/vendor/jquery.carouFredSel-6.2.1.min.js',
+                        'js/src/vendor/jquery.validate.min.js',
                         'js/src/vendor/jquery.cookie.js',
                         'js/src/vendor/waypoints.min.js',
                         'js/src/vendor/waypoints-sticky.min.js',
+                        'js/src/vendor/audiojs/audio.min.js',
                         'js/src/main.js'
                     ]
                 }
