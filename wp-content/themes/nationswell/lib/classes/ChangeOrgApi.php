@@ -110,7 +110,7 @@ class ChangeOrgApi {
         $response = $this->get_request(
             'https://api.change.org/v1/petitions/' . $id . '?api_key=' . $this->api_key, $json);
 
-        return $json ? $response['data'] : $this->get_response_property($response, 'petition_id');
+        return $response['data'];
     }
 
     public function get_auth_key($id) {
