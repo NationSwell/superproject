@@ -2,10 +2,10 @@
     <div class="modal__content module module--bg module--blue">
         <header>
             <div class="indicator indicator--blue indicator--module icon icon_nationswell-flag"></div>
-            <h3 class="hd-e module__heading">Join Us</h3>
+            <h3 class="hd-e module__heading">{{ modal_joinus_header }}</h3>
         </header>
 
-        <h2 class="hd-l modal__heading">Meet the people renewing America. Join the movement.</h2>
+        <h2 class="hd-l modal__heading">{{ modal_joinus_body_text }}</h2>
 
         <div class="modal--join-us__social">
             <a href="https://www.facebook.com/nationswell" class="btn btn--bar btn--facebook icon icon_facebook">Follow on Facebook</a>
@@ -24,7 +24,7 @@
             </form>
         </div>
 
-        <span class="modal--join-us__opt-out">Already following and subscribing to us? <a data-modal-action="close" data-modal-disable="true" href="#">Don't ask again.</a></span>
+        <span class="modal--join-us__opt-out">{{ modal_joinus_opt_out_text }} <a data-modal-action="close" data-modal-disable="true" href="#">{{ modal_joinus_opt_out_button_text }}</a></span>
 
         <button class="btn btn--close icon icon_close modal__close" data-modal-action="close"></button>
     </div>

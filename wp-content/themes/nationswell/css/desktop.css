@@ -4021,6 +4021,9 @@ body.is-locked {
 /* line 484, ../scss/partials/desktop/_components.scss */
 .mc-email-status {
   font-size: 1.4rem;
+  line-height: 1;
+  display: block;
+  clear: both;
 }
 
 /* line 1, ../scss/partials/desktop/_carousels.scss */
