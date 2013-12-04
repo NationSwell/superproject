@@ -436,7 +436,6 @@
     text-align: center;
     font-family: $gudea;
     font-style: italic;
-    font-size: 2.2rem;
     border: 1px solid #dedede;
     padding: 1rem;
     background-color: #f7f7f7;
@@ -454,12 +453,6 @@
     }
   }
 
-  .tweet-politician__lookup {
-  }
-
-  .tweet-politician__politicians {
-  }
-
   .politician {
     clear: both;
     margin: 0 3rem 4.4rem;
@@ -473,26 +466,18 @@
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    width: 12rem;
-    height: 12rem;
     display: inline-block;
-    margin-right: 4rem;
-    float: left;
   }
 
   .politician__information {
     display: inline-block;
-    overflow: hidden;
-    max-width: 32rem;
   }
 
   .politician__name {
-    margin-top: 0.6rem;
   }
 
   .politician__office {
     display: block;
     font-family: $gudea;
-    font-size: 1.6rem;
   }
 }

@@ -41,11 +41,6 @@ class ChangeOrgPetition {
         return $this->last_updated;
     }
 
-    public function set_url($url) {
-        $this->url = $url;
-        $this->set_post_field('url', $url);
-    }
-
     public function set_id($id) {
         $this->id = $id;
         $this->set_post_field('id', $id);
@@ -62,16 +57,26 @@ class ChangeOrgPetition {
         $this->set_post_field('timestamp', time());
     }
 
-    public function set_hash() {
-        $this->set_post_field('hash', $this->hash());
+    public function set_hash($email) {
+        $this->set_post_field('hash', $this->hash($email));
     }
 
-    public function should_update() {
+    public function should_update($email) {
         if(!empty($this->url)) {
-            return empty($this->id) || empty($this->auth_key) || $this->hash() !== $this->get_post_field('hash');
+            return empty($this->id) || empty($this->auth_key) || $this->hash($email) !== $this->get_post_field('hash');
         }
 
         return false;
+    }
+
+    public function clear() {
+        $this->delete_post_fields('id', 'auth_key', 'content', 'timestamp', 'hash');
+    }
+
+    private function delete_post_fields() {
+        foreach(func_get_args() as $name) {
+            delete_post_meta($this->post_id, '_change_' . $name);
+        }
     }
 
     private function get_post_field($name) {
@@ -82,7 +87,7 @@ class ChangeOrgPetition {
         update_post_meta($this->post_id, '_change_' . $name, $value);
     }
 
-    private function hash() {
-        return md5($this->url . $this->id . $this->auth_key);
+    private function hash($email) {
+        return md5($email . $this->url . $this->id . $this->auth_key);
     }
 }

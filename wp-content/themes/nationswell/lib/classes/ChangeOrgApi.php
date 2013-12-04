@@ -14,12 +14,17 @@ class ChangeOrgApi {
         $this->secret = $secret;
         $this->source = $source;
 
-        $this->poll_frequency = 60;
-        $this->fetch_frequency = 60;
+        $this->poll_frequency = 3600;
+        $this->fetch_frequency = 3600;
 
         add_filter('cron_schedules', array($this, 'cron_add_cta_schedule'));
         add_action('wp', array($this,'schedule_petition_fetch'));
         add_action('petition_fetch_event', array($this, 'scheduled_petition_fetch'));
+    }
+
+    public function set_frequency($frequency) {
+        $this->fetch_frequency = $frequency;
+        $this->poll_frequency = $frequency;
     }
 
     // CRON
@@ -42,6 +47,8 @@ class ChangeOrgApi {
         $cta_ids = get_transient('ns_petition_cta_ids');
         if(!empty($cta_ids)) {
             delete_transient('ns_petition_cta_ids');
+
+            $this->log('Running scheduled fetch (' . $this->fetch_frequency . 's) for ' . count($cta_ids) . ' petitions.');
 
             // Get all the petition ids and map them to petition objects
             $ids = array();
@@ -96,12 +103,20 @@ class ChangeOrgApi {
         $query_string = http_build_query(array('api_key' => $this->api_key, 'petition_url' => $url));
         $response = $this->get_request("https://api.change.org/v1/petitions/get_id?" . $query_string);
 
+        if($response['response_code'] !== 200) {
+            $this->log('Getting petition id failed (' . $response['response_code'] . ')', $response['data']);
+        }
+
         return $this->get_response_property($response, 'petition_id');
     }
 
     public function get_petitions($ids) {
         $url = 'https://api.change.org/v1/petitions/?petition_ids=' . implode(',', $ids) . '&api_key=' . $this->api_key;
-        $response = $this->get_request($url);;
+        $response = $this->get_request($url);
+
+        if($response['response_code'] !== 200) {
+            $this->log('Getting petition content failed (' . $response['response_code'] . ')', $response['data']);
+        }
 
         return $response['data']['petitions'];
     }
@@ -144,17 +159,20 @@ class ChangeOrgApi {
         ));
 
         $json = curl_exec($curl_session);
+        $response_code = curl_getinfo($curl_session, CURLINFO_HTTP_CODE);
 
         curl_close($curl_session);
 
         $result = false;
-
-        if($json) {
-            $parsed = @json_decode($json, true);
-            if($parsed) {
-                $result = $parsed['auth_key'];
-            }
+        $parsed = @json_decode($json, true);
+        if($parsed) {
+            $result = $parsed['auth_key'];
         }
+
+        if($response_code !== 200) {
+            $this->log('Getting petition auth key failed (' . $response_code . ')', $parsed);
+        }
+
 
         return $result;
     }
@@ -199,9 +217,13 @@ class ChangeOrgApi {
         curl_close($curl_session);
 
 
-        $parsed = json_decode($result, true);
+        $parsed = @json_decode($result, true);
         $parsed = $parsed ? $parsed : array();
         $parsed['response_code'] = $response_code;
+
+        if($response_code > 202) {
+            $this->log('Signing petition failed (' . $response_code . ')', $signer, $parsed);
+        }
 
         return $parsed;
     }
@@ -223,26 +245,51 @@ class ChangeOrgApi {
     }
 
     public function sign($petition, $signer) {
+        $this->log('Signing petition ' . $petition->url() . $signer['email']);
         return $this->sign_petition($petition->id(), $petition->auth_key(), $signer);
     }
 
     public function fetch($petition) {
-        if($petition->should_update()) {
+        $authorized = true;
 
+        if($petition->should_update($this->email)) {
+            $this->log('Updating credentials for ' . $petition->url());
+
+            $authorized = false;
             $id = $this->get_id($petition->url());
             if($id) {
                 $auth_key = $this->get_auth_key($id);
                 if($auth_key) {
                     $petition->set_id($id);
                     $petition->set_auth_key($auth_key);
-                    $petition->set_hash();
+                    $petition->set_hash($this->email);
+
+                    $authorized = true;
                 }
+            }
+
+            if(!$authorized) {
+                $petition->clear();
             }
         }
 
-        $petition_content = $this->get_petition($petition->id());
-        if($petition_content) {
-            $petition->set_content($petition_content);
+        if($authorized) {
+            $petition_content = $this->get_petition($petition->id());
+            if($petition_content) {
+                $this->log('Updating petition content for ' . $petition->url());
+                $petition->set_content($petition_content);
+            }
         }
+    }
+
+    private function log() {
+        $msg = '';
+        foreach(func_get_args() as $i => $arg) {
+            if($i !== 0) {
+                $msg .= "\n";
+            }
+            $msg .= print_r($arg, true);
+        }
+        error_log(get_class() . ' - ' . $msg);
     }
 }
