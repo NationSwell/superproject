@@ -1,5 +1,24 @@
 module.exports = function(grunt) {
 
+    var jsFiles = {
+        files: {
+            'js/build/combined.min.js': [
+                'js/src/vendor/enquire.js',
+                'js/src/vendor/jquery.cookie.js',
+                'js/src/vendor/jquery.ajaxchimp.js',
+                'js/src/vendor/jquery.transit.min.js',
+                'js/src/vendor/jquery.touchSwipe.min.js',
+                'js/src/vendor/jquery.carouFredSel-6.2.1.min.js',
+                'js/src/vendor/jquery.validate.min.js',
+                'js/src/vendor/jquery.cookie.js',
+                'js/src/vendor/waypoints.min.js',
+                'js/src/vendor/waypoints-sticky.min.js',
+                'js/src/vendor/audiojs/audio.min.js',
+                'js/src/main.js'
+            ]
+        }
+    };
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -8,24 +27,13 @@ module.exports = function(grunt) {
             options: {
                 mangle: false
             },
-            build: {
-                files: {
-                    'js/build/combined.min.js': [
-                        'js/src/vendor/enquire.js',
-                        'js/src/vendor/jquery.cookie.js',
-                        'js/src/vendor/jquery.ajaxchimp.js',
-                        'js/src/vendor/jquery.transit.min.js',
-                        'js/src/vendor/jquery.touchSwipe.min.js',
-                        'js/src/vendor/jquery.carouFredSel-6.2.1.min.js',
-                        'js/src/vendor/jquery.validate.min.js',
-                        'js/src/vendor/jquery.cookie.js',
-                        'js/src/vendor/waypoints.min.js',
-                        'js/src/vendor/waypoints-sticky.min.js',
-                        'js/src/vendor/audiojs/audio.min.js',
-                        'js/src/main.js'
-                    ]
-                }
-            }
+            build: jsFiles
+        },
+        concat: {
+            options: {
+                separator: ';'
+            },
+            build: jsFiles
         },
         compass: {
             dist: {
@@ -58,7 +66,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['js/src/*.js', 'js/src/vendor/*.js'],
-                tasks: ['uglify', 'bumpVersion']
+                tasks: ['concat', 'bumpVersion']
             }
         }
     });
@@ -73,8 +81,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-webfont');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask('default', ['webfont','compass', 'bumpVersion']);
+    grunt.registerTask('default', ['webfont','compass', 'uglify', 'bumpVersion']);
     grunt.registerTask('icons', ['webfont','compass']);
 
     grunt.task.registerTask('bumpVersion', 'Bump the version number file', function() {
