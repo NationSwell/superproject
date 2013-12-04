@@ -23,8 +23,19 @@ function add_to_context($data)
 
     /* this is where you can add your own data to Timber's context object */
     $data['menu_main'] = new TimberMenu('menu_main');
+    $menu_post = new TimberMenu('menu_main_stories');
+    $menu_post_items = $menu_post->items;
+
     $data['menu_footer'] = new TimberMenu('menu_footer');
     $data['menu_topic'] = new TimberMenu('menu_topic');
+
+    $menu_post_ids = array();
+
+    foreach($menu_post_items as $post) {
+        array_push($menu_post_ids, $post->object_id);
+    }
+
+    $data['menu_main_stories'] = Timber::get_posts($menu_post_ids, 'NationSwellPost');
 
     // Global Site Options
     $data['modal_joinus_enabled'] = get_field('modal_joinus_enabled', 'option');
