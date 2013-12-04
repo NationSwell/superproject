@@ -11,7 +11,7 @@
             callback: function (resp) {
                 if (resp.result === 'success') {
                     setTimeout(function(){
-                        showThankYou();
+                        toggleThankYou();
                     }, 500);
                 } else if (resp.result === 'error') {
 
@@ -392,23 +392,29 @@
         });
 
         // call to action
-        function showThankYou() {
+        function toggleThankYou() {
             var $taAction = $('.take-action__action'),
                 $taThankYou = $('.take-action__thank-you');
 
             $taAction.toggleClass('is-hidden');
 
             window.setTimeout(function () {
-                $taAction.css('display', 'none');
+                $taAction.toggleClass('hide');
 
-                $taThankYou.css('display', 'block');
+                $taThankYou.toggleClass('show');
                 $taThankYou.toggleClass('is-hidden');
             }, 300);
         }
 
+        $body.on('click.taBack', '.take-action__social_back', function(e){
+            toggleThankYou();
+
+            e.preventDefault();
+        });
+
         // take action submission
         $body.on('click.taSubmit', '.take-action__submit', function (e) {
-            showThankYou();
+            toggleThankYou();
 
             $(window).off('.taSubmit');
 
@@ -425,7 +431,7 @@
 
             $.post(url, $form.serialize())
                 .done(function () {
-                    showThankYou();
+                    toggleThankYou();
                 })
                 .fail(function (data) {
                     console.log(data);

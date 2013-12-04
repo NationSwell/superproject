@@ -215,6 +215,16 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
+/* line 51, ../scss/partials/base/_utility.scss */
+.hide {
+  display: none;
+}
+
+/* line 55, ../scss/partials/base/_utility.scss */
+.show {
+  display: block;
+}
+
 /* line 1, ../scss/partials/base/_ads.scss */
 #top-leaderboard {
   background-color: #002130;
@@ -4897,8 +4907,18 @@ body.is-locked {
   left: 0;
   height: auto;
 }
+/* line 384, ../scss/partials/desktop/_story.scss */
+.story__container .story__social .take-action__social_back,
+.story__container .story__take-action .take-action__social_back {
+  background: none;
+  border: none;
+  color: #333333;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 4.6rem;
+}
 
-/* line 388, ../scss/partials/desktop/_story.scss */
+/* line 397, ../scss/partials/desktop/_story.scss */
 .fb-comments {
   margin-bottom: 7.2rem;
 }

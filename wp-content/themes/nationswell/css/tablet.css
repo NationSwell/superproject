@@ -215,6 +215,16 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
+/* line 51, ../scss/partials/base/_utility.scss */
+.hide {
+  display: none;
+}
+
+/* line 55, ../scss/partials/base/_utility.scss */
+.show {
+  display: block;
+}
+
 /* line 1, ../scss/partials/base/_ads.scss */
 #top-leaderboard {
   background-color: #002130;
