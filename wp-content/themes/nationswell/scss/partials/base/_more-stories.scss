@@ -80,11 +80,11 @@
 
     li {
       float: left;
-      margin-left: 9.6rem;
+      margin-right: 9.6rem;
 
       @include transition(all 0.3s ease-in-out);
 
-      &:first-child {
+      &:last-child {
         margin-left: 0;
       }
     }

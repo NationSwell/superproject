@@ -1329,13 +1329,13 @@ input[type="submit"] {
 /* line 81, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list li {
   float: left;
-  margin-left: 9.6rem;
+  margin-right: 9.6rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 /* line 87, ../scss/partials/base/_more-stories.scss */
-#more-stories .most-popular-list li:first-child {
+#more-stories .most-popular-list li:last-child {
   margin-left: 0;
 }
 /* line 92, ../scss/partials/base/_more-stories.scss */
