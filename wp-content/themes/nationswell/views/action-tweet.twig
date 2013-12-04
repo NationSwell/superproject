@@ -4,6 +4,11 @@
     <div class="take-action__a">
         <img src="{{ post.call_to_action.image.url|resize(256) }}" class="take-action__img" alt="{{ post.call_to_action.image._wp_attachment_image_alt }}">
     </div>
+
+    <div id="tweet-message" data-tweet-message="{{ post.call_to_action.tweet_text }}" data-tweet-url="{{ post.short_url }}">
+        Tell your dude to "{{ post.call_to_action.tweet_text }}"
+    </div>
+
     <form id="politician-lookup">
         <label>Address:
             <input name="address" type="text" required="">

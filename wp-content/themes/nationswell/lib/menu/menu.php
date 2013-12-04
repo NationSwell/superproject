@@ -5,6 +5,7 @@ function custom_navigation_menus()
     register_nav_menus(
         array(
             'menu_main' => 'Main Menu',
+            'menu_main_stories' => 'Main Menu Stories',
             'menu_footer' => 'Footer Menu',
             'menu_topic' => 'Topic Menu',
         )

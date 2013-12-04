@@ -7,6 +7,12 @@
 <meta name="description" content="{{ bloginfo('description') }}">
 <meta name="viewport" content="width=device-width, initial-scale=.5, user-scalable=no">
 
+<meta property="fb:app_id" content="283384575022710"/>
+
+{% for user in facebook_admin %}
+<meta property="fb:admins" content="{{ user.facebook_user_id }}"/>
+{% endfor %}
+
 <link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic|Oswald:400,700|Montserrat:400,700|Noto+Serif:400,700'
       rel='stylesheet' type='text/css'>
 

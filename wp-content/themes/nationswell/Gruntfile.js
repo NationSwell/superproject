@@ -3,6 +3,8 @@ module.exports = function(grunt) {
     var jsFiles = {
         files: {
             'js/build/combined.min.js': [
+                'js/src/vendor/twig.min.js',
+                'js/build/twig-templates.js',
                 'js/src/vendor/enquire.js',
                 'js/src/vendor/jquery.cookie.js',
                 'js/src/vendor/jquery.ajaxchimp.js',
@@ -22,7 +24,18 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
+        twig: {
+            options: {
+                amd_wrapper: false,
+                variable: 'twigs',
+                template: 'var {{ variable }} = {};\n{{ templates }}\n'
+            },
+            build: {
+                files: {
+                    'js/build/twig-templates.js': ['views-client/*.twig']
+                }
+            }
+        },
         uglify: {
             options: {
                 mangle: false
@@ -67,6 +80,10 @@ module.exports = function(grunt) {
             js: {
                 files: ['js/src/*.js', 'js/src/vendor/*.js'],
                 tasks: ['concat', 'bumpVersion']
+            },
+            twig: {
+                files: 'views-client/*.twig',
+                tasks: ['twig', 'concat', 'bumpVersion']
             }
         }
     });
@@ -82,8 +99,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-twig');
 
-    grunt.registerTask('default', ['webfont','compass', 'uglify', 'bumpVersion']);
+    grunt.registerTask('default', ['webfont','compass', 'twig', 'uglify', 'bumpVersion']);
     grunt.registerTask('icons', ['webfont','compass']);
 
     grunt.task.registerTask('bumpVersion', 'Bump the version number file', function() {
