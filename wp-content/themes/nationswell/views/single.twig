@@ -43,32 +43,9 @@
                     {#</ul>#}
                 {#</div>#}
 
-                <div class="author-box cf">
-                    <div class="author__a">
-                        <img src="{{ post.author.mug_shot.url|resize(134,134) }}" class="author__portrait" alt="{{ post.author.mug_shot._wp_attachment_image_alt }}">
-
-                        <div class="author__contact">
-                            <a href="{{ post.author.user_url }}" class="author__url">{{ post.author.display_url }}</a>
-
-                            <ul class="social author__social">
-                                {% if post.author.facebook_username is not empty %}
-                                    <li><a href="http://www.facebook.com/{{ post.author.facebook_username }}" class="icon icon_facebook"></a></li>
-                                {% endif %}
-                                {% if post.author.twitter_username is not empty %}
-                                    <li><a href="http://www.twitter.com/{{ post.author.twitter_username }}" class="icon icon_twitter"></a></li>
-                                {% endif %}
-                                {% if post.author.tumblr is not empty %}
-                                    <li><a href="{{ post.author.tumblr }}" class="icon icon_tumblr"></a></li>
-                                {% endif %}
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="author__b">
-                        <h2 class="hd-n author__byline"><a href="{{ post.author.author_page }}">{{ post.author.display_name }}</a></h2>
-                        <p class="author__bio">{{ post.author.description }}</p>
-                    </div>
-                </div>
+                {% if post.author is not empty %}
+                {% include 'author-box.twig' %}
+                {% endif %}
 
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}

@@ -1,6 +1,5 @@
 (function ($) {
     $(function () {
-
         var $body = $('body');
 
         // sticky nav
@@ -88,10 +87,10 @@
         });
 
         // disabling modals
-        $("[data-modal]").on("disable", function (event) {
+        $("[data-modal]").on("disable", function (event, expireDuration) {
             event.stopPropagation();
 
-            $.cookie($(this).data("modal"), 'disabled', { expires: 5, path: '/' });
+            $.cookie($(this).data("modal"), 'disabled', { expires: expireDuration, path: '/' });
         });
 
         // closing modals
@@ -103,7 +102,7 @@
             $(window).off('.resizeModal');
 
             if ($(this).data('modal-disable')) {
-                $(this).trigger("disable");
+                $("[data-modal]:visible").trigger("disable", [ $(this).data('modal-disable') ]);
             }
         });
 
@@ -245,7 +244,7 @@
                             }
                         },
                         auto: {
-                            play: true,
+                            play: false,
                             timeoutDuration: 6000
                         },
                         swipe: {
