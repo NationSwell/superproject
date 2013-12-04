@@ -1,6 +1,5 @@
 (function ($) {
     $(function () {
-
         var $body = $('body');
 
         // sticky nav
@@ -245,7 +244,7 @@
                             }
                         },
                         auto: {
-                            play: true,
+                            play: false,
                             timeoutDuration: 6000
                         },
                         swipe: {
