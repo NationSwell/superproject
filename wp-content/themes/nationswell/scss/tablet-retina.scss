@@ -17,3 +17,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 70%;
   }
 }
+
+.fb-like {
+  -webkit-transform: scale(1.5);
+  -webkit-transform-origin: center left;
+}

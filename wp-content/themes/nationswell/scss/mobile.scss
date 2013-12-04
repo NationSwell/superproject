@@ -25,3 +25,13 @@
 @import "partials/mobile/story";
 @import "partials/mobile/static";
 @import "partials/mobile/archive";
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  html {
+    font-size: 85%;
+  }
+}
+

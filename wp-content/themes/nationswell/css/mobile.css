@@ -3703,7 +3703,7 @@ body.panel--is-open #page-header .more-stories-toggle {
 .support-cause .indicator.indicator--module {
   height: 6.2rem;
   width: 6.2rem;
-  left: -3.1rem;
+  margin-left: -3.1rem;
 }
 /* line 52, ../scss/partials/mobile/_components.scss */
 .support-cause .indicator.indicator--module:before {
@@ -4744,4 +4744,11 @@ body.panel--is-open #page-header .more-stories-toggle {
 /* line 59, ../scss/partials/mobile/_archive.scss */
 .river .story__feature {
   margin-bottom: -1.4rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /* line 33, ../scss/mobile.scss */
+  html {
+    font-size: 85%;
+  }
 }

@@ -10,3 +10,8 @@
     font-size: 70%;
   }
 }
+/* line 21, ../scss/tablet-retina.scss */
+.fb-like {
+  -webkit-transform: scale(1.5);
+  -webkit-transform-origin: center left;
+}

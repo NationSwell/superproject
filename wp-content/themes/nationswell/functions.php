@@ -62,6 +62,8 @@ function add_to_context($data)
     $data['modal_joinus_opt_out_text'] = get_field('modal_joinus_opt_out_text', 'option');
     $data['modal_joinus_opt_out_button_text'] = get_field('modal_joinus_opt_out_button_text', 'option');
 
+    $data['facebook_admin'] = get_field('facebook_admin', 'option');
+
 
     return $data;
 }
@@ -126,6 +128,7 @@ function my_register_fields()
     include_once('lib/fields/story_list.php');
     include_once('lib/fields/widget_popular.php');
     include_once('lib/fields/daily_newsletter_posts.php');
+    include_once('lib/fields/facebook_admin.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
