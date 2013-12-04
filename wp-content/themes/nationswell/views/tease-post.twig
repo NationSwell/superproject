@@ -20,7 +20,7 @@
             <p class="story__dek">{{ post.tout_dek_text }}</p>
             {% endblock %}
 
-            {% if post.call_to_action is not empty %}
+            {% if post.call_to_action is not empty and post.call_to_action.show_action_stats_on_tout != '0' %}
                 {% include ['action-stats-'~post.call_to_action.type~'.twig', 'action-stats.twig'] %}
             {% endif %}
         </header>

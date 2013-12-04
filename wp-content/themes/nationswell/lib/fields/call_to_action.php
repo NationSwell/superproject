@@ -114,7 +114,7 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd34946edf',
-                    'label' => 'External LInk',
+                    'label' => 'External Link',
                     'name' => 'external_link',
                     'type' => 'text',
                     'instructions' => 'A link to an external web page. This field appears in the Take Action Panel',
@@ -318,8 +318,8 @@ if (function_exists("register_field_group")) {
                 ),
                 array (
                     'key' => 'field_529e607be97a6',
-                    'label' => 'Show Action Stats on Homepage',
-                    'name' => 'show_action_stats_on_homepage',
+                    'label' => 'Show Action Stats on Tout',
+                    'name' => 'show_action_stats_on_tout',
                     'type' => 'true_false',
                     'message' => '',
                     'default_value' => 1,
