@@ -11,7 +11,7 @@
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ post.tout_title }}</h1>
 
                         {% if post.call_to_action is not empty %}
-                        {% include 'action-stats.twig' %}
+                            {% include ['action-stats-'~post.call_to_action.type~'.twig', 'action-stats.twig'] %}
                         {% endif %}
 
                         {% if loop.index == 1 and post.thumbnail.credit is not empty %}

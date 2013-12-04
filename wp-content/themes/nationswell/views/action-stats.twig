@@ -1,12 +1,17 @@
 <div class="support-cause support-cause--hero z2">
     {#<h4 class="hd-t support-cause__heading">Support this cause</h4>#}
-
-    <div class="indicator indicator--red indicator--module icon icon_{{ post.call_to_action.icon }}"></div>
+    {% set cta = post.call_to_action %}
+    <div class="indicator indicator--red indicator--module icon icon_{{ cta.icon }}"></div>
     <div class="support-cause__content">
-        <span class="support-cause__data">45<sup class="super">%</sup></span>
-        <span class="support-cause__label">from goal</span>
+        {% if cta.goal_amount_display == 'percentage' %}
+            <span class="support-cause__data">{{ cta.goal_percentage }}<sup class="super">%</sup></span>
+            <span class="support-cause__label">{% block to_goal %}to goal{% endblock %}</span>
+        {% else %}
+            <span class="support-cause__data">{{ cta.current_amount }}</span>
+            <span class="support-cause__label">{% block so_far %}so far{% endblock %}</span>
+        {% endif %}
 
-        <span class="support-cause__data">{{ post.call_to_action.days_until }}</span>
-        <span class="support-cause__label">days to go</span>
+        <span class="support-cause__data">{{ cta.days_until }}</span>
+        <span class="support-cause__label">day{% if cta.days_until > 1 %}s{% endif %} to go</span>
     </div>
 </div>

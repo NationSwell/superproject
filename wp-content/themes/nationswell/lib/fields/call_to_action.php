@@ -291,8 +291,8 @@ if (function_exists("register_field_group")) {
                 ),
                 array (
                     'key' => 'field_529e5ffde97a4',
-                    'label' => 'Current Goal Amount',
-                    'name' => 'current_goal_amount',
+                    'label' => 'Current Amount',
+                    'name' => 'current_amount',
                     'type' => 'number',
                     'default_value' => '',
                     'placeholder' => '',
