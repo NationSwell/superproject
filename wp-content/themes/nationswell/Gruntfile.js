@@ -83,7 +83,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask('default', ['webfont','compass', 'bumpVersion']);
+    grunt.registerTask('default', ['webfont','compass', 'uglify', 'bumpVersion']);
     grunt.registerTask('icons', ['webfont','compass']);
 
     grunt.task.registerTask('bumpVersion', 'Bump the version number file', function() {
