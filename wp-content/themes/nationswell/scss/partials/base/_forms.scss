@@ -53,6 +53,14 @@
   select {
     width: 100%;
   }
+
+  .error {
+    margin-top: 0.6rem;
+    color: $ns_red;
+    text-transform: none;
+    font-size: 1.5rem;
+    font-weight: $regular;
+  }
 }
 
 .join-us__email {

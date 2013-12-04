@@ -797,9 +797,10 @@ a:hover {
 .btn {
   border-radius: 0;
   text-rendering: optimizeLegibility;
+  outline: 0;
   -webkit-font-smoothing: antialiased;
 }
-/* line 14, ../scss/partials/base/_buttons.scss */
+/* line 15, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid {
   background-color: #fc3b40;
   color: white;
@@ -808,11 +809,11 @@ a:hover {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 23, ../scss/partials/base/_buttons.scss */
+/* line 24, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid:hover {
   background-color: #0098d8;
 }
-/* line 28, ../scss/partials/base/_buttons.scss */
+/* line 29, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all {
   background-color: #061822;
   color: #0098d8;
@@ -821,17 +822,17 @@ a:hover {
   font-weight: 700;
   position: relative;
 }
-/* line 36, ../scss/partials/base/_buttons.scss */
+/* line 37, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:before {
   font-family: 'icons';
   position: absolute;
 }
-/* line 41, ../scss/partials/base/_buttons.scss */
+/* line 42, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:hover {
   background-color: #0098d8;
   color: white;
 }
-/* line 47, ../scss/partials/base/_buttons.scss */
+/* line 48, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar {
   color: white;
   display: block;
@@ -842,12 +843,12 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 56, ../scss/partials/base/_buttons.scss */
+/* line 57, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:before {
   font-family: 'icons';
   vertical-align: text-bottom;
 }
-/* line 61, ../scss/partials/base/_buttons.scss */
+/* line 62, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:after {
   content: '';
   display: block;
@@ -855,7 +856,7 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 70, ../scss/partials/base/_buttons.scss */
+/* line 71, ../scss/partials/base/_buttons.scss */
 .btn.btn--square {
   color: white;
   display: block;
@@ -866,7 +867,7 @@ a:hover {
   position: relative;
   text-transform: uppercase;
 }
-/* line 80, ../scss/partials/base/_buttons.scss */
+/* line 81, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:after {
   content: '';
   display: block;
@@ -879,32 +880,32 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 92, ../scss/partials/base/_buttons.scss */
+/* line 93, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:before {
   display: block;
   font-family: 'icons';
 }
-/* line 98, ../scss/partials/base/_buttons.scss */
+/* line 99, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 101, ../scss/partials/base/_buttons.scss */
+/* line 102, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 106, ../scss/partials/base/_buttons.scss */
+/* line 107, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 109, ../scss/partials/base/_buttons.scss */
+/* line 110, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 114, ../scss/partials/base/_buttons.scss */
+/* line 115, ../scss/partials/base/_buttons.scss */
 .btn.btn--blue {
   background-color: #0098d8;
 }
-/* line 118, ../scss/partials/base/_buttons.scss */
+/* line 119, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -917,7 +918,7 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 129, ../scss/partials/base/_buttons.scss */
+/* line 130, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -927,7 +928,7 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 139, ../scss/partials/base/_buttons.scss */
+/* line 140, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -941,7 +942,7 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 152, ../scss/partials/base/_buttons.scss */
+/* line 153, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -950,7 +951,7 @@ a:hover {
   position: absolute;
   left: 0;
 }
-/* line 163, ../scss/partials/base/_buttons.scss */
+/* line 164, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -1033,8 +1034,16 @@ input[type="submit"] {
 .form-element select {
   width: 100%;
 }
+/* line 57, ../scss/partials/base/_forms.scss */
+.form-element .error {
+  margin-top: 0.6rem;
+  color: #fc3b40;
+  text-transform: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
-/* line 58, ../scss/partials/base/_forms.scss */
+/* line 66, ../scss/partials/base/_forms.scss */
 .join-us__email {
   background-color: white;
   border: 1px solid #dbdbdb;
@@ -1042,7 +1051,7 @@ input[type="submit"] {
   position: relative;
   width: 100%;
 }
-/* line 65, ../scss/partials/base/_forms.scss */
+/* line 73, ../scss/partials/base/_forms.scss */
 .join-us__email input[type="email"] {
   border: 0 none;
   box-shadow: none;
@@ -1051,7 +1060,7 @@ input[type="submit"] {
   line-height: 1.2;
   width: 70%;
 }
-/* line 74, ../scss/partials/base/_forms.scss */
+/* line 82, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe {
   background-color: #fd6464;
   color: white;
@@ -1060,11 +1069,11 @@ input[type="submit"] {
   font-weight: 400;
   float: right;
 }
-/* line 82, ../scss/partials/base/_forms.scss */
+/* line 90, ../scss/partials/base/_forms.scss */
 .join-us__email .btn--subscribe:hover {
   background-color: #0098d8;
 }
-/* line 87, ../scss/partials/base/_forms.scss */
+/* line 95, ../scss/partials/base/_forms.scss */
 .join-us__email:before {
   color: #eeeeee;
   display: block;
@@ -2778,9 +2787,60 @@ body.is-locked {
 /* line 435, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
+  font-family: "Gudea", Arial, sans-serif;
   font-style: italic;
   font-size: 2.2rem;
-  font-weight: 300;
+  border: 1px solid #dedede;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  color: #444;
+  margin-bottom: 2.2rem;
+  display: block;
+  width: 100%;
+}
+/* line 448, ../scss/partials/base/_story.scss */
+.module.take-action .tweet-politician__message:before {
+  color: #2fb8ed;
+  font-family: 'icons';
+  line-height: 0;
+  vertical-align: middle;
+  margin-right: 1.2rem;
+}
+/* line 463, ../scss/partials/base/_story.scss */
+.module.take-action .politician {
+  clear: both;
+  margin: 0 3rem 4.4rem;
+}
+/* line 467, ../scss/partials/base/_story.scss */
+.module.take-action .politician:first-child {
+  margin-top: 3.4rem;
+}
+/* line 472, ../scss/partials/base/_story.scss */
+.module.take-action .politician__photo {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  width: 12rem;
+  height: 12rem;
+  display: inline-block;
+  margin-right: 4rem;
+  float: left;
+}
+/* line 483, ../scss/partials/base/_story.scss */
+.module.take-action .politician__information {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 32rem;
+}
+/* line 489, ../scss/partials/base/_story.scss */
+.module.take-action .politician__name {
+  margin-top: 0.6rem;
+}
+/* line 493, ../scss/partials/base/_story.scss */
+.module.take-action .politician__office {
+  display: block;
+  font-family: "Gudea", Arial, sans-serif;
+  font-size: 1.6rem;
 }
 
 /* line 3, ../scss/partials/base/_static.scss */

@@ -434,22 +434,65 @@
   /* tweet politician take action */
   .tweet-politician__message {
     text-align: center;
+    font-family: $gudea;
     font-style: italic;
     font-size: 2.2rem;
-    font-weight: $light;
+    border: 1px solid #dedede;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    color: #444;
+    margin-bottom: 2.2rem;
+    display: block;
+    width: 100%;
+
+    &:before {
+      color: #2fb8ed;
+      font-family: 'icons';
+      line-height: 0;
+      vertical-align: middle;
+      margin-right: 1.2rem;
+    }
   }
 
-  .tweet-politician__lookup {}
+  .tweet-politician__lookup {
+  }
 
-  .tweet-politician__politicians {}
+  .tweet-politician__politicians {
+  }
 
-  .politician {}
+  .politician {
+    clear: both;
+    margin: 0 3rem 4.4rem;
 
-  .politician__name {}
+    &:first-child {
+      margin-top: 3.4rem;
+    }
+  }
 
-  .politician__office {}
+  .politician__photo {
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    width: 12rem;
+    height: 12rem;
+    display: inline-block;
+    margin-right: 4rem;
+    float: left;
+  }
 
-  .politician__twitter {
-    &:hover {}
+  .politician__information {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 32rem;
+  }
+
+  .politician__name {
+    margin-top: 0.6rem;
+  }
+
+  .politician__office {
+    display: block;
+    font-family: $gudea;
+    font-size: 1.6rem;
   }
 }

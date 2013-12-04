@@ -2,23 +2,23 @@
 
 {% block action_body %}
     <div class="take-action__full">
-        <p>{{ post.call_to_action.description }}</p>
+        <div id="tweet-message" class="tweet-politician__message icon icon_twitter" data-tweet-message="{{ post.call_to_action.tweet_text }}" data-tweet-url="{{ post.short_url }}">
+            {{ post.call_to_action.tweet_text }}
+        </div>
 
-        <p id="tweet-politician__message" data-tweet-message="{{ post.call_to_action.tweet_text }}" data-tweet-url="{{ post.short_url }}">
-            Tell your dude to "{{ post.call_to_action.tweet_text }}"
-        </p>
+        <p>Enter your address to find your local representatives on Twitter. Take action by tweeting the cause!</p>
 
-        <form id="politician-lookup" class="tweet-politician__lookup">
+        <form id="politician-lookup" class="tweet-politician__lookup cf">
             <div class="form-element form-element--two-third">
                 <label for="ta-address">Address</label>
-                <input name="ta-address" id="ta-address" type="text" class="text-input" required="required">
+                <input name="ta-address" id="ta-address" type="text" class="text-input" placeholder="ex: 420 Paper St. Wilmington, DE 19886" required="required">
             </div>
 
             <div class="form-element form-element--one-third form-element--right form-element--omega">
-                <button type="submit" class="btn btn--solid btn--external icon icon_external">Search Politicians</button>
+                <button type="submit" class="btn btn--solid">Search</button>
             </div>
         </form>
 
-        <div id="tweet-politician__politicians"></div>
+        <div id="tweet-a-politician" class="tweet-politician__politicians"></div>
     </div>
 {% endblock %}
