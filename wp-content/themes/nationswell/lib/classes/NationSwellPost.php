@@ -4,6 +4,7 @@ if (class_exists('TimberPost')) {
     {
         private $story_header_cache;
         private $more_stories_cache;
+        private $authors_cache;
 
 
         function story_header()
@@ -35,16 +36,19 @@ if (class_exists('TimberPost')) {
             return $this->story_header_cache;
         }
 
-        function author()
+
+
+        private function enhance_author($author)
         {
-            $author = parent::author();
             $author->mug_shot = get_field('mug_shot', 'user_' . $author->ID);
             $author->author_page = get_author_posts_url($author->ID);
 
-            if (isset($author->user_url)) {
+            if (isset($author->user_url))
+            {
                 $url = preg_replace('/https?:\/\//', '', $author->user_url);
 
-                if (($pos = strpos($url, '/')) !== false) {
+                if (($pos = strpos($url, '/')) !== false)
+                {
                     $url = substr($url, 0, $pos);
                 }
                 $author->display_url = $url;
@@ -53,9 +57,27 @@ if (class_exists('TimberPost')) {
             return $author;
         }
 
-        function petiton()
-        {
+        private function load_authors() {
+            if(!isset($this->authors_cache))
+            {
+                $this->authors_cache = array();
+                foreach(get_coauthors($this->ID) as $author)
+                {
+                    $this->authors_cache[] = $this->enhance_author($author);
+                }
+            }
+        }
 
+        function author()
+        {
+            $this->load_authors();
+            return !empty($this->authors_cache) ? $this->authors_cache[0] : false;
+        }
+
+        function authors()
+        {
+            $this->load_authors();
+            return $this->authors_cache;
         }
 
         function more_stories()
