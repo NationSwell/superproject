@@ -16,6 +16,7 @@ if (function_exists("register_field_group")) {
                         'petition' => 'Change.org Petition',
                         'donation' => 'Rally Donation',
                         'subscribe' => 'MailChimp Signup',
+                        'tweet' => 'Tweet a Politician',
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
@@ -230,6 +231,29 @@ if (function_exists("register_field_group")) {
                     'append' => '',
                     'formatting' => 'none',
                     'maxlength' => '',
+                ),
+                array (
+                    'key' => 'field_529e97081e580',
+                    'label' => 'Tweet Text',
+                    'name' => 'tweet_text',
+                    'type' => 'text',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => 140,
+                    'conditional_logic' => array(
+                        'status' => 1,
+                        'rules' => array(
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'tweet',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
                 ),
                 array(
                     'key' => 'field_528bddd2d2efd',
