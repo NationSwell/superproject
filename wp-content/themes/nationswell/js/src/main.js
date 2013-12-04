@@ -10,7 +10,11 @@
         $('.mc-form').ajaxChimp({
             callback: function (resp) {
                 if (resp.result === 'success') {
+                    setTimeout(function(){
+                        showThankYou();
+                    }, 500);
                 } else if (resp.result === 'error') {
+
                 }
 
             }
@@ -409,7 +413,10 @@
 
             $(window).off('.taSubmit');
 
-            e.preventDefault();
+            if(!$(this).hasClass('icon_external')){
+                e.preventDefault();
+            }
+
         });
 
 
