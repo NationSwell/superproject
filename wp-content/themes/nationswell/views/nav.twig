@@ -46,7 +46,7 @@
                 <ul class="most-popular-list cf">
                     {% for post in menu_main_stories %}<li>
                         <article class="story story--tease">
-                            <a href="#" class="link-wrapper">
+                            <a href="{{ post.permalink }}" class="link-wrapper">
                                 <figure class="story__feature">
                                     <img src="{{ post.thumbnail.src|resize(748, 421) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}"/>
                                 </figure>
