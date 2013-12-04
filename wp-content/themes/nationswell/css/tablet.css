@@ -1468,7 +1468,7 @@ input[type="submit"] {
   height: 4.2rem;
   vertical-align: middle;
   position: relative;
-  left: -2.1rem;
+  margin-left: -2.1rem;
 }
 /* line 88, ../scss/partials/base/_components.scss */
 .support-cause .indicator.indicator--module:before {
