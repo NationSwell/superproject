@@ -379,6 +379,10 @@
     @include transition(all 0.3s ease-in-out);
   }
 
+  .take-action__full {
+    width: 100%;
+  }
+
   .take-action__tab {
     opacity: 1;
 
@@ -425,5 +429,27 @@
     font-weight: $regular;
     font-style: italic;
     line-height: 1.56;
+  }
+
+  /* tweet politician take action */
+  .tweet-politician__message {
+    text-align: center;
+    font-style: italic;
+    font-size: 2.2rem;
+    font-weight: $light;
+  }
+
+  .tweet-politician__lookup {}
+
+  .tweet-politician__politicians {}
+
+  .politician {}
+
+  .politician__name {}
+
+  .politician__office {}
+
+  .politician__twitter {
+    &:hover {}
   }
 }

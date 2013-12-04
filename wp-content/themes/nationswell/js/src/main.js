@@ -471,7 +471,7 @@
         $('#politician-lookup').submit(function(e){
             var $tweet = $('#tweet-message');
 
-            lookupReps($(this).find('[name=address]').val(), function(reps) {
+            lookupReps($(this).find('[name=ta-address]').val(), function(reps) {
                 var $politicians = $('#tweet-a-politician');
                 $politicians.empty();
                 $.each(reps, function(){
