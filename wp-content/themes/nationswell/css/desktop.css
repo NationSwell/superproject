@@ -4102,7 +4102,7 @@ body.is-locked {
 }
 /* line 430, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
-  margin-bottom: 1.4rem;
+  margin-bottom: -1.4rem;
 }
 
 /* line 436, ../scss/partials/desktop/_components.scss */
