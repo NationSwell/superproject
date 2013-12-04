@@ -28,37 +28,55 @@
 
 // rivers
 .river {
+  .story-teases {
+    @include span-columns(8);
+  }
+
   &.river--one-col {
-    .story-teases {
-      @include span-columns(10);
-      @include shift(1);
+    .story--tease {
+        @include span-columns(8 of 8);
+    }
+  }
+
+  &.river--two-col {
+    li {
+        @include span-columns(4 of 8);
+        @include omega(2n);
     }
 
     .story--tease {
-      @include span-columns(8 of 8);
+      @include span-columns(4 of 4);
+
+      header {
+        margin-top: -1.2rem;
+      }
     }
   }
 }
 
 // sidebar
 .sidebar {
-  @include span-columns(10);
-  @include shift(1);
+  @include span-columns(4);
 }
 
 // stories
 .story__sticky {
-  @include span-columns(3);
+  @include span-columns(2);
 }
 
 .story__main-column {
+  @include span-columns(6);
+}
+
+// static
+.static__main-column {
   @include span-columns(8);
 }
 
 // multimedia
 .multimedia {
   .caption {
-    @include span-columns(5 of 8);
+    @include span-columns(4 of 6);
 
     + .credit {
       @include shift(0);
@@ -66,37 +84,25 @@
   }
 
   .credit {
-    @include span-columns(3 of 8);
-    @include shift(5);
-  }
-}
-
-// modules
-.module {
-  &.module--list {
-    &.module--horizontal {
-      li {
-        @include span-columns(2 of 6);
-      }
-    }
+    @include span-columns(2 of 6);
+    @include shift(4);
   }
 }
 
 // story social buttons
 .story__social {
   .btn--bar {
-    @include span-columns(4 of 8);
+    @include span-columns(3 of 6);
   }
 }
 
 // read next
 .read-next {
   .story-list {
-    @include span-columns(8);
+    @include span-columns(12);
 
     li {
-      // third is hidden
-      @include span-columns(4 of 8);
+      @include span-columns(4 of 12);
     }
   }
 }
@@ -104,6 +110,6 @@
 // prev-next
 .prev-next {
   li {
-    @include span-columns(4 of 8);
+    @include span-columns(3 of 6);
   }
 }
