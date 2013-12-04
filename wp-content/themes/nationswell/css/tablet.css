@@ -957,10 +957,11 @@ a:hover {
   margin-right: 1rem;
   font-size: 3.4rem;
   position: relative;
-  top: 0.8rem;
+  line-height: 0;
+  vertical-align: middle;
 }
 
-/* line 175, ../scss/partials/base/_buttons.scss */
+/* line 176, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
