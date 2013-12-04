@@ -210,8 +210,23 @@
   text-align: center;
 
   &:before {
-    line-height: 1.56;
     color: $white;
+  }
+
+  &.icon_video:before {
+    line-height: 1.68;
+  }
+
+  &.icon_audio:before {
+    line-height: 1.6;
+  }
+
+  &.icon_photo:before {
+    line-height: 1.56;
+  }
+
+  &.icon_listory:before {
+    line-height: 1.68;
   }
 }
 

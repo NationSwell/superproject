@@ -4,9 +4,11 @@
         <figure class="story__feature">
             <img src="{{ post.thumbnail.src|resize(748, 421) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}"/>
 
+            {% if post.content_type in ['video','audio','photo','listory'] %}
             <div class="type-indicator-container">
-                <span class="icon icon_photo type-indicator type-indicator--photo"></span>
+                <span class="icon icon_{{ post.content_type }} type-indicator"></span>
             </div>
+            {% endif %}
         </figure>
         {% endif %}
 
