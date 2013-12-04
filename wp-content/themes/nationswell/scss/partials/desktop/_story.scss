@@ -381,17 +381,17 @@
       height: auto;
     }
 
-    .take-action__social_back {
-      background: none;
-      border: none;
-      color: $gray0;
-      font-size: 1.6rem;
-      position: absolute;
-      top: 4.6rem;
-    }
-
     @include transition(left 0.3s ease-in-out);
   }
+}
+
+.take-action__social_back {
+  background: none;
+  border: none;
+  color: $gray0;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 4.6rem;
 }
 
 .fb-comments {

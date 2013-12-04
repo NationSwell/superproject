@@ -4907,9 +4907,9 @@ body.is-locked {
   left: 0;
   height: auto;
 }
-/* line 384, ../scss/partials/desktop/_story.scss */
-.story__container .story__social .take-action__social_back,
-.story__container .story__take-action .take-action__social_back {
+
+/* line 388, ../scss/partials/desktop/_story.scss */
+.take-action__social_back {
   background: none;
   border: none;
   color: #333333;
