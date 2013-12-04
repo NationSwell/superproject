@@ -6,6 +6,8 @@
         {% for post in featured %}
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});">
                 <a href="{{ post.permalink }}" class="link-wrapper">
+                    {% if loop.index == 1 %}<span class="icon icon_photo type-indicator type-indicator--photo"></span>{% endif %}
+                    
                     <article class="story story--hero z1">
                         {#<span class="rubric">{{ post.category }}</span>#}
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ post.tout_title }}</h1>

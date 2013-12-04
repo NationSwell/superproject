@@ -13,13 +13,19 @@
           margin-right: 2px;
         }
 
+        .type-indicator {
+          position: absolute;
+          top: 4.4rem;
+          right: 4.4rem;
+        }
+
         .story__hed {
           margin-bottom: 3.4rem;
         }
 
         .credit {
           position: absolute;
-          right: 1.8rem;
+          right: 4.4rem;
           bottom: 1.8rem;
         }
 
@@ -69,14 +75,6 @@
 .river--one-col {
   .story-teases {
     .story--tease {
-      &:hover {
-        .story__feature {
-          &:before {
-            height: 0.7rem;
-          }
-        }
-      }
-
       .sponsor {
         padding: 0.8rem 1.6rem;
         left: -1rem;
@@ -88,25 +86,10 @@
       float: left;
       width: 37.4rem;
       margin-right: 3.8rem;
-
-      &:before {
-        content: '';
-        background-color: $ns_blue1;
-        content: '';
-        position: absolute;
-        bottom: 0;
-        height: 0;
-        width: 100%;
-        display: block;
-
-        @include transition(all 0.3s ease-in-out);
-      }
     }
   }
 
   .story-teases {
-//    margin-bottom: 2.8rem;
-
     .story__hed {
       margin-bottom: 1.2rem;
     }
