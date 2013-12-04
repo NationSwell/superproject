@@ -60,9 +60,7 @@
                 currModalHeight = modal.outerHeight(),
                 $taContent = modal.find('.take-action__inner');
 
-            if ((windowHeight - currModalHeight) < (.2 * windowHeight)) {
-                $taContent.css('height', .44 * windowHeight);
-            }
+            $taContent.css('height', .44 * windowHeight);
         };
 
         // opening modals via button press
@@ -88,6 +86,7 @@
             }
 
             e.preventDefault();
+            return false;
         });
 
         // disabling modals
@@ -475,17 +474,27 @@
             });
         }
 
-        $('#politician-lookup').submit(function(e){
-            var $tweet = $('#tweet-message');
+        $('body').on('submit', '#politician-lookup', function (event) {
+            var $container = $(this).closest('.take-action__full'),
+                $modal = $container.closest('.modal'),
+                $tweet = $container.find('#tweet-message');
+
+            console.log('container is '+ $container +', modal is '+ $modal.length +', tweet is ' + $tweet);
 
             lookupReps($(this).find('[name=ta-address]').val(), function(reps) {
-                var $politicians = $('#tweet-a-politician');
+                var $politicians = $container.find('#tweet-a-politician');
                 $politicians.empty();
                 $.each(reps, function(){
                     $politicians.append(politicianTemplate(this, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message')));
                 });
             });
-            e.preventDefault();
+
+            if($modal.length) {
+                alert('fart');
+                fitTakeAction($modal);
+            }
+
+            event.preventDefault();
         }).validate();
 
 
