@@ -275,6 +275,43 @@
     font-size: 2.2rem;
     margin: 2rem 0;
   }
+
+  /* tweet politician take action */
+  .tweet-politician__message {
+    font-size: 3.4rem;
+    padding: 2.4rem;
+  }
+
+  .politician {
+    clear: both;
+    margin: 0 0 4.4rem;
+
+    &:first-child {
+      margin-top: 3.4rem;
+    }
+  }
+
+  .politician__photo {
+    display: block;
+    width: 24rem;
+    height: 24rem;
+    text-align: center;
+    margin: 0 auto 2.4rem;
+  }
+
+  .politician__information {
+    overflow: hidden;
+    max-width: 32rem;
+  }
+
+  .politician__name {
+    margin-top: 0.6rem;
+  }
+
+  .politician__office {
+    font-size: 3.4rem;
+    margin-bottom: 2.2rem;
+  }
 }
 
 // flyout
