@@ -3703,7 +3703,7 @@ body.panel--is-open #page-header .more-stories-toggle {
 .support-cause .indicator.indicator--module {
   height: 6.2rem;
   width: 6.2rem;
-  left: -3.1rem;
+  margin-left: -3.1rem;
 }
 /* line 52, ../scss/partials/mobile/_components.scss */
 .support-cause .indicator.indicator--module:before {
