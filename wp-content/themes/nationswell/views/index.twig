@@ -16,7 +16,7 @@
                         {#<span class="rubric">{{ post.category }}</span>#}
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed">{{ post.tout_title }}</h1>
 
-                        {% if post.call_to_action is not empty %}
+                        {% if post.call_to_action is not empty and post.call_to_action.show_action_stats_on_tout != '0' %}
                             {% include ['action-stats-'~post.call_to_action.type~'.twig', 'action-stats.twig'] %}
                         {% endif %}
 

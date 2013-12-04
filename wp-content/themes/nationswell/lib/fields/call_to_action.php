@@ -16,6 +16,7 @@ if (function_exists("register_field_group")) {
                         'petition' => 'Change.org Petition',
                         'donation' => 'Rally Donation',
                         'subscribe' => 'MailChimp Signup',
+                        'tweet' => 'Tweet a Politician',
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
@@ -114,7 +115,7 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd34946edf',
-                    'label' => 'External LInk',
+                    'label' => 'External Link',
                     'name' => 'external_link',
                     'type' => 'text',
                     'instructions' => 'A link to an external web page. This field appears in the Take Action Panel',
@@ -231,6 +232,29 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
+                array (
+                    'key' => 'field_529e97081e580',
+                    'label' => 'Tweet Text',
+                    'name' => 'tweet_text',
+                    'type' => 'text',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => 140,
+                    'conditional_logic' => array(
+                        'status' => 1,
+                        'rules' => array(
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'tweet',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                ),
                 array(
                     'key' => 'field_528bddd2d2efd',
                     'label' => 'Icon',
@@ -318,8 +342,8 @@ if (function_exists("register_field_group")) {
                 ),
                 array (
                     'key' => 'field_529e607be97a6',
-                    'label' => 'Show Action Stats on Homepage',
-                    'name' => 'show_action_stats_on_homepage',
+                    'label' => 'Show Action Stats on Tout',
+                    'name' => 'show_action_stats_on_tout',
                     'type' => 'true_false',
                     'message' => '',
                     'default_value' => 1,
