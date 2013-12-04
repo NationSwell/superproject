@@ -21,7 +21,7 @@
         });
 
         // share popup window
-        $('.btn--share').click(function (event) {
+        $('body').on('click', '.btn--share', function (event) {
             var width = 575,
                 height = 400,
                 left = ($(window).width() - width) / 2,

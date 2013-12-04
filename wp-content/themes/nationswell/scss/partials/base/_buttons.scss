@@ -9,6 +9,7 @@
 .btn {
   border-radius: 0;
   text-rendering: optimizeLegibility;
+  outline: 0;
   -webkit-font-smoothing: antialiased;
 
   &.btn--solid {
