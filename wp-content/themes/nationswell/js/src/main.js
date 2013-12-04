@@ -428,6 +428,85 @@
             e.preventDefault();
         }).validate();
 
+         function lookupReps(address, callback) {
+            $.ajax({
+                url: 'https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=AIzaSyAffyAu22rVhDqArXZ7F8jjmCU_ZYKRINU',
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({ address: address }),
+                dataType: 'json',
+                success: function(data) {
+                    var officialsById = {}, officials;
+
+                    $.each(data.offices, function(i, office) {
+                        if(office.level === 'federal' &&
+                            (office.name.indexOf('House') !== -1 || office.name.indexOf('Senate') !== -1)) {
+
+                            $.each(office.officialIds, function(i, id){
+                                officialsById[id] = { office: office.name };
+                            });
+                        }
+                    });
+
+                    $.each(officialsById, function(id, official) {
+                        official = $.extend(official, data.officials[id]);
+
+                        official.party = official.party === 'Democratic' ? 'Democrat' : official.party;
+
+                        $.each(official.channels, function(){
+                            if(this.type === 'Twitter') {
+                                official.twitter = this.id;
+                                return false;
+                            }
+                        });
+                    });
+
+                    officials = $.map(officialsById, function(value) { return value; });
+
+                    callback(officials);
+                }
+            });
+        }
+
+        $('#politician-lookup').submit(function(e){
+            lookupReps($(this).find('[name=address]').val(), function(reps) {
+                var $politicians = $('#tweet-a-politician');
+                $politicians.empty();
+                $.each(reps, function(){
+                    $politicians.append(politicianTemplate(this));
+                });
+
+            });
+            e.preventDefault();
+        }).validate();
+
+
+        function politicianTemplate(politician) {
+            var $politician,
+
+                html =
+                '<div class="politician">';
+
+            if(politician.photoUrl) {
+                html += '   <img src="' + politician.photoUrl +'" alt="' + politician.name +'" />';
+            }
+
+            html +=
+                '   <span class="name">' + politician.name +'</span>' +
+                '   <span class="office">' + politician.party + ' - ' + politician.office +'</span>' +
+                '   <span class="twitter">@' + politician.twitter +'</span>' +
+                '   <button class="tweet">Tweet</button>' +
+                '</div>';
+
+            // Event handlers
+            $politician = $(html);
+            $politician.find('.tweet').click(function(){
+                alert('Tweeting @' + politician.twitter);
+            });
+
+            return $politician;
+        }
+
 
     });
 })(jQuery);
