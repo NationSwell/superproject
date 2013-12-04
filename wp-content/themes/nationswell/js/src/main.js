@@ -428,7 +428,7 @@
             e.preventDefault();
         }).validate();
 
-         function lookupReps(address, callback) {
+        function lookupReps(address, callback) {
             $.ajax({
                 url: 'https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=AIzaSyAffyAu22rVhDqArXZ7F8jjmCU_ZYKRINU',
                 type: 'POST',
@@ -469,42 +469,25 @@
         }
 
         $('#politician-lookup').submit(function(e){
+            var $tweet = $('#tweet-message');
+
             lookupReps($(this).find('[name=address]').val(), function(reps) {
                 var $politicians = $('#tweet-a-politician');
                 $politicians.empty();
                 $.each(reps, function(){
-                    $politicians.append(politicianTemplate(this));
+                    $politicians.append(politicianTemplate(this, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message')));
                 });
-
             });
             e.preventDefault();
         }).validate();
 
 
-        function politicianTemplate(politician) {
-            var $politician,
+        function politicianTemplate(politician, shortUrl, message) {
+            var twitterUrl = 'https://twitter.com/share?url='
+                    + encodeURIComponent(shortUrl) + '&text=' +
+                    encodeURIComponent('@' + politician.twitter + ' ' + message) + '&via=nationswell';
 
-                html =
-                '<div class="politician">';
-
-            if(politician.photoUrl) {
-                html += '   <img src="' + politician.photoUrl +'" alt="' + politician.name +'" />';
-            }
-
-            html +=
-                '   <span class="name">' + politician.name +'</span>' +
-                '   <span class="office">' + politician.party + ' - ' + politician.office +'</span>' +
-                '   <span class="twitter">@' + politician.twitter +'</span>' +
-                '   <button class="tweet">Tweet</button>' +
-                '</div>';
-
-            // Event handlers
-            $politician = $(html);
-            $politician.find('.tweet').click(function(){
-                alert('Tweeting @' + politician.twitter);
-            });
-
-            return $politician;
+            return  twigs['views-client/politician.twig'].render({ politician: politician,  twitterUrl: twitterUrl });
         }
 
 

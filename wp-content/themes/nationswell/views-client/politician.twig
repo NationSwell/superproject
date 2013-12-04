@@ -1,0 +1,9 @@
+<div class="politician">
+    {% if politician.photoUrl is not empty %}
+        <img src="{{ politician.photoUrl }}" alt="{{politician.name }}" />
+    {% endif %}
+    <span class="name">{{ politician.name }}</span>
+    <span class="office">{{ politician.party }} - {{ politician.office }}</span>
+    <span class="twitter">@{{ politician.twitter }}</span>
+    <a href="{{twitterUrl }}" class="btn btn--twitter btn--share">Tweet</a>
+</div>
