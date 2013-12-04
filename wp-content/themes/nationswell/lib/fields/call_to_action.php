@@ -210,7 +210,7 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528bd87f5938d',
-                    'label' => 'MailChimp ID',
+                    'label' => 'MailChimp Form Action',
                     'name' => 'mailchimp_id',
                     'type' => 'text',
                     'instructions' => 'The form action string from MailChimp. This is a long URL that you need to get out of an embeddable MailChimp subscribe form.',

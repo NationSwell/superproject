@@ -15,7 +15,7 @@
         <div class="take-action__thank-you take-action__tab is-hidden" style="display: none;">
             <h2 class="hd-l take-action__heading">{{ take_action_thanks_header }}</h2>
 
-            {% if nationswell_facebook or nationswell_twitter or nationswell_tumblr or nationswell_instagram or nationswell_google %}
+            {#{% if nationswell_facebook or nationswell_twitter or nationswell_tumblr or nationswell_instagram or nationswell_google %}#}
 
             <p>{{ take_action_thanks_text }}</p>
 
@@ -32,16 +32,21 @@
                 {% if nationswell_instagram is not empty %}
                     <li><a href="{{ nationswell_instagram }}" class="btn btn--social icon icon_instagram"></a></li>
                 {% endif %}
-                {% if nationswell_google is not empty %}
-                    <li><a href="{{ nationswell_google }}" class="btn btn--social icon icon_google-plus"></a></li>
-                {% endif %}
-                {#<li><a href="http://www.facebook.com/{{ post.call_to_action.facebook_username }}" class="btn btn--social icon icon_facebook"></a></li>#}
-                {#<li><a href="http://www.twitter.com/{{ post.call_to_action.twitter_username }}" class="btn btn--social icon icon_twitter"></a></li>#}
-                {#<li><a href="{{ post.call_to_action.tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>#}
-                {#<li><a href="{{ post.call_to_action.instagram }}" class="btn btn--social icon icon_instagram"></a></li>#}
-                {#<li><a href="{{ post.call_to_action.google }}" class="btn btn--social icon icon_google-plus"></a></li>#}
+                {#{% if nationswell_google is not empty %}#}
+                    <li>
+                        <span class="btn btn--social icon icon_google-plus g-interactivepost"
+                              data-clientid="289125837827.apps.googleusercontent.com"
+                              data-contenturl="http://local.wordpress.dev/new-focus-offers-hope-vets-hearing-loss/"
+                              data-prefilltext="Create your Google+ Page too!'"
+                              data-calltoactionlabel="INVITE"
+                              data-calltoactionurl="https://developers.google.com/+/web/share/interactive?invite=true"
+                              data-cookiepolicy="single_host_origin"
+                              data-prefilltext="Come learn about interactive posts with me!">
+                        </span>
+                    </li>
+                {#{% endif %}#}
             </ul>
-            {% endif %}
+            {#{% endif %}#}
 
             {% if nationswell_mailchimp_daily %}
             <p>{{ take_action_thanks_subscribe_text }}</p>
