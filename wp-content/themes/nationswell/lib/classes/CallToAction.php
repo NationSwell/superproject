@@ -2,7 +2,7 @@
 if (class_exists('TimberPost')) {
 
     class CallToAction extends TimberPost {
-        private $petition;
+        private $petition_cache;
 
         function __construct($pid = null) {
             parent::__construct($pid);
@@ -46,12 +46,16 @@ if (class_exists('TimberPost')) {
         public function petition() {
             global $change_org_api;
 
-            if(!isset($this->petition)) {
-                $this->petition = $this->type === 'petition' ?
-                    $change_org_api->get_petition_from_post($this->ID) : false;
+            if(!isset($this->petition_cache)) {
+                if($this->type === 'petition' && isset($change_org_api)) {
+                    $this->petition_cache = $change_org_api->get_petition_from_post($this->ID);
+                }
+                else {
+                    $this->petition_cache = false;
+                }
             }
 
-            return $this->petition;
+            return $this->petition_cache;
         }
 
         public function image() {

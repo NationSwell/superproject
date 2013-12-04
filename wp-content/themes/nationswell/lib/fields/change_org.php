@@ -1,0 +1,90 @@
+<?php
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_change-org',
+        'title' => 'Change.org',
+        'fields' => array (
+            array (
+                'key' => 'field_529f72eeb77aa',
+                'label' => __('Email'),
+                'name' => 'change_email',
+                'type' => 'email',
+                'instructions' => __('The email of your associated with your Change.org account.'),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+            array (
+                'key' => 'field_529faa0130fa3',
+                'label' => __('Description'),
+                'name' => 'change_description',
+                'type' => 'text',
+                'instructions' => __('The description or slogan of nationswell that will appear in change.org authorization requests.'),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+            ),
+            array (
+                'key' => 'field_529f732db77ab',
+                'label' => __('API Key'),
+                'name' => 'change_api_key',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+            ),
+            array (
+                'key' => 'field_529f7681b77ac',
+                'label' => __('Secret'),
+                'name' => 'change_secret',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+            ),
+            array (
+                'key' => 'field_529f8ecde7cde',
+                'label' => __('Update Frequency'),
+                'name' => 'change_frequency',
+                'type' => 'number',
+                'instructions' => __('Number of seconds between updates from Change.org. Default is 3600 (one hour).'),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'min' => 0,
+                'max' => '',
+                'step' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'acf-options',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'default',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
