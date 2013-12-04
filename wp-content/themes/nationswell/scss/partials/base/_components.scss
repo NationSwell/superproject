@@ -83,7 +83,7 @@
       height: 4.2rem;
       vertical-align: middle;
       position: relative;
-      left: -2.1rem;
+      margin-left: -2.1rem;
 
       &:before {
         font-size: 3.4rem;
@@ -204,8 +204,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  vertical-align: center;
-  display: table-cell;
 }
 
 .type-indicator {

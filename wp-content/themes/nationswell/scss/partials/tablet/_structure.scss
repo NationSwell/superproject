@@ -1,6 +1,18 @@
-.hide_tablet,
-.show_desktop,
-.show_mobile {
+.hide_desktop,
+.show_mobile,
+.show_tablet {
   display: none !important;
   visibility: hidden;
+}
+
+.container {
+  width: 75em;
+}
+
+.river {
+//  padding-top: 5rem;
+}
+
+#page-wrapper {
+  min-width: 98.4rem;
 }

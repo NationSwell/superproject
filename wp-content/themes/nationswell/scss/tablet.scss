@@ -1,23 +1,25 @@
-// Neat
 @import "modules/tablet-grid-settings";
-@import "neat/neat";
 
 // Base
 @import "partials/main";
 
-// Tablet-specific partials
+// tablet-specific partials
 @import "partials/tablet/grid";
 @import "partials/tablet/structure";
 @import "partials/tablet/ads";
 @import "partials/tablet/headings";
 @import "partials/tablet/typography";
 @import "partials/tablet/buttons";
+@import "partials/tablet/forms";
 @import "partials/tablet/nav";
 @import "partials/tablet/more-stories";
 @import "partials/tablet/footer";
 @import "partials/tablet/components";
 @import "partials/tablet/carousels";
+@import "partials/tablet/modal";
 
-// Tablet page partials
+// tablet page partials
 @import "partials/tablet/homepage";
 @import "partials/tablet/story";
+@import "partials/tablet/static";
+@import "partials/tablet/archive";

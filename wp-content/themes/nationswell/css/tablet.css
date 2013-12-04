@@ -1,10 +1,8 @@
-/* line 2, ../scss/neat/grid/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
+/*// Grid settings
+$column: 128px;
+$gutter: 96px;
+$grid-columns: 12;
+$max-width: em(1488);*/
 /* line 2, ../scss/neat/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -64,7 +62,7 @@ table {
 /* line 5, ../scss/partials/base/_grid.scss */
 .container {
   *zoom: 1;
-  max-width: 93em;
+  max-width: 61.5em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1470,7 +1468,7 @@ input[type="submit"] {
   height: 4.2rem;
   vertical-align: middle;
   position: relative;
-  left: -2.1rem;
+  margin-left: -2.1rem;
 }
 /* line 88, ../scss/partials/base/_components.scss */
 .support-cause .indicator.indicator--module:before {
@@ -1587,40 +1585,38 @@ input[type="submit"] {
   bottom: 0;
   left: 0;
   right: 0;
-  vertical-align: center;
-  display: table-cell;
 }
 
-/* line 211, ../scss/partials/base/_components.scss */
+/* line 209, ../scss/partials/base/_components.scss */
 .type-indicator {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   border: 2px solid white;
   text-align: center;
 }
-/* line 217, ../scss/partials/base/_components.scss */
+/* line 215, ../scss/partials/base/_components.scss */
 .type-indicator:before {
   color: white;
 }
-/* line 221, ../scss/partials/base/_components.scss */
+/* line 219, ../scss/partials/base/_components.scss */
 .type-indicator.icon_video:before {
   line-height: 1.68;
 }
-/* line 225, ../scss/partials/base/_components.scss */
+/* line 223, ../scss/partials/base/_components.scss */
 .type-indicator.icon_audio:before {
   line-height: 1.6;
 }
-/* line 229, ../scss/partials/base/_components.scss */
+/* line 227, ../scss/partials/base/_components.scss */
 .type-indicator.icon_photo:before {
   line-height: 1.56;
 }
-/* line 233, ../scss/partials/base/_components.scss */
+/* line 231, ../scss/partials/base/_components.scss */
 .type-indicator.icon_listory:before {
   line-height: 1.68;
 }
 
 /* module */
-/* line 239, ../scss/partials/base/_components.scss */
+/* line 237, ../scss/partials/base/_components.scss */
 .module {
   display: block;
   position: relative;
@@ -1628,15 +1624,15 @@ input[type="submit"] {
   /* join us module */
   /* subscribe module */
 }
-/* line 244, ../scss/partials/base/_components.scss */
+/* line 242, ../scss/partials/base/_components.scss */
 .module.module--sidebar {
   margin: 0 auto;
 }
-/* line 248, ../scss/partials/base/_components.scss */
+/* line 246, ../scss/partials/base/_components.scss */
 .module.module--bg {
   background-color: #eeeeee;
 }
-/* line 251, ../scss/partials/base/_components.scss */
+/* line 249, ../scss/partials/base/_components.scss */
 .module.module--bg:before {
   content: '';
   display: block;
@@ -1645,17 +1641,17 @@ input[type="submit"] {
   top: 0;
   left: 0;
 }
-/* line 260, ../scss/partials/base/_components.scss */
+/* line 258, ../scss/partials/base/_components.scss */
 .module.module--bg header {
   position: relative;
   text-align: center;
 }
-/* line 265, ../scss/partials/base/_components.scss */
+/* line 263, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading {
   display: inline-block;
   position: relative;
 }
-/* line 270, ../scss/partials/base/_components.scss */
+/* line 268, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1668,32 +1664,32 @@ input[type="submit"] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 285, ../scss/partials/base/_components.scss */
+/* line 283, ../scss/partials/base/_components.scss */
 .module.module--bg p {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 293, ../scss/partials/base/_components.scss */
+/* line 291, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
 }
-/* line 297, ../scss/partials/base/_components.scss */
+/* line 295, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue .module__heading {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 305, ../scss/partials/base/_components.scss */
+/* line 303, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
 }
-/* line 309, ../scss/partials/base/_components.scss */
+/* line 307, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red .module__heading {
   background-color: #832f2d;
 }
-/* line 316, ../scss/partials/base/_components.scss */
+/* line 314, ../scss/partials/base/_components.scss */
 .module.module--list:after {
   background-color: #eeeeee;
   content: '';
@@ -1702,89 +1698,89 @@ input[type="submit"] {
   position: absolute;
   left: 0;
 }
-/* line 325, ../scss/partials/base/_components.scss */
+/* line 323, ../scss/partials/base/_components.scss */
 .module.module--list .module__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 331, ../scss/partials/base/_components.scss */
+/* line 329, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li {
   border-bottom: 1px solid #eeeeee;
 }
-/* line 334, ../scss/partials/base/_components.scss */
+/* line 332, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li:last-child {
   border-bottom: 0 none;
 }
-/* line 341, ../scss/partials/base/_components.scss */
+/* line 339, ../scss/partials/base/_components.scss */
 .module.module--list .story--link .story__hed {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 346, ../scss/partials/base/_components.scss */
+/* line 344, ../scss/partials/base/_components.scss */
 .module.module--list .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 354, ../scss/partials/base/_components.scss */
+/* line 352, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
   margin-right: 4.2%;
   vertical-align: top;
 }
-/* line 360, ../scss/partials/base/_components.scss */
+/* line 358, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li:last-child {
   margin-right: 0;
 }
-/* line 368, ../scss/partials/base/_components.scss */
+/* line 366, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 374, ../scss/partials/base/_components.scss */
+/* line 372, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 382, ../scss/partials/base/_components.scss */
+/* line 380, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 387, ../scss/partials/base/_components.scss */
+/* line 385, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
 }
-/* line 391, ../scss/partials/base/_components.scss */
+/* line 389, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: white;
   display: block;
 }
-/* line 397, ../scss/partials/base/_components.scss */
+/* line 395, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
-/* line 405, ../scss/partials/base/_components.scss */
+/* line 403, ../scss/partials/base/_components.scss */
 .module .join-us .btn--bar {
   width: auto;
 }
 
 /* sidebar */
-/* line 418, ../scss/partials/base/_components.scss */
+/* line 416, ../scss/partials/base/_components.scss */
 .sidebar li {
   list-style: none;
 }
 
 /* pullquote */
-/* line 425, ../scss/partials/base/_components.scss */
+/* line 423, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 428, ../scss/partials/base/_components.scss */
+/* line 426, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1793,7 +1789,7 @@ input[type="submit"] {
   border-radius: 50%;
   text-align: center;
 }
-/* line 437, ../scss/partials/base/_components.scss */
+/* line 435, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1803,33 +1799,33 @@ input[type="submit"] {
 }
 
 /* tags */
-/* line 447, ../scss/partials/base/_components.scss */
+/* line 445, ../scss/partials/base/_components.scss */
 .tag-tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 453, ../scss/partials/base/_components.scss */
+/* line 451, ../scss/partials/base/_components.scss */
 .tag-tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* author */
-/* line 460, ../scss/partials/base/_components.scss */
+/* line 458, ../scss/partials/base/_components.scss */
 .author-box {
   background-color: #f6f6f6;
 }
 
-/* line 464, ../scss/partials/base/_components.scss */
+/* line 462, ../scss/partials/base/_components.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 470, ../scss/partials/base/_components.scss */
+/* line 468, ../scss/partials/base/_components.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -1838,89 +1834,89 @@ input[type="submit"] {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 478, ../scss/partials/base/_components.scss */
+/* line 476, ../scss/partials/base/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 483, ../scss/partials/base/_components.scss */
+/* line 481, ../scss/partials/base/_components.scss */
 .social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 488, ../scss/partials/base/_components.scss */
+/* line 486, ../scss/partials/base/_components.scss */
 .social li {
   display: inline-block;
 }
-/* line 491, ../scss/partials/base/_components.scss */
+/* line 489, ../scss/partials/base/_components.scss */
 .social li:first-child {
   margin-left: 0;
 }
-/* line 496, ../scss/partials/base/_components.scss */
+/* line 494, ../scss/partials/base/_components.scss */
 .social .icon {
   color: white;
   text-align: center;
   vertical-align: middle;
 }
-/* line 501, ../scss/partials/base/_components.scss */
+/* line 499, ../scss/partials/base/_components.scss */
 .social .icon.icon_facebook {
   background-color: #5973aa;
 }
-/* line 502, ../scss/partials/base/_components.scss */
+/* line 500, ../scss/partials/base/_components.scss */
 .social .icon.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 503, ../scss/partials/base/_components.scss */
+/* line 501, ../scss/partials/base/_components.scss */
 .social .icon.icon_google-plus {
   background-color: #d34836;
 }
-/* line 504, ../scss/partials/base/_components.scss */
+/* line 502, ../scss/partials/base/_components.scss */
 .social .icon.icon_instagram {
   background-color: #37668d;
 }
-/* line 505, ../scss/partials/base/_components.scss */
+/* line 503, ../scss/partials/base/_components.scss */
 .social .icon.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 509, ../scss/partials/base/_components.scss */
+/* line 507, ../scss/partials/base/_components.scss */
 .social.author__social .icon {
   line-height: 1.4;
 }
-/* line 514, ../scss/partials/base/_components.scss */
+/* line 512, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon {
   background-color: #dbdbdb;
 }
-/* line 518, ../scss/partials/base/_components.scss */
+/* line 516, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_facebook {
   background-color: #5973aa;
 }
-/* line 519, ../scss/partials/base/_components.scss */
+/* line 517, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 520, ../scss/partials/base/_components.scss */
+/* line 518, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_google-plus {
   background-color: #d34836;
 }
-/* line 521, ../scss/partials/base/_components.scss */
+/* line 519, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_instagram {
   background-color: #37668d;
 }
-/* line 522, ../scss/partials/base/_components.scss */
+/* line 520, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 529, ../scss/partials/base/_components.scss */
+/* line 527, ../scss/partials/base/_components.scss */
 .social.take-action__social .icon {
   line-height: 1.6;
 }
 
-/* line 536, ../scss/partials/base/_components.scss */
+/* line 534, ../scss/partials/base/_components.scss */
 .author__byline a {
   color: inherit;
 }
-/* line 540, ../scss/partials/base/_components.scss */
+/* line 538, ../scss/partials/base/_components.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'by';
@@ -1929,70 +1925,70 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-/* line 549, ../scss/partials/base/_components.scss */
+/* line 547, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 554, ../scss/partials/base/_components.scss */
+/* line 552, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 558, ../scss/partials/base/_components.scss */
+/* line 556, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 564, ../scss/partials/base/_components.scss */
+/* line 562, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 569, ../scss/partials/base/_components.scss */
+/* line 567, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 575, ../scss/partials/base/_components.scss */
+/* line 573, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 581, ../scss/partials/base/_components.scss */
+/* line 579, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 589, ../scss/partials/base/_components.scss */
+/* line 587, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 595, ../scss/partials/base/_components.scss */
+/* line 593, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 599, ../scss/partials/base/_components.scss */
+/* line 597, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
 
 /* subscribe status */
-/* line 606, ../scss/partials/base/_components.scss */
+/* line 604, ../scss/partials/base/_components.scss */
 .module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
   display: block;
   clear: both;
 }
-/* line 612, ../scss/partials/base/_components.scss */
+/* line 610, ../scss/partials/base/_components.scss */
 .module.mc-email-status.valid {
   color: #46b525;
 }
-/* line 616, ../scss/partials/base/_components.scss */
+/* line 614, ../scss/partials/base/_components.scss */
 .module.mc-email-status.error {
   color: #fc3b40;
 }
@@ -2974,8 +2970,8 @@ body.is-locked {
 #more-stories .category-list {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 13.58025%;
+  margin-right: 2.07469%;
+  width: 14.93776%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 #more-stories .category-list:last-child {
@@ -2985,8 +2981,8 @@ body.is-locked {
 #more-stories .most-popular {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 82.71605%;
+  margin-right: 2.07469%;
+  width: 82.98755%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 #more-stories .most-popular:last-child {
@@ -2997,9 +2993,9 @@ body.is-locked {
 .hero.hero--image .hero__content {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 56.79012%;
-  margin-left: 17.28395%;
+  margin-right: 2.07469%;
+  width: 57.46888%;
+  margin-left: 17.01245%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .hero.hero--image .hero__content:last-child {
@@ -3009,157 +3005,189 @@ body.is-locked {
 .hero .hero-information .hero-information__content {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 48.14815%;
-  margin-left: 17.28395%;
+  margin-right: 2.07469%;
+  width: 48.96266%;
+  margin-left: 17.01245%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .hero .hero-information .hero-information__content:last-child {
   margin-right: 0;
 }
 
-/* line 32, ../scss/partials/tablet/_grid.scss */
-.river.river--one-col .story-teases {
+/* line 31, ../scss/partials/tablet/_grid.scss */
+.river .story-teases {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 82.71605%;
-  margin-left: 8.64198%;
+  margin-right: 2.07469%;
+  width: 65.9751%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
-.river.river--one-col .story-teases:last-child {
+.river .story-teases:last-child {
   margin-right: 0;
 }
-/* line 37, ../scss/partials/tablet/_grid.scss */
+/* line 36, ../scss/partials/tablet/_grid.scss */
 .river.river--one-col .story--tease {
   display: block;
   float: left;
-  margin-right: 5.66038%;
+  margin-right: 3.14465%;
   width: 100%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .river.river--one-col .story--tease:last-child {
   margin-right: 0;
 }
+/* line 42, ../scss/partials/tablet/_grid.scss */
+.river.river--two-col li {
+  display: block;
+  float: left;
+  margin-right: 3.14465%;
+  width: 48.42767%;
+}
+/* line 33, ../scss/neat/grid/_span-columns.scss */
+.river.river--two-col li:last-child {
+  margin-right: 0;
+}
+/* line 70, ../scss/neat/grid/_omega.scss */
+.river.river--two-col li:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 75, ../scss/neat/grid/_omega.scss */
+.river.river--two-col li:nth-child(2n+1) {
+  clear: left;
+}
+/* line 47, ../scss/partials/tablet/_grid.scss */
+.river.river--two-col .story--tease {
+  display: block;
+  float: left;
+  margin-right: 6.49351%;
+  width: 100%;
+}
+/* line 33, ../scss/neat/grid/_span-columns.scss */
+.river.river--two-col .story--tease:last-child {
+  margin-right: 0;
+}
+/* line 50, ../scss/partials/tablet/_grid.scss */
+.river.river--two-col .story--tease header {
+  margin-top: -1.2rem;
+}
 
-/* line 44, ../scss/partials/tablet/_grid.scss */
+/* line 58, ../scss/partials/tablet/_grid.scss */
 .sidebar {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 82.71605%;
-  margin-left: 8.64198%;
+  margin-right: 2.07469%;
+  width: 31.95021%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .sidebar:last-child {
   margin-right: 0;
 }
 
-/* line 50, ../scss/partials/tablet/_grid.scss */
+/* line 63, ../scss/partials/tablet/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 22.22222%;
+  margin-right: 2.07469%;
+  width: 14.93776%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .story__sticky:last-child {
   margin-right: 0;
 }
 
-/* line 54, ../scss/partials/tablet/_grid.scss */
+/* line 67, ../scss/partials/tablet/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 65.4321%;
+  margin-right: 2.07469%;
+  width: 48.96266%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .story__main-column:last-child {
   margin-right: 0;
 }
 
-/* line 60, ../scss/partials/tablet/_grid.scss */
+/* line 72, ../scss/partials/tablet/_grid.scss */
+.static__main-column {
+  display: block;
+  float: left;
+  margin-right: 2.07469%;
+  width: 65.9751%;
+}
+/* line 33, ../scss/neat/grid/_span-columns.scss */
+.static__main-column:last-child {
+  margin-right: 0;
+}
+
+/* line 78, ../scss/partials/tablet/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
-  margin-right: 5.66038%;
-  width: 60.37736%;
+  margin-right: 4.23729%;
+  width: 65.25424%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 63, ../scss/partials/tablet/_grid.scss */
+/* line 81, ../scss/partials/tablet/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 68, ../scss/partials/tablet/_grid.scss */
+/* line 86, ../scss/partials/tablet/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
-  margin-right: 5.66038%;
-  width: 33.96226%;
-  margin-left: 66.03774%;
+  margin-right: 4.23729%;
+  width: 30.50847%;
+  margin-left: 69.49153%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .multimedia .credit:last-child {
   margin-right: 0;
 }
 
-/* line 78, ../scss/partials/tablet/_grid.scss */
-.module.module--list.module--horizontal li {
-  display: block;
-  float: left;
-  margin-right: 7.69231%;
-  width: 28.20513%;
-}
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-.module.module--list.module--horizontal li:last-child {
-  margin-right: 0;
-}
-
-/* line 87, ../scss/partials/tablet/_grid.scss */
+/* line 94, ../scss/partials/tablet/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
-  margin-right: 5.66038%;
-  width: 47.16981%;
+  margin-right: 4.23729%;
+  width: 47.88136%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .story__social .btn--bar:last-child {
   margin-right: 0;
 }
 
-/* line 94, ../scss/partials/tablet/_grid.scss */
+/* line 101, ../scss/partials/tablet/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
-  margin-right: 3.7037%;
-  width: 65.4321%;
+  margin-right: 2.07469%;
+  width: 100%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 97, ../scss/partials/tablet/_grid.scss */
+/* line 104, ../scss/partials/tablet/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
-  margin-right: 5.66038%;
-  width: 47.16981%;
+  margin-right: 2.07469%;
+  width: 31.95021%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .read-next .story-list li:last-child {
   margin-right: 0;
 }
 
-/* line 106, ../scss/partials/tablet/_grid.scss */
+/* line 112, ../scss/partials/tablet/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
-  margin-right: 5.66038%;
-  width: 47.16981%;
+  margin-right: 4.23729%;
+  width: 47.88136%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .prev-next li:last-child {
@@ -3167,11 +3195,120 @@ body.is-locked {
 }
 
 /* line 3, ../scss/partials/tablet/_structure.scss */
-.hide_tablet,
-.show_desktop,
-.show_mobile {
+.hide_desktop,
+.show_mobile,
+.show_tablet {
   display: none !important;
   visibility: hidden;
+}
+
+/* line 8, ../scss/partials/tablet/_structure.scss */
+.container {
+  width: 75em;
+}
+
+/* line 16, ../scss/partials/tablet/_structure.scss */
+#page-wrapper {
+  min-width: 98.4rem;
+}
+
+/* line 1, ../scss/partials/tablet/_headings.scss */
+.hd-a {
+  font-size: 6rem;
+}
+
+/* line 5, ../scss/partials/tablet/_headings.scss */
+.hd-b {
+  font-size: 3.4rem;
+}
+
+/* line 9, ../scss/partials/tablet/_headings.scss */
+.hd-c {
+  font-size: 1.4rem;
+}
+
+/* line 13, ../scss/partials/tablet/_headings.scss */
+.hd-d {
+  font-size: 3.4rem;
+}
+
+/* line 17, ../scss/partials/tablet/_headings.scss */
+.hd-e {
+  font-size: 1.8rem;
+}
+
+/* line 21, ../scss/partials/tablet/_headings.scss */
+.hd-f {
+  box-shadow: 4rem 0 0 rgba(0, 0, 0, 0.86), -4rem 0 0 rgba(0, 0, 0, 0.86);
+  font-size: 5.4rem;
+  padding: 1rem;
+}
+
+/* line 27, ../scss/partials/tablet/_headings.scss */
+.hd-g {
+  font-size: 2.4rem;
+}
+
+/* line 31, ../scss/partials/tablet/_headings.scss */
+.hd-h {
+  font-size: 1.8rem;
+}
+
+/* line 35, ../scss/partials/tablet/_headings.scss */
+.hd-i {
+  font-size: 2.5rem;
+}
+
+/* line 39, ../scss/partials/tablet/_headings.scss */
+.hd-j {
+  font-size: 5.4rem;
+}
+
+/* line 43, ../scss/partials/tablet/_headings.scss */
+.hd-k {
+  font-size: 2.4rem;
+}
+
+/* line 47, ../scss/partials/tablet/_headings.scss */
+.hd-l {
+  font-size: 3.4rem;
+  line-height: 1.3;
+}
+
+/* line 52, ../scss/partials/tablet/_headings.scss */
+.hd-m {
+  font-size: 2.2rem;
+  padding: 1rem 1.6rem;
+}
+
+/* line 57, ../scss/partials/tablet/_headings.scss */
+.hd-n {
+  font-size: 3.4rem;
+}
+
+/* line 61, ../scss/partials/tablet/_headings.scss */
+.hd-o {
+  font-size: 1.8rem;
+}
+
+/* line 65, ../scss/partials/tablet/_headings.scss */
+.hd-q {
+  font-size: 5.8rem;
+}
+
+/* line 69, ../scss/partials/tablet/_headings.scss */
+.hd-s {
+  font-size: 1.8rem;
+}
+
+/* line 73, ../scss/partials/tablet/_headings.scss */
+.hd-t {
+  font-size: 1.2rem;
+}
+
+/* line 77, ../scss/partials/tablet/_headings.scss */
+.hd-u {
+  font-size: 2.6rem;
 }
 
 /* line 1, ../scss/partials/tablet/_typography.scss */
@@ -3197,4 +3334,1625 @@ body.is-locked {
   width: 1.6rem;
   margin-right: 0.6rem;
   top: 0.2rem;
+}
+
+/* line 1, ../scss/partials/tablet/_buttons.scss */
+.btn--solid {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/* line 7, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--view-all {
+  font-size: 1.6rem;
+  padding: 1.2rem 3.4rem 1.2rem 1.2rem;
+}
+/* line 11, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--view-all:before {
+  font-size: 2rem;
+  right: 1.2rem;
+}
+/* line 17, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar {
+  font-size: 2.2rem;
+  padding: 1.4rem 0 1rem;
+}
+/* line 22, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
+  width: 47.91%;
+}
+/* line 26, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar:before {
+  font-size: 3.6rem;
+  line-height: 2.5rem;
+  margin-right: 1.6rem;
+}
+/* line 32, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar:after {
+  height: 0.5rem;
+  bottom: -0.5rem;
+}
+/* line 37, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar:hover {
+  top: 0.2rem;
+}
+/* line 40, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar:hover:after {
+  height: 0.3rem;
+  bottom: -0.3rem;
+}
+/* line 46, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar:active {
+  top: 0.5rem;
+  box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+/* line 50, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--bar:active:after {
+  height: 0;
+  bottom: 0;
+}
+/* line 57, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--square {
+  font-size: 1.6rem;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 0.3rem;
+}
+/* line 63, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--square:before {
+  font-size: 5rem;
+  padding-top: 1.6rem;
+}
+/* line 69, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--square:hover:after {
+  height: 0.5rem;
+}
+/* line 75, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--load-more {
+  font-size: 2.2rem;
+  margin-bottom: 10rem;
+}
+/* line 79, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--load-more:before {
+  font-size: 10.5rem;
+  bottom: -10.4rem;
+}
+/* line 84, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--load-more:hover {
+  top: 0.4rem;
+}
+/* line 87, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--load-more:hover:before {
+  bottom: -11rem;
+}
+/* line 93, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--take-action {
+  font-size: 2rem;
+  padding: 1.2rem;
+  top: 2.4rem;
+  margin-bottom: -1rem;
+}
+/* line 99, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--take-action:after {
+  height: 0.5rem;
+  position: absolute;
+  bottom: -0.5rem;
+}
+/* line 105, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--take-action:hover {
+  top: 2.6rem;
+}
+/* line 108, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--take-action:hover:after {
+  height: 0.3rem;
+  bottom: -0.3rem;
+}
+/* line 114, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--take-action:active {
+  top: 2.9rem;
+  box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+/* line 118, ../scss/partials/tablet/_buttons.scss */
+.btn.btn--take-action:active:after {
+  height: 0;
+  bottom: 0;
+}
+
+/* line 1, ../scss/partials/tablet/_forms.scss */
+.form-element {
+  margin-bottom: 1.2rem;
+}
+/* line 4, ../scss/partials/tablet/_forms.scss */
+.form-element label {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  margin-left: 1.2rem;
+}
+/* line 10, ../scss/partials/tablet/_forms.scss */
+.form-element .text-input {
+  font-size: 1.8rem;
+  padding: 1.4rem 1.6rem;
+}
+/* line 14, ../scss/partials/tablet/_forms.scss */
+.form-element .text-input.text-input--thin {
+  font-size: 1.4rem;
+  padding: 1rem 1.2rem;
+}
+/* line 20, ../scss/partials/tablet/_forms.scss */
+.form-element .text-area {
+  font-size: 1.4rem;
+  padding: 1.4rem 1.6rem;
+}
+
+/* line 26, ../scss/partials/tablet/_forms.scss */
+.join-us__email {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-right-width: 0px;
+  position: relative;
+  width: 100%;
+}
+/* line 33, ../scss/partials/tablet/_forms.scss */
+.join-us__email input[type="email"] {
+  border: 0 none;
+  box-shadow: none;
+  outline: none;
+  padding: 1.2rem 0 0 0;
+  line-height: 1.2;
+  width: 64%;
+}
+/* line 42, ../scss/partials/tablet/_forms.scss */
+.join-us__email .btn--subscribe {
+  background-color: #fd6464;
+  color: white;
+  margin: 0;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  float: right;
+}
+/* line 50, ../scss/partials/tablet/_forms.scss */
+.join-us__email .btn--subscribe:hover {
+  background-color: #0098d8;
+}
+/* line 55, ../scss/partials/tablet/_forms.scss */
+.join-us__email:before {
+  color: #eeeeee;
+  display: block;
+  position: absolute;
+}
+
+/* line 1, ../scss/partials/tablet/_nav.scss */
+#page-header {
+  height: 7.2rem;
+}
+
+/* logo and slogan */
+/* line 7, ../scss/partials/tablet/_nav.scss */
+.site-logo img {
+  width: 24.8rem;
+  margin-left: -1.1rem;
+  height: auto;
+}
+/* line 13, ../scss/partials/tablet/_nav.scss */
+.site-logo.site-logo--slogan {
+  margin-top: 1.3rem;
+}
+/* line 16, ../scss/partials/tablet/_nav.scss */
+.site-logo.site-logo--slogan .slogan {
+  margin-left: 2.2rem;
+  margin-top: -1rem;
+  font-size: 1.2rem;
+}
+
+/* more stories toggle */
+/* line 25, ../scss/partials/tablet/_nav.scss */
+.more-stories-toggle {
+  font-size: 4.4rem;
+  padding-top: 2rem;
+}
+
+/* social links */
+/* line 31, ../scss/partials/tablet/_nav.scss */
+.social-links {
+  height: 7.2rem;
+  margin-right: 3.4rem;
+  padding-top: 2.8rem;
+  padding-right: 0.6rem;
+}
+/* line 37, ../scss/partials/tablet/_nav.scss */
+.social-links li {
+  margin-right: 1.8rem;
+}
+
+/* line 42, ../scss/partials/tablet/_nav.scss */
+.social-links__link {
+  font-size: 3.2rem;
+}
+
+/* search */
+/* line 47, ../scss/partials/tablet/_nav.scss */
+.expand-field {
+  overflow: hidden;
+}
+/* line 51, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-search label {
+  width: 2.8rem;
+}
+/* line 54, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-search label:before {
+  font-size: 3.2rem;
+}
+/* line 59, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-search input {
+  width: 2.8rem;
+  padding-left: 3.8rem;
+}
+/* line 63, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-search input.is-open {
+  padding-right: 3.4rem;
+  width: 30rem;
+}
+/* line 70, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-subscribe {
+  position: relative;
+}
+/* line 73, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-subscribe label {
+  color: #003046;
+  width: 3.8rem;
+}
+/* line 77, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-subscribe label:before {
+  color: white;
+  font-size: 3rem;
+}
+/* line 82, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-subscribe label.valid:before {
+  color: #46b525;
+}
+/* line 86, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-subscribe label.error:before {
+  color: #fc3b40;
+}
+/* line 91, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-subscribe input {
+  width: 3.8rem;
+  padding-left: 4.8rem;
+}
+/* line 95, ../scss/partials/tablet/_nav.scss */
+.expand-field#page-subscribe input.is-open {
+  padding-right: 3.4rem;
+  width: 30rem;
+}
+/* line 102, ../scss/partials/tablet/_nav.scss */
+.expand-field label {
+  height: 7.2rem;
+  padding-top: 2.8rem;
+}
+/* line 107, ../scss/partials/tablet/_nav.scss */
+.expand-field input {
+  height: 7.2rem;
+  top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+/* trending topics */
+/* line 116, ../scss/partials/tablet/_nav.scss */
+.trending-topics {
+  background-color: #002130;
+  padding: 0.8rem 0;
+}
+
+/* line 121, ../scss/partials/tablet/_nav.scss */
+.trending-topics__heading {
+  display: inline-block;
+  color: #9aacb5;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0 3.4rem 0 2.2rem;
+}
+
+/* line 129, ../scss/partials/tablet/_nav.scss */
+.trending-topics__topic {
+  font-size: 1.4rem;
+  margin-right: 3.4rem;
+}
+
+/* line 1, ../scss/partials/tablet/_footer.scss */
+#page-footer {
+  height: 13rem;
+  width: 100%;
+}
+/* line 5, ../scss/partials/tablet/_footer.scss */
+#page-footer .container {
+  height: 13rem;
+}
+
+/* line 10, ../scss/partials/tablet/_footer.scss */
+.site-logo--footer {
+  float: left;
+  margin-top: 4.6rem;
+}
+
+/* line 15, ../scss/partials/tablet/_footer.scss */
+.copyright {
+  float: left;
+  font-size: 1.3rem;
+  top: -0.3rem;
+  left: 2.4rem;
+  clear: both;
+}
+
+/* line 23, ../scss/partials/tablet/_footer.scss */
+.footer-links {
+  float: right;
+  margin-top: 6rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 29, ../scss/partials/tablet/_footer.scss */
+.footer-links li {
+  display: inline-block;
+  margin-left: 1.8rem;
+}
+
+/* line 35, ../scss/partials/tablet/_footer.scss */
+.footer-links__link {
+  color: #a7a7a7;
+  font-size: 1.4rem;
+}
+
+/* hero */
+/* line 2, ../scss/partials/tablet/_components.scss */
+.hero {
+  margin-bottom: 5rem;
+  background-color: #061822;
+}
+
+/* rubric */
+/* line 8, ../scss/partials/tablet/_components.scss */
+.rubric {
+  font-size: 1.4rem;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+/* story tease */
+/* line 15, ../scss/partials/tablet/_components.scss */
+.story--tease {
+  padding: 2rem 0;
+  margin-bottom: 3.4rem;
+}
+/* line 19, ../scss/partials/tablet/_components.scss */
+.story--tease .type-indicator {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+/* line 25, ../scss/partials/tablet/_components.scss */
+.story--tease .type-indicator-container {
+  margin-top: 6.8rem;
+}
+/* line 29, ../scss/partials/tablet/_components.scss */
+.story--tease .story__dek {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+/* line 34, ../scss/partials/tablet/_components.scss */
+.story--tease .support-cause {
+  margin-top: 1.8rem;
+}
+/* line 39, ../scss/partials/tablet/_components.scss */
+.story--tease:hover .type-indicator {
+  opacity: 1;
+}
+
+/* line 45, ../scss/partials/tablet/_components.scss */
+.story__hed {
+  margin-bottom: 1rem;
+}
+
+/* support cause */
+/* line 51, ../scss/partials/tablet/_components.scss */
+.support-cause .support-cause__heading {
+  margin-bottom: .75rem;
+}
+/* line 55, ../scss/partials/tablet/_components.scss */
+.support-cause .support-cause__data {
+  font-size: 2.2rem;
+}
+/* line 58, ../scss/partials/tablet/_components.scss */
+.support-cause .support-cause__data .super {
+  font-size: 1.8rem;
+  top: -1rem;
+}
+/* line 64, ../scss/partials/tablet/_components.scss */
+.support-cause .support-cause__label {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 69, ../scss/partials/tablet/_components.scss */
+.support-cause .support-cause__separator {
+  font-size: 4.4rem;
+  line-height: 3.4rem;
+  margin: 0 1rem;
+}
+
+/* sponsor */
+/* line 77, ../scss/partials/tablet/_components.scss */
+.sponsor {
+  font-size: 1.3rem;
+}
+/* line 80, ../scss/partials/tablet/_components.scss */
+.sponsor .sponsor__logo {
+  margin-left: 1.6rem;
+}
+
+/* indicator */
+/* line 87, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--module {
+  width: 7.6rem;
+  height: 7.6rem;
+}
+/* line 91, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--module:before {
+  font-size: 5.8rem;
+  line-height: 1.5;
+}
+/* line 97, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--title {
+  width: 7.6rem;
+  height: 7.6rem;
+  top: 1.4rem;
+}
+/* line 102, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--title:before {
+  font-size: 5rem;
+  line-height: 1.7;
+}
+/* line 107, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--title.indicator--text {
+  width: 9.8rem;
+  height: 9.8rem;
+}
+/* line 111, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--title.indicator--text:before {
+  font-size: 5rem;
+  line-height: 1.5;
+}
+/* line 116, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--title.indicator--text .indicator__heading {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-top: -2.6rem;
+}
+/* line 122, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--title.indicator--text .indicator__subheading {
+  font-size: 1.2rem;
+}
+/* line 128, ../scss/partials/tablet/_components.scss */
+.indicator.indicator--take-action {
+  width: 5.2rem;
+  height: 5.2rem;
+  top: -4rem;
+  font-size: 4rem;
+  margin-bottom: -2rem;
+  line-height: 5.8rem;
+}
+
+/* type indicator */
+/* line 139, ../scss/partials/tablet/_components.scss */
+.type-indicator {
+  width: 7.4rem;
+  height: 7.4rem;
+}
+/* line 143, ../scss/partials/tablet/_components.scss */
+.type-indicator:before {
+  font-size: 5rem;
+}
+
+/* line 148, ../scss/partials/tablet/_components.scss */
+.sidebar > li {
+  list-style: none;
+}
+
+/* module */
+/* line 153, ../scss/partials/tablet/_components.scss */
+.module {
+  display: block;
+  position: relative;
+  width: auto;
+  /* join us module */
+  /* subscribe module */
+}
+/* line 158, ../scss/partials/tablet/_components.scss */
+.module.module--sidebar {
+  width: 32rem;
+  margin-bottom: 7.6rem;
+}
+/* line 163, ../scss/partials/tablet/_components.scss */
+.module.module--bg {
+  padding: 2rem;
+}
+/* line 166, ../scss/partials/tablet/_components.scss */
+.module.module--bg:before {
+  height: 0.7rem;
+}
+/* line 170, ../scss/partials/tablet/_components.scss */
+.module.module--bg header {
+  margin-top: -4.5rem;
+  margin-bottom: 2rem;
+}
+/* line 175, ../scss/partials/tablet/_components.scss */
+.module.module--bg .module__heading {
+  padding: 0.8rem 0.8rem 0.4rem;
+  top: -1rem;
+}
+/* line 180, ../scss/partials/tablet/_components.scss */
+.module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
+  font-size: 1.5rem;
+}
+/* line 184, ../scss/partials/tablet/_components.scss */
+.module.module--bg .module__heading:before {
+  margin-right: 1.2rem;
+}
+/* line 188, ../scss/partials/tablet/_components.scss */
+.module.module--bg .module__heading:after {
+  margin-left: 1.2rem;
+}
+/* line 193, ../scss/partials/tablet/_components.scss */
+.module.module--bg p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+/* line 201, ../scss/partials/tablet/_components.scss */
+.module.module--list:after {
+  height: 0.7rem;
+  bottom: -0.7rem;
+}
+/* line 206, ../scss/partials/tablet/_components.scss */
+.module.module--list .module__heading {
+  padding-bottom: 1.2rem;
+}
+/* line 211, ../scss/partials/tablet/_components.scss */
+.module.module--list .story-list li {
+  padding: 1.8rem 0;
+}
+/* line 214, ../scss/partials/tablet/_components.scss */
+.module.module--list .story-list li:last-child {
+  margin-right: 0;
+}
+/* line 220, ../scss/partials/tablet/_components.scss */
+.module.module--list .story-list.two li {
+  width: 47.5%;
+}
+/* line 226, ../scss/partials/tablet/_components.scss */
+.module.module--list .story-list.three li {
+  width: 30%;
+}
+/* line 232, ../scss/partials/tablet/_components.scss */
+.module.module--list.module--horizontal {
+  margin: 5rem 0;
+}
+/* line 237, ../scss/partials/tablet/_components.scss */
+.module.module--pull {
+  margin-right: -37.6rem;
+  width: 32rem;
+}
+/* line 243, ../scss/partials/tablet/_components.scss */
+.module.module--image-overlay .story {
+  padding: 3.4rem;
+}
+/* line 247, ../scss/partials/tablet/_components.scss */
+.module.module--image-overlay .sponsor {
+  margin-top: 12rem;
+}
+/* line 254, ../scss/partials/tablet/_components.scss */
+.module.join-us .btn--bar {
+  margin-bottom: 2.1rem;
+  width: 100%;
+}
+/* line 262, ../scss/partials/tablet/_components.scss */
+.module.newsletter-subscribe .btn--solid {
+  background-color: #0098d8;
+  float: right;
+}
+/* line 266, ../scss/partials/tablet/_components.scss */
+.module.newsletter-subscribe .btn--solid:hover {
+  background-color: #fc3b40;
+}
+/* line 271, ../scss/partials/tablet/_components.scss */
+.module.newsletter-subscribe input[type="email"] {
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+
+/* pullquote */
+/* line 279, ../scss/partials/tablet/_components.scss */
+.pullquote {
+  margin: 4.2rem 0 5rem;
+  padding-left: 7.8rem;
+}
+/* line 283, ../scss/partials/tablet/_components.scss */
+.pullquote:before {
+  font-size: 4.2rem;
+  line-height: 1.46;
+  width: 5.6rem;
+  height: 5.6rem;
+  position: absolute;
+  top: -1.2rem;
+  left: 0;
+}
+/* line 293, ../scss/partials/tablet/_components.scss */
+.pullquote .pullquote__quote {
+  margin-bottom: 2rem;
+}
+/* line 297, ../scss/partials/tablet/_components.scss */
+.pullquote .pullquote__attribution {
+  font-size: 1.8rem;
+}
+
+/* tags */
+/* line 303, ../scss/partials/tablet/_components.scss */
+.tag-tag {
+  font-size: 1.4rem;
+  padding: 0.6rem 0.8rem;
+}
+
+/* author */
+/* line 309, ../scss/partials/tablet/_components.scss */
+.author-box {
+  margin-bottom: 7.2rem;
+  padding: 2.6rem 3.4rem;
+}
+
+/* line 314, ../scss/partials/tablet/_components.scss */
+.author__a {
+  float: left;
+}
+
+/* line 318, ../scss/partials/tablet/_components.scss */
+.author__b {
+  overflow: hidden;
+  padding-top: 0.6rem;
+  padding-left: 3.4rem;
+}
+
+/* line 324, ../scss/partials/tablet/_components.scss */
+.author__portrait {
+  margin-bottom: 1.2rem;
+  width: 13.4rem;
+  height: 13.4rem;
+}
+
+/* line 330, ../scss/partials/tablet/_components.scss */
+.author__url {
+  font-size: 1.4rem;
+}
+/* line 333, ../scss/partials/tablet/_components.scss */
+.author__url:hover {
+  color: #fc3b40;
+}
+
+/* line 340, ../scss/partials/tablet/_components.scss */
+.social li:first-child {
+  border-left: 0;
+}
+/* line 345, ../scss/partials/tablet/_components.scss */
+.social.author__social {
+  margin-top: 1.2rem;
+}
+/* line 348, ../scss/partials/tablet/_components.scss */
+.social.author__social .icon {
+  font-size: 2.6rem;
+  height: 3rem;
+  width: 3rem;
+}
+/* line 355, ../scss/partials/tablet/_components.scss */
+.social.take-action__social {
+  margin-top: 1.2rem;
+}
+/* line 358, ../scss/partials/tablet/_components.scss */
+.social.take-action__social .icon {
+  font-size: 4rem;
+  height: 5.4rem;
+  width: 5.4rem;
+}
+
+/* line 366, ../scss/partials/tablet/_components.scss */
+.author__byline {
+  margin-bottom: 1.4rem;
+}
+/* line 367, ../scss/partials/tablet/_components.scss */
+.author__byline:before {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+/* line 375, ../scss/partials/tablet/_components.scss */
+.author__bio {
+  color: #7e7e7e;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* prev/next */
+/* line 382, ../scss/partials/tablet/_components.scss */
+.prev-next {
+  padding-top: 2rem;
+  margin-bottom: 7.2rem;
+}
+/* line 386, ../scss/partials/tablet/_components.scss */
+.prev-next .prev-next__link {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+/* line 390, ../scss/partials/tablet/_components.scss */
+.prev-next .prev-next__link .icon {
+  font-size: 2.6rem;
+  line-height: 0.74;
+}
+/* line 396, ../scss/partials/tablet/_components.scss */
+.prev-next .prev-next__link.prev-next__link--prev .icon {
+  margin-right: 0.6rem;
+}
+/* line 402, ../scss/partials/tablet/_components.scss */
+.prev-next .prev-next__link.prev-next__link--next .icon {
+  margin-left: 0.6rem;
+}
+
+/* read next */
+/* line 410, ../scss/partials/tablet/_components.scss */
+.read-next {
+  padding-bottom: 2.2rem;
+}
+/* line 413, ../scss/partials/tablet/_components.scss */
+.read-next .read-next__heading {
+  padding-bottom: 1.2rem;
+}
+/* line 418, ../scss/partials/tablet/_components.scss */
+.read-next li:first-child {
+  padding-right: 1rem;
+}
+/* line 422, ../scss/partials/tablet/_components.scss */
+.read-next li:last-child {
+  padding-left: 1rem;
+}
+/* line 427, ../scss/partials/tablet/_components.scss */
+.read-next .story--tease {
+  margin-bottom: 3.4rem;
+}
+/* line 430, ../scss/partials/tablet/_components.scss */
+.read-next .story--tease .story__feature {
+  margin-bottom: -1.4rem;
+}
+
+/* line 436, ../scss/partials/tablet/_components.scss */
+#flyout {
+  background-color: white;
+  position: fixed;
+  bottom: 15rem;
+  right: -40rem;
+  width: 40rem;
+  z-index: 5;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transition: right 0.6s ease-in-out;
+  -moz-transition: right 0.6s ease-in-out;
+  transition: right 0.6s ease-in-out;
+}
+/* line 448, ../scss/partials/tablet/_components.scss */
+#flyout header {
+  background-color: #003046;
+  padding: 1.2rem 1.6rem 0.6rem;
+  position: relative;
+}
+/* line 454, ../scss/partials/tablet/_components.scss */
+#flyout .flyout__heading {
+  font-family: "Oswald", Arial, sans-serif;
+  line-height: 1;
+  vertical-align: middle;
+}
+/* line 459, ../scss/partials/tablet/_components.scss */
+#flyout .flyout__heading:before {
+  color: #fc3b40;
+  display: inline-block;
+  font-family: 'icons';
+  margin-right: 1.6rem;
+  font-size: 2.6rem;
+  vertical-align: middle;
+}
+/* line 469, ../scss/partials/tablet/_components.scss */
+#flyout .btn--close {
+  background-color: transparent;
+  border: none;
+  color: white;
+  float: right;
+  font-size: 2rem;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+/* line 481, ../scss/partials/tablet/_components.scss */
+#flyout .btn--close:hover {
+  color: #0098d8;
+}
+/* line 486, ../scss/partials/tablet/_components.scss */
+#flyout .flyout__content {
+  border-left: 1px solid #ccd6da;
+  border-bottom: 1px solid #ccd6da;
+  padding: 1.6rem;
+}
+/* line 491, ../scss/partials/tablet/_components.scss */
+#flyout .flyout__content p {
+  color: #002130;
+  font-family: "Gudea", Arial, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+/* line 498, ../scss/partials/tablet/_components.scss */
+#flyout .flyout__content .fb-like {
+  margin-bottom: 0.6rem;
+}
+/* line 503, ../scss/partials/tablet/_components.scss */
+#flyout.is-visible {
+  right: 0;
+}
+
+/* subscribe status */
+/* line 509, ../scss/partials/tablet/_components.scss */
+.mc-email-status {
+  font-size: 1.4rem;
+  line-height: 1;
+  display: block;
+  clear: both;
+}
+
+/* line 1, ../scss/partials/tablet/_carousels.scss */
+.carousel--full-width {
+  background-color: #355a6b;
+}
+/* line 4, ../scss/partials/tablet/_carousels.scss */
+.carousel--full-width .carousel__control {
+  top: 20rem;
+}
+/* line 7, ../scss/partials/tablet/_carousels.scss */
+.carousel--full-width .carousel__control.carousel__control--prev {
+  left: 6rem;
+}
+/* line 11, ../scss/partials/tablet/_carousels.scss */
+.carousel--full-width .carousel__control.carousel__control--next {
+  right: 6rem;
+}
+/* line 15, ../scss/partials/tablet/_carousels.scss */
+.carousel--full-width .carousel__control .icon {
+  font-size: 10rem;
+}
+
+/* line 22, ../scss/partials/tablet/_carousels.scss */
+.carousel--inline .carousel__control {
+  top: 12.4rem;
+}
+/* line 25, ../scss/partials/tablet/_carousels.scss */
+.carousel--inline .carousel__control.carousel__control--prev {
+  left: 3rem;
+}
+/* line 29, ../scss/partials/tablet/_carousels.scss */
+.carousel--inline .carousel__control.carousel__control--next {
+  right: 3rem;
+}
+/* line 33, ../scss/partials/tablet/_carousels.scss */
+.carousel--inline .carousel__control .icon {
+  font-size: 6rem;
+}
+/* line 38, ../scss/partials/tablet/_carousels.scss */
+.carousel--inline .carousel-item {
+  width: 58.8rem;
+  height: 30.2rem;
+}
+
+/* line 45, ../scss/partials/tablet/_carousels.scss */
+.carousel-item .v-align__inner {
+  padding-bottom: 1rem;
+}
+/* line 50, ../scss/partials/tablet/_carousels.scss */
+.carousel-item.active .v-align__inner {
+  padding-bottom: 3.4rem;
+}
+
+/* line 56, ../scss/partials/tablet/_carousels.scss */
+.carousel-item__title {
+  margin-bottom: 3.4rem;
+}
+
+/* line 61, ../scss/partials/tablet/_carousels.scss */
+.carousel--series .carousel-item {
+  height: 46rem;
+}
+/* line 64, ../scss/partials/tablet/_carousels.scss */
+.carousel--series .carousel-item .link-wrapper {
+  height: 100%;
+}
+/* line 70, ../scss/partials/tablet/_carousels.scss */
+.carousel--series .carousel--series__image {
+  float: left;
+  width: 33.3334%;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 79, ../scss/partials/tablet/_carousels.scss */
+.carousel--peek .carousel-item {
+  box-shadow: -2px 0 0 white;
+  width: 94rem;
+  height: 54rem;
+}
+/* line 85, ../scss/partials/tablet/_carousels.scss */
+.carousel--peek .carousel--peek__image {
+  width: 94rem;
+  height: 54rem;
+}
+/* line 90, ../scss/partials/tablet/_carousels.scss */
+.carousel--peek .carousel__control {
+  top: 24rem;
+}
+
+/* line 1, ../scss/partials/tablet/_modal.scss */
+.modal {
+  max-width: 77.2rem;
+  top: 56%;
+}
+
+/* line 6, ../scss/partials/tablet/_modal.scss */
+.join-us__email {
+  font-size: 2.4rem;
+  line-height: 5.4rem;
+  height: 5.4rem;
+  padding-left: 6.6rem;
+}
+/* line 12, ../scss/partials/tablet/_modal.scss */
+.join-us__email input[type="email"] {
+  border-radius: 0;
+  font-size: 2.4rem;
+}
+/* line 17, ../scss/partials/tablet/_modal.scss */
+.join-us__email .btn--subscribe {
+  font-size: 2.4rem;
+  line-height: 5.4rem;
+  padding: 0 2.8rem;
+  height: 5.4rem;
+  position: relative;
+  top: -1px;
+}
+/* line 26, ../scss/partials/tablet/_modal.scss */
+.join-us__email:before {
+  font-size: 3rem;
+  left: 2.2rem;
+  top: 0.4rem;
+}
+
+/* line 33, ../scss/partials/tablet/_modal.scss */
+.modal__heading {
+  margin-bottom: 3.4rem;
+}
+
+/* line 37, ../scss/partials/tablet/_modal.scss */
+.modal__close {
+  font-size: 3rem;
+  top: -3rem;
+  right: -4rem;
+}
+
+/* line 43, ../scss/partials/tablet/_modal.scss */
+.modal--take-action {
+  width: 58.8rem;
+}
+
+/* line 48, ../scss/partials/tablet/_modal.scss */
+.modal--join-us {
+  width: 77.2rem;
+}
+/* line 51, ../scss/partials/tablet/_modal.scss */
+.modal--join-us .module {
+  padding: 2rem 7.6rem 4rem;
+}
+/* line 55, ../scss/partials/tablet/_modal.scss */
+.modal--join-us .modal--join-us__social {
+  margin-bottom: 2.8rem;
+}
+/* line 58, ../scss/partials/tablet/_modal.scss */
+.modal--join-us .modal--join-us__social .btn--bar {
+  display: inline-block;
+  margin-right: 3.3334%;
+}
+/* line 62, ../scss/partials/tablet/_modal.scss */
+.modal--join-us .modal--join-us__social .btn--bar:last-child {
+  margin-right: 0;
+}
+/* line 68, ../scss/partials/tablet/_modal.scss */
+.modal--join-us .modal--join-us__opt-out {
+  bottom: -3.4rem;
+  font-size: 1.8rem;
+}
+
+/* hero */
+/* line 2, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage {
+  height: 56rem;
+}
+/* line 7, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--1 {
+  height: 56rem;
+  width: 60%;
+  box-shadow: inset -2px 0 0 white;
+}
+/* line 12, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--1:before {
+  margin-right: 2px;
+}
+/* line 16, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--1 .type-indicator {
+  position: absolute;
+  top: 4.4rem;
+  right: 4.4rem;
+}
+/* line 22, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--1 .story__hed {
+  margin-bottom: 3.4rem;
+}
+/* line 26, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--1 .credit {
+  position: absolute;
+  right: 4.4rem;
+  bottom: 1.8rem;
+}
+/* line 32, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--1 .support-cause--hero {
+  margin-bottom: 3.2rem;
+}
+/* line 38, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2 {
+  box-shadow: inset 0 -2px 0 white;
+}
+/* line 41, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:before {
+  margin-bottom: 2px;
+}
+/* line 48, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2, .hero--homepage.hero--grid .hero__entry.hero__entry--3 {
+  height: 28rem;
+  width: 40%;
+}
+/* line 52, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2 .story__hed, .hero--homepage.hero--grid .hero__entry.hero__entry--3 .story__hed {
+  margin-bottom: 1.8rem;
+  max-width: 50rem;
+}
+/* line 58, ../scss/partials/tablet/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry .story--hero {
+  padding: 2.4rem 4.4rem;
+}
+
+/* line 68, ../scss/partials/tablet/_homepage.scss */
+.support-cause--hero .support-cause__separator {
+  font-size: 3.8rem;
+  line-height: 2.5rem;
+}
+
+/* river */
+/* line 78, ../scss/partials/tablet/_homepage.scss */
+.river--one-col .story-teases .story--tease .sponsor {
+  padding: 0.8rem 1.6rem;
+  left: -1rem;
+  bottom: 4.6rem;
+}
+/* line 85, ../scss/partials/tablet/_homepage.scss */
+.river--one-col .story-teases .story__feature {
+  float: left;
+  width: 37.4rem;
+  margin-right: 3.8rem;
+}
+/* line 93, ../scss/partials/tablet/_homepage.scss */
+.river--one-col .story-teases .story__hed {
+  margin-bottom: 1.2rem;
+}
+
+/* line 99, ../scss/partials/tablet/_homepage.scss */
+.home .carousel {
+  margin-top: 2.8rem;
+  margin-bottom: 5rem;
+}
+
+/* line 1, ../scss/partials/tablet/_story.scss */
+.hero--story {
+  max-height: 42.6rem;
+}
+/* line 4, ../scss/partials/tablet/_story.scss */
+.hero--story.hero--image {
+  height: 42.6rem;
+}
+/* line 9, ../scss/partials/tablet/_story.scss */
+.hero--story.hero--carousel .carousel {
+  background-color: #061822;
+  height: 42.6rem;
+}
+/* line 14, ../scss/partials/tablet/_story.scss */
+.hero--story.hero--carousel .carousel__control {
+  top: 16.6rem;
+}
+/* line 18, ../scss/partials/tablet/_story.scss */
+.hero--story.hero--carousel .carousel-item {
+  height: 42.6rem;
+  width: 82rem;
+  min-width: 82rem;
+}
+/* line 24, ../scss/partials/tablet/_story.scss */
+.hero--story.hero--carousel .carousel--peek__image {
+  height: 42.6rem;
+  width: 82rem;
+}
+/* line 30, ../scss/partials/tablet/_story.scss */
+.hero--story .hero--video__container {
+  width: 72.6rem;
+  height: 42.5rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 39, ../scss/partials/tablet/_story.scss */
+.hero-information .hero-information__toggle {
+  padding: 0.8rem 6rem;
+  font-size: 4rem;
+}
+/* line 44, ../scss/partials/tablet/_story.scss */
+.hero-information .hero-information__outer {
+  padding: 2.2rem;
+}
+/* line 48, ../scss/partials/tablet/_story.scss */
+.hero-information .hero-information__caption {
+  font-size: 1.8rem;
+}
+/* line 52, ../scss/partials/tablet/_story.scss */
+.hero-information .hero-information__credit {
+  font-size: 1.4rem;
+}
+
+/* line 57, ../scss/partials/tablet/_story.scss */
+.story__container {
+  margin-top: 5rem;
+}
+/* line 62, ../scss/partials/tablet/_story.scss */
+.story__container .story--page > header .story__hed {
+  margin-bottom: 3.4rem;
+}
+/* line 66, ../scss/partials/tablet/_story.scss */
+.story__container .story--page > header .story__dek {
+  margin-bottom: 4.6rem;
+}
+/* line 72, ../scss/partials/tablet/_story.scss */
+.story__container .story__meta {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+/* line 76, ../scss/partials/tablet/_story.scss */
+.story__container .story__meta li {
+  font-size: 1.4rem;
+}
+/* line 80, ../scss/partials/tablet/_story.scss */
+.story__container .story__meta li:first-child:after {
+  margin-left: 0.4rem;
+}
+/* line 87, ../scss/partials/tablet/_story.scss */
+.story__container .story__main-column {
+  overflow: hidden;
+}
+/* line 91, ../scss/partials/tablet/_story.scss */
+.story__container .story__content {
+  margin-bottom: 7.2rem;
+}
+/* line 94, ../scss/partials/tablet/_story.scss */
+.story__container .story__content p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2.2rem;
+  /* drop cap */
+}
+/* line 100, ../scss/partials/tablet/_story.scss */
+.story__container .story__content p:first-child:first-letter {
+  font-size: 7.8rem;
+  margin-right: 2.6rem;
+}
+/* line 105, ../scss/partials/tablet/_story.scss */
+.story__container .story__content p a {
+  color: #0098d8;
+  font-weight: 700;
+}
+/* line 109, ../scss/partials/tablet/_story.scss */
+.story__container .story__content p a:hover {
+  color: #fc3b40;
+}
+/* line 115, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > h1 {
+  margin-bottom: 3.4rem;
+  font-size: 5.4rem;
+  padding-bottom: 1.2rem;
+}
+/* line 121, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > h2 {
+  font-size: 4rem;
+  margin-bottom: 2.8rem;
+}
+/* line 126, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+}
+/* line 131, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > h4 {
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+}
+/* line 136, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > h5 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+/* line 141, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > h6 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+/* line 146, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > ol {
+  margin: 4rem 0;
+  padding-left: 7.6rem;
+}
+/* line 150, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > ol li {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+/* line 154, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > ol li:before {
+  font-size: 1.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  margin-right: 1.4rem;
+  left: -4.2rem;
+}
+/* line 165, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > ul {
+  margin: 4rem 0;
+  padding-left: 7.6rem;
+}
+/* line 169, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > ul li {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+/* line 173, ../scss/partials/tablet/_story.scss */
+.story__container .story__content > ul li:before {
+  left: -3.4rem;
+}
+
+/* multimedia */
+/* line 182, ../scss/partials/tablet/_story.scss */
+.multimedia {
+  margin: 5rem 0;
+}
+/* line 185, ../scss/partials/tablet/_story.scss */
+.multimedia .multimedia__content {
+  margin-top: 2.2rem;
+}
+/* line 189, ../scss/partials/tablet/_story.scss */
+.multimedia figcaption {
+  margin-top: 1rem;
+}
+/* line 194, ../scss/partials/tablet/_story.scss */
+.multimedia.multimedia--audio .multimedia__content {
+  padding-bottom: 2.2rem;
+}
+
+/* sticky */
+/* line 201, ../scss/partials/tablet/_story.scss */
+.story__sticky-container {
+  margin-bottom: 75px;
+  width: 16rem;
+  padding-bottom: 2.2rem;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  /*.bottomed {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+  }*/
+}
+/* line 215, ../scss/partials/tablet/_story.scss */
+.story__sticky-container.stuck {
+  top: 150px;
+}
+
+/* line 220, ../scss/partials/tablet/_story.scss */
+.sticky-social {
+  position: relative;
+  margin-bottom: 5rem;
+  left: 0;
+  -webkit-transition: left 0.15s ease-in-out;
+  -moz-transition: left 0.15s ease-in-out;
+  transition: left 0.15s ease-in-out;
+}
+/* line 227, ../scss/partials/tablet/_story.scss */
+.sticky-social.is-hidden {
+  left: 20rem;
+}
+
+/* line 232, ../scss/partials/tablet/_story.scss */
+.sticky-take-action {
+  padding: 1.6rem;
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.15s ease-in-out;
+  -moz-transition: left 0.15s ease-in-out;
+  transition: left 0.15s ease-in-out;
+}
+/* line 239, ../scss/partials/tablet/_story.scss */
+.sticky-take-action.is-hidden {
+  left: 20rem;
+}
+
+/* line 244, ../scss/partials/tablet/_story.scss */
+.sticky-take-action__heading {
+  margin-bottom: 0.8rem;
+}
+
+/* line 248, ../scss/partials/tablet/_story.scss */
+.sticky-take-action__action {
+  font-size: 1.6rem;
+}
+
+/* tags */
+/* line 253, ../scss/partials/tablet/_story.scss */
+.story__tags {
+  margin-bottom: 5rem;
+  padding-bottom: 1.4rem;
+}
+/* line 258, ../scss/partials/tablet/_story.scss */
+.story__tags .tags-list:before {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-right: 1.8rem;
+}
+/* line 264, ../scss/partials/tablet/_story.scss */
+.story__tags .tags-list li {
+  margin: 0 1rem 1rem 0;
+}
+
+/* line 271, ../scss/partials/tablet/_story.scss */
+.story__social {
+  margin-bottom: 7.2rem;
+}
+
+/* line 276, ../scss/partials/tablet/_story.scss */
+.module.take-action {
+  margin-bottom: 5rem;
+  padding-bottom: 3.4rem;
+}
+/* line 280, ../scss/partials/tablet/_story.scss */
+.module.take-action .take-action__heading {
+  margin-bottom: 3.4rem;
+}
+/* line 284, ../scss/partials/tablet/_story.scss */
+.module.take-action .take-action__a {
+  float: left;
+  width: 25.6rem;
+}
+/* line 289, ../scss/partials/tablet/_story.scss */
+.module.take-action .take-action__b {
+  overflow: hidden;
+  padding-left: 3.4rem;
+}
+/* line 295, ../scss/partials/tablet/_story.scss */
+.module.take-action .take-action__action .btn {
+  margin-top: 1.8rem;
+}
+/* line 300, ../scss/partials/tablet/_story.scss */
+.module.take-action p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin: 1.8rem 0;
+}
+/* line 306, ../scss/partials/tablet/_story.scss */
+.module.take-action small {
+  font-size: 1.4rem;
+  margin-top: 2.2rem;
+}
+
+/* line 314, ../scss/partials/tablet/_story.scss */
+.story__container .story__social,
+.story__container .story__take-action {
+  clear: both;
+  position: relative;
+  left: -110%;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+/* line 321, ../scss/partials/tablet/_story.scss */
+.story__container .story__social.is-visible,
+.story__container .story__take-action.is-visible {
+  left: 0;
+  height: auto;
+}
+
+/* line 330, ../scss/partials/tablet/_story.scss */
+.fb-comments {
+  margin-bottom: 7.2rem;
+}
+
+/* line 1, ../scss/partials/tablet/_static.scss */
+.static__container {
+  padding-top: 5rem;
+}
+/* line 5, ../scss/partials/tablet/_static.scss */
+.static__container header .static__hed {
+  margin-bottom: 2.2rem;
+}
+/* line 9, ../scss/partials/tablet/_static.scss */
+.static__container header .static__last-updated {
+  font-size: 2.4rem;
+  margin-bottom: 4.2rem;
+}
+/* line 15, ../scss/partials/tablet/_static.scss */
+.static__container .static__content {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 7.2rem;
+}
+/* line 20, ../scss/partials/tablet/_static.scss */
+.static__container .static__content p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2.2rem;
+}
+/* line 26, ../scss/partials/tablet/_static.scss */
+.static__container .static__content a {
+  color: #0098d8;
+  font-weight: 700;
+}
+/* line 30, ../scss/partials/tablet/_static.scss */
+.static__container .static__content a:hover {
+  color: #fc3b40;
+}
+/* line 35, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > h1 {
+  margin-bottom: 3.4rem;
+  font-size: 5.4rem;
+  padding-bottom: 1.2rem;
+}
+/* line 41, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > h2 {
+  font-size: 4rem;
+  margin-bottom: 2.8rem;
+}
+/* line 46, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+}
+/* line 51, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > h4 {
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+}
+/* line 56, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > h5 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+/* line 61, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > h6 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+/* line 66, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > ol {
+  margin: 4rem 0;
+  padding-left: 7.6rem;
+}
+/* line 70, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > ol li {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+/* line 74, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > ol li:before {
+  font-size: 1.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  margin-right: 1.4rem;
+  left: -4.2rem;
+}
+/* line 85, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > ul {
+  margin: 4rem 0;
+  padding-left: 7.6rem;
+}
+/* line 89, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > ul li {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+/* line 93, ../scss/partials/tablet/_static.scss */
+.static__container .static__content > ul li:before {
+  left: -3.4rem;
+}
+
+/* line 1, ../scss/partials/tablet/_archive.scss */
+.hero--archive {
+  min-height: 28.5rem;
+}
+/* line 4, ../scss/partials/tablet/_archive.scss */
+.hero--archive .sponsor {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+/* line 11, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--series .container {
+  padding: 2rem 12rem;
+}
+/* line 16, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--category {
+  text-align: center;
+}
+/* line 19, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--category .hero--category__title {
+  margin-top: 8rem;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 24, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--category .hero--category__count {
+  font-size: 1.8rem;
+  margin-top: 2.4rem;
+}
+/* line 30, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--author {
+  background-color: transparent;
+}
+/* line 33, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--author .container {
+  padding: 4rem 12rem;
+}
+/* line 37, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--author .author__b {
+  padding-left: 6rem;
+}
+/* line 41, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--author .author__count {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+/* line 46, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--author .author__name {
+  margin-bottom: 2.2rem;
+}
+/* line 50, ../scss/partials/tablet/_archive.scss */
+.hero--archive.hero--author .author__bio {
+  color: #2d2d2d;
+  font-family: "Gudea", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.46;
+}
+
+/* line 61, ../scss/partials/tablet/_archive.scss */
+.river-two-col .story__feature {
+  margin-bottom: -1.4rem;
 }
