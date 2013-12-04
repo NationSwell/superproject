@@ -15,38 +15,22 @@
         <div class="take-action__thank-you take-action__tab is-hidden" style="display: none;">
             <h2 class="hd-l take-action__heading">{{ take_action_thanks_header }}</h2>
 
-            {#{% if nationswell_facebook or nationswell_twitter or nationswell_tumblr or nationswell_instagram or nationswell_google %}#}
-
             <p>{{ take_action_thanks_text }}</p>
 
             <ul class="social take-action__social">
-                {% if nationswell_facebook is not empty %}
-                    <li><a href="{{ nationswell_facebook }}" class="btn btn--social icon icon_facebook"></a></li>
-                {% endif %}
-                {% if nationswell_twitter is not empty %}
-                    <li><a href="{{ nationswell_twitter }}" class="btn btn--social icon icon_twitter"></a></li>
-                {% endif %}
-                {% if nationswell_tumblr is not empty %}
-                    <li><a href="{{ nationswell_tumblr }}" class="btn btn--social icon icon_tumblr"></a></li>
-                {% endif %}
-                {% if nationswell_instagram is not empty %}
-                    <li><a href="{{ nationswell_instagram }}" class="btn btn--social icon icon_instagram"></a></li>
-                {% endif %}
-                {#{% if nationswell_google is not empty %}#}
-                    <li>
-                        <span class="btn btn--social icon icon_google-plus g-interactivepost"
-                              data-clientid="289125837827.apps.googleusercontent.com"
-                              data-contenturl="http://local.wordpress.dev/new-focus-offers-hope-vets-hearing-loss/"
-                              data-prefilltext="Create your Google+ Page too!'"
-                              data-calltoactionlabel="INVITE"
-                              data-calltoactionurl="https://developers.google.com/+/web/share/interactive?invite=true"
-                              data-cookiepolicy="single_host_origin"
-                              data-prefilltext="Come learn about interactive posts with me!">
-                        </span>
-                    </li>
-                {#{% endif %}#}
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ post.permalink|url_encode(true) }}&title={{ post.title|url_encode(true) }}&caption={{ post.call_to_action.social_share_text|url_encode(true) }}" class="btn btn--social btn--share icon icon_facebook"></a></li>
+                <li><a href="https://twitter.com/share?url={{ post.short_url|url_encode(true) }}&text={{ post.call_to_action.social_share_text|url_encode(true) }}&via=nationswell" class="btn btn--social btn--share icon icon_twitter"></a></li>
+                <li><a href="http://www.tumblr.com/share/link?url={{ post.permalink|url_encode(true) }}&name={{ post.title|url_encode(true) }}&description={{ post.call_to_action.social_share_text|url_encode(true) }}" title="Share on Tumblr" class="btn btn--social btn--share icon icon_tumblr"></a></li>
+                <li>
+                    <span class="btn btn--social icon icon_google-plus g-interactivepost"
+                          data-clientid="289125837827.apps.googleusercontent.com"
+                          data-contenturl="{{ post.permalink }}"
+                          data-prefilltext="{{ post.call_to_action.social_share_text }}"
+                          data-calltoactionurl="{{ post.permalink }}"
+                          data-cookiepolicy="single_host_origin"
+                    </span>
+                </li>
             </ul>
-            {#{% endif %}#}
 
             {% if nationswell_mailchimp_daily %}
             <p>{{ take_action_thanks_subscribe_text }}</p>

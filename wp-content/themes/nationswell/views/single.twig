@@ -2,7 +2,6 @@
 
 {% block content %}
     {% include 'hero.twig' %}
-
     <div class="story__container">
         <div class="container">
             <div class="story__sticky hide_mobile">
@@ -43,9 +42,9 @@
                     {#</ul>#}
                 {#</div>#}
 
-                {% if post.author is not empty %}
-                {% include 'author-box.twig' %}
-                {% endif %}
+                {% for author in post.authors %}
+                    {% include 'author-box.twig' %}
+                {% endfor %}
 
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
