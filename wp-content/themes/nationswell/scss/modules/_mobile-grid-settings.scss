@@ -3,10 +3,10 @@
 @import "../neat/neat-helpers";
 
 // Grid settings
-$column: 80px;
-$gutter: 24px;
+$column: 8rem;
+$gutter: 2.4rem;
 $grid-columns: 6;
-$max-width: em(624);
+$max-width: 98.3rem;
 
 // Neat
 @import "../neat/neat";
