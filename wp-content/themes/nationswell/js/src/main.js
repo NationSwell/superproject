@@ -485,8 +485,6 @@
                 $modal = $container.closest('.modal'),
                 $tweet = $container.find('#tweet-message');
 
-            console.log('container is '+ $container +', modal is '+ $modal.length +', tweet is ' + $tweet);
-
             lookupReps($(this).find('[name=ta-address]').val(), function(reps) {
                 var $politicians = $container.find('#tweet-a-politician');
                 $politicians.empty();
@@ -496,7 +494,6 @@
             });
 
             if($modal.length) {
-                alert('fart');
                 fitTakeAction($modal);
             }
 
