@@ -44,25 +44,27 @@
         <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--single">
             <ul class="carousel__items">
                 {% for  item in post.story_header %}
+                <li class="carousel-item"
+                    {% if item.caption|length > 0 %}data-item-caption="{{ item.caption|e('html_attr') }}"{% endif %}
+                    {% if item.credit|length > 0 %}data-item-credit="{{ item.credit|e('html_attr') }}"{% endif %}>
+
                     {% if item.type == 'image' %}
-                        <li class="carousel-item">
-                            <div class="carousel-item__content">
-                                <div class="carousel--peek__image" style="background-image: url({{ item.url|resize(1300, 600) }});"></div>
-                            </div>
-                        </li>
+                        <div class="carousel-item__content">
+                            <div class="carousel--peek__image" style="background-image: url({{ item.url|resize(1300, 600) }});"></div>
+                        </div>
                     {% endif %}
 
                     {% if item.type == 'video' %}
-                        <li class="carousel-item">
-                            <div class="carousel-item__content">
-                                <div class="video-container hero--video__container">
-                                    <iframe class="ytplayer" type="text/html" src="{{ item.video_url }}" frameborder="0"></iframe>
-                                </div>
+                        <div class="carousel-item__content">
+                            <div class="video-container hero--video__container">
+                                <iframe class="ytplayer" type="text/html" src="{{ item.video_url }}" frameborder="0"></iframe>
                             </div>
+                        </div>
 
-                            <div class="carousel-item__overlay"></div>
-                        </li>
+                        <div class="carousel-item__overlay"></div>
                     {% endif %}
+
+                </li>
                 {% endfor %}
             </ul>
 
@@ -77,13 +79,13 @@
             </ul>
         </div>
 
-        <div class="hero-information">
+        <div class="hero-information" style="display: none;">
             <span class="icon icon_information hero-information__toggle z1"></span>
             <div class="hero-information__outer">
                 <div class="container">
                     <div class="hero-information__content">
-                        <p class="hero-information__caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <span class="hero-information__credit">Bill Smith / NationSwell</span>
+                        <p class="hero-information__caption"></p>
+                        <span class="hero-information__credit"></span>
                     </div>
                 </div>
             </div>

@@ -177,9 +177,7 @@
                         $externalCaption = $externalContainer.find('.carousel-item__title'),
                         $externalIndicator = $externalContainer.find('.indicator');
 
-                    $this.imagesLoaded( function() {
-//                        alert('bloop');
-                    });
+                    $this.imagesLoaded( function() {});
 
                     // wrap homepage hero grid in caroufredsel container
                     if (!$carousel.length) {
@@ -189,7 +187,8 @@
 
                     var isPeek = $this.hasClass('mobile-carousel--peek'),
                         isFullPeek = isPeek && $carousel.children().length > 3,
-                        isSingle = $this.hasClass('mobile-carousel--single');
+                        isSingle = $this.hasClass('mobile-carousel--single'),
+                        isStory = $this.closest('.hero--story').length;
 
                     if (isSingle) {
                         $this.append('<div class="carousel__pagination z3" />');
@@ -235,6 +234,25 @@
                             items.addClass('active');
                         }
 
+                        if (isStory) {
+                            $activeSlide = items.filter(":eq(0)");
+
+                            var $informationContainer = $('.hero-information'),
+                                $slideCredit = $informationContainer.find('.hero-information__caption'),
+                                $slideCaption = $informationContainer.find('.hero-information__credit'),
+                                activeSlideCredit = $activeSlide.data('item-caption'),
+                                activeSlideCaption = $activeSlide.data('item-credit');
+
+                            if(!activeSlideCredit && !activeSlideCaption) {
+                                $informationContainer.fadeOut(300);
+                            } else {
+                                $informationContainer.fadeIn(300);
+
+                                activeSlideCaption ? $slideCaption.html(activeSlideCaption): $.noop();
+                                activeSlideCredit ? $slideCredit.html(activeSlideCredit): $.noop();
+                            }
+                        }
+
                         return items;
                     }
 
@@ -258,7 +276,7 @@
                             }
                         },
                         auto: {
-                            play: false,
+                            play: isSingle && !isStory ? true : false,
                             timeoutDuration: 6000
                         },
                         swipe: {
@@ -294,7 +312,8 @@
                             $carousel = $this.find(".carousel__items");
 
                         var isPeek = $this.hasClass('carousel--peek') && $carousel.children().length > 3,
-                            isSeries = $this.hasClass('carousel--series');
+                            isSeries = $this.hasClass('carousel--series'),
+                            isStory = $this.closest('.hero--story').length;
 
                         $this.imagesLoaded( function() {
                             $this.find('img').addClass('is-visible');
@@ -302,7 +321,24 @@
 
                         function highlight(items) {
                             if (isPeek) {
-                                items.filter(":eq(1)").addClass('active');
+                                var $activeSlide = items.filter(":eq(1)").addClass('active');
+
+                                if(isStory) {
+                                    var $informationContainer = $('.hero-information'),
+                                        $slideCredit = $informationContainer.find('.hero-information__caption'),
+                                        $slideCaption = $informationContainer.find('.hero-information__credit'),
+                                        activeSlideCredit = $activeSlide.data('item-caption'),
+                                        activeSlideCaption = $activeSlide.data('item-credit');
+
+                                    if(!activeSlideCredit && !activeSlideCaption) {
+                                        $informationContainer.fadeOut(300);
+                                    } else {
+                                        $informationContainer.fadeIn(300);
+
+                                        activeSlideCaption ? $slideCaption.html(activeSlideCaption): $.noop();
+                                        activeSlideCredit ? $slideCredit.html(activeSlideCredit): $.noop();
+                                    }
+                                }
                             } else {
                                 items.addClass('active');
                             }
@@ -344,6 +380,9 @@
                             next: {
                                 button: $this.find('.carousel__control--next'),
                                 key: "right"
+                            },
+                            swipe: {
+                                onTouch: true
                             }
                         });
                     });
