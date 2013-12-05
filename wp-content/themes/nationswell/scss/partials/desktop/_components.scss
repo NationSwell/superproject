@@ -308,8 +308,16 @@
 
 /* author */
 .author-box {
-  margin-bottom: 7.2rem;
+  margin-bottom: 3.0rem;
   padding: 2.6rem 3.4rem;
+}
+
+.author-box:nth-of-type(even) {
+
+  .author__a {
+    float: right;
+  }
+
 }
 
 .author__a {

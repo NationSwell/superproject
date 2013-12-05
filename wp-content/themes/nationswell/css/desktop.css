@@ -4080,74 +4080,79 @@ body.is-locked {
 /* author */
 /* line 310, ../scss/partials/desktop/_components.scss */
 .author-box {
-  margin-bottom: 7.2rem;
+  margin-bottom: 3.0rem;
   padding: 2.6rem 3.4rem;
 }
 
-/* line 315, ../scss/partials/desktop/_components.scss */
+/* line 317, ../scss/partials/desktop/_components.scss */
+.author-box:nth-of-type(even) .author__a {
+  float: right;
+}
+
+/* line 323, ../scss/partials/desktop/_components.scss */
 .author__a {
   float: left;
 }
 
-/* line 319, ../scss/partials/desktop/_components.scss */
+/* line 327, ../scss/partials/desktop/_components.scss */
 .author__b {
   overflow: hidden;
   padding-top: 0.6rem;
   padding-left: 3.4rem;
 }
 
-/* line 325, ../scss/partials/desktop/_components.scss */
+/* line 333, ../scss/partials/desktop/_components.scss */
 .author__portrait {
   margin-bottom: 1.2rem;
   width: 13.4rem;
   height: 13.4rem;
 }
 
-/* line 331, ../scss/partials/desktop/_components.scss */
+/* line 339, ../scss/partials/desktop/_components.scss */
 .author__url {
   font-size: 1.4rem;
 }
-/* line 334, ../scss/partials/desktop/_components.scss */
+/* line 342, ../scss/partials/desktop/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 341, ../scss/partials/desktop/_components.scss */
+/* line 349, ../scss/partials/desktop/_components.scss */
 .social li:first-child {
   border-left: 0;
 }
-/* line 346, ../scss/partials/desktop/_components.scss */
+/* line 354, ../scss/partials/desktop/_components.scss */
 .social.author__social {
   margin-top: 1.2rem;
 }
-/* line 349, ../scss/partials/desktop/_components.scss */
+/* line 357, ../scss/partials/desktop/_components.scss */
 .social.author__social .icon {
   font-size: 2.6rem;
   height: 3rem;
   width: 3rem;
 }
-/* line 356, ../scss/partials/desktop/_components.scss */
+/* line 364, ../scss/partials/desktop/_components.scss */
 .social.take-action__social {
   margin-top: 1.2rem;
 }
-/* line 359, ../scss/partials/desktop/_components.scss */
+/* line 367, ../scss/partials/desktop/_components.scss */
 .social.take-action__social .icon {
   font-size: 4rem;
   height: 5.4rem;
   width: 5.4rem;
 }
 
-/* line 367, ../scss/partials/desktop/_components.scss */
+/* line 375, ../scss/partials/desktop/_components.scss */
 .author__byline {
   margin-bottom: 1.4rem;
 }
-/* line 368, ../scss/partials/desktop/_components.scss */
+/* line 376, ../scss/partials/desktop/_components.scss */
 .author__byline:before {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
 }
 
-/* line 376, ../scss/partials/desktop/_components.scss */
+/* line 384, ../scss/partials/desktop/_components.scss */
 .author__bio {
   color: #7e7e7e;
   font-size: 1.5rem;
@@ -4155,57 +4160,57 @@ body.is-locked {
 }
 
 /* prev/next */
-/* line 383, ../scss/partials/desktop/_components.scss */
+/* line 391, ../scss/partials/desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 387, ../scss/partials/desktop/_components.scss */
+/* line 395, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 391, ../scss/partials/desktop/_components.scss */
+/* line 399, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 397, ../scss/partials/desktop/_components.scss */
+/* line 405, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 403, ../scss/partials/desktop/_components.scss */
+/* line 411, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 411, ../scss/partials/desktop/_components.scss */
+/* line 419, ../scss/partials/desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 414, ../scss/partials/desktop/_components.scss */
+/* line 422, ../scss/partials/desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 419, ../scss/partials/desktop/_components.scss */
+/* line 427, ../scss/partials/desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 423, ../scss/partials/desktop/_components.scss */
+/* line 431, ../scss/partials/desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 428, ../scss/partials/desktop/_components.scss */
+/* line 436, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 431, ../scss/partials/desktop/_components.scss */
+/* line 439, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
 
-/* line 437, ../scss/partials/desktop/_components.scss */
+/* line 445, ../scss/partials/desktop/_components.scss */
 #flyout {
   background-color: white;
   position: fixed;
@@ -4218,19 +4223,19 @@ body.is-locked {
   -moz-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
 }
-/* line 449, ../scss/partials/desktop/_components.scss */
+/* line 457, ../scss/partials/desktop/_components.scss */
 #flyout header {
   background-color: #003046;
   padding: 1.2rem 1.6rem 0.6rem;
   position: relative;
 }
-/* line 455, ../scss/partials/desktop/_components.scss */
+/* line 463, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 460, ../scss/partials/desktop/_components.scss */
+/* line 468, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading:before {
   color: #fc3b40;
   display: inline-block;
@@ -4239,7 +4244,7 @@ body.is-locked {
   font-size: 2.6rem;
   vertical-align: middle;
 }
-/* line 470, ../scss/partials/desktop/_components.scss */
+/* line 478, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close {
   background-color: transparent;
   border: none;
@@ -4253,34 +4258,34 @@ body.is-locked {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 482, ../scss/partials/desktop/_components.scss */
+/* line 490, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close:hover {
   color: #0098d8;
 }
-/* line 487, ../scss/partials/desktop/_components.scss */
+/* line 495, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content {
   border-left: 1px solid #ccd6da;
   border-bottom: 1px solid #ccd6da;
   padding: 1.6rem;
 }
-/* line 492, ../scss/partials/desktop/_components.scss */
+/* line 500, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content p {
   color: #002130;
   font-family: "Gudea", Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
-/* line 499, ../scss/partials/desktop/_components.scss */
+/* line 507, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content .fb-like {
   margin-bottom: 0.6rem;
 }
-/* line 504, ../scss/partials/desktop/_components.scss */
+/* line 512, ../scss/partials/desktop/_components.scss */
 #flyout.is-visible {
   right: 0;
 }
 
 /* subscribe status */
-/* line 510, ../scss/partials/desktop/_components.scss */
+/* line 518, ../scss/partials/desktop/_components.scss */
 .mc-email-status {
   font-size: 1.4rem;
   line-height: 1;
@@ -4906,19 +4911,20 @@ body.is-locked {
   clear: both;
   position: relative;
   left: -110%;
+  margin-top: 7.2rem;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: left 0.3s ease-in-out;
   -moz-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
 }
-/* line 379, ../scss/partials/desktop/_story.scss */
+/* line 380, ../scss/partials/desktop/_story.scss */
 .story__container .story__social.is-visible,
 .story__container .story__take-action.is-visible {
   left: 0;
   height: auto;
 }
 
-/* line 388, ../scss/partials/desktop/_story.scss */
+/* line 389, ../scss/partials/desktop/_story.scss */
 .take-action__social_back {
   background: none;
   border: none;
@@ -4928,7 +4934,7 @@ body.is-locked {
   top: 4.6rem;
 }
 
-/* line 397, ../scss/partials/desktop/_story.scss */
+/* line 398, ../scss/partials/desktop/_story.scss */
 .fb-comments {
   margin-bottom: 7.2rem;
 }
