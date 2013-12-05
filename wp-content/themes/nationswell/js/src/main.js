@@ -82,7 +82,7 @@
                 }
 
                 $modal.addClass('is-visible');
-                $body.addClass('is-locked');
+                /*$body.addClass('is-locked');*/
             }
 
             e.preventDefault();
@@ -99,8 +99,10 @@
         // closing modals
         var $modalClose = $(".modal-overlay, [data-modal-action='close']");
         $modalClose.on('click', function () {
-            var $modal = $('.modal').removeClass('is-visible');
-            $body.removeClass('is-locked');
+            var $modal = $('.modal.is-visible');
+
+            $modal.removeClass('is-visible');
+            /*$body.removeClass('is-locked');*/
 
             if ($modal.hasClass('modal--take-action')) {
                 $modal.find('.take-action__inner').css('height', '');
