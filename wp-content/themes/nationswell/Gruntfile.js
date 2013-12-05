@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                 'js/src/vendor/waypoints.min.js',
                 'js/src/vendor/waypoints-sticky.min.js',
                 'js/src/vendor/audiojs/audio.min.js',
+                'js/src/vendor/imagesloaded.pkgd.js',
                 'js/src/main.js'
             ]
         }
