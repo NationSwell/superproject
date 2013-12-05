@@ -135,7 +135,7 @@ if (class_exists('TimberPost')) {
             $twitter_share_text = !empty($this->twitter_share) ? $this->twitter_share : $this->title();
 
             return 'https://twitter.com/share?url='
-            . urlencode($this->short_url()) . '&text=' . urlencode($twitter_share_text) . '&via=nationswell';
+            . urlencode($this->short_url()) . '&text=' . $twitter_share_text . '&via=nationswell';
         }
 
         function google_share_url()
