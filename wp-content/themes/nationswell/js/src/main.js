@@ -175,6 +175,10 @@
                         $externalCaption = $externalContainer.find('.carousel-item__title'),
                         $externalIndicator = $externalContainer.find('.indicator');
 
+                    $this.imagesLoaded( function() {
+                        alert('bloop');
+                    });
+
                     // wrap homepage hero grid in caroufredsel container
                     if (!$carousel.length) {
                         $this.wrapInner('<ul class="carousel__items" />');
@@ -289,6 +293,10 @@
 
                         var isPeek = $this.hasClass('carousel--peek') && $carousel.children().length > 3,
                             isSeries = $this.hasClass('carousel--series');
+
+                        $this.imagesLoaded( function() {
+                            $this.find('img').addClass('is-visible');
+                        });
 
                         function highlight(items) {
                             if (isPeek) {
