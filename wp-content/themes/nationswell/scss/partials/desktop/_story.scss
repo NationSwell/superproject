@@ -222,10 +222,11 @@
   margin-bottom: 5rem;
   left: 0;
 
-  @include transition(left 0.15s ease-in-out);
+  @include transition(all 0.15s ease-in-out);
 
   &.is-hidden {
     left: 20rem;
+    @include  transform(scale(.5));
   }
 }
 
@@ -234,10 +235,11 @@
   position: relative;
   left: 0;
 
-  @include transition(left 0.15s ease-in-out);
+  @include transition(all 0.15s ease-in-out);
 
   &.is-hidden {
     left: 20rem;
+    @include transform(scale(.5));
   }
 }
 

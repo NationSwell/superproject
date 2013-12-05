@@ -4775,97 +4775,107 @@ body.is-locked {
   position: relative;
   margin-bottom: 5rem;
   left: 0;
-  -webkit-transition: left 0.15s ease-in-out;
-  -moz-transition: left 0.15s ease-in-out;
-  transition: left 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 /* line 227, ../scss/partials/desktop/_story.scss */
 .sticky-social.is-hidden {
   left: 20rem;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
-/* line 232, ../scss/partials/desktop/_story.scss */
+/* line 233, ../scss/partials/desktop/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
   position: relative;
   left: 0;
-  -webkit-transition: left 0.15s ease-in-out;
-  -moz-transition: left 0.15s ease-in-out;
-  transition: left 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
-/* line 239, ../scss/partials/desktop/_story.scss */
+/* line 240, ../scss/partials/desktop/_story.scss */
 .sticky-take-action.is-hidden {
   left: 20rem;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
-/* line 244, ../scss/partials/desktop/_story.scss */
+/* line 246, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 248, ../scss/partials/desktop/_story.scss */
+/* line 250, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 253, ../scss/partials/desktop/_story.scss */
+/* line 255, ../scss/partials/desktop/_story.scss */
 .story__tags {
   margin-bottom: 5rem;
   padding-bottom: 1.4rem;
 }
-/* line 258, ../scss/partials/desktop/_story.scss */
+/* line 260, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list:before {
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 1.8rem;
 }
-/* line 264, ../scss/partials/desktop/_story.scss */
+/* line 266, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list li {
   margin: 0 1rem 1rem 0;
 }
 
-/* line 271, ../scss/partials/desktop/_story.scss */
+/* line 273, ../scss/partials/desktop/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
 
-/* line 276, ../scss/partials/desktop/_story.scss */
+/* line 278, ../scss/partials/desktop/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 3.4rem;
   /* tweet politician take action */
 }
-/* line 280, ../scss/partials/desktop/_story.scss */
+/* line 282, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 3.4rem;
 }
-/* line 284, ../scss/partials/desktop/_story.scss */
+/* line 286, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__a {
   float: left;
   width: 25.6rem;
 }
-/* line 289, ../scss/partials/desktop/_story.scss */
+/* line 291, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__b {
   overflow: hidden;
   padding-left: 3.4rem;
 }
-/* line 295, ../scss/partials/desktop/_story.scss */
+/* line 297, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__action .btn {
   margin-top: 1.8rem;
 }
-/* line 300, ../scss/partials/desktop/_story.scss */
+/* line 302, ../scss/partials/desktop/_story.scss */
 .module.take-action p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin: 1.8rem 0;
 }
-/* line 306, ../scss/partials/desktop/_story.scss */
+/* line 308, ../scss/partials/desktop/_story.scss */
 .module.take-action small {
   font-size: 1.4rem;
   margin-top: 2.2rem;
 }
-/* line 312, ../scss/partials/desktop/_story.scss */
+/* line 314, ../scss/partials/desktop/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -4879,7 +4889,7 @@ body.is-locked {
   display: block;
   width: 100%;
 }
-/* line 325, ../scss/partials/desktop/_story.scss */
+/* line 327, ../scss/partials/desktop/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -4887,37 +4897,37 @@ body.is-locked {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 340, ../scss/partials/desktop/_story.scss */
+/* line 342, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 344, ../scss/partials/desktop/_story.scss */
+/* line 346, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 349, ../scss/partials/desktop/_story.scss */
+/* line 351, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__photo {
   width: 12rem;
   height: 12rem;
   margin-right: 4rem;
   float: left;
 }
-/* line 356, ../scss/partials/desktop/_story.scss */
+/* line 358, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__information {
   overflow: hidden;
   max-width: 32rem;
 }
-/* line 361, ../scss/partials/desktop/_story.scss */
+/* line 363, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__name {
   margin-top: 0.6rem;
 }
-/* line 365, ../scss/partials/desktop/_story.scss */
+/* line 367, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__office {
   font-size: 1.6rem;
 }
 
-/* line 372, ../scss/partials/desktop/_story.scss */
+/* line 374, ../scss/partials/desktop/_story.scss */
 .story__container .story__social,
 .story__container .story__take-action {
   clear: both;
@@ -4929,14 +4939,14 @@ body.is-locked {
   -moz-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
 }
-/* line 380, ../scss/partials/desktop/_story.scss */
+/* line 382, ../scss/partials/desktop/_story.scss */
 .story__container .story__social.is-visible,
 .story__container .story__take-action.is-visible {
   left: 0;
   height: auto;
 }
 
-/* line 389, ../scss/partials/desktop/_story.scss */
+/* line 391, ../scss/partials/desktop/_story.scss */
 .take-action__social_back {
   background: none;
   border: none;
@@ -4946,7 +4956,7 @@ body.is-locked {
   top: 4.6rem;
 }
 
-/* line 398, ../scss/partials/desktop/_story.scss */
+/* line 400, ../scss/partials/desktop/_story.scss */
 .fb-comments {
   margin-bottom: 7.2rem;
 }
