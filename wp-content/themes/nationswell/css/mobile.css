@@ -2311,40 +2311,52 @@ body.is-locked {
   opacity: 0.6;
 }
 /* line 39, ../scss/partials/base/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry:after {
+  content: '';
+  background-image: url("../img/hero-gradient.png");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 51, ../scss/partials/base/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry .story--hero {
   position: absolute;
   bottom: 0;
 }
 
-/* line 47, ../scss/partials/base/_homepage.scss */
+/* line 59, ../scss/partials/base/_homepage.scss */
 .support-cause--hero {
   display: inline-block;
 }
-/* line 50, ../scss/partials/base/_homepage.scss */
+/* line 62, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__heading {
   color: white;
 }
-/* line 54, ../scss/partials/base/_homepage.scss */
+/* line 66, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__data {
   color: white;
 }
-/* line 58, ../scss/partials/base/_homepage.scss */
+/* line 70, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__label {
   color: white;
 }
-/* line 62, ../scss/partials/base/_homepage.scss */
+/* line 74, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__separator {
   color: white;
   margin: 0;
 }
 
 /* river */
-/* line 72, ../scss/partials/base/_homepage.scss */
+/* line 84, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease:hover {
   background-color: #f6f6f6;
   box-shadow: 2rem 0 0 #f6f6f6, -2rem 0 0 #f6f6f6;
 }
-/* line 77, ../scss/partials/base/_homepage.scss */
+/* line 89, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease .sponsor {
   background-color: #0098d8;
   color: #ddedf8;
@@ -2352,15 +2364,15 @@ body.is-locked {
   text-align: left;
   display: inline-block;
 }
-/* line 86, ../scss/partials/base/_homepage.scss */
+/* line 98, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature {
   position: relative;
 }
-/* line 89, ../scss/partials/base/_homepage.scss */
+/* line 101, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature img {
   display: block;
 }
-/* line 95, ../scss/partials/base/_homepage.scss */
+/* line 107, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__header {
   overflow: hidden;
 }
