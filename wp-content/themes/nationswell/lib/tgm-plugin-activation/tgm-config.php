@@ -32,7 +32,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '0.15.5',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -42,7 +42,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '4.3.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -52,7 +52,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.1.0',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -62,7 +62,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.1.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -72,7 +72,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.2.0',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -82,7 +82,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '2.1.0',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -92,7 +92,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.0.5',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -102,7 +102,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -112,7 +112,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '0.2',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -122,7 +122,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '0.6.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -132,7 +132,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '0.4.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -142,7 +142,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '4.3.3',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -152,7 +152,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.4.19',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -162,7 +162,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.1.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -172,7 +172,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.2.5',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -182,7 +182,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.4.9',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -192,7 +192,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.0.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -202,7 +202,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.0.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -212,7 +212,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.1.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -222,7 +222,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '0.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -232,7 +232,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '1.2.1',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -242,7 +242,7 @@ function my_theme_register_required_plugins()
             'required' => true,
             'version' => '2.9',
             'force_activation' => true,
-            'force_deactivation' => true,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
     );
