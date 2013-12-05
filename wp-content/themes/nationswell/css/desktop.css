@@ -3457,7 +3457,7 @@ input[type="submit"] {
 }
 /* line 22, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
-  width: 47.91%;
+  width: 48.6%;
 }
 /* line 26, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:before {
@@ -5143,6 +5143,10 @@ input[type="submit"] {
 }
 
 /* line 61, ../scss/partials/desktop/_archive.scss */
-.river-two-col .story__feature {
+.river--two-col .story__feature {
   margin-bottom: -1.4rem;
+}
+/* line 66, ../scss/partials/desktop/_archive.scss */
+.river--two-col .story--tease .type-indicator-container {
+  margin-top: 9.4rem;
 }

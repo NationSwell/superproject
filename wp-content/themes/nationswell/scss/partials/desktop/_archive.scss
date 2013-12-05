@@ -57,8 +57,14 @@
   }
 }
 
-.river-two-col {
+.river--two-col {
   .story__feature {
     margin-bottom: -1.4rem;
+  }
+
+  .story--tease {
+    .type-indicator-container {
+      margin-top: 9.4rem;
+    }
   }
 }
