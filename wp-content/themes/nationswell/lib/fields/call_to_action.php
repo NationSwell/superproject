@@ -80,6 +80,11 @@ if (function_exists("register_field_group")) {
                                 'operator' => '==',
                                 'value' => 'donation',
                             ),
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'tweet',
+                            ),
                         ),
                         'allorany' => 'any',
                     ),

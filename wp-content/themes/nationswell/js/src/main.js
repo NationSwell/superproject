@@ -267,7 +267,7 @@
             }
 
             // desktop code
-        }).register("screen and (min-device-width:768px)", {
+        }).register("screen and (min-device-width: 768px)", {
                 // If supplied, triggered when a media query matches.
                 match: function () {
                     // toggle more stories panel

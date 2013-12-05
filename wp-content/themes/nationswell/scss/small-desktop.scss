@@ -1,0 +1,25 @@
+@import "modules/tablet-grid-settings";
+
+// Base
+@import "partials/main";
+
+// small-desktop-specific partials
+@import "partials/small-desktop/grid";
+@import "partials/small-desktop/structure";
+@import "partials/small-desktop/ads";
+@import "partials/small-desktop/headings";
+@import "partials/small-desktop/typography";
+@import "partials/small-desktop/buttons";
+@import "partials/small-desktop/forms";
+@import "partials/small-desktop/nav";
+@import "partials/small-desktop/more-stories";
+@import "partials/small-desktop/footer";
+@import "partials/small-desktop/components";
+@import "partials/small-desktop/carousels";
+@import "partials/small-desktop/modal";
+
+// small-desktop page partials
+@import "partials/small-desktop/homepage";
+@import "partials/small-desktop/story";
+@import "partials/small-desktop/static";
+@import "partials/small-desktop/archive";

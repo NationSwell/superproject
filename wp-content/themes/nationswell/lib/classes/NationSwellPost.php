@@ -124,8 +124,9 @@ if (class_exists('TimberPost')) {
 
             $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->title();
 
-            return 'https://www.facebook.com/sharer/sharer.php?u='
-            . urlencode($this->short_url()) . '&title=' . urlencode($this->title()) . '&caption=' . urlencode($facebook_share_text);
+            return 'http://www.facebook.com/sharer.php?s= 100&amp;p[url]='
+            . urlencode($this->short_url()) . '&amp;p[title]=' . urlencode($this->title()) . '&amp;p[summary]=' . urlencode($facebook_share_text);
+
         }
 
         function twitter_share_url()
