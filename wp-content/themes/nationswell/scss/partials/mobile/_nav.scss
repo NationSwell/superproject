@@ -7,6 +7,10 @@
 
 /* logo and slogan */
 .site-logo {
+  img {
+    width: 30rem;
+  }
+
   &.site-logo--slogan {
     margin-top: 4.6rem;
 
