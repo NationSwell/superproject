@@ -200,7 +200,7 @@
 /* sticky */
 .story__sticky-container {
   margin-bottom: 75px;
-  width: 16rem;
+  width: 14.6rem;
   padding-bottom: 2.2rem;
   overflow: hidden;
 
@@ -306,6 +306,64 @@
   small {
     font-size: 1.4rem;
     margin-top: 2.2rem;
+  }
+
+  /* tweet politician take action */
+  .tweet-politician__message {
+    text-align: center;
+    font-family: $gudea;
+    font-style: italic;
+    font-size: 2.2rem;
+    border: 1px solid #dedede;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    color: #444;
+    margin-bottom: 2.2rem;
+    display: block;
+    width: 100%;
+
+    &:before {
+      color: #2fb8ed;
+      font-family: 'icons';
+      line-height: 0;
+      vertical-align: middle;
+      margin-right: 1.2rem;
+    }
+  }
+
+  .tweet-politician__lookup {
+  }
+
+  .tweet-politician__politicians {
+  }
+
+  .politician {
+    clear: both;
+    margin: 0 3rem 4.4rem;
+
+    &:first-child {
+      margin-top: 3.4rem;
+    }
+  }
+
+  .politician__photo {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 4rem;
+    float: left;
+  }
+
+  .politician__information {
+    overflow: hidden;
+    max-width: 22rem;
+  }
+
+  .politician__name {
+    margin-top: 0.6rem;
+  }
+
+  .politician__office {
+    font-size: 1.6rem;
   }
 }
 
