@@ -176,7 +176,7 @@
                         $externalIndicator = $externalContainer.find('.indicator');
 
                     $this.imagesLoaded( function() {
-                        alert('bloop');
+//                        alert('bloop');
                     });
 
                     // wrap homepage hero grid in caroufredsel container
