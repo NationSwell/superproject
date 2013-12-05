@@ -197,6 +197,24 @@ function prefix_remove_wp_seo_meta_box() {
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
 
+// For 4.3.0 <= PHP <= 5.4.0
+if (!function_exists('http_response_code'))
+{
+    function http_response_code($new_code = NULL)
+    {
+        static $code = 200;
+        if($new_code !== NULL)
+        {
+            header('X-PHP-Response-Code: '. $new_code, true, $new_code);
+            if(!headers_sent())
+            {
+                $code = $new_code;
+            }
+        }
+        return $code;
+    }
+}
+
 
 // Change.org
 global $change_org_api;
