@@ -43,6 +43,7 @@ function add_to_context($data)
     // Global Site Options
     $options = array(
         'google_api_key',
+        'google_client_id',
         'modal_joinus_enabled',
         'flyout_social_enabled',
         'nationswell_mailchimp_daily',

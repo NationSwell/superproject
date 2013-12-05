@@ -23,7 +23,7 @@
                 <li><a href="http://www.tumblr.com/share/link?url={{ post.permalink|url_encode(true) }}&name={{ post.title|url_encode(true) }}&description={{ post.call_to_action.social_share_text|url_encode(true) }}" title="Share on Tumblr" class="btn btn--social btn--share icon icon_tumblr"></a></li>
                 <li>
                     <span class="btn btn--social icon icon_google-plus g-interactivepost"
-                          data-clientid="289125837827.apps.googleusercontent.com"
+                          data-clientid="{{ google_client_id }}"
                           data-contenturl="{{ post.permalink }}"
                           data-prefilltext="{{ post.call_to_action.social_share_text }}"
                           data-calltoactionurl="{{ post.permalink }}"
