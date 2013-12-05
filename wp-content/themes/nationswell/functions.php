@@ -201,75 +201,82 @@ add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 // Change.org
 global $change_org_api;
 
-$change_org_api_key = get_field('change_api_key', 'option');
-$change_org_secret = get_field('change_secret', 'option');
-$email = get_field('change_email', 'option');
+function init_change_org_api() {
+    global $change_org_api;
 
-if(!empty($change_org_api_key) && !empty($change_org_secret) && !empty($email)) {
-    $source = 'nationswell.com';
-    $description = get_field('change_description', 'option');
+    $change_org_api_key = get_field('change_api_key', 'option');
+    $change_org_secret = get_field('change_secret', 'option');
+    $email = get_field('change_email', 'option');
 
-    $change_org_api= new ChangeOrgApi($change_org_api_key, $change_org_secret, $email, $source, $description);
+    if(!empty($change_org_api_key) && !empty($change_org_secret) && !empty($email)) {
+        $source = 'nationswell.com';
+        $description = get_field('change_description', 'option');
 
-    $frequency = get_field('change_frequency', 'option');
-    if(!empty($frequency) || $frequency > 0) {
-        $change_org_api->set_frequency($frequency);
-    }
-}
+        $change_org_api = new ChangeOrgApi($change_org_api_key, $change_org_secret, $email, $source, $description);
 
-if(isset($change_org_api)) {
-
-    function is_petition($cta_id) {
-        return get_post_meta($cta_id, 'type', true) === 'petition';
-    }
-
-    function save_petition_data($cta_id) {
-        global $change_org_api;
-
-        if ($_POST['post_type'] === 'ns_call_to_action' && is_petition($cta_id)) {
-            $petition = new ChangeOrgPetition($cta_id);
-            $change_org_api->fetch($petition);
+        $frequency = get_field('change_frequency', 'option');
+        if(!empty($frequency) || $frequency > 0) {
+            $change_org_api->set_frequency($frequency);
         }
     }
 
-    add_action( 'acf/save_post', 'save_petition_data', 20);
+    if(isset($change_org_api)) {
+        function is_petition($cta_id) {
+            return get_post_meta($cta_id, 'type', true) === 'petition';
+        }
 
-    function copy_from_post($keys) {
-        $result = array();
-        foreach($keys as $key) {
-            if(isset($_POST[$key])) {
-                $result[$key] = $_REQUEST[$key];
+        function save_petition_data($cta_id) {
+            global $change_org_api;
+
+
+
+            if ($_POST['post_type'] === 'ns_call_to_action' && is_petition($cta_id)) {
+                $petition = new ChangeOrgPetition($cta_id);
+                $change_org_api->fetch($petition);
             }
         }
-        return $result;
-    }
 
-    function handle_sign_petition() {
-        global $change_org_api;
+        add_action( 'acf/save_post', 'save_petition_data', 20);
 
-        $cta_id = (int)$_REQUEST['cta_id'];
-
-        if(is_petition($cta_id)) {
-            $petition = new ChangeOrgPetition($cta_id);
-
-            $signer = copy_from_post(array('email','first_name', 'last_name', 'city', 'postal_code', 'country_code', 'reason'));
-
-            $response = $change_org_api->sign($petition, $signer);
-
-            http_response_code($response['response_code']);
-            unset($response['response_code']);
-
-            wp_send_json($response);
+        function copy_from_post($keys) {
+            $result = array();
+            foreach($keys as $key) {
+                if(isset($_POST[$key])) {
+                    $result[$key] = $_REQUEST[$key];
+                }
+            }
+            return $result;
         }
-        else {
-            http_response_code(404);
-        }
-        die();
-    }
 
-    add_action('wp_ajax_sign_petition', 'handle_sign_petition');
-    add_action('wp_ajax_nopriv_sign_petition', 'handle_sign_petition');
+        function handle_sign_petition() {
+            global $change_org_api;
+
+            $cta_id = (int)$_REQUEST['cta_id'];
+
+            if(is_petition($cta_id)) {
+                $petition = new ChangeOrgPetition($cta_id);
+
+                $signer = copy_from_post(array('email','first_name', 'last_name', 'city', 'postal_code', 'country_code', 'reason'));
+
+                $response = $change_org_api->sign($petition, $signer);
+
+                http_response_code($response['response_code']);
+                unset($response['response_code']);
+
+                wp_send_json($response);
+            }
+            else {
+                http_response_code(404);
+            }
+            die();
+        }
+
+        add_action('wp_ajax_sign_petition', 'handle_sign_petition');
+        add_action('wp_ajax_nopriv_sign_petition', 'handle_sign_petition');
+    }
 }
+
+add_action('init', 'init_change_org_api');
 
 // Automatically Create the Inital Pages for the Site and set the Homepage to be the Front Page
 if (isset($_GET['activated']) && is_admin()){
