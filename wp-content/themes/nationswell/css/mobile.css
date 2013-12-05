@@ -476,60 +476,65 @@ body {
 
 /* line 1, ../scss/partials/base/_typography.scss */
 a {
+  outline: 0;
   text-decoration: none;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 6, ../scss/partials/base/_typography.scss */
+/* line 7, ../scss/partials/base/_typography.scss */
 a:hover {
   color: #0098d8;
 }
+/* line 13, ../scss/partials/base/_typography.scss */
+a:hover, a:active, a:focus {
+  outline: 0;
+}
 
-/* line 12, ../scss/partials/base/_typography.scss */
+/* line 19, ../scss/partials/base/_typography.scss */
 small a {
   text-decoration: underline;
   color: inherit;
 }
 
-/* line 18, ../scss/partials/base/_typography.scss */
+/* line 25, ../scss/partials/base/_typography.scss */
 .caption {
   color: #333333;
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 24, ../scss/partials/base/_typography.scss */
+/* line 31, ../scss/partials/base/_typography.scss */
 .credit,
 .byline {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 29, ../scss/partials/base/_typography.scss */
+/* line 36, ../scss/partials/base/_typography.scss */
 .source {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   font-weight: 400;
 }
-/* line 34, ../scss/partials/base/_typography.scss */
+/* line 41, ../scss/partials/base/_typography.scss */
 .source:before {
   content: '';
   display: inline-block;
   position: relative;
 }
-/* line 40, ../scss/partials/base/_typography.scss */
+/* line 47, ../scss/partials/base/_typography.scss */
 .source.source--nyt:before {
   content: url(../img/src_nyt.jpg);
 }
-/* line 44, ../scss/partials/base/_typography.scss */
+/* line 51, ../scss/partials/base/_typography.scss */
 .source.source--npr:before {
   content: url(../img/src_npr.jpg);
 }
-/* line 48, ../scss/partials/base/_typography.scss */
+/* line 55, ../scss/partials/base/_typography.scss */
 .source.source--time:before {
   content: url(../img/src_time.jpg);
 }
-/* line 52, ../scss/partials/base/_typography.scss */
+/* line 59, ../scss/partials/base/_typography.scss */
 .source.source--mashable:before {
   content: url(../img/src_mashable.jpg);
 }
@@ -819,14 +824,14 @@ small a {
   text-align: center;
 }
 
-/* line 9, ../scss/partials/base/_buttons.scss */
+/* line 8, ../scss/partials/base/_buttons.scss */
 .btn {
   border-radius: 0;
   text-rendering: optimizeLegibility;
   outline: 0;
   -webkit-font-smoothing: antialiased;
 }
-/* line 15, ../scss/partials/base/_buttons.scss */
+/* line 14, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid {
   background-color: #fc3b40;
   color: white;
@@ -836,11 +841,11 @@ small a {
   line-height: 1.34;
   -webkit-font-smoothing: antialiased;
 }
-/* line 25, ../scss/partials/base/_buttons.scss */
+/* line 24, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid:hover {
   background-color: #0098d8;
 }
-/* line 30, ../scss/partials/base/_buttons.scss */
+/* line 29, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all {
   background-color: #061822;
   color: #0098d8;
@@ -849,17 +854,17 @@ small a {
   font-weight: 700;
   position: relative;
 }
-/* line 38, ../scss/partials/base/_buttons.scss */
+/* line 37, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:before {
   font-family: 'icons';
   position: absolute;
 }
-/* line 43, ../scss/partials/base/_buttons.scss */
+/* line 42, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:hover {
   background-color: #0098d8;
   color: white;
 }
-/* line 49, ../scss/partials/base/_buttons.scss */
+/* line 48, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar {
   color: white;
   display: block;
@@ -870,12 +875,12 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 58, ../scss/partials/base/_buttons.scss */
+/* line 57, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:before {
   font-family: 'icons';
   vertical-align: text-bottom;
 }
-/* line 63, ../scss/partials/base/_buttons.scss */
+/* line 62, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:after {
   content: '';
   display: block;
@@ -883,7 +888,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 72, ../scss/partials/base/_buttons.scss */
+/* line 71, ../scss/partials/base/_buttons.scss */
 .btn.btn--square {
   color: white;
   display: block;
@@ -894,7 +899,7 @@ small a {
   position: relative;
   text-transform: uppercase;
 }
-/* line 82, ../scss/partials/base/_buttons.scss */
+/* line 81, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:after {
   content: '';
   display: block;
@@ -907,32 +912,32 @@ small a {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 94, ../scss/partials/base/_buttons.scss */
+/* line 93, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:before {
   display: block;
   font-family: 'icons';
 }
-/* line 100, ../scss/partials/base/_buttons.scss */
+/* line 99, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 103, ../scss/partials/base/_buttons.scss */
+/* line 102, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 108, ../scss/partials/base/_buttons.scss */
+/* line 107, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 111, ../scss/partials/base/_buttons.scss */
+/* line 110, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 116, ../scss/partials/base/_buttons.scss */
+/* line 115, ../scss/partials/base/_buttons.scss */
 .btn.btn--blue {
   background-color: #0098d8;
 }
-/* line 120, ../scss/partials/base/_buttons.scss */
+/* line 119, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -945,7 +950,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 131, ../scss/partials/base/_buttons.scss */
+/* line 130, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -955,7 +960,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 141, ../scss/partials/base/_buttons.scss */
+/* line 140, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -969,7 +974,7 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 154, ../scss/partials/base/_buttons.scss */
+/* line 153, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -978,7 +983,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 165, ../scss/partials/base/_buttons.scss */
+/* line 164, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -989,7 +994,7 @@ small a {
   vertical-align: middle;
 }
 
-/* line 178, ../scss/partials/base/_buttons.scss */
+/* line 177, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -1002,6 +1007,11 @@ input[type="submit"] {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+}
+/* line 184, ../scss/partials/base/_buttons.scss */
+button:-moz-focus-inner,
+input[type="submit"]:-moz-focus-inner {
+  border: 0;
 }
 
 /* line 1, ../scss/partials/base/_forms.scss */

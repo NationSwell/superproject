@@ -5,7 +5,6 @@
   text-align: center;
 }
 
-
 .btn {
   border-radius: 0;
   text-rendering: optimizeLegibility;
@@ -178,7 +177,11 @@ button,
 input[type="submit"] {
   border: none;
   cursor: pointer;
-  @include appearance(none);
 
+  @include appearance(none);
   @include transition(all 0.15s ease-in-out);
+
+  &:-moz-focus-inner {
+    border: 0;
+  }
 }
