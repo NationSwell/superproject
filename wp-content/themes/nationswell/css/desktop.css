@@ -2251,12 +2251,7 @@ input[type="submit"] {
   outline: none;
 }
 
-/* line 62, ../scss/partials/base/_modal.scss */
-body.is-locked {
-  overflow: hidden;
-}
-
-/* line 68, ../scss/partials/base/_modal.scss */
+/* line 66, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
   color: white;
   display: block;
@@ -2266,12 +2261,12 @@ body.is-locked {
   text-align: center;
   width: 100%;
 }
-/* line 77, ../scss/partials/base/_modal.scss */
+/* line 75, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 81, ../scss/partials/base/_modal.scss */
+/* line 79, ../scss/partials/base/_modal.scss */
 .modal--join-us .modal--join-us__opt-out a:hover {
   color: #fc3b40;
 }

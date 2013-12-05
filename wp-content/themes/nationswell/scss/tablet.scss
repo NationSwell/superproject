@@ -1,25 +1,11 @@
-@import "modules/tablet-grid-settings";
+@media only screen and (orientation : landscape) {
+  html {
+    font-size: 100%;
+  }
+}
 
-// Base
-@import "partials/main";
-
-// tablet-specific partials
-@import "partials/tablet/grid";
-@import "partials/tablet/structure";
-@import "partials/tablet/ads";
-@import "partials/tablet/headings";
-@import "partials/tablet/typography";
-@import "partials/tablet/buttons";
-@import "partials/tablet/forms";
-@import "partials/tablet/nav";
-@import "partials/tablet/more-stories";
-@import "partials/tablet/footer";
-@import "partials/tablet/components";
-@import "partials/tablet/carousels";
-@import "partials/tablet/modal";
-
-// tablet page partials
-@import "partials/tablet/homepage";
-@import "partials/tablet/story";
-@import "partials/tablet/static";
-@import "partials/tablet/archive";
+@media only screen and (orientation : portrait) {
+  html {
+    font-size: 75%;
+  }
+}

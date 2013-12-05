@@ -59,9 +59,7 @@
   outline: none;
 }
 
-body.is-locked {
-  overflow: hidden;
-}
+body.is-locked {}
 
 // join us
 .modal--join-us {
@@ -83,9 +81,4 @@ body.is-locked {
       }
     }
   }
-}
-
-// take action
-.modal--take-action {
-
 }
