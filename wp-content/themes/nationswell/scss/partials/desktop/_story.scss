@@ -239,7 +239,7 @@
 
   &.is-hidden {
     left: 20rem;
-    @include transform(scale(.5));
+    @include transform(scale(1.5));
   }
 }
 
