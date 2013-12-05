@@ -169,6 +169,15 @@
                     e.preventDefault();
                 });
 
+                $(".more-stories-drawer").swipe( {
+                    swipeRight: function(event, direction, distance, duration, fingerCount) {
+                        if($body.hasClass('panel--is-open')) {
+                            $body.removeClass('panel--is-open');
+                            $('.more-stories-toggle').removeClass('is-toggled');
+                        }
+                    }
+                });
+
                 // slideshows
                 $(".mobile-carousel").each(function () {
                     var $this = $(this),
@@ -304,6 +313,17 @@
                         $target.toggleClass('panel--is-open');
 
                         e.preventDefault();
+                    });
+
+                    $("#more-stories").swipe( {
+                        swipeUp: function(event, direction, distance, duration, fingerCount) {
+                            var $moreStories = $('#more-stories');
+
+                            if($moreStories.hasClass('panel--is-open')) {
+                                $moreStories.removeClass('panel--is-open');
+                                $('.more-stories-toggle').removeClass('is-toggled');
+                            }
+                        }
                     });
 
                     // slideshows

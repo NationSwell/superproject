@@ -113,7 +113,7 @@
         font-family: $montserrat;
         font-size: 2.5rem;
         font-weight: $regular;
-        text-transform: capitalize;
+        text-ransform: capitalize;
         -webkit-font-smoothing: antialiased;
       }
     }
@@ -128,6 +128,7 @@ body.panel--is-open {
 
     #page-content {
       pointer-events: none;
+      overflow: hidden;
     }
   }
 
