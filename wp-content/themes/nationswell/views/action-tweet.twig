@@ -2,11 +2,7 @@
 
 {% block action_body %}
     <div class="take-action__full">
-        <div id="tweet-message" class="tweet-politician__message icon icon_twitter" data-tweet-message="{{ post.call_to_action.tweet_text }}" data-tweet-url="{{ post.short_url }}">
-            {{ post.call_to_action.tweet_text }}
-        </div>
-
-        <p>Enter your address to find your local representatives on Twitter. Take action by tweeting the cause!</p>
+        <p>{{ post.call_to_action.description }}</p>
 
         <form id="politician-lookup" class="tweet-politician__lookup cf">
             <div class="form-element form-element--two-third">
@@ -18,6 +14,10 @@
                 <button type="submit" class="btn btn--solid">Search</button>
             </div>
         </form>
+
+        <div id="tweet-message" class="tweet-politician__message icon icon_twitter" data-tweet-message="{{ post.call_to_action.tweet_text }}" data-tweet-url="{{ post.short_url }}">
+            {{ post.call_to_action.tweet_text }}
+        </div>
 
         <div id="tweet-a-politician" class="tweet-politician__politicians"></div>
     </div>
