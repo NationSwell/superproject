@@ -38,45 +38,52 @@ function add_to_context($data)
         }
         $data['menu_main_stories'] = Timber::get_posts($menu_post_ids, 'NationSwellPost');
     }
-
+    
+    
     // Global Site Options
-    $data['modal_joinus_enabled'] = get_field('modal_joinus_enabled', 'option');
-    $data['flyout_social_enabled'] = get_field('flyout_social_enabled', 'option');
-    $data['nationswell_mailchimp_daily'] = get_field('nationswell_mailchimp_daily', 'option');
-    $data['nationswell_facebook'] = get_field('nationswell_facebook', 'option');
-    $data['nationswell_twitter'] = get_field('nationswell_twitter', 'option');
-    $data['nationswell_instagram'] = get_field('nationswell_instagram', 'option');
-    $data['nationswell_tumblr'] = get_field('nationswell_tumblr', 'option');
-    $data['nationswell_google'] = get_field('nationswell_google', 'option');
-    $data['site_tag_line'] = get_field('site_tag_line', 'option');
-    $data['facebook_button_expanded_text'] = get_field('facebook_button_expanded_text', 'option');
-    $data['twitter_button_expanded_text'] = get_field('twitter_button_expanded_text', 'option');
-    $data['twitter_button_bingo_text'] = get_field('twitter_button_bingo_text', 'option');
-    $data['facebook_button_bingo_text'] = get_field('facebook_button_bingo_text', 'option');
-    $data['take_action_header_text'] = get_field('take_action_header_text', 'option');
-    $data['more_stories_heading_prefix'] = get_field('more_stories_heading_prefix', 'option');
-    $data['load_more_button_text'] = get_field('load_more_button_text', 'option');
-    $data['nav_search_placeholder_text'] = get_field('nav_search_placeholder_text', 'option');
-    $data['nav_subscribe_placeholder_text'] = get_field('nav_subscribe_placeholder_text', 'option');
-    $data['byline_prefix_text'] = get_field('byline_prefix_text', 'option');
-    $data['category_prefix_text'] = get_field('category_prefix_text', 'option');
-    $data['take_action_privacy_policy_text'] = get_field('take_action_privacy_policy_text', 'option');
-    $data['flyout_header_text'] = get_field('flyout_header_text', 'option');
-    $data['flyout_message_text'] = get_field('flyout_message_text', 'option');
-    $data['facebook_like_url'] = get_field('facebook_like_url', 'option');
-    $data['main_menu_header'] = get_field('main_menu_header', 'option');
+    $options = array(
+        'google_api_key',
+        'modal_joinus_enabled',
+        'flyout_social_enabled',
+        'nationswell_mailchimp_daily',
+        'nationswell_facebook',
+        'nationswell_twitter',
+        'nationswell_instagram',
+        'nationswell_tumblr',
+        'nationswell_google',
+        'site_tag_line',
+        'facebook_button_expanded_text',
+        'twitter_button_expanded_text',
+        'twitter_button_bingo_text',
+        'facebook_button_bingo_text',
+        'take_action_header_text',
+        'more_stories_heading_prefix',
+        'load_more_button_text',
+        'nav_search_placeholder_text',
+        'nav_subscribe_placeholder_text',
+        'byline_prefix_text',
+        'category_prefix_text',
+        'take_action_privacy_policy_text',
+        'flyout_header_text',
+        'flyout_message_text',
+        'facebook_like_url',
+        'main_menu_header',
 
-    $data['take_action_thanks_header'] = get_field('take_action_thanks_header', 'option');
-    $data['take_action_thanks_text'] = get_field('take_action_thanks_text', 'option');
-    $data['take_action_thanks_subscribe_text'] = get_field('take_action_thanks_subscribe_text', 'option');
+        'take_action_thanks_header',
+        'take_action_thanks_text',
+        'take_action_thanks_subscribe_text',
 
-    $data['modal_joinus_header'] = get_field('modal_joinus_header', 'option');
-    $data['modal_joinus_body_text'] = get_field('modal_joinus_body_text', 'option');
-    $data['modal_joinus_opt_out_text'] = get_field('modal_joinus_opt_out_text', 'option');
-    $data['modal_joinus_opt_out_button_text'] = get_field('modal_joinus_opt_out_button_text', 'option');
+        'modal_joinus_header',
+        'modal_joinus_body_text',
+        'modal_joinus_opt_out_text',
+        'modal_joinus_opt_out_button_text',
 
-    $data['facebook_admin'] = get_field('facebook_admin', 'option');
+        'facebook_admin'
+    );
 
+    foreach($options as $option) {
+        $data[$option] = get_field($option, 'option');
+    }
 
     return $data;
 }
@@ -143,6 +150,7 @@ function my_register_fields()
     include_once('lib/fields/daily_newsletter_posts.php');
     include_once('lib/fields/facebook_admin.php');
     include_once('lib/fields/change_org.php');
+    include_once('lib/fields/options/google.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
