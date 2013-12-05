@@ -50,7 +50,7 @@
 
 {% block body_includes %}
 
-    <script src="/{{ theme_dir }}/js/build/combined.min.js?{{ version }}"></script>
+    <script src="/{{ theme_dir }}/js/build/{{ js_main }}"></script>
 
     {% if google_api_key is not empty %}
     <script type="text/javascript">

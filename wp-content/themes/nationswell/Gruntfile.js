@@ -1,26 +1,5 @@
 module.exports = function(grunt) {
 
-    var jsFiles = {
-        files: {
-            'js/build/combined.min.js': [
-                'js/src/vendor/twig.min.js',
-                'js/build/twig-templates.js',
-                'js/src/vendor/enquire.js',
-                'js/src/vendor/jquery.cookie.js',
-                'js/src/vendor/jquery.ajaxchimp.js',
-                'js/src/vendor/jquery.transit.min.js',
-                'js/src/vendor/jquery.touchSwipe.min.js',
-                'js/src/vendor/jquery.carouFredSel-6.2.1.min.js',
-                'js/src/vendor/jquery.validate.min.js',
-                'js/src/vendor/jquery.cookie.js',
-                'js/src/vendor/waypoints.min.js',
-                'js/src/vendor/waypoints-sticky.min.js',
-                'js/src/vendor/audiojs/audio.min.js',
-                'js/src/vendor/imagesloaded.pkgd.js',
-                'js/src/main.js'
-            ]
-        }
-    };
 
     // Project configuration.
     grunt.initConfig({
@@ -41,13 +20,37 @@ module.exports = function(grunt) {
             options: {
                 mangle: false
             },
-            build: jsFiles
+            build: {
+                files: {
+                    'js/build/combined.min.js': 'js/build/combined.js'
+                }
+            }
         },
         concat: {
             options: {
                 separator: ';'
             },
-            build: jsFiles
+            build: {
+                files: {
+                    'js/build/combined.js': [
+                        'js/src/vendor/twig.min.js',
+                        'js/build/twig-templates.js',
+                        'js/src/vendor/enquire.js',
+                        'js/src/vendor/jquery.cookie.js',
+                        'js/src/vendor/jquery.ajaxchimp.js',
+                        'js/src/vendor/jquery.transit.min.js',
+                        'js/src/vendor/jquery.touchSwipe.min.js',
+                        'js/src/vendor/jquery.carouFredSel-6.2.1.min.js',
+                        'js/src/vendor/jquery.validate.min.js',
+                        'js/src/vendor/jquery.cookie.js',
+                        'js/src/vendor/waypoints.min.js',
+                        'js/src/vendor/waypoints-sticky.min.js',
+                        'js/src/vendor/audiojs/audio.min.js',
+                        'js/src/vendor/imagesloaded.pkgd.js',
+                        'js/src/main.js'
+                    ]
+                }
+            }
         },
         compass: {
             dist: {
@@ -80,11 +83,11 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['js/src/*.js', 'js/src/vendor/*.js'],
-                tasks: ['concat', 'bumpVersion']
+                tasks: ['js']
             },
             twig: {
                 files: 'views-client/*.twig',
-                tasks: ['twig', 'concat', 'bumpVersion']
+                tasks: ['js']
             }
         }
     });
@@ -102,7 +105,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-twig');
 
-    grunt.registerTask('default', ['webfont','compass', 'twig', 'uglify', 'bumpVersion']);
+    grunt.registerTask('js', ['twig', 'concat', 'uglify', 'bumpVersion']);
+    grunt.registerTask('default', ['webfont','compass', 'twig', 'js']);
     grunt.registerTask('icons', ['webfont','compass']);
 
     grunt.task.registerTask('bumpVersion', 'Bump the version number file', function() {

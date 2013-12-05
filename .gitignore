@@ -1,6 +1,8 @@
 # Development
 .idea
 .sass-cache/
+combined.js
+twig-templates.js
 
 node_modules
 

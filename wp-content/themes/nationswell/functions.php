@@ -19,7 +19,7 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 define('THEME_URL', get_template_directory_uri());
 function add_to_context($data)
 {
-    $data['version'] = VERSION;
+    $data['js_main'] = 'combined' . (WP_DEBUG ? '' : '.min') . '.js?'. VERSION;
 
     /* this is where you can add your own data to Timber's context object */
     $data['menu_main'] = new TimberMenu('menu_main');

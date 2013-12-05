@@ -545,7 +545,5 @@
 
             return  twigs['views-client/politician.twig'].render({ politician: politician,  twitterUrl: twitterUrl });
         }
-
-
     });
 })(jQuery);
