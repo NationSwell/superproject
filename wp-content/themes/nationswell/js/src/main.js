@@ -431,8 +431,10 @@
 
 
         $('#change-org-petition').submit(function (e) {
-            var $form = $(this),
-                url = '/wp-admin/admin-ajax.php?action=sign_petition&cta_id=' + $form.attr('data-cta-id');
+            e.preventDefault();
+        }).validate({ submitHandler:  function(form){
+                var $form = $(form),
+                    url = '/wp-admin/admin-ajax.php?action=sign_petition&cta_id=' + $form.attr('data-cta-id');
 
             $.post(url, $form.serialize())
                 .done(function () {
@@ -441,9 +443,7 @@
                 .fail(function (data) {
                     console.log(data);
                 });
-
-            e.preventDefault();
-        }).validate();
+            }});
 
 
         function parseReps(data) {
@@ -503,27 +503,29 @@
         }
 
         var $politicianLookup = $('#politician-lookup'),
-            lookupValidator = $politicianLookup.validate();
+            lookupValidator = $politicianLookup.validate({
+                submitHandler: function(form){
+                    var $form = $(form),
+                        $modal = $form.closest('.take-action__full').closest('.modal'),
+                        $tweet = $('#tweet-message');
 
-        $politicianLookup.submit(function (event) {
-            var $container = $(this).closest('.take-action__full'),
-                $modal = $container.closest('.modal'),
-                $tweet = $container.find('#tweet-message');
-
-            lookupReps($(this).find('[name=ta-address]').val(), function(reps) {
-                renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
-            }, function(data) {
-                if(data.status === 'addressUnparseable') {
-                    lookupValidator.showErrors({
-                        "ta-address": "Sorry we don't recognize this address"
+                    lookupReps($form.find('[name=ta-address]').val(), function(reps) {
+                        renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
+                    }, function(data) {
+                        if(data.status === 'addressUnparseable') {
+                            lookupValidator.showErrors({
+                                "ta-address": "Sorry we don't recognize this address"
+                            });
+                        }
                     });
+
+                    if($modal.length) {
+                        fitTakeAction($modal);
+                    }
                 }
             });
 
-            if($modal.length) {
-                fitTakeAction($modal);
-            }
-
+        $politicianLookup.submit(function (event) {
             event.preventDefault();
         });
 
