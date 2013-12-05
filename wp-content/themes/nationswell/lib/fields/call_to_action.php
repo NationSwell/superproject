@@ -270,6 +270,8 @@ if (function_exists("register_field_group")) {
                         'cta-signup' => 'Signup',
                         'cta-speak-out' => 'Speak Out',
                         'email' => '@ Symbol',
+                        'get_involved' => 'Get Involved',
+                        'speak_out' => 'Speak Out Alternative',
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
