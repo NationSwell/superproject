@@ -11,7 +11,7 @@
             callback: function (resp) {
                 if (resp.result === 'success') {
                     setTimeout(function(){
-                        showThankYou();
+                        toggleThankYou();
                     }, 500);
                 } else if (resp.result === 'error') {
 
@@ -392,23 +392,29 @@
         });
 
         // call to action
-        function showThankYou() {
+        function toggleThankYou() {
             var $taAction = $('.take-action__action'),
                 $taThankYou = $('.take-action__thank-you');
 
             $taAction.toggleClass('is-hidden');
 
             window.setTimeout(function () {
-                $taAction.css('display', 'none');
+                $taAction.toggleClass('hide');
 
-                $taThankYou.css('display', 'block');
+                $taThankYou.toggleClass('show');
                 $taThankYou.toggleClass('is-hidden');
             }, 300);
         }
 
+        $body.on('click.taBack', '.take-action__social_back', function(e){
+            toggleThankYou();
+
+            e.preventDefault();
+        });
+
         // take action submission
         $body.on('click.taSubmit', '.take-action__submit', function (e) {
-            showThankYou();
+            toggleThankYou();
 
             $(window).off('.taSubmit');
 
@@ -425,7 +431,7 @@
 
             $.post(url, $form.serialize())
                 .done(function () {
-                    showThankYou();
+                    toggleThankYou();
                 })
                 .fail(function (data) {
                     console.log(data);
@@ -436,7 +442,7 @@
 
         function lookupReps(address, callback) {
             $.ajax({
-                url: 'https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=AIzaSyAffyAu22rVhDqArXZ7F8jjmCU_ZYKRINU',
+                url: 'https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=' + window.googleApiKey,
                 type: 'POST',
                 contentType: 'application/json; charset=utf-8',
                 data: JSON.stringify({ address: address }),
@@ -479,8 +485,6 @@
                 $modal = $container.closest('.modal'),
                 $tweet = $container.find('#tweet-message');
 
-            console.log('container is '+ $container +', modal is '+ $modal.length +', tweet is ' + $tweet);
-
             lookupReps($(this).find('[name=ta-address]').val(), function(reps) {
                 var $politicians = $container.find('#tweet-a-politician');
                 $politicians.empty();
@@ -490,7 +494,6 @@
             });
 
             if($modal.length) {
-                alert('fart');
                 fitTakeAction($modal);
             }
 
