@@ -9,7 +9,8 @@
         width: 60%;
         box-shadow: inset -2px 0 0 $white;
 
-        &:before {
+        &:before,
+        &:after {
           margin-right: 2px;
         }
 
@@ -20,7 +21,7 @@
         }
 
         .story__hed {
-          margin-bottom: 3.4rem;
+          margin-bottom: 2.8rem;
         }
 
         .credit {
@@ -30,7 +31,7 @@
         }
 
         .support-cause--hero {
-          margin-bottom: 3.2rem;
+          margin-bottom: 1.4rem;
         }
       }
 
@@ -38,7 +39,8 @@
         &.hero__entry--2 {
           box-shadow: inset 0 -2px 0 $white;
 
-          &:before {
+          &:before,
+          &:after {
             margin-bottom: 2px;
           }
         }
