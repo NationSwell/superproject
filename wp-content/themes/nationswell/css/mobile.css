@@ -3578,23 +3578,27 @@ html {
 
 /* logo and slogan */
 /* line 10, ../scss/partials/mobile/_nav.scss */
+.site-logo img {
+  width: 30rem;
+}
+/* line 14, ../scss/partials/mobile/_nav.scss */
 .site-logo.site-logo--slogan {
   margin-top: 4.6rem;
 }
-/* line 13, ../scss/partials/mobile/_nav.scss */
+/* line 17, ../scss/partials/mobile/_nav.scss */
 .site-logo.site-logo--slogan .slogan {
   margin-left: 3.6rem;
 }
 
 /* more stories toggle */
-/* line 20, ../scss/partials/mobile/_nav.scss */
+/* line 24, ../scss/partials/mobile/_nav.scss */
 .more-stories-toggle {
   font-size: 6rem;
   padding-top: 3.8rem;
 }
 
 /* more stories mobile panel */
-/* line 26, ../scss/partials/mobile/_nav.scss */
+/* line 30, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer {
   background-color: #003046;
   height: 100%;
@@ -3605,25 +3609,25 @@ html {
   bottom: 0;
   overflow-y: scroll;
 }
-/* line 36, ../scss/partials/mobile/_nav.scss */
+/* line 40, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit {
   display: block;
   padding: 4.2rem 3.2rem 4.2rem 6.2rem;
 }
-/* line 40, ../scss/partials/mobile/_nav.scss */
+/* line 44, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--dark {
   background-color: #002130;
 }
-/* line 45, ../scss/partials/mobile/_nav.scss */
+/* line 49, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .site-logo {
   display: block;
   margin: 0 0 3.2rem;
 }
-/* line 50, ../scss/partials/mobile/_nav.scss */
+/* line 54, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search {
   position: relative;
 }
-/* line 53, ../scss/partials/mobile/_nav.scss */
+/* line 57, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search [for='panel-search'] {
   font-size: 3.4rem;
   position: absolute;
@@ -3631,7 +3635,7 @@ html {
   top: 1.6rem;
   color: white;
 }
-/* line 61, ../scss/partials/mobile/_nav.scss */
+/* line 65, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search #panel-search {
   border: 0 none;
   border-radius: 0;
@@ -3643,18 +3647,18 @@ html {
   color: white;
   font-size: 2.4rem;
 }
-/* line 72, ../scss/partials/mobile/_nav.scss */
+/* line 76, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search #panel-search label {
   top: 1.4rem;
   left: 1.4rem;
   font-size: 3rem;
 }
-/* line 84, ../scss/partials/mobile/_nav.scss */
+/* line 88, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 89, ../scss/partials/mobile/_nav.scss */
+/* line 93, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -3663,12 +3667,12 @@ html {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 102, ../scss/partials/mobile/_nav.scss */
+/* line 106, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 107, ../scss/partials/mobile/_nav.scss */
+/* line 111, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list .categories__category {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -3679,21 +3683,21 @@ html {
 }
 
 /* mobile panel */
-/* line 121, ../scss/partials/mobile/_nav.scss */
+/* line 125, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper {
   overflow-x: hidden;
   right: 47rem;
 }
-/* line 125, ../scss/partials/mobile/_nav.scss */
+/* line 129, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper #page-content {
   pointer-events: none;
 }
-/* line 130, ../scss/partials/mobile/_nav.scss */
+/* line 134, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header {
   background-color: white;
   right: 47rem;
 }
-/* line 134, ../scss/partials/mobile/_nav.scss */
+/* line 138, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header .more-stories-toggle {
   color: #003046;
 }
@@ -4020,7 +4024,7 @@ body.panel--is-open #page-header .more-stories-toggle {
 /* author */
 /* line 288, ../scss/partials/mobile/_components.scss */
 .author-box {
-  margin-bottom: 7.2rem;
+  margin-bottom: 14rem;
   padding: 4rem;
 }
 
@@ -4640,7 +4644,7 @@ body.panel--is-open #page-header .more-stories-toggle {
 
 /* line 246, ../scss/partials/mobile/_story.scss */
 .story__social {
-  margin-bottom: 18rem;
+  margin-bottom: 8rem;
 }
 /* line 249, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar {
