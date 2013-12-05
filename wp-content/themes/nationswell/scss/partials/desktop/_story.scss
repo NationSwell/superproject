@@ -2,7 +2,10 @@
   max-height: 42.6rem;
 
   &.hero--image {
-    height: 42.6rem;
+    height: auto;
+//    padding-bottom: 56.25%;
+    padding-bottom: 40%;
+    max-height: none;
   }
 
   &.hero--carousel {
