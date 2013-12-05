@@ -98,3 +98,10 @@
     position: absolute;
   }
 }
+
+.form-errors {
+  clear: both;
+  font-family: $gudea;
+  font-weight: $regular;
+  color: $ns_red1;
+}

@@ -8,6 +8,13 @@ a {
   }
 }
 
+small {
+  a {
+    text-decoration: underline;
+    color: inherit;
+  }
+}
+
 .caption {
   color: $gray0;
   font-family: $gudea;

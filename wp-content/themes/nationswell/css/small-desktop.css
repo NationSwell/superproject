@@ -486,44 +486,50 @@ a:hover {
   color: #0098d8;
 }
 
-/* line 11, ../scss/partials/base/_typography.scss */
+/* line 12, ../scss/partials/base/_typography.scss */
+small a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+/* line 18, ../scss/partials/base/_typography.scss */
 .caption {
   color: #333333;
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 17, ../scss/partials/base/_typography.scss */
+/* line 24, ../scss/partials/base/_typography.scss */
 .credit,
 .byline {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 22, ../scss/partials/base/_typography.scss */
+/* line 29, ../scss/partials/base/_typography.scss */
 .source {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   font-weight: 400;
 }
-/* line 27, ../scss/partials/base/_typography.scss */
+/* line 34, ../scss/partials/base/_typography.scss */
 .source:before {
   content: '';
   display: inline-block;
   position: relative;
 }
-/* line 33, ../scss/partials/base/_typography.scss */
+/* line 40, ../scss/partials/base/_typography.scss */
 .source.source--nyt:before {
   content: url(../img/src_nyt.jpg);
 }
-/* line 37, ../scss/partials/base/_typography.scss */
+/* line 44, ../scss/partials/base/_typography.scss */
 .source.source--npr:before {
   content: url(../img/src_npr.jpg);
 }
-/* line 41, ../scss/partials/base/_typography.scss */
+/* line 48, ../scss/partials/base/_typography.scss */
 .source.source--time:before {
   content: url(../img/src_time.jpg);
 }
-/* line 45, ../scss/partials/base/_typography.scss */
+/* line 52, ../scss/partials/base/_typography.scss */
 .source.source--mashable:before {
   content: url(../img/src_mashable.jpg);
 }
@@ -1101,6 +1107,14 @@ input[type="submit"] {
   position: absolute;
 }
 
+/* line 102, ../scss/partials/base/_forms.scss */
+.form-errors {
+  clear: both;
+  font-family: "Gudea", Arial, sans-serif;
+  font-weight: 400;
+  color: #dd322c;
+}
+
 /* line 1, ../scss/partials/base/_nav.scss */
 #page-header {
   background-color: #003046;
@@ -1626,7 +1640,7 @@ input[type="submit"] {
 }
 /* line 219, ../scss/partials/base/_components.scss */
 .type-indicator.icon_video:before {
-  line-height: 1.68;
+  line-height: 1.61;
 }
 /* line 223, ../scss/partials/base/_components.scss */
 .type-indicator.icon_audio:before {
