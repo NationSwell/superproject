@@ -2,7 +2,7 @@
     {% if politician.photoUrl is not empty %}
         <div class="politician__photo" style="background-image: url({{ politician.photoUrl }});" title="{{ politician.name }}"></div>
     {% else %}
-        <div class="politician__photo" style="background-image: url({{ politician.photoUrl }});" title="{{ politician.name }}"></div>
+        <div class="politician__photo" style="background-image: url(/wp-content/themes/nationswell/img/placeholder.jpg);" title="{{ politician.name }}"></div>
     {% endif %}
 
     <div class="politician__information">
