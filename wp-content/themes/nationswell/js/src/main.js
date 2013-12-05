@@ -442,16 +442,22 @@
             e.preventDefault();
         }).validate({ submitHandler:  function(form){
                 var $form = $(form),
+                    $formErrors = $form.find('.form-errors'),
                     url = '/wp-admin/admin-ajax.php?action=sign_petition&cta_id=' + $form.attr('data-cta-id');
 
-            $.post(url, $form.serialize())
-                .done(function () {
-                    toggleThankYou();
-                })
-                .fail(function (data) {
-                    console.log(data);
-                });
-            }});
+                $formErrors.empty().addClass('hide');
+                $.post(url, $form.serialize())
+                    .done(function () {
+                        toggleThankYou();
+                    })
+                    .fail(function (data) {
+                        var messages = data.responseJSON.messages;
+                        if(messages) {
+                            $formErrors.removeClass('hide').html(messages[0]);
+                        }
+                    });
+            }
+            });
 
 
         function parseReps(data) {
