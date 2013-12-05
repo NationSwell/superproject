@@ -233,25 +233,25 @@ body {
   z-index: 1;
 }
 
-/* line 8, ../scss/partials/base/_ads.scss */
+/* line 9, ../scss/partials/base/_ads.scss */
 #top-billboard {
   background-color: #dbdbdb;
 }
 
-/* line 12, ../scss/partials/base/_ads.scss */
+/* line 13, ../scss/partials/base/_ads.scss */
 .ad {
   display: block;
   margin: 0 auto;
   position: relative;
   text-align: center;
 }
-/* line 18, ../scss/partials/base/_ads.scss */
+/* line 19, ../scss/partials/base/_ads.scss */
 .ad.ad--300 {
   display: block;
   margin-bottom: 7.4rem;
   width: 32rem;
 }
-/* line 23, ../scss/partials/base/_ads.scss */
+/* line 24, ../scss/partials/base/_ads.scss */
 .ad.ad--300:after {
   color: #7e7e7e;
   display: block;
@@ -261,23 +261,23 @@ body {
   margin-top: 2rem;
   text-transform: uppercase;
 }
-/* line 33, ../scss/partials/base/_ads.scss */
+/* line 34, ../scss/partials/base/_ads.scss */
 .ad.ad--300 .ad__container {
   background-color: #eeeeee;
   padding: 1rem;
 }
-/* line 39, ../scss/partials/base/_ads.scss */
+/* line 40, ../scss/partials/base/_ads.scss */
 .ad .ad__container {
   display: block;
   position: relative;
   text-align: center;
 }
-/* line 44, ../scss/partials/base/_ads.scss */
+/* line 45, ../scss/partials/base/_ads.scss */
 .ad .ad__container > img {
   display: block;
   margin: 0 auto;
 }
-/* line 50, ../scss/partials/base/_ads.scss */
+/* line 51, ../scss/partials/base/_ads.scss */
 .ad.ad--pull {
   float: right;
   margin: -37.6rem;
@@ -3457,7 +3457,7 @@ input[type="submit"] {
 }
 /* line 22, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
-  width: 48.6%;
+  width: 47.91%;
 }
 /* line 26, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:before {
