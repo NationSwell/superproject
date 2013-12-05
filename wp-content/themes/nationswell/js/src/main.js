@@ -442,7 +442,7 @@
 
         function lookupReps(address, callback) {
             $.ajax({
-                url: 'https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=AIzaSyAffyAu22rVhDqArXZ7F8jjmCU_ZYKRINU',
+                url: 'https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=' + window.googleApiKey,
                 type: 'POST',
                 contentType: 'application/json; charset=utf-8',
                 data: JSON.stringify({ address: address }),

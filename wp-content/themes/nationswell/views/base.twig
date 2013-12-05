@@ -20,9 +20,9 @@
 
 <div id="page-wrapper">
     {#<div id="top-leaderboard" class="ad ad--leaderboard hide_mobile">#}
-        {#<div class="ad__container">#}
-            {#<img src="http://placehold.it/728x90"/>#}
-        {#</div>#}
+    {#<div class="ad__container">#}
+    {#<img src="http://placehold.it/728x90"/>#}
+    {#</div>#}
     {#</div>#}
 
     {% include 'nav.twig' %}
@@ -39,50 +39,56 @@
 </div>
 
 {% block modals %}
-{% if modal_joinus_enabled is not empty %}
-    {% include 'modal-joinus.twig' %}
-{% endif %}
+    {% if modal_joinus_enabled is not empty %}
+        {% include 'modal-joinus.twig' %}
+    {% endif %}
 
-{% include 'modal.twig' %}
+    {% include 'modal.twig' %}
 {% endblock %}
 
 {{ wp_footer }}
 
 {% block body_includes %}
 
-<script src="/{{ theme_dir }}/js/build/combined.min.js?{{ version }}"></script>
+    <script src="/{{ theme_dir }}/js/build/combined.min.js?{{ version }}"></script>
 
-<script type="text/javascript">
-    (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/client:plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-</script>
+    {% if google_api_key is not empty %}
+    <script type="text/javascript">
+        window.googleApiKey = '{{ google_api_key }}';
+    </script>
+    {% endif %}
 
-<script type='text/javascript'>
-    var _sf_async_config={};
-    /** CONFIGURATION START **/
-    _sf_async_config.uid = 52361;
-    _sf_async_config.domain = 'nationswell.wpengine.com';
-    _sf_async_config.useCanonical = true;
-    _sf_async_config.sections = '{{ post.category }}';  //CHANGE THIS
-    _sf_async_config.authors = '{{ post.author.name }}';    //CHANGE THIS
-    /** CONFIGURATION END **/
-    (function(){
-        function loadChartbeat() {
-            window._sf_endpt=(new Date()).getTime();
-            var e = document.createElement('script');
-            e.setAttribute('language', 'javascript');
-            e.setAttribute('type', 'text/javascript');
-            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
-            document.body.appendChild(e);
-        }
-        var oldonload = window.onload;
-        window.onload = (typeof window.onload != 'function') ?
-                loadChartbeat : function() { oldonload(); loadChartbeat(); };
-    })();
-</script>
+    <script type="text/javascript">
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/client:plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+
+    <script type='text/javascript'>
+        var _sf_async_config={};
+        /** CONFIGURATION START **/
+        _sf_async_config.uid = 52361;
+        _sf_async_config.domain = 'nationswell.wpengine.com';
+        _sf_async_config.useCanonical = true;
+        _sf_async_config.sections = '{{ post.category }}';  //CHANGE THIS
+        _sf_async_config.authors = '{{ post.author.name }}';    //CHANGE THIS
+        /** CONFIGURATION END **/
+        (function(){
+            function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+                document.body.appendChild(e);
+            }
+            var oldonload = window.onload;
+            window.onload = (typeof window.onload != 'function') ?
+                    loadChartbeat : function() { oldonload(); loadChartbeat(); };
+        })();
+    </script>
 {% endblock %}
 
 </body>
