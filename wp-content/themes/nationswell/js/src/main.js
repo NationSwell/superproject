@@ -146,7 +146,7 @@
         // responsive code
 
         // mobile code
-        enquire.register("screen and (max-device-width: 983px)", {
+        enquire.register("screen and (max-device-width: 767px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
             match: function () {
@@ -262,7 +262,7 @@
             }
 
             // desktop code
-        }).register("screen and (min-device-width:984px)", {
+        }).register("screen and (min-device-width: 768px)", {
                 // If supplied, triggered when a media query matches.
                 match: function () {
                     // toggle more stories panel
