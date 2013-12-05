@@ -34,6 +34,7 @@ module.exports = function(grunt) {
                 files: {
                     'js/build/combined.js': [
                         'js/src/vendor/twig.min.js',
+                        'js/src/vendor/media.match.js',
                         'js/build/twig-templates.js',
                         'js/src/vendor/enquire.js',
                         'js/src/vendor/jquery.cookie.js',
