@@ -5,18 +5,6 @@
     height: auto;
     padding-bottom: 40%;
     max-height: none;
-
-    .story__main-column & {
-      padding-bottom: 0;
-      height: auto;
-      max-height: none;
-
-      img {
-        max-width: 100%;
-      }
-
-    }
-
   }
 
   &.hero--carousel {
