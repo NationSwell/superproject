@@ -210,7 +210,7 @@ function my_theme_register_required_plugins()
             'slug' => 'ronik-bitly',
             'source' => get_stylesheet_directory() . '/lib/plugins/ronik-bitly.zip',
             'required' => true,
-            'version' => '1.1.1',
+            'version' => '1.1.2',
             'force_activation' => true,
             'force_deactivation' => false,
             'external_url' => '',
