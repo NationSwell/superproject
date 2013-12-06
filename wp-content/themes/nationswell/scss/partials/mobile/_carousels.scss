@@ -19,6 +19,8 @@
 }
 
 .mobile-carousel {
+  overflow: visible;
+
   .carousel__pagination {
     position: absolute;
     right: 4.4rem;

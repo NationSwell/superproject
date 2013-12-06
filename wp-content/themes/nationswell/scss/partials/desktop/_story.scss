@@ -399,6 +399,11 @@
   top: 4.6rem;
 }
 
-.fb-comments {
+.fb-comments-container {
+  display: block;
   margin-bottom: 7.2rem;
+}
+
+.fb-comments-container * {
+  width: 100% !important;
 }

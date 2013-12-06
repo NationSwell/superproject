@@ -4205,13 +4205,17 @@ body.panel--is-open #page-header .more-stories-toggle {
   margin-bottom: 3.4rem;
 }
 
-/* line 22, ../scss/partials/mobile/_carousels.scss */
+/* line 21, ../scss/partials/mobile/_carousels.scss */
+.mobile-carousel {
+  overflow: visible;
+}
+/* line 24, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel .carousel__pagination {
   position: absolute;
   right: 4.4rem;
   bottom: 0rem;
 }
-/* line 27, ../scss/partials/mobile/_carousels.scss */
+/* line 29, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel .carousel__pagination a {
   background-color: #ccd6da;
   border-radius: 50%;
@@ -4224,59 +4228,59 @@ body.panel--is-open #page-header .more-stories-toggle {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 39, ../scss/partials/mobile/_carousels.scss */
+/* line 41, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel .carousel__pagination a.selected {
   background-color: black;
 }
 
-/* line 47, ../scss/partials/mobile/_carousels.scss */
+/* line 49, ../scss/partials/mobile/_carousels.scss */
 .hero--story .carousel__pagination {
   bottom: -4rem;
 }
 
-/* line 54, ../scss/partials/mobile/_carousels.scss */
+/* line 56, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek.carousel--series .carousel--series__image {
   display: none;
   visiblity: hidden;
 }
-/* line 58, ../scss/partials/mobile/_carousels.scss */
+/* line 60, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek.carousel--series .carousel--series__image:first-child {
   width: 100%;
   display: block;
   visibility: visible;
 }
-/* line 66, ../scss/partials/mobile/_carousels.scss */
+/* line 68, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .caroufredsel_wrapper {
   overflow: visible;
 }
-/* line 70, ../scss/partials/mobile/_carousels.scss */
+/* line 72, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .carousel-item {
   box-shadow: -20px 0 0 white;
   width: 52.6rem;
   height: 30.2rem;
   overflow: hidden;
 }
-/* line 76, ../scss/partials/mobile/_carousels.scss */
+/* line 78, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .carousel-item.active {
   overflow: visible;
 }
-/* line 80, ../scss/partials/mobile/_carousels.scss */
+/* line 82, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .carousel-item .carousel--peek__image {
   width: 52.6rem;
   height: 30.2rem;
 }
-/* line 85, ../scss/partials/mobile/_carousels.scss */
+/* line 87, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .carousel-item .carousel--series__images {
   width: 52.6rem;
   height: 30.2rem;
 }
-/* line 91, ../scss/partials/mobile/_carousels.scss */
+/* line 93, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .carousel-item__overlay {
   -webkit-transition: background-color 0.3s ease-in-out;
   -moz-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
-/* line 95, ../scss/partials/mobile/_carousels.scss */
+/* line 97, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .mobile-carousel__external-container {
   margin-top: -5.6rem;
   opacity: 1;
@@ -4286,17 +4290,17 @@ body.panel--is-open #page-header .more-stories-toggle {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 103, ../scss/partials/mobile/_carousels.scss */
+/* line 105, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .mobile-carousel__external-container .carousel-item__title {
   margin: 2.4rem 0;
   text-align: center;
 }
-/* line 108, ../scss/partials/mobile/_carousels.scss */
+/* line 110, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .mobile-carousel__external-container.transitioning {
   opacity: 0;
   top: 1.2rem;
 }
-/* line 114, ../scss/partials/mobile/_carousels.scss */
+/* line 116, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel--peek .mobile-carousel__caption {
   text-align: center;
 }
