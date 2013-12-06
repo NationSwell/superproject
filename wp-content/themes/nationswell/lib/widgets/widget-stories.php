@@ -31,7 +31,7 @@ class Stories_Widget extends WP_Widget
             //Our variables from the widget settings.
             $post_id = intval($instance['post_id']);
 
-            $post = Timber::get_post(array($post_id));
+            $post = new TimberPost($post_id);
             $context['header'] = $post->post_title;
 
             $posts = get_field('story_list', $post->ID);
