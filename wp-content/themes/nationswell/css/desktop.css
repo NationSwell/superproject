@@ -113,12 +113,11 @@ body {
 #page-content {
   padding-bottom: 8rem;
   position: relative;
-  background0-color: white;
   z-index: 1;
   overflow-x: hidden;
 }
 
-/* line 42, ../scss/partials/base/_structure.scss */
+/* line 41, ../scss/partials/base/_structure.scss */
 .container {
   position: relative;
 }
