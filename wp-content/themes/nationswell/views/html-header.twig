@@ -23,7 +23,16 @@
 <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-max-device-pixel-ratio: 1)" href="/{{ theme_dir }}/css/tablet.css?{{ version }}"/>
 <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" href="/{{ theme_dir }}/css/tablet-retina.css?{{ version }}"/>
 
-<!--[if lte IE 9]>
+<!--[if lt IE 9]>
+<script>
+var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+"figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+"progress,section,time,video").split(',');
+for (var i = 0; i < e.length; i++) {
+document.createElement(e[i]);
+}
+</script>
+
 <link rel="stylesheet" type="text/css" media="screen" href="/{{ theme_dir }}/css/ie.css?{{ version }}"/>
 <![endif]-->
 

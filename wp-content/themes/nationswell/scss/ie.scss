@@ -1,14 +1,28 @@
-.more-stories-drawer {
-  display: none;
+
+.browsehappy {
+  background-color: #003046;
+  display: block;
+  padding: 34px;
+  margin-bottom: 34px;
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
+.browsehappy a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1fade0;
+}
+
+.browsehappy a:hover {
+  color: #95d6ef;
+}
+
+/* typography */
 a, img {
   outline: 0;
   border: 0;
-}
-
-#page-header {
-  background-color: #003046;
-  width: 100%;
-  padding: 0 24px;
 }
