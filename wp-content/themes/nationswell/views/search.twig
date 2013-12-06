@@ -4,11 +4,17 @@
 
     <div class="river river--one-col">
         <div class="container">
+            {% if posts is not empty %}
             <ul class="story-teases">
                 {% for post in posts|slice(0, 10) %}
                     <li>{% include ['tease-'~post.post_type~'-search.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
+            {% else %}
+
+            <h1>Sorry no posts match your search</h1>
+
+            {% endif %}
 
             <div class="sidebar">
                 {{ sidebar_static }}
