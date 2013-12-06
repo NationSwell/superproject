@@ -13,7 +13,8 @@ function create_story_list_post_type()
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => 'title'
+            'supports' => 'title',
+            'exclude_from_search' => true,
         )
     );
 }

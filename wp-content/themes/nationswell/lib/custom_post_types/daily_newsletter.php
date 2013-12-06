@@ -15,6 +15,7 @@ function create_daily_newsletter_post_type()
             'has_archive' => true,
             'supports' => 'title',
             'rewrite' => array( 'slug' => 'daily-newsletter' ),
+            'exclude_from_search' => true,
         )
     );
 
