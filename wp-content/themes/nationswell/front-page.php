@@ -47,7 +47,9 @@ if($stories_carousel_b_ids !== false) {
     if($first_page) {
         $data['stories_carousel_b'] = Timber::get_posts($stories_carousel_b_ids, 'NationSwellPost');
     }
-    $excludes = array_merge($excludes, $stories_carousel_b_ids);
+    if(!empty($stories_carousel_b_ids)){
+        $excludes = array_merge($excludes, $stories_carousel_b_ids);
+    }
 }
 
 $posts_per_page = 9;

@@ -269,14 +269,14 @@ if (function_exists("register_field_group")) {
                     'required' => 1,
                     'choices' => array(
                         'link' => 'Link',
-                        'purchase' => 'Purchase',
-                        'donate' => 'Donate',
+                        'cart' => 'Purchase',
                         'donate' => 'Donate',
                         'cta-signup' => 'Signup',
                         'cta-speak-out' => 'Speak Out',
                         'email' => '@ Symbol',
                         'get_involved' => 'Get Involved',
                         'speak_out' => 'Speak Out Alternative',
+                        'twitter' => 'Tweet'
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
