@@ -338,6 +338,7 @@
     .story--link {
       .story__hed {
         @include transition(all 0.3s ease-in-out);
+        margin-bottom: 0;
       }
 
       &:hover {
