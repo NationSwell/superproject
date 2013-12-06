@@ -1,3 +1,9 @@
+#page-content {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
 #page-footer,
 #page-footer .container {
   background-color: $ns_navy1;

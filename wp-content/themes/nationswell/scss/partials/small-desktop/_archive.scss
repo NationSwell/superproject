@@ -57,8 +57,12 @@
   }
 }
 
-.river-two-col {
+.river--two-col {
   .story__feature {
     margin-bottom: -1.4rem;
+  }
+
+  .story-teases:last-child {
+    margin-right: 2.07469%;
   }
 }

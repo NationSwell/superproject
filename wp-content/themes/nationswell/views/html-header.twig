@@ -23,6 +23,10 @@
 <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-max-device-pixel-ratio: 1)" href="/{{ theme_dir }}/css/tablet.css?{{ version }}"/>
 <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" href="/{{ theme_dir }}/css/tablet-retina.css?{{ version }}"/>
 
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" media="screen" href="/{{ theme_dir }}/css/ie.css?{{ version }}"/>
+<![endif]-->
+
 <script src="/{{ theme_dir }}/js/src/vendor/modernizr.custom.13580.js"></script>
 
 <link rel="pingback" href="{{ bloginfo('pingback_url') }}"/>
