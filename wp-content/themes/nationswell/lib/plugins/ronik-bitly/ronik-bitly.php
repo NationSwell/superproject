@@ -2,7 +2,7 @@
 /*
 Plugin Name: Ronik Bitly Plug-in
 Description: A fork of the official bitly plugin which doesn't hijack get_permalink. A plugin that replaces shared links with Bitly short urls and gives you the option of placing a widget on your site that shows your popular or most recent bitmarks, or the top results from a search of all currently popular bitly links.  Please visit the plug-in settings page to authorize your Bitly account.  For the widget, please find 'Bitly Bitmarks' under the Available Widgets area.
-Version: 1.1.1
+Version: 1.1.2
 Author: Ronik
 */
 
@@ -58,7 +58,7 @@ class Bitly extends BitlyService
         if ( $p->ID > 0 )
         {
             $tags['bitly:url'] = $this->get_bitly_link_for_post_id( $p->ID );
-            $tags['og:url'] = $this->get_bitly_link_for_post_id( $p->ID );
+//            $tags['og:url'] = $this->get_bitly_link_for_post_id( $p->ID );
         }
 
         if ( empty( $tags ) )
