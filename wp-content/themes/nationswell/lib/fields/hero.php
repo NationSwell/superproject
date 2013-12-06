@@ -6,6 +6,15 @@ if(function_exists("register_field_group"))
             'title' => 'Hero',
             'fields' => array (
                 array (
+                    'key' => 'field_52a22c48221a3',
+                    'label' => 'Enable Small Hero',
+                    'name' => 'enable_small_hero',
+                    'type' => 'true_false',
+                    'instructions' => 'Use this option if you have an image which you want to appear in the center copy column on a Story page.',
+                    'message' => '',
+                    'default_value' => 0,
+                ),
+                array (
                     'key' => 'field_52742d44fb739',
                     'label' => __('Hero'),
                     'name' => 'hero',
@@ -97,7 +106,7 @@ if(function_exists("register_field_group"))
             ),
             'options' => array (
                 'position' => 'acf_after_title',
-                'layout' => 'no_box',
+                'layout' => 'default',
                 'hide_on_screen' => array (
                 ),
             ),

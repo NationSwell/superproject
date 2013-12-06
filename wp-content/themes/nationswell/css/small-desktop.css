@@ -4599,27 +4599,36 @@ input[type="submit"]:-moz-focus-inner {
 .hero--story.hero--image {
   height: 42.6rem;
 }
-/* line 9, ../scss/partials/small-desktop/_story.scss */
+/* line 7, ../scss/partials/small-desktop/_story.scss */
+.story__main-column .hero--story.hero--image {
+  height: auto;
+  max-height: none;
+}
+/* line 11, ../scss/partials/small-desktop/_story.scss */
+.story__main-column .hero--story.hero--image img {
+  max-width: 100%;
+}
+/* line 20, ../scss/partials/small-desktop/_story.scss */
 .hero--story.hero--carousel .carousel {
   background-color: #061822;
   height: 42.6rem;
 }
-/* line 14, ../scss/partials/small-desktop/_story.scss */
+/* line 25, ../scss/partials/small-desktop/_story.scss */
 .hero--story.hero--carousel .carousel__control {
   top: 16.6rem;
 }
-/* line 18, ../scss/partials/small-desktop/_story.scss */
+/* line 29, ../scss/partials/small-desktop/_story.scss */
 .hero--story.hero--carousel .carousel-item {
   height: 42.6rem;
   width: 82rem;
   min-width: 82rem;
 }
-/* line 24, ../scss/partials/small-desktop/_story.scss */
+/* line 35, ../scss/partials/small-desktop/_story.scss */
 .hero--story.hero--carousel .carousel--peek__image {
   height: 42.6rem;
   width: 82rem;
 }
-/* line 30, ../scss/partials/small-desktop/_story.scss */
+/* line 41, ../scss/partials/small-desktop/_story.scss */
 .hero--story .hero--video__container {
   width: 72.6rem;
   height: 42.5rem;
@@ -4627,120 +4636,120 @@ input[type="submit"]:-moz-focus-inner {
   padding: 0;
 }
 
-/* line 39, ../scss/partials/small-desktop/_story.scss */
+/* line 50, ../scss/partials/small-desktop/_story.scss */
 .hero-information .hero-information__toggle {
   padding: 0.8rem 6rem;
   font-size: 4rem;
 }
-/* line 44, ../scss/partials/small-desktop/_story.scss */
+/* line 55, ../scss/partials/small-desktop/_story.scss */
 .hero-information .hero-information__outer {
   padding: 2.2rem;
 }
-/* line 48, ../scss/partials/small-desktop/_story.scss */
+/* line 59, ../scss/partials/small-desktop/_story.scss */
 .hero-information .hero-information__caption {
   font-size: 1.8rem;
 }
-/* line 52, ../scss/partials/small-desktop/_story.scss */
+/* line 63, ../scss/partials/small-desktop/_story.scss */
 .hero-information .hero-information__credit {
   font-size: 1.4rem;
 }
 
-/* line 57, ../scss/partials/small-desktop/_story.scss */
+/* line 68, ../scss/partials/small-desktop/_story.scss */
 .story__container {
   margin-top: 5rem;
 }
-/* line 62, ../scss/partials/small-desktop/_story.scss */
+/* line 73, ../scss/partials/small-desktop/_story.scss */
 .story__container .story--page > header .story__hed {
   margin-bottom: 3.4rem;
 }
-/* line 66, ../scss/partials/small-desktop/_story.scss */
+/* line 77, ../scss/partials/small-desktop/_story.scss */
 .story__container .story--page > header .story__dek {
   margin-bottom: 4.6rem;
 }
-/* line 72, ../scss/partials/small-desktop/_story.scss */
+/* line 83, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__meta {
   display: block;
   margin-bottom: 1.2rem;
 }
-/* line 76, ../scss/partials/small-desktop/_story.scss */
+/* line 87, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__meta li {
   font-size: 1.4rem;
 }
-/* line 80, ../scss/partials/small-desktop/_story.scss */
+/* line 91, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__meta li:first-child:after {
   margin-left: 0.4rem;
 }
-/* line 87, ../scss/partials/small-desktop/_story.scss */
+/* line 98, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__main-column {
   overflow: hidden;
 }
-/* line 91, ../scss/partials/small-desktop/_story.scss */
+/* line 102, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content {
   margin-bottom: 7.2rem;
 }
-/* line 94, ../scss/partials/small-desktop/_story.scss */
+/* line 105, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content p {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 2.2rem;
   /* drop cap */
 }
-/* line 100, ../scss/partials/small-desktop/_story.scss */
+/* line 111, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   font-size: 7.8rem;
   margin-right: 2.6rem;
 }
-/* line 105, ../scss/partials/small-desktop/_story.scss */
+/* line 116, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 109, ../scss/partials/small-desktop/_story.scss */
+/* line 120, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 115, ../scss/partials/small-desktop/_story.scss */
+/* line 126, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 121, ../scss/partials/small-desktop/_story.scss */
+/* line 132, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
-/* line 126, ../scss/partials/small-desktop/_story.scss */
+/* line 137, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > h3 {
   font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
-/* line 131, ../scss/partials/small-desktop/_story.scss */
+/* line 142, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 136, ../scss/partials/small-desktop/_story.scss */
+/* line 147, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 141, ../scss/partials/small-desktop/_story.scss */
+/* line 152, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 146, ../scss/partials/small-desktop/_story.scss */
+/* line 157, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > ol {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 150, ../scss/partials/small-desktop/_story.scss */
+/* line 161, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > ol li {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
 }
-/* line 154, ../scss/partials/small-desktop/_story.scss */
+/* line 165, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > ol li:before {
   font-size: 1.2rem;
   width: 2.4rem;
@@ -4749,41 +4758,41 @@ input[type="submit"]:-moz-focus-inner {
   margin-right: 1.4rem;
   left: -4.2rem;
 }
-/* line 165, ../scss/partials/small-desktop/_story.scss */
+/* line 176, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > ul {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 169, ../scss/partials/small-desktop/_story.scss */
+/* line 180, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > ul li {
   font-size: 1.8rem;
   margin-bottom: 1.4rem;
 }
-/* line 173, ../scss/partials/small-desktop/_story.scss */
+/* line 184, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__content > ul li:before {
   left: -3.4rem;
 }
 
 /* multimedia */
-/* line 182, ../scss/partials/small-desktop/_story.scss */
+/* line 193, ../scss/partials/small-desktop/_story.scss */
 .multimedia {
   margin: 5rem 0;
 }
-/* line 185, ../scss/partials/small-desktop/_story.scss */
+/* line 196, ../scss/partials/small-desktop/_story.scss */
 .multimedia .multimedia__content {
   margin-top: 2.2rem;
 }
-/* line 189, ../scss/partials/small-desktop/_story.scss */
+/* line 200, ../scss/partials/small-desktop/_story.scss */
 .multimedia figcaption {
   margin-top: 1rem;
 }
-/* line 194, ../scss/partials/small-desktop/_story.scss */
+/* line 205, ../scss/partials/small-desktop/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
 }
 
 /* sticky */
-/* line 201, ../scss/partials/small-desktop/_story.scss */
+/* line 212, ../scss/partials/small-desktop/_story.scss */
 .story__sticky-container {
   margin-bottom: 75px;
   width: 14.6rem;
@@ -4796,12 +4805,12 @@ input[type="submit"]:-moz-focus-inner {
     top: auto;
   }*/
 }
-/* line 215, ../scss/partials/small-desktop/_story.scss */
+/* line 226, ../scss/partials/small-desktop/_story.scss */
 .story__sticky-container.stuck {
   top: 150px;
 }
 
-/* line 220, ../scss/partials/small-desktop/_story.scss */
+/* line 231, ../scss/partials/small-desktop/_story.scss */
 .sticky-social {
   position: relative;
   margin-bottom: 5rem;
@@ -4810,12 +4819,12 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: left 0.15s ease-in-out;
   transition: left 0.15s ease-in-out;
 }
-/* line 227, ../scss/partials/small-desktop/_story.scss */
+/* line 238, ../scss/partials/small-desktop/_story.scss */
 .sticky-social.is-hidden {
   left: 20rem;
 }
 
-/* line 232, ../scss/partials/small-desktop/_story.scss */
+/* line 243, ../scss/partials/small-desktop/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
   position: relative;
@@ -4824,79 +4833,79 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: left 0.15s ease-in-out;
   transition: left 0.15s ease-in-out;
 }
-/* line 239, ../scss/partials/small-desktop/_story.scss */
+/* line 250, ../scss/partials/small-desktop/_story.scss */
 .sticky-take-action.is-hidden {
   left: 20rem;
 }
 
-/* line 244, ../scss/partials/small-desktop/_story.scss */
+/* line 255, ../scss/partials/small-desktop/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 248, ../scss/partials/small-desktop/_story.scss */
+/* line 259, ../scss/partials/small-desktop/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 253, ../scss/partials/small-desktop/_story.scss */
+/* line 264, ../scss/partials/small-desktop/_story.scss */
 .story__tags {
   margin-bottom: 5rem;
   padding-bottom: 1.4rem;
 }
-/* line 258, ../scss/partials/small-desktop/_story.scss */
+/* line 269, ../scss/partials/small-desktop/_story.scss */
 .story__tags .tags-list:before {
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 1.8rem;
 }
-/* line 264, ../scss/partials/small-desktop/_story.scss */
+/* line 275, ../scss/partials/small-desktop/_story.scss */
 .story__tags .tags-list li {
   margin: 0 1rem 1rem 0;
 }
 
-/* line 271, ../scss/partials/small-desktop/_story.scss */
+/* line 282, ../scss/partials/small-desktop/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
 
-/* line 276, ../scss/partials/small-desktop/_story.scss */
+/* line 287, ../scss/partials/small-desktop/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 3.4rem;
   /* tweet politician take action */
 }
-/* line 280, ../scss/partials/small-desktop/_story.scss */
+/* line 291, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 3.4rem;
 }
-/* line 284, ../scss/partials/small-desktop/_story.scss */
+/* line 295, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .take-action__a {
   float: left;
   width: 25.6rem;
 }
-/* line 289, ../scss/partials/small-desktop/_story.scss */
+/* line 300, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .take-action__b {
   overflow: hidden;
   padding-left: 3.4rem;
 }
-/* line 295, ../scss/partials/small-desktop/_story.scss */
+/* line 306, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .take-action__action .btn {
   margin-top: 1.8rem;
 }
-/* line 300, ../scss/partials/small-desktop/_story.scss */
+/* line 311, ../scss/partials/small-desktop/_story.scss */
 .module.take-action p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin: 1.8rem 0;
 }
-/* line 306, ../scss/partials/small-desktop/_story.scss */
+/* line 317, ../scss/partials/small-desktop/_story.scss */
 .module.take-action small {
   font-size: 1.4rem;
   margin-top: 2.2rem;
 }
-/* line 312, ../scss/partials/small-desktop/_story.scss */
+/* line 323, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -4910,7 +4919,7 @@ input[type="submit"]:-moz-focus-inner {
   display: block;
   width: 100%;
 }
-/* line 325, ../scss/partials/small-desktop/_story.scss */
+/* line 336, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -4918,37 +4927,37 @@ input[type="submit"]:-moz-focus-inner {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 340, ../scss/partials/small-desktop/_story.scss */
+/* line 351, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 344, ../scss/partials/small-desktop/_story.scss */
+/* line 355, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 349, ../scss/partials/small-desktop/_story.scss */
+/* line 360, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .politician__photo {
   width: 12rem;
   height: 12rem;
   margin-right: 4rem;
   float: left;
 }
-/* line 356, ../scss/partials/small-desktop/_story.scss */
+/* line 367, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .politician__information {
   overflow: hidden;
   max-width: 22rem;
 }
-/* line 361, ../scss/partials/small-desktop/_story.scss */
+/* line 372, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .politician__name {
   margin-top: 0.6rem;
 }
-/* line 365, ../scss/partials/small-desktop/_story.scss */
+/* line 376, ../scss/partials/small-desktop/_story.scss */
 .module.take-action .politician__office {
   font-size: 1.6rem;
 }
 
-/* line 372, ../scss/partials/small-desktop/_story.scss */
+/* line 383, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__social,
 .story__container .story__take-action {
   clear: both;
@@ -4959,14 +4968,14 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
 }
-/* line 379, ../scss/partials/small-desktop/_story.scss */
+/* line 390, ../scss/partials/small-desktop/_story.scss */
 .story__container .story__social.is-visible,
 .story__container .story__take-action.is-visible {
   left: 0;
   height: auto;
 }
 
-/* line 388, ../scss/partials/small-desktop/_story.scss */
+/* line 399, ../scss/partials/small-desktop/_story.scss */
 .fb-comments {
   margin-bottom: 7.2rem;
 }

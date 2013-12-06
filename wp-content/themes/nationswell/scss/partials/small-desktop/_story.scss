@@ -3,6 +3,17 @@
 
   &.hero--image {
     height: 42.6rem;
+
+    .story__main-column & {
+      height: auto;
+      max-height: none;
+
+      img {
+        max-width: 100%;
+      }
+
+    }
+
   }
 
   &.hero--carousel {

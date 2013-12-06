@@ -4603,27 +4603,37 @@ input[type="submit"]:-moz-focus-inner {
   padding-bottom: 40%;
   max-height: none;
 }
-/* line 12, ../scss/partials/desktop/_story.scss */
+/* line 9, ../scss/partials/desktop/_story.scss */
+.story__main-column .hero--story.hero--image {
+  padding-bottom: 0;
+  height: auto;
+  max-height: none;
+}
+/* line 14, ../scss/partials/desktop/_story.scss */
+.story__main-column .hero--story.hero--image img {
+  max-width: 100%;
+}
+/* line 23, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--carousel .carousel {
   background-color: #061822;
   height: 42.6rem;
 }
-/* line 17, ../scss/partials/desktop/_story.scss */
+/* line 28, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--carousel .carousel__control {
   top: 16.6rem;
 }
-/* line 21, ../scss/partials/desktop/_story.scss */
+/* line 32, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--carousel .carousel-item {
   height: 42.6rem;
   width: 82rem;
   min-width: 82rem;
 }
-/* line 27, ../scss/partials/desktop/_story.scss */
+/* line 38, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--carousel .carousel--peek__image {
   height: 42.6rem;
   width: 82rem;
 }
-/* line 33, ../scss/partials/desktop/_story.scss */
+/* line 44, ../scss/partials/desktop/_story.scss */
 .hero--story .hero--video__container {
   width: 72.6rem;
   height: 42.5rem;
@@ -4631,120 +4641,120 @@ input[type="submit"]:-moz-focus-inner {
   padding: 0;
 }
 
-/* line 42, ../scss/partials/desktop/_story.scss */
+/* line 53, ../scss/partials/desktop/_story.scss */
 .hero-information .hero-information__toggle {
   padding: 0.8rem 6rem;
   font-size: 4rem;
 }
-/* line 47, ../scss/partials/desktop/_story.scss */
+/* line 58, ../scss/partials/desktop/_story.scss */
 .hero-information .hero-information__outer {
   padding: 2.2rem;
 }
-/* line 51, ../scss/partials/desktop/_story.scss */
+/* line 62, ../scss/partials/desktop/_story.scss */
 .hero-information .hero-information__caption {
   font-size: 1.8rem;
 }
-/* line 55, ../scss/partials/desktop/_story.scss */
+/* line 66, ../scss/partials/desktop/_story.scss */
 .hero-information .hero-information__credit {
   font-size: 1.4rem;
 }
 
-/* line 60, ../scss/partials/desktop/_story.scss */
+/* line 71, ../scss/partials/desktop/_story.scss */
 .story__container {
   margin-top: 5rem;
 }
-/* line 65, ../scss/partials/desktop/_story.scss */
+/* line 76, ../scss/partials/desktop/_story.scss */
 .story__container .story--page > header .story__hed {
   margin-bottom: 3.4rem;
 }
-/* line 69, ../scss/partials/desktop/_story.scss */
+/* line 80, ../scss/partials/desktop/_story.scss */
 .story__container .story--page > header .story__dek {
   margin-bottom: 4.6rem;
 }
-/* line 75, ../scss/partials/desktop/_story.scss */
+/* line 86, ../scss/partials/desktop/_story.scss */
 .story__container .story__meta {
   display: block;
   margin-bottom: 1.2rem;
 }
-/* line 79, ../scss/partials/desktop/_story.scss */
+/* line 90, ../scss/partials/desktop/_story.scss */
 .story__container .story__meta li {
   font-size: 1.4rem;
 }
-/* line 83, ../scss/partials/desktop/_story.scss */
+/* line 94, ../scss/partials/desktop/_story.scss */
 .story__container .story__meta li:first-child:after {
   margin-left: 0.4rem;
 }
-/* line 90, ../scss/partials/desktop/_story.scss */
+/* line 101, ../scss/partials/desktop/_story.scss */
 .story__container .story__main-column {
   overflow: hidden;
 }
-/* line 94, ../scss/partials/desktop/_story.scss */
+/* line 105, ../scss/partials/desktop/_story.scss */
 .story__container .story__content {
   margin-bottom: 7.2rem;
 }
-/* line 97, ../scss/partials/desktop/_story.scss */
+/* line 108, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 2.2rem;
   /* drop cap */
 }
-/* line 103, ../scss/partials/desktop/_story.scss */
+/* line 114, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   font-size: 7.8rem;
   margin-right: 2.6rem;
 }
-/* line 108, ../scss/partials/desktop/_story.scss */
+/* line 119, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 112, ../scss/partials/desktop/_story.scss */
+/* line 123, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 118, ../scss/partials/desktop/_story.scss */
+/* line 129, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 124, ../scss/partials/desktop/_story.scss */
+/* line 135, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
-/* line 129, ../scss/partials/desktop/_story.scss */
+/* line 140, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h3 {
   font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
-/* line 134, ../scss/partials/desktop/_story.scss */
+/* line 145, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 139, ../scss/partials/desktop/_story.scss */
+/* line 150, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 144, ../scss/partials/desktop/_story.scss */
+/* line 155, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 149, ../scss/partials/desktop/_story.scss */
+/* line 160, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 153, ../scss/partials/desktop/_story.scss */
+/* line 164, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol li {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
 }
-/* line 157, ../scss/partials/desktop/_story.scss */
+/* line 168, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol li:before {
   font-size: 1.2rem;
   width: 2.4rem;
@@ -4753,41 +4763,41 @@ input[type="submit"]:-moz-focus-inner {
   margin-right: 1.4rem;
   left: -4.2rem;
 }
-/* line 168, ../scss/partials/desktop/_story.scss */
+/* line 179, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 172, ../scss/partials/desktop/_story.scss */
+/* line 183, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul li {
   font-size: 1.8rem;
   margin-bottom: 1.4rem;
 }
-/* line 176, ../scss/partials/desktop/_story.scss */
+/* line 187, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul li:before {
   left: -3.4rem;
 }
 
 /* multimedia */
-/* line 185, ../scss/partials/desktop/_story.scss */
+/* line 196, ../scss/partials/desktop/_story.scss */
 .multimedia {
   margin: 5rem 0;
 }
-/* line 188, ../scss/partials/desktop/_story.scss */
+/* line 199, ../scss/partials/desktop/_story.scss */
 .multimedia .multimedia__content {
   margin-top: 2.2rem;
 }
-/* line 192, ../scss/partials/desktop/_story.scss */
+/* line 203, ../scss/partials/desktop/_story.scss */
 .multimedia figcaption {
   margin-top: 1rem;
 }
-/* line 197, ../scss/partials/desktop/_story.scss */
+/* line 208, ../scss/partials/desktop/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
 }
 
 /* sticky */
-/* line 204, ../scss/partials/desktop/_story.scss */
+/* line 215, ../scss/partials/desktop/_story.scss */
 .story__sticky-container {
   margin-bottom: 75px;
   width: 16rem;
@@ -4800,12 +4810,12 @@ input[type="submit"]:-moz-focus-inner {
     top: auto;
   }*/
 }
-/* line 218, ../scss/partials/desktop/_story.scss */
+/* line 229, ../scss/partials/desktop/_story.scss */
 .story__sticky-container.stuck {
   top: 150px;
 }
 
-/* line 223, ../scss/partials/desktop/_story.scss */
+/* line 234, ../scss/partials/desktop/_story.scss */
 .sticky-social {
   position: relative;
   margin-bottom: 5rem;
@@ -4814,7 +4824,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 230, ../scss/partials/desktop/_story.scss */
+/* line 241, ../scss/partials/desktop/_story.scss */
 .sticky-social.is-hidden {
   left: 20rem;
   -webkit-transform: scale(0.5);
@@ -4824,7 +4834,7 @@ input[type="submit"]:-moz-focus-inner {
   transform: scale(0.5);
 }
 
-/* line 236, ../scss/partials/desktop/_story.scss */
+/* line 247, ../scss/partials/desktop/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
   position: relative;
@@ -4833,7 +4843,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 243, ../scss/partials/desktop/_story.scss */
+/* line 254, ../scss/partials/desktop/_story.scss */
 .sticky-take-action.is-hidden {
   left: 20rem;
   -webkit-transform: scale(1.5);
@@ -4843,74 +4853,74 @@ input[type="submit"]:-moz-focus-inner {
   transform: scale(1.5);
 }
 
-/* line 249, ../scss/partials/desktop/_story.scss */
+/* line 260, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 253, ../scss/partials/desktop/_story.scss */
+/* line 264, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 258, ../scss/partials/desktop/_story.scss */
+/* line 269, ../scss/partials/desktop/_story.scss */
 .story__tags {
   margin-bottom: 5rem;
   padding-bottom: 1.4rem;
 }
-/* line 263, ../scss/partials/desktop/_story.scss */
+/* line 274, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list:before {
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 1.8rem;
 }
-/* line 269, ../scss/partials/desktop/_story.scss */
+/* line 280, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list li {
   margin: 0 1rem 1rem 0;
 }
 
-/* line 276, ../scss/partials/desktop/_story.scss */
+/* line 287, ../scss/partials/desktop/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
 
-/* line 281, ../scss/partials/desktop/_story.scss */
+/* line 292, ../scss/partials/desktop/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 3.4rem;
   /* tweet politician take action */
 }
-/* line 285, ../scss/partials/desktop/_story.scss */
+/* line 296, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 3.4rem;
 }
-/* line 289, ../scss/partials/desktop/_story.scss */
+/* line 300, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__a {
   float: left;
   width: 25.6rem;
 }
-/* line 294, ../scss/partials/desktop/_story.scss */
+/* line 305, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__b {
   overflow: hidden;
   padding-left: 3.4rem;
 }
-/* line 300, ../scss/partials/desktop/_story.scss */
+/* line 311, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__action .btn {
   margin-top: 1.8rem;
 }
-/* line 305, ../scss/partials/desktop/_story.scss */
+/* line 316, ../scss/partials/desktop/_story.scss */
 .module.take-action p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin: 0 0 1.8rem;
 }
-/* line 311, ../scss/partials/desktop/_story.scss */
+/* line 322, ../scss/partials/desktop/_story.scss */
 .module.take-action small {
   font-size: 1.4rem;
   margin-top: 2.2rem;
 }
-/* line 317, ../scss/partials/desktop/_story.scss */
+/* line 328, ../scss/partials/desktop/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -4924,7 +4934,7 @@ input[type="submit"]:-moz-focus-inner {
   display: block;
   width: 100%;
 }
-/* line 330, ../scss/partials/desktop/_story.scss */
+/* line 341, ../scss/partials/desktop/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -4932,37 +4942,37 @@ input[type="submit"]:-moz-focus-inner {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 345, ../scss/partials/desktop/_story.scss */
+/* line 356, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 349, ../scss/partials/desktop/_story.scss */
+/* line 360, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 354, ../scss/partials/desktop/_story.scss */
+/* line 365, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__photo {
   width: 12rem;
   height: 12rem;
   margin-right: 4rem;
   float: left;
 }
-/* line 361, ../scss/partials/desktop/_story.scss */
+/* line 372, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__information {
   overflow: hidden;
   max-width: 32rem;
 }
-/* line 366, ../scss/partials/desktop/_story.scss */
+/* line 377, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__name {
   margin-top: 0.6rem;
 }
-/* line 370, ../scss/partials/desktop/_story.scss */
+/* line 381, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician__office {
   font-size: 1.6rem;
 }
 
-/* line 377, ../scss/partials/desktop/_story.scss */
+/* line 388, ../scss/partials/desktop/_story.scss */
 .story__container .story__social,
 .story__container .story__take-action {
   clear: both;
@@ -4974,14 +4984,14 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
 }
-/* line 385, ../scss/partials/desktop/_story.scss */
+/* line 396, ../scss/partials/desktop/_story.scss */
 .story__container .story__social.is-visible,
 .story__container .story__take-action.is-visible {
   left: 0;
   height: auto;
 }
 
-/* line 394, ../scss/partials/desktop/_story.scss */
+/* line 405, ../scss/partials/desktop/_story.scss */
 .take-action__social_back {
   background: none;
   border: none;
@@ -4991,7 +5001,7 @@ input[type="submit"]:-moz-focus-inner {
   top: 4.6rem;
 }
 
-/* line 403, ../scss/partials/desktop/_story.scss */
+/* line 414, ../scss/partials/desktop/_story.scss */
 .fb-comments {
   margin-bottom: 7.2rem;
 }
