@@ -3762,23 +3762,18 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* line 1, ../scss/partials/mobile/_footer.scss */
-#page-content {
-  margin-bottom: -66rem;
-}
-
-/* line 5, ../scss/partials/mobile/_footer.scss */
 #page-footer {
   height: 66rem;
   width: 100%;
 }
 
-/* line 10, ../scss/partials/mobile/_footer.scss */
+/* line 6, ../scss/partials/mobile/_footer.scss */
 .site-logo--footer {
   padding-top: 4.6rem;
   text-align: center;
 }
 
-/* line 15, ../scss/partials/mobile/_footer.scss */
+/* line 11, ../scss/partials/mobile/_footer.scss */
 .copyright {
   font-size: 2rem;
   margin-bottom: 4rem;
@@ -3786,21 +3781,21 @@ body.panel--is-open #page-header .more-stories-toggle {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 23, ../scss/partials/mobile/_footer.scss */
+/* line 19, ../scss/partials/mobile/_footer.scss */
 .footer-links {
   margin: 3.8rem 0 4.2rem;
 }
-/* line 26, ../scss/partials/mobile/_footer.scss */
+/* line 22, ../scss/partials/mobile/_footer.scss */
 .footer-links li {
   padding: 1.8rem 0 1.8rem 1.4rem;
   border-top: 1px solid #003046;
 }
-/* line 30, ../scss/partials/mobile/_footer.scss */
+/* line 26, ../scss/partials/mobile/_footer.scss */
 .footer-links li:first-child {
   border-top: 0 none;
 }
 
-/* line 36, ../scss/partials/mobile/_footer.scss */
+/* line 32, ../scss/partials/mobile/_footer.scss */
 .footer-links__link {
   color: white;
   font-size: 3.2rem;
