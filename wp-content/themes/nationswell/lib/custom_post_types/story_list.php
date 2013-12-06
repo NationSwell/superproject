@@ -13,6 +13,7 @@ function create_story_list_post_type()
             ),
             'public' => true,
             'has_archive' => true,
+            'publicly_queryable' => true,
             'supports' => 'title',
             'exclude_from_search' => true,
         )

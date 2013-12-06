@@ -14,6 +14,7 @@ function create_post_type()
             'public' => true,
             'has_archive' => true,
             'supports' => 'title',
+            'publicly_queryable' => true,
             'exclude_from_search' => true,
         )
     );
