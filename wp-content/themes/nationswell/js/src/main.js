@@ -1,5 +1,6 @@
 (function ($) {
     $(function () {
+
         var $body = $('body');
 
         // sticky nav
@@ -121,13 +122,29 @@
             $(this).empty().unbind('.textareaClear');
         });
 
-        setTimeout(function () {
-            $('#flyout').toggleClass('is-visible');
-        }, 15000);
 
+        // Disable Like Panel
+        window.fbAsyncInit = function() {
+            FB.Event.subscribe('edge.create',
+                function(href, widget) {
+                    $.cookie('flyout', 'disabled', { expires: 1, path: '/' });
+                }
+            );
+        };
+
+
+        if (!$.cookie('flyout')) {
+
+            setTimeout(function () {
+                $('#flyout').toggleClass('is-visible');
+            }, 500);
+
+        }
 
         $("[data-flyout-action='close']").on('click', function () {
-            $(this).closest('#flyout').remove();
+            var $flyout = $(this).closest('#flyout');
+            $flyout.remove();
+            $.cookie('flyout', 'disabled', { expires: 1, path: '/' });
         });
 
         // expand/collapse header fields
