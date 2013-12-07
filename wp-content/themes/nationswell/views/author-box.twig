@@ -1,5 +1,4 @@
 <div class="author-box cf">
-    {{ dump(author) }}
     <div class="author__a">
         {% if author.mug_shot is not empty %}
             <img src="{{ author.mug_shot.url|resize(134,134) }}" class="author__portrait" alt="{{ author.mug_shot._wp_attachment_image_alt }}">
