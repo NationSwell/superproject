@@ -137,7 +137,7 @@
 
             setTimeout(function () {
                 $('#flyout').toggleClass('is-visible');
-            }, 500);
+            }, 30000);
 
         }
 
