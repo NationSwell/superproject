@@ -1,4 +1,5 @@
 <div class="author-box cf">
+    {{ dump(author) }}
     <div class="author__a">
         {% if author.mug_shot is not empty %}
             <img src="{{ author.mug_shot.url|resize(134,134) }}" class="author__portrait" alt="{{ author.mug_shot._wp_attachment_image_alt }}">
@@ -11,13 +12,13 @@
 
             <ul class="social author__social">
                 {% if author.facebook_username is not empty %}
-                    <li><a href="http://www.facebook.com/{{ author.facebook_username }}" class="icon icon_facebook"></a></li>
+                    <li><a href="http://www.facebook.com/{{ author.facebook_username }}" class="icon icon_facebook" target="_blank"></a></li>
                 {% endif %}
                 {% if author.twitter_username is not empty %}
-                    <li><a href="http://www.twitter.com/{{ author.twitter_username }}" class="icon icon_twitter"></a></li>
+                    <li><a href="http://www.twitter.com/{{ author.twitter_username }}" class="icon icon_twitter" target="_blank"></a></li>
                 {% endif %}
                 {% if author.tumblr is not empty %}
-                    <li><a href="{{ author.tumblr }}" class="icon icon_tumblr"></a></li>
+                    <li><a href="{{ author.tumblr }}" class="icon icon_tumblr" target="_blank"></a></li>
                 {% endif %}
             </ul>
         </div>
