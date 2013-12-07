@@ -18,7 +18,7 @@
             <p>{{ take_action_thanks_text }}</p>
 
             <ul class="social take-action__social">
-                <li><a href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]={{ post.title }}&amp;p[url]={{ post.permalink }}&amp;p[summary]={{ post.call_to_action.social_share_text }}" class="btn btn--social btn--share icon icon_facebook"></a></li>
+                <li><a href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]={% if post.is_multimedia == 1 %}[{{ post.content_type|upper }}] {% endif %}{{ post.title }}&amp;p[url]={{ post.permalink }}&amp;p[summary]={{ post.call_to_action.social_share_text }}" class="btn btn--social btn--share icon icon_facebook"></a></li>
                 <li><a href="https://twitter.com/share?url={{ post.short_url|url_encode(true) }}&text={{ post.call_to_action.social_share_text|url_encode(true) }}&via=nationswell" class="btn btn--social btn--share icon icon_twitter"></a></li>
                 <li><a href="http://www.tumblr.com/share/link?url={{ post.permalink|url_encode(true) }}&name={{ post.title|url_encode(true) }}&description={{ post.call_to_action.social_share_text|url_encode(true) }}" title="Share on Tumblr" class="btn btn--social btn--share icon icon_tumblr"></a></li>
                 <li>

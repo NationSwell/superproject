@@ -125,7 +125,9 @@ if (class_exists('TimberPost')) {
             $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->title();
 
             return 'http://www.facebook.com/sharer.php?s= 100&amp;p[url]='
-            . urlencode($this->short_url()) . '&amp;p[title]=' . $this->title() . '&amp;p[summary]=' . $facebook_share_text;
+            . urlencode($this->short_url()) . '&amp;p[title]='
+            . (($this->is_multimedia()) ? '[' . strtoupper($this->content_type) . '] ' : "") . $this->title()
+            . '&amp;p[summary]=' . $facebook_share_text;
 
         }
 
@@ -179,6 +181,10 @@ if (class_exists('TimberPost')) {
             } else {
                 return author();
             }
+        }
+
+        function is_multimedia(){
+            return $this->content_type == 'video' || $this->content_type == 'photo';
         }
 
     }
