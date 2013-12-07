@@ -45,14 +45,12 @@
       display: block;
       margin: 0 auto;
       position: relative;
-      top: -1px;
 
       .story__main-column & {
         width: 100%;
         height: auto;
         margin: 0 auto;
         padding: 0 0 56.25%;
-        top: 0;
       }
 
     }

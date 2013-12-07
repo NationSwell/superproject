@@ -2462,18 +2462,16 @@ input[type="submit"]:-moz-focus-inner {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: -1px;
 }
-/* line 50, ../scss/partials/base/_story.scss */
+/* line 49, ../scss/partials/base/_story.scss */
 .story__main-column .hero--story.hero--video .hero--video__container {
   width: 100%;
   height: auto;
   margin: 0 auto;
   padding: 0 0 56.25%;
-  top: 0;
 }
 
-/* line 63, ../scss/partials/base/_story.scss */
+/* line 61, ../scss/partials/base/_story.scss */
 .hero-information {
   position: absolute;
   bottom: 0;
@@ -2482,16 +2480,16 @@ input[type="submit"]:-moz-focus-inner {
   height: 0;
   cursor: pointer;
 }
-/* line 73, ../scss/partials/base/_story.scss */
+/* line 71, ../scss/partials/base/_story.scss */
 .hero-information:hover .hero-information__toggle, .hero-information:active .hero-information__toggle {
   color: #1fade0;
 }
-/* line 77, ../scss/partials/base/_story.scss */
+/* line 75, ../scss/partials/base/_story.scss */
 .hero-information:hover .hero-information__outer, .hero-information:active .hero-information__outer {
   opacity: 1;
   visibility: visible;
 }
-/* line 82, ../scss/partials/base/_story.scss */
+/* line 80, ../scss/partials/base/_story.scss */
 .hero-information:hover .hero-information__content, .hero-information:active .hero-information__content {
   -webkit-transform: translate(0, 0) scale(1);
   -moz-transform: translate(0, 0) scale(1);
@@ -2499,7 +2497,7 @@ input[type="submit"]:-moz-focus-inner {
   -o-transform: translate(0, 0) scale(1);
   transform: translate(0, 0) scale(1);
 }
-/* line 87, ../scss/partials/base/_story.scss */
+/* line 85, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__toggle {
   cursor: pointer;
   position: absolute;
@@ -2511,7 +2509,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 98, ../scss/partials/base/_story.scss */
+/* line 96, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__outer {
   position: absolute;
   left: 0;
@@ -2529,7 +2527,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 111, ../scss/partials/base/_story.scss */
+/* line 109, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__content {
   -webkit-transform: translate(1%, 3%) scale(0.98);
   -moz-transform: translate(1%, 3%) scale(0.98);
@@ -2540,80 +2538,80 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 116, ../scss/partials/base/_story.scss */
+/* line 114, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__caption {
   color: white;
   font-family: "Gudea", Arial, sans-serif;
   line-height: 1.3;
 }
-/* line 122, ../scss/partials/base/_story.scss */
+/* line 120, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__credit {
   color: #9aacb5;
   font-family: "Gudea", Arial, sans-serif;
   line-height: 1.1;
 }
 
-/* line 129, ../scss/partials/base/_story.scss */
+/* line 127, ../scss/partials/base/_story.scss */
 .story__container {
   position: relative;
 }
-/* line 132, ../scss/partials/base/_story.scss */
+/* line 130, ../scss/partials/base/_story.scss */
 .story__container .story__meta {
   display: block;
   font-family: "Gudea", Arial, sans-serif;
   margin-bottom: 1.6rem;
 }
-/* line 137, ../scss/partials/base/_story.scss */
+/* line 135, ../scss/partials/base/_story.scss */
 .story__container .story__meta li {
   color: #b7b7b7;
   display: inline-block;
   line-height: 1.5;
 }
-/* line 143, ../scss/partials/base/_story.scss */
+/* line 141, ../scss/partials/base/_story.scss */
 .story__container .story__meta li:first-child:after {
   content: '\a0\b7\a0';
   display: inline-block;
 }
-/* line 150, ../scss/partials/base/_story.scss */
+/* line 148, ../scss/partials/base/_story.scss */
 .story__container .story__meta a {
   color: #a7a7a7;
   border-bottom: 1px solid #a7a7a7;
   padding-bottom: 0.1rem;
 }
-/* line 155, ../scss/partials/base/_story.scss */
+/* line 153, ../scss/partials/base/_story.scss */
 .story__container .story__meta a:hover {
   border-color: #fc3b40;
   color: #fc3b40;
 }
-/* line 163, ../scss/partials/base/_story.scss */
+/* line 161, ../scss/partials/base/_story.scss */
 .story__container .story__content em, .story__container .story__content i {
   font-style: italic;
 }
-/* line 167, ../scss/partials/base/_story.scss */
+/* line 165, ../scss/partials/base/_story.scss */
 .story__container .story__content strong, .story__container .story__content b {
   font-weight: 700;
 }
-/* line 171, ../scss/partials/base/_story.scss */
+/* line 169, ../scss/partials/base/_story.scss */
 .story__container .story__content p {
   font-family: "Gudea", Arial, sans-serif;
   /* drop cap */
 }
-/* line 175, ../scss/partials/base/_story.scss */
+/* line 173, ../scss/partials/base/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   float: left;
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
 }
-/* line 181, ../scss/partials/base/_story.scss */
+/* line 179, ../scss/partials/base/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 185, ../scss/partials/base/_story.scss */
+/* line 183, ../scss/partials/base/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 191, ../scss/partials/base/_story.scss */
+/* line 189, ../scss/partials/base/_story.scss */
 .story__container .story__content > h1 {
   color: #5ec2e8;
   font-family: "Oswald", Arial, sans-serif;
@@ -2623,7 +2621,7 @@ input[type="submit"]:-moz-focus-inner {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 201, ../scss/partials/base/_story.scss */
+/* line 199, ../scss/partials/base/_story.scss */
 .story__container .story__content > h2 {
   color: #1fade0;
   font-family: "Oswald", Arial, sans-serif;
@@ -2631,14 +2629,14 @@ input[type="submit"]:-moz-focus-inner {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 209, ../scss/partials/base/_story.scss */
+/* line 207, ../scss/partials/base/_story.scss */
 .story__container .story__content > h3 {
   color: #fc3b40;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 216, ../scss/partials/base/_story.scss */
+/* line 214, ../scss/partials/base/_story.scss */
 .story__container .story__content > h4 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
@@ -2646,31 +2644,31 @@ input[type="submit"]:-moz-focus-inner {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 224, ../scss/partials/base/_story.scss */
+/* line 222, ../scss/partials/base/_story.scss */
 .story__container .story__content > h5 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 231, ../scss/partials/base/_story.scss */
+/* line 229, ../scss/partials/base/_story.scss */
 .story__container .story__content > h6 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 238, ../scss/partials/base/_story.scss */
+/* line 236, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol {
   counter-reset: li;
 }
-/* line 241, ../scss/partials/base/_story.scss */
+/* line 239, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   position: relative;
 }
-/* line 246, ../scss/partials/base/_story.scss */
+/* line 244, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol li:before {
   background-color: #fc3b40;
   counter-increment: li;
@@ -2682,14 +2680,14 @@ input[type="submit"]:-moz-focus-inner {
   position: absolute;
   text-align: center;
 }
-/* line 261, ../scss/partials/base/_story.scss */
+/* line 259, ../scss/partials/base/_story.scss */
 .story__container .story__content > ul li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.2;
   position: relative;
 }
-/* line 267, ../scss/partials/base/_story.scss */
+/* line 265, ../scss/partials/base/_story.scss */
 .story__container .story__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
@@ -2698,37 +2696,37 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* multimedia */
-/* line 280, ../scss/partials/base/_story.scss */
+/* line 278, ../scss/partials/base/_story.scss */
 .multimedia .multimedia__content {
   display: block;
 }
-/* line 284, ../scss/partials/base/_story.scss */
+/* line 282, ../scss/partials/base/_story.scss */
 .multimedia .credit {
   text-align: right;
 }
-/* line 289, ../scss/partials/base/_story.scss */
+/* line 287, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--image img {
   display: block;
   width: 100%;
 }
-/* line 296, ../scss/partials/base/_story.scss */
+/* line 294, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 302, ../scss/partials/base/_story.scss */
+/* line 300, ../scss/partials/base/_story.scss */
 .list-item {
   margin: 0 0 7.5rem;
 }
-/* line 305, ../scss/partials/base/_story.scss */
+/* line 303, ../scss/partials/base/_story.scss */
 .list-item .multimedia {
   margin: 0;
 }
-/* line 309, ../scss/partials/base/_story.scss */
+/* line 307, ../scss/partials/base/_story.scss */
 .list-item .list-item-heading {
   margin: 0 0 1.5rem;
 }
-/* line 313, ../scss/partials/base/_story.scss */
+/* line 311, ../scss/partials/base/_story.scss */
 .list-item .list-item-rank {
   display: inline-block;
   background: #fc3b40;
@@ -2740,7 +2738,7 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* Elastic video */
-/* line 325, ../scss/partials/base/_story.scss */
+/* line 323, ../scss/partials/base/_story.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -2748,7 +2746,7 @@ input[type="submit"]:-moz-focus-inner {
   height: 0;
   overflow: hidden;
 }
-/* line 334, ../scss/partials/base/_story.scss */
+/* line 332, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -2760,12 +2758,12 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* sticky */
-/* line 344, ../scss/partials/base/_story.scss */
+/* line 342, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
 }
 
-/* line 348, ../scss/partials/base/_story.scss */
+/* line 346, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -2776,12 +2774,12 @@ input[type="submit"]:-moz-focus-inner {
   width: 100%;
 }
 
-/* line 358, ../scss/partials/base/_story.scss */
+/* line 356, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 362, ../scss/partials/base/_story.scss */
+/* line 360, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -2790,47 +2788,47 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* tags */
-/* line 370, ../scss/partials/base/_story.scss */
+/* line 368, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 374, ../scss/partials/base/_story.scss */
+/* line 372, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 381, ../scss/partials/base/_story.scss */
+/* line 379, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
-/* line 388, ../scss/partials/base/_story.scss */
+/* line 386, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 393, ../scss/partials/base/_story.scss */
+/* line 391, ../scss/partials/base/_story.scss */
 .module.take-action {
   /* tweet politician take action */
 }
-/* line 394, ../scss/partials/base/_story.scss */
+/* line 392, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 398, ../scss/partials/base/_story.scss */
+/* line 396, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__inner {
   overflow-y: scroll;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 404, ../scss/partials/base/_story.scss */
+/* line 402, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__full {
   width: 100%;
 }
-/* line 408, ../scss/partials/base/_story.scss */
+/* line 406, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__tab {
   opacity: 1;
   overflow: hidden;
@@ -2838,26 +2836,26 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 414, ../scss/partials/base/_story.scss */
+/* line 412, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__tab.is-hidden {
   opacity: 0;
 }
-/* line 420, ../scss/partials/base/_story.scss */
+/* line 418, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__thank-you p {
   text-align: center;
 }
-/* line 425, ../scss/partials/base/_story.scss */
+/* line 423, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 432, ../scss/partials/base/_story.scss */
+/* line 430, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
-/* line 436, ../scss/partials/base/_story.scss */
+/* line 434, ../scss/partials/base/_story.scss */
 .module.take-action small {
   color: #7e7e7e;
   display: block;
@@ -2866,11 +2864,11 @@ input[type="submit"]:-moz-focus-inner {
   overflow: hidden;
   line-height: 1.56;
 }
-/* line 445, ../scss/partials/base/_story.scss */
+/* line 443, ../scss/partials/base/_story.scss */
 .module.take-action strong {
   font-weight: 700;
 }
-/* line 449, ../scss/partials/base/_story.scss */
+/* line 447, ../scss/partials/base/_story.scss */
 .module.take-action em {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
@@ -2878,7 +2876,7 @@ input[type="submit"]:-moz-focus-inner {
   font-style: italic;
   line-height: 1.56;
 }
-/* line 458, ../scss/partials/base/_story.scss */
+/* line 456, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -2891,7 +2889,7 @@ input[type="submit"]:-moz-focus-inner {
   display: block;
   width: 100%;
 }
-/* line 470, ../scss/partials/base/_story.scss */
+/* line 468, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -2899,27 +2897,27 @@ input[type="submit"]:-moz-focus-inner {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 479, ../scss/partials/base/_story.scss */
+/* line 477, ../scss/partials/base/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 483, ../scss/partials/base/_story.scss */
+/* line 481, ../scss/partials/base/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 488, ../scss/partials/base/_story.scss */
+/* line 486, ../scss/partials/base/_story.scss */
 .module.take-action .politician__photo {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   display: inline-block;
 }
-/* line 495, ../scss/partials/base/_story.scss */
+/* line 493, ../scss/partials/base/_story.scss */
 .module.take-action .politician__information {
   display: inline-block;
 }
-/* line 502, ../scss/partials/base/_story.scss */
+/* line 500, ../scss/partials/base/_story.scss */
 .module.take-action .politician__office {
   display: block;
   font-family: "Gudea", Arial, sans-serif;
