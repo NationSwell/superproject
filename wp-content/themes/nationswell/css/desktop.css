@@ -1423,22 +1423,21 @@ input[type="submit"]:-moz-focus-inner {
 /* line 1, ../scss/partials/base/_footer.scss */
 #page-content {
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
+  height: auto;
 }
 
-/* line 8, ../scss/partials/base/_footer.scss */
+/* line 7, ../scss/partials/base/_footer.scss */
 #page-footer,
 #page-footer .container {
   background-color: #002130;
 }
 
-/* line 12, ../scss/partials/base/_footer.scss */
+/* line 11, ../scss/partials/base/_footer.scss */
 .site-logo--footer {
   display: block;
 }
 
-/* line 16, ../scss/partials/base/_footer.scss */
+/* line 15, ../scss/partials/base/_footer.scss */
 .copyright {
   color: #a7a7a7;
   display: block;
@@ -1446,7 +1445,7 @@ input[type="submit"]:-moz-focus-inner {
   position: relative;
 }
 
-/* line 23, ../scss/partials/base/_footer.scss */
+/* line 22, ../scss/partials/base/_footer.scss */
 .footer-links__link {
   font-family: "Gudea", Arial, sans-serif;
 }
