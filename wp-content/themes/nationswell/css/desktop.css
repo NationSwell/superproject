@@ -4701,7 +4701,7 @@ input[type="submit"]:-moz-focus-inner {
 /* line 4, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--image {
   height: auto;
-  padding-bottom: 40%;
+  padding-bottom: 30%;
   max-height: none;
 }
 /* line 11, ../scss/partials/desktop/_story.scss */
