@@ -126,7 +126,7 @@ if (class_exists('TimberPost')) {
 
             return 'http://www.facebook.com/sharer.php?s= 100&amp;p[url]='
             . urlencode($this->short_url()) . '&amp;p[title]='
-            . (($this->is_multimedia()) ? '[' . strtoupper($this->content_type) . '] ' : "") . $this->title()
+            . $this->title()
             . '&amp;p[summary]=' . $facebook_share_text;
 
         }
