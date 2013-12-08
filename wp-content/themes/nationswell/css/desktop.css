@@ -3863,11 +3863,6 @@ input[type="submit"]:-moz-focus-inner {
   margin-right: 3.4rem;
 }
 
-/* line 1, ../scss/partials/desktop/_footer.scss */
-#page-content {
-  margin-bottom: -13rem;
-}
-
 /* line 5, ../scss/partials/desktop/_footer.scss */
 #page-footer {
   height: 13rem;
