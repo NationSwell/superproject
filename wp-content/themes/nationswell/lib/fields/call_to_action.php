@@ -282,6 +282,18 @@ if (function_exists("register_field_group")) {
                     'allow_null' => 0,
                     'multiple' => 0,
                 ),
+                array (
+                    'key' => 'field_52a3e9df953b7',
+                    'label' => 'Goal Text',
+                    'name' => 'goal_text',
+                    'type' => 'text',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'html',
+                    'maxlength' => '',
+                ),
                 array(
                     'key' => 'field_528fec3946b30',
                     'label' => 'Goal Date',

@@ -1,25 +1,18 @@
 {# image hero #}
 {% if post.story_header|length == 1 %}
-    {% if post.story_header[0].type == 'image' and post.enable_small_hero == '0' %}
-        <div class="hero hero--story hero--image" style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});">
-            {% if post.story_header[0].caption or post.story_header[0].credit %}
-                <div class="hero-information">
-                    <span class="icon icon_information hero-information__toggle z1"></span>
-                    <div class="hero-information__outer">
-                        <div class="container">
-                            <div class="hero-information__content">
-                                <p class="hero-information__caption">{{ post.story_header[0].caption }}</p>
-                                <span class="hero-information__credit">{{ post.story_header[0].credit }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
-        </div>
-    {% elseif post.story_header[0].type == 'image' and post.enable_small_hero == '1'  %}
+    {% if post.story_header[0].type == 'image' %}
+        <div class="hero hero--story hero--image {% if post.hero_type == 'cover' %} hero--image--cover {% endif %}" {% if post.hero_type != 'small' %} style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});" {% endif %}>
 
-        <div class="hero hero--story hero--image">
+            {% if post.hero_type == 'small' %}
             <img src="{{ post.story_header[0].url|resize(600) }}" alt="{{ post.story_header[0].alt }}"/>
+            {% endif %}
+
+            {% if post.hero_type == 'cover' %}
+            <div class="hero-read">
+                <a href="#story" class="hero-read-link">Begin Reading</a>
+            </div>
+            {% endif %}
+
             {% if post.story_header[0].caption or post.story_header[0].credit %}
                 <div class="hero-information">
                     <span class="icon icon_information hero-information__toggle z1"></span>

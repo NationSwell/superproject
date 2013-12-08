@@ -140,6 +140,13 @@
     display: inline-block;
     vertical-align: bottom;
   }
+
+  .support-cause__message {
+    color: $ns_black;
+    font-family: $oswald;
+    font-weight: $light;
+    margin-right: 2.1rem;
+  }
 }
 
 /* sponsor */

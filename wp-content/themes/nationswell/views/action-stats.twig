@@ -11,7 +11,13 @@
             <span class="support-cause__label">{% block so_far %}so far{% endblock %}</span>
         {% endif %}
 
+        {% if cta.goal_date is not empty %}
         <span class="support-cause__data">{{ cta.days_until }}</span>
         <span class="support-cause__label">day{% if cta.days_until > 1 %}s{% endif %} to go</span>
+        {% endif %}
+
+        {% if cta.goal_text is not empty %}
+        <span class="support-cause__message">{{ cta.goal_text }}</span>
+        {% endif %}
     </div>
 </div>

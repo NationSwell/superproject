@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    {% if post.enable_small_hero == '0' %}
+    {% if post.hero_type != 'small' %}
     {% include 'hero.twig' %}
     {% endif %}
 
@@ -22,10 +22,10 @@
             </div>
 
             <main class="story__main-column" role="main">
-                {% if post.enable_small_hero == '1' %}
+                {% if post.hero_type == 'small' %}
                 {% include 'hero.twig' %}
                 {% endif %}
-                <article class="story story--page">
+                <article class="story story--page" id="story">
                     <header>
                         <ul class="story__meta">
                             <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a></li>

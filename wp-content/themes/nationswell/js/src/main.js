@@ -3,6 +3,16 @@
 
         var $body = $('body');
 
+        $('.hero-read-link').on('click', function(e){
+
+            e.preventDefault();
+
+            var top = $($(this).attr('href')).offset().top - $('#page-header').height();
+
+            $body.animate({scrollTop: top }, '500');
+        });
+
+
         // sticky nav
         var $fullNavBar = $('.full-header');
         $fullNavBar.waypoint('sticky', { stuckClass: 'stuck' });
