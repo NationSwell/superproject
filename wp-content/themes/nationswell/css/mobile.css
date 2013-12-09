@@ -3940,42 +3940,53 @@ body.panel--is-open #page-header .more-stories-toggle {
   margin-left: 3.1rem;
   border-top-right-radius: 3.1rem;
   border-bottom-right-radius: 3.1rem;
+  max-width: 80vw;
 }
-/* line 55, ../scss/partials/mobile/_components.scss */
+/* line 56, ../scss/partials/mobile/_components.scss */
 .support-cause .indicator.indicator--module {
   height: 6.2rem;
   width: 6.2rem;
   margin-left: -3.1rem;
 }
-/* line 60, ../scss/partials/mobile/_components.scss */
+/* line 61, ../scss/partials/mobile/_components.scss */
 .support-cause .indicator.indicator--module:before {
   font-size: 4.6rem;
   line-height: 1.64;
 }
-/* line 67, ../scss/partials/mobile/_components.scss */
+/* line 68, ../scss/partials/mobile/_components.scss */
+.support-cause .support-cause__content {
+  max-width: 70vw;
+}
+/* line 72, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__heading {
   margin-bottom: 2.8rem;
 }
-/* line 71, ../scss/partials/mobile/_components.scss */
+/* line 76, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__data {
   font-size: 4rem;
 }
-/* line 74, ../scss/partials/mobile/_components.scss */
+/* line 79, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__data .super {
   font-size: 2.5rem;
   top: -2.5rem;
 }
-/* line 80, ../scss/partials/mobile/_components.scss */
+/* line 85, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__label {
   font-size: 2.5rem;
   top: -0.8rem;
   -webkit-font-smoothing: antialiased;
 }
-/* line 87, ../scss/partials/mobile/_components.scss */
+/* line 92, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__message {
   font-size: 2.8rem;
+  max-width: 70vw;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 2;
 }
-/* line 91, ../scss/partials/mobile/_components.scss */
+/* line 102, ../scss/partials/mobile/_components.scss */
 .support-cause .support-cause__separator {
   font-size: 8.8rem;
   line-height: 3.4rem;
@@ -3983,56 +3994,56 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* sponsor */
-/* line 99, ../scss/partials/mobile/_components.scss */
+/* line 110, ../scss/partials/mobile/_components.scss */
 .sponsor {
   font-size: 1.3rem;
 }
-/* line 102, ../scss/partials/mobile/_components.scss */
+/* line 113, ../scss/partials/mobile/_components.scss */
 .sponsor .sponsor__logo {
   margin-left: 1.6rem;
 }
 
 /* indicator */
-/* line 109, ../scss/partials/mobile/_components.scss */
+/* line 120, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--module {
   width: 13.6rem;
   height: 13.6rem;
 }
-/* line 113, ../scss/partials/mobile/_components.scss */
+/* line 124, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--module:before {
   font-size: 8rem;
   line-height: 1.88;
 }
-/* line 119, ../scss/partials/mobile/_components.scss */
+/* line 130, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title {
   width: 11.5rem;
   height: 11.5rem;
 }
-/* line 123, ../scss/partials/mobile/_components.scss */
+/* line 134, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title:before {
   font-size: 7rem;
   line-height: 1.8;
 }
-/* line 128, ../scss/partials/mobile/_components.scss */
+/* line 139, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text {
   margin-bottom: -1.2rem;
 }
-/* line 131, ../scss/partials/mobile/_components.scss */
+/* line 142, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text:before {
   font-size: 5rem;
   line-height: 1.5;
 }
-/* line 136, ../scss/partials/mobile/_components.scss */
+/* line 147, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__heading {
   font-size: 2rem;
   line-height: 1.4;
   margin-top: -2.6rem;
 }
-/* line 142, ../scss/partials/mobile/_components.scss */
+/* line 153, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__subheading {
   font-size: 1.6rem;
 }
-/* line 148, ../scss/partials/mobile/_components.scss */
+/* line 159, ../scss/partials/mobile/_components.scss */
 .indicator.indicator--take-action {
   width: 5.2rem;
   height: 5.2rem;
@@ -4043,105 +4054,105 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* type indicator */
-/* line 159, ../scss/partials/mobile/_components.scss */
+/* line 170, ../scss/partials/mobile/_components.scss */
 .type-indicator {
   width: 8rem;
   height: 8rem;
 }
-/* line 163, ../scss/partials/mobile/_components.scss */
+/* line 174, ../scss/partials/mobile/_components.scss */
 .type-indicator:before {
   font-size: 5.4rem;
 }
 
 /* module */
-/* line 170, ../scss/partials/mobile/_components.scss */
+/* line 181, ../scss/partials/mobile/_components.scss */
 .module.module--sidebar {
   width: 100%;
   margin-bottom: 12rem;
 }
-/* line 175, ../scss/partials/mobile/_components.scss */
+/* line 186, ../scss/partials/mobile/_components.scss */
 .module.module--bg {
   padding: 4rem;
 }
-/* line 178, ../scss/partials/mobile/_components.scss */
+/* line 189, ../scss/partials/mobile/_components.scss */
 .module.module--bg:before {
   height: 0.7rem;
 }
-/* line 182, ../scss/partials/mobile/_components.scss */
+/* line 193, ../scss/partials/mobile/_components.scss */
 .module.module--bg header {
   margin-top: -10.4rem;
   margin-bottom: 2rem;
 }
-/* line 187, ../scss/partials/mobile/_components.scss */
+/* line 198, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading {
   padding: 1rem 2rem 0.2rem;
   top: -3rem;
 }
-/* line 192, ../scss/partials/mobile/_components.scss */
+/* line 203, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   font-size: 2.6rem;
   position: relative;
   top: -0.6rem;
 }
-/* line 198, ../scss/partials/mobile/_components.scss */
+/* line 209, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:before {
   margin-right: 1.8rem;
 }
-/* line 202, ../scss/partials/mobile/_components.scss */
+/* line 213, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:after {
   margin-left: 1.8rem;
 }
-/* line 207, ../scss/partials/mobile/_components.scss */
+/* line 218, ../scss/partials/mobile/_components.scss */
 .module.module--bg p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 3rem;
 }
-/* line 214, ../scss/partials/mobile/_components.scss */
+/* line 225, ../scss/partials/mobile/_components.scss */
 .module.module--bg.module--blue .module__heading {
   box-shadow: 0 4px 0 #eeeeee, 0 9px 0 #002130;
 }
-/* line 220, ../scss/partials/mobile/_components.scss */
+/* line 231, ../scss/partials/mobile/_components.scss */
 .module.module--bg.module--red .module__heading {
   box-shadow: 0 4px 0 #eeeeee, 0 9px 0 #832f2d;
 }
-/* line 228, ../scss/partials/mobile/_components.scss */
+/* line 239, ../scss/partials/mobile/_components.scss */
 .module.module--list:after {
   height: 0.7rem;
   bottom: -0.7rem;
 }
-/* line 233, ../scss/partials/mobile/_components.scss */
+/* line 244, ../scss/partials/mobile/_components.scss */
 .module.module--list .module__heading {
   padding-bottom: 1.2rem;
 }
-/* line 238, ../scss/partials/mobile/_components.scss */
+/* line 249, ../scss/partials/mobile/_components.scss */
 .module.module--list .story-list li {
   padding: 4rem 0;
 }
-/* line 243, ../scss/partials/mobile/_components.scss */
+/* line 254, ../scss/partials/mobile/_components.scss */
 .module.module--list.module--horizontal {
   margin: 7.6rem 0;
 }
-/* line 248, ../scss/partials/mobile/_components.scss */
+/* line 259, ../scss/partials/mobile/_components.scss */
 .module.module--pull {
   margin: -37.6rem;
   width: 32rem;
 }
-/* line 254, ../scss/partials/mobile/_components.scss */
+/* line 265, ../scss/partials/mobile/_components.scss */
 .module.module--image-overlay .story {
   padding: 3.4rem;
 }
-/* line 258, ../scss/partials/mobile/_components.scss */
+/* line 269, ../scss/partials/mobile/_components.scss */
 .module.module--image-overlay .sponsor {
   margin-top: 12rem;
 }
 
 /* pullquote */
-/* line 265, ../scss/partials/mobile/_components.scss */
+/* line 276, ../scss/partials/mobile/_components.scss */
 .pullquote {
   margin: 3.2rem 0 7.6rem;
 }
-/* line 268, ../scss/partials/mobile/_components.scss */
+/* line 279, ../scss/partials/mobile/_components.scss */
 .pullquote:before {
   font-size: 5.78rem;
   line-height: 1.54;
@@ -4149,74 +4160,74 @@ body.panel--is-open #page-header .more-stories-toggle {
   height: 8rem;
   margin-bottom: 2.2rem;
 }
-/* line 276, ../scss/partials/mobile/_components.scss */
+/* line 287, ../scss/partials/mobile/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 3.4rem;
 }
-/* line 280, ../scss/partials/mobile/_components.scss */
+/* line 291, ../scss/partials/mobile/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 4rem;
 }
 
 /* tags */
-/* line 286, ../scss/partials/mobile/_components.scss */
+/* line 297, ../scss/partials/mobile/_components.scss */
 .tag-tag {
   font-size: 2.5rem;
   padding: 0.8rem 1rem;
 }
 
 /* author */
-/* line 292, ../scss/partials/mobile/_components.scss */
+/* line 303, ../scss/partials/mobile/_components.scss */
 .author-box {
   margin-bottom: 14rem;
   padding: 4rem;
 }
 
-/* line 297, ../scss/partials/mobile/_components.scss */
+/* line 308, ../scss/partials/mobile/_components.scss */
 .author__portrait {
   margin: 0 auto 2.2rem;
   width: 23rem;
   height: 23rem;
 }
 
-/* line 303, ../scss/partials/mobile/_components.scss */
+/* line 314, ../scss/partials/mobile/_components.scss */
 .author__url {
   font-size: 2.4rem;
   margin-bottom: 2.6rem;
 }
-/* line 307, ../scss/partials/mobile/_components.scss */
+/* line 318, ../scss/partials/mobile/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 312, ../scss/partials/mobile/_components.scss */
+/* line 323, ../scss/partials/mobile/_components.scss */
 .social {
   margin-bottom: 4rem;
 }
-/* line 315, ../scss/partials/mobile/_components.scss */
+/* line 326, ../scss/partials/mobile/_components.scss */
 .social li {
   margin-left: 0.6rem;
   margin-bottom: 0.6rem;
 }
-/* line 320, ../scss/partials/mobile/_components.scss */
+/* line 331, ../scss/partials/mobile/_components.scss */
 .social .icon {
   font-size: 5rem;
   height: 6rem;
   width: 6rem;
 }
 
-/* line 327, ../scss/partials/mobile/_components.scss */
+/* line 338, ../scss/partials/mobile/_components.scss */
 .author__byline {
   text-align: center;
   margin-bottom: 3.4rem;
 }
-/* line 330, ../scss/partials/mobile/_components.scss */
+/* line 341, ../scss/partials/mobile/_components.scss */
 .author__byline:before {
   font-size: 2.5rem;
   margin-bottom: 0.8rem;
 }
 
-/* line 338, ../scss/partials/mobile/_components.scss */
+/* line 349, ../scss/partials/mobile/_components.scss */
 .author__bio {
   color: #333333;
   font-size: 3.2rem;
@@ -4226,42 +4237,42 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* prev/next */
-/* line 348, ../scss/partials/mobile/_components.scss */
+/* line 359, ../scss/partials/mobile/_components.scss */
 .prev-next {
   padding-top: 3.4rem;
   margin-bottom: 0.6rem;
 }
-/* line 352, ../scss/partials/mobile/_components.scss */
+/* line 363, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link {
   font-size: 0;
 }
-/* line 355, ../scss/partials/mobile/_components.scss */
+/* line 366, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 26.6rem;
 }
-/* line 360, ../scss/partials/mobile/_components.scss */
+/* line 371, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-left: 6.6rem;
 }
-/* line 366, ../scss/partials/mobile/_components.scss */
+/* line 377, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-right: 6.6rem;
 }
-/* line 372, ../scss/partials/mobile/_components.scss */
+/* line 383, ../scss/partials/mobile/_components.scss */
 .prev-next .story__hed {
   display: none;
 }
 
 /* read next */
-/* line 378, ../scss/partials/mobile/_components.scss */
+/* line 389, ../scss/partials/mobile/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 381, ../scss/partials/mobile/_components.scss */
+/* line 392, ../scss/partials/mobile/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 385, ../scss/partials/mobile/_components.scss */
+/* line 396, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }

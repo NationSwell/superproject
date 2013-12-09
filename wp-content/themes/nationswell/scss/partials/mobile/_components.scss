@@ -50,6 +50,7 @@
   margin-left: 3.1rem;
   border-top-right-radius: 3.1rem;
   border-bottom-right-radius: 3.1rem;
+  max-width: 80vw;
 
   .indicator {
     &.indicator--module {
@@ -62,6 +63,10 @@
         line-height: 1.64;
       }
     }
+  }
+
+  .support-cause__content {
+    max-width: 70vw;
   }
 
   .support-cause__heading {
@@ -86,6 +91,12 @@
 
   .support-cause__message {
     font-size: 2.8rem;
+    max-width: 70vw;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 2;
   }
 
   .support-cause__separator {
