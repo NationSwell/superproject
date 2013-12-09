@@ -312,7 +312,8 @@
                             }
                         },
                         auto: {
-                            play: isSingle && !isStory ? true : false,
+                            //play: isSingle && !isStory ? true : false,
+                            play: false,
                             timeoutDuration: 6000
                         },
                         swipe: {
