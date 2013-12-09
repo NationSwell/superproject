@@ -133,8 +133,8 @@ if (class_exists('TimberPost')) {
 
             return 'http://www.facebook.com/sharer.php?s= 100'
             . '&amp;p[url]=' . urlencode($this->permalink())
-            . '&amp;p[title]=' . $facebook_share_text
-            . '&amp;p[summary]=' . $this->tout_dek_text()
+            . '&amp;p[title]=' . urlencode($facebook_share_text)
+            . '&amp;p[summary]=' . urlencode($this->tout_dek_text())
             . '&amp;p[images][0]=' . urlencode($image);
 
 //            return 'http://www.facebook.com/sharer.php?u=' . $this->permalink() . '&p[title]=' . $facebook_share_text;
