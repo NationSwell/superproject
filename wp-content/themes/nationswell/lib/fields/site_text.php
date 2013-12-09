@@ -161,6 +161,18 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
             ),
             array (
+                'key' => 'field_52a50c0b78347',
+                'label' => 'Share Take Action Button Text',
+                'name' => 'share_take_action_button_text',
+                'type' => 'text',
+                'default_value' => 'Spread The Word',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+            ),
+            array (
                 'key' => 'field_52961e1b1d13c',
                 'label' => 'Main Menu Header',
                 'name' => 'main_menu_header',
