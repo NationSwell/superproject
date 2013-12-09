@@ -19,4 +19,6 @@ $data['author']->mug_shot = get_field('mug_shot', 'user_' . $author->ID);
 $data['author']->post_count = get_the_author_posts();
 $data['title'] = 'Author Archives: ' . $author->name();
 
+$data['sidebar_static'] = Timber::get_widgets('sidebar_static');
+
 Timber::render(array('author.twig', 'archive.twig'), $data);
