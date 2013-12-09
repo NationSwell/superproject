@@ -131,14 +131,13 @@ if (class_exists('TimberPost')) {
             $image = getAttribute('content', $og_meta);
             ob_end_clean();
 
-//            return 'http://www.facebook.com/sharer.php?s= 100&amp;p[url]='
-//            . urlencode($this->short_url())
-//            . '&amp;p[title]='
-//            . $this->title()
-//            . '&amp;p[summary]=' . $facebook_share_text
-//            . '&amp;p[images][0]=' . urlencode($image);
+            return 'http://www.facebook.com/sharer.php?s= 100'
+            . '&amp;p[url]=' . urlencode($this->permalink())
+            . '&amp;p[title]=' . $facebook_share_text
+            . '&amp;p[summary]=' . $this->tout_dek_text()
+            . '&amp;p[images][0]=' . urlencode($image);
 
-            return 'http://www.facebook.com/sharer.php?u=' . $this->permalink() . '&t=' . $facebook_share_text;
+//            return 'http://www.facebook.com/sharer.php?u=' . $this->permalink() . '&p[title]=' . $facebook_share_text;
 
         }
 
