@@ -216,7 +216,7 @@ if (!function_exists('http_response_code'))
     }
 }
 
-function truncate($input, $maxWords, $maxChars)
+function truncate($input, $maxWords, $maxChars, $link)
 {
     $words = preg_split('/\s+/', $input);
     $words = array_slice($words, 0, $maxWords);
@@ -237,7 +237,7 @@ function truncate($input, $maxWords, $maxChars)
 
     $result = implode($truncated, ' ');
 
-    return $result . ($input == $result ? '' : '...');
+    return $result . ($input == $result ? '' : (isset($link)) ? '<a href="'. $link .'">&hellip;</a>' : '&hellip;');
 }
 
 

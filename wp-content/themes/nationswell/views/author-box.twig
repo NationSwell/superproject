@@ -31,6 +31,6 @@
 
     <div class="author__b">
         <h2 class="hd-n author__byline"><a href="{{ author.author_page }}">{{ author.display_name }}</a></h2>
-        <p class="author__bio">{{function('truncate', author.description, 40, 200)}}</p>
+        <p class="author__bio">{{function('truncate', author.description, 40, 200, author.author_page)}}</p>
     </div>
 </div>
