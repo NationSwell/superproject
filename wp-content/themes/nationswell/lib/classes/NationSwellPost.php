@@ -132,10 +132,11 @@ if (class_exists('TimberPost')) {
             ob_end_clean();
 
             return 'http://www.facebook.com/sharer.php?s= 100&amp;p[url]='
-            . urlencode($this->short_url()) . '&amp;p[title]='
+            . urlencode($this->short_url())
+            . '&amp;p[title]='
             . $this->title()
             . '&amp;p[summary]=' . $facebook_share_text
-            . '&amp;p[images][0]=' . $image;
+            . '&amp;p[images][0]=' . urlencode($image);
 
         }
 
