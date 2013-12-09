@@ -2,13 +2,13 @@
   background-color: $ns_navy0;
   max-height: 53.2rem;
 
+  &.hero--cover {
+    height: auto;
+    padding-bottom: 56.25%;
+    background-origin: border-box;
+
   &.hero--image {
     height: 53.2rem;
-
-    &.hero--image--cover {
-      height: auto;
-      padding-bottom: 56.25%;
-      background-origin: border-box;
 
       .hero-read {
         display: none;

@@ -1,7 +1,7 @@
 {# image hero #}
 {% if post.story_header|length == 1 %}
     {% if post.story_header[0].type == 'image' %}
-        <div class="hero hero--story hero--image {% if post.hero_type == 'cover' %} hero--image--cover {% endif %}" {% if post.hero_type != 'small' %} style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});" {% endif %}>
+        <div class="hero hero--story hero--image {% if post.hero_type == 'cover' %} hero--cover {% endif %}" {% if post.hero_type != 'small' %} style="background-image: url({{ post.story_header[0].url|resize(1300, 600) }});" {% endif %}>
 
             {% if post.hero_type == 'small' %}
             <img src="{{ post.story_header[0].url|resize(600) }}" alt="{{ post.story_header[0].alt }}"/>
@@ -30,7 +30,7 @@
 
     {% elseif post.story_header[0].type == 'video' %}
         {# video hero #}
-        <div class="hero hero--story hero--video">
+        <div class="hero hero--story hero--video {% if post.hero_type == 'cover' %} hero--cover {% endif %}">
             <div class="container">
                 <div class="video-container hero--video__container">
                     <iframe class="ytplayer" type="text/html" src="{{ post.story_header[0].video_url }}" frameborder="0"></iframe>
