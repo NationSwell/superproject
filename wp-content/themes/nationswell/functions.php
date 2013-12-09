@@ -216,6 +216,15 @@ if (!function_exists('http_response_code'))
     }
 }
 
+function getAttribute($attrib, $tag){
+    //get attribute from html tag
+    $re = '/' . preg_quote($attrib) . '=([\'"])?((?(1).+?|[^\s>]+))(?(1)\1)/is';
+    if (preg_match($re, $tag, $match)) {
+        return urldecode($match[2]);
+    }
+    return false;
+}
+
 function truncate($input, $maxWords, $maxChars, $link)
 {
     $words = preg_split('/\s+/', $input);
