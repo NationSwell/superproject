@@ -122,7 +122,7 @@ if (class_exists('TimberPost')) {
         function facebook_share_url()
         {
 
-            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->title();
+            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->tout_dek_text();
 
             return 'http://www.facebook.com/sharer.php?s= 100&amp;p[url]='
             . urlencode($this->short_url()) . '&amp;p[title]='
