@@ -33,6 +33,7 @@ module.exports = function(grunt) {
             build: {
                 files: {
                     'js/build/combined.js': [
+                        'js/src/vendor/touche.js',
                         'js/src/vendor/twig.min.js',
                         'js/build/twig-templates.js',
                         'js/src/vendor/media.match.js',
