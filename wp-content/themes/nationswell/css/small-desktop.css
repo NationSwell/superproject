@@ -840,12 +840,13 @@ small a {
 
 /* line 8, ../scss/partials/base/_buttons.scss */
 .btn {
+  cursor: pointer;
   border-radius: 0;
   text-rendering: optimizeLegibility;
   outline: 0;
   -webkit-font-smoothing: antialiased;
 }
-/* line 14, ../scss/partials/base/_buttons.scss */
+/* line 15, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid {
   background-color: #fc3b40;
   color: white;
@@ -855,11 +856,11 @@ small a {
   line-height: 1.34;
   -webkit-font-smoothing: antialiased;
 }
-/* line 24, ../scss/partials/base/_buttons.scss */
+/* line 25, ../scss/partials/base/_buttons.scss */
 .btn.btn--solid:hover {
   background-color: #0098d8;
 }
-/* line 29, ../scss/partials/base/_buttons.scss */
+/* line 30, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all {
   background-color: #061822;
   color: #0098d8;
@@ -868,17 +869,17 @@ small a {
   font-weight: 700;
   position: relative;
 }
-/* line 37, ../scss/partials/base/_buttons.scss */
+/* line 38, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:before {
   font-family: 'icons';
   position: absolute;
 }
-/* line 42, ../scss/partials/base/_buttons.scss */
+/* line 43, ../scss/partials/base/_buttons.scss */
 .btn.btn--view-all:hover {
   background-color: #0098d8;
   color: white;
 }
-/* line 48, ../scss/partials/base/_buttons.scss */
+/* line 49, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar {
   color: white;
   display: block;
@@ -889,12 +890,12 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 57, ../scss/partials/base/_buttons.scss */
+/* line 58, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:before {
   font-family: 'icons';
   vertical-align: text-bottom;
 }
-/* line 62, ../scss/partials/base/_buttons.scss */
+/* line 63, ../scss/partials/base/_buttons.scss */
 .btn.btn--bar:after {
   content: '';
   display: block;
@@ -902,7 +903,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 71, ../scss/partials/base/_buttons.scss */
+/* line 72, ../scss/partials/base/_buttons.scss */
 .btn.btn--square {
   color: white;
   display: block;
@@ -913,7 +914,7 @@ small a {
   position: relative;
   text-transform: uppercase;
 }
-/* line 81, ../scss/partials/base/_buttons.scss */
+/* line 82, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:after {
   content: '';
   display: block;
@@ -926,32 +927,32 @@ small a {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 93, ../scss/partials/base/_buttons.scss */
+/* line 94, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:before {
   display: block;
   font-family: 'icons';
 }
-/* line 99, ../scss/partials/base/_buttons.scss */
+/* line 100, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 102, ../scss/partials/base/_buttons.scss */
+/* line 103, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 107, ../scss/partials/base/_buttons.scss */
+/* line 108, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 110, ../scss/partials/base/_buttons.scss */
+/* line 111, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 115, ../scss/partials/base/_buttons.scss */
+/* line 116, ../scss/partials/base/_buttons.scss */
 .btn.btn--blue {
   background-color: #0098d8;
 }
-/* line 119, ../scss/partials/base/_buttons.scss */
+/* line 120, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -964,7 +965,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 130, ../scss/partials/base/_buttons.scss */
+/* line 131, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -974,7 +975,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 140, ../scss/partials/base/_buttons.scss */
+/* line 141, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -988,7 +989,7 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 153, ../scss/partials/base/_buttons.scss */
+/* line 154, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -997,7 +998,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 164, ../scss/partials/base/_buttons.scss */
+/* line 165, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -1008,7 +1009,7 @@ small a {
   vertical-align: middle;
 }
 
-/* line 177, ../scss/partials/base/_buttons.scss */
+/* line 178, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -1022,7 +1023,7 @@ input[type="submit"] {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 184, ../scss/partials/base/_buttons.scss */
+/* line 185, ../scss/partials/base/_buttons.scss */
 button:-moz-focus-inner,
 input[type="submit"]:-moz-focus-inner {
   border: 0;
@@ -4283,25 +4284,26 @@ input[type="submit"]:-moz-focus-inner {
 /* line 364, ../scss/partials/small-desktop/_components.scss */
 .social.take-action__social {
   margin-top: 1.2rem;
+  margin-bottom: 6rem;
 }
-/* line 367, ../scss/partials/small-desktop/_components.scss */
+/* line 368, ../scss/partials/small-desktop/_components.scss */
 .social.take-action__social .icon {
   font-size: 4rem;
   height: 5.4rem;
   width: 5.4rem;
 }
 
-/* line 375, ../scss/partials/small-desktop/_components.scss */
+/* line 376, ../scss/partials/small-desktop/_components.scss */
 .author__byline {
   margin-bottom: 1.4rem;
 }
-/* line 376, ../scss/partials/small-desktop/_components.scss */
+/* line 377, ../scss/partials/small-desktop/_components.scss */
 .author__byline:before {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
 }
 
-/* line 384, ../scss/partials/small-desktop/_components.scss */
+/* line 385, ../scss/partials/small-desktop/_components.scss */
 .author__bio {
   color: #7e7e7e;
   font-size: 1.5rem;
@@ -4309,57 +4311,57 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* prev/next */
-/* line 391, ../scss/partials/small-desktop/_components.scss */
+/* line 392, ../scss/partials/small-desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 395, ../scss/partials/small-desktop/_components.scss */
+/* line 396, ../scss/partials/small-desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 399, ../scss/partials/small-desktop/_components.scss */
+/* line 400, ../scss/partials/small-desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 405, ../scss/partials/small-desktop/_components.scss */
+/* line 406, ../scss/partials/small-desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 411, ../scss/partials/small-desktop/_components.scss */
+/* line 412, ../scss/partials/small-desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 419, ../scss/partials/small-desktop/_components.scss */
+/* line 420, ../scss/partials/small-desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 422, ../scss/partials/small-desktop/_components.scss */
+/* line 423, ../scss/partials/small-desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 427, ../scss/partials/small-desktop/_components.scss */
+/* line 428, ../scss/partials/small-desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 431, ../scss/partials/small-desktop/_components.scss */
+/* line 432, ../scss/partials/small-desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 436, ../scss/partials/small-desktop/_components.scss */
+/* line 437, ../scss/partials/small-desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 439, ../scss/partials/small-desktop/_components.scss */
+/* line 440, ../scss/partials/small-desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
 
-/* line 445, ../scss/partials/small-desktop/_components.scss */
+/* line 446, ../scss/partials/small-desktop/_components.scss */
 #flyout {
   background-color: white;
   position: fixed;
@@ -4372,19 +4374,19 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
 }
-/* line 457, ../scss/partials/small-desktop/_components.scss */
+/* line 458, ../scss/partials/small-desktop/_components.scss */
 #flyout header {
   background-color: #003046;
   padding: 1.2rem 1.6rem 0.6rem;
   position: relative;
 }
-/* line 463, ../scss/partials/small-desktop/_components.scss */
+/* line 464, ../scss/partials/small-desktop/_components.scss */
 #flyout .flyout__heading {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 468, ../scss/partials/small-desktop/_components.scss */
+/* line 469, ../scss/partials/small-desktop/_components.scss */
 #flyout .flyout__heading:before {
   color: #fc3b40;
   display: inline-block;
@@ -4393,7 +4395,7 @@ input[type="submit"]:-moz-focus-inner {
   font-size: 2.6rem;
   vertical-align: middle;
 }
-/* line 478, ../scss/partials/small-desktop/_components.scss */
+/* line 479, ../scss/partials/small-desktop/_components.scss */
 #flyout .btn--close {
   background-color: transparent;
   border: none;
@@ -4407,34 +4409,34 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 490, ../scss/partials/small-desktop/_components.scss */
+/* line 491, ../scss/partials/small-desktop/_components.scss */
 #flyout .btn--close:hover {
   color: #0098d8;
 }
-/* line 495, ../scss/partials/small-desktop/_components.scss */
+/* line 496, ../scss/partials/small-desktop/_components.scss */
 #flyout .flyout__content {
   border-left: 1px solid #ccd6da;
   border-bottom: 1px solid #ccd6da;
   padding: 1.6rem;
 }
-/* line 500, ../scss/partials/small-desktop/_components.scss */
+/* line 501, ../scss/partials/small-desktop/_components.scss */
 #flyout .flyout__content p {
   color: #002130;
   font-family: "Gudea", Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
-/* line 507, ../scss/partials/small-desktop/_components.scss */
+/* line 508, ../scss/partials/small-desktop/_components.scss */
 #flyout .flyout__content .fb-like {
   margin-bottom: 0.6rem;
 }
-/* line 512, ../scss/partials/small-desktop/_components.scss */
+/* line 513, ../scss/partials/small-desktop/_components.scss */
 #flyout.is-visible {
   right: 0;
 }
 
 /* subscribe status */
-/* line 518, ../scss/partials/small-desktop/_components.scss */
+/* line 519, ../scss/partials/small-desktop/_components.scss */
 .mc-email-status {
   font-size: 1.4rem;
   line-height: 1;
