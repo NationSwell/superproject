@@ -85,7 +85,7 @@
   }
 
   .story__content {
-    margin-bottom: 22.6rem;
+    margin-bottom: 12rem;
 
     p {
       font-size: 3.2rem;
@@ -256,8 +256,21 @@
 .story__social {
   margin-bottom: 8rem;
 
+  &:first-child {
+    margin-bottom: 3.4rem;
+  }
+
   .btn--bar {
+    font-size: 2.6rem;
+    margin-right: 2.2rem;
     margin-bottom: 2.4rem;
+    padding: 1.4rem 0;
+
+    &:before {
+      font-size: 4rem;
+      line-height: 0;
+      vertical-align: middle;
+    }
   }
 }
 

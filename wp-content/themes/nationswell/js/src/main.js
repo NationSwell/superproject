@@ -208,8 +208,10 @@
                 var $storySocial = $('.story__social').detach(),
                     $storyContent = $('#story');
 
-                if ($storyContent.length) {
-                    $storyContent.after($storySocial);
+                if ($storyContent) {
+                    console.log('bug');
+                    $storySocial.clone().prependTo($storyContent);
+                    $storySocial.clone().appendTo($storyContent);
                 }
 
                 // slideshows
