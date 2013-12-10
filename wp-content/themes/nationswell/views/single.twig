@@ -43,7 +43,7 @@
 
                 {#<div class="story__tags">#}
                     {#<ul class="tags-list">#}
-                        {#{% for  category in post.categories %}#}
+                        {#{% for category in post.categories %}#}
                             {#<li><a href="{{ category.link }}" class="tag-tag">{{ category.name }}</a></li>#}
                     {#{%  endfor %}#}
                     {#</ul>#}
@@ -56,7 +56,7 @@
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
                 {% endif %}
-                
+
                 <div class="story__social cf">
                     <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--share btn--facebook icon icon_facebook">{{ facebook_button_expanded_text }}</a>
                     <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--share btn--twitter icon icon_twitter">{{ twitter_button_expanded_text }}</a>

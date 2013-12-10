@@ -205,6 +205,13 @@
                     }
                 });
 
+                var $storySocial = $('.story__social').detach(),
+                    $storyContent = $('#story');
+
+                if ($storyContent.length) {
+                    $storyContent.after($storySocial);
+                }
+
                 // slideshows
                 $(".mobile-carousel").each(function () {
                     var $this = $(this),
