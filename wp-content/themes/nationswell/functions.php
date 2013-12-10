@@ -38,6 +38,8 @@ function add_to_context($data)
         }
         $data['menu_main_stories'] = Timber::get_posts($menu_post_ids, 'NationSwellPost');
     }
+
+    $data['ns_wp_title'] = wp_title('|',false,'right');
     
     
     // Global Site Options

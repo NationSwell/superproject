@@ -122,7 +122,7 @@ if (class_exists('TimberPost')) {
         function facebook_share_url()
         {
 
-            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->tout_dek_text();
+            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->tout_title();
 
             ob_start();
             $wpseo = new WPSEO_OpenGraph();
@@ -131,14 +131,13 @@ if (class_exists('TimberPost')) {
             $image = getAttribute('content', $og_meta);
             ob_end_clean();
 
-//            return 'http://www.facebook.com/sharer.php?s= 100&amp;p[url]='
-//            . urlencode($this->short_url())
-//            . '&amp;p[title]='
-//            . $this->title()
-//            . '&amp;p[summary]=' . $facebook_share_text
-//            . '&amp;p[images][0]=' . urlencode($image);
+            return 'http://www.facebook.com/sharer.php?s= 100'
+            . '&amp;p[url]=' . urlencode($this->permalink())
+            . '&amp;p[title]=' . urlencode($facebook_share_text)
+            . '&amp;p[summary]=' . urlencode($this->tout_dek_text())
+            . '&amp;p[images][0]=' . urlencode($image);
 
-            return 'http://www.facebook.com/sharer.php?u=' . $this->permalink();
+//            return 'http://www.facebook.com/sharer.php?u=' . $this->permalink() . '&p[title]=' . $facebook_share_text;
 
         }
 
