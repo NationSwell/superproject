@@ -31,7 +31,7 @@ if(function_exists("register_field_group"))
                 ),
                 array (
                     'key' => 'field_5274175c0e5ab',
-                    'label' => __('Instagram'),
+                    'label' => __('Instagram Username'),
                     'name' => 'instagram',
                     'type' => 'text',
                     'default_value' => '',
