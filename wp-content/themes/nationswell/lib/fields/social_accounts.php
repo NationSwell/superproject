@@ -7,7 +7,7 @@ if(function_exists("register_field_group"))
             'fields' => array (
                 array (
                     'key' => 'field_527417470e5a9',
-                    'label' => __('Twitter'),
+                    'label' => __('Twitter Username'),
                     'name' => 'twitter_username',
                     'type' => 'text',
                     'default_value' => '',
@@ -19,7 +19,7 @@ if(function_exists("register_field_group"))
                 ),
                 array (
                     'key' => 'field_527417530e5aa',
-                    'label' => __('Facebook'),
+                    'label' => __('Facebook Username'),
                     'name' => 'facebook_username',
                     'type' => 'text',
                     'default_value' => '',
@@ -43,7 +43,7 @@ if(function_exists("register_field_group"))
                 ),
                 array (
                     'key' => 'field_5274176a0e5ac',
-                    'label' => __('Google+'),
+                    'label' => __('Google+ URL'),
                     'name' => 'google',
                     'type' => 'text',
                     'default_value' => '',
@@ -55,7 +55,7 @@ if(function_exists("register_field_group"))
                 ),
                 array (
                     'key' => 'field_5283e100bce59',
-                    'label' => __('Tumblr'),
+                    'label' => __('Tumblr URL'),
                     'name' => 'tumblr',
                     'type' => 'text',
                     'default_value' => '',
