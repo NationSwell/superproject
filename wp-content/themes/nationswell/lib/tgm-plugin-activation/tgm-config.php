@@ -36,6 +36,16 @@ function my_theme_register_required_plugins()
             'external_url' => '',
         ),
         array(
+            'name' => 'Advanced Post Types Order',
+            'slug' => 'advanced-post-types-order',
+            'source' => get_stylesheet_directory() . '/lib/plugins/advanced-post-types-order.zip',
+            'required' => true,
+            'version' => '2.5.9.2',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
+        array(
             'name' => 'Advanced Custom Fields',
             'slug' => 'advanced-custom-fields',
             'source' => get_stylesheet_directory() . '/lib/plugins/advanced-custom-fields.zip',
