@@ -47,6 +47,11 @@
         bottom: 0;
       }
     }
+
+    .fb-like {
+      @include transform(scale(1.5));
+      @include transform-origin(bottom left);
+    }
   }
 
   &.btn--square {
