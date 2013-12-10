@@ -2072,6 +2072,16 @@ input[type="submit"]:-moz-focus-inner {
   color: #fc3b40;
 }
 
+/* hrs */
+/* line 628, ../scss/partials/base/_components.scss */
+hr {
+  border-style: none;
+  border: 0 none;
+  height: 2px;
+  background-color: #dbdbdb;
+  margin: 2rem 0 1.4rem;
+}
+
 /* line 1, ../scss/partials/base/_carousels.scss */
 .carousel {
   position: relative;
@@ -2951,7 +2961,13 @@ input[type="submit"]:-moz-focus-inner {
   font-style: italic;
   line-height: 1.56;
 }
-/* line 527, ../scss/partials/base/_story.scss */
+/* line 526, ../scss/partials/base/_story.scss */
+.module.take-action .btn-container {
+  background-color: #dbdbdb;
+  padding-bottom: 1.8rem;
+  margin-top: 2.8rem;
+}
+/* line 533, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -2964,7 +2980,7 @@ input[type="submit"]:-moz-focus-inner {
   display: block;
   width: 100%;
 }
-/* line 539, ../scss/partials/base/_story.scss */
+/* line 545, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -2972,27 +2988,27 @@ input[type="submit"]:-moz-focus-inner {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 548, ../scss/partials/base/_story.scss */
+/* line 554, ../scss/partials/base/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 552, ../scss/partials/base/_story.scss */
+/* line 558, ../scss/partials/base/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 557, ../scss/partials/base/_story.scss */
+/* line 563, ../scss/partials/base/_story.scss */
 .module.take-action .politician__photo {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   display: inline-block;
 }
-/* line 564, ../scss/partials/base/_story.scss */
+/* line 570, ../scss/partials/base/_story.scss */
 .module.take-action .politician__information {
   display: inline-block;
 }
-/* line 571, ../scss/partials/base/_story.scss */
+/* line 577, ../scss/partials/base/_story.scss */
 .module.take-action .politician__office {
   display: block;
   font-family: "Gudea", Arial, sans-serif;

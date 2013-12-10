@@ -1,11 +1,7 @@
 {% extends "action.twig" %}
 
 {% block action_body %}
-    {#<div class="take-action__a">#}
-        {#<img src="{{ post.call_to_action.image.url|resize(256) }}" class="take-action__img">#}
-    {#</div>#}
-
-    <div class="take-action__b">
+    <div class="take-action__full">
         <p>{{ post.call_to_action.description }}</p>
 
         {#<form>#}
@@ -23,7 +19,6 @@
         <iframe height="185" scrolling="no" src="https://rally.org/causes/{{ post.call_to_action.rally_id }}/donation_meter?no_recent_donor=1" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; margin: 0 auto; display: block;" width="300"></iframe>
         <!-- Rally.org donation meter END -->
 
-        <button type="submit" class="btn btn--solid btn--external take-action__submit">{{ share_take_action_button_text }}</button>
-
+        <p class="btn-container">Did you take action? Why not <button type="submit" class="btn btn--solid take-action__submit">{{ share_take_action_button_text }}</button></p>
     </div>
 {% endblock %}

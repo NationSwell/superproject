@@ -623,3 +623,12 @@
     color: $ns_red;
   }
 }
+
+/* hrs */
+hr {
+  border-style: none;
+  border: 0 none;
+  height: 2px;
+  background-color: $gray5;
+  margin: 2rem 0 1.4rem;
+}
