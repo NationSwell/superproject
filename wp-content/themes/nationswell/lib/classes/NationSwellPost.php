@@ -37,18 +37,15 @@ if (class_exists('TimberPost')) {
         }
 
 
-
         private function enhance_author($author)
         {
             $author->mug_shot = get_field('mug_shot', 'user_' . $author->ID);
             $author->author_page = get_author_posts_url($author->ID);
 
-            if (isset($author->user_url))
-            {
+            if (isset($author->user_url)) {
                 $url = preg_replace('/https?:\/\//', '', $author->user_url);
 
-                if (($pos = strpos($url, '/')) !== false)
-                {
+                if (($pos = strpos($url, '/')) !== false) {
                     $url = substr($url, 0, $pos);
                 }
                 $author->display_url = $url;
@@ -57,12 +54,11 @@ if (class_exists('TimberPost')) {
             return $author;
         }
 
-        private function load_authors() {
-            if(!isset($this->authors_cache))
-            {
+        private function load_authors()
+        {
+            if (!isset($this->authors_cache)) {
                 $this->authors_cache = array();
-                foreach(get_coauthors($this->ID) as $author)
-                {
+                foreach (get_coauthors($this->ID) as $author) {
                     $this->authors_cache[] = $this->enhance_author($author);
                 }
             }
@@ -83,7 +79,7 @@ if (class_exists('TimberPost')) {
         function more_stories()
         {
 
-            $page = get_page_by_path( 'home' );
+            $page = get_page_by_path('home');
             $featured_ids = get_field('featured', $page->ID);
             $featured_posts = Timber::get_posts($featured_ids, 'NationSwellPost');
 
@@ -119,11 +115,8 @@ if (class_exists('TimberPost')) {
             return isset($bitly) ? $bitly->get_bitly_link_for_post_id($this->ID) : $this->permalink();
         }
 
-        function facebook_share_url()
+        function og_image()
         {
-
-            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->tout_title();
-
             ob_start();
             $wpseo = new WPSEO_OpenGraph();
             $wpseo->image_output($wpseo->image());
@@ -131,13 +124,19 @@ if (class_exists('TimberPost')) {
             $image = getAttribute('content', $og_meta);
             ob_end_clean();
 
+            return $image;
+        }
+
+        function facebook_share_url()
+        {
+
+            $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->tout_title();
+
             return 'http://www.facebook.com/sharer.php?s= 100'
             . '&amp;p[url]=' . urlencode($this->permalink())
             . '&amp;p[title]=' . urlencode($facebook_share_text)
             . '&amp;p[summary]=' . urlencode($this->tout_dek_text())
-            . '&amp;p[images][0]=' . urlencode($image);
-
-//            return 'http://www.facebook.com/sharer.php?u=' . $this->permalink() . '&p[title]=' . $facebook_share_text;
+            . '&amp;p[images][0]=' . urlencode($this->og_image());
 
         }
 
@@ -184,16 +183,18 @@ if (class_exists('TimberPost')) {
             return $this->get_preview(20, false, '');
         }
 
-        function coauthors(){
+        function coauthors()
+        {
 
-            if(function_exists('coauthors_posts_links')) {
+            if (function_exists('coauthors_posts_links')) {
                 return coauthors_posts_links(null, null, null, null, false);
             } else {
                 return author();
             }
         }
 
-        function is_multimedia(){
+        function is_multimedia()
+        {
             return $this->content_type == 'video' || $this->content_type == 'photo';
         }
 
