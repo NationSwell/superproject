@@ -130,69 +130,82 @@
 }
 
 .hero-information {
+  background-color: $ns_navy0;
   position: absolute;
-  bottom: 0;
+  bottom: -3.1rem;
   left: 0;
   right: 0;
-  height: 0;
-  cursor: pointer;
+  overflow: hidden;
+  min-height: 3.2rem;
+  max-height: 3.2rem;
+  padding: 0.5rem 0;
 
-  &:hover,
-  &:active {
-    .hero-information__toggle {
-      color: $ns_blue2;
-    }
+  @include transition(all .15s ease-in-out);
 
-    .hero-information__outer {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .hero-information__content {
-      @include transform(translate(0,0) scale(1));
-    }
-  }
-
-  .hero-information__toggle {
+  &.is-long {
     cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: $white;
-    text-shadow: 0px 1px 2px rgba(0,0,0, 0.2);
+    max-height: none;
 
-    @include transition(color .15s ease-in-out);
+    &:hover {
+      background-color: $ns_navy2;
+      padding: 1.2rem 0;
+    }
+
+    .hero-information__caption,
+    .hero-information__credit {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &.is-open {
+      background-color: $ns_navy2;
+      padding: 1.6rem 0;
+
+      .hero-information__caption,
+      .hero-information__credit {
+        text-overflow: auto;
+        white-space: normal;
+      }
+    }
   }
 
   .hero-information__outer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(6,24,34, 0.6);
-    visibility: hidden;
-    opacity: 0;
+    position: relative;
+  }
 
-    @include transform-origin(left bottom);
-    @include transition(all .15s ease-in-out);
+  .hero-information__toggle {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+
+    @include transition(color .15s ease-in-out);
+
+    &:before {
+      color: $ns_blue1;
+      content: '\2303';
+      font-size: 1.6rem;
+    }
   }
 
   .hero-information__content {
-    @include transform(translate(1%,3%) scale(0.98));
-    @include transition(all .15s ease-in-out);
+    position: relative;
   }
 
   .hero-information__caption {
     color: $white;
     font-family: $gudea;
-    line-height: 1.3;
+
+    @include transition(all .15s ease-in-out);
   }
 
   .hero-information__credit {
     color: $ns_navy5;
     font-family: $gudea;
-    line-height: 1.1;
+    text-align: right;
   }
+
+  &:hover {}
 }
 
 .story__container {
