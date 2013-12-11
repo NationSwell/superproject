@@ -4681,84 +4681,101 @@ hr {
 .hero--homepage {
   height: 56rem;
 }
-/* line 7, ../scss/partials/desktop/_homepage.scss */
+/* line 8, ../scss/partials/desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry:hover .type-indicator {
+  opacity: 1;
+}
+/* line 13, ../scss/partials/desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry .type-indicator {
+  opacity: 0;
+  position: absolute;
+  top: 4.4rem;
+  right: 4.4rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 22, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 {
   height: 56rem;
   width: 60%;
   box-shadow: inset -2px 0 0 white;
 }
-/* line 13, ../scss/partials/desktop/_homepage.scss */
+/* line 28, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1:before, .hero--homepage.hero--grid .hero__entry.hero__entry--1:after {
   margin-right: 2px;
 }
-/* line 17, ../scss/partials/desktop/_homepage.scss */
-.hero--homepage.hero--grid .hero__entry.hero__entry--1 .type-indicator {
-  position: absolute;
-  top: 4.4rem;
-  right: 4.4rem;
-}
-/* line 23, ../scss/partials/desktop/_homepage.scss */
+/* line 32, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .story__hed {
   margin-bottom: 2.8rem;
 }
-/* line 27, ../scss/partials/desktop/_homepage.scss */
+/* line 36, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .credit {
   position: absolute;
   right: 4.4rem;
   bottom: 1.8rem;
 }
-/* line 33, ../scss/partials/desktop/_homepage.scss */
+/* line 42, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .support-cause--hero {
   margin-bottom: 1.4rem;
 }
-/* line 39, ../scss/partials/desktop/_homepage.scss */
+/* line 48, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2 {
   box-shadow: inset 0 -2px 0 white;
 }
-/* line 43, ../scss/partials/desktop/_homepage.scss */
+/* line 52, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:before, .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:after {
   margin-bottom: 2px;
 }
-/* line 50, ../scss/partials/desktop/_homepage.scss */
+/* line 59, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2, .hero--homepage.hero--grid .hero__entry.hero__entry--3 {
   height: 28rem;
   width: 40%;
 }
-/* line 54, ../scss/partials/desktop/_homepage.scss */
+/* line 63, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2 .story__hed, .hero--homepage.hero--grid .hero__entry.hero__entry--3 .story__hed {
   margin-bottom: 1.8rem;
   max-width: 50rem;
 }
-/* line 60, ../scss/partials/desktop/_homepage.scss */
+/* line 68, ../scss/partials/desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2 .type-indicator, .hero--homepage.hero--grid .hero__entry.hero__entry--3 .type-indicator {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+/* line 72, ../scss/partials/desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2 .type-indicator:before, .hero--homepage.hero--grid .hero__entry.hero__entry--3 .type-indicator:before {
+  font-size: 3.65rem;
+}
+/* line 78, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry .story--hero {
   padding: 2.4rem 4.4rem;
 }
 
-/* line 70, ../scss/partials/desktop/_homepage.scss */
+/* line 88, ../scss/partials/desktop/_homepage.scss */
 .support-cause--hero .support-cause__separator {
   font-size: 3.8rem;
   line-height: 2.5rem;
 }
 
 /* river */
-/* line 80, ../scss/partials/desktop/_homepage.scss */
+/* line 98, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story--tease .sponsor {
   padding: 0.8rem 1.6rem;
   left: -1rem;
   bottom: 4.6rem;
 }
-/* line 87, ../scss/partials/desktop/_homepage.scss */
+/* line 105, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story__feature {
   float: left;
   width: 37.4rem;
   margin-right: 3.8rem;
 }
-/* line 95, ../scss/partials/desktop/_homepage.scss */
+/* line 113, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story__hed {
   margin-bottom: 1.2rem;
 }
 
-/* line 101, ../scss/partials/desktop/_homepage.scss */
+/* line 119, ../scss/partials/desktop/_homepage.scss */
 .home .carousel {
   margin-top: 2.8rem;
   margin-bottom: 5rem;

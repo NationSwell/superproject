@@ -3505,7 +3505,7 @@ hr {
 
 /* line 5, ../scss/partials/small-desktop/_headings.scss */
 .hd-b {
-  font-size: 3.4rem;
+  font-size: 2.8rem;
 }
 
 /* line 9, ../scss/partials/small-desktop/_headings.scss */
@@ -4686,88 +4686,105 @@ hr {
 .hero--homepage {
   height: 56rem;
 }
-/* line 7, ../scss/partials/small-desktop/_homepage.scss */
+/* line 8, ../scss/partials/small-desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry:hover .type-indicator {
+  opacity: 1;
+}
+/* line 13, ../scss/partials/small-desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry .type-indicator {
+  opacity: 0;
+  position: absolute;
+  top: 4.4rem;
+  right: 4.4rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 22, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 {
   height: 56rem;
   width: 60%;
   box-shadow: inset -2px 0 0 white;
 }
-/* line 12, ../scss/partials/small-desktop/_homepage.scss */
+/* line 27, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1:before {
   margin-right: 2px;
 }
-/* line 16, ../scss/partials/small-desktop/_homepage.scss */
-.hero--homepage.hero--grid .hero__entry.hero__entry--1 .type-indicator {
-  position: absolute;
-  top: 4.4rem;
-  right: 4.4rem;
-}
-/* line 22, ../scss/partials/small-desktop/_homepage.scss */
+/* line 31, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .story__hed {
   margin-bottom: 3.4rem;
 }
-/* line 26, ../scss/partials/small-desktop/_homepage.scss */
+/* line 35, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .credit {
   position: absolute;
   right: 4.4rem;
   bottom: 1.8rem;
 }
-/* line 32, ../scss/partials/small-desktop/_homepage.scss */
+/* line 41, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .support-cause--hero {
   margin-bottom: 3.2rem;
 }
-/* line 38, ../scss/partials/small-desktop/_homepage.scss */
+/* line 47, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2 {
   box-shadow: inset 0 -2px 0 white;
 }
-/* line 41, ../scss/partials/small-desktop/_homepage.scss */
+/* line 50, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:before {
   margin-bottom: 2px;
 }
-/* line 48, ../scss/partials/small-desktop/_homepage.scss */
+/* line 57, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2, .hero--homepage.hero--grid .hero__entry.hero__entry--3 {
   height: 28rem;
   width: 40%;
 }
-/* line 52, ../scss/partials/small-desktop/_homepage.scss */
+/* line 61, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2 .story__hed, .hero--homepage.hero--grid .hero__entry.hero__entry--3 .story__hed {
   margin-bottom: 1.8rem;
   max-width: 50rem;
 }
-/* line 58, ../scss/partials/small-desktop/_homepage.scss */
+/* line 66, ../scss/partials/small-desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2 .type-indicator, .hero--homepage.hero--grid .hero__entry.hero__entry--3 .type-indicator {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+/* line 70, ../scss/partials/small-desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry.hero__entry--2 .type-indicator:before, .hero--homepage.hero--grid .hero__entry.hero__entry--3 .type-indicator:before {
+  font-size: 3.65rem;
+}
+/* line 76, ../scss/partials/small-desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry .story--hero {
   padding: 2.4rem 4.4rem;
 }
 
-/* line 68, ../scss/partials/small-desktop/_homepage.scss */
+/* line 86, ../scss/partials/small-desktop/_homepage.scss */
 .support-cause--hero .support-cause__separator {
   font-size: 3.8rem;
   line-height: 2.5rem;
 }
 
 /* river */
-/* line 78, ../scss/partials/small-desktop/_homepage.scss */
+/* line 96, ../scss/partials/small-desktop/_homepage.scss */
 .river--one-col .story-teases .story--tease:hover {
   box-shadow: 1rem 0 0 #f6f6f6, -1rem 0 0 #f6f6f6;
 }
-/* line 82, ../scss/partials/small-desktop/_homepage.scss */
+/* line 100, ../scss/partials/small-desktop/_homepage.scss */
 .river--one-col .story-teases .story--tease .sponsor {
   padding: 0.8rem 1.6rem;
   left: -1rem;
   bottom: 4.6rem;
 }
-/* line 89, ../scss/partials/small-desktop/_homepage.scss */
+/* line 107, ../scss/partials/small-desktop/_homepage.scss */
 .river--one-col .story-teases .story__feature {
   float: left;
   width: 37.4rem;
   margin-right: 3.8rem;
 }
-/* line 97, ../scss/partials/small-desktop/_homepage.scss */
+/* line 115, ../scss/partials/small-desktop/_homepage.scss */
 .river--one-col .story-teases .story__hed {
   margin-bottom: 1.2rem;
 }
 
-/* line 103, ../scss/partials/small-desktop/_homepage.scss */
+/* line 121, ../scss/partials/small-desktop/_homepage.scss */
 .home .carousel {
   margin-top: 2.8rem;
   margin-bottom: 5rem;

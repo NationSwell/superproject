@@ -18,6 +18,11 @@
       height: 56rem;
       width: 100%;
 
+      .type-indicator {
+        margin-top: 4.4rem;
+        margin-left: 4.4rem;
+      }
+
       .story__hed {
         max-width: 70rem;
         margin-bottom: 3.4rem;
@@ -33,13 +38,6 @@
         display: block;
         margin-top: 2.8rem;
       }
-    }
-  }
-
-  .hero__entry--1 {
-    .type-indicator {
-      margin-top: 4.4rem;
-      margin-left: 4.4rem;
     }
   }
 }

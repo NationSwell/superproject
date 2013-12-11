@@ -4,6 +4,21 @@
 
   &.hero--grid {
     .hero__entry {
+      &:hover {
+        .type-indicator {
+          opacity: 1;
+        }
+      }
+
+      .type-indicator {
+        opacity: 0;
+        position: absolute;
+        top: 4.4rem;
+        right: 4.4rem;
+
+        @include transition(all 0.1s ease-in-out);
+      }
+
       &.hero__entry--1 {
         height: 56rem;
         width: 60%;
@@ -12,12 +27,6 @@
         &:before,
         &:after {
           margin-right: 2px;
-        }
-
-        .type-indicator {
-          position: absolute;
-          top: 4.4rem;
-          right: 4.4rem;
         }
 
         .story__hed {
@@ -54,6 +63,15 @@
         .story__hed {
           margin-bottom: 1.8rem;
           max-width: 50rem;
+        }
+
+        .type-indicator {
+          width: 5.4rem;
+          height: 5.4rem;
+
+          &:before {
+            font-size: 3.65rem;
+          }
         }
       }
 

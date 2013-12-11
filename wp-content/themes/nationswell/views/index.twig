@@ -6,10 +6,10 @@
         {% for post in featured %}
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});">
                 <a href="{{ post.permalink }}" class="link-wrapper">
-                    {% if loop.index == 1 and post.content_type in ['video','audio','photo','listory'] %}
-                            <div class="type-indicator-container">
-                                <span class="icon icon_{{ post.content_type }} type-indicator"></span>
-                            </div>
+                    {% if post.content_type in ['video','audio','photo','listory'] %}
+                        <div class="type-indicator-container">
+                            <span class="icon icon_{{ post.content_type }} type-indicator"></span>
+                        </div>
                     {% endif %}
                     
                     <article class="story story--hero z1">
