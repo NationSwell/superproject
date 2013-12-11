@@ -1461,15 +1461,14 @@ input[type="submit"]:-moz-focus-inner {
 }
 /* line 8, ../scss/partials/base/_components.scss */
 .hero .link-wrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 /* rubric */
-/* line 18, ../scss/partials/base/_components.scss */
+/* line 17, ../scss/partials/base/_components.scss */
 .rubric {
   background-color: #fc3b40;
   color: white;
@@ -1477,7 +1476,7 @@ input[type="submit"]:-moz-focus-inner {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-/* line 25, ../scss/partials/base/_components.scss */
+/* line 24, ../scss/partials/base/_components.scss */
 .story--tease {
   background-color: transparent;
   position: relative;
@@ -1485,35 +1484,35 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 32, ../scss/partials/base/_components.scss */
+/* line 31, ../scss/partials/base/_components.scss */
 .story--tease:hover .story__hed {
   color: #0098d8;
 }
-/* line 37, ../scss/partials/base/_components.scss */
+/* line 36, ../scss/partials/base/_components.scss */
 .story--tease .support-cause {
   background-color: rgba(6, 24, 34, 0.4);
 }
-/* line 41, ../scss/partials/base/_components.scss */
+/* line 40, ../scss/partials/base/_components.scss */
 .story--tease .link-wrapper {
   height: auto;
   color: #2d2d2d;
 }
-/* line 46, ../scss/partials/base/_components.scss */
+/* line 45, ../scss/partials/base/_components.scss */
 .story--tease .story__feature {
   max-width: 100%;
 }
-/* line 49, ../scss/partials/base/_components.scss */
+/* line 48, ../scss/partials/base/_components.scss */
 .story--tease .story__feature img {
   display: block;
   max-width: 100%;
 }
-/* line 55, ../scss/partials/base/_components.scss */
+/* line 54, ../scss/partials/base/_components.scss */
 .story--tease .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 59, ../scss/partials/base/_components.scss */
+/* line 58, ../scss/partials/base/_components.scss */
 .story--tease .story__dek {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
@@ -1521,7 +1520,7 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* support cause */
-/* line 67, ../scss/partials/base/_components.scss */
+/* line 66, ../scss/partials/base/_components.scss */
 .support-cause {
   display: inline-block;
   vertical-align: middle;
@@ -1532,7 +1531,7 @@ input[type="submit"]:-moz-focus-inner {
   border-top-right-radius: 2.1rem;
   border-bottom-right-radius: 2.1rem;
 }
-/* line 80, ../scss/partials/base/_components.scss */
+/* line 79, ../scss/partials/base/_components.scss */
 .support-cause .indicator.indicator--module {
   display: inline-block;
   width: 4.2rem;
@@ -1541,25 +1540,25 @@ input[type="submit"]:-moz-focus-inner {
   position: relative;
   margin-left: -2.1rem;
 }
-/* line 88, ../scss/partials/base/_components.scss */
+/* line 87, ../scss/partials/base/_components.scss */
 .support-cause .indicator.indicator--module:before {
   font-size: 3.4rem;
 }
-/* line 94, ../scss/partials/base/_components.scss */
+/* line 93, ../scss/partials/base/_components.scss */
 .support-cause span {
   vertical-align: bottom;
 }
-/* line 98, ../scss/partials/base/_components.scss */
+/* line 97, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__content {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 0 9px;
 }
-/* line 104, ../scss/partials/base/_components.scss */
+/* line 103, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__heading {
   color: #fc3b40;
 }
-/* line 108, ../scss/partials/base/_components.scss */
+/* line 107, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__data {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
@@ -1572,12 +1571,12 @@ input[type="submit"]:-moz-focus-inner {
       color: $ns_blue1;
     }*/
 }
-/* line 121, ../scss/partials/base/_components.scss */
+/* line 120, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__data .super {
   font-weight: 400;
   position: relative;
 }
-/* line 127, ../scss/partials/base/_components.scss */
+/* line 126, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__label {
   color: #2d2d2d;
   font-family: "Oswald", Arial, sans-serif;
@@ -1586,77 +1585,79 @@ input[type="submit"]:-moz-focus-inner {
   margin-right: 2.1rem;
   -webkit-font-smoothing: antialiased;
 }
-/* line 138, ../scss/partials/base/_components.scss */
+/* line 137, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__separator {
   color: #dbdbdb;
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 144, ../scss/partials/base/_components.scss */
+/* line 143, ../scss/partials/base/_components.scss */
 .support-cause .support-cause__message {
   color: #2d2d2d;
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 300;
   margin-right: 2.1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* sponsor */
-/* line 153, ../scss/partials/base/_components.scss */
+/* line 155, ../scss/partials/base/_components.scss */
 .sponsor {
   font-family: "Gudea", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 158, ../scss/partials/base/_components.scss */
+/* line 160, ../scss/partials/base/_components.scss */
 .sponsor .sponsor__logo {
   display: inline-block;
   vertical-align: middle;
 }
 
 /* indicator */
-/* line 165, ../scss/partials/base/_components.scss */
+/* line 167, ../scss/partials/base/_components.scss */
 .indicator {
   margin: 0 auto;
   display: block;
   border-radius: 50%;
   text-align: center;
 }
-/* line 171, ../scss/partials/base/_components.scss */
+/* line 173, ../scss/partials/base/_components.scss */
 .indicator:before {
   color: white;
 }
-/* line 175, ../scss/partials/base/_components.scss */
+/* line 177, ../scss/partials/base/_components.scss */
 .indicator.indicator--blue {
   background-color: #0098d8;
 }
-/* line 179, ../scss/partials/base/_components.scss */
+/* line 181, ../scss/partials/base/_components.scss */
 .indicator.indicator--red {
   background-color: #fc3b40;
 }
-/* line 183, ../scss/partials/base/_components.scss */
+/* line 185, ../scss/partials/base/_components.scss */
 .indicator.indicator--title {
   position: relative;
 }
-/* line 187, ../scss/partials/base/_components.scss */
+/* line 189, ../scss/partials/base/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__heading {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
 }
-/* line 193, ../scss/partials/base/_components.scss */
+/* line 195, ../scss/partials/base/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__subheading {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 400;
 }
-/* line 201, ../scss/partials/base/_components.scss */
+/* line 203, ../scss/partials/base/_components.scss */
 .indicator.indicator--take-action {
   position: relative;
   margin: 0 auto;
 }
 
 /* type indicator */
-/* line 208, ../scss/partials/base/_components.scss */
+/* line 210, ../scss/partials/base/_components.scss */
 .type-indicator-container {
   position: absolute;
   top: 0;
@@ -1665,36 +1666,36 @@ input[type="submit"]:-moz-focus-inner {
   right: 0;
 }
 
-/* line 216, ../scss/partials/base/_components.scss */
+/* line 218, ../scss/partials/base/_components.scss */
 .type-indicator {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   border: 2px solid white;
   text-align: center;
 }
-/* line 222, ../scss/partials/base/_components.scss */
+/* line 224, ../scss/partials/base/_components.scss */
 .type-indicator:before {
   color: white;
 }
-/* line 226, ../scss/partials/base/_components.scss */
+/* line 228, ../scss/partials/base/_components.scss */
 .type-indicator.icon_video:before {
   line-height: 1.61;
 }
-/* line 230, ../scss/partials/base/_components.scss */
+/* line 232, ../scss/partials/base/_components.scss */
 .type-indicator.icon_audio:before {
   line-height: 1.6;
 }
-/* line 234, ../scss/partials/base/_components.scss */
+/* line 236, ../scss/partials/base/_components.scss */
 .type-indicator.icon_photo:before {
   line-height: 1.56;
 }
-/* line 238, ../scss/partials/base/_components.scss */
+/* line 240, ../scss/partials/base/_components.scss */
 .type-indicator.icon_listory:before {
   line-height: 1.68;
 }
 
 /* module */
-/* line 244, ../scss/partials/base/_components.scss */
+/* line 246, ../scss/partials/base/_components.scss */
 .module {
   display: block;
   position: relative;
@@ -1702,15 +1703,15 @@ input[type="submit"]:-moz-focus-inner {
   /* join us module */
   /* subscribe module */
 }
-/* line 249, ../scss/partials/base/_components.scss */
+/* line 251, ../scss/partials/base/_components.scss */
 .module.module--sidebar {
   margin: 0 auto;
 }
-/* line 253, ../scss/partials/base/_components.scss */
+/* line 255, ../scss/partials/base/_components.scss */
 .module.module--bg {
   background-color: #eeeeee;
 }
-/* line 256, ../scss/partials/base/_components.scss */
+/* line 258, ../scss/partials/base/_components.scss */
 .module.module--bg:before {
   content: '';
   display: block;
@@ -1719,17 +1720,17 @@ input[type="submit"]:-moz-focus-inner {
   top: 0;
   left: 0;
 }
-/* line 265, ../scss/partials/base/_components.scss */
+/* line 267, ../scss/partials/base/_components.scss */
 .module.module--bg header {
   position: relative;
   text-align: center;
 }
-/* line 270, ../scss/partials/base/_components.scss */
+/* line 272, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading {
   display: inline-block;
   position: relative;
 }
-/* line 275, ../scss/partials/base/_components.scss */
+/* line 277, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1742,32 +1743,32 @@ input[type="submit"]:-moz-focus-inner {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 290, ../scss/partials/base/_components.scss */
+/* line 292, ../scss/partials/base/_components.scss */
 .module.module--bg p {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 298, ../scss/partials/base/_components.scss */
+/* line 300, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
 }
-/* line 302, ../scss/partials/base/_components.scss */
+/* line 304, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue .module__heading {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 310, ../scss/partials/base/_components.scss */
+/* line 312, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
 }
-/* line 314, ../scss/partials/base/_components.scss */
+/* line 316, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red .module__heading {
   background-color: #832f2d;
 }
-/* line 321, ../scss/partials/base/_components.scss */
+/* line 323, ../scss/partials/base/_components.scss */
 .module.module--list:after {
   background-color: #eeeeee;
   content: '';
@@ -1776,90 +1777,90 @@ input[type="submit"]:-moz-focus-inner {
   position: absolute;
   left: 0;
 }
-/* line 330, ../scss/partials/base/_components.scss */
+/* line 332, ../scss/partials/base/_components.scss */
 .module.module--list .module__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 336, ../scss/partials/base/_components.scss */
+/* line 338, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li {
   border-bottom: 1px solid #eeeeee;
 }
-/* line 339, ../scss/partials/base/_components.scss */
+/* line 341, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li:last-child {
   border-bottom: 0 none;
 }
-/* line 346, ../scss/partials/base/_components.scss */
+/* line 348, ../scss/partials/base/_components.scss */
 .module.module--list .story--link .story__hed {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-bottom: 0;
 }
-/* line 352, ../scss/partials/base/_components.scss */
+/* line 354, ../scss/partials/base/_components.scss */
 .module.module--list .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 360, ../scss/partials/base/_components.scss */
+/* line 362, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
   margin-right: 4.2%;
   vertical-align: top;
 }
-/* line 366, ../scss/partials/base/_components.scss */
+/* line 368, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li:last-child {
   margin-right: 0;
 }
-/* line 374, ../scss/partials/base/_components.scss */
+/* line 376, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 380, ../scss/partials/base/_components.scss */
+/* line 382, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 388, ../scss/partials/base/_components.scss */
+/* line 390, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 393, ../scss/partials/base/_components.scss */
+/* line 395, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
 }
-/* line 397, ../scss/partials/base/_components.scss */
+/* line 399, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: white;
   display: block;
 }
-/* line 403, ../scss/partials/base/_components.scss */
+/* line 405, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
-/* line 411, ../scss/partials/base/_components.scss */
+/* line 413, ../scss/partials/base/_components.scss */
 .module .join-us .btn--bar {
   width: auto;
 }
 
 /* sidebar */
-/* line 424, ../scss/partials/base/_components.scss */
+/* line 426, ../scss/partials/base/_components.scss */
 .sidebar li {
   list-style: none;
 }
 
 /* pullquote */
-/* line 431, ../scss/partials/base/_components.scss */
+/* line 433, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 434, ../scss/partials/base/_components.scss */
+/* line 436, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -1868,7 +1869,7 @@ input[type="submit"]:-moz-focus-inner {
   border-radius: 50%;
   text-align: center;
 }
-/* line 443, ../scss/partials/base/_components.scss */
+/* line 445, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "Oswald", Arial, sans-serif;
@@ -1878,33 +1879,33 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* tags */
-/* line 453, ../scss/partials/base/_components.scss */
+/* line 455, ../scss/partials/base/_components.scss */
 .tag-tag {
   background-color: #fc3b40;
   color: white;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 459, ../scss/partials/base/_components.scss */
+/* line 461, ../scss/partials/base/_components.scss */
 .tag-tag:hover {
   background-color: #0098d8;
   color: white;
 }
 
 /* author */
-/* line 466, ../scss/partials/base/_components.scss */
+/* line 468, ../scss/partials/base/_components.scss */
 .author-box {
   background-color: #f6f6f6;
 }
 
-/* line 470, ../scss/partials/base/_components.scss */
+/* line 472, ../scss/partials/base/_components.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 476, ../scss/partials/base/_components.scss */
+/* line 478, ../scss/partials/base/_components.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -1913,89 +1914,89 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 484, ../scss/partials/base/_components.scss */
+/* line 486, ../scss/partials/base/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 489, ../scss/partials/base/_components.scss */
+/* line 491, ../scss/partials/base/_components.scss */
 .social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 494, ../scss/partials/base/_components.scss */
+/* line 496, ../scss/partials/base/_components.scss */
 .social li {
   display: inline-block;
 }
-/* line 497, ../scss/partials/base/_components.scss */
+/* line 499, ../scss/partials/base/_components.scss */
 .social li:first-child {
   margin-left: 0;
 }
-/* line 502, ../scss/partials/base/_components.scss */
+/* line 504, ../scss/partials/base/_components.scss */
 .social .icon {
   color: white;
   text-align: center;
   vertical-align: middle;
 }
-/* line 507, ../scss/partials/base/_components.scss */
+/* line 509, ../scss/partials/base/_components.scss */
 .social .icon.icon_facebook {
   background-color: #5973aa;
 }
-/* line 508, ../scss/partials/base/_components.scss */
+/* line 510, ../scss/partials/base/_components.scss */
 .social .icon.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 509, ../scss/partials/base/_components.scss */
+/* line 511, ../scss/partials/base/_components.scss */
 .social .icon.icon_google-plus {
   background-color: #d34836;
 }
-/* line 510, ../scss/partials/base/_components.scss */
+/* line 512, ../scss/partials/base/_components.scss */
 .social .icon.icon_instagram {
   background-color: #37668d;
 }
-/* line 511, ../scss/partials/base/_components.scss */
+/* line 513, ../scss/partials/base/_components.scss */
 .social .icon.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 515, ../scss/partials/base/_components.scss */
+/* line 517, ../scss/partials/base/_components.scss */
 .social.author__social .icon {
   line-height: 1.4;
 }
-/* line 520, ../scss/partials/base/_components.scss */
+/* line 522, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon {
   background-color: #dbdbdb;
 }
-/* line 524, ../scss/partials/base/_components.scss */
+/* line 526, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_facebook {
   background-color: #5973aa;
 }
-/* line 525, ../scss/partials/base/_components.scss */
+/* line 527, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 526, ../scss/partials/base/_components.scss */
+/* line 528, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_google-plus {
   background-color: #d34836;
 }
-/* line 527, ../scss/partials/base/_components.scss */
+/* line 529, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_instagram {
   background-color: #37668d;
 }
-/* line 528, ../scss/partials/base/_components.scss */
+/* line 530, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 535, ../scss/partials/base/_components.scss */
+/* line 537, ../scss/partials/base/_components.scss */
 .social.take-action__social .icon {
   line-height: 1.6;
 }
 
-/* line 542, ../scss/partials/base/_components.scss */
+/* line 544, ../scss/partials/base/_components.scss */
 .author__byline a {
   color: inherit;
 }
-/* line 546, ../scss/partials/base/_components.scss */
+/* line 548, ../scss/partials/base/_components.scss */
 .author__byline:before {
   color: #fc3b40;
   content: 'by';
@@ -2004,76 +2005,76 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
 }
 
-/* line 555, ../scss/partials/base/_components.scss */
+/* line 557, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 560, ../scss/partials/base/_components.scss */
+/* line 562, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 564, ../scss/partials/base/_components.scss */
+/* line 566, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 570, ../scss/partials/base/_components.scss */
+/* line 572, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 575, ../scss/partials/base/_components.scss */
+/* line 577, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 581, ../scss/partials/base/_components.scss */
+/* line 583, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 587, ../scss/partials/base/_components.scss */
+/* line 589, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 595, ../scss/partials/base/_components.scss */
+/* line 597, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 601, ../scss/partials/base/_components.scss */
+/* line 603, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 605, ../scss/partials/base/_components.scss */
+/* line 607, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
 
 /* subscribe status */
-/* line 612, ../scss/partials/base/_components.scss */
+/* line 614, ../scss/partials/base/_components.scss */
 .module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
   display: block;
   clear: both;
 }
-/* line 618, ../scss/partials/base/_components.scss */
+/* line 620, ../scss/partials/base/_components.scss */
 .module.mc-email-status.valid {
   color: #46b525;
 }
-/* line 622, ../scss/partials/base/_components.scss */
+/* line 624, ../scss/partials/base/_components.scss */
 .module.mc-email-status.error {
   color: #fc3b40;
 }
 
 /* hrs */
-/* line 628, ../scss/partials/base/_components.scss */
+/* line 630, ../scss/partials/base/_components.scss */
 hr {
   border-style: none;
   border: 0 none;
@@ -2558,145 +2559,146 @@ hr {
 
 /* line 132, ../scss/partials/base/_story.scss */
 .hero-information {
+  background-color: #061822;
   position: absolute;
-  bottom: 0;
+  bottom: -3.1rem;
   left: 0;
   right: 0;
-  height: 0;
+  overflow: hidden;
+  min-height: 3.2rem;
+  max-height: 3.2rem;
+  padding: 0.5rem 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+/* line 145, ../scss/partials/base/_story.scss */
+.hero-information.is-long {
   cursor: pointer;
+  max-height: none;
 }
-/* line 142, ../scss/partials/base/_story.scss */
-.hero-information:hover .hero-information__toggle, .hero-information:active .hero-information__toggle {
-  color: #1fade0;
+/* line 149, ../scss/partials/base/_story.scss */
+.hero-information.is-long:hover {
+  background-color: #003046;
+  padding: 1.2rem 0;
 }
-/* line 146, ../scss/partials/base/_story.scss */
-.hero-information:hover .hero-information__outer, .hero-information:active .hero-information__outer {
-  opacity: 1;
-  visibility: visible;
+/* line 155, ../scss/partials/base/_story.scss */
+.hero-information.is-long .hero-information__caption,
+.hero-information.is-long .hero-information__credit {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-/* line 151, ../scss/partials/base/_story.scss */
-.hero-information:hover .hero-information__content, .hero-information:active .hero-information__content {
-  -webkit-transform: translate(0, 0) scale(1);
-  -moz-transform: translate(0, 0) scale(1);
-  -ms-transform: translate(0, 0) scale(1);
-  -o-transform: translate(0, 0) scale(1);
-  transform: translate(0, 0) scale(1);
+/* line 161, ../scss/partials/base/_story.scss */
+.hero-information.is-long.is-open {
+  background-color: #003046;
+  padding: 1.6rem 0;
 }
-/* line 156, ../scss/partials/base/_story.scss */
+/* line 166, ../scss/partials/base/_story.scss */
+.hero-information.is-long.is-open .hero-information__caption,
+.hero-information.is-long.is-open .hero-information__credit {
+  text-overflow: auto;
+  white-space: normal;
+}
+/* line 173, ../scss/partials/base/_story.scss */
+.hero-information .hero-information__outer {
+  position: relative;
+}
+/* line 177, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__toggle {
-  cursor: pointer;
+  display: none;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  color: white;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   -webkit-transition: color 0.15s ease-in-out;
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 167, ../scss/partials/base/_story.scss */
-.hero-information .hero-information__outer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(6, 24, 34, 0.6);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform-origin: left bottom;
-  -moz-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
+/* line 184, ../scss/partials/base/_story.scss */
+.hero-information .hero-information__toggle:before {
+  color: #0098d8;
+  content: '\2303';
+  font-size: 1.6rem;
 }
-/* line 180, ../scss/partials/base/_story.scss */
+/* line 191, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__content {
-  -webkit-transform: translate(1%, 3%) scale(0.98);
-  -moz-transform: translate(1%, 3%) scale(0.98);
-  -ms-transform: translate(1%, 3%) scale(0.98);
-  -o-transform: translate(1%, 3%) scale(0.98);
-  transform: translate(1%, 3%) scale(0.98);
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
+  position: relative;
 }
-/* line 185, ../scss/partials/base/_story.scss */
+/* line 195, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__caption {
   color: white;
   font-family: "Gudea", Arial, sans-serif;
-  line-height: 1.3;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
-/* line 191, ../scss/partials/base/_story.scss */
+/* line 202, ../scss/partials/base/_story.scss */
 .hero-information .hero-information__credit {
   color: #9aacb5;
   font-family: "Gudea", Arial, sans-serif;
-  line-height: 1.1;
+  text-align: right;
 }
 
-/* line 198, ../scss/partials/base/_story.scss */
+/* line 211, ../scss/partials/base/_story.scss */
 .story__container {
   position: relative;
 }
-/* line 201, ../scss/partials/base/_story.scss */
+/* line 214, ../scss/partials/base/_story.scss */
 .story__container .story__meta {
   display: block;
   font-family: "Gudea", Arial, sans-serif;
   margin-bottom: 1.6rem;
 }
-/* line 206, ../scss/partials/base/_story.scss */
+/* line 219, ../scss/partials/base/_story.scss */
 .story__container .story__meta li {
   color: #b7b7b7;
   display: inline-block;
   line-height: 1.5;
 }
-/* line 212, ../scss/partials/base/_story.scss */
+/* line 225, ../scss/partials/base/_story.scss */
 .story__container .story__meta li:first-child:after {
   content: '\a0\b7\a0';
   display: inline-block;
 }
-/* line 219, ../scss/partials/base/_story.scss */
+/* line 232, ../scss/partials/base/_story.scss */
 .story__container .story__meta a {
   color: #a7a7a7;
   border-bottom: 1px solid #a7a7a7;
   padding-bottom: 0.1rem;
 }
-/* line 224, ../scss/partials/base/_story.scss */
+/* line 237, ../scss/partials/base/_story.scss */
 .story__container .story__meta a:hover {
   border-color: #fc3b40;
   color: #fc3b40;
 }
-/* line 232, ../scss/partials/base/_story.scss */
+/* line 245, ../scss/partials/base/_story.scss */
 .story__container .story__content em, .story__container .story__content i {
   font-style: italic;
 }
-/* line 236, ../scss/partials/base/_story.scss */
+/* line 249, ../scss/partials/base/_story.scss */
 .story__container .story__content strong, .story__container .story__content b {
   font-weight: 700;
 }
-/* line 240, ../scss/partials/base/_story.scss */
+/* line 253, ../scss/partials/base/_story.scss */
 .story__container .story__content p {
   font-family: "Gudea", Arial, sans-serif;
   /* drop cap */
 }
-/* line 244, ../scss/partials/base/_story.scss */
+/* line 257, ../scss/partials/base/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   float: left;
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
 }
-/* line 250, ../scss/partials/base/_story.scss */
+/* line 263, ../scss/partials/base/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 254, ../scss/partials/base/_story.scss */
+/* line 267, ../scss/partials/base/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 260, ../scss/partials/base/_story.scss */
+/* line 273, ../scss/partials/base/_story.scss */
 .story__container .story__content > h1 {
   color: #5ec2e8;
   font-family: "Oswald", Arial, sans-serif;
@@ -2706,7 +2708,7 @@ hr {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 270, ../scss/partials/base/_story.scss */
+/* line 283, ../scss/partials/base/_story.scss */
 .story__container .story__content > h2 {
   color: #1fade0;
   font-family: "Oswald", Arial, sans-serif;
@@ -2714,14 +2716,14 @@ hr {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
-/* line 278, ../scss/partials/base/_story.scss */
+/* line 291, ../scss/partials/base/_story.scss */
 .story__container .story__content > h3 {
   color: #fc3b40;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 285, ../scss/partials/base/_story.scss */
+/* line 298, ../scss/partials/base/_story.scss */
 .story__container .story__content > h4 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
@@ -2729,31 +2731,31 @@ hr {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 293, ../scss/partials/base/_story.scss */
+/* line 306, ../scss/partials/base/_story.scss */
 .story__container .story__content > h5 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 300, ../scss/partials/base/_story.scss */
+/* line 313, ../scss/partials/base/_story.scss */
 .story__container .story__content > h6 {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 307, ../scss/partials/base/_story.scss */
+/* line 320, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol {
   counter-reset: li;
 }
-/* line 310, ../scss/partials/base/_story.scss */
+/* line 323, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   position: relative;
 }
-/* line 315, ../scss/partials/base/_story.scss */
+/* line 328, ../scss/partials/base/_story.scss */
 .story__container .story__content > ol li:before {
   background-color: #fc3b40;
   counter-increment: li;
@@ -2765,57 +2767,57 @@ hr {
   position: absolute;
   text-align: center;
 }
-/* line 330, ../scss/partials/base/_story.scss */
+/* line 343, ../scss/partials/base/_story.scss */
 .story__container .story__content > ul li {
   color: #2d2d2d;
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.2;
   position: relative;
 }
-/* line 336, ../scss/partials/base/_story.scss */
+/* line 349, ../scss/partials/base/_story.scss */
 .story__container .story__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
   content: "\f12b";
   position: absolute;
 }
-/* line 345, ../scss/partials/base/_story.scss */
+/* line 358, ../scss/partials/base/_story.scss */
 .story__container .story__content .twitter-tweet-rendered {
   margin: 3.4rem 0;
 }
 
 /* multimedia */
-/* line 353, ../scss/partials/base/_story.scss */
+/* line 366, ../scss/partials/base/_story.scss */
 .multimedia .multimedia__content {
   display: block;
 }
-/* line 357, ../scss/partials/base/_story.scss */
+/* line 370, ../scss/partials/base/_story.scss */
 .multimedia .credit {
   text-align: right;
 }
-/* line 362, ../scss/partials/base/_story.scss */
+/* line 375, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--image img {
   display: block;
   width: 100%;
 }
-/* line 369, ../scss/partials/base/_story.scss */
+/* line 382, ../scss/partials/base/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 375, ../scss/partials/base/_story.scss */
+/* line 388, ../scss/partials/base/_story.scss */
 .list-item {
   margin: 0 0 7.5rem;
 }
-/* line 378, ../scss/partials/base/_story.scss */
+/* line 391, ../scss/partials/base/_story.scss */
 .list-item .multimedia {
   margin: 0;
 }
-/* line 382, ../scss/partials/base/_story.scss */
+/* line 395, ../scss/partials/base/_story.scss */
 .list-item .list-item-heading {
   margin: 0 0 1.5rem;
 }
-/* line 386, ../scss/partials/base/_story.scss */
+/* line 399, ../scss/partials/base/_story.scss */
 .list-item .list-item-rank {
   display: inline-block;
   background: #fc3b40;
@@ -2827,7 +2829,7 @@ hr {
 }
 
 /* Elastic video */
-/* line 398, ../scss/partials/base/_story.scss */
+/* line 411, ../scss/partials/base/_story.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -2835,7 +2837,7 @@ hr {
   height: 0;
   overflow: hidden;
 }
-/* line 407, ../scss/partials/base/_story.scss */
+/* line 420, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -2847,12 +2849,12 @@ hr {
 }
 
 /* sticky */
-/* line 417, ../scss/partials/base/_story.scss */
+/* line 430, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
 }
 
-/* line 421, ../scss/partials/base/_story.scss */
+/* line 434, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -2863,12 +2865,12 @@ hr {
   width: 100%;
 }
 
-/* line 431, ../scss/partials/base/_story.scss */
+/* line 444, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 435, ../scss/partials/base/_story.scss */
+/* line 448, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: white;
@@ -2877,52 +2879,52 @@ hr {
 }
 
 /* tags */
-/* line 443, ../scss/partials/base/_story.scss */
+/* line 456, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 447, ../scss/partials/base/_story.scss */
+/* line 460, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 454, ../scss/partials/base/_story.scss */
+/* line 467, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
-/* line 461, ../scss/partials/base/_story.scss */
+/* line 474, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 467, ../scss/partials/base/_story.scss */
+/* line 480, ../scss/partials/base/_story.scss */
 .take-action__social_back {
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 471, ../scss/partials/base/_story.scss */
+/* line 484, ../scss/partials/base/_story.scss */
 .module.take-action {
   /* tweet politician take action */
 }
-/* line 472, ../scss/partials/base/_story.scss */
+/* line 485, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 476, ../scss/partials/base/_story.scss */
+/* line 489, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__inner {
   overflow-y: scroll;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 482, ../scss/partials/base/_story.scss */
+/* line 495, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__full {
   width: 100%;
 }
-/* line 486, ../scss/partials/base/_story.scss */
+/* line 499, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__tab {
   opacity: 1;
   overflow: hidden;
@@ -2930,26 +2932,26 @@ hr {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 492, ../scss/partials/base/_story.scss */
+/* line 505, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__tab.is-hidden {
   opacity: 0;
 }
-/* line 498, ../scss/partials/base/_story.scss */
+/* line 511, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__thank-you p {
   text-align: center;
 }
-/* line 503, ../scss/partials/base/_story.scss */
+/* line 516, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 510, ../scss/partials/base/_story.scss */
+/* line 523, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
-/* line 514, ../scss/partials/base/_story.scss */
+/* line 527, ../scss/partials/base/_story.scss */
 .module.take-action small {
   color: #7e7e7e;
   display: block;
@@ -2958,11 +2960,11 @@ hr {
   overflow: hidden;
   line-height: 1.56;
 }
-/* line 523, ../scss/partials/base/_story.scss */
+/* line 536, ../scss/partials/base/_story.scss */
 .module.take-action strong {
   font-weight: 700;
 }
-/* line 527, ../scss/partials/base/_story.scss */
+/* line 540, ../scss/partials/base/_story.scss */
 .module.take-action em {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
@@ -2970,17 +2972,17 @@ hr {
   font-style: italic;
   line-height: 1.56;
 }
-/* line 535, ../scss/partials/base/_story.scss */
+/* line 548, ../scss/partials/base/_story.scss */
 .module.take-action .btn-container {
   background-color: #dbdbdb;
   padding-bottom: 1.8rem;
   margin-top: 2.8rem;
 }
-/* line 543, ../scss/partials/base/_story.scss */
+/* line 556, ../scss/partials/base/_story.scss */
 .module.take-action #tweet-a-politician-container {
   display: none;
 }
-/* line 548, ../scss/partials/base/_story.scss */
+/* line 561, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__politicians .btn--twitter {
   word-break: break-all;
   word-break: break-word;
@@ -2989,7 +2991,7 @@ hr {
   -ms-hyphens: auto;
   hyphens: auto;
 }
-/* line 558, ../scss/partials/base/_story.scss */
+/* line 571, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -3002,7 +3004,7 @@ hr {
   display: block;
   width: 100%;
 }
-/* line 570, ../scss/partials/base/_story.scss */
+/* line 583, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -3010,27 +3012,27 @@ hr {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 579, ../scss/partials/base/_story.scss */
+/* line 592, ../scss/partials/base/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 583, ../scss/partials/base/_story.scss */
+/* line 596, ../scss/partials/base/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 588, ../scss/partials/base/_story.scss */
+/* line 601, ../scss/partials/base/_story.scss */
 .module.take-action .politician__photo {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   display: inline-block;
 }
-/* line 595, ../scss/partials/base/_story.scss */
+/* line 608, ../scss/partials/base/_story.scss */
 .module.take-action .politician__information {
   display: inline-block;
 }
-/* line 602, ../scss/partials/base/_story.scss */
+/* line 615, ../scss/partials/base/_story.scss */
 .module.take-action .politician__office {
   display: block;
   font-family: "Gudea", Arial, sans-serif;
@@ -3259,14 +3261,13 @@ hr {
   float: left;
   margin-right: 1.23457%;
   width: 57.81893%;
-  margin-left: 16.87243%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .hero.hero--image .hero__content:last-child {
   margin-right: 0;
 }
-/* line 22, ../scss/partials/desktop/_grid.scss */
-.hero .hero-information .hero-information__content {
+/* line 21, ../scss/partials/desktop/_grid.scss */
+.hero .hero-information .hero-information__caption {
   display: block;
   float: left;
   margin-right: 1.23457%;
@@ -3274,11 +3275,22 @@ hr {
   margin-left: 16.87243%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
-.hero .hero-information .hero-information__content:last-child {
+.hero .hero-information .hero-information__caption:last-child {
+  margin-right: 0;
+}
+/* line 26, ../scss/partials/desktop/_grid.scss */
+.hero .hero-information .hero-information__credit {
+  display: block;
+  float: left;
+  margin-right: 1.23457%;
+  width: 24.07407%;
+}
+/* line 33, ../scss/neat/grid/_span-columns.scss */
+.hero .hero-information .hero-information__credit:last-child {
   margin-right: 0;
 }
 
-/* line 31, ../scss/partials/desktop/_grid.scss */
+/* line 34, ../scss/partials/desktop/_grid.scss */
 .river .story-teases {
   display: block;
   float: left;
@@ -3289,7 +3301,7 @@ hr {
 .river .story-teases:last-child {
   margin-right: 0;
 }
-/* line 36, ../scss/partials/desktop/_grid.scss */
+/* line 39, ../scss/partials/desktop/_grid.scss */
 .river.river--one-col .story--tease {
   display: block;
   float: left;
@@ -3300,7 +3312,7 @@ hr {
 .river.river--one-col .story--tease:last-child {
   margin-right: 0;
 }
-/* line 42, ../scss/partials/desktop/_grid.scss */
+/* line 45, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col li {
   display: block;
   float: left;
@@ -3319,7 +3331,7 @@ hr {
 .river.river--two-col li:nth-child(2n+1) {
   clear: left;
 }
-/* line 47, ../scss/partials/desktop/_grid.scss */
+/* line 50, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col .story--tease {
   display: block;
   float: left;
@@ -3330,12 +3342,12 @@ hr {
 .river.river--two-col .story--tease:last-child {
   margin-right: 0;
 }
-/* line 50, ../scss/partials/desktop/_grid.scss */
+/* line 53, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col .story--tease header {
   margin-top: -1.2rem;
 }
 
-/* line 58, ../scss/partials/desktop/_grid.scss */
+/* line 61, ../scss/partials/desktop/_grid.scss */
 .sidebar {
   display: block;
   float: left;
@@ -3347,7 +3359,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 63, ../scss/partials/desktop/_grid.scss */
+/* line 66, ../scss/partials/desktop/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -3359,7 +3371,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 67, ../scss/partials/desktop/_grid.scss */
+/* line 70, ../scss/partials/desktop/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -3371,7 +3383,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 72, ../scss/partials/desktop/_grid.scss */
+/* line 75, ../scss/partials/desktop/_grid.scss */
 .static__main-column {
   display: block;
   float: left;
@@ -3383,7 +3395,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 78, ../scss/partials/desktop/_grid.scss */
+/* line 81, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -3394,11 +3406,11 @@ hr {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 81, ../scss/partials/desktop/_grid.scss */
+/* line 84, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 86, ../scss/partials/desktop/_grid.scss */
+/* line 89, ../scss/partials/desktop/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -3411,7 +3423,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 94, ../scss/partials/desktop/_grid.scss */
+/* line 97, ../scss/partials/desktop/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -3423,7 +3435,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 101, ../scss/partials/desktop/_grid.scss */
+/* line 104, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -3434,7 +3446,7 @@ hr {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 104, ../scss/partials/desktop/_grid.scss */
+/* line 107, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -3446,7 +3458,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 112, ../scss/partials/desktop/_grid.scss */
+/* line 115, ../scss/partials/desktop/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -3968,7 +3980,7 @@ hr {
 /* hero */
 /* line 2, ../scss/partials/desktop/_components.scss */
 .hero {
-  margin-bottom: 5rem;
+  margin-bottom: 8.2rem;
   background-color: #061822;
 }
 
@@ -4796,114 +4808,112 @@ hr {
   font-size: 4rem;
 }
 /* line 46, ../scss/partials/desktop/_story.scss */
-.hero-information .hero-information__outer {
-  padding: 2.2rem;
-}
-/* line 50, ../scss/partials/desktop/_story.scss */
 .hero-information .hero-information__caption {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
 }
-/* line 54, ../scss/partials/desktop/_story.scss */
+/* line 51, ../scss/partials/desktop/_story.scss */
 .hero-information .hero-information__credit {
   font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
-/* line 59, ../scss/partials/desktop/_story.scss */
+/* line 57, ../scss/partials/desktop/_story.scss */
 .story__container {
   margin-top: 5rem;
 }
-/* line 64, ../scss/partials/desktop/_story.scss */
+/* line 62, ../scss/partials/desktop/_story.scss */
 .story__container .story--page > header .story__hed {
   margin-bottom: 3.4rem;
 }
-/* line 68, ../scss/partials/desktop/_story.scss */
+/* line 66, ../scss/partials/desktop/_story.scss */
 .story__container .story--page > header .story__dek {
   margin-bottom: 4.6rem;
 }
-/* line 74, ../scss/partials/desktop/_story.scss */
+/* line 72, ../scss/partials/desktop/_story.scss */
 .story__container .story__meta {
   display: block;
   margin-bottom: 1.2rem;
 }
-/* line 78, ../scss/partials/desktop/_story.scss */
+/* line 76, ../scss/partials/desktop/_story.scss */
 .story__container .story__meta li {
   font-size: 1.4rem;
 }
-/* line 82, ../scss/partials/desktop/_story.scss */
+/* line 80, ../scss/partials/desktop/_story.scss */
 .story__container .story__meta li:first-child:after {
   margin-left: 0.4rem;
 }
-/* line 89, ../scss/partials/desktop/_story.scss */
+/* line 87, ../scss/partials/desktop/_story.scss */
 .story__container .story__main-column {
   overflow: hidden;
 }
-/* line 93, ../scss/partials/desktop/_story.scss */
+/* line 91, ../scss/partials/desktop/_story.scss */
 .story__container .story__content {
   margin-bottom: 7.2rem;
 }
-/* line 96, ../scss/partials/desktop/_story.scss */
+/* line 94, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 2.2rem;
   /* drop cap */
 }
-/* line 102, ../scss/partials/desktop/_story.scss */
+/* line 100, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   font-size: 7.8rem;
   margin-right: 2.6rem;
 }
-/* line 107, ../scss/partials/desktop/_story.scss */
+/* line 105, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 111, ../scss/partials/desktop/_story.scss */
+/* line 109, ../scss/partials/desktop/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 117, ../scss/partials/desktop/_story.scss */
+/* line 115, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 123, ../scss/partials/desktop/_story.scss */
+/* line 121, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
-/* line 128, ../scss/partials/desktop/_story.scss */
+/* line 126, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h3 {
   font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
-/* line 133, ../scss/partials/desktop/_story.scss */
+/* line 131, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 138, ../scss/partials/desktop/_story.scss */
+/* line 136, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 143, ../scss/partials/desktop/_story.scss */
+/* line 141, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 148, ../scss/partials/desktop/_story.scss */
+/* line 146, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 152, ../scss/partials/desktop/_story.scss */
+/* line 150, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol li {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
 }
-/* line 156, ../scss/partials/desktop/_story.scss */
+/* line 154, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ol li:before {
   font-size: 1.2rem;
   width: 2.4rem;
@@ -4912,41 +4922,41 @@ hr {
   margin-right: 1.4rem;
   left: -4.2rem;
 }
-/* line 167, ../scss/partials/desktop/_story.scss */
+/* line 165, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul {
   margin: 4rem 0;
   padding-left: 7.6rem;
 }
-/* line 171, ../scss/partials/desktop/_story.scss */
+/* line 169, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul li {
   font-size: 1.8rem;
   margin-bottom: 1.4rem;
 }
-/* line 175, ../scss/partials/desktop/_story.scss */
+/* line 173, ../scss/partials/desktop/_story.scss */
 .story__container .story__content > ul li:before {
   left: -3.4rem;
 }
 
 /* multimedia */
-/* line 184, ../scss/partials/desktop/_story.scss */
+/* line 182, ../scss/partials/desktop/_story.scss */
 .multimedia {
   margin: 5rem 0;
 }
-/* line 187, ../scss/partials/desktop/_story.scss */
+/* line 185, ../scss/partials/desktop/_story.scss */
 .multimedia .multimedia__content {
   margin-top: 2.2rem;
 }
-/* line 191, ../scss/partials/desktop/_story.scss */
+/* line 189, ../scss/partials/desktop/_story.scss */
 .multimedia figcaption {
   margin-top: 1rem;
 }
-/* line 196, ../scss/partials/desktop/_story.scss */
+/* line 194, ../scss/partials/desktop/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
 }
 
 /* sticky */
-/* line 203, ../scss/partials/desktop/_story.scss */
+/* line 201, ../scss/partials/desktop/_story.scss */
 .story__sticky-container {
   margin-bottom: 75px;
   width: 16rem;
@@ -4959,12 +4969,12 @@ hr {
     top: auto;
   }*/
 }
-/* line 217, ../scss/partials/desktop/_story.scss */
+/* line 215, ../scss/partials/desktop/_story.scss */
 .story__sticky-container.stuck {
   top: 150px;
 }
 
-/* line 222, ../scss/partials/desktop/_story.scss */
+/* line 220, ../scss/partials/desktop/_story.scss */
 .sticky-social {
   position: relative;
   margin-bottom: 5rem;
@@ -4973,7 +4983,7 @@ hr {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 229, ../scss/partials/desktop/_story.scss */
+/* line 227, ../scss/partials/desktop/_story.scss */
 .sticky-social.is-hidden {
   left: 20rem;
   -webkit-transform: scale(0.5);
@@ -4983,7 +4993,7 @@ hr {
   transform: scale(0.5);
 }
 
-/* line 235, ../scss/partials/desktop/_story.scss */
+/* line 233, ../scss/partials/desktop/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
   position: relative;
@@ -4992,7 +5002,7 @@ hr {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 242, ../scss/partials/desktop/_story.scss */
+/* line 240, ../scss/partials/desktop/_story.scss */
 .sticky-take-action.is-hidden {
   left: 20rem;
   -webkit-transform: scale(1.5);
@@ -5002,77 +5012,77 @@ hr {
   transform: scale(1.5);
 }
 
-/* line 248, ../scss/partials/desktop/_story.scss */
+/* line 246, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 252, ../scss/partials/desktop/_story.scss */
+/* line 250, ../scss/partials/desktop/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
 /* tags */
-/* line 257, ../scss/partials/desktop/_story.scss */
+/* line 255, ../scss/partials/desktop/_story.scss */
 .story__tags {
   margin-bottom: 5rem;
   padding-bottom: 1.4rem;
 }
-/* line 262, ../scss/partials/desktop/_story.scss */
+/* line 260, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list:before {
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 1.8rem;
 }
-/* line 268, ../scss/partials/desktop/_story.scss */
+/* line 266, ../scss/partials/desktop/_story.scss */
 .story__tags .tags-list li {
   margin: 0 1rem 1rem 0;
 }
 
-/* line 275, ../scss/partials/desktop/_story.scss */
+/* line 273, ../scss/partials/desktop/_story.scss */
 .story__social {
   margin-bottom: 7.2rem;
 }
 
-/* line 280, ../scss/partials/desktop/_story.scss */
+/* line 278, ../scss/partials/desktop/_story.scss */
 .module.take-action {
   margin-bottom: 5rem;
   padding-bottom: 3.4rem;
   /* tweet politician take action */
 }
-/* line 284, ../scss/partials/desktop/_story.scss */
+/* line 282, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 3.4rem;
 }
-/* line 288, ../scss/partials/desktop/_story.scss */
+/* line 286, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__a {
   float: left;
   width: 25.6rem;
 }
-/* line 293, ../scss/partials/desktop/_story.scss */
+/* line 291, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__a + .take-action__b {
   padding-left: 3.4rem;
 }
-/* line 297, ../scss/partials/desktop/_story.scss */
+/* line 295, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__b {
   overflow: hidden;
 }
-/* line 302, ../scss/partials/desktop/_story.scss */
+/* line 300, ../scss/partials/desktop/_story.scss */
 .module.take-action .take-action__action .btn {
   margin-top: 1.8rem;
 }
-/* line 307, ../scss/partials/desktop/_story.scss */
+/* line 305, ../scss/partials/desktop/_story.scss */
 .module.take-action p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin: 0 0 1.8rem;
 }
-/* line 313, ../scss/partials/desktop/_story.scss */
+/* line 311, ../scss/partials/desktop/_story.scss */
 .module.take-action small {
   font-size: 1.4rem;
   margin-top: 2.2rem;
 }
-/* line 319, ../scss/partials/desktop/_story.scss */
+/* line 317, ../scss/partials/desktop/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -5086,7 +5096,7 @@ hr {
   display: block;
   width: 100%;
 }
-/* line 332, ../scss/partials/desktop/_story.scss */
+/* line 330, ../scss/partials/desktop/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -5094,37 +5104,37 @@ hr {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 343, ../scss/partials/desktop/_story.scss */
+/* line 341, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 347, ../scss/partials/desktop/_story.scss */
+/* line 345, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 352, ../scss/partials/desktop/_story.scss */
+/* line 350, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician .politician__photo {
   width: 12rem;
   height: 12rem;
   margin-right: 4rem;
   float: left;
 }
-/* line 359, ../scss/partials/desktop/_story.scss */
+/* line 357, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician .politician__information {
   overflow: hidden;
   max-width: 32rem;
 }
-/* line 364, ../scss/partials/desktop/_story.scss */
+/* line 362, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician .politician__name {
   margin-top: 0.6rem;
 }
-/* line 368, ../scss/partials/desktop/_story.scss */
+/* line 366, ../scss/partials/desktop/_story.scss */
 .module.take-action .politician .politician__office {
   font-size: 1.6rem;
 }
 
-/* line 376, ../scss/partials/desktop/_story.scss */
+/* line 374, ../scss/partials/desktop/_story.scss */
 .story__container .story__social,
 .story__container .story__take-action {
   clear: both;
@@ -5136,14 +5146,14 @@ hr {
   -moz-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
 }
-/* line 384, ../scss/partials/desktop/_story.scss */
+/* line 382, ../scss/partials/desktop/_story.scss */
 .story__container .story__social.is-visible,
 .story__container .story__take-action.is-visible {
   left: 0;
   height: auto;
 }
 
-/* line 393, ../scss/partials/desktop/_story.scss */
+/* line 391, ../scss/partials/desktop/_story.scss */
 .take-action__social_back {
   background: none;
   border: none;
@@ -5153,13 +5163,13 @@ hr {
   top: 4.6rem;
 }
 
-/* line 402, ../scss/partials/desktop/_story.scss */
+/* line 400, ../scss/partials/desktop/_story.scss */
 .fb-comments-container {
   display: block;
   margin-bottom: 7.2rem;
 }
 
-/* line 407, ../scss/partials/desktop/_story.scss */
+/* line 405, ../scss/partials/desktop/_story.scss */
 .fb-comments-container * {
   width: 100% !important;
 }

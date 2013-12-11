@@ -178,6 +178,14 @@
             }
         });
 
+        var hasOverflow = function(container, content) {
+            if (container.offsetHeight < container.scrollHeight) {
+                return true;
+            }
+
+            return false;
+        };
+
         // responsive code
 
         // mobile code
@@ -284,19 +292,13 @@
                             $activeSlide = items.filter(":eq(0)");
 
                             var $informationContainer = $('.hero-information'),
-                                $slideCredit = $informationContainer.find('.hero-information__caption'),
-                                $slideCaption = $informationContainer.find('.hero-information__credit'),
-                                activeSlideCredit = $activeSlide.data('item-caption'),
-                                activeSlideCaption = $activeSlide.data('item-credit');
+                                $slideCaption = $informationContainer.find('.hero-information__caption'),
+                                $slideCredit = $informationContainer.find('.hero-information__credit'),
+                                activeSlideCaption = $activeSlide.data('item-caption'),
+                                activeSlideCredit = $activeSlide.data('item-credit');
 
-                            if(!activeSlideCredit && !activeSlideCaption) {
-                                $informationContainer.fadeOut(300);
-                            } else {
-                                $informationContainer.fadeIn(300);
-
-                                activeSlideCaption ? $slideCaption.html(activeSlideCaption): $.noop();
-                                activeSlideCredit ? $slideCredit.html(activeSlideCredit): $.noop();
-                            }
+                            activeSlideCaption ? $slideCaption.html(activeSlideCaption) : $slideCaption.empty();
+                            activeSlideCredit ? $slideCredit.html(activeSlideCredit) : $slideCredit.empty();
                         }
 
                         return items;
@@ -364,7 +366,15 @@
                         }
                     });
 
-                    // slideshows
+                    var $informationContainer = $('.hero-information'),
+                        $slideCaption = $informationContainer.find('.hero-information__caption'),
+                        $slideCredit = $informationContainer.find('.hero-information__credit');
+
+                    $informationContainer.on('click', function() {
+                        $(this).toggleClass('is-open');
+                    });
+
+                        // slideshows
                     $(".carousel").each(function () {
                         var $this = $(this),
                             $carousel = $this.find(".carousel__items");
@@ -382,19 +392,16 @@
                                 var $activeSlide = items.filter(":eq(1)").addClass('active');
 
                                 if(isStory) {
-                                    var $informationContainer = $('.hero-information'),
-                                        $slideCredit = $informationContainer.find('.hero-information__caption'),
-                                        $slideCaption = $informationContainer.find('.hero-information__credit'),
-                                        activeSlideCredit = $activeSlide.data('item-caption'),
-                                        activeSlideCaption = $activeSlide.data('item-credit');
+                                    var activeSlideCaption = $activeSlide.data('item-caption'),
+                                        activeSlideCredit = $activeSlide.data('item-credit');
 
-                                    if(!activeSlideCredit && !activeSlideCaption) {
-                                        $informationContainer.fadeOut(300);
+                                        activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
+                                        activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
+
+                                    if ($slideCaption.height() > $informationContainer.height()) {
+                                        $informationContainer.addClass('is-long');
                                     } else {
-                                        $informationContainer.fadeIn(300);
-
-                                        activeSlideCaption ? $slideCaption.html(activeSlideCaption): $.noop();
-                                        activeSlideCredit ? $slideCredit.html(activeSlideCredit): $.noop();
+                                        $informationContainer.removeClass('is-long');
                                     }
                                 }
                             } else {
