@@ -161,6 +161,18 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
             ),
             array (
+                'key' => 'field_52a8852ab8f1a',
+                'label' => 'Share Take Action Text',
+                'name' => 'share_take_action_text',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+            ),
+            array (
                 'key' => 'field_52a50c0b78347',
                 'label' => 'Share Take Action Button Text',
                 'name' => 'share_take_action_button_text',
