@@ -2980,7 +2980,16 @@ hr {
 .module.take-action #tweet-a-politician-container {
   display: none;
 }
-/* line 547, ../scss/partials/base/_story.scss */
+/* line 548, ../scss/partials/base/_story.scss */
+.module.take-action .tweet-politician__politicians .btn--twitter {
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+/* line 558, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -2993,7 +3002,7 @@ hr {
   display: block;
   width: 100%;
 }
-/* line 559, ../scss/partials/base/_story.scss */
+/* line 570, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -3001,27 +3010,27 @@ hr {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 568, ../scss/partials/base/_story.scss */
+/* line 579, ../scss/partials/base/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 572, ../scss/partials/base/_story.scss */
+/* line 583, ../scss/partials/base/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 577, ../scss/partials/base/_story.scss */
+/* line 588, ../scss/partials/base/_story.scss */
 .module.take-action .politician__photo {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   display: inline-block;
 }
-/* line 584, ../scss/partials/base/_story.scss */
+/* line 595, ../scss/partials/base/_story.scss */
 .module.take-action .politician__information {
   display: inline-block;
 }
-/* line 591, ../scss/partials/base/_story.scss */
+/* line 602, ../scss/partials/base/_story.scss */
 .module.take-action .politician__office {
   display: block;
   font-family: "Gudea", Arial, sans-serif;

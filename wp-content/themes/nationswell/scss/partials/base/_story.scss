@@ -544,6 +544,17 @@
     display: none;
   }
 
+  .tweet-politician__politicians {
+    .btn--twitter {
+      word-break: break-all;
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+    }
+  }
+
   .tweet-politician__message {
     text-align: center;
     font-family: $gudea;
