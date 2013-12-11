@@ -38,10 +38,10 @@
             </div>
 
             <div class="hero-information">
-                <span class="icon icon_information hero-information__toggle z1"></span>
                 <div class="hero-information__outer">
                     <div class="container">
                         <div class="hero-information__content">
+                            <span class="icon icon_information hero-information__toggle z1"></span>
                             <p class="hero-information__caption">{{ post.story_header[0].caption }}</p>
                             <span class="hero-information__credit">{{ post.story_header[0].credit }}</span>
                         </div>
@@ -91,14 +91,14 @@
             </ul>
         </div>
 
-        <div class="hero-information" style="display: none;">
-            <span class="icon icon_information hero-information__toggle z1"></span>
+        <div class="hero-information">
+            <span class="hero-information__toggle"></span>
 
             <div class="hero-information__outer">
                 <div class="container">
                     <div class="hero-information__content">
-                        <p class="hero-information__caption"></p>
-                        <span class="hero-information__credit"></span>
+                        <p class="hero-information__caption">{{ post.story_header[0].caption }}</p>
+                        <span class="hero-information__credit">{{ post.story_header[0].credit }}</span>
                     </div>
                 </div>
             </div>

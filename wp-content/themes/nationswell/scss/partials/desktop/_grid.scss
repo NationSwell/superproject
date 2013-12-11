@@ -14,14 +14,17 @@
   &.hero--image {
     .hero__content {
       @include span-columns(7);
-      @include shift(2);
     }
   }
 
   .hero-information {
-    .hero-information__content {
+    .hero-information__caption {
       @include span-columns(6);
       @include shift(2);
+    }
+
+    .hero-information__credit {
+      @include span-columns(3);
     }
   }
 }

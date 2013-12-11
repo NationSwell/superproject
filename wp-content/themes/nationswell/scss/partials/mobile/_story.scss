@@ -1,19 +1,23 @@
 .hero--story {
   background-color: $ns_navy0;
   min-height: 34rem;
-  max-height: 53.2rem;
 
   &.hero--cover {
     height: auto;
     padding-bottom: 56.25%;
     background-origin: border-box;
+  }
 
   &.hero--image {
     height: 53.2rem;
+    margin-bottom: 14.6rem;
 
-      .hero-read {
-        display: none;
-      }
+    .hero-read {
+      display: none;
+    }
+
+    .hero-information {
+      top: 53.2rem;
     }
   }
 
@@ -32,6 +36,23 @@
       height: 42.6rem;
       width: 82rem;
     }
+
+    .carousel__controls {
+      display: none;
+    }
+
+    .carousel__pagination {
+      bottom: -3.2rem;
+
+      .selected {
+        background-color: $ns_blue1;
+      }
+    }
+
+    .hero-imformation {
+      padding: 5.6rem 0 2.2rem;
+      bottom: 0;
+    }
   }
 
   &.hero--video {
@@ -46,14 +67,12 @@
 }
 
 .hero-information {
-  .hero-information__toggle {
-    padding: 0rem 6rem;
-    font-size: 7.8rem;
-  }
+  position: relative;
+  overflow: visible;
+  max-height: none;
+  padding: 2.2rem 0;
 
-  .hero-information__outer {
-    padding: 3rem;
-  }
+  .hero-information__outer {}
 
   .hero-information__caption {
     font-size: 2.5rem;
