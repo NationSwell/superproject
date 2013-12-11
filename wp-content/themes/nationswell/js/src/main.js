@@ -604,6 +604,9 @@
                     } else {
                         error(data);
                     }
+                },
+                error: function(data) {
+                    error(data.responseJSON);
                 }
             });
         }
@@ -626,9 +629,14 @@
                     lookupReps($form.find('[name=ta-address]').val(), function(reps) {
                         renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
                     }, function(data) {
+                        console.log(data);
                         if(data.status === 'addressUnparseable') {
                             lookupValidator.showErrors({
                                 "ta-address": "Sorry we don't recognize this address"
+                            });
+                        } else if(data.error) {
+                            lookupValidator.showErrors({
+                                "ta-address": "We are unable to look up addresses at this time. Please try again later"
                             });
                         }
                     });
