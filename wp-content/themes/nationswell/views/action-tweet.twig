@@ -11,7 +11,7 @@
             </div>
 
             <div class="form-element form-element--one-third form-element--right form-element--omega">
-                <button type="submit" class="btn btn--solid" data-scout-event="Action:Tweet, Search">Search</button>
+                <button type="submit" class="btn btn--solid">Search</button>
             </div>
         </form>
 
@@ -19,8 +19,10 @@
             {{ post.call_to_action.tweet_text }}
         </div>
 
-        <div id="tweet-a-politician" class="tweet-politician__politicians"></div>
+        <div id="tweet-a-politician-container">
+            <div id="tweet-a-politician" class="tweet-politician__politicians"></div>
+            <p class="btn-container">{{ share_take_action_text }} <button type="submit" class="btn btn--solid take-action__submit">{{ share_take_action_button_text }}</button></p>
+        </div>
 
-        <p class="btn-container">{{ share_take_action_text }} <button type="submit" class="btn btn--solid take-action__submit" data-scout-event="Action:Donate, SharePanel">{{ share_take_action_button_text }}</button></p>
     </div>
 {% endblock %}

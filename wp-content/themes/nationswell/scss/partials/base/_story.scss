@@ -539,6 +539,11 @@
   }
 
   /* tweet politician take action */
+
+  #tweet-a-politician-container {
+    display: none;
+  }
+
   .tweet-politician__message {
     text-align: center;
     font-family: $gudea;

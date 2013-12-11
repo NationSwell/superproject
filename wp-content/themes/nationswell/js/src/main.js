@@ -613,6 +613,7 @@
             $.each(reps, function(){
                 $politicians.append(politicianTemplate(this, tweetUrl, tweetMessage));
             });
+            $('#tweet-a-politician-container').show();
         }
 
         var $politicianLookup = $('#politician-lookup'),
