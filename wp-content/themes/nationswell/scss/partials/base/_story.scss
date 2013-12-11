@@ -129,7 +129,7 @@
   }
 }
 
-.hero-information {
+/*.hero-information {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -141,15 +141,6 @@
   &:active {
     .hero-information__toggle {
       color: $ns_blue2;
-    }
-
-    .hero-information__outer {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .hero-information__content {
-      @include transform(translate(0,0) scale(1));
     }
   }
 
@@ -170,15 +161,11 @@
     right: 0;
     bottom: 0;
     background-color: rgba(6,24,34, 0.6);
-    visibility: hidden;
-    opacity: 0;
 
-    @include transform-origin(left bottom);
     @include transition(all .15s ease-in-out);
   }
 
   .hero-information__content {
-    @include transform(translate(1%,3%) scale(0.98));
     @include transition(all .15s ease-in-out);
   }
 
@@ -193,6 +180,59 @@
     font-family: $gudea;
     line-height: 1.1;
   }
+}*/
+
+.hero {
+  margin-bottom: 12rem !important;
+}
+
+.hero-information {
+  position: absolute;
+  top: 0;
+  bottom: -4rem;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  @include transition(all .15s ease-in-out);
+
+  .hero-information__toggle {
+    display: none;
+    color: $white;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+
+    @include transition(color .15s ease-in-out);
+  }
+
+  .hero-information__outer {
+    background-color: #061822;
+    position: relative;
+    margin-top: -0.8rem;
+    top: 42.6rem;
+  }
+
+  .hero-information__content {
+    position: relative;
+  }
+
+  .hero-information__caption {
+    color: $white;
+    font-family: $gudea;
+    line-height: 1.3;
+  }
+
+  .hero-information__credit {
+    color: $ns_navy5;
+    font-family: $gudea;
+    font-size: 0 !important;
+    line-height: 1.1;
+  }
+
+  &:hover {}
 }
 
 .story__container {
