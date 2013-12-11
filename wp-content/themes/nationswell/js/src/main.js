@@ -3,8 +3,6 @@
 
         var $body = $('body');
 
-        $.scout();
-
         $('.hero-read-link').on('click', function(e){
 
             e.preventDefault();
@@ -38,6 +36,9 @@
 
         // share popup window
         $body.on('click', '.btn--share', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
             var width = 575,
                 height = 400,
                 left = ($(window).width() - width) / 2,
@@ -48,8 +49,7 @@
                     ',height=' + height +
                     ',top=' + top +
                     ',left=' + left;
-            window.open(url, 'twitter', opts);
-            return false;
+            window.open(url, '', opts);
         });
 
         // pageload modals

@@ -39,8 +39,6 @@ module.exports = function(grunt) {
                         'js/src/vendor/media.match.js',
                         'js/src/vendor/enquire.js',
                         'js/src/vendor/jquery.cookie.js',
-                        'js/src/vendor/jquery.bp.scout.js',
-                        'js/src/vendor/jquery.bp.scout.maxScroll.js',
                         'js/src/vendor/jquery.ajaxchimp.js',
                         'js/src/vendor/jquery.transit.min.js',
                         'js/src/vendor/jquery.touchSwipe.min.js',
