@@ -41,7 +41,7 @@ if(function_exists("register_field_group"))
                     'type' => 'relationship',
                     'return_format' => 'id',
                     'post_type' => array (
-                        0 => 'all',
+                        0 => 'post',
                     ),
                     'taxonomy' => array (
                         0 => 'all',
@@ -91,7 +91,7 @@ if(function_exists("register_field_group"))
                     'type' => 'relationship',
                     'return_format' => 'id',
                     'post_type' => array (
-                        0 => 'all',
+                        0 => 'post',
                     ),
                     'taxonomy' => array (
                         0 => 'all',
