@@ -11,7 +11,7 @@
             </div>
 
             <div class="form-element form-element--one-third form-element--right form-element--omega">
-                <button type="submit" class="btn btn--solid">Search</button>
+                <button type="submit" class="btn btn--solid" data-scout-event="Action:Tweet, Search">Search</button>
             </div>
         </form>
 
@@ -21,6 +21,6 @@
 
         <div id="tweet-a-politician" class="tweet-politician__politicians"></div>
 
-        <p class="btn-container"><button type="submit" class="btn btn--solid take-action__submit">{{ share_take_action_button_text }}</button></p>
+        <p class="btn-container"><button type="submit" class="btn btn--solid take-action__submit" data-scout-event="Action:Tweet, SharePanel">{{ share_take_action_button_text }}</button></p>
     </div>
 {% endblock %}

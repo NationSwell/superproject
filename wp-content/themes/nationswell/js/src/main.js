@@ -3,6 +3,8 @@
 
         var $body = $('body');
 
+        $.scout();
+
         $('.hero-read-link').on('click', function(e){
 
             e.preventDefault();
@@ -11,7 +13,6 @@
 
             $body.animate({scrollTop: top }, '500');
         });
-
 
         // sticky nav
         var $fullNavBar = $('.full-header');
@@ -204,6 +205,15 @@
                         }
                     }
                 });
+
+                var $storySocial = $('.story__social').detach(),
+                    $storyContent = $('#story');
+
+                if ($storyContent) {
+                    console.log('bug');
+                    $storySocial.clone().prependTo($storyContent);
+                    $storySocial.clone().appendTo($storyContent);
+                }
 
                 // slideshows
                 $(".mobile-carousel").each(function () {

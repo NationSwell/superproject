@@ -21,7 +21,7 @@
     &:before {
       font-size: 5.6rem;
       line-height: 4rem;
-      margin-right: 3.4rem;
+      margin-right: 2.2rem;
     }
 
     &:after {
@@ -46,6 +46,11 @@
         height: 0;
         bottom: 0;
       }
+    }
+
+    .fb-like {
+      @include transform(scale(1.5));
+      @include transform-origin(bottom left);
     }
   }
 
