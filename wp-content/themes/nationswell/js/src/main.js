@@ -3,6 +3,8 @@
 
         var $body = $('body');
 
+        $.scout();
+
         $('.hero-read-link').on('click', function(e){
 
             e.preventDefault();
@@ -11,7 +13,6 @@
 
             $body.animate({scrollTop: top }, '500');
         });
-
 
         // sticky nav
         var $fullNavBar = $('.full-header');
