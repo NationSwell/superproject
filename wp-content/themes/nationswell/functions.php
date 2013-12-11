@@ -76,6 +76,7 @@ function add_to_context($data)
         'take_action_thanks_text',
         'take_action_thanks_subscribe_text',
         'share_take_action_button_text',
+        'share_take_action_text',
 
         'modal_joinus_header',
         'modal_joinus_body_text',

@@ -342,9 +342,19 @@
   }
 
   .tweet-politician__politicians {
-  }
+    .btn--twitter {
+      font-size: 2.2rem;
+      padding: 2.2rem;
+      word-break: break-all;
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+    }
+}
 
-  .politician {
+.politician {
     clear: both;
     margin: 0 3rem 4.4rem;
 
