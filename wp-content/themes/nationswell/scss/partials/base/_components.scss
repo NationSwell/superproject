@@ -146,6 +146,9 @@
     font-family: $oswald;
     font-weight: $light;
     margin-right: 2.1rem;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
