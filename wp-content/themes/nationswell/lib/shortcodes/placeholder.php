@@ -72,29 +72,13 @@ function component_image($content, $component) {
 }
 
 function component_video($content, $component) {
+    $component['video'] = new NationSwellVideo($content['video_url'], $content['title'], '', $content['credit']);
     $component['title'] = $content['title'];
-
-    if(!empty($content['video_url'])) {
-        $component['video_url'] = normalize_youtube_url($content['video_url']) .
-            '?origin=' . urlencode(get_site_url()) . '&autoplay=0&autohide=1' .
-            '&controls=2&enablejsapi=1&modestbranding=1&rel=0&theme=light&color=fc3b40&showinfo=0';
-    }
-
     $component['credit'] = $content['credit'];
 
     return $component;
 }
 
-function normalize_youtube_url($url) {
-    if (strpos('//www.youtube.com/embed/', $url) === false  &&
-        (preg_match("/\/\/www.youtube.com\/watch\?.*v=([^&#]+)/", $url, $matches) ||
-            preg_match("/\/\/youtu.be\/([^&#]+)/", $url, $matches))) {
-
-        $url = '//www.youtube.com/embed/' . $matches[1];
-    }
-
-    return $url;
-}
 
 function component_pull_quote($content, $component) {
     $component['text'] = $content['text'];

@@ -160,14 +160,17 @@ function my_register_fields()
 
 add_action('acf/register_fields', 'my_register_fields');
 
-// Shortcodes
-include_once('lib/shortcodes/placeholder.php');
-
 include_once('lib/classes/ChangeOrgApi.php');
 include_once('lib/classes/ChangeOrgPetition.php');
 include_once('lib/classes/CallToAction.php');
+include_once('lib/classes/NationSwellVideo.php');
 include_once('lib/classes/NationSwellPost.php');
 include_once('lib/classes/MailChimpFeed.php');
+
+// Shortcodes
+include_once('lib/shortcodes/placeholder.php');
+
+
 
 
 // Configure Menus
