@@ -1,12 +1,16 @@
 <figure class="multimedia multimedia--video">
     <h3 class="hd-m multimedia__heading">{{ title }}</h3>
 
-    {% if video_url is not empty %}
-    <div class="multimedia__content">
-        <div class="video-container">
-            <iframe class="ytplayer" type="text/html" width="800" height="500" src="{{ video_url }}" frameborder="0"></iframe>
+    {% if video.oEmbed or video.url %}
+        <div class="multimedia__content">
+            <div class="video-container">
+                {% if video.oEmbed %}
+                    {{ video.oEmbed }}
+                {% else %}
+                    <iframe class="ytplayer" type="text/html" width="800" height="500" src="{{ video.url }}" frameborder="0"></iframe>
+                {% endif %}
+            </div>
         </div>
-    </div>
     {% endif %}
 
     <figcaption class="cf">
