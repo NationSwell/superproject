@@ -2650,7 +2650,7 @@ hr {
 }
 /* line 219, ../scss/partials/base/_story.scss */
 .story__container .story__meta li {
-  color: #b7b7b7;
+  color: #9d9d9d;
   display: inline-block;
   line-height: 1.5;
 }
@@ -2661,8 +2661,8 @@ hr {
 }
 /* line 232, ../scss/partials/base/_story.scss */
 .story__container .story__meta a {
-  color: #a7a7a7;
-  border-bottom: 1px solid #a7a7a7;
+  color: #7e7e7e;
+  border-bottom: 1px solid #9d9d9d;
   padding-bottom: 0.1rem;
 }
 /* line 237, ../scss/partials/base/_story.scss */
