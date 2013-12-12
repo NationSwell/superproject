@@ -116,6 +116,12 @@
 .trending-topics {
   background-color: $ns_navy1;
   padding: 0.8rem 0;
+
+  .container {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 
 .trending-topics__heading {
