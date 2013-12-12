@@ -5,6 +5,29 @@
     height: auto;
     padding-bottom: 30%;
     max-height: none;
+
+    .hero-information {
+      background-color: $white;
+
+      &.is-long {
+        &:hover {
+          background-color: $ns_navy6;
+        }
+
+        &.is-open {
+          background-color: $white;
+        }
+      }
+
+
+      .hero-information__caption {
+        color: $ns_navy2;
+      }
+
+      .hero-information__credit {
+        color: $ns_navy4;
+      }
+    }
   }
 
   &.hero--carousel {
