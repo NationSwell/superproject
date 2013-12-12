@@ -5504,19 +5504,20 @@ hr {
   /* river */
   /* line 154, ../scss/small-desktop.scss */
   .river--one-col .story-teases .story--tease:hover {
-    box-shadow: 1rem 0 0 #f6f6f6, -1rem 0 0 #f6f6f6;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   /**
    * story
    */
   /* sticky */
-  /* line 166, ../scss/small-desktop.scss */
+  /* line 167, ../scss/small-desktop.scss */
   .story__sticky-container {
     width: 14.6rem;
   }
 
-  /* line 172, ../scss/small-desktop.scss */
+  /* line 173, ../scss/small-desktop.scss */
   .module.take-action .politician__information {
     max-width: 22rem;
   }
@@ -5524,12 +5525,12 @@ hr {
   /**
    * structure
    */
-  /* line 181, ../scss/small-desktop.scss */
+  /* line 182, ../scss/small-desktop.scss */
   .container {
     width: 98.4rem;
   }
 
-  /* line 185, ../scss/small-desktop.scss */
+  /* line 186, ../scss/small-desktop.scss */
   #page-wrapper {
     min-width: 98.4rem;
   }

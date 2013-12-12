@@ -152,7 +152,8 @@
     .story-teases {
       .story--tease {
         &:hover {
-          box-shadow: 1rem 0 0 #f6f6f6, -1rem 0 0 #f6f6f6;
+          background-color: transparent;
+          box-shadow: none;
         }
       }
     }
