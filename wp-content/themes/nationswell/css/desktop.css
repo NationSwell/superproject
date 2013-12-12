@@ -3279,18 +3279,23 @@ hr {
   margin-right: 0;
 }
 /* line 26, ../scss/partials/desktop/_grid.scss */
+.hero .hero-information .hero-information__caption + .hero-information__credit {
+  margin-left: 0%;
+}
+/* line 30, ../scss/partials/desktop/_grid.scss */
 .hero .hero-information .hero-information__credit {
   display: block;
   float: left;
   margin-right: 1.23457%;
-  width: 24.07407%;
+  width: 32.51029%;
+  margin-left: 67.48971%;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .hero .hero-information .hero-information__credit:last-child {
   margin-right: 0;
 }
 
-/* line 34, ../scss/partials/desktop/_grid.scss */
+/* line 39, ../scss/partials/desktop/_grid.scss */
 .river .story-teases {
   display: block;
   float: left;
@@ -3301,7 +3306,7 @@ hr {
 .river .story-teases:last-child {
   margin-right: 0;
 }
-/* line 39, ../scss/partials/desktop/_grid.scss */
+/* line 44, ../scss/partials/desktop/_grid.scss */
 .river.river--one-col .story--tease {
   display: block;
   float: left;
@@ -3312,7 +3317,7 @@ hr {
 .river.river--one-col .story--tease:last-child {
   margin-right: 0;
 }
-/* line 45, ../scss/partials/desktop/_grid.scss */
+/* line 50, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col li {
   display: block;
   float: left;
@@ -3331,7 +3336,7 @@ hr {
 .river.river--two-col li:nth-child(2n+1) {
   clear: left;
 }
-/* line 50, ../scss/partials/desktop/_grid.scss */
+/* line 55, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col .story--tease {
   display: block;
   float: left;
@@ -3342,12 +3347,12 @@ hr {
 .river.river--two-col .story--tease:last-child {
   margin-right: 0;
 }
-/* line 53, ../scss/partials/desktop/_grid.scss */
+/* line 58, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col .story--tease header {
   margin-top: -1.2rem;
 }
 
-/* line 61, ../scss/partials/desktop/_grid.scss */
+/* line 66, ../scss/partials/desktop/_grid.scss */
 .sidebar {
   display: block;
   float: left;
@@ -3359,7 +3364,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 66, ../scss/partials/desktop/_grid.scss */
+/* line 71, ../scss/partials/desktop/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -3371,7 +3376,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 70, ../scss/partials/desktop/_grid.scss */
+/* line 75, ../scss/partials/desktop/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -3383,7 +3388,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 75, ../scss/partials/desktop/_grid.scss */
+/* line 80, ../scss/partials/desktop/_grid.scss */
 .static__main-column {
   display: block;
   float: left;
@@ -3395,7 +3400,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 81, ../scss/partials/desktop/_grid.scss */
+/* line 86, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -3406,11 +3411,11 @@ hr {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 84, ../scss/partials/desktop/_grid.scss */
+/* line 89, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 89, ../scss/partials/desktop/_grid.scss */
+/* line 94, ../scss/partials/desktop/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -3423,7 +3428,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 97, ../scss/partials/desktop/_grid.scss */
+/* line 102, ../scss/partials/desktop/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -3435,7 +3440,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 104, ../scss/partials/desktop/_grid.scss */
+/* line 109, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -3446,7 +3451,7 @@ hr {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 107, ../scss/partials/desktop/_grid.scss */
+/* line 112, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -3458,7 +3463,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 115, ../scss/partials/desktop/_grid.scss */
+/* line 120, ../scss/partials/desktop/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
