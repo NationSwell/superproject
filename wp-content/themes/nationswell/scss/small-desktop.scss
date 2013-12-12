@@ -144,6 +144,10 @@
   .river--one-col {
     .story-teases {
       .story--tease {
+        .story__header {
+          padding-right: 2rem;
+        }
+
         &:hover {
           background-color: transparent;
           box-shadow: none;
