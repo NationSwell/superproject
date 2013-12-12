@@ -4686,19 +4686,11 @@ hr {
 .hero--homepage {
   height: 56rem;
 }
-/* line 8, ../scss/partials/desktop/_homepage.scss */
-.hero--homepage.hero--grid .hero__entry:hover .type-indicator {
-  opacity: 1;
-}
 /* line 13, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry .type-indicator {
-  opacity: 0;
   position: absolute;
   top: 4.4rem;
   right: 4.4rem;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
 }
 /* line 22, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 {
