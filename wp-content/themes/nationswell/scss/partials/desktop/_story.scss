@@ -1,5 +1,6 @@
 .hero--story {
   max-height: 42.6rem;
+  margin-bottom: 8.2rem;
 
   &.hero--image {
     height: auto;
@@ -362,8 +363,6 @@
   }
 
   .politician {
-
-    .politician {
       clear: both;
       margin: 0 3rem 4.4rem;
 
@@ -391,7 +390,6 @@
   .politician__office {
     font-size: 1.6rem;
   }
-}
 }
 
 .story__container {
