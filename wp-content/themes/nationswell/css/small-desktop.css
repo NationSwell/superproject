@@ -3934,8 +3934,14 @@ hr {
   background-color: #002130;
   padding: 0.8rem 0;
 }
+/* line 120, ../scss/partials/small-desktop/_nav.scss */
+.trending-topics .container {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
-/* line 121, ../scss/partials/small-desktop/_nav.scss */
+/* line 127, ../scss/partials/small-desktop/_nav.scss */
 .trending-topics__heading {
   display: inline-block;
   color: #9aacb5;
@@ -3944,7 +3950,7 @@ hr {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 129, ../scss/partials/small-desktop/_nav.scss */
+/* line 135, ../scss/partials/small-desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;
