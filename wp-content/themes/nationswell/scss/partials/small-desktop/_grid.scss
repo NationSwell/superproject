@@ -24,8 +24,13 @@
       @include shift(2);
     }
 
+    .hero-information__caption + .hero-information__credit {
+      @include shift(0);
+    }
+
     .hero-information__credit {
-      @include span-columns(3);
+      @include span-columns(4);
+      @include shift(8);
     }
   }
 }
