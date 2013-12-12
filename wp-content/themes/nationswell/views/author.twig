@@ -34,7 +34,7 @@
             </div>
 
             <div class="author__b">
-                <div class="author__count">{{ author.post_count }} Stories by</div>
+                <div class="author__count">{{ author.post_count }} {{ author.post_count == '1'? "Story" : "Stories" }} by</div>
                 <div class="author__name hd-q">{{ author.first_name }} {{ author.last_name }}</div>
 
                 <p class="author__bio">{{ author.description }}</p>

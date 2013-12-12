@@ -16,7 +16,7 @@ $data['posts'] = Timber::get_posts(false, 'NationSwellPost');
 $author = new TimberUser($wp_query->query_vars['author']);
 $data['author'] = $author;
 $data['author']->mug_shot = get_field('mug_shot', 'user_' . $author->ID);
-$data['author']->post_count = get_the_author_posts();
+$data['author']->post_count = count_user_posts( $author->ID);
 $data['title'] = 'Author Archives: ' . $author->name();
 
 $data['sidebar_static'] = Timber::get_widgets('sidebar_static');
