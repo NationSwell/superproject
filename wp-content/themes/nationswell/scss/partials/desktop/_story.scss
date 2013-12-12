@@ -5,9 +5,16 @@
     height: auto;
     padding-bottom: 30%;
     max-height: none;
+  }
 
+  &.hero--image,
+  &.hero--video {
     .hero-information {
       background-color: $white;
+      padding-top: 1.2rem;
+      bottom: -3.4rem;
+      min-height: 3.5rem;
+      max-height: 3.5rem;
 
       &.is-long {
         &:hover {
@@ -61,19 +68,14 @@
 }
 
 .hero-information {
-  .hero-information__toggle {
-    padding: 0.8rem 6rem;
-    font-size: 4rem;
-  }
-
   .hero-information__caption {
     font-size: 1.6rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
   }
 
   .hero-information__credit {
     font-size: 1.4rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
   }
 }
 

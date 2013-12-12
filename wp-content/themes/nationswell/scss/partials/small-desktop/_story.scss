@@ -3,9 +3,16 @@
 
   &.hero--image {
     height: 42.6rem;
+  }
 
+  &.hero--image,
+  &.hero--video {
     .hero-information {
       background-color: $white;
+      padding-top: 1.2rem;
+      bottom: -3.4rem;
+      min-height: 3.5rem;
+      max-height: 3.5rem;
 
       &.is-long {
         &:hover {
