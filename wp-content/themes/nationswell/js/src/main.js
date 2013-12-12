@@ -223,6 +223,19 @@
                     $storySocial.clone().appendTo($storyContent);
                 }
 
+                var $informationContainer = $('.hero-information'),
+                    $slideCaption = $informationContainer.find('.hero-information__caption'),
+                    $slideCredit = $informationContainer.find('.hero-information__credit');
+
+                if ($informationContainer) {
+                    var $hero = $('.hero--story'),
+                        infoHeight = $informationContainer.outerHeight() + 30;
+
+                    if($hero && !$hero.hasClass('hero--carousel')) {
+                        $hero.css({'margin-bottom': infoHeight});
+                    }
+                }
+
                 // slideshows
                 $(".mobile-carousel").each(function () {
                     var $this = $(this),
@@ -291,10 +304,7 @@
                         if (isStory) {
                             $activeSlide = items.filter(":eq(0)");
 
-                            var $informationContainer = $('.hero-information'),
-                                $slideCaption = $informationContainer.find('.hero-information__caption'),
-                                $slideCredit = $informationContainer.find('.hero-information__credit'),
-                                activeSlideCaption = $activeSlide.data('item-caption'),
+                            var activeSlideCaption = $activeSlide.data('item-caption'),
                                 activeSlideCredit = $activeSlide.data('item-credit');
 
                             activeSlideCaption ? $slideCaption.html(activeSlideCaption) : $slideCaption.empty();
@@ -370,6 +380,18 @@
                         $slideCaption = $informationContainer.find('.hero-information__caption'),
                         $slideCredit = $informationContainer.find('.hero-information__credit');
 
+                    var isTallInfo = function() {
+                        if ($slideCaption.height() > $informationContainer.height()) {
+                            $informationContainer.addClass('is-long');
+                        } else {
+                            $informationContainer.removeClass('is-long');
+                        }
+                    };
+
+                    if($informationContainer) {
+                        isTallInfo();
+                    }
+
                     $informationContainer.on('click', function() {
                         $(this).toggleClass('is-open');
                     });
@@ -398,11 +420,7 @@
                                         activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
                                         activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
 
-                                    if ($slideCaption.height() > $informationContainer.height()) {
-                                        $informationContainer.addClass('is-long');
-                                    } else {
-                                        $informationContainer.removeClass('is-long');
-                                    }
+                                        isTallInfo();
                                 }
                             } else {
                                 items.addClass('active');

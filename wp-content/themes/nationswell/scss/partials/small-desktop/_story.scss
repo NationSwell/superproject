@@ -3,6 +3,29 @@
 
   &.hero--image {
     height: 42.6rem;
+
+    .hero-information {
+      background-color: $white;
+
+      &.is-long {
+        &:hover {
+          background-color: $ns_navy6;
+        }
+
+        &.is-open {
+          background-color: $white;
+        }
+      }
+
+
+      .hero-information__caption {
+        color: $ns_navy2;
+      }
+
+      .hero-information__credit {
+        color: $ns_navy4;
+      }
+    }
   }
 
   &.hero--carousel {

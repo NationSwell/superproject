@@ -10,14 +10,33 @@
 
   &.hero--image {
     height: 53.2rem;
-    margin-bottom: 14.6rem;
 
     .hero-read {
       display: none;
     }
 
     .hero-information {
+      background-color: $white;
       top: 53.2rem;
+
+      &.is-long {
+        &:hover {
+          background-color: $ns_navy6;
+        }
+
+        &.is-open {
+          background-color: $white;
+        }
+      }
+
+
+      .hero-information__caption {
+        color: $ns_navy2;
+      }
+
+      .hero-information__credit {
+        color: $ns_navy4;
+      }
     }
   }
 
