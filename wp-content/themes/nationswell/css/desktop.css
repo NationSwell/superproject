@@ -3637,102 +3637,98 @@ hr {
   font-size: 2.2rem;
   padding: 1.4rem 0 1rem;
 }
-/* line 22, ../scss/partials/desktop/_buttons.scss */
-.btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
-  /* width: 47.91%; */
-}
-/* line 26, ../scss/partials/desktop/_buttons.scss */
+/* line 21, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:before {
   font-size: 3.6rem;
   line-height: 2.5rem;
   margin-right: 1.6rem;
 }
-/* line 32, ../scss/partials/desktop/_buttons.scss */
+/* line 27, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:after {
   height: 0.5rem;
   bottom: -0.5rem;
 }
-/* line 37, ../scss/partials/desktop/_buttons.scss */
+/* line 32, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:hover {
   top: 0.2rem;
 }
-/* line 40, ../scss/partials/desktop/_buttons.scss */
+/* line 35, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:hover:after {
   height: 0.3rem;
   bottom: -0.3rem;
 }
-/* line 46, ../scss/partials/desktop/_buttons.scss */
+/* line 41, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:active {
   top: 0.5rem;
   box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
-/* line 50, ../scss/partials/desktop/_buttons.scss */
+/* line 45, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:active:after {
   height: 0;
   bottom: 0;
 }
-/* line 57, ../scss/partials/desktop/_buttons.scss */
+/* line 52, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--square {
   font-size: 1.6rem;
   width: 10rem;
   height: 10rem;
   margin: 0 auto 0.3rem;
 }
-/* line 63, ../scss/partials/desktop/_buttons.scss */
+/* line 58, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--square:before {
   font-size: 5rem;
   padding-top: 1.6rem;
 }
-/* line 69, ../scss/partials/desktop/_buttons.scss */
+/* line 64, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--square:hover:after {
   height: 0.5rem;
 }
-/* line 75, ../scss/partials/desktop/_buttons.scss */
+/* line 70, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more {
   font-size: 2.2rem;
   margin-bottom: 10rem;
 }
-/* line 79, ../scss/partials/desktop/_buttons.scss */
+/* line 74, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more:before {
   font-size: 10.5rem;
   bottom: -10.4rem;
 }
-/* line 84, ../scss/partials/desktop/_buttons.scss */
+/* line 79, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more:hover {
   top: 0.4rem;
 }
-/* line 87, ../scss/partials/desktop/_buttons.scss */
+/* line 82, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more:hover:before {
   bottom: -11rem;
 }
-/* line 93, ../scss/partials/desktop/_buttons.scss */
+/* line 88, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action {
   font-size: 2rem;
   padding: 1.2rem;
   top: 2.4rem;
   margin-bottom: -1rem;
 }
-/* line 99, ../scss/partials/desktop/_buttons.scss */
+/* line 94, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:after {
   height: 0.5rem;
   position: absolute;
   bottom: -0.5rem;
 }
-/* line 105, ../scss/partials/desktop/_buttons.scss */
+/* line 100, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:hover {
   top: 2.6rem;
 }
-/* line 108, ../scss/partials/desktop/_buttons.scss */
+/* line 103, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:hover:after {
   height: 0.3rem;
   bottom: -0.3rem;
 }
-/* line 114, ../scss/partials/desktop/_buttons.scss */
+/* line 109, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:active {
   top: 2.9rem;
   box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
-/* line 118, ../scss/partials/desktop/_buttons.scss */
+/* line 113, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:active:after {
   height: 0;
   bottom: 0;
@@ -4678,12 +4674,13 @@ hr {
   margin-right: 3.3334%;
   height: 5.4rem;
   vertical-align: middle;
+  width: 47.91%;
 }
-/* line 64, ../scss/partials/desktop/_modal.scss */
+/* line 65, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__social .btn--bar:last-child {
   margin-right: 0;
 }
-/* line 70, ../scss/partials/desktop/_modal.scss */
+/* line 71, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
   bottom: -3.4rem;
   font-size: 1.8rem;
