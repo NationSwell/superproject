@@ -14,7 +14,10 @@
     .hero-read {
       display: none;
     }
+  }
 
+  &.hero--image,
+  &.hero--video {
     .hero-information {
       background-color: $white;
       top: 53.2rem;

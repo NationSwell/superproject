@@ -4,19 +4,10 @@
 
   &.hero--grid {
     .hero__entry {
-//      &:hover {
-//        .type-indicator {
-//          opacity: 1;
-//        }
-//      }
-
       .type-indicator {
-//        opacity: 0;
         position: absolute;
         top: 4.4rem;
         right: 4.4rem;
-
-//        @include transition(all 0.1s ease-in-out);
       }
 
       &.hero__entry--1 {

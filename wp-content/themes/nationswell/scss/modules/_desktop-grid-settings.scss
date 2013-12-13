@@ -8,5 +8,8 @@ $gutter: 2.4rem;
 $grid-columns: 12;
 $max-width: 120rem;
 
+// Small desktop
+$small-desktop: new-breakpoint(max-width 98.4rem 12);
+
 // Neat
 @import "../neat/neat";
