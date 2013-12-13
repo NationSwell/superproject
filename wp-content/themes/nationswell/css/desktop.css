@@ -5516,6 +5516,10 @@ hr {
     margin-bottom: 1.2rem;
   }
   /* line 167, ../scss/small-desktop.scss */
+  .module.take-action .module.take-action .take-action__a + .take-action__b {
+    padding-left: 3.4rem;
+  }
+  /* line 171, ../scss/small-desktop.scss */
   .module.take-action .politician__information {
     max-width: 22rem;
   }
@@ -5523,22 +5527,22 @@ hr {
   /**
    * structure
    */
-  /* line 176, ../scss/small-desktop.scss */
+  /* line 180, ../scss/small-desktop.scss */
   .container {
     width: 98.4rem;
   }
 
-  /* line 180, ../scss/small-desktop.scss */
+  /* line 184, ../scss/small-desktop.scss */
   #page-wrapper {
     min-width: 98.4rem;
   }
 
-  /* line 184, ../scss/small-desktop.scss */
+  /* line 188, ../scss/small-desktop.scss */
   .sidebar {
     padding-left: 2rem;
   }
 
-  /* line 190, ../scss/small-desktop.scss */
+  /* line 194, ../scss/small-desktop.scss */
   .river .story-teases:last-child {
     margin-right: 1.23457%;
   }
