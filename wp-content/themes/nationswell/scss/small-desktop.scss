@@ -153,6 +153,17 @@
 
   // take action module
   .module.take-action {
+    .take-action__a,
+    .take-action__b {
+      width: 100%;
+      float: none;
+      padding: none;
+    }
+
+    .take-action__a {
+      margin-bottom: 1.2rem;
+    }
+
     .politician__information {
       max-width: 22rem;
     }
@@ -170,9 +181,15 @@
     min-width: 98.4rem;
   }
 
+  .sidebar {
+    padding-left: 2rem;
+  }
+
   .river {
     .story-teases {
-      padding-right: 2rem;
+      &:last-child {
+        margin-right: 1.23457%;
+      }
     }
   }
 }

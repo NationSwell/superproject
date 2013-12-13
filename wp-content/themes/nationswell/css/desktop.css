@@ -3639,7 +3639,7 @@ hr {
 }
 /* line 22, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
-  width: 47.91%;
+  /* width: 47.91%; */
 }
 /* line 26, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--bar:before {
@@ -5507,7 +5507,18 @@ hr {
     width: 14.6rem;
   }
 
-  /* line 156, ../scss/small-desktop.scss */
+  /* line 157, ../scss/small-desktop.scss */
+  .module.take-action .take-action__a,
+  .module.take-action .take-action__b {
+    width: 100%;
+    float: none;
+    padding: none;
+  }
+  /* line 163, ../scss/small-desktop.scss */
+  .module.take-action .take-action__a {
+    margin-bottom: 1.2rem;
+  }
+  /* line 167, ../scss/small-desktop.scss */
   .module.take-action .politician__information {
     max-width: 22rem;
   }
@@ -5515,18 +5526,23 @@ hr {
   /**
    * structure
    */
-  /* line 165, ../scss/small-desktop.scss */
+  /* line 176, ../scss/small-desktop.scss */
   .container {
     width: 98.4rem;
   }
 
-  /* line 169, ../scss/small-desktop.scss */
+  /* line 180, ../scss/small-desktop.scss */
   #page-wrapper {
     min-width: 98.4rem;
   }
 
-  /* line 174, ../scss/small-desktop.scss */
-  .river .story-teases {
-    padding-right: 2rem;
+  /* line 184, ../scss/small-desktop.scss */
+  .sidebar {
+    padding-left: 2rem;
+  }
+
+  /* line 190, ../scss/small-desktop.scss */
+  .river .story-teases:last-child {
+    margin-right: 1.23457%;
   }
 }
