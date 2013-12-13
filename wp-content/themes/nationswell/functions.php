@@ -156,12 +156,14 @@ function my_register_fields()
     include_once('lib/fields/facebook_admin.php');
     include_once('lib/fields/change_org.php');
     include_once('lib/fields/options/google.php');
+    include_once('lib/fields/options/rally.php');
 }
 
 add_action('acf/register_fields', 'my_register_fields');
 
 include_once('lib/classes/ChangeOrgApi.php');
 include_once('lib/classes/ChangeOrgPetition.php');
+include_once('lib/classes/RallyApi.php');
 include_once('lib/classes/CallToAction.php');
 include_once('lib/classes/NationSwellVideo.php');
 include_once('lib/classes/NationSwellPost.php');
@@ -335,6 +337,27 @@ function init_change_org_api() {
 }
 
 add_action('init', 'init_change_org_api');
+
+// Change.org
+global $rally_api;
+
+function init_rally_api() {
+    global $rally_api;
+
+    $drive = get_field('rally_drive', 'option');
+    $auth_token = get_field('rally_auth_token', 'option');
+    if(!empty($drive) && !empty($auth_token)) {
+        $rally_api = new RallyApi($drive, $auth_token);
+
+        $frequency = get_field('rally_frequency', 'option');
+        if(!empty($frequency) || $frequency > 0) {
+            $rally_api->set_frequency($frequency);
+        }
+    }
+
+}
+
+add_action('init', 'init_rally_api');
 
 // Automatically Create the Inital Pages for the Site and set the Homepage to be the Front Page
 if (isset($_GET['activated']) && is_admin()){

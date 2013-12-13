@@ -3,6 +3,7 @@ if (class_exists('TimberPost')) {
 
     class CallToAction extends TimberPost {
         private $petition_cache;
+        private $donation_cache;
 
         function __construct($pid = null) {
             parent::__construct($pid);
@@ -17,6 +18,7 @@ if (class_exists('TimberPost')) {
 
         private function get_stats() {
             $petition = $this->petition();
+
             if($petition !== false) {
                 $content = $petition->content();
                 if($content) {
@@ -24,6 +26,10 @@ if (class_exists('TimberPost')) {
                     $this->goal_amount = $content->goal;
                     $this->goal_date = $content->end_at;
                 }
+            }
+            elseif(($donation = $this->donation()) !== false) {
+                $this->current_amount  = $donation['raised_toward_fundraising_goal'] / 100;
+                $this->goal_amount  = $donation['current_fundraising_goal'] / 100;
             }
         }
 
@@ -56,6 +62,22 @@ if (class_exists('TimberPost')) {
             }
 
             return $this->petition_cache;
+        }
+
+        public function donation() {
+            global $rally_api;
+
+            if(!isset($this->donation_cache)) {
+                if($this->type === 'donation' && isset($rally_api) && isset($this->rally_id)) {
+                    $this->donation_cache = $rally_api->get_cause($this->rally_id);
+                }
+                else {
+                    $this->donation_cache = false;
+                }
+            }
+
+            return $this->donation_cache;
+
         }
 
         public function image() {
