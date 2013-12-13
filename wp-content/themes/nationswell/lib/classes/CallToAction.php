@@ -17,9 +17,7 @@ if (class_exists('TimberPost')) {
         }
 
         private function get_stats() {
-            $petition = $this->petition();
-
-            if($petition !== false) {
+            if(($petition = $this->petition()) !== false) {
                 $content = $petition->content();
                 if($content) {
                     $this->current_amount = $content->signature_count;
