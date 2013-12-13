@@ -1,11 +1,5 @@
 @include media($small-desktop) {
   /**
-   * archive
-   */
-
-  .river--two-col {}
-
-  /**
    * buttons
    */
 
@@ -140,10 +134,6 @@
   .river--one-col {
     .story-teases {
       .story--tease {
-        .story__header {
-          padding-right: 2rem;
-        }
-
         &:hover {
           background-color: transparent;
           box-shadow: none;
@@ -178,5 +168,11 @@
 
   #page-wrapper {
     min-width: 98.4rem;
+  }
+
+  .river {
+    .story-teases {
+      padding-right: 2rem;
+    }
   }
 }

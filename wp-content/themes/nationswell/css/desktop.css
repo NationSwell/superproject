@@ -4676,12 +4676,14 @@ hr {
 .modal--join-us .modal--join-us__social .btn--bar {
   display: inline-block;
   margin-right: 3.3334%;
+  height: 5.4rem;
+  vertical-align: middle;
 }
-/* line 62, ../scss/partials/desktop/_modal.scss */
+/* line 64, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__social .btn--bar:last-child {
   margin-right: 0;
 }
-/* line 68, ../scss/partials/desktop/_modal.scss */
+/* line 70, ../scss/partials/desktop/_modal.scss */
 .modal--join-us .modal--join-us__opt-out {
   bottom: -3.4rem;
   font-size: 1.8rem;
@@ -5382,22 +5384,14 @@ hr {
 
 @media only screen and (max-width: 1279px) and (max-width: 98.4rem) {
   /**
-   * archive
-   */
-  /* line 7, ../scss/small-desktop.scss */
-  .river--two-col .story-teases:last-child {
-    margin-right: 2.07469%;
-  }
-
-  /**
    * buttons
    */
-  /* line 16, ../scss/small-desktop.scss */
+  /* line 6, ../scss/small-desktop.scss */
   .btn--solid {
     font-size: 1.76rem;
   }
 
-  /* line 21, ../scss/small-desktop.scss */
+  /* line 11, ../scss/small-desktop.scss */
   .btn.btn--take-action {
     font-size: 1.74rem;
   }
@@ -5406,27 +5400,27 @@ hr {
    * components
    */
   /* indicator */
-  /* line 33, ../scss/small-desktop.scss */
+  /* line 23, ../scss/small-desktop.scss */
   .indicator.indicator--module:before {
     font-size: 5.8rem;
   }
 
   /* module */
-  /* line 41, ../scss/small-desktop.scss */
+  /* line 31, ../scss/small-desktop.scss */
   .module.module--sidebar {
     width: 100%;
   }
-  /* line 46, ../scss/small-desktop.scss */
+  /* line 36, ../scss/small-desktop.scss */
   .module.module--list.module--horizontal {
     margin: 5rem 0;
   }
-  /* line 49, ../scss/small-desktop.scss */
+  /* line 39, ../scss/small-desktop.scss */
   .module.module--list.module--horizontal .story-list li {
     margin-right: 4%;
   }
 
   /* author */
-  /* line 57, ../scss/small-desktop.scss */
+  /* line 47, ../scss/small-desktop.scss */
   .author-box {
     margin-bottom: 7.2rem;
   }
@@ -5434,7 +5428,7 @@ hr {
   /**
    * forms
    */
-  /* line 66, ../scss/small-desktop.scss */
+  /* line 56, ../scss/small-desktop.scss */
   .form-element .text-input {
     padding: 1.15rem 1.4rem;
   }
@@ -5442,7 +5436,7 @@ hr {
   /**
    * grid
    */
-  /* line 78, ../scss/small-desktop.scss */
+  /* line 68, ../scss/small-desktop.scss */
   .hero.hero--image .hero__content {
     margin-left: 34.16667%;
   }
@@ -5450,24 +5444,24 @@ hr {
   /**
    * headings
    */
-  /* line 88, ../scss/small-desktop.scss */
+  /* line 78, ../scss/small-desktop.scss */
   .hd-b {
     font-size: 2.8rem;
   }
 
-  /* line 92, ../scss/small-desktop.scss */
+  /* line 82, ../scss/small-desktop.scss */
   .hd-d {
     font-size: 2.8rem;
   }
 
-  /* line 96, ../scss/small-desktop.scss */
+  /* line 86, ../scss/small-desktop.scss */
   .hd-f {
     font-size: 4.4rem;
     padding: 0.5rem;
     line-height: 1.66;
   }
 
-  /* line 102, ../scss/small-desktop.scss */
+  /* line 92, ../scss/small-desktop.scss */
   .hd-l {
     font-size: 2.6rem;
   }
@@ -5476,33 +5470,29 @@ hr {
    * homepage
    */
   /* hero */
-  /* line 115, ../scss/small-desktop.scss */
+  /* line 105, ../scss/small-desktop.scss */
   .hero--homepage.hero--grid .hero__entry.hero__entry--1:before {
     margin-right: 2px;
   }
-  /* line 119, ../scss/small-desktop.scss */
+  /* line 109, ../scss/small-desktop.scss */
   .hero--homepage.hero--grid .hero__entry.hero__entry--1 .story__hed {
     margin-bottom: 3.4rem;
   }
-  /* line 123, ../scss/small-desktop.scss */
+  /* line 113, ../scss/small-desktop.scss */
   .hero--homepage.hero--grid .hero__entry.hero__entry--1 .support-cause--hero {
     margin-bottom: 3.2rem;
   }
-  /* line 130, ../scss/small-desktop.scss */
+  /* line 120, ../scss/small-desktop.scss */
   .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:before {
     margin-bottom: 2px;
   }
-  /* line 136, ../scss/small-desktop.scss */
+  /* line 126, ../scss/small-desktop.scss */
   .hero--homepage.hero--grid .hero__entry .story--hero {
     padding: 2.4rem 4.4rem;
   }
 
   /* river */
-  /* line 147, ../scss/small-desktop.scss */
-  .river--one-col .story-teases .story--tease .story__header {
-    padding-right: 2rem;
-  }
-  /* line 151, ../scss/small-desktop.scss */
+  /* line 137, ../scss/small-desktop.scss */
   .river--one-col .story-teases .story--tease:hover {
     background-color: transparent;
     box-shadow: none;
@@ -5512,12 +5502,12 @@ hr {
    * story
    */
   /* sticky */
-  /* line 164, ../scss/small-desktop.scss */
+  /* line 150, ../scss/small-desktop.scss */
   .story__sticky-container {
     width: 14.6rem;
   }
 
-  /* line 170, ../scss/small-desktop.scss */
+  /* line 156, ../scss/small-desktop.scss */
   .module.take-action .politician__information {
     max-width: 22rem;
   }
@@ -5525,13 +5515,18 @@ hr {
   /**
    * structure
    */
-  /* line 179, ../scss/small-desktop.scss */
+  /* line 165, ../scss/small-desktop.scss */
   .container {
     width: 98.4rem;
   }
 
-  /* line 183, ../scss/small-desktop.scss */
+  /* line 169, ../scss/small-desktop.scss */
   #page-wrapper {
     min-width: 98.4rem;
+  }
+
+  /* line 174, ../scss/small-desktop.scss */
+  .river .story-teases {
+    padding-right: 2rem;
   }
 }
