@@ -56,6 +56,16 @@ function my_theme_register_required_plugins()
             'external_url' => '',
         ),
         array(
+            'name' => 'Advanced Custom Fields: Website Field',
+            'slug' => 'acf-website-field',
+            'source' => get_stylesheet_directory() . '/lib/plugins/acf-website-field.zip',
+            'required' => true,
+            'version' => '1.5.9.5',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
+        array(
             'name' => 'Advanced Custom Fields: Flexible Content Field',
             'slug' => 'acf-flexible-content',
             'source' => get_stylesheet_directory() . '/lib/plugins/acf-flexible-content.zip',

@@ -378,7 +378,7 @@
 }
 
 .author__byline {
-  &:before {
+  .author__byline__prefix {
     font-size: 1.8rem;
     margin-bottom: 0.4rem;
   }

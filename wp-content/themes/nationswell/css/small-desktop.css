@@ -1997,84 +1997,83 @@ input[type="submit"]:-moz-focus-inner {
   color: inherit;
 }
 /* line 548, ../scss/partials/base/_components.scss */
-.author__byline:before {
+.author__byline .author__byline__prefix {
   color: #fc3b40;
-  content: 'by';
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
 }
 
-/* line 557, ../scss/partials/base/_components.scss */
+/* line 556, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 562, ../scss/partials/base/_components.scss */
+/* line 561, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid black;
 }
-/* line 566, ../scss/partials/base/_components.scss */
+/* line 565, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 572, ../scss/partials/base/_components.scss */
+/* line 571, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 577, ../scss/partials/base/_components.scss */
+/* line 576, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 583, ../scss/partials/base/_components.scss */
+/* line 582, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 589, ../scss/partials/base/_components.scss */
+/* line 588, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* read next */
-/* line 597, ../scss/partials/base/_components.scss */
+/* line 596, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 603, ../scss/partials/base/_components.scss */
+/* line 602, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 607, ../scss/partials/base/_components.scss */
+/* line 606, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
 
 /* subscribe status */
-/* line 614, ../scss/partials/base/_components.scss */
+/* line 613, ../scss/partials/base/_components.scss */
 .module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
   display: block;
   clear: both;
 }
-/* line 620, ../scss/partials/base/_components.scss */
+/* line 619, ../scss/partials/base/_components.scss */
 .module.mc-email-status.valid {
   color: #46b525;
 }
-/* line 624, ../scss/partials/base/_components.scss */
+/* line 623, ../scss/partials/base/_components.scss */
 .module.mc-email-status.error {
   color: #fc3b40;
 }
 
 /* hrs */
-/* line 630, ../scss/partials/base/_components.scss */
+/* line 629, ../scss/partials/base/_components.scss */
 hr {
   border-style: none;
   border: 0 none;

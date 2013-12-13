@@ -545,9 +545,8 @@
     color: inherit;
   }
 
-  &:before {
+  .author__byline__prefix {
     color: $ns_red;
-    content: 'by';
     display: block;
     font-family: $montserrat;
     font-weight: $bold;

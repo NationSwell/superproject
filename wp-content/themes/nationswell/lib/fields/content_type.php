@@ -21,6 +21,40 @@ if(function_exists("register_field_group"))
                     'allow_null' => 0,
                     'multiple' => 0,
                 ),
+                array (
+                    'key' => 'field_52ab92a8a2c3a',
+                    'label' => 'Story Kind',
+                    'name' => 'story_kind',
+                    'type' => 'select',
+                    'choices' => array (
+                        'original' => 'NationSwell Original',
+                        'curated' => 'Curated',
+                    ),
+                    'default_value' => 'original',
+                    'allow_null' => 0,
+                    'multiple' => 0,
+                ),
+                array (
+                    'key' => 'field_52ab92e2a2c3b',
+                    'label' => 'Source',
+                    'name' => 'source',
+                    'type' => 'website',
+                    'conditional_logic' => array (
+                        'status' => 1,
+                        'rules' => array (
+                            array (
+                                'field' => 'field_52ab92a8a2c3a',
+                                'operator' => '==',
+                                'value' => 'curated',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                    'website_title' => 1,
+                    'internal_link' => 1,
+                    'output_format' => 0,
+                    'default_value' => '',
+                ),
             ),
             'location' => array (
                 array (
@@ -35,7 +69,7 @@ if(function_exists("register_field_group"))
             ),
             'options' => array (
                 'position' => 'acf_after_title',
-                'layout' => 'no_box',
+                'layout' => 'default',
                 'hide_on_screen' => array (
                 ),
             ),
