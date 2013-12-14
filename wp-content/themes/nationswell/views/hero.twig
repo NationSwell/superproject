@@ -20,8 +20,8 @@
                     <div class="hero-information__outer">
                         <div class="container">
                             <div class="hero-information__content">
-                                <p class="hero-information__caption">{{ item.caption }}</p>
-                                <span class="hero-information__credit">{{ item.credit }}</span>
+                                {% if item.caption is not empty %}<p class="hero-information__caption">{{ item.caption }}</p>{% endif %}
+                                {% if item.credit is not empty %}<span class="hero-information__credit">{{ item.credit }}</span>{% endif %}
                             </div>
                         </div>
                     </div>
@@ -46,9 +46,8 @@
                 <div class="hero-information__outer">
                     <div class="container">
                         <div class="hero-information__content">
-                            <span class="icon icon_information hero-information__toggle z1"></span>
-                            <p class="hero-information__caption">{{ item.caption }}</p>
-                            <span class="hero-information__credit">{{ item.credit }}</span>
+                            {% if item.caption is not empty %}<p class="hero-information__caption">{{ item.caption }}</p>{% endif %}
+                            {% if item.credit is not empty %}<span class="hero-information__credit">{{ item.credit }}</span>{% endif %}
                         </div>
                     </div>
                 </div>
@@ -104,8 +103,8 @@
             <div class="hero-information__outer">
                 <div class="container">
                     <div class="hero-information__content">
-                        <p class="hero-information__caption">{{ post.story_header[0].caption }}</p>
-                        <span class="hero-information__credit">{{ post.story_header[0].credit }}</span>
+                        {% if post.story_header[0].caption is not empty %}<p class="hero-information__caption">{{ post.story_header[0].caption }}</p>{% endif %}
+                        {% if post.story_header[0].credit is not empty %}<span class="hero-information__credit">{{ post.story_header[0].credit }}</span>{% endif %}
                     </div>
                 </div>
             </div>
