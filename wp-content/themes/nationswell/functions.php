@@ -154,7 +154,7 @@ function my_register_fields()
     include_once('lib/fields/widget_popular.php');
     include_once('lib/fields/daily_newsletter_posts.php');
     include_once('lib/fields/facebook_admin.php');
-    include_once('lib/fields/change_org.php');
+    include_once('lib/fields/options/change_org.php');
     include_once('lib/fields/options/google.php');
     include_once('lib/fields/options/rally.php');
 }
