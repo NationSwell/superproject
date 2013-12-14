@@ -16,7 +16,7 @@
         var $fullNavBar = $('.full-header');
         $fullNavBar.waypoint('sticky', { stuckClass: 'stuck' });
 
-        // Ajaxify Subscribe Forms
+        // ajaxify Subscribe Forms
         $('.mc-form').ajaxChimp({
             callback: function (resp) {
                 if (resp.result === 'success') {
@@ -134,7 +134,7 @@
         });
 
 
-        // Disable Like Panel
+        // disable Like Panel
         window.fbAsyncInit = function() {
             FB.Event.subscribe('edge.create',
                 function(href, widget) {
@@ -186,15 +186,19 @@
             return false;
         };
 
+        $informationContainer.on('click', function() {
+            $(this).toggleClass('is-open');
+        });
+
         // responsive code
 
         // mobile code
-        enquire.register("screen and (max-device-width: 767px)", {
+        enquire.register("screen and (max-width: 767px)", {
             // OPTIONAL
             // If supplied, triggered when a media query matches.
             match: function () {
                 // toggle more stories panel
-                $(".toggle-collapse").on("click.toggle-collapse", function (e) {
+                $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
                     var $this = $(this),
                         target = $this.data("mobile-target"),
                         $target = $(target);
@@ -206,7 +210,7 @@
                 });
 
                 $(".more-stories-drawer").swipe( {
-                    swipeRight: function(event, direction, distance, duration, fingerCount) {
+                    swipeRight: function() {
                         if($body.hasClass('panel--is-open')) {
                             $body.removeClass('panel--is-open');
                             $('.more-stories-toggle').removeClass('is-toggled');
@@ -218,7 +222,6 @@
                     $storyContent = $('#story');
 
                 if ($storyContent) {
-                    console.log('bug');
                     $storySocial.clone().prependTo($storyContent);
                     $storySocial.clone().appendTo($storyContent);
                 }
@@ -347,14 +350,30 @@
                         }
                     });
                 });
+            },
+
+            unmatch: function() {
+                $(".toggle-collapse").off('.mobile-toggle-collapse');
+
+                var $storyContent = $('#story');
+
+                if ($storyContent) {
+                    // removing programmatically added top social button bar
+                    $('.story__social:first-child').remove();
+
+                    var $storySocial = $(".story__social").detach();
+                    $('.author-box').after($storySocial);
+                }
+
+                $('.mobile-carousel').find('.carousel__items').trigger('destroy');
             }
 
             // desktop code
-        }).register("screen and (min-device-width: 768px)", {
+        }).register("screen and (min-width: 768px)", {
                 // If supplied, triggered when a media query matches.
                 match: function () {
                     // toggle more stories panel
-                    $(".toggle-collapse").on("click.toggle-collapse", function (e) {
+                    $(".toggle-collapse").on("click.desktop-toggle-collapse", function (e) {
                         var $this = $(this),
                             target = $this.data("desktop-target"),
                             $target = $(target);
@@ -392,11 +411,7 @@
                         isTallInfo();
                     }
 
-                    $informationContainer.on('click', function() {
-                        $(this).toggleClass('is-open');
-                    });
-
-                        // slideshows
+                    // slideshows
                     $(".carousel").each(function () {
                         var $this = $(this),
                             $carousel = $this.find(".carousel__items");
@@ -417,10 +432,10 @@
                                     var activeSlideCaption = $activeSlide.data('item-caption'),
                                         activeSlideCredit = $activeSlide.data('item-credit');
 
-                                        activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
-                                        activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
+                                    activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
+                                    activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
 
-                                        isTallInfo();
+                                    isTallInfo();
                                 }
                             } else {
                                 items.addClass('active');
@@ -512,6 +527,21 @@
                             }
                         });
                     }
+                },
+
+                unmatch: function() {
+                    $(".toggle-collapse").off('.desktop-toggle-collapse');
+
+                    $('.carousel').find('.carousel__items').trigger('destroy');
+
+                    // sticky sharebar
+                    /*var $stickyBar = $('.story__sticky-container'),
+                     $storySocial = $('.story__social'),
+                     $storyTakeAction = $('.story__take-action');
+
+                     $stickyBar.waypoint('destroy');
+                     $storySocial.waypoint('destroy');
+                     $storyTakeAction.waypoint('destroy');*/
                 }
             });
 
@@ -528,7 +558,7 @@
             e.preventDefault();
         });
 
-        // call to action
+        // take action thank you
         function toggleThankYou() {
             var $taAction = $('.take-action__action'),
                 $taThankYou = $('.take-action__thank-you');
@@ -543,6 +573,7 @@
             }, 300);
         }
 
+        // take action back from thank you
         $body.on('click.taBack', '.take-action__social_back', function(e){
             toggleThankYou();
 
@@ -561,7 +592,7 @@
 
         });
 
-
+        // change org take action
         $('#change-org-petition').submit(function (e) {
             e.preventDefault();
         }).validate({ submitHandler:  function(form){
@@ -583,7 +614,7 @@
             }
             });
 
-
+        // tweet a politician
         function parseReps(data) {
             var officialsById = {};
             $.each(data.offices, function(i, office) {
@@ -654,7 +685,6 @@
                     lookupReps($form.find('[name=ta-address]').val(), function(reps) {
                         renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
                     }, function(data) {
-                        console.log(data);
                         if(data.status === 'addressUnparseable') {
                             lookupValidator.showErrors({
                                 "ta-address": "Sorry we don't recognize this address"
@@ -676,11 +706,10 @@
             event.preventDefault();
         });
 
-
         function politicianTemplate(politician, shortUrl, message) {
             var twitterUrl = 'https://twitter.com/share?url='
-                    + encodeURIComponent(shortUrl) + '&text=' +
-                    encodeURIComponent('@' + politician.twitter + ' ' + message) + '&via=nationswell';
+                + encodeURIComponent(shortUrl) + '&text=' +
+                encodeURIComponent('@' + politician.twitter + ' ' + message) + '&via=nationswell';
 
             return  twigs['views-client/politician.twig'].render({ politician: politician,  twitterUrl: twitterUrl });
         }
