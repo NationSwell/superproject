@@ -5185,4 +5185,9 @@ body.panel--is-open #page-header .more-stories-toggle {
   html {
     font-size: 50%;
   }
+
+  /* line 46, ../scss/mobile.scss */
+  .hero--story.hero--image .hero-information, .hero--story.hero--video .hero-information {
+    top: 0;
+  }
 }

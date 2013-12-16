@@ -360,6 +360,8 @@
                 }
 
                 $('.mobile-carousel').find('.carousel__items').trigger('destroy', true);
+
+                $('.is-long, .is-open').removeClass('is-long is-open');
             }
 
         // desktop code
@@ -542,6 +544,8 @@
                     $stickyBar.waypoint('unsticky');
                     $storySocial.waypoint('destroy');
                     $storyTakeAction.waypoint('destroy');
+
+                    $('.is-long, .is-open').removeClass('is-long is-open');
                 }
             });
 
