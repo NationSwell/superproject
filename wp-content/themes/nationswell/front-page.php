@@ -58,6 +58,7 @@ $query = new WP_Query(array(
     'offset' => ($page - 1) * $posts_per_page,
     'post_type' => 'post',
     'post__not_in' => array_unique($excludes),
+    'orderby'       => 'menu_order',
     'meta_query' => array(
         'relation' => 'OR',
         array(

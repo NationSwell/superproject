@@ -265,6 +265,16 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'WP Author Slug',
+            'slug' => 'wp-author-slug',
+            'source' => get_stylesheet_directory() . '/lib/plugins/wp-author-slug.1.2.2.zip',
+            'required' => true,
+            'version' => '1.2.2',
+            'force_activation' => true,
+            'force_deactivation' => true,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
