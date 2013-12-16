@@ -4357,7 +4357,7 @@ body.panel--is-open #page-header .more-stories-toggle {
 .mobile-carousel .carousel__pagination {
   position: absolute;
   right: 4.4rem;
-  bottom: 0rem;
+  bottom: 0.2rem;
 }
 /* line 27, ../scss/partials/mobile/_carousels.scss */
 .mobile-carousel .carousel__pagination a {
@@ -4921,71 +4921,70 @@ body.panel--is-open #page-header .more-stories-toggle {
 /* line 310, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar {
   font-size: 2.6rem;
-  margin-right: 2.2rem;
   margin-bottom: 2.4rem;
   padding: 1.4rem 0;
 }
-/* line 316, ../scss/partials/mobile/_story.scss */
+/* line 315, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar:before {
   font-size: 4rem;
   line-height: 0;
   vertical-align: middle;
 }
 
-/* line 325, ../scss/partials/mobile/_story.scss */
+/* line 324, ../scss/partials/mobile/_story.scss */
 .module.take-action {
   margin-bottom: 7.6rem;
   padding-bottom: 5rem;
   text-align: center;
   /* tweet politician take action */
 }
-/* line 330, ../scss/partials/mobile/_story.scss */
+/* line 329, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 4rem;
 }
-/* line 334, ../scss/partials/mobile/_story.scss */
+/* line 333, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__img {
   margin: 0 auto 4rem;
 }
-/* line 338, ../scss/partials/mobile/_story.scss */
+/* line 337, ../scss/partials/mobile/_story.scss */
 .module.take-action p {
   font-size: 3.2rem;
   line-height: 1.32;
   margin-bottom: 3.4rem;
 }
-/* line 344, ../scss/partials/mobile/_story.scss */
+/* line 343, ../scss/partials/mobile/_story.scss */
 .module.take-action small {
   font-size: 2.2rem;
   margin: 2rem 0;
 }
-/* line 349, ../scss/partials/mobile/_story.scss */
+/* line 348, ../scss/partials/mobile/_story.scss */
 .module.take-action .btn-container {
   padding: 3.4rem 0;
 }
-/* line 352, ../scss/partials/mobile/_story.scss */
+/* line 351, ../scss/partials/mobile/_story.scss */
 .module.take-action .btn-container .btn {
   margin-top: 2.2rem;
 }
-/* line 358, ../scss/partials/mobile/_story.scss */
+/* line 357, ../scss/partials/mobile/_story.scss */
 .module.take-action .tweet-politician__politicians .btn--twitter {
   font-size: 2.2rem;
   padding: 2.2rem;
 }
-/* line 366, ../scss/partials/mobile/_story.scss */
+/* line 365, ../scss/partials/mobile/_story.scss */
 .module.take-action .tweet-politician__message {
   font-size: 3.4rem;
   padding: 2.4rem;
 }
-/* line 371, ../scss/partials/mobile/_story.scss */
+/* line 370, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 0 4.4rem;
 }
-/* line 375, ../scss/partials/mobile/_story.scss */
+/* line 374, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 380, ../scss/partials/mobile/_story.scss */
+/* line 379, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__photo {
   display: block;
   width: 24rem;
@@ -4993,22 +4992,22 @@ body.panel--is-open #page-header .more-stories-toggle {
   text-align: center;
   margin: 0 auto 2.4rem;
 }
-/* line 388, ../scss/partials/mobile/_story.scss */
+/* line 387, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__information {
   overflow: hidden;
   max-width: 32rem;
 }
-/* line 393, ../scss/partials/mobile/_story.scss */
+/* line 392, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__name {
   margin-top: 0.6rem;
 }
-/* line 397, ../scss/partials/mobile/_story.scss */
+/* line 396, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__office {
   font-size: 3.4rem;
   margin-bottom: 2.2rem;
 }
 
-/* line 404, ../scss/partials/mobile/_story.scss */
+/* line 403, ../scss/partials/mobile/_story.scss */
 #flyout {
   display: none;
 }
@@ -5179,5 +5178,11 @@ body.panel--is-open #page-header .more-stories-toggle {
   /* line 31, ../scss/mobile.scss */
   html {
     font-size: 85%;
+  }
+}
+@media only screen and (min-device-width: 768px) {
+  /* line 39, ../scss/mobile.scss */
+  html {
+    font-size: 50%;
   }
 }

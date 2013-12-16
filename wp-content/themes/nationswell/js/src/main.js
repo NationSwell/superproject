@@ -1,20 +1,18 @@
 (function ($) {
     $(function () {
+        // sticky nav
+        var $fullHeader = $('.full-header');
+        $fullHeader.waypoint('sticky', { stuckClass: 'stuck' });
 
         var $body = $('body');
 
         $('.hero-read-link').on('click', function(e){
-
             e.preventDefault();
 
             var top = $($(this).attr('href')).offset().top - $('#page-header').height();
 
             $body.animate({scrollTop: top }, '500');
         });
-
-        // sticky nav
-        var $fullNavBar = $('.full-header');
-        $fullNavBar.waypoint('sticky', { stuckClass: 'stuck' });
 
         // ajaxify Subscribe Forms
         $('.mc-form').ajaxChimp({
@@ -190,10 +188,13 @@
 
         // mobile code
         enquire.register("screen and (max-width: 767px)", {
-            // OPTIONAL
-            // If supplied, triggered when a media query matches.
             match: function () {
-                console.log('mobile match starts');
+                var $fullHeader = $('.full-header'),
+                    fullHeaderHeight = $fullHeader.outerHeight(),
+                    $stickyWrapper = $('.sticky-wrapper');
+
+                $stickyWrapper.css('height', fullHeaderHeight + 'px');
+                console.log('reset height of sticky nav to' + fullHeaderHeight);
 
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
@@ -235,8 +236,6 @@
 
                 // slideshows
                 $(".mobile-carousel").each(function () {
-                    console.log('mobile carousel makin starts');
-
                     var $this = $(this),
                         $carousel = $this.find(".carousel__items"),
                         $externalContainer = $this.find('.mobile-carousel__external-container'),
@@ -337,7 +336,8 @@
                             timeoutDuration: 6000
                         },
                         swipe: {
-                            onTouch: true
+                            onTouch: true,
+                            onMouse: true
                         },
                         pagination: {
                             container: $this.find('.carousel__pagination'),
@@ -351,22 +351,27 @@
                 $(".toggle-collapse").off('.mobile-toggle-collapse');
 
                 var $storyContent = $('#story');
-
                 if ($storyContent) {
                     // removing programmatically added top social button bar
                     $('.story__social:first-child').remove();
 
                     var $storySocial = $(".story__social").detach();
-                    $('.author-box').after($storySocial);
+                    $('.fb-comments').before($storySocial);
                 }
 
                 $('.mobile-carousel').find('.carousel__items').trigger('destroy', true);
             }
 
-            // desktop code
+        // desktop code
         }).register("screen and (min-width: 768px)", {
-                // If supplied, triggered when a media query matches.
                 match: function () {
+                    var $fullHeader = $('.full-header'),
+                        fullHeaderHeight = $fullHeader.outerHeight(),
+                        $stickyWrapper = $('.sticky-wrapper');
+
+                    $stickyWrapper.css('height', fullHeaderHeight + 'px');
+                    console.log('reset height of sticky nav');
+
                     // toggle more stories panel
                     $(".toggle-collapse").on("click.desktop-toggle-collapse", function (e) {
                         var $this = $(this),
@@ -475,7 +480,8 @@
                                 key: "right"
                             },
                             swipe: {
-                                onTouch: true
+                                onTouch: true,
+                                onMouse: true
                             }
                         });
                     });
@@ -529,14 +535,13 @@
 
                     $('.carousel').find('.carousel__items').trigger('destroy', true);
 
-                    // sticky sharebar
-                    /*var $stickyBar = $('.story__sticky-container'),
-                     $storySocial = $('.story__social'),
-                     $storyTakeAction = $('.story__take-action');
+                    var $stickyBar = $('.story__sticky-container'),
+                        $storySocial = $('.story__social'),
+                        $storyTakeAction = $('.story__take-action');
 
-                     $stickyBar.waypoint('destroy');
-                     $storySocial.waypoint('destroy');
-                     $storyTakeAction.waypoint('destroy');*/
+                    $stickyBar.waypoint('unsticky');
+                    $storySocial.waypoint('destroy');
+                    $storyTakeAction.waypoint('destroy');
                 }
             });
 

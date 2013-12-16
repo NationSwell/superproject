@@ -33,3 +33,10 @@ and (orientation : landscape) {
   }
 }
 
+// ultra-small desktop
+@media only screen
+and (min-device-width : 768px) {
+  html {
+    font-size: 50%;
+  }
+}
