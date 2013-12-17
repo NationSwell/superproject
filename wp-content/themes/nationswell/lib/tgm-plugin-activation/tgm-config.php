@@ -271,7 +271,7 @@ function my_theme_register_required_plugins()
             'source' => get_stylesheet_directory() . '/lib/plugins/wp-author-slug.1.2.2.zip',
             'required' => true,
             'version' => '1.2.2',
-            'force_activation' => true,
+            'force_activation' => false,
             'force_deactivation' => true,
             'external_url' => '',
         ),
