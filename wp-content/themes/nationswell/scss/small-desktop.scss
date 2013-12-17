@@ -164,12 +164,14 @@
  */
 
 .container {
-  width: 98.4rem;
+  width: auto;
   max-width: 98.4rem;
+  padding: 0 2rem;
 }
 
 #page-wrapper {
-  min-width: 98.4rem;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .sidebar {

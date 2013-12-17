@@ -139,21 +139,23 @@
  */
 /* line 166, ../scss/small-desktop.scss */
 .container {
-  width: 98.4rem;
+  width: auto;
   max-width: 98.4rem;
+  padding: 0 2rem;
 }
 
-/* line 171, ../scss/small-desktop.scss */
+/* line 172, ../scss/small-desktop.scss */
 #page-wrapper {
-  min-width: 98.4rem;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* line 175, ../scss/small-desktop.scss */
+/* line 177, ../scss/small-desktop.scss */
 .sidebar {
   padding-left: 2rem;
 }
 
-/* line 181, ../scss/small-desktop.scss */
+/* line 183, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
 }

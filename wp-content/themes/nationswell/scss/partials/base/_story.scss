@@ -618,3 +618,15 @@
     font-family: $gudea;
   }
 }
+
+/* facebook comments */
+.fb-comments {
+  display: block;
+  margin-bottom: 7.2rem;
+}
+
+.fb-comments,
+.fb-comments span,
+.fb-comments iframe[style] {
+  width: 100% !important;
+}

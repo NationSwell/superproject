@@ -3051,6 +3051,20 @@ hr {
   font-family: "Gudea", Arial, sans-serif;
 }
 
+/* facebook comments */
+/* line 624, ../scss/partials/base/_story.scss */
+.fb-comments {
+  display: block;
+  margin-bottom: 7.2rem;
+}
+
+/* line 631, ../scss/partials/base/_story.scss */
+.fb-comments,
+.fb-comments span,
+.fb-comments iframe[style] {
+  width: 100% !important;
+}
+
 /* line 3, ../scss/partials/base/_static.scss */
 .static__container .static__main-column header {
   position: relative;
