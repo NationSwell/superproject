@@ -5531,19 +5531,20 @@ hr {
   /* line 180, ../scss/small-desktop.scss */
   .container {
     width: 98.4rem;
+    max-width: 98.4rem;
   }
 
-  /* line 184, ../scss/small-desktop.scss */
+  /* line 185, ../scss/small-desktop.scss */
   #page-wrapper {
     min-width: 98.4rem;
   }
 
-  /* line 188, ../scss/small-desktop.scss */
+  /* line 189, ../scss/small-desktop.scss */
   .sidebar {
     padding-left: 2rem;
   }
 
-  /* line 194, ../scss/small-desktop.scss */
+  /* line 195, ../scss/small-desktop.scss */
   .river .story-teases:last-child {
     margin-right: 1.23457%;
   }
