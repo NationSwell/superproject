@@ -239,8 +239,7 @@
                     var $this = $(this),
                         $carousel = $this.find(".carousel__items"),
                         $externalContainer = $this.find('.mobile-carousel__external-container'),
-                        $externalCaption = $externalContainer.find('.carousel-item__title'),
-                        $externalIndicator = $externalContainer.find('.indicator');
+                        $externalCaption = $externalContainer.find('.carousel-item__title');
 
                     $this.imagesLoaded( function() {});
 
@@ -279,12 +278,16 @@
                                 $activeCaption = $activeSlide.find('.carousel-item__title > span').text(),
                                 $activeIndicator = $activeSlide.find('.indicator').clone().removeClass('hide_mobile'),
                                 $externalContainerLink = $externalContainer.find('.link-wrapper'),
+                                $externalIndicator = $externalContainer.find('.indicator'),
                                 activeHref = $activeSlide.find('.link-wrapper').attr('href');
 
                             $externalCaption.html($activeCaption);
 
                             if ($externalIndicator && $activeIndicator) {
                                 $externalIndicator.replaceWith($activeIndicator);
+                                console.log($activeIndicator);
+                            } else {
+                                console.log('no active indicator!');
                             }
 
                             if ($externalContainerLink.length) {

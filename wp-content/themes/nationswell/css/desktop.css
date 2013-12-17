@@ -1283,7 +1283,7 @@ input[type="submit"]:-moz-focus-inner {
 
 /* trending topics */
 /* line 115, ../scss/partials/base/_nav.scss */
-.trending-topics {
+.full-header .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
