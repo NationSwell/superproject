@@ -33,3 +33,23 @@ and (orientation : landscape) {
   }
 }
 
+// ultra-small desktop
+@media only screen
+and (min-device-width : 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero--story {
+    &.hero--image,
+    &.hero--video {
+      .hero-information {
+        top: 0;
+      }
+    }
+  }
+
+  body.panel--is-open #page-header {
+    right: 0;
+  }
+}

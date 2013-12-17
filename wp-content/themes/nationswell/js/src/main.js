@@ -1,10 +1,12 @@
 (function ($) {
     $(function () {
+        // sticky nav
+        var $fullHeader = $('.full-header');
+        $fullHeader.waypoint('sticky', { stuckClass: 'stuck' });
 
         var $body = $('body');
 
         $('.hero-read-link').on('click', function(e){
-
             e.preventDefault();
 
             var top = $($(this).attr('href')).offset().top - $('#page-header').height();
@@ -12,11 +14,7 @@
             $body.animate({scrollTop: top }, '500');
         });
 
-        // sticky nav
-        var $fullNavBar = $('.full-header');
-        $fullNavBar.waypoint('sticky', { stuckClass: 'stuck' });
-
-        // Ajaxify Subscribe Forms
+        // ajaxify Subscribe Forms
         $('.mc-form').ajaxChimp({
             callback: function (resp) {
                 if (resp.result === 'success') {
@@ -134,7 +132,7 @@
         });
 
 
-        // Disable Like Panel
+        // disable Like Panel
         window.fbAsyncInit = function() {
             FB.Event.subscribe('edge.create',
                 function(href, widget) {
@@ -178,23 +176,28 @@
             }
         });
 
-        var hasOverflow = function(container, content) {
-            if (container.offsetHeight < container.scrollHeight) {
-                return true;
-            }
+        var $informationContainer = $('.hero-information'),
+            $slideCaption = $informationContainer ? $informationContainer.find('.hero-information__caption') : false,
+            $slideCredit = $informationContainer ? $informationContainer.find('.hero-information__credit') : false;
 
-            return false;
-        };
+        $informationContainer.on('click', function() {
+            $(this).toggleClass('is-open');
+        });
 
         // responsive code
 
         // mobile code
-        enquire.register("screen and (max-device-width: 767px)", {
-            // OPTIONAL
-            // If supplied, triggered when a media query matches.
+        enquire.register("screen and (max-width: 767px)", {
             match: function () {
+                var $fullHeader = $('.full-header'),
+                    fullHeaderHeight = $fullHeader.outerHeight(),
+                    $stickyWrapper = $('.sticky-wrapper');
+
+                $stickyWrapper.css('height', fullHeaderHeight + 'px');
+                console.log('reset height of sticky nav to' + fullHeaderHeight);
+
                 // toggle more stories panel
-                $(".toggle-collapse").on("click.toggle-collapse", function (e) {
+                $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
                     var $this = $(this),
                         target = $this.data("mobile-target"),
                         $target = $(target);
@@ -206,7 +209,7 @@
                 });
 
                 $(".more-stories-drawer").swipe( {
-                    swipeRight: function(event, direction, distance, duration, fingerCount) {
+                    swipeRight: function() {
                         if($body.hasClass('panel--is-open')) {
                             $body.removeClass('panel--is-open');
                             $('.more-stories-toggle').removeClass('is-toggled');
@@ -218,14 +221,9 @@
                     $storyContent = $('#story');
 
                 if ($storyContent) {
-                    console.log('bug');
                     $storySocial.clone().prependTo($storyContent);
                     $storySocial.clone().appendTo($storyContent);
                 }
-
-                var $informationContainer = $('.hero-information'),
-                    $slideCaption = $informationContainer.find('.hero-information__caption'),
-                    $slideCredit = $informationContainer.find('.hero-information__credit');
 
                 if ($informationContainer) {
                     var $hero = $('.hero--story'),
@@ -334,12 +332,12 @@
                             }
                         },
                         auto: {
-                            //play: isSingle && !isStory ? true : false,
-                            play: false,
+                            play: isSingle && !isStory ? true : false,
                             timeoutDuration: 6000
                         },
                         swipe: {
-                            onTouch: true
+                            onTouch: true,
+                            onMouse: true
                         },
                         pagination: {
                             container: $this.find('.carousel__pagination'),
@@ -347,14 +345,41 @@
                         }
                     });
                 });
+            },
+
+            unmatch: function() {
+                $(".toggle-collapse").off('.mobile-toggle-collapse').removeClass('is-toggled');
+                $('.panel--is-open').removeClass('panel--is-open');
+
+                var $storyContent = $('#story');
+                if ($storyContent) {
+                    // removing programmatically added top social button bar
+                    $('.story__social:first-child').remove();
+
+                    var $storySocial = $(".story__social").detach();
+                    $('.fb-comments').before($storySocial);
+
+                    $('.sticky-social').removeClass('is-hidden');
+                    $('story__social').removeClass('is-visible');
+
+                    $('.is-long, .is-open').removeClass('is-long is-open');
+                }
+
+                $('.mobile-carousel').find('.carousel__items').trigger('destroy', true);
             }
 
-            // desktop code
-        }).register("screen and (min-device-width: 768px)", {
-                // If supplied, triggered when a media query matches.
+        // desktop code
+        }).register("screen and (min-width: 768px)", {
                 match: function () {
+                    var $fullHeader = $('.full-header'),
+                        fullHeaderHeight = $fullHeader.outerHeight(),
+                        $stickyWrapper = $('.sticky-wrapper');
+
+                    $stickyWrapper.css('height', fullHeaderHeight + 'px');
+                    console.log('reset height of sticky nav');
+
                     // toggle more stories panel
-                    $(".toggle-collapse").on("click.toggle-collapse", function (e) {
+                    $(".toggle-collapse").on("click.desktop-toggle-collapse", function (e) {
                         var $this = $(this),
                             target = $this.data("desktop-target"),
                             $target = $(target);
@@ -392,11 +417,7 @@
                         isTallInfo();
                     }
 
-                    $informationContainer.on('click', function() {
-                        $(this).toggleClass('is-open');
-                    });
-
-                        // slideshows
+                    // slideshows
                     $(".carousel").each(function () {
                         var $this = $(this),
                             $carousel = $this.find(".carousel__items");
@@ -417,10 +438,10 @@
                                     var activeSlideCaption = $activeSlide.data('item-caption'),
                                         activeSlideCredit = $activeSlide.data('item-credit');
 
-                                        activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
-                                        activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
+                                    activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
+                                    activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
 
-                                        isTallInfo();
+                                    isTallInfo();
                                 }
                             } else {
                                 items.addClass('active');
@@ -465,7 +486,8 @@
                                 key: "right"
                             },
                             swipe: {
-                                onTouch: true
+                                onTouch: true,
+                                onMouse: true
                             }
                         });
                     });
@@ -512,8 +534,27 @@
                             }
                         });
                     }
+                },
+
+                unmatch: function() {
+                    $(".toggle-collapse").off('.desktop-toggle-collapse').removeClass('is-toggled');
+                    $('.panel--is-open').removeClass('panel--is-open');
+
+                    $('.carousel').find('.carousel__items').trigger('destroy', true);
+
+                    var $stickyBar = $('.story__sticky-container'),
+                        $storySocial = $('.story__social'),
+                        $storyTakeAction = $('.story__take-action');
+
+                    $stickyBar.waypoint('unsticky');
+                    $storySocial.waypoint('destroy');
+                    $storyTakeAction.waypoint('destroy');
+
+                    $('.is-long, .is-open').removeClass('is-long is-open');
                 }
             });
+
+
 
         // load more button
         $('#page-content').on('click', '.btn--load-more', function (e) {
@@ -528,7 +569,7 @@
             e.preventDefault();
         });
 
-        // call to action
+        // take action thank you
         function toggleThankYou() {
             var $taAction = $('.take-action__action'),
                 $taThankYou = $('.take-action__thank-you');
@@ -543,6 +584,7 @@
             }, 300);
         }
 
+        // take action back from thank you
         $body.on('click.taBack', '.take-action__social_back', function(e){
             toggleThankYou();
 
@@ -561,7 +603,7 @@
 
         });
 
-
+        // change org take action
         $('#change-org-petition').submit(function (e) {
             e.preventDefault();
         }).validate({ submitHandler:  function(form){
@@ -583,7 +625,7 @@
             }
             });
 
-
+        // tweet a politician
         function parseReps(data) {
             var officialsById = {};
             $.each(data.offices, function(i, office) {
@@ -654,7 +696,6 @@
                     lookupReps($form.find('[name=ta-address]').val(), function(reps) {
                         renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
                     }, function(data) {
-                        console.log(data);
                         if(data.status === 'addressUnparseable') {
                             lookupValidator.showErrors({
                                 "ta-address": "Sorry we don't recognize this address"
@@ -676,11 +717,10 @@
             event.preventDefault();
         });
 
-
         function politicianTemplate(politician, shortUrl, message) {
             var twitterUrl = 'https://twitter.com/share?url='
-                    + encodeURIComponent(shortUrl) + '&text=' +
-                    encodeURIComponent('@' + politician.twitter + ' ' + message) + '&via=nationswell';
+                + encodeURIComponent(shortUrl) + '&text=' +
+                encodeURIComponent('@' + politician.twitter + ' ' + message) + '&via=nationswell';
 
             return  twigs['views-client/politician.twig'].render({ politician: politician,  twitterUrl: twitterUrl });
         }
