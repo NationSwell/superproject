@@ -48,4 +48,8 @@ and (min-device-width : 768px) {
       }
     }
   }
+
+  body.panel--is-open #page-header {
+    right: 0;
+  }
 }

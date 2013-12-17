@@ -5190,4 +5190,9 @@ body.panel--is-open #page-header .more-stories-toggle {
   .hero--story.hero--image .hero-information, .hero--story.hero--video .hero-information {
     top: 0;
   }
+
+  /* line 52, ../scss/mobile.scss */
+  body.panel--is-open #page-header {
+    right: 0;
+  }
 }
