@@ -18,6 +18,20 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 
 define('THEME_URL', get_template_directory_uri());
 
+
+add_filter( 'wpseo_opengraph_title', 'yoast_wpseo_title');
+
+function yoast_wpseo_title($title)
+{
+
+    if(is_single()) {
+        $post = new NationSwellPost();
+        return $post->tout_title();
+    }
+
+    return $title;
+}
+
 function add_to_context($data)
 {
     $data['js_main'] = 'combined' . (WP_DEBUG ? '' : '.min') . '.js';
