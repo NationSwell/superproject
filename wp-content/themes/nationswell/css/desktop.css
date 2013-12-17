@@ -3492,11 +3492,6 @@ hr {
   margin-top: -2rem;
 }
 
-/* line 16, ../scss/partials/desktop/_structure.scss */
-* {
-  color: red !important;
-}
-
 /* line 1, ../scss/partials/desktop/_headings.scss */
 .hd-a {
   font-size: 6rem;
