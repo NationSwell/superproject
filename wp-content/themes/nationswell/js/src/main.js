@@ -348,7 +348,8 @@
             },
 
             unmatch: function() {
-                $(".toggle-collapse").off('.mobile-toggle-collapse');
+                $(".toggle-collapse").off('.mobile-toggle-collapse').removeClass('is-toggled');
+                $('.panel--is-open').removeClass('panel--is-open');
 
                 var $storyContent = $('#story');
                 if ($storyContent) {
@@ -357,11 +358,14 @@
 
                     var $storySocial = $(".story__social").detach();
                     $('.fb-comments').before($storySocial);
+
+                    $('.sticky-social').removeClass('is-hidden');
+                    $('story__social').removeClass('is-visible');
+
+                    $('.is-long, .is-open').removeClass('is-long is-open');
                 }
 
                 $('.mobile-carousel').find('.carousel__items').trigger('destroy', true);
-
-                $('.is-long, .is-open').removeClass('is-long is-open');
             }
 
         // desktop code
@@ -533,7 +537,8 @@
                 },
 
                 unmatch: function() {
-                    $(".toggle-collapse").off('.desktop-toggle-collapse');
+                    $(".toggle-collapse").off('.desktop-toggle-collapse').removeClass('is-toggled');
+                    $('.panel--is-open').removeClass('panel--is-open');
 
                     $('.carousel').find('.carousel__items').trigger('destroy', true);
 
