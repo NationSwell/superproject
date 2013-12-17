@@ -21,9 +21,3 @@
 @import "partials/desktop/story";
 @import "partials/desktop/static";
 @import "partials/desktop/archive";
-
-// Small desktop
-@media only screen
-and (max-width : 1279px) {
-  @import "small-desktop";
-}

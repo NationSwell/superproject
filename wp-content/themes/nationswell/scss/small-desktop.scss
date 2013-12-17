@@ -1,200 +1,185 @@
-@include media($small-desktop) {
-  /**
-   * buttons
-   */
+/**
+ * buttons
+ */
 
-  .btn--solid {
-    font-size: 1.76rem
+.btn--solid {
+  font-size: 1.76rem
+}
+
+.btn {
+  &.btn--take-action {
+    font-size: 1.74rem;
   }
+}
 
-  .btn {
-    &.btn--take-action {
-      font-size: 1.74rem;
+/**
+ * components
+ */
+
+/* indicator */
+.indicator {
+  &.indicator--module {
+    &:before {
+      font-size: 5.8rem;
     }
   }
+}
 
-  /**
-   * components
-   */
+/* module */
+.module {
+  &.module--sidebar {
+    width: 100%;
+  }
 
-  /* indicator */
-  .indicator {
-    &.indicator--module {
-      &:before {
-        font-size: 5.8rem;
+  &.module--list {
+    &.module--horizontal {
+      margin: 5rem 0;
+
+      .story-list li {
+        margin-right: 4%;
       }
     }
   }
+}
 
-  /* module */
-  .module {
-    &.module--sidebar {
-      width: 100%;
-    }
+/* author */
+.author-box {
+  margin-bottom: 7.2rem;
+}
 
-    &.module--list {
-      &.module--horizontal {
-        margin: 5rem 0;
+/**
+ * forms
+ */
 
-        .story-list li {
-          margin-right: 4%;
-        }
-      }
-    }
+.form-element {
+  .text-input {
+    padding: 1.15rem 1.4rem;
   }
+}
 
-  /* author */
-  .author-box {
-    margin-bottom: 7.2rem;
-  }
+/**
+ * headings
+ */
 
-  /**
-   * forms
-   */
+.hd-b {
+  font-size: 2.8rem;
+}
 
-  .form-element {
-    .text-input {
-      padding: 1.15rem 1.4rem;
-    }
-  }
+.hd-d {
+  font-size: 2.8rem;
+}
 
-  /**
-   * grid
-   */
+.hd-f {
+  font-size: 4.4rem;
+  padding: 0.5rem;
+  line-height: 1.66;
+}
 
-  // heroes
-  .hero {
-    &.hero--image {
-      .hero__content {
-        @include shift(2);
-      }
-    }
-  }
+.hd-l {
+  font-size: 2.6rem;
+}
 
-  /**
-   * headings
-   */
+/**
+ * homepage
+ */
 
-  .hd-b {
-    font-size: 2.8rem;
-  }
-
-  .hd-d {
-    font-size: 2.8rem;
-  }
-
-  .hd-f {
-    font-size: 4.4rem;
-    padding: 0.5rem;
-    line-height: 1.66;
-  }
-
-  .hd-l {
-    font-size: 2.6rem;
-  }
-
-  /**
-   * homepage
-   */
-
-  /* hero */
-  .hero--homepage {
-    &.hero--grid {
-      .hero__entry {
-        &.hero__entry--1 {
-          &:before {
-            margin-right: 2px;
-          }
-
-          .story__hed {
-            margin-bottom: 3.4rem;
-          }
-
-          .support-cause--hero {
-            margin-bottom: 3.2rem;
-          }
+/* hero */
+.hero--homepage {
+  &.hero--grid {
+    .hero__entry {
+      &.hero__entry--1 {
+        &:before {
+          margin-right: 2px;
         }
 
+        .story__hed {
+          margin-bottom: 3.4rem;
+        }
+
+        .support-cause--hero {
+          margin-bottom: 3.2rem;
+        }
+      }
+
+      &.hero__entry--2 {
         &.hero__entry--2 {
-          &.hero__entry--2 {
-            &:before {
-              margin-bottom: 2px;
-            }
+          &:before {
+            margin-bottom: 2px;
           }
         }
+      }
 
-        .story--hero {
-          padding: 2.4rem 4.4rem;
-        }
+      .story--hero {
+        padding: 2.4rem 4.4rem;
       }
     }
   }
+}
 
-  /* river */
-  .river--one-col {
-    .story-teases {
-      .story--tease {
-        &:hover {
-          background-color: transparent;
-          box-shadow: none;
-        }
+/* river */
+.river--one-col {
+  .story-teases {
+    .story--tease {
+      &:hover {
+        background-color: transparent;
+        box-shadow: none;
       }
     }
   }
+}
 
-  /**
-   * story
-   */
+/**
+ * story
+ */
 
-  /* sticky */
-  .story__sticky-container {
-    width: 14.6rem;
+/* sticky */
+.story__sticky-container {
+  width: 14.6rem;
+}
+
+// take action module
+.module.take-action {
+  .take-action__a,
+  .take-action__b {
+    width: 100%;
+    float: none;
+    padding: none;
   }
 
-  // take action module
-  .module.take-action {
-    .take-action__a,
-    .take-action__b {
-      width: 100%;
-      float: none;
-      padding: none;
-    }
-
-    .take-action__a {
-      margin-bottom: 1.2rem;
-    }
-
-    .module.take-action .take-action__a + .take-action__b {
-      padding-left: 3.4rem;
-    }
-
-    .politician__information {
-      max-width: 22rem;
-    }
+  .take-action__a {
+    margin-bottom: 1.2rem;
   }
 
-  /**
-   * structure
-   */
-
-  .container {
-    width: 98.4rem;
-    max-width: 98.4rem;
+  .module.take-action .take-action__a + .take-action__b {
+    padding-left: 3.4rem;
   }
 
-  #page-wrapper {
-    min-width: 98.4rem;
+  .politician__information {
+    max-width: 22rem;
   }
+}
 
-  .sidebar {
-    padding-left: 2rem;
-  }
+/**
+ * structure
+ */
 
-  .river {
-    .story-teases {
-      &:last-child {
-        margin-right: 1.23457%;
-      }
+.container {
+  width: 98.4rem;
+  max-width: 98.4rem;
+}
+
+#page-wrapper {
+  min-width: 98.4rem;
+}
+
+.sidebar {
+  padding-left: 2rem;
+}
+
+.river {
+  .story-teases {
+    &:last-child {
+      margin-right: 1.23457%;
     }
   }
 }
