@@ -164,22 +164,60 @@
  */
 
 .container {
-  width: 98.4rem;
   max-width: 98.4rem;
+  padding: 0 2rem;
 }
 
 #page-wrapper {
-  min-width: 98.4rem;
+  min-width: 768px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.story__container .container {
+  width: auto;
+  max-width: 98.4rem;
+
+  display: flex;
+}
+
+.story__sticky {
+  width: auto;
+  min-width: 14.6rem;
+  max-width: 15.63786%;
+}
+
+.story__main-column {
+  width: auto;
+  max-width: 49.38272%;
+
+  padding-left: 2rem;
 }
 
 .sidebar {
+  background-color: red;
   padding-left: 2rem;
+
+  width: auto;
+  min-width: 32rem;
+  max-width: 32.51029%;
 }
 
 .river {
   .story-teases {
+    width: auto;
+    max-width: 66.25514%;
+
     &:last-child {
       margin-right: 1.23457%;
+    }
+  }
+
+  &.river--one-col {
+    .story-teases {
+      .story__feature {
+        width: 50%;
+      }
     }
   }
 }

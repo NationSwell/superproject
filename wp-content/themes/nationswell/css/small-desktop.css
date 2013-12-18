@@ -139,23 +139,57 @@
  */
 /* line 166, ../scss/small-desktop.scss */
 .container {
-  width: auto;
   max-width: 98.4rem;
   padding: 0 2rem;
 }
 
-/* line 172, ../scss/small-desktop.scss */
+/* line 171, ../scss/small-desktop.scss */
 #page-wrapper {
-  width: 100%;
+  min-width: 768px;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* line 177, ../scss/small-desktop.scss */
-.sidebar {
+.story__container .container {
+  width: auto;
+  max-width: 98.4rem;
+  display: flex;
+}
+
+/* line 184, ../scss/small-desktop.scss */
+.story__sticky {
+  width: auto;
+  min-width: 14.6rem;
+  max-width: 15.63786%;
+}
+
+/* line 190, ../scss/small-desktop.scss */
+.story__main-column {
+  width: auto;
+  max-width: 49.38272%;
   padding-left: 2rem;
 }
 
-/* line 183, ../scss/small-desktop.scss */
+/* line 197, ../scss/small-desktop.scss */
+.sidebar {
+  background-color: red;
+  padding-left: 2rem;
+  width: auto;
+  min-width: 32rem;
+  max-width: 32.51029%;
+}
+
+/* line 207, ../scss/small-desktop.scss */
+.river .story-teases {
+  width: auto;
+  max-width: 66.25514%;
+}
+/* line 211, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
+}
+/* line 218, ../scss/small-desktop.scss */
+.river.river--one-col .story-teases .story__feature {
+  width: 50%;
 }
