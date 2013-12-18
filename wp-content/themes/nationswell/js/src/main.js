@@ -360,8 +360,8 @@
                     var $storySocial = $(".story__social").detach();
                     $('.fb-comments').before($storySocial);
 
-                    /*$('.sticky-social').removeClass('is-hidden');
-                    $('story__social').removeClass('is-visible');*/
+                    $('.sticky-social').removeClass('is-hidden');
+                    $('story__social').removeClass('is-visible');
 
                     $('.is-long, .is-open').removeClass('is-long is-open');
                 }
