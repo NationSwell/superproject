@@ -497,10 +497,12 @@
                         $stickySocial = $('.sticky-social'),
                         $stickyTakeAction = $('.sticky-take-action');
 
-                    $stickyBar.waypoint('sticky', {
-                        stuckClass: 'stuck',
-                        offset: 132
-                    });
+                    if(!$stickyBar.parent('.sticky-wrapper').length) {
+                        $stickyBar.waypoint('sticky', {
+                            stuckClass: 'stuck',
+                            offset: 132
+                        });
+                    }
 
                     // sliding social buttons
                     var $storySocial = $('.story__social');
