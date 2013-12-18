@@ -45,6 +45,7 @@ module.exports = function(grunt) {
                         'js/src/vendor/jquery.carouFredSel-6.2.1.min.js',
                         'js/src/vendor/jquery.validate.min.js',
                         'js/src/vendor/jquery.cookie.js',
+                        'js/src/vendor/jquery.ba-throttle-debounce.js',
                         'js/src/vendor/waypoints.min.js',
                         'js/src/vendor/waypoints-sticky.min.js',
                         'js/src/vendor/audiojs/audio.min.js',

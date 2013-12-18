@@ -190,8 +190,12 @@
         enquire.register("screen and (max-width: 767px)", {
             match: function () {
                 var $fullHeader = $('.full-header'),
-                    fullHeaderHeight = $fullHeader.outerHeight(),
                     $stickyWrapper = $('.sticky-wrapper');
+
+                setTimeout(function() {
+                    var fullHeaderHeight = $fullHeader.outerHeight();
+                    $stickyWrapper.outerHeight(fullHeaderHeight);
+                }, 300);
 
                 $stickyWrapper.css('height', fullHeaderHeight + 'px');
 
@@ -373,10 +377,12 @@
         }).register("screen and (min-width: 768px)", {
                 match: function () {
                     var $fullHeader = $('.full-header'),
-                        fullHeaderHeight = $fullHeader.outerHeight(),
                         $stickyWrapper = $('.sticky-wrapper');
 
-                    $stickyWrapper.css('height', fullHeaderHeight + 'px');
+                    setTimeout(function() {
+                        var fullHeaderHeight = $fullHeader.outerHeight();
+                        $stickyWrapper.outerHeight(fullHeaderHeight);
+                    }, 300);
 
                     // toggle more stories panel
                     $(".toggle-collapse").on("click.desktop-toggle-collapse", function (e) {
