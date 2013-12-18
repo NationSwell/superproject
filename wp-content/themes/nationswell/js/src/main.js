@@ -194,7 +194,6 @@
                     $stickyWrapper = $('.sticky-wrapper');
 
                 $stickyWrapper.css('height', fullHeaderHeight + 'px');
-                console.log('reset height of sticky nav to' + fullHeaderHeight);
 
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
@@ -284,10 +283,9 @@
                             $externalCaption.html($activeCaption);
 
                             if ($externalIndicator && $activeIndicator) {
-                                $externalIndicator.replaceWith($activeIndicator);
-                                console.log($activeIndicator);
+                                $externalIndicator.replaceWith($activeIndicator).show();
                             } else {
-                                console.log('no active indicator!');
+                                $externalIndicator.empty();
                             }
 
                             if ($externalContainerLink.length) {
@@ -362,8 +360,8 @@
                     var $storySocial = $(".story__social").detach();
                     $('.fb-comments').before($storySocial);
 
-                    $('.sticky-social').removeClass('is-hidden');
-                    $('story__social').removeClass('is-visible');
+                    /*$('.sticky-social').removeClass('is-hidden');
+                    $('story__social').removeClass('is-visible');*/
 
                     $('.is-long, .is-open').removeClass('is-long is-open');
                 }
@@ -379,7 +377,6 @@
                         $stickyWrapper = $('.sticky-wrapper');
 
                     $stickyWrapper.css('height', fullHeaderHeight + 'px');
-                    console.log('reset height of sticky nav');
 
                     // toggle more stories panel
                     $(".toggle-collapse").on("click.desktop-toggle-collapse", function (e) {
@@ -500,10 +497,12 @@
                         $stickySocial = $('.sticky-social'),
                         $stickyTakeAction = $('.sticky-take-action');
 
-                    $stickyBar.waypoint('sticky', {
-                        stuckClass: 'stuck',
-                        offset: 132
-                    });
+                    if(!$stickyBar.parent('.sticky-wrapper').length) {
+                        $stickyBar.waypoint('sticky', {
+                            stuckClass: 'stuck',
+                            offset: 132
+                        });
+                    }
 
                     // sliding social buttons
                     var $storySocial = $('.story__social');
@@ -549,7 +548,7 @@
                         $storySocial = $('.story__social'),
                         $storyTakeAction = $('.story__take-action');
 
-                    $stickyBar.waypoint('unsticky');
+                    /*$stickyBar.waypoint('unsticky');*/
                     $storySocial.waypoint('destroy');
                     $storyTakeAction.waypoint('destroy');
 
