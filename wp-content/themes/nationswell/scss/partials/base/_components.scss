@@ -74,6 +74,9 @@
   border-top-right-radius: 2.1rem;
   border-bottom-right-radius: 2.1rem;
 
+  white-space: nowrap;
+  max-width: 100%;
+
   .indicator {
 
     &.indicator--module{
@@ -98,6 +101,13 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 9px;
+
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    max-width: calc( 100% - 3rem );
   }
 
   .support-cause__heading {
@@ -106,8 +116,11 @@
 
   .support-cause__data {
     font-family: $oswald;
-    line-height: 1;
+    line-height: 1.5;
     vertical-align: middle;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 
     /*&.support-cause__data--red {
       color: $ns_red;
@@ -131,7 +144,8 @@
 
     margin-right: 2.1rem;
 
-    -webkit-font-smoothing:antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 
   .support-cause__separator {
@@ -145,6 +159,7 @@
     font-family: $oswald;
     font-weight: $light;
     margin-right: 2.1rem;
+
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
