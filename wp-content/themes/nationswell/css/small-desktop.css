@@ -163,68 +163,62 @@
   max-width: 15.63786%;
 }
 
-/* line 191, ../scss/small-desktop.scss */
-.story__main-column,
-.hero-information__caption {
+/* line 190, ../scss/small-desktop.scss */
+.story__main-column {
   width: auto;
   max-width: 49.38272%;
   padding-left: 2rem;
 }
 
-/* line 199, ../scss/small-desktop.scss */
-.sidebar,
-.hero-information__credit {
+/* line 197, ../scss/small-desktop.scss */
+.sidebar {
   padding-left: 2rem;
   width: auto;
   min-width: 32rem;
   max-width: 32.51029%;
 }
 
-/* line 207, ../scss/small-desktop.scss */
-.hero-information__content {
+/* line 205, ../scss/small-desktop.scss */
+.hero .hero-information .hero-information__content {
+  margin-left: 0;
   width: 100%;
 }
 
-/* line 211, ../scss/small-desktop.scss */
-.hero-information__caption:before {
-  content: '';
-  display: block;
-  float: left;
-  width: auto;
-  min-width: 14.6rem;
-  max-width: 15.63786%;
+/* line 210, ../scss/small-desktop.scss */
+.hero .hero-information .hero-information__caption {
+  margin-left: 0;
 }
 
-/* line 221, ../scss/small-desktop.scss */
-.hero-information__credit {
-  float: right !important;
+/* line 214, ../scss/small-desktop.scss */
+.hero .hero-information .hero-information__credit {
+  float: right;
 }
 
-/* line 226, ../scss/small-desktop.scss */
+/* line 219, ../scss/small-desktop.scss */
 .river .story-teases {
   width: auto;
   max-width: 66.25514%;
 }
-/* line 230, ../scss/small-desktop.scss */
+/* line 223, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
 }
-/* line 237, ../scss/small-desktop.scss */
+/* line 230, ../scss/small-desktop.scss */
 .river.river--one-col .story-teases .story__feature {
   width: 50%;
 }
 
-/* line 244, ../scss/small-desktop.scss */
+/* line 237, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal .story-list li {
   margin-right: 3.82%;
 }
 
-/* line 248, ../scss/small-desktop.scss */
+/* line 241, ../scss/small-desktop.scss */
 .author__a {
   float: none;
 }
 
-/* line 252, ../scss/small-desktop.scss */
+/* line 245, ../scss/small-desktop.scss */
 .author__b {
   margin-top: 2.2rem;
   padding-left: 0;

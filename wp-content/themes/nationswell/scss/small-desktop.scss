@@ -187,16 +187,14 @@
   max-width: 15.63786%;
 }
 
-.story__main-column,
-.hero-information__caption {
+.story__main-column {
   width: auto;
   max-width: 49.38272%;
 
   padding-left: 2rem;
 }
 
-.sidebar,
-.hero-information__credit {
+.sidebar {
   padding-left: 2rem;
 
   width: auto;
@@ -204,22 +202,17 @@
   max-width: 32.51029%;
 }
 
-.hero-information__content {
+.hero .hero-information .hero-information__content {
+  margin-left: 0;
   width: 100%;
 }
 
-.hero-information__caption:before {
-  content: '';
-  display: block;
-  float: left;
-
-  width: auto;
-  min-width: 14.6rem;
-  max-width: 15.63786%;
+.hero .hero-information .hero-information__caption {
+  margin-left: 0;
 }
 
-.hero-information__credit {
-  float: right !important;
+.hero .hero-information .hero-information__credit {
+  float: right;
 }
 
 .river {
