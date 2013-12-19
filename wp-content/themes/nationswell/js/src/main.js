@@ -227,14 +227,14 @@
                     $storySocial.clone().appendTo($storyContent);
                 }
 
-                if ($informationContainer) {
+                /*if ($informationContainer) {
                     var $hero = $('.hero--story'),
                         infoHeight = $informationContainer.outerHeight() + 30;
 
                     if($hero && !$hero.hasClass('hero--carousel')) {
                         $hero.css({'margin-bottom': infoHeight});
                     }
-                }
+                }*/
 
                 // slideshows
                 $(".mobile-carousel").each(function () {
