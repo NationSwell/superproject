@@ -347,17 +347,22 @@ add_action('init', 'init_change_org_api');
 // Change.org
 global $rally_api;
 
-function init_rally_api() {
+function init_rally_api()
+{
+
     global $rally_api;
 
-    $drive = get_field('rally_drive', 'option');
-    $auth_token = get_field('rally_auth_token', 'option');
-    if(!empty($drive) && !empty($auth_token)) {
-        $rally_api = new RallyApi($drive, $auth_token);
+    if (function_exists('get_field')) {
 
-        $frequency = get_field('rally_frequency', 'option');
-        if(!empty($frequency) || $frequency > 0) {
-            $rally_api->set_frequency($frequency);
+        $drive = get_field('rally_drive', 'option');
+        $auth_token = get_field('rally_auth_token', 'option');
+        if (!empty($drive) && !empty($auth_token)) {
+            $rally_api = new RallyApi($drive, $auth_token);
+
+            $frequency = get_field('rally_frequency', 'option');
+            if (!empty($frequency) || $frequency > 0) {
+                $rally_api->set_frequency($frequency);
+            }
         }
     }
 
