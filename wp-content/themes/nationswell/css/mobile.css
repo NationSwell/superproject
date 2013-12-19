@@ -87,7 +87,7 @@ html, body {
 
 /* line 13, ../scss/partials/base/_structure.scss */
 html {
-  font-size: 62.5%;
+  font-size: 10px;
   overflow-y: scroll;
 }
 
@@ -1403,25 +1403,26 @@ input[type="submit"]:-moz-focus-inner {
 /* line 81, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list li {
   float: left;
-  margin-right: 9.6rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-right: 5%;
+  width: 28%;
 }
-/* line 87, ../scss/partials/base/_more-stories.scss */
+/* line 90, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list li:last-child {
   margin-right: 0;
 }
-/* line 92, ../scss/partials/base/_more-stories.scss */
+/* line 95, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story--tease {
-  width: 26rem;
+  width: 100%;
   margin-bottom: 0;
 }
-/* line 97, ../scss/partials/base/_more-stories.scss */
+/* line 100, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story__feature {
   margin-bottom: 1.8rem;
 }
-/* line 101, ../scss/partials/base/_more-stories.scss */
+/* line 104, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story__dek {
   color: #ccd6da;
 }
@@ -3302,40 +3303,22 @@ hr {
 
 /* line 21, ../scss/partials/mobile/_grid.scss */
 .river.river--one-col .story-teases, .river.river--two-col .story-teases {
-  display: block;
-  float: left;
-  margin-right: 4%;
   width: 100%;
+  clear: both;
 }
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-.river.river--one-col .story-teases:last-child, .river.river--two-col .story-teases:last-child {
-  margin-right: 0;
-}
-/* line 24, ../scss/partials/mobile/_grid.scss */
+/* line 25, ../scss/partials/mobile/_grid.scss */
 .river.river--one-col .story-teases li, .river.river--two-col .story-teases li {
-  display: block;
-  float: left;
-  margin-right: 4%;
   width: 100%;
-}
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-.river.river--one-col .story-teases li:last-child, .river.river--two-col .story-teases li:last-child {
-  margin-right: 0;
+  clear: both;
 }
 
-/* line 32, ../scss/partials/mobile/_grid.scss */
+/* line 34, ../scss/partials/mobile/_grid.scss */
 .sidebar {
-  display: block;
-  float: left;
-  margin-right: 4%;
   width: 100%;
-}
-/* line 33, ../scss/neat/grid/_span-columns.scss */
-.sidebar:last-child {
-  margin-right: 0;
+  clear: both;
 }
 
-/* line 37, ../scss/partials/mobile/_grid.scss */
+/* line 40, ../scss/partials/mobile/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -3347,7 +3330,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 41, ../scss/partials/mobile/_grid.scss */
+/* line 44, ../scss/partials/mobile/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -3359,7 +3342,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 46, ../scss/partials/mobile/_grid.scss */
+/* line 49, ../scss/partials/mobile/_grid.scss */
 .static__main-column {
   display: block;
   float: left;
@@ -3371,7 +3354,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 52, ../scss/partials/mobile/_grid.scss */
+/* line 55, ../scss/partials/mobile/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -3382,11 +3365,11 @@ hr {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 55, ../scss/partials/mobile/_grid.scss */
+/* line 58, ../scss/partials/mobile/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 60, ../scss/partials/mobile/_grid.scss */
+/* line 63, ../scss/partials/mobile/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -3399,7 +3382,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 68, ../scss/partials/mobile/_grid.scss */
+/* line 71, ../scss/partials/mobile/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -3411,7 +3394,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 75, ../scss/partials/mobile/_grid.scss */
+/* line 78, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -3422,7 +3405,7 @@ hr {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 78, ../scss/partials/mobile/_grid.scss */
+/* line 81, ../scss/partials/mobile/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -3434,7 +3417,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 86, ../scss/partials/mobile/_grid.scss */
+/* line 89, ../scss/partials/mobile/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -3654,90 +3637,77 @@ html {
   height: 0;
   bottom: 0;
 }
-/* line 51, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar .fb-like {
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5);
-  -webkit-transform-origin: bottom left;
-  -moz-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
-}
-/* line 57, ../scss/partials/mobile/_buttons.scss */
+/* line 52, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--square {
   font-size: 1.6rem;
   width: 10rem;
   height: 10rem;
   margin: 0 auto 0.3rem;
 }
-/* line 63, ../scss/partials/mobile/_buttons.scss */
+/* line 58, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--square:before {
   font-size: 5rem;
   padding-top: 1.6rem;
 }
-/* line 69, ../scss/partials/mobile/_buttons.scss */
+/* line 64, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--square:hover:after {
   height: 0.5rem;
 }
-/* line 75, ../scss/partials/mobile/_buttons.scss */
+/* line 70, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more {
   font-size: 4.2rem;
   margin-bottom: 16rem;
 }
-/* line 79, ../scss/partials/mobile/_buttons.scss */
+/* line 74, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more:before {
   font-size: 19.6rem;
   bottom: -19.2rem;
 }
-/* line 84, ../scss/partials/mobile/_buttons.scss */
+/* line 79, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more:hover {
   top: 0.8rem;
 }
-/* line 87, ../scss/partials/mobile/_buttons.scss */
+/* line 82, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more:hover:before {
   bottom: -20.4rem;
 }
-/* line 93, ../scss/partials/mobile/_buttons.scss */
+/* line 88, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action {
   font-size: 2rem;
   padding: 1.2rem;
   top: 2.4rem;
   margin-bottom: -1rem;
 }
-/* line 99, ../scss/partials/mobile/_buttons.scss */
+/* line 94, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:after {
   height: 0.5rem;
   position: absolute;
   bottom: -0.5rem;
 }
-/* line 105, ../scss/partials/mobile/_buttons.scss */
+/* line 100, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:hover {
   top: 2.6rem;
 }
-/* line 108, ../scss/partials/mobile/_buttons.scss */
+/* line 103, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:hover:after {
   height: 0.3rem;
   bottom: -0.3rem;
 }
-/* line 114, ../scss/partials/mobile/_buttons.scss */
+/* line 109, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:active {
   top: 2.9rem;
   box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
-/* line 118, ../scss/partials/mobile/_buttons.scss */
+/* line 113, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:active:after {
   height: 0;
   bottom: 0;
 }
-/* line 125, ../scss/partials/mobile/_buttons.scss */
+/* line 120, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--external {
   padding: 1rem 2.6rem 2rem;
 }
-/* line 128, ../scss/partials/mobile/_buttons.scss */
+/* line 123, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--external:before {
   font-size: 6rem;
   top: 1.2rem;
@@ -5222,25 +5192,36 @@ body.panel--is-open #page-header .more-stories-toggle {
   margin-bottom: -1.4rem;
 }
 
+/* line 27, ../scss/mobile.scss */
+html {
+  font-size: 5px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  /* line 31, ../scss/mobile.scss */
+  /* line 35, ../scss/mobile.scss */
   html {
-    font-size: 85%;
+    font-size: 6.8px;
   }
 }
 @media only screen and (min-device-width: 768px) {
-  /* line 39, ../scss/mobile.scss */
+  /* line 43, ../scss/mobile.scss */
   html {
-    font-size: 50%;
+    font-size: 8px;
   }
 
-  /* line 46, ../scss/mobile.scss */
+  /* line 50, ../scss/mobile.scss */
   .hero--story.hero--image .hero-information, .hero--story.hero--video .hero-information {
     top: 0;
   }
 
-  /* line 52, ../scss/mobile.scss */
+  /* line 56, ../scss/mobile.scss */
   body.panel--is-open #page-header {
     right: 0;
+  }
+}
+@media only screen and (max-width: 1080px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* line 65, ../scss/mobile.scss */
+  html {
+    font-size: 5px;
   }
 }

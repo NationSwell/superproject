@@ -24,12 +24,16 @@
 @import "partials/mobile/static";
 @import "partials/mobile/archive";
 
+html {
+  font-size: 5px;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px)
 and (orientation : landscape) {
   html {
-    font-size: 85%;
+    font-size: 6.8px;
   }
 }
 
@@ -37,7 +41,7 @@ and (orientation : landscape) {
 @media only screen
 and (min-device-width : 768px) {
   html {
-    font-size: 50%;
+    font-size: 8px;
   }
 
   .hero--story {
@@ -52,4 +56,14 @@ and (min-device-width : 768px) {
   body.panel--is-open #page-header {
     right: 0;
   }
+}
+
+@media only screen
+and (max-width: 1080px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+  html{
+    font-size: 5px;
+  }
+
 }

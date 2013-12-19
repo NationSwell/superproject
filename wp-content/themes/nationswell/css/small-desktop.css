@@ -146,79 +146,85 @@
 .container.container--flex {
   width: auto;
   display: block;
+  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
 
-/* line 179, ../scss/small-desktop.scss */
+/* line 180, ../scss/small-desktop.scss */
 #page-wrapper {
   min-width: 768px;
   width: 100%;
 }
 
-/* line 184, ../scss/small-desktop.scss */
+/* line 185, ../scss/small-desktop.scss */
 .story__sticky {
+  -webkit-box-flex: 1;
   width: auto;
   min-width: 14.6rem;
   max-width: 15.63786%;
 }
 
-/* line 190, ../scss/small-desktop.scss */
+/* line 192, ../scss/small-desktop.scss */
 .story__main-column {
+  -webkit-box-flex: 1;
   width: auto;
   max-width: 49.38272%;
+  float: none;
   padding-left: 2rem;
 }
 
-/* line 197, ../scss/small-desktop.scss */
+/* line 201, ../scss/small-desktop.scss */
 .sidebar {
+  -webkit-box-flex: 1;
   padding-left: 2rem;
   width: auto;
   min-width: 32rem;
   max-width: 32.51029%;
 }
 
-/* line 205, ../scss/small-desktop.scss */
+/* line 210, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__content {
   margin-left: 0;
   width: 100%;
 }
 
-/* line 210, ../scss/small-desktop.scss */
+/* line 215, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__caption {
   margin-left: 0;
 }
 
-/* line 214, ../scss/small-desktop.scss */
+/* line 219, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__credit {
   float: right;
 }
 
-/* line 219, ../scss/small-desktop.scss */
+/* line 224, ../scss/small-desktop.scss */
 .river .story-teases {
+  -webkit-box-flex: 1;
   width: auto;
   max-width: 66.25514%;
 }
-/* line 223, ../scss/small-desktop.scss */
+/* line 229, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
 }
-/* line 230, ../scss/small-desktop.scss */
+/* line 236, ../scss/small-desktop.scss */
 .river.river--one-col .story-teases .story__feature {
   width: 50%;
 }
 
-/* line 237, ../scss/small-desktop.scss */
+/* line 243, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal .story-list li {
   margin-right: 3.82%;
 }
 
-/* line 241, ../scss/small-desktop.scss */
+/* line 247, ../scss/small-desktop.scss */
 .author__a {
   float: none;
 }
 
-/* line 245, ../scss/small-desktop.scss */
+/* line 251, ../scss/small-desktop.scss */
 .author__b {
   margin-top: 2.2rem;
   padding-left: 0;

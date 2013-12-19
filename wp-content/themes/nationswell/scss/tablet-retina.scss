@@ -4,7 +4,7 @@ and (max-device-width: 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
   html {
-    font-size: 100%;
+    font-size: 8px;
   }
 }
 
@@ -14,11 +14,11 @@ and (max-device-width : 1024px)
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
   html {
-    font-size: 70%;
+    font-size: 8px;
   }
 }
 
-.fb-like {
-  -webkit-transform: scale(1.5);
-  -webkit-transform-origin: center left;
-}
+//.fb-like {
+//  -webkit-transform: scale(1.5);
+//  -webkit-transform-origin: center left;
+//}

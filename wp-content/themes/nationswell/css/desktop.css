@@ -87,7 +87,7 @@ html, body {
 
 /* line 13, ../scss/partials/base/_structure.scss */
 html {
-  font-size: 62.5%;
+  font-size: 10px;
   overflow-y: scroll;
 }
 
@@ -1403,25 +1403,26 @@ input[type="submit"]:-moz-focus-inner {
 /* line 81, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list li {
   float: left;
-  margin-right: 9.6rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-right: 5%;
+  width: 28%;
 }
-/* line 87, ../scss/partials/base/_more-stories.scss */
+/* line 90, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list li:last-child {
   margin-right: 0;
 }
-/* line 92, ../scss/partials/base/_more-stories.scss */
+/* line 95, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story--tease {
-  width: 26rem;
+  width: 100%;
   margin-bottom: 0;
 }
-/* line 97, ../scss/partials/base/_more-stories.scss */
+/* line 100, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story__feature {
   margin-bottom: 1.8rem;
 }
-/* line 101, ../scss/partials/base/_more-stories.scss */
+/* line 104, ../scss/partials/base/_more-stories.scss */
 #more-stories .most-popular-list .story__dek {
   color: #ccd6da;
 }

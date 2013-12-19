@@ -1,5 +1,9 @@
 (function ($) {
     $(function () {
+
+//        var viewPortScale = 1 / window.devicePixelRatio;
+//        $('meta[name="viewport"]').attr('content', 'user-scalable=no, initial-scale='+viewPortScale+', width=device-width');
+
         // sticky nav
         var $fullHeader = $('.full-header');
         $fullHeader.waypoint('sticky', { stuckClass: 'stuck' });

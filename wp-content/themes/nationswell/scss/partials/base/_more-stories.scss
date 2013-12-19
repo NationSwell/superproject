@@ -80,9 +80,12 @@
 
     li {
       float: left;
-      margin-right: 9.6rem;
 
       @include transition(all 0.3s ease-in-out);
+
+
+      margin-right: 5%;
+      width: 28%;
 
       &:last-child {
         margin-right: 0;
@@ -90,7 +93,7 @@
     }
 
     .story--tease {
-      width: 26rem;
+      width: 100%;
       margin-bottom: 0;
     }
 

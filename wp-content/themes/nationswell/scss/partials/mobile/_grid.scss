@@ -19,10 +19,12 @@
   &.river--one-col,
   &.river--two-col {
     .story-teases {
-      @include span-columns(6);
+      width: 100%;
+      clear: both;
 
       li {
-        @include span-columns(6 of 6);
+        width: 100%;
+        clear: both;
       }
     }
   }
@@ -30,7 +32,8 @@
 
 // sidebar
 .sidebar {
-  @include span-columns(6);
+  width: 100%;
+  clear: both;
 }
 
 // stories
