@@ -193,7 +193,9 @@
                     $stickyWrapper = $('.sticky-wrapper');
 
                 setTimeout(function() {
+                    console.log($fullHeader.outerHeight());
                     var fullHeaderHeight = $fullHeader.outerHeight();
+                    console.log(fullHeaderHeight);
                     $stickyWrapper.outerHeight(fullHeaderHeight);
                 }, 300);
 
