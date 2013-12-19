@@ -30,9 +30,11 @@ class Stories_Widget extends WP_Widget
 
             //Our variables from the widget settings.
             $post_id = intval($instance['post_id']);
+            $show_image = intval($instance['show_image']);
 
             $post = new TimberPost($post_id);
             $context['header'] = $post->post_title;
+            $context['show_image'] = $show_image;
 
             $posts = get_field('story_list', $post->ID);
             $context['posts'] = Timber::get_posts($posts, 'NationSwellPost');
@@ -60,6 +62,7 @@ class Stories_Widget extends WP_Widget
 
         //Strip tags from title and name to remove HTML
         $instance['post_id'] = strip_tags($new_instance['post_id']);
+        $instance['show_image'] = isset($new_instance['show_image']);
 
         return $instance;
     }
@@ -68,7 +71,7 @@ class Stories_Widget extends WP_Widget
     {
 
         //Set up some default widget settings.
-        $defaults = array('post_id' => '');
+        $defaults = array('post_id' => '', 'show_image' => false);
         $instance = wp_parse_args((array)$instance, $defaults); ?>
 
         <p>
@@ -76,6 +79,9 @@ class Stories_Widget extends WP_Widget
             <input id="<?php echo $this->get_field_id('post_id'); ?>"
                    name="<?php echo $this->get_field_name('post_id'); ?>" value="<?php echo $instance['post_id']; ?>"
                    style="width:100%;"/>
+            <label for="<?php echo $this->get_field_id('show_image'); ?>"><?php _e('Show Story Image'); ?></label><br />
+            <input class="checkbox" type="checkbox" <?php checked($instance['show_image'], true) ?> id="<?php echo $this->get_field_id('show_image'); ?>" name="<?php echo $this->get_field_name('show_image'); ?>" value="true" />
+
         </p>
 
     <?php

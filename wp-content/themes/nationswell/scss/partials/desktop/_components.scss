@@ -234,6 +234,21 @@
       }
     }
 
+    .story__feature {
+      float: left;
+      max-width: 40%;
+      margin-right: 2.2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .story__header {
+      overflow: hidden;
+    }
+
     &.module--horizontal {
       margin: 5rem 0;
     }
