@@ -193,13 +193,10 @@
                     $stickyWrapper = $('.sticky-wrapper');
 
                 setTimeout(function() {
-                    console.log($fullHeader.outerHeight());
                     var fullHeaderHeight = $fullHeader.outerHeight();
-                    console.log(fullHeaderHeight);
                     $stickyWrapper.outerHeight(fullHeaderHeight);
+                    $stickyWrapper.css('height', fullHeaderHeight + 'px');
                 }, 300);
-
-                $stickyWrapper.css('height', fullHeaderHeight + 'px');
 
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
@@ -382,9 +379,7 @@
                         $stickyWrapper = $('.sticky-wrapper');
 
                     setTimeout(function() {
-                        console.log($fullHeader.outerHeight());
                         var fullHeaderHeight = $fullHeader.outerHeight();
-                        console.log(fullHeaderHeight);
                         $stickyWrapper.outerHeight(fullHeaderHeight);
                     }, 300);
 
