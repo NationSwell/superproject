@@ -4678,7 +4678,7 @@ body.panel--is-open #page-header .more-stories-toggle {
 /* line 21, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information, .hero--story.hero--video .hero-information {
   background-color: white;
-  top: 53.2rem;
+  top: 0;
 }
 /* line 26, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information.is-long:hover, .hero--story.hero--video .hero-information.is-long:hover {
