@@ -28,9 +28,11 @@ class Stories_Widget extends WP_Widget
 
         if (!empty($instance['post_id'])) {
 
+            $show = isset($instance['show_image']) ? intval($instance['show_image']) : 0 ;
+
             //Our variables from the widget settings.
             $post_id = intval($instance['post_id']);
-            $show_image = intval($instance['show_image']);
+            $show_image = isset($show) ? $show : 0 ;
 
             $post = new TimberPost($post_id);
             $context['header'] = $post->post_title;
