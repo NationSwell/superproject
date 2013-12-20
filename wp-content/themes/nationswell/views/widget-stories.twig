@@ -6,10 +6,12 @@
             <li>
                 <article class="story story--link">
                     <a href="{{ post.permalink }}" class="link-wrapper cf">
-                        {% if post.thumbnail is not empty and show_image == '1' %}
-                            <figure class="story__feature">
-                                <img src="{{ post.thumbnail.src|resize(748, 421) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}"/>
-                            </figure>
+                        {% if show_image is not empty %}
+                            {% if post.thumbnail is not empty and show_image == '1' %}
+                                <figure class="story__feature">
+                                    <img src="{{ post.thumbnail.src|resize(748, 421) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}"/>
+                                </figure>
+                            {% endif %}
                         {% endif %}
 
                         <header class="story__header">
