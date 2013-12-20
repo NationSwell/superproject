@@ -46,12 +46,10 @@
 
     {% if series_carousel is not empty %}
 
-        {% include 'carousel-series.twig' %}
+        {% include 'carousel-series.twig'  with {'module_name': 'series-carousel' } %}
 
     {% elseif stories_carousel_b is not empty %}
-
-        {% set vars = {'stories_carousel': stories_carousel_b} %}
-        {% include 'carousel-stories.twig' with vars only %}
+        {% include 'carousel-stories.twig' with {'module_name': 'stories-carousel-1', 'stories_carousel': stories_carousel_b} only %}
 
     {% endif %}
 
@@ -70,7 +68,7 @@
     </div>
 
     {% if stories_carousel is not empty %}
-        {% include 'carousel-stories.twig' %}
+        {% include 'carousel-stories.twig' with {'module_name': 'stories-carousel-2' } %}
     {% endif %}
 
     <div class="river river--one-col">
