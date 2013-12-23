@@ -319,12 +319,17 @@ if (function_exists("register_field_group")) {
                             array(
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
-                                'value' => 'petition',
+                                'value' => 'freeform',
                             ),
                             array(
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'subscribe',
+                            ),
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'tweet',
                             ),
                         ),
                         'allorany' => 'any',
@@ -349,6 +354,27 @@ if (function_exists("register_field_group")) {
                     'min' => '',
                     'max' => '',
                     'step' => '',
+                    'conditional_logic' => array(
+                        'status' => 1,
+                        'rules' => array(
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'freeform',
+                            ),
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'subscribe',
+                            ),
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'tweet',
+                            ),
+                        ),
+                        'allorany' => 'any',
+                    ),
                 ),
                 array (
                     'key' => 'field_529e601de97a5',
@@ -363,6 +389,30 @@ if (function_exists("register_field_group")) {
                     'save_other_choice' => 0,
                     'default_value' => 'absolute',
                     'layout' => 'vertical',
+                ),
+                array (
+                    'key' => 'field_52b440dc21014',
+                    'label' => 'Hide Goal Amount',
+                    'name' => 'hide_goal_amount',
+                    'type' => 'true_false',
+                    'message' => '',
+                    'default_value' => 0,
+                ),
+                array (
+                    'key' => 'field_52b440f721015',
+                    'label' => 'Hide Goal Date',
+                    'name' => 'hide_goal_date',
+                    'type' => 'true_false',
+                    'message' => '',
+                    'default_value' => 0,
+                ),
+                array (
+                    'key' => 'field_52b4410c21016',
+                    'label' => 'Hide Goal Text',
+                    'name' => 'hide_goal_text',
+                    'type' => 'true_false',
+                    'message' => '',
+                    'default_value' => 0,
                 ),
                 array (
                     'key' => 'field_529e607be97a6',
