@@ -19,17 +19,27 @@
         });
 
         // ajaxify Subscribe Forms
-        $('.mc-form').ajaxChimp({
-            callback: function (resp) {
-                if (resp.result === 'success') {
-                    setTimeout(function(){
-                        toggleThankYou();
-                    }, 500);
-                } else if (resp.result === 'error') {
+        $('.mc-form').each(function(){
+
+            var $this = $(this),
+                module = getModule($this);
+
+            $this.ajaxChimp({
+                callback: function (resp) {
+                    if (resp.result === 'success') {
+                        setTimeout(function(){
+                            toggleThankYou();
+                        }, 500);
+
+                        events.trigger('newsletter-subscribed', [module]);
+
+                    } else if (resp.result === 'error') {
+                        events.trigger('newsletter-subscribe-fail', [module, resp]);
+                    }
 
                 }
+            });
 
-            }
         });
 
         audiojs.events.ready(function () {
@@ -174,6 +184,7 @@
             }
 
             if (!isOpen) {
+                events.trigger('nav-open');
                 $field.addClass('is-open');
             } else {
                 e.preventDefault();
@@ -743,10 +754,14 @@
 
         $body.on('click', '[data-track]', function(){
             var $target = $(this),
-                module = $target.closest('[data-module]').data().module,
-                action = $target.data().track;
+                module = getModule($target),
+                action = $target.data('track');
 
-            events.trigger('track',[module, action])
-        })
+            events.trigger('track',[module, action]);
+        });
+
+        function getModule ($element){
+            return $element.closest('[data-module]').data('module');
+        }
     });
 })(jQuery);
