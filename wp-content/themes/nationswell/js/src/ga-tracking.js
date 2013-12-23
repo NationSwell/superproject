@@ -4,8 +4,8 @@
         console.log('tracking', arguments);
     }
 
-    events.on('track', function(e, module, action){
-        track(module.category, action.name, module.name);
+    events.on('track', function(e, module, action) {
+        track(action.category || module.category, action.name, module.name);
     });
 
     events.on('nav-open', function(){
