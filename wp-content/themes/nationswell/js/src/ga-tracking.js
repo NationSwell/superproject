@@ -16,6 +16,12 @@
         track('search', 'open', module.name);
     });
 
+
+    events.on('nav-more-stories-open', function(e, module){
+        track('more-stories', 'open', module.name);
+    });
+
+
     events.on('nav-subscribe-open', function(e, module){
         track('newsletter', 'open', module.name);
     });
