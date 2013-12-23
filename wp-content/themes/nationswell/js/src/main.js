@@ -179,12 +179,12 @@
 
             $('[id*="nav-"]').removeClass('is-open');
 
-            if ($this.attr('for') === 'nav-subscribe') {
+            if (input === 'nav-subscribe') {
                 $this.removeClass('error valid');
             }
 
             if (!isOpen) {
-                events.trigger('nav-open');
+                events.trigger(input + '-open', getModule($this));
                 $field.addClass('is-open');
             } else {
                 e.preventDefault();
