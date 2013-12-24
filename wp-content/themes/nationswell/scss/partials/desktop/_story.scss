@@ -10,6 +10,17 @@
 
   &.hero--image,
   &.hero--video {
+
+    .story__main-column & {
+      padding-bottom: 0;
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+    }
+
     .hero-information {
       background-color: $white;
       padding-top: 1.2rem;
