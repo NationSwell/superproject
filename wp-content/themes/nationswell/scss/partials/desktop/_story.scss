@@ -28,9 +28,21 @@
       min-height: 3.5rem;
       max-height: 3.5rem;
 
+      .story__main-column & {
+        max-height: none;
+        min-height: none;
+        position: static;
+        bottom: 0;
+      }
+
       &.is-long {
         &:hover {
           background-color: $ns_navy6;
+
+          .story__main-column & {
+            background-color: transparent;
+          }
+
         }
 
         &.is-open {
