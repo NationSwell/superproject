@@ -222,6 +222,10 @@
                     $this.toggleClass('is-toggled');
                     $target.toggleClass('panel--is-open');
 
+                    if($this.hasClass('is-toggled')){
+                        events.trigger('nav-more-stories-open',[getModule($this)]);
+                    }
+
                     e.preventDefault();
                 });
 
@@ -407,6 +411,10 @@
 
                     $this.toggleClass('is-toggled');
                     $target.toggleClass('panel--is-open');
+
+                    if($this.hasClass('is-toggled')){
+                        events.trigger('nav-more-stories-open',[getModule($this)]);
+                    }
 
                     e.preventDefault();
                 });
