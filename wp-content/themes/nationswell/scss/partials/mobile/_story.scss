@@ -18,6 +18,24 @@
 
   &.hero--image,
   &.hero--video {
+
+    .story__main-column & {
+      height: auto;
+
+      img {
+        max-width: 100%;
+      }
+
+      .hero-information {
+
+        .container {
+          padding: 0;
+        }
+
+      }
+
+    }
+
     .hero-information {
       background-color: $white;
       top: 0;
