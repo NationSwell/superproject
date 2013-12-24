@@ -21,6 +21,12 @@
     .hero-information__caption {
       @include span-columns(6);
       @include shift(2);
+
+      .story__main-column & {
+        @include span-columns(8);
+        @include shift(0);
+      }
+
     }
 
     .hero-information__caption + .hero-information__credit {
