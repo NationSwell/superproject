@@ -176,6 +176,26 @@
   }
 }
 
+.google_top_posts {
+
+  width: 100%;
+  margin-bottom: 12rem;
+
+  .widgettitle {
+    font-size: 4rem;
+  }
+
+  li {
+    padding: 4rem 0;
+
+    a {
+      font-size: 3.2rem;
+    }
+
+  }
+
+}
+
 /* module */
 .module {
   &.module--sidebar {

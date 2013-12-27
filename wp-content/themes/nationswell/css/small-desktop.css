@@ -20,22 +20,27 @@
   font-size: 5.8rem;
 }
 
+/* line 28, ../scss/small-desktop.scss */
+.google_top_posts {
+  width: 100%;
+}
+
 /* module */
-/* line 30, ../scss/small-desktop.scss */
+/* line 49, ../scss/small-desktop.scss */
 .module.module--sidebar {
   width: 100%;
 }
-/* line 35, ../scss/small-desktop.scss */
+/* line 54, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal {
   margin: 5rem 0;
 }
-/* line 38, ../scss/small-desktop.scss */
+/* line 57, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal .story-list li {
   margin-right: 4%;
 }
 
 /* author */
-/* line 46, ../scss/small-desktop.scss */
+/* line 65, ../scss/small-desktop.scss */
 .author-box {
   margin-bottom: 7.2rem;
 }
@@ -43,7 +48,7 @@
 /**
  * forms
  */
-/* line 55, ../scss/small-desktop.scss */
+/* line 74, ../scss/small-desktop.scss */
 .form-element .text-input {
   padding: 1.15rem 1.4rem;
 }
@@ -51,24 +56,24 @@
 /**
  * headings
  */
-/* line 64, ../scss/small-desktop.scss */
+/* line 83, ../scss/small-desktop.scss */
 .hd-b {
   font-size: 2.8rem;
 }
 
-/* line 68, ../scss/small-desktop.scss */
+/* line 87, ../scss/small-desktop.scss */
 .hd-d {
   font-size: 2.8rem;
 }
 
-/* line 72, ../scss/small-desktop.scss */
+/* line 91, ../scss/small-desktop.scss */
 .hd-f {
   font-size: 4.4rem;
   padding: 0.5rem;
   line-height: 1.66;
 }
 
-/* line 78, ../scss/small-desktop.scss */
+/* line 97, ../scss/small-desktop.scss */
 .hd-l {
   font-size: 2.6rem;
 }
@@ -77,29 +82,29 @@
  * homepage
  */
 /* hero */
-/* line 91, ../scss/small-desktop.scss */
+/* line 110, ../scss/small-desktop.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1:before {
   margin-right: 2px;
 }
-/* line 95, ../scss/small-desktop.scss */
+/* line 114, ../scss/small-desktop.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .story__hed {
   margin-bottom: 3.4rem;
 }
-/* line 99, ../scss/small-desktop.scss */
+/* line 118, ../scss/small-desktop.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1 .support-cause--hero {
   margin-bottom: 3.2rem;
 }
-/* line 106, ../scss/small-desktop.scss */
+/* line 125, ../scss/small-desktop.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:before {
   margin-bottom: 2px;
 }
-/* line 112, ../scss/small-desktop.scss */
+/* line 131, ../scss/small-desktop.scss */
 .hero--homepage.hero--grid .hero__entry .story--hero {
   padding: 2.4rem 4.4rem;
 }
 
 /* river */
-/* line 123, ../scss/small-desktop.scss */
+/* line 142, ../scss/small-desktop.scss */
 .river--one-col .story-teases .story--tease:hover {
   background-color: transparent;
   box-shadow: none;
@@ -109,27 +114,27 @@
  * story
  */
 /* sticky */
-/* line 136, ../scss/small-desktop.scss */
+/* line 155, ../scss/small-desktop.scss */
 .story__sticky-container {
   width: 14.6rem;
 }
 
-/* line 143, ../scss/small-desktop.scss */
+/* line 162, ../scss/small-desktop.scss */
 .module.take-action .take-action__a,
 .module.take-action .take-action__b {
   width: 100%;
   float: none;
   padding: none;
 }
-/* line 149, ../scss/small-desktop.scss */
+/* line 168, ../scss/small-desktop.scss */
 .module.take-action .take-action__a {
   margin-bottom: 1.2rem;
 }
-/* line 153, ../scss/small-desktop.scss */
+/* line 172, ../scss/small-desktop.scss */
 .module.take-action .module.take-action .take-action__a + .take-action__b {
   padding-left: 3.4rem;
 }
-/* line 157, ../scss/small-desktop.scss */
+/* line 176, ../scss/small-desktop.scss */
 .module.take-action .politician__information {
   max-width: 22rem;
 }
@@ -137,12 +142,12 @@
 /**
  * structure
  */
-/* line 166, ../scss/small-desktop.scss */
+/* line 185, ../scss/small-desktop.scss */
 .container {
   max-width: 98.4rem;
   padding: 0 2rem;
 }
-/* line 170, ../scss/small-desktop.scss */
+/* line 189, ../scss/small-desktop.scss */
 .container.container--flex {
   width: auto;
   display: block;
@@ -151,13 +156,13 @@
   display: flex;
 }
 
-/* line 180, ../scss/small-desktop.scss */
+/* line 199, ../scss/small-desktop.scss */
 #page-wrapper {
   min-width: 768px;
   width: 100%;
 }
 
-/* line 185, ../scss/small-desktop.scss */
+/* line 204, ../scss/small-desktop.scss */
 .story__sticky {
   -webkit-box-flex: 1;
   width: auto;
@@ -165,7 +170,7 @@
   max-width: 15.63786%;
 }
 
-/* line 192, ../scss/small-desktop.scss */
+/* line 211, ../scss/small-desktop.scss */
 .story__main-column {
   -webkit-box-flex: 1;
   width: auto;
@@ -174,7 +179,7 @@
   padding-left: 2rem;
 }
 
-/* line 201, ../scss/small-desktop.scss */
+/* line 220, ../scss/small-desktop.scss */
 .sidebar {
   -webkit-box-flex: 1;
   padding-left: 2rem;
@@ -183,48 +188,48 @@
   max-width: 32.51029%;
 }
 
-/* line 210, ../scss/small-desktop.scss */
+/* line 229, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__content {
   margin-left: 0;
   width: 100%;
 }
 
-/* line 215, ../scss/small-desktop.scss */
+/* line 234, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__caption {
   margin-left: 0;
 }
 
-/* line 219, ../scss/small-desktop.scss */
+/* line 238, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__credit {
   float: right;
 }
 
-/* line 224, ../scss/small-desktop.scss */
+/* line 243, ../scss/small-desktop.scss */
 .river .story-teases {
   -webkit-box-flex: 1;
   width: auto;
   max-width: 66.25514%;
 }
-/* line 229, ../scss/small-desktop.scss */
+/* line 248, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
 }
-/* line 236, ../scss/small-desktop.scss */
+/* line 255, ../scss/small-desktop.scss */
 .river.river--one-col .story-teases .story__feature {
   width: 50%;
 }
 
-/* line 243, ../scss/small-desktop.scss */
+/* line 262, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal .story-list li {
   margin-right: 3.82%;
 }
 
-/* line 247, ../scss/small-desktop.scss */
+/* line 266, ../scss/small-desktop.scss */
 .author__a {
   float: none;
 }
 
-/* line 251, ../scss/small-desktop.scss */
+/* line 270, ../scss/small-desktop.scss */
 .author__b {
   margin-top: 2.2rem;
   padding-left: 0;

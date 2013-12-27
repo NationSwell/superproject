@@ -260,7 +260,21 @@
 .google_top_posts {
 
   width: 32rem;
+  margin: 0 auto;
   margin-bottom: 7.6rem;
+  position: relative;
+
+  &:after {
+    background-color: #eeeeee;
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+
+    height: 0.7rem;
+    bottom: -0.7rem;
+  }
 
   .widgettitle {
     color: #0098d8;
@@ -271,6 +285,7 @@
     -webkit-font-smoothing: antialiased;
     display: block;
     border-bottom: 3px solid #2d2d2d;
+    padding-bottom: 1.2rem;
 
     font-size: 2.4rem;
   }

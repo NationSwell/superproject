@@ -275,6 +275,26 @@ function my_theme_register_required_plugins()
             'force_deactivation' => true,
             'external_url' => '',
         ),
+        array(
+            'name' => 'Google Analytics Dashboard',
+            'slug' => 'google-analytics-dashboard',
+            'source' => get_stylesheet_directory() . '/lib/plugins/google-analytics-dashboard.2.0.5.zip',
+            'required' => true,
+            'version' => '2.0.5',
+            'force_activation' => false,
+            'force_deactivation' => false,
+            'external_url' => '',
+        ),
+        array(
+            'name' => 'Google Analytics Top Posts Widget',
+            'slug' => 'google-analytics-top-posts-widget',
+            'source' => get_stylesheet_directory() . '/lib/plugins/google-analytics-top-posts-widget.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => false,
+            'force_deactivation' => false,
+            'external_url' => '',
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
