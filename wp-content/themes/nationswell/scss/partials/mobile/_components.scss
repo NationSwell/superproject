@@ -310,15 +310,17 @@
   padding: 4rem;
 }
 
+.author-box--curated {
+  .author__portrait {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 .author__portrait {
   margin: 0 auto 2.2rem;
   width: 23rem;
   height: 23rem;
-
-  &.author__portrait--curated {
-    width: 17.4rem;
-    height: 17.4rem;
-  }
 }
 
 .author__url {
