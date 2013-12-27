@@ -4432,53 +4432,58 @@ hr {
   width: 13.4rem;
   height: 13.4rem;
 }
+/* line 357, ../scss/partials/desktop/_components.scss */
+.author__portrait.author__portrait--curated {
+  width: 10rem;
+  height: 10rem;
+}
 
-/* line 358, ../scss/partials/desktop/_components.scss */
+/* line 363, ../scss/partials/desktop/_components.scss */
 .author__url {
   font-size: 1.4rem;
 }
-/* line 361, ../scss/partials/desktop/_components.scss */
+/* line 366, ../scss/partials/desktop/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 368, ../scss/partials/desktop/_components.scss */
+/* line 373, ../scss/partials/desktop/_components.scss */
 .social li:first-child {
   border-left: 0;
 }
-/* line 373, ../scss/partials/desktop/_components.scss */
+/* line 378, ../scss/partials/desktop/_components.scss */
 .social.author__social {
   margin-top: 1.2rem;
 }
-/* line 376, ../scss/partials/desktop/_components.scss */
+/* line 381, ../scss/partials/desktop/_components.scss */
 .social.author__social .icon {
   font-size: 2.6rem;
   height: 3rem;
   width: 3rem;
 }
-/* line 383, ../scss/partials/desktop/_components.scss */
+/* line 388, ../scss/partials/desktop/_components.scss */
 .social.take-action__social {
   margin-top: 1.2rem;
   margin-bottom: 6rem;
 }
-/* line 387, ../scss/partials/desktop/_components.scss */
+/* line 392, ../scss/partials/desktop/_components.scss */
 .social.take-action__social .icon {
   font-size: 4rem;
   height: 5.4rem;
   width: 5.4rem;
 }
 
-/* line 395, ../scss/partials/desktop/_components.scss */
+/* line 400, ../scss/partials/desktop/_components.scss */
 .author__byline {
   margin-bottom: 1.4rem;
 }
-/* line 396, ../scss/partials/desktop/_components.scss */
+/* line 401, ../scss/partials/desktop/_components.scss */
 .author__byline .author__byline__prefix {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
 }
 
-/* line 404, ../scss/partials/desktop/_components.scss */
+/* line 409, ../scss/partials/desktop/_components.scss */
 .author__bio {
   color: #7e7e7e;
   font-size: 1.5rem;
@@ -4486,57 +4491,57 @@ hr {
 }
 
 /* prev/next */
-/* line 411, ../scss/partials/desktop/_components.scss */
+/* line 416, ../scss/partials/desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 415, ../scss/partials/desktop/_components.scss */
+/* line 420, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 419, ../scss/partials/desktop/_components.scss */
+/* line 424, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 425, ../scss/partials/desktop/_components.scss */
+/* line 430, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 431, ../scss/partials/desktop/_components.scss */
+/* line 436, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 439, ../scss/partials/desktop/_components.scss */
+/* line 444, ../scss/partials/desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 442, ../scss/partials/desktop/_components.scss */
+/* line 447, ../scss/partials/desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 447, ../scss/partials/desktop/_components.scss */
+/* line 452, ../scss/partials/desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 451, ../scss/partials/desktop/_components.scss */
+/* line 456, ../scss/partials/desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 456, ../scss/partials/desktop/_components.scss */
+/* line 461, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 459, ../scss/partials/desktop/_components.scss */
+/* line 464, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
 
-/* line 465, ../scss/partials/desktop/_components.scss */
+/* line 470, ../scss/partials/desktop/_components.scss */
 #flyout {
   background-color: white;
   position: fixed;
@@ -4549,19 +4554,19 @@ hr {
   -moz-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
 }
-/* line 477, ../scss/partials/desktop/_components.scss */
+/* line 482, ../scss/partials/desktop/_components.scss */
 #flyout header {
   background-color: #003046;
   padding: 1.2rem 1.6rem 0.6rem;
   position: relative;
 }
-/* line 483, ../scss/partials/desktop/_components.scss */
+/* line 488, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 488, ../scss/partials/desktop/_components.scss */
+/* line 493, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading:before {
   color: #fc3b40;
   display: inline-block;
@@ -4570,7 +4575,7 @@ hr {
   font-size: 2.6rem;
   vertical-align: middle;
 }
-/* line 498, ../scss/partials/desktop/_components.scss */
+/* line 503, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close {
   background-color: transparent;
   border: none;
@@ -4584,34 +4589,34 @@ hr {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 510, ../scss/partials/desktop/_components.scss */
+/* line 515, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close:hover {
   color: #0098d8;
 }
-/* line 515, ../scss/partials/desktop/_components.scss */
+/* line 520, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content {
   border-left: 1px solid #ccd6da;
   border-bottom: 1px solid #ccd6da;
   padding: 1.6rem;
 }
-/* line 520, ../scss/partials/desktop/_components.scss */
+/* line 525, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content p {
   color: #002130;
   font-family: "Gudea", Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
-/* line 527, ../scss/partials/desktop/_components.scss */
+/* line 532, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content .fb-like {
   margin-bottom: 0.6rem;
 }
-/* line 532, ../scss/partials/desktop/_components.scss */
+/* line 537, ../scss/partials/desktop/_components.scss */
 #flyout.is-visible {
   right: 0;
 }
 
 /* subscribe status */
-/* line 538, ../scss/partials/desktop/_components.scss */
+/* line 543, ../scss/partials/desktop/_components.scss */
 .mc-email-status {
   font-size: 1.4rem;
   line-height: 1;

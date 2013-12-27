@@ -1,7 +1,8 @@
 (function(){
     function track() {
-        _gaq.push(['_trackEvent'].concat(arguments));
-        console.log('tracking', arguments);
+        if(_gaq){
+            _gaq.push(['_trackEvent'].concat(arguments));
+        }
     }
 
     events.on('track', function(e, module, action) {
