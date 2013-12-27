@@ -3633,8 +3633,8 @@ hr {
 /* line 21, ../scss/partials/desktop/_headings.scss */
 .hd-f {
   box-shadow: 4rem 0 0 rgba(0, 0, 0, 0.86), -4rem 0 0 rgba(0, 0, 0, 0.86);
-  font-size: 5.4rem;
-  padding: 1rem;
+  font-size: 4rem;
+  padding: 0.8rem 0;
 }
 
 /* line 27, ../scss/partials/desktop/_headings.scss */
@@ -4701,21 +4701,26 @@ hr {
 .carousel-item.active .v-align__inner {
   padding-bottom: 3.4rem;
 }
+/* line 65, ../scss/partials/desktop/_carousels.scss */
+.carousel-item .support-cause-container {
+  display: block;
+  margin-top: 1.8rem;
+}
 
-/* line 66, ../scss/partials/desktop/_carousels.scss */
+/* line 73, ../scss/partials/desktop/_carousels.scss */
 .carousel-item__title {
   margin-bottom: 3.4rem;
 }
 
-/* line 71, ../scss/partials/desktop/_carousels.scss */
+/* line 78, ../scss/partials/desktop/_carousels.scss */
 .carousel--series .carousel-item {
   height: 46rem;
 }
-/* line 74, ../scss/partials/desktop/_carousels.scss */
+/* line 81, ../scss/partials/desktop/_carousels.scss */
 .carousel--series .carousel-item .link-wrapper {
   height: 100%;
 }
-/* line 80, ../scss/partials/desktop/_carousels.scss */
+/* line 87, ../scss/partials/desktop/_carousels.scss */
 .carousel--series .carousel--series__image {
   float: left;
   width: 33.3334%;
@@ -4723,18 +4728,18 @@ hr {
   position: relative;
 }
 
-/* line 89, ../scss/partials/desktop/_carousels.scss */
+/* line 96, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel-item {
   box-shadow: -2px 0 0 white;
   width: 94rem;
   height: 54rem;
 }
-/* line 95, ../scss/partials/desktop/_carousels.scss */
+/* line 102, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   width: 94rem;
   height: 54rem;
 }
-/* line 100, ../scss/partials/desktop/_carousels.scss */
+/* line 107, ../scss/partials/desktop/_carousels.scss */
 .carousel--peek .carousel__control {
   top: 24rem;
 }
