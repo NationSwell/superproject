@@ -242,6 +242,11 @@
   }
 
   .story__content {
+
+    img[class*='wp-image'] {
+      max-width: 100%;
+    }
+
     em, i {
       font-style: italic;
     }
@@ -374,7 +379,7 @@
   &.multimedia--image {
     img {
       display: block;
-      width: 100%;
+      max-width: 100%;
     }
   }
 
