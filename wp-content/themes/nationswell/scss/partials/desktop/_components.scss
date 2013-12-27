@@ -331,8 +331,16 @@
   padding: 2.6rem 3.4rem;
 }
 
+.author-box--curated {
+  .author__portrait {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
 .author-box:nth-of-type(even) {
 
+  .author__a {
   .author__a {
     float: right;
   }
@@ -353,11 +361,6 @@
   margin-bottom: 1.2rem;
   width: 13.4rem;
   height: 13.4rem;
-
-  &.author__portrait--curated {
-    width: 10rem;
-    height: 10rem;
-  }
 }
 
 .author__url {
