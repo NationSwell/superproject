@@ -4297,56 +4297,57 @@ body.panel--is-open #page-header .more-stories-toggle {
   padding: 4rem;
 }
 
-/* line 313, ../scss/partials/mobile/_components.scss */
+/* line 314, ../scss/partials/mobile/_components.scss */
+.author-box--curated .author__portrait {
+  width: 18rem;
+  height: 18rem;
+}
+
+/* line 320, ../scss/partials/mobile/_components.scss */
 .author__portrait {
   margin: 0 auto 2.2rem;
   width: 23rem;
   height: 23rem;
 }
-/* line 318, ../scss/partials/mobile/_components.scss */
-.author__portrait.author__portrait--curated {
-  width: 17.4rem;
-  height: 17.4rem;
-}
 
-/* line 324, ../scss/partials/mobile/_components.scss */
+/* line 326, ../scss/partials/mobile/_components.scss */
 .author__url {
   font-size: 2.4rem;
   margin-bottom: 2.6rem;
 }
-/* line 328, ../scss/partials/mobile/_components.scss */
+/* line 330, ../scss/partials/mobile/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 333, ../scss/partials/mobile/_components.scss */
+/* line 335, ../scss/partials/mobile/_components.scss */
 .social {
   margin-bottom: 4rem;
 }
-/* line 336, ../scss/partials/mobile/_components.scss */
+/* line 338, ../scss/partials/mobile/_components.scss */
 .social li {
   margin-left: 0.6rem;
   margin-bottom: 0.6rem;
 }
-/* line 341, ../scss/partials/mobile/_components.scss */
+/* line 343, ../scss/partials/mobile/_components.scss */
 .social .icon {
   font-size: 5rem;
   height: 6rem;
   width: 6rem;
 }
 
-/* line 348, ../scss/partials/mobile/_components.scss */
+/* line 350, ../scss/partials/mobile/_components.scss */
 .author__byline {
   text-align: center;
   margin-bottom: 3.4rem;
 }
-/* line 351, ../scss/partials/mobile/_components.scss */
+/* line 353, ../scss/partials/mobile/_components.scss */
 .author__byline .author__byline__prefix {
   font-size: 2.5rem;
   margin-bottom: 0.8rem;
 }
 
-/* line 359, ../scss/partials/mobile/_components.scss */
+/* line 361, ../scss/partials/mobile/_components.scss */
 .author__bio {
   color: #333333;
   font-size: 3.2rem;
@@ -4356,46 +4357,46 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* prev/next */
-/* line 369, ../scss/partials/mobile/_components.scss */
+/* line 371, ../scss/partials/mobile/_components.scss */
 .prev-next {
   padding-top: 3.4rem;
   margin-bottom: 0.6rem;
 }
-/* line 373, ../scss/partials/mobile/_components.scss */
+/* line 375, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link {
   font-size: 0;
 }
-/* line 376, ../scss/partials/mobile/_components.scss */
+/* line 378, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 26.6rem;
 }
-/* line 381, ../scss/partials/mobile/_components.scss */
+/* line 383, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-left: 6.6rem;
 }
-/* line 387, ../scss/partials/mobile/_components.scss */
+/* line 389, ../scss/partials/mobile/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-right: 6.6rem;
 }
-/* line 393, ../scss/partials/mobile/_components.scss */
+/* line 395, ../scss/partials/mobile/_components.scss */
 .prev-next .story__hed {
   display: none;
 }
 
 /* read next */
-/* line 399, ../scss/partials/mobile/_components.scss */
+/* line 401, ../scss/partials/mobile/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 402, ../scss/partials/mobile/_components.scss */
+/* line 404, ../scss/partials/mobile/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 406, ../scss/partials/mobile/_components.scss */
+/* line 408, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 409, ../scss/partials/mobile/_components.scss */
+/* line 411, ../scss/partials/mobile/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }

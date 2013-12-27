@@ -50,6 +50,6 @@
                 {{ author.display_name }}
         </a></h2>
 
-        {% if post.story_kind is empty %}<p class="author__bio">{{function('truncate', author.description, 40, 200, author.author_page)}}</p>{% endif %}
+        <p class="author__bio">{{function('truncate', author.description, 40, 200, author.author_page)}}</p>
     </div>
 </div>
