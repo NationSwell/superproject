@@ -9,6 +9,12 @@
                         <div class="v-align__inner v-align__inner--bottom">
                             <div class="indicator indicator--blue indicator--title icon icon_{{ post.content_type }} hide_mobile"></div>
                             <h2 class="hide_mobile hd-f carousel-item__title hide_mobile"><span>{{ post.tout_title }}</span></h2>
+
+                            {% if post.call_to_action is not empty and post.call_to_action.show_action_stats_on_tout != '0' %}
+                                <div class="support-cause-container hide_mobile" style="display: block;">
+                                    {% include ['action-stats-'~post.call_to_action.type~'.twig', 'action-stats.twig'] %}
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </a></li>

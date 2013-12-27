@@ -297,9 +297,9 @@
                         if (isPeek) {
                             var $activeSlide = isFullPeek ? items.filter(":eq(1)") : items.filter(":eq(0)"),
                                 $activeCaption = $activeSlide.find('.carousel-item__title > span').text(),
-                                $activeIndicator = $activeSlide.find('.indicator').clone().removeClass('hide_mobile'),
+                                $activeIndicator = $activeSlide.find('.indicator--title').clone().removeClass('hide_mobile'),
                                 $externalContainerLink = $externalContainer.find('.link-wrapper'),
-                                $externalIndicator = $externalContainer.find('.indicator'),
+                                $externalIndicator = $externalContainer.find('.indicator--title'),
                                 activeHref = $activeSlide.find('.link-wrapper').attr('href');
 
                             $externalCaption.html($activeCaption);
