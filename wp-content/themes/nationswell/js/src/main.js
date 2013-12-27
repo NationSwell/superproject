@@ -539,6 +539,7 @@
                 $storySocial.waypoint(function (direction) {
                     var down = direction === 'down';
                     $storySocial.toggleClass('is-visible', down).toggleClass('is-hidden', down);
+                    $stickySocial.toggleClass('is-hidden', down).toggleClass('is-visible', down);
                 }, {
                     offset: function () {
                         var offsetHeight;
@@ -559,6 +560,7 @@
                     $storyTakeAction.waypoint(function (direction) {
                         var down = direction === 'down';
                         $storyTakeAction.toggleClass('is-visible', down).toggleClass('is-hidden', down);
+                        $stickyTakeAction.toggleClass('is-hidden', down).toggleClass('is-visible', down);
                     }, {
                         offset: function () {
                             return  .8 * $stickyBar.outerHeight();
