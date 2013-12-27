@@ -435,6 +435,8 @@
                         $slideCaption = $informationContainer.find('.hero-information__caption'),
                         $slideCredit = $informationContainer.find('.hero-information__credit');
 
+                    $informationContainer.removeClass('is-open');
+
                     if ($slideCaption.height() > $informationContainer.height() || $slideCredit.height() > $informationContainer.height() ) {
                         $informationContainer.addClass('is-long');
                     } else {
