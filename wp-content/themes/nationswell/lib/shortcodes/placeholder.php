@@ -64,6 +64,9 @@ function placeholder_shortcode($attr) {
 
 
 function component_image($content, $component) {
+
+    $component['image'] = new TimberImage($content['image']['id']);
+
     $component = array_merge($content['image'], $component);
     $component['credit'] = get_field('credit', $component['id']);
     $component['alt_text'] = get_field('_wp_attachment_image_alt', $component['id']);

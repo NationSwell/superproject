@@ -114,14 +114,19 @@ if (class_exists('TimberPost')) {
 
         function og_image()
         {
-            ob_start();
-            $wpseo = new WPSEO_OpenGraph();
-            $wpseo->image_output($wpseo->image());
-            $og_meta = ob_get_contents();
-            $image = getAttribute('content', $og_meta);
-            ob_end_clean();
+            if (class_exists('WPSEO_OpenGraph')){
+                ob_start();
+                $wpseo = new WPSEO_OpenGraph();
+                $wpseo->image_output($wpseo->image());
+                $og_meta = ob_get_contents();
+                $image = getAttribute('content', $og_meta);
+                ob_end_clean();
 
-            return $image;
+                return $image;
+            } else {
+                return '';
+            }
+
         }
 
         function facebook_share_url()
