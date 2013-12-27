@@ -430,12 +430,12 @@
                     }
                 });
 
-                var $informationContainer = $('.hero-information'),
-                    $slideCaption = $informationContainer.find('.hero-information__caption'),
-                    $slideCredit = $informationContainer.find('.hero-information__credit');
-
                 var isTallInfo = function() {
-                    if ($slideCaption.height() > $informationContainer.height()) {
+                    var $informationContainer = $('.hero-information'),
+                        $slideCaption = $informationContainer.find('.hero-information__caption'),
+                        $slideCredit = $informationContainer.find('.hero-information__credit');
+
+                    if ($slideCaption.height() > $informationContainer.height() || $slideCredit.height() > $informationContainer.height() ) {
                         $informationContainer.addClass('is-long');
                     } else {
                         $informationContainer.removeClass('is-long');
@@ -458,6 +458,7 @@
                     $this.imagesLoaded( function() {
                         $this.find('img').addClass('is-visible');
                     });
+
 
                     function highlight(items) {
                         if (isPeek) {
