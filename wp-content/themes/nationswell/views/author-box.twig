@@ -1,4 +1,4 @@
-<div class="author-box cf">
+<div class="author-box cf {{ (post.story_kind != 'curated' or post.story_kind is empty)? "author-box--author" : "author-box--curated" }}">
     {% if post.story_kind != 'curated' or post.story_kind is empty %}
     <div class="author__a">
         {% if author.mug_shot is not empty %}
@@ -31,8 +31,25 @@
     </div>
     {% endif %}
 
+    {% if post.story_kind == 'curated' %}
+    <div class="author__a">
+        {% if author.mug_shot is not empty %}
+            <img src="{{ author.mug_shot.url|resize(134,134) }}" class="author__portrait" alt="{{ author.mug_shot._wp_attachment_image_alt }}">
+        {% else %}
+            <img src="/{{ theme_dir }}/img/placeholder.jpg" class="author__portrait" alt="">
+        {% endif %}
+    </div>
+    {% endif %}
+
     <div class="author__b">
-        <h2 class="hd-n author__byline"><a href="{{ author.author_page }}"><span class="author__byline__prefix">{{ (post.story_kind != 'curated' or post.story_kind is empty)? "by" : "curated by" }}</span> {{ author.display_name }}</a></h2>
+        <h2 class="hd-n author__byline"><a href="{{ author.author_page }}">
+                {% if post.story_kind != 'curated' or post.story_kind is empty %}
+                    <span class="author__byline__prefix">by</span>
+                {% endif %}
+
+                {{ author.display_name }}
+        </a></h2>
+
         {% if post.story_kind != 'curated' or post.story_kind is empty %}<p class="author__bio">{{function('truncate', author.description, 40, 200, author.author_page)}}</p>{% endif %}
     </div>
 </div>

@@ -353,6 +353,11 @@
   margin-bottom: 1.2rem;
   width: 13.4rem;
   height: 13.4rem;
+
+  &.author__portrait--curated {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 .author__url {
