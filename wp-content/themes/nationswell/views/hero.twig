@@ -5,7 +5,7 @@
         <div class="hero hero--story hero--image {% if post.hero_type == 'cover' %} hero--cover {% endif %}" {% if post.hero_type != 'small' %} style="background-image: url({{ item.url|resize(1300, 600) }});" {% endif %}>
 
             {% if post.hero_type == 'small' %}
-            <img src="{{ item.url|resize(600) }}" alt="{{ item.alt }}"/>
+            <img src="{{ item.url|resize(800) }}" alt="{{ item.alt }}"/>
             {% endif %}
 
             {% if post.hero_type == 'cover' %}

@@ -2,6 +2,10 @@
   max-height: 42.6rem;
   margin-bottom: 8.2rem;
 
+  .story__main-column & {
+    margin-bottom: 2.2rem;
+  }
+
   &.hero--image {
     height: auto;
     padding-bottom: 30%;
@@ -10,6 +14,17 @@
 
   &.hero--image,
   &.hero--video {
+
+    .story__main-column & {
+      padding-bottom: 0;
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+    }
+
     .hero-information {
       background-color: $white;
       padding-top: 1.2rem;
@@ -17,9 +32,26 @@
       min-height: 3.5rem;
       max-height: 3.5rem;
 
+      .story__main-column & {
+        max-height: none;
+        min-height: none;
+        position: static;
+        bottom: 0;
+
+        .container {
+          padding: 0;
+        }
+
+      }
+
       &.is-long {
         &:hover {
           background-color: $ns_navy6;
+
+          .story__main-column & {
+            background-color: transparent;
+          }
+
         }
 
         &.is-open {
