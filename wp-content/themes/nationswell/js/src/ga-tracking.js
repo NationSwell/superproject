@@ -1,6 +1,6 @@
 (function(){
     function track() {
-        if(_gaq){
+        if (typeof _gaq != "undefined") {
             _gaq.push(['_trackEvent'].concat(arguments));
         }
     }
