@@ -44,6 +44,7 @@
 .river {
   .story-teases {
     @include span-columns(8);
+    min-height: 25px;
   }
 
   &.river--one-col {
