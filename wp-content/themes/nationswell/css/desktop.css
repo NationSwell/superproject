@@ -3418,12 +3418,13 @@ hr {
   float: left;
   margin-right: 1.23457%;
   width: 66.25514%;
+  min-height: 25px;
 }
 /* line 33, ../scss/neat/grid/_span-columns.scss */
 .river .story-teases:last-child {
   margin-right: 0;
 }
-/* line 50, ../scss/partials/desktop/_grid.scss */
+/* line 51, ../scss/partials/desktop/_grid.scss */
 .river.river--one-col .story--tease {
   display: block;
   float: left;
@@ -3434,7 +3435,7 @@ hr {
 .river.river--one-col .story--tease:last-child {
   margin-right: 0;
 }
-/* line 56, ../scss/partials/desktop/_grid.scss */
+/* line 57, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col li {
   display: block;
   float: left;
@@ -3453,7 +3454,7 @@ hr {
 .river.river--two-col li:nth-child(2n+1) {
   clear: left;
 }
-/* line 61, ../scss/partials/desktop/_grid.scss */
+/* line 62, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col .story--tease {
   display: block;
   float: left;
@@ -3464,12 +3465,12 @@ hr {
 .river.river--two-col .story--tease:last-child {
   margin-right: 0;
 }
-/* line 64, ../scss/partials/desktop/_grid.scss */
+/* line 65, ../scss/partials/desktop/_grid.scss */
 .river.river--two-col .story--tease header {
   margin-top: -1.2rem;
 }
 
-/* line 72, ../scss/partials/desktop/_grid.scss */
+/* line 73, ../scss/partials/desktop/_grid.scss */
 .sidebar {
   display: block;
   float: left;
@@ -3481,7 +3482,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 77, ../scss/partials/desktop/_grid.scss */
+/* line 78, ../scss/partials/desktop/_grid.scss */
 .story__sticky {
   display: block;
   float: left;
@@ -3493,7 +3494,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 81, ../scss/partials/desktop/_grid.scss */
+/* line 82, ../scss/partials/desktop/_grid.scss */
 .story__main-column {
   display: block;
   float: left;
@@ -3505,7 +3506,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 86, ../scss/partials/desktop/_grid.scss */
+/* line 87, ../scss/partials/desktop/_grid.scss */
 .static__main-column {
   display: block;
   float: left;
@@ -3517,7 +3518,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 92, ../scss/partials/desktop/_grid.scss */
+/* line 93, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption {
   display: block;
   float: left;
@@ -3528,11 +3529,11 @@ hr {
 .multimedia .caption:last-child {
   margin-right: 0;
 }
-/* line 95, ../scss/partials/desktop/_grid.scss */
+/* line 96, ../scss/partials/desktop/_grid.scss */
 .multimedia .caption + .credit {
   margin-left: 0%;
 }
-/* line 100, ../scss/partials/desktop/_grid.scss */
+/* line 101, ../scss/partials/desktop/_grid.scss */
 .multimedia .credit {
   display: block;
   float: left;
@@ -3545,7 +3546,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 108, ../scss/partials/desktop/_grid.scss */
+/* line 109, ../scss/partials/desktop/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -3557,7 +3558,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 115, ../scss/partials/desktop/_grid.scss */
+/* line 116, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -3568,7 +3569,7 @@ hr {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 118, ../scss/partials/desktop/_grid.scss */
+/* line 119, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -3580,7 +3581,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 126, ../scss/partials/desktop/_grid.scss */
+/* line 127, ../scss/partials/desktop/_grid.scss */
 .prev-next li {
   display: block;
   float: left;

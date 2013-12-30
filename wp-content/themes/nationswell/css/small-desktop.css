@@ -209,27 +209,28 @@
   -webkit-box-flex: 1;
   width: auto;
   max-width: 66.25514%;
+  min-height: 25px;
 }
-/* line 248, ../scss/small-desktop.scss */
+/* line 249, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
 }
-/* line 255, ../scss/small-desktop.scss */
+/* line 256, ../scss/small-desktop.scss */
 .river.river--one-col .story-teases .story__feature {
   width: 50%;
 }
 
-/* line 262, ../scss/small-desktop.scss */
+/* line 263, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal .story-list li {
   margin-right: 3.82%;
 }
 
-/* line 266, ../scss/small-desktop.scss */
+/* line 267, ../scss/small-desktop.scss */
 .author__a {
   float: none;
 }
 
-/* line 270, ../scss/small-desktop.scss */
+/* line 271, ../scss/small-desktop.scss */
 .author__b {
   margin-top: 2.2rem;
   padding-left: 0;

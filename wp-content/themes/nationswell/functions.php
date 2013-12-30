@@ -2,6 +2,8 @@
 
 define('VERSION', file_get_contents(get_template_directory() . '/version.txt'));
 
+
+
 if (WP_DEBUG && WP_DEBUG_DISPLAY)
 {
     ini_set('error_reporting', E_ALL & ~E_STRICT & ~E_DEPRECATED);
@@ -35,6 +37,8 @@ function yoast_wpseo_title($title)
 function add_to_context($data)
 {
     $data['js_main'] = 'combined' . (WP_DEBUG ? '' : '.min') . '.js';
+    $data['version'] = VERSION;
+    $data['static_dir'] = '/static/' . VERSION;
 
     /* this is where you can add your own data to Timber's context object */
     $data['menu_main'] = new TimberMenu('menu_main');
@@ -411,4 +415,15 @@ function create_initial_pages() {
         }
 
     };
+}
+
+add_action('generate_rewrite_rules', 'ns_add_rewrites');
+
+function ns_add_rewrites($content) {
+    global $wp_rewrite;
+    $ns_new_non_wp_rules = array(
+        'static/\d+/(css|js)/(.*)'          => 'wp-content/themes/nationswell/$1/$2',
+    );
+    $wp_rewrite->non_wp_rules = array_merge($wp_rewrite->non_wp_rules, $ns_new_non_wp_rules);
+    return $content;
 }
