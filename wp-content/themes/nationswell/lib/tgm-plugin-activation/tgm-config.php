@@ -276,6 +276,16 @@ function my_theme_register_required_plugins()
             'external_url' => '',
         ),
         array(
+            'name' => 'Automatic Facebook Cache Cleaner',
+            'slug' => 'automatic-facebook-url-linter',
+            'source' => get_stylesheet_directory() . '/lib/plugins/automatic-facebook-cache-cleaner.zip',
+            'required' => true,
+            'version' => '',
+            'force_activation' => false,
+            'force_deactivation' => false,
+            'external_url' => '',
+        ),
+        array(
             'name' => 'Google Analytics Dashboard',
             'slug' => 'google-analytics-dashboard',
             'source' => get_stylesheet_directory() . '/lib/plugins/google-analytics-dashboard.2.0.5.zip',
