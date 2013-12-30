@@ -422,11 +422,10 @@ add_action('generate_rewrite_rules', 'ns_add_rewrites');
 function ns_add_rewrites($content) {
     global $wp_rewrite;
     $ns_new_non_wp_rules = array(
-        '/static/\d+/(css|js)/(.*)'          => 'wp-content/themes/nationswell/$1/$2',
+        'static/\d+/(css|img|fonts|js)/(.*)'          => 'wp-content/themes/nationswell/$1/$2',
     );
-    
+
     $wp_rewrite->non_wp_rules = array_merge($wp_rewrite->non_wp_rules, $ns_new_non_wp_rules);
-    $wp_rewrite->flush_rules();
 
     return $content;
 }
