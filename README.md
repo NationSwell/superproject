@@ -1,7 +1,6 @@
-nationswell
+NationSwell
 ===========
 
------
 #### Dependencies
 
 1. git `http://git-scm.com/book/en/Getting-Started-Installing-Git`
@@ -21,6 +20,8 @@ nationswell
    ````
 
 -----
+
+#### Setup
 
 1. Install Vagrant
     http://www.vagrantup.com/
