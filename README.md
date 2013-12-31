@@ -25,7 +25,7 @@ nationswell
 1. Install virtualbox https://www.virtualbox.org/
 
 2. Install Vagrant
-    http://www.vagrantup.com/
+   http://www.vagrantup.com/
 
 3. Install the vagrant-hostsupdater plugin `vagrant plugin install vagrant-hostsupdater`
 
@@ -45,25 +45,27 @@ nationswell
 
 11. `rm -rf nationswell`
 
-12. `cd wp-content/themes/nationswell` npm install grunt dependencies
+12. `cd wp-content/themes/nationswell` 
 
-13. From `wp-content/themes/nationswell` run `grunt` then `grunt watch`
+13. `npm install grunt dependencies`
 
-14. `vagrant up --provision` the provision flag only needs to be used the first time you vagrant up
+14. From `wp-content/themes/nationswell` run `grunt` then `grunt watch`
 
-15. Wordpress Export from Staging or Produciton http://local.wordpress.dev/wp-admin/export.php.
+15. `vagrant up --provision` use the --provision flag once, the first time you vagrant up.
 
-16. Import the Export file into you local. Make sure to check download images and attachments during the import, otherwise you will not have any images. http://local.wordpress.dev/wp-admin/admin.php?import=wordpress
+16. Wordpress Export from Staging or Production http://local.wordpress.dev/wp-admin/export.php.
 
-17. Go to http://local.wordpress.dev/wp-admin/admin.php?page=acf-options. Click 'Save Options'. Then fill out any unconfigured options needed on the options page
+17. Import the export file into your local Wordpress install. Make sure to specify to download images and attachments during the import, otherwise posts will lack images. 
+   http://local.wordpress.dev/wp-admin/admin.php?import=wordpress
 
-18. `vagrant ssh`, then access `/etc/nginx/nginx-wp-common.conf`
+18. Go to http://local.wordpress.dev/wp-admin/admin.php?page=acf-options. Click 'Save Options'. Then fill out any un-configured options needed and re-save.
 
-19. Add this nginx location directive to nginx-wp-common.conf directly above `location ~ \.php$ {`
+19. `vagrant ssh`, then access `/etc/nginx/nginx-wp-common.conf`
+
+20. Add this nginx location directive to nginx-wp-common.conf directly above `location ~ \.php$ {`
 
 ````
 location ~ ^/static/\d+/(js|fonts|img|css)/(.*)$ {
   try_files $uri $uri/ /wp-content/themes/nationswell/$1/$2;
 }
 ````
-
