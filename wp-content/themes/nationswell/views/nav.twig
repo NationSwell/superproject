@@ -31,9 +31,9 @@
 
     <div id="more-stories" class="collapse z2 hide_mobile">
         <div class="container">
-            <ul class="category-list">
+            <ul class="category-list" data-module='{"name": "nav:categories"}'>
                 {% for item in menu_main.get_items %}
-                    <li><a class="category-list__category" href="{{item.get_path}}">{{item.title}}</a></li>
+                    <li><a class="category-list__category" href="{{item.get_path}}" data-track='{"position": {{ loop.index }}, '>{{item.title}}</a></li>
                 {% endfor %}
             </ul>
 

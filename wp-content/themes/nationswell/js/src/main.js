@@ -763,9 +763,7 @@
         }
 
 
-        $body.on('click', '[data-track]', function(event){
-
-            event.preventDefault();
+        $body.on('click', '[data-track]', function(){
 
             var $target = $(this),
                 module = getModule($target),
