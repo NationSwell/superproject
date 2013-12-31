@@ -1,4 +1,4 @@
-<div class="read-next">
+<div class="read-next" data-module='{"name": "more-stories"}'>
     <div class="container">
         <h3 class="hd-g read-next__heading">{{ more_stories_heading_prefix }}</h3>
 
@@ -6,7 +6,7 @@
             {% for story in post.more_stories %}
                 <li>
                     <article class="story story--tease">
-                        <a href="{{ story.permalink }}" class="link-wrapper">
+                        <a href="{{ story.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>
                             <figure class="story__feature fl">
                                 <img src="{{ story.thumbnail.src|resize(600, 330) }}" alt="{{ story.thumbnail._wp_attachment_image_alt }}"/>
                             </figure>
