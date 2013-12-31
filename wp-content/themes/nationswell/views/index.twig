@@ -85,10 +85,6 @@
         </div>
     </div>
 
-    {% if more %}
-        <div class="btn-container">
-            <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">{{ load_more_button_text }}</a>
-        </div>
-    {% endif %}
+    {% include 'more-button.twig' with {'module_name': 'home' } %}
 
 {% endblock %}
