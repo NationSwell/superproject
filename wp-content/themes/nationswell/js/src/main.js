@@ -73,6 +73,9 @@
                 setTimeout(function () {
                     $(that).addClass('is-visible');
                     $body.addClass('is-locked');
+
+                    events.trigger("modal-open", [$(that).data("modal")]);
+
                 }, 1500);
 
             }
@@ -104,9 +107,9 @@
                         fitTakeAction($modal);
                     });
                 }
-
                 $modal.addClass('is-visible');
                 /*$body.addClass('is-locked');*/
+                events.trigger("modal-open", [$modal.data("modal")]);
             }
 
             e.preventDefault();
@@ -116,6 +119,8 @@
         // disabling modals
         $("[data-modal]").on("disable", function (event, expireDuration) {
             event.stopPropagation();
+
+            events.trigger("modal-disable", [$(this).data("modal")]);
 
             $.cookie($(this).data("modal"), 'disabled', { expires: expireDuration, path: '/' });
         });
@@ -136,8 +141,10 @@
             $(window).off('.resizeModal');
 
             if ($(this).data('modal-disable')) {
-                $("[data-modal]:visible").trigger("disable", [ $(this).data('modal-disable') ]);
+                $modal.trigger("disable", [ $(this).data('modal-disable') ]);
             }
+
+            events.trigger("modal-close", [$modal.data("modal")]);
         });
 
         // clearing textarea placeholder text

@@ -21,24 +21,36 @@
     });
 
     events.on('nav-search-open', function(e, module){
-        track('search', 'open', module.name);
+        track(module.name, 'open', 'search');
     });
 
 
     events.on('nav-more-stories-open', function(e, module){
-        track('more-stories', 'open', module.name);
+        track(module.name, 'open', 'more-stories');
     });
 
 
     events.on('nav-subscribe-open', function(e, module){
-        track('newsletter', 'open', module.name);
+        track(module.name, 'open', 'subscribe');
     });
 
     events.on('newsletter-subscribed', function(e, module){
-        track('newsletter', 'subscribed', module.name);
+        track(module.name, 'subscribe', 'success');
     });
 
     events.on('newsletter-subscribe-fail', function(e, module, resp){
-        track('newsletter', 'subscribe', module.name, resp.msg);
+        track(module.name, 'subscribe', 'fail');
+    });
+
+    events.on('modal-open', function(e, name){
+        track("modal:" + name, "open");
+    });
+
+    events.on('modal-close', function(e, name){
+        track("modal:" + name, "close");
+    });
+
+    events.on('modal-disable', function(e, name){
+        track("modal:" + name, "disable");
     });
 })();
