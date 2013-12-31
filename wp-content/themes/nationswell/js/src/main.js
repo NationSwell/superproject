@@ -173,7 +173,7 @@
 
         $("[data-flyout-action='close']").on('click', function () {
             var $flyout = $(this).closest('#flyout');
-            $flyout.remove();
+            $flyout.hide();
             $.cookie('flyout', 'disabled', { expires: 1, path: '/' });
         });
 
