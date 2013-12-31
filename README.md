@@ -1,6 +1,7 @@
-NationSwell
+nationswell
 ===========
 
+-----
 #### Dependencies
 
 1. git `http://git-scm.com/book/en/Getting-Started-Installing-Git`
@@ -21,44 +22,50 @@ NationSwell
 
 -----
 
-#### Setup
+1. Install virtualbox https://www.virtualbox.org/
 
-1. Install Vagrant
-    http://www.vagrantup.com/
+2. Install Vagrant
+   http://www.vagrantup.com/
 
-2. Install the vagrant-hostsupdater plugin `vagrant plugin install vagrant-hostsupdater`
+3. Install the vagrant-hostsupdater plugin `vagrant plugin install vagrant-hostsupdater`
 
-2. `git clone https://github.com/10up/varying-vagrant-vagrants nationswell`
+4. `git clone https://github.com/10up/varying-vagrant-vagrants nationswell`
 
-3. `cd nationswell/www/wordpress-default`
+5. `cd nationswell/www/wordpress-default`
 
-4. `git clone https://github.com/ronik-design/nationswell.git`
+6. `git clone https://github.com/ronik-design/nationswell.git`
 
-5. `cd nationswell`
+7. `cd nationswell`
 
-6. `mv .git ..`
+8. `mv .git ..`
 
-7. `cd ..`
+9. `cd ..`
 
-8. `git reset HEAD --hard`
+10. `git reset HEAD --hard`
 
-9. `rm -rf nationswell`
+11. `rm -rf nationswell`
 
-10. `cd wp-content/themes/nationswell` npm install grunt dependencies
+12. `cd wp-content/themes/nationswell` 
 
-11. From `wp-content/themes/nationswell` run `grunt` then `grunt watch`
+13. `npm install grunt dependencies`
 
-11. Wordpress Export from Staging or Produciton http://local.wordpress.dev/wp-admin/export.php.
+14. From `wp-content/themes/nationswell` run `grunt` then `grunt watch`
 
-12. Import the Export file into you local. Make sure to check download images and attachments during the import, otherwise you will not have any images. http://local.wordpress.dev/wp-admin/admin.php?import=wordpress
+15. `vagrant up --provision` use the --provision flag once, the first time you vagrant up.
 
-13. Go to http://local.wordpress.dev/wp-admin/admin.php?page=acf-options. Click 'Save Options'. Then fill out any unconfigured options needed on the options page
+16. Wordpress Export from Staging or Production http://local.wordpress.dev/wp-admin/export.php.
 
-14. Add this nginx location directive to /etc/nginx/nginx-wp-common.conf directly above `location ~ \.php$ {`
+17. Import the export file into your local Wordpress install. Make sure to specify to download images and attachments during the import, otherwise posts will lack images. 
+   http://local.wordpress.dev/wp-admin/admin.php?import=wordpress
+
+18. Go to http://local.wordpress.dev/wp-admin/admin.php?page=acf-options. Click 'Save Options'. Then fill out any un-configured options needed and re-save.
+
+19. `vagrant ssh`, then access `/etc/nginx/nginx-wp-common.conf`
+
+20. Add this nginx location directive to nginx-wp-common.conf directly above `location ~ \.php$ {`
 
 ````
 location ~ ^/static/\d+/(js|fonts|img|css)/(.*)$ {
   try_files $uri $uri/ /wp-content/themes/nationswell/$1/$2;
 }
 ````
-
