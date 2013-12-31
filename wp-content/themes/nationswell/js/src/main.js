@@ -764,11 +764,19 @@
 
 
         $body.on('click', '[data-track]', function(){
+
             var $target = $(this),
                 module = getModule($target),
-                action = $target.data('track');
+                config = $target.data('track'),
+                tag = $target.prop("tagName"),
 
-            events.trigger('track',[module, action]);
+                data = $.extend({
+                    moduleName: module ? module.name : '',
+                    url:  tag === 'A' ? $target.attr('href') : '',
+                    action: 'click'
+                }, config);
+
+            events.trigger('track',[data]);
         });
 
         function getModule ($element){

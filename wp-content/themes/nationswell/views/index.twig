@@ -2,10 +2,10 @@
 
 {% block content %}
     {% if featured is not empty %}
-    <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--single">
+    <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--single" data-module='{"name": "featured"}'>
         {% for post in featured %}
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});">
-                <a href="{{ post.permalink }}" class="link-wrapper">
+                <a href="{{ post.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>
                     {% if post.content_type in ['video','audio','photo','listory'] %}
                         <div class="type-indicator-container">
                             <span class="icon icon_{{ post.content_type }} type-indicator"></span>
@@ -46,10 +46,10 @@
 
     {% if series_carousel is not empty %}
 
-        {% include 'carousel-series.twig'  with {'module_name': 'series-carousel' } %}
+        {% include 'carousel-series.twig'  with {'module_name': 'carousel:series' } %}
 
     {% elseif stories_carousel_b is not empty %}
-        {% include 'carousel-stories.twig' with {'module_name': 'stories-carousel-1', 'stories_carousel': stories_carousel_b} only %}
+        {% include 'carousel-stories.twig' with {'module_name': 'carousel:carousel-1', 'stories_carousel': stories_carousel_b} only %}
 
     {% endif %}
 
@@ -68,7 +68,7 @@
     </div>
 
     {% if stories_carousel is not empty %}
-        {% include 'carousel-stories.twig' with {'module_name': 'stories-carousel-2' } %}
+        {% include 'carousel-stories.twig' with {'module_name': 'carousel:stories-2' } %}
     {% endif %}
 
     <div class="river river--one-col">
@@ -85,10 +85,6 @@
         </div>
     </div>
 
-    {% if more %}
-        <div class="btn-container">
-            <a href="{{ more }}" class="btn btn--load-more icon icon_load-more">{{ load_more_button_text }}</a>
-        </div>
-    {% endif %}
+    {% include 'more-button.twig' with {'module_name': 'home' } %}
 
 {% endblock %}
