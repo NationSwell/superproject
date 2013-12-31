@@ -1,8 +1,31 @@
 nationswell
 ===========
 
+-----
+#### Dependencies
+
+1. git `http://git-scm.com/book/en/Getting-Started-Installing-Git`
+
+2. ruby
+
+3. npm
+
+4. brew `http://brew.sh/`
+
+5. grunt `http://gruntjs.com/installing-grunt`
+
+6. fontforge
+   ````
+   brew install fontforge ttfautohint
+   npm install grunt-webfont --save-dev
+   ````
+
+-----
+
 1. Install Vagrant
     http://www.vagrantup.com/
+
+2. Install the vagrant-hostsupdater plugin `vagrant plugin install vagrant-hostsupdater`
 
 2. `git clone https://github.com/10up/varying-vagrant-vagrants nationswell`
 
