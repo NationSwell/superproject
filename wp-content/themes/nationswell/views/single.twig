@@ -69,11 +69,11 @@
 
                 {% include('comments.twig') %}
 
-                <ul class="prev-next cf">
+                <ul class="prev-next cf" data-module='{"name": "next-prev"}'>
                     {% if post.next is not empty %}
                         <li>
                             <article class="story story--link">
-                                <a href="{{ post.prev.permalink }}" class="link-wrapper">
+                                <a href="{{ post.prev.permalink }}" class="link-wrapper" data-track='{"action": "previous"}'>
                                     <div class="prev-next__link prev-next__link--prev cf">
                                         <span class="icon icon_arrow-circle-left fl"></span> Previous Story
                                     </div>
@@ -85,7 +85,7 @@
                     {% if post.next is not empty %}
                         <li>
                             <article class="story story--link">
-                                <a href="{{ post.next.permalink }}" class="link-wrapper">
+                                <a href="{{ post.next.permalink }}" class="link-wrapper" data-track='{"action": "next"}'>
                                     <div class="prev-next__link prev-next__link--next cf">
                                         <span class="icon icon_arrow-circle-right fr"></span> Next Story
                                     </div>
