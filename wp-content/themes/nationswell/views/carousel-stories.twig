@@ -1,5 +1,5 @@
 {% if stories_carousel|length > 1 %}
-<div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek" data-module='{"name": {{ module_name|json_encode() }}, "category":"carousel"}'>
+<div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek" data-module='{"name": {{ module_name|json_encode() }}}'>
     <ul class="carousel__items">
         {% for post in stories_carousel %}
             <li class="carousel-item carousel-item-{{ post.content_type }}"><a href="{{ post.permalink }}" class="link-wrapper ">
@@ -30,11 +30,11 @@
 
     <ul class="carousel__controls hide_mobile">
         <li class="carousel__control carousel__control--prev">
-            <a class="icon icon_arrow-circle-left" data-track='{"name": "previous"}'></a>
+            <a class="icon icon_arrow-circle-left" data-track='{"action": "previous"}'></a>
         </li>
 
         <li class="carousel__control carousel__control--next">
-            <a class="icon icon_arrow-circle-right" data-track='{"name": "next"}'></a>
+            <a class="icon icon_arrow-circle-right" data-track='{"action": "next"}'></a>
         </li>
     </ul>
 </div>

@@ -1,14 +1,19 @@
 (function(){
     function track() {
         if (typeof _gaq != "undefined") {
-            var args =  [].splice.call(arguments,0),
-                event = ['_trackEvent'].concat(args);
+            var event = ['_trackEvent'], i, n;
+            for(i = 0, n = arguments.length; i < n; i++){
+                if(arguments[i] !== undefined) {
+                    event.push(arguments[i]);
+                }
+            }
+            console.log(event);
             _gaq.push(event);
         }
     }
 
-    events.on('track', function(e, module, action) {
-        track(action.category || module.category, action.name, module.name);
+    events.on('track', function(e, data) {
+        track(data.moduleName, data.action, data.label || data.url, data.value || data.position);
     });
 
     events.on('nav-open', function(){
