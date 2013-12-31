@@ -69,3 +69,5 @@ location ~ ^/static/\d+/(js|fonts|img|css)/(.*)$ {
   try_files $uri $uri/ /wp-content/themes/nationswell/$1/$2;
 }
 ````
+
+21. Restart nginx `sudo /etc/init.d/nginx restart`

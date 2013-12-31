@@ -711,3 +711,11 @@ hr {
   background-color: $gray5;
   margin: 2rem 0 1.4rem;
 }
+
+/* read more */
+.read-more {
+  color: $ns_blue1;
+  font-weight: 500;
+
+  @include transition(all 0.15s ease-in-out);
+}
