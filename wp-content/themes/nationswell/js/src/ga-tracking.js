@@ -70,4 +70,8 @@
         track("story:comments", "create-comment", href, commentID);
     });
 
+    events.on('twitter', function(e, module, type, label){
+        track(module.name, type, label);
+    });
+
 })();

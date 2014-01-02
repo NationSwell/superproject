@@ -152,9 +152,40 @@
             $(this).empty().unbind('.textareaClear');
         });
 
+        // Initialize Twitter API
+        window.twttr = (function (d,s,id) {
+            var t, js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+            js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+            return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));
+
+        // Subscribe to Twitter Events
+        twttr.ready(function (twttr) {
+            var event_names = {
+                "click": "",
+                "tweet": "",
+                "retweet": "source_tweet_id",
+                "follow": "screen_name",
+                "favorite": "tweet_id"
+            };
+
+            for (var event_name in event_names) {
+                if (event_names.hasOwnProperty(event_name)) {
+                    twttr.events.bind(event_name, function (intent_event) {
+                        if (intent_event) {
+                            var label = intent_event.type === "click" ? intent_event.region : (intent_event.data) ? intent_event.data[event_names[intent_event.type]] : "";
+                            events.trigger('twitter', [getModule($(intent_event.target)), intent_event.type, label]);
+                        }
+                    });
+                }
+            }
+        });
 
         // Subscribe to Facebook Like Event
         // Track Like Event
+        // Track UnLike Event
+        // Track Comment: Create
         // Disable the Flyout
         window.fbAsyncInit = function() {
             FB.Event.subscribe('edge.create',
@@ -182,7 +213,7 @@
             setTimeout(function () {
                 $('#flyout').toggleClass('is-visible');
                 events.trigger('flyout-open',[getModule($('#flyout'))]);
-            }, 0);
+            }, 30000);
 
         }
 
