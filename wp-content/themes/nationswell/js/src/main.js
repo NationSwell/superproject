@@ -153,13 +153,27 @@
         });
 
 
-        // disable Like Panel
+        // Subscribe to Facebook Like Event
+        // Track Like Event
+        // Disable the Flyout
         window.fbAsyncInit = function() {
             FB.Event.subscribe('edge.create',
                 function(href, widget) {
-                    $.cookie('flyout', 'disabled', { expires: 1, path: '/' });
+                    events.trigger('facebook-like', [$(widget).data("module"), href]);
+
+                    $.cookie('flyout', 'disabled', { expires: 5, path: '/' });
                 }
             );
+
+            FB.Event.subscribe('edge.remove',
+                function(href, widget){
+                    events.trigger('facebook-unlike', [$(widget).data("module"), href]);
+            });
+
+            FB.Event.subscribe('comment.create',
+                function(href, commentID){
+                    events.trigger('facebook-comment', [href, commentID]);
+            });
         };
 
 
@@ -168,7 +182,7 @@
             setTimeout(function () {
                 $('#flyout').toggleClass('is-visible');
                 events.trigger('flyout-open',[getModule($('#flyout'))]);
-            }, 30000);
+            }, 0);
 
         }
 

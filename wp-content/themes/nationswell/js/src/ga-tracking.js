@@ -58,16 +58,16 @@
         track(module.name, "open");
     });
 
-    events.on('facebook-like', function(){
-        track("");
+    events.on('facebook-like', function(e, module, href){
+        track(module.name, 'like', '', href);
     });
 
-    events.on('facebook-unlike', function(){
-        track();
+    events.on('facebook-unlike', function(e, module, href){
+        track(module.name, 'unlike', '', href);
     });
 
-    events.on('facebook-comment', function(){
-        track();
+    events.on('facebook-comment', function(e, href, commentID){
+        track("story:comments", "create-comment", href, commentID);
     });
 
 })();
