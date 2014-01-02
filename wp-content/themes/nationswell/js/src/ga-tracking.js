@@ -53,4 +53,21 @@
     events.on('modal-disable', function(e, name){
         track("modal:" + name, "disable");
     });
+
+    events.on('flyout-open', function(e, module){
+        track(module.name, "open");
+    });
+
+    events.on('facebook-like', function(){
+        track("");
+    });
+
+    events.on('facebook-unlike', function(){
+        track();
+    });
+
+    events.on('facebook-comment', function(){
+        track();
+    });
+
 })();
