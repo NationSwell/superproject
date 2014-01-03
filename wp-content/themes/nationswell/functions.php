@@ -447,7 +447,5 @@ function gtc_add_tracking_list_item ($html)
 add_filter('gtc_list_output', 'gtc_modify_list_output');
 
 function gtc_modify_list_output($html) {
-//    error_log($html);
-
-    return $html;
+    return preg_replace('/<ol>/', '<ol data-module=\'{"name": "sidebar:popular"}\'>', $html, 1);
 }
