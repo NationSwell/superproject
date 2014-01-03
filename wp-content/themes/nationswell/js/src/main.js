@@ -120,7 +120,7 @@
         $("[data-modal]").on("disable", function (event, expireDuration) {
             event.stopPropagation();
 
-            events.trigger("modal-disable", [$(this).data("modal")]);
+            events.trigger("modal-disable", [$(this).data("modal"), expireDuration]);
 
             $.cookie($(this).data("modal"), 'disabled', { expires: expireDuration, path: '/' });
         });

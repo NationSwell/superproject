@@ -50,8 +50,8 @@
         track("modal:" + name, "close");
     });
 
-    events.on('modal-disable', function(e, name){
-        track("modal:" + name, "disable");
+    events.on('modal-disable', function(e, name, duration){
+        track("modal:" + name, "disable", "", duration);
     });
 
     events.on('flyout-open', function(e, module){
