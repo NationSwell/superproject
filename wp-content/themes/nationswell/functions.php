@@ -429,3 +429,25 @@ function ns_add_rewrites($content) {
 
     return $content;
 }
+
+add_filter('gtc_list_item', 'gtc_add_tracking_list_item');
+function gtc_add_tracking_list_item ($html)
+{
+
+    if(preg_match('/href="([^"]+)">([^<]+)/', $html, $matches))
+    {
+        $url = $matches[1];
+        $title = $matches[2];
+        return '<li><a href="' . $url . '" data-track=\'{}\'>' . $title . '</a></li>';
+    }
+
+    return $html;
+}
+
+add_filter('gtc_list_output', 'gtc_modify_list_output');
+
+function gtc_modify_list_output($html) {
+//    error_log($html);
+
+    return $html;
+}
