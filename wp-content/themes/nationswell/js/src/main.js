@@ -213,7 +213,7 @@
             setTimeout(function () {
                 $('#flyout').toggleClass('is-visible');
                 events.trigger('flyout-open',[getModule($('#flyout'))]);
-            }, 0);
+            }, 30000);
 
         }
 
