@@ -539,6 +539,13 @@
   &.is-visible {
     right: 0;
   }
+
+  .flyout__disable {
+    color: $ns_blue1;
+    font-family: $gudea;
+    font-size: 1.5rem;
+    background: none;
+  }
 }
 
 /* subscribe status */

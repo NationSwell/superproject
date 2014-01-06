@@ -59,6 +59,18 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
             ),
             array (
+                'key' => 'field_52cb112aad84b',
+                'label' => 'Flyout Opt Out Button Text',
+                'name' => 'flyout_opt_out_button_text',
+                'type' => 'text',
+                'default_value' => 'don\'t show again',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array (
                 'key' => 'field_529617ac301b3',
                 'label' => 'Facebook Like Url',
                 'name' => 'facebook_like_url',

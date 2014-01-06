@@ -213,14 +213,16 @@
             setTimeout(function () {
                 $('#flyout').toggleClass('is-visible');
                 events.trigger('flyout-open',[getModule($('#flyout'))]);
-            }, 30000);
+            }, 0);
 
         }
 
         $("[data-flyout-action='close']").on('click', function () {
-            var $flyout = $(this).closest('#flyout');
+            var $flyout = $(this).closest('#flyout'),
+                expireDuration = $(this).data('flyout-disable');
             $flyout.hide();
-            $.cookie('flyout', 'disabled', { expires: 1, path: '/' });
+
+            $.cookie('flyout', 'disabled', { expires: expireDuration, path: '/' });
         });
 
         // expand/collapse header fields

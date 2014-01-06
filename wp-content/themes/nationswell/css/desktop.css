@@ -4648,9 +4648,16 @@ hr {
 #flyout.is-visible {
   right: 0;
 }
+/* line 543, ../scss/partials/desktop/_components.scss */
+#flyout .flyout__disable {
+  color: #0098d8;
+  font-family: "Gudea", Arial, sans-serif;
+  font-size: 1.5rem;
+  background: none;
+}
 
 /* subscribe status */
-/* line 545, ../scss/partials/desktop/_components.scss */
+/* line 552, ../scss/partials/desktop/_components.scss */
 .mc-email-status {
   font-size: 1.4rem;
   line-height: 1;
