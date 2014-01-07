@@ -74,7 +74,7 @@
                     $(that).addClass('is-visible');
                     $body.addClass('is-locked');
 
-                    events.trigger("modal-open", [$(that).data("modal")]);
+                    events.trigger("modal-open", [$(that).data("modal"), true]);
 
                 }, 1500);
 
@@ -109,7 +109,7 @@
                 }
                 $modal.addClass('is-visible');
                 /*$body.addClass('is-locked');*/
-                events.trigger("modal-open", [$modal.data("modal")]);
+                events.trigger("modal-open", [$modal.data("modal"), false]);
             }
 
             e.preventDefault();

@@ -42,12 +42,12 @@
         track(module.name, 'subscribe', 'fail');
     });
 
-    events.on('modal-open', function(e, name){
-        track("modal:" + name, "open");
+    events.on('modal-open', function(e, name, opt_noninteraction){
+        track("modal:" + name, "open", "", "", opt_noninteraction);
     });
 
     events.on('modal-close', function(e, name){
-        track("modal:" + name, "close");
+        track("modal:" + name, "close", "", "", true);
     });
 
     events.on('modal-disable', function(e, name, duration){
@@ -55,7 +55,7 @@
     });
 
     events.on('flyout-open', function(e, module){
-        track(module.name, "open");
+        track(module.name, "open", "", "", true);
     });
 
     events.on('facebook-like', function(e, module, href){
