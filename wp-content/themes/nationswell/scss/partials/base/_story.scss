@@ -499,6 +499,10 @@
     color: $ns_blue1;
     font-weight: $bold;
 
+    &:before {
+      color: $white;
+    }
+
     &:hover {
       color: $ns_red;
     }
