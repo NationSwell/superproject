@@ -514,22 +514,25 @@
                         $this.find('img').addClass('is-visible');
                     });
 
-
                     function highlight(items) {
+
+                        var $activeSlide = {};
+
                         if (isPeek) {
-                            var $activeSlide = items.filter(":eq(1)").addClass('active');
-
-                            if(isStory) {
-                                var activeSlideCaption = $activeSlide.data('item-caption'),
-                                    activeSlideCredit = $activeSlide.data('item-credit');
-
-                                activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
-                                activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
-
-                                isTallInfo();
-                            }
+                            $activeSlide = items.filter(":eq(1)").addClass('active');
                         } else {
+                            $activeSlide = items;
                             items.addClass('active');
+                        }
+
+                        if(isStory) {
+                            var activeSlideCaption = $activeSlide.data('item-caption'),
+                                activeSlideCredit = $activeSlide.data('item-credit');
+
+                            activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
+                            activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
+
+                            isTallInfo();
                         }
 
                         return items;
