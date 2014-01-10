@@ -106,6 +106,56 @@ if (function_exists("register_field_group")) {
                         'allorany' => 'all',
                     ),
                 ),
+                array (
+                    'key' => 'field_52d03d91c1fdf',
+                    'label' => 'Opt Out Expiration',
+                    'name' => 'modal_joinus_opt_out_expiration',
+                    'type' => 'number',
+                    'instructions' => 'The number of days that a user won\'t see a modal if they click opt-out',
+                    'conditional_logic' => array (
+                        'status' => 1,
+                        'rules' => array (
+                            array (
+                                'field' => 'field_528ecf1821ebf',
+                                'operator' => '==',
+                                'value' => '1',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                    'default_value' => '30',
+                    'placeholder' => 'x days',
+                    'prepend' => '',
+                    'append' => '',
+                    'min' => '',
+                    'max' => '',
+                    'step' => '',
+                ),
+                array (
+                    'key' => 'field_52d03dddc1fe0',
+                    'label' => 'Close Expiration',
+                    'name' => 'modal_joinus_close_expiration',
+                    'type' => 'number',
+                    'instructions' => 'The number of days that a user won\'t see a modal if they just close the modal',
+                    'conditional_logic' => array (
+                        'status' => 1,
+                        'rules' => array (
+                            array (
+                                'field' => 'field_528ecf1821ebf',
+                                'operator' => '==',
+                                'value' => '1',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                    'default_value' => '1',
+                    'placeholder' => 'x days',
+                    'prepend' => '',
+                    'append' => '',
+                    'min' => '',
+                    'max' => '',
+                    'step' => '',
+                ),
             ),
             'location' => array(
                 array(
