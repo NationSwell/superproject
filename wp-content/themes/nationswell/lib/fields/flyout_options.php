@@ -71,6 +71,30 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
             ),
             array (
+                'key' => 'field_52d04111b7b8e',
+                'label' => 'Flyout Facebook Opt Out Expiration',
+                'name' => 'flyout_facebook_opt_out_expiration',
+                'type' => 'number',
+                'conditional_logic' => array (
+                    'status' => 1,
+                    'rules' => array (
+                        array (
+                            'field' => 'field_5293ab9ca6467',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => '5',
+                'placeholder' => 'x days',
+                'prepend' => '',
+                'append' => '',
+                'min' => '',
+                'max' => '',
+                'step' => '',
+            ),
+            array (
                 'key' => 'field_529617ac301b3',
                 'label' => 'Facebook Like Url',
                 'name' => 'facebook_like_url',

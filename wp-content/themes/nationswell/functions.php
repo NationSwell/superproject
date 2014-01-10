@@ -90,6 +90,7 @@ function add_to_context($data)
         'flyout_header_text',
         'flyout_message_text',
         'flyout_opt_out_button_text',
+        'flyout_facebook_opt_out_expiration',
 
         'facebook_like_url',
         'main_menu_header',
