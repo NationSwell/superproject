@@ -34,6 +34,40 @@ if(function_exists("register_field_group"))
                     'allow_null' => 0,
                     'multiple' => 0,
                 ),
+//                array (
+//                    'key' => 'field_52cb01bc0f5e5',
+//                    'label' => 'Sources',
+//                    'name' => 'source_list',
+//                    'type' => 'repeater',
+//                    'conditional_logic' => array (
+//                        'status' => 1,
+//                        'rules' => array (
+//                            array (
+//                                'field' => 'field_52ab92a8a2c3a',
+//                                'operator' => '==',
+//                                'value' => 'curated',
+//                            ),
+//                        ),
+//                        'allorany' => 'all',
+//                    ),
+//                    'sub_fields' => array (
+//                        array (
+//                            'key' => 'field_52ab92e2a2c3b',
+//                            'label' => 'Source',
+//                            'name' => 'source',
+//                            'type' => 'website',
+//                            'column_width' => '',
+//                            'website_title' => 1,
+//                            'internal_link' => 1,
+//                            'output_format' => 0,
+//                            'default_value' => '',
+//                        ),
+//                    ),
+//                    'row_min' => '',
+//                    'row_limit' => '',
+//                    'layout' => 'table',
+//                    'button_label' => 'Add Source',
+//                ),
                 array (
                     'key' => 'field_52ab92e2a2c3b',
                     'label' => 'Source',

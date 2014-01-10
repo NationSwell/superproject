@@ -72,8 +72,9 @@ if (function_exists("register_field_group")) {
             ),
             array (
                 'key' => 'field_52d04111b7b8e',
-                'label' => 'Flyout Facebook Opt Out Expiration',
+                'label' => 'Opt Out Expiration',
                 'name' => 'flyout_facebook_opt_out_expiration',
+                'instructions' => 'The number of days that a user won\'t see a flyout if they click opt-out',
                 'type' => 'number',
                 'conditional_logic' => array (
                     'status' => 1,
