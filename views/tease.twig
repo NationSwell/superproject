@@ -1,0 +1,10 @@
+<article class="tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
+	{% block content %}
+		<h2 class="h2"><a href="{{post.get_path}}">{{ post.tout_title }}</a></h2>
+		<p>{{ post.tout_dek_text }}</p>
+
+		{% if post.get_thumbnail is not empty %}
+			<img src="{{post.get_thumbnail.get_url}}" alt="{{ post.get_thumbnail._wp_attachment_image_alt }}"/>
+		{% endif %}
+	{% endblock %}
+</article>

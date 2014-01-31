@@ -1,0 +1,143 @@
+#page-header {
+  height: 13rem;
+  width: 100%;
+
+  @include transition(all 0.15s ease-in-out);
+}
+
+/* logo and slogan */
+.site-logo {
+  img {
+    width: 30rem;
+  }
+
+  &.site-logo--slogan {
+    margin-top: 4.6rem;
+
+    .slogan {
+      margin-left: 3.6rem;
+    }
+  }
+}
+
+/* more stories toggle */
+.more-stories-toggle {
+  font-size: 6rem;
+  padding-top: 3.8rem;
+}
+
+/* more stories mobile panel */
+.more-stories-drawer {
+  background-color: $ns_navy2;
+  height: 100%;
+  width: 47rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+
+  .drawer-unit {
+    display: block;
+    padding: 4.2rem 3.2rem 4.2rem 6.2rem;
+
+    &.drawer-unit--dark {
+      background-color: $ns_navy1;
+    }
+  }
+
+  .site-logo {
+    display: block;
+    margin: 0 0 3.2rem;
+  }
+
+  #page-search {
+    position: relative;
+
+    [for='panel-search'] {
+      font-size: 3.4rem;
+      position: absolute;
+      left: 2rem;
+      top: 1.6rem;
+      color: $white;
+    }
+
+    #panel-search {
+      border: 0 none;
+      border-radius: 0;
+      position: relative;
+      background-color: #002130;
+      padding: 1.4rem;
+      padding-left: 6.4rem;
+      width: 100%;
+      color: $white;
+      font-size: 2.4rem;
+
+      label {
+        top: 1.4rem;
+        left: 1.4rem;
+        font-size: 3rem;
+      }
+    }
+
+  }
+
+
+  .trending-topics {
+    .trending-topics__list {
+      li {
+        display: block;
+        margin-top: 3.2rem;
+      }
+
+      .trending-topics__topic {
+        color: $white;
+        font-family: $montserrat;
+        font-size: 2.5rem;
+        font-weight: $regular;
+        text-transform: capitalize;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+
+  .categories {
+    .categories__list {
+      li {
+        display: block;
+        margin-top: 3.2rem;
+      }
+
+      .categories__category {
+        color: $white;
+        font-family: $montserrat;
+        font-size: 2.5rem;
+        font-weight: $regular;
+        text-ransform: capitalize;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+}
+
+/* mobile panel */
+body.panel--is-open {
+  #page-wrapper {
+    overflow-x: hidden;
+    right: 47rem;
+
+    #page-content {
+      pointer-events: none;
+      overflow: hidden;
+    }
+  }
+
+  #page-header {
+    background-color: $white;
+    right: 47rem;
+
+    .more-stories-toggle {
+      color: $ns_navy2;
+    }
+  }
+}

@@ -1,0 +1,258 @@
+.hero--story {
+  &.hero--image {
+    height: 42.6rem;
+    width: 100%;
+  }
+}
+
+.story--page {
+  .story__container {
+    > header {
+      .story__hed {
+        margin-bottom: 3.4rem;
+      }
+
+      .story__dek {
+        margin-bottom: 4.6rem;
+      }
+    }
+  }
+
+  .story__content {
+    margin-bottom: 7.2rem;
+
+    > p {
+      font-family: $gudea;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      margin-bottom: 2.2rem;
+
+      /* drop cap */
+      &:first-child:first-letter {
+        float: left;
+        font-family: $oswald ;
+        font-size: 7.8rem;
+        line-height: 1;
+        margin-right: 2.6rem;
+      }
+
+      a {
+        color: $ns_blue1;
+        font-weight: $bold;
+
+        &:hover {
+          color: $ns_red;
+        }
+      }
+    }
+  }
+}
+
+/* multimedia */
+.multimedia {
+  margin: 5rem 0;
+
+  .multimedia__content {
+    display: block;
+  }
+
+  figcaption {
+    margin-top: 1rem;
+  }
+
+  .credit {
+    text-align: right;
+  }
+
+  &.multimedia--audio {
+    .multimedia__content {
+      border-bottom: 1px solid $gray6;
+      padding-bottom: 2.2rem;
+    }
+  }
+}
+
+.multimedia__heading {
+  margin-bottom: 2.2rem;
+}
+
+/* sticky */
+.story__sticky {
+  display: block;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.sticky-social {
+  margin-bottom: 5rem;
+}
+
+.sticky-take-action {
+  background-color: $ns_navy2;
+  /* pragmatic, for z-index and reasonable vert-centering */
+  background-image: url(../img/take-action-flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.sticky-take-action__heading {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.sticky-take-action__action {
+  position: relative;
+  color: $white;
+  font-family: $gudea;
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+/* tags */
+.story__tags {
+  border-bottom: 3px solid $gray6;
+  margin-bottom: 5rem;
+  padding-bottom: 1.4rem;
+
+  .tags-list {
+    &:before {
+      content: 'View more NationSwell stories in:';
+      display: inline-block;
+      color: $gray1;
+      font-family: $gudea;
+      font-size: 1.6rem;
+      margin-right: 1.8rem;
+      vertical-align: middle;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}
+
+/* author */
+.author {
+  background-color: $gray7;
+  margin-bottom: 7.2rem;
+  padding: 2.6rem 3.4rem;
+}
+
+.author__portrait {
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.author__contact {}
+
+.author__a {
+  text-align: center;
+}
+
+.author__b {
+  padding-top: 0.6rem;
+  padding-left: 3.4rem;
+  overflow: hidden;
+}
+
+.author__url {
+  color: $ns_blue1;
+  text-align: center;
+  font-family: $gudea;
+  font-size: 1.4rem;
+  font-weight: $bold;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    color: $ns_red;
+  }
+}
+
+.author__social {
+  margin-top: 1.2rem;
+
+  li {
+    display: inline-block;
+    border-left: 1px solid $gray5;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+    &:first-child {
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+
+  .icon {
+    color: $gray4;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0.6;
+    vertical-align: middle;
+    height: 1.2rem;
+
+    &:hover {
+      color: $ns_blue1;
+    }
+  }
+}
+
+.author__byline {
+  &:before {
+    color: $ns_red;
+    content: 'Written by';
+    display: block;
+    font-family: $montserrat;
+    font-size: 1.8rem;
+    font-weight: $bold;
+    margin-bottom: 0.4rem;
+  }
+
+  margin-bottom: 1.4rem;
+}
+
+.author__bio {
+  color: $gray1;
+  font-family: $gudea;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+// social
+.story__social {
+  display: block;
+  margin-bottom: 7.2rem;
+}
+
+// take action module
+.module.take-action {
+  margin-bottom: 5rem;
+  padding-bottom: 3.4rem;
+
+  .take-action__heading {
+    text-align: center;
+    margin-bottom: 3.4rem;
+  }
+
+  .take-action__a {
+    float: left;
+    width: 25.6rem;
+  }
+
+  .take-action__b {
+    padding-left: 3.4rem;
+    overflow: hidden;
+  }
+
+  p {
+    color: $ns_black;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 2.2rem;
+  }
+}

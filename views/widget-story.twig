@@ -1,0 +1,17 @@
+<div class="module module--image-overlay module--sidebar featured-story cf"
+     style="background-image: url({{ post.thumbnail.src|resize(300) }});">
+    <article class="story story--tease story--featured">
+        <a href="{{ post.permalink }}" class="link-wrapper">
+            <header class="story__header">
+                <span class="rubric">{{ post.category }}</span>
+
+                <h2 class="hd-d story__hed">{{ post.post_title }}</h2>
+
+                <p class="story__dek">{{ post.dek }}</p>
+            </header>
+
+            {#<div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm.png" class="sponsor__logo"/>#}
+            {#</div>#}
+        </a>
+    </article>
+</div>

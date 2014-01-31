@@ -1,0 +1,15 @@
+<footer id="page-footer">
+    <div class="container">
+        <a href="#" class="site-logo site-logo--footer">
+            <img src="/{{ theme_dir }}/img/site-logo.png" alt=""/>
+        </a>
+
+        <ul class="footer-links">
+            {% for item in menu_footer.get_items %}
+                <li><a href="{{item.get_path}}" class="footer-links__link">{{item.title}}</a></li>
+            {% endfor %}
+        </ul>
+
+        <small class="copyright">All content copyright &copy;{{"now"|date('Y')}} NationSwell. All rights reserved.</small>
+    </div>
+</footer>

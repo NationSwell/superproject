@@ -1,0 +1,64 @@
+<div class="full-header no-swipe" data-module='{"name": "nav"}'>
+    <header id="page-header">
+        <div class="container">
+            <a href="/" class="site-logo site-logo--slogan fl">
+                <img src="/{{ theme_dir }}/img/site-logo-beta.png" alt="NationSwell Logo"/>
+                <span class="slogan hide_mobile">{{ site_tag_line }}</span>
+            </a>
+
+            <a href="#" class="toggle-collapse more-stories-toggle icon icon_hamburger fr" data-mobile-target="body" data-desktop-target="#more-stories"></a>
+
+            <ul class="social-links fr hide_mobile">
+                <li><a href="{{ nationswell_facebook }}" target="_blank" data-track='{"label": "facebook"}' class="icon icon_facebook social-links__link" target="_blank"></a></li>
+                <li><a href="{{ nationswell_twitter }}" target="_blank" data-track='{"label": "twitter"}' class="icon icon_twitter social-links__link" target="_blank"></a></li>
+            </ul>
+
+            <form action="http://nationswell.us6.list-manage1.com/subscribe/post?u=5f8740745b&id=8eaa257d1b" method="post" class="mc-form validate fr hide_mobile" novalidate>
+                <ul id="page-subscribe" class="expand-field">
+                    <li><label for="nav-subscribe" class="mc-email-status icon icon_envelope z1">Enter your email address</label></li>
+                    <li><input type="email" id="nav-subscribe" placeholder="{{ nav_subscribe_placeholder_text }}" class="required"></li>
+                </ul>
+            </form>
+
+            <form action="/" method="get" class="fr hide_mobile">
+                <ul id="page-search" class="expand-field">
+                    <li><label for="nav-search" class="icon icon_search z1"></label></li>
+                    <li><input type="text" id="nav-search" placeholder="{{ nav_search_placeholder_text }}" name="s"></li>
+                </ul>
+            </form>
+        </div>
+    </header>
+
+    <div id="more-stories" class="collapse z2 hide_mobile">
+        <div class="container">
+            <ul class="category-list" data-module='{"name": "nav:categories"}'>
+                {% for item in menu_main.get_items %}
+                    <li><a class="category-list__category" href="{{item.get_path}}" data-track='{"position": {{ loop.index }}, '>{{item.title}}</a></li>
+                {% endfor %}
+            </ul>
+
+            <div class="most-popular">
+                <header class="cf">
+                    <h3 class="hd-g more-stories__heading fl">{{ (main_menu_header is not empty) ? main_menu_header : menu_main_menu.name }}</h3>
+                    {#<a href="#" class="btn btn--view-all fr icon icon_arrow-right">View all environment</a>#}
+                </header>
+
+                <ul class="most-popular-list cf">
+                    {% for post in menu_main_stories %}<li>
+                        <article class="story story--tease">
+                            <a href="{{ post.permalink }}" class="link-wrapper">
+                                <figure class="story__feature">
+                                    <img src="{{ post.thumbnail.src|resize(748, 421) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}"/>
+                                </figure>
+
+                                <header class="story__header">
+                                    <span class="rubric">{{ post.category }}</span>
+                                    <h2 class="hd-i story__hed">{{ post.title }}</h2>
+                                </header>
+                            </a>
+                        </article></li>{% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

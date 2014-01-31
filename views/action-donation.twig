@@ -1,0 +1,24 @@
+{% extends "action.twig" %}
+
+{% block action_body %}
+    <div class="take-action__full">
+        <p>{{ post.call_to_action.description }}</p>
+
+        {#<form>#}
+            {#<div class="form-element">#}
+                {#<label for="ta-donation">Donation Amount</label>#}
+                {#<input type="text" id="ta-donation" class="text-input text-input--money">#}
+            {#</div>#}
+
+            {#<a href="#" class="btn btn--solid btn--external icon icon_external take-action__submit">Continue</a>#}
+
+            {#<small>Your credit card will not be charged.</small>#}
+        {#</form>#}
+
+        <!-- Rally.org donation meter BEGIN -->
+        <iframe class="take-action__rally" height="185" scrolling="no" src="https://rally.org/causes/{{ post.call_to_action.rally_id }}/donation_meter{{ post.call_to_action.hide_goal_amount != 1 ? "?" : "?no_meter=1&" }}no_recent_donor=1" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; overflow-x: hidden; overflow-y: hidden; margin: 0 auto; display: block;" width="300"></iframe>
+        <!-- Rally.org donation meter END -->
+
+        <p class="btn-container">{{ share_take_action_text }} <button type="submit" class="btn btn--solid take-action__submit">{{ share_take_action_button_text }}</button></p>
+    </div>
+{% endblock %}

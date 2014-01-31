@@ -1,0 +1,49 @@
+{% if series_carousel|length > 1 %}
+<div class="carousel carousel--full-width carousel--series mobile-carousel mobile-carousel--peek" data-module='{"name": {{ module_name|json_encode() }}}'>
+    <ul class="carousel__items">
+        {% for series in series_carousel %}
+            <li class="carousel-item">
+                <a href="{{ series.permalink }}" class="link-wrapper">
+                    <div class="carousel--series__images cf">
+                        {% for post in series.posts %}
+                            <div class="carousel--series__image" style="background-image: url({{ post.thumbnail.src|resize(1300, 600) }});"></div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="carousel-item__overlay v-align">
+                        <div class="v-align__inner v-align__inner--bottom">
+                            <div class="indicator indicator--blue indicator--title indicator--text icon icon_series hide_mobile">
+                                <h5 class="indicator__heading">Series</h5>
+                                <h5 class="indicator__subheading">{{ series.count }} Stories</h5>
+                            </div>
+
+                            <h2 class="hd-f carousel-item__title hide_mobile"><span>{{ series.name }}</span></h2>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div class="mobile-carousel__external-container container show_mobile">
+        <a href="#" class="link-wrapper">
+            <div class="indicator indicator--blue indicator--title indicator--text icon icon_series">
+                <h5 class="indicator__heading">Series</h5>
+                <h5 class="indicator__subheading">{{ series_carousel[0].count }} Stories</h5>
+            </div>
+
+            <h3 class="carousel-item__title hd-p">{{ series_carousel[0].name }}</h3>
+        </a>
+    </div>
+
+    <ul class="carousel__controls hide_mobile">
+        <li class="carousel__control carousel__control--prev">
+            <a class="icon icon_arrow-circle-left" data-track='{"action": "previous"}'></a>
+        </li>
+
+        <li class="carousel__control carousel__control--next">
+            <a class="icon icon_arrow-circle-right" data-track='{"action": "next"}'></a>
+        </li>
+    </ul>
+</div>
+{% endif %}

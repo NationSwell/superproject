@@ -1,0 +1,110 @@
+.carousel--full-width {
+  background-color: $ns_navy3;
+
+  .carousel__control {
+    top: 20rem;
+
+    &.carousel__control--prev {
+      left: 6rem;
+    }
+
+    &.carousel__control--next {
+      right: 6rem;
+    }
+
+    .icon {
+      font-size: 10rem;
+    }
+  }
+}
+
+.carousel--inline {
+  .carousel__control {
+    top: 12.4rem;
+
+    &.carousel__control--prev {
+      left: 3rem;
+    }
+
+    &.carousel__control--next {
+      right: 3rem;
+    }
+
+    .icon {
+      font-size: 6rem;
+    }
+  }
+
+  .carousel-item {
+    width: 58.8rem;
+    height: 30.2rem;
+  }
+}
+
+.carousel-item {
+  img {
+    opacity: 0;
+
+    @include transition(opacity 0.3s ease-in-out);
+
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+
+  .v-align__inner {
+    padding-bottom: 1rem;
+  }
+
+  &.active {
+    .v-align__inner {
+      padding-bottom: 3.4rem;
+    }
+  }
+
+  .support-cause-container {
+    display: block;
+    margin-top: 1.8rem;
+  }
+
+  .support-cause {}
+}
+
+.carousel-item__title {
+  margin-bottom: 3.4rem;
+}
+
+.carousel--series {
+  .carousel-item {
+    height: 46rem;
+
+    .link-wrapper {
+      height: 100%;
+    }
+
+  }
+
+  .carousel--series__image {
+    float: left;
+    width: 33.3334%;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+.carousel--peek {
+  .carousel-item {
+    box-shadow: -2px 0 0 $white;
+    width: 94rem;
+    height: 54rem;
+  }
+
+  .carousel--peek__image {
+    width: 94rem;
+    height: 54rem;
+  }
+
+  .carousel__control {
+    top: 24rem;
+  }
+}

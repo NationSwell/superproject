@@ -1,0 +1,14 @@
+<div class="river river--one-col">
+    <div class="container">
+        <ul class="story-teases">
+            {% for post in posts %}
+                <li class="cf">{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
+            {% endfor %}
+        </ul>
+
+        <div class="sidebar">
+            {{ sidebar_homepage_4 }}
+        </div>
+    </div>
+</div>
+{% include 'more-button.twig' with {'module_name': 'home' } %}

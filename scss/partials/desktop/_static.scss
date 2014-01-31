@@ -1,0 +1,99 @@
+.static__container {
+  padding-top: 5rem;
+
+  header {
+    .static__hed {
+      margin-bottom: 2.2rem;
+    }
+
+    .static__last-updated {
+      font-size: 2.4rem;
+      margin-bottom: 4.2rem;
+    }
+  }
+
+  .static__content {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 7.2rem;
+
+    p {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      margin-bottom: 2.2rem;
+    }
+
+    a {
+      color: $ns_blue1;
+      font-weight: $bold;
+
+      &:hover {
+        color: $ns_red;
+      }
+    }
+
+    > h1 {
+      margin-bottom: 3.4rem;
+      font-size: 5.4rem;
+      padding-bottom: 1.2rem;
+    }
+
+    > h2 {
+      font-size: 4rem;
+      margin-bottom: 2.8rem;
+    }
+
+    > h3 {
+      font-size: 2.4rem;
+      margin-bottom: 2.2rem;
+    }
+
+    > h4 {
+      font-size: 2rem;
+      margin-bottom: 2.2rem;
+    }
+
+    > h5 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    > h6 {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    > ol {
+      margin: 4rem 0;
+      padding-left: 7.6rem;
+
+      li {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+
+        &:before {
+          font-size: 1.2rem;
+          width: 2.4rem;
+          height: 2.4rem;
+          line-height: 2.4rem;
+          margin-right: 1.4rem;
+          left: -4.2rem;
+        }
+      }
+    }
+
+    > ul {
+      margin: 4rem 0;
+      padding-left: 7.6rem;
+
+      li {
+        font-size: 1.8rem;
+        margin-bottom: 1.4rem;
+
+        &:before {
+          left: -3.4rem;
+        }
+      }
+    }
+  }
+}

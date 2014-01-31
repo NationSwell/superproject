@@ -1,0 +1,100 @@
+/* hero */
+.hero--homepage {
+  height: 60rem;
+  overflow-x: hidden;
+
+  .link-wrapper {
+    pointer-events: all;
+  }
+
+  &.mobile-carousel--single {
+    // Allowing support cause block to bleed over
+    .caroufredsel_wrapper {
+      height: 56rem!important;
+      overflow: visible !important;
+    }
+
+    .hero__entry {
+      height: 56rem;
+      width: 100%;
+
+      .type-indicator {
+        margin-top: 4.4rem;
+        margin-left: 4.4rem;
+      }
+
+      .story__hed {
+        max-width: 70rem;
+        margin-bottom: 3.4rem;
+      }
+
+      .story--hero {
+        bottom: 0rem;
+        padding: 2.4rem 4.4rem 2.4rem;
+      }
+
+      .credit {
+        color: $white;
+        display: block;
+        margin-top: 2.8rem;
+      }
+    }
+  }
+}
+
+.support-cause--hero {
+  .support-cause__heading {
+    margin-bottom: 1.4rem;
+  }
+
+  .support-cause__separator {
+    font-size: 8.8rem;
+    line-height: 3.4rem;
+  }
+}
+
+/* river */
+.river--one-col {
+  .story-teases {
+    margin-bottom: 2.8rem;
+
+    .story--tease {
+      &:hover {
+        .story__feature {
+          &:before {
+            height: 0.7rem;
+          }
+        }
+      }
+
+      .sponsor {
+        padding: 0.8rem 1.6rem;
+        left: -1rem;
+        bottom: 4.6rem;
+      }
+    }
+
+    .story__feature {
+      width: 100%;
+    }
+
+    .story__header {
+      position: relative;
+    }
+
+    .story__hed {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  .sidebar {
+    margin-top: 6.6rem;
+  }
+}
+
+/* join us module */
+.join-us {
+  .btn--bar {
+    margin-bottom: 2.1rem;
+  }
+}

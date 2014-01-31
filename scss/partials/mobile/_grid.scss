@@ -1,0 +1,92 @@
+// heroes
+.hero {
+  &.hero--image {
+    .hero__content {
+      @include span-columns(4);
+      @include shift(0);
+    }
+  }
+
+  .hero-information {
+    .hero-information__content {
+      @include span-columns(5);
+    }
+  }
+}
+
+// rivers
+.river {
+  &.river--one-col,
+  &.river--two-col {
+    .story-teases {
+      width: 100%;
+      clear: both;
+
+      li {
+        width: 100%;
+        clear: both;
+      }
+    }
+  }
+}
+
+// sidebar
+.sidebar {
+  width: 100%;
+  clear: both;
+}
+
+// stories
+.story__sticky {
+  @include span-columns(6 of 6);
+}
+
+.story__main-column {
+  @include span-columns(6 of 6);
+}
+
+// static
+.static__main-column {
+  @include span-columns(6 of 6);
+}
+
+// multimedia
+.multimedia {
+  .caption {
+    @include span-columns(4 of 6);
+
+    + .credit {
+      @include shift(0);
+    }
+  }
+
+  .credit {
+    @include span-columns(2 of 6);
+    @include shift(4);
+  }
+}
+
+// story social buttons
+.story__social {
+  .btn--bar {
+    @include span-columns(3 of 6);
+  }
+}
+
+// read next
+.read-next {
+  .story-list {
+    @include span-columns(6);
+
+    li {
+      @include span-columns(6 of 6);
+    }
+  }
+}
+
+// prev-next
+.prev-next {
+  li {
+    @include span-columns(3 of 6);
+  }
+}

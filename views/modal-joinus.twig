@@ -1,0 +1,33 @@
+<div class="modal modal--join-us" data-modal="join-us" data-modal-pageload="true" data-module='{"name": "modal:joinus"}'>
+    <div class="modal__content module module--bg module--blue">
+        <header>
+            <div class="indicator indicator--blue indicator--module icon icon_nationswell-flag"></div>
+            <h3 class="hd-e module__heading">{{ modal_joinus_header }}</h3>
+        </header>
+
+        <h2 class="hd-l modal__heading">{{ modal_joinus_body_text }}</h2>
+
+        <div class="modal--join-us__social">
+            <span class="btn btn--bar btn--facebook icon icon_facebook" target="_blank"><div class="fb-like" data-href="{{ facebook_like_url }}" data-width="48" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" data-ref="modal" data-module='{"name": "modal:facebook"}'></div></span>
+            <span class="btn btn--bar btn--twitter icon icon_twitter" target="_blank" data-module='{"name": "modal:joinus:twitter"}'>
+                <a href="https://twitter.com/nationswell" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @nationswell</a>
+            </span>
+        </div>
+
+        <div id="mc_embed_signup">
+            <form action="{{ nationswell_mailchimp_daily }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
+                <div class="mc-field-group cf">
+                    <div class="join-us__email icon icon_envelope">
+                        <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mc-email-modal">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl">
+                        <label for="mc-email-modal" class="mc-email-status"></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <span class="modal--join-us__opt-out">{{ modal_joinus_opt_out_text }} <a data-modal-action="close" data-modal-disable="{{ modal_joinus_opt_out_expiration }}" href="#">{{ modal_joinus_opt_out_button_text }}</a></span>
+
+        <button class="btn btn--close icon icon_close modal__close" data-modal-action="close" data-modal-disable="{{ modal_joinus_close_expiration }}"></button>
+    </div>
+</div>

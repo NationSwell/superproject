@@ -1,0 +1,23 @@
+<div class="module module--bg module--sidebar module--blue newsletter-subscribe hide_mobile" data-module='{"name": "sidebar:subscribe"}'>
+    <header>
+        <div class="indicator indicator--blue indicator--module icon icon_nationswell-flag"></div>
+        <h3 class="hd-e module__heading">{{ title }}</h3>
+    </header>
+
+    <p>{{ description }}</p>
+
+    <div id="mc_embed_signup">
+        <form action="{{ mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+                <div class="form-element">
+                    <input type="email" value="" placeholder="Enter your email address" name="EMAIL" class="required email text-input" id="mc-email">
+                    <label for="mc-email" class="mc-email-status"></label>
+                </div>
+            </div>
+
+            <div class="cf">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--solid">
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+#page-content {
+  min-height: 100%;
+  height: auto;
+}
+
+#page-footer,
+#page-footer .container {
+  background-color: $ns_navy1;
+}
+
+.site-logo--footer {
+  display: block;
+}
+
+.copyright {
+  color: $gray3;
+  display: block;
+  font-family: $gudea;
+  position: relative;
+}
+
+.footer-links__link {
+  font-family: $gudea;
+}

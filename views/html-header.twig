@@ -1,0 +1,72 @@
+<meta charset="{{ bloginfo('charset') }}"/>
+<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+
+<title>{{ ns_wp_title }}</title>
+
+<meta name="description" content="{{ bloginfo('description') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+{#<meta property="fb:app_id" content="283384575022710"/>#}
+
+{% for user in facebook_admin %}
+<meta property="fb:admins" content="{{ user.facebook_user_id }}"/>
+{% endfor %}
+
+<link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic|Oswald:400,700|Montserrat:400,700|Noto+Serif:400,700'
+      rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="{{ stylesheet_uri }}" type="text/css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px), screen and (max-width: 1080px) and (-webkit-min-device-pixel-ratio: 3)" href="{{ static_dir }}/css/mobile.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="{{ static_dir }}/css/desktop.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1279px)" href="{{ static_dir }}/css/small-desktop.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-max-device-pixel-ratio: 1)" href="{{ static_dir }}/css/tablet.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" href="{{ static_dir }}/css/tablet-retina.css"/>
+
+<!--[if lt IE 9]>
+<script>
+var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+"figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+"progress,section,time,video").split(',');
+for (var i = 0; i < e.length; i++) {
+document.createElement(e[i]);
+}
+</script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/{{ theme_dir }}/css/ie.css?{{ version }}"/>
+<![endif]-->
+
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="/{{ theme_dir }}/css/desktop.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/{{ theme_dir }}/css/ie9.css?{{ version }}"/>
+<![endif]-->
+
+<script src="/{{ theme_dir }}/js/src/vendor/modernizr.custom.13580.js"></script>
+
+<link rel="pingback" href="{{ bloginfo('pingback_url') }}"/>
+<link rel="shortcut icon" href="/{{ theme_dir }}/favicon.ico" />
+<link rel="apple-touch-icon" href="/{{ theme_dir }}/apple-touch-icon-precomposed.png">
+
+{{ wp_head }}
+
+<script>
+    __reach_config = {
+        pid: '52cedaf2e79548d3b5000017',
+        title: '{{ ns_wp_title }}',
+        url: '{{ post.permalink }}',
+        date: '{{ post.post_date }}',
+        authors: ['{{ post.author.display_name }}'],
+        channels: ['{{ post.category }}'],
+//        tags: ['$tag1','$tag2'],
+        iframe: true,
+        ignore_errors: false,
+        domain: 'nationswell.com'
+    };
+    (function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+    })();
+</script>

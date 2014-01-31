@@ -1,0 +1,62 @@
+a {
+  outline: 0;
+  text-decoration: none;
+
+  @include transition(all 0.15s ease-in-out);
+
+  &:hover {
+    color: $ns_blue1;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+small {
+  a {
+    text-decoration: underline;
+    color: inherit;
+  }
+}
+
+.caption {
+  color: $gray0;
+  font-family: $gudea;
+}
+
+.credit,
+.byline {
+  color: $gray1;
+  font-family: $gudea;
+}
+
+.source {
+  color: $gray1;
+  font-family: $gudea;
+  font-weight: $regular;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+  }
+
+  &.source--nyt:before {
+    content: url(../img/src_nyt.jpg);
+  }
+
+  &.source--npr:before {
+    content: url(../img/src_npr.jpg);
+  }
+
+  &.source--time:before {
+    content: url(../img/src_time.jpg);
+  }
+
+  &.source--mashable:before {
+    content: url(../img/src_mashable.jpg);
+  }
+}

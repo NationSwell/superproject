@@ -1,0 +1,55 @@
+<div class="author-box cf {{ (post.story_kind != 'curated' or post.story_kind is empty)? "author-box--author" : "author-box--curated" }}">
+    {% if post.story_kind != 'curated' or post.story_kind is empty %}
+    <div class="author__a">
+        {% if author.mug_shot is not empty %}
+            <img src="{{ author.mug_shot.url|resize(134,134) }}" class="author__portrait" alt="{{ author.mug_shot._wp_attachment_image_alt }}">
+        {% else %}
+            <img src="/{{ theme_dir }}/img/placeholder.jpg" class="author__portrait" alt="">
+        {% endif %}
+
+        <div class="author__contact">
+            <a href="{{ author.user_url }}" class="author__url">{{ author.display_url }}</a>
+
+            <ul class="social author__social">
+                {% if author.facebook_username is not empty %}
+                    <li><a href="http://www.facebook.com/{{ author.facebook_username }}" class="icon icon_facebook" target="_blank"></a></li>
+                {% endif %}
+                {% if author.twitter_username is not empty %}
+                    <li><a href="http://www.twitter.com/{{ author.twitter_username }}" class="icon icon_twitter" target="_blank"></a></li>
+                {% endif %}
+                {% if author.tumblr is not empty %}
+                    <li><a href="{{ author.tumblr }}" class="icon icon_tumblr" target="_blank"></a></li>
+                {% endif %}
+                {% if author.instagram is not empty %}
+                    <li><a href="http://instagram.com/{{ author.instagram }}" class="btn icon icon_instagram" target="_blank"></a></li>
+                {% endif %}
+                {% if author.google is not empty %}
+                    <li><a href="{{ author.google }}?rel=author" class="btn icon icon_google-plus" target="_blank"></a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if post.story_kind == 'curated' %}
+    <div class="author__a">
+        {% if author.mug_shot is not empty %}
+            <img src="{{ author.mug_shot.url|resize(100,100) }}" class="author__portrait" alt="{{ author.mug_shot._wp_attachment_image_alt }}">
+        {% else %}
+            <img src="/{{ theme_dir }}/img/placeholder.jpg" class="author__portrait" alt="">
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="author__b">
+        <h2 class="hd-n author__byline"><a href="{{ author.author_page }}">
+                {% if post.story_kind != 'curated' or post.story_kind is empty %}
+                    <span class="author__byline__prefix">by</span>
+                {% endif %}
+
+                {{ author.display_name }}
+        </a></h2>
+
+        {% if author.description is not empty %}<p class="author__bio">{{function('truncate', author.description, 40, 200, author.author_page)}}</p>{% endif %}
+    </div>
+</div>

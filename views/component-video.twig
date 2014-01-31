@@ -1,0 +1,23 @@
+{% if video.oEmbed or video.url %}
+<figure class="multimedia multimedia--video">
+    {% if title is not empty %}
+        <h3 class="hd-m multimedia__heading">{{ title }}</h3>
+    {% endif %}
+
+    <div class="multimedia__content">
+        <div class="video-container">
+            {% if video.oEmbed %}
+                {{ video.oEmbed }}
+            {% else %}
+                <iframe class="ytplayer" type="text/html" width="800" height="500" src="{{ video.url }}" frameborder="0"></iframe>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if credit is not empty %}
+        <figcaption class="cf">
+            <span class="credit">{{ credit }}</span>
+        </figcaption>
+    {% endif %}
+</figure>
+{% endif %}

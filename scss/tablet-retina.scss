@@ -1,0 +1,24 @@
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: 8px;
+  }
+}
+
+//.fb-like {
+//  -webkit-transform: scale(1.5);
+//  -webkit-transform-origin: center left;
+//}

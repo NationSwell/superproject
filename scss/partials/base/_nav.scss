@@ -1,0 +1,141 @@
+#page-header {
+  background-color: $ns_navy2;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.full-header {
+  z-index: 8;
+  width: 100%;
+}
+
+/* logo and slogan */
+.site-logo {
+  text-decoration: none;
+
+  .slogan {
+    color: $white;
+    display: block;
+    position: relative;
+    font-family: $montserrat;
+    font-weight: $regular;
+    text-decoration: none;
+
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* more stories toggle */
+.more-stories-toggle {
+  color: $white;
+  vertical-align: middle;
+
+  &.is-toggled {
+    @include transform(rotate(90deg) scale(0.6, 1.4));
+    @include transform-origin(54% 60%);
+  }
+}
+
+/* social links */
+.social-links {
+  border-right: 2px solid $ns_navy1;
+  display: block;
+  position: relative;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.social-links__link {
+  display: block;
+  color: $white;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* search */
+.expand-field {
+  position: relative;
+
+  label {
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+
+    @include transition(all 0.15s ease-in-out);
+
+    &:active,
+    &:focus {
+      outline: 0 none;
+    }
+
+    &:hover {
+      color: $ns_blue1;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    border: 0 none;
+    font-family: $montserrat;
+    position: relative;
+
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: $white;
+
+    @include transition(all 0.3s ease-in-out);
+    @include appearance(none);
+
+    @include placeholder {
+      color: $ns_navy5;
+    }
+
+    &:focus,
+    &:active {
+      outline: 0 none;
+    }
+
+    &.is-open {
+      opacity: 1;
+      outline: 0 none;
+    }
+  }
+}
+
+
+/* trending topics */
+.full-header .trending-topics {
+  background-color: $ns_navy1;
+  padding: 0.8rem 0;
+}
+
+.trending-topics__heading {
+  font-family: $montserrat;
+  -webkit-font-smoothing: antialiased;
+}
+
+.trending-topics__list {
+  display: inline-block;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.trending-topics__topic {
+  color: $white;
+  font-family: $montserrat;
+  font-weight: $regular;
+  text-decoration: none;
+  display: inline-block;
+
+  -webkit-font-smoothing: antialiased;
+}

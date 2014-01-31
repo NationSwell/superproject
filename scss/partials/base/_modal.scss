@@ -1,0 +1,84 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  min-width: 30rem;
+  width: 80%;
+  height: auto;
+  z-index: 9;
+  visibility: hidden;
+  backface-visibility: hidden;
+
+  @include transform(translateX(-50%) translateY(-50%));
+
+  &.is-visible {
+    visibility: visible;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  opacity: 0;
+  background: rgba(0,48,70, 0.8);
+
+  @include transition(opacity 0.3s ease-in-out);
+}
+
+.modal.is-visible ~ .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  opacity: 0;
+  background-color: $white;
+
+  @include transform(scale(0.7));
+  @include transition(all 0.3s ease-in-out);
+}
+
+.modal.is-visible .modal__content {
+  opacity: 1;
+
+  @include transform(scale(1));
+}
+
+.modal__heading {
+  text-align: center;
+}
+
+.modal__close {
+  background-color: transparent;
+  color: $white;
+  position: absolute;
+  outline: none;
+}
+
+body.is-locked {}
+
+// join us
+.modal--join-us {
+  .modal--join-us__opt-out {
+    color: $white;
+    display: block;
+    font-family: $gudea;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+    a {
+      color: $ns_blue1;
+      font-weight: $bold;
+
+      &:hover {
+        color: $ns_red;
+      }
+    }
+  }
+}

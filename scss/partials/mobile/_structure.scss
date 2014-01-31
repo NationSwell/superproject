@@ -1,0 +1,20 @@
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.hide_mobile,
+.show_desktop,
+.show_tablet {
+   display: none !important;
+   visibility: hidden;
+ }
+
+.river {
+  .story-teases {
+    margin-top: -2rem;
+  }
+}

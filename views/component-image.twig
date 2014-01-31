@@ -1,0 +1,14 @@
+<figure class="multimedia multimedia--image">
+    {% if title is not empty %}
+        <h3 class="hd-m multimedia__heading">{{ title }}</h3>
+    {% endif %}
+
+    <div class="multimedia__content">
+        <img src="{{ image.get_src|resize(800, 0) }}" alt="{{ alt_text }}">
+    </div>
+
+    <figcaption class="cf">
+        {% if caption is not empty %}<span class="caption">{{ caption }}</span>{% endif %}
+        {% if credit is not empty %}<span class="credit">{{ credit }}</span>{% endif %}
+    </figcaption>
+</figure>

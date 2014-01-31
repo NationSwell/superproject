@@ -1,0 +1,14 @@
+<div class="politician">
+    {% if politician.photoUrl is not empty %}
+        <div class="politician__photo" style="background-image: url({{ politician.photoUrl }});" title="{{ politician.name }}"></div>
+    {% else %}
+        <div class="politician__photo" style="background-image: url(/wp-content/themes/nationswell/img/placeholder.jpg);" title="{{ politician.name }}"></div>
+    {% endif %}
+
+    <div class="politician__information">
+        <h4 class="hd-l politician__name">{{ politician.name }}</h4>
+        <span class="politician__office">{{ politician.party }} - {{ politician.office }}</span>
+
+        <a href="{{ twitterUrl }}" class="btn btn--solid btn--twitter btn--share">Tweet @{{ politician.twitter }}</a>
+    </div>
+</div>

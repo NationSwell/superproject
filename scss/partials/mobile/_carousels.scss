@@ -1,0 +1,117 @@
+.carousel--full-width {}
+
+.carousel-item {
+  .v-align__inner {
+    padding-bottom: 1rem;
+  }
+
+  &.active {
+    .v-align__inner {
+      padding-bottom: 3.4rem;
+    }
+  }
+}
+
+.carousel-item__title {
+  margin-bottom: 3.4rem;
+}
+
+.mobile-carousel {
+  overflow: visible;
+
+  .carousel__pagination {
+    position: absolute;
+    right: 4.4rem;
+    bottom: 0.2rem;
+
+    a {
+      background-color: $ns_navy6;
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 0;
+      height: 1.3rem;
+      margin-left: 1.6rem;
+      width: 1.3rem;
+
+
+      @include transition(all 0.15s ease-in-out);
+
+      &.selected {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.hero--story {
+  .carousel__pagination {
+    bottom: -4rem;
+  }
+}
+
+.mobile-carousel--peek {
+  &.carousel--series {
+    .carousel--series__image {
+      display: none;
+      visiblity: hidden;
+
+      &:first-child {
+        width: 100%;
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+
+  .caroufredsel_wrapper {
+    overflow: visible;
+  }
+
+  .carousel-item {
+    box-shadow: -20px 0 0 white;
+    width: 52.6rem;
+    height: 30.2rem;
+    overflow: hidden;
+
+    &.active {
+      overflow: visible;
+    }
+
+    .carousel--peek__image {
+      width: 52.6rem;
+      height: 30.2rem;
+    }
+
+    .carousel--series__images {
+      width: 52.6rem;
+      height: 30.2rem;
+    }
+  }
+
+  .carousel-item__overlay {
+    @include transition(background-color 0.3s ease-in-out);
+  }
+
+  .mobile-carousel__external-container {
+    margin-top: -5.6rem;
+    opacity: 1;
+    position: relative;
+    top: 0;
+
+    @include transition(all 0.3s ease-in-out);
+
+    .carousel-item__title {
+      margin: 2.4rem 0;
+      text-align: center;
+    }
+
+    &.transitioning {
+      opacity: 0;
+      top: 1.2rem;
+    }
+  }
+
+  .mobile-carousel__caption {
+    text-align: center;
+  }
+}

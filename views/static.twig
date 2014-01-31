@@ -1,0 +1,23 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="static__container">
+        <div class="container">
+            <main class="static__main-column" role="main">
+                <header>
+                    <h1 class="hd-j static__hed">{{ post.title }}</h1>
+                    {#<h3 class="static__last-updated">Last updated on {{ post.post_modified|date('F j, Y') }}</h3>#}
+                </header>
+
+                <div class="static__content">
+                    {{ page_content }}
+                </div>
+            </main>
+
+            <div class="sidebar hide_mobile">
+                {{ sidebar_static }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

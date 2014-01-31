@@ -1,0 +1,31 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    {% block header %}
+        <div class="hero hero--archive hero--category{% if header_image is empty %} no-image{% endif %}" {% if header_image is not empty %}style="background-image: url({{ header_image.url|resize(1300,600) }})"{% endif %}>
+        <div class="container z1">
+            <h2 class="hd-a hero--category__title">{{ title }}</h2>
+            <span class="hero--category__count">{{ total_posts }} Stories</span>
+
+            {#<div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm-dark.png" class="sponsor__logo"/></div>#}
+        </div>
+    </div>
+    {% endblock %}
+
+
+    <div class="container container--flex">
+        <div class="river river--two-col">
+            <ul class="story-teases">
+                {% for post in posts %}
+                    <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="sidebar hide-mobile">
+            {{ sidebar_static }}
+        </div>
+    </div>
+    {% include 'more-button.twig' with {'module_name': 'archive' } %}
+
+{% endblock %}

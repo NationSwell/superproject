@@ -1,0 +1,423 @@
+.hero--story {
+  background-color: $ns_navy0;
+  min-height: 34rem;
+
+  &.hero--cover {
+    height: auto;
+    padding-bottom: 56.25%;
+    background-origin: border-box;
+  }
+
+  &.hero--image {
+    height: 53.2rem;
+
+    .hero-read {
+      display: none;
+    }
+  }
+
+  &.hero--image,
+  &.hero--video {
+
+    .story__main-column & {
+      height: auto;
+
+      img {
+        max-width: 100%;
+      }
+
+      .hero-information {
+
+        .container {
+          padding: 0;
+        }
+
+      }
+
+    }
+
+    .hero-information {
+      background-color: $white;
+      top: 0;
+
+      &.is-long {
+        &:hover {
+          background-color: $ns_navy6;
+        }
+
+        &.is-open {
+          background-color: $white;
+        }
+      }
+
+
+      .hero-information__caption {
+        color: $ns_navy2;
+      }
+
+      .hero-information__credit {
+        color: $ns_navy4;
+      }
+    }
+  }
+
+  &.hero--carousel {
+    .carousel {
+      background-color: $ns_navy0;
+      height: 42.6rem;
+    }
+
+    .carousel-item {
+      height: 42.6rem;
+      width: 100%;
+    }
+
+    .carousel--peek__image {
+      height: 42.6rem;
+      width: 82rem;
+    }
+
+    .carousel__controls {
+      display: none;
+    }
+
+    .carousel__pagination {
+      bottom: -3.2rem;
+
+      .selected {
+        background-color: $ns_blue1;
+      }
+    }
+
+    .hero-imformation {
+      padding: 5.6rem 0 2.2rem;
+      bottom: 0;
+    }
+  }
+
+  &.hero--video {
+    .hero--video__container {
+      max-width: 67.8rem;
+    }
+
+    .hero-information__toggle {
+      text-align: left;
+    }
+  }
+}
+
+.hero-information {
+  position: relative;
+  overflow: visible;
+  max-height: none;
+  padding: 2.2rem 0;
+
+  .hero-information__outer {}
+
+  .hero-information__caption {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-information__credit {
+    font-size: 2rem;
+  }
+}
+
+.story__container {
+  margin-top: 7.6rem;
+
+  .story__meta {
+    margin-bottom: 2rem;
+    font-size: 2rem
+  }
+
+  .story--page {
+    > header {
+      .story__hed {
+        margin-bottom: 4.8rem;
+      }
+
+      .story__dek {
+        margin-bottom: 4.6rem;
+      }
+    }
+  }
+
+  .story__content {
+    margin-bottom: 12rem;
+
+    p {
+      font-size: 3.2rem;
+      line-height: 1.32;
+      margin-bottom: 3.2rem;
+      -webkit-font-smoothing: antialiased;
+
+      /* drop cap */
+      &:first-child:first-letter {
+        font-size: 12.5rem;
+        margin-right: 2.6rem;
+      }
+
+      a {
+        color: $ns_blue1;
+        font-weight: $bold;
+
+        &:hover {
+          color: $ns_red;
+        }
+      }
+    }
+
+    > h1 {
+      margin-bottom: 3.4rem;
+      font-size: 5.4rem;
+      padding-bottom: 1.2rem;
+    }
+
+    > h2 {
+      font-size: 4rem;
+      margin-bottom: 2.8rem;
+    }
+
+    > h3 {
+      font-size: 2.4rem;
+      margin-bottom: 2.2rem;
+    }
+
+    > h4 {
+      font-size: 2rem;
+      margin-bottom: 2.2rem;
+    }
+
+    > h5 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    > h6 {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    > ol {
+      margin: 7.6rem 0;
+      padding-left: 11rem;
+
+      li {
+        font-size: 3.2rem;
+        margin-bottom: 4.2rem;
+
+        &:before {
+          font-size: 2.4rem;
+          width: 4rem;
+          height: 4rem;
+          line-height: 4rem;
+
+
+          left: -7.6rem;
+          top: -0.4rem;
+        }
+      }
+    }
+
+    > ul {
+      margin: 7.6rem 0;
+      padding-left: 11rem;
+
+      li {
+        font-size: 3.2rem;
+        margin-bottom: 4.2rem;
+
+        &:before {
+          font-size: 3.6rem;
+          top: 0rem;
+          left: -6.6rem;
+        }
+      }
+    }
+  }
+}
+
+.take-action__social_back {
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+
+/* multimedia */
+.multimedia {
+  margin: 7.6rem 0;
+
+  .multimedia__heading {
+    display: inline;
+    position: relative;
+    left: 2rem;
+    line-height: 1.5;
+  }
+
+  .multimedia__content {
+    margin-top: 3.4rem;
+  }
+
+  figcaption {
+    margin-top: 2.6rem;
+  }
+
+  &.multimedia--audio {
+    .multimedia__content {
+      padding-bottom: 2.2rem;
+    }
+  }
+}
+
+.multimedia__heading {
+  margin-bottom: 2.4rem;
+}
+
+/* sticky */
+.story__sticky {
+  padding: 0 1rem;
+}
+
+.story__sticky-container {
+  width: 16rem;
+}
+
+.sticky-social {
+  margin-bottom: 5rem;
+}
+
+.sticky-take-action {
+  padding: 1.6rem;
+}
+
+.sticky-take-action__heading {
+  margin-bottom: 0.8rem;
+}
+
+.sticky-take-action__action {
+  font-size: 1.6rem;
+}
+
+/* tags */
+.story__tags {
+  margin-bottom: 7.6rem;
+
+  .tags-list {
+    &:before {
+      display: block;
+      font-size: 3.2rem;
+      margin-bottom: 2.2rem;
+    }
+
+    li {
+      margin-right: 1.4rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+}
+
+// social
+.story__social {
+  margin-bottom: 8rem;
+
+  &:first-child {
+    margin-bottom: 3.4rem;
+  }
+
+  .btn--bar {
+    font-size: 2.6rem;
+    margin-bottom: 2.4rem;
+    padding: 1.4rem 0;
+
+    &:before {
+      font-size: 4rem;
+      line-height: 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+// take action module
+.module.take-action {
+  margin-bottom: 7.6rem;
+  padding-bottom: 5rem;
+  text-align: center;
+
+  .take-action__heading {
+    margin-bottom: 4rem;
+  }
+
+  .take-action__img {
+    margin: 0 auto 4rem;
+  }
+
+  p {
+    font-size: 3.2rem;
+    line-height: 1.32;
+    margin-bottom: 3.4rem;
+  }
+
+  small {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+  }
+
+  .btn-container {
+    padding: 3.4rem 0;
+
+    .btn {
+      margin-top: 2.2rem;
+    }
+  }
+
+  .tweet-politician__politicians {
+    .btn--twitter {
+      font-size: 2.2rem;
+      padding: 2.2rem;
+    }
+  }
+
+
+  /* tweet politician take action */
+  .tweet-politician__message {
+    font-size: 3.4rem;
+    padding: 2.4rem;
+  }
+
+  .politician {
+    clear: both;
+    margin: 0 0 4.4rem;
+
+    &:first-child {
+      margin-top: 3.4rem;
+    }
+  }
+
+  .politician__photo {
+    display: block;
+    width: 24rem;
+    height: 24rem;
+    text-align: center;
+    margin: 0 auto 2.4rem;
+  }
+
+  .politician__information {
+    overflow: hidden;
+    max-width: 32rem;
+  }
+
+  .politician__name {
+    margin-top: 0.6rem;
+  }
+
+  .politician__office {
+    font-size: 3.4rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+// flyout
+#flyout {
+  display: none;
+}

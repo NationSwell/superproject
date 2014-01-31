@@ -1,0 +1,17 @@
+<div class="module module--list popular-stories module--sidebar">
+    <h3 class="hd-g module__heading">{{ header }}</h3>
+
+    <ul class="story-list cf {{ class }}">
+        {% for  post in popular_posts %}
+            <li>
+                <article class="story story--link">
+                    <a href="{{ post.permalink }}" class="link-wrapper">
+                        <header class="story__header">
+                            <h4 class="hd-h story__hed">{{ post.post_title }}</h4>
+                        </header>
+                    </a>
+                </article>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

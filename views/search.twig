@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <div class="river river--one-col">
+        <div class="container container--flex">
+            {% if posts is not empty %}
+            <ul class="story-teases">
+                {% for post in posts|slice(0, 10) %}
+                    <li>{% include ['tease-'~post.post_type~'-search.twig', 'tease.twig'] %}</li>
+                {% endfor %}
+            </ul>
+            {% else %}
+
+            <div class="story-teases">
+                <h1 class="hd-d">Sorry no posts match your search</h1>
+            </div>
+            {% endif %}
+
+            <div class="sidebar">
+                {{ sidebar_static }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

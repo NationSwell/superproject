@@ -1,0 +1,41 @@
+{% if stories_carousel|length > 1 %}
+<div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--peek" data-module='{"name": {{ module_name|json_encode() }}}'>
+    <ul class="carousel__items">
+        {% for post in stories_carousel %}
+            <li class="carousel-item carousel-item-{{ post.content_type }}"><a href="{{ post.permalink }}" class="link-wrapper ">
+                    <div class="carousel--peek__image" style="background-image: url({{ post.thumbnail.src|resize(1300,600) }});"></div>
+
+                    <div class="carousel-item__overlay v-align">
+                        <div class="v-align__inner v-align__inner--bottom">
+                            <div class="indicator indicator--blue indicator--title icon icon_{{ post.content_type }} hide_mobile"></div>
+                            <h2 class="hide_mobile hd-f carousel-item__title hide_mobile"><span>{{ post.tout_title }}</span></h2>
+
+                            {% if post.call_to_action is not empty and post.call_to_action.show_action_stats_on_tout != '0' %}
+                                <div class="support-cause-container hide_mobile" style="display: block;">
+                                    {% include ['action-stats-'~post.call_to_action.type~'.twig', 'action-stats.twig'] %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a></li>
+        {% endfor %}
+    </ul>
+
+    <div class="mobile-carousel__external-container container show_mobile">
+        <a href="#" class="link-wrapper">
+            <div class="indicator indicator--blue indicator--title icon icon_{{ stories_carousel[0].content_type }}"></div>
+            <h3 class="carousel-item__title hd-p">{{ stories_carousel[0].tout_title }}</h3>
+        </a>
+    </div>
+
+    <ul class="carousel__controls hide_mobile">
+        <li class="carousel__control carousel__control--prev">
+            <a class="icon icon_arrow-circle-left" data-track='{"action": "previous"}'></a>
+        </li>
+
+        <li class="carousel__control carousel__control--next">
+            <a class="icon icon_arrow-circle-right" data-track='{"action": "next"}'></a>
+        </li>
+    </ul>
+</div>
+{% endif %}

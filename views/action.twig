@@ -1,0 +1,58 @@
+<div class="module module--bg module--red story__take-action take-action cf" data-module='{"name": "action"}'>
+    <header>
+        <div class="indicator indicator--blue indicator--module icon icon_{{ post.call_to_action.icon }}"></div>
+        <h3 class="hd-e module__heading">{{ take_action_header_text }}</h3>
+    </header>
+
+    <div class="take-action__inner">
+
+        <div class="take-action__action take-action__tab">
+            <h2 class="hd-l take-action__heading">{{ post.call_to_action.heading }}</h2>
+
+            {% block action_body %}
+            {% endblock %}
+        </div>
+
+        <div class="take-action__thank-you take-action__tab is-hidden hide"  data-module='{"name": "action:thank"}'>
+            <h2 class="hd-l take-action__heading">{{ take_action_thanks_header }}</h2>
+
+            <p>{{ take_action_thanks_text }}</p>
+
+            <ul class="social take-action__social" data-module='{"name": "action:thank:share"}'>
+                <li><a href="http://www.facebook.com/sharer.php?s= 100&p[title]={{ post.title|url_encode(true) }}&p[url]={{ post.permalink|url_encode(true) }}&p[summary]={{ post.call_to_action.social_share_text|url_encode(true) }}&p[images][0]={{ post.og_image }}" class="btn btn--social btn--share icon icon_facebook" data-track='{"action": "facebook"}'></a></li>
+                <li><a href="https://twitter.com/share?url={{ post.short_url|url_encode(true) }}&text={{ post.call_to_action.social_share_text|url_encode(true) }}&via=nationswell" class="btn btn--social btn--share icon icon_twitter" data-track='{"action": "twitter"}'></a></li>
+                <li><a href="http://www.tumblr.com/share/link?url={{ post.permalink|url_encode(true) }}&name={{ post.title|url_encode(true) }}&description={{ post.call_to_action.social_share_text|url_encode(true) }}" title="Share on Tumblr" class="btn btn--social btn--share icon icon_tumblr" data-track='{"action": "tumblr"}'></a></li>
+                <li>
+                    <span class="btn btn--social icon icon_google-plus g-interactivepost"
+                          data-clientid="{{ google_client_id }}"
+                          data-contenturl="{{ post.permalink }}"
+                          data-prefilltext="{{ post.call_to_action.social_share_text }}"
+                          data-calltoactionurl="{{ post.permalink }}"
+                          data-calltoactionlabel="READ_MORE"
+                          data-cookiepolicy="single_host_origin"
+                    </span>
+                </li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ post.permalink|url_encode(true) }}&title={{ post.title|url_encode(true) }}&summary={{ post.call_to_action.social_share_text|url_encode(true) }}" class="btn btn--social btn--share icon icon_linkedin" data-track='{"action": "linkedin"}'></a></li>
+            </ul>
+
+            {% if nationswell_mailchimp_daily %}
+            <p>{{ take_action_thanks_subscribe_text }}</p>
+
+            <div id="mc_embed_signup">
+                <form action="{{ nationswell_mailchimp_daily }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
+                    <div class="mc-field-group cf">
+                        <div class="join-us__email icon icon_envelope">
+                            <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mc-email">
+                             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl">
+                            <label for="mc-email" class="mc-email-status"></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            {% endif %}
+
+            <button class="take-action__social_back">&#x25c0; Back</button>
+
+        </div>
+    </div>
+</div>

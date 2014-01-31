@@ -1,0 +1,5 @@
+{% if more is not empty %}
+    <div class="btn-container">
+        <a href="{{ more }}" class="btn btn--load-more icon icon_load-more" data-track='{"action": "load-more", "moduleName": {{ module_name|json_encode() }}}'>{{ load_more_button_text }}</a>
+    </div>
+{% endif %}

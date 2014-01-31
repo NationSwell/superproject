@@ -1,0 +1,145 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__items {
+  display: block;
+}
+
+.carousel-item {
+  display: block;
+  float: left;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    .carousel-item__title {
+      color: $ns_blue4;
+    }
+  }
+
+  .v-align__inner {
+    opacity: 0;
+    visibility: hidden;
+
+    @include transition(all 0.15s ease-in-out);
+  }
+
+  &.active {
+    .v-align__inner {
+      opacity: 1;
+      visibility: visible;
+
+      @include transition(all 0.3s ease-in-out);
+      @include transition-delay(.15s);
+    }
+  }
+}
+
+.carousel-item__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 18%;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item__title {
+  @include transition(all 0.3s ease-in-out);
+}
+
+.carousel__control {
+  cursor: pointer;
+  position: absolute;
+  text-shadow: 0px 2px 4px rgba(0,0,0, 0.4);
+
+  .icon {
+    color: $white;
+
+    @include transition(all 0.15s ease-in-out);
+
+    &:hover {
+      color: $ns_blue4;
+    }
+  }
+}
+
+.carousel--series {
+  .carousel--series__images {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel--series__image {
+    display: block;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:after {
+      content: '';
+      background-image: url("../img/overlay_mesh.png");
+      background-repeat: repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    &:first-child {
+      box-shadow: inset -2px 0 0 $white;
+
+      &:after {
+        margin-right: 2px;
+      }
+    }
+
+    &:last-child {
+      box-shadow: inset 2px 0 0 $white;
+
+      &:after {
+        margin-left: 2px;
+      }
+    }
+  }
+}
+
+.carousel--peek {
+  .carousel-item {
+    box-shadow: -2px 0 0 $white;
+    pointer-events: none;
+
+    &.active {
+      pointer-events: all;
+
+      .carousel-item__overlay {
+        background-color: transparent;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .carousel--peek__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel-item__overlay {
+    // $ns_navy0 in rgba
+    background-color: $ns_navy0_transparent;
+
+    @include transition(background-color 0.3s ease-in-out);
+  }
+}

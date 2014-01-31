@@ -1,0 +1,80 @@
+.modal {
+  top: 52%;
+}
+
+.modal {
+  .module.module--bg {
+    header {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal__heading {
+  margin-bottom: 3.4rem;
+}
+
+.modal--join-us__social {
+  .btn {
+    margin-bottom: 2.2rem;
+  }
+}
+
+.join-us__email {
+  font-size: 2.4rem;
+  line-height: 5.4rem;
+  height: 5.4rem;
+  padding-left: 6.6rem;
+
+  input[type="email"] {
+    border-radius: 0;
+    font-size: 2.4rem;
+  }
+
+  .btn--subscribe {
+    font-size: 2.4rem;
+    line-height: 5.4rem;
+    padding: 0 2.8rem;
+    height: 5.4rem;
+    position: relative;
+    top: -1px;
+  }
+
+  &:before {
+    font-size: 3rem;
+    left: 2.2rem;
+    top: 0.4rem;
+  }
+}
+
+.modal__close {
+  border: 0 none;
+  outline: 0;
+  font-size: 6rem;
+  top: -6rem;
+  right: -6rem;
+}
+
+// join us
+.modal--join-us {
+  .modal--join-us__opt-out {
+    color: $white;
+    display: block;
+    font-family: $gudea;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    bottom: -7rem;
+    font-size: 3rem;
+
+    a {
+      color: $ns_blue1;
+      font-weight: $bold;
+
+      &:hover {
+        color: $ns_red;
+      }
+    }
+  }
+}

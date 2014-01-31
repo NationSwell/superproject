@@ -1,0 +1,49 @@
+<div class="more-stories-drawer hide_desktop">
+    <div class="drawer-unit">
+        <a href="/" class="site-logo site-logo--slogan">
+            <img src="/{{ theme_dir }}/img/site-logo.png" alt="NationSwell Logo"/>
+            <span class="slogan">Meet the people renewing America</span>
+        </a>
+
+        <form action="#" method="post">
+            <ul id="page-search" class="search">
+                <li><label for="panel-search" class="icon icon_search z1">&nbsp;</label></li>
+                <li><input type="text" id="panel-search" name="s" placeholder="{{ nav_search_placeholder_text }}"></li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="drawer-unit drawer-unit--dark">
+        <div class="categories">
+            <h3 class="hd-r categories__heading">All Topics</h3>
+
+            <ul class="categories__list">
+            {% for item in menu_main.get_items %}
+                <li><a class="categories__category"href="{{item.get_path}}">{{item.title}}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    {% if menu_topic.name is not empty %}
+    <div class="drawer-unit drawer-unit">
+        <div class="trending-topics">
+            <h3 class="hd-r trending-topics__heading">Trending</h3>
+
+            <ul class="trending-topics__list">
+            {% for item in menu_topic.get_items %}
+                <li><a href="{{item.get_path}}" class="trending-topics__topic">{{item.title}}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+
+    {#<div class="drawer-unit drawer-unit--dark">
+        <ul class="social-links">
+            <li><a href="#" class="icon icon_facebook social-links__link"></a></li>
+            <li><a href="#" class="icon icon_twitter social-links__link"></a></li>
+            <li><a href="#" class="icon icon_envelope social-links__link"></a></li>
+        </ul>
+    </div>#}
+</div>

@@ -1,0 +1,130 @@
+// more stories panel
+#more-stories {
+  .category-list {
+    @include span-columns(2);
+  }
+
+  .most-popular {
+    @include span-columns(10);
+  }
+}
+
+// heroes
+.hero {
+  &.hero--image {
+    .hero__content {
+      @include span-columns(7);
+    }
+  }
+
+  .hero-information {
+    .hero-information__caption {
+      @include span-columns(6);
+      @include shift(2);
+
+      .story__main-column & {
+        @include span-columns(8);
+        @include shift(0);
+      }
+
+    }
+
+    .hero-information__caption + .hero-information__credit {
+      @include shift(0);
+    }
+
+    .hero-information__credit {
+      @include span-columns(4);
+      @include shift(8);
+    }
+  }
+}
+
+// rivers
+.river {
+  .story-teases {
+    @include span-columns(8);
+    min-height: 25px;
+  }
+
+  &.river--one-col {
+    .story--tease {
+        @include span-columns(8 of 8);
+    }
+  }
+
+  &.river--two-col {
+    li {
+        @include span-columns(4 of 8);
+        @include omega(2n);
+    }
+
+    .story--tease {
+      @include span-columns(4 of 4);
+
+      header {
+        margin-top: -1.2rem;
+      }
+    }
+  }
+}
+
+// sidebar
+.sidebar {
+  @include span-columns(4);
+}
+
+// stories
+.story__sticky {
+  @include span-columns(2);
+}
+
+.story__main-column {
+  @include span-columns(6);
+}
+
+// static
+.static__main-column {
+  @include span-columns(8);
+}
+
+// multimedia
+.multimedia {
+  .caption {
+    @include span-columns(4 of 6);
+
+    + .credit {
+      @include shift(0);
+    }
+  }
+
+  .credit {
+    @include span-columns(2 of 6);
+    @include shift(4);
+  }
+}
+
+// story social buttons
+.story__social {
+  .btn--bar {
+    @include span-columns(3 of 6);
+  }
+}
+
+// read next
+.read-next {
+  .story-list {
+    @include span-columns(12);
+
+    li {
+      @include span-columns(4 of 12);
+    }
+  }
+}
+
+// prev-next
+.prev-next {
+  li {
+    @include span-columns(3 of 6);
+  }
+}

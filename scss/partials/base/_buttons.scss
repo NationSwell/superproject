@@ -1,0 +1,188 @@
+.btn-container {
+  clear: both;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 0;
+  text-rendering: optimizeLegibility;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+
+  &.btn--solid {
+    background-color: $ns_red;
+    color: $white;
+    display: inline-block;
+    font-family: $oswald;
+    text-transform: uppercase;
+    line-height: 1.34;
+
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      background-color: $ns_blue1;
+    }
+  }
+
+  &.btn--view-all {
+    background-color: $ns_navy0;
+    color: $ns_blue1;
+    display: inline-block;
+    font-family: $gudea;
+    font-weight: $bold;
+    position: relative;
+
+    &:before {
+      font-family: 'icons';
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: $ns_blue1;
+      color: $white;
+    }
+  }
+
+  &.btn--bar {
+    color: $white;
+    display: block;
+    font-family: $oswald;
+    position: relative;
+    text-align: center;
+
+    @include transition(none);
+
+    &:before {
+      font-family: 'icons';
+      vertical-align: text-bottom;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &.btn--square {
+    color: $white;
+    display: block;
+    font-family: $oswald;
+    font-weight: $regular;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 0rem;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include transition(all 0.15s ease-in-out);
+    }
+
+    &:before {
+      display: block;
+      font-family: 'icons';
+    }
+  }
+
+  &.btn--facebook {
+    background-color: #5973aa;
+
+    &:after {
+      background-color: #2e5381;
+    }
+  }
+
+  &.btn--twitter {
+    background-color: #2fb8ed;
+
+    &:after {
+      background-color: #209bcb;
+    }
+  }
+
+  &.btn--blue {
+    background-color: $ns_blue1;
+  }
+
+  &.btn--load-more {
+    background-color: transparent;
+    color: $ns_red;
+    font-family: $oswald;
+    font-weight: $bold;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include transition(all 0.3s ease-in-out);
+
+    &:before {
+      color: $ns_blue1;
+      font-family: 'icons';
+      font-weight: $regular;
+      position: absolute;
+
+      @include transition(all 0.3s ease-in-out);
+    }
+  }
+
+  &.btn--take-action {
+    background-color: $ns_red;
+    color: $white;
+    display: inline-block;
+    font-family: $oswald;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+
+    -webkit-font-smoothing: antialiased;
+
+    @include transition(none);
+
+    &:after {
+      background-color: $ns_red1;
+      content: '';
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &.btn--external {
+    &:before {
+      display: inline-block;
+      font-family: 'icons';
+      margin-right: 1rem;
+      font-size: 3.4rem;
+      position: relative;
+      line-height: 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+
+  @include appearance(none);
+  @include transition(all 0.15s ease-in-out);
+
+  &:-moz-focus-inner {
+    border: 0;
+  }
+}
