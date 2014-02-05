@@ -14,6 +14,7 @@
 .icon {
 	font-family:"icons";
 	display:inline-block;
+	vertical-align:middle;
 	font-weight:normal;
 	font-style:normal;
 	speak:none;
@@ -26,168 +27,278 @@
 
 
 // Icons
+
+
 .icon_arrow-circle-left:before {
-	content:"\f100";
+	content:"\e001";
 }
+
+
 .icon_arrow-circle-right:before {
-	content:"\f101";
+	content:"\e002";
 }
+
+
 .icon_arrow-left:before {
-	content:"\f102";
+	content:"\e003";
 }
+
+
 .icon_arrow-right:before {
-	content:"\f103";
+	content:"\e004";
 }
+
+
 .icon_audio:before {
-	content:"\f104";
+	content:"\e005";
 }
-.icon_audio_stream:before {
-	content:"\f105";
+
+
+.icon_audio-stream:before {
+	content:"\e006";
 }
+
+
 .icon_cart:before {
-	content:"\f106";
+	content:"\e007";
 }
+
+
 .icon_chrome:before {
-	content:"\f107";
+	content:"\e008";
 }
-.icon_circle_alpha_stream:before {
-	content:"\f108";
+
+
+.icon_circle-alpha-stream:before {
+	content:"\e009";
 }
+
+
 .icon_close:before {
-	content:"\f109";
+	content:"\e00a";
 }
+
+
 .icon_comment:before {
-	content:"\f10a";
+	content:"\e00b";
 }
+
+
 .icon_contact:before {
-	content:"\f10b";
+	content:"\e00c";
 }
+
+
 .icon_cta-signup:before {
-	content:"\f10c";
+	content:"\e00d";
 }
+
+
 .icon_cta-speak-out-chat:before {
-	content:"\f10d";
+	content:"\e00e";
 }
+
+
 .icon_cta-speak-out:before {
-	content:"\f10e";
+	content:"\e00f";
 }
+
+
 .icon_donate:before {
-	content:"\f10f";
+	content:"\e010";
 }
+
+
 .icon_email:before {
-	content:"\f110";
+	content:"\e011";
 }
+
+
 .icon_envelope:before {
-	content:"\f111";
+	content:"\e012";
 }
+
+
 .icon_explorer:before {
-	content:"\f112";
+	content:"\e013";
 }
+
+
 .icon_external:before {
-	content:"\f113";
+	content:"\e014";
 }
+
+
 .icon_facebook:before {
-	content:"\f114";
+	content:"\e015";
 }
+
+
 .icon_firefox:before {
-	content:"\f115";
+	content:"\e016";
 }
+
+
 .icon_fullscreen:before {
-	content:"\f116";
+	content:"\e017";
 }
-.icon_get_involved:before {
-	content:"\f117";
+
+
+.icon_get-involved:before {
+	content:"\e018";
 }
+
+
 .icon_google-plus:before {
-	content:"\f118";
+	content:"\e019";
 }
+
+
 .icon_hamburger:before {
-	content:"\f119";
+	content:"\e01a";
 }
+
+
 .icon_information:before {
-	content:"\f11a";
+	content:"\e01b";
 }
+
+
 .icon_instagram:before {
-	content:"\f11b";
+	content:"\e01c";
 }
+
+
 .icon_link:before {
-	content:"\f11c";
+	content:"\e01d";
 }
+
+
 .icon_linkedin:before {
-	content:"\f11d";
+	content:"\e01e";
 }
-.icon_listcicle_stream:before {
-	content:"\f11e";
+
+
+.icon_listcicle-stream:before {
+	content:"\e01f";
 }
+
+
 .icon_listory:before {
-	content:"\f11f";
+	content:"\e020";
 }
+
+
 .icon_load-more:before {
-	content:"\f120";
+	content:"\e021";
 }
+
+
 .icon_nationswell-flag:before {
-	content:"\f121";
+	content:"\e022";
 }
+
+
 .icon_photo:before {
-	content:"\f122";
+	content:"\e023";
 }
-.icon_photo_stream-01:before {
-	content:"\f123";
+
+
+.icon_photo-stream-01:before {
+	content:"\e024";
 }
-.icon_photo_stream:before {
-	content:"\f124";
+
+
+.icon_photo-stream:before {
+	content:"\e025";
 }
+
+
 .icon_play:before {
-	content:"\f125";
+	content:"\e026";
 }
+
+
 .icon_quote:before {
-	content:"\f126";
+	content:"\e027";
 }
+
+
 .icon_search:before {
-	content:"\f127";
+	content:"\e028";
 }
+
+
 .icon_separator:before {
-	content:"\f128";
+	content:"\e029";
 }
+
+
 .icon_series:before {
-	content:"\f129";
+	content:"\e02a";
 }
-.icon_series_stream:before {
-	content:"\f12a";
+
+
+.icon_series-stream:before {
+	content:"\e02b";
 }
-.icon_speak_out:before {
-	content:"\f12b";
+
+
+.icon_speak-out:before {
+	content:"\e02c";
 }
+
+
 .icon_star:before {
-	content:"\f12c";
+	content:"\e02d";
 }
+
+
 .icon_story:before {
-	content:"\f12d";
+	content:"\e02e";
 }
-.icon_story_stream_01:before {
-	content:"\f12e";
+
+
+.icon_story-stream-01:before {
+	content:"\e02f";
 }
-.icon_story_stream_02:before {
-	content:"\f12f";
+
+
+.icon_story-stream-02:before {
+	content:"\e030";
 }
-.icon_story_stream_03:before {
-	content:"\f130";
+
+
+.icon_story-stream-03:before {
+	content:"\e031";
 }
+
+
 .icon_tumblr:before {
-	content:"\f131";
+	content:"\e032";
 }
+
+
 .icon_twitter:before {
-	content:"\f132";
+	content:"\e033";
 }
+
+
 .icon_video:before {
-	content:"\f133";
+	content:"\e034";
 }
-.icon_video_stream:before {
-	content:"\f134";
+
+
+.icon_video-stream:before {
+	content:"\e035";
 }
+
+
 .icon_volume:before {
-	content:"\f135";
+	content:"\e036";
 }
+
+
 .icon_write:before {
-	content:"\f136";
+	content:"\e037";
 }

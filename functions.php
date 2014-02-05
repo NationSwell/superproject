@@ -1,32 +1,29 @@
 <?php
 
-define('VERSION', file_get_contents(get_template_directory() . '/version.txt'));
+$level = error_reporting();
 
+// I'm not sure I like this approach to version management.
+define('VERSION', intval( file_get_contents( get_template_directory() . '/version.txt' ) ) );
 
+error_reporting( E_ALL & ~E_STRICT & ~E_DEPRECATED );
 
-if (WP_DEBUG && WP_DEBUG_DISPLAY)
-{
-    ini_set('error_reporting', E_ALL & ~E_STRICT & ~E_DEPRECATED);
-}
+add_theme_support( 'post-formats' );
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'menus' );
 
-add_theme_support('post-formats');
-add_theme_support('post-thumbnails');
-add_theme_support('menus');
+add_filter( 'get_twig', 'add_to_twig' );
+add_filter( 'timber_context', 'add_to_context' );
 
-add_filter('get_twig', 'add_to_twig');
-add_filter('timber_context', 'add_to_context');
+add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
-add_action('wp_enqueue_scripts', 'load_scripts');
-
-define('THEME_URL', get_template_directory_uri());
+define( 'THEME_URL', get_template_directory_uri() );
 
 
 add_filter( 'wpseo_opengraph_title', 'yoast_wpseo_title');
 
-function yoast_wpseo_title($title)
-{
+function yoast_wpseo_title( $title ) {
 
-    if(is_single()) {
+    if( is_single() ) {
         $post = new NationSwellPost();
         return $post->tout_title();
     }
@@ -34,11 +31,10 @@ function yoast_wpseo_title($title)
     return $title;
 }
 
-function add_to_context($data)
-{
-    $data['js_main'] = 'combined' . (WP_DEBUG ? '' : '.min') . '.js';
+function add_to_context( $data ) {
+    $data['js_main'] = 'combined' . ( WP_DEBUG ? '' : '.min' ) . '.js';
     $data['version'] = VERSION;
-    $data['static_dir'] = '/static/' . VERSION;
+    $data['static_dir'] = '/wp-content/themes/nationswell/';
 
     /* this is where you can add your own data to Timber's context object */
     $data['menu_main'] = new TimberMenu('menu_main');
@@ -46,8 +42,8 @@ function add_to_context($data)
     $data['menu_main_menu'] = $menu_post;
     $menu_post_items = $menu_post->items;
 
-    $data['menu_footer'] = new TimberMenu('menu_footer');
-    $data['menu_topic'] = new TimberMenu('menu_topic');
+    $data['menu_footer'] = new TimberMenu( 'menu_footer' );
+    $data['menu_topic'] = new TimberMenu( 'menu_topic' );
 
     if(!empty($menu_post) && !empty($menu_post_items)) {
 
@@ -111,8 +107,8 @@ function add_to_context($data)
         'facebook_admin'
     );
 
-    foreach($options as $option) {
-        $data[$option] = get_field($option, 'option');
+    foreach( $options as $option ) {
+        $data[$option] = get_field( $option, 'option' );
     }
 
     return $data;
