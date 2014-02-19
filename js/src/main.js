@@ -21,24 +21,20 @@
         // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
-            var $this = $(this),
-                module = getModule($this);
+           	$this.submit(function () {
+	        	var email = $(this).val();
+	            $.post("subscribesheet.php",
+	          {
+	            Email: email
+	          },
+	          function(data,status){
+	           //alert( "Status: " + status + "\nData: " +data);
+	            $(".mc-email-status").empty();
+	            $(".mc-email-status").prepend(data);
 
-            $this.ajaxChimp({
-                callback: function (resp) {
-                    if (resp.result === 'success') {
-                        setTimeout(function(){
-                            toggleThankYou();
-                        }, 500);
+	          });
+          });
 
-                        events.trigger('newsletter-subscribed', [module]);
-
-                    } else if (resp.result === 'error') {
-                        events.trigger('newsletter-subscribe-fail', [module, resp]);
-                    }
-
-                }
-            });
 
         });
 
