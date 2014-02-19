@@ -1,6 +1,6 @@
 <?php
  
- $Email = $_POST[email]
+ $Email = $_POST[email];
  $timestmp = date('l jS \of F Y h:i:s A');
 // Zend library include path
 set_include_path(get_include_path() . PATH_SEPARATOR . "$_SERVER[DOCUMENT_ROOT]/ZendGdata-2.2.5/library");
