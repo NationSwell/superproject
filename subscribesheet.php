@@ -1,30 +1,44 @@
 <?php
  
+   include_once("Google_Spreadsheet.php");
 
-// Zend library include path
-set_include_path(get_include_path() . PATH_SEPARATOR . "$_SERVER[DOCUMENT_ROOT]/ZendGdata-2.2.5/library");
-     
-include_once("Google_Spreadsheet.php");
- 
-$Email = $_POST[email];
+   $user = 'USER';			//need to create dummy acct
+   $pass = 'PASSWD';						
+
+   $ss = new Google_Spreadsheet($user, $pass);
+   $ss->useWorksheet("Sheet1");						//need to set these to match spreadsheet
+   $ss->useSpreadsheet("Newsletter Subscription");
+
+
+
+
+
+$email = $_POST['email'];
 $timestmp = date('l jS \of F Y h:i:s A');
- 
-$u = "username@gmail.com";
-$p = "password";
- 
-$ss = new Google_Spreadsheet($u,$p);
-$ss->useSpreadsheet("Newsletter Signup");
- 
-// if not setting worksheet, "Sheet1" is assumed
-// $ss->useWorksheet("worksheetName");
- 
-$row = array
+
+
+
+
+
+
+$rowData = array
 (
-    "date" => $timestmp
-    , "email" => $Email
+	  "timestamp" => $timestmp
+    , "email" => $email
+
 );
+
+if ($ss->addRow($rowData)) {
+            // Display success page here
+
+    echo "Thanks for subscribing to thenewsletter!";
+
+} else {
+            // Failed to write to the spreadsheet
+    echo "Sorry there was an error processing your request.";
+}
+
  
-if ($ss->addRow($row)) echo "You are now subscribed to the Newsletter!";
-else echo "Error, unable to add you to the newsletter subscriptions.";
+
  
-?>
+?>	
