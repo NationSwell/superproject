@@ -28,7 +28,6 @@
 	            Email: email
 	          },
 	          function(data,status){
-	           //alert( "Status: " + status + "\nData: " +data);
 	            $(".mc-email-status").empty();
 	            $(".mc-email-status").prepend(data);
 
