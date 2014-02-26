@@ -22,18 +22,19 @@
         $('.mc-form').each(function(){
 
            	$this.submit(function () {
+	        	
 	        	var email = $(this).val();
-	            $.post("subscribesheet.php",
-	          {
-	            Email: email
-	          },
-	          function(data,status){
-	            $(".mc-email-status").empty();
-	            $(".mc-email-status").prepend(data);
-
-	          });
-          });
-
+	            	var data = {
+				action: 'subscribe_action',
+				Email: email
+			};
+	            
+	            
+	           $.post(ajaxurl, data, function(response) {
+			$(".mc-email-status").empty();
+	            	$(".mc-email-status").prepend(response);
+		   });
+               });
 
         });
 
