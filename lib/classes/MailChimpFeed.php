@@ -32,10 +32,9 @@ class MailChimpFeed
         $args = array(
             'post_type' => 'ns_daily_newsletter',
             'posts_per_page' => 1,
-           'post_status' => array(                 //(string / array) - use post status. Retrieves posts by Post Status, default value i'publish'.         
-            'publish',                      // - a published post or page.
-            'pending',                      // - post is pending review.
-            )
+           'post_status' => 'publish'
+           );
+           
         $query = new WP_Query( $args );
         $post = Timber::get_post($query->posts);
         $context['feed_modified_date'] = date('r', strtotime($post->post_modified));
