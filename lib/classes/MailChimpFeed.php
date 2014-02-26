@@ -32,9 +32,8 @@ class MailChimpFeed
         $args = array(
             'post_type' => 'ns_daily_newsletter',
             'posts_per_page' => 1,
-           'post_status' => 'publish'
-           );
-           
+            'post_status' => 'publish',
+        );
         $query = new WP_Query( $args );
         $post = Timber::get_post($query->posts);
         $context['feed_modified_date'] = date('r', strtotime($post->post_modified));
