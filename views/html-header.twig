@@ -48,25 +48,3 @@ document.createElement(e[i]);
 <link rel="apple-touch-icon" href="/{{ theme_dir }}/apple-touch-icon-precomposed.png">
 
 {{ wp_head }}
-
-<script>
-    __reach_config = {
-        pid: '52cedaf2e79548d3b5000017',
-        title: '{{ ns_wp_title }}',
-        url: '{{ post.permalink }}',
-        date: '{{ post.post_date }}',
-        authors: ['{{ post.author.display_name }}'],
-        channels: ['{{ post.category }}'],
-//        tags: ['$tag1','$tag2'],
-        iframe: true,
-        ignore_errors: false,
-        domain: 'nationswell.com'
-    };
-    (function () {
-        var s = document.createElement('script');
-        s.async = true;
-        s.type = 'text/javascript';
-        s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-    })();
-</script>
