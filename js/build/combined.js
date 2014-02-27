@@ -2675,7 +2675,7 @@ window.events =
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 1500);
+                }, 5000);
 
             }
         });
