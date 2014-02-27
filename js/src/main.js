@@ -26,7 +26,8 @@
 	        	var email = $(this).val();
 	            	var data = {
 				action: 'subscribe_action',
-				Email: email
+				security: "<?php wp_create_nonce( 'subscribe_action' ); ?>",
+				emailaddr: email
 			};
 
 
