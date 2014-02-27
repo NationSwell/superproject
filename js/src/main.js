@@ -22,14 +22,14 @@
         $('.mc-form').each(function(){
 
            	$this.submit(function () {
-	        	
+
 	        	var email = $(this).val();
 	            	var data = {
 				action: 'subscribe_action',
 				Email: email
 			};
-	            
-	            
+
+
 	           $.post(ajaxurl, data, function(response) {
 			$(".mc-email-status").empty();
 	            	$(".mc-email-status").prepend(response);
@@ -72,7 +72,7 @@
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 1500);
+                }, 5000);
 
             }
         });
