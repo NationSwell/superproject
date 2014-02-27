@@ -456,42 +456,38 @@ function gtc_modify_list_output($html) {
  add_action( 'wp_ajax_subscribe_action', 'subscribe_callback' );
 
 function subscribe_callback() {
-
-	$email = sanitize_email($_POST['Email']);
+	check_ajax_referer( 'subscribe_action', 'security' );
+	$email = sanitize_email( $_POST['emailaddr'] );
+	define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
+	define( "MAILCHIMP_LIST_ID","8eaa257d1b" );
 	
-	$listId = "8eaa257d1b";
-	$apikey = "99983ece6b5ad94f7c4f026238381f4d-us6"; 
-	$double_optin=false;
-	$update_existing=false;
-	$send_welcome=true;
-	$email_type = 'html';            
 	$data = array(
-	        'email'=>$email,
-	        'apikey'=>$apikey,
-	        'id' => $listId,
-	        'double_optin' => $double_optin,
-	        'update_existing' => $update_existing,
-	        'send_welcome' => $send_welcome,
-	        'email_type' => $email_type
+	        'email' => $email,
+	        'apikey' => MAILCHIMP_API_KEY,
+	        'id' => MAILCHIMP_LIST_ID,
+	        'double_optin' => false,
+	        'update_existing' => false,
+	        'send_welcome' => true,
+	        'email_type' => 'html'
 	    );
-	$payload = json_encode($data);
+	$payload = json_encode( $data );
 	 
 	
 	$submit_url = "http://us6.api.mailchimp.com/2.0/?method=subscribe";
 	 
 	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, $submit_url);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_POST, true);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, urlencode($payload));
+	curl_setopt( $ch, CURLOPT_URL, $submit_url );
+	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+	curl_setopt( $ch, CURLOPT_POST, true );
+	curl_setopt( $ch, CURLOPT_POSTFIELDS, urlencode( $payload ) );
 	 
-	$result = curl_exec($ch);
-	curl_close ($ch);
-	$data = json_decode($result);
-	if ($data->error){
+	$result = curl_exec( $ch );
+	curl_close( $ch );
+	$data = json_decode( $result );
+	if ( $data->error ){
 	    echo $data->code .' : '.$data->error."\n";
 	} else {
 	    echo "Thank you for subscribing to our newsletter!\n";
 	}
-	die();
+	exit();
 }
