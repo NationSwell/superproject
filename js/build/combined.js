@@ -2624,24 +2624,21 @@ window.events =
         // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
-            var $this = $(this),
-                module = getModule($this);
+           	$this.submit(function () {
 
-            $this.ajaxChimp({
-                callback: function (resp) {
-                    if (resp.result === 'success') {
-                        setTimeout(function(){
-                            toggleThankYou();
-                        }, 500);
+	        	var email = $(this).val();
+	            	var data = {
+				action: 'subscribe_action',
+				security: "<?php wp_create_nonce( 'subscribe_action' ); ?>",
+				emailaddr: email
+			};
 
-                        events.trigger('newsletter-subscribed', [module]);
 
-                    } else if (resp.result === 'error') {
-                        events.trigger('newsletter-subscribe-fail', [module, resp]);
-                    }
-
-                }
-            });
+	           $.post(ajaxurl, data, function(response) {
+			$(".mc-email-status").empty();
+	            	$(".mc-email-status").prepend(response);
+		   });
+               });
 
         });
 
@@ -2679,7 +2676,7 @@ window.events =
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 1500);
+                }, 5000);
 
             }
         });
