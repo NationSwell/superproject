@@ -2624,22 +2624,28 @@ window.events =
         // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
-           	$this.submit(function () {
+        	var $this = ($(this));
+           	$this.submit(function (e) {
+                e.preventDefault();
+            }).validate({ submitHandler:  function(form){
+                    var $form = $(form),
+                        $formErrors = $form.find('.form-errors'),
+                        url = '/wp-admin/admin-ajax.php?action=subscribe_action';
 
-	        	var email = $(this).val();
-	            	var data = {
-				action: 'subscribe_action',
-				security: "<?php wp_create_nonce( 'subscribe_action' ); ?>",
-				emailaddr: email
-			};
-
-
-	           $.post(ajaxurl, data, function(response) {
-			$(".mc-email-status").empty();
-	            	$(".mc-email-status").prepend(response);
-		   });
-               });
-
+                    $formErrors.empty().addClass('hide');
+                    $.post(url, $form.serialize())
+                        .done(function () {
+                        	$(".mc-email-status").empty();
+         	        	    $(".mc-email-status").prepend("Thank you for subscribing!");
+                        })
+                        .fail(function (data) {
+                            var messages = data.responseJSON.messages;
+                            if(messages) {
+                                $formErrors.removeClass('hide').html(messages[0]);
+                            }
+                        });
+                }
+             });
         });
 
         audiojs.events.ready(function () {
@@ -2676,7 +2682,7 @@ window.events =
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 5000);
+                }, 20000);
 
             }
         });
