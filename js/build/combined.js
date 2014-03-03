@@ -2645,8 +2645,7 @@ window.events =
                             }
                         });
                 }
-                });
-
+             });
         });
 
         audiojs.events.ready(function () {
@@ -2683,7 +2682,7 @@ window.events =
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 15000);
+                }, 20000);
 
             }
         });
