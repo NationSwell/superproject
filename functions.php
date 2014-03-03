@@ -452,42 +452,28 @@ function gtc_modify_list_output($html) {
     return preg_replace('/<ol>/', '<ol data-module=\'{"name": "sidebar:popular"}\'>', $html, 1);
 }
 
- 
+
  add_action( 'wp_ajax_subscribe_action', 'subscribe_callback' );
+ add_action( 'wp_ajax_nopriv_subscribe_action', 'subscribe_callback' );
 
 function subscribe_callback() {
-	check_ajax_referer( 'subscribe_action', 'security' );
-	$email = sanitize_email( $_POST['emailaddr'] );
+	$email = sanitize_email( $_POST['EMAIL'] );
 	define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 	define( "MAILCHIMP_LIST_ID","8eaa257d1b" );
 	
-	$data = array(
-	        'email' => $email,
-	        'apikey' => MAILCHIMP_API_KEY,
-	        'id' => MAILCHIMP_LIST_ID,
-	        'double_optin' => false,
-	        'update_existing' => false,
-	        'send_welcome' => true,
-	        'email_type' => 'html'
-	    );
-	$payload = json_encode( $data );
-	 
+	$params = array(
+		"id" => MAILCHIMP_LIST_ID, 
+		"email" => array('email' => $email), 
+		"merge_vars" => array(), 
+		"email_type" => 'html', 
+		"double_optin" => false, 
+		"update_existing" => true, 
+		"replace_interests" => false, 
+		"send_welcome" => true
+		);
 	
-	$submit_url = "http://us6.api.mailchimp.com/2.0/?method=subscribe";
-	 
-	$ch = curl_init();
-	curl_setopt( $ch, CURLOPT_URL, $submit_url );
-	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-	curl_setopt( $ch, CURLOPT_POST, true );
-	curl_setopt( $ch, CURLOPT_POSTFIELDS, urlencode( $payload ) );
-	 
-	$result = curl_exec( $ch );
-	curl_close( $ch );
-	$data = json_decode( $result );
-	if ( $data->error ){
-	    echo $data->code .' : '.$data->error."\n";
-	} else {
-	    echo "Thank you for subscribing to our newsletter!\n";
-	}
-	exit();
+	$MailChimp = new Mailchimp(MAILCHIMP_API_KEY);
+	$result = $MailChimp->call('lists/subscribe', $params);
+	wp_send_json($result);
+	die();
 }
