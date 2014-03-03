@@ -21,10 +21,10 @@
         // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
-           	var $this = ($(this));
+        	var $this = ($(this));
            	$this.submit(function (e) {
                 e.preventDefault();
-        	 }).validate({ submitHandler:  function(form){
+            }).validate({ submitHandler:  function(form){
                     var $form = $(form),
                         $formErrors = $form.find('.form-errors'),
                         url = '/wp-admin/admin-ajax.php?action=subscribe_action';
@@ -79,7 +79,7 @@
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 5000);
+                }, 20000);
 
             }
         });
