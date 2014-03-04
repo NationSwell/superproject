@@ -70,7 +70,7 @@ class Subscribe_Widget extends WP_Widget {
         </p>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'mailchimp_form_action' ); ?>"><?php _e('MailChimp Form Action:', 'example'); ?></label>
+            <label for="<?php echo $this->get_field_id( 'mailchimp_form_action' ); ?>"><?php _e('MailChimp List ID:', 'example'); ?></label>
             <input id="<?php echo $this->get_field_id( 'mailchimp_form_action' ); ?>" name="<?php echo $this->get_field_name( 'mailchimp_form_action' ); ?>" value="<?php echo $instance['mailchimp_form_action']; ?>" style="width:100%;" />
         </p>
 

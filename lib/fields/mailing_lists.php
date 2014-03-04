@@ -10,7 +10,7 @@ if (function_exists("register_field_group")) {
                 'name' => 'nationswell_mailchimp_daily',
                 'type' => 'text',
                 'default_value' => '',
-                'placeholder' => 'http://nationswell.us6.list-manage1.com/subscribe/post?u=5f8740745b&id=6efe0731ab',
+                'placeholder' => '6efe0731ab',
                 'prepend' => '',
                 'append' => '',
                 'formatting' => 'none',

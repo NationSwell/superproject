@@ -8,10 +8,11 @@
         <h2 class="hd-l modal__heading">{{ modal_joinus_body_text }}</h2>
 
         <div id="mc_embed_signup">
-            <form action="{{ nationswell_mailchimp_daily }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
+            <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
                 <div class="mc-field-group cf">
                     <div class="join-us__email icon icon_envelope">
                         <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mc-email-modal">
+                        <input type="hidden" name="listid" value="{{ nationswell_mailchimp_daily }}">
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl">
                         <label for="mc-email-modal" class="mc-email-status"></label>
                     </div>
