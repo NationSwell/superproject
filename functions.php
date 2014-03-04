@@ -458,7 +458,7 @@ function gtc_modify_list_output($html) {
 
 function subscribe_callback() {
 	$email = sanitize_email( $_POST['EMAIL'] );
-	$listID = $_POST['listid'];	
+	$listID = sanitize_text_field( $_POST['listid'] );	
 	define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 
 	$params = array(
