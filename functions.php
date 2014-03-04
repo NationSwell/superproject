@@ -462,7 +462,7 @@ function subscribe_callback() {
 	define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 
 	$params = array(
-		"id" => $list_ID, 
+		"id" => $listID, 
 		"email" => array('email' => $email), 
 		"merge_vars" => array(), 
 		"email_type" => 'html', 
