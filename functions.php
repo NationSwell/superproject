@@ -463,29 +463,31 @@ function subscribe_callback() {
      $listID = sanitize_text_field( $_POST['listid'] );	
      define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
      define( "NEWSLETTER_ID","8eaa257d1b" );
-     $MailChimp = new Mailchimp(MAILCHIMP_API_KEY);
+     $MailChimp = new Mailchimp( MAILCHIMP_API_KEY );
            		
-     function chimpSubscribe( $list )
-     {
-           $params = array(
-           	"id" => $list, 
-           	"email" => array( 'email' => $email ), 
-         	"merge_vars" => array(), 
-           	"email_type" => 'html', 
-           	"double_optin" => false, 
-           	"update_existing" => true, 
-           	"replace_interests" => false, 
-           	"send_welcome" => true
-           	);
-           			
-           $result = $MailChimp->call('lists/subscribe', $params);
-           wp_send_json($result);
+     
+     namespace {
+         function ns_mailchimp_subscribe( $list, $emailaddr ) {
+               $params = array(
+               	"id" => $list, 
+               	"email" => array( 'email' => $emailaddr ), 
+             	"merge_vars" => array(), 
+               	"email_type" => 'html', 
+               	"double_optin" => false, 
+               	"update_existing" => true, 
+               	"replace_interests" => false, 
+               	"send_welcome" => true
+               	);
+               			
+               $result = $MailChimp->call( 'lists/subscribe', $params );
+               wp_send_json( $result );
+         }
      }
 
      if ( !empty( $listID ))
      {
-           chimpSubscribe( $listID );
+           ns_mailchimp_subscribe( $listID, $email );
      }
-     chimpSubscribe( NEWSLETTER_ID );
+     ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
      exit();
 }
