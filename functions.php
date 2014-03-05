@@ -457,11 +457,13 @@ function gtc_modify_list_output($html) {
  add_action( 'wp_ajax_nopriv_subscribe_action', 'subscribe_callback' );
 
 function subscribe_callback() {
-
+    
+     include_once 'Mailchimp.php';
      $email = sanitize_email( $_POST['EMAIL'] );
      $listID = sanitize_text_field( $_POST['listid'] );	
      define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
      define( "NEWSLETTER_ID","8eaa257d1b" );
+     $MailChimp = new Mailchimp(MAILCHIMP_API_KEY);
            		
      function chimpSubscribe( $list )
      {
@@ -476,7 +478,6 @@ function subscribe_callback() {
            	"send_welcome" => true
            	);
            			
-           $MailChimp = new Mailchimp(MAILCHIMP_API_KEY);
            $result = $MailChimp->call('lists/subscribe', $params);
            wp_send_json($result);
      }
