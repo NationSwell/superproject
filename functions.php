@@ -483,8 +483,8 @@ function subscribe_callback() {
 
      if ( !empty( $listID ))
      {
-           chimpSubscribe($listID);
+           chimpSubscribe( $listID );
      }
-     chimpSubscribe(NEWSLETTER_ID);
+     chimpSubscribe( NEWSLETTER_ID );
      exit();
 }
