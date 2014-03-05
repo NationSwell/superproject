@@ -457,23 +457,34 @@ function gtc_modify_list_output($html) {
  add_action( 'wp_ajax_nopriv_subscribe_action', 'subscribe_callback' );
 
 function subscribe_callback() {
-	$email = sanitize_email( $_POST['EMAIL'] );
-	$listID = sanitize_text_field( $_POST['listid'] );	
-	define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 
-	$params = array(
-		"id" => $listID, 
-		"email" => array('email' => $email), 
-		"merge_vars" => array(), 
-		"email_type" => 'html', 
-		"double_optin" => false, 
-		"update_existing" => true, 
-		"replace_interests" => false, 
-		"send_welcome" => true
-		);
-	
-	$MailChimp = new Mailchimp(MAILCHIMP_API_KEY);
-	$result = $MailChimp->call('lists/subscribe', $params);
-	wp_send_json($result);
-	exit();
+     $email = sanitize_email( $_POST['EMAIL'] );
+     $listID = sanitize_text_field( $_POST['listid'] );	
+     define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
+     define( "NEWSLETTER_ID","8eaa257d1b" );
+           		
+     function chimpSubscribe( $list )
+     {
+           $params = array(
+           	"id" => $list, 
+           	"email" => array( 'email' => $email ), 
+         	"merge_vars" => array(), 
+           	"email_type" => 'html', 
+           	"double_optin" => false, 
+           	"update_existing" => true, 
+           	"replace_interests" => false, 
+           	"send_welcome" => true
+           	);
+           			
+           $MailChimp = new Mailchimp(MAILCHIMP_API_KEY);
+           $result = $MailChimp->call('lists/subscribe', $params);
+           wp_send_json($result);
+     }
+
+     if ( !empty( $listID ))
+     {
+           chimpSubscribe($listID);
+     }
+     chimpSubscribe(NEWSLETTER_ID);
+     exit();
 }
