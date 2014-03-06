@@ -485,6 +485,6 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
     "send_welcome" => true
     );
     
-    $MailChimp = new Mailchimp( MAILCHIMP_API_KEY );          			
-    return $MailChimp->call( 'lists/subscribe', $params );
+    $mail_chimp = new Mailchimp( MAILCHIMP_API_KEY );          			
+    return $mail_chimp->call( 'lists/subscribe', $params );
 }
