@@ -34,7 +34,7 @@
                         .done(function () {
                         	if ( $('modal modal--take-action cf').length == 0 )	{
 	                        	$(".mc-email-status").empty();
-	         	        	    $(".mc-email-status").prepend("Thank you for subscribing!");
+	         	        	$(".mc-email-status").prepend("Thank you for subscribing!");
                         	} else {
                         		toggleThankYou();
                         	}
