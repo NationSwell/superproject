@@ -458,12 +458,10 @@ function gtc_modify_list_output($html) {
 
 function subscribe_callback() {
     
-
     $email = sanitize_email( $_POST['EMAIL'] );
     $listID = sanitize_text_field( $_POST['listid'] );	
     define( "NEWSLETTER_ID","8eaa257d1b" );
 
-           	
     if ( !empty( $listID ))
     {
         ns_mailchimp_subscribe( $listID, $email );
@@ -476,7 +474,6 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
     include_once 'Mailchimp.php';    
     define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 
-    
     $params = array(
   	"id" => $list, 
    	"email" => array( 'email' => $emailaddr ), 
