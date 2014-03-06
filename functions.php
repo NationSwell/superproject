@@ -458,36 +458,36 @@ function gtc_modify_list_output($html) {
 
 function subscribe_callback() {
     
-     include_once 'Mailchimp.php';
-     $email = sanitize_email( $_POST['EMAIL'] );
-     $listID = sanitize_text_field( $_POST['listid'] );	
-     define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
-     define( "NEWSLETTER_ID","8eaa257d1b" );
-     $MailChimp = new Mailchimp( MAILCHIMP_API_KEY );
-           		
-     
-     namespace {
-         function ns_mailchimp_subscribe( $list, $emailaddr ) {
-               $params = array(
-               	"id" => $list, 
-               	"email" => array( 'email' => $emailaddr ), 
-             	"merge_vars" => array(), 
-               	"email_type" => 'html', 
-               	"double_optin" => false, 
-               	"update_existing" => true, 
-               	"replace_interests" => false, 
-               	"send_welcome" => true
-               	);
-               			
-               $result = $MailChimp->call( 'lists/subscribe', $params );
-               wp_send_json( $result );
-         }
-     }
 
-     if ( !empty( $listID ))
-     {
-           ns_mailchimp_subscribe( $listID, $email );
-     }
-     ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
-     exit();
+    $email = sanitize_email( $_POST['EMAIL'] );
+    $listID = sanitize_text_field( $_POST['listid'] );	
+    define( "NEWSLETTER_ID","8eaa257d1b" );
+
+           	
+    if ( !empty( $listID ))
+    {
+        ns_mailchimp_subscribe( $listID, $email );
+    }
+    wp_send_json( ns_mailchimp_subscribe( NEWSLETTER_ID, $email ));
+    exit();
+}
+
+function ns_mailchimp_subscribe( $list, $emailaddr ) {
+    include_once 'Mailchimp.php';    
+    define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
+
+    
+    $params = array(
+  	"id" => $list, 
+   	"email" => array( 'email' => $emailaddr ), 
+ 	"merge_vars" => array(), 
+    "email_type" => 'html', 
+    "double_optin" => false, 
+    "update_existing" => true, 
+    "replace_interests" => false, 
+    "send_welcome" => true
+    );
+    
+    $MailChimp = new Mailchimp( MAILCHIMP_API_KEY );          			
+    return $MailChimp->call( 'lists/subscribe', $params );
 }
