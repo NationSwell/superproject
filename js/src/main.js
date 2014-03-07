@@ -32,11 +32,11 @@
                     $formErrors.empty().addClass('hide');
                     $.post(url, $form.serialize())
                         .done(function () {
-                        	if ( $('modal modal--take-action cf').length == 0 )	{
-	                        	$(".mc-email-status").empty();
-	         	        	$(".mc-email-status").prepend("Thank you for subscribing!");
-                        	} else {
+                        	if ( $('.modal.is-visible') )	{
                         		toggleThankYou();
+                        	} else {
+                        		$(".mc-email-status").empty();
+	         	        	$(".mc-email-status").prepend("Thank you for subscribing!");
                         	}
                         })
                         .fail(function (data) {
