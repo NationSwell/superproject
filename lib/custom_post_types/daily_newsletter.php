@@ -19,8 +19,6 @@ function create_daily_newsletter_post_type()
         )
     );
 
-    flush_rewrite_rules();
 }
 
-//add_action( 'after_switch_theme', 'create_daily_newsletter_post_type' );
 add_action('init', 'create_daily_newsletter_post_type');

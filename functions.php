@@ -167,6 +167,7 @@ function register_acf_fields()
     include_once('lib/fields/story_list.php');
     include_once('lib/fields/widget_popular.php');
     include_once('lib/fields/daily_newsletter_posts.php');
+    include_once('lib/fields/editors_picks_posts.php');
     include_once('lib/fields/facebook_admin.php');
     include_once('lib/fields/options/change_org.php');
     include_once('lib/fields/options/google.php');
@@ -182,6 +183,7 @@ include_once('lib/classes/CallToAction.php');
 include_once('lib/classes/NationSwellVideo.php');
 include_once('lib/classes/NationSwellPost.php');
 include_once('lib/classes/MailChimpFeed.php');
+include_once('lib/classes/EditorsPicksFeed.php');
 
 // Shortcodes
 include_once('lib/shortcodes/placeholder.php');
@@ -205,6 +207,7 @@ include_once('lib/tgm-plugin-activation/tgm-config.php');
 include_once('lib/custom_post_types/call_to_action.php');
 include_once('lib/custom_post_types/story_list.php');
 include_once('lib/custom_post_types/daily_newsletter.php');
+include_once('lib/custom_post_types/editors_picks.php');
 
 // Remove the SEO MetaBox from Custom Post Types
 function prefix_remove_wp_seo_meta_box() {
@@ -212,6 +215,7 @@ function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_call_to_action', 'normal' );
     remove_meta_box( 'wpseo_meta', 'guest-author', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_editors_picks', 'normal' )
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
