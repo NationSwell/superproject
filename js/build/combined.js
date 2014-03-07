@@ -2635,8 +2635,12 @@ window.events =
                     $formErrors.empty().addClass('hide');
                     $.post(url, $form.serialize())
                         .done(function () {
-                        	$(".mc-email-status").empty();
-         	        	    $(".mc-email-status").prepend("Thank you for subscribing!");
+                        	if ( $('.modal.is-visible') )	{
+                        		toggleThankYou();
+                        	} else {
+                        		$(".mc-email-status").empty();
+	         	        	    $(".mc-email-status").prepend("Thank you for subscribing!");
+                        	}
                         })
                         .fail(function (data) {
                             var messages = data.responseJSON.messages;
