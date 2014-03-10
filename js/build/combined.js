@@ -2639,7 +2639,7 @@ window.events =
                         		toggleThankYou();
                         	} else {
                         		$(".mc-email-status").empty();
-	         	        	    $(".mc-email-status").prepend("Thank you for subscribing!");
+	         	        	$(".mc-email-status").prepend("Thank you for subscribing!");
                         	}
                         })
                         .fail(function (data) {
