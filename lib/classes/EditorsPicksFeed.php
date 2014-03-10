@@ -46,3 +46,4 @@ class EditorsPicksFeed
     }
 
 }
+$editors_picks_feed = new EditorsPicksFeed();
