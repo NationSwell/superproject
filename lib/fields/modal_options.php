@@ -42,7 +42,7 @@ if (function_exists("register_field_group")) {
                     'label' => 'Modal Body Text',
                     'name' => 'modal_joinus_body_text',
                     'type' => 'text',
-                    'default_value' => 'Meet the people renewing America. Join the movement.',
+                    'default_value' => 'Do you believe in our country\'s ability to renew itself?',
                     'placeholder' => '',
                     'prepend' => '',
                     'append' => '',

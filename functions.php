@@ -215,7 +215,7 @@ function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_call_to_action', 'normal' );
     remove_meta_box( 'wpseo_meta', 'guest-author', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
-    remove_meta_box( 'wpseo_meta', 'ns_editors_picks', 'normal' )
+    remove_meta_box( 'wpseo_meta', 'ns_editors_picks', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
