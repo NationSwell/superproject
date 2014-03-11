@@ -495,7 +495,7 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
 
 function google_analytics_tracking_code(){
 
-	$property_id = get_filed('google_api_key', 'option'); 
+	$property_id = get_field('google_api_key', 'option'); 
 
  	?>
 
