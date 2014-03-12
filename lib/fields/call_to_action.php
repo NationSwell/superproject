@@ -223,7 +223,7 @@ if (function_exists("register_field_group")) {
                     'label' => 'MailChimp Form Action',
                     'name' => 'mailchimp_id',
                     'type' => 'text',
-                    'instructions' => 'The form action string from MailChimp. This is a long URL that you need to get out of an embeddable MailChimp subscribe form.',
+                    'instructions' => 'The form action string from MailChimp. This is the list ID for the list that corresponds to this Call to Action.',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -236,7 +236,31 @@ if (function_exists("register_field_group")) {
                         'allorany' => 'all',
                     ),
                     'default_value' => '',
-                    'placeholder' => 'http://ronikdesign.us5.list-manage.com/subscribe/post?u=b98ffb95799b26d50c42d8be2&id=34499b765e',
+                    'placeholder' => '34499b765e',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_528efg7496akm',
+                    'label' => 'Pledge Button',
+                    'name' => 'pledge_button',
+                    'type' => 'text',
+                    'instructions' => 'The text for the submission button. Default is \'Subscribe\', but can be changed to accomodate Pledges.',
+                    'conditional_logic' => array(
+                        'status' => 1,
+                        'rules' => array(
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'subscribe',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                    'default_value' => 'Subscribe',
+                    'placeholder' => 'Subscribe',
                     'prepend' => '',
                     'append' => '',
                     'formatting' => 'none',
