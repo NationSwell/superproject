@@ -1807,7 +1807,7 @@ input[type="submit"]:-moz-focus-inner {
   speak: none;
   font-family: 'icons';
   /* check is correct character after icon font additions */
-  content: "\f12c";
+  content: "\e02d";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2141,7 +2141,7 @@ input[type="submit"]:-moz-focus-inner {
 /* line 691, ../scss/partials/base/_components.scss */
 .module.mc-email-status {
   line-height: 1;
-  padding: .5rem 0 0 0;
+  padding: 0.5rem 0 0 0;
   display: block;
   clear: both;
 }
@@ -2587,7 +2587,7 @@ hr {
   color: white;
   background: #dd322c;
   text-transform: uppercase;
-  padding: 1.0rem 1.5rem;
+  padding: 1rem 1.5rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2804,7 +2804,7 @@ hr {
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 700;
   display: inline-block;
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid lightgrey;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
@@ -2859,7 +2859,7 @@ hr {
 .story__container .story__content > ol li:before {
   background-color: #fc3b40;
   counter-increment: li;
-  content: counter(li,decimal-leading-zero);
+  content: counter(li, decimal-leading-zero);
   color: white;
   display: inline-block;
   font-family: "Oswald", Arial, sans-serif;
@@ -2878,7 +2878,7 @@ hr {
 .story__container .story__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
-  content: "\f12c";
+  content: "\e02d";
   position: absolute;
 }
 /* line 367, ../scss/partials/base/_story.scss */
@@ -2925,7 +2925,7 @@ hr {
   height: 5.2rem;
   line-height: 5.2rem;
   text-align: center;
-  margin: 0 .5rem 0 0;
+  margin: 0 0.5rem 0 0;
 }
 
 /* Elastic video */
@@ -3221,7 +3221,7 @@ hr {
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 700;
   display: inline-block;
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid lightgrey;
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
@@ -3284,7 +3284,7 @@ hr {
 .static__container .static__content > ol li:before {
   background-color: #fc3b40;
   counter-increment: li;
-  content: counter(li,decimal-leading-zero);
+  content: counter(li, decimal-leading-zero);
   color: white;
   display: inline-block;
   font-family: "Oswald", Arial, sans-serif;
@@ -3303,7 +3303,7 @@ hr {
 .static__container .static__content > ul li:before {
   color: #0098d8;
   font-family: 'icons';
-  content: "\f12c";
+  content: "\e02d";
   position: absolute;
 }
 
@@ -3697,7 +3697,7 @@ html {
 /* line 17, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--bar {
   font-size: 3.6rem;
-  padding: 1.4rem 0 .75rem;
+  padding: 1.4rem 0 0.75rem;
 }
 /* line 21, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--bar:before {
@@ -4674,7 +4674,7 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 /* line 12, ../scss/partials/mobile/_homepage.scss */
 .hero--homepage.mobile-carousel--single .caroufredsel_wrapper {
-  height: 56rem !important;
+  height: 56rem!important;
   overflow: visible !important;
 }
 /* line 17, ../scss/partials/mobile/_homepage.scss */
