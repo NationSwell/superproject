@@ -62,4 +62,33 @@
             </div>
         </div>
     </div>
+    {% if post.authors is not empty %}
+	    <div class="story__sticky-mobile hide_desktop">
+	
+	    	{% if post.call_to_action is not empty %}
+	    		<style>
+	    		.story__sticky-mobile ul li
+	    		{
+	    			width:33.3%;
+	    		}
+	    		</style>
+	    	{% else %}
+	    		<style>
+	    		.story__sticky-mobile ul li
+	    		{
+	    			width:50%;
+	    		}
+	    		</style>
+	    	{% endif %}
+	    
+	        	<ul>
+	                <li><a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook btn--share icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a></li>
+	                <li><a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter btn--share icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a></li>
+	                    
+	                {% if post.call_to_action is not empty %}
+	                <li><a href="#" class="btn btn--bar btn--sticky-take-action-mobile btn--share icon icon_{{ post.call_to_action.icon }} data-modal-target="take-action">{{ take_action_header_text }}</a></li>
+	                {% endif %}
+	            </ul>
+	    </div>
+	 {% endif %}
 </div>
