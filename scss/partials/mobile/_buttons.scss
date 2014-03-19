@@ -118,7 +118,11 @@
   }
   
   &.btn--sticky-take-action-mobile {
-	background-color: #fc3b40;
+    background-color: #fc3b40;
+	
+    &:after {
+      background-color: #c1272b;
+    }
   }
 
   &.btn--external {
