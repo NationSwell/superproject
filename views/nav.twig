@@ -86,7 +86,7 @@
 	                <li><a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter btn--share icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a></li>
 	                    
 	                {% if post.call_to_action is not empty %}
-	                <li><a href="#" class="btn btn--bar btn--sticky-take-action-mobile btn--share icon icon_{{ post.call_to_action.icon }} data-modal-target="take-action">{{ take_action_header_text }}</a></li>
+	                <li><a href="#" class="btn btn--bar btn--sticky-take-action-mobile icon icon_{{ post.call_to_action.icon }} data-modal-target="take-action">{{ take_action_header_text }}</a></li>
 	                {% endif %}
 	            </ul>
 	    </div>
