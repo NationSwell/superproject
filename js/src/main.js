@@ -300,13 +300,7 @@
                     }
                 });
 
-                var $storySocial = $('.story__social').detach(),
-                    $storyContent = $('#story');
-
-                if ($storyContent) {
-                    $storySocial.clone().prependTo($storyContent);
-                    $storySocial.clone().appendTo($storyContent);
-                }
+                
 
                 /*if ($informationContainer) {
                  var $hero = $('.hero--story'),
