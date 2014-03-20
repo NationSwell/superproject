@@ -495,13 +495,11 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
 
 function google_analytics_tracking_code(){
 
-	$property_id = get_field('google_api_key', 'option'); 
-
  	?>
 
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
-		_gaq.push( ['_setAccount', '<?php echo $property_id; ?>'] );
+		_gaq.push( ['_setAccount', 'UA-45799105-1'] );
 		(function(){
 		    function track() {
 		        if (typeof _gaq != "undefined") {
