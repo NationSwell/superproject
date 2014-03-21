@@ -32,12 +32,9 @@
                     $formErrors.empty().addClass('hide');
                     $.post(url, $form.serialize())
                         .done(function () {
-                        	if ( $('.modal.is-visible') )	{
-                        		toggleThankYou();
-                        	} else {
-                        		$(".mc-email-status").empty();
-	         	        	$(".mc-email-status").prepend("Thank you for subscribing!");
-                        	}
+                        	toggleThankYou();
+                        	$(".mc-email-status").empty();
+                        	$(".mc-email-status").prepend("Thank you for subscribing!");
                         })
                         .fail(function (data) {
                             var messages = data.responseJSON.messages;
@@ -83,7 +80,7 @@
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 20000);
+                }, 7000);
 
             }
         });
@@ -299,14 +296,6 @@
                         }
                     }
                 });
-
-                var $storySocial = $('.story__social').detach(),
-                    $storyContent = $('#story');
-
-                if ($storyContent) {
-                    $storySocial.clone().prependTo($storyContent);
-                    $storySocial.clone().appendTo($storyContent);
-                }
 
                 /*if ($informationContainer) {
                  var $hero = $('.hero--story'),

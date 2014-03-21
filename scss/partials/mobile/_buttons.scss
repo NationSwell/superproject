@@ -116,6 +116,14 @@
       }
     }
   }
+  
+  &.btn--sticky-take-action-mobile {
+    background-color: #fc3b40;
+	
+    &:after {
+      background-color: #c1272b;
+    }
+  }
 
   &.btn--external {
     padding: 1rem 2.6rem 2rem;
