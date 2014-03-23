@@ -15,7 +15,7 @@
   }
 
   &.btn--bar {
-    font-size: 3.0rem;
+    font-size: 2.2rem;
     padding: 1.4rem 0 .75rem;
 
     &:before {
@@ -118,10 +118,18 @@
   }
   
   &.btn--sticky-take-action-mobile {
-    background-color: #fc3b40;
+	background-color: #fc3b40;
 	
-    &:after {
+	&:after {
       background-color: #c1272b;
+    }
+  }
+  
+  &.btn--email {
+	background-color: #5d5f5f;
+	
+	&:after {
+      background-color: #424343;
     }
   }
 
