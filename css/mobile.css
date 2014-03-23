@@ -3697,7 +3697,7 @@ html {
 }
 /* line 17, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--bar {
-  font-size: 3.0rem;
+  font-size: 2.2rem;
   padding: 1.4rem 0 .75rem;
 }
 /* line 21, ../scss/partials/mobile/_buttons.scss */
@@ -3805,10 +3805,18 @@ html {
   background-color: #c1272b;
 }
 /* line 128, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--email {
+  background-color: #5d5f5f;
+}
+/* line 131, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--email:after {
+  background-color: #424343;
+}
+/* line 136, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--external {
   padding: 1rem 2.6rem 2rem;
 }
-/* line 131, ../scss/partials/mobile/_buttons.scss */
+/* line 139, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--external:before {
   font-size: 6rem;
   top: 1.2rem;
