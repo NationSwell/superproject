@@ -1,11 +1,6 @@
 {% extends "action.twig" %}
 
 {% block action_body %}
-    <div class="take-action__a">
-        <p>{{ post.call_to_action.description }}</p>
-        <small>{{ take_action_privacy_policy_text }}</small>
-    </div>
-
     <div class="take-action__b">
 
         <div id="mc_embed_signup" data-module='{"name": "action:subscribe"}'>
@@ -24,5 +19,11 @@
             </form>
         </div>
 
+    </div>    
+    
+    <div class="take-action__a">
+        <p>{{ post.call_to_action.description }}</p>
+        <small>{{ take_action_privacy_policy_text }}</small>
     </div>
+
 {% endblock %}
