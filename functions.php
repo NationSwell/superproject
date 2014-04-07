@@ -15,6 +15,7 @@ add_filter( 'get_twig', 'add_to_twig' );
 add_filter( 'timber_context', 'add_to_context' );
 
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
+add_action( 'wp_head', 'nocache_headers' );
 
 define( 'THEME_URL', get_template_directory_uri() );
 
@@ -101,6 +102,7 @@ function add_to_context( $data ) {
         'modal_joinus_body_text',
         'modal_joinus_opt_out_text',
         'modal_joinus_opt_out_button_text',
+        'modal_joinus_subscribe_button_text',
         'modal_joinus_opt_out_expiration',
         'modal_joinus_close_expiration',
 
@@ -493,6 +495,35 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
     return $mail_chimp->call( 'lists/subscribe', $params );
 }
 
+ add_action( 'wp_ajax_support_action', 'supportmsg_callback' );
+ add_action( 'wp_ajax_nopriv_support_action', 'supportmsg_callback' );
+ 
+function supportmsg_callback() {
+    set_include_path(TEMPLATEPATH);
+    include_once( "Google_Spreadsheet.php" );
+    define( "NEWSLETTER_ID","8eaa257d1b" );
+    define( "GOOGLE_LOGIN","nationswellcta@gmail.com" );
+    define( "GOOGLE_PW","NS46225!" );
+    $email = sanitize_email( $_POST['email'] );
+    ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
+    
+
+	$rowData = array(
+		"first name" => sanitize_text_field( $_POST['first_name'] ),
+	    "last name" => sanitize_text_field( $_POST['last_name'] ),
+	    "email" => $email,
+	    "message" => sanitize_text_field( $_POST['message'] )
+	);
+    
+    $ss = new Google_Spreadsheet( GOOGLE_LOGIN,GOOGLE_PW );
+	$ss->useSpreadsheet( sanitize_text_field( $_POST['ssname'] ));
+    $ss->useWorksheet( sanitize_text_field( $_POST['wsname'] ));
+
+	$ss->addRow($rowData);
+	exit();
+}
+    
+
 function google_analytics_tracking_code(){
 
  	?>
@@ -536,12 +567,8 @@ function google_analytics_tracking_code(){
 		        track(module.name, 'open', 'subscribe');
 		    });
 		
-		    events.on('newsletter-subscribed', function(e, module){
+		    events.on('subscribe', function(e, module){
 		        track(module.name, 'subscribe', 'success');
-		    });
-		
-		    events.on('newsletter-subscribe-fail', function(e, module, resp){
-		        track(module.name, 'subscribe', 'fail');
 		    });
 		
 		    events.on('modal-open', function(e, name, opt_noninteraction){
@@ -593,3 +620,5 @@ function google_analytics_tracking_code(){
 }
 
 add_action( 'wp_head', 'google_analytics_tracking_code' );
+
+
