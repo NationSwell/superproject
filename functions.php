@@ -170,6 +170,7 @@ function register_acf_fields()
     include_once('lib/fields/widget_popular.php');
     include_once('lib/fields/daily_newsletter_posts.php');
     include_once('lib/fields/editors_picks_posts.php');
+    include_once('lib/fields/bi_contributors_posts.php');
     include_once('lib/fields/facebook_admin.php');
     include_once('lib/fields/options/change_org.php');
     include_once('lib/fields/options/google.php');
@@ -186,6 +187,7 @@ include_once('lib/classes/NationSwellVideo.php');
 include_once('lib/classes/NationSwellPost.php');
 include_once('lib/classes/MailChimpFeed.php');
 include_once('lib/classes/EditorsPicksFeed.php');
+include_once('lib/classes/BIContributorsFeed.php');
 
 // Shortcodes
 include_once('lib/shortcodes/placeholder.php');
@@ -210,6 +212,7 @@ include_once('lib/custom_post_types/call_to_action.php');
 include_once('lib/custom_post_types/story_list.php');
 include_once('lib/custom_post_types/daily_newsletter.php');
 include_once('lib/custom_post_types/editors_picks.php');
+include_once('lib/custom_post_types/bi_contributors.php');
 
 // Remove the SEO MetaBox from Custom Post Types
 function prefix_remove_wp_seo_meta_box() {
@@ -218,6 +221,7 @@ function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'guest-author', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_editors_picks', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_bi_contributors', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
@@ -495,10 +499,10 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
     return $mail_chimp->call( 'lists/subscribe', $params );
 }
 
- add_action( 'wp_ajax_support_action', 'supportmsg_callback' );
- add_action( 'wp_ajax_nopriv_support_action', 'supportmsg_callback' );
+ add_action( 'wp_ajax_support_action', 'ns_supportmsg_callback' );
+ add_action( 'wp_ajax_nopriv_support_action', 'ns_supportmsg_callback' );
  
-function supportmsg_callback() {
+function ns_supportmsg_callback() {
     set_include_path(TEMPLATEPATH);
     include_once( "Google_Spreadsheet.php" );
     define( "NEWSLETTER_ID","8eaa257d1b" );
@@ -519,7 +523,7 @@ function supportmsg_callback() {
 	$ss->useSpreadsheet( sanitize_text_field( $_POST['ssname'] ));
     $ss->useWorksheet( sanitize_text_field( $_POST['wsname'] ));
 
-	$ss->addRow($rowData);
+	$ss->addRow( $rowData );
 	exit();
 }
     
@@ -606,6 +610,10 @@ function google_analytics_tracking_code(){
 		    events.on('take-action_submit', function(e, module, type, label){
 		        track(module.name, 'submit', href, '');
 		    });
+		    
+		    events.on('pubexchange', function(e, module, type, label){
+		        track(module.name, type, label);
+		    });
 		
 		})();
 
@@ -621,4 +629,16 @@ function google_analytics_tracking_code(){
 
 add_action( 'wp_head', 'google_analytics_tracking_code' );
 
+function pubexchange_widget()	{
+	?>
+		<script>(function(d, s, id) {
+		var js, pjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "http://cdn.pubexchange.com/modules/partner/nation_swell";
+		pjs.parentNode.insertBefore(js, pjs);
+		}(document, 'script', 'pubexchange-jssdk'));</script>
+	<?php
+}
 
+add_action( 'wp_footer','pubexchange_widget' );
