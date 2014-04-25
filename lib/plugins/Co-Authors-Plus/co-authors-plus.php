@@ -29,12 +29,12 @@ define( 'COAUTHORS_PLUS_VERSION', '3.1-working' );
 define( 'COAUTHORS_PLUS_PATH', dirname( __FILE__ ) );
 define( 'COAUTHORS_PLUS_URL', plugin_dir_url( __FILE__ ) );
 
-require_once( dirname( __FILE__ ) . '/template-tags.php' );
+require_once(dirname(__FILE__) . '/template-tags.php');
 
-require_once( dirname( __FILE__ ) . '/php/class-coauthors-template-filters.php' );
+require_once(dirname(__FILE__) . '/php/class-coauthors-template-filters.php');
 
 if ( defined('WP_CLI') && WP_CLI )
-	require_once( dirname( __FILE__ ) . '/php/class-wp-cli.php' );
+	require_once(dirname(__FILE__) . '/php/class-wp-cli.php');
 
 class coauthors_plus {
 
@@ -124,7 +124,7 @@ class coauthors_plus {
 
 		// Load the Guest Authors functionality if needed
 		if ( $this->is_guest_authors_enabled() ) {
-			require_once( dirname( __FILE__ ) . '/php/class-coauthors-guest-authors.php' );
+			require_once(dirname(__FILE__) . '/php/class-coauthors-guest-authors.php');
 			$this->guest_authors = new CoAuthors_Guest_Authors;
 			if ( apply_filters( 'coauthors_guest_authors_force', false ) ) {
 				$this->force_guest_authors = true;

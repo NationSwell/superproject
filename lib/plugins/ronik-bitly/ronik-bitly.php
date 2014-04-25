@@ -6,7 +6,7 @@ Version: 1.1.2
 Author: Ronik
 */
 
-require_once( 'lib/BitlyService.php' );
+require_once('lib/BitlyService.php');
 
 $default_domains = array( 'bit.ly', 'bitly.com', 'j.mp' );
 
@@ -333,7 +333,7 @@ if ( $oathToken = bitly_settings( 'oauthToken' ) )
 
 // require after $bitly has been defined so we can access statistics
 if ( $bitly->hasCurl() )
-    require_once( 'bitly-widget.php' );
+    require_once('bitly-widget.php');
 
 /**
  * Loads the settings once and allows the input of the specific field the user would
