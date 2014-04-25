@@ -299,6 +299,19 @@
   font-size: 1.6rem;
 }
 
+.story__sticky-mobile {
+  width: 100%;
+   ul {
+      list-style-type: none;
+      display:table;
+      width:100%;
+
+      li {
+        display:table-cell;
+      }
+    }
+}
+
 /* tags */
 .story__tags {
   margin-bottom: 7.6rem;

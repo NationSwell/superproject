@@ -1,0 +1,110 @@
+#page-wrapper {
+  position: relative;
+}
+
+.container {
+  @include outer-container;
+}
+
+// more stories panel
+#more-stories {
+  .category-list {
+    @include span-columns(2);
+  }
+
+  .most-popular {
+    @include span-columns(10);
+  }
+}
+
+// heroes
+.hero {
+  &.hero--image {
+    .hero__content {
+      @include span-columns(7);
+      @include shift(2);
+    }
+  }
+}
+
+// rivers
+.river {
+  > .story-list {
+    @include span-columns(12);
+  }
+
+  &.river--two-col {
+    .story-teases {
+      @include span-columns(8);
+    }
+
+    .story--tease {
+      @include span-columns(8 of 8);
+    }
+  }
+}
+
+// sidebar
+.sidebar {
+  @include span-columns(4);
+}
+
+// stories
+.story__sticky {
+  @include span-columns(2);
+}
+
+.story__container {
+  @include span-columns(6);
+}
+
+// multimedia
+.multimedia {
+  .caption {
+    @include span-columns(4 of 6);
+
+    + .credit {
+      @include shift(0);
+    }
+  }
+
+  .credit {
+    @include span-columns(2 of 6);
+    @include shift(4);
+  }
+}
+
+// modules
+.module {
+  &.module--list {
+    &.module--horizontal {
+      li {
+        @include span-columns(2 of 6);
+      }
+    }
+  }
+}
+
+// story social buttons
+.story__social {
+  .btn--bar {
+    @include span-columns(3 of 6);
+  }
+}
+
+// read next
+.read-next {
+  .story-list {
+    @include span-columns(12);
+
+    li {
+      @include span-columns(4 of 12);
+    }
+  }
+}
+
+.prev-next {
+  li {
+    @include span-columns(3 of 6);
+  }
+}

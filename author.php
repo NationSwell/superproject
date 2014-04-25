@@ -11,6 +11,12 @@
 global $wp_query;
 
 $data = Timber::get_context();
+function get_next_page_link($current) {
+	return remove_query_arg('ajax-more', get_pagenum_link($current));
+}
+
+$page = max($wp_query->query_vars['paged'], 1);
+$data['more'] = $wp_query->max_num_pages > $page ? get_next_page_link($page+1) : false;
 $data['posts'] = Timber::get_posts(false, 'NationSwellPost');
 
 $author = new TimberUser($wp_query->query_vars['author']);
@@ -21,4 +27,6 @@ $data['title'] = 'Author Archives: ' . $author->name();
 
 $data['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
-Timber::render(array('author.twig', 'archive.twig'), $data);
+$more = isset($_GET['ajax-more']);
+
+Timber::render($more ? 'archive-more.twig' : array('author.twig', 'archive.twig'), $data);

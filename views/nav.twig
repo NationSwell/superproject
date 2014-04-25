@@ -13,10 +13,11 @@
                 <li><a href="{{ nationswell_twitter }}" target="_blank" data-track='{"label": "twitter"}' class="icon icon_twitter social-links__link" target="_blank"></a></li>
             </ul>
 
-            <form action="http://nationswell.us6.list-manage1.com/subscribe/post?u=5f8740745b&id=8eaa257d1b" method="post" class="mc-form validate fr hide_mobile" novalidate>
+            <form action="" method="post" class="mc-form validate fr hide_mobile" novalidate>
                 <ul id="page-subscribe" class="expand-field">
                     <li><label for="nav-subscribe" class="mc-email-status icon icon_envelope z1">Enter your email address</label></li>
                     <li><input type="email" id="nav-subscribe" placeholder="{{ nav_subscribe_placeholder_text }}" class="required"></li>
+                    <li><input type="hidden" name="listid" value=""></li>
                 </ul>
             </form>
 
@@ -61,4 +62,35 @@
             </div>
         </div>
     </div>
+    {% if post.authors is not empty %}
+	    <div class="story__sticky-mobile hide_desktop">
+	
+	    	{% if post.call_to_action is not empty %}
+	    		<style>
+	    		.story__sticky-mobile ul li
+	    		{
+	    			width:25%;
+	    		}
+	    		</style>
+	    	{% else %}
+	    		<style>
+	    		.story__sticky-mobile ul li
+	    		{
+	    			width:33.3%;
+	    		}
+	    		</style>
+	    	{% endif %}
+	    
+	        	<ul>
+	                <li><a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--facebook btn--share icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a></li>
+	                <li><a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--twitter btn--share icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a></li>
+	                 <li><a class="btn btn--bar btn--email icon icon_envelope" href="mailto:?subject={{ post.post_title }}&body={{ post.dek }}%0D%0A%0D%0A{{ post.permalink }}
+	                 %0D%0A%0D%0AMeet the people renewing America at NationSwell. Sign up for more stories here:%0D%0Ahttp://www.nationswell.com/daily-newsletter-signup/">Email</a></li>   
+	                
+	    	{% if post.call_to_action is not empty %}
+	                <li><a href="#" class="btn btn--bar btn--sticky-take-action-mobile icon icon_{{ post.call_to_action.icon }}" data-modal-target="take-action" data-modal-disable="{{ modal_joinus_close_expiration }}">{{ take_action_header_text }}</a></li>
+	                {% endif %}
+	            </ul>
+	    </div>
+	 {% endif %}
 </div>

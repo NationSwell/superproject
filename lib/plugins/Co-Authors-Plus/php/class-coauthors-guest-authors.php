@@ -25,7 +25,7 @@ class CoAuthors_Guest_Authors
 		add_action( 'admin_menu', array( $this, 'action_admin_menu' ) );
 
 		// WP List Table for breaking out our Guest Authors
-		require_once(dirname(__FILE__) . '/class-coauthors-wp-list-table.php');
+		require_once( dirname( __FILE__ ) . '/class-coauthors-wp-list-table.php' );
 
 		// Get a co-author based on a query
 		add_action( 'wp_ajax_search_coauthors_to_assign', array( $this, 'handle_ajax_search_coauthors_to_assign' ) );

@@ -7,10 +7,11 @@
     <p>{{ description }}</p>
 
     <div id="mc_embed_signup">
-        <form action="{{ mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
+        <form action="" method="post" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
             <div class="mc-field-group">
                 <div class="form-element">
                     <input type="email" value="" placeholder="Enter your email address" name="EMAIL" class="required email text-input" id="mc-email">
+                    <input type="hidden" name="listid" value="">
                     <label for="mc-email" class="mc-email-status"></label>
                 </div>
             </div>

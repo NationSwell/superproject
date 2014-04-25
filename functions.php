@@ -1,32 +1,30 @@
 <?php
 
-define('VERSION', file_get_contents(get_template_directory() . '/version.txt'));
+$level = error_reporting();
 
+// I'm not sure I like this approach to version management.
+define('VERSION', intval( file_get_contents( get_template_directory() . '/version.txt' ) ) );
 
+error_reporting( E_ALL & ~E_STRICT & ~E_DEPRECATED );
 
-if (WP_DEBUG && WP_DEBUG_DISPLAY)
-{
-    ini_set('error_reporting', E_ALL & ~E_STRICT & ~E_DEPRECATED);
-}
+add_theme_support( 'post-formats' );
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'menus' );
 
-add_theme_support('post-formats');
-add_theme_support('post-thumbnails');
-add_theme_support('menus');
+add_filter( 'get_twig', 'add_to_twig' );
+add_filter( 'timber_context', 'add_to_context' );
 
-add_filter('get_twig', 'add_to_twig');
-add_filter('timber_context', 'add_to_context');
+add_action( 'wp_enqueue_scripts', 'load_scripts' );
+add_action( 'wp_head', 'nocache_headers' );
 
-add_action('wp_enqueue_scripts', 'load_scripts');
-
-define('THEME_URL', get_template_directory_uri());
+define( 'THEME_URL', get_template_directory_uri() );
 
 
 add_filter( 'wpseo_opengraph_title', 'yoast_wpseo_title');
 
-function yoast_wpseo_title($title)
-{
+function yoast_wpseo_title( $title ) {
 
-    if(is_single()) {
+    if( is_single() ) {
         $post = new NationSwellPost();
         return $post->tout_title();
     }
@@ -34,11 +32,10 @@ function yoast_wpseo_title($title)
     return $title;
 }
 
-function add_to_context($data)
-{
-    $data['js_main'] = 'combined' . (WP_DEBUG ? '' : '.min') . '.js';
+function add_to_context( $data ) {
+    $data['js_main'] = 'combined' . ( WP_DEBUG ? '' : '.min' ) . '.js';
     $data['version'] = VERSION;
-    $data['static_dir'] = '/static/' . VERSION;
+    $data['static_dir'] = '/wp-content/themes/nationswell/';
 
     /* this is where you can add your own data to Timber's context object */
     $data['menu_main'] = new TimberMenu('menu_main');
@@ -46,8 +43,8 @@ function add_to_context($data)
     $data['menu_main_menu'] = $menu_post;
     $menu_post_items = $menu_post->items;
 
-    $data['menu_footer'] = new TimberMenu('menu_footer');
-    $data['menu_topic'] = new TimberMenu('menu_topic');
+    $data['menu_footer'] = new TimberMenu( 'menu_footer' );
+    $data['menu_topic'] = new TimberMenu( 'menu_topic' );
 
     if(!empty($menu_post) && !empty($menu_post_items)) {
 
@@ -105,14 +102,15 @@ function add_to_context($data)
         'modal_joinus_body_text',
         'modal_joinus_opt_out_text',
         'modal_joinus_opt_out_button_text',
+        'modal_joinus_subscribe_button_text',
         'modal_joinus_opt_out_expiration',
         'modal_joinus_close_expiration',
 
         'facebook_admin'
     );
 
-    foreach($options as $option) {
-        $data[$option] = get_field($option, 'option');
+    foreach( $options as $option ) {
+        $data[$option] = get_field( $option, 'option' );
     }
 
     return $data;
@@ -171,6 +169,8 @@ function register_acf_fields()
     include_once('lib/fields/story_list.php');
     include_once('lib/fields/widget_popular.php');
     include_once('lib/fields/daily_newsletter_posts.php');
+    include_once('lib/fields/editors_picks_posts.php');
+    include_once('lib/fields/bi_contributors_posts.php');
     include_once('lib/fields/facebook_admin.php');
     include_once('lib/fields/options/change_org.php');
     include_once('lib/fields/options/google.php');
@@ -186,6 +186,8 @@ include_once('lib/classes/CallToAction.php');
 include_once('lib/classes/NationSwellVideo.php');
 include_once('lib/classes/NationSwellPost.php');
 include_once('lib/classes/MailChimpFeed.php');
+include_once('lib/classes/EditorsPicksFeed.php');
+include_once('lib/classes/BIContributorsFeed.php');
 
 // Shortcodes
 include_once('lib/shortcodes/placeholder.php');
@@ -209,6 +211,8 @@ include_once('lib/tgm-plugin-activation/tgm-config.php');
 include_once('lib/custom_post_types/call_to_action.php');
 include_once('lib/custom_post_types/story_list.php');
 include_once('lib/custom_post_types/daily_newsletter.php');
+include_once('lib/custom_post_types/editors_picks.php');
+include_once('lib/custom_post_types/bi_contributors.php');
 
 // Remove the SEO MetaBox from Custom Post Types
 function prefix_remove_wp_seo_meta_box() {
@@ -216,6 +220,8 @@ function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_call_to_action', 'normal' );
     remove_meta_box( 'wpseo_meta', 'guest-author', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_editors_picks', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'ns_bi_contributors', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
@@ -455,3 +461,184 @@ add_filter('gtc_list_output', 'gtc_modify_list_output');
 function gtc_modify_list_output($html) {
     return preg_replace('/<ol>/', '<ol data-module=\'{"name": "sidebar:popular"}\'>', $html, 1);
 }
+
+
+ add_action( 'wp_ajax_subscribe_action', 'subscribe_callback' );
+ add_action( 'wp_ajax_nopriv_subscribe_action', 'subscribe_callback' );
+
+function subscribe_callback() {
+    
+    $email = sanitize_email( $_POST['EMAIL'] );
+    $listID = sanitize_text_field( $_POST['listid'] );	
+    define( "NEWSLETTER_ID","8eaa257d1b" );
+
+    if ( !empty( $listID ))
+    {
+        ns_mailchimp_subscribe( $listID, $email );
+    }
+    wp_send_json( ns_mailchimp_subscribe( NEWSLETTER_ID, $email ));
+    exit();
+}
+
+function ns_mailchimp_subscribe( $list, $emailaddr ) {
+    include_once 'Mailchimp.php';    
+    define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
+
+    $params = array(
+  	"id" => $list, 
+   	"email" => array( 'email' => $emailaddr ), 
+ 	"merge_vars" => array(), 
+    "email_type" => 'html', 
+    "double_optin" => false, 
+    "update_existing" => true, 
+    "replace_interests" => false, 
+    "send_welcome" => true
+    );
+    
+    $mail_chimp = new Mailchimp( MAILCHIMP_API_KEY );          			
+    return $mail_chimp->call( 'lists/subscribe', $params );
+}
+
+ add_action( 'wp_ajax_support_action', 'ns_supportmsg_callback' );
+ add_action( 'wp_ajax_nopriv_support_action', 'ns_supportmsg_callback' );
+ 
+function ns_supportmsg_callback() {
+    set_include_path(TEMPLATEPATH);
+    include_once( "Google_Spreadsheet.php" );
+    define( "NEWSLETTER_ID","8eaa257d1b" );
+    define( "GOOGLE_LOGIN","nationswellcta@gmail.com" );
+    define( "GOOGLE_PW","NS46225!" );
+    $email = sanitize_email( $_POST['email'] );
+    ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
+    
+
+	$rowData = array(
+		"first name" => sanitize_text_field( $_POST['first_name'] ),
+	    "last name" => sanitize_text_field( $_POST['last_name'] ),
+	    "email" => $email,
+	    "message" => sanitize_text_field( $_POST['message'] )
+	);
+    
+    $ss = new Google_Spreadsheet( GOOGLE_LOGIN,GOOGLE_PW );
+	$ss->useSpreadsheet( sanitize_text_field( $_POST['ssname'] ));
+    $ss->useWorksheet( sanitize_text_field( $_POST['wsname'] ));
+
+	$ss->addRow( $rowData );
+	exit();
+}
+    
+
+function google_analytics_tracking_code(){
+
+ 	?>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push( ['_setAccount', 'UA-45799105-1'] );
+		(function(){
+		    function track() {
+		        if (typeof _gaq != "undefined") {
+		            var event = ['_trackEvent'], i, n;
+		            for(i = 0, n = arguments.length; i < n; i++){
+		                if(arguments[i] !== undefined) {
+		                    event.push(arguments[i]);
+		            }
+		        }
+		            console.log(event);
+		            _gaq.push(event);
+		        }
+		    }
+		
+		    events.on('track', function(e, data) {
+		        track(data.moduleName, data.action, data.label || data.url, data.value || data.position);
+		    });
+		
+		    events.on('nav-open', function(){
+		        track('nav', 'open', 'top-nav');
+		    });
+		
+		    events.on('nav-search-open', function(e, module){
+		        track(module.name, 'open', 'search');
+		    });
+		
+		
+		    events.on('nav-more-stories-open', function(e, module){
+		        track(module.name, 'open', 'more-stories');
+		    });
+		
+		
+		    events.on('nav-subscribe-open', function(e, module){
+		        track(module.name, 'open', 'subscribe');
+		    });
+		
+		    events.on('subscribe', function(e, module){
+		        track(module.name, 'subscribe', 'success');
+		    });
+		
+		    events.on('modal-open', function(e, name, opt_noninteraction){
+		        track("modal:" + name, "open", "", "", opt_noninteraction);
+		    });
+		
+		    events.on('modal-close', function(e, name, opt_noninteraction){
+		        track("modal:" + name, "close", "", "", opt_noninteraction);
+		    });
+		
+		    events.on('modal-disable', function(e, name, opt_noninteraction){
+		        track("modal:" + name, "disable", "", "", opt_noninteraction);
+		    });
+		
+		    events.on('flyout-open', function(e, module){
+		        track(module.name, "open", "", "", true);
+		    });
+		
+		    events.on('facebook-like', function(e, module, href){
+		        track(module.name, 'like', '', href);
+		    });
+		
+		    events.on('facebook-unlike', function(e, module, href){
+		        track(module.name, 'unlike', '', href);
+		    });
+		
+		    events.on('facebook-comment', function(e, href, commentID){
+		        track("story:comments", "create-comment", href, commentID);
+		    });
+		
+		    events.on('twitter', function(e, module, type, label){
+		        track(module.name, type, label);
+		    });
+		    
+		    events.on('take-action_submit', function(e, module, type, label){
+		        track(module.name, 'submit', href, '');
+		    });
+		    
+		    events.on('pubexchange', function(e, module, type, label){
+		        track(module.name, type, label);
+		    });
+		
+		})();
+
+		  ( function() {
+		    var ga = document.createElement( 'script' ); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ( 'https:' == document.location.protocol ? 'https://' : 'http://' ) + 'stats.g.doubleclick.net/dc.js';
+		    var s = document.getElementsByTagName( 'script' )[0]; s.parentNode.insertBefore( ga, s );
+		  })();
+		</script>
+
+<?php 
+}
+
+add_action( 'wp_head', 'google_analytics_tracking_code' );
+
+function pubexchange_widget()	{
+	?>
+		<script>(function(d, s, id) {
+		var js, pjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "http://cdn.pubexchange.com/modules/partner/nation_swell";
+		pjs.parentNode.insertBefore(js, pjs);
+		}(document, 'script', 'pubexchange-jssdk'));</script>
+	<?php
+}
+
+add_action( 'wp_footer','pubexchange_widget' );

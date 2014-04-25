@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+
+     xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+    	<atom:link href="http://www.nationswell.com/feeds/editors-picks" rel="self" type="application/rss+xml" />
+        <title>{{ title }}</title>
+        <link>{{ function('bloginfo_rss', 'url') }}</link>
+        <logo>http://www.nationswell.com/?attachment_id=7615</logo>
+        <description>{{ function('bloginfo_rss', 'description') }}</description>
+        <language>{{ function('bloginfo_rss', 'language') }}</language>
+        <lastBuildDate>{{ feed_modified_date }}</lastBuildDate>
+        {% for post in posts %}
+        <item>
+            <title>{{ post.tout_title }}</title>
+            <link>{{ post.permalink }}</link>
+            <description><![CDATA[{{ post.tout_dek_text }}]]></description>
+            <content:encoded><![CDATA[{{ post.tout_dek_text }}]]></content:encoded>
+            <guid isPermaLink="false">{{ post.permalink }}</guid>
+            {#<pubDate>{{ post.post_date|date("D, d M Y H:i:s O") }}</pubDate>#}
+            <pubDate>{{ "now"|date("D, d M Y H:i:s O") }}</pubDate>
+            <dc:creator><![CDATA[{{ post.author.name }}]]></dc:creator>
+            {% for term in post.terms('category') %}
+            <category>{{term.name}}</category>
+            {% endfor %}
+            <media:content url="{{ post.thumbnail.src|resize(524, 524) }}" medium="image" />
+            <enclosure length="1000" url="{{ post.thumbnail.src|resize(524, 524) }}" type="image/*" />
+        </item>
+        {% endfor %}
+    </channel>
+</rss>
