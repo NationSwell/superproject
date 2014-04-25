@@ -28,20 +28,19 @@
                     var $form = $(form),
                         $formErrors = $form.find('.form-errors'),
                         url = '/wp-admin/admin-ajax.php?action=subscribe_action';
-
-                    $formErrors.empty().addClass('hide');
-                    $.post(url, $form.serialize())
-                        .done(function () {
-                        	toggleThankYou();
-                        	$(".mc-email-status").empty();
-                        	$(".mc-email-status").prepend("Thank you for subscribing!");
-                        })
-                        .fail(function (data) {
-                            var messages = data.responseJSON.messages;
-                            if(messages) {
-                                $formErrors.removeClass('hide').html(messages[0]);
-                            }
-                        });
+                    	$formErrors.empty().addClass('hide');
+                        $.post(url, $form.serialize())
+                            .done(function () {
+                            	toggleThankYou();
+                            	$(".mc-email-status").empty();
+                            	$(".mc-email-status").prepend("Thank you for subscribing!");
+                            })
+                            .fail(function (data) {
+                                var messages = data.responseJSON.messages;
+                                if(messages) {
+                                    $formErrors.removeClass('hide').html(messages[0]);
+                                }
+                            });
                 }
              });
         });
@@ -80,7 +79,7 @@
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 7000);
+                }, 15000);
 
             }
         });
@@ -192,12 +191,12 @@
         // Track Comment: Create
         // Disable the Flyout
         window.fbAsyncInit = function() {
-            FB.Event.subscribe('edge.create',
-                function(href, widget) {
-                    events.trigger('facebook-like', [$(widget).data("module"), href]);
-
-                    $.cookie('flyout', 'disabled', { expires: 5, path: '/' });
-                }
+            FB.Event.subscribe('edge.create',	
+            		function(href, widget) {
+	                    events.trigger('facebook-like', [$(widget).data("module"), href]);
+	                    $(".fb_iframe_widget iframe").animate({left: "+=-200"}, 800);
+	                    $.cookie('flyout', 'disabled', { expires: 5, path: '/' });
+            		}
             );
 
             FB.Event.subscribe('edge.remove',
@@ -210,8 +209,7 @@
                     events.trigger('facebook-comment', [href, commentID]);
             });
         };
-
-
+        
         if (!$.cookie('flyout')) {
 
             // setTimeout(function () {
@@ -715,6 +713,28 @@
                     });
             }
             });
+        
+        //Support message take action
+        $('#support-action-form').submit(function (e) {
+               e.preventDefault();
+            }).validate({ submitHandler:  function(form){
+                    var $form = $(form),
+                        $formErrors = $form.find('.form-errors'),
+                        url = '/wp-admin/admin-ajax.php?action=support_action';
+                    	
+                    $formErrors.empty().addClass('hide');
+                    $.post(url, $form.serialize())
+                        .done(function () {
+                            toggleThankYou();
+                        })
+                        .fail(function (data) {
+                            var messages = data.responseJSON.messages;
+                            if(messages) {
+                                $formErrors.removeClass('hide').html(messages[0]);
+                            }
+                        });
+                }
+        });
 
         // tweet a politician
         function parseReps(data) {

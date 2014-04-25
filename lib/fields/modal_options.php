@@ -84,6 +84,29 @@ if (function_exists("register_field_group")) {
                     ),
                 ),
                 array (
+                    'key' => 'field_793w8g29x9ft4',
+                    'label' => 'Subscribe Button Text',
+                    'name' => 'modal_joinus_subscribe_button_text',
+                    'type' => 'text',
+                    'default_value' => 'Subscribe',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => '',
+                    'conditional_logic' => array (
+                        'status' => 1,
+                        'rules' => array (
+                            array (
+                                'field' => 'field_528ecf1821ebf',
+                                'operator' => '==',
+                                'value' => '1',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                ),
+                array (
                     'key' => 'field_529d3c84a8bd1',
                     'label' => 'Modal Opt Out Button Text',
                     'name' => 'modal_joinus_opt_out_button_text',
