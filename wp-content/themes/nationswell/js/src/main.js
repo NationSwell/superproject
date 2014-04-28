@@ -798,35 +798,50 @@
         }
 
         var $politicianLookup = $('#politician-lookup'),
-            lookupValidator = $politicianLookup.validate({
-                submitHandler: function(form){
-                    var $form = $(form),
-                        $modal = $form.closest('.take-action__full').closest('.modal'),
-                        $tweet = $('#tweet-message');
+        lookupValidator = $politicianLookup.validate({
+            submitHandler: function(form){
+                var $form = $(form),
+                    $modal = $form.closest('.take-action__full').closest('.modal'),
+                    $tweet = $('#tweet-message');
 
-                    lookupReps($form.find('[name=ta-address]').val(), function(reps) {
-                        renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
-                    }, function(data) {
-                        if(data.status === 'addressUnparseable') {
-                            lookupValidator.showErrors({
-                                "ta-address": "Sorry we don't recognize this address"
-                            });
-                        } else if(data.error) {
-                            lookupValidator.showErrors({
-                                "ta-address": "We are unable to look up addresses at this time. Please try again later"
-                            });
+                lookupReps($form.find('[name=ta-address]').val(), function(reps) {
+                    renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
+                }, function(data) {
+                    if(data.status === 'addressUnparseable') {
+                        lookupValidator.showErrors({
+                            "ta-address": "Sorry we don't recognize this address"
+                        });
+                    } else if(data.error) {
+                        lookupValidator.showErrors({
+                            "ta-address": "We are unable to look up addresses at this time. Please try again later"
+                        });
+                    }
+                });
+                
+                var $formErrors = $form.find('.form-errors'),
+                url = '/wp-admin/admin-ajax.php?action=subscribe_action';
+            	$formErrors.empty().addClass('hide');
+                $.post(url, $form.serialize())
+                    .done(function () {
+                    	$(".mc-email-status").empty();
+                    	$(".mc-email-status").prepend("Thank you for subscribing!");
+                    })
+                    .fail(function (data) {
+                        var messages = data.responseJSON.messages;
+                        if(messages) {
+                            $formErrors.removeClass('hide').html(messages[0]);
                         }
                     });
 
-                    if($modal.length) {
-                        fitTakeAction($modal);
-                    }
+                if($modal.length) {
+                    fitTakeAction($modal);
                 }
-            });
-
-        $politicianLookup.submit(function (event) {
-            event.preventDefault();
+            }
         });
+
+    $politicianLookup.submit(function (event) {
+        event.preventDefault();
+    });
 
         function politicianTemplate(politician, shortUrl, message) {
             var twitterUrl = 'https://twitter.com/share?url='
