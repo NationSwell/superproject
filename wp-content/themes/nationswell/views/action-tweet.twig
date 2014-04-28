@@ -5,6 +5,11 @@
         <p>{{ post.call_to_action.description }}</p>
 
         <form id="politician-lookup" class="tweet-politician__lookup cf">
+	        <div class="form-element">
+		        <label for="EMAIL">E-mail</label>
+		        <input type="email" value="" placeholder="Enter your email address" name="EMAIL" class="required email text-input" id="mc-email">
+		      	<input type="hidden" name="listid" value="">
+		    </div>
             <div class="form-element form-element--two-third">
                 <label for="ta-address">Address</label>
                 <input name="ta-address" id="ta-address" type="text" class="text-input" placeholder="ex: 420 Paper St. Wilmington, DE 19886" required="required">
@@ -15,14 +20,13 @@
             </div>
         </form>
 
-        <div id="tweet-message" class="tweet-politician__message icon icon_twitter" data-tweet-message="{{ post.call_to_action.tweet_text }}" data-tweet-url="{{ post.short_url }}">
-            {{ post.call_to_action.tweet_text }}
-        </div>
-
-        <div id="tweet-a-politician-container">
-            <div id="tweet-a-politician" class="tweet-politician__politicians"></div>
-            <p class="btn-container">{{ share_take_action_text }} <button type="submit" class="btn btn--solid take-action__submit">{{ share_take_action_button_text }}</button></p>
-        </div>
-
+	    <div id="tweet-message" class="tweet-politician__message icon icon_twitter" data-tweet-message="{{ post.call_to_action.tweet_text }}" data-tweet-url="{{ post.short_url }}">
+	        {{ post.call_to_action.tweet_text }}
+	    </div>
+	
+	    <div id="tweet-a-politician-container">
+	        <div id="tweet-a-politician" class="tweet-politician__politicians"></div>
+	        <p class="btn-container">{{ share_take_action_text }} <button type="submit" class="btn btn--solid take-action__submit">{{ share_take_action_button_text }}</button></p>
+	    </div>
     </div>
 {% endblock %}
