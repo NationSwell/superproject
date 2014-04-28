@@ -31,8 +31,8 @@ function my_theme_register_required_plugins()
             'source' => get_stylesheet_directory() . '/lib/plugins/timber-library.0.15.5.zip',
             'required' => true,
             'version' => '0.15.5',
-            'force_activation' => true,
-            'force_deactivation' => true,
+            'force_activation' => false,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
@@ -161,8 +161,8 @@ function my_theme_register_required_plugins()
             'source' => get_stylesheet_directory() . '/lib/plugins/google-analytics-for-wordpress.4.3.3.zip',
             'required' => true,
             'version' => '4.3.3',
-            'force_activation' => true,
-            'force_deactivation' => true,
+            'force_activation' => false,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
