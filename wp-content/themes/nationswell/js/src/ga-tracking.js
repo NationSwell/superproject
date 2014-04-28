@@ -74,4 +74,16 @@
         track(module.name, type, label);
     });
 
+    events.on('subscribe', function(e, module){
+        track(module.name, 'subscribe', 'success');
+    });
+
+    events.on('take-action_submit', function(e, module, type, label){
+        track(module.name, 'submit', href, '');
+    });
+
+    events.on('pubexchange', function(e, module, type, label){
+        track(module.name, type, label);
+    });
+
 })();
