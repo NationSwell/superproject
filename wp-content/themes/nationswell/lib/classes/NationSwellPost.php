@@ -188,12 +188,21 @@ if (class_exists('TimberPost')) {
             return $this->get_preview(20, false, '');
         }
 
-        function coauthors()
+        function coauthors_posts_links()
         {
 
             if (function_exists('coauthors_posts_links')) {
                 return coauthors_posts_links(null, null, null, null, false);
             } else {
+                return author();
+            }
+        }
+
+        function coauthors()
+        {
+            if (function_exists('coauthors')) {
+                return coauthors(null, null, null, null, false);
+            }  else {
                 return author();
             }
         }

@@ -29,7 +29,7 @@
                     <header>
                         <ul class="story__meta">
                             <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a></li>
-                            <li>{{ byline_prefix_text }} {{ post.coauthors }} on {{ post.post_date|date('F j, Y') }}</li>
+                            <li>{{ byline_prefix_text }} {{ post.coauthors_posts_links }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
