@@ -211,8 +211,8 @@ function my_theme_register_required_plugins()
             'source' => get_stylesheet_directory() . '/lib/plugins/optimizely.1.0.1.zip',
             'required' => true,
             'version' => '1.0.1',
-            'force_activation' => true,
-            'force_deactivation' => true,
+            'force_activation' => false,
+            'force_deactivation' => false,
             'external_url' => '',
         ),
         array(
