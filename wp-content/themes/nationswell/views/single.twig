@@ -29,7 +29,7 @@
                     <header>
                         <ul class="story__meta">
                             <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a></li>
-                            <li>{{ byline_prefix_text }} {{ post.coauthors_posts_links }} on {{ post.post_date|date('F j, Y') }}</li>
+                            <li>{{ byline_prefix_text }} {{ post.coauthors }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
@@ -54,10 +54,6 @@
                     {#</ul>#}
                 {#</div>#}
 
-                {% for author in post.authors %}
-                    {% include 'author-box.twig' %}
-                {% endfor %}
-
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
                 {% endif %}
@@ -66,6 +62,12 @@
                     <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--share btn--facebook icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_expanded_text }}</a>
                     <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--share btn--twitter icon icon_twitter" data-track='{"action": "facebook"}'>{{ twitter_button_expanded_text }}</a>
                 </div>
+                
+                <div id="pubexchange_below"></div>
+                
+                {% for author in post.authors %}
+                    {% include 'author-box.twig' %}
+                {% endfor %}
 
                 {% include('comments.twig') %}
 
