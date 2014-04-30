@@ -25,7 +25,16 @@
             <guid isPermaLink="false">{{ post.permalink }}</guid>
             {#<pubDate>{{ post.post_date|date("D, d M Y H:i:s O") }}</pubDate>#}
             <pubDate>{{ "now"|date("D, d M Y H:i:s O") }}</pubDate>
-            <dc:creator>{% for author in post.authors %}{{ author.first_name }} {{ author.last_name }},{% endfor %}</dc:creator>
+            <dc:creator>
+                {% for author in post.authors %}
+                    {{ author.first_name }} {{ author.last_name }}
+                    {% if loop.last %}
+
+                    {% else %}
+                        ,
+                    {% endif %}
+                {% endfor %}
+            </dc:creator>
             {% for term in post.terms('category') %}
             <category>{{term.name}}</category>
             {% endfor %}
