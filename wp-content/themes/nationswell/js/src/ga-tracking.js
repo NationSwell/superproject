@@ -1,14 +1,18 @@
 (function(){
     function track() {
-        if (typeof _gaq != "undefined") {
-            var event = ['_trackEvent'], i, n;
+        if (typeof ga != "undefined") {
+            var event = ['send', 'event'], i, n;
             for(i = 0, n = arguments.length; i < n; i++){
                 if(arguments[i] !== undefined) {
                     event.push(arguments[i]);
                 }
             }
+
+//            var eventString = event.join(",");
+
             console.log(event);
-            _gaq.push(event);
+//            ga.apply(null, event);
+            ga('send', 'event', 'button', 'click', 'nav buttons', 4);
         }
     }
 

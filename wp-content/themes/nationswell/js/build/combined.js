@@ -2526,15 +2526,19 @@ window.events =
         };
     })();;(function(){
     function track() {
-        if (typeof _gaq != "undefined") {
-            var event = ['_trackEvent'], i, n;
+        if (typeof ga != "undefined") {
+            var event = ['send', 'event'], i, n;
             for(i = 0, n = arguments.length; i < n; i++){
                 if(arguments[i] !== undefined) {
                     event.push(arguments[i]);
                 }
             }
+
+//            var eventString = event.join(",");
+
             console.log(event);
-            _gaq.push(event);
+//            ga.apply(null, event);
+            ga('send', 'event', 'button', 'click', 'nav buttons', 4);
         }
     }
 
@@ -2600,8 +2604,19 @@ window.events =
         track(module.name, type, label);
     });
 
-})();
-;(function ($) {
+    events.on('subscribe', function(e, module){
+        track(module.name, 'subscribe', 'success');
+    });
+
+    events.on('take-action_submit', function(e, module, type, label){
+        track(module.name, 'submit', href, '');
+    });
+
+    events.on('pubexchange', function(e, module, type, label){
+        track(module.name, type, label);
+    });
+
+})();;(function ($) {
     $(function () {
 
 //        var viewPortScale = 1 / window.devicePixelRatio;
