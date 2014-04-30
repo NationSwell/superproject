@@ -11,8 +11,8 @@
 //            var eventString = event.join(",");
 
             console.log(event);
-//            ga.apply(null, event);
-            ga('send', 'event', 'button', 'click', 'nav buttons', 4);
+            ga.apply(null, event);
+//            ga('send', 'event', 'button', 'click', 'nav buttons', 4);
         }
     }
 
