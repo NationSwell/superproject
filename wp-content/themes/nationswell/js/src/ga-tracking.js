@@ -8,11 +8,11 @@
                 }
             }
 
-//            var eventString = event.join(",");
+            if(typeof console == "object") {
+                console.log(event);
+            }
 
-            console.log(event);
             ga.apply(null, event);
-//            ga('send', 'event', 'button', 'click', 'nav buttons', 4);
         }
     }
 
