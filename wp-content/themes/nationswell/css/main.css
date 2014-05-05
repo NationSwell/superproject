@@ -61,7 +61,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 18, ../scss/bourbon/addons/_clearfix.scss */
+/* line 17, ../scss/bourbon/addons/_clearfix.scss */
 .container:before, .container:after {
   content: " ";
   display: table;
@@ -363,7 +363,7 @@ body {
 /* line 21, ../scss/partials/_utility.scss */
 .link-wrapper {
   outline: 0px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   width: 100%;
   height: 100%;
   display: block;
@@ -618,7 +618,7 @@ a:hover {
   line-height: 1.4;
 }
 
-/* line 19, ../scss/partials/_typography.scss */
+/* line 18, ../scss/partials/_typography.scss */
 .credit,
 .byline {
   color: #7e7e7e;
@@ -668,7 +668,6 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 14, ../scss/partials/_icons.scss */
 .icon {
   font-family: "icons";
@@ -867,7 +866,7 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 59, ../scss/partials/_buttons.scss */
+/* line 58, ../scss/partials/_buttons.scss */
 .btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
   width: 28.1625rem;
 }
@@ -1146,7 +1145,7 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 92, ../scss/partials/_nav.scss */
+/* line 91, ../scss/partials/_nav.scss */
 .search label:active, .search label:focus {
   outline: 0 none;
 }
@@ -1196,7 +1195,7 @@ a:hover {
 .search input[type="text"]:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 127, ../scss/partials/_nav.scss */
+/* line 126, ../scss/partials/_nav.scss */
 .search input[type="text"]:focus, .search input[type="text"]:active {
   outline: 0 none;
 }
@@ -1263,7 +1262,7 @@ a:hover {
 #more-stories.open {
   height: 46rem;
 }
-/* line 17, ../scss/partials/_more-stories.scss */
+/* line 16, ../scss/partials/_more-stories.scss */
 #more-stories .container:before, #more-stories .container:after {
   display: table;
   content: '';
@@ -1298,7 +1297,7 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 52, ../scss/partials/_more-stories.scss */
+/* line 51, ../scss/partials/_more-stories.scss */
 #more-stories .category-list__category:hover, #more-stories .category-list__category.active {
   color: #0098d8;
 }
@@ -1658,7 +1657,7 @@ a:hover {
   position: relative;
   top: -1rem;
 }
-/* line 250, ../scss/partials/_components.scss */
+/* line 249, ../scss/partials/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1689,7 +1688,7 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-font-smoothing: antialiased;
 }
-/* line 284, ../scss/partials/_components.scss */
+/* line 283, ../scss/partials/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
@@ -1699,7 +1698,7 @@ a:hover {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 296, ../scss/partials/_components.scss */
+/* line 295, ../scss/partials/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
@@ -1779,7 +1778,7 @@ a:hover {
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 385, ../scss/partials/_components.scss */
+/* line 384, ../scss/partials/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
@@ -2055,16 +2054,26 @@ a:hover {
 }
 
 /* line 121, ../scss/partials/_carousels.scss */
+.carousel--series__images--1 .carousel--series__image {
+  width: 100%;
+}
+
+/* line 125, ../scss/partials/_carousels.scss */
+.carousel--series__images--2 .carousel--series__image {
+  width: 50%;
+}
+
+/* line 131, ../scss/partials/_carousels.scss */
 .carousel--series .carousel-item {
   height: 46rem;
 }
-/* line 125, ../scss/partials/_carousels.scss */
+/* line 135, ../scss/partials/_carousels.scss */
 .carousel--series .carousel--series__images {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 131, ../scss/partials/_carousels.scss */
+/* line 141, ../scss/partials/_carousels.scss */
 .carousel--series .carousel--series__image {
   display: block;
   float: left;
@@ -2074,7 +2083,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 140, ../scss/partials/_carousels.scss */
+/* line 150, ../scss/partials/_carousels.scss */
 .carousel--series .carousel--series__image:after {
   content: '';
   background-image: url("../img/overlay_mesh.png");
@@ -2087,39 +2096,39 @@ a:hover {
   opacity: 0.5;
   pointer-events: none;
 }
-/* line 153, ../scss/partials/_carousels.scss */
+/* line 163, ../scss/partials/_carousels.scss */
 .carousel--series .carousel--series__image:first-child {
   box-shadow: inset -2px 0 0 white;
 }
-/* line 156, ../scss/partials/_carousels.scss */
+/* line 166, ../scss/partials/_carousels.scss */
 .carousel--series .carousel--series__image:first-child:after {
   padding-right: 2px;
 }
-/* line 161, ../scss/partials/_carousels.scss */
+/* line 171, ../scss/partials/_carousels.scss */
 .carousel--series .carousel--series__image:last-child {
   box-shadow: inset 2px 0 0 white;
 }
-/* line 164, ../scss/partials/_carousels.scss */
+/* line 174, ../scss/partials/_carousels.scss */
 .carousel--series .carousel--series__image:last-child:after {
   padding-left: 2px;
 }
 
-/* line 172, ../scss/partials/_carousels.scss */
+/* line 182, ../scss/partials/_carousels.scss */
 .carousel--photo .carousel-item {
   width: 94rem;
   height: 54rem;
   box-shadow: -2px 0 0 white;
   pointer-events: none;
 }
-/* line 178, ../scss/partials/_carousels.scss */
+/* line 188, ../scss/partials/_carousels.scss */
 .carousel--photo .carousel-item.active {
   pointer-events: all;
 }
-/* line 181, ../scss/partials/_carousels.scss */
+/* line 191, ../scss/partials/_carousels.scss */
 .carousel--photo .carousel-item.active .carousel-item__overlay {
   background-color: transparent;
 }
-/* line 187, ../scss/partials/_carousels.scss */
+/* line 197, ../scss/partials/_carousels.scss */
 .carousel--photo .carousel--photo__image {
   width: 94rem;
   height: 54rem;
@@ -2127,14 +2136,14 @@ a:hover {
   background-size: cover;
   background-position: center;
 }
-/* line 195, ../scss/partials/_carousels.scss */
+/* line 205, ../scss/partials/_carousels.scss */
 .carousel--photo .carousel-item__overlay {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 201, ../scss/partials/_carousels.scss */
+/* line 211, ../scss/partials/_carousels.scss */
 .carousel--photo .carousel__control {
   top: 24rem;
 }
@@ -2187,7 +2196,7 @@ a:hover {
 .hero--homepage.hero--grid .hero__entry.hero__entry--2:after {
   margin-bottom: 2px;
 }
-/* line 51, ../scss/partials/page/_homepage.scss */
+/* line 50, ../scss/partials/page/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2, .hero--homepage.hero--grid .hero__entry.hero__entry--3 {
   height: 28rem;
   width: 50%;

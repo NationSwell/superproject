@@ -61,7 +61,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 18, ../scss/bourbon/addons/_clearfix.scss */
+/* line 17, ../scss/bourbon/addons/_clearfix.scss */
 .container:before, .container:after {
   content: " ";
   display: table;
@@ -183,7 +183,7 @@ body {
 /* line 21, ../scss/partials/base/_utility.scss */
 .link-wrapper {
   outline: 0px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   width: 100%;
   display: block;
 }
@@ -485,7 +485,7 @@ a {
 a:hover {
   color: #0098d8;
 }
-/* line 13, ../scss/partials/base/_typography.scss */
+/* line 11, ../scss/partials/base/_typography.scss */
 a:hover, a:active, a:focus {
   outline: 0;
 }
@@ -502,7 +502,7 @@ small a {
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 31, ../scss/partials/base/_typography.scss */
+/* line 30, ../scss/partials/base/_typography.scss */
 .credit,
 .byline {
   color: #7e7e7e;
@@ -545,13 +545,10 @@ small a {
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 14, ../scss/partials/base/_icons.scss */
 .icon {
   font-family: "icons";
   display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
   font-weight: normal;
   font-style: normal;
   speak: none;
@@ -562,279 +559,279 @@ small a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 33, ../scss/partials/base/_icons.scss */
+/* line 29, ../scss/partials/base/_icons.scss */
 .icon_arrow-circle-left:before {
-  content: "\e001";
+  content: "\f100";
+}
+
+/* line 32, ../scss/partials/base/_icons.scss */
+.icon_arrow-circle-right:before {
+  content: "\f101";
+}
+
+/* line 35, ../scss/partials/base/_icons.scss */
+.icon_arrow-left:before {
+  content: "\f102";
 }
 
 /* line 38, ../scss/partials/base/_icons.scss */
-.icon_arrow-circle-right:before {
-  content: "\e002";
-}
-
-/* line 43, ../scss/partials/base/_icons.scss */
-.icon_arrow-left:before {
-  content: "\e003";
-}
-
-/* line 48, ../scss/partials/base/_icons.scss */
 .icon_arrow-right:before {
-  content: "\e004";
+  content: "\f103";
+}
+
+/* line 41, ../scss/partials/base/_icons.scss */
+.icon_audio:before {
+  content: "\f104";
+}
+
+/* line 44, ../scss/partials/base/_icons.scss */
+.icon_audio_stream:before {
+  content: "\f105";
+}
+
+/* line 47, ../scss/partials/base/_icons.scss */
+.icon_cart:before {
+  content: "\f106";
+}
+
+/* line 50, ../scss/partials/base/_icons.scss */
+.icon_chrome:before {
+  content: "\f107";
 }
 
 /* line 53, ../scss/partials/base/_icons.scss */
-.icon_audio:before {
-  content: "\e005";
+.icon_circle_alpha_stream:before {
+  content: "\f108";
 }
 
-/* line 58, ../scss/partials/base/_icons.scss */
-.icon_audio_stream:before {
-  content: "\e006";
+/* line 56, ../scss/partials/base/_icons.scss */
+.icon_close:before {
+  content: "\f109";
 }
 
-/* line 63, ../scss/partials/base/_icons.scss */
-.icon_cart:before {
-  content: "\e007";
+/* line 59, ../scss/partials/base/_icons.scss */
+.icon_comment:before {
+  content: "\f10a";
+}
+
+/* line 62, ../scss/partials/base/_icons.scss */
+.icon_contact:before {
+  content: "\f10b";
+}
+
+/* line 65, ../scss/partials/base/_icons.scss */
+.icon_cta-signup:before {
+  content: "\f10c";
 }
 
 /* line 68, ../scss/partials/base/_icons.scss */
-.icon_chrome:before {
-  content: "\e008";
+.icon_cta-speak-out-chat:before {
+  content: "\f10d";
 }
 
-/* line 73, ../scss/partials/base/_icons.scss */
-.icon_circle_alpha_stream:before {
-  content: "\e009";
+/* line 71, ../scss/partials/base/_icons.scss */
+.icon_cta-speak-out:before {
+  content: "\f10e";
 }
 
-/* line 78, ../scss/partials/base/_icons.scss */
-.icon_close:before {
-  content: "\e00a";
+/* line 74, ../scss/partials/base/_icons.scss */
+.icon_donate:before {
+  content: "\f10f";
+}
+
+/* line 77, ../scss/partials/base/_icons.scss */
+.icon_email:before {
+  content: "\f110";
+}
+
+/* line 80, ../scss/partials/base/_icons.scss */
+.icon_envelope:before {
+  content: "\f111";
 }
 
 /* line 83, ../scss/partials/base/_icons.scss */
-.icon_comment:before {
-  content: "\e00b";
+.icon_explorer:before {
+  content: "\f112";
 }
 
-/* line 88, ../scss/partials/base/_icons.scss */
-.icon_contact:before {
-  content: "\e00c";
+/* line 86, ../scss/partials/base/_icons.scss */
+.icon_external:before {
+  content: "\f113";
 }
 
-/* line 93, ../scss/partials/base/_icons.scss */
-.icon_cta-signup:before {
-  content: "\e00d";
+/* line 89, ../scss/partials/base/_icons.scss */
+.icon_facebook:before {
+  content: "\f114";
+}
+
+/* line 92, ../scss/partials/base/_icons.scss */
+.icon_firefox:before {
+  content: "\f115";
+}
+
+/* line 95, ../scss/partials/base/_icons.scss */
+.icon_fullscreen:before {
+  content: "\f116";
 }
 
 /* line 98, ../scss/partials/base/_icons.scss */
-.icon_cta-speak-out-chat:before {
-  content: "\e00e";
+.icon_get_involved:before {
+  content: "\f117";
 }
 
-/* line 103, ../scss/partials/base/_icons.scss */
-.icon_cta-speak-out:before {
-  content: "\e00f";
+/* line 101, ../scss/partials/base/_icons.scss */
+.icon_google-plus:before {
+  content: "\f118";
 }
 
-/* line 108, ../scss/partials/base/_icons.scss */
-.icon_donate:before {
-  content: "\e010";
+/* line 104, ../scss/partials/base/_icons.scss */
+.icon_hamburger:before {
+  content: "\f119";
+}
+
+/* line 107, ../scss/partials/base/_icons.scss */
+.icon_information:before {
+  content: "\f11a";
+}
+
+/* line 110, ../scss/partials/base/_icons.scss */
+.icon_instagram:before {
+  content: "\f11b";
 }
 
 /* line 113, ../scss/partials/base/_icons.scss */
-.icon_email:before {
-  content: "\e011";
+.icon_link:before {
+  content: "\f11c";
 }
 
-/* line 118, ../scss/partials/base/_icons.scss */
-.icon_envelope:before {
-  content: "\e012";
+/* line 116, ../scss/partials/base/_icons.scss */
+.icon_linkedin:before {
+  content: "\f11d";
 }
 
-/* line 123, ../scss/partials/base/_icons.scss */
-.icon_explorer:before {
-  content: "\e013";
+/* line 119, ../scss/partials/base/_icons.scss */
+.icon_listcicle_stream:before {
+  content: "\f11e";
+}
+
+/* line 122, ../scss/partials/base/_icons.scss */
+.icon_listory:before {
+  content: "\f11f";
+}
+
+/* line 125, ../scss/partials/base/_icons.scss */
+.icon_load-more:before {
+  content: "\f120";
 }
 
 /* line 128, ../scss/partials/base/_icons.scss */
-.icon_external:before {
-  content: "\e014";
+.icon_nationswell-flag:before {
+  content: "\f121";
 }
 
-/* line 133, ../scss/partials/base/_icons.scss */
-.icon_facebook:before {
-  content: "\e015";
+/* line 131, ../scss/partials/base/_icons.scss */
+.icon_photo:before {
+  content: "\f122";
 }
 
-/* line 138, ../scss/partials/base/_icons.scss */
-.icon_firefox:before {
-  content: "\e016";
+/* line 134, ../scss/partials/base/_icons.scss */
+.icon_photo_stream-01:before {
+  content: "\f123";
+}
+
+/* line 137, ../scss/partials/base/_icons.scss */
+.icon_photo_stream:before {
+  content: "\f124";
+}
+
+/* line 140, ../scss/partials/base/_icons.scss */
+.icon_play:before {
+  content: "\f125";
 }
 
 /* line 143, ../scss/partials/base/_icons.scss */
-.icon_fullscreen:before {
-  content: "\e017";
+.icon_quote:before {
+  content: "\f126";
 }
 
-/* line 148, ../scss/partials/base/_icons.scss */
-.icon_get_involved:before {
-  content: "\e018";
+/* line 146, ../scss/partials/base/_icons.scss */
+.icon_search:before {
+  content: "\f127";
 }
 
-/* line 153, ../scss/partials/base/_icons.scss */
-.icon_google-plus:before {
-  content: "\e019";
+/* line 149, ../scss/partials/base/_icons.scss */
+.icon_separator:before {
+  content: "\f128";
+}
+
+/* line 152, ../scss/partials/base/_icons.scss */
+.icon_series:before {
+  content: "\f129";
+}
+
+/* line 155, ../scss/partials/base/_icons.scss */
+.icon_series_stream:before {
+  content: "\f12a";
 }
 
 /* line 158, ../scss/partials/base/_icons.scss */
-.icon_hamburger:before {
-  content: "\e01a";
+.icon_speak_out:before {
+  content: "\f12b";
 }
 
-/* line 163, ../scss/partials/base/_icons.scss */
-.icon_information:before {
-  content: "\e01b";
+/* line 161, ../scss/partials/base/_icons.scss */
+.icon_star:before {
+  content: "\f12c";
 }
 
-/* line 168, ../scss/partials/base/_icons.scss */
-.icon_instagram:before {
-  content: "\e01c";
+/* line 164, ../scss/partials/base/_icons.scss */
+.icon_story:before {
+  content: "\f12d";
+}
+
+/* line 167, ../scss/partials/base/_icons.scss */
+.icon_story_stream_01:before {
+  content: "\f12e";
+}
+
+/* line 170, ../scss/partials/base/_icons.scss */
+.icon_story_stream_02:before {
+  content: "\f12f";
 }
 
 /* line 173, ../scss/partials/base/_icons.scss */
-.icon_link:before {
-  content: "\e01d";
+.icon_story_stream_03:before {
+  content: "\f130";
 }
 
-/* line 178, ../scss/partials/base/_icons.scss */
-.icon_linkedin:before {
-  content: "\e01e";
+/* line 176, ../scss/partials/base/_icons.scss */
+.icon_tumblr:before {
+  content: "\f131";
 }
 
-/* line 183, ../scss/partials/base/_icons.scss */
-.icon_listcicle_stream:before {
-  content: "\e01f";
+/* line 179, ../scss/partials/base/_icons.scss */
+.icon_twitter:before {
+  content: "\f132";
+}
+
+/* line 182, ../scss/partials/base/_icons.scss */
+.icon_video:before {
+  content: "\f133";
+}
+
+/* line 185, ../scss/partials/base/_icons.scss */
+.icon_video_stream:before {
+  content: "\f134";
 }
 
 /* line 188, ../scss/partials/base/_icons.scss */
-.icon_listory:before {
-  content: "\e020";
-}
-
-/* line 193, ../scss/partials/base/_icons.scss */
-.icon_load-more:before {
-  content: "\e021";
-}
-
-/* line 198, ../scss/partials/base/_icons.scss */
-.icon_nationswell-flag:before {
-  content: "\e022";
-}
-
-/* line 203, ../scss/partials/base/_icons.scss */
-.icon_photo:before {
-  content: "\e023";
-}
-
-/* line 208, ../scss/partials/base/_icons.scss */
-.icon_photo_stream-01:before {
-  content: "\e024";
-}
-
-/* line 213, ../scss/partials/base/_icons.scss */
-.icon_photo_stream:before {
-  content: "\e025";
-}
-
-/* line 218, ../scss/partials/base/_icons.scss */
-.icon_play:before {
-  content: "\e026";
-}
-
-/* line 223, ../scss/partials/base/_icons.scss */
-.icon_quote:before {
-  content: "\e027";
-}
-
-/* line 228, ../scss/partials/base/_icons.scss */
-.icon_search:before {
-  content: "\e028";
-}
-
-/* line 233, ../scss/partials/base/_icons.scss */
-.icon_separator:before {
-  content: "\e029";
-}
-
-/* line 238, ../scss/partials/base/_icons.scss */
-.icon_series:before {
-  content: "\e02a";
-}
-
-/* line 243, ../scss/partials/base/_icons.scss */
-.icon_series_stream:before {
-  content: "\e02b";
-}
-
-/* line 248, ../scss/partials/base/_icons.scss */
-.icon_speak_out:before {
-  content: "\e02c";
-}
-
-/* line 253, ../scss/partials/base/_icons.scss */
-.icon_star:before {
-  content: "\e02d";
-}
-
-/* line 258, ../scss/partials/base/_icons.scss */
-.icon_story:before {
-  content: "\e02e";
-}
-
-/* line 263, ../scss/partials/base/_icons.scss */
-.icon_story_stream_01:before {
-  content: "\e02f";
-}
-
-/* line 268, ../scss/partials/base/_icons.scss */
-.icon_story_stream_02:before {
-  content: "\e030";
-}
-
-/* line 273, ../scss/partials/base/_icons.scss */
-.icon_story_stream_03:before {
-  content: "\e031";
-}
-
-/* line 278, ../scss/partials/base/_icons.scss */
-.icon_tumblr:before {
-  content: "\e032";
-}
-
-/* line 283, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
-  content: "\e033";
-}
-
-/* line 288, ../scss/partials/base/_icons.scss */
-.icon_video:before {
-  content: "\e034";
-}
-
-/* line 293, ../scss/partials/base/_icons.scss */
-.icon_video_stream:before {
-  content: "\e035";
-}
-
-/* line 298, ../scss/partials/base/_icons.scss */
 .icon_volume:before {
-  content: "\e036";
+  content: "\f135";
 }
 
-/* line 303, ../scss/partials/base/_icons.scss */
+/* line 191, ../scss/partials/base/_icons.scss */
 .icon_write:before {
-  content: "\e037";
+  content: "\f136";
 }
 
 /* line 1, ../scss/partials/base/_buttons.scss */
@@ -1016,7 +1013,7 @@ small a {
   vertical-align: middle;
 }
 
-/* line 178, ../scss/partials/base/_buttons.scss */
+/* line 177, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -1051,7 +1048,7 @@ input[type="submit"]:-moz-focus-inner {
 .form-element.form-element--two-third {
   width: 66%;
 }
-/* line 17, ../scss/partials/base/_forms.scss */
+/* line 15, ../scss/partials/base/_forms.scss */
 .form-element.form-element--one-third, .form-element.form-element--two-third, .form-element.form-element--half {
   margin-right: 2%;
 }
@@ -1072,7 +1069,7 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 39, ../scss/partials/base/_forms.scss */
+/* line 38, ../scss/partials/base/_forms.scss */
 .form-element .text-input,
 .form-element .text-area {
   background-color: white;
@@ -1236,7 +1233,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 75, ../scss/partials/base/_nav.scss */
+/* line 74, ../scss/partials/base/_nav.scss */
 .expand-field label:active, .expand-field label:focus {
   outline: 0 none;
 }
@@ -1278,7 +1275,7 @@ input[type="submit"]:-moz-focus-inner {
 .expand-field input:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 102, ../scss/partials/base/_nav.scss */
+/* line 101, ../scss/partials/base/_nav.scss */
 .expand-field input:focus, .expand-field input:active {
   outline: 0 none;
 }
@@ -1337,7 +1334,7 @@ input[type="submit"]:-moz-focus-inner {
   min-height: 46rem;
   height: auto;
 }
-/* line 18, ../scss/partials/base/_more-stories.scss */
+/* line 17, ../scss/partials/base/_more-stories.scss */
 #more-stories .container:before, #more-stories .container:after {
   display: table;
   content: '';
@@ -1374,7 +1371,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 55, ../scss/partials/base/_more-stories.scss */
+/* line 54, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list__category:hover, #more-stories .category-list__category.active {
   color: #0098d8;
 }
@@ -1435,7 +1432,7 @@ input[type="submit"]:-moz-focus-inner {
   height: auto;
 }
 
-/* line 7, ../scss/partials/base/_footer.scss */
+/* line 6, ../scss/partials/base/_footer.scss */
 #page-footer,
 #page-footer .container {
   background-color: #002130;
@@ -1800,7 +1797,7 @@ input[type="submit"]:-moz-focus-inner {
   display: inline-block;
   position: relative;
 }
-/* line 348, ../scss/partials/base/_components.scss */
+/* line 347, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1819,7 +1816,7 @@ input[type="submit"]:-moz-focus-inner {
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 371, ../scss/partials/base/_components.scss */
+/* line 370, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
@@ -1829,7 +1826,7 @@ input[type="submit"]:-moz-focus-inner {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 383, ../scss/partials/base/_components.scss */
+/* line 382, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
@@ -1905,7 +1902,7 @@ input[type="submit"]:-moz-focus-inner {
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 471, ../scss/partials/base/_components.scss */
+/* line 470, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
@@ -2299,28 +2296,36 @@ hr {
 .carousel--series .carousel--series__image:last-child:after {
   margin-left: 2px;
 }
+/* line 117, ../scss/partials/base/_carousels.scss */
+.carousel--series .carousel--series__images--1 .carousel--series__image {
+  width: 100%;
+}
+/* line 121, ../scss/partials/base/_carousels.scss */
+.carousel--series .carousel--series__images--2 .carousel--series__image {
+  width: 50%;
+}
 
-/* line 119, ../scss/partials/base/_carousels.scss */
+/* line 128, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item {
   box-shadow: -2px 0 0 white;
   pointer-events: none;
 }
-/* line 123, ../scss/partials/base/_carousels.scss */
+/* line 132, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active {
   pointer-events: all;
 }
-/* line 126, ../scss/partials/base/_carousels.scss */
+/* line 135, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active .carousel-item__overlay {
   background-color: transparent;
   pointer-events: none;
 }
-/* line 133, ../scss/partials/base/_carousels.scss */
+/* line 142, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 139, ../scss/partials/base/_carousels.scss */
+/* line 148, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item__overlay {
   background-color: rgba(6, 24, 34, 0.6);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2556,7 +2561,7 @@ hr {
   width: 100%;
   height: 100%;
 }
-/* line 22, ../scss/partials/base/_story.scss */
+/* line 20, ../scss/partials/base/_story.scss */
 .hero--story.hero--cover .container .hero--video__container.video-container iframe, .hero--story.hero--cover .container .hero--video__container.video-container object, .hero--story.hero--cover .container .hero--video__container.video-container embed {
   position: static;
   top: 0;
@@ -2675,7 +2680,7 @@ hr {
   background-color: #003046;
   padding: 1.2rem 0;
 }
-/* line 155, ../scss/partials/base/_story.scss */
+/* line 154, ../scss/partials/base/_story.scss */
 .hero-information.is-long .hero-information__caption,
 .hero-information.is-long .hero-information__credit {
   text-overflow: ellipsis;
@@ -2687,7 +2692,7 @@ hr {
   background-color: #003046;
   padding: 1.6rem 0;
 }
-/* line 166, ../scss/partials/base/_story.scss */
+/* line 165, ../scss/partials/base/_story.scss */
 .hero-information.is-long.is-open .hero-information__caption,
 .hero-information.is-long.is-open .hero-information__credit {
   text-overflow: auto;
@@ -2938,7 +2943,7 @@ hr {
   height: 0;
   overflow: hidden;
 }
-/* line 429, ../scss/partials/base/_story.scss */
+/* line 427, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -3169,7 +3174,7 @@ hr {
   margin-bottom: 7.2rem;
 }
 
-/* line 661, ../scss/partials/base/_story.scss */
+/* line 659, ../scss/partials/base/_story.scss */
 .fb-comments,
 .fb-comments span,
 .fb-comments iframe[style] {
@@ -3532,7 +3537,7 @@ html {
   padding: 0 2rem;
 }
 
-/* line 11, ../scss/partials/mobile/_structure.scss */
+/* line 9, ../scss/partials/mobile/_structure.scss */
 .hide_mobile,
 .show_desktop,
 .show_tablet {
@@ -4282,7 +4287,7 @@ body.panel--is-open #page-header .more-stories-toggle {
   padding: 1rem 2rem 0.2rem;
   top: -3rem;
 }
-/* line 223, ../scss/partials/mobile/_components.scss */
+/* line 222, ../scss/partials/mobile/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   font-size: 2.6rem;
   position: relative;
@@ -5072,97 +5077,97 @@ body.panel--is-open #page-header .more-stories-toggle {
 }
 
 /* tags */
-/* line 315, ../scss/partials/mobile/_story.scss */
+/* line 316, ../scss/partials/mobile/_story.scss */
 .story__tags {
   margin-bottom: 7.6rem;
 }
-/* line 319, ../scss/partials/mobile/_story.scss */
+/* line 320, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list:before {
   display: block;
   font-size: 3.2rem;
   margin-bottom: 2.2rem;
 }
-/* line 325, ../scss/partials/mobile/_story.scss */
+/* line 326, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list li {
   margin-right: 1.4rem;
   margin-bottom: 2.2rem;
 }
 
-/* line 333, ../scss/partials/mobile/_story.scss */
+/* line 334, ../scss/partials/mobile/_story.scss */
 .story__social {
   margin-bottom: 8rem;
 }
-/* line 336, ../scss/partials/mobile/_story.scss */
+/* line 337, ../scss/partials/mobile/_story.scss */
 .story__social:first-child {
   margin-bottom: 3.4rem;
 }
-/* line 340, ../scss/partials/mobile/_story.scss */
+/* line 341, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar {
   font-size: 2.6rem;
   margin-bottom: 2.4rem;
   padding: 1.4rem 0;
 }
-/* line 345, ../scss/partials/mobile/_story.scss */
+/* line 346, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar:before {
   font-size: 4rem;
   line-height: 0;
   vertical-align: middle;
 }
 
-/* line 354, ../scss/partials/mobile/_story.scss */
+/* line 355, ../scss/partials/mobile/_story.scss */
 .module.take-action {
   margin-bottom: 7.6rem;
   padding-bottom: 5rem;
   text-align: center;
   /* tweet politician take action */
 }
-/* line 359, ../scss/partials/mobile/_story.scss */
+/* line 360, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 4rem;
 }
-/* line 363, ../scss/partials/mobile/_story.scss */
+/* line 364, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__img {
   margin: 0 auto 4rem;
 }
-/* line 367, ../scss/partials/mobile/_story.scss */
+/* line 368, ../scss/partials/mobile/_story.scss */
 .module.take-action p {
   font-size: 3.2rem;
   line-height: 1.32;
   margin-bottom: 3.4rem;
 }
-/* line 373, ../scss/partials/mobile/_story.scss */
+/* line 374, ../scss/partials/mobile/_story.scss */
 .module.take-action small {
   font-size: 2.2rem;
   margin: 2rem 0;
 }
-/* line 378, ../scss/partials/mobile/_story.scss */
+/* line 379, ../scss/partials/mobile/_story.scss */
 .module.take-action .btn-container {
   padding: 3.4rem 0;
 }
-/* line 381, ../scss/partials/mobile/_story.scss */
+/* line 382, ../scss/partials/mobile/_story.scss */
 .module.take-action .btn-container .btn {
   margin-top: 2.2rem;
 }
-/* line 387, ../scss/partials/mobile/_story.scss */
+/* line 388, ../scss/partials/mobile/_story.scss */
 .module.take-action .tweet-politician__politicians .btn--twitter {
   font-size: 2.2rem;
   padding: 2.2rem;
 }
-/* line 395, ../scss/partials/mobile/_story.scss */
+/* line 396, ../scss/partials/mobile/_story.scss */
 .module.take-action .tweet-politician__message {
   font-size: 3.4rem;
   padding: 2.4rem;
 }
-/* line 400, ../scss/partials/mobile/_story.scss */
+/* line 401, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 0 4.4rem;
 }
-/* line 404, ../scss/partials/mobile/_story.scss */
+/* line 405, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 409, ../scss/partials/mobile/_story.scss */
+/* line 410, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__photo {
   display: block;
   width: 24rem;
@@ -5170,22 +5175,22 @@ body.panel--is-open #page-header .more-stories-toggle {
   text-align: center;
   margin: 0 auto 2.4rem;
 }
-/* line 417, ../scss/partials/mobile/_story.scss */
+/* line 418, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__information {
   overflow: hidden;
   max-width: 32rem;
 }
-/* line 422, ../scss/partials/mobile/_story.scss */
+/* line 423, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__name {
   margin-top: 0.6rem;
 }
-/* line 426, ../scss/partials/mobile/_story.scss */
+/* line 427, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__office {
   font-size: 3.4rem;
   margin-bottom: 2.2rem;
 }
 
-/* line 433, ../scss/partials/mobile/_story.scss */
+/* line 434, ../scss/partials/mobile/_story.scss */
 #flyout {
   display: none;
 }
