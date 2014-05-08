@@ -2,6 +2,11 @@
 .hero {
   margin-bottom: 5rem;
   background-color: $ns_navy0;
+
+  .tax-series & {
+    margin-bottom: 3rem;
+  }
+
 }
 
 /* rubric */

@@ -13,4 +13,23 @@
         {#<div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm-dark.png" class="sponsor__logo"/></div>#}
     </div>
 </div>
+
+{% if description is not empty %}
+<div class="container">
+    <div class="archive-intro">
+        <div class="archive-share" data-module='{"name": "archive-series"}'>
+            <a href="{{ term_facebook_link }}" class="btn btn--facebook btn--share btn--rectangle icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a>
+            <a href="{{ term_twitter_link }}" class="btn btn--twitter btn--share btn--rectangle icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a>
+        </div>
+
+        <div class="archive-description-copy">
+            <p>
+                {{ description }}
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
 {% endblock %}
