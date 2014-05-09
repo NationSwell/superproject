@@ -58,3 +58,23 @@
     }
   }
 }
+
+.archive-intro {
+  border-bottom: 6px solid $gray6;
+  overflow: hidden;
+
+  .archive-share {
+    float: left;
+  }
+
+  .archive-description-copy {
+    font-family: $gudea;
+    font-size: 19px;
+    font-size: 1.9rem;
+
+    line-height: 2.4rem;
+    color: $ns_blue1;
+    width: 60%;
+    margin: 0 auto 3rem;
+  }
+}
