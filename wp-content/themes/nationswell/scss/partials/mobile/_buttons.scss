@@ -49,6 +49,21 @@
     }
   }
 
+  &.btn--rectangle {
+    font-size: 4rem;
+    padding: 2rem 2rem 0 1.3rem;
+    margin-bottom: .7rem;
+
+    &:before {
+      font-family: 'icons';
+      font-size: 6rem;
+      display: inline-block;
+      vertical-align: middle;
+
+      margin: 0 1.4rem 0 0;
+    }
+  }
+
   &.btn--square {
     font-size: 1.6rem;
     width: 10rem;

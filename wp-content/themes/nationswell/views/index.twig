@@ -49,6 +49,7 @@
         {% include 'carousel-series.twig'  with {'module_name': 'carousel:series' } %}
 
     {% elseif stories_carousel_b is not empty %}
+
         {% include 'carousel-stories.twig' with {'module_name': 'carousel:carousel-1', 'stories_carousel': stories_carousel_b} only %}
 
     {% endif %}

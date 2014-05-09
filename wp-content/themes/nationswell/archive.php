@@ -48,7 +48,20 @@ elseif (is_post_type_archive()){
 
 if($term && (is_tag() || is_category() || is_tax())) {
     $context['header_image'] = get_field('header_image', $term->taxonomy . '_' . $term->term_id);
+    $context['description'] = $term->description;
+    $context['term_facebook_link'] = term_facebook_link( $term );
+    $context['term_twitter_link'] = term_twitter_link( $term );
     $context['total_posts'] = $wp_query->found_posts;
+}
+
+function term_facebook_link($current_term) {
+    return 'http://www.facebook.com/sharer.php?u=' . urlencode(get_term_link($current_term));
+}
+
+function term_twitter_link($current_term) {
+
+    return 'https://twitter.com/share?url='
+    . urlencode(get_term_link($current_term)) . '&text=' . $current_term->name . '&via=nationswell';
 }
 
 function get_next_page_link($current) {

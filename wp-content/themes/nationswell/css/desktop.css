@@ -61,7 +61,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 18, ../scss/bourbon/addons/_clearfix.scss */
+/* line 17, ../scss/bourbon/addons/_clearfix.scss */
 .container:before, .container:after {
   content: " ";
   display: table;
@@ -183,7 +183,7 @@ body {
 /* line 21, ../scss/partials/base/_utility.scss */
 .link-wrapper {
   outline: 0px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   width: 100%;
   display: block;
 }
@@ -485,7 +485,7 @@ a {
 a:hover {
   color: #0098d8;
 }
-/* line 13, ../scss/partials/base/_typography.scss */
+/* line 11, ../scss/partials/base/_typography.scss */
 a:hover, a:active, a:focus {
   outline: 0;
 }
@@ -502,7 +502,7 @@ small a {
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 31, ../scss/partials/base/_typography.scss */
+/* line 30, ../scss/partials/base/_typography.scss */
 .credit,
 .byline {
   color: #7e7e7e;
@@ -545,12 +545,10 @@ small a {
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 14, ../scss/partials/base/_icons.scss */
 .icon {
   font-family: "icons";
   display: inline-block;
-  vertical-align: middle;
   font-weight: normal;
   font-style: normal;
   speak: none;
@@ -561,279 +559,279 @@ small a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 32, ../scss/partials/base/_icons.scss */
+/* line 29, ../scss/partials/base/_icons.scss */
 .icon_arrow-circle-left:before {
-  content: "\e001";
+  content: "\f100";
 }
 
-/* line 37, ../scss/partials/base/_icons.scss */
+/* line 32, ../scss/partials/base/_icons.scss */
 .icon_arrow-circle-right:before {
-  content: "\e002";
+  content: "\f101";
 }
 
-/* line 42, ../scss/partials/base/_icons.scss */
+/* line 35, ../scss/partials/base/_icons.scss */
 .icon_arrow-left:before {
-  content: "\e003";
+  content: "\f102";
+}
+
+/* line 38, ../scss/partials/base/_icons.scss */
+.icon_arrow-right:before {
+  content: "\f103";
+}
+
+/* line 41, ../scss/partials/base/_icons.scss */
+.icon_audio:before {
+  content: "\f104";
+}
+
+/* line 44, ../scss/partials/base/_icons.scss */
+.icon_audio_stream:before {
+  content: "\f105";
 }
 
 /* line 47, ../scss/partials/base/_icons.scss */
-.icon_arrow-right:before {
-  content: "\e004";
+.icon_cart:before {
+  content: "\f106";
 }
 
-/* line 52, ../scss/partials/base/_icons.scss */
-.icon_audio:before {
-  content: "\e005";
+/* line 50, ../scss/partials/base/_icons.scss */
+.icon_chrome:before {
+  content: "\f107";
 }
 
-/* line 57, ../scss/partials/base/_icons.scss */
-.icon_audio-stream:before {
-  content: "\e006";
+/* line 53, ../scss/partials/base/_icons.scss */
+.icon_circle_alpha_stream:before {
+  content: "\f108";
+}
+
+/* line 56, ../scss/partials/base/_icons.scss */
+.icon_close:before {
+  content: "\f109";
+}
+
+/* line 59, ../scss/partials/base/_icons.scss */
+.icon_comment:before {
+  content: "\f10a";
 }
 
 /* line 62, ../scss/partials/base/_icons.scss */
-.icon_cart:before {
-  content: "\e007";
+.icon_contact:before {
+  content: "\f10b";
 }
 
-/* line 67, ../scss/partials/base/_icons.scss */
-.icon_chrome:before {
-  content: "\e008";
+/* line 65, ../scss/partials/base/_icons.scss */
+.icon_cta-signup:before {
+  content: "\f10c";
 }
 
-/* line 72, ../scss/partials/base/_icons.scss */
-.icon_circle-alpha-stream:before {
-  content: "\e009";
+/* line 68, ../scss/partials/base/_icons.scss */
+.icon_cta-speak-out-chat:before {
+  content: "\f10d";
+}
+
+/* line 71, ../scss/partials/base/_icons.scss */
+.icon_cta-speak-out:before {
+  content: "\f10e";
+}
+
+/* line 74, ../scss/partials/base/_icons.scss */
+.icon_donate:before {
+  content: "\f10f";
 }
 
 /* line 77, ../scss/partials/base/_icons.scss */
-.icon_close:before {
-  content: "\e00a";
+.icon_email:before {
+  content: "\f110";
 }
 
-/* line 82, ../scss/partials/base/_icons.scss */
-.icon_comment:before {
-  content: "\e00b";
+/* line 80, ../scss/partials/base/_icons.scss */
+.icon_envelope:before {
+  content: "\f111";
 }
 
-/* line 87, ../scss/partials/base/_icons.scss */
-.icon_contact:before {
-  content: "\e00c";
+/* line 83, ../scss/partials/base/_icons.scss */
+.icon_explorer:before {
+  content: "\f112";
+}
+
+/* line 86, ../scss/partials/base/_icons.scss */
+.icon_external:before {
+  content: "\f113";
+}
+
+/* line 89, ../scss/partials/base/_icons.scss */
+.icon_facebook:before {
+  content: "\f114";
 }
 
 /* line 92, ../scss/partials/base/_icons.scss */
-.icon_cta-signup:before {
-  content: "\e00d";
+.icon_firefox:before {
+  content: "\f115";
 }
 
-/* line 97, ../scss/partials/base/_icons.scss */
-.icon_cta-speak-out-chat:before {
-  content: "\e00e";
+/* line 95, ../scss/partials/base/_icons.scss */
+.icon_fullscreen:before {
+  content: "\f116";
 }
 
-/* line 102, ../scss/partials/base/_icons.scss */
-.icon_cta-speak-out:before {
-  content: "\e00f";
+/* line 98, ../scss/partials/base/_icons.scss */
+.icon_get_involved:before {
+  content: "\f117";
+}
+
+/* line 101, ../scss/partials/base/_icons.scss */
+.icon_google-plus:before {
+  content: "\f118";
+}
+
+/* line 104, ../scss/partials/base/_icons.scss */
+.icon_hamburger:before {
+  content: "\f119";
 }
 
 /* line 107, ../scss/partials/base/_icons.scss */
-.icon_donate:before {
-  content: "\e010";
+.icon_information:before {
+  content: "\f11a";
 }
 
-/* line 112, ../scss/partials/base/_icons.scss */
-.icon_email:before {
-  content: "\e011";
+/* line 110, ../scss/partials/base/_icons.scss */
+.icon_instagram:before {
+  content: "\f11b";
 }
 
-/* line 117, ../scss/partials/base/_icons.scss */
-.icon_envelope:before {
-  content: "\e012";
+/* line 113, ../scss/partials/base/_icons.scss */
+.icon_link:before {
+  content: "\f11c";
+}
+
+/* line 116, ../scss/partials/base/_icons.scss */
+.icon_linkedin:before {
+  content: "\f11d";
+}
+
+/* line 119, ../scss/partials/base/_icons.scss */
+.icon_listcicle_stream:before {
+  content: "\f11e";
 }
 
 /* line 122, ../scss/partials/base/_icons.scss */
-.icon_explorer:before {
-  content: "\e013";
+.icon_listory:before {
+  content: "\f11f";
 }
 
-/* line 127, ../scss/partials/base/_icons.scss */
-.icon_external:before {
-  content: "\e014";
+/* line 125, ../scss/partials/base/_icons.scss */
+.icon_load-more:before {
+  content: "\f120";
 }
 
-/* line 132, ../scss/partials/base/_icons.scss */
-.icon_facebook:before {
-  content: "\e015";
+/* line 128, ../scss/partials/base/_icons.scss */
+.icon_nationswell-flag:before {
+  content: "\f121";
+}
+
+/* line 131, ../scss/partials/base/_icons.scss */
+.icon_photo:before {
+  content: "\f122";
+}
+
+/* line 134, ../scss/partials/base/_icons.scss */
+.icon_photo_stream-01:before {
+  content: "\f123";
 }
 
 /* line 137, ../scss/partials/base/_icons.scss */
-.icon_firefox:before {
-  content: "\e016";
+.icon_photo_stream:before {
+  content: "\f124";
 }
 
-/* line 142, ../scss/partials/base/_icons.scss */
-.icon_fullscreen:before {
-  content: "\e017";
+/* line 140, ../scss/partials/base/_icons.scss */
+.icon_play:before {
+  content: "\f125";
 }
 
-/* line 147, ../scss/partials/base/_icons.scss */
-.icon_get-involved:before {
-  content: "\e018";
+/* line 143, ../scss/partials/base/_icons.scss */
+.icon_quote:before {
+  content: "\f126";
+}
+
+/* line 146, ../scss/partials/base/_icons.scss */
+.icon_search:before {
+  content: "\f127";
+}
+
+/* line 149, ../scss/partials/base/_icons.scss */
+.icon_separator:before {
+  content: "\f128";
 }
 
 /* line 152, ../scss/partials/base/_icons.scss */
-.icon_google-plus:before {
-  content: "\e019";
+.icon_series:before {
+  content: "\f129";
 }
 
-/* line 157, ../scss/partials/base/_icons.scss */
-.icon_hamburger:before {
-  content: "\e01a";
+/* line 155, ../scss/partials/base/_icons.scss */
+.icon_series_stream:before {
+  content: "\f12a";
 }
 
-/* line 162, ../scss/partials/base/_icons.scss */
-.icon_information:before {
-  content: "\e01b";
+/* line 158, ../scss/partials/base/_icons.scss */
+.icon_speak_out:before {
+  content: "\f12b";
+}
+
+/* line 161, ../scss/partials/base/_icons.scss */
+.icon_star:before {
+  content: "\f12c";
+}
+
+/* line 164, ../scss/partials/base/_icons.scss */
+.icon_story:before {
+  content: "\f12d";
 }
 
 /* line 167, ../scss/partials/base/_icons.scss */
-.icon_instagram:before {
-  content: "\e01c";
+.icon_story_stream_01:before {
+  content: "\f12e";
 }
 
-/* line 172, ../scss/partials/base/_icons.scss */
-.icon_link:before {
-  content: "\e01d";
+/* line 170, ../scss/partials/base/_icons.scss */
+.icon_story_stream_02:before {
+  content: "\f12f";
 }
 
-/* line 177, ../scss/partials/base/_icons.scss */
-.icon_linkedin:before {
-  content: "\e01e";
+/* line 173, ../scss/partials/base/_icons.scss */
+.icon_story_stream_03:before {
+  content: "\f130";
+}
+
+/* line 176, ../scss/partials/base/_icons.scss */
+.icon_tumblr:before {
+  content: "\f131";
+}
+
+/* line 179, ../scss/partials/base/_icons.scss */
+.icon_twitter:before {
+  content: "\f132";
 }
 
 /* line 182, ../scss/partials/base/_icons.scss */
-.icon_listcicle-stream:before {
-  content: "\e01f";
-}
-
-/* line 187, ../scss/partials/base/_icons.scss */
-.icon_listory:before {
-  content: "\e020";
-}
-
-/* line 192, ../scss/partials/base/_icons.scss */
-.icon_load-more:before {
-  content: "\e021";
-}
-
-/* line 197, ../scss/partials/base/_icons.scss */
-.icon_nationswell-flag:before {
-  content: "\e022";
-}
-
-/* line 202, ../scss/partials/base/_icons.scss */
-.icon_photo:before {
-  content: "\e023";
-}
-
-/* line 207, ../scss/partials/base/_icons.scss */
-.icon_photo-stream-01:before {
-  content: "\e024";
-}
-
-/* line 212, ../scss/partials/base/_icons.scss */
-.icon_photo-stream:before {
-  content: "\e025";
-}
-
-/* line 217, ../scss/partials/base/_icons.scss */
-.icon_play:before {
-  content: "\e026";
-}
-
-/* line 222, ../scss/partials/base/_icons.scss */
-.icon_quote:before {
-  content: "\e027";
-}
-
-/* line 227, ../scss/partials/base/_icons.scss */
-.icon_search:before {
-  content: "\e028";
-}
-
-/* line 232, ../scss/partials/base/_icons.scss */
-.icon_separator:before {
-  content: "\e029";
-}
-
-/* line 237, ../scss/partials/base/_icons.scss */
-.icon_series:before {
-  content: "\e02a";
-}
-
-/* line 242, ../scss/partials/base/_icons.scss */
-.icon_series-stream:before {
-  content: "\e02b";
-}
-
-/* line 247, ../scss/partials/base/_icons.scss */
-.icon_speak-out:before {
-  content: "\e02c";
-}
-
-/* line 252, ../scss/partials/base/_icons.scss */
-.icon_star:before {
-  content: "\e02d";
-}
-
-/* line 257, ../scss/partials/base/_icons.scss */
-.icon_story:before {
-  content: "\e02e";
-}
-
-/* line 262, ../scss/partials/base/_icons.scss */
-.icon_story-stream-01:before {
-  content: "\e02f";
-}
-
-/* line 267, ../scss/partials/base/_icons.scss */
-.icon_story-stream-02:before {
-  content: "\e030";
-}
-
-/* line 272, ../scss/partials/base/_icons.scss */
-.icon_story-stream-03:before {
-  content: "\e031";
-}
-
-/* line 277, ../scss/partials/base/_icons.scss */
-.icon_tumblr:before {
-  content: "\e032";
-}
-
-/* line 282, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
-  content: "\e033";
-}
-
-/* line 287, ../scss/partials/base/_icons.scss */
 .icon_video:before {
-  content: "\e034";
+  content: "\f133";
 }
 
-/* line 292, ../scss/partials/base/_icons.scss */
-.icon_video-stream:before {
-  content: "\e035";
+/* line 185, ../scss/partials/base/_icons.scss */
+.icon_video_stream:before {
+  content: "\f134";
 }
 
-/* line 297, ../scss/partials/base/_icons.scss */
+/* line 188, ../scss/partials/base/_icons.scss */
 .icon_volume:before {
-  content: "\e036";
+  content: "\f135";
 }
 
-/* line 302, ../scss/partials/base/_icons.scss */
+/* line 191, ../scss/partials/base/_icons.scss */
 .icon_write:before {
-  content: "\e037";
+  content: "\f136";
 }
 
 /* line 1, ../scss/partials/base/_buttons.scss */
@@ -910,6 +908,28 @@ small a {
   left: 0;
 }
 /* line 72, ../scss/partials/base/_buttons.scss */
+.btn.btn--rectangle {
+  color: white;
+  display: block;
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: .5rem 2rem 0 1.3rem;
+  margin-bottom: .7rem;
+}
+/* line 86, ../scss/partials/base/_buttons.scss */
+.btn.btn--rectangle:before {
+  font-family: 'icons';
+  font-size: 2.8rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1.4rem 0 0;
+}
+/* line 96, ../scss/partials/base/_buttons.scss */
 .btn.btn--square {
   color: white;
   display: block;
@@ -920,7 +940,7 @@ small a {
   position: relative;
   text-transform: uppercase;
 }
-/* line 82, ../scss/partials/base/_buttons.scss */
+/* line 106, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:after {
   content: '';
   display: block;
@@ -933,32 +953,32 @@ small a {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 94, ../scss/partials/base/_buttons.scss */
+/* line 118, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:before {
   display: block;
   font-family: 'icons';
 }
-/* line 100, ../scss/partials/base/_buttons.scss */
+/* line 124, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 103, ../scss/partials/base/_buttons.scss */
+/* line 127, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 108, ../scss/partials/base/_buttons.scss */
+/* line 132, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 111, ../scss/partials/base/_buttons.scss */
+/* line 135, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 116, ../scss/partials/base/_buttons.scss */
+/* line 140, ../scss/partials/base/_buttons.scss */
 .btn.btn--blue {
   background-color: #0098d8;
 }
-/* line 120, ../scss/partials/base/_buttons.scss */
+/* line 144, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -971,7 +991,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 131, ../scss/partials/base/_buttons.scss */
+/* line 155, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -981,7 +1001,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 141, ../scss/partials/base/_buttons.scss */
+/* line 165, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -995,7 +1015,7 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 154, ../scss/partials/base/_buttons.scss */
+/* line 178, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -1004,7 +1024,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 165, ../scss/partials/base/_buttons.scss */
+/* line 189, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -1015,7 +1035,7 @@ small a {
   vertical-align: middle;
 }
 
-/* line 178, ../scss/partials/base/_buttons.scss */
+/* line 201, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -1029,7 +1049,7 @@ input[type="submit"] {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 185, ../scss/partials/base/_buttons.scss */
+/* line 209, ../scss/partials/base/_buttons.scss */
 button:-moz-focus-inner,
 input[type="submit"]:-moz-focus-inner {
   border: 0;
@@ -1050,7 +1070,7 @@ input[type="submit"]:-moz-focus-inner {
 .form-element.form-element--two-third {
   width: 66%;
 }
-/* line 17, ../scss/partials/base/_forms.scss */
+/* line 15, ../scss/partials/base/_forms.scss */
 .form-element.form-element--one-third, .form-element.form-element--two-third, .form-element.form-element--half {
   margin-right: 2%;
 }
@@ -1071,7 +1091,7 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 39, ../scss/partials/base/_forms.scss */
+/* line 38, ../scss/partials/base/_forms.scss */
 .form-element .text-input,
 .form-element .text-area {
   background-color: white;
@@ -1235,7 +1255,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 75, ../scss/partials/base/_nav.scss */
+/* line 74, ../scss/partials/base/_nav.scss */
 .expand-field label:active, .expand-field label:focus {
   outline: 0 none;
 }
@@ -1277,7 +1297,7 @@ input[type="submit"]:-moz-focus-inner {
 .expand-field input:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 102, ../scss/partials/base/_nav.scss */
+/* line 101, ../scss/partials/base/_nav.scss */
 .expand-field input:focus, .expand-field input:active {
   outline: 0 none;
 }
@@ -1336,7 +1356,7 @@ input[type="submit"]:-moz-focus-inner {
   min-height: 46rem;
   height: auto;
 }
-/* line 18, ../scss/partials/base/_more-stories.scss */
+/* line 17, ../scss/partials/base/_more-stories.scss */
 #more-stories .container:before, #more-stories .container:after {
   display: table;
   content: '';
@@ -1373,7 +1393,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 55, ../scss/partials/base/_more-stories.scss */
+/* line 54, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list__category:hover, #more-stories .category-list__category.active {
   color: #0098d8;
 }
@@ -1434,7 +1454,7 @@ input[type="submit"]:-moz-focus-inner {
   height: auto;
 }
 
-/* line 7, ../scss/partials/base/_footer.scss */
+/* line 6, ../scss/partials/base/_footer.scss */
 #page-footer,
 #page-footer .container {
   background-color: #002130;
@@ -1799,7 +1819,7 @@ input[type="submit"]:-moz-focus-inner {
   display: inline-block;
   position: relative;
 }
-/* line 348, ../scss/partials/base/_components.scss */
+/* line 347, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1818,7 +1838,7 @@ input[type="submit"]:-moz-focus-inner {
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 371, ../scss/partials/base/_components.scss */
+/* line 370, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
@@ -1828,7 +1848,7 @@ input[type="submit"]:-moz-focus-inner {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 383, ../scss/partials/base/_components.scss */
+/* line 382, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
@@ -1904,7 +1924,7 @@ input[type="submit"]:-moz-focus-inner {
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 471, ../scss/partials/base/_components.scss */
+/* line 470, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
@@ -2298,28 +2318,36 @@ hr {
 .carousel--series .carousel--series__image:last-child:after {
   margin-left: 2px;
 }
+/* line 117, ../scss/partials/base/_carousels.scss */
+.carousel--series .carousel--series__images--1 .carousel--series__image {
+  width: 100%;
+}
+/* line 121, ../scss/partials/base/_carousels.scss */
+.carousel--series .carousel--series__images--2 .carousel--series__image {
+  width: 50%;
+}
 
-/* line 119, ../scss/partials/base/_carousels.scss */
+/* line 128, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item {
   box-shadow: -2px 0 0 white;
   pointer-events: none;
 }
-/* line 123, ../scss/partials/base/_carousels.scss */
+/* line 132, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active {
   pointer-events: all;
 }
-/* line 126, ../scss/partials/base/_carousels.scss */
+/* line 135, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item.active .carousel-item__overlay {
   background-color: transparent;
   pointer-events: none;
 }
-/* line 133, ../scss/partials/base/_carousels.scss */
+/* line 142, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel--peek__image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-/* line 139, ../scss/partials/base/_carousels.scss */
+/* line 148, ../scss/partials/base/_carousels.scss */
 .carousel--peek .carousel-item__overlay {
   background-color: rgba(6, 24, 34, 0.6);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2555,7 +2583,7 @@ hr {
   width: 100%;
   height: 100%;
 }
-/* line 22, ../scss/partials/base/_story.scss */
+/* line 20, ../scss/partials/base/_story.scss */
 .hero--story.hero--cover .container .hero--video__container.video-container iframe, .hero--story.hero--cover .container .hero--video__container.video-container object, .hero--story.hero--cover .container .hero--video__container.video-container embed {
   position: static;
   top: 0;
@@ -2674,7 +2702,7 @@ hr {
   background-color: #003046;
   padding: 1.2rem 0;
 }
-/* line 155, ../scss/partials/base/_story.scss */
+/* line 154, ../scss/partials/base/_story.scss */
 .hero-information.is-long .hero-information__caption,
 .hero-information.is-long .hero-information__credit {
   text-overflow: ellipsis;
@@ -2686,7 +2714,7 @@ hr {
   background-color: #003046;
   padding: 1.6rem 0;
 }
-/* line 166, ../scss/partials/base/_story.scss */
+/* line 165, ../scss/partials/base/_story.scss */
 .hero-information.is-long.is-open .hero-information__caption,
 .hero-information.is-long.is-open .hero-information__credit {
   text-overflow: auto;
@@ -2937,7 +2965,7 @@ hr {
   height: 0;
   overflow: hidden;
 }
-/* line 429, ../scss/partials/base/_story.scss */
+/* line 427, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -3168,7 +3196,7 @@ hr {
   margin-bottom: 7.2rem;
 }
 
-/* line 661, ../scss/partials/base/_story.scss */
+/* line 659, ../scss/partials/base/_story.scss */
 .fb-comments,
 .fb-comments span,
 .fb-comments iframe[style] {
@@ -3367,6 +3395,26 @@ hr {
   color: #fc3b40;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
+}
+
+/* line 62, ../scss/partials/base/_archive.scss */
+.archive-intro {
+  border-bottom: 6px solid #eeeeee;
+  overflow: hidden;
+}
+/* line 66, ../scss/partials/base/_archive.scss */
+.archive-intro .archive-share {
+  float: left;
+}
+/* line 70, ../scss/partials/base/_archive.scss */
+.archive-intro .archive-description-copy {
+  font-family: "Gudea", Arial, sans-serif;
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  color: #0098d8;
+  width: 60%;
+  margin: 0 auto 3rem;
 }
 
 /* line 3, ../scss/partials/desktop/_grid.scss */
@@ -3625,7 +3673,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 3, ../scss/partials/desktop/_structure.scss */
+/* line 1, ../scss/partials/desktop/_structure.scss */
 .hide_desktop,
 .show_mobile,
 .show_tablet {
@@ -3747,7 +3795,7 @@ hr {
   line-height: 1.4;
 }
 
-/* line 7, ../scss/partials/desktop/_typography.scss */
+/* line 6, ../scss/partials/desktop/_typography.scss */
 .credit,
 .byline {
   font-size: 1.4rem;
@@ -4140,9 +4188,13 @@ hr {
   margin-bottom: 5rem;
   background-color: #061822;
 }
+/* line 6, ../scss/partials/desktop/_components.scss */
+.tax-series .hero {
+  margin-bottom: 3rem;
+}
 
 /* rubric */
-/* line 8, ../scss/partials/desktop/_components.scss */
+/* line 13, ../scss/partials/desktop/_components.scss */
 .rubric {
   font-size: 1.4rem;
   padding: 0.6rem 0.8rem;
@@ -4150,66 +4202,66 @@ hr {
 }
 
 /* story tease */
-/* line 15, ../scss/partials/desktop/_components.scss */
+/* line 20, ../scss/partials/desktop/_components.scss */
 .story--tease {
   padding: 2rem 0;
   margin-bottom: 3.4rem;
 }
-/* line 19, ../scss/partials/desktop/_components.scss */
+/* line 24, ../scss/partials/desktop/_components.scss */
 .story--tease .type-indicator {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-/* line 25, ../scss/partials/desktop/_components.scss */
+/* line 30, ../scss/partials/desktop/_components.scss */
 .story--tease .type-indicator-container {
   margin-top: 6.8rem;
   text-align: center;
 }
-/* line 30, ../scss/partials/desktop/_components.scss */
+/* line 35, ../scss/partials/desktop/_components.scss */
 .story--tease .story__dek {
   font-size: 1.8rem;
   line-height: 1.4;
 }
-/* line 35, ../scss/partials/desktop/_components.scss */
+/* line 40, ../scss/partials/desktop/_components.scss */
 .story--tease .support-cause {
   margin-top: 1.8rem;
 }
-/* line 40, ../scss/partials/desktop/_components.scss */
+/* line 45, ../scss/partials/desktop/_components.scss */
 .story--tease:hover .type-indicator {
   opacity: 1;
 }
 
-/* line 46, ../scss/partials/desktop/_components.scss */
+/* line 51, ../scss/partials/desktop/_components.scss */
 .story__hed {
   margin-bottom: 1rem;
 }
 
 /* support cause */
-/* line 52, ../scss/partials/desktop/_components.scss */
+/* line 57, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__heading {
   margin-bottom: .75rem;
 }
-/* line 56, ../scss/partials/desktop/_components.scss */
+/* line 61, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__data {
   font-size: 2.2rem;
 }
-/* line 59, ../scss/partials/desktop/_components.scss */
+/* line 64, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__data .super {
   font-size: 1.8rem;
   top: -1rem;
 }
-/* line 65, ../scss/partials/desktop/_components.scss */
+/* line 70, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__label {
   font-size: 1.8rem;
   -webkit-font-smoothing: antialiased;
 }
-/* line 70, ../scss/partials/desktop/_components.scss */
+/* line 75, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__message {
   font-size: 2.2rem;
 }
-/* line 74, ../scss/partials/desktop/_components.scss */
+/* line 79, ../scss/partials/desktop/_components.scss */
 .support-cause .support-cause__separator {
   font-size: 4.4rem;
   line-height: 3.4rem;
@@ -4217,58 +4269,58 @@ hr {
 }
 
 /* sponsor */
-/* line 82, ../scss/partials/desktop/_components.scss */
+/* line 87, ../scss/partials/desktop/_components.scss */
 .sponsor {
   font-size: 1.3rem;
 }
-/* line 85, ../scss/partials/desktop/_components.scss */
+/* line 90, ../scss/partials/desktop/_components.scss */
 .sponsor .sponsor__logo {
   margin-left: 1.6rem;
 }
 
 /* indicator */
-/* line 92, ../scss/partials/desktop/_components.scss */
+/* line 97, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--module {
   width: 7.6rem;
   height: 7.6rem;
 }
-/* line 96, ../scss/partials/desktop/_components.scss */
+/* line 101, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--module:before {
   font-size: 6.12rem;
   line-height: 1.5;
 }
-/* line 102, ../scss/partials/desktop/_components.scss */
+/* line 107, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title {
   width: 7.6rem;
   height: 7.6rem;
   top: 1.4rem;
 }
-/* line 107, ../scss/partials/desktop/_components.scss */
+/* line 112, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title:before {
   font-size: 5rem;
   line-height: 1.7;
 }
-/* line 112, ../scss/partials/desktop/_components.scss */
+/* line 117, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title.indicator--text {
   width: 9.8rem;
   height: 9.8rem;
 }
-/* line 116, ../scss/partials/desktop/_components.scss */
+/* line 121, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title.indicator--text:before {
   font-size: 5rem;
   line-height: 1.5;
 }
-/* line 121, ../scss/partials/desktop/_components.scss */
+/* line 126, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__heading {
   font-size: 1.4rem;
   line-height: 1.4;
   margin-top: -2.6rem;
 }
-/* line 127, ../scss/partials/desktop/_components.scss */
+/* line 132, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--title.indicator--text .indicator__subheading {
   font-size: 1.2rem;
 }
-/* line 133, ../scss/partials/desktop/_components.scss */
+/* line 138, ../scss/partials/desktop/_components.scss */
 .indicator.indicator--take-action {
   width: 5.2rem;
   height: 5.2rem;
@@ -4279,23 +4331,23 @@ hr {
 }
 
 /* type indicator */
-/* line 144, ../scss/partials/desktop/_components.scss */
+/* line 149, ../scss/partials/desktop/_components.scss */
 .type-indicator {
   width: 7.4rem;
   height: 7.4rem;
 }
-/* line 148, ../scss/partials/desktop/_components.scss */
+/* line 153, ../scss/partials/desktop/_components.scss */
 .type-indicator:before {
   font-size: 5rem;
 }
 
-/* line 153, ../scss/partials/desktop/_components.scss */
+/* line 158, ../scss/partials/desktop/_components.scss */
 .sidebar > li {
   list-style: none;
 }
 
 /* module */
-/* line 158, ../scss/partials/desktop/_components.scss */
+/* line 163, ../scss/partials/desktop/_components.scss */
 .module {
   display: block;
   position: relative;
@@ -4303,131 +4355,131 @@ hr {
   /* join us module */
   /* subscribe module */
 }
-/* line 163, ../scss/partials/desktop/_components.scss */
+/* line 168, ../scss/partials/desktop/_components.scss */
 .module.module--sidebar {
   width: 32rem;
   margin-bottom: 7.6rem;
 }
-/* line 168, ../scss/partials/desktop/_components.scss */
+/* line 173, ../scss/partials/desktop/_components.scss */
 .module.module--bg {
   padding: 2rem;
 }
-/* line 171, ../scss/partials/desktop/_components.scss */
+/* line 176, ../scss/partials/desktop/_components.scss */
 .module.module--bg:before {
   height: 0.7rem;
 }
-/* line 175, ../scss/partials/desktop/_components.scss */
+/* line 180, ../scss/partials/desktop/_components.scss */
 .module.module--bg header {
   margin-top: -4.5rem;
   margin-bottom: 2rem;
 }
-/* line 180, ../scss/partials/desktop/_components.scss */
+/* line 185, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading {
   padding: 0.8rem 0.8rem 0.4rem;
   top: -1rem;
 }
-/* line 185, ../scss/partials/desktop/_components.scss */
+/* line 189, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   font-size: 1.5rem;
 }
-/* line 189, ../scss/partials/desktop/_components.scss */
+/* line 194, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading:before {
   margin-right: 1.2rem;
 }
-/* line 193, ../scss/partials/desktop/_components.scss */
+/* line 198, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading:after {
   margin-left: 1.2rem;
 }
-/* line 198, ../scss/partials/desktop/_components.scss */
+/* line 203, ../scss/partials/desktop/_components.scss */
 .module.module--bg p {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 3rem;
 }
-/* line 206, ../scss/partials/desktop/_components.scss */
+/* line 211, ../scss/partials/desktop/_components.scss */
 .module.module--list:after {
   height: 0.7rem;
   bottom: -0.7rem;
 }
-/* line 211, ../scss/partials/desktop/_components.scss */
+/* line 216, ../scss/partials/desktop/_components.scss */
 .module.module--list .module__heading {
   padding-bottom: 1.2rem;
 }
-/* line 216, ../scss/partials/desktop/_components.scss */
+/* line 221, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list li {
   padding: 1.8rem 0;
 }
-/* line 219, ../scss/partials/desktop/_components.scss */
+/* line 224, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list li:last-child {
   margin-right: 0;
 }
-/* line 225, ../scss/partials/desktop/_components.scss */
+/* line 230, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list.two li {
   width: 47.5%;
 }
-/* line 231, ../scss/partials/desktop/_components.scss */
+/* line 236, ../scss/partials/desktop/_components.scss */
 .module.module--list .story-list.three li {
   width: 30%;
 }
-/* line 237, ../scss/partials/desktop/_components.scss */
+/* line 242, ../scss/partials/desktop/_components.scss */
 .module.module--list .story__feature {
   float: left;
   max-width: 40%;
   margin-right: 2.2rem;
 }
-/* line 242, ../scss/partials/desktop/_components.scss */
+/* line 247, ../scss/partials/desktop/_components.scss */
 .module.module--list .story__feature img {
   width: 100%;
   height: auto;
 }
-/* line 248, ../scss/partials/desktop/_components.scss */
+/* line 253, ../scss/partials/desktop/_components.scss */
 .module.module--list .story__header {
   overflow: hidden;
 }
-/* line 252, ../scss/partials/desktop/_components.scss */
+/* line 257, ../scss/partials/desktop/_components.scss */
 .module.module--list.module--horizontal {
   margin: 5rem 0;
 }
-/* line 257, ../scss/partials/desktop/_components.scss */
+/* line 262, ../scss/partials/desktop/_components.scss */
 .module.module--pull {
   margin-right: -37.6rem;
   width: 32rem;
 }
-/* line 263, ../scss/partials/desktop/_components.scss */
+/* line 268, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .story {
   padding: 3.4rem;
 }
-/* line 267, ../scss/partials/desktop/_components.scss */
+/* line 272, ../scss/partials/desktop/_components.scss */
 .module.module--image-overlay .sponsor {
   margin-top: 12rem;
 }
-/* line 274, ../scss/partials/desktop/_components.scss */
+/* line 279, ../scss/partials/desktop/_components.scss */
 .module.join-us .btn--bar {
   margin-bottom: 2.1rem;
   width: 100%;
 }
-/* line 282, ../scss/partials/desktop/_components.scss */
+/* line 287, ../scss/partials/desktop/_components.scss */
 .module.newsletter-subscribe .btn--solid {
   background-color: #0098d8;
   float: right;
 }
-/* line 286, ../scss/partials/desktop/_components.scss */
+/* line 291, ../scss/partials/desktop/_components.scss */
 .module.newsletter-subscribe .btn--solid:hover {
   background-color: #fc3b40;
 }
-/* line 291, ../scss/partials/desktop/_components.scss */
+/* line 296, ../scss/partials/desktop/_components.scss */
 .module.newsletter-subscribe input[type="email"] {
   margin-bottom: 1.2rem;
   width: 100%;
 }
 
 /* pullquote */
-/* line 299, ../scss/partials/desktop/_components.scss */
+/* line 304, ../scss/partials/desktop/_components.scss */
 .pullquote {
   margin: 4.2rem 0 5rem;
   padding-left: 7.8rem;
 }
-/* line 303, ../scss/partials/desktop/_components.scss */
+/* line 308, ../scss/partials/desktop/_components.scss */
 .pullquote:before {
   font-size: 4.2rem;
   line-height: 1.46;
@@ -4437,105 +4489,105 @@ hr {
   top: -1.2rem;
   left: 0;
 }
-/* line 313, ../scss/partials/desktop/_components.scss */
+/* line 318, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 2rem;
 }
-/* line 317, ../scss/partials/desktop/_components.scss */
+/* line 322, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 1.8rem;
 }
 
 /* tags */
-/* line 323, ../scss/partials/desktop/_components.scss */
+/* line 328, ../scss/partials/desktop/_components.scss */
 .tag-tag {
   font-size: 1.4rem;
   padding: 0.6rem 0.8rem;
 }
 
 /* author */
-/* line 329, ../scss/partials/desktop/_components.scss */
+/* line 334, ../scss/partials/desktop/_components.scss */
 .author-box {
   margin-bottom: 3.0rem;
   padding: 2.6rem 3.4rem;
 }
 
-/* line 335, ../scss/partials/desktop/_components.scss */
+/* line 340, ../scss/partials/desktop/_components.scss */
 .author-box--curated .author__portrait {
   width: 10rem;
   height: 10rem;
 }
 
-/* line 343, ../scss/partials/desktop/_components.scss */
+/* line 348, ../scss/partials/desktop/_components.scss */
 .author-box:nth-of-type(even) .author__a {
   float: right;
 }
 
-/* line 349, ../scss/partials/desktop/_components.scss */
+/* line 354, ../scss/partials/desktop/_components.scss */
 .author__a {
   float: left;
 }
 
-/* line 353, ../scss/partials/desktop/_components.scss */
+/* line 358, ../scss/partials/desktop/_components.scss */
 .author__b {
   overflow: hidden;
   padding-top: 0.6rem;
   padding-left: 3.4rem;
 }
 
-/* line 359, ../scss/partials/desktop/_components.scss */
+/* line 364, ../scss/partials/desktop/_components.scss */
 .author__portrait {
   margin-bottom: 1.2rem;
   width: 13.4rem;
   height: 13.4rem;
 }
 
-/* line 365, ../scss/partials/desktop/_components.scss */
+/* line 370, ../scss/partials/desktop/_components.scss */
 .author__url {
   font-size: 1.4rem;
 }
-/* line 368, ../scss/partials/desktop/_components.scss */
+/* line 373, ../scss/partials/desktop/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 375, ../scss/partials/desktop/_components.scss */
+/* line 380, ../scss/partials/desktop/_components.scss */
 .social li:first-child {
   border-left: 0;
 }
-/* line 380, ../scss/partials/desktop/_components.scss */
+/* line 385, ../scss/partials/desktop/_components.scss */
 .social.author__social {
   margin-top: 1.2rem;
 }
-/* line 383, ../scss/partials/desktop/_components.scss */
+/* line 388, ../scss/partials/desktop/_components.scss */
 .social.author__social .icon {
   font-size: 2.6rem;
   height: 3rem;
   width: 3rem;
 }
-/* line 390, ../scss/partials/desktop/_components.scss */
+/* line 395, ../scss/partials/desktop/_components.scss */
 .social.take-action__social {
   margin-top: 1.2rem;
   margin-bottom: 6rem;
 }
-/* line 394, ../scss/partials/desktop/_components.scss */
+/* line 399, ../scss/partials/desktop/_components.scss */
 .social.take-action__social .icon {
   font-size: 4rem;
   height: 5.4rem;
   width: 5.4rem;
 }
 
-/* line 402, ../scss/partials/desktop/_components.scss */
+/* line 407, ../scss/partials/desktop/_components.scss */
 .author__byline {
   margin-bottom: 1.4rem;
 }
-/* line 403, ../scss/partials/desktop/_components.scss */
+/* line 408, ../scss/partials/desktop/_components.scss */
 .author__byline .author__byline__prefix {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
 }
 
-/* line 411, ../scss/partials/desktop/_components.scss */
+/* line 416, ../scss/partials/desktop/_components.scss */
 .author__bio {
   color: #7e7e7e;
   font-size: 1.5rem;
@@ -4543,57 +4595,57 @@ hr {
 }
 
 /* prev/next */
-/* line 418, ../scss/partials/desktop/_components.scss */
+/* line 423, ../scss/partials/desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 422, ../scss/partials/desktop/_components.scss */
+/* line 427, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 426, ../scss/partials/desktop/_components.scss */
+/* line 431, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 432, ../scss/partials/desktop/_components.scss */
+/* line 437, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 438, ../scss/partials/desktop/_components.scss */
+/* line 443, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 446, ../scss/partials/desktop/_components.scss */
+/* line 451, ../scss/partials/desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 449, ../scss/partials/desktop/_components.scss */
+/* line 454, ../scss/partials/desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 454, ../scss/partials/desktop/_components.scss */
+/* line 459, ../scss/partials/desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 458, ../scss/partials/desktop/_components.scss */
+/* line 463, ../scss/partials/desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 463, ../scss/partials/desktop/_components.scss */
+/* line 468, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 466, ../scss/partials/desktop/_components.scss */
+/* line 471, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
 
-/* line 472, ../scss/partials/desktop/_components.scss */
+/* line 477, ../scss/partials/desktop/_components.scss */
 #flyout {
   background-color: white;
   position: fixed;
@@ -4606,19 +4658,19 @@ hr {
   -moz-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
 }
-/* line 484, ../scss/partials/desktop/_components.scss */
+/* line 489, ../scss/partials/desktop/_components.scss */
 #flyout header {
   background-color: #003046;
   padding: 1.2rem 1.6rem 0.6rem;
   position: relative;
 }
-/* line 490, ../scss/partials/desktop/_components.scss */
+/* line 495, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 495, ../scss/partials/desktop/_components.scss */
+/* line 500, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading:before {
   color: #fc3b40;
   display: inline-block;
@@ -4627,7 +4679,7 @@ hr {
   font-size: 2.6rem;
   vertical-align: middle;
 }
-/* line 505, ../scss/partials/desktop/_components.scss */
+/* line 510, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close {
   background-color: transparent;
   border: none;
@@ -4641,32 +4693,32 @@ hr {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 517, ../scss/partials/desktop/_components.scss */
+/* line 522, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close:hover {
   color: #0098d8;
 }
-/* line 522, ../scss/partials/desktop/_components.scss */
+/* line 527, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content {
   border-left: 1px solid #ccd6da;
   border-bottom: 1px solid #ccd6da;
   padding: 1.6rem;
 }
-/* line 527, ../scss/partials/desktop/_components.scss */
+/* line 532, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content p {
   color: #002130;
   font-family: "Gudea", Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
-/* line 534, ../scss/partials/desktop/_components.scss */
+/* line 539, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content .fb-like {
   margin-bottom: 0.6rem;
 }
-/* line 539, ../scss/partials/desktop/_components.scss */
+/* line 544, ../scss/partials/desktop/_components.scss */
 #flyout.is-visible {
   right: 0;
 }
-/* line 543, ../scss/partials/desktop/_components.scss */
+/* line 548, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__disable {
   color: #0098d8;
   font-family: "Gudea", Arial, sans-serif;
@@ -4675,7 +4727,7 @@ hr {
 }
 
 /* subscribe status */
-/* line 552, ../scss/partials/desktop/_components.scss */
+/* line 557, ../scss/partials/desktop/_components.scss */
 .mc-email-status {
   font-size: 1.4rem;
   line-height: 1;
@@ -4886,7 +4938,7 @@ hr {
   width: 60%;
   box-shadow: inset -2px 0 0 white;
 }
-/* line 19, ../scss/partials/desktop/_homepage.scss */
+/* line 18, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1:before, .hero--homepage.hero--grid .hero__entry.hero__entry--1:after {
   margin-right: 2px;
 }
@@ -4908,11 +4960,11 @@ hr {
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2 {
   box-shadow: inset 0 -2px 0 white;
 }
-/* line 43, ../scss/partials/desktop/_homepage.scss */
+/* line 42, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:before, .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:after {
   margin-bottom: 2px;
 }
-/* line 50, ../scss/partials/desktop/_homepage.scss */
+/* line 49, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2, .hero--homepage.hero--grid .hero__entry.hero__entry--3 {
   height: 28rem;
   width: 40%;
@@ -5385,7 +5437,7 @@ hr {
   font-size: 1.6rem;
 }
 
-/* line 430, ../scss/partials/desktop/_story.scss */
+/* line 429, ../scss/partials/desktop/_story.scss */
 .story__container .story__social,
 .story__container .story__take-action {
   clear: both;
