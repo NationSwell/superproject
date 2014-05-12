@@ -102,7 +102,7 @@ function add_to_context( $data ) {
         'modal_joinus_body_text',
         'modal_joinus_opt_out_text',
         'modal_joinus_opt_out_button_text',
-        'modal_joinus_subscribe_button_text',
+        'modal_joinus_subscribe_button',
         'modal_joinus_opt_out_expiration',
         'modal_joinus_close_expiration',
         'modal_joinus_subscribe_expiration',
