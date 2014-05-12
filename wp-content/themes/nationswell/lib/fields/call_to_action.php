@@ -250,8 +250,8 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528efg7496akm',
-                    'label' => 'Submit Button',
-                    'name' => 'submit_button',
+                    'label' => 'Submit Button Text',
+                    'name' => 'submit_button_text',
                     'type' => 'text',
                     'instructions' => 'The text for the submission button. Default is \'Subscribe\', but can be changed to accomodate Pledges.',
                     'conditional_logic' => array(
