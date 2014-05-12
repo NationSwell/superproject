@@ -250,8 +250,8 @@ if (function_exists("register_field_group")) {
                 ),
                 array(
                     'key' => 'field_528efg7496akm',
-                    'label' => 'Pledge Button',
-                    'name' => 'pledge_button',
+                    'label' => 'Subscribe Button',
+                    'name' => 'subscribe_button',
                     'type' => 'text',
                     'instructions' => 'The text for the submission button. Default is \'Subscribe\', but can be changed to accomodate Pledges.',
                     'conditional_logic' => array(
@@ -261,6 +261,11 @@ if (function_exists("register_field_group")) {
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
                                 'value' => 'subscribe',
+                            ),
+                            array(
+                                'field' => 'field_528bcb5146eda',
+                                'operator' => '==',
+                                'value' => 'support',
                             ),
                         ),
                         'allorany' => 'all',
