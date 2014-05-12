@@ -105,6 +105,7 @@ function add_to_context( $data ) {
         'modal_joinus_subscribe_button_text',
         'modal_joinus_opt_out_expiration',
         'modal_joinus_close_expiration',
+        'modal_joinus_subscribe_expiration',
 
         'facebook_admin'
     );
@@ -471,12 +472,39 @@ function subscribe_callback() {
     $email = sanitize_email( $_POST['EMAIL'] );
     $listID = sanitize_text_field( $_POST['listid'] );	
     define( "NEWSLETTER_ID","8eaa257d1b" );
-
-    if ( !empty( $listID ))
-    {
-        ns_mailchimp_subscribe( $listID, $email );
-    }
-    wp_send_json( ns_mailchimp_subscribe( NEWSLETTER_ID, $email ));
+	try
+	{
+		if ( !empty( $listID ))
+	    {
+	    	try
+	    	{
+	    		ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
+	    		$response = ns_mailchimp_subscribe( $listID, $email );	
+	    	}
+	    	catch (Mailchimp_List_AlreadySubscribed $e)
+			{
+	        	$response = ns_mailchimp_subscribe( $listID, $email );
+			}
+	    }
+	    else {
+	    	$response = ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
+	    }
+	}
+	catch (Mailchimp_List_AlreadySubscribed $e)
+	{
+		$response = array (
+			"status" => "error",
+			"message" => "That e-mail address is already subscribed to this list."
+		);
+	}
+	catch (Mailchimp_Email_NotExists $e)
+	{
+		$response = array (
+			"status" => "error",
+			"message" => "That e-mail address does not exist."
+		);
+	}
+    wp_send_json( $response);
     exit();
 }
 
@@ -489,8 +517,7 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
    	"email" => array( 'email' => $emailaddr ), 
  	"merge_vars" => array(), 
     "email_type" => 'html', 
-    "double_optin" => false, 
-    "update_existing" => true, 
+    "double_optin" => false,  
     "replace_interests" => false, 
     "send_welcome" => true
     );
@@ -526,28 +553,6 @@ function ns_supportmsg_callback() {
 	$ss->addRow( $rowData );
 	exit();
 }
-
-function google_analytics_tracking_code(){
-
-    ?>
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-45799105-1', 'nationswell.com');
-        ga('require', 'displayfeatures');
-        ga('send', 'pageview');
-
-    </script>
-
-<?php
-}
-
-add_action( 'wp_head', 'google_analytics_tracking_code' );
-
 
 function pubexchange_widget()	{
 	?>

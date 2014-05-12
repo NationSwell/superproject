@@ -2526,19 +2526,15 @@ window.events =
         };
     })();;(function(){
     function track() {
-        if (typeof ga != "undefined") {
-            var event = ['send', 'event'], i, n;
+        if (typeof _gaq != "undefined") {
+            var event = ['_trackEvent'], i, n;
             for(i = 0, n = arguments.length; i < n; i++){
                 if(arguments[i] !== undefined) {
                     event.push(arguments[i]);
                 }
             }
-
-            if(typeof console == "object") {
-                console.log(event);
-            }
-
-            ga.apply(null, event);
+            console.log(event);
+            _gaq.push(event);
         }
     }
 
@@ -2637,6 +2633,7 @@ window.events =
         });
 
         // ajaxify Subscribe Forms
+     // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
         	var $this = ($(this));
@@ -2647,19 +2644,35 @@ window.events =
                         $formErrors = $form.find('.form-errors'),
                         url = '/wp-admin/admin-ajax.php?action=subscribe_action';
                     	$formErrors.empty().addClass('hide');
-                        $.post(url, $form.serialize())
-                            .done(function () {
-                            	toggleThankYou();
-                            	$(".mc-email-status").empty();
-                            	$(".mc-email-status").prepend("Thank you for subscribing!");
-                            })
-                            .fail(function (data) {
-                                var messages = data.responseJSON.messages;
-                                if(messages) {
-                                    $formErrors.removeClass('hide').html(messages[0]);
+                        $.post(url, $form.serialize(), function (data) {
+                        		console.log(data);
+                                if (data.status == "error")	{
+                                	var error_message = data.message;
+                                	$(".mc-email-status").empty();
+                                    $(".mc-email-status").prepend(error_message);
+                                    $("#status-label").css({
+                                    	"font-size" : "1.25rem",
+                                    	"color" : "#fc3b40",
+                                    	"width" : "30rem",
+                                    	"padding" : ".15rem 0rem"
+                                    });
+                                    $("#status-label").empty();
+                                    $("#status-label").prepend(error_message);
+                                } else {
+                                	toggleThankYou();
+                                	$(".mc-email-status").empty();
+                                	$(".mc-email-status").prepend("Thank you for subscribing!");
+                                	$("#status-label").css({
+                                    	"font-size" : "1.25rem",
+                                    	"color" : "#46b525",
+                                    	"width" : "30rem",
+                                    	"padding" : ".15rem 0rem"
+                                    });
+                                    $("#status-label").empty();
+                                    $("#status-label").prepend("Thank you for subscribing!");
                                 }
                             });
-                }
+            		}
              });
         });
 

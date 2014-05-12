@@ -179,6 +179,31 @@ if (function_exists("register_field_group")) {
                     'max' => '',
                     'step' => '',
                 ),
+                array (
+                    'key' => 'field_38r61giyd4aw9',
+                    'label' => 'Subscribe Expiration',
+                    'name' => 'modal_joinus_subscribe_expiration',
+                    'type' => 'number',
+                    'instructions' => 'The number of days that a user won\'t see a modal if they subscribe',
+                    'conditional_logic' => array (
+                        'status' => 1,
+                        'rules' => array (
+                            array (
+                                'field' => 'field_528ecf1821ebf',
+                                'operator' => '==',
+                                'value' => '1',
+                            ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                    'default_value' => '365',
+                    'placeholder' => '365',
+                    'prepend' => '',
+                    'append' => '',
+                    'min' => '',
+                    'max' => '',
+                    'step' => '',
+                ),
             ),
             'location' => array(
                 array(
