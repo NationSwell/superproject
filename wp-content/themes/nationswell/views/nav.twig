@@ -18,7 +18,7 @@
                     <li><label for="listid" id="status-label" class="mc-email-status"></label></li>
                     <li><input type="hidden" name="listid" value="" data-modal-disable="{{ modal_joinus_subscribe_expiration }}"></li>
                     <li><label for="nav-subscribe" class="mc-email-status icon icon_envelope z1"></label></li>
-                    <li><input type="email" name="EMAIL" id="nav-subscribe" placeholder="{{ nav_subscribe_placeholder_text }}" class="required"></li>
+                    <li><input type="email" name="EMAIL" id="nav-subscribe" placeholder="{{ nav_subscribe_placeholder_text }}" class="required email text-input"></li>
                 </ul>
             </form>
 
@@ -89,7 +89,7 @@
 	                 %0D%0A%0D%0AMeet the people renewing America at NationSwell. Sign up for more stories here:%0D%0Ahttp://www.nationswell.com/daily-newsletter-signup/">Email</a></li>   
 	                
 	    	{% if post.call_to_action is not empty %}
-	                <li><a href="#" class="btn btn--bar btn--sticky-take-action-mobile icon icon_{{ post.call_to_action.icon }}" data-modal-target="take-action" data-modal-disable="{{ modal_joinus_close_expiration }}">{{ take_action_header_text }}</a></li>
+	                <li><a href="#" class="btn btn--bar btn--sticky-take-action-mobile icon icon_nationswell_flag" data-modal-target="take-action" data-modal-disable="{{ modal_joinus_close_expiration }}">{{ take_action_header_text }}</a></li>
 	                {% endif %}
 	            </ul>
 	    </div>
