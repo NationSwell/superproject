@@ -494,7 +494,7 @@ function subscribe_callback() {
 	{
 		$response = array (
 			"status" => "error",
-			"message" => "That e-mail address is already subscribed to this list."
+			"message" => "You are already subscribed."
 		);
 	}
 	catch (Mailchimp_Email_NotExists $e)
