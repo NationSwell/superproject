@@ -253,7 +253,7 @@ if (function_exists("register_field_group")) {
                     'label' => 'Submit Button Text',
                     'name' => 'submit_button_text',
                     'type' => 'text',
-                    'instructions' => 'The text for the submission button. Default is \'Subscribe\', but can be changed to accomodate Pledges.',
+                    'instructions' => 'The text for the submit button. Defaults to Subscribe',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
