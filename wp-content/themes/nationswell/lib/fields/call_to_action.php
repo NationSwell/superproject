@@ -249,7 +249,7 @@ if (function_exists("register_field_group")) {
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_528efg7496akm',
+                    'key' => 'field_691et05r6827m',
                     'label' => 'Submit Button Text',
                     'name' => 'submit_button_text',
                     'type' => 'text',
