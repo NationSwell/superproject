@@ -249,11 +249,11 @@ if (function_exists("register_field_group")) {
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_691et05r6827m',
-                    'label' => 'Submit Button Text',
-                    'name' => 'submit_button_text',
+                    'key' => 'field_528efg7496akm',
+                    'label' => 'Pledge Button',
+                    'name' => 'pledge_button',
                     'type' => 'text',
-                    'instructions' => 'The text for the submit button. Defaults to Subscribe',
+                    'instructions' => 'The text for the submission button. Default is \'Subscribe\', but can be changed to accomodate Pledges.',
                     'conditional_logic' => array(
                         'status' => 1,
                         'rules' => array(
@@ -262,6 +262,25 @@ if (function_exists("register_field_group")) {
                                 'operator' => '==',
                                 'value' => 'subscribe',
                             ),
+                        ),
+                        'allorany' => 'all',
+                    ),
+                    'default_value' => 'Subscribe',
+                    'placeholder' => 'Subscribe',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_487qli6201gvo',
+                    'label' => 'Submit Button Text',
+                    'name' => 'submit_button_text',
+                    'type' => 'text',
+                    'instructions' => 'The text for the submission button. Default is \'Send Message\'.',
+                    'conditional_logic' => array(
+                        'status' => 1,
+                        'rules' => array(
                             array(
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
@@ -270,8 +289,8 @@ if (function_exists("register_field_group")) {
                         ),
                         'allorany' => 'all',
                     ),
-                    'default_value' => 'Subscribe',
-                    'placeholder' => 'Subscribe',
+                    'default_value' => 'Send Message',
+                    'placeholder' => 'Send Message',
                     'prepend' => '',
                     'append' => '',
                     'formatting' => 'none',
