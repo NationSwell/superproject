@@ -504,6 +504,20 @@ function subscribe_callback() {
 			"message" => "That e-mail address does not exist."
 		);
 	}
+	catch (Mailchimp_ValidationError $e)
+	{
+		$response = array (
+			"status" => "error",
+			"message" => "Please enter a valid e-mail address."
+		);
+	}
+	catch (Mailchimp_Error $e)
+	{
+		$response = array (
+			"status" => "error",
+			"message" => "Please enter a valid e-mail address and retry."
+		);
+	}
     wp_send_json( $response);
     exit();
 }
