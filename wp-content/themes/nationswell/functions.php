@@ -563,8 +563,8 @@ function ns_supportmsg_callback() {
     $ss = new Google_Spreadsheet( GOOGLE_LOGIN,GOOGLE_PW );
 	$ss->useSpreadsheet( sanitize_text_field( $_POST['ssname'] ));
     $ss->useWorksheet( sanitize_text_field( $_POST['wsname'] ));
-
-	if(!( $ss->addRow( $rowData )))	{
+    $response = $ss->addRow( $rowData );
+	if( !$response )	{
 		wp_send_json( array ( 'message' => 'We are unable to send your message at this time.' ));
 	}
 	exit();
