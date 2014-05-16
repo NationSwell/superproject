@@ -2526,15 +2526,19 @@ window.events =
         };
     })();;(function(){
     function track() {
-        if (typeof _gaq != "undefined") {
-            var event = ['_trackEvent'], i, n;
+        if (typeof ga != "undefined") {
+            var event = ['send', 'event'], i, n;
             for(i = 0, n = arguments.length; i < n; i++){
                 if(arguments[i] !== undefined) {
                     event.push(arguments[i]);
                 }
             }
-            console.log(event);
-            _gaq.push(event);
+
+            if(typeof console == "object") {
+                console.log(event);
+            }
+
+            ga.apply(null, event);
         }
     }
 
@@ -3359,9 +3363,9 @@ window.events =
                             toggleThankYou();
                         })
                         .fail(function (data) {
-                            var messages = data.responseJSON.messages;
-                            if(messages) {
-                                $formErrors.removeClass('hide').html(messages[0]);
+                            var message = data.message;
+                            if(message) {
+                                $formErrors.removeClass('hide').html(message);
                             }
                         });
                 }

@@ -745,9 +745,9 @@
                             toggleThankYou();
                         })
                         .fail(function (data) {
-                            var messages = data.responseJSON.messages;
-                            if(messages) {
-                                $formErrors.removeClass('hide').html(messages[0]);
+                            var message = data.message;
+                            if(message) {
+                                $formErrors.removeClass('hide').html(message);
                             }
                         });
                 }
