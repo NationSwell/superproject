@@ -290,7 +290,7 @@ if (function_exists("register_field_group")) {
                         'allorany' => 'all',
                     ),
                     'default_value' => 'Send Message',
-                    'placeholder' => 'Send Message',
+                    'placeholder' => '',
                     'prepend' => '',
                     'append' => '',
                     'formatting' => 'none',
