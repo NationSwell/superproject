@@ -2665,7 +2665,6 @@ window.events =
                                     });
                                     $("#status-label").empty();
                                     $("#status-label").prepend(error_message);
-                                    $formErrors.removeClass('hide');
                                 } else {
                                 	toggleThankYou();
                                 	$(".mc-email-status").empty();
