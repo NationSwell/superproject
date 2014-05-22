@@ -311,7 +311,7 @@ if (function_exists("register_field_group")) {
                                     'key' => 'field_5289617601c45',
                                     'label' => __('List Item Rank'),
                                     'name' => 'list_item_rank',
-                                    'type' => 'number',
+                                    'type' => 'text',
                                     'default_value' => '',
                                     'placeholder' => '',
                                     'prepend' => '',
