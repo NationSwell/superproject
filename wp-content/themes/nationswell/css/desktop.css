@@ -4072,12 +4072,10 @@ hr {
 }
 /* line 73, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label {
-  color: #003046;
   width: 3.8rem;
 }
 /* line 77, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label:before {
-  color: white;
   font-size: 3rem;
 }
 /* line 82, ../scss/partials/desktop/_nav.scss */

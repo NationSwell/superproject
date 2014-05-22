@@ -78,7 +78,11 @@
         color: $white;
         font-size: 3rem;
       }
-
+	  
+	  &:hover {
+      	color: $ns_blue1;
+      }
+      
       &.valid:before {
         color: $green1;
       }
