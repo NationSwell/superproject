@@ -42,6 +42,7 @@
                                     	"width" : "30rem",
                                     	"padding" : ".15rem 0rem"
                                     });
+                                    $("#nav-envelope").addClass("error");
                                     $("#status-label").empty();
                                     $("#status-label").prepend(error_message);
                                 } else {
@@ -54,6 +55,7 @@
                                     	"width" : "30rem",
                                     	"padding" : ".15rem 0rem"
                                     });
+                                	$("#nav-envelope").addClass("valid");
                                     $("#status-label").empty();
                                     $("#status-label").prepend("Thank you for subscribing!");
                                 }
