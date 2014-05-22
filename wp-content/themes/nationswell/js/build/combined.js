@@ -2660,7 +2660,9 @@ window.events =
                                     	"width" : "30rem",
                                     	"padding" : ".15rem 0rem"
                                     });
-                                    $("#nav-envelope").addClass("error");
+                                    $("#nav-envelope").css({
+                                    	"color" : "#fc3b40"
+                                    });
                                     $("#status-label").empty();
                                     $("#status-label").prepend(error_message);
                                 } else {
@@ -2673,7 +2675,9 @@ window.events =
                                     	"width" : "30rem",
                                     	"padding" : ".15rem 0rem"
                                     });
-                                	$("#nav-envelope").addClass("valid");
+                                	 $("#nav-envelope").css({
+                                     	"color" : "#46b525"
+                                     });
                                     $("#status-label").empty();
                                     $("#status-label").prepend("Thank you for subscribing!");
                                 }
