@@ -12,8 +12,8 @@
                 <div class="mc-field-group cf">
                     <div class="join-us__email icon icon_envelope">
                         <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mc-email-modal">
-                        <input type="hidden" name="listid" value="">
-                        <input type="submit" value="Yes!" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl " data-modal-action="close" data-modal-disable="{{ modal_joinus_subscribe_expiration }}">
+                        <input type="hidden" name="listid" value=""  class="popup-control" data-modal-action="close" data-modal-disable="{{ modal_joinus_subscribe_expiration }}">
+                        <input type="submit" value="{{ modal_joinus_subscribe_button_text }}" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl">
                         <label for="mc-email-modal" class="mc-email-status"></label>
                     </div>
                 </div>

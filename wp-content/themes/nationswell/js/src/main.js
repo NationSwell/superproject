@@ -45,8 +45,6 @@
                                     $("#nav-envelope").css({
                                     	"color" : "#fc3b40"
                                     });
-                                    $("#status-label").empty();
-                                    $("#status-label").prepend(error_message);
                                 } else {
                                 	toggleThankYou();
                                 	$(".mc-email-status").empty();
@@ -57,11 +55,11 @@
                                     	"width" : "30rem",
                                     	"padding" : ".15rem 0rem"
                                     });
-                                	 $("#nav-envelope").css({
-                                     	"color" : "#46b525"
-                                     });
-                                    $("#status-label").empty();
-                                    $("#status-label").prepend("Thank you for subscribing!");
+                                	$("#nav-envelope").css({
+                                		"color" : "#46b525"
+                                    });
+                                	$('.modal--join-us').removeClass('is-visible');
+                                    $.cookie($('join-us').data("modal"), 'disabled', { expires: $('popup-control').attr('data-modal-disable'), path: '/' });
                                 }
                             });
             		}
