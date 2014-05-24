@@ -31,11 +31,12 @@
                         url = '/wp-admin/admin-ajax.php?action=subscribe_action';
                     	$formErrors.empty().addClass('hide');
                         $.post(url, $form.serialize(), function (data) {
-                        		console.log(data);
                                 if (data.status == "error")	{
                                 	var error_message = data.message;
                                 	$(".mc-email-status").empty();
                                     $(".mc-email-status").prepend(error_message);
+                                    $("#status-label").empty();
+                                    $("#status-label").prepend(error_message);
                                     $("#status-label").css({
                                     	"font-size" : "1.25rem",
                                     	"color" : "#fc3b40",
@@ -45,23 +46,23 @@
                                     $("#nav-envelope").css({
                                     	"color" : "#fc3b40"
                                     });
-                                    $("#status-label").empty();
-                                    $("#status-label").prepend(error_message);
                                 } else {
                                 	toggleThankYou();
                                 	$(".mc-email-status").empty();
                                 	$(".mc-email-status").prepend("Thank you for subscribing!");
+                                	$("#status-label").empty();
+                                	$("#status-label").prepend("Thank you for subscribing!");
                                 	$("#status-label").css({
                                     	"font-size" : "1.25rem",
                                     	"color" : "#46b525",
                                     	"width" : "30rem",
                                     	"padding" : ".15rem 0rem"
                                     });
-                                	 $("#nav-envelope").css({
-                                     	"color" : "#46b525"
-                                     });
-                                    $("#status-label").empty();
-                                    $("#status-label").prepend("Thank you for subscribing!");
+                                	$("#nav-envelope").css({
+                                		"color" : "#46b525"
+                                    });
+                                	$('.modal--join-us').removeClass('is-visible');
+                                    $.cookie($('join-us').data("modal"), 'disabled', { expires: $('popup-control').attr('data-modal-disable'), path: '/' });
                                 }
                             });
             		}
