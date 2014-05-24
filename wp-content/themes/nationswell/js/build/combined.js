@@ -2649,11 +2649,12 @@ window.events =
                         url = '/wp-admin/admin-ajax.php?action=subscribe_action';
                     	$formErrors.empty().addClass('hide');
                         $.post(url, $form.serialize(), function (data) {
-                        		console.log(data);
                                 if (data.status == "error")	{
                                 	var error_message = data.message;
                                 	$(".mc-email-status").empty();
                                     $(".mc-email-status").prepend(error_message);
+                                    $("#status-label").empty();
+                                    $("#status-label").prepend(error_message);
                                     $("#status-label").css({
                                     	"font-size" : "1.25rem",
                                     	"color" : "#fc3b40",
@@ -2667,6 +2668,8 @@ window.events =
                                 	toggleThankYou();
                                 	$(".mc-email-status").empty();
                                 	$(".mc-email-status").prepend("Thank you for subscribing!");
+                                	$("#status-label").empty();
+                                	$("#status-label").prepend("Thank you for subscribing!");
                                 	$("#status-label").css({
                                     	"font-size" : "1.25rem",
                                     	"color" : "#46b525",
