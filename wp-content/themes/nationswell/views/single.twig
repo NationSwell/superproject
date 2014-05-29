@@ -29,7 +29,10 @@
                 <article class="story story--page" id="story">
                     <header>
                         <ul class="story__meta">
-                            <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a></li>
+                            <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}
+                            {% for term in post.terms('series') %}
+						       <a href="{{ term.link }}">{{ ', ' ~ term.name }}</a>
+						    {% endfor %}</a></li>
                             <li>{{ byline_prefix_text }} {{ post.coauthors_posts_links }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
