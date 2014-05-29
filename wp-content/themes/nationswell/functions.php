@@ -83,6 +83,7 @@ function add_to_context( $data ) {
         'byline_prefix_text',
         'category_prefix_text',
         'take_action_privacy_policy_text',
+        'tweet_rep_privacy_policy_text',
 
         'flyout_header_text',
         'flyout_message_text',
