@@ -1,0 +1,88 @@
+body {
+	background-color:#eee;
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size:24px;
+	color:#000;
+	text-align:center;
+	line-height:40px;
+}
+h1 {
+	margin-bottom:50px;
+  font-family: "Oswald", Arial, sans-serif;
+  line-height:60px;
+}
+#main {
+	width:700px;
+	display:inline-block;
+}
+#input {
+	margin-bottom:50px;
+}
+#inputurl {
+	width:90%;
+	font-size:12px;
+	padding-top:4px;
+	padding-bottom:4px;
+	border:0px;
+}
+#buttonrow
+{
+	display:inline-block;
+	margin-bottom:50px;
+}
+#facebook {
+	width:200px;
+	color:#fff;
+	background-color:#3b5998;
+	display:inline-block;
+	margin:0px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-top:20px;
+}
+#facebook:hover {
+	cursor:pointer;
+	background-color:#4b69a8;
+}
+#twitter {
+	width:200px;
+	color:#fff;
+	background-color:#4099ff;
+	display:inline-block;
+	margin:0px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-top:20px;
+}
+#twitter:hover {
+	cursor:pointer;
+	background-color:#50a9ff;
+}
+#outreach {
+	width:200px;
+	color:#fff;
+	background-color:#000;
+	display:inline-block;
+	margin:0px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-top:20px;
+}
+#outreach:hover {
+	cursor:pointer;
+	background-color:#333;
+}
+#outputurl {
+	width:90%;
+	font-size:18px;
+	background-color:#fff;
+	padding:10px;
+	resize:none;
+	border:0px;
+}
