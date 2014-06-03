@@ -565,6 +565,7 @@ function ns_supportmsg_callback() {
 	$ss->useSpreadsheet( sanitize_text_field( $_POST['ssname'] ));
     $ss->useWorksheet( sanitize_text_field( $_POST['wsname'] ));
     $response = $ss->addRow( $rowData );
+    error_log($response);
 	if( !$response )	{
 		wp_send_json( array ( 'message' => 'We are unable to send your message at this time.' ));
 	}
