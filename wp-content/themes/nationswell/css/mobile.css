@@ -2949,11 +2949,13 @@ hr {
 .list-item .list-item-rank {
   display: inline-block;
   background: #fc3b40;
-  width: 5.2rem;
+  min-width: 5.2rem;
+  width: auto;
   height: 5.2rem;
   line-height: 5.2rem;
   text-align: center;
   margin: 0 .5rem 0 0;
+  padding: 0 .2rem;
 }
 
 /* Elastic video */
