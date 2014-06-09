@@ -14,6 +14,7 @@
 
 	$templates = array('search.twig', 'archive.twig', 'index.twig');
 	$data = Timber::get_context();
+	$author_found = null;
 	if ($wp_query->is_author)
 	{
 		$author_found = $wp_query->queried_object;
