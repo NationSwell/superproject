@@ -4,11 +4,7 @@
 
     <div class="river river--one-col">
         <div class="container container--flex">
-        	{% if author %}
-            	{% include 'author.twig' %}
-            {% endif %}
-        		
-        
+
             {% if posts is not empty %}
             <ul class="story-teases">
                 {% for post in posts|slice(0, 10) %}
