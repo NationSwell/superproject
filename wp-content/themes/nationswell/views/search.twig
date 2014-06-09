@@ -15,7 +15,7 @@
                     <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
-            {% elseif author is not empty%}
+            {% else %}
 
             <div class="story-teases">
                 <h1 class="hd-d">Sorry no posts match your search</h1>
