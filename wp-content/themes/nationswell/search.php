@@ -14,7 +14,11 @@
 
 	$templates = array('search.twig', 'archive.twig', 'index.twig');
 	$data = Timber::get_context();
-
+	if ($wp_query->is_author)
+	{
+		$author_found = $wp_query->queried_object;
+	}
+	$data['author'] = $author_found;
     $data['total_results'] = $wp_query->found_posts;
 	$data['title'] = 'Search results for '. get_search_query();
 	$data['posts'] = Timber::get_posts(array(), 'NationSwellPost');

@@ -4,13 +4,18 @@
 
     <div class="river river--one-col">
         <div class="container container--flex">
+        	{% if author %}
+            	{% include 'author-box.twig' %}
+            {% endif %}
+        		
+        
             {% if posts is not empty %}
             <ul class="story-teases">
                 {% for post in posts|slice(0, 10) %}
                     <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
-            {% else %}
+            {% elseif author is not empty%}
 
             <div class="story-teases">
                 <h1 class="hd-d">Sorry no posts match your search</h1>
