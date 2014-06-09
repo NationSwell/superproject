@@ -134,9 +134,6 @@ if (class_exists('TimberPost')) {
 
             $facebook_share_text = !empty($this->facebook_share) ? $this->facebook_share : $this->tout_title();
 
-	    /*
-	    Edited 1/22/2014 by Taylor Johnson.  Added '?m2w' to prevent fb from going to the mobile site on mobile 			     devices
-	    */
             return 'http://www.facebook.com/sharer.php?m2w&s= 100'
             . '&amp;p[url]=' . urlencode($this->permalink())
             . '&amp;p[title]=' . urlencode($facebook_share_text)

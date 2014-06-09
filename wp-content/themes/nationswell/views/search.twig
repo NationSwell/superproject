@@ -7,7 +7,7 @@
             {% if posts is not empty %}
             <ul class="story-teases">
                 {% for post in posts|slice(0, 10) %}
-                    <li>{% include ['tease-'~post.post_type, 'tease.twig'] %}</li>
+                    <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
                 {% endfor %}
             </ul>
             {% else %}
