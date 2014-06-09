@@ -14,6 +14,9 @@
 
 	$templates = array('search.twig', 'archive.twig', 'index.twig');
 	$data = Timber::get_context();
+	function get_next_page_link($current) {
+	return remove_query_arg('ajax-more', get_pagenum_link($current));
+	}
 	$page = max($wp_query->query_vars['paged'], 1);
 	$data['more'] = $wp_query->max_num_pages > $page ? get_next_page_link($page+1) : false;
 	$data['author'] = $author_found;
