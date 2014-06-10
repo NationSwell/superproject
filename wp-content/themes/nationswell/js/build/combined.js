@@ -3294,7 +3294,7 @@ window.events =
                 if ($link.attr('href').indexOf('?') == -1) {
                 	url = $link.attr('href') + '?ajax-more=true';
                 } else {
-                	url = $link.attr('href') + '&ajax-more=true';
+                	url = $link.attr('href') + '&amp;ajax-more=true';
                 }
 
             $.get(url, function (html) {
