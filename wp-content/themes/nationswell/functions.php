@@ -534,7 +534,7 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
     "email_type" => 'html', 
     "double_optin" => false,  
     "replace_interests" => false, 
-    "send_welcome" => true
+    "send_welcome" => false
     );
     
     $mail_chimp = new Mailchimp( MAILCHIMP_API_KEY );          			
