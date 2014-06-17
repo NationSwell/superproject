@@ -480,7 +480,7 @@ function subscribe_callback() {
 	    	try
 	    	{
 	    		ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
-	    		$response = ns_mailchimp_subscribe( $listID, $email );	
+	    		$response = ns_mailchimp_subscribe( $listID, $email, true );
 	    	}
 	    	catch (Mailchimp_List_AlreadySubscribed $e)
 			{
@@ -488,7 +488,7 @@ function subscribe_callback() {
 			}
 	    }
 	    else {
-	    	$response = ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
+	    	$response = ns_mailchimp_subscribe( NEWSLETTER_ID, $email, false );
 	    }
 	}
 	catch (Mailchimp_List_AlreadySubscribed $e)
@@ -523,7 +523,7 @@ function subscribe_callback() {
     exit();
 }
 
-function ns_mailchimp_subscribe( $list, $emailaddr ) {
+function ns_mailchimp_subscribe( $list, $emailaddr, $welcome ) {
     include_once 'Mailchimp.php';    
     define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 
@@ -534,7 +534,7 @@ function ns_mailchimp_subscribe( $list, $emailaddr ) {
     "email_type" => 'html', 
     "double_optin" => false,  
     "replace_interests" => false, 
-    "send_welcome" => false
+    "send_welcome" => $welcome
     );
     
     $mail_chimp = new Mailchimp( MAILCHIMP_API_KEY );          			
