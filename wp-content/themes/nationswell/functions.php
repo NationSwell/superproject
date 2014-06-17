@@ -484,7 +484,7 @@ function subscribe_callback() {
 	    	}
 	    	catch (Mailchimp_List_AlreadySubscribed $e)
 			{
-	        	$response = ns_mailchimp_subscribe( $listID, $email );
+	        	$response = ns_mailchimp_subscribe( $listID, $email, false );
 			}
 	    }
 	    else {
