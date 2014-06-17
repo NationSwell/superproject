@@ -551,7 +551,7 @@ function ns_supportmsg_callback() {
     define( "GOOGLE_LOGIN","nationswellcta@gmail.com" );
     define( "GOOGLE_PW","NS46225!" );
     $email = sanitize_email( $_POST['email'] );
-    ns_mailchimp_subscribe( NEWSLETTER_ID, $email );
+    ns_mailchimp_subscribe( NEWSLETTER_ID, $email, true );
     
 
 	$rowData = array(
