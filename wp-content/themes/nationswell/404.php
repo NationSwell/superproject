@@ -10,5 +10,5 @@
  */
 
 $context = Timber::get_context();
-$context['most_popular'] = Timber::get_widgets('widget_popular-widget');
+$context['popular_posts'] = Timber::get_posts(get_field('popular_posts', 'option'), 'NationSwellPost');
 Timber::render('404.twig', $context);
