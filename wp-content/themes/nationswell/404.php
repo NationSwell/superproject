@@ -10,4 +10,5 @@
  */
 
 $context = Timber::get_context();
+$context['sidebar_story'] = Timber::get_widgets('sidebar_story');
 Timber::render('404.twig', $context);
