@@ -219,7 +219,7 @@
             FB.Event.subscribe('edge.create',	
             		function(href, widget) {
 	                    events.trigger('facebook-like', [$(widget).data("module"), href]);
-	                    $(".fb_iframe_widget iframe").animate({left: "+=-200"}, 800);
+//	                    $(".fb_iframe_widget iframe").animate({left: "+=-200"}, 800);
 	                    $.cookie('flyout', 'disabled', { expires: 5, path: '/' });
             		}
             );
