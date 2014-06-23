@@ -10,8 +10,4 @@
  */
 
 $context = Timber::get_context();
-<<<<<<< HEAD
-$context['popular_posts'] = Timber::get_posts(get_field('popular_posts', 'option'), 'NationSwellPost');
-=======
->>>>>>> dev
 Timber::render('404.twig', $context);
