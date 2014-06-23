@@ -4563,12 +4563,12 @@ hr {
 }
 
 /* pullquote */
-/* line 306, ../scss/partials/desktop/_components.scss */
+/* line 304, ../scss/partials/desktop/_components.scss */
 .pullquote {
   margin: 4.2rem 0 5rem;
   padding-left: 7.8rem;
 }
-/* line 310, ../scss/partials/desktop/_components.scss */
+/* line 308, ../scss/partials/desktop/_components.scss */
 .pullquote:before {
   font-size: 4.2rem;
   line-height: 1.46;
@@ -4578,105 +4578,105 @@ hr {
   top: -1.2rem;
   left: 0;
 }
-/* line 320, ../scss/partials/desktop/_components.scss */
+/* line 318, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__quote {
   margin-bottom: 2rem;
 }
-/* line 324, ../scss/partials/desktop/_components.scss */
+/* line 322, ../scss/partials/desktop/_components.scss */
 .pullquote .pullquote__attribution {
   font-size: 1.8rem;
 }
 
 /* tags */
-/* line 330, ../scss/partials/desktop/_components.scss */
+/* line 328, ../scss/partials/desktop/_components.scss */
 .tag-tag {
   font-size: 1.4rem;
   padding: 0.6rem 0.8rem;
 }
 
 /* author */
-/* line 336, ../scss/partials/desktop/_components.scss */
+/* line 334, ../scss/partials/desktop/_components.scss */
 .author-box {
   margin-bottom: 3.0rem;
   padding: 2.6rem 3.4rem;
 }
 
-/* line 342, ../scss/partials/desktop/_components.scss */
+/* line 340, ../scss/partials/desktop/_components.scss */
 .author-box--curated .author__portrait {
   width: 10rem;
   height: 10rem;
 }
 
-/* line 350, ../scss/partials/desktop/_components.scss */
+/* line 348, ../scss/partials/desktop/_components.scss */
 .author-box:nth-of-type(even) .author__a {
   float: right;
 }
 
-/* line 356, ../scss/partials/desktop/_components.scss */
+/* line 354, ../scss/partials/desktop/_components.scss */
 .author__a {
   float: left;
 }
 
-/* line 360, ../scss/partials/desktop/_components.scss */
+/* line 358, ../scss/partials/desktop/_components.scss */
 .author__b {
   overflow: hidden;
   padding-top: 0.6rem;
   padding-left: 3.4rem;
 }
 
-/* line 366, ../scss/partials/desktop/_components.scss */
+/* line 364, ../scss/partials/desktop/_components.scss */
 .author__portrait {
   margin-bottom: 1.2rem;
   width: 13.4rem;
   height: 13.4rem;
 }
 
-/* line 372, ../scss/partials/desktop/_components.scss */
+/* line 370, ../scss/partials/desktop/_components.scss */
 .author__url {
   font-size: 1.4rem;
 }
-/* line 375, ../scss/partials/desktop/_components.scss */
+/* line 373, ../scss/partials/desktop/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 382, ../scss/partials/desktop/_components.scss */
+/* line 380, ../scss/partials/desktop/_components.scss */
 .social li:first-child {
   border-left: 0;
 }
-/* line 387, ../scss/partials/desktop/_components.scss */
+/* line 385, ../scss/partials/desktop/_components.scss */
 .social.author__social {
   margin-top: 1.2rem;
 }
-/* line 390, ../scss/partials/desktop/_components.scss */
+/* line 388, ../scss/partials/desktop/_components.scss */
 .social.author__social .icon {
   font-size: 2.6rem;
   height: 3rem;
   width: 3rem;
 }
-/* line 397, ../scss/partials/desktop/_components.scss */
+/* line 395, ../scss/partials/desktop/_components.scss */
 .social.take-action__social {
   margin-top: 1.2rem;
   margin-bottom: 6rem;
 }
-/* line 401, ../scss/partials/desktop/_components.scss */
+/* line 399, ../scss/partials/desktop/_components.scss */
 .social.take-action__social .icon {
   font-size: 4rem;
   height: 5.4rem;
   width: 5.4rem;
 }
 
-/* line 409, ../scss/partials/desktop/_components.scss */
+/* line 407, ../scss/partials/desktop/_components.scss */
 .author__byline {
   margin-bottom: 1.4rem;
 }
-/* line 410, ../scss/partials/desktop/_components.scss */
+/* line 408, ../scss/partials/desktop/_components.scss */
 .author__byline .author__byline__prefix {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
 }
 
-/* line 418, ../scss/partials/desktop/_components.scss */
+/* line 416, ../scss/partials/desktop/_components.scss */
 .author__bio {
   color: #7e7e7e;
   font-size: 1.5rem;
@@ -4684,57 +4684,57 @@ hr {
 }
 
 /* prev/next */
-/* line 425, ../scss/partials/desktop/_components.scss */
+/* line 423, ../scss/partials/desktop/_components.scss */
 .prev-next {
   padding-top: 2rem;
   margin-bottom: 7.2rem;
 }
-/* line 429, ../scss/partials/desktop/_components.scss */
+/* line 427, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
 }
-/* line 433, ../scss/partials/desktop/_components.scss */
+/* line 431, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link .icon {
   font-size: 2.6rem;
   line-height: 0.74;
 }
-/* line 439, ../scss/partials/desktop/_components.scss */
+/* line 437, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--prev .icon {
   margin-right: 0.6rem;
 }
-/* line 445, ../scss/partials/desktop/_components.scss */
+/* line 443, ../scss/partials/desktop/_components.scss */
 .prev-next .prev-next__link.prev-next__link--next .icon {
   margin-left: 0.6rem;
 }
 
 /* read next */
-/* line 453, ../scss/partials/desktop/_components.scss */
+/* line 451, ../scss/partials/desktop/_components.scss */
 .read-next {
   padding-bottom: 2.2rem;
 }
-/* line 456, ../scss/partials/desktop/_components.scss */
+/* line 454, ../scss/partials/desktop/_components.scss */
 .read-next .read-next__heading {
   padding-bottom: 1.2rem;
 }
-/* line 461, ../scss/partials/desktop/_components.scss */
+/* line 459, ../scss/partials/desktop/_components.scss */
 .read-next li:first-child {
   padding-right: 1rem;
 }
-/* line 465, ../scss/partials/desktop/_components.scss */
+/* line 463, ../scss/partials/desktop/_components.scss */
 .read-next li:last-child {
   padding-left: 1rem;
 }
-/* line 470, ../scss/partials/desktop/_components.scss */
+/* line 468, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease {
   margin-bottom: 3.4rem;
 }
-/* line 473, ../scss/partials/desktop/_components.scss */
+/* line 471, ../scss/partials/desktop/_components.scss */
 .read-next .story--tease .story__feature {
   margin-bottom: -1.4rem;
 }
 
-/* line 479, ../scss/partials/desktop/_components.scss */
+/* line 477, ../scss/partials/desktop/_components.scss */
 #flyout {
   background-color: white;
   position: fixed;
@@ -4747,19 +4747,19 @@ hr {
   -moz-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
 }
-/* line 491, ../scss/partials/desktop/_components.scss */
+/* line 489, ../scss/partials/desktop/_components.scss */
 #flyout header {
   background-color: #003046;
   padding: 1.2rem 1.6rem 0.6rem;
   position: relative;
 }
-/* line 497, ../scss/partials/desktop/_components.scss */
+/* line 495, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading {
   font-family: "Oswald", Arial, sans-serif;
   line-height: 1;
   vertical-align: middle;
 }
-/* line 502, ../scss/partials/desktop/_components.scss */
+/* line 500, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__heading:before {
   color: #fc3b40;
   display: inline-block;
@@ -4768,7 +4768,7 @@ hr {
   font-size: 2.6rem;
   vertical-align: middle;
 }
-/* line 512, ../scss/partials/desktop/_components.scss */
+/* line 510, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close {
   background-color: transparent;
   border: none;
@@ -4782,32 +4782,32 @@ hr {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 524, ../scss/partials/desktop/_components.scss */
+/* line 522, ../scss/partials/desktop/_components.scss */
 #flyout .btn--close:hover {
   color: #0098d8;
 }
-/* line 529, ../scss/partials/desktop/_components.scss */
+/* line 527, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content {
   border-left: 1px solid #ccd6da;
   border-bottom: 1px solid #ccd6da;
   padding: 1.6rem;
 }
-/* line 534, ../scss/partials/desktop/_components.scss */
+/* line 532, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content p {
   color: #002130;
   font-family: "Gudea", Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
-/* line 541, ../scss/partials/desktop/_components.scss */
+/* line 539, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__content .fb-like {
   margin-bottom: 0.6rem;
 }
-/* line 546, ../scss/partials/desktop/_components.scss */
+/* line 544, ../scss/partials/desktop/_components.scss */
 #flyout.is-visible {
   right: 0;
 }
-/* line 550, ../scss/partials/desktop/_components.scss */
+/* line 548, ../scss/partials/desktop/_components.scss */
 #flyout .flyout__disable {
   color: #0098d8;
   font-family: "Gudea", Arial, sans-serif;
@@ -4816,7 +4816,7 @@ hr {
 }
 
 /* subscribe status */
-/* line 559, ../scss/partials/desktop/_components.scss */
+/* line 557, ../scss/partials/desktop/_components.scss */
 .mc-email-status {
   font-size: 1.4rem;
   line-height: 1;
