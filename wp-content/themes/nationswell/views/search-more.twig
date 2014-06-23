@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="river river--one-col">
+        <ul class="story-teases">
+            {% for post in posts|slice(0, 10) %}
+                <li>{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="sidebar hide-mobile">
+        {#{{ sidebar_static }}#}
+    </div>
+    {% include 'more-button.twig' with {'module_name': 'search' } %}
+</div>

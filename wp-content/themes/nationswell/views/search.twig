@@ -4,6 +4,7 @@
 
     <div class="river river--one-col">
         <div class="container container--flex">
+
             {% if posts is not empty %}
             <ul class="story-teases">
                 {% for post in posts|slice(0, 10) %}
@@ -22,4 +23,5 @@
             </div>
         </div>
     </div>
+    {% include 'more-button.twig' with {'module_name': 'search' } %}
 {% endblock %}

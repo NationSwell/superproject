@@ -3,6 +3,7 @@
 {% block content %}
 
 
+
     {% if post.hero_type != 'small' %}
     {% include 'hero.twig' %}
     {% endif %}
@@ -45,7 +46,7 @@
                     <div class="story__content">
                         {{post.get_content}}
 
-                        {% if post.source is not empty %}
+                        {% if post.source.url is not empty %}
                             <p><em>Source:</em> <a href="{{ post.source.url }}" {{ (post.source.internal == 1)? "" : 'target="_blank"' }}>{{ (post.source.title is not empty) ? post.source.title : post.source.url }}</a></p>
                         {% endif %}
                     </div>
