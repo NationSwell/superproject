@@ -2855,10 +2855,10 @@ window.events =
         
         if (!$.cookie('flyout')) {
 
-            // setTimeout(function () {
-            //     $('#flyout').toggleClass('is-visible');
-            //     events.trigger('flyout-open',[getModule($('#flyout'))]);
-            // }, 30000);
+            setTimeout(function () {
+                 $('#flyout').toggleClass('is-visible');
+                 events.trigger('flyout-open',[getModule($('#flyout'))]);
+            }, 1000);
 
         }
 
