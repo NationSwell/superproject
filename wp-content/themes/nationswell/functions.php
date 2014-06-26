@@ -1,6 +1,7 @@
 <?php
 
 $level = error_reporting();
+$story_widget_status;
 
 // I'm not sure I like this approach to version management.
 define('VERSION', intval( file_get_contents( get_template_directory() . '/version.txt' ) ) );
@@ -621,3 +622,39 @@ function ns_tynt() {
 	<?php
 }
 add_action( 'wp_head', 'ns_tynt' );
+
+function ns_get_joinus_cookie() {
+
+    if ( isset($_COOKIE["story-widget"] )) {
+        $GLOBALS["story_widget_status"] = $_COOKIE["story-widget"];
+    }
+}
+add_action('init', 'ns_get_joinus_cookie');
+
+function ns_newsletter_shortcode() {
+
+    if ($GLOBALS["story_widget_status"] == "disabled") {
+        return;
+    } else {
+
+        return "<div class=\"story-signup\" data-module='{\"name\": \"story:subscribe\"}'>
+        <header>
+            <div class=\"indicator indicator-story-signup icon icon_envelope\"></div>
+        </header>
+        <p>" . get_field( 'embedded_subscribe_copy', 'option' ) . "</p>
+            <form action=\"\" method=\"post\" name=\"mc-embedded-subscribe-form\" class=\"mc-form validate\" target=\"_blank\" novalidate>
+                <div class=\"mc-field-group cf\">
+                    <div class=\"form-fields\">
+                        <input type=\"email\" value=\"\" placeholder=\"Enter your email address\" name=\"EMAIL\" class=\"required email text-input\" id=\"mc-email\">
+                        <input type=\"hidden\" name=\"listid\" value=\"\">
+                        <label for=\"mc-email\" class=\"mc-email-status\"></label>
+                        <input type=\"submit\" value=\"" . get_field( 'embedded_subscribe_button_text','option' ) . "\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"btn btn--solid\" data-modal-disable=\"" . get_field( 'modal_joinus_subscribe_expiration','option' ) . "\">
+                    </div>
+                </div>
+            </form>
+        </div>";
+    }
+
+
+}
+add_shortcode( 'newsletter', 'ns_newsletter_shortcode' );
