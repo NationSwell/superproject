@@ -481,15 +481,15 @@ function subscribe_callback() {
 	    	try
 	    	{
 	    		ns_mailchimp_subscribe( NEWSLETTER_ID, $email, true );
-	    		$response = ns_mailchimp_subscribe( $listID, $email, false );
+	    		$response = ns_mailchimp_subscribe( $listID, $email, true );
 	    	}
 	    	catch (Mailchimp_List_AlreadySubscribed $e)
 			{
-	        	$response = ns_mailchimp_subscribe( $listID, $email, false );
+	        	$response = ns_mailchimp_subscribe( $listID, $email, true );
 			}
 	    }
 	    else {
-	    	$response = ns_mailchimp_subscribe( NEWSLETTER_ID, $email, false );
+	    	$response = ns_mailchimp_subscribe( NEWSLETTER_ID, $email, true );
 	    }
 	}
 	catch (Mailchimp_List_AlreadySubscribed $e)
