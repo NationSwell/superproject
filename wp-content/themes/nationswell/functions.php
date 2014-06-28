@@ -481,11 +481,11 @@ function subscribe_callback() {
 	    	try
 	    	{
 	    		ns_mailchimp_subscribe( NEWSLETTER_ID, $email, true );
-	    		$response = ns_mailchimp_subscribe( $listID, $email, true );
+	    		$response = ns_mailchimp_subscribe( $listID, $email, false );
 	    	}
 	    	catch (Mailchimp_List_AlreadySubscribed $e)
 			{
-	        	$response = ns_mailchimp_subscribe( $listID, $email, true );
+	        	$response = ns_mailchimp_subscribe( $listID, $email, false );
 			}
 	    }
 	    else {
