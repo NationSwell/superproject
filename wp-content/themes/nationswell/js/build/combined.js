@@ -2837,7 +2837,7 @@ window.events =
             FB.Event.subscribe('edge.create',	
             		function(href, widget) {
 	                    events.trigger('facebook-like', [$(widget).data("module"), href]);
-	                    $(".fb_iframe_widget iframe").animate({left: "+=-200"}, 800);
+//	                    $(".fb_iframe_widget iframe").animate({left: "+=-200"}, 800);
 	                    $.cookie('flyout', 'disabled', { expires: 5, path: '/' });
             		}
             );
@@ -2855,10 +2855,10 @@ window.events =
         
         if (!$.cookie('flyout')) {
 
-            // setTimeout(function () {
-            //     $('#flyout').toggleClass('is-visible');
-            //     events.trigger('flyout-open',[getModule($('#flyout'))]);
-            // }, 30000);
+            setTimeout(function () {
+                 $('#flyout').toggleClass('is-visible');
+                 events.trigger('flyout-open',[getModule($('#flyout'))]);
+            }, 15000);
 
         }
 
