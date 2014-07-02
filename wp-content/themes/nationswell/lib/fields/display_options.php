@@ -14,6 +14,15 @@ if (function_exists("register_field_group")) {
                     'message' => '',
                     'default_value' => 0,
                 ),
+                array(
+                    'key' => 'field_420twdd759102',
+                    'label' => 'Hide In-Story Newsletter Signup',
+                    'name' => 'hide_in_story_widget',
+                    'type' => 'true_false',
+                    'instructions' => 'Hides the newsletter signup field appended to the end of the article.',
+                    'message' => '',
+                    'default_value' => 0,
+                ),
             ),
             'location' => array(
                 array(
