@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 Disallow: /rachel-haot-chief-digital-officer-new-york/
+Disallow: /utm-builder/
