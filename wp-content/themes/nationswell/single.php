@@ -16,4 +16,10 @@ $context['wp_title'] .= ' - ' . $post->post_title;
 $context['comment_form'] = TimberHelper::get_comment_form();
 $context['sidebar_story'] = Timber::get_widgets('sidebar_story');
 
+if ( !stripos( $post->post_content, '[newsletter]' ) && !get_field( "hide_in_story_widget" )) {
+    $context['newsletter_bottom'] = do_shortcode( "[newsletter]" );
+} else {
+    $context['newsletter_bottom'] = "";
+}
+
 Timber::render(array('single-' . $post->post_type . '.twig', 'single.twig'), $context);
