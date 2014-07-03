@@ -3291,18 +3291,17 @@ window.events =
         // load more button
         $('#page-content').on('click', '.btn--load-more', function (e) {
             var $link = $(this),
+                $url = null,
                 $container = $link.parent('.btn-container');
-                if ($link.attr('href').indexOf('?') == -1) {
-                	url = $link.attr('href') + '?ajax-more=true';
-                } else {
-                	url = $link.attr('href') + '&amp;ajax-more=true';
-                }
-
-            $.get(url, function (html) {
-                $container.replaceWith(html);
-            });
-
-            e.preventDefault();
+            if ($link.attr('href').indexOf('?') == -1) {
+                $url = $link.attr('href') + '?ajax-more=true';
+                $.get($url, function (html) {
+                    $container.replaceWith(html);
+                });
+                e.preventDefault();
+            } else {
+                $url = $link.attr('href') + '&amp;ajax-more=true';
+            }
         });
 
         // take action thank you
