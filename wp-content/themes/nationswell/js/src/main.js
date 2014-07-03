@@ -681,8 +681,6 @@
                     $container.replaceWith(html);
                 });
                 e.preventDefault();
-            } else {
-                $url = $link.attr('href') + '&amp;ajax-more=true';
             }
         });
 
