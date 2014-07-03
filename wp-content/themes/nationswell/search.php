@@ -23,7 +23,34 @@
 	$data['title'] = 'Search results for '. get_search_query();
 	$data['posts'] = Timber::get_posts(array(), 'NationSwellPost');
     $data['sidebar_static'] = Timber::get_widgets('sidebar_static');
-    
+
+    $srch = get_search_query();
+    $tok = strtok($srch, " ");
+
+    while ( $tok !== false ) {
+        $author_found = $wpdb->get_results(
+            "
+                    SELECT user_id
+                    FROM $wpdb->usermeta
+                    WHERE meta_key = 'last_name'
+                        AND meta_value = '$tok'
+                ",ARRAY_A
+        );
+        if ( empty( $author_found )) {
+            $tok = strtok(" ");
+        } else {
+            break;
+        }
+    }
+
+    if ( empty( $author_found )) {
+        $data['author'] = null;
+    } else {
+        $data['author'] = new TimberUser( $author_found[0]['user_id'] );
+        $data['author_mug'] = get_field('mug_shot', 'user_' . $author_found[0]['user_id']);
+        $data['author_link'] = get_author_posts_url($author_found[0]['user_id']);
+
+    }
     $more = isset($_GET['ajax-more']);
 	
 	Timber::render($more ? 'search-more.twig' : $templates, $data);
