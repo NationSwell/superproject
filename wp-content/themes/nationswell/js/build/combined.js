@@ -2616,6 +2616,14 @@ window.events =
         track(module.name, type, label);
     });
 
+    jQuery("#widget_sp_image-3").click(function(e) {
+        track("take-action-right-rail", "open", "");
+    });
+
+    jQuery("#widget_sp_image-2").click(function(e) {
+        track("video-right-rail", "open", "");
+    });
+
 })();;(function ($) {
     $(function () {
 
@@ -3299,8 +3307,6 @@ window.events =
                     $container.replaceWith(html);
                 });
                 e.preventDefault();
-            } else {
-                $url = $link.attr('href') + '&amp;ajax-more=true';
             }
         });
 

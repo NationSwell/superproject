@@ -90,4 +90,12 @@
         track(module.name, type, label);
     });
 
+    jQuery("#widget_sp_image-3").click(function(e) {
+        track("take-action-right-rail", "open", "");
+    });
+
+    jQuery("#widget_sp_image-2").click(function(e) {
+        track("video-right-rail", "open", "");
+    });
+
 })();
