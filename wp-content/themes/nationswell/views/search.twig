@@ -7,8 +7,7 @@
 
           {% if author is not null %}
            <a href="{{ author_link }}">
-            <div class="story-teases">
-            <div class="author-box author-box--author">
+            <div class="author-box author-box--author story-teases">
                     <div class="author__a">
                         {% if author_mug is not empty %}
                             <img src="{{ author_mug.url|resize(134,134) }}" class="author__portrait" alt="{{ author_mug._wp_attachment_image_alt }}">
@@ -37,12 +36,11 @@
                                 {% endif %}
                             </ul>
                         </div>
-            </div>
+                    </div>
             <div class="author__b">
                 <div class="author__name hd-q">{{ author.first_name }} {{ author.last_name }}</div>
                 <p class="author__bio">{{ author.description }}</p>
             </div>
-           </div>
            </div>
            </a>
 
