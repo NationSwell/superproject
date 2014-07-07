@@ -672,7 +672,7 @@ function ns_extra_email_field( $user ) { ?>
             <th><label for="email-display">E-mail Address</label></th>
 
             <td>
-                <input type="text" name="email-display" id="email-display" value="<?php echo esc_attr( get_the_author_meta( 'email-display', $user->ID ) ); ?>" class="regular-text" /><br />
+                <input type="text" name="email_display" id="email_display" value="<?php echo esc_attr( get_the_author_meta( 'email_display', $user->ID ) ); ?>" class="regular-text" /><br />
                 <span class="description">Please enter your E-mail to display to visitors.</span>
             </td>
         </tr>
@@ -689,5 +689,5 @@ function ns_save_extra_email_field( $user_id ) {
     if ( !current_user_can( 'edit_user', $user_id ) )
         return false;
 
-    update_usermeta( $user_id, 'email-display', $_POST['email-display'] );
+    update_usermeta( $user_id, 'email_display', $_POST['email_display'] );
 }
