@@ -2148,6 +2148,9 @@ input[type="submit"]:-moz-focus-inner {
 .social .icon.icon_linkedin {
   background-color: #017bb6;
 }
+.social .icon.icon_envelope {
+  background-color: #46b525;
+}
 /* line 680, ../scss/partials/base/_components.scss */
 .social.author__social .icon {
   line-height: 1.4;
@@ -2179,6 +2182,9 @@ input[type="submit"]:-moz-focus-inner {
 /* line 694, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_linkedin {
   background-color: #017bb6;
+}
+.social.author__social.author__social--page .icon:hover.icon_envelope {
+    background-color: #46b525;
 }
 /* line 701, ../scss/partials/base/_components.scss */
 .social.take-action__social .icon {

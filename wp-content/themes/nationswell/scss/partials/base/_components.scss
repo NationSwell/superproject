@@ -674,6 +674,7 @@
     &.icon_instagram { background-color: #37668d; }
     &.icon_tumblr { background-color: #2c4762; }
     &.icon_linkedin { background-color: #017bb6; }
+    &.icon_envelope { background-color: $green1 }
   }
 
   &.author__social {
@@ -692,6 +693,7 @@
           &.icon_instagram { background-color: #37668d; }
           &.icon_tumblr { background-color: #2c4762; }
           &.icon_linkedin { background-color: #017bb6; }
+          &.icon_envelope { background-color: $green1 }
         }
       }
     }
