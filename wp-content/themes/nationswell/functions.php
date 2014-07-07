@@ -658,3 +658,33 @@ function ns_newsletter_shortcode() {
 
 }
 add_shortcode( 'newsletter', 'ns_newsletter_shortcode' );
+
+function ns_extra_email_field( $user ) { ?>
+
+    <h3>E-mail To Display</h3>
+
+    <table class="form-table">
+
+        <tr>
+            <th><label for="email-display">E-mail Address</label></th>
+
+            <td>
+                <input type="text" name="email-display" id="email-display" value="<?php echo esc_attr( get_the_author_meta( 'email-display', $user->ID ) ); ?>" class="regular-text" /><br />
+                <span class="description">Please enter your E-mail to display to visitors.</span>
+            </td>
+        </tr>
+
+    </table>
+<?php
+}
+
+add_action( 'personal_options_update', 'ns_save_extra_email_field' );
+add_action( 'edit_user_profile_update', 'ns_save_extra_email_field' );
+
+function ns_save_extra_email_field( $user_id ) {
+
+    if ( !current_user_can( 'edit_user', $user_id ) )
+        return false;
+
+    update_usermeta( $user_id, 'email-display', $_POST['email-display'] );
+}
