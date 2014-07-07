@@ -2651,7 +2651,8 @@ window.events =
         	var $this = ($(this));
            	$this.submit(function (e) {
                 e.preventDefault();
-            }).validate({ submitHandler:  function(form){
+            }).validate({ errorLabelContainer: ".mc-email-status",
+                submitHandler:  function(form){
                     var $form = $(form),
                         $formErrors = $form.find('.form-errors'),
                         url = '/wp-admin/admin-ajax.php?action=subscribe_action';
