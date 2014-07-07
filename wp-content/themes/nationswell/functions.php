@@ -659,6 +659,9 @@ function ns_newsletter_shortcode() {
 }
 add_shortcode( 'newsletter', 'ns_newsletter_shortcode' );
 
+add_action( 'show_user_profile', 'ns_extra_email_field' );
+add_action( 'edit_user_profile', 'ns_extra_email_field' );
+
 function ns_extra_email_field( $user ) { ?>
 
     <h3>E-mail To Display</h3>
