@@ -498,6 +498,7 @@ function subscribe_callback() {
 			"status" => "error",
 			"message" => "You are already subscribed."
 		);
+        setcookie("subscribed","yes",time()+3600*24*999,"/");
 	}
 	catch (Mailchimp_Email_NotExists $e)
 	{
