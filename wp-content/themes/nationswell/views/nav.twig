@@ -2,7 +2,7 @@
     <header id="page-header">
         <div class="container">
             <a href="/" class="site-logo site-logo--slogan fl">
-                <img src="/{{ theme_dir }}/img/site-logo-beta.png" alt="NationSwell Logo"/>
+                <img src="{{ theme_dir }}/img/site-logo-beta.png" alt="NationSwell Logo"/>
                 <span class="slogan hide_mobile">{{ site_tag_line }}</span>
             </a>
 
@@ -18,7 +18,10 @@
                     <li><label for="nav-email-input" id="status-label" class="mc-email-status"></label></li>
                     <li><input type="hidden" name="listid" value="" data-modal-disable="{{ modal_joinus_subscribe_expiration }}"></li>
                     <li><label for="nav-subscribe" class="icon icon_envelope z1" id="nav-envelope"></label></li>
-                    <li><input type="email" name="EMAIL" id="nav-subscribe" placeholder="{{ nav_subscribe_placeholder_text }}" class="required email text-input"></li>
+                    <li>
+                        <input type="email" name="EMAIL" id="nav-subscribe" placeholder="{{ nav_subscribe_placeholder_text }}" class="required email text-input">
+                        <button class="btn-nav-subscribe">Subscribe</button>
+                    </li>
                 </ul>
             </form>
 
