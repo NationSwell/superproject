@@ -486,6 +486,7 @@ function subscribe_callback() {
 	    	catch (Mailchimp_List_AlreadySubscribed $e)
 			{
 	        	$response = ns_mailchimp_subscribe( $listID, $email, false );
+                setcookie("subscribed","yes",time()+3600*24*999,"/");
 			}
 	    }
 	    else {
@@ -628,6 +629,8 @@ function ns_get_joinus_cookie() {
 
     if ( isset($_COOKIE["subscribed"] )) {
         $GLOBALS["story_widget_status"] = "disabled";
+    } else {
+        $GLOBALS["story_widget_status"] = "enabled";
     }
 }
 add_action('init', 'ns_get_joinus_cookie');
