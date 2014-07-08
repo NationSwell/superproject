@@ -37,18 +37,19 @@
 
             {% if nationswell_mailchimp_daily %}
             <p>{{ take_action_thanks_subscribe_text }}</p>
-
-            <div id="mc_embed_signup">
-                <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
-                    <div class="mc-field-group cf">
-                        <div class="join-us__email icon icon_envelope">
-                            <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mc-email">
-                             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl" data-modal-disable="{{ modal_joinus_subscribe_expiration }}">
-                            <label for="mc-email" class="mc-email-status"></label>
+            {% if prompt_signup %}
+                <div id="mc_embed_signup">
+                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form validate" target="_blank" novalidate>
+                        <div class="mc-field-group cf">
+                            <div class="join-us__email icon icon_envelope">
+                                <input type="email" value="" placeholder="Enter Your Email" name="EMAIL" class="required email fl" id="mc-email">
+                                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--subscribe fl" data-modal-disable="{{ modal_joinus_subscribe_expiration }}">
+                                <label for="mc-email" class="mc-email-status"></label>
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
+            {% endif %}
             {% endif %}
 
             <button class="take-action__social_back">&#x25c0; Back</button>

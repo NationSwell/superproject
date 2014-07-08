@@ -625,8 +625,8 @@ add_action( 'wp_head', 'ns_tynt' );
 
 function ns_get_joinus_cookie() {
 
-    if ( isset($_COOKIE["story-widget"] )) {
-        $GLOBALS["story_widget_status"] = $_COOKIE["story-widget"];
+    if ( isset($_COOKIE["subscribed"] )) {
+        $GLOBALS["story_widget_status"] = "disabled";
     }
 }
 add_action('init', 'ns_get_joinus_cookie');

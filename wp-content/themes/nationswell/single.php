@@ -22,4 +22,10 @@ if ( !stripos( $post->post_content, '[newsletter]' ) && !get_field( "hide_in_sto
     $context['newsletter_bottom'] = "";
 }
 
+if ( isset($_COOKIE["subscribed"] )) {
+    $context['prompt_signup'] = false;
+} else {
+    $context['prompt_signup'] = true;
+}
+
 Timber::render(array('single-' . $post->post_type . '.twig', 'single.twig'), $context);

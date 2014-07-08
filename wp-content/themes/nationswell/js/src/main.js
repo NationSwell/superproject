@@ -64,7 +64,7 @@
                                     });
                                 	$('.modal--join-us').removeClass('is-visible');
                                     $.cookie($('join-us').data("modal"), 'disabled', { expires: $('popup-control').attr('data-modal-disable'), path: '/' });
-                                    $.cookie('story-widget', 'disabled', { expires: 999, path: '/' });
+                                    $.cookie('subscribed', 'yes', { expires: 999, path: '/' });
                                 }
                             });
             		}
