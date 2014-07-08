@@ -2,6 +2,7 @@
 
 $level = error_reporting();
 $story_widget_status;
+define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 
 // I'm not sure I like this approach to version management.
 define('VERSION', intval( file_get_contents( get_template_directory() . '/version.txt' ) ) );
@@ -527,8 +528,7 @@ function subscribe_callback() {
 }
 
 function ns_mailchimp_subscribe( $list, $emailaddr, $welcome ) {
-    include_once 'Mailchimp.php';    
-    define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
+    include_once 'Mailchimp.php';
 
     $params = array(
   	"id" => $list, 
