@@ -1,10 +1,10 @@
-@media only screen and (orientation : landscape) {
+@media only screen and (orientation: landscape) {
   /* line 2, ../scss/tablet.scss */
   html {
     font-size: 8px;
   }
 }
-@media only screen and (orientation : portrait) {
+@media only screen and (orientation: portrait) {
   /* line 8, ../scss/tablet.scss */
   html {
     font-size: 8px;
