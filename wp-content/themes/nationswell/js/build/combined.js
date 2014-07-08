@@ -2651,7 +2651,9 @@ window.events =
         	var $this = ($(this));
            	$this.submit(function (e) {
                 e.preventDefault();
-            }).validate({ errorLabelContainer: ".mc-email-status",
+            }).validate({ errorPlacement: function(error) {
+                error.appendTo( ".mc-email-status" );
+            },
                 submitHandler:  function(form){
                     var $form = $(form),
                         $formErrors = $form.find('.form-errors'),
