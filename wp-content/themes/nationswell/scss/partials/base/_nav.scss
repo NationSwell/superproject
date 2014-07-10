@@ -30,6 +30,7 @@
 .more-stories-toggle {
   color: $white;
   vertical-align: middle;
+  position: relative;
 
   &.is-toggled {
     @include transform(rotate(90deg) scale(0.6, 1.4));

@@ -61,7 +61,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 18, ../scss/bourbon/addons/_clearfix.scss */
+/* line 17, ../scss/bourbon/addons/_clearfix.scss */
 .container:before, .container:after {
   content: " ";
   display: table;
@@ -363,7 +363,7 @@ body {
 /* line 21, ../scss/partials/_utility.scss */
 .link-wrapper {
   outline: 0px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   width: 100%;
   height: 100%;
   display: block;
@@ -618,7 +618,7 @@ a:hover {
   line-height: 1.4;
 }
 
-/* line 19, ../scss/partials/_typography.scss */
+/* line 18, ../scss/partials/_typography.scss */
 .credit,
 .byline {
   color: #7e7e7e;
@@ -668,7 +668,6 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 14, ../scss/partials/_icons.scss */
 .icon {
   font-family: "icons";
@@ -867,7 +866,7 @@ a:hover {
   -moz-transition: none;
   transition: none;
 }
-/* line 59, ../scss/partials/_buttons.scss */
+/* line 58, ../scss/partials/_buttons.scss */
 .btn.btn--bar.btn--facebook, .btn.btn--bar.btn--twitter {
   width: 28.1625rem;
 }
@@ -1083,7 +1082,7 @@ a:hover {
   padding-top: 2.3rem;
   vertical-align: middle;
 }
-/* line 37, ../scss/partials/_nav.scss */
+/* line 36, ../scss/partials/_nav.scss */
 .more-stories-toggle.toggled {
   -webkit-transform: rotate(90deg) scale(0.6, 1.4);
   -moz-transform: rotate(90deg) scale(0.6, 1.4);
@@ -1098,7 +1097,7 @@ a:hover {
 }
 
 /* social links */
-/* line 44, ../scss/partials/_nav.scss */
+/* line 43, ../scss/partials/_nav.scss */
 .social-links {
   border-right: 2px solid #002130;
   display: block;
@@ -1108,13 +1107,13 @@ a:hover {
   padding-right: 0.6rem;
   position: relative;
 }
-/* line 53, ../scss/partials/_nav.scss */
+/* line 52, ../scss/partials/_nav.scss */
 .social-links li {
   display: inline-block;
   margin-right: 2.8rem;
 }
 
-/* line 59, ../scss/partials/_nav.scss */
+/* line 58, ../scss/partials/_nav.scss */
 .social-links__link {
   display: block;
   color: white;
@@ -1124,12 +1123,12 @@ a:hover {
 }
 
 /* search */
-/* line 70, ../scss/partials/_nav.scss */
+/* line 69, ../scss/partials/_nav.scss */
 .search {
   margin-right: 2.8rem;
   position: relative;
 }
-/* line 76, ../scss/partials/_nav.scss */
+/* line 75, ../scss/partials/_nav.scss */
 .search label {
   color: white;
   cursor: pointer;
@@ -1146,19 +1145,19 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 92, ../scss/partials/_nav.scss */
+/* line 90, ../scss/partials/_nav.scss */
 .search label:active, .search label:focus {
   outline: 0 none;
 }
-/* line 96, ../scss/partials/_nav.scss */
+/* line 95, ../scss/partials/_nav.scss */
 .search label:hover {
   color: #0098d8;
 }
-/* line 100, ../scss/partials/_nav.scss */
+/* line 99, ../scss/partials/_nav.scss */
 .search label:before {
   font-size: 3.2rem;
 }
-/* line 105, ../scss/partials/_nav.scss */
+/* line 104, ../scss/partials/_nav.scss */
 .search input[type="text"] {
   background-color: transparent;
   border: 0 none;
@@ -1196,11 +1195,11 @@ a:hover {
 .search input[type="text"]:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 127, ../scss/partials/_nav.scss */
+/* line 125, ../scss/partials/_nav.scss */
 .search input[type="text"]:focus, .search input[type="text"]:active {
   outline: 0 none;
 }
-/* line 131, ../scss/partials/_nav.scss */
+/* line 130, ../scss/partials/_nav.scss */
 .search input[type="text"].open {
   opacity: 1;
   outline: 0 none;
@@ -1209,13 +1208,13 @@ a:hover {
 }
 
 /* trending topics */
-/* line 142, ../scss/partials/_nav.scss */
+/* line 141, ../scss/partials/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 147, ../scss/partials/_nav.scss */
+/* line 146, ../scss/partials/_nav.scss */
 .trending-topics__heading {
   color: #9aacb5;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1226,16 +1225,16 @@ a:hover {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 158, ../scss/partials/_nav.scss */
+/* line 157, ../scss/partials/_nav.scss */
 .trending-topics__list {
   display: inline-block;
 }
-/* line 161, ../scss/partials/_nav.scss */
+/* line 160, ../scss/partials/_nav.scss */
 .trending-topics__list li {
   display: inline-block;
 }
 
-/* line 166, ../scss/partials/_nav.scss */
+/* line 165, ../scss/partials/_nav.scss */
 .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1263,7 +1262,7 @@ a:hover {
 #more-stories.open {
   height: 46rem;
 }
-/* line 17, ../scss/partials/_more-stories.scss */
+/* line 16, ../scss/partials/_more-stories.scss */
 #more-stories .container:before, #more-stories .container:after {
   display: table;
   content: '';
@@ -1298,7 +1297,7 @@ a:hover {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 52, ../scss/partials/_more-stories.scss */
+/* line 51, ../scss/partials/_more-stories.scss */
 #more-stories .category-list__category:hover, #more-stories .category-list__category.active {
   color: #0098d8;
 }
@@ -1658,7 +1657,7 @@ a:hover {
   position: relative;
   top: -1rem;
 }
-/* line 250, ../scss/partials/_components.scss */
+/* line 249, ../scss/partials/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1689,7 +1688,7 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-font-smoothing: antialiased;
 }
-/* line 284, ../scss/partials/_components.scss */
+/* line 283, ../scss/partials/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
@@ -1699,7 +1698,7 @@ a:hover {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 296, ../scss/partials/_components.scss */
+/* line 295, ../scss/partials/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
@@ -1779,7 +1778,7 @@ a:hover {
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 385, ../scss/partials/_components.scss */
+/* line 384, ../scss/partials/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
@@ -2197,7 +2196,7 @@ a:hover {
 .hero--homepage.hero--grid .hero__entry.hero__entry--2:after {
   margin-bottom: 2px;
 }
-/* line 51, ../scss/partials/page/_homepage.scss */
+/* line 50, ../scss/partials/page/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2, .hero--homepage.hero--grid .hero__entry.hero__entry--3 {
   height: 28rem;
   width: 50%;
