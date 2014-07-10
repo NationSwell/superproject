@@ -2,7 +2,7 @@
 
 {% block action_body %}
 
-	<div class="take-action__a">
+    <div class="take-action__a">
         <p>{{ post.call_to_action.description }}</p>
         <small>{{ take_action_privacy_policy_text }}</small>
     </div>
@@ -23,22 +23,19 @@
                 <label for="ta-email">Email</label>
                 <input name="email" type="email" id="ta-email" class="text-input text-input--thin" required>
             </div>
-            
+
             <div class="form-element">
                 <label for="ta-message">Message</label>
                 <textarea cols="40" rows="5" name="message" id="ta-message" class="text-area" required></textarea>
             </div>
-            
+
             <div class="form-element">
                 <input type="hidden" name="ssname" value="{{ post.call_to_action.spreadsheet_name }}">
                 <input type="hidden" name="wsname" value="{{ post.call_to_action.worksheet_name }}">
             </div>
-            
-            <div class="form-errors hide">
 
-            </div>
 
-            <button type="submit" class="btn btn--solid btn--external icon icon_external">Send Message{#{{ post.call_to_action.submit_button_text }}#}</button>
+            <button type="submit" class="btn btn--solid btn--external icon icon_external">{{ post.call_to_action.submit_button_text }}</button>
         </form>
     </div>
-    {% endblock %}
+{% endblock %}
