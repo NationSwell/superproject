@@ -1207,8 +1207,9 @@ input[type="submit"]:-moz-focus-inner {
   color: white;
   vertical-align: middle;
   position: relative;
+  text-align: center;
 }
-/* line 35, ../scss/partials/base/_nav.scss */
+/* line 36, ../scss/partials/base/_nav.scss */
 .more-stories-toggle.is-toggled {
   -webkit-transform: rotate(90deg) scale(0.6, 1.4);
   -moz-transform: rotate(90deg) scale(0.6, 1.4);
@@ -1223,18 +1224,18 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* social links */
-/* line 42, ../scss/partials/base/_nav.scss */
+/* line 43, ../scss/partials/base/_nav.scss */
 .social-links {
   border-right: 2px solid #002130;
   display: block;
   position: relative;
 }
-/* line 47, ../scss/partials/base/_nav.scss */
+/* line 48, ../scss/partials/base/_nav.scss */
 .social-links li {
   display: inline-block;
 }
 
-/* line 52, ../scss/partials/base/_nav.scss */
+/* line 53, ../scss/partials/base/_nav.scss */
 .social-links__link {
   display: block;
   color: white;
@@ -1243,11 +1244,11 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* search */
-/* line 60, ../scss/partials/base/_nav.scss */
+/* line 61, ../scss/partials/base/_nav.scss */
 .expand-field {
   position: relative;
 }
-/* line 63, ../scss/partials/base/_nav.scss */
+/* line 64, ../scss/partials/base/_nav.scss */
 .expand-field label {
   color: white;
   cursor: pointer;
@@ -1261,15 +1262,15 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 75, ../scss/partials/base/_nav.scss */
+/* line 76, ../scss/partials/base/_nav.scss */
 .expand-field label:active, .expand-field label:focus {
   outline: 0 none;
 }
-/* line 80, ../scss/partials/base/_nav.scss */
+/* line 81, ../scss/partials/base/_nav.scss */
 .expand-field label:hover {
   color: #0098d8;
 }
-/* line 85, ../scss/partials/base/_nav.scss */
+/* line 86, ../scss/partials/base/_nav.scss */
 .expand-field input {
   background-color: transparent;
   border: 0 none;
@@ -1303,39 +1304,39 @@ input[type="submit"]:-moz-focus-inner {
 .expand-field input:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 102, ../scss/partials/base/_nav.scss */
+/* line 103, ../scss/partials/base/_nav.scss */
 .expand-field input:focus, .expand-field input:active {
   outline: 0 none;
 }
-/* line 107, ../scss/partials/base/_nav.scss */
+/* line 108, ../scss/partials/base/_nav.scss */
 .expand-field input.is-open {
   opacity: 1;
   outline: 0 none;
 }
 
 /* trending topics */
-/* line 116, ../scss/partials/base/_nav.scss */
+/* line 117, ../scss/partials/base/_nav.scss */
 .full-header .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 121, ../scss/partials/base/_nav.scss */
+/* line 122, ../scss/partials/base/_nav.scss */
 .trending-topics__heading {
   font-family: "Montserrat", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 126, ../scss/partials/base/_nav.scss */
+/* line 127, ../scss/partials/base/_nav.scss */
 .trending-topics__list {
   display: inline-block;
 }
-/* line 129, ../scss/partials/base/_nav.scss */
+/* line 130, ../scss/partials/base/_nav.scss */
 .trending-topics__list li {
   display: inline-block;
 }
 
-/* line 134, ../scss/partials/base/_nav.scss */
+/* line 135, ../scss/partials/base/_nav.scss */
 .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1345,7 +1346,7 @@ input[type="submit"]:-moz-focus-inner {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 144, ../scss/partials/base/_nav.scss */
+/* line 145, ../scss/partials/base/_nav.scss */
 .btn-nav-subscribe {
   background-color: #0098d8;
   color: white;
@@ -1360,7 +1361,7 @@ input[type="submit"]:-moz-focus-inner {
   width: 0;
 }
 
-/* line 159, ../scss/partials/base/_nav.scss */
+/* line 160, ../scss/partials/base/_nav.scss */
 .expand-field#page-subscribe input.is-open + .btn-nav-subscribe {
   width: auto;
   padding: .4rem .7rem;

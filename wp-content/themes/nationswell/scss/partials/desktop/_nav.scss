@@ -31,8 +31,8 @@
     content: "menu";
     font-size: 1.1rem;
     display: block;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-top: -.75rem;
     font-weight: bold;
     text-transform: uppercase;
   }
