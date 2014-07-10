@@ -17,7 +17,7 @@ if (function_exists("register_field_group")) {
                         'donation' => 'Rally Donation',
                         'subscribe' => 'MailChimp Signup',
                         'tweet' => 'Tweet a Politician',
-                        'support' => 'Message of Support'
+                        'mos' => 'Message of Support'
                     ),
                     'default_value' => '',
                     'allow_null' => 0,
@@ -94,7 +94,7 @@ if (function_exists("register_field_group")) {
                             array(
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
-                                'value' => 'support',
+                                'value' => 'mos',
                             ),
                         ),
                         'allorany' => 'any',
@@ -284,7 +284,7 @@ if (function_exists("register_field_group")) {
                             array(
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
-                                'value' => 'support',
+                                'value' => 'mos',
                             ),
                         ),
                         'allorany' => 'all',
@@ -308,7 +308,7 @@ if (function_exists("register_field_group")) {
                             array(
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
-                                'value' => 'support',
+                                'value' => 'mos',
                             ),
                         ),
                         'allorany' => 'all',
@@ -332,7 +332,7 @@ if (function_exists("register_field_group")) {
                             array(
                                 'field' => 'field_528bcb5146eda',
                                 'operator' => '==',
-                                'value' => 'support',
+                                'value' => 'mos',
                             ),
                         ),
                         'allorany' => 'all',
