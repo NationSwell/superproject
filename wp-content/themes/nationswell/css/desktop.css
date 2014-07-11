@@ -1359,12 +1359,14 @@ input[type="submit"]:-moz-focus-inner {
   top: .5rem;
   right: 1rem;
   width: 0;
+  display: none;
 }
 
-/* line 160, ../scss/partials/base/_nav.scss */
+/* line 161, ../scss/partials/base/_nav.scss */
 .expand-field#page-subscribe input.is-open + .btn-nav-subscribe {
   width: auto;
   padding: .4rem .7rem;
+  display: inline-block;
 }
 
 /* line 1, ../scss/partials/base/_more-stories.scss */

@@ -155,9 +155,11 @@
   top: .5rem;
   right: 1rem;
   width: 0;
+  display: none;
 }
 
 .expand-field#page-subscribe input.is-open + .btn-nav-subscribe {
   width: auto;
   padding: .4rem .7rem;
+  display: inline-block;
 }
