@@ -14,6 +14,15 @@ if(function_exists("register_field_group"))
                     'preview_size' => 'thumbnail',
                     'library' => 'all',
                 ),
+                array (
+                    'key' => 'field_192w533t72d11',
+                    'label' => __('Disable Series Icon'),
+                    'name' => 'disable_series',
+                    'type' => 'true_false',
+                    'instructions' => 'Prevents the series icon from displaying in the header image.',
+                    'message' => '',
+                    'default_value' => 0,
+                ),
             ),
             'location' => array (
                 array (

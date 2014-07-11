@@ -54,6 +54,10 @@ if($term && (is_tag() || is_category() || is_tax())) {
     $context['total_posts'] = $wp_query->found_posts;
 }
 
+if($term && is_tax()) {
+    $context['series_enabled'] = !(get_field('disable_series', $term->taxonomy . '_' . $term->term_id));
+}
+
 function term_facebook_link($current_term) {
     return 'http://www.facebook.com/sharer.php?u=' . urlencode(get_term_link($current_term));
 }
