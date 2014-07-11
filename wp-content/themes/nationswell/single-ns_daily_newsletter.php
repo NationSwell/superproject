@@ -18,4 +18,4 @@ $context['posts'] = Timber::get_posts($posts, 'NationSwellPost');
 $context['title'] = $post->post_title;
 $context['wp_title'] .= ' - ' . $post->post_title;
 
-Timber::render(array('single-daily-newsletter.twig', 'single.twig'), $context);
+Timber::render(array('daily-newsletter.twig', 'single.twig'), $context);

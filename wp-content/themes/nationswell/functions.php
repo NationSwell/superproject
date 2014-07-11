@@ -335,6 +335,7 @@ function init_change_org_api() {
 
             function handle_sign_petition() {
                 global $change_org_api;
+                define( "NEWSLETTER_ID","8eaa257d1b" );
 
                 $cta_id = (int)$_REQUEST['cta_id'];
 
@@ -342,7 +343,11 @@ function init_change_org_api() {
                     $petition = new ChangeOrgPetition($cta_id);
 
                     $signer = copy_from_post(array('email','first_name', 'last_name', 'city', 'postal_code', 'country_code', 'reason'));
-
+                    try {
+                        ns_mailchimp_subscribe( NEWSLETTER_ID, $signer['email'], true );
+                    } catch (Mailchimp_Error $e) {
+                        //do nothing and fail silently
+                    }
                     $response = $change_org_api->sign($petition, $signer);
 
                     http_response_code($response['response_code']);
