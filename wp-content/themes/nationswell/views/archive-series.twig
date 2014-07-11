@@ -4,12 +4,12 @@
 <div class="hero hero--archive hero--series{% if header_image is empty %} no-image{% endif %}" {% if header_image is not empty %}style="background-image: url({{ header_image.url|resize(1300,600) }})"{% endif %}>
 
         <div class="container">
-            <div class="indicator indicator--blue indicator--title indicator--text icon icon_series">
-                {% if series_enabled %}
-                    <h5 class="indicator__heading">Series</h5>
-                {% endif %}
-                <h5 class="indicator__subheading">{{ total_posts }} Stories</h5>
-            </div>
+            {% if series_enabled %}
+                <div class="indicator indicator--blue indicator--title indicator--text icon icon_series">
+                        <h5 class="indicator__heading">Series</h5>
+                    <h5 class="indicator__subheading">{{ total_posts }} Stories</h5>
+                </div>
+            {% endif %}
 
             <h2 class="hd-f hero--series__title"><span>{{ title }}</span></h2>
 
