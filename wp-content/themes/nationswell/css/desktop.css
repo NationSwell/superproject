@@ -4210,47 +4210,46 @@ hr {
 }
 /* line 90, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label {
-  color: #003046;
+  color: white;
   width: 3.8rem;
 }
 /* line 94, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label:before {
-  color: white;
   font-size: 3rem;
 }
-/* line 99, ../scss/partials/desktop/_nav.scss */
+/* line 98, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label:hover {
   color: #0098d8;
 }
-/* line 103, ../scss/partials/desktop/_nav.scss */
+/* line 102, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label.valid:before {
   color: #46b525;
 }
-/* line 107, ../scss/partials/desktop/_nav.scss */
+/* line 106, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label.error:before {
   color: #fc3b40;
 }
-/* line 112, ../scss/partials/desktop/_nav.scss */
+/* line 111, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe input {
   width: 3.8rem;
   padding-left: 4.8rem;
 }
-/* line 116, ../scss/partials/desktop/_nav.scss */
+/* line 115, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe input.is-open {
   padding-right: 1.4rem;
   width: 22rem;
 }
-/* line 122, ../scss/partials/desktop/_nav.scss */
+/* line 121, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe .mc-email-status {
   margin-top: .5rem;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 128, ../scss/partials/desktop/_nav.scss */
+/* line 127, ../scss/partials/desktop/_nav.scss */
 .expand-field label {
   height: 7.2rem;
   padding-top: 2.8rem;
 }
-/* line 133, ../scss/partials/desktop/_nav.scss */
+/* line 132, ../scss/partials/desktop/_nav.scss */
 .expand-field input {
   height: 7.2rem;
   top: 0.5rem;
@@ -4258,19 +4257,19 @@ hr {
 }
 
 /* trending topics */
-/* line 142, ../scss/partials/desktop/_nav.scss */
+/* line 141, ../scss/partials/desktop/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
-/* line 146, ../scss/partials/desktop/_nav.scss */
+/* line 145, ../scss/partials/desktop/_nav.scss */
 .trending-topics .container {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-/* line 154, ../scss/partials/desktop/_nav.scss */
+/* line 153, ../scss/partials/desktop/_nav.scss */
 .trending-topics__heading {
   display: inline-block;
   color: #9aacb5;
@@ -4279,7 +4278,7 @@ hr {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 162, ../scss/partials/desktop/_nav.scss */
+/* line 161, ../scss/partials/desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;
