@@ -30,6 +30,8 @@
 .more-stories-toggle {
   color: $white;
   vertical-align: middle;
+  position: relative;
+  text-align: center;
 
   &.is-toggled {
     @include transform(rotate(90deg) scale(0.6, 1.4));
@@ -153,9 +155,11 @@
   top: .5rem;
   right: 1rem;
   width: 0;
+  display: none;
 }
 
 .expand-field#page-subscribe input.is-open + .btn-nav-subscribe {
   width: auto;
   padding: .4rem .7rem;
+  display: inline-block;
 }

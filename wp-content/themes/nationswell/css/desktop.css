@@ -1206,8 +1206,10 @@ input[type="submit"]:-moz-focus-inner {
 .more-stories-toggle {
   color: white;
   vertical-align: middle;
+  position: relative;
+  text-align: center;
 }
-/* line 34, ../scss/partials/base/_nav.scss */
+/* line 36, ../scss/partials/base/_nav.scss */
 .more-stories-toggle.is-toggled {
   -webkit-transform: rotate(90deg) scale(0.6, 1.4);
   -moz-transform: rotate(90deg) scale(0.6, 1.4);
@@ -1222,18 +1224,18 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* social links */
-/* line 41, ../scss/partials/base/_nav.scss */
+/* line 43, ../scss/partials/base/_nav.scss */
 .social-links {
   border-right: 2px solid #002130;
   display: block;
   position: relative;
 }
-/* line 46, ../scss/partials/base/_nav.scss */
+/* line 48, ../scss/partials/base/_nav.scss */
 .social-links li {
   display: inline-block;
 }
 
-/* line 51, ../scss/partials/base/_nav.scss */
+/* line 53, ../scss/partials/base/_nav.scss */
 .social-links__link {
   display: block;
   color: white;
@@ -1242,11 +1244,11 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* search */
-/* line 59, ../scss/partials/base/_nav.scss */
+/* line 61, ../scss/partials/base/_nav.scss */
 .expand-field {
   position: relative;
 }
-/* line 62, ../scss/partials/base/_nav.scss */
+/* line 64, ../scss/partials/base/_nav.scss */
 .expand-field label {
   color: white;
   cursor: pointer;
@@ -1260,15 +1262,15 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 74, ../scss/partials/base/_nav.scss */
+/* line 76, ../scss/partials/base/_nav.scss */
 .expand-field label:active, .expand-field label:focus {
   outline: 0 none;
 }
-/* line 79, ../scss/partials/base/_nav.scss */
+/* line 81, ../scss/partials/base/_nav.scss */
 .expand-field label:hover {
   color: #0098d8;
 }
-/* line 84, ../scss/partials/base/_nav.scss */
+/* line 86, ../scss/partials/base/_nav.scss */
 .expand-field input {
   background-color: transparent;
   border: 0 none;
@@ -1302,39 +1304,39 @@ input[type="submit"]:-moz-focus-inner {
 .expand-field input:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 101, ../scss/partials/base/_nav.scss */
+/* line 103, ../scss/partials/base/_nav.scss */
 .expand-field input:focus, .expand-field input:active {
   outline: 0 none;
 }
-/* line 106, ../scss/partials/base/_nav.scss */
+/* line 108, ../scss/partials/base/_nav.scss */
 .expand-field input.is-open {
   opacity: 1;
   outline: 0 none;
 }
 
 /* trending topics */
-/* line 115, ../scss/partials/base/_nav.scss */
+/* line 117, ../scss/partials/base/_nav.scss */
 .full-header .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
 
-/* line 120, ../scss/partials/base/_nav.scss */
+/* line 122, ../scss/partials/base/_nav.scss */
 .trending-topics__heading {
   font-family: "Montserrat", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 125, ../scss/partials/base/_nav.scss */
+/* line 127, ../scss/partials/base/_nav.scss */
 .trending-topics__list {
   display: inline-block;
 }
-/* line 128, ../scss/partials/base/_nav.scss */
+/* line 130, ../scss/partials/base/_nav.scss */
 .trending-topics__list li {
   display: inline-block;
 }
 
-/* line 133, ../scss/partials/base/_nav.scss */
+/* line 135, ../scss/partials/base/_nav.scss */
 .trending-topics__topic {
   color: white;
   font-family: "Montserrat", Arial, sans-serif;
@@ -1344,7 +1346,7 @@ input[type="submit"]:-moz-focus-inner {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 143, ../scss/partials/base/_nav.scss */
+/* line 145, ../scss/partials/base/_nav.scss */
 .btn-nav-subscribe {
   background-color: #0098d8;
   color: white;
@@ -1357,12 +1359,14 @@ input[type="submit"]:-moz-focus-inner {
   top: .5rem;
   right: 1rem;
   width: 0;
+  display: none;
 }
 
-/* line 158, ../scss/partials/base/_nav.scss */
+/* line 161, ../scss/partials/base/_nav.scss */
 .expand-field#page-subscribe input.is-open + .btn-nav-subscribe {
   width: auto;
   padding: .4rem .7rem;
+  display: inline-block;
 }
 
 /* line 1, ../scss/partials/base/_more-stories.scss */
@@ -4140,98 +4144,113 @@ hr {
 /* more stories toggle */
 /* line 25, ../scss/partials/desktop/_nav.scss */
 .more-stories-toggle {
-  font-size: 4.4rem;
+  font-size: 4rem;
   padding-top: 2rem;
+  padding-bottom: .3rem;
+}
+/* line 30, ../scss/partials/desktop/_nav.scss */
+.more-stories-toggle:after {
+  content: "menu";
+  font-size: 1.1rem;
+  display: block;
+  position: relative;
+  margin-top: -.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 41, ../scss/partials/desktop/_nav.scss */
+.more-stories-toggle.is-toggled:after {
+  content: normal;
 }
 
 /* social links */
-/* line 31, ../scss/partials/desktop/_nav.scss */
+/* line 48, ../scss/partials/desktop/_nav.scss */
 .social-links {
   height: 7.2rem;
   margin-right: 3.4rem;
   padding-top: 2.8rem;
   padding-right: 0.6rem;
 }
-/* line 37, ../scss/partials/desktop/_nav.scss */
+/* line 54, ../scss/partials/desktop/_nav.scss */
 .social-links li {
   margin-right: 1.8rem;
 }
 
-/* line 42, ../scss/partials/desktop/_nav.scss */
+/* line 59, ../scss/partials/desktop/_nav.scss */
 .social-links__link {
   font-size: 3.2rem;
 }
 
 /* search */
-/* line 47, ../scss/partials/desktop/_nav.scss */
+/* line 64, ../scss/partials/desktop/_nav.scss */
 .expand-field {
   overflow: hidden;
 }
-/* line 51, ../scss/partials/desktop/_nav.scss */
+/* line 68, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-search label {
   width: 2.8rem;
 }
-/* line 54, ../scss/partials/desktop/_nav.scss */
+/* line 71, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-search label:before {
   font-size: 3.2rem;
 }
-/* line 59, ../scss/partials/desktop/_nav.scss */
+/* line 76, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-search input {
   width: 2.8rem;
   padding-left: 3.8rem;
 }
-/* line 63, ../scss/partials/desktop/_nav.scss */
+/* line 80, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-search input.is-open {
   padding-right: 3.4rem;
   width: 30rem;
 }
-/* line 70, ../scss/partials/desktop/_nav.scss */
+/* line 87, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe {
   position: relative;
 }
-/* line 73, ../scss/partials/desktop/_nav.scss */
+/* line 90, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label {
   color: #003046;
   width: 3.8rem;
 }
-/* line 77, ../scss/partials/desktop/_nav.scss */
+/* line 94, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label:before {
   color: white;
   font-size: 3rem;
 }
-/* line 82, ../scss/partials/desktop/_nav.scss */
+/* line 99, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label:hover {
   color: #0098d8;
 }
-/* line 86, ../scss/partials/desktop/_nav.scss */
+/* line 103, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label.valid:before {
   color: #46b525;
 }
-/* line 90, ../scss/partials/desktop/_nav.scss */
+/* line 107, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe label.error:before {
   color: #fc3b40;
 }
-/* line 95, ../scss/partials/desktop/_nav.scss */
+/* line 112, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe input {
   width: 3.8rem;
   padding-left: 4.8rem;
 }
-/* line 99, ../scss/partials/desktop/_nav.scss */
+/* line 116, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe input.is-open {
   padding-right: 1.4rem;
   width: 22rem;
 }
-/* line 105, ../scss/partials/desktop/_nav.scss */
+/* line 122, ../scss/partials/desktop/_nav.scss */
 .expand-field#page-subscribe .mc-email-status {
   margin-top: .5rem;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 111, ../scss/partials/desktop/_nav.scss */
+/* line 128, ../scss/partials/desktop/_nav.scss */
 .expand-field label {
   height: 7.2rem;
   padding-top: 2.8rem;
 }
-/* line 116, ../scss/partials/desktop/_nav.scss */
+/* line 133, ../scss/partials/desktop/_nav.scss */
 .expand-field input {
   height: 7.2rem;
   top: 0.5rem;
@@ -4239,19 +4258,19 @@ hr {
 }
 
 /* trending topics */
-/* line 125, ../scss/partials/desktop/_nav.scss */
+/* line 142, ../scss/partials/desktop/_nav.scss */
 .trending-topics {
   background-color: #002130;
   padding: 0.8rem 0;
 }
-/* line 129, ../scss/partials/desktop/_nav.scss */
+/* line 146, ../scss/partials/desktop/_nav.scss */
 .trending-topics .container {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-/* line 137, ../scss/partials/desktop/_nav.scss */
+/* line 154, ../scss/partials/desktop/_nav.scss */
 .trending-topics__heading {
   display: inline-block;
   color: #9aacb5;
@@ -4260,7 +4279,7 @@ hr {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 145, ../scss/partials/desktop/_nav.scss */
+/* line 162, ../scss/partials/desktop/_nav.scss */
 .trending-topics__topic {
   font-size: 1.4rem;
   margin-right: 3.4rem;

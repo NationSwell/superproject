@@ -23,8 +23,25 @@
 
 /* more stories toggle */
 .more-stories-toggle {
-  font-size: 4.4rem;
+  font-size: 4rem;
   padding-top: 2rem;
+  padding-bottom: .3rem;
+
+  &:after {
+    content: "menu";
+    font-size: 1.1rem;
+    display: block;
+    position: relative;
+    margin-top: -.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &.is-toggled {
+    &:after {
+      content: normal;
+    }
+  }
 }
 
 /* social links */
