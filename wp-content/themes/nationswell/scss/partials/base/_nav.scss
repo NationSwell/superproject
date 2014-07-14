@@ -139,3 +139,23 @@
 
   -webkit-font-smoothing: antialiased;
 }
+
+.btn-nav-subscribe {
+  background-color: $ns_blue1;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: .4rem 0;
+  position: relative;
+//  @include transform(translateY(-50%));
+  top: .5rem;
+  right: 1rem;
+  width: 0;
+}
+
+.expand-field#page-subscribe input.is-open + .btn-nav-subscribe {
+  width: auto;
+  padding: .4rem .7rem;
+}

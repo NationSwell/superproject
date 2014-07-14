@@ -2645,7 +2645,6 @@ window.events =
         });
 
         // ajaxify Subscribe Forms
-     // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
         	var $this = ($(this));
