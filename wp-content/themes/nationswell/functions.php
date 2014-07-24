@@ -97,6 +97,7 @@ function add_to_context( $data ) {
 
         'take_action_thanks_header',
         'take_action_thanks_text',
+        'cta_button_text',
         'take_action_thanks_subscribe_text',
         'share_take_action_button_text',
         'share_take_action_text',
