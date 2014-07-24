@@ -104,50 +104,6 @@ if (function_exists("register_field_group")) {
                     'media_upload' => 'no',
                 ),
                 array(
-                    'key' => 'field_185fi6t309tpl',
-                    'label' => 'CTA Button Text',
-                    'name' => 'cta_button_text',
-                    'type' => 'text',
-                    'instructions' => 'Text for the button that links to the calls to action page',
-                    'conditional_logic' => array(
-                        'status' => 1,
-                        'rules' => array(
-                            array(
-                                'field' => 'field_528bcb5146eda',
-                                'operator' => '==',
-                                'value' => 'freeform',
-                            ),
-                            array(
-                                'field' => 'field_528bcb5146eda',
-                                'operator' => '==',
-                                'value' => 'donation',
-                            ),
-                            array(
-                                'field' => 'field_528bcb5146eda',
-                                'operator' => '==',
-                                'value' => 'tweet',
-                            ),
-                            array(
-                                'field' => 'field_528bcb5146eda',
-                                'operator' => '==',
-                                'value' => 'subscribe',
-                            ),
-                            array(
-                                'field' => 'field_528bcb5146eda',
-                                'operator' => '==',
-                                'value' => 'mos',
-                            ),
-                        ),
-                        'allorany' => 'any',
-                    ),
-                    'default_value' => 'Discover More Ways to Move America Forward',
-                    'placeholder' => 'Discover More Ways to Move America Forward',
-                    'prepend' => '',
-                    'append' => '',
-                    'formatting' => 'html',
-                    'maxlength' => '',
-                ),
-                array(
                     'key' => 'field_528bd11746edd',
                     'label' => 'Image',
                     'name' => 'image',
