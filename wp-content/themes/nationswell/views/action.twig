@@ -29,7 +29,7 @@
                           data-prefilltext="{{ post.call_to_action.social_share_text }}"
                           data-calltoactionurl="{{ post.permalink }}"
                           data-calltoactionlabel="READ_MORE"
-                          data-cookiepolicy="single_host_origin"
+                          data-cookiepolicy="single_host_origin">
                     </span>
                 </li>
                 <li><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ post.permalink|url_encode(true) }}&title={{ post.title|url_encode(true) }}&summary={{ post.call_to_action.social_share_text|url_encode(true) }}" class="btn btn--social btn--share icon icon_linkedin" data-track='{"action": "linkedin"}'></a></li>
@@ -49,6 +49,8 @@
                         </div>
                     </form>
                 </div>
+            {% else %}
+                <p><a href="http://nationswell.com/series/spread-solutions-to-move-america-forward/" class="btn btn--solid btn--external icon icon_nationswell-flag take-action__submit" target="_blank">{{ cta_button_text }}</a></p>
             {% endif %}
             {% endif %}
 

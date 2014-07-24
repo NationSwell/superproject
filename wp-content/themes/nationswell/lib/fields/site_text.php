@@ -268,6 +268,18 @@ if (function_exists("register_field_group")) {
                 'formatting' => 'html',
                 'maxlength' => '',
             ),
+            array (
+                'key' => 'field_48533yi074431',
+                'label' => 'Call to Action Button Text',
+                'name' => 'cta_button_text',
+                'type' => 'text',
+                'default_value' => 'Discover More Ways to Move America Forward',
+                'placeholder' => 'Discover More Ways to Move America Forward',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
         ),
         'location' => array(
             array(

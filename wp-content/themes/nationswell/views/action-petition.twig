@@ -5,13 +5,13 @@
     <div class="take-action__a">
         {% spaceless %}
             <p>The following petition will be delivered to
-                {% for target in petition.content.targets %}
+                {% for target in petition.targets %}
                 {% if not loop.first %},{% endif %}
                 <strong>{{ target.name }}</strong>
                 {% endfor %}:
             </p>
         {% endspaceless %}
-        <small>{{ petition.content.letter_body }}</small>
+        <small>{{ petition.letter_body }}</small>
     </div>
 
     <div class="take-action__b">
