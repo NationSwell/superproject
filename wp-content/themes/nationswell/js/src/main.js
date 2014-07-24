@@ -68,7 +68,7 @@
                                     $.cookie($('join-us').data("modal"), 'disabled', { expires: $('popup-control').attr('data-modal-disable'), path: '/' });
                                     $.cookie('subscribed', 'yes', { expires: 999, path: '/' });
                                 }
-                            });
+                        });
             		}
              });
         });
@@ -762,7 +762,7 @@
                                 $formErrors.removeClass('hide').html(message);
                             }
                         });
-                }
+            }
         });
 
         // tweet a politician

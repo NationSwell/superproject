@@ -666,8 +666,6 @@ function ns_newsletter_shortcode() {
             </form>
         </div>";
     }
-
-
 }
 add_shortcode( 'newsletter', 'ns_newsletter_shortcode' );
 
