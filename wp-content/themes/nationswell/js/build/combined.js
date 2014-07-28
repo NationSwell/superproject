@@ -2638,6 +2638,8 @@ window.events =
 //        var viewPortScale = 1 / window.devicePixelRatio;
 //        $('meta[name="viewport"]').attr('content', 'user-scalable=no, initial-scale='+viewPortScale+', width=device-width');
 
+        var modalTimeouts = [];
+
         // sticky nav
         var $fullHeader = $('.full-header');
         $fullHeader.waypoint('sticky', { stuckClass: 'stuck' });
@@ -2734,16 +2736,18 @@ window.events =
 
                 var that = this;
 
-                setTimeout(function () {
+                modalTimeouts.push(setTimeout(function () {
                     $(that).addClass('is-visible');
                     $body.addClass('is-locked');
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 15000);
+                }, 15000));
 
             }
         });
+
+        console.log(modalTimeouts);
 
         // resizing take action modals
         var fitTakeAction = function (modal) {
@@ -3285,9 +3289,15 @@ window.events =
                 var showCta = getParameterByName('cta') === 'show';
 
                 if($storyTakeAction.length && showCta) {
-                    console.log("AAAAAAAAAAAAAAAAA");
                     $('.btn--take-action').click();
+
+                    if(modalTimeouts) {
+                        $.each(modalTimeouts, function(index, obj){
+                            clearTimeout(modalTimeouts[index]);
+                        });
+                    }
                 }
+
             },
 
             unmatch: function() {
