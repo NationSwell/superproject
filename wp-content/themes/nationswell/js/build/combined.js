@@ -2625,6 +2625,14 @@ window.events =
     });
 
 })();;(function ($) {
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
     $(function () {
 
 //        var viewPortScale = 1 / window.devicePixelRatio;
@@ -3272,6 +3280,13 @@ window.events =
                             return  .8 * $stickyBar.outerHeight();
                         }
                     });
+                }
+
+                var showCta = getParameterByName('cta') === 'show';
+
+                if($storyTakeAction.length && showCta) {
+                    console.log("AAAAAAAAAAAAAAAAA");
+                    $('.btn--take-action').click();
                 }
             },
 
