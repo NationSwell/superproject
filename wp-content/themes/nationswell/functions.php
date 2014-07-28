@@ -210,7 +210,7 @@ include_once('lib/widgets/widget-stories.php');
 include_once('lib/widgets/widget-contact.php');
 
 // Plugin Activation
-include_once('lib/tgm-plugin-activation/tgm-config.php');
+//include_once('lib/tgm-plugin-activation/tgm-config.php');
 
 // Custom Post Types
 include_once('lib/custom_post_types/call_to_action.php');
