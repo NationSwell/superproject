@@ -2747,8 +2747,6 @@ window.events =
             }
         });
 
-        console.log(modalTimeouts);
-
         // resizing take action modals
         var fitTakeAction = function (modal) {
             var windowHeight = $(window).height(),
