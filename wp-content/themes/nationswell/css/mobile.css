@@ -839,6 +839,11 @@ small a {
   content: "\f136";
 }
 
+/* line 194, ../scss/partials/base/_icons.scss */
+.icon_youtube:before {
+  content: "\f137";
+}
+
 /* line 1, ../scss/partials/base/_buttons.scss */
 .btn-container {
   clear: both;
@@ -980,10 +985,22 @@ small a {
   background-color: #209bcb;
 }
 /* line 140, ../scss/partials/base/_buttons.scss */
+.btn.btn--youtube.btn--youtube {
+  background-color: #cd201f;
+}
+/* line 143, ../scss/partials/base/_buttons.scss */
+.btn.btn--youtube.btn--youtube:before {
+  line-height: 3rem;
+}
+/* line 147, ../scss/partials/base/_buttons.scss */
+.btn.btn--youtube.btn--youtube:after {
+  background-color: #b31217;
+}
+/* line 152, ../scss/partials/base/_buttons.scss */
 .btn.btn--blue {
   background-color: #0098d8;
 }
-/* line 144, ../scss/partials/base/_buttons.scss */
+/* line 156, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -996,7 +1013,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 155, ../scss/partials/base/_buttons.scss */
+/* line 167, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -1006,7 +1023,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 165, ../scss/partials/base/_buttons.scss */
+/* line 177, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -1020,7 +1037,7 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 178, ../scss/partials/base/_buttons.scss */
+/* line 190, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -1029,7 +1046,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 189, ../scss/partials/base/_buttons.scss */
+/* line 201, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -1040,7 +1057,7 @@ small a {
   vertical-align: middle;
 }
 
-/* line 201, ../scss/partials/base/_buttons.scss */
+/* line 213, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -1054,7 +1071,7 @@ input[type="submit"] {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 209, ../scss/partials/base/_buttons.scss */
+/* line 221, ../scss/partials/base/_buttons.scss */
 button:-moz-focus-inner,
 input[type="submit"]:-moz-focus-inner {
   border: 0;
