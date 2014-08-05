@@ -596,6 +596,10 @@ function google_analytics_tracking_code(){
 
         ga('create', 'UA-45799105-1', 'nationswell.com');
         ga('require', 'displayfeatures');
+
+        // Optimizely Universal Analytics Integration code
+        window.optimizely = window.optimizely || [];
+        window.optimizely.push(['activateUniversalAnalytics']);
         ga('send', 'pageview');
 
     </script>
