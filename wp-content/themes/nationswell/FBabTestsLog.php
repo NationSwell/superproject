@@ -10,7 +10,7 @@ Template Name: FBAB Tester
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
-<link rel="stylesheet" type="text/css" href="http://nationswell.com/wp-content/themes/nationswell/FBABTestsLog/FBabTestsStyle.css">
+<link rel="stylesheet" type="text/css" href="http://nationswell.com/wp-content/themes/nationswell/FBabTestsLog/FBabTestsStyle.css">
 
 <body>
 <div id="topnavspacer"><h1>NationSwell Facebook A/B Testing Results</h1></div>
@@ -24,6 +24,6 @@ Template Name: FBAB Tester
 	</div>
 
 
-	<script src="http://nationswell.com/wp-content/themes/nationswell/FBABTestsLog/FBabTestDataSort.js" type="text/javascript"></script>
+	<script src="http://nationswell.com/wp-content/themes/nationswell/FBabTestsLog/FBabTestDataSort.js" type="text/javascript"></script>
 
 </body>
