@@ -1,0 +1,145 @@
+body {
+	background-color:#fff;
+	font-family:helvetica;
+	font-size:24px;
+	color:#000;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#topnav 
+{
+	position:fixed;
+	top:0px;
+	width:100%;
+	background-color:#fff;
+	border-bottom:2px solid #eee;
+	z-index:1;
+}
+h1 {
+	max-width:800px;
+	width:90%;
+	font-size:24px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+#controlrow
+{
+	font-size:10px;
+	margin-bottom:10px;
+	display:none;
+}
+.controlrowspacer {
+	display:inline-block;
+	min-width:30px;
+}
+#topnavspacer 
+{
+	margin-bottom:40px;
+	z-index:-1;
+}
+#sscheckbox {
+	font-size:12px;
+}
+.date
+{
+	color:#666;
+}
+#datadrop {
+	max-width:800px;
+	width:94%;
+	display:block;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+}
+.boxtop {
+	width:100%;
+	padding-left:12px;
+	padding-right:12px;
+	text-align:left;
+	display:inline-block;
+}
+.test {
+	max-width:500px;
+	font-size:14px;
+	width:90%;
+	display:inline-block;
+	background-color:#fff;
+	margin-left:auto;
+	border:1px solid #e4e4e9;
+	border-top:0px;
+	text-align:left;
+	border-bottom:0px;	
+	padding-bottom:5px;
+	padding-top:0px;
+	margin-top:0px;
+}
+.testsummary {
+	display:inline-block;
+	font-size:12px;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	text-align:left;
+	text-indent:7px;
+	background-color:#e4e4e9;
+	padding:5px 0px;
+	position:relative;
+}
+.datetime {
+	font-weight:bold;
+	display:inline-block;
+	margin-right:15px;
+}
+.storylink {
+	color:#3b5998;
+	text-decoration:none;
+}
+.storylink:hover {
+	color:#5b79b8;
+	border-bottom:2px solid #5b79b8;
+}
+.testtype {
+	margin-left:10px;
+	display:inline-block;
+	font-weight:bold;
+}
+.ss {
+	position:absolute;
+	right:7px;
+}
+.varrow {
+	display:inline-block;
+	font-size:18px;
+	color:#000;
+	margin:0px 12px;
+	margin-top:10px;
+	max-width:475px;
+}
+.photohed {
+	font-size:12px;
+	margin:0px 0px 6px 0px;
+}
+.engbar {
+	background-color:#3b5998;
+	margin:0px;
+	display:inline-block;
+	min-height:6px;
+	color:#3b5998;
+	min-width:1px;
+	margin-left:12px;
+	max-width:90%;
+}
+.engnumber {
+	display:inline-block;
+	margin-left:3px;
+	font-size:10px;
+	padding:2px;
+}
+.testnumber{
+	color:#888;
+	font-weight:lighter;
+}
