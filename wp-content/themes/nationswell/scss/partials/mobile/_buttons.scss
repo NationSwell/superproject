@@ -37,6 +37,29 @@
         bottom: -0.3rem;
       }
     }
+    &.btn--nav {
+      font-size: 2.2rem;
+      padding: 1.4rem 0 .75rem;
+
+      &:before {
+        font-size: 5.6rem;
+        line-height: 4rem;
+        margin-right: 2.2rem;
+      }
+
+      &:after {
+        height: 0.5rem;
+        bottom: -0.5rem;
+      }
+
+      &:hover {
+        top: 0.2rem;
+
+        &:after {
+          height: 0.3rem;
+          bottom: -0.3rem;
+        }
+      }
 
     &:active {
       top: 0.5rem;
