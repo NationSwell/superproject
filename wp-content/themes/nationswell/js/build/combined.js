@@ -2655,7 +2655,6 @@ window.events =
         });
 
         // ajaxify Subscribe Forms
-     // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
         	var $this = ($(this));
@@ -2933,6 +2932,20 @@ window.events =
                     $stickyWrapper.outerHeight(fullHeaderHeight);
                     $stickyWrapper.css('height', fullHeaderHeight + 'px');
                 }, 300);
+
+                // Open Take Action on Page Load if proper query parameter is present
+                var $storyTakeAction = $('.story__take-action'),
+                    showCta = getParameterByName('cta') === 'show';
+
+                if($storyTakeAction.length && showCta) {
+                    $('.btn--sticky-take-action-mobile').click();
+
+                    if(modalTimeouts) {
+                        $.each(modalTimeouts, function(index, obj){
+                            clearTimeout(modalTimeouts[index]);
+                        });
+                    }
+                }
 
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
