@@ -61,7 +61,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 17, ../scss/bourbon/addons/_clearfix.scss */
+/* line 18, ../scss/bourbon/addons/_clearfix.scss */
 .container:before, .container:after {
   content: " ";
   display: table;
@@ -183,7 +183,7 @@ body {
 /* line 21, ../scss/partials/base/_utility.scss */
 .link-wrapper {
   outline: 0px;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   width: 100%;
   display: block;
 }
@@ -490,7 +490,7 @@ a {
 a:hover {
   color: #0098d8;
 }
-/* line 11, ../scss/partials/base/_typography.scss */
+/* line 13, ../scss/partials/base/_typography.scss */
 a:hover, a:active, a:focus {
   outline: 0;
 }
@@ -507,7 +507,7 @@ small a {
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 30, ../scss/partials/base/_typography.scss */
+/* line 31, ../scss/partials/base/_typography.scss */
 .credit,
 .byline {
   color: #7e7e7e;
@@ -550,6 +550,7 @@ small a {
   font-weight: normal;
   font-style: normal;
 }
+
 /* line 14, ../scss/partials/base/_icons.scss */
 .icon {
   font-family: "icons";
@@ -839,11 +840,6 @@ small a {
   content: "\f136";
 }
 
-/* line 194, ../scss/partials/base/_icons.scss */
-.icon_youtube:before {
-  content: "\f137";
-}
-
 /* line 1, ../scss/partials/base/_buttons.scss */
 .btn-container {
   clear: both;
@@ -918,6 +914,30 @@ small a {
   left: 0;
 }
 /* line 72, ../scss/partials/base/_buttons.scss */
+.btn.btn--nav {
+  color: white;
+  display: block;
+  font-family: "Oswald", Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+/* line 81, ../scss/partials/base/_buttons.scss */
+.btn.btn--nav:before {
+  font-family: 'icons';
+  vertical-align: middle;
+}
+/* line 86, ../scss/partials/base/_buttons.scss */
+.btn.btn--nav:after {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+/* line 95, ../scss/partials/base/_buttons.scss */
 .btn.btn--rectangle {
   color: white;
   display: block;
@@ -931,7 +951,7 @@ small a {
   padding: .5rem 2rem 0 1.3rem;
   margin-bottom: .7rem;
 }
-/* line 86, ../scss/partials/base/_buttons.scss */
+/* line 109, ../scss/partials/base/_buttons.scss */
 .btn.btn--rectangle:before {
   font-family: 'icons';
   font-size: 2.8rem;
@@ -939,7 +959,7 @@ small a {
   vertical-align: middle;
   margin: 0 1.4rem 0 0;
 }
-/* line 96, ../scss/partials/base/_buttons.scss */
+/* line 119, ../scss/partials/base/_buttons.scss */
 .btn.btn--square {
   color: white;
   display: block;
@@ -950,7 +970,7 @@ small a {
   position: relative;
   text-transform: uppercase;
 }
-/* line 106, ../scss/partials/base/_buttons.scss */
+/* line 129, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:after {
   content: '';
   display: block;
@@ -963,44 +983,32 @@ small a {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 118, ../scss/partials/base/_buttons.scss */
+/* line 141, ../scss/partials/base/_buttons.scss */
 .btn.btn--square:before {
   display: block;
   font-family: 'icons';
 }
-/* line 124, ../scss/partials/base/_buttons.scss */
+/* line 147, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 127, ../scss/partials/base/_buttons.scss */
+/* line 150, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 132, ../scss/partials/base/_buttons.scss */
+/* line 155, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 135, ../scss/partials/base/_buttons.scss */
+/* line 158, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 140, ../scss/partials/base/_buttons.scss */
-.btn.btn--youtube.btn--youtube {
-  background-color: #cd201f;
-}
-/* line 143, ../scss/partials/base/_buttons.scss */
-.btn.btn--youtube.btn--youtube:before {
-  line-height: 3rem;
-}
-/* line 147, ../scss/partials/base/_buttons.scss */
-.btn.btn--youtube.btn--youtube:after {
-  background-color: #b31217;
-}
-/* line 152, ../scss/partials/base/_buttons.scss */
+/* line 163, ../scss/partials/base/_buttons.scss */
 .btn.btn--blue {
   background-color: #0098d8;
 }
-/* line 156, ../scss/partials/base/_buttons.scss */
+/* line 167, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -1013,7 +1021,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 167, ../scss/partials/base/_buttons.scss */
+/* line 178, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -1023,7 +1031,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 177, ../scss/partials/base/_buttons.scss */
+/* line 188, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: white;
@@ -1037,7 +1045,7 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 190, ../scss/partials/base/_buttons.scss */
+/* line 201, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -1046,7 +1054,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 201, ../scss/partials/base/_buttons.scss */
+/* line 212, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -1057,7 +1065,7 @@ small a {
   vertical-align: middle;
 }
 
-/* line 213, ../scss/partials/base/_buttons.scss */
+/* line 225, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -1071,7 +1079,7 @@ input[type="submit"] {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 221, ../scss/partials/base/_buttons.scss */
+/* line 232, ../scss/partials/base/_buttons.scss */
 button:-moz-focus-inner,
 input[type="submit"]:-moz-focus-inner {
   border: 0;
@@ -1092,7 +1100,7 @@ input[type="submit"]:-moz-focus-inner {
 .form-element.form-element--two-third {
   width: 66%;
 }
-/* line 15, ../scss/partials/base/_forms.scss */
+/* line 17, ../scss/partials/base/_forms.scss */
 .form-element.form-element--one-third, .form-element.form-element--two-third, .form-element.form-element--half {
   margin-right: 2%;
 }
@@ -1113,7 +1121,7 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 38, ../scss/partials/base/_forms.scss */
+/* line 39, ../scss/partials/base/_forms.scss */
 .form-element .text-input,
 .form-element .text-area {
   background-color: white;
@@ -1279,7 +1287,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 76, ../scss/partials/base/_nav.scss */
+/* line 77, ../scss/partials/base/_nav.scss */
 .expand-field label:active, .expand-field label:focus {
   outline: 0 none;
 }
@@ -1321,7 +1329,7 @@ input[type="submit"]:-moz-focus-inner {
 .expand-field input:-ms-input-placeholder {
   color: #9aacb5;
 }
-/* line 103, ../scss/partials/base/_nav.scss */
+/* line 104, ../scss/partials/base/_nav.scss */
 .expand-field input:focus, .expand-field input:active {
   outline: 0 none;
 }
@@ -1403,7 +1411,7 @@ input[type="submit"]:-moz-focus-inner {
   min-height: 46rem;
   height: auto;
 }
-/* line 17, ../scss/partials/base/_more-stories.scss */
+/* line 18, ../scss/partials/base/_more-stories.scss */
 #more-stories .container:before, #more-stories .container:after {
   display: table;
   content: '';
@@ -1440,7 +1448,7 @@ input[type="submit"]:-moz-focus-inner {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 54, ../scss/partials/base/_more-stories.scss */
+/* line 55, ../scss/partials/base/_more-stories.scss */
 #more-stories .category-list__category:hover, #more-stories .category-list__category.active {
   color: #0098d8;
 }
@@ -1501,7 +1509,7 @@ input[type="submit"]:-moz-focus-inner {
   height: auto;
 }
 
-/* line 6, ../scss/partials/base/_footer.scss */
+/* line 7, ../scss/partials/base/_footer.scss */
 #page-footer,
 #page-footer .container {
   background-color: #002130;
@@ -1872,7 +1880,7 @@ input[type="submit"]:-moz-focus-inner {
   display: inline-block;
   position: relative;
 }
-/* line 353, ../scss/partials/base/_components.scss */
+/* line 354, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -1891,7 +1899,7 @@ input[type="submit"]:-moz-focus-inner {
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 376, ../scss/partials/base/_components.scss */
+/* line 377, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
@@ -1901,7 +1909,7 @@ input[type="submit"]:-moz-focus-inner {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 388, ../scss/partials/base/_components.scss */
+/* line 389, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
@@ -1977,7 +1985,7 @@ input[type="submit"]:-moz-focus-inner {
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 476, ../scss/partials/base/_components.scss */
+/* line 477, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: white;
@@ -2005,7 +2013,7 @@ input[type="submit"]:-moz-focus-inner {
   display: block;
   margin: 6rem 0;
 }
-/* line 514, ../scss/partials/base/_components.scss */
+/* line 515, ../scss/partials/base/_components.scss */
 .story-signup:before,
 .story-signup .indicator {
   background-color: #5ec2e8;
@@ -2724,7 +2732,7 @@ hr {
   width: 100%;
   height: 100%;
 }
-/* line 20, ../scss/partials/base/_story.scss */
+/* line 22, ../scss/partials/base/_story.scss */
 .hero--story.hero--cover .container .hero--video__container.video-container iframe, .hero--story.hero--cover .container .hero--video__container.video-container object, .hero--story.hero--cover .container .hero--video__container.video-container embed {
   position: static;
   top: 0;
@@ -2843,7 +2851,7 @@ hr {
   background-color: #003046;
   padding: 1.2rem 0;
 }
-/* line 154, ../scss/partials/base/_story.scss */
+/* line 155, ../scss/partials/base/_story.scss */
 .hero-information.is-long .hero-information__caption,
 .hero-information.is-long .hero-information__credit {
   text-overflow: ellipsis;
@@ -2855,7 +2863,7 @@ hr {
   background-color: #003046;
   padding: 1.6rem 0;
 }
-/* line 165, ../scss/partials/base/_story.scss */
+/* line 166, ../scss/partials/base/_story.scss */
 .hero-information.is-long.is-open .hero-information__caption,
 .hero-information.is-long.is-open .hero-information__credit {
   text-overflow: auto;
@@ -3105,7 +3113,7 @@ hr {
   height: 0;
   overflow: hidden;
 }
-/* line 426, ../scss/partials/base/_story.scss */
+/* line 428, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -3336,7 +3344,7 @@ hr {
   margin-bottom: 7.2rem;
 }
 
-/* line 658, ../scss/partials/base/_story.scss */
+/* line 660, ../scss/partials/base/_story.scss */
 .fb-comments,
 .fb-comments span,
 .fb-comments iframe[style] {
@@ -3813,7 +3821,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 1, ../scss/partials/desktop/_structure.scss */
+/* line 3, ../scss/partials/desktop/_structure.scss */
 .hide_desktop,
 .show_mobile,
 .show_tablet {
@@ -3935,7 +3943,7 @@ hr {
   line-height: 1.4;
 }
 
-/* line 6, ../scss/partials/desktop/_typography.scss */
+/* line 7, ../scss/partials/desktop/_typography.scss */
 .credit,
 .byline {
   font-size: 1.4rem;
@@ -4541,7 +4549,7 @@ hr {
   padding: 0.8rem 0.8rem 0.4rem;
   top: -1rem;
 }
-/* line 189, ../scss/partials/desktop/_components.scss */
+/* line 190, ../scss/partials/desktop/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   font-size: 1.5rem;
 }
@@ -5101,7 +5109,7 @@ hr {
   width: 60%;
   box-shadow: inset -2px 0 0 white;
 }
-/* line 18, ../scss/partials/desktop/_homepage.scss */
+/* line 19, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--1:before, .hero--homepage.hero--grid .hero__entry.hero__entry--1:after {
   margin-right: 2px;
 }
@@ -5123,11 +5131,11 @@ hr {
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2 {
   box-shadow: inset 0 -2px 0 white;
 }
-/* line 42, ../scss/partials/desktop/_homepage.scss */
+/* line 43, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:before, .hero--homepage.hero--grid .hero__entry.hero__entry--2.hero__entry--2:after {
   margin-bottom: 2px;
 }
-/* line 49, ../scss/partials/desktop/_homepage.scss */
+/* line 50, ../scss/partials/desktop/_homepage.scss */
 .hero--homepage.hero--grid .hero__entry.hero__entry--2, .hero--homepage.hero--grid .hero__entry.hero__entry--3 {
   height: 28rem;
   width: 40%;
@@ -5600,7 +5608,7 @@ hr {
   font-size: 1.6rem;
 }
 
-/* line 429, ../scss/partials/desktop/_story.scss */
+/* line 430, ../scss/partials/desktop/_story.scss */
 .story__container .story__social,
 .story__container .story__take-action {
   clear: both;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<title>: )</title>
+<html>
+<head>
+<style>
+body {
+	background-color:#Fff;
+	font-family:helvetica;
+	font-size:24px;
+}
+</style>
+
+<body>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
+
+
+<div id="datadrop">
+
+
+</div>
+
+<script type="text/javascript">
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0AvVxrKGf5A3fdE9HSGhsNkVmaURSdkQ0MWQ1dlV2cWc&single=true&gid=6&output=html';
+
+var tabletop = Tabletop.init( { key: public_spreadsheet_url,
+                     callback: displayResults,
+                     simpleSheet: true,
+                     orderby: 'datetime',
+                     reverse: true,
+                     parseNumbers: true
+                 } );
+
+function displayResults(rows) {
+	console.log(rows);
+	var dataset = rows.reverse();
+</script>

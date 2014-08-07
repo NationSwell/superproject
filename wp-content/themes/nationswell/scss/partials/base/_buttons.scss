@@ -69,6 +69,29 @@
     }
   }
 
+  &.btn--nav {
+    color: $white;
+    display: block;
+    font-family: $oswald;
+    position: relative;
+    text-align: center;
+
+    @include transition(none);
+
+    &:before {
+      font-family: 'icons';
+      vertical-align: middle;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 0;
+    }
+  }
+
   &.btn--rectangle {
     color: $white;
     display: block;

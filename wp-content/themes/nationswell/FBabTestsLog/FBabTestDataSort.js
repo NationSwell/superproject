@@ -9,12 +9,25 @@ var tabletop = Tabletop.init( { key: public_spreadsheet_url,
                  } );
 
 function displayResults(rows) {
-	console.log(rows);
 	var dataset = rows.reverse();
+	var sscheckbox = document.getElementById("sscheckbox").checked;
+	console.log(sscheckbox);
 	var bar = 	d3.select("#datadrop").selectAll("div")
 					.data(dataset)
 					.enter()
 					.append("div")
+					.attr("class",function(d) {
+						if (d.testtype === "hed") {
+							return ("hedtest")
+						}
+						else if (d.testype === "pt") {
+							return ("pttest")
+						}
+						else if (d.testtype === "photo") {
+							return ("phototest")
+						}
+						else {}
+					})
 					.classed("test",true)
 					.style("border-bottom","1px solid #e4e4e9")
 					.style("background-color", function(d) {
@@ -36,17 +49,42 @@ function displayResults(rows) {
 							return "0px"
 						};
 					})
+					// Hide paid and hybrid tests.
 					.style("display",function(d) {
-						if (d.testtype === "hed") {
-								return ("inline-block;")
-							}
-						else if (d.testtype === "pt") {
-								return ("inline-block;")
-							}
+						if (d.method === 'paid') {
+							return "none"
+						}
+						else if (d.testtype === 'hybrid') {
+							return "none"
+						}
+						else if (d.impressions === 'a') {
+							return "none"
+						}
 						else {
-							return ("none")
-						};
+							return "inline-block"
+						}
 					});
+					/*Show only statistically significant tests.
+					.style("display",function(d) {
+						if ((d.zs < 0.05) || (d.zs > 0.95)) {
+							if (d.testtype === "hed") {
+									return ("inline-block")
+								}
+							else if (d.testtype === "pt") {
+									return ("inline-block")
+								}
+							else if (d.testtype === "photo") {
+									return ("inline-block")
+							}
+							else {
+								return "none"
+							}	
+						}
+						else {
+							return "none"
+						}
+					});*/
+	//Add testing information bar only to B variations.
 	var testsummary = d3.selectAll(".test")
 							.append("div")
 							.classed("testsummary",true)
@@ -75,11 +113,34 @@ function displayResults(rows) {
 			else if (d.testtype === "pt") {
 				return "Post Text"
 			}
+			else if (d.testtype === "photo") {
+				return "Photo"
+			}
 			else {};
+		})
+		/* Note statistical significance in top-right corner.
+	testsummary.append("div")
+		.classed("ss",true)
+		.text(function(d) {
+			if (d.zs > 0.95) {
+				return "Statistically Significant"
+			}
+			else if (d.zs < 0.05) {
+				return "Statistically Significant"
+			}
+			else {}
+		}) */
+		.style("display",function(d) {
+			if (d.method === "Paid") {
+				return "none"
+			}
+			else {
+				return "inline-block"
+			}
 		});
 	bar.append("div")
 		.classed("varrow",true)
-		.text(function(d) {
+		.html(function(d) {
 			if (d.testtype === "hed") {
 					return (d.hed)
 				}
@@ -87,13 +148,13 @@ function displayResults(rows) {
 					return (d.posttext)
 				}
 			else {
-				return ("coming soon")
+				return '<div class="photohed"><b>Hed: </b>' + d.hed + '</div><img src="' + d.photo + '" width="100%"></img>'
 			};
 		});
-	bar.append("br");
+	bar.append("br")
 	bar.append("div")
 		.classed("engbar",true)
-		.style("width",function(d) {return d.engagementrate * 5000 + "px"})
+		.style("width",function(d) {return d.engagementrate * 2000 + "px"})
 		.style("display",function(d) {
 			if (d.impressions === "a") {
 				return "none"
@@ -142,4 +203,12 @@ function displayResults(rows) {
 				return "inline-block"
 			}
 		})
-}
+		.style("margin-left",function(d) {
+			if (d.impressions === "a") {
+				return "12px"
+			}
+			else {
+				return "0px"
+			}
+		});
+};
