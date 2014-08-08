@@ -34,7 +34,7 @@ if (class_exists('TimberPost')) {
         public function days_until(){
             $datetime1 = new DateTime(date('Y-m-d'));
 
-            $datetime2 = new DateTime($this->goal_date);
+            $datetime2 = new DateTime(date('Y-m-d'));
 
             $interval = $datetime1->diff($datetime2);
             return $interval->format('%a');

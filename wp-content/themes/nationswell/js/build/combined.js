@@ -2581,7 +2581,7 @@ window.events =
     });
 
     events.on('modal-disable', function(e, name, duration){
-        track("modal:" + name, "disable", "", duration);
+        track("modal:" + name, "disable", "", duration, true);
     });
 
     events.on('flyout-open', function(e, module){
@@ -2625,10 +2625,20 @@ window.events =
     });
 
 })();;(function ($) {
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
     $(function () {
 
 //        var viewPortScale = 1 / window.devicePixelRatio;
 //        $('meta[name="viewport"]').attr('content', 'user-scalable=no, initial-scale='+viewPortScale+', width=device-width');
+
+        var modalTimeouts = [];
 
         // sticky nav
         var $fullHeader = $('.full-header');
@@ -2726,13 +2736,13 @@ window.events =
 
                 var that = this;
 
-                setTimeout(function () {
+                modalTimeouts.push(setTimeout(function () {
                     $(that).addClass('is-visible');
                     $body.addClass('is-locked');
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 15000);
+                }, 15000));
 
             }
         });
@@ -2922,6 +2932,20 @@ window.events =
                     $stickyWrapper.outerHeight(fullHeaderHeight);
                     $stickyWrapper.css('height', fullHeaderHeight + 'px');
                 }, 300);
+
+                // Open Take Action on Page Load if proper query parameter is present
+                var $storyTakeAction = $('.story__take-action'),
+                    showCta = getParameterByName('cta') === 'show';
+
+                if($storyTakeAction.length && showCta) {
+                    $('.btn--sticky-take-action-mobile').click();
+
+                    if(modalTimeouts) {
+                        $.each(modalTimeouts, function(index, obj){
+                            clearTimeout(modalTimeouts[index]);
+                        });
+                    }
+                }
 
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
@@ -3273,6 +3297,19 @@ window.events =
                         }
                     });
                 }
+
+                var showCta = getParameterByName('cta') === 'show';
+
+                if($storyTakeAction.length && showCta) {
+                    $('.btn--take-action').click();
+
+                    if(modalTimeouts) {
+                        $.each(modalTimeouts, function(index, obj){
+                            clearTimeout(modalTimeouts[index]);
+                        });
+                    }
+                }
+
             },
 
             unmatch: function() {
@@ -3367,6 +3404,31 @@ window.events =
                     });
             }
             });
+<<<<<<< HEAD
+=======
+        
+        //Support message take action
+        $('#support-action-form').submit(function (e) {
+               e.preventDefault();
+            }).validate({ submitHandler:  function(form){
+                    var $form = $(form),
+                        $formErrors = $form.find('.form-errors'),
+                        url = '/wp-admin/admin-ajax.php?action=support_action';
+                    	
+                    $formErrors.empty().addClass('hide');
+                    $.post(url, $form.serialize())
+                        .done(function () {
+                            toggleThankYou();
+                        })
+                        .fail(function (data) {
+                            var message = data.message;
+                            if(message) {
+                                $formErrors.removeClass('hide').html(message);
+                            }
+                        });
+            }
+        });
+>>>>>>> 44443618a723fe2642e85d5c3dc9852ee534d877
 
         // tweet a politician
         function parseReps(data) {

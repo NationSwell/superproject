@@ -160,6 +160,18 @@
     }
   }
 
+  &.btn--youtube.btn--youtube {
+    background-color: #cd201f;
+
+    &:before {
+      line-height: 3rem;
+    }
+
+    &:after {
+      background-color: #b31217;
+    }
+  }
+
   &.btn--blue {
     background-color: $ns_blue1;
   }

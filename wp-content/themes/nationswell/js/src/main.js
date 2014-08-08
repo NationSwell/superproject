@@ -1,8 +1,18 @@
 (function ($) {
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
     $(function () {
 
 //        var viewPortScale = 1 / window.devicePixelRatio;
 //        $('meta[name="viewport"]').attr('content', 'user-scalable=no, initial-scale='+viewPortScale+', width=device-width');
+
+        var modalTimeouts = [];
 
         // sticky nav
         var $fullHeader = $('.full-header');
@@ -100,13 +110,13 @@
 
                 var that = this;
 
-                setTimeout(function () {
+                modalTimeouts.push(setTimeout(function () {
                     $(that).addClass('is-visible');
                     $body.addClass('is-locked');
 
                     events.trigger("modal-open", [$(that).data("modal"), true]);
 
-                }, 15000);
+                }, 15000));
 
             }
         });
@@ -296,6 +306,20 @@
                     $stickyWrapper.outerHeight(fullHeaderHeight);
                     $stickyWrapper.css('height', fullHeaderHeight + 'px');
                 }, 300);
+
+                // Open Take Action on Page Load if proper query parameter is present
+                var $storyTakeAction = $('.story__take-action'),
+                    showCta = getParameterByName('cta') === 'show';
+
+                if($storyTakeAction.length && showCta) {
+                    $('.btn--sticky-take-action-mobile').click();
+
+                    if(modalTimeouts) {
+                        $.each(modalTimeouts, function(index, obj){
+                            clearTimeout(modalTimeouts[index]);
+                        });
+                    }
+                }
 
                 // toggle more stories panel
                 $(".toggle-collapse").on("click.mobile-toggle-collapse", function (e) {
@@ -647,6 +671,19 @@
                         }
                     });
                 }
+
+                var showCta = getParameterByName('cta') === 'show';
+
+                if($storyTakeAction.length && showCta) {
+                    $('.btn--take-action').click();
+
+                    if(modalTimeouts) {
+                        $.each(modalTimeouts, function(index, obj){
+                            clearTimeout(modalTimeouts[index]);
+                        });
+                    }
+                }
+
             },
 
             unmatch: function() {

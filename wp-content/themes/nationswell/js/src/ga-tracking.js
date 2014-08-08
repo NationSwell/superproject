@@ -55,7 +55,7 @@
     });
 
     events.on('modal-disable', function(e, name, duration){
-        track("modal:" + name, "disable", "", duration);
+        track("modal:" + name, "disable", "", duration, true);
     });
 
     events.on('flyout-open', function(e, module){
