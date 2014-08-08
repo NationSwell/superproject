@@ -552,37 +552,6 @@ function ns_mailchimp_subscribe( $list, $emailaddr, $welcome ) {
 
  add_action( 'wp_ajax_support_action', 'ns_supportmsg_callback' );
  add_action( 'wp_ajax_nopriv_support_action', 'ns_supportmsg_callback' );
- 
-function ns_supportmsg_callback() {
-    set_include_path(TEMPLATEPATH);
-    include_once( "Google_Spreadsheet.php" );
-    define( "NEWSLETTER_ID","8eaa257d1b" );
-    define( "GOOGLE_LOGIN","nationswellcta@gmail.com" );
-    define( "GOOGLE_PW","NS46225!" );
-    $email = sanitize_email( $_POST['email'] );
-    try {
-        ns_mailchimp_subscribe( NEWSLETTER_ID, $email, true );
-    } catch (Mailchimp_Error $e) {
-        //do nothing and fail silently
-    }
-    
-
-	$rowData = array(
-		"first name" => sanitize_text_field( $_POST['first_name'] ),
-	    "last name" => sanitize_text_field( $_POST['last_name'] ),
-	    "email" => $email,
-	    "message" => sanitize_text_field( $_POST['message'] )
-	);
-    
-    $ss = new Google_Spreadsheet( GOOGLE_LOGIN,GOOGLE_PW );
-	$ss->useSpreadsheet( sanitize_text_field( $_POST['ssname'] ));
-    $ss->useWorksheet( sanitize_text_field( $_POST['wsname'] ));
-    $response = $ss->addRow( $rowData );
-	if( !$response )	{
-		wp_send_json( array ( 'message' => 'We are unable to send your message at this time.' ));
-	}
-	exit();
-}
 
 function google_analytics_tracking_code(){
 

@@ -2645,7 +2645,6 @@ window.events =
         });
 
         // ajaxify Subscribe Forms
-     // ajaxify Subscribe Forms
         $('.mc-form').each(function(){
 
         	var $this = ($(this));
@@ -2694,7 +2693,7 @@ window.events =
                                     $.cookie($('join-us').data("modal"), 'disabled', { expires: $('popup-control').attr('data-modal-disable'), path: '/' });
                                     $.cookie('subscribed', 'yes', { expires: 999, path: '/' });
                                 }
-                            });
+                        });
             		}
              });
         });
@@ -3368,28 +3367,6 @@ window.events =
                     });
             }
             });
-        
-        //Support message take action
-        $('#support-action-form').submit(function (e) {
-               e.preventDefault();
-            }).validate({ submitHandler:  function(form){
-                    var $form = $(form),
-                        $formErrors = $form.find('.form-errors'),
-                        url = '/wp-admin/admin-ajax.php?action=support_action';
-                    	
-                    $formErrors.empty().addClass('hide');
-                    $.post(url, $form.serialize())
-                        .done(function () {
-                            toggleThankYou();
-                        })
-                        .fail(function (data) {
-                            var message = data.message;
-                            if(message) {
-                                $formErrors.removeClass('hide').html(message);
-                            }
-                        });
-                }
-        });
 
         // tweet a politician
         function parseReps(data) {
