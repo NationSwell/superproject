@@ -979,7 +979,7 @@ small a {
 .btn.btn--square:after {
   content: '';
   display: block;
-  height: 0.25rem;
+  height: 0.35rem;
   width: 100%;
   position: absolute;
   bottom: 0;
