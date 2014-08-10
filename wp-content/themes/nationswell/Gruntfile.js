@@ -113,6 +113,7 @@ module.exports = function(grunt) {
     grunt.registerTask('js', ['twig', 'concat', 'uglify', 'bumpVersion']);
     grunt.registerTask('default', ['webfont','compass', 'twig', 'js']);
     grunt.registerTask('icons', ['webfont','compass']);
+    grunt.registerTask('cssjs', ['js','compass']);
 
     grunt.task.registerTask('bumpVersion', 'Bump the version number file', function() {
 

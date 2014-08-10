@@ -35,7 +35,7 @@ function yoast_wpseo_title( $title ) {
 }
 
 function add_to_context( $data ) {
-    $data['js_main'] = 'combined' . ( WP_DEBUG ? '' : '.min' ) . '.js';
+    $data['js_main'] = 'combined.js';
     $data['version'] = VERSION;
     $data['static_dir'] = '/wp-content/themes/nationswell/';
 
