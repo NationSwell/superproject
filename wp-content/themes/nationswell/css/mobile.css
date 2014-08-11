@@ -3937,48 +3937,48 @@ html {
   height: 0.3rem;
   bottom: -0.3rem;
 }
-/* line 40, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar.btn--nav {
+/* line 41, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--nav {
   font-size: 2.2rem;
   padding: 1.4rem 0 .75rem;
 }
-/* line 44, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar.btn--nav:before {
+/* line 45, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--nav:before {
   font-size: 5.6rem;
   line-height: 4rem;
   margin-right: 2.2rem;
 }
-/* line 50, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar.btn--nav:after {
+/* line 51, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--nav:after {
   height: 0.5rem;
   bottom: -0.5rem;
 }
-/* line 55, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar.btn--nav:hover {
+/* line 56, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--nav:hover {
   top: 0.2rem;
 }
-/* line 58, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar.btn--nav:hover:after {
+/* line 59, ../scss/partials/mobile/_buttons.scss */
+.btn.btn--nav:hover:after {
   height: 0.3rem;
   bottom: -0.3rem;
 }
-/* line 65, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar:active {
+/* line 66, ../scss/partials/mobile/_buttons.scss */
+.btn:active {
   top: 0.5rem;
   box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
-/* line 69, ../scss/partials/mobile/_buttons.scss */
-.btn.btn--bar:active:after {
+/* line 70, ../scss/partials/mobile/_buttons.scss */
+.btn:active:after {
   height: 0;
   bottom: 0;
 }
-/* line 76, ../scss/partials/mobile/_buttons.scss */
+/* line 77, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--rectangle {
   font-size: 4rem;
   padding: 2rem 2rem 0 1.3rem;
   margin-bottom: .7rem;
 }
-/* line 81, ../scss/partials/mobile/_buttons.scss */
+/* line 82, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--rectangle:before {
   font-family: 'icons';
   font-size: 6rem;
@@ -3986,93 +3986,93 @@ html {
   vertical-align: middle;
   margin: 0 1.4rem 0 0;
 }
-/* line 91, ../scss/partials/mobile/_buttons.scss */
+/* line 92, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--square {
   font-size: 1.6rem;
   width: 10rem;
   height: 10rem;
   margin: 0 auto 0.3rem;
 }
-/* line 97, ../scss/partials/mobile/_buttons.scss */
+/* line 98, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--square:before {
   font-size: 5rem;
   padding-top: 1.6rem;
 }
-/* line 103, ../scss/partials/mobile/_buttons.scss */
+/* line 104, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--square:hover:after {
   height: 0.5rem;
 }
-/* line 109, ../scss/partials/mobile/_buttons.scss */
+/* line 110, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more {
   font-size: 4.2rem;
   margin-bottom: 16rem;
 }
-/* line 113, ../scss/partials/mobile/_buttons.scss */
+/* line 114, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more:before {
   font-size: 19.6rem;
   bottom: -19.2rem;
 }
-/* line 118, ../scss/partials/mobile/_buttons.scss */
+/* line 119, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more:hover {
   top: 0.8rem;
 }
-/* line 121, ../scss/partials/mobile/_buttons.scss */
+/* line 122, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--load-more:hover:before {
   bottom: -20.4rem;
 }
-/* line 127, ../scss/partials/mobile/_buttons.scss */
+/* line 128, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action {
   font-size: 2rem;
   padding: 1.2rem;
   top: 2.4rem;
   margin-bottom: -1rem;
 }
-/* line 133, ../scss/partials/mobile/_buttons.scss */
+/* line 134, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:after {
   height: 0.5rem;
   position: absolute;
   bottom: -0.5rem;
 }
-/* line 139, ../scss/partials/mobile/_buttons.scss */
+/* line 140, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:hover {
   top: 2.6rem;
 }
-/* line 142, ../scss/partials/mobile/_buttons.scss */
+/* line 143, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:hover:after {
   height: 0.3rem;
   bottom: -0.3rem;
 }
-/* line 148, ../scss/partials/mobile/_buttons.scss */
+/* line 149, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:active {
   top: 2.9rem;
   box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
-/* line 152, ../scss/partials/mobile/_buttons.scss */
+/* line 153, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--take-action:active:after {
   height: 0;
   bottom: 0;
 }
-/* line 159, ../scss/partials/mobile/_buttons.scss */
+/* line 160, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--sticky-take-action-mobile {
   background-color: #fc3b40;
 }
-/* line 162, ../scss/partials/mobile/_buttons.scss */
+/* line 163, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--sticky-take-action-mobile:after {
   background-color: #c1272b;
 }
-/* line 167, ../scss/partials/mobile/_buttons.scss */
+/* line 168, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--email {
   background-color: #5d5f5f;
 }
-/* line 170, ../scss/partials/mobile/_buttons.scss */
+/* line 171, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--email:after {
   background-color: #424343;
 }
-/* line 175, ../scss/partials/mobile/_buttons.scss */
+/* line 176, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--external {
   padding: 1rem 2.6rem 2rem;
 }
-/* line 178, ../scss/partials/mobile/_buttons.scss */
+/* line 179, ../scss/partials/mobile/_buttons.scss */
 .btn.btn--external:before {
   font-size: 6rem;
   top: 1.2rem;
