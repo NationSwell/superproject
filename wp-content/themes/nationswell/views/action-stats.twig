@@ -1,4 +1,5 @@
 <div class="support-cause support-cause--hero z2">
+    <a class="support-cause__link" href="{{ post.permalink }}?cta=show">
     {#<h4 class="hd-t support-cause__heading">Support this cause</h4>#}
     {% set cta = post.call_to_action %}
     <div class="indicator indicator--red indicator--module icon icon_{{ cta.icon }}"></div>
@@ -22,4 +23,5 @@
         <span class="support-cause__message">{{ cta.goal_text }}</span>
         {% endif %}
     </div>
+    </a>
 </div>
