@@ -35,6 +35,12 @@
 
   .support-cause {
     background-color: rgba(6,24,34, 0.4);
+    @include transition(color 0.25s ease);
+    will-change: color;
+
+    &:hover {
+      background-color: $ns_blue1;
+    }
   }
 
   .link-wrapper {
@@ -76,6 +82,13 @@
 
   white-space: nowrap;
   max-width: 100%;
+
+  @include transition(background-color 0.25s ease);
+  will-change: background-color;
+
+  &:hover {
+    background-color: $ns_blue1;
+  }
 
   .indicator {
 
