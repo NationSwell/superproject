@@ -1,27 +1,27 @@
 <div class="support-cause support-cause--hero z2">
     <a class="support-cause__link" href="{{ post.permalink }}?cta=show">
-    {#<h4 class="hd-t support-cause__heading">Support this cause</h4>#}
-    {% set cta = post.call_to_action %}
-    <div class="indicator indicator--red indicator--module icon icon_{{ cta.icon }}"></div>
-    <div class="support-cause__content">
-        {%  if cta.current_amount > 0 and cta.hide_goal_amount != 1 %}
-            {% if cta.goal_amount_display == 'percentage' %}
-                <span class="support-cause__data">{{ cta.goal_percentage }}<sup class="super">%</sup></span>
-                <span class="support-cause__label">{% block to_goal %}to goal{% endblock %}</span>
-            {% else %}
-                <span class="support-cause__data">{% block amount_prefix %}{% endblock %}{{ cta.current_amount }}</span>
-                <span class="support-cause__label">{% block so_far %}so far{% endblock %}</span>
+        {#<h4 class="hd-t support-cause__heading">Support this cause</h4>#}
+        {% set cta = post.call_to_action %}
+        <div class="indicator indicator--red indicator--module icon icon_{{ cta.icon }}"></div>
+        <div class="support-cause__content">
+            {%  if cta.current_amount > 0 and cta.hide_goal_amount != 1 %}
+                {% if cta.goal_amount_display == 'percentage' %}
+                    <span class="support-cause__data">{{ cta.goal_percentage }}<sup class="super">%</sup></span>
+                    <span class="support-cause__label">{% block to_goal %}to goal{% endblock %}</span>
+                {% else %}
+                    <span class="support-cause__data">{% block amount_prefix %}{% endblock %}{{ cta.current_amount }}</span>
+                    <span class="support-cause__label">{% block so_far %}so far{% endblock %}</span>
+                {% endif %}
             {% endif %}
-        {% endif %}
 
-        {% if cta.goal_date is not empty and cta.hide_goal_date != 1 %}
-        <span class="support-cause__data">{{ cta.days_until }}</span>
-        <span class="support-cause__label">day{% if cta.days_until > 1 %}s{% endif %} to go</span>
-        {% endif %}
+            {% if cta.goal_date is not empty and cta.hide_goal_date != 1 %}
+            <span class="support-cause__data">{{ cta.days_until }}</span>
+            <span class="support-cause__label">day{% if cta.days_until > 1 %}s{% endif %} to go</span>
+            {% endif %}
 
-        {% if cta.goal_text is not empty and cta.hide_goal_text != 1 %}
-        <span class="support-cause__message">{{ cta.goal_text }}</span>
-        {% endif %}
-    </div>
+            {% if cta.goal_text is not empty and cta.hide_goal_text != 1 %}
+            <span class="support-cause__message">{{ cta.goal_text }}</span>
+            {% endif %}
+        </div>
     </a>
 </div>
