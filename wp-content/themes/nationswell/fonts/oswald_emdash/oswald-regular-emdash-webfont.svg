@@ -220,7 +220,7 @@
 <glyph unicode="&#x2011;" d="M0 448v192h384v-192h-384z" />
 <glyph unicode="&#x2012;" d="M0 448v192h384v-192h-384z" />
 <glyph unicode="&#x2013;" d="M0 448v192h384v-192h-384z" />
-<glyph unicode="&#x2014;" d="M-121 446v198h614v-200z" />
+<glyph unicode="&#x2014;" horiz-adv-x="1394" d="M0 447v199l1396 4v-204z" />
 <glyph unicode="&#x2018;" horiz-adv-x="512" d="M125 1469q0 59 3.5 101.5t15.5 87t33 72t57 45t86 17.5l64 -128q-69 0 -98.5 -30t-29.5 -98h128v-256h-256q0 32 -1.5 95.5t-1.5 93.5z" />
 <glyph unicode="&#x2019;" horiz-adv-x="512" d="M128 1408q69 0 98.5 30t29.5 98h-128v256h256q0 -144 -3 -242q-2 -54 -6 -91t-16 -73.5t-32 -58t-53.5 -34.5t-81.5 -13z" />
 <glyph unicode="&#x201a;" d="M62 63h256l-64 -384h-128z" />
