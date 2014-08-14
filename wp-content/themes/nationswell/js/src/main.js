@@ -114,7 +114,7 @@
                     $(that).addClass('is-visible');
                     $body.addClass('is-locked');
 
-                    events.trigger("modal-open", [$(that).data("modal"), true]);
+                    events.trigger("modal-open", [$(that).data("modal"), {'nonInteraction': 1}]);
 
                 }, 15000));
 
@@ -149,7 +149,7 @@
                 }
                 $modal.addClass('is-visible');
                 /*$body.addClass('is-locked');*/
-                events.trigger("modal-open", [$modal.data("modal"), false]);
+                events.trigger("modal-open", [$modal.data("modal"), {'nonInteraction': 0}]);
             }
 
             e.preventDefault();

@@ -51,15 +51,15 @@
     });
 
     events.on('modal-close', function(e, name){
-        track("modal:" + name, "close", "", "", true);
+        track("modal:" + name, "close", "", "", {'nonInteraction': 1});
     });
 
     events.on('modal-disable', function(e, name, duration){
-        track("modal:" + name, "disable", "", duration, true);
+        track("modal:" + name, "disable", "", duration, {'nonInteraction': 1});
     });
 
     events.on('flyout-open', function(e, module){
-        track(module.name, "open", "", "", true);
+        track(module.name, "open", "", "", {'nonInteraction': 1});
     });
 
     events.on('facebook-like', function(e, module, href){
