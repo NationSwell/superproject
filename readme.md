@@ -21,7 +21,6 @@ nationswell
    ````
 
 -----
-
 1. Install virtualbox https://www.virtualbox.org/
 
 2. Install Vagrant
@@ -31,38 +30,40 @@ nationswell
 
 4. `git clone https://github.com/10up/varying-vagrant-vagrants nationswell`
 
-5. `cd nationswell/www/wordpress-default`
+5. `cd nationswell`
 
-6. `git clone https://github.com/ronik-design/nationswell.git`
+6. `vagrant up`
 
-7. `cd nationswell`
+7. `cd www/wordpress-default`
 
-8. `mv .git ..`
+8. `git clone https://github.com/ronik-design/nationswell.git`
 
-9. `cd ..`
+9. `cd nationswell`
 
-10. `git reset HEAD --hard`
+10. `mv .git ..`
 
-11. `rm -rf nationswell`
+11. `cd ..`
 
-12. `cd wp-content/themes/nationswell`
+12. `git reset HEAD --hard`
 
-13. `npm install grunt dependencies`
+13. `rm -rf nationswell`
 
-14. From `wp-content/themes/nationswell` run `grunt` then `grunt watch`
+14. `cd wp-content/themes/nationswell`
 
-15. `vagrant up --provision` use the --provision flag once, the first time you vagrant up.
+15. `npm install`
 
-16. Wordpress Export from Staging or Production http://local.wordpress.dev/wp-admin/export.php.
+16. From `wp-content/themes/nationswell` run `grunt` then `grunt watch`
 
-17. Import the export file into your local Wordpress install. Make sure to specify to download images and attachments during the import, otherwise posts will lack images.
+17. Wordpress Export from Staging or Production http://nationswell.com/wp-admin/export.php.
+
+18. Import the export file into your local Wordpress install. Make sure to specify to download images and attachments during the import, otherwise posts will lack images.
    http://local.wordpress.dev/wp-admin/admin.php?import=wordpress
 
-18. Go to http://local.wordpress.dev/wp-admin/admin.php?page=acf-options. Click 'Save Options'. Then fill out any un-configured options needed and re-save.
+19. Go to http://local.wordpress.dev/wp-admin/admin.php?page=acf-options. Click 'Save Options'. Then fill out any un-configured options needed and re-save.
 
-19. `vagrant ssh`, then access `/etc/nginx/nginx-wp-common.conf`
+20. `vagrant ssh`, then access `/etc/nginx/nginx-wp-common.conf`
 
-20. Add this nginx location directive to nginx-wp-common.conf directly above `location ~ \.php$ {`
+21. Add this nginx location directive to nginx-wp-common.conf directly above `location ~ \.php$ {`
 
 ````
 location ~ ^/static/\d+/(js|fonts|img|css)/(.*)$ {
@@ -70,4 +71,4 @@ location ~ ^/static/\d+/(js|fonts|img|css)/(.*)$ {
 }
 ````
 
-21. Restart nginx `sudo /etc/init.d/nginx restart`
+22. Restart nginx `sudo /etc/init.d/nginx restart`
