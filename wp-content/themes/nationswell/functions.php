@@ -47,6 +47,7 @@ function add_to_context( $data ) {
 
     $data['menu_footer'] = new TimberMenu( 'menu_footer' );
     $data['menu_topic'] = new TimberMenu( 'menu_topic' );
+    $data['is_editor'] = current_user_can('edit_posts');
 
     if(!empty($menu_post) && !empty($menu_post_items)) {
 
