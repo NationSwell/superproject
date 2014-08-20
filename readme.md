@@ -12,13 +12,16 @@ nationswell
 
 4. brew `http://brew.sh/`
 
-5. grunt `http://gruntjs.com/installing-grunt`
+5. grunt `npm install -g grunt-cli`
 
 6. fontforge
    ````
-   brew install fontforge ttfautohint
-   npm install grunt-webfont --save-dev
+   brew install ttfautohint fontforge --with-python
    ````
+
+7. Xquartz - http://xquartz.macosforge.org/landing/
+
+8. Bundler - http://bundler.io/
 
 -----
 1. Install virtualbox https://www.virtualbox.org/
@@ -50,9 +53,11 @@ nationswell
 
 14. `cd wp-content/themes/nationswell`
 
+15. `bundle install`
+
 15. `npm install`
 
-16. From `wp-content/themes/nationswell` run `grunt` then `grunt watch`
+16. `grunt` then `grunt watch`
 
 17. Wordpress Export from Staging or Production http://nationswell.com/wp-admin/export.php.
 
