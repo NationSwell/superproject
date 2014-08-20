@@ -247,7 +247,7 @@
             });
         };
         
-        if (!$.cookie('flyout')) {
+        if (!$.cookie('flyout') && $('#flyout').length) {
 
             setTimeout(function () {
                  $('#flyout').toggleClass('is-visible');

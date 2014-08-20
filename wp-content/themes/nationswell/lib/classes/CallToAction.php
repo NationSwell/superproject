@@ -32,11 +32,10 @@ if (class_exists('TimberPost')) {
         }
 
         public function days_until(){
-            $datetime1 = new DateTime(date('Y-m-d'));
-
+            $goalDate = DateTime::createFromFormat('Ymd', $this->goal_date);
             $datetime2 = new DateTime(date('Y-m-d'));
 
-            $interval = $datetime1->diff($datetime2);
+            $interval = $goalDate->diff($datetime2);
             return $interval->format('%a');
         }
 
