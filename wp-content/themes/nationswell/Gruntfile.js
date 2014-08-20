@@ -73,7 +73,8 @@ module.exports = function(grunt) {
                     stylesheet: 'scss',
                     relativeFontPath: '../fonts',
                     htmlDemo: false,
-                    hashes: false
+                    hashes: false,
+                    startCodepoint: 0xF101
                 }
             }
         },
