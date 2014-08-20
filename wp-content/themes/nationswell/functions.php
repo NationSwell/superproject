@@ -35,9 +35,9 @@ function yoast_wpseo_title( $title ) {
 }
 
 function add_to_context( $data ) {
-    $data['js_main'] = 'combined.js';
+    $data['js_main'] = 'combined' . (WP_DEBUG ? '' : '.min') . '.js';
     $data['version'] = VERSION;
-    $data['static_dir'] = '/wp-content/themes/nationswell/';
+    $data['static_dir'] = '/static/' . VERSION;
 
     /* this is where you can add your own data to Timber's context object */
     $data['menu_main'] = new TimberMenu('menu_main');

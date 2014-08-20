@@ -21,11 +21,11 @@
 
 <link rel="stylesheet" href="{{ stylesheet_uri }}" type="text/css" media="screen"/>
 
-<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px), screen and (max-width: 1080px) and (-webkit-min-device-pixel-ratio: 3)" href="{{ static_dir }}/css/mobile.css?{{ version }}"/>
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="{{ static_dir }}/css/desktop.css?{{ version }}"/>
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1279px)" href="{{ static_dir }}/css/small-desktop.css?{{ version }}"/>
-<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-max-device-pixel-ratio: 1)" href="{{ static_dir }}/css/tablet.css?{{ version }}"/>
-<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" href="{{ static_dir }}/css/tablet-retina.css?{{ version }}"/>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 767px), screen and (max-width: 1080px) and (-webkit-min-device-pixel-ratio: 3)" href="{{ static_dir }}/css/mobile.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="{{ static_dir }}/css/desktop.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1279px)" href="{{ static_dir }}/css/small-desktop.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-max-device-pixel-ratio: 1)" href="{{ static_dir }}/css/tablet.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" href="{{ static_dir }}/css/tablet-retina.css"/>
 
 <!--[if lt IE 9]>
 <script>
@@ -37,18 +37,18 @@ document.createElement(e[i]);
 }
 </script>
 
-<link rel="stylesheet" type="text/css" media="screen" href="/{{ theme_dir }}/css/ie.css?{{ version }}"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{{ static_dir }}/css/ie.css"/>
 <![endif]-->
 
 <!--[if lte IE 9]>
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="/{{ theme_dir }}/css/desktop.css?{{ version }}"/>
-<link rel="stylesheet" type="text/css" media="screen" href="/{{ theme_dir }}/css/ie9.css?{{ version }}"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="{{ static_dir }}/css/desktop.css?{{ version }}"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{{ static_dir }}/css/ie9.css?{{ version }}"/>
 <![endif]-->
 
-<script src="/{{ theme_dir }}/js/src/vendor/modernizr.custom.82279.js"></script>
+<script src="{{ static_dir }}/js/src/vendor/modernizr.custom.82279.js"></script>
 
 <link rel="pingback" href="{{ bloginfo('pingback_url') }}"/>
-<link rel="shortcut icon" href="/{{ theme_dir }}/favicon.ico" />
-<link rel="apple-touch-icon" href="/{{ theme_dir }}/apple-touch-icon-precomposed.png">
+<link rel="shortcut icon" href="{{ static_dir }}/favicon.ico" />
+<link rel="apple-touch-icon" href="{{ static_dir }}/apple-touch-icon-precomposed.png">
 
 {{ wp_head }}
