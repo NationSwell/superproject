@@ -12,10 +12,6 @@ Template Name: mememaker
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
 
 <body>
-<frameset rows="100%">
-    <frameset cols="100%">
-        <frame src="http://nsmemes.herokuapp.com/" frameborder="0" scrolling="no">
-    </frameset>
-</frameset>
+
 
 </body>
