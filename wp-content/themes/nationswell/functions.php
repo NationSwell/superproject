@@ -594,7 +594,7 @@ function pubexchange_widget()	{
 
 add_action( 'wp_footer','pubexchange_widget' );
 
-function ns_tynt() {
+/*function ns_tynt() {
 	?>
 	<!-- BEGIN Tynt Script -->
 	<script type="text/javascript">
@@ -606,7 +606,7 @@ function ns_tynt() {
 	<!-- END Tynt Script -->
 	<?php
 }
-add_action( 'wp_head', 'ns_tynt' );
+add_action( 'wp_head', 'ns_tynt' );*/
 
 function ns_get_joinus_cookie() {
 
