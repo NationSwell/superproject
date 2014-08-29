@@ -12,7 +12,7 @@
                         {% if author_mug is not empty %}
                             <img src="{{ author_mug.url|resize(134,134) }}" class="author__portrait" alt="{{ author_mug._wp_attachment_image_alt }}">
                         {% else %}
-                            <img src="/{{ theme_dir }}/img/placeholder.jpg" class="author__portrait" alt="">
+                            <img src="{{ theme_dir }}/img/placeholder.jpg" class="author__portrait" alt="">
                         {% endif %}
 
                         <div class="author__contact">

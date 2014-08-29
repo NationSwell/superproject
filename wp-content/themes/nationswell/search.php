@@ -24,7 +24,7 @@
 	$data['posts'] = Timber::get_posts(array(), 'NationSwellPost');
     $data['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
-    $srch = get_search_query();
+    /*$srch = get_search_query();
     $tok = strtok($srch, " ");
 
     while ( $tok !== false ) {
@@ -50,7 +50,7 @@
         $data['author_mug'] = get_field('mug_shot', 'user_' . $author_found[0]['user_id']);
         $data['author_link'] = get_author_posts_url($author_found[0]['user_id']);
 
-    }
+    }*/
     $more = isset($_GET['ajax-more']);
 	
 	Timber::render($more ? 'search-more.twig' : $templates, $data);
