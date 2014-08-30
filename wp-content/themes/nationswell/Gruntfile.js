@@ -74,7 +74,10 @@ module.exports = function(grunt) {
                     relativeFontPath: '../fonts',
                     htmlDemo: false,
                     hashes: false,
-                    startCodepoint: 0xF101
+                    startCodepoint: 0xF101,
+                    codepoints: {
+                        star: 0xF151
+                    }
                 }
             }
         },
