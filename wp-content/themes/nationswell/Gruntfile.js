@@ -76,7 +76,7 @@ module.exports = function(grunt) {
                     hashes: false,
                     startCodepoint: 0xF101,
                     codepoints: {
-                        star: 0xF151
+                        star: 0xF100
                     }
                 }
             }

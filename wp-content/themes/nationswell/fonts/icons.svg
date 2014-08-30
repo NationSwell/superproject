@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Sat Aug 30 11:14:28 2014
+Created by FontForge 20120731 at Sat Aug 30 14:23:24 2014
  By Taylor  Johnson,,,
 Created by Taylor  Johnson,,, with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -19,7 +19,7 @@ Created by Taylor  Johnson,,, with FontForge 2.0 (http://fontforge.sf.net)
     bbox="-1 -48 1479 447"
     underline-thickness="25"
     underline-position="-52"
-    unicode-range="U+F101-F151"
+    unicode-range="U+F100-F137"
   />
 <missing-glyph horiz-adv-x="187" 
 d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
@@ -29,6 +29,8 @@ d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
  />
     <glyph glyph-name="nonmarkingreturn" horiz-adv-x="170" 
  />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" horiz-adv-x="323" 
+d="M323 292l-89 -76l27 -114l-99 61l-100 -61l27 114l-89 76l117 10l45 108l44 -108z" />
     <glyph glyph-name="uniF101" unicode="&#xf101;" 
 d="M174 174l-76 76q-2 1 -2 5t2 6l78 77q3 3 5 3q3 0 6 -3q5 -6 0 -11l-73 -72l71 -70q5 -5 0 -11t-11 0zM154 102q-64 0 -109 45t-45 109t45 109t109 45t108.5 -45t44.5 -109t-44.5 -109t-108.5 -45zM154 397q-58 0 -99.5 -41.5t-41.5 -99.5t41.5 -99.5t99.5 -41.5t99 41
 t41 100t-41 100t-99 41z" />
@@ -205,7 +207,5 @@ d="M307 104q0 -2 -2 -2l-10 5q-17 7 -52 22t-53 22l-4 2l-150 150l-2 2q11 11 35 34.
 q-1 -2 2 -3q11 -5 33 -14t32 -13q1 -1 3 1q1 1 4 3t4 4zM23 334l-9 -9v0q-17 19 -13 43q6 30 34 39t50 -12q-10 -10 -31 -30.5t-31 -30.5z" />
     <glyph glyph-name="uniF137" unicode="&#xf137;" horiz-adv-x="414" 
 d="M385 325q12 0 20.5 -8.5t8.5 -20.5v-236q0 -12 -8.5 -21t-20.5 -9h-355q-12 0 -21 9t-9 21v236q0 12 9 20.5t21 8.5h355zM161 117l118 69l-118 69v-138z" />
-    <glyph glyph-name="uniF151" unicode="&#xf151;" horiz-adv-x="323" 
-d="M323 292l-89 -76l27 -114l-99 61l-100 -61l27 114l-89 76l117 10l45 108l44 -108z" />
   </font>
 </defs></svg>

@@ -11,6 +11,7 @@
 
 
     global $wp_query;
+    global $wpdb;
 
 	$templates = array('search.twig', 'archive.twig', 'index.twig');
 	$data = Timber::get_context();
@@ -20,8 +21,9 @@
 	$page = max($wp_query->query_vars['paged'], 1);
 	$data['more'] = $wp_query->max_num_pages > $page ? get_next_page_link($page+1) : false;
     $data['total_results'] = $wp_query->found_posts;
+    error_log("SEARCH RESULTS FOUND: " . strval($data['total_results']));
 	$data['title'] = 'Search results for '. get_search_query();
-	$data['posts'] = Timber::get_posts(array(), 'NationSwellPost');
+	$data['posts'] = Timber::get_posts(false, 'NationSwellPost');
     $data['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
     $srch = get_search_query();
