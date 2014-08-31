@@ -3,7 +3,7 @@
 {% block content %}
 
     {% block header %}
-        <div class="hero hero--archive hero--series{% if series.header_image is empty %} no-image{% endif %}" {% if series.header_image is not empty %}style="background-image: url({{ series.header_image.get_src|resize(1300,600) }})"{% endif %}>
+        <div class="hero hero--archive hero--series{% if series.header_image is empty %} no-image{% endif %}" {% if series.header_image is not empty %}style="background-image: url({{ series.header_image.src|resize(1300,600) }})"{% endif %}>
 
             <div class="container">
                     <div class="indicator indicator--blue indicator--title indicator--text icon icon_series">

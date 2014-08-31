@@ -60,7 +60,7 @@ if (class_exists('TimberPost')) {
 
         function header_image()
         {
-            return new TimberImage(get_field('header_image'));
+            return get_field('header_image');
         }
 
         function series_posts()
