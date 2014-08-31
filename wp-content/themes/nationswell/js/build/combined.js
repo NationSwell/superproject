@@ -2713,7 +2713,7 @@ window.events =
         });
 
         // share popup window
-        $body.on('click', '.btn--share', function (event) {
+        $body.on('click touchstart', '.btn--share', function (event) {
             event.preventDefault();
             event.stopPropagation();
 
