@@ -42,6 +42,7 @@ if(function_exists("register_field_group"))
                     'return_format' => 'id',
                     'post_type' => array (
                         0 => 'post',
+                        1 => 'ns_series',
                     ),
                     'taxonomy' => array (
                         0 => 'all',

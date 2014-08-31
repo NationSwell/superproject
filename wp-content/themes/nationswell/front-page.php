@@ -30,6 +30,13 @@ $featured_ids = get_field('featured');
 if($featured_ids !== false) {
     if($first_page) {
         $data['featured'] = Timber::get_posts($featured_ids, 'NationSwellPost');
+        foreach($data['featured'] as $featured_post)
+        {
+            if ($featured_post->post_type == 'ns_series')
+            {
+                $featured_post = Timber::get_post($featured_post->ID, 'NationSwellSeries');
+            }
+        }
     }
     $excludes = array_merge($excludes, $featured_ids);
 }
