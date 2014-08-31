@@ -231,7 +231,6 @@ function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_editors_picks', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_bi_contributors', 'normal' );
-    remove_meta_box( 'wpseo_meta', 'ns_series', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 

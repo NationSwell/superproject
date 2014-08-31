@@ -13,6 +13,15 @@ if ( function_exists( "register_field_group" )) {
                 'preview_size' => 'thumbnail',
                 'library' => 'all',
             ),
+            array (
+                'key' => 'field_556k89334we2f',
+                'label' => __('Disable Series Icon'),
+                'name' => 'disable_series',
+                'type' => 'true_false',
+                'instructions' => 'Prevents the series icon from displaying in the header image.',
+                'message' => '',
+                'default_value' => 0,
+            ),
             array(
                 'key' => 'field_539h00184m7k',
                 'label' => 'Description',

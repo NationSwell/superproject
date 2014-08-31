@@ -81,6 +81,9 @@ if (class_exists('TimberPost')) {
             return get_field('description');
         }
 
-
+        function series_enabled()
+        {
+            return !(get_field('disable_series'));
+        }
     }
 }

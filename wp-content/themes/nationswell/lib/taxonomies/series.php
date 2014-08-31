@@ -22,7 +22,7 @@ function add_custom_series_taxonomy() {
                 'menu_name' => __( 'Series' ),
             ),
 
-            'rewrite' => array('slug' => 'series'),
+            'rewrite' => array('slug' => 'ns-series'),
         ));
 }
 add_action('init', 'add_custom_series_taxonomy', 0);

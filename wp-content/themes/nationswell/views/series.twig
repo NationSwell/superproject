@@ -3,13 +3,15 @@
 {% block content %}
 
     {% block header %}
-        <div class="hero hero--archive hero--series{% if series.header_image is empty %} no-image{% endif %}" {% if series.header_image is not empty %}style="background-image: url({{ series.header_image.src|resize(1300,600) }})"{% endif %}>
+        <div class="hero hero--archive hero--series{% if series.header_image is empty %} no-image{% endif %}" {% if series.header_image is not empty %}style="background-image: url({{ TimberImage(series.header_image)|resize(1300,600,'center') }})"{% endif %}>
 
             <div class="container">
+                 {% if series.series_enabled %}
                     <div class="indicator indicator--blue indicator--title indicator--text icon icon_series">
                         <h5 class="indicator__heading">Series</h5>
                         <h5 class="indicator__subheading">{{ series.total_posts }} Stories</h5>
                     </div>
+                 {% endif %}
 
                 <h2 class="hd-f hero--series__title"><span>{{ series.title }}</span></h2>
 

@@ -14,10 +14,14 @@ function create_series_post_type()
             'publicly_queryable' => true,
             'has_archive' => true,
             'supports' => 'title',
-            'rewrite' => array( 'slug' => 'ns-series' ),
+            'rewrite' => array( 'slug' => 'series' ),
         )
     );
-    flush_rewrite_rules();
+    $set = get_option('post_type_rules_flased_series');
+    if ($set !== true){
+        flush_rewrite_rules(false);
+        update_option('post_type_rules_flased_series',true);
+    }
 
 }
 

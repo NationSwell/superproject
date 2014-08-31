@@ -14,7 +14,6 @@
 
 $context = Timber::get_context();
 $context['series'] = new NationSwellSeries();
-error_log("SERIES IMG: " . $context['series']->header_image());
 $context['posts'] = $context['series']->series_posts();
 $context['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
