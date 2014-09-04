@@ -13,23 +13,6 @@ if (class_exists('TimberPost')) {
             return isset($bitly) ? $bitly->get_bitly_link_for_post_id($this->ID) : $this->permalink();
         }
 
-//        function og_image()
-//        {
-//            if (class_exists('WPSEO_OpenGraph')){
-//                ob_start();
-//                $wpseo = new WPSEO_OpenGraph();
-//                $wpseo->image_output($wpseo->image());
-//                $og_meta = ob_get_contents();
-//                $image = getAttribute('content', $og_meta);
-//                ob_end_clean();
-//
-//                return $image;
-//            } else {
-//                return '';
-//            }
-//
-//        }
-
         function facebook_share_url()
         {
 
@@ -84,6 +67,11 @@ if (class_exists('TimberPost')) {
         function series_enabled()
         {
             return !(get_field('disable_series'));
+        }
+
+        function series_url()
+        {
+            return $this->permalink();
         }
     }
 }

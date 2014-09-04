@@ -168,6 +168,16 @@ if (class_exists('TimberPost')) {
             return false;
         }
 
+        function ns_series()
+        {
+            $series_id = get_field('ns_series_link', $this->ID);
+
+            if (!empty($series_id)) {
+                return Timber::get_post($series_id, 'NationSwellSeries');
+            }
+            return false;
+        }
+
         function tout_title()
         {
             return !empty($this->tout_heading) ? $this->tout_heading : $this->post_title;

@@ -33,9 +33,10 @@
                     <header>
                         <ul class="story__meta">
                             <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}
-                            {% for term in post.terms('series') %}
-						       <a href="{{ term.link }}">{{ ', ' ~ term.name }}</a>
-						    {% endfor %}</a></li>
+                            {% if post.ns_series is not empty %}
+                                    <a href="{{ post.ns_series.permalink }}">,&nbsp;{{ post.ns_series.post_title }}</a>
+                            {% endif %}
+                            </li>
                             <li>{{ byline_prefix_text }} {{ post.coauthors_posts_links }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
 
