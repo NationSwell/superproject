@@ -1,3 +1,32 @@
+%btn--submit {
+  background-color: $ns_red2;
+  color: $white;
+  margin: 0;
+  font-family: $oswald;
+  font-weight: $regular;
+  float: right;
+
+  &:hover {
+    background-color: $ns_blue1;
+  }
+}
+
+.password-form {
+  width: 40rem;
+  margin: 10rem auto;
+  overflow: hidden;
+
+  label {
+    font-size: 1.8rem;
+  }
+
+  .password-btn {
+    @extend %btn--submit;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+}
+
 .form-element {
   float: left;
   clear: left;
@@ -79,18 +108,7 @@
     width: 70%;
   }
 
-  .btn--subscribe {
-    background-color: $ns_red2;
-    color: $white;
-    margin: 0;
-    font-family: $oswald;
-    font-weight: $regular;
-    float: right;
-
-    &:hover {
-      background-color: $ns_blue1;
-    }
-  }
+  @extend %btn--submit;
 
   &:before {
     color: $gray6;
