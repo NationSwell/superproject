@@ -1117,34 +1117,64 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* line 1, ../scss/partials/base/_forms.scss */
+.password-form .password-btn, .join-us__email {
+  background-color: #fd6464;
+  color: white;
+  margin: 0;
+  font-family: "oswaldregular", Arial, sans-serif;
+  font-weight: 400;
+  float: right;
+}
+/* line 9, ../scss/partials/base/_forms.scss */
+.password-form .password-btn:hover, .join-us__email:hover {
+  background-color: #0098d8;
+}
+
+/* line 14, ../scss/partials/base/_forms.scss */
+.password-form {
+  width: 40rem;
+  margin: 10rem auto;
+  overflow: hidden;
+}
+/* line 19, ../scss/partials/base/_forms.scss */
+.password-form label {
+  font-size: 1.8rem;
+}
+/* line 23, ../scss/partials/base/_forms.scss */
+.password-form .password-btn {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* line 30, ../scss/partials/base/_forms.scss */
 .form-element {
   float: left;
   clear: left;
   width: 100%;
   position: relative;
 }
-/* line 7, ../scss/partials/base/_forms.scss */
+/* line 36, ../scss/partials/base/_forms.scss */
 .form-element.form-element--one-third {
   width: 32%;
 }
-/* line 11, ../scss/partials/base/_forms.scss */
+/* line 40, ../scss/partials/base/_forms.scss */
 .form-element.form-element--two-third {
   width: 66%;
 }
-/* line 15, ../scss/partials/base/_forms.scss */
+/* line 44, ../scss/partials/base/_forms.scss */
 .form-element.form-element--one-third, .form-element.form-element--two-third, .form-element.form-element--half {
   margin-right: 2%;
 }
-/* line 21, ../scss/partials/base/_forms.scss */
+/* line 50, ../scss/partials/base/_forms.scss */
 .form-element.form-element--right {
   clear: right;
   float: right;
 }
-/* line 26, ../scss/partials/base/_forms.scss */
+/* line 55, ../scss/partials/base/_forms.scss */
 .form-element.form-element--omega {
   margin-right: 0;
 }
-/* line 30, ../scss/partials/base/_forms.scss */
+/* line 59, ../scss/partials/base/_forms.scss */
 .form-element label {
   display: block;
   color: #2d2d2d;
@@ -1152,7 +1182,7 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 38, ../scss/partials/base/_forms.scss */
+/* line 67, ../scss/partials/base/_forms.scss */
 .form-element .text-input,
 .form-element .text-area {
   background-color: white;
@@ -1169,11 +1199,11 @@ input[type="submit"]:-moz-focus-inner {
   -o-appearance: none;
   appearance: none;
 }
-/* line 53, ../scss/partials/base/_forms.scss */
+/* line 82, ../scss/partials/base/_forms.scss */
 .form-element select {
   width: 100%;
 }
-/* line 57, ../scss/partials/base/_forms.scss */
+/* line 86, ../scss/partials/base/_forms.scss */
 .form-element .error {
   margin-top: 0.6rem;
   color: #fc3b40;
@@ -1182,7 +1212,7 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 400;
 }
 
-/* line 66, ../scss/partials/base/_forms.scss */
+/* line 95, ../scss/partials/base/_forms.scss */
 .join-us__email {
   background-color: white;
   border: 1px solid #dbdbdb;
@@ -1190,7 +1220,7 @@ input[type="submit"]:-moz-focus-inner {
   position: relative;
   width: 100%;
 }
-/* line 73, ../scss/partials/base/_forms.scss */
+/* line 102, ../scss/partials/base/_forms.scss */
 .join-us__email input[type="email"] {
   border: 0 none;
   box-shadow: none;
@@ -1199,27 +1229,14 @@ input[type="submit"]:-moz-focus-inner {
   line-height: 1.2;
   width: 70%;
 }
-/* line 82, ../scss/partials/base/_forms.scss */
-.join-us__email .btn--subscribe {
-  background-color: #fd6464;
-  color: white;
-  margin: 0;
-  font-family: "oswaldregular", Arial, sans-serif;
-  font-weight: 400;
-  float: right;
-}
-/* line 90, ../scss/partials/base/_forms.scss */
-.join-us__email .btn--subscribe:hover {
-  background-color: #0098d8;
-}
-/* line 95, ../scss/partials/base/_forms.scss */
+/* line 113, ../scss/partials/base/_forms.scss */
 .join-us__email:before {
   color: #eeeeee;
   display: block;
   position: absolute;
 }
 
-/* line 102, ../scss/partials/base/_forms.scss */
+/* line 120, ../scss/partials/base/_forms.scss */
 .form-errors {
   clear: both;
   font-family: "Gudea", Arial, sans-serif;
@@ -4373,20 +4390,19 @@ hr {
 #page-footer {
   height: 13rem;
   width: 100%;
-  position: relative;
 }
-/* line 6, ../scss/partials/desktop/_footer.scss */
+/* line 5, ../scss/partials/desktop/_footer.scss */
 #page-footer .container {
   height: 13rem;
 }
 
-/* line 11, ../scss/partials/desktop/_footer.scss */
+/* line 10, ../scss/partials/desktop/_footer.scss */
 .site-logo--footer {
   float: left;
   margin-top: 4.6rem;
 }
 
-/* line 16, ../scss/partials/desktop/_footer.scss */
+/* line 15, ../scss/partials/desktop/_footer.scss */
 .copyright {
   float: left;
   font-size: 1.3rem;
@@ -4395,20 +4411,20 @@ hr {
   clear: both;
 }
 
-/* line 24, ../scss/partials/desktop/_footer.scss */
+/* line 23, ../scss/partials/desktop/_footer.scss */
 .footer-links {
   float: right;
   margin-top: 6rem;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 30, ../scss/partials/desktop/_footer.scss */
+/* line 29, ../scss/partials/desktop/_footer.scss */
 .footer-links li {
   display: inline-block;
   margin-left: 1.8rem;
 }
 
-/* line 36, ../scss/partials/desktop/_footer.scss */
+/* line 35, ../scss/partials/desktop/_footer.scss */
 .footer-links__link {
   color: #a7a7a7;
   font-size: 1.4rem;

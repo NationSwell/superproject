@@ -7,7 +7,8 @@ define( "MAILCHIMP_API_KEY","99983ece6b5ad94f7c4f026238381f4d-us6" );
 // I'm not sure I like this approach to version management.
 define('VERSION', intval( file_get_contents( get_template_directory() . '/version.txt' ) ) );
 
-error_reporting( E_ALL & ~E_STRICT & ~E_DEPRECATED );
+error_reporting(0);
+@ini_set('display_errors', 0);
 
 add_theme_support( 'post-formats' );
 add_theme_support( 'post-thumbnails' );
