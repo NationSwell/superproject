@@ -119,7 +119,7 @@
   width: 14.6rem;
 }
 
-/* line 162, ../scss/small-desktop.scss */
+/* line 161, ../scss/small-desktop.scss */
 .module.take-action .take-action__a,
 .module.take-action .take-action__b {
   width: 100%;
@@ -234,4 +234,13 @@
   margin-top: 2.2rem;
   padding-left: 0;
   text-align: center;
+}
+
+/* line 277, ../scss/small-desktop.scss */
+.footer-links {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  max-width: 41.5rem;
+  margin-top: 0;
 }
