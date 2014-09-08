@@ -561,8 +561,8 @@ add_action( 'wp_ajax_nopriv_support_action', 'ns_supportmsg_callback' );
 
 function ns_supportmsg_callback() {
     define('APP_URL', "https://script.google.com/macros/s/AKfycbz91ZsJLH_zCCWz6z-Do6rDwTAe5VyYUwHwnyYNm2WGHdTXrDo/exec");
-    define('URL_PARAMS', "?sheet=" . sanitize_text_field( $_POST['wsname'] ) . "&first=" . sanitize_text_field( $_POST['first_name'] ) . "&last=" .
-        sanitize_text_field( $_POST['last_name'] ) . "&email=" . sanitize_email( $_POST['email'] ) . "&message=" . sanitize_text_field( $_POST['message'] ));
+    define('URL_PARAMS', "?sheet=" . sanitize_text_field( $_POST['wsname'] ) . "&first=" . urlencode(sanitize_text_field( $_POST['first_name'] )) . "&last=" .
+        urlencode(sanitize_text_field( $_POST['last_name'] )) . "&email=" . sanitize_email( $_POST['email'] ) . "&message=" . urlencode(sanitize_text_field( $_POST['message'] )));
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_RETURNTRANSFER => 1,
