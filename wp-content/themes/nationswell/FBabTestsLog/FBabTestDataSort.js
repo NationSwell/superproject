@@ -1,3 +1,9 @@
+/*
+Facebook A/B Testing Results Dashboard
+Copyright (c) NationSwell | 2014
+MIT LICENSE |  http://www.opensource.org/licenses/mit-license.php
+*/
+
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0AvVxrKGf5A3fdE9HSGhsNkVmaURSdkQ0MWQ1dlV2cWc&single=true&gid=6&output=html';
 
 var tabletop = Tabletop.init( { key: public_spreadsheet_url,
@@ -142,19 +148,19 @@ function displayResults(rows) {
 		.classed("varrow",true)
 		.html(function(d) {
 			if (d.testtype === "hed") {
-					return (d.hed)
+					return '<div class="hedpt"><b>Post Text: </b>' + d.posttext + '</div><div class="hedhed">' + d.hed + '</div>'
 				}
 			else if (d.testtype === "pt") {
 					return (d.posttext)
 				}
 			else {
-				return '<div class="photohed"><b>Hed: </b>' + d.hed + '</div><img src="' + d.photo + '" width="100%"></img>'
+				return '<div class="photopt"><b>Post Text: </b>' + d.posttext + '</div><div class="photohed"><b>Hed: </b>' + d.hed + '</div><img src="' + d.photo + '" width="100%"></img>'
 			};
 		});
 	bar.append("br")
 	bar.append("div")
 		.classed("engbar",true)
-		.style("width",function(d) {return d.engagementrate * 2000 + "px"})
+		.style("width",function(d) {return d.engagement * 3 + "px"})
 		.style("display",function(d) {
 			if (d.impressions === "a") {
 				return "none"
@@ -168,9 +174,13 @@ function displayResults(rows) {
 		.text(function(d) {
 			if (d.impressions === "a") {
 				return "pending"
-			}
+				}
+			else if (d.engagement != "1") {
+				return (d.engagement + " engagements")
+				}
 			else {
-				return d3.round((d.engagementrate * 100),2) + "% engagement"}
+				return (d.engagement + " engagement")
+				}
 			})
 		.style("margin-left",function(d) {
 			if (d.impressions === "a") {

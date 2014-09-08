@@ -119,6 +119,18 @@ h1 {
 	margin-top:10px;
 	max-width:475px;
 }
+.hedpt {
+	font-size:12px;
+	line-height:15px;
+	margin:0px 0px 3px 0px;
+}
+.hedhed {
+	font-size:18px;
+}
+.photopt {
+	font-size:12px;
+	margin:0px 0px 3px 0px;
+}
 .photohed {
 	font-size:12px;
 	margin:0px 0px 6px 0px;
@@ -131,7 +143,7 @@ h1 {
 	color:#3b5998;
 	min-width:1px;
 	margin-left:12px;
-	max-width:90%;
+	max-width:70%;
 }
 .engnumber {
 	display:inline-block;
