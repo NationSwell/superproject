@@ -297,30 +297,6 @@ if (function_exists("register_field_group")) {
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_763apo1908fwt',
-                    'label' => 'Google Spreadsheet Name',
-                    'name' => 'spreadsheet_name',
-                    'type' => 'text',
-                    'instructions' => 'The name of Spreadsheet associated with this call to action',
-                    'conditional_logic' => array(
-                        'status' => 1,
-                        'rules' => array(
-                            array(
-                                'field' => 'field_528bcb5146eda',
-                                'operator' => '==',
-                                'value' => 'mos',
-                            ),
-                        ),
-                        'allorany' => 'all',
-                    ),
-                    'default_value' => '',
-                    'placeholder' => '',
-                    'prepend' => '',
-                    'append' => '',
-                    'formatting' => 'none',
-                    'maxlength' => '',
-                ),
-                array(
                     'key' => 'field_978twa2840czt',
                     'label' => 'Google Worksheet Name',
                     'name' => 'worksheet_name',
