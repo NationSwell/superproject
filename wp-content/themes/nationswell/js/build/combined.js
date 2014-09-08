@@ -3383,6 +3383,29 @@ window.events =
 
         });
 
+
+        //Support message take action
+        $('#support-action-form').submit(function (e) {
+            e.preventDefault();
+        }).validate({ submitHandler:  function(form){
+            var $form = $(form),
+                $formErrors = $form.find('.form-errors'),
+                url = '/wp-admin/admin-ajax.php?action=support_action';
+
+            $formErrors.empty().addClass('hide');
+            $.post(url, $form.serialize())
+                .done(function () {
+                    toggleThankYou();
+                })
+                .fail(function (data) {
+                    var message = data.message;
+                    if(message) {
+                        $formErrors.removeClass('hide').html(message);
+                    }
+                });
+        }
+        });
+
         // change org take action
         $('#change-org-petition').submit(function (e) {
             e.preventDefault();
