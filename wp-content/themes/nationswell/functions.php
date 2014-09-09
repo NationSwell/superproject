@@ -224,6 +224,7 @@ include_once('lib/custom_post_types/daily_newsletter.php');
 include_once('lib/custom_post_types/editors_picks.php');
 include_once('lib/custom_post_types/bi_contributors.php');
 include_once('lib/custom_post_types/series.php');
+include_once('lib/custom_post_types/photo-essay.php');
 
 // Remove the SEO MetaBox from Custom Post Types
 function prefix_remove_wp_seo_meta_box() {
