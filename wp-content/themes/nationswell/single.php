@@ -15,6 +15,7 @@ $context['post'] = $post;
 $context['wp_title'] .= ' - ' . $post->post_title;
 $context['comment_form'] = TimberHelper::get_comment_form();
 $context['sidebar_story'] = Timber::get_widgets('sidebar_story');
+$is_photo_essay = (get_field("content_type") == "photoessay");
 
 if ( !stripos( $post->post_content, '[newsletter]' ) && !get_field( "hide_in_story_widget" )) {
     $context['newsletter_bottom'] = do_shortcode( "[newsletter]" );
@@ -28,4 +29,4 @@ if ( isset($_COOKIE["subscribed"] )) {
     $context['prompt_signup'] = true;
 }
 
-Timber::render(array('single-' . $post->post_type . '.twig', 'single.twig'), $context);
+Timber::render($is_photo_essay ? photo-essay.twig : array('single-' . $post->post_type . '.twig', 'single.twig'), $context);
