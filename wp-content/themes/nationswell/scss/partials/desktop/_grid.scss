@@ -27,6 +27,11 @@
         @include shift(0);
       }
 
+      .photo-essay__main-column & {
+        @include span-columns(8);
+        @include shift(0);
+      }
+
     }
 
     .hero-information__caption + .hero-information__credit {

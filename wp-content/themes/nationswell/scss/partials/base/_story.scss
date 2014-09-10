@@ -88,6 +88,18 @@
 
     }
 
+    .photo-essay__main-column & {
+      padding-bottom: 0;
+      height: auto;
+      max-height: none;
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+    }
+
   }
 
   &.hero--carousel {
@@ -118,6 +130,13 @@
       position: relative;
 
       .story__main-column & {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 0 56.25%;
+      }
+
+      .photo-essay__main-column & {
         width: 100%;
         height: auto;
         margin: 0 auto;

@@ -6,6 +6,10 @@
     margin-bottom: 2.2rem;
   }
 
+  .photo-essay__main-column & {
+    margin-bottom: 2.2rem;
+  }
+
   &.hero--image {
     height: auto;
     padding-bottom: 30%;
@@ -16,6 +20,16 @@
   &.hero--video {
 
     .story__main-column & {
+      padding-bottom: 0;
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+    }
+
+    .photo-essay__main-column & {
       padding-bottom: 0;
 
       img {
@@ -44,11 +58,27 @@
 
       }
 
+      .photo-essay__main-column & {
+        max-height: none;
+        min-height: none;
+        position: static;
+        bottom: 0;
+
+        .container {
+          padding: 0;
+        }
+
+      }
+
       &.is-long {
         &:hover {
           background-color: $ns_navy6;
 
           .story__main-column & {
+            background-color: transparent;
+          }
+
+          .photo-essay__main-column & {
             background-color: transparent;
           }
 
@@ -143,6 +173,10 @@
   }
 
   .story__main-column {
+    overflow: hidden;
+  }
+
+  .photo-essay__main-column {
     overflow: hidden;
   }
 
