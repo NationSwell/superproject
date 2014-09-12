@@ -109,32 +109,37 @@
   background-color: transparent;
   box-shadow: none;
 }
+/* line 146, ../scss/small-desktop.scss */
+.river--one-col .story-teases .story--tease .support-cause {
+  position: absolute;
+  margin-left: 0;
+}
 
 /**
  * story
  */
 /* sticky */
-/* line 155, ../scss/small-desktop.scss */
+/* line 159, ../scss/small-desktop.scss */
 .story__sticky-container {
   width: 14.6rem;
 }
 
-/* line 161, ../scss/small-desktop.scss */
+/* line 165, ../scss/small-desktop.scss */
 .module.take-action .take-action__a,
 .module.take-action .take-action__b {
   width: 100%;
   float: none;
   padding: none;
 }
-/* line 168, ../scss/small-desktop.scss */
+/* line 172, ../scss/small-desktop.scss */
 .module.take-action .take-action__a {
   margin-bottom: 1.2rem;
 }
-/* line 172, ../scss/small-desktop.scss */
+/* line 176, ../scss/small-desktop.scss */
 .module.take-action .module.take-action .take-action__a + .take-action__b {
   padding-left: 3.4rem;
 }
-/* line 176, ../scss/small-desktop.scss */
+/* line 180, ../scss/small-desktop.scss */
 .module.take-action .politician__information {
   max-width: 22rem;
 }
@@ -142,12 +147,12 @@
 /**
  * structure
  */
-/* line 185, ../scss/small-desktop.scss */
+/* line 189, ../scss/small-desktop.scss */
 .container {
   max-width: 98.4rem;
   padding: 0 2rem;
 }
-/* line 189, ../scss/small-desktop.scss */
+/* line 193, ../scss/small-desktop.scss */
 .container.container--flex {
   width: auto;
   display: block;
@@ -156,13 +161,13 @@
   display: flex;
 }
 
-/* line 199, ../scss/small-desktop.scss */
+/* line 203, ../scss/small-desktop.scss */
 #page-wrapper {
   min-width: 768px;
   width: 100%;
 }
 
-/* line 204, ../scss/small-desktop.scss */
+/* line 208, ../scss/small-desktop.scss */
 .story__sticky {
   -webkit-box-flex: 1;
   width: auto;
@@ -170,7 +175,7 @@
   max-width: 15.63786%;
 }
 
-/* line 211, ../scss/small-desktop.scss */
+/* line 215, ../scss/small-desktop.scss */
 .story__main-column {
   -webkit-box-flex: 1;
   width: auto;
@@ -179,7 +184,7 @@
   padding-left: 2rem;
 }
 
-/* line 219, ../scss/small-desktop.scss */
+/* line 223, ../scss/small-desktop.scss */
 .photo-essay__main-column {
   -webkit-box-flex: 1;
   width: auto;
@@ -187,7 +192,7 @@
   padding-left: 2rem;
 }
 
-/* line 226, ../scss/small-desktop.scss */
+/* line 230, ../scss/small-desktop.scss */
 .sidebar {
   -webkit-box-flex: 1;
   padding-left: 2rem;
@@ -196,55 +201,55 @@
   max-width: 32.51029%;
 }
 
-/* line 235, ../scss/small-desktop.scss */
+/* line 239, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__content {
   margin-left: 0;
   width: 100%;
 }
 
-/* line 240, ../scss/small-desktop.scss */
+/* line 244, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__caption {
   margin-left: 0;
 }
 
-/* line 244, ../scss/small-desktop.scss */
+/* line 248, ../scss/small-desktop.scss */
 .hero .hero-information .hero-information__credit {
   float: right;
 }
 
-/* line 249, ../scss/small-desktop.scss */
+/* line 253, ../scss/small-desktop.scss */
 .river .story-teases {
   -webkit-box-flex: 1;
   width: auto;
   min-height: 25px;
 }
-/* line 255, ../scss/small-desktop.scss */
+/* line 259, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
 }
-/* line 262, ../scss/small-desktop.scss */
+/* line 266, ../scss/small-desktop.scss */
 .river.river--one-col .story-teases .story__feature {
   width: 50%;
 }
 
-/* line 269, ../scss/small-desktop.scss */
+/* line 273, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal .story-list li {
   margin-right: 3.82%;
 }
 
-/* line 273, ../scss/small-desktop.scss */
+/* line 277, ../scss/small-desktop.scss */
 .author__a {
   float: none;
 }
 
-/* line 277, ../scss/small-desktop.scss */
+/* line 281, ../scss/small-desktop.scss */
 .author__b {
   margin-top: 2.2rem;
   padding-left: 0;
   text-align: center;
 }
 
-/* line 283, ../scss/small-desktop.scss */
+/* line 287, ../scss/small-desktop.scss */
 .footer-links {
   position: absolute;
   bottom: 3rem;
