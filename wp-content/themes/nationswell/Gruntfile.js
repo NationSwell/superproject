@@ -121,11 +121,12 @@ module.exports = function(grunt) {
 
     grunt.task.registerTask('bumpVersion', 'Bump the version number file', function() {
 
-        var time = new Date().getTime();
+        var version = parseInt(grunt.file.read('version.txt'));
+        version++;
 
-        grunt.file.write('version.txt', time);
+        grunt.file.write('version.txt', version);
 
-        grunt.log.writeln(this.name + " Updating version number to: " + time);
+        grunt.log.writeln(this.name + " Updating version number to: " + version);
     });
 
 };
