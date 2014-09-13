@@ -1,6 +1,11 @@
 <div class="list-item">
     {% include 'component-' ~ mediaType ~ '.twig' ignore missing with media %}
-    <h3 class="hd-d list-item-heading"><span class="list-item-rank hd-b">{{ rank }}</span> {{ heading }}</h3>
+    <h3 class="hd-d list-item-heading">
+        <div class="list-item-heading-number">
+            <span class="list-item-rank hd-b">{{ rank }}</span>
+        </div>
+        <span class="list-item-heading-text">{{ heading }}</span>
+    </h3>
 
     {{ body }}
 </div>

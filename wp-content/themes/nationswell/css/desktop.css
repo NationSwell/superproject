@@ -3194,8 +3194,18 @@ hr {
 /* line 423, ../scss/partials/base/_story.scss */
 .list-item .list-item-heading {
   margin: 0 0 1.5rem;
+  display: table;
 }
 /* line 427, ../scss/partials/base/_story.scss */
+.list-item .list-item-heading .list-item-heading-number {
+  display: table-cell;
+}
+/* line 431, ../scss/partials/base/_story.scss */
+.list-item .list-item-heading .list-item-heading-text {
+  vertical-align: top;
+  display: table-cell;
+}
+/* line 437, ../scss/partials/base/_story.scss */
 .list-item .list-item-rank {
   display: inline-block;
   background: #fc3b40;
@@ -3206,7 +3216,7 @@ hr {
 }
 
 /* Elastic video */
-/* line 438, ../scss/partials/base/_story.scss */
+/* line 448, ../scss/partials/base/_story.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -3214,7 +3224,7 @@ hr {
   height: 0;
   overflow: hidden;
 }
-/* line 445, ../scss/partials/base/_story.scss */
+/* line 455, ../scss/partials/base/_story.scss */
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -3226,12 +3236,12 @@ hr {
 }
 
 /* sticky */
-/* line 457, ../scss/partials/base/_story.scss */
+/* line 467, ../scss/partials/base/_story.scss */
 .story__sticky {
   display: block;
 }
 
-/* line 461, ../scss/partials/base/_story.scss */
+/* line 471, ../scss/partials/base/_story.scss */
 .sticky-take-action {
   background-color: #003046;
   /* pragmatic, for z-index and reasonable vert-centering */
@@ -3242,12 +3252,12 @@ hr {
   width: 100%;
 }
 
-/* line 471, ../scss/partials/base/_story.scss */
+/* line 481, ../scss/partials/base/_story.scss */
 .sticky-take-action__heading {
   position: relative;
 }
 
-/* line 475, ../scss/partials/base/_story.scss */
+/* line 485, ../scss/partials/base/_story.scss */
 .sticky-take-action__action {
   position: relative;
   color: #fff;
@@ -3256,58 +3266,58 @@ hr {
 }
 
 /* tags */
-/* line 483, ../scss/partials/base/_story.scss */
+/* line 493, ../scss/partials/base/_story.scss */
 .story__tags {
   border-bottom: 3px solid #eeeeee;
 }
-/* line 487, ../scss/partials/base/_story.scss */
+/* line 497, ../scss/partials/base/_story.scss */
 .story__tags .tags-list:before {
   content: 'View more NationSwell stories in:';
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
   vertical-align: middle;
 }
-/* line 494, ../scss/partials/base/_story.scss */
+/* line 504, ../scss/partials/base/_story.scss */
 .story__tags .tags-list li {
   display: inline-block;
 }
 
-/* line 501, ../scss/partials/base/_story.scss */
+/* line 511, ../scss/partials/base/_story.scss */
 .story__social {
   display: block;
 }
 
-/* line 507, ../scss/partials/base/_story.scss */
+/* line 517, ../scss/partials/base/_story.scss */
 .take-action__social_back {
   font-family: "Gudea", Arial, sans-serif;
 }
 
-/* line 511, ../scss/partials/base/_story.scss */
+/* line 521, ../scss/partials/base/_story.scss */
 .module.take-action {
   /* tweet politician take action */
 }
-/* line 512, ../scss/partials/base/_story.scss */
+/* line 522, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__heading {
   text-align: center;
 }
-/* line 516, ../scss/partials/base/_story.scss */
+/* line 526, ../scss/partials/base/_story.scss */
 .module.take-action a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 520, ../scss/partials/base/_story.scss */
+/* line 530, ../scss/partials/base/_story.scss */
 .module.take-action a:before {
   color: #fff;
 }
-/* line 524, ../scss/partials/base/_story.scss */
+/* line 534, ../scss/partials/base/_story.scss */
 .module.take-action a:hover {
   color: #fc3b40;
 }
-/* line 529, ../scss/partials/base/_story.scss */
+/* line 539, ../scss/partials/base/_story.scss */
 .module.take-action .btn.btn--solid {
   color: #fff;
 }
-/* line 533, ../scss/partials/base/_story.scss */
+/* line 543, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__inner {
   overflow-y: scroll;
   padding: 0 1.2rem;
@@ -3315,11 +3325,11 @@ hr {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 540, ../scss/partials/base/_story.scss */
+/* line 550, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__full {
   width: 100%;
 }
-/* line 544, ../scss/partials/base/_story.scss */
+/* line 554, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__tab {
   opacity: 1;
   overflow: hidden;
@@ -3327,31 +3337,31 @@ hr {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 550, ../scss/partials/base/_story.scss */
+/* line 560, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__tab.is-hidden {
   opacity: 0;
 }
-/* line 556, ../scss/partials/base/_story.scss */
+/* line 566, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__thank-you p {
   text-align: center;
 }
-/* line 561, ../scss/partials/base/_story.scss */
+/* line 571, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__img {
   display: block;
   width: 100%;
   max-width: 38rem;
   height: auto;
 }
-/* line 568, ../scss/partials/base/_story.scss */
+/* line 578, ../scss/partials/base/_story.scss */
 .module.take-action .take-action__rally {
   width: auto;
   max-width: 100%;
 }
-/* line 573, ../scss/partials/base/_story.scss */
+/* line 583, ../scss/partials/base/_story.scss */
 .module.take-action p {
   color: #2d2d2d;
 }
-/* line 577, ../scss/partials/base/_story.scss */
+/* line 587, ../scss/partials/base/_story.scss */
 .module.take-action small {
   color: #7e7e7e;
   display: block;
@@ -3360,11 +3370,11 @@ hr {
   overflow: hidden;
   line-height: 1.56;
 }
-/* line 586, ../scss/partials/base/_story.scss */
+/* line 596, ../scss/partials/base/_story.scss */
 .module.take-action strong {
   font-weight: 700;
 }
-/* line 590, ../scss/partials/base/_story.scss */
+/* line 600, ../scss/partials/base/_story.scss */
 .module.take-action em {
   color: #7e7e7e;
   font-family: "Gudea", Arial, sans-serif;
@@ -3372,17 +3382,17 @@ hr {
   font-style: italic;
   line-height: 1.56;
 }
-/* line 598, ../scss/partials/base/_story.scss */
+/* line 608, ../scss/partials/base/_story.scss */
 .module.take-action .btn-container {
   background-color: #dbdbdb;
   padding-bottom: 1.8rem;
   margin-top: 2.8rem;
 }
-/* line 606, ../scss/partials/base/_story.scss */
+/* line 616, ../scss/partials/base/_story.scss */
 .module.take-action #tweet-a-politician-container {
   display: none;
 }
-/* line 611, ../scss/partials/base/_story.scss */
+/* line 621, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__politicians .btn--twitter {
   word-break: break-all;
   word-break: break-word;
@@ -3391,7 +3401,7 @@ hr {
   -ms-hyphens: auto;
   hyphens: auto;
 }
-/* line 621, ../scss/partials/base/_story.scss */
+/* line 631, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message {
   text-align: center;
   font-family: "Gudea", Arial, sans-serif;
@@ -3404,7 +3414,7 @@ hr {
   display: block;
   width: 100%;
 }
-/* line 633, ../scss/partials/base/_story.scss */
+/* line 643, ../scss/partials/base/_story.scss */
 .module.take-action .tweet-politician__message:before {
   color: #2fb8ed;
   font-family: 'icons';
@@ -3412,40 +3422,40 @@ hr {
   vertical-align: middle;
   margin-right: 1.2rem;
 }
-/* line 642, ../scss/partials/base/_story.scss */
+/* line 652, ../scss/partials/base/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 3rem 4.4rem;
 }
-/* line 646, ../scss/partials/base/_story.scss */
+/* line 656, ../scss/partials/base/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 651, ../scss/partials/base/_story.scss */
+/* line 661, ../scss/partials/base/_story.scss */
 .module.take-action .politician__photo {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   display: inline-block;
 }
-/* line 658, ../scss/partials/base/_story.scss */
+/* line 668, ../scss/partials/base/_story.scss */
 .module.take-action .politician__information {
   display: inline-block;
 }
-/* line 665, ../scss/partials/base/_story.scss */
+/* line 675, ../scss/partials/base/_story.scss */
 .module.take-action .politician__office {
   display: block;
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* facebook comments */
-/* line 672, ../scss/partials/base/_story.scss */
+/* line 682, ../scss/partials/base/_story.scss */
 .fb-comments {
   display: block;
   margin-bottom: 7.2rem;
 }
 
-/* line 677, ../scss/partials/base/_story.scss */
+/* line 687, ../scss/partials/base/_story.scss */
 .fb-comments,
 .fb-comments span,
 .fb-comments iframe[style] {

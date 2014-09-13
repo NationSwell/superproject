@@ -422,6 +422,16 @@
 
   .list-item-heading {
     margin: 0 0 1.5rem;
+    display: table;
+
+    .list-item-heading-number {
+      display: table-cell;
+    }
+
+    .list-item-heading-text {
+      vertical-align: top;
+      display: table-cell;
+    }
   }
 
   .list-item-rank {
