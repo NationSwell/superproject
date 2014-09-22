@@ -133,3 +133,10 @@
     @include span-columns(3 of 6);
   }
 }
+
+// photo-essay column width
+.photo-essay__main-column {
+  display:block;
+  float:none;
+  margin-right: 17%;
+}

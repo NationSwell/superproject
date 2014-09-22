@@ -290,3 +290,10 @@
   max-width: 41.5rem;
   margin-top: 0;
 }
+
+// photo-essay column width
+.photo-essay__main-column {
+  display:block;
+  float:none;
+  margin-right: flex-gutter(container-span(6));
+}
