@@ -1,0 +1,18 @@
+var d = new Date();
+var month = d.getMonth()+1;
+var day = d.getDate();
+var year = d.getFullYear()-2000;
+
+$(document).ready(function() {
+	$("#mic").click(function() {
+		$("#outputurl").val($("#inputurl").val() + "?utm_source=nationswell&utm_medium=social");
+	});
+	
+	$("#takepart").click(function() {
+		$("#outputurl").val($("#inputurl").val() + "?cmpid=tp-ptnr-nationswell");
+	});
+
+	$("#buttonrow").click(function() {
+		$("#outputurl").select();
+	});
+});
