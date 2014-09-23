@@ -3897,7 +3897,7 @@ hr {
   display: block;
   float: left;
   margin-right: 2.5%;
-  width: 88.83333%;
+  width: 88%;
 }
 /* line 113, ../scss/partials/desktop/_grid.scss */
 .multimedia .credit {
@@ -3916,9 +3916,10 @@ hr {
   position: absolute;
   right: 0;
   top: 0;
+  display: inline-block;
 }
 
-/* line 127, ../scss/partials/desktop/_grid.scss */
+/* line 128, ../scss/partials/desktop/_grid.scss */
 .story__social .btn--bar {
   display: block;
   float: left;
@@ -3930,7 +3931,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 134, ../scss/partials/desktop/_grid.scss */
+/* line 135, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list {
   display: block;
   float: left;
@@ -3941,7 +3942,7 @@ hr {
 .read-next .story-list:last-child {
   margin-right: 0;
 }
-/* line 137, ../scss/partials/desktop/_grid.scss */
+/* line 138, ../scss/partials/desktop/_grid.scss */
 .read-next .story-list li {
   display: block;
   float: left;
@@ -3953,7 +3954,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 145, ../scss/partials/desktop/_grid.scss */
+/* line 146, ../scss/partials/desktop/_grid.scss */
 .prev-next li {
   display: block;
   float: left;
@@ -3965,7 +3966,7 @@ hr {
   margin-right: 0;
 }
 
-/* line 151, ../scss/partials/desktop/_grid.scss */
+/* line 152, ../scss/partials/desktop/_grid.scss */
 .photo-essay__main-column {
   display: block;
   float: none;

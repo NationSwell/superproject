@@ -31,3 +31,7 @@ if ( isset($_COOKIE["subscribed"] )) {
 }
 
 Timber::render($is_photo_essay ? 'photo-essay.twig' : array('single-' . $post->post_type . '.twig', 'single.twig'), $context);
+
+error_log("PHOTO ESSAY: " . $is_photo_essay);
+
+error_log("PHOTO ESSAY CONTEXT: " . $context[photo-essay]);
