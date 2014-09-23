@@ -112,6 +112,14 @@
 
       .photo-essay-hero-information__credit {
         color: $ns_navy4;
+        width: 100%;
+        text-align: right;
+        display: inline-block;
+        padding-right: 17%;
+      }
+
+      .photo-essay-hero-information__credit-label {
+        font-weight:bold;
       }
     }
   }

@@ -15,7 +15,7 @@
                         <div class="container container--flex">
                             <div class="hero-information__content">
                                 {% if item.caption is not empty %}<p class="photo-essay-hero-information__caption">{{ item.caption }}</p>{% endif %}
-                                {% if item.credit is not empty %}<span class="photo-essay-hero-information__credit">{{ item.credit }}</span>{% endif %}
+                                {% if item.credit is not empty %}<span class="photo-essay-hero-information__credit"><span class="photo-essay-hero-information__credit-label">Credit:</span> {{ item.credit }} </span>{% endif %}
                             </div>
                         </div>
                     </div>
