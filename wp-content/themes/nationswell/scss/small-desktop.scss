@@ -248,6 +248,15 @@
   float: right;
 }
 
+.hero .hero-information .photo-essay-hero-information__caption {
+  margin-left: 0;
+  display:none;
+}
+
+.hero .hero-information .photo-essay-hero-information__credit {
+  float: right;
+}
+
 .river {
   .story-teases {
     -webkit-box-flex: 1;

@@ -16,6 +16,10 @@
     }
   }
 
+  &.hero-photo-essay-image {
+    display:none;
+  }
+
   &.hero--image,
   &.hero--video {
 
@@ -56,6 +60,14 @@
       }
 
       .hero-information__credit {
+        color: $ns_navy4;
+      }
+
+      .photo-essay-hero-information__caption {
+        color: $ns_navy2;
+      }
+
+      .photo-essay-hero-information__credit {
         color: $ns_navy4;
       }
     }
