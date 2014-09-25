@@ -64,6 +64,15 @@
   float: right;
 }
 
+.hero .hero-information .photo-essay-hero-information__caption {
+  margin-left: 0;
+  display:none;
+}
+
+.hero .hero-information .photo-essay-hero-information__credit {
+  float: right;
+}
+
 .river {
   .story-teases {
     -webkit-box-flex: 1;
@@ -94,4 +103,11 @@
   right: 0;
   max-width: 41.5rem;
   margin-top: 0;
+}
+
+// photo-essay column width
+.photo-essay__main-column {
+  display:block;
+  float:none;
+  margin-right: flex-gutter(container-span(6));
 }
