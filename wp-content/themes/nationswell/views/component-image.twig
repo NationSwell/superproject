@@ -6,8 +6,16 @@
         <img src="{{ image.get_src|resize(800, 0) }}" alt="{{ alt_text }}">
     </div>
 
+        {% if photo-essay == true %}
+    <figcaption class="cf">
+        {% if caption is not empty %}<span class="photo-essay-caption">{{ caption }}</span>{% endif %}
+        {% if credit is not empty %}<span class="photo-essay-credit">{{ credit }}</span>{% endif %}
+    </figcaption>
+        {% else %}
     <figcaption class="cf">
         {% if caption is not empty %}<span class="caption">{{ caption }}</span>{% endif %}
         {% if credit is not empty %}<span class="credit">{{ credit }}</span>{% endif %}
     </figcaption>
+       {% endif %}
+
 </figure>

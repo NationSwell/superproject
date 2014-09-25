@@ -101,11 +101,25 @@
     + .credit {
       @include shift(0);
     }
+
+    .photo-essay-caption {
+      display: block;
+      float: left;
+      margin-right: 2.5%;
+      width: 88%;
+    }
   }
 
   .credit {
     @include span-columns(2 of 6);
     @include shift(4);
+  }
+
+  .photo-essay-credit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display:inline-block;
   }
 }
 
@@ -132,4 +146,11 @@
   li {
     @include span-columns(3 of 6);
   }
+}
+
+// photo-essay column width
+.photo-essay__main-column {
+  display:block;
+  float:none;
+  margin-right: 17%;
 }

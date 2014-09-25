@@ -216,43 +216,61 @@
   float: right;
 }
 
-/* line 252, ../scss/small-desktop.scss */
+/* line 251, ../scss/small-desktop.scss */
+.hero .hero-information .photo-essay-hero-information__caption {
+  margin-left: 0;
+  display: none;
+}
+
+/* line 256, ../scss/small-desktop.scss */
+.hero .hero-information .photo-essay-hero-information__credit {
+  float: right;
+}
+
+/* line 261, ../scss/small-desktop.scss */
 .river .story-teases {
   -webkit-box-flex: 1;
   width: auto;
   min-height: 25px;
 }
-/* line 258, ../scss/small-desktop.scss */
+/* line 267, ../scss/small-desktop.scss */
 .river .story-teases:last-child {
   margin-right: 1.23457%;
 }
-/* line 265, ../scss/small-desktop.scss */
+/* line 274, ../scss/small-desktop.scss */
 .river.river--one-col .story-teases .story__feature {
   width: 50%;
 }
 
-/* line 272, ../scss/small-desktop.scss */
+/* line 281, ../scss/small-desktop.scss */
 .module.module--list.module--horizontal .story-list li {
   margin-right: 3.82%;
 }
 
-/* line 276, ../scss/small-desktop.scss */
+/* line 285, ../scss/small-desktop.scss */
 .author__a {
   float: none;
 }
 
-/* line 280, ../scss/small-desktop.scss */
+/* line 289, ../scss/small-desktop.scss */
 .author__b {
   margin-top: 2.2rem;
   padding-left: 0;
   text-align: center;
 }
 
-/* line 286, ../scss/small-desktop.scss */
+/* line 295, ../scss/small-desktop.scss */
 .footer-links {
   position: absolute;
   bottom: 3rem;
   right: 0;
   max-width: 41.5rem;
   margin-top: 0;
+}
+
+/* line 304, ../scss/small-desktop.scss */
+.photo-essay__main-column {
+  display: block;
+  float: none;
+  margin-right: flex-gutter(container-span(6));
 }

@@ -177,6 +177,15 @@
       overflow: hidden;
     }
 
+    .photo-essay-hero-information__caption {
+      display:none;
+    }
+    .photo-essay-hero-information__credit {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
     &.is-open {
       background-color: $ns_navy2;
       padding: 1.6rem 0;
@@ -222,9 +231,21 @@
     color: $ns_navy5;
     font-family: $gudea;
     text-align: right;
+
+    &:hover {
+    }
+
   }
 
-  &:hover {}
+  .photo-essay-hero-information__credit {
+    color: $ns_navy5;
+    font-family: $gudea;
+    text-align: right;
+
+    &:hover {
+    }
+  }
+
 }
 
 .story__container {

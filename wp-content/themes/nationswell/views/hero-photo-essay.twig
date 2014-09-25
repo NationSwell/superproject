@@ -1,0 +1,107 @@
+{# image hero #}
+{% if post.story_header|length == 1 %}
+    {% set item = post.story_header[0] %}
+    {% if item.type == 'image' %}
+        <div class="hero hero--story hero-photo-essay-image {% if post.hero_type == 'cover' %} hero--cover {% endif %}" {% if post.hero_type != 'small' %} style="background-image: url({{ item.url|resize(1300, 600) }});" {% endif %}>
+
+            {% if post.hero_type == 'small' %}
+            <img src="{{ item.url|resize(800) }}" alt="{{ item.alt }}"/>
+            {% endif %}
+
+            {% if item.caption or item.credit %}
+                <div class="hero-information">
+                    <span class="icon icon_information hero-information__toggle z1"></span>
+                    <div class="hero-information__outer">
+                        <div class="container container--flex">
+                            <div class="hero-information__content">
+                                {% if item.caption is not empty %}<p class="photo-essay-hero-information__caption">{{ item.caption }}</p>{% endif %}
+                                {% if item.credit is not empty %}<span class="photo-essay-hero-information__credit"><span class="photo-essay-hero-information__credit-label">Credit:</span> {{ item.credit }} </span>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+    {% elseif item.type == 'video' %}
+        {# video hero #}
+        <div class="hero hero--story hero--video {% if post.hero_type == 'cover' %} hero--cover {% endif %}">
+            <div class="container">
+                <div class="video-container hero--video__container">
+                    {% if item.video.oEmbed %}
+                        {{ item.video.oEmbed }}
+                    {% else %}
+                        <iframe class="ytplayer" type="text/html" src="{{ item.video.url }}" frameborder="0"></iframe>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="hero-information">
+                <div class="hero-information__outer">
+                    <div class="container container--flex">
+                        <div class="hero-information__content">
+                            {% if item.caption is not empty %}<p class="hero-information__caption">{{ item.caption }}</p>{% endif %}
+                            {% if item.credit is not empty %}<span class="hero-information__credit">{{ item.credit }}</span>{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% elseif post.story_header|length > 1 %}
+    {# carousel hero #}
+    <div class="hero hero--story hero--carousel" data-module='{"name": "carousel:hero"}'>
+        <div class="carousel carousel--full-width carousel--peek mobile-carousel mobile-carousel--single">
+            <ul class="carousel__items">
+                {% for  item in post.story_header %}
+                <li class="carousel-item"
+                    {% if item.caption|length > 0 %}data-item-caption="{{ item.caption|e('html_attr') }}"{% endif %}
+                    {% if item.credit|length > 0 %}data-item-credit="{{ item.credit|e('html_attr') }}"{% endif %}>
+
+                    {% if item.type == 'image' %}
+                        <div class="carousel-item__content">
+                            <div class="carousel--peek__image" style="background-image: url({{ item.url|resize(1300, 600) }});"></div>
+                        </div>
+                    {% endif %}
+
+                    {% if item.type == 'video' %}
+                        <div class="carousel-item__content">
+                            {% if item.video.oEmbed %}
+                                {{ item.video.oEmbed }}
+                            {% else %}
+                                <iframe class="ytplayer" type="text/html" src="{{ item.video.url }}" frameborder="0"></iframe>
+                            {% endif %}
+                        </div>
+
+                        <div class="carousel-item__overlay"></div>
+                    {% endif %}
+
+                </li>
+                {% endfor %}
+            </ul>
+
+            <ul class="carousel__controls">
+                <li class="carousel__control carousel__control--prev">
+                    <a class="icon icon_arrow-circle-left" data-track='{"action": "previous"}'></a>
+                </li>
+
+                <li class="carousel__control carousel__control--next">
+                    <a class="icon icon_arrow-circle-right" data-track='{"action": "next"}'></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero-information">
+            <span class="hero-information__toggle"></span>
+
+            <div class="hero-information__outer">
+                <div class="container container--flex">
+                    <div class="hero-information__content">
+                        {% if post.story_header[0].caption is not empty %}<p class="hero-information__caption">{{ post.story_header[0].caption }}</p>{% endif %}
+                        {% if post.story_header[0].credit is not empty %}<span class="hero-information__credit">{{ post.story_header[0].credit }}</span>{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%  endif %}
