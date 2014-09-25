@@ -105,7 +105,7 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: '**/*.scss',
-                tasks: ['compass', 'bumpVersion']
+                tasks: ['compass:dev', 'bumpVersion']
             },
             icons: {
                 files: ['icons/*.svg'],
@@ -136,7 +136,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-twig');
 
     grunt.registerTask('base', ['webfont', 'twig', 'concat', 'uglify', 'bumpVersion']);
-    grunt.registerTask('dev', ['base', 'compass:dev']);
+    grunt.registerTask('dev', ['base', 'compass:dev', 'watch']);
     grunt.registerTask('prod', ['base', 'compass:prod']);
     grunt.registerTask('default', ['dev']);
 
