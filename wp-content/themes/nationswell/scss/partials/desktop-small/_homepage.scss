@@ -1,0 +1,51 @@
+/**
+ * homepage
+ */
+
+/* hero */
+.hero--homepage {
+  &.hero--grid {
+    .hero__entry {
+      &.hero__entry--1 {
+        &:before {
+          margin-right: 2px;
+        }
+
+        .story__hed {
+          margin-bottom: 3.4rem;
+        }
+
+        .support-cause--hero {
+          margin-bottom: 3.2rem;
+        }
+      }
+
+      &.hero__entry--2 {
+        &.hero__entry--2 {
+          &:before {
+            margin-bottom: 2px;
+          }
+        }
+      }
+
+      .story--hero {
+        padding: 2.4rem 4.4rem;
+      }
+    }
+  }
+}
+
+/* river */
+.river--one-col {
+  .story-teases {
+    .story--tease {
+      &:hover {
+        background-color: transparent;
+        box-shadow: none;
+      }
+      .support-cause {
+        display: none;
+      }
+    }
+  }
+}

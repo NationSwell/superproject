@@ -1,0 +1,13 @@
+@include breakpoint($tablet) {
+  @media only screen and (orientation: landscape) {
+    html {
+      font-size: 8px;
+    }
+  }
+
+  @media only screen and (orientation: portrait) {
+    html {
+      font-size: 8px;
+    }
+  }
+}

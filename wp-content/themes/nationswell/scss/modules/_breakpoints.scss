@@ -1,0 +1,6 @@
+// Breakpoints
+$desktop: (min-width 768px);
+$desktop-small: (min-width 768px) (max-width 1279px);
+$mobile: (max-width 767px) (max-width 1080px) (-webkit-min-device-pixel-ratio 3);
+$tablet: (min-device-width 768px) (max-device-width 1024px) (-webkit-max-device-pixel-ratio 1);
+$tablet-retina: (min-device-width 768px) (max-device-width 1024px) (-webkit-min-device-pixel-ratio 2);

@@ -1,0 +1,30 @@
+/**
+ * story
+ */
+
+/* sticky */
+.story__sticky-container {
+  width: 14.6rem;
+}
+
+// take action module
+.module.take-action {
+  .take-action__a,
+  .take-action__b {
+    width: 100%;
+    float: none;
+    padding: none;
+  }
+
+  .take-action__a {
+    margin-bottom: 1.2rem;
+  }
+
+  .module.take-action .take-action__a + .take-action__b {
+    padding-left: 3.4rem;
+  }
+
+  .politician__information {
+    max-width: 22rem;
+  }
+}
