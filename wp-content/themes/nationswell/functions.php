@@ -162,6 +162,7 @@ function register_acf_fields()
     include_once('lib/fields/content_type.php');
     include_once('lib/fields/hero.php');
     include_once('lib/fields/story_content.php');
+    include_once('lib/fields/story_tease_display.php');
     include_once('lib/fields/call_to_action.php');
     include_once('lib/fields/call_to_action_link.php');
     include_once('lib/fields/ns_series_link.php');

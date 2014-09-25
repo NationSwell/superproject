@@ -113,22 +113,26 @@
 .hero--homepage.hero--grid .hero__entry .story--hero {
   padding: 2.4rem 4.4rem;
 }
+/* line 34, ../scss/partials/desktop-small/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry .story--hero .story_dek {
+  font-size: 1.8rem;
+}
 
 /* river */
-/* line 41, ../scss/partials/desktop-small/_homepage.scss */
+/* line 45, ../scss/partials/desktop-small/_homepage.scss */
 .river--one-col .story-teases .story--tease {
   margin-bottom: 0rem;
 }
-/* line 45, ../scss/partials/desktop-small/_homepage.scss */
+/* line 49, ../scss/partials/desktop-small/_homepage.scss */
 .river--one-col .story-teases .story--tease:last-child {
   margin-bottom: 3.4rem;
 }
-/* line 49, ../scss/partials/desktop-small/_homepage.scss */
+/* line 53, ../scss/partials/desktop-small/_homepage.scss */
 .river--one-col .story-teases .story--tease:hover {
   background-color: transparent;
   box-shadow: none;
 }
-/* line 53, ../scss/partials/desktop-small/_homepage.scss */
+/* line 57, ../scss/partials/desktop-small/_homepage.scss */
 .river--one-col .story-teases .story--tease .support-cause {
   display: none;
 }

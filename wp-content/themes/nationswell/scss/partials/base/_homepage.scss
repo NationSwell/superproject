@@ -56,6 +56,12 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+
+        .story_dek {
+          font-family: $gudea;
+          color: $white;
+          line-height: 1.4;
+        }
       }
     }
   }

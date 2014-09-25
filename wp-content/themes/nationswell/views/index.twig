@@ -15,6 +15,10 @@
                         {% if loop.index == 1 and post.thumbnail.credit is not empty %}
                             <span class="credit">{{ post.thumbnail.credit }}</span>
                         {% endif %}
+
+                        {% if post.show_dek_on_feature_tease != false %}
+                            <span class="story_dek">{{ post.tout_dek_text }}</span>
+                        {% endif %}
                     </article>
             </div>
         {% endfor %}

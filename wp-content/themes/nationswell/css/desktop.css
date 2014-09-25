@@ -2728,40 +2728,46 @@ hr {
   bottom: 0;
   width: 100%;
 }
+/* line 60, ../scss/partials/base/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry .story--hero .story_dek {
+  font-family: "Gudea", Arial, sans-serif;
+  color: #fff;
+  line-height: 1.4;
+}
 
-/* line 64, ../scss/partials/base/_homepage.scss */
+/* line 70, ../scss/partials/base/_homepage.scss */
 .support-cause--hero {
   display: inline-block;
 }
-/* line 67, ../scss/partials/base/_homepage.scss */
+/* line 73, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__heading {
   color: #fff;
 }
-/* line 71, ../scss/partials/base/_homepage.scss */
+/* line 77, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__data {
   color: #fff;
 }
-/* line 75, ../scss/partials/base/_homepage.scss */
+/* line 81, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__label {
   color: #fff;
 }
-/* line 79, ../scss/partials/base/_homepage.scss */
+/* line 85, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__message {
   color: #fff;
 }
-/* line 83, ../scss/partials/base/_homepage.scss */
+/* line 89, ../scss/partials/base/_homepage.scss */
 .support-cause--hero .support-cause__separator {
   color: #fff;
   margin: 0;
 }
 
 /* river */
-/* line 93, ../scss/partials/base/_homepage.scss */
+/* line 99, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease:hover {
   background-color: #f6f6f6;
   box-shadow: 2rem 0 0 #f6f6f6, -2rem 0 0 #f6f6f6;
 }
-/* line 98, ../scss/partials/base/_homepage.scss */
+/* line 104, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story--tease .sponsor {
   background-color: #0098d8;
   color: #ddedf8;
@@ -2769,15 +2775,15 @@ hr {
   text-align: left;
   display: inline-block;
 }
-/* line 107, ../scss/partials/base/_homepage.scss */
+/* line 113, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature {
   position: relative;
 }
-/* line 110, ../scss/partials/base/_homepage.scss */
+/* line 116, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__feature img {
   display: block;
 }
-/* line 116, ../scss/partials/base/_homepage.scss */
+/* line 122, ../scss/partials/base/_homepage.scss */
 .river--one-col .story-teases .story__header {
   overflow: hidden;
 }
@@ -5315,40 +5321,44 @@ hr {
 .hero--homepage.hero--grid .hero__entry .story--hero {
   padding: 2.4rem 4.4rem;
 }
+/* line 72, ../scss/partials/desktop/_homepage.scss */
+.hero--homepage.hero--grid .hero__entry .story--hero .story_dek {
+  font-size: 1.8rem;
+}
 
-/* line 79, ../scss/partials/desktop/_homepage.scss */
+/* line 83, ../scss/partials/desktop/_homepage.scss */
 .support-cause--hero .support-cause__separator {
   font-size: 3.8rem;
   line-height: 2.5rem;
 }
 
 /* river */
-/* line 88, ../scss/partials/desktop/_homepage.scss */
+/* line 92, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story--tease {
   margin-bottom: 0rem;
 }
-/* line 92, ../scss/partials/desktop/_homepage.scss */
+/* line 96, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story--tease:last-child {
   margin-bottom: 3.4rem;
 }
-/* line 96, ../scss/partials/desktop/_homepage.scss */
+/* line 100, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story--tease .sponsor {
   padding: 0.8rem 1.6rem;
   left: -1rem;
   bottom: 4.6rem;
 }
-/* line 103, ../scss/partials/desktop/_homepage.scss */
+/* line 107, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story__feature {
   float: left;
   width: 37.4rem;
   margin-right: 3.8rem;
 }
-/* line 111, ../scss/partials/desktop/_homepage.scss */
+/* line 115, ../scss/partials/desktop/_homepage.scss */
 .river--one-col .story-teases .story__hed {
   margin-bottom: 1.2rem;
 }
 
-/* line 117, ../scss/partials/desktop/_homepage.scss */
+/* line 121, ../scss/partials/desktop/_homepage.scss */
 .home .carousel {
   margin-top: 2.8rem;
   margin-bottom: 5rem;
