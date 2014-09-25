@@ -39,6 +39,13 @@
 .river--one-col {
   .story-teases {
     .story--tease {
+
+      margin-bottom: 0rem;
+
+      &:last-child {
+        margin-bottom: 3.4rem;
+      }
+
       &:hover {
         background-color: transparent;
         box-shadow: none;

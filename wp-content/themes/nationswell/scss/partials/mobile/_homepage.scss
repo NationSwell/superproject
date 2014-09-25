@@ -59,6 +59,13 @@
     margin-bottom: 2.8rem;
 
     .story--tease {
+
+      margin-bottom: 0rem;
+
+      &:last-child {
+        margin-bottom: 3.4rem;
+      }
+
       &:hover {
         .story__feature {
           &:before {
