@@ -77,3 +77,11 @@ location ~ ^/static/\d+/(js|fonts|img|css)/(.*)$ {
 ````
 
 22. Restart nginx `sudo /etc/init.d/nginx restart`
+
+23. Install and Activate Wordpress Plugins and NationSwell theme 
+
+```
+cd /vagrant/www/wordpress-default`
+chmod +x init.sh
+./init.sh
+```
