@@ -21,9 +21,8 @@ h1 {
 #inputurl {
 	width:90%;
 	font-size:12px;
-	padding-top:4px;
-	padding-bottom:4px;
 	border:0px;
+    padding:8px;
 }
 #buttonrow
 {

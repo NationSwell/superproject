@@ -4,6 +4,7 @@ var day = d.getDate();
 var year = d.getFullYear()-2000;
 
 $(document).ready(function() {
+    $("#inputurl").select();
 	$("#mic").click(function() {
 		$("#outputurl").val($("#inputurl").val() + "?utm_source=nationswell&utm_medium=social");
 	});

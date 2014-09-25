@@ -5,6 +5,7 @@
 	var year = d.getFullYear()-2000;
 	
 	$(document).ready(function() {
+        $("#inputurl").select();
 		$("#facebook").click(function() {
 			$("#outputurl").val($("#inputurl").val() + "?utm_source=facebook&utm_medium=nsfbpage");
 		});
