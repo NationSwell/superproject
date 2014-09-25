@@ -140,6 +140,10 @@
   display: inline-block;
 
   -webkit-font-smoothing: antialiased;
+
+  .trending-topics__list li:nth-child(-n+4) & {
+      font-weight: 700;
+  }
 }
 
 .btn-nav-subscribe {
