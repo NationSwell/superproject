@@ -5,14 +5,7 @@
     <div class="hero hero--homepage hero--grid mobile-carousel mobile-carousel--single" data-module='{"name": "featured"}'>
         {% for post in featured %}
             <div class="hero__entry hero__entry--{{ loop.index }}" style="background-image: url({% if post.post_type == "ns_series" %} {{ TimberImage(post.header_image)|resize(1300,600,'center') }} {% else %} {{ post.thumbnail.src|resize(1300,600) }} {% endif %});">
-                    {% if post.content_type in ['video','audio','photo','listory'] %}
-                        <div class="type-indicator-container">
-                            <span class="icon icon_{{ post.content_type }} type-indicator"></span>
-                        </div>
-                    {% endif %}
-                    
                     <article class="story story--hero z1">
-                        {#<span class="rubric">{{ post.category }}</span>#}
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed"><a href="{{ post.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>{{ post.tout_title }}</a></h1>
 
                         {% if post.call_to_action is not empty and post.call_to_action.show_action_stats_on_tout != '0' %}
