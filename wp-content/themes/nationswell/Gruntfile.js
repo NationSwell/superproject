@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'js/build/combined.min.js': 'js/build/combined.js'
+                    'js/build/combined.min.js': '.grunt-cache/combined.js'
                 }
             }
         },
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'js/build/combined.js': [
+                    '.grunt-cache/combined.js': [
                         'js/src/vendor/touche.js',
                         'js/src/vendor/twig.min.js',
                         'js/build/twig-templates.js',
@@ -58,9 +58,30 @@ module.exports = function(grunt) {
             }
         },
         compass: {
-            dist: {
+            dev: {
                 options: {
-                    config: 'config.rb'
+                    bundleExec: true,
+                    cssDir: 'css',
+                    sassDir: 'scss',
+                    imagesDir: 'img',
+                    relativeAssets: true,
+                    generatedImagesPath: 'img',
+                    require: ['breakpoint'],
+                    environment: 'development',
+                    sourcemap: true
+                }
+            },
+            prod: {
+                options: {
+                    bundleExec: true,
+                    cssDir: 'css',
+                    sassDir: 'scss',
+                    imagesDir: 'img',
+                    relativeAssets: true,
+                    generatedImagesPath: 'img',
+                    require: ['breakpoint'],
+                    environment: 'production',
+                    sourcemap: false
                 }
             }
         },
@@ -88,7 +109,7 @@ module.exports = function(grunt) {
             },
             icons: {
                 files: ['icons/*.svg'],
-                tasks: ['icons']
+                tasks: ['default']
             },
             js: {
                 files: ['js/src/*.js', 'js/src/vendor/*.js'],
@@ -114,10 +135,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-twig');
 
-    grunt.registerTask('js', ['twig', 'concat', 'uglify', 'bumpVersion']);
-    grunt.registerTask('default', ['webfont','compass', 'twig', 'js']);
-    grunt.registerTask('icons', ['webfont','compass']);
-    grunt.registerTask('cssjs', ['js','compass']);
+    grunt.registerTask('base', ['webfont', 'twig', 'concat', 'uglify', 'bumpVersion']);
+    grunt.registerTask('dev', ['base', 'compass:dev']);
+    grunt.registerTask('prod', ['base', 'compass:prod']);
+    grunt.registerTask('default', ['dev']);
 
     grunt.task.registerTask('bumpVersion', 'Bump the version number file', function() {
 

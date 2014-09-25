@@ -2,8 +2,10 @@
 .idea
 *.iml
 .sass-cache/
+.grunt-cache
 combined.js
 twig-templates.js
+*.css.map
 
 node_modules
 
