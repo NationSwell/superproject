@@ -17,6 +17,10 @@
 		$("#outreach").click(function() {
 			$("#outputurl").val($("#inputurl").val() + "?utm_source=outreach&utm_campaign=nsO" + month + day + year);
 		});
+
+		$("#newsletter").click(function() {
+			$("#outputurl").val($("#inputurl").val() + "?utm_source=newsletter&utm_campaign=nsD" + month + day + year);
+		});
 		
 		$("#buttonrow").click(function() {
 			$("#outputurl").select();

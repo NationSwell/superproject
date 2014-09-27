@@ -27,6 +27,7 @@ Template Name: UTM Builder
 	<div id="facebook">Facebook</div>
 	<div id="twitter">Twitter</div>
 	<div id="outreach">Outreach</div>
+	<div id="newsletter">Newsletter</div>
 </div>
 <div id="outputrow">
 Your URL:<br>
