@@ -26,6 +26,7 @@ Template Name: Partner UTM Builder
 <div id="buttonrow">Select partner:<br>
     <div id="mic">Mic</div>
     <div id="takepart">TakePart</div>
+    <div id="huffpostimpact">HuffPost Impact</div>
 </div>
 <div id="outputrow">
     Your URL:<br>

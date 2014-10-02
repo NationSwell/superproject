@@ -61,6 +61,26 @@ h1 {
 	cursor:pointer;
 	background-color:#11cFaE;
 }
+
+#huffpostimpact {
+    width:200px;
+    color:##f61784;
+    background-color:#fff;
+    border:2px solid #f61784;
+    display:inline-block;
+    margin:0px;
+    margin-left:10px;
+    margin-right:10px;
+    padding-bottom:10px;
+    padding-top:10px;
+    margin-top:20px;
+}
+#takepart:hover {
+    cursor:pointer;
+    background-color:#fff;
+    border:2px solid #f62794;
+}
+
 #outreach {
 	width:200px;
 	color:#fff;

@@ -13,6 +13,10 @@ $(document).ready(function() {
 		$("#outputurl").val($("#inputurl").val() + "?cmpid=tp-ptnr-nationswell");
 	});
 
+    $("#huffpostimpact").click(function() {
+        $("#outputurl").val($("#inputurl").val() + "?ncid=edlinkushpmg00000068");
+    });
+
 	$("#buttonrow").click(function() {
 		$("#outputurl").select();
 	});
