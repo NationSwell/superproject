@@ -64,15 +64,14 @@ h1 {
 
 #huffpostimpact {
     width:200px;
-    color:##f61784;
+    color:#f61784;
     background-color:#fff;
     border:2px solid #f61784;
     display:inline-block;
     margin:0px;
     margin-left:10px;
     margin-right:10px;
-    padding-bottom:10px;
-    padding-top:10px;
+    padding:10px;
     margin-top:20px;
 }
 #takepart:hover {
