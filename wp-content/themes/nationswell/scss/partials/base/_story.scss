@@ -88,7 +88,7 @@
 
     }
 
-    .photo-essay__main-column & {
+    .widescreen__main-column & {
       padding-bottom: 0;
       height: auto;
       max-height: none;
@@ -136,7 +136,7 @@
         padding: 0 0 56.25%;
       }
 
-      .photo-essay__main-column & {
+      .widescreen__main-column & {
         width: 100%;
         height: auto;
         margin: 0 auto;
@@ -177,10 +177,10 @@
       overflow: hidden;
     }
 
-    .photo-essay-hero-information__caption {
+    .widescreen-hero-information__caption {
       display:none;
     }
-    .photo-essay-hero-information__credit {
+    .widescreen-hero-information__credit {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
@@ -237,7 +237,7 @@
 
   }
 
-  .photo-essay-hero-information__credit {
+  .widescreen-hero-information__credit {
     color: $ns_navy5;
     font-family: $gudea;
     text-align: right;

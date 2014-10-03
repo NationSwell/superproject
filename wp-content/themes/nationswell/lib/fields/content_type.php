@@ -16,7 +16,7 @@ if(function_exists("register_field_group"))
                         'audio' => 'Audio',
                         'photo' => 'Photo',
                         'listory' => 'Listory',
-                        'photoessay' => 'Photo Essay'
+                        'widescreen' => 'Widescreen'
                     ),
                     'default_value' => 'story',
                     'allow_null' => 0,

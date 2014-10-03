@@ -27,7 +27,7 @@
         @include shift(0);
       }
 
-      .photo-essay__main-column & {
+      .widescreen__main-column & {
         @include span-columns(8);
         @include shift(0);
       }
@@ -102,7 +102,7 @@
       @include shift(0);
     }
 
-    .photo-essay-caption {
+    .widescreen-caption {
       display: block;
       float: left;
       margin-right: 2.5%;
@@ -115,7 +115,7 @@
     @include shift(4);
   }
 
-  .photo-essay-credit {
+  .widescreen-credit {
     position: absolute;
     right: 0;
     top: 0;
@@ -148,8 +148,8 @@
   }
 }
 
-// photo-essay column width
-.photo-essay__main-column {
+// widescreen column width
+.widescreen__main-column {
   display:block;
   float:none;
   margin-right: 17%;

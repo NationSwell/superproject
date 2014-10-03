@@ -35,7 +35,7 @@
   padding-left: 2rem;
 }
 
-.photo-essay__main-column {
+.widescreen__main-column {
   -webkit-box-flex: 1;
   width: auto;
   float: none;
@@ -64,12 +64,12 @@
   float: right;
 }
 
-.hero .hero-information .photo-essay-hero-information__caption {
+.hero .hero-information .widescreen-hero-information__caption {
   margin-left: 0;
   display:none;
 }
 
-.hero .hero-information .photo-essay-hero-information__credit {
+.hero .hero-information .widescreen-hero-information__credit {
   float: right;
 }
 
@@ -105,8 +105,8 @@
   margin-top: 0;
 }
 
-// photo-essay column width
-.photo-essay__main-column {
+// widescreen column width
+.widescreen__main-column {
   display:block;
   float:none;
   margin-right: flex-gutter(container-span(6));
