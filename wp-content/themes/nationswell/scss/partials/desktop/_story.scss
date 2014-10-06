@@ -9,7 +9,7 @@
     margin-bottom: 2.2rem;
   }
 
-  .photo-essay__main-column & {
+  .widescreen__main-column & {
     margin-bottom: 2.2rem;
   }
 
@@ -19,14 +19,14 @@
     max-height: none;
   }
 
-  &.hero-photo-essay-image {
+  &.hero-widescreen-image {
     height: auto;
     padding-bottom: 23%;
     max-height: none;
   }
 
   &.hero--image,
-  &.hero-photo-essay-image,
+  &.hero-widescreen-image,
   &.hero--video {
 
     .story__main-column & {
@@ -39,7 +39,7 @@
 
     }
 
-    .photo-essay__main-column & {
+    .widescreen__main-column & {
       padding-bottom: 0;
 
       img {
@@ -68,7 +68,7 @@
 
       }
 
-      .photo-essay__main-column & {
+      .widescreen__main-column & {
         max-height: none;
         min-height: none;
         position: static;
@@ -88,7 +88,7 @@
             background-color: transparent;
           }
 
-          .photo-essay__main-column & {
+          .widescreen__main-column & {
             background-color: transparent;
           }
 
@@ -108,12 +108,12 @@
         color: $ns_navy4;
       }
 
-      .photo-essay-hero-information__caption {
+      .widescreen-hero-information__caption {
         color: $ns_navy2;
         display:none;
       }
 
-      .photo-essay-hero-information__credit {
+      .widescreen-hero-information__credit {
         color: $ns_navy4;
         width: 100%;
         text-align: right;
@@ -121,7 +121,7 @@
         padding-right: 17%;
       }
 
-      .photo-essay-hero-information__credit-label {
+      .widescreen-hero-information__credit-label {
         font-weight:bold;
       }
     }
@@ -168,12 +168,12 @@
     line-height: 2rem;
   }
 
-  .photo-essay-hero-information__caption {
+  .widescreen-hero-information__caption {
     font-size: 1.6rem;
     line-height: 2rem;
   }
 
-  .photo-essay-hero-information__credit {
+  .widescreen-hero-information__credit {
     font-size: 1.4rem;
     line-height: 2rem;
   }
@@ -213,7 +213,7 @@
     overflow: hidden;
   }
 
-  .photo-essay__main-column {
+  .widescreen__main-column {
     overflow: hidden;
   }
 

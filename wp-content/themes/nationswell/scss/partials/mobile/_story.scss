@@ -10,7 +10,7 @@
     }
   }
 
-  &.hero-photo-essay-image {
+  &.hero-widescreen-image {
     display:none;
   }
 
@@ -57,11 +57,11 @@
         color: $ns_navy4;
       }
 
-      .photo-essay-hero-information__caption {
+      .widescreen-hero-information__caption {
         color: $ns_navy2;
       }
 
-      .photo-essay-hero-information__credit {
+      .widescreen-hero-information__credit {
         color: $ns_navy4;
       }
     }
