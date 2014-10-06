@@ -204,7 +204,7 @@ function displayResults(rows) {
 		});
 	bar.append("div")
 		.classed("engnumber",true)
-		.text(function(d) {return d3.round((d.websitectr * 100),2) + "% ctr"})
+		.text(function(d) {return d3.round((d.websitectr * 100),2) + "% ctr (" + d.linkclicks + " clicks)"})
 		.style("display",function(d) {
 			if (d.impressions === "a") {
 				return "none"
