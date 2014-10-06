@@ -2,6 +2,10 @@
  * story
  */
 
+.hero--story {
+  @extend %hero-cover;
+}
+
 /* sticky */
 .story__sticky-container {
   width: 14.6rem;

@@ -1,4 +1,7 @@
 .hero--story {
+
+  @extend %hero-cover;
+
   max-height: 42.6rem;
   margin-bottom: 8.2rem;
 

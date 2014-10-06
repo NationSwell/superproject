@@ -28,6 +28,10 @@ if hash wp 2>/dev/null; then
     echo "Activating NationSwell Theme"
 
     wp theme activate nationswell
+
+    echo "Set Permlinks to Post Name"
+
+    wp rewrite structure '/%postname%/'
 else
     echo >&2 "WP-CLI is required Aborting."
     exit 1;

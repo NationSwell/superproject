@@ -1,12 +1,5 @@
-// Bourbon
-@import "../../bourbon/bourbon";
-@import "../../neat/neat-helpers";
-
 // Grid settings
 $column: 14rem;
 $gutter: 2.4rem;
 $grid-columns: 12;
 $max-width: 120rem;
-
-// Neat
-@import "../../neat/neat";
