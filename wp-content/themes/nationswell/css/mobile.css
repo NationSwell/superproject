@@ -5183,127 +5183,131 @@ body.panel--is-open #page-header .more-stories-toggle {
 .hero--story.hero-widescreen-image {
   display: none;
 }
-/* line 20, ../scss/partials/mobile/_story.scss */
+/* line 16, ../scss/partials/mobile/_story.scss */
+.hero--story.hero-widescreen-image .hero-read {
+  display: none;
+}
+/* line 24, ../scss/partials/mobile/_story.scss */
 .story__main-column .hero--story.hero--image, .story__main-column .hero--story.hero--video {
   height: auto;
 }
-/* line 23, ../scss/partials/mobile/_story.scss */
+/* line 27, ../scss/partials/mobile/_story.scss */
 .story__main-column .hero--story.hero--image img, .story__main-column .hero--story.hero--video img {
   max-width: 100%;
 }
-/* line 29, ../scss/partials/mobile/_story.scss */
+/* line 33, ../scss/partials/mobile/_story.scss */
 .story__main-column .hero--story.hero--image .hero-information .container, .story__main-column .hero--story.hero--video .hero-information .container {
   padding: 0;
 }
-/* line 37, ../scss/partials/mobile/_story.scss */
+/* line 41, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information, .hero--story.hero--video .hero-information {
   background-color: #fff;
   top: 0;
 }
-/* line 42, ../scss/partials/mobile/_story.scss */
+/* line 46, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information.is-long:hover, .hero--story.hero--video .hero-information.is-long:hover {
   background-color: #ccd6da;
 }
-/* line 46, ../scss/partials/mobile/_story.scss */
+/* line 50, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information.is-long.is-open, .hero--story.hero--video .hero-information.is-long.is-open {
   background-color: #fff;
 }
-/* line 52, ../scss/partials/mobile/_story.scss */
+/* line 56, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information .hero-information__caption, .hero--story.hero--video .hero-information .hero-information__caption {
   color: #003046;
 }
-/* line 56, ../scss/partials/mobile/_story.scss */
+/* line 60, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information .hero-information__credit, .hero--story.hero--video .hero-information .hero-information__credit {
   color: #688390;
 }
-/* line 60, ../scss/partials/mobile/_story.scss */
+/* line 64, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information .widescreen-hero-information__caption, .hero--story.hero--video .hero-information .widescreen-hero-information__caption {
   color: #003046;
 }
-/* line 64, ../scss/partials/mobile/_story.scss */
+/* line 68, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--image .hero-information .widescreen-hero-information__credit, .hero--story.hero--video .hero-information .widescreen-hero-information__credit {
   color: #688390;
 }
-/* line 71, ../scss/partials/mobile/_story.scss */
+/* line 75, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--carousel .carousel {
   background-color: #061822;
   height: 42.6rem;
 }
-/* line 76, ../scss/partials/mobile/_story.scss */
+/* line 80, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--carousel .carousel-item {
   height: 42.6rem;
   width: 100%;
 }
-/* line 81, ../scss/partials/mobile/_story.scss */
+/* line 85, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--carousel .carousel--peek__image {
   height: 42.6rem;
   width: 82rem;
 }
-/* line 86, ../scss/partials/mobile/_story.scss */
+/* line 90, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--carousel .carousel__controls {
   display: none;
 }
-/* line 90, ../scss/partials/mobile/_story.scss */
+/* line 94, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--carousel .carousel__pagination {
   bottom: -3.2rem;
 }
-/* line 93, ../scss/partials/mobile/_story.scss */
+/* line 97, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--carousel .carousel__pagination .selected {
   background-color: #0098d8;
 }
-/* line 98, ../scss/partials/mobile/_story.scss */
+/* line 102, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--carousel .hero-imformation {
   padding: 5.6rem 0 2.2rem;
   bottom: 0;
 }
-/* line 105, ../scss/partials/mobile/_story.scss */
+/* line 109, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--video .hero--video__container {
   max-width: 67.8rem;
 }
-/* line 109, ../scss/partials/mobile/_story.scss */
+/* line 113, ../scss/partials/mobile/_story.scss */
 .hero--story.hero--video .hero-information__toggle {
   text-align: left;
 }
 
-/* line 115, ../scss/partials/mobile/_story.scss */
+/* line 119, ../scss/partials/mobile/_story.scss */
 .hero-information {
   position: relative;
   overflow: visible;
   max-height: none;
   padding: 2.2rem 0;
 }
-/* line 123, ../scss/partials/mobile/_story.scss */
+/* line 127, ../scss/partials/mobile/_story.scss */
 .hero-information .hero-information__caption {
   font-size: 2.5rem;
   margin-bottom: 0.8rem;
 }
-/* line 128, ../scss/partials/mobile/_story.scss */
+/* line 132, ../scss/partials/mobile/_story.scss */
 .hero-information .hero-information__credit {
   font-size: 2rem;
 }
 
-/* line 133, ../scss/partials/mobile/_story.scss */
+/* line 137, ../scss/partials/mobile/_story.scss */
 .story__container {
   margin-top: 7.6rem;
 }
-/* line 136, ../scss/partials/mobile/_story.scss */
+/* line 140, ../scss/partials/mobile/_story.scss */
 .story__container .story__meta {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
-/* line 143, ../scss/partials/mobile/_story.scss */
+/* line 147, ../scss/partials/mobile/_story.scss */
 .story__container .story--page > header .story__hed {
   margin-bottom: 4.8rem;
 }
-/* line 147, ../scss/partials/mobile/_story.scss */
+/* line 151, ../scss/partials/mobile/_story.scss */
 .story__container .story--page > header .story__dek {
   margin-bottom: 4.6rem;
 }
-/* line 153, ../scss/partials/mobile/_story.scss */
+/* line 157, ../scss/partials/mobile/_story.scss */
 .story__container .story__content {
   margin-bottom: 12rem;
 }
-/* line 156, ../scss/partials/mobile/_story.scss */
+/* line 160, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p {
   font-size: 3.2rem;
   line-height: 1.32;
@@ -5311,62 +5315,62 @@ body.panel--is-open #page-header .more-stories-toggle {
   -webkit-font-smoothing: antialiased;
   /* drop cap */
 }
-/* line 163, ../scss/partials/mobile/_story.scss */
+/* line 167, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p:first-child:first-letter {
   font-size: 12.5rem;
   margin-right: 2.6rem;
 }
-/* line 168, ../scss/partials/mobile/_story.scss */
+/* line 172, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p a {
   color: #0098d8;
   font-weight: 700;
 }
-/* line 172, ../scss/partials/mobile/_story.scss */
+/* line 176, ../scss/partials/mobile/_story.scss */
 .story__container .story__content p a:hover {
   color: #fc3b40;
 }
-/* line 178, ../scss/partials/mobile/_story.scss */
+/* line 182, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h1 {
   margin-bottom: 3.4rem;
   font-size: 5.4rem;
   padding-bottom: 1.2rem;
 }
-/* line 184, ../scss/partials/mobile/_story.scss */
+/* line 188, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h2 {
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
-/* line 189, ../scss/partials/mobile/_story.scss */
+/* line 193, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h3 {
   font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
-/* line 194, ../scss/partials/mobile/_story.scss */
+/* line 198, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h4 {
   font-size: 2rem;
   margin-bottom: 2.2rem;
 }
-/* line 199, ../scss/partials/mobile/_story.scss */
+/* line 203, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h5 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
-/* line 204, ../scss/partials/mobile/_story.scss */
+/* line 208, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > h6 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 209, ../scss/partials/mobile/_story.scss */
+/* line 213, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ol {
   margin: 7.6rem 0;
   padding-left: 11rem;
 }
-/* line 213, ../scss/partials/mobile/_story.scss */
+/* line 217, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ol li {
   font-size: 3.2rem;
   margin-bottom: 4.2rem;
 }
-/* line 217, ../scss/partials/mobile/_story.scss */
+/* line 221, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ol li:before {
   font-size: 2.4rem;
   width: 4rem;
@@ -5375,197 +5379,197 @@ body.panel--is-open #page-header .more-stories-toggle {
   left: -7.6rem;
   top: -0.4rem;
 }
-/* line 230, ../scss/partials/mobile/_story.scss */
+/* line 234, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ul {
   margin: 7.6rem 0;
   padding-left: 11rem;
 }
-/* line 234, ../scss/partials/mobile/_story.scss */
+/* line 238, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ul li {
   font-size: 3.2rem;
   margin-bottom: 4.2rem;
 }
-/* line 238, ../scss/partials/mobile/_story.scss */
+/* line 242, ../scss/partials/mobile/_story.scss */
 .story__container .story__content > ul li:before {
   font-size: 3.6rem;
   top: 0rem;
   left: -6.6rem;
 }
 
-/* line 248, ../scss/partials/mobile/_story.scss */
+/* line 252, ../scss/partials/mobile/_story.scss */
 .take-action__social_back {
   font-size: 4rem;
   margin-top: 3rem;
 }
 
 /* multimedia */
-/* line 254, ../scss/partials/mobile/_story.scss */
+/* line 258, ../scss/partials/mobile/_story.scss */
 .multimedia {
   margin: 7.6rem 0;
 }
-/* line 257, ../scss/partials/mobile/_story.scss */
+/* line 261, ../scss/partials/mobile/_story.scss */
 .multimedia .multimedia__heading {
   display: inline;
   position: relative;
   left: 2rem;
   line-height: 1.5;
 }
-/* line 264, ../scss/partials/mobile/_story.scss */
+/* line 268, ../scss/partials/mobile/_story.scss */
 .multimedia .multimedia__content {
   margin-top: 3.4rem;
 }
-/* line 268, ../scss/partials/mobile/_story.scss */
+/* line 272, ../scss/partials/mobile/_story.scss */
 .multimedia figcaption {
   margin-top: 2.6rem;
 }
-/* line 273, ../scss/partials/mobile/_story.scss */
+/* line 277, ../scss/partials/mobile/_story.scss */
 .multimedia.multimedia--audio .multimedia__content {
   padding-bottom: 2.2rem;
 }
 
-/* line 279, ../scss/partials/mobile/_story.scss */
+/* line 283, ../scss/partials/mobile/_story.scss */
 .multimedia__heading {
   margin-bottom: 2.4rem;
 }
 
 /* sticky */
-/* line 284, ../scss/partials/mobile/_story.scss */
+/* line 288, ../scss/partials/mobile/_story.scss */
 .story__sticky {
   padding: 0 1rem;
 }
 
-/* line 288, ../scss/partials/mobile/_story.scss */
+/* line 292, ../scss/partials/mobile/_story.scss */
 .story__sticky-container {
   width: 16rem;
 }
 
-/* line 292, ../scss/partials/mobile/_story.scss */
+/* line 296, ../scss/partials/mobile/_story.scss */
 .sticky-social {
   margin-bottom: 5rem;
 }
 
-/* line 296, ../scss/partials/mobile/_story.scss */
+/* line 300, ../scss/partials/mobile/_story.scss */
 .sticky-take-action {
   padding: 1.6rem;
 }
 
-/* line 300, ../scss/partials/mobile/_story.scss */
+/* line 304, ../scss/partials/mobile/_story.scss */
 .sticky-take-action__heading {
   margin-bottom: 0.8rem;
 }
 
-/* line 304, ../scss/partials/mobile/_story.scss */
+/* line 308, ../scss/partials/mobile/_story.scss */
 .sticky-take-action__action {
   font-size: 1.6rem;
 }
 
-/* line 308, ../scss/partials/mobile/_story.scss */
+/* line 312, ../scss/partials/mobile/_story.scss */
 .story__sticky-mobile {
   width: 100%;
 }
-/* line 310, ../scss/partials/mobile/_story.scss */
+/* line 314, ../scss/partials/mobile/_story.scss */
 .story__sticky-mobile ul {
   list-style-type: none;
   display: table;
   width: 100%;
 }
-/* line 315, ../scss/partials/mobile/_story.scss */
+/* line 319, ../scss/partials/mobile/_story.scss */
 .story__sticky-mobile ul li {
   display: table-cell;
 }
 
 /* tags */
-/* line 322, ../scss/partials/mobile/_story.scss */
+/* line 326, ../scss/partials/mobile/_story.scss */
 .story__tags {
   margin-bottom: 7.6rem;
 }
-/* line 326, ../scss/partials/mobile/_story.scss */
+/* line 330, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list:before {
   display: block;
   font-size: 3.2rem;
   margin-bottom: 2.2rem;
 }
-/* line 332, ../scss/partials/mobile/_story.scss */
+/* line 336, ../scss/partials/mobile/_story.scss */
 .story__tags .tags-list li {
   margin-right: 1.4rem;
   margin-bottom: 2.2rem;
 }
 
-/* line 340, ../scss/partials/mobile/_story.scss */
+/* line 344, ../scss/partials/mobile/_story.scss */
 .story__social {
   margin-bottom: 8rem;
 }
-/* line 343, ../scss/partials/mobile/_story.scss */
+/* line 347, ../scss/partials/mobile/_story.scss */
 .story__social:first-child {
   margin-bottom: 3.4rem;
 }
-/* line 347, ../scss/partials/mobile/_story.scss */
+/* line 351, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar {
   font-size: 2.6rem;
   margin-bottom: 2.4rem;
   padding: 1.4rem 0;
 }
-/* line 352, ../scss/partials/mobile/_story.scss */
+/* line 356, ../scss/partials/mobile/_story.scss */
 .story__social .btn--bar:before {
   font-size: 4rem;
   line-height: 0;
   vertical-align: middle;
 }
 
-/* line 361, ../scss/partials/mobile/_story.scss */
+/* line 365, ../scss/partials/mobile/_story.scss */
 .module.take-action {
   margin-bottom: 7.6rem;
   padding-bottom: 5rem;
   text-align: center;
   /* tweet politician take action */
 }
-/* line 366, ../scss/partials/mobile/_story.scss */
+/* line 370, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__heading {
   margin-bottom: 4rem;
 }
-/* line 370, ../scss/partials/mobile/_story.scss */
+/* line 374, ../scss/partials/mobile/_story.scss */
 .module.take-action .take-action__img {
   margin: 0 auto 4rem;
 }
-/* line 374, ../scss/partials/mobile/_story.scss */
+/* line 378, ../scss/partials/mobile/_story.scss */
 .module.take-action p {
   font-size: 3.2rem;
   line-height: 1.32;
   margin-bottom: 3.4rem;
 }
-/* line 380, ../scss/partials/mobile/_story.scss */
+/* line 384, ../scss/partials/mobile/_story.scss */
 .module.take-action small {
   font-size: 2.2rem;
   margin: 2rem 0;
 }
-/* line 385, ../scss/partials/mobile/_story.scss */
+/* line 389, ../scss/partials/mobile/_story.scss */
 .module.take-action .btn-container {
   padding: 3.4rem 0;
 }
-/* line 388, ../scss/partials/mobile/_story.scss */
+/* line 392, ../scss/partials/mobile/_story.scss */
 .module.take-action .btn-container .btn {
   margin-top: 2.2rem;
 }
-/* line 394, ../scss/partials/mobile/_story.scss */
+/* line 398, ../scss/partials/mobile/_story.scss */
 .module.take-action .tweet-politician__politicians .btn--twitter {
   font-size: 2.2rem;
   padding: 2.2rem;
 }
-/* line 402, ../scss/partials/mobile/_story.scss */
+/* line 406, ../scss/partials/mobile/_story.scss */
 .module.take-action .tweet-politician__message {
   font-size: 3.4rem;
   padding: 2.4rem;
 }
-/* line 407, ../scss/partials/mobile/_story.scss */
+/* line 411, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician {
   clear: both;
   margin: 0 0 4.4rem;
 }
-/* line 411, ../scss/partials/mobile/_story.scss */
+/* line 415, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician:first-child {
   margin-top: 3.4rem;
 }
-/* line 416, ../scss/partials/mobile/_story.scss */
+/* line 420, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__photo {
   display: block;
   width: 24rem;
@@ -5573,27 +5577,27 @@ body.panel--is-open #page-header .more-stories-toggle {
   text-align: center;
   margin: 0 auto 2.4rem;
 }
-/* line 424, ../scss/partials/mobile/_story.scss */
+/* line 428, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__information {
   overflow: hidden;
   max-width: 32rem;
 }
-/* line 429, ../scss/partials/mobile/_story.scss */
+/* line 433, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__name {
   margin-top: 0.6rem;
 }
-/* line 433, ../scss/partials/mobile/_story.scss */
+/* line 437, ../scss/partials/mobile/_story.scss */
 .module.take-action .politician__office {
   font-size: 3.4rem;
   margin-bottom: 2.2rem;
 }
 
-/* line 440, ../scss/partials/mobile/_story.scss */
+/* line 444, ../scss/partials/mobile/_story.scss */
 #flyout {
   display: none;
 }
 
-/* line 446, ../scss/partials/mobile/_story.scss */
+/* line 450, ../scss/partials/mobile/_story.scss */
 .list-item .list-item-rank {
   height: 6.5rem;
   line-height: 5.5rem;
