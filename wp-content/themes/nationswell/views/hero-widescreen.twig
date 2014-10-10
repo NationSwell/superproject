@@ -2,7 +2,7 @@
 {% if post.story_header|length == 1 %}
     {% set item = post.story_header[0] %}
     {% if item.type == 'image' %}
-        <div class="hero hero--story hero-widescreen-image {% if post.hero_type == 'cover' %} hero--cover {% endif %}" {% if post.hero_type != 'small' %} style="background-image: url({{ item.url|resize(1300, 600) }});" {% endif %}>
+        <div class="hide_mobile hero hero--story hero-widescreen-image {% if post.hero_type == 'cover' %} hero--cover {% endif %}" {% if post.hero_type != 'small' %} style="background-image: url({{ item.url|resize(1300, 600) }});" {% endif %}>
 
             {% if post.hero_type == 'small' %}
             <img src="{{ item.url|resize(800) }}" alt="{{ item.alt }}"/>
