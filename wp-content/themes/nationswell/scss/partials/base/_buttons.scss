@@ -144,6 +144,22 @@
     }
   }
 
+  &.btn--circle {
+    font-size:0px;
+    width:8rem;
+    height:8rem;
+    border-radius:50px;
+    padding-top:.6rem;
+    margin:0 auto 0.3rem;
+    color: $white;
+    display: block;
+    font-family: $oswald;
+    font-weight: $regular;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    position: relative;
+  }
+
   &.btn--facebook {
     background-color: #5973aa;
 
@@ -152,12 +168,21 @@
     }
   }
 
+  &.btn--facebook2 {
+    background-color: #5973aa;
+    margin-bottom:15px !important;
+  }
+
   &.btn--twitter {
     background-color: #2fb8ed;
 
     &:after {
       background-color: #209bcb;
     }
+  }
+
+  &.btn--twitter2 {
+    background-color: #2fb8ed;
   }
 
   &.btn--youtube.btn--youtube {
