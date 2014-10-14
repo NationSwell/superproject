@@ -157,7 +157,12 @@
     -webkit-font-smoothing: antialiased;
     text-align: center;
     position: relative;
+
+    &:before {
+      font-family: "icons";
+    }
   }
+
 
   &.btn--facebook {
     background-color: #5973aa;

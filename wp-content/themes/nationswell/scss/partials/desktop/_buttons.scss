@@ -80,6 +80,10 @@
     -webkit-font-smoothing: antialiased;
     text-align: center;
     position: relative;
+
+    &:before {
+      font-family: "icons";
+    }
   }
 
   &.btn--load-more {
