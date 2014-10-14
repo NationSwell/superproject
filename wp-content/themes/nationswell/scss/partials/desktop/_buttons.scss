@@ -67,6 +67,22 @@
     }
   }
 
+  &.btn--circle {
+    font-size:0px;
+    width:8rem;
+    height:8rem;
+    border-radius:50px;
+    padding-top:.6rem;
+    margin:0 auto 0.3rem;
+    color: $white;
+    display: block;
+    font-family: $oswald;
+    font-weight: $regular;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    position: relative;
+  }
+
   &.btn--load-more {
     font-size: 2.2rem;
     margin-bottom: 10rem;
