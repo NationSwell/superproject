@@ -73,16 +73,10 @@
     border-radius:50px;
     padding-top:.6rem;
     margin:0 auto 0.3rem;
-    color: $white;
-    display: block;
-    font-family: $oswald;
-    font-weight: $regular;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    position: relative;
 
     &:before {
-      font-family: "icons";
+      font-size: 5rem;
+      padding-top: 1.6rem;
     }
   }
 

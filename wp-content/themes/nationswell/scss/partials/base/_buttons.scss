@@ -145,11 +145,6 @@
   }
 
   &.btn--circle {
-    width:8rem;
-    height:8rem;
-    border-radius:50px;
-    padding-top:.6rem;
-    margin:0 auto 0.3rem;
     color: $white;
     display: block;
     font-family: $oswald;
@@ -160,6 +155,7 @@
 
     &:before {
       font-family: "icons";
+      display:block;
     }
   }
 

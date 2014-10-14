@@ -1098,11 +1098,6 @@ small a {
 }
 /* line 147, ../scss/partials/base/_buttons.scss */
 .btn.btn--circle {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50px;
-  padding-top: .6rem;
-  margin: 0 auto 0.3rem;
   color: #fff;
   display: block;
   font-family: "oswaldregular", Arial, sans-serif;
@@ -1111,52 +1106,53 @@ small a {
   text-align: center;
   position: relative;
 }
-/* line 161, ../scss/partials/base/_buttons.scss */
+/* line 156, ../scss/partials/base/_buttons.scss */
 .btn.btn--circle:before {
   font-family: "icons";
+  display: block;
 }
-/* line 167, ../scss/partials/base/_buttons.scss */
+/* line 163, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook {
   background-color: #5973aa;
 }
-/* line 170, ../scss/partials/base/_buttons.scss */
+/* line 166, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook:after {
   background-color: #2e5381;
 }
-/* line 175, ../scss/partials/base/_buttons.scss */
+/* line 171, ../scss/partials/base/_buttons.scss */
 .btn.btn--facebook2 {
   background-color: #5973aa;
   margin-bottom: 15px !important;
 }
-/* line 180, ../scss/partials/base/_buttons.scss */
+/* line 176, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter {
   background-color: #2fb8ed;
 }
-/* line 183, ../scss/partials/base/_buttons.scss */
+/* line 179, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter:after {
   background-color: #209bcb;
 }
-/* line 188, ../scss/partials/base/_buttons.scss */
+/* line 184, ../scss/partials/base/_buttons.scss */
 .btn.btn--twitter2 {
   background-color: #2fb8ed;
 }
-/* line 192, ../scss/partials/base/_buttons.scss */
+/* line 188, ../scss/partials/base/_buttons.scss */
 .btn.btn--youtube.btn--youtube {
   background-color: #cd201f;
 }
-/* line 195, ../scss/partials/base/_buttons.scss */
+/* line 191, ../scss/partials/base/_buttons.scss */
 .btn.btn--youtube.btn--youtube:before {
   line-height: 3rem;
 }
-/* line 199, ../scss/partials/base/_buttons.scss */
+/* line 195, ../scss/partials/base/_buttons.scss */
 .btn.btn--youtube.btn--youtube:after {
   background-color: #b31217;
 }
-/* line 204, ../scss/partials/base/_buttons.scss */
+/* line 200, ../scss/partials/base/_buttons.scss */
 .btn.btn--blue {
   background-color: #0098d8;
 }
-/* line 208, ../scss/partials/base/_buttons.scss */
+/* line 204, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more {
   background-color: transparent;
   color: #fc3b40;
@@ -1169,7 +1165,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 219, ../scss/partials/base/_buttons.scss */
+/* line 215, ../scss/partials/base/_buttons.scss */
 .btn.btn--load-more:before {
   color: #0098d8;
   font-family: 'icons';
@@ -1179,7 +1175,7 @@ small a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 229, ../scss/partials/base/_buttons.scss */
+/* line 225, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action {
   background-color: #fc3b40;
   color: #fff;
@@ -1193,7 +1189,7 @@ small a {
   -moz-transition: none;
   transition: none;
 }
-/* line 242, ../scss/partials/base/_buttons.scss */
+/* line 238, ../scss/partials/base/_buttons.scss */
 .btn.btn--take-action:after {
   background-color: #dd322c;
   content: '';
@@ -1202,7 +1198,7 @@ small a {
   position: absolute;
   left: 0;
 }
-/* line 253, ../scss/partials/base/_buttons.scss */
+/* line 249, ../scss/partials/base/_buttons.scss */
 .btn.btn--external:before {
   display: inline-block;
   font-family: 'icons';
@@ -1213,7 +1209,7 @@ small a {
   vertical-align: middle;
 }
 
-/* line 265, ../scss/partials/base/_buttons.scss */
+/* line 261, ../scss/partials/base/_buttons.scss */
 button,
 input[type="submit"] {
   border: none;
@@ -1227,7 +1223,7 @@ input[type="submit"] {
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 273, ../scss/partials/base/_buttons.scss */
+/* line 269, ../scss/partials/base/_buttons.scss */
 button:-moz-focus-inner,
 input[type="submit"]:-moz-focus-inner {
   border: 0;
@@ -4322,64 +4318,58 @@ hr {
   border-radius: 50px;
   padding-top: .6rem;
   margin: 0 auto 0.3rem;
-  color: #fff;
-  display: block;
-  font-family: "oswaldregular", Arial, sans-serif;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  position: relative;
 }
-/* line 84, ../scss/partials/desktop/_buttons.scss */
+/* line 77, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--circle:before {
-  font-family: "icons";
+  font-size: 5rem;
+  padding-top: 1.6rem;
 }
-/* line 89, ../scss/partials/desktop/_buttons.scss */
+/* line 83, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more {
   font-size: 2.2rem;
   margin-bottom: 10rem;
 }
-/* line 93, ../scss/partials/desktop/_buttons.scss */
+/* line 87, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more:before {
   font-size: 10.5rem;
   bottom: -10.4rem;
 }
-/* line 98, ../scss/partials/desktop/_buttons.scss */
+/* line 92, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more:hover {
   top: 0.4rem;
 }
-/* line 101, ../scss/partials/desktop/_buttons.scss */
+/* line 95, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--load-more:hover:before {
   bottom: -11rem;
 }
-/* line 107, ../scss/partials/desktop/_buttons.scss */
+/* line 101, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action {
   font-size: 2rem;
   padding: 1.2rem;
   top: 2.4rem;
   margin-bottom: -1rem;
 }
-/* line 113, ../scss/partials/desktop/_buttons.scss */
+/* line 107, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:after {
   height: 0.5rem;
   position: absolute;
   bottom: -0.5rem;
 }
-/* line 119, ../scss/partials/desktop/_buttons.scss */
+/* line 113, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:hover {
   top: 2.6rem;
 }
-/* line 122, ../scss/partials/desktop/_buttons.scss */
+/* line 116, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:hover:after {
   height: 0.3rem;
   bottom: -0.3rem;
 }
-/* line 128, ../scss/partials/desktop/_buttons.scss */
+/* line 122, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:active {
   top: 2.9rem;
   box-shadow: inset 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
-/* line 132, ../scss/partials/desktop/_buttons.scss */
+/* line 126, ../scss/partials/desktop/_buttons.scss */
 .btn.btn--take-action:active:after {
   height: 0;
   bottom: 0;
