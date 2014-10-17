@@ -171,6 +171,10 @@
   &.btn--facebook2 {
     background-color: #5973aa;
     margin-bottom:15px !important;
+
+    &:hover {
+      background-color: #6983ba;
+    }
   }
 
   &.btn--twitter {
@@ -183,6 +187,10 @@
 
   &.btn--twitter2 {
     background-color: #2fb8ed;
+
+    &:hover {
+      background-color: #3fc8fd;
+    }
   }
 
   &.btn--youtube.btn--youtube {
