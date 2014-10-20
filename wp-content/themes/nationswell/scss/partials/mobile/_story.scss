@@ -12,6 +12,10 @@
 
   &.hero-widescreen-image {
     display:none;
+
+    .hero-read {
+      display: none;
+    }
   }
 
   &.hero--image,

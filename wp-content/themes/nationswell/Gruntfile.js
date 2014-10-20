@@ -91,6 +91,7 @@ module.exports = function(grunt) {
                 dest: 'fonts',
                 destCss: 'scss/partials/base',
                 options: {
+                    engine: 'node',
                     stylesheet: 'scss',
                     relativeFontPath: '../fonts',
                     htmlDemo: false,

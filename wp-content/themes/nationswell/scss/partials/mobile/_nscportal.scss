@@ -1,0 +1,33 @@
+.portal__main-column {
+  width: 100%;
+}
+
+
+#directory-nav {
+  display: block;
+  width: 100%;
+
+  #member-title {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+  #directory-tabs {
+    display: block;
+    width: 100%;
+
+    ul {
+      li {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.contacts .contact-info .contact__portrait .about-contact {
+
+  padding: 0 2rem;
+}

@@ -5,6 +5,7 @@ var year = d.getFullYear()-2000;
 
 $(document).ready(function() {
     $("#inputurl").select();
+
 	$("#mic").click(function() {
 		$("#outputurl").val($("#inputurl").val() + "?utm_source=nationswell&utm_medium=social");
 	});
@@ -17,7 +18,11 @@ $(document).ready(function() {
         $("#outputurl").val($("#inputurl").val() + "?ncid=edlinkushpmg00000068");
     });
 
-	$("#buttonrow").click(function() {
+    $("#yesmag").click(function() {
+        $("#outputurl").val($("#inputurl").val() + "?utm_source=nationswell&utm_medium=social");
+    });
+
+    $("#buttonrow").click(function() {
 		$("#outputurl").select();
 	});
 });

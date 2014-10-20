@@ -27,6 +27,7 @@ Template Name: Partner UTM Builder
     <div id="mic">Mic</div>
     <div id="takepart">TakePart</div>
     <div id="huffpostimpact">HuffPost Impact</div>
+    <div id="yesmag">Yes! Magazine</div>
 </div>
 <div id="outputrow">
     Your URL:<br>

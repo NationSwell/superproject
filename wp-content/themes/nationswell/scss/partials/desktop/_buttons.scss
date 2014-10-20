@@ -67,6 +67,19 @@
     }
   }
 
+  &.btn--circle {
+    width:8rem;
+    height:8rem;
+    border-radius:50px;
+    padding-top:.6rem;
+    margin:0 auto 0.3rem;
+
+    &:before {
+      font-size: 5rem;
+      padding-top: 1.6rem;
+    }
+  }
+
   &.btn--load-more {
     font-size: 2.2rem;
     margin-bottom: 10rem;

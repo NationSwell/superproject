@@ -1,0 +1,34 @@
+.portal__main-column {
+  width: 90%;
+  margin-left: auto;
+}
+
+#directory-nav {
+  display: table;
+  width: 100%;
+
+  #member-title {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    padding: 1.5rem;
+  }
+
+
+  #directory-tabs {
+    display: table-cell;
+    vertical-align: middle;
+
+    ul {
+      float: right;
+      li {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.contacts .contact-info .contact__portrait .about-contact {
+
+  padding: 0 4rem;
+}
