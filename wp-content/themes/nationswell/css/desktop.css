@@ -3959,17 +3959,16 @@ hr {
 /* line 108, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-phone:before {
   background-color: #061822;
-  padding: .25rem .4rem;
 }
-/* line 115, ../scss/partials/base/_nscportal.scss */
+/* line 114, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-email:before {
   background-color: #fc3b40;
 }
-/* line 121, ../scss/partials/base/_nscportal.scss */
+/* line 120, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-linkedin:before {
   background-color: #333333;
 }
-/* line 127, ../scss/partials/base/_nscportal.scss */
+/* line 126, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-twitter:before {
   background-color: #5ec2e8;
 }
