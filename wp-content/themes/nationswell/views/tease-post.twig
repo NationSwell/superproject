@@ -13,7 +13,11 @@
         {% endif %}
 
         <header class="story__header">
+            {% if post.story_kind == 'original' %}
+            <span class="rubric rubric--original">Featured</span>
+            {% else %}
             <span class="rubric">{{ post.category }}</span>
+            {% endif %}
             <h2 class="hd-d story__hed">{{ post.tout_title }}</h2>
 
             {% block dek %}
