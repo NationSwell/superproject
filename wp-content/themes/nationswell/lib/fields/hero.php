@@ -119,7 +119,7 @@ if(function_exists("register_field_group"))
                         'param' => 'post_type',
                         'operator' => '==',
                         'value' => 'nscevent',
-                        'order_no' => 0,
+                        'order_no' => 1,
                         'group_no' => 0,
                     ),
                 ),
