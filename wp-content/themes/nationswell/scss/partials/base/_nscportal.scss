@@ -43,7 +43,7 @@
       li {
         display: inline-block;
         text-align: center;
-        width: 18%;
+        width: 15%;
       }
       a {
         color: $ns_navy0;
@@ -95,10 +95,10 @@
         text-align: middle;
 
         .icon {
-          line-height: 2;
+          line-height: 2.5;
           margin-right: 0.75rem;
           &:before {
-            padding: .25rem;
+            padding: 0.6rem 0.7rem;
             color: $white;
             margin: .5rem 1rem 0 0;
             height: 1rem;
@@ -106,25 +106,33 @@
         }
         .contact-phone {
           &:before {
+            font-family: $gudea;
             background-color: $ns_navy0;
+            content: "\0023";
+            font-weight: 700;
+            padding: 0.35rem .9rem .2rem;
+
           }
         }
 
         .contact-email {
           &:before {
             background-color: $ns_red;
+            padding: 0.6rem .6rem .3rem;
           }
         }
 
         .contact-linkedin {
           &:before {
             background-color: $gray0;
+            padding: 0.6rem .8rem .3rem;
           }
         }
 
         .contact-twitter {
           &:before {
             background-color: $ns_blue3;
+            padding: 0.6rem .8rem .3rem;
           }
         }
       }

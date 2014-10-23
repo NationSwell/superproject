@@ -726,6 +726,7 @@ function ns_nscdirectory_callback() {
         'meta_key' => 'nsc_surname',
     );
     $contactPosts = get_posts( $query );
+    error_log("CONTACTS: " . sizeOf($contactPosts, TRUE));
     $contactData = array();
     foreach($contactPosts as $contact) {
         $contactData[] = array (

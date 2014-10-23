@@ -5,6 +5,7 @@
         <div id="member-title" class="hd-l">Members<div id="border-left"></div></div>
         <div id="directory-tabs">
             <ul>
+                <li ng-class="{ active:directory.isSet(0) }"><a href ng-click="directory.setTab(0)">ALL</a></li>
                 <li ng-class="{ active:directory.isSet(1) }"><a href ng-click="directory.setTab(1)">A-E</a></li>
                 <li ng-class="{ active:directory.isSet(2) }"><a href ng-click="directory.setTab(2)">F-J</a></li>
                 <li ng-class="{ active:directory.isSet(3) }"><a href ng-click="directory.setTab(3)">K-O</a></li>
