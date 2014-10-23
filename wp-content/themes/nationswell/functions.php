@@ -720,6 +720,7 @@ add_action( 'wp_ajax_nopriv_initialize_nscdirectory', 'ns_nscdirectory_callback'
 
 function ns_nscdirectory_callback() {
     $query = array(
+        'posts_per_page' => -1,
         'post_type' => 'nsccontact',
         'orderby' => 'meta_value',
         'order' => 'ASC',
