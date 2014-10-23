@@ -134,3 +134,8 @@
     {% include('modal-action.twig') %}
     {{ parent() }}
 {% endblock %}
+
+{% block extra_includes %}
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+{% endblock %}
