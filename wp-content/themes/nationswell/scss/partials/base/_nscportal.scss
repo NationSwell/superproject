@@ -116,6 +116,8 @@
         }
 
         .contact-email {
+          color: $gray1;
+
           &:before {
             background-color: $ns_red;
             padding: 0.6rem .6rem .3rem;
