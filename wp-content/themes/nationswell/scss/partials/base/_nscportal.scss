@@ -25,6 +25,7 @@
     display: inline-block;
     font-family: $oswald;
     font-size: 3rem;
+    padding-right: 9%;
     a {
       color: $ns_navy2;
     }
@@ -77,6 +78,7 @@
         display: inline-block;
         text-align: center;
         width: 15%;
+        max-width: 125px;
       }
       a {
         color: $ns_navy0;
