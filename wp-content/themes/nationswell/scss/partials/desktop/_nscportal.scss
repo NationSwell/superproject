@@ -1,6 +1,16 @@
+.sticky-wrapper #page-header .container {
+  padding: 0 2.5rem;
+}
+
 .portal__main-column {
   width: 90%;
   margin-left: auto;
+}
+
+#portal-nav {
+  .portal-tabs ul {
+    padding: 0 1rem;
+  }
 }
 
 #directory-nav {
@@ -10,7 +20,7 @@
   #member-title {
     display: table-cell;
     vertical-align: middle;
-    width: 30%;
+    width: 2%;
     padding: 1.5rem;
   }
 
@@ -28,7 +38,19 @@
   }
 }
 
-.contacts .contact-info .contact__portrait .about-contact {
+.contacts .contact-info {
+  .about-contact {
+    width: 60%;
+    padding-left: 10%;
+    padding: 0 4rem;
 
-  padding: 0 4rem;
+  }
+  .contact-image{
+    padding: 0 4rem;
+    h1 {
+      display:none;
+    }
+  }
+
+
 }

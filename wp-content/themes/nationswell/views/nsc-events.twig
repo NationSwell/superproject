@@ -1,0 +1,27 @@
+{% verbatim %}
+<div id="nsc-events" ng-controller="eventsController as eventsPage" ng-show="portal.isSet(1)">
+    <div id="member-title" class="hd-l">Upcoming Events</div>
+    <div class="events">
+        <ul>
+            <li ng-repeat="event in upcomingEvents">
+                <div class="event-info">
+                    <div class="event-date">
+                        <ul>
+                            <li>{{ event.month }}</li>
+                            <li>{{ event.day }}</li>
+                        </ul>
+                    </div>
+                    <div class="about-event">
+                        <h1 class="hd-n">{{ event.name }}</h1>
+                        <div class="event-details">{{ event.time }} at {{ event.location }}</div>
+                        <div class="event-description" ng-bind-html="event.description | sanitize"></div>
+                        <div class="event-link"><a ng-href="{{ event.url }}">Click here for more information</a></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+{% endverbatim %}

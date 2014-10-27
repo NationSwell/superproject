@@ -1,8 +1,9 @@
 {% verbatim %}
-<div id="nsc-directory" ng-controller="directoryController as directory">
+
+<div id="nsc-directory" ng-controller="directoryController as directory" ng-show="portal.isSet(0)">
 
     <div id="directory-nav">
-        <div id="member-title" class="hd-l">Members<div id="border-left"></div></div>
+        <div id="member-title" class="hd-l">Members</div>
         <div id="directory-tabs">
             <ul>
                 <li ng-class="{ active:directory.isSet(0) }"><a href ng-click="directory.setTab(0)">ALL</a></li>
@@ -18,7 +19,7 @@
         <ul>
             <li ng-repeat="contact in allContacts">
                 <div class="contact-info">
-                    <img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait">
+                    <div class="contact-image"><img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait"><h1 class="hd-n">{{ contact.name }}</h1></div>
                     <div class="about-contact">
                         <h1 class="hd-n">{{ contact.name }}</h1>
                         <div class="bio-content" ng-bind-html="contact.bio | sanitize"></div>
@@ -38,7 +39,7 @@
         <ul>
             <li ng-repeat="contact in AtoE">
                 <div class="contact-info">
-                    <img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait">
+                    <div class="contact-image"><img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait"><h1 class="hd-n">{{ contact.name }}</h1><</div>
                     <div class="about-contact">
                         <h1 class="hd-n">{{ contact.name }}</h1>
                         <div class="bio-content" ng-bind-html="contact.bio | sanitize"></div>
@@ -58,7 +59,7 @@
         <ul>
             <li ng-repeat="contact in FtoJ">
                 <div class="contact-info">
-                    <img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait">
+                    <div class="contact-image"><img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait"><h1 class="hd-n">{{ contact.name }}</h1><</div>
                     <div class="about-contact">
                         <h1 class="hd-n">{{ contact.name }}</h1>
                         <div class="bio-content" ng-bind-html="contact.bio | sanitize"></div>
@@ -78,7 +79,7 @@
         <ul>
             <li ng-repeat="contact in KtoO">
                 <div class="contact-info">
-                    <img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait">
+                    <div class="contact-image"><img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait"><h1 class="hd-n">{{ contact.name }}</h1><</div>
                     <div class="about-contact">
                         <h1 class="hd-n">{{ contact.name }}</h1>
                         <div class="bio-content" ng-bind-html="contact.bio | sanitize"></div>
@@ -98,7 +99,7 @@
         <ul>
             <li ng-repeat="contact in PtoT">
                 <div class="contact-info">
-                    <img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait">
+                    <div class="contact-image"><img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait"><h1 class="hd-n">{{ contact.name }}</h1><</div>
                     <div class="about-contact">
                         <h1 class="hd-n">{{ contact.name }}</h1>
                         <div class="bio-content" ng-bind-html="contact.bio | sanitize"></div>
@@ -118,7 +119,7 @@
         <ul>
             <li ng-repeat="contact in UtoZ">
                 <div class="contact-info">
-                    <img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait">
+                    <div class="contact-image"><img ng-src="{{ contact.image.sizes.thumbnail }}" class="contact__portrait"><h1 class="hd-n">{{ contact.name }}</h1><</div>
                     <div class="about-contact">
                         <h1 class="hd-n">{{ contact.name }}</h1>
                         <div class="bio-content" ng-bind-html="contact.bio | sanitize"></div>

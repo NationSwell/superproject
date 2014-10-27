@@ -64,10 +64,26 @@
 
         <div class="container container--flex">
             <main id="page-content" class="portal__main-column" role="main">
-                <div class="portal-nav">
-                    <img src="{{ theme_dir }}/img/nscouncil.png" alt="NationSwell Logo"/>
+                <div id="nscPortal" ng-controller="portalController as portal">
+                    <div id="portal-nav">
+                        <div class="logo-container"><img class="council-logo" src="{{ theme_dir }}/img/nscouncil.png" alt="NationSwell Logo"/></div>
+                        <div class="portal-tabs">
+                            <ul>
+                                <li ng-class="{ active:portal.isSet(0) }">
+                                    <a href ng-click="portal.setTab(0)">Directory</a>
+                                </li>
+                                <li ng-class="{ active:portal.isSet(1) }">
+                                    <a href ng-click="portal.setTab(1)">Events</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {% include 'nsc-directory.twig' %}
+
+                    {% include 'nsc-events.twig' %}
                 </div>
-                {% include 'nsc-directory.twig' %}
+
             </main>
         </div>
     {% include 'footer.twig' %}

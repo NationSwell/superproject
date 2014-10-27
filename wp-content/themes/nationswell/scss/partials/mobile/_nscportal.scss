@@ -2,10 +2,16 @@
   width: 100%;
 }
 
+#portal-nav {
+  .portal-tabs ul {
+    padding: 0;
+  }
+}
 
 #directory-nav {
   display: block;
   width: 100%;
+  padding-bottom: 1.5rem;
 
   #member-title {
     display: block;
@@ -27,7 +33,47 @@
   }
 }
 
-.contacts .contact-info .contact__portrait .about-contact {
+.contacts .contact-info {
+  .about-contact {
+    width: 60%;
+  }
+  .contact-image{
+    display: inline-block;
+    padding: 0 2rem;
+    .contact__portrait {
+      display: inline-block;
+    }
+    h1 {
+      display:none;
+    }
+  }
 
-  padding: 0 2rem;
+  @media screen and (max-width: 410px) {
+    .about-contact {
+      width: 100%;
+      padding: 2rem 0 0;
+
+      h1 {
+        display: none;
+      }
+
+      .bio-content {
+        font-size: 2.5rem;
+      }
+    }
+
+    .contact-image{
+      display: block;
+      padding: 0;
+      .contact__portrait {
+        width: 35%;
+      }
+      h1 {
+        display: inline-block;
+        width: 40%;
+        padding: 4rem 0 0 4rem;
+        vertical-align: top;
+      }
+    }
+  }
 }

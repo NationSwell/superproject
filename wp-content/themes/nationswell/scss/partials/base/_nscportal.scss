@@ -8,6 +8,42 @@
   color: $gray1;
 }
 
+#portal-nav {
+  display:block;
+  padding: 1rem 0 3rem;
+  .logo-container {
+    width: 40%;
+    max-width: 250px;
+    display: inline-block;
+    .council-logo {
+      width: 100%;
+    }
+  }
+
+  .portal-tabs {
+    float: right;
+    display: inline-block;
+    font-family: $oswald;
+    font-size: 3rem;
+    a {
+      color: $ns_navy2;
+    }
+    .active a {
+      color: $ns_blue1;
+      border-bottom: 0.25rem solid $ns_red;
+    }
+
+    ul {
+      display:block;
+      li{
+        display: inline-block;
+        padding: 0 1rem;
+      }
+    }
+
+  }
+}
+
 #directory-nav {
   display: table;
   width: 100%;
@@ -16,14 +52,6 @@
     position: relative;
     display: table-cell;
     vertical-align: middle;
-    width: 30%;
-
-    #border-left {
-      position: absolute;
-      bottom: 0;
-      width: 9rem;
-      border-bottom: 0.45rem solid #dbdbdb;
-    }
 
     h1 {
       color: #333;
@@ -68,18 +96,18 @@
     padding: 3rem 0;
     width: 100%;
 
-    .contact__portrait {
+    .contact-image {
       display: inline-block;
       vertical-align: top;
-      border-radius: 50%;
-      margin: 0;
+      .contact__portrait {
+        border-radius: 50%;
+        margin: 0;
+      }
     }
 
     .about-contact {
       display: inline-block;
       text-align: left;
-      width: 60%;
-      padding-left: 10%;
 
       .bio-content {
         padding: 1rem 0;
@@ -140,4 +168,59 @@
       }
     }
   }
+}
+
+.events {
+  .event-info {
+    display: block;
+    padding: 3rem 0;
+    width: 100%;
+
+    .event-date {
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 50%;
+      margin: 0;
+      background-color: $ns_red;
+      font-size: 3rem;
+      color: $white;
+      width: 10rem;
+      height: 10rem;
+
+      ul {
+        padding: 2.25rem;
+        li {
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+
+    }
+
+    .about-event {
+      display: inline-block;
+      text-align: left;
+      width: 60%;
+      padding-left: 10%;
+
+      .event-description {
+        padding: 1rem 0;
+        line-height: 1.4;
+      }
+
+      .event-details {
+        padding-top: 1rem;
+        color: $ns_blue1;
+      }
+
+      .event-link a {
+        color: $ns_blue1;
+        &:hover {
+          color: $ns_red;
+        }
+      }
+    }
+
+  }
+
 }
