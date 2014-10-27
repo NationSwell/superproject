@@ -10,7 +10,7 @@
 
 #portal-nav {
   display:block;
-  padding: 1rem 0 3rem;
+  padding: 1rem 0 6rem;
   .logo-container {
     width: 40%;
     max-width: 250px;
@@ -25,7 +25,6 @@
     display: inline-block;
     font-family: $oswald;
     font-size: 3rem;
-    padding-right: 9%;
     a {
       color: $ns_navy2;
     }
@@ -45,40 +44,29 @@
   }
 }
 
+.member-title {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 230px;
+}
 #directory-nav {
   display: table;
   width: 100%;
-
-  .member-title {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-
-    &:after {
-      width: 70%;
-      color: $gray5;
-      height: 0.7rem;
-      display: block;
-      content: ' ';
-    }
-
-  }
 
 
   #directory-tabs {
     display: table-cell;
     vertical-align: middle;
-    padding: 1rem;
+    padding: 1rem 0 0;
 
     ul {
       display: block;
-      float: right;
       width: 100%;
       li {
         display: inline-block;
         text-align: center;
         width: 15%;
-        max-width: 125px;
       }
       a {
         color: $ns_navy0;

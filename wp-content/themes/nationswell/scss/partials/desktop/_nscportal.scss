@@ -8,19 +8,22 @@
 }
 
 #portal-nav {
-  .portal-tabs ul {
-    padding: 0 1rem;
+  .portal-tabs {
+    padding-right: 15%;
+    ul {
+      padding: 0 1rem;
+    }
   }
 }
 
 #directory-nav {
   display: table;
+  padding-right: 10%;
   width: 100%;
 
   #member-title {
     display: table-cell;
     vertical-align: middle;
-    width: 2%;
     padding: 1.5rem;
   }
 
@@ -33,6 +36,7 @@
       float: right;
       li {
         font-size: 2rem;
+        max-width: 200px;
       }
     }
   }
