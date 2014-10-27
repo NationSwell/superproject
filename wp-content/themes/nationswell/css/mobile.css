@@ -3936,7 +3936,7 @@ hr {
   display: inline-block;
   vertical-align: top;
   border-radius: 50%;
-  margin: 0;
+  margin-left: 2%;
   font-size: 3rem;
   color: #fff;
   width: 10rem;
@@ -3963,8 +3963,8 @@ hr {
 .events .event-info .about-event {
   display: inline-block;
   text-align: left;
-  width: 60%;
-  padding-left: 10%;
+  width: 70%;
+  padding-left: 5%;
 }
 /* line 216, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-description {
