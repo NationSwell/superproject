@@ -3897,18 +3897,18 @@ hr {
   width: 100%;
 }
 /* line 51, ../scss/partials/base/_nscportal.scss */
-#directory-nav #member-title {
+#directory-nav .member-title {
   position: relative;
   display: table-cell;
   vertical-align: middle;
 }
 /* line 56, ../scss/partials/base/_nscportal.scss */
-#directory-nav #member-title:after {
+#directory-nav .member-title:after {
   width: 70%;
   color: #dbdbdb;
   height: 0.7rem;
   display: block;
-  content: '';
+  content: ' ';
 }
 /* line 67, ../scss/partials/base/_nscportal.scss */
 #directory-nav #directory-tabs {

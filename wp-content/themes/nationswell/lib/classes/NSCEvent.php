@@ -36,6 +36,7 @@ if (class_exists('TimberPost')) {
             $eventData = array();
             $events = NSCEvent::queryUpcomingEvents();
             $eventPosts = Timber::get_posts($events);
+            $today = new DateTime(date('Y-m-d'));
 
             foreach ($eventPosts as $event) {
                 $dateObj = DateTime::createFromFormat('Ymd', get_field('event_date', $event->ID));
@@ -74,7 +75,6 @@ if (class_exists('TimberPost')) {
         }
 
         private static function queryUpcomingEvents() {
-            $today = new DateTime(date('Y-m-d'));
             $upcomingEvents = get_posts( array(
                 'posts_per_page' => -1,
                 'fields' => 'ids',
@@ -84,17 +84,16 @@ if (class_exists('TimberPost')) {
                 'meta_query' => array(
                         array(
                             'key' => 'event_date',
-                            'value' => $today->format("Y-m-d"),
-                            'compare' => '>='
+                            'value' => date("Y-m-d"),
+                            'compare' => '>=',
+                            'type'    => 'DATE'
                         )
                     )
             ));
-            error_log("EVENT QUERY: " . print_r($upcomingEvents, TRUE));
             return $upcomingEvents;
         }
 
         private static function queryPastEvents() {
-            $today = new DateTime(date('Y-m-d'));
             $pastEvents = get_posts( array(
                 'posts_per_page' => -1,
                 'fields' => 'ids',
@@ -104,8 +103,9 @@ if (class_exists('TimberPost')) {
                 'meta_query' => array(
                     array(
                         'key' => 'event_date',
-                        'value' => $today->format("Y-m-d"),
-                        'compare' => '<'
+                        'value' => date("Y-m-d"),
+                        'compare' => '<',
+                        'type'    => 'DATE'
                     )
                 )
             ));

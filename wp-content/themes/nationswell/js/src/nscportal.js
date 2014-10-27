@@ -100,11 +100,11 @@
                 $scope.upcomingEvents[index]['month'] = dateString[1].toUpperCase();
             }
 
-            /*for (index = 0; index < $scope.pastEvents.length; index++) {
+            for (index = 0; index < $scope.pastEvents.length; index++) {
                 var dateString = $scope.pastEvents[index]['date'].split('-');
                 $scope.pastEvents[index]['day'] = dateString[0];
-                $scope.pastEvents[index]['month'] = dateString[1];
-            }*/
+                $scope.pastEvents[index]['month'] = dateString[1].toUpperCase();
+            }
         });
     }]);
 

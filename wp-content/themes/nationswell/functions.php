@@ -751,8 +751,9 @@ add_action( 'wp_ajax_nopriv_initialize_nscevents', 'ns_nscevents_callback' );
 function ns_nscevents_callback() {
     $events = array();
     $events["upcoming"] = NSCEvent::getUpcomingEvents();
-    error_log("UPCOMING: " . print_r($events["upcoming"], TRUE));
-    $events["past"] = NSCEvents::getPastEvents();
+   // error_log("UPCOMING: " . print_r($events["upcoming"], TRUE));
+    $events["past"] = NSCEvent::getPastEvents();
+    //error_log("PAST: " . print_r($events["past"], TRUE));
     wp_send_json( $events );
     exit();
 }

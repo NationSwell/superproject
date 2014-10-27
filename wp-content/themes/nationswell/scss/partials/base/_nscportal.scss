@@ -48,7 +48,7 @@
   display: table;
   width: 100%;
 
-  #member-title {
+  .member-title {
     position: relative;
     display: table-cell;
     vertical-align: middle;
@@ -58,7 +58,7 @@
       color: $gray5;
       height: 0.7rem;
       display: block;
-      content: '';
+      content: ' ';
     }
 
   }
