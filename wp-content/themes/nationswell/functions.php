@@ -752,7 +752,7 @@ function ns_nscevents_callback() {
     $events = array();
     $events["upcoming"] = NSCEvent::getUpcomingEvents();
     error_log("UPCOMING: " . print_r($events["upcoming"], TRUE));
-    //$events["past"] = NSCEvents::getPastEvents();
+    $events["past"] = NSCEvents::getPastEvents();
     wp_send_json( $events );
     exit();
 }

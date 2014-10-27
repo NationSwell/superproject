@@ -3811,89 +3811,93 @@ hr {
   vertical-align: middle;
 }
 /* line 56, ../scss/partials/base/_nscportal.scss */
-#directory-nav #member-title h1 {
-  color: #333;
+#directory-nav #member-title:after {
+  width: 70%;
+  color: #dbdbdb;
+  height: 0.7rem;
+  display: block;
+  content: '';
 }
-/* line 62, ../scss/partials/base/_nscportal.scss */
+/* line 67, ../scss/partials/base/_nscportal.scss */
 #directory-nav #directory-tabs {
   display: table-cell;
   vertical-align: middle;
   padding: 1rem;
 }
-/* line 67, ../scss/partials/base/_nscportal.scss */
+/* line 72, ../scss/partials/base/_nscportal.scss */
 #directory-nav #directory-tabs ul {
   display: block;
   float: right;
   width: 100%;
 }
-/* line 71, ../scss/partials/base/_nscportal.scss */
+/* line 76, ../scss/partials/base/_nscportal.scss */
 #directory-nav #directory-tabs ul li {
   display: inline-block;
   text-align: center;
   width: 15%;
 }
-/* line 76, ../scss/partials/base/_nscportal.scss */
+/* line 81, ../scss/partials/base/_nscportal.scss */
 #directory-nav #directory-tabs ul a {
   color: #061822;
 }
-/* line 78, ../scss/partials/base/_nscportal.scss */
+/* line 83, ../scss/partials/base/_nscportal.scss */
 #directory-nav #directory-tabs ul a:hover {
   color: #0098d8;
 }
-/* line 83, ../scss/partials/base/_nscportal.scss */
+/* line 88, ../scss/partials/base/_nscportal.scss */
 #directory-nav #directory-tabs ul .active a {
   color: #0098d8;
   border-bottom: 0.25rem solid #fc3b40;
 }
 
-/* line 94, ../scss/partials/base/_nscportal.scss */
+/* line 99, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info {
   display: block;
   padding: 3rem 0;
   width: 100%;
 }
-/* line 99, ../scss/partials/base/_nscportal.scss */
+/* line 104, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .contact-image {
   display: inline-block;
   vertical-align: top;
 }
-/* line 102, ../scss/partials/base/_nscportal.scss */
+/* line 107, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .contact-image .contact__portrait {
   border-radius: 50%;
   margin: 0;
 }
-/* line 108, ../scss/partials/base/_nscportal.scss */
+/* line 113, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact {
   display: inline-block;
   text-align: left;
 }
-/* line 112, ../scss/partials/base/_nscportal.scss */
+/* line 117, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .bio-content {
   padding: 1rem 0;
   line-height: 1.4;
 }
-/* line 117, ../scss/partials/base/_nscportal.scss */
+/* line 122, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-interests {
   color: #0098d8;
 }
-/* line 121, ../scss/partials/base/_nscportal.scss */
+/* line 126, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social {
   display: inline-block;
   text-align: middle;
 }
-/* line 125, ../scss/partials/base/_nscportal.scss */
+/* line 130, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .icon {
   line-height: 2.5;
   margin-right: 0.75rem;
 }
-/* line 128, ../scss/partials/base/_nscportal.scss */
+/* line 133, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .icon:before {
   padding: 0.6rem 0.7rem;
   color: #fff;
   margin: .5rem 1rem 0 0;
   height: 1rem;
 }
-/* line 136, ../scss/partials/base/_nscportal.scss */
+/* line 141, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-phone:before {
   font-family: "Gudea", Arial, sans-serif;
   background-color: #061822;
@@ -3901,75 +3905,82 @@ hr {
   font-weight: 700;
   padding: 0.35rem .9rem .2rem;
 }
-/* line 146, ../scss/partials/base/_nscportal.scss */
+/* line 151, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-email {
   color: #7e7e7e;
 }
-/* line 149, ../scss/partials/base/_nscportal.scss */
+/* line 154, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-email:before {
   background-color: #fc3b40;
   padding: 0.6rem .6rem .3rem;
 }
-/* line 156, ../scss/partials/base/_nscportal.scss */
+/* line 161, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-linkedin:before {
   background-color: #333333;
   padding: 0.6rem .8rem .3rem;
 }
-/* line 163, ../scss/partials/base/_nscportal.scss */
+/* line 168, ../scss/partials/base/_nscportal.scss */
 .contacts .contact-info .about-contact .contact-social .contact-twitter:before {
   background-color: #5ec2e8;
   padding: 0.6rem .8rem .3rem;
 }
 
-/* line 174, ../scss/partials/base/_nscportal.scss */
+/* line 179, ../scss/partials/base/_nscportal.scss */
 .events .event-info {
   display: block;
   padding: 3rem 0;
   width: 100%;
 }
-/* line 179, ../scss/partials/base/_nscportal.scss */
+/* line 184, ../scss/partials/base/_nscportal.scss */
 .events .event-info .event-date {
   display: inline-block;
   vertical-align: top;
   border-radius: 50%;
   margin: 0;
-  background-color: #fc3b40;
   font-size: 3rem;
   color: #fff;
   width: 10rem;
   height: 10rem;
 }
-/* line 190, ../scss/partials/base/_nscportal.scss */
+/* line 194, ../scss/partials/base/_nscportal.scss */
 .events .event-info .event-date ul {
   padding: 2.25rem;
 }
-/* line 192, ../scss/partials/base/_nscportal.scss */
+/* line 196, ../scss/partials/base/_nscportal.scss */
 .events .event-info .event-date ul li {
   text-align: center;
   font-weight: 600;
 }
-/* line 200, ../scss/partials/base/_nscportal.scss */
+/* line 203, ../scss/partials/base/_nscportal.scss */
+.events .event-info .upcoming {
+  background-color: #fc3b40;
+}
+/* line 206, ../scss/partials/base/_nscportal.scss */
+.events .event-info .past {
+  background-color: #0098d8;
+}
+/* line 210, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event {
   display: inline-block;
   text-align: left;
   width: 60%;
   padding-left: 10%;
 }
-/* line 206, ../scss/partials/base/_nscportal.scss */
+/* line 216, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-description {
   padding: 1rem 0;
   line-height: 1.4;
 }
-/* line 211, ../scss/partials/base/_nscportal.scss */
+/* line 221, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-details {
   padding-top: 1rem;
   color: #0098d8;
 }
-/* line 216, ../scss/partials/base/_nscportal.scss */
+/* line 226, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-link a {
   color: #0098d8;
 }
-/* line 218, ../scss/partials/base/_nscportal.scss */
+/* line 228, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-link a:hover {
   color: #fc3b40;
 }

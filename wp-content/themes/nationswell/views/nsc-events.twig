@@ -5,7 +5,7 @@
         <ul>
             <li ng-repeat="event in upcomingEvents">
                 <div class="event-info">
-                    <div class="event-date">
+                    <div class="upcoming event-date">
                         <ul>
                             <li>{{ event.month }}</li>
                             <li>{{ event.day }}</li>
@@ -20,6 +20,25 @@
                 </div>
             </li>
         </ul>
+        <ul>
+            <li ng-repeat="event in pastEvents">
+                <div class="event-info">
+                    <div class="past event-date">
+                        <ul>
+                            <li>{{ event.month }}</li>
+                            <li>{{ event.day }}</li>
+                        </ul>
+                    </div>
+                    <div class="about-event">
+                        <h1 class="hd-n">{{ event.name }}</h1>
+                        <div class="event-details">{{ event.time }} at {{ event.location }}</div>
+                        <div class="event-description" ng-bind-html="event.description | sanitize"></div>
+                        <div class="event-link"><a ng-href="{{ event.url }}">Click here for more information</a></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
     </div>
 
 

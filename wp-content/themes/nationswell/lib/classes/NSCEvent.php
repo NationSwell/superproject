@@ -80,10 +80,12 @@ if (class_exists('TimberPost')) {
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
                 'orderby' => 'meta_value',
-                'order' => 'DESC',
+                'order' => 'ASC',
                 'meta_query' => array(
                         array(
-                            'key' => 'event_date'
+                            'key' => 'event_date',
+                            'value' => $today->format("Y-m-d"),
+                            'compare' => '>='
                         )
                     )
             ));
@@ -98,11 +100,11 @@ if (class_exists('TimberPost')) {
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
                 'orderby' => 'meta_value',
-                'order' => 'ASC',
+                'order' => 'DESC',
                 'meta_query' => array(
                     array(
                         'key' => 'event_date',
-                        'value' => $today,
+                        'value' => $today->format("Y-m-d"),
                         'compare' => '<'
                     )
                 )
