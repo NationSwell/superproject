@@ -162,10 +162,9 @@
 
   &.btn--facebook {
     background-color: #5973aa;
-    margin-bottom: 15px !important;
 
-    &:hover {
-      background-color: #6983ba;
+    &:after {
+      background-color: #2e5381;
     }
   }
 
@@ -181,8 +180,8 @@
   &.btn--twitter {
     background-color: #2fb8ed;
 
-    &:hover {
-      background-color: #3fc8fd;
+    &:after {
+      background-color: #209bcb;
     }
   }
 
