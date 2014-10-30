@@ -1,21 +1,24 @@
 <?php
-if(function_exists("register_field_group"))
-{
-    register_field_group(array (
-            'id' => 'acf_hero',
-            'title' => 'Hero',
-            'fields' => array (
-//                array (
-//                    'key' => 'field_52a22c48221a3',
-//                    'label' => 'Enable Small Hero',
-//                    'name' => 'enable_small_hero',
-//                    'type' => 'true_false',
-//                    'instructions' => 'Use this option if you have an image which you want to appear in the center copy column on a Story page.',
-//                    'message' => '',
-//                    'default_value' => 0,
-//                ),
+if (function_exists("register_field_group")) {
+    register_field_group(
+        array(
+            'id' => 'acf_council_event',
+            'title' => 'NSC Event',
+            'fields' => array(
                 array (
-                    'key' => 'field_52a3d9818d832',
+                    'key' => 'field_329re556a8900',
+                    'label' => __('Dek'),
+                    'name' => 'dek',
+                    'type' => 'text',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => '',
+                ),
+                array (
+                    'key' => 'field_678ro223x7794',
                     'label' => 'Hero Type',
                     'name' => 'hero_type',
                     'type' => 'select',
@@ -28,7 +31,7 @@ if(function_exists("register_field_group"))
                     'multiple' => 0,
                 ),
                 array (
-                    'key' => 'field_52742d44fb739',
+                    'key' => 'field_482pz401w8242',
                     'label' => __('Hero'),
                     'name' => 'hero',
                     'type' => 'flexible_content',
@@ -41,7 +44,7 @@ if(function_exists("register_field_group"))
                             'max' => '',
                             'sub_fields' => array (
                                 array (
-                                    'key' => 'field_52742d6cfb73a',
+                                    'key' => 'field_074qa119n5021',
                                     'label' => __('Image'),
                                     'name' => 'image',
                                     'type' => 'image',
@@ -60,7 +63,7 @@ if(function_exists("register_field_group"))
                             'max' => '',
                             'sub_fields' => array (
                                 array (
-                                    'key' => 'field_52742d8ffb73c',
+                                    'key' => 'field_904nm692e2531',
                                     'label' => __('Video URL'),
                                     'name' => 'video_url',
                                     'type' => 'text',
@@ -73,7 +76,7 @@ if(function_exists("register_field_group"))
                                     'maxlength' => '',
                                 ),
                                 array (
-                                    'key' => 'field_5286a66eeac48',
+                                    'key' => 'field_801pw610r0026',
                                     'label' => __('Caption'),
                                     'name' => 'caption',
                                     'type' => 'text',
@@ -86,7 +89,7 @@ if(function_exists("register_field_group"))
                                     'maxlength' => '',
                                 ),
                                 array (
-                                    'key' => 'field_5286a67ceac49',
+                                    'key' => 'field_996bz921u1023',
                                     'label' => __('Credit'),
                                     'name' => 'credit',
                                     'type' => 'text',
@@ -105,24 +108,73 @@ if(function_exists("register_field_group"))
                     'min' => '',
                     'max' => '',
                 ),
+                array(
+                    'key' => 'field_619dp347s7752',
+                    'label' => 'Date',
+                    'name' => 'event_date',
+                    'type' => 'date_picker',
+                    'instructions' => 'The date and time of this event.',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_892lo223w9006',
+                    'label' => 'Time',
+                    'name' => 'event_time',
+                    'type' => 'text',
+                    'instructions' => 'The time of day this event will occur.',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_100fp496o1138',
+                    'label' => 'Location',
+                    'name' => 'location',
+                    'type' => 'text',
+                    'instructions' => 'The location of this event.',
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'formatting' => 'none',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_349te699q6883',
+                    'label' => 'Event Description',
+                    'name' => 'description',
+                    'type' => 'wysiwyg',
+                    'instructions' => '',
+                    'default_value' => '',
+                    'toolbar' => 'basic',
+                    'media_upload' => 'no',
+                ),
             ),
-            'location' => array (
-                array (
-                    array (
+            'location' => array(
+                array(
+                    array(
                         'param' => 'post_type',
                         'operator' => '==',
-                        'value' => 'post',
+                        'value' => 'nscevent',
                         'order_no' => 0,
                         'group_no' => 0,
-                    )
+                    ),
                 ),
             ),
-            'options' => array (
-                'position' => 'acf_after_title',
-                'layout' => 'default',
-                'hide_on_screen' => array (
-                ),
+            'options' => array(
+                'position' => 'normal',
+                'layout' => 'no_box',
+                'hide_on_screen' => array(),
             ),
-            'menu_order' => 30,
-        ));
+            'menu_order' => 0,
+        )
+    );
 }

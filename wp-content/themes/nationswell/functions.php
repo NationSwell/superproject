@@ -181,6 +181,8 @@ function register_acf_fields()
     include_once('lib/fields/editors_picks_posts.php');
     include_once('lib/fields/bi_contributors_posts.php');
     include_once('lib/fields/facebook_admin.php');
+    include_once('lib/fields/council_contact.php');
+    include_once('lib/fields/council_event.php');
     include_once('lib/fields/options/change_org.php');
     include_once('lib/fields/options/google.php');
     include_once('lib/fields/options/rally.php');
@@ -198,6 +200,11 @@ include_once('lib/classes/NationSwellSeries.php');
 include_once('lib/classes/MailChimpFeed.php');
 include_once('lib/classes/EditorsPicksFeed.php');
 include_once('lib/classes/BIContributorsFeed.php');
+include_once('lib/classes/NSCDirectory.php');
+include_once('lib/classes/NSCEvent.php');
+include_once('lib/classes/NSCContact.php');
+
+
 
 // Shortcodes
 include_once('lib/shortcodes/placeholder.php');
@@ -224,6 +231,8 @@ include_once('lib/custom_post_types/daily_newsletter.php');
 include_once('lib/custom_post_types/editors_picks.php');
 include_once('lib/custom_post_types/bi_contributors.php');
 include_once('lib/custom_post_types/series.php');
+include_once('lib/custom_post_types/nsc_contact.php');
+include_once('lib/custom_post_types/nsc_event.php');
 
 // Remove the SEO MetaBox from Custom Post Types
 function prefix_remove_wp_seo_meta_box() {
@@ -233,6 +242,8 @@ function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_daily_newsletter', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_editors_picks', 'normal' );
     remove_meta_box( 'wpseo_meta', 'ns_bi_contributors', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'nsccontact', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'nscevent', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
@@ -701,4 +712,48 @@ function ns_save_extra_email_field( $user_id ) {
         return false;
 
     update_usermeta( $user_id, 'email_display', $_POST['email_display'] );
+}
+
+
+add_action( 'wp_ajax_initialize_nscdirectory', 'ns_nscdirectory_callback' );
+add_action( 'wp_ajax_nopriv_initialize_nscdirectory', 'ns_nscdirectory_callback' );
+
+function ns_nscdirectory_callback() {
+    $query = array(
+        'posts_per_page' => -1,
+        'post_type' => 'nsccontact',
+        'orderby' => 'meta_value',
+        'order' => 'ASC',
+        'meta_key' => 'nsc_surname',
+    );
+    $contactPosts = get_posts( $query );
+    $contactData = array();
+    foreach($contactPosts as $contact) {
+        $contactData[] = array (
+            "name" => $contact->post_title,
+            "surname" => get_field("nsc_surname", $contact),
+            "bio" => get_field("nsc_bio", $contact),
+            "image" => get_field("nsc_image", $contact),
+            "interests" => get_field("nsc_interests", $contact),
+            "email" => get_field("nsc_email", $contact),
+            "linkedin" => get_field("nsc_linkedin", $contact),
+            "phone" => get_field("nsc_phone", $contact),
+            "twitter" => get_field("nsc_twitter", $contact)
+        );
+    }
+    wp_send_json( $contactData );
+    exit();
+}
+
+add_action( 'wp_ajax_initialize_nscevents', 'ns_nscevents_callback' );
+add_action( 'wp_ajax_nopriv_initialize_nscevents', 'ns_nscevents_callback' );
+
+function ns_nscevents_callback() {
+    $events = array();
+    $events["upcoming"] = NSCEvent::getUpcomingEvents();
+   // error_log("UPCOMING: " . print_r($events["upcoming"], TRUE));
+    $events["past"] = NSCEvent::getPastEvents();
+    //error_log("PAST: " . print_r($events["past"], TRUE));
+    wp_send_json( $events );
+    exit();
 }

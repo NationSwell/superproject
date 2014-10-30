@@ -135,7 +135,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-twig');
 
-    grunt.registerTask('base', ['webfont', 'twig', 'concat', 'uglify', 'bumpVersion']);
+    grunt.registerTask('base', ['twig', 'concat', 'uglify', 'bumpVersion']);
     grunt.registerTask('dev', ['base', 'compass:dev', 'watch']);
     grunt.registerTask('prod', ['base', 'compass:prod']);
     grunt.registerTask('default', ['dev']);

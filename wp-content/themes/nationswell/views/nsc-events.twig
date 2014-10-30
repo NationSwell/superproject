@@ -1,0 +1,47 @@
+{% verbatim %}
+<div id="nsc-events" ng-controller="eventsController as eventsPage" ng-show="portal.isSet(1)">
+    <div class="member-title hd-l">Upcoming Events</div>
+    <div class="events">
+        <ul>
+            <li ng-repeat="event in upcomingEvents">
+                <div class="event-info">
+                    <div class="upcoming event-date">
+                        <ul>
+                            <li>{{ event.month }}</li>
+                            <li>{{ event.day }}</li>
+                        </ul>
+                    </div>
+                    <div class="about-event">
+                        <a ng-href="{{ event.url }}"><h1 class="hd-n">{{ event.name }}</h1></a>
+                        <div class="event-details">{{ event.time }} at {{ event.location }}</div>
+                        <div class="event-description" ng-bind-html="event.description | sanitize"></div>
+                        <div class="event-link"><a ng-href="{{ event.url }}">Click here for more information</a></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="member-title hd-l">Past Events</div>
+        <ul>
+            <li ng-repeat="event in pastEvents">
+                <div class="event-info">
+                    <div class="past event-date">
+                        <ul>
+                            <li>{{ event.month }}</li>
+                            <li>{{ event.day }}</li>
+                        </ul>
+                    </div>
+                    <div class="about-event">
+                        <a ng-href="{{ event.url }}"><h1 class="hd-n">{{ event.name }}</h1></a>
+                        <div class="event-details">{{ event.time }} at {{ event.location }}</div>
+                        <div class="event-description" ng-bind-html="event.description | sanitize"></div>
+                        <div class="event-link"><a ng-href="{{ event.url }}">Click here for more information</a></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+</div>
+{% endverbatim %}

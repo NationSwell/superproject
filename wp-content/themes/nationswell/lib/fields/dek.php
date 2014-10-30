@@ -26,7 +26,7 @@ if(function_exists("register_field_group"))
                         'value' => 'post',
                         'order_no' => 0,
                         'group_no' => 0,
-                    ),
+                    )
                 ),
             ),
             'options' => array (
