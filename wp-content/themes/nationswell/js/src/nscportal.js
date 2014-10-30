@@ -15,7 +15,6 @@
                 url: '/wp-admin/admin-ajax.php',
                 params: {action: 'initialize_nscdirectory'}
             }).success(function (data, status, headers, config) {
-                $log.info(data, status);
                 callback(data);
 
             }).error(function (data, status, headers, config) {
@@ -32,7 +31,6 @@
                 url: '/wp-admin/admin-ajax.php',
                 params: {action: 'initialize_nscevents'}
             }).success(function (data, status, headers, config) {
-                $log.info(data, status);
                 callback(data);
 
             }).error(function (data, status, headers, config) {
@@ -89,7 +87,6 @@
         $scope.upcomingEvents = [];
         $scope.pastEvents = [];
         NSCEventData.initEvents(function(response) {
-            console.log(response['upcoming']);
             $scope.upcomingEvents = response['upcoming'];
             $scope.pastEvents = response['past'];
 
