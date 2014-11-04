@@ -99,7 +99,6 @@
         }
       }
 
-
       .hero-information__caption {
         color: $ns_navy2;
       }
@@ -110,6 +109,7 @@
 
       .widescreen-hero-information__caption {
         color: $ns_navy2;
+        display:inline-block;
       }
 
       .widescreen-hero-information__credit {

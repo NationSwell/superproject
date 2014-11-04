@@ -5850,17 +5850,18 @@ hr {
 .hero--story.hero--image .hero-information.is-long.is-open, .hero--story.hero-widescreen-image .hero-information.is-long.is-open, .hero--story.hero--video .hero-information.is-long.is-open {
   background-color: #fff;
 }
-/* line 103, ../scss/partials/desktop/_story.scss */
+/* line 102, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--image .hero-information .hero-information__caption, .hero--story.hero-widescreen-image .hero-information .hero-information__caption, .hero--story.hero--video .hero-information .hero-information__caption {
   color: #003046;
 }
-/* line 107, ../scss/partials/desktop/_story.scss */
+/* line 106, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--image .hero-information .hero-information__credit, .hero--story.hero-widescreen-image .hero-information .hero-information__credit, .hero--story.hero--video .hero-information .hero-information__credit {
   color: #688390;
 }
-/* line 111, ../scss/partials/desktop/_story.scss */
+/* line 110, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--image .hero-information .widescreen-hero-information__caption, .hero--story.hero-widescreen-image .hero-information .widescreen-hero-information__caption, .hero--story.hero--video .hero-information .widescreen-hero-information__caption {
   color: #003046;
+  display: inline-block;
 }
 /* line 115, ../scss/partials/desktop/_story.scss */
 .hero--story.hero--image .hero-information .widescreen-hero-information__credit, .hero--story.hero-widescreen-image .hero-information .widescreen-hero-information__credit, .hero--story.hero--video .hero-information .widescreen-hero-information__credit {
