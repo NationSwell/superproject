@@ -3801,8 +3801,8 @@ hr {
 
 /* line 47, ../scss/partials/base/_nscportal.scss */
 .loader {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin: auto;
   padding: 5rem;
 }
