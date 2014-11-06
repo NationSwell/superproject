@@ -48,8 +48,13 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  width: 230px;
+  width: 280px;
 }
+
+.hd-l {
+  font-size: 4rem;
+}
+
 #directory-nav {
   display: table;
   width: 100%;
@@ -83,7 +88,7 @@
   }
 }
 .contacts {
-
+  padding-top: 3rem;
   .contact-info {
     display: block;
     padding: 3rem 0;
@@ -164,6 +169,7 @@
 }
 
 .events {
+  padding-top: 3rem;
   .event-info {
     display: block;
     padding: 3rem 0;
@@ -176,11 +182,11 @@
       margin-left: 2%;
       font-size: 3rem;
       color: $white;
-      width: 10rem;
-      height: 10rem;
+      width: 12rem;
+      height: 12rem;
 
       ul {
-        padding: 2.25rem;
+        padding: 2.5rem;
         li {
           text-align: center;
           font-weight: 600;
@@ -208,7 +214,8 @@
 
       .event-details {
         padding-top: 1rem;
-        color: $ns_blue1;
+        color: $ns_navy2;
+        font-weight: 600;
       }
 
       .event-link a {
