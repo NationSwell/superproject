@@ -4033,7 +4033,7 @@ hr {
 
 /* line 186, ../scss/partials/base/_nscportal.scss */
 .events ul {
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 /* line 190, ../scss/partials/base/_nscportal.scss */
 .events .event-info {
