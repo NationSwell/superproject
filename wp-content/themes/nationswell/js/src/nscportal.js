@@ -48,7 +48,6 @@
         $scope.PtoT= [],
         $scope.UtoZ = [];
         $scope.loading = true;
-        console.log($scope.loading);
         NSCContactData.initContacts(function(response) {
 
             contacts = response;
@@ -71,7 +70,6 @@
             $scope.allContacts = contacts;
         }).then(function() {
             $scope.loading = false;
-            console.log($scope.loading);
         });
         this.tab = 0;
 
