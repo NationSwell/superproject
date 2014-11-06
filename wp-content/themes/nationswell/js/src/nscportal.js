@@ -47,6 +47,8 @@
         $scope.KtoO = [],
         $scope.PtoT= [],
         $scope.UtoZ = [];
+        $scope.loading = true;
+        console.log($scope.loading);
         NSCContactData.initContacts(function(response) {
 
             contacts = response;
@@ -67,6 +69,9 @@
                 }
             }
             $scope.allContacts = contacts;
+        }).then(function() {
+            $scope.loading = false;
+            console.log($scope.loading);
         });
         this.tab = 0;
 
@@ -105,7 +110,7 @@
         });
     }]);
 
-    app.controller("portalController", ['$scope', function($scope, NSCEventData) {
+    app.controller("portalController", ['$scope', function($scope) {
         this.tab = 0;
 
         this.isSet = function(checkTab) {

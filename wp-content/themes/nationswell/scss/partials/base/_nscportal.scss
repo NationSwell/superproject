@@ -44,6 +44,13 @@
   }
 }
 
+.loader {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  padding: 5rem;
+}
+
 .member-title {
   position: relative;
   display: table-cell;
@@ -171,7 +178,7 @@
 
 .events {
   padding-top: 3rem;
-  
+
   .event-info {
     display: block;
     padding: 3rem 0;
@@ -188,7 +195,7 @@
       height: 12rem;
 
       ul {
-        padding: 2.5rem;
+        padding: 3.4rem 2.5rem 1rem;
         li {
           text-align: center;
           font-weight: 600;
