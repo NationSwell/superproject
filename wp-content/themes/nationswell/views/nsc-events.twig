@@ -1,6 +1,6 @@
 {% verbatim %}
 <div id="nsc-events" ng-controller="eventsController as eventsPage" ng-show="portal.isSet(1)">
-    <div class="member-title hd-l">Upcoming Events</div>
+    <div class="member-title"><h1>Upcoming Events</h1></div>
     <div class="events">
         <ul>
             <li ng-repeat="event in upcomingEvents">
@@ -20,7 +20,7 @@
                 </div>
             </li>
         </ul>
-        <div class="member-title hd-l">Past Events</div>
+        <div class="member-title"><h1>Past Events</h1></div>
         <ul>
             <li ng-repeat="event in pastEvents">
                 <div class="event-info">
