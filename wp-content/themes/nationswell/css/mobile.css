@@ -3946,7 +3946,7 @@ hr {
 /* line 188, ../scss/partials/base/_nscportal.scss */
 .events .event-info {
   display: block;
-  padding: 3rem 0;
+  padding: 3rem 0 4.5rem;
   width: 100%;
 }
 /* line 193, ../scss/partials/base/_nscportal.scss */
@@ -3962,7 +3962,7 @@ hr {
 }
 /* line 203, ../scss/partials/base/_nscportal.scss */
 .events .event-info .event-date ul {
-  padding: 3.4rem 2.5rem 1rem;
+  padding: 6rem 2.5rem 1rem;
 }
 /* line 205, ../scss/partials/base/_nscportal.scss */
 .events .event-info .event-date ul li {
