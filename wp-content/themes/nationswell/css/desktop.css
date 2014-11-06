@@ -4031,17 +4031,17 @@ hr {
   padding: 0.6rem .8rem .3rem;
 }
 
-/* line 185, ../scss/partials/base/_nscportal.scss */
-.events {
+/* line 186, ../scss/partials/base/_nscportal.scss */
+.events ul {
   padding-top: 3rem;
 }
-/* line 188, ../scss/partials/base/_nscportal.scss */
+/* line 190, ../scss/partials/base/_nscportal.scss */
 .events .event-info {
   display: block;
   padding: 3rem 0 4.5rem;
   width: 100%;
 }
-/* line 193, ../scss/partials/base/_nscportal.scss */
+/* line 195, ../scss/partials/base/_nscportal.scss */
 .events .event-info .event-date {
   display: inline-block;
   vertical-align: top;
@@ -4052,46 +4052,46 @@ hr {
   width: 12rem;
   height: 12rem;
 }
-/* line 203, ../scss/partials/base/_nscportal.scss */
-.events .event-info .event-date ul {
-  padding: 6rem 2.5rem 1rem;
-}
 /* line 205, ../scss/partials/base/_nscportal.scss */
+.events .event-info .event-date ul {
+  padding: 3rem 2.5rem 1rem;
+}
+/* line 207, ../scss/partials/base/_nscportal.scss */
 .events .event-info .event-date ul li {
   text-align: center;
   font-weight: 600;
 }
-/* line 212, ../scss/partials/base/_nscportal.scss */
+/* line 214, ../scss/partials/base/_nscportal.scss */
 .events .event-info .upcoming {
   background-color: #fc3b40;
 }
-/* line 215, ../scss/partials/base/_nscportal.scss */
+/* line 217, ../scss/partials/base/_nscportal.scss */
 .events .event-info .past {
   background-color: #0098d8;
 }
-/* line 219, ../scss/partials/base/_nscportal.scss */
+/* line 221, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event {
   display: inline-block;
   text-align: left;
   width: 70%;
   padding-left: 5%;
 }
-/* line 225, ../scss/partials/base/_nscportal.scss */
+/* line 227, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-description {
   padding: 1rem 0;
   line-height: 1.4;
 }
-/* line 230, ../scss/partials/base/_nscportal.scss */
+/* line 232, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-details {
   padding-top: 1rem;
   color: #003046;
   font-weight: 600;
 }
-/* line 236, ../scss/partials/base/_nscportal.scss */
+/* line 238, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-link a {
   color: #0098d8;
 }
-/* line 238, ../scss/partials/base/_nscportal.scss */
+/* line 240, ../scss/partials/base/_nscportal.scss */
 .events .event-info .about-event .event-link a:hover {
   color: #fc3b40;
 }
