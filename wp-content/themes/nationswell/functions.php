@@ -717,28 +717,36 @@ add_action( 'wp_ajax_initialize_nscdirectory', 'ns_nscdirectory_callback' );
 add_action( 'wp_ajax_nopriv_initialize_nscdirectory', 'ns_nscdirectory_callback' );
 
 function ns_nscdirectory_callback() {
-    $query = array(
-        'posts_per_page' => -1,
-        'post_type' => 'nsccontact',
-        'orderby' => 'meta_value',
-        'order' => 'ASC',
-        'meta_key' => 'nsc_surname',
-    );
-    $contactPosts = get_posts( $query );
-    $contactData = array();
-    foreach($contactPosts as $contact) {
-        $contactData[] = array (
-            "name" => $contact->post_title,
-            "surname" => get_field("nsc_surname", $contact),
-            "bio" => get_field("nsc_bio", $contact),
-            "image" => get_field("nsc_image", $contact),
-            "interests" => get_field("nsc_interests", $contact),
-            "email" => get_field("nsc_email", $contact),
-            "linkedin" => get_field("nsc_linkedin", $contact),
-            "phone" => get_field("nsc_phone", $contact),
-            "twitter" => get_field("nsc_twitter", $contact)
+
+    $contactData = get_transient( 'nsc_portal_contact_data' );
+
+    if ( false === ( $contactData ) ) {
+        // It wasn't there, so regenerate the data and save the transient
+        $query = array(
+            'posts_per_page' => -1,
+            'post_type' => 'nsccontact',
+            'orderby' => 'meta_value',
+            'order' => 'ASC',
+            'meta_key' => 'nsc_surname',
         );
+        $contactPosts = get_posts( $query );
+        $contactData = array();
+        foreach($contactPosts as $contact) {
+            $contactData[] = array (
+                "name" => $contact->post_title,
+                "surname" => get_field("nsc_surname", $contact),
+                "bio" => get_field("nsc_bio", $contact),
+                "image" => get_field("nsc_image", $contact),
+                "interests" => get_field("nsc_interests", $contact),
+                "email" => get_field("nsc_email", $contact),
+                "linkedin" => get_field("nsc_linkedin", $contact),
+                "phone" => get_field("nsc_phone", $contact),
+                "twitter" => get_field("nsc_twitter", $contact)
+            );
+        }
+        set_transient( 'nsc_portal_contact_data', $contactData, 12 * HOUR_IN_SECONDS );
     }
+
     wp_send_json( $contactData );
     exit();
 }
