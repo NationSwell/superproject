@@ -200,9 +200,7 @@ include_once('lib/classes/NationSwellSeries.php');
 include_once('lib/classes/MailChimpFeed.php');
 include_once('lib/classes/EditorsPicksFeed.php');
 include_once('lib/classes/BIContributorsFeed.php');
-include_once('lib/classes/NSCDirectory.php');
 include_once('lib/classes/NSCEvent.php');
-include_once('lib/classes/NSCContact.php');
 
 
 
