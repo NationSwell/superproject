@@ -17,12 +17,12 @@
                 <article class="story story--page" id="story">
                     <header>
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
-                        <h3 class="hd-k story__dek">{{ post.dek }}</h3>
+                        <h3 class="hd-k story__dek">{{ post.get_field("dek") }}</h3>
 
                     </header>
 
                     <div class="story__content">
-                        {{post.description}}
+                        {{ post.get_field("description") }}
                     </div>
 
                 </article>

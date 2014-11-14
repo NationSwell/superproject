@@ -81,7 +81,6 @@ if (class_exists('TimberPost')) {
                 'post_type' => 'nscevent',
                 'orderby' => 'meta_value',
                 'order' => 'ASC',
-                'nopaging' => true,
                 'meta_query' => array(
                         array(
                             'key' => 'event_date',
@@ -101,7 +100,6 @@ if (class_exists('TimberPost')) {
                 'post_type' => 'nscevent',
                 'orderby' => 'meta_value',
                 'order' => 'DESC',
-                'nopaging' => true,
                 'meta_query' => array(
                     array(
                         'key' => 'event_date',
