@@ -108,8 +108,12 @@
         });
     }]);
 
-    app.controller("portalController", ['$scope', function($scope) {
+    app.controller("portalController", ['$scope', '$location', function($scope, $location) {
         this.tab = 0;
+
+        if ($location.hash() === "events") {
+            this.tab = 1;
+        }
 
         this.isSet = function(checkTab) {
             return this.tab === checkTab;
@@ -117,6 +121,10 @@
 
         this.setTab = function(activeTab) {
             this.tab = activeTab;
+
+            if (this.tab === 1) {
+                $location.hash('events');
+            }
         };
     }]);
 })();
