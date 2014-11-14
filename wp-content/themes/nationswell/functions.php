@@ -758,12 +758,6 @@ function ns_nscevents_callback() {
     $events = array();
     $events["upcoming"] = NSCEvent::getUpcomingEvents();
     $events["past"] = NSCEvent::getPastEvents();
-    $test = get_posts(array(
-        'numberposts' => -1,
-        'fields' => 'ids',
-        'post_type' => 'nscevent'));
-    error_log("TEST: " . sizeof($test));
-    error_log(print_r($test, TRUE));
     wp_send_json( $events );
     exit();
 }
