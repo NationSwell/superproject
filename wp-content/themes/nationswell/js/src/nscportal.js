@@ -111,7 +111,7 @@
     app.controller("portalController", ['$scope', '$location', function($scope, $location) {
         this.tab = 0;
 
-        if ($location.hash() === "events") {
+        if ($location.path() === "/events") {
             this.tab = 1;
         }
 
@@ -123,7 +123,7 @@
             this.tab = activeTab;
 
             if (this.tab === 1) {
-                $location.hash('events');
+                $location.path('/events');
             }
         };
     }]);
