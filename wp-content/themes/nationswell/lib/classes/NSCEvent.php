@@ -76,7 +76,7 @@ if (class_exists('TimberPost')) {
 
         private static function queryUpcomingEvents() {
             $upcomingEvents = get_posts( array(
-                'posts_per_page' => -1,
+                'numberposts' => -1,
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
                 'orderby' => 'meta_value',
@@ -95,7 +95,7 @@ if (class_exists('TimberPost')) {
 
         private static function queryPastEvents() {
             $pastEvents = get_posts( array(
-                'posts_per_page' => -1,
+                'numberposts' => -1,
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
                 'orderby' => 'meta_value',
