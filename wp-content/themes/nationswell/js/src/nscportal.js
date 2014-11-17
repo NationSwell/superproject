@@ -109,7 +109,7 @@
     }]);
 
     app.controller("portalController", ['$scope', '$location', function($scope, $location) {
-        this.tab = 0;
+        this.tab = -1;
 
         if ($location.path() === "/events") {
             this.tab = 1;

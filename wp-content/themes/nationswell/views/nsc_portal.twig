@@ -79,6 +79,10 @@
                         </div>
                     </div>
 
+                    <div class="static__content" ng-show="portal.isSet(-1)">
+                        {{ page_content }}
+                    </div>
+
                     {% include 'nsc-directory.twig' %}
 
                     {% include 'nsc-events.twig' %}
