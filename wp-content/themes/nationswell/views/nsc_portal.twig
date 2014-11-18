@@ -66,7 +66,7 @@
             <main id="page-content" class="portal__main-column" role="main">
                 <div id="nscPortal" ng-controller="portalController as portal">
                     <div id="portal-nav">
-                        <div class="logo-container"><img class="council-logo" src="{{ theme_dir }}/img/nscouncil.png" alt="NationSwell Logo"/></div>
+                        <div class="logo-container"><a href="{{ post.link }}"><img class="council-logo" src="{{ theme_dir }}/img/nscouncil.png" alt="NationSwell Logo"/></a></div>
                         <div class="portal-tabs">
                             <ul>
                                 <li ng-class="{ active:portal.isSet(0) }">

@@ -124,6 +124,8 @@
 
             if (this.tab === 1) {
                 $location.path('/events');
+            } else {
+                $location.path('/contacts');
             }
         };
     }]);

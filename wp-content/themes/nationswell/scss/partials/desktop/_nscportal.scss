@@ -4,12 +4,18 @@
 
 .portal__main-column {
   width: 90%;
-  margin-left: auto;
+
+  .static__content p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 2.2rem;
+    color: $black;
+  }
 }
 
 #portal-nav {
   .portal-tabs {
-    padding-right: 15%;
+    padding-right: 0;
     ul {
       padding: 0 1rem;
     }
@@ -18,7 +24,6 @@
 
 #directory-nav {
   display: table;
-  padding-right: 10%;
   width: 100%;
 
   #member-title {
@@ -46,7 +51,6 @@
   .about-contact {
     width: 60%;
     padding-left: 10%;
-    padding: 0 4rem;
 
   }
   .contact-image{
