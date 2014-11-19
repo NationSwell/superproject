@@ -301,17 +301,12 @@
       /* drop cap */
       &:first-child:first-letter {
         float: left;
-        font-family: $oswald ;
+        font-family: $oswald;
         line-height: 1;
       }
 
       a {
-        color: $ns_blue1;
-        font-weight: $bold;
-
-        &:hover {
-          color: $ns_red;
-        }
+        @extend %story-link;
       }
     }
 
@@ -385,6 +380,10 @@
           position: absolute;
           text-align: center;
         }
+
+        a {
+          @extend %story-link;
+        }
       }
     }
 
@@ -400,6 +399,10 @@
           font-family: 'icons';
           content: $icon_star;
           position: absolute;
+        }
+
+        a {
+          @extend %story-link;
         }
       }
     }

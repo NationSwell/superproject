@@ -100,3 +100,12 @@
 
   }
 }
+
+%story-link {
+  color: $ns_blue1;
+  font-weight: $bold;
+
+  &:hover {
+    color: $ns_red;
+  }
+}
