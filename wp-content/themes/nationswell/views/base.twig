@@ -25,7 +25,9 @@
 <div id="page-wrapper">
     {% include 'nav.twig' %}
 
+    {% block topics %}
     {% include 'trending-topics.twig' %}
+    {% endblock %}
 
     <main id="page-content" role="main">
         {% block content %}
