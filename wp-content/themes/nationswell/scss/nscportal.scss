@@ -1,36 +1,32 @@
-/* line 1, ../scss/partials/mobile/_nscportal.scss */
 .portal__main-column {
   width: 100%;
 }
 
-/* line 6, ../scss/partials/mobile/_nscportal.scss */
 #directory-nav {
   display: block;
   width: 100%;
 }
-/* line 10, ../scss/partials/mobile/_nscportal.scss */
+
 #directory-nav #member-title {
   display: block;
   width: 100%;
   padding: 1rem;
   margin-bottom: 0.5rem;
 }
-/* line 18, ../scss/partials/mobile/_nscportal.scss */
+
 #directory-nav #directory-tabs {
   display: block;
   width: 100%;
 }
-/* line 23, ../scss/partials/mobile/_nscportal.scss */
+
 #directory-nav #directory-tabs ul li {
   font-size: 3rem;
 }
 
-/* line 30, ../scss/partials/mobile/_nscportal.scss */
 .contacts .contact-info .contact__portrait .about-contact {
   padding: 0 2rem;
 }
 
-/* line 12, ../scss/nscportal.scss */
 .portal__main-column {
   width: 90%;
   margin-left: auto;
@@ -38,12 +34,11 @@
   color: #7e7e7e;
 }
 
-/* line 19, ../scss/nscportal.scss */
 #directory-nav {
   display: table;
   width: 100%;
 }
-/* line 23, ../scss/nscportal.scss */
+
 #directory-nav #member-title {
   position: relative;
   display: table-cell;
@@ -51,107 +46,104 @@
   width: 30%;
   padding: 1.5rem;
 }
-/* line 30, ../scss/nscportal.scss */
+
 #directory-nav #member-title #border-left {
   position: absolute;
   bottom: 0;
   width: 8rem;
   border-bottom: 0.45rem solid #dbdbdb;
 }
-/* line 37, ../scss/nscportal.scss */
+
 #directory-nav #member-title h1 {
   color: #333;
 }
-/* line 43, ../scss/nscportal.scss */
+
 #directory-nav #directory-tabs {
   display: table-cell;
   vertical-align: middle;
   padding: 1rem;
 }
-/* line 48, ../scss/nscportal.scss */
+
 #directory-nav #directory-tabs ul {
   display: block;
   float: right;
   width: 100%;
 }
-/* line 52, ../scss/nscportal.scss */
+
 #directory-nav #directory-tabs ul li {
   display: inline-block;
   width: 18%;
 }
-/* line 56, ../scss/nscportal.scss */
+
 #directory-nav #directory-tabs ul a {
   color: #061822;
 }
-/* line 58, ../scss/nscportal.scss */
+
 #directory-nav #directory-tabs ul a:hover {
   color: #0098d8;
 }
-/* line 63, ../scss/nscportal.scss */
+
 #directory-nav #directory-tabs ul .active a {
   color: #0098d8;
   border-bottom: 0.25rem solid #fc3b40;
 }
 
-/* line 76, ../scss/nscportal.scss */
 .contacts .contact-info {
   display: table;
   padding: 3rem 0;
   width: 100%;
 }
-/* line 81, ../scss/nscportal.scss */
+
 .contacts .contact-info .contact__portrait {
   display: table-cell;
   vertical-align: middle;
   border-radius: 50%;
   margin: 0;
 }
-/* line 88, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact {
   display: table-cell;
   vertical-align: middle;
   padding: 0 2rem;
 }
-/* line 93, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .bio-content {
   padding: 1rem 0;
 }
-/* line 97, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-interests {
   color: #0098d8;
 }
-/* line 101, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-social {
   display: inline-block;
-  text-align: middle;
+  text-align: center;
 }
-/* line 105, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-social .icon {
   line-height: 2;
 }
-/* line 107, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-social .icon:before {
   padding: .25rem;
   color: #fff;
   margin: .5rem 1rem 0 0;
   height: 1rem;
 }
-/* line 115, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-social .contact-phone:before {
   background-color: #061822;
   padding: .25rem .4rem;
 }
-/* line 122, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-social .contact-email:before {
   background-color: #fc3b40;
 }
-/* line 128, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-social .contact-linkedin:before {
   background-color: #333333;
 }
-/* line 134, ../scss/nscportal.scss */
+
 .contacts .contact-info .about-contact .contact-social .contact-twitter:before {
   background-color: #5ec2e8;
 }
-
-/*# sourceMappingURL=nscportal.css.map */
