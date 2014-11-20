@@ -3,13 +3,23 @@
 }
 
 .portal__main-column {
-  width: 90%;
+  width: 100%;
+  padding-right: 6rem;
+  padding-left: 6rem;
 
-  .static__content p {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    margin-bottom: 2.2rem;
-    color: $black;
+  .static__content {
+
+    strong {
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      margin-bottom: 2.2rem;
+      color: $black;
+      width: 80%;
+    }
   }
 }
 
@@ -59,6 +69,4 @@
       display:none;
     }
   }
-
-
 }
