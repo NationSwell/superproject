@@ -5,6 +5,12 @@
   margin-top: 5rem;
   font-family: $gudea;
   color: $gray1;
+
+  .static__content {
+    a {
+      @extend %story-link;
+    }
+  }
 }
 
 #portal-nav {
@@ -26,6 +32,11 @@
     font-size: 3rem;
     a {
       color: $ns_navy2;
+      border-bottom: 0.25rem solid $ns_navy2;;
+
+      &:hover {
+        color: $ns_red;
+      }
     }
     .active a {
       color: $ns_blue1;
