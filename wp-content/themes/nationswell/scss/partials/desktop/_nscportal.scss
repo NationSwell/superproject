@@ -9,7 +9,7 @@
 
   .static__content {
 
-    max-width: 593px;
+    max-width: 75rem;
     margin: 0 auto;
 
     strong {
@@ -19,8 +19,11 @@
     p {
       font-size: 1.8rem;
       line-height: 1.5;
-      margin-bottom: 2.2rem;
-      color: $black;
+      padding: 1rem 10rem;
+
+      &:first-child {
+        padding-top: 5rem;
+      }
     }
 
     img {

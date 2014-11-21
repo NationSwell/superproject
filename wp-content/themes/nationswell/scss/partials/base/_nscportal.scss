@@ -7,8 +7,17 @@
   color: $gray1;
 
   .static__content {
+
+    background-image: url("http://nationswell.com/wp-content/uploads/2014/11/Nov_12_Vanessa_crowd-e1416603082101.jpg");
+    background-size: cover;
+
     a {
       @extend %story-link;
+    }
+
+    p {
+      color: $white;
+      background-color: rgba(#4dabe0, .6);
     }
   }
 }
