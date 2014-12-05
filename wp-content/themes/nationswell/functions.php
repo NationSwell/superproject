@@ -770,4 +770,4 @@ function clear_portal_transient($post_id, $post) {
     delete_transient('nsc_portal_contact_data');
 }
 
-add_action('save_post', 'clear_portal_transient');
+add_action('save_post', 'clear_portal_transient', 1, 2);
