@@ -761,3 +761,13 @@ function ns_nscevents_callback() {
     wp_send_json( $events );
     exit();
 }
+
+function clear_portal_transient($post_id, $post) {
+
+    if ($post->post_type != 'nsccontact') {
+        return;
+    }
+    delete_transient('nsc_portal_contact_data');
+}
+
+add_action('save_post', 'clear_portal_transient');
