@@ -16,9 +16,17 @@
       @extend %story-link;
     }
 
-    p {
+    p, ul {
       color: $white;
       background-color: rgba(#4dabe0, .6);
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    em {
+      font-style: italic;
     }
   }
 }

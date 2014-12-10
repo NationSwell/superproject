@@ -17,13 +17,19 @@
     }
 
     p {
-      font-size: 1.8rem;
+      font-size: 2rem;
       line-height: 1.5;
       padding: 1rem 10rem;
 
       &:first-child {
         padding-top: 5rem;
       }
+    }
+
+    ul {
+      font-size: 2rem;
+      line-height: 1.2;
+      padding: 1rem 10rem;
     }
 
     img {
