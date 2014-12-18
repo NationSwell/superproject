@@ -84,7 +84,7 @@ if (class_exists('TimberPost')) {
                 'meta_query' => array(
                         array(
                             'key' => 'event_date',
-                            'value' => date("Y-m-d"),
+                            'value' => date("Ymd"),
                             'compare' => '>=',
                             'type'    => 'DATE'
                         )
@@ -103,7 +103,7 @@ if (class_exists('TimberPost')) {
                 'meta_query' => array(
                     array(
                         'key' => 'event_date',
-                        'value' => date("Y-m-d"),
+                        'value' => date("Ymd"),
                         'compare' => '<',
                         'type'    => 'DATE'
                     )
