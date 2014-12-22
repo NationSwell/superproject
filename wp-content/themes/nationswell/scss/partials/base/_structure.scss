@@ -41,3 +41,8 @@ body {
 .container {
   position: relative;
 }
+
+.flex {
+  @include display(flex);
+  @include flex-direction(row);
+}
