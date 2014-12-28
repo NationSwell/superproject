@@ -39,14 +39,15 @@ if (class_exists('TimberPost')) {
             $today = new DateTime(date('Y-m-d'));
 
             foreach ($eventPosts as $event) {
-                $dateObj = DateTime::createFromFormat('Ymd', get_field('event_date', $event->ID));
+                $dateObj = DateTime::createFromFormat('Ymd', get_field('eventdate', $event->ID));
                 $eventData[] = array (
                     'name' => $event->post_title,
                     'url' => get_permalink($event),
                     'description' => get_field('dek', $event->ID),
                     'time' => get_field('event_time', $event->ID),
                     'location' => get_field('location', $event->ID),
-                    'date' => $dateObj->format('j-M')
+                    'date' => $dateObj->format('j-M'),
+                    'sortdate' => $dateObj->format('Ymd')
                 );
             }
 
@@ -60,14 +61,15 @@ if (class_exists('TimberPost')) {
             $eventPosts = Timber::get_posts($events);
 
             foreach ($eventPosts as $event) {
-                $dateObj = DateTime::createFromFormat('Ymd', get_field('event_date', $event->ID));
+                $dateObj = DateTime::createFromFormat('Ymd', get_field('eventdate', $event->ID));
                 $eventData[] = array (
                     'name' => $event->post_title,
                     'url' => get_permalink($event),
                     'description' => get_field('dek', $event->ID),
                     'time' => get_field('event_time', $event->ID),
                     'location' => get_field('location', $event->ID),
-                    'date' => $dateObj->format('j-M')
+                    'date' => $dateObj->format('j-M'),
+                    'sortdate' => $dateObj->format('Ymd')
                 );
             }
 
@@ -79,12 +81,12 @@ if (class_exists('TimberPost')) {
                 'numberposts' => -1,
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
-                'orderby' => 'meta_value',
-                'order' => 'ASC',
+                'orderby' => 'meta_value_num',
+                'order' => 'DESC',
                 'meta_query' => array(
                         array(
-                            'key' => 'event_date',
-                            'value' => date("Ymd"),
+                            'key' => 'eventdate',
+                            'value' => date("Y-m-d"),
                             'compare' => '>=',
                             'type'    => 'DATE'
                         )
@@ -98,12 +100,12 @@ if (class_exists('TimberPost')) {
                 'numberposts' => -1,
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
-                'orderby' => 'meta_value',
+                'orderby' => 'meta_value_num',
                 'order' => 'DESC',
                 'meta_query' => array(
                     array(
-                        'key' => 'event_date',
-                        'value' => date("Ymd"),
+                        'key' => 'eventdate',
+                        'value' => date("Y-m-d"),
                         'compare' => '<',
                         'type'    => 'DATE'
                     )

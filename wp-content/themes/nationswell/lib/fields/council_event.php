@@ -111,14 +111,14 @@ if (function_exists("register_field_group")) {
                 array(
                     'key' => 'field_619dp347s7752',
                     'label' => 'Date',
-                    'name' => 'event_date',
+                    'name' => 'eventdate',
                     'type' => 'date_picker',
                     'instructions' => 'The date and time of this event.',
                     'default_value' => '',
+                    'date_format' => 'yymmdd',
+				    'display_format' => 'mm/dd/yy',
                     'placeholder' => '',
                     'prepend' => '',
-                    'append' => '',
-                    'formatting' => 'none',
                     'maxlength' => '',
                 ),
                 array(

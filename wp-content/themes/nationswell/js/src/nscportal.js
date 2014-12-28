@@ -93,6 +93,13 @@
             $scope.upcomingEvents = response['upcoming'];
             $scope.pastEvents = response['past'];
 
+            $scope.upcomingEvents.sort(function(a,b){
+                return parseInt(a['sortdate']) - parseInt(b['sortdate']);
+            });
+            /*$scope.pastEvents.sort(function(a,b){
+                return parseInt(a['sortdate']) - parseInt(b['sortdate']);
+            }).reverse();*/
+
             var index;
             for (index = 0; index < $scope.upcomingEvents.length; index++) {
                 var dateString = $scope.upcomingEvents[index]['date'].split('-');
