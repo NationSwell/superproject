@@ -86,13 +86,12 @@
         };
     }]);
 
-    app.controller("eventsController", ['$scope', 'NSCEventData', function($scope, NSCEventData) {
+    app.controller("eventsController", ['$log', '$scope', 'NSCEventData', function($log, $scope, NSCEventData) {
         $scope.upcomingEvents = [];
         $scope.pastEvents = [];
         NSCEventData.initEvents(function(response) {
             $scope.upcomingEvents = response['upcoming'];
             $scope.pastEvents = response['past'];
-
             $scope.upcomingEvents.sort(function(a,b){
                 return parseInt(a['sortdate']) - parseInt(b['sortdate']);
             });

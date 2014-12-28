@@ -39,7 +39,7 @@ if (class_exists('TimberPost')) {
             $today = new DateTime(date('Y-m-d'));
 
             foreach ($eventPosts as $event) {
-                $dateObj = DateTime::createFromFormat('Ymd', get_field('eventdate', $event->ID));
+                $dateObj = DateTime::createFromFormat('Ymd', get_field('event_date', $event->ID));
                 $eventData[] = array (
                     'name' => $event->post_title,
                     'url' => get_permalink($event),
@@ -61,7 +61,7 @@ if (class_exists('TimberPost')) {
             $eventPosts = Timber::get_posts($events);
 
             foreach ($eventPosts as $event) {
-                $dateObj = DateTime::createFromFormat('Ymd', get_field('eventdate', $event->ID));
+                $dateObj = DateTime::createFromFormat('Ymd', get_field('event_date', $event->ID));
                 $eventData[] = array (
                     'name' => $event->post_title,
                     'url' => get_permalink($event),
@@ -85,7 +85,7 @@ if (class_exists('TimberPost')) {
                 'order' => 'DESC',
                 'meta_query' => array(
                         array(
-                            'key' => 'eventdate',
+                            'key' => 'event_date',
                             'value' => date("Y-m-d"),
                             'compare' => '>=',
                             'type'    => 'DATE'
@@ -104,7 +104,7 @@ if (class_exists('TimberPost')) {
                 'order' => 'DESC',
                 'meta_query' => array(
                     array(
-                        'key' => 'eventdate',
+                        'key' => 'event_date',
                         'value' => date("Y-m-d"),
                         'compare' => '<',
                         'type'    => 'DATE'
