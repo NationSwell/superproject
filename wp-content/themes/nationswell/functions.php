@@ -112,6 +112,8 @@ function add_to_context( $data ) {
         'modal_joinus_close_expiration',
         'modal_joinus_subscribe_expiration',
 
+        'password_copy_welcome',
+
         'facebook_admin'
     );
 
@@ -186,6 +188,7 @@ function register_acf_fields()
     include_once('lib/fields/options/change_org.php');
     include_once('lib/fields/options/google.php');
     include_once('lib/fields/options/rally.php');
+    include_once('lib/fields/options/nsc-portal.php');
 }
 
 add_action('acf/register_fields', 'register_acf_fields');

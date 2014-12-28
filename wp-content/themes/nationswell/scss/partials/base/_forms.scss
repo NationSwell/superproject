@@ -13,17 +13,35 @@
 
 .password-form {
   width: 40rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
   overflow: hidden;
 
-  label {
-    font-size: 1.8rem;
+  .password-form-copy {
+
+    p {
+      font-family: $gudea;
+      font-size: 2.0rem;
+      margin-bottom: 3rem;
+      line-height: 1.4;
+    }
+  }
+
+  .form-element {
+    label {
+      font-size: 1.8rem;
+      margin-left: 0;
+    }
+  }
+
+  .password-box {
+    @include flex(2 0 0);
   }
 
   .password-btn {
     @extend %btn--submit;
     font-size: 1.8rem;
     text-transform: uppercase;
+    @include flex(.75 0 0);
   }
 }
 
