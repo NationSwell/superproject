@@ -5,7 +5,7 @@
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Fri Jan  9 12:38:40 2015
+Created by FontForge 20120731 at Fri Jan  9 16:51:25 2015
  By Mark Catalano
 Created by Mark Catalano with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -19,7 +19,7 @@ Created by Mark Catalano with FontForge 2.0 (http://fontforge.sf.net)
     panose-1="2 0 6 3 0 0 0 0 0 0"
     ascent="448"
     descent="-64"
-    bbox="-0.392305 -59 1479 447"
+    bbox="-0.392305 -48 1479 447"
     underline-thickness="25.6"
     underline-position="-51.2"
     unicode-range="U+F100-F138"
@@ -196,9 +196,8 @@ z" />
     <glyph glyph-name="uniF132" unicode="&#xf132;" horiz-adv-x="378" 
 d="M378 373c-10 -16 -24 -29 -39 -40c0 -3 1 -7 1 -10c0 -102 -78 -221 -221 -221c-44 0 -85 13 -119 35c6 -1 12 -1 18 -1c36 0 70 12 97 33c-34 1 -63 23 -73 54c5 -1 10 -1 15 -1c7 0 13 1 20 3c-35 7 -62 38 -62 76v1c10 -6 22 -10 35 -10c-21 14 -34 37 -34 64
 c0 14 3 28 10 39c38 -47 96 -78 160 -81c-1 6 -2 12 -2 18c0 43 35 78 78 78c22 0 42 -10 56 -25c18 3 35 10 50 19c-6 -18 -19 -33 -35 -43c16 2 31 6 45 12z" />
-    <glyph glyph-name="uniF133" unicode="&#xf133;" horiz-adv-x="502" 
-d="M340 212c7 -4 12 -12 12 -20s-5 -16 -12 -20l-128 -74c-4 -2 -8 -3 -12 -3s-7 1 -11 3c-7 4 -12 12 -12 20v148c0 8 5 16 12 20s16 4 23 0zM251 443c139 0 251 -112 251 -251s-112 -251 -251 -251s-251 112 -251 251s112 251 251 251zM251 -6c109 0 198 89 198 198
-s-89 198 -198 198s-198 -89 -198 -198s89 -198 198 -198z" />
+    <glyph glyph-name="uniF133" unicode="&#xf133;" horiz-adv-x="372" 
+d="M347 235c15 -9 25 -25 25 -43s-10 -34 -25 -43l-273 -157c-8 -5 -16 -7 -25 -7s-16 3 -24 7c-15 9 -25 24 -25 42v316c0 18 10 34 25 43s34 9 49 0z" />
     <glyph glyph-name="uniF134" unicode="&#xf134;" horiz-adv-x="480" 
 d="M185 301l147 -109l-147 -109v218zM240 -48c-132 0 -240 108 -240 240s108 240 240 240s240 -108 240 -240s-108 -240 -240 -240zM240 421c-126 0 -229 -103 -229 -229s103 -229 229 -229s229 103 229 229s-103 229 -229 229z" />
     <glyph glyph-name="uniF135" unicode="&#xf135;" horiz-adv-x="358" 
