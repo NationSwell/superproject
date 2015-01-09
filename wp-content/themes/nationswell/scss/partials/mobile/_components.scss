@@ -183,7 +183,13 @@
   height: 8rem;
 
   &:before {
-    font-size: 5.4rem;
+    font-size: 4.4rem;
+  }
+
+  &.icon_video {
+    &:before {
+      line-height: 1.6rem;
+    }
   }
 }
 
