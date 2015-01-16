@@ -515,7 +515,7 @@ function subscribe_callback() {
 			}
 	    }
 	    else {
-	    	$response = ns_mailchimp_subscribe( NEWSLETTER_ID, $email, true );
+	    	$response = ns_mailchimp_subscribe( NEWSLETTER_ID, $email, false );
 	    }
 	}
 	catch (Mailchimp_List_AlreadySubscribed $e)
