@@ -80,6 +80,31 @@ if (class_exists('TimberPost')) {
             $featured_ids = get_field('featured', $page->ID);
             $featured_posts = Timber::get_posts($featured_ids, 'NationSwellPost');
 
+            $currentID = $this->ID;
+            $filter_featured = array_filter(
+            $featured_posts,
+            function ($v) use ($currentID) {
+                return $v->ID != $currentID;
+            });
+            if (count($filter_featured) == 2) {
+                $post_cat = $this->get_terms('category');
+                $query = new WP_Query(array(
+                    'fields' => 'ids',
+                    'posts_per_page' => 1,
+                    'post_type' => 'post',
+                    'post__not_in' => array($this->ID),
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field' => 'id',
+                            'terms' => $post_cat[0]->ID
+                        )
+                    )
+                ));
+                array_push($filter_featured, Timber::get_post($query->posts, 'NationSwellPost'));
+                return $filter_featured;
+            }
+
             return $featured_posts;
         }
 
@@ -100,7 +125,6 @@ if (class_exists('TimberPost')) {
                     )
                 )
             ));
-
             return Timber::get_posts($query->posts, 'NationSwellPost');
         }
 
