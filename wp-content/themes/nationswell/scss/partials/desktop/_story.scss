@@ -13,16 +13,9 @@
     margin-bottom: 2.2rem;
   }
 
-  &.hero--image {
-    height: auto;
-    padding-bottom: 30%;
-    max-height: none;
-  }
-
+  &.hero--image,
   &.hero-widescreen-image {
-    height: auto;
-    padding-bottom: 23%;
-    max-height: none;
+    height: 66vh;
   }
 
   &.hero--image,

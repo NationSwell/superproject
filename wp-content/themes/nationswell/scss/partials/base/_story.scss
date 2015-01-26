@@ -33,10 +33,12 @@
 
     }
 
-  &.hero--image {
+  &.hero--image,
+  &.hero-widescreen-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: auto;
 
       .hero-read {
         position: absolute;
