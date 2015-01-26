@@ -79,8 +79,8 @@
     }
 
     .story__main-column & {
+      height: auto !important;
       padding-bottom: 0;
-      height: auto;
       max-height: none;
 
       img {
