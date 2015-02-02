@@ -10,7 +10,7 @@
                             <figure class="story__feature fl">
                                 <img src="{{ story.thumbnail.src|resize(600, 330) }}" alt="{{ story.thumbnail._wp_attachment_image_alt }}" data-pin-no-hover="true"/>
 
-                                {% if story.content_type in ['video','audio','photo','listory'] %}
+                                {% if story.content_type in ['video'] %}
                                     <div class="type-indicator-container">
                                         <span class="icon icon_{{ post.content_type }} type-indicator"></span>
                                     </div>
