@@ -1,0 +1,24 @@
+{% verbatim %}
+<div id="nsc-updates" ng-controller="updatesController as updatesPage" ng-show="portal.isSet(2)">
+    <div class="member-title"><h1>Updates</h1></div>
+    <div class="river river--two-col">
+        <ul class="story-teases">
+            <li ng-repeat="update in updates">
+                <article class="tease story--tease story--tease--story">
+                    <a href="{{ update.url }}" class="link-wrapper">
+                        <figure class="story__feature">
+                            <img src="{{ update.thumbnail_url }}" data-pin-no-hover="true"/>
+                        </figure>
+
+                        <header class="story__header">
+                        <span class="rubric">&nbsp;</span>
+                            <h2 class="hd-d story__hed">{{ update.title }}</h2>
+                            <p class="story__dek">{{ update.dek }}</p>
+                        </header>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endverbatim %}

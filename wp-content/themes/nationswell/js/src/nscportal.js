@@ -39,6 +39,22 @@
         };
     });
 
+    app.service("NSCUpdatesData", function ($http, $log) {
+
+        this.initUpdates = function(callback) {
+            $http({
+                method: 'POST',
+                url: '/wp-admin/admin-ajax.php',
+                params: {action: 'initialize_nscupdates'}
+            }).success(function (data, status, headers, config) {
+                callback(data);
+
+            }).error(function (data, status, headers, config) {
+                $log.warn(data, status, headers, config);
+            });
+        };
+    });
+
 
     app.controller("directoryController", ['$scope', 'NSCContactData', function($scope, NSCContactData) {
         var contacts = [];
@@ -114,6 +130,15 @@
         });
     }]);
 
+    app.controller("updatesController", ['$log', '$scope', 'NSCUpdatesData', function($log, $scope, NSCUpdatesData) {
+        $scope.updates = [];
+        NSCUpdatesData.initUpdates(function(response) {
+            console.log(response);
+            $scope.updates = response;
+        });
+    }]);
+
+
     app.controller("portalController", ['$scope', '$location', function($scope, $location) {
         this.tab = -1;
 
@@ -128,7 +153,9 @@
         this.setTab = function(activeTab) {
             this.tab = activeTab;
 
-            if (this.tab === 1) {
+            if (this.tab === 2) {
+                $location.path('/updates');
+            } else if (this.tab === 1) {
                 $location.path('/events');
             } else {
                 $location.path('/contacts');

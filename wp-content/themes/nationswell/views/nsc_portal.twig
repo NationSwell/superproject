@@ -16,6 +16,9 @@
                     <li ng-class="{ active:portal.isSet(1) }">
                         <a href ng-click="portal.setTab(1)">Events</a>
                     </li>
+                    <li ng-class="{ active:portal.isSet(2) }">
+                        <a href ng-click="portal.setTab(2)">Updates</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -27,6 +30,8 @@
         {% include 'nsc-directory.twig' %}
 
         {% include 'nsc-events.twig' %}
+
+        {% include 'nsc-updates.twig' %}
     </div>
 </div>
 {% endblock %}

@@ -765,6 +765,31 @@ function ns_nscevents_callback() {
     exit();
 }
 
+
+add_action( 'wp_ajax_initialize_nscupdates', 'ns_nscupdates_callback' );
+add_action( 'wp_ajax_nopriv_initialize_nscupdates', 'ns_nscupdates_callback' );
+
+function ns_nscupdates_callback() {
+    $updatesData = array();
+    $updatesPosts = get_posts( array(
+                'numberposts' => -1,
+                'category_name' => 'nsc-updates'
+    ));
+
+    foreach ($updatesPosts as $update) {
+        $updatesData[] = array(
+            "title" => $update->post_title,
+            'dek'   => get_field("dek", $update),
+            'url'   => get_permalink($update),
+            'thumbnail_url' => wp_get_attachment_url( get_post_thumbnail_id($update->ID) )
+        );
+    }
+    error_log(print_r($updatesData, TRUE));
+    wp_send_json( $updatesData );
+    exit();
+
+}
+
 function clear_portal_transient($post_id, $post) {
 
     if ($post->post_type != 'nsccontact') {
