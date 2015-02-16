@@ -48,6 +48,11 @@ elseif (is_post_type_archive()){
 
 if($term && (is_tag() || is_category() || is_tax())) {
     $context['header_image'] = get_field('header_image', $term->taxonomy . '_' . $term->term_id);
+
+    $context['video_url'] = get_field('video_url', $term->taxonomy . '_' . $term->term_id);
+    $context['video_caption'] = get_field('video_caption', $term->taxonomy . '_' . $term->term_id);
+    $context['video_credit'] = get_field('video_credit', $term->taxonomy . '_' . $term->term_id);
+
     $context['description'] = $term->description;
     $context['term_facebook_link'] = term_facebook_link( $term );
     $context['term_twitter_link'] = term_twitter_link( $term );
