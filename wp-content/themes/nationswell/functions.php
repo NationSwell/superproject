@@ -189,6 +189,8 @@ function register_acf_fields()
     include_once('lib/fields/options/google.php');
     include_once('lib/fields/options/rally.php');
     include_once('lib/fields/options/nsc-portal.php');
+
+    include_once('lib/fields/story_sponsorship.php');
 }
 
 add_action('acf/register_fields', 'register_acf_fields');

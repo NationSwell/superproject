@@ -452,4 +452,31 @@
   		line-height: 5.5rem;
   		padding: .3rem .2rem 0;
   	}
- }
+}
+
+
+.sponsorship {
+  font-size: 3.2rem;
+  line-height: 1.32;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 4.6rem;
+
+  .story--tease &,
+  .hero__entry & {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 0;
+
+    p {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: none;
+    }
+  }
+}

@@ -45,6 +45,10 @@
 
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
                         <h3 class="hd-k story__dek">{{ post.dek }}</h3>
+
+                        {% if post.sponsored_story is not empty %}
+                        <div class="sponsorship"><p>This is a sponsored story, </br>produced in collaboration with {% if post.sponsor_name is not empty %}{{ post.sponsor_name }}{% endif %}</p> {% if post.sponsor_image is not empty %}<img src="{{ TimberImage(post.sponsor_image).src|resize(88, 31) }}"/>{% endif %}</div>
+                        {% endif %}
                     </header>
 
                     <div class="story__content">

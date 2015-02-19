@@ -10,6 +10,10 @@
                             <span class="icon icon_{{ post.content_type }} type-indicator"></span>
                         </div>
                     {% endif %}
+
+                    {% if post.sponsored_story is not empty %}
+                        <div class="sponsorship"><p>Sponsored by:</p> {% if post.sponsor_image is not empty %}<img src="{{ TimberImage(post.sponsor_image).src|resize(88, 31) }}"/>{% endif %}</div>
+                    {% endif %}
                     <article class="story story--hero z1">
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed"><a href="{{ post.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>{{ post.tout_title }}</a></h1>
 

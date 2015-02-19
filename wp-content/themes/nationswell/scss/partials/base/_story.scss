@@ -714,3 +714,39 @@
 .fb-comments iframe[style] {
   width: 100% !important;
 }
+
+.sponsorship {
+  text-transform: uppercase;
+  font-family: $gudea;
+  font-weight: 600;
+
+  p {
+    display: inline-block;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .story--tease &,
+  .hero__entry & {
+
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background: #FFF;
+    padding: .5rem;
+
+    p {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: none;
+    }
+  }
+}
