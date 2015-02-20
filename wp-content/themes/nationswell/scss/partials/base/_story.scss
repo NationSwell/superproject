@@ -720,6 +720,11 @@
   font-family: $gudea;
   font-weight: 600;
 
+  a {
+    text-decoration: underline;
+    color: inherit;
+  }
+
   p {
     display: inline-block;
   }
