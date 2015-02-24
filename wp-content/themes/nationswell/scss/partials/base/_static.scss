@@ -23,6 +23,11 @@
   .static__content {
     font-family: $gudea;
 
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
     a {
       color: $ns_blue1;
       font-weight: $bold;
