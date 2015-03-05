@@ -16,9 +16,7 @@
         {% endif %}
 
         <header class="story__header">
-            {% if post.story_kind == 'original' %}
-            <span class="rubric rubric--original">Feature</span>
-            {% else %}
+            {% if post.category is not empty %}
             <span class="rubric">{{ post.category }}</span>
             {% endif %}
             <h2 class="hd-d story__hed">{{ post.tout_title }}</h2>
