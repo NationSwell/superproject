@@ -8,7 +8,7 @@
                     <article class="story story--tease">
                         <a href="{{ story.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>
                             <figure class="story__feature fl">
-                                {% include 'sponsorship.twig' %}
+                                {% include 'sponsorship-tout.twig' %}
                                 
                                 <img src="{{ story.thumbnail.src|resize(600, 330) }}" alt="{{ story.thumbnail._wp_attachment_image_alt }}" data-pin-no-hover="true"/>
 
