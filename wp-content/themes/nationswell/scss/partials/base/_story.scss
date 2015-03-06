@@ -719,9 +719,10 @@
   text-transform: uppercase;
   font-family: $gudea;
   font-weight: 400;
+  color: #000;
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
     color: inherit;
   }
 
