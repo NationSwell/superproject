@@ -3,26 +3,26 @@
         <h3 class="hd-g read-next__heading">{{ more_stories_heading_prefix }}</h3>
 
         <ul class="story-list">
-            {% for story in post.more_stories %}
+            {% for post in post.more_stories %}
                 <li>
                     <article class="story story--tease">
-                        <a href="{{ story.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>
+                        <a href="{{ post.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>
                             <figure class="story__feature fl">
                                 {% include 'sponsorship-tout.twig' %}
                                 
-                                <img src="{{ story.thumbnail.src|resize(600, 330) }}" alt="{{ story.thumbnail._wp_attachment_image_alt }}" data-pin-no-hover="true"/>
+                                <img src="{{ post.thumbnail.src|resize(600, 330) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}" data-pin-no-hover="true"/>
 
-                                {% if story.content_type in ['video'] %}
+                                {% if post.content_type in ['video'] %}
                                     <div class="type-indicator-container">
-                                        <span class="icon icon_{{ story.content_type }} type-indicator"></span>
+                                        <span class="icon icon_{{ post.content_type }} type-indicator"></span>
                                     </div>
                                 {% endif %}
                             </figure>
 
                             <header class="story__header">
-                                <span class="rubric">{{ story.category }}</span>
-                                <h2 class="hd-u story__hed">{{ story.post_title }}</h2>
-                                <p class="story__dek">{{ story.dek }}</p>
+                                <span class="rubric">{{ post.category }}</span>
+                                <h2 class="hd-u story__hed">{{ post.post_title }}</h2>
+                                <p class="story__dek">{{ post.dek }}</p>
                             </header>
                         </a>
                     </article>
