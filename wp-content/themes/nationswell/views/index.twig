@@ -10,6 +10,9 @@
                             <span class="icon icon_{{ post.content_type }} type-indicator"></span>
                         </div>
                     {% endif %}
+
+                    {% include 'sponsorship-tout.twig' %}
+
                     <article class="story story--hero z1">
                         <h1 class="hd-{{ loop.index == 1 ? 'a' : 'b' }} story__hed"><a href="{{ post.permalink }}" class="link-wrapper" data-track='{"position": {{ loop.index }}}'>{{ post.tout_title }}</a></h1>
 

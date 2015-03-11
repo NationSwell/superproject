@@ -28,8 +28,8 @@
             {% for term in post.terms('category') %}
             <category>{{term.name}}</category>
             {% endfor %}
-            <media:content url="{{ post.thumbnail.src|resize(524, 524) }}" medium="image" />
-            <enclosure length="1000" url="{{ post.thumbnail.src|resize(524, 524) }}" type="image/*" />
+            <media:content url="{{ post.thumbnail.src|resize(522) }}" medium="image" />
+            <enclosure length="1000" url="{{ post.thumbnail.src|resize(522) }}" type="image/*" />
         </item>
         {% endfor %}
     </channel>

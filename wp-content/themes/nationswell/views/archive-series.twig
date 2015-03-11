@@ -1,6 +1,28 @@
 {% extends "archive.twig" %}
 
 {% block header %}
+
+{% if video_url is not empty %}
+    {# video hero #}
+    <div class="hero hero--story hero--video">
+        <div class="container">
+            <div class="video-container hero--video__container">
+                <iframe class="ytplayer" type="text/html" src="{{ video_url }}" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="hero-information">
+            <div class="hero-information__outer">
+                <div class="container container--flex">
+                    <div class="hero-information__content">
+                        {% if video_caption is not empty %}<p class="hero-information__caption">{{ video_caption }}</p>{% endif %}
+                        {% if video_credit is not empty %}<span class="hero-information__credit">{{ video_credit }}</span>{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
 <div class="hero hero--archive hero--series{% if header_image is empty %} no-image{% endif %}" {% if header_image is not empty %}style="background-image: url({{ header_image.url|resize(1300,600) }})"{% endif %}>
 
         <div class="container">
@@ -16,6 +38,7 @@
             {#<div class="sponsor">Presented by <img src="/{{ theme_dir }}/img/sponsor_gm-dark.png" class="sponsor__logo"/></div>#}
         </div>
 </div>
+{% endif %}
 
 {% if description is not empty %}
 <div class="container">
