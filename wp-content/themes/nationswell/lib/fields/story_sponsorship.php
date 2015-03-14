@@ -36,6 +36,29 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
             ),
             array(
+                'key' => 'field_54e657963b5c1',
+                'label' => 'Sponsor Link',
+                'name' => 'sponsor_link',
+                'type' => 'text',
+                'conditional_logic' => array(
+                    'status' => 1,
+                    'rules' => array(
+                        array(
+                            'field' => 'field_54e657693b5bf',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_54e657aa3b5c1',
                 'label' => 'Sponsor Image',
                 'name' => 'sponsor_image',
