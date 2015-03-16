@@ -307,9 +307,15 @@
   font-size: 2.4rem;
 }
 
-.youtube {
+.widget_youtube_responsive {
   .widgettitle {
     @extend %sidebar-title;
+
+    max-width: 32rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: left;
   }
 }
 
