@@ -293,6 +293,26 @@
   }
 }
 
+%sidebar-title {
+  color: #0098d8;
+  font-family: $oswald;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  border-bottom: 3px solid #2d2d2d;
+  padding-bottom: 1.2rem;
+
+  font-size: 2.4rem;
+}
+
+.youtube {
+  .widgettitle {
+    @extend %sidebar-title;
+  }
+}
+
 .google_top_posts {
 
   width: 32rem;
@@ -313,17 +333,7 @@
   }
 
   .widgettitle {
-    color: #0098d8;
-    font-family: $oswald;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    display: block;
-    border-bottom: 3px solid #2d2d2d;
-    padding-bottom: 1.2rem;
-
-    font-size: 2.4rem;
+    @extend %sidebar-title;
   }
 
   li {
