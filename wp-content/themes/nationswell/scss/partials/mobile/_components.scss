@@ -200,6 +200,14 @@
     display: block;
     max-width: 100%;
   }
+
+  iframe {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  margin-bottom: 8rem;
 }
 
 .google_top_posts {
