@@ -79,7 +79,6 @@ if (class_exists('TimberPost')) {
             $page = get_page_by_path('home');
             $featured_ids = get_field('featured', $page->ID);
             $featured_posts = Timber::get_posts($featured_ids, 'NationSwellPost');
-            error_log(var_dump($featured_ids));
 
             $currentID = $this->ID;
             $filter_featured = array_filter(
