@@ -79,6 +79,7 @@ if (class_exists('TimberPost')) {
             $page = get_page_by_path('home');
             $featured_ids = get_field('featured', $page->ID);
             $featured_posts = Timber::get_posts($featured_ids, 'NationSwellPost');
+            error_log(var_dump($featured_ids));
 
             $currentID = $this->ID;
             $filter_featured = array_filter(
@@ -92,7 +93,7 @@ if (class_exists('TimberPost')) {
                     'fields' => 'ids',
                     'posts_per_page' => 1,
                     'post_type' => 'post',
-                    'post__not_in' => array($this->ID),
+                    'post__not_in' => $featured_ids,
                     'tax_query' => array(
                         array(
                             'taxonomy' => 'category',
