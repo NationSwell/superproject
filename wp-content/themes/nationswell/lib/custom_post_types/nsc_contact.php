@@ -17,11 +17,7 @@ function create_nsccontact_post_type()
             'rewrite' => array( 'slug' => 'nsccontact' ),
         )
     );
-    $set = get_option('post_type_rules_flased_nsccontact');
-    if ($set !== true){
-        flush_rewrite_rules(false);
-        update_option('post_type_rules_flased_nsccontact',true);
-    }
+    flush_rewrite_rules(false);
 
 }
 

@@ -17,11 +17,7 @@ function create_nscevent_post_type()
             'rewrite' => array( 'slug' => 'nscevent' ),
         )
     );
-    $set = get_option('post_type_rules_flased_nscevent');
-    if ($set !== true){
-        flush_rewrite_rules(false);
-        update_option('post_type_rules_flased_nscevent',true);
-    }
+    flush_rewrite_rules(false);
 
 }
 
