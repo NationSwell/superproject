@@ -1,4 +1,4 @@
-<div class="author-box cf {{ (post.story_kind != 'curated' or post.story_kind is empty)? "author-box--author" : "author-box--curated" }}">
+<div class="author-box cf hide_mobile {{ (post.story_kind != 'curated' or post.story_kind is empty)? "author-box--author" : "author-box--curated" }}">
     {% if post.story_kind != 'curated' or post.story_kind is empty %}
     <div class="author__a">
         {% if author.mug_shot is not empty %}
