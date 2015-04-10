@@ -638,7 +638,8 @@
 
   .widget_sp_image {
     text-align: center;
-    margin-bottom: 7.6rem;
+    max-width: 32rem;
+    margin: 0 auto 7.6rem auto;
   }
 
   .widget_text {
