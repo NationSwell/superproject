@@ -1,6 +1,12 @@
-#page-header,
+.site-logo--light,
+.slogan,
+.more-stories-toggle,
+.social-links,
+#page-subscribe,
+.story__sticky-mobile,
+.mc-form,
+.fr,
 .more-stories-drawer,
-.full-header,
 #more-stories,
 .trending-topics,
 .read-next,
@@ -8,7 +14,6 @@
 .sidebar,
 #page-footer,
 .modal,
-.sticky-wrapper,
 #flyout,
 .author-box,
 .story__social,
@@ -16,6 +21,10 @@
 .prev-next,
 .story-signup {
   display: none !important;
+}
+
+.site-logo--dark {
+  display: block;
 }
 
 .story__main-column {
