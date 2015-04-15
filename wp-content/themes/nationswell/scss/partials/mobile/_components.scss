@@ -230,6 +230,15 @@
 
 }
 
+
+.sidebar {
+
+  .widget_sp_image {
+    max-width: none;
+  }
+
+}
+
 /* module */
 .module {
   &.module--sidebar {
