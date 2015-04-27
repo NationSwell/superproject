@@ -1,5 +1,9 @@
 (function ($) {
 
+    $('.link-wrapper').on("click", function () {
+        console.log(this);
+    });
+
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -9,77 +13,78 @@
 
     $(function () {
 
-//        var viewPortScale = 1 / window.devicePixelRatio;
-//        $('meta[name="viewport"]').attr('content', 'user-scalable=no, initial-scale='+viewPortScale+', width=device-width');
-
         var modalTimeouts = [];
 
         // sticky nav
         var $fullHeader = $('.full-header');
-        $fullHeader.waypoint('sticky', { stuckClass: 'stuck' });
+        $fullHeader.waypoint('sticky', {stuckClass: 'stuck'});
 
         var $body = $('body');
 
-        $('.hero-read-link').on('click', function(e){
+        $('.hero-read-link').on('click', function (e) {
             e.preventDefault();
 
             var top = $($(this).attr('href')).offset().top - $('#page-header').height();
 
-            $body.animate({scrollTop: top }, '500');
+            $body.animate({scrollTop: top}, '500');
         });
 
         // ajaxify Subscribe Forms
-        $('.mc-form').each(function(){
+        $('.mc-form').each(function () {
 
-        	var $this = ($(this));
-           	$this.submit(function (e) {
+            var $this = ($(this));
+            $this.submit(function (e) {
                 e.preventDefault();
-            }).validate({ errorPlacement: function(error) {
-                error.appendTo( ".mc-email-status" );
-            },
-                submitHandler:  function(form){
+            }).validate({
+                errorPlacement: function (error) {
+                    error.appendTo(".mc-email-status");
+                },
+                submitHandler: function (form) {
                     var $form = $(form),
                         $formErrors = $form.find('.form-errors'),
                         url = '/wp-admin/admin-ajax.php?action=subscribe_action';
-                    	$formErrors.empty().addClass('hide');
-                        $.post(url, $form.serialize(), function (data) {
-                                if (data.status == "error")	{
-                                	var error_message = data.message;
-                                	$(".mc-email-status").empty();
-                                    $(".mc-email-status").prepend(error_message);
-                                    $("#status-label").empty();
-                                    $("#status-label").prepend(error_message);
-                                    $("#status-label").css({
-                                    	"font-size" : "1.25rem",
-                                    	"color" : "#fc3b40",
-                                    	"width" : "30rem",
-                                    	"padding" : ".15rem 0rem"
-                                    });
-                                    $("#nav-envelope").css({
-                                    	"color" : "#fc3b40"
-                                    });
-                                } else {
-                                	toggleThankYou();
-                                	$(".mc-email-status").empty();
-                                	$(".mc-email-status").prepend("Thank you for subscribing!");
-                                	$("#status-label").empty();
-                                	$("#status-label").prepend("Thank you for subscribing!");
-                                	$("#status-label").css({
-                                    	"font-size" : "1.25rem",
-                                    	"color" : "#46b525",
-                                    	"width" : "30rem",
-                                    	"padding" : ".15rem 0rem"
-                                    });
-                                	$("#nav-envelope").css({
-                                		"color" : "#46b525"
-                                    });
-                                	$('.modal--join-us').removeClass('is-visible');
-                                    $.cookie($('join-us').data("modal"), 'disabled', { expires: $('popup-control').attr('data-modal-disable'), path: '/' });
-                                    $.cookie('subscribed', 'yes', { expires: 999, path: '/' });
-                                }
-                        });
-            		}
-             });
+                    $formErrors.empty().addClass('hide');
+                    $.post(url, $form.serialize(), function (data) {
+                        if (data.status == "error") {
+                            var error_message = data.message;
+                            $(".mc-email-status").empty();
+                            $(".mc-email-status").prepend(error_message);
+                            $("#status-label").empty();
+                            $("#status-label").prepend(error_message);
+                            $("#status-label").css({
+                                "font-size": "1.25rem",
+                                "color": "#fc3b40",
+                                "width": "30rem",
+                                "padding": ".15rem 0rem"
+                            });
+                            $("#nav-envelope").css({
+                                "color": "#fc3b40"
+                            });
+                        } else {
+                            toggleThankYou();
+                            $(".mc-email-status").empty();
+                            $(".mc-email-status").prepend("Thank you for subscribing!");
+                            $("#status-label").empty();
+                            $("#status-label").prepend("Thank you for subscribing!");
+                            $("#status-label").css({
+                                "font-size": "1.25rem",
+                                "color": "#46b525",
+                                "width": "30rem",
+                                "padding": ".15rem 0rem"
+                            });
+                            $("#nav-envelope").css({
+                                "color": "#46b525"
+                            });
+                            $('.modal--join-us').removeClass('is-visible');
+                            $.cookie($('join-us').data("modal"), 'disabled', {
+                                expires: $('popup-control').attr('data-modal-disable'),
+                                path: '/'
+                            });
+                            $.cookie('subscribed', 'yes', {expires: 999, path: '/'});
+                        }
+                    });
+                }
+            });
         });
 
         audiojs.events.ready(function () {
@@ -162,7 +167,7 @@
 
             events.trigger("modal-disable", [$(this).data("modal"), expireDuration]);
 
-            $.cookie($(this).data("modal"), 'disabled', { expires: expireDuration, path: '/' });
+            $.cookie($(this).data("modal"), 'disabled', {expires: expireDuration, path: '/'});
         });
 
         // closing modals
@@ -181,7 +186,7 @@
             $(window).off('.resizeModal');
 
             if ($(this).data('modal-disable')) {
-                $modal.trigger("disable", [ $(this).data('modal-disable') ]);
+                $modal.trigger("disable", [$(this).data('modal-disable')]);
             }
 
             events.trigger("modal-close", [$modal.data("modal")]);
@@ -193,11 +198,18 @@
         });
 
         // Initialize Twitter API
-        window.twttr = (function (d,s,id) {
+        window.twttr = (function (d, s, id) {
             var t, js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
-            js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
-            return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            return window.twttr || (t = {
+                    _e: [], ready: function (f) {
+                        t._e.push(f)
+                    }
+                });
         }(document, "script", "twitter-wjs"));
 
         // Subscribe to Twitter Events
@@ -227,31 +239,34 @@
         // Track UnLike Event
         // Track Comment: Create
         // Disable the Flyout
-        window.fbAsyncInit = function() {
-            FB.Event.subscribe('edge.create',	
-            		function(href, widget) {
-	                    events.trigger('facebook-like', [$(widget).data("module"), href]);
+        window.fbAsyncInit = function () {
+            FB.Event.subscribe('edge.create',
+                function (href, widget) {
+                    events.trigger('facebook-like', [$(widget).data("module"), href]);
 //	                    $(".fb_iframe_widget iframe").animate({left: "+=-200"}, 800);
-	                    $.cookie('flyout', 'disabled', { expires: 5, path: '/' });
-            		}
+                    $.cookie('flyout', 'disabled', {expires: 5, path: '/'});
+                }
             );
 
             FB.Event.subscribe('edge.remove',
-                function(href, widget){
+                function (href, widget) {
                     events.trigger('facebook-unlike', [$(widget).data("module"), href]);
-            });
+                });
 
             FB.Event.subscribe('comment.create',
-                function(href, commentID){
+                function (href, commentID) {
                     events.trigger('facebook-comment', [href, commentID]);
-            });
+                });
         };
-        
+
         if (!$.cookie('flyout') && $('#flyout').length) {
 
             setTimeout(function () {
-                 $('#flyout').toggleClass('is-visible');
-                 events.trigger('flyout-open',[getModule($('#flyout'))]);
+
+                var $flyout = $('#flyout');
+
+                $flyout.toggleClass('is-visible');
+                events.trigger('flyout-open', [getModule($flyout)]);
             }, 15000);
 
         }
@@ -261,7 +276,7 @@
                 expireDuration = $(this).data('flyout-disable');
             $flyout.hide();
 
-            $.cookie('flyout', 'disabled', { expires: expireDuration, path: '/' });
+            $.cookie('flyout', 'disabled', {expires: expireDuration, path: '/'});
         });
 
         // expand/collapse header fields
@@ -289,7 +304,7 @@
             $slideCaption = $informationContainer ? $informationContainer.find('.hero-information__caption') : false,
             $slideCredit = $informationContainer ? $informationContainer.find('.hero-information__credit') : false;
 
-        $informationContainer.on('click', function() {
+        $informationContainer.on('click', function () {
             $(this).toggleClass('is-open');
         });
 
@@ -301,7 +316,7 @@
                 var $fullHeader = $('.full-header'),
                     $stickyWrapper = $('.sticky-wrapper');
 
-                setTimeout(function() {
+                setTimeout(function () {
                     var fullHeaderHeight = $fullHeader.outerHeight();
                     $stickyWrapper.outerHeight(fullHeaderHeight);
                     $stickyWrapper.css('height', fullHeaderHeight + 'px');
@@ -311,11 +326,11 @@
                 var $storyTakeAction = $('.story__take-action'),
                     showCta = getParameterByName('cta') === 'show';
 
-                if($storyTakeAction.length && showCta) {
+                if ($storyTakeAction.length && showCta) {
                     $('.btn--sticky-take-action-mobile').click();
 
-                    if(modalTimeouts) {
-                        $.each(modalTimeouts, function(index, obj){
+                    if (modalTimeouts) {
+                        $.each(modalTimeouts, function (index, obj) {
                             clearTimeout(modalTimeouts[index]);
                         });
                     }
@@ -330,16 +345,16 @@
                     $this.toggleClass('is-toggled');
                     $target.toggleClass('panel--is-open');
 
-                    if($this.hasClass('is-toggled')){
-                        events.trigger('nav-more-stories-open',[getModule($this)]);
+                    if ($this.hasClass('is-toggled')) {
+                        events.trigger('nav-more-stories-open', [getModule($this)]);
                     }
 
                     e.preventDefault();
                 });
 
-                $(".more-stories-drawer").swipe( {
-                    swipeRight: function() {
-                        if($body.hasClass('panel--is-open')) {
+                $(".more-stories-drawer").swipe({
+                    swipeRight: function () {
+                        if ($body.hasClass('panel--is-open')) {
                             $body.removeClass('panel--is-open');
                             $('.more-stories-toggle').removeClass('is-toggled');
                         }
@@ -362,7 +377,8 @@
                         $externalContainer = $this.find('.mobile-carousel__external-container'),
                         $externalCaption = $externalContainer.find('.carousel-item__title');
 
-                    $this.imagesLoaded( function() {});
+                    $this.imagesLoaded(function () {
+                    });
 
                     // wrap homepage hero grid in caroufredsel container
                     if (!$carousel.length) {
@@ -455,8 +471,7 @@
                             }
                         },
                         auto: {
-                            play: isSingle && !isStory ? true : false,
-                            timeoutDuration: 6000
+                            play: false
                         },
                         swipe: {
                             onTouch: true,
@@ -470,7 +485,7 @@
                 });
             },
 
-            unmatch: function() {
+            unmatch: function () {
                 $(".toggle-collapse").off('.mobile-toggle-collapse').removeClass('is-toggled');
                 $('.panel--is-open').removeClass('panel--is-open');
 
@@ -498,7 +513,7 @@
                 var $fullHeader = $('.full-header'),
                     $stickyWrapper = $('.sticky-wrapper');
 
-                setTimeout(function() {
+                setTimeout(function () {
                     var fullHeaderHeight = $fullHeader.outerHeight();
                     $stickyWrapper.outerHeight(fullHeaderHeight);
                 }, 300);
@@ -512,37 +527,37 @@
                     $this.toggleClass('is-toggled');
                     $target.toggleClass('panel--is-open');
 
-                    if($this.hasClass('is-toggled')){
-                        events.trigger('nav-more-stories-open',[getModule($this)]);
+                    if ($this.hasClass('is-toggled')) {
+                        events.trigger('nav-more-stories-open', [getModule($this)]);
                     }
 
                     e.preventDefault();
                 });
 
-                $("#more-stories").swipe( {
-                    swipeUp: function(event, direction, distance, duration, fingerCount) {
+                $("#more-stories").swipe({
+                    swipeUp: function (event, direction, distance, duration, fingerCount) {
                         var $moreStories = $('#more-stories');
 
-                        if($moreStories.hasClass('panel--is-open')) {
+                        if ($moreStories.hasClass('panel--is-open')) {
                             $moreStories.removeClass('panel--is-open');
                             $('.more-stories-toggle').removeClass('is-toggled');
                         }
                     }
                 });
 
-                var isTallInfo = function() {
+                var isTallInfo = function () {
                     var $informationContainer = $('.hero-information'),
                         $slideCaption = $informationContainer.find('.hero-information__caption'),
                         $slideCredit = $informationContainer.find('.hero-information__credit');
 
-                        $informationContainer.removeClass('is-long is-open');
+                    $informationContainer.removeClass('is-long is-open');
 
-                        if ($slideCaption.outerHeight() > $informationContainer.outerHeight() || $slideCredit.outerHeight() > $informationContainer.height() ) {
-                            $informationContainer.addClass('is-long');
-                        }
+                    if ($slideCaption.outerHeight() > $informationContainer.outerHeight() || $slideCredit.outerHeight() > $informationContainer.height()) {
+                        $informationContainer.addClass('is-long');
+                    }
                 };
 
-                if($informationContainer) {
+                if ($informationContainer) {
                     isTallInfo();
                 }
 
@@ -555,7 +570,7 @@
                         isSeries = $this.hasClass('carousel--series'),
                         isStory = $this.closest('.hero--story').length;
 
-                    $this.imagesLoaded( function() {
+                    $this.imagesLoaded(function () {
                         $this.find('img').addClass('is-visible');
                     });
 
@@ -570,12 +585,12 @@
                             items.addClass('active');
                         }
 
-                        if(isStory) {
+                        if (isStory) {
                             var activeSlideCaption = $activeSlide.data('item-caption'),
                                 activeSlideCredit = $activeSlide.data('item-credit');
 
-                            activeSlideCaption ? $slideCaption.html(activeSlideCaption): $slideCaption.empty();
-                            activeSlideCredit ? $slideCredit.html(activeSlideCredit): $slideCredit.empty();
+                            activeSlideCaption ? $slideCaption.html(activeSlideCaption) : $slideCaption.empty();
+                            activeSlideCredit ? $slideCredit.html(activeSlideCredit) : $slideCredit.empty();
 
                             isTallInfo();
                         }
@@ -631,7 +646,7 @@
                     $stickySocial = $('.sticky-social'),
                     $stickyTakeAction = $('.sticky-take-action');
 
-                if(!$stickyBar.parent('.sticky-wrapper').length) {
+                if (!$stickyBar.parent('.sticky-wrapper').length) {
                     $stickyBar.waypoint('sticky', {
                         stuckClass: 'stuck',
                         offset: 132
@@ -667,18 +682,18 @@
                         $stickyTakeAction.toggleClass('is-hidden', down).toggleClass('is-visible', down);
                     }, {
                         offset: function () {
-                            return  .8 * $stickyBar.outerHeight();
+                            return .8 * $stickyBar.outerHeight();
                         }
                     });
                 }
 
                 var showCta = getParameterByName('cta') === 'show';
 
-                if($storyTakeAction.length && showCta) {
+                if ($storyTakeAction.length && showCta) {
                     $('.btn--take-action').click();
 
-                    if(modalTimeouts) {
-                        $.each(modalTimeouts, function(index, obj){
+                    if (modalTimeouts) {
+                        $.each(modalTimeouts, function (index, obj) {
                             clearTimeout(modalTimeouts[index]);
                         });
                     }
@@ -686,7 +701,7 @@
 
             },
 
-            unmatch: function() {
+            unmatch: function () {
                 $(".toggle-collapse").off('.desktop-toggle-collapse').removeClass('is-toggled');
                 $('.panel--is-open').removeClass('panel--is-open');
 
@@ -706,7 +721,6 @@
 
 
         enquire.register("screen and (max-width: 767px)", mobile).register("screen and (min-width: 768px)", desktop);
-
 
 
         // load more button
@@ -739,7 +753,7 @@
         }
 
         // take action back from thank you
-        $body.on('click.taBack', '.take-action__social_back', function(e){
+        $body.on('click.taBack', '.take-action__social_back', function (e) {
             toggleThankYou();
 
             e.preventDefault();
@@ -751,7 +765,7 @@
 
             $(window).off('.taSubmit');
 
-            if(!$(this).hasClass('icon_external')){
+            if (!$(this).hasClass('icon_external')) {
                 e.preventDefault();
             }
 
@@ -761,29 +775,31 @@
         //Support message take action
         $('#support-action-form').submit(function (e) {
             e.preventDefault();
-        }).validate({ submitHandler:  function(form){
-            var $form = $(form),
-                $formErrors = $form.find('.form-errors'),
-                url = '/wp-admin/admin-ajax.php?action=support_action';
+        }).validate({
+            submitHandler: function (form) {
+                var $form = $(form),
+                    $formErrors = $form.find('.form-errors'),
+                    url = '/wp-admin/admin-ajax.php?action=support_action';
 
-            $formErrors.empty().addClass('hide');
-            $.post(url, $form.serialize())
-                .done(function () {
-                    toggleThankYou();
-                })
-                .fail(function (data) {
-                    var message = data.message;
-                    if(message) {
-                        $formErrors.removeClass('hide').html(message);
-                    }
-                });
-        }
+                $formErrors.empty().addClass('hide');
+                $.post(url, $form.serialize())
+                    .done(function () {
+                        toggleThankYou();
+                    })
+                    .fail(function (data) {
+                        var message = data.message;
+                        if (message) {
+                            $formErrors.removeClass('hide').html(message);
+                        }
+                    });
+            }
         });
 
         // change org take action
         $('#change-org-petition').submit(function (e) {
             e.preventDefault();
-        }).validate({ submitHandler:  function(form){
+        }).validate({
+            submitHandler: function (form) {
                 var $form = $(form),
                     $formErrors = $form.find('.form-errors'),
                     url = '/wp-admin/admin-ajax.php?action=sign_petition&cta_id=' + $form.attr('data-cta-id');
@@ -795,36 +811,36 @@
                     })
                     .fail(function (data) {
                         var messages = data.responseJSON.messages;
-                        if(messages) {
+                        if (messages) {
                             $formErrors.removeClass('hide').html(messages[0]);
                         }
                     });
             }
-            });
+        });
 
         // tweet a politician
         function parseReps(data) {
             var officialsById = {};
-            $.each(data.offices, function(i, office) {
+            $.each(data.offices, function (i, office) {
 
 
-                if(office.level === 'federal' &&
+                if (office.level === 'federal' &&
                     (office.name.indexOf('House') !== -1 || office.name.indexOf('Senate') !== -1)) {
 
-                    $.each(office.officialIds, function(i, id){
-                        officialsById[id] = { office: office.name };
+                    $.each(office.officialIds, function (i, id) {
+                        officialsById[id] = {office: office.name};
                     });
                 }
             });
 
-            $.each(officialsById, function(id, official) {
+            $.each(officialsById, function (id, official) {
                 official = $.extend(official, data.officials[id]);
 
                 official.party = official.party === 'Democratic' ? 'Democrat' : official.party;
 
-                if(official.channels) {
-                    $.each(official.channels, function(){
-                        if(this.type === 'Twitter') {
+                if (official.channels) {
+                    $.each(official.channels, function () {
+                        if (this.type === 'Twitter') {
                             official.twitter = this.id;
                             return false;
                         }
@@ -832,7 +848,9 @@
                 }
             });
 
-            return $.map(officialsById, function(official) { return official.twitter ? official : null; });
+            return $.map(officialsById, function (official) {
+                return official.twitter ? official : null;
+            });
         }
 
         function lookupReps(address, success, error) {
@@ -840,16 +858,16 @@
                 url: 'https://www.googleapis.com/civicinfo/us_v1/representatives/lookup?key=' + window.googleApiKey,
                 type: 'POST',
                 contentType: 'application/json; charset=utf-8',
-                data: JSON.stringify({ address: address }),
+                data: JSON.stringify({address: address}),
                 dataType: 'json',
-                success: function(data) {
-                    if(data.status === 'success') {
+                success: function (data) {
+                    if (data.status === 'success') {
                         success(parseReps(data));
                     } else {
                         error(data);
                     }
                 },
-                error: function(data) {
+                error: function (data) {
                     error(data.responseJSON);
                 }
             });
@@ -857,68 +875,68 @@
 
         function renderReps(reps, tweetUrl, tweetMessage) {
             var $politicians = $('#tweet-a-politician').empty();
-            $.each(reps, function(){
+            $.each(reps, function () {
                 $politicians.append(politicianTemplate(this, tweetUrl, tweetMessage));
             });
             $('#tweet-a-politician-container').show();
         }
 
         var $politicianLookup = $('#politician-lookup'),
-        lookupValidator = $politicianLookup.validate({
-            submitHandler: function(form){
-                var $form = $(form),
-                    $modal = $form.closest('.take-action__full').closest('.modal'),
-                    $tweet = $('#tweet-message');
+            lookupValidator = $politicianLookup.validate({
+                submitHandler: function (form) {
+                    var $form = $(form),
+                        $modal = $form.closest('.take-action__full').closest('.modal'),
+                        $tweet = $('#tweet-message');
 
-                lookupReps($form.find('[name=ta-address]').val(), function(reps) {
-                    renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
-                }, function(data) {
-                    if(data.status === 'addressUnparseable') {
-                        lookupValidator.showErrors({
-                            "ta-address": "Sorry we don't recognize this address"
-                        });
-                    } else if(data.error) {
-                        lookupValidator.showErrors({
-                            "ta-address": "We are unable to look up addresses at this time. Please try again later"
-                        });
-                    }
-                });
-                
-                var $formErrors = $form.find('.form-errors'),
-                url = '/wp-admin/admin-ajax.php?action=subscribe_action';
-            	$formErrors.empty().addClass('hide');
-                $.post(url, $form.serialize())
-                    .done(function () {
-                    	$(".mc-email-status").empty();
-                    	$(".mc-email-status").prepend("Thank you for subscribing!");
-                    })
-                    .fail(function (data) {
-                        var messages = data.responseJSON.messages;
-                        if(messages) {
-                            $formErrors.removeClass('hide').html(messages[0]);
+                    lookupReps($form.find('[name=ta-address]').val(), function (reps) {
+                        renderReps(reps, $tweet.attr('data-tweet-url'), $tweet.attr('data-tweet-message'));
+                    }, function (data) {
+                        if (data.status === 'addressUnparseable') {
+                            lookupValidator.showErrors({
+                                "ta-address": "Sorry we don't recognize this address"
+                            });
+                        } else if (data.error) {
+                            lookupValidator.showErrors({
+                                "ta-address": "We are unable to look up addresses at this time. Please try again later"
+                            });
                         }
                     });
 
-                if($modal.length) {
-                    fitTakeAction($modal);
-                }
-            }
-        });
+                    var $formErrors = $form.find('.form-errors'),
+                        url = '/wp-admin/admin-ajax.php?action=subscribe_action';
+                    $formErrors.empty().addClass('hide');
+                    $.post(url, $form.serialize())
+                        .done(function () {
+                            $(".mc-email-status").empty();
+                            $(".mc-email-status").prepend("Thank you for subscribing!");
+                        })
+                        .fail(function (data) {
+                            var messages = data.responseJSON.messages;
+                            if (messages) {
+                                $formErrors.removeClass('hide').html(messages[0]);
+                            }
+                        });
 
-    $politicianLookup.submit(function (event) {
-        event.preventDefault();
-    });
+                    if ($modal.length) {
+                        fitTakeAction($modal);
+                    }
+                }
+            });
+
+        $politicianLookup.submit(function (event) {
+            event.preventDefault();
+        });
 
         function politicianTemplate(politician, shortUrl, message) {
             var twitterUrl = 'https://twitter.com/share?url='
                 + encodeURIComponent(shortUrl) + '&text=' +
                 encodeURIComponent('@' + politician.twitter + ' ' + message) + '&via=nationswell';
 
-            return  twigs['views-client/politician.twig'].render({ politician: politician,  twitterUrl: twitterUrl });
+            return twigs['views-client/politician.twig'].render({politician: politician, twitterUrl: twitterUrl});
         }
 
 
-        $body.on('click', '[data-track]', function(){
+        $body.on('click', '[data-track]', function () {
 
             var $target = $(this),
                 module = getModule($target),
@@ -927,14 +945,14 @@
 
                 data = $.extend({
                     moduleName: module ? module.name : '',
-                    url:  tag === 'A' ? $target.attr('href') : '',
+                    url: tag === 'A' ? $target.attr('href') : '',
                     action: 'click'
                 }, config);
 
-            events.trigger('track',[data]);
+            events.trigger('track', [data]);
         });
 
-        function getModule ($element){
+        function getModule($element) {
             return $element.closest('[data-module]').data('module');
         }
     });
