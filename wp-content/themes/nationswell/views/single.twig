@@ -17,20 +17,17 @@
                     </div>
 
                     {% if post.call_to_action is not empty %}
-                    {% include 'action-sidebar.twig' %}
+                        {% include 'action-sidebar.twig' %}
                     {% endif %}
                 </div>
             </div>
 
-            <main class="story__main-column" role="main">
+            <main class="{% if post.content_type == 'widescreen' %}widescreen__main-column{% else %}story__main-column{% endif %}" role="main">
                 {% if post.hero_type == 'small' %}
                     {% include ['hero.twig'] %}
                 {% endif %}
                 <article class="story story--page" id="story">
                     <header>
-                        {#{% if post.story_kind == 'original' %}#}
-                        {#<span class="rubric rubric--original">Featured</span>#}
-                        {#{% endif %}#}
                         <ul class="story__meta">
                             <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a>
                             {% if post.ns_series is not empty %}
@@ -60,14 +57,6 @@
                     </div>
 
                 </article>
-
-                {#<div class="story__tags">#}
-                    {#<ul class="tags-list">#}
-                        {#{% for category in post.categories %}#}
-                            {#<li><a href="{{ category.link }}" class="tag-tag">{{ category.name }}</a></li>#}
-                    {#{%  endfor %}#}
-                    {#</ul>#}
-                {#</div>#}
 
                 {% if post.call_to_action is not empty %}
                     {% include ['action-'~post.call_to_action.type~'.twig', 'empty.twig'] %}
@@ -114,9 +103,11 @@
                 </ul>
             </main>
 
-            <div class="sidebar">
-                {{ sidebar_story }}
-            </div>
+            {% if post.content_type != 'widescreen' %}
+                <div class="sidebar">
+                    {{ sidebar_story }}
+                </div>
+            {% endif %}
         </div>
     </div>
 
