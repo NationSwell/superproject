@@ -1,6 +1,15 @@
 .hero--story {
   position: relative;
 
+  &.hero--image--big {
+    margin-top: 5rem;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
   &.hero--cover {
     height: 100vh;
     max-height: none;

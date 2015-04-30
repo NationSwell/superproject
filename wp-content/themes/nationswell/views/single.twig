@@ -2,13 +2,10 @@
 
 {% block content %}
 
-
-
     {% if post.hero_type != 'small' %}
-    {% include 'hero.twig' %}
+        {% include 'hero.twig' %}
     {% endif %}
 
-    
     <div class="story__container">
         <div class="container container--flex">
             <div class="story__sticky hide_mobile">
@@ -27,7 +24,7 @@
 
             <main class="story__main-column" role="main">
                 {% if post.hero_type == 'small' %}
-                {% include 'hero.twig' %}
+                    {% include ['hero.twig'] %}
                 {% endif %}
                 <article class="story story--page" id="story">
                     <header>

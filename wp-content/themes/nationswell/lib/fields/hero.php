@@ -21,6 +21,7 @@ if(function_exists("register_field_group"))
                     'type' => 'select',
                     'choices' => array (
                         'small' => 'Small Hero',
+                        'big' => 'Big Hero',
                         'cover' => 'Cover Hero',
                     ),
                     'default_value' => '',
