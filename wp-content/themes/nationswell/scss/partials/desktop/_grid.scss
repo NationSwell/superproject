@@ -31,6 +31,11 @@
         @include span-columns(8);
         @include shift(0);
       }
+      
+      .hero--image--big & {
+        margin-left: 1rem;
+        width: 60%;
+      }
 
     }
 
