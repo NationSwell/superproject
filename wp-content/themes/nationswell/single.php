@@ -30,4 +30,4 @@ if ( isset($_COOKIE["subscribed"] )) {
     $context['prompt_signup'] = true;
 }
 
-Timber::render(array('single.twig'), $context);
+Timber::render($is_widescreen ? 'widescreen.twig' : array('single-' . $post->post_type . '.twig', 'single.twig'), $context);

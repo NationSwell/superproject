@@ -31,6 +31,7 @@
         @include span-columns(8);
         @include shift(0);
       }
+
     }
 
     .hero-information__caption + .hero-information__credit {
@@ -42,11 +43,6 @@
       @include shift(8);
     }
   }
-}
-
-.hero.hero--image--big .hero-information__caption {
-  margin-left: 1rem;
-  width: 60%;
 }
 
 // rivers

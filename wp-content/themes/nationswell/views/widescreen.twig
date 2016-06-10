@@ -5,10 +5,10 @@
 
 
     {% if post.hero_type != 'small' %}
-    {% include 'hero.twig' %}
+        {% include 'hero-widescreen.twig' %}
     {% endif %}
 
-    
+
     <div class="story__container">
         <div class="container container--flex">
             <div class="story__sticky hide_mobile">
@@ -20,34 +20,25 @@
                     </div>
 
                     {% if post.call_to_action is not empty %}
-                    {% include 'action-sidebar.twig' %}
+                        {% include 'action-sidebar.twig' %}
                     {% endif %}
                 </div>
             </div>
 
-            <main class="story__main-column" role="main">
+            <main class="widescreen__main-column" role="main">
                 {% if post.hero_type == 'small' %}
-                {% include 'hero.twig' %}
+                    {% include 'hero-widescreen.twig' %}
                 {% endif %}
                 <article class="story story--page" id="story">
                     <header>
-                        {#{% if post.story_kind == 'original' %}#}
-                        {#<span class="rubric rubric--original">Featured</span>#}
-                        {#{% endif %}#}
-                        <ul class="story__meta">
-                            <li>{{ category_prefix_text }} <a href="{{ post.category.url }}">{{ post.category }}</a>
-                            {% if post.ns_series is not empty %}
-                                    <a href="{{ post.ns_series.permalink }}">,&nbsp;{{ post.ns_series.post_title }}</a>
-                            {% endif %}
-                            </li>
-                            <li>{{ byline_prefix_text }} {{ post.coauthors_posts_links }} on {{ post.post_date|date('F j, Y') }}</li>
-                        </ul>
-												
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
                         <h3 class="hd-k story__dek">{{ post.dek }}</h3>
 
                         {% include 'sponsorship.twig' %}
 
+                        <ul class="story__meta">
+                            <li>{{ byline_prefix_text }} {{ post.coauthors_posts_links }} on {{ post.post_date|date('F j, Y') }}</li>
+                        </ul>
                     </header>
 
                     <div class="story__content">
@@ -56,11 +47,7 @@
                         {% if post.source.url is not empty %}
                             <p><em>Source:</em> <a href="{{ post.source.url }}" {{ (post.source.internal == 1)? "" : 'target="_blank"' }}>{{ (post.source.title is not empty) ? post.source.title : post.source.url }}</a></p>
                         {% endif %}
-                        {% if voting_widget is not empty %}
-	                        {% if post.category == "NationSwell AllStars" %}
-														{{ voting_widget }}
-													{% endif %}
-												{% endif %}
+
                         {% if newsletter_bottom is not empty %}
                             {{ newsletter_bottom }}
                         {% endif %}
@@ -69,11 +56,11 @@
                 </article>
 
                 {#<div class="story__tags">#}
-                    {#<ul class="tags-list">#}
-                        {#{% for category in post.categories %}#}
-                            {#<li><a href="{{ category.link }}" class="tag-tag">{{ category.name }}</a></li>#}
-                    {#{%  endfor %}#}
-                    {#</ul>#}
+                {#<ul class="tags-list">#}
+                {#{% for category in post.categories %}#}
+                {#<li><a href="{{ category.link }}" class="tag-tag">{{ category.name }}</a></li>#}
+                {#{%  endfor %}#}
+                {#</ul>#}
                 {#</div>#}
 
                 {% if post.call_to_action is not empty %}
@@ -84,9 +71,9 @@
                     <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--share btn--facebook icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_expanded_text }}</a>
                     <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--share btn--twitter icon icon_twitter" data-track='{"action": "twitter"}'>{{ twitter_button_expanded_text }}</a>
                 </div>
-                
+
                 <div id="pubexchange_below"></div>
-                
+
                 {% for author in post.authors %}
                     {% include 'author-box.twig' %}
                 {% endfor %}
@@ -121,18 +108,15 @@
                 </ul>
             </main>
 
-            <div class="sidebar">
-                {{ sidebar_story }}
-            </div>
         </div>
     </div>
 
     {% if post.more_stories is not empty %}
-    {% include 'more-stories.twig' %}
+        {% include 'more-stories.twig' %}
     {% endif %}
 
     {% if(flyout_social_enabled) %}
-    {% include 'flyout.twig' %}
+        {% include 'flyout.twig' %}
     {% endif %}
 
 {% endblock %}
@@ -143,6 +127,6 @@
 {% endblock %}
 
 {% block extra_includes %}
-<!-- Please call pinit.js only once per page -->
-<script type="text/javascript" async  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    <!-- Please call pinit.js only once per page -->
+    <script type="text/javascript" async  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 {% endblock %}
