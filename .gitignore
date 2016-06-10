@@ -1,7 +1,9 @@
 # Development
+.htaccess
 .idea
 *.iml
 .sass-cache/
+backup/
 .grunt-cache
 combined.js
 twig-templates.js
@@ -19,6 +21,7 @@ Thumbs.db
 
 # wordpress specific
 wp-config.php
+wp-content/plugins/
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*

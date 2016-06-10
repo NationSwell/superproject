@@ -13,7 +13,7 @@ function create_nscevent_post_type()
             'public' => true,
             'publicly_queryable' => true,
             'has_archive' => true,
-            'supports' => 'title',
+            'supports' => array('title','thumbnail'),
             'rewrite' => array( 'slug' => 'nscevent' ),
         )
     );

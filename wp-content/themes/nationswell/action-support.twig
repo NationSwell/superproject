@@ -1,0 +1,44 @@
+{% extends "action.twig" %}
+
+{% block action_body %}
+
+	<div class="take-action__a">
+        <p>{{ post.call_to_action.description }}</p>
+        <small>{{ take_action_privacy_policy_text }}</small>
+    </div>
+
+    <div class="take-action__b">
+        <form id="support-action-form" class="cf">
+            <div class="form-element">
+                <label for="ta-first-name">First Name</label>
+                <input name="first_name" type="text" id="ta-first-name" class="text-input text-input--thin" required>
+            </div>
+
+            <div class="form-element">
+                <label for="ta-last-name">Last Name</label>
+                <input name="last_name" type="text" id="ta-last-name" class="text-input text-input--thin" required>
+            </div>
+
+            <div class="form-element">
+                <label for="ta-email">Email</label>
+                <input name="email" type="email" id="ta-email" class="text-input text-input--thin" required>
+            </div>
+            
+            <div class="form-element">
+                <label for="ta-message">Message</label>
+                <textarea cols="40" rows="5" name="message" id="ta-message" class="text-area" required></textarea>
+            </div>
+            
+            <div class="form-element">
+                <input type="hidden" name="ssname" value="{{ post.call_to_action.spreadsheet_name }}">
+                <input type="hidden" name="wsname" value="{{ post.call_to_action.worksheet_name }}">
+            </div>
+            
+            <div class="form-errors hide">
+
+            </div>
+
+            <button type="submit" class="btn btn--solid btn--external icon icon_external">{{ post.call_to_action.support_button_text }}</button>
+        </form>
+    </div>
+    {% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+        <div class="hero hero--story hero--image" style="background-image: url(http://nationswell.com/wp-content/uploads/2015/05/ns_allstarshome_featureimage-1024x441.jpg);margin-bottom:35px;" >
+
+            {% if post.hero_type == 'small' %}
+            <img src="{{ item.url|resize(800) }}" alt="{{ item.alt }}"/>
+            {% endif %}
+
+            {% if post.hero_type == 'cover' %}
+            <div class="hero-read">
+                <a href="#story" class="hero-read-link">Begin Reading</a>
+            </div>
+            {% endif %}
+                <div class="hero-overlay">
+                	<div class="content">
+	                	<h3>Meet the 2015 NationSwell AllStars</h3>
+						    		<p style="line-height:140px;margin-bottom:0px;">In Partnership With: <img src="http://nationswell.com/wp-content/uploads/2015/05/logo-nbc1-300x139.png?56acd" style="max-width: 200px;vertical-align:middle;margin-left:20px;" /></p>
+	                </div>
+                </div>
+        </div>
+        <div class="container">
+            <div class="archive-intro">
+                <div class="archive-share" data-module='{"name": "archive-series"}'>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://nationswell.com/category/nationswell-allstars/" class="btn btn--facebook btn--share btn--rectangle icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a>
+                    <a href="https://twitter.com/home?status=Meet%20the%20NationSwell%20AllStars%20http://nationswell.com/category/nationswell-allstars/%20via%20%40nationswell" class="btn btn--twitter btn--share btn--rectangle icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a>
+                </div>
+
+                <div class="archive-description-copy">
+                    <p>
+                        These six NationSwell AllStars are encouraging advancements in education and environmental sustainability, making government work better for its citizens, engaging people in national service, advancing the American dream and supporting our veterans. Watch their stories below. 
+                    </p>
+                </div>
+            </div>
+          </div>
+
+
+    <div class="container container--flex">
+        <div class="river river--two-col">
+            <ul class="story-teases">
+                {% for post in posts %}
+                    <li>{% include ['tease-allstar.twig', 'tease.twig'] %}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="sidebar hide-mobile">
+            {{ sidebar_static }}
+        </div>
+    </div>
+    {% include 'more-button.twig' with {'module_name': 'archive' } %}
+
+{% endblock %}

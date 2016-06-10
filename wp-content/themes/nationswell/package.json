@@ -1,25 +1,25 @@
 {
-    "name": "NationSwell",
-    "version": "0.1.0",
-    "author": {
-        "name": "Ronik Design",
-        "email": "solutions@ronikdesign.com",
-        "url": "https://github.com/ronik-design/"
-    },
-    "description": "NationSwell is a new digital media company focused on high-quality stories about American renewal",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ronik-design/nationswell.git"
-    },
-    "devDependencies": {
-        "grunt": "^0.4.5",
-        "grunt-cache-bust": "^0.4.3",
-        "grunt-contrib-compass": "^1.0.1",
-        "grunt-contrib-concat": "^0.5.0",
-        "grunt-contrib-uglify": "^0.5.1",
-        "grunt-contrib-watch": "^0.6.1",
-        "grunt-twig": "^0.1.3",
-        "grunt-webfont": "^0.4.8",
-        "sudo": "^1.0.3"
-    }
+  "name": "NationSwell",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ronik Design",
+    "email": "solutions@ronikdesign.com",
+    "url": "https://github.com/ronik-design/"
+  },
+  "description": "NationSwell is a new digital media company focused on high-quality stories about American renewal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronik-design/nationswell.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cache-bust": "^0.4.3",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-twig": "^0.1.3",
+    "grunt-webfont": "^0.4.8",
+    "sudo": "^1.0.3"
+  }
 }

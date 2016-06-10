@@ -47,6 +47,7 @@ if (class_exists('TimberPost')) {
                     'time' => get_field('event_time', $event->ID),
                     'location' => get_field('location', $event->ID),
                     'date' => $dateObj->format('j-M'),
+                    'year' => $dateObj->format('Y'),
                     'sortdate' => $dateObj->format('Ymd')
                 );
             }
@@ -69,6 +70,7 @@ if (class_exists('TimberPost')) {
                     'time' => get_field('event_time', $event->ID),
                     'location' => get_field('location', $event->ID),
                     'date' => $dateObj->format('j-M'),
+                    'year' => $dateObj->format('Y'),
                     'sortdate' => $dateObj->format('Ymd')
                 );
             }

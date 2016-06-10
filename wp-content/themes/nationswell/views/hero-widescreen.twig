@@ -7,7 +7,15 @@
             {% if post.hero_type == 'small' %}
             <img src="{{ item.url|resize(800) }}" alt="{{ item.alt }}"/>
             {% endif %}
-
+						{% if post.get_field('partnership') %}
+                <div class="hero-overlay">
+                	<div class="content">
+	                	<h3>{{ post.partnership_headline }}</h3>
+						    		<p>In Partnership With:</p>
+						    		{% if post.sponsor_image is not empty %}<img src="{{ TimberImage(post.sponsor_image).src|resize(260) }}"/>{% endif %}
+	                </div>
+                </div>
+						{% endif %}
             {% if item.caption or item.credit %}
                 <div class="hero-information">
                     <span class="icon icon_information hero-information__toggle z1"></span>

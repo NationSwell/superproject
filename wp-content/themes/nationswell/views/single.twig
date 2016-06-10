@@ -42,7 +42,7 @@
                             </li>
                             <li>{{ byline_prefix_text }} {{ post.coauthors_posts_links }} on {{ post.post_date|date('F j, Y') }}</li>
                         </ul>
-
+												
                         <h1 class="hd-j story__hed">{{ post.post_title }}</h1>
                         <h3 class="hd-k story__dek">{{ post.dek }}</h3>
 
@@ -56,7 +56,11 @@
                         {% if post.source.url is not empty %}
                             <p><em>Source:</em> <a href="{{ post.source.url }}" {{ (post.source.internal == 1)? "" : 'target="_blank"' }}>{{ (post.source.title is not empty) ? post.source.title : post.source.url }}</a></p>
                         {% endif %}
-
+                        {% if voting_widget is not empty %}
+	                        {% if post.category == "NationSwell AllStars" %}
+														{{ voting_widget }}
+													{% endif %}
+												{% endif %}
                         {% if newsletter_bottom is not empty %}
                             {{ newsletter_bottom }}
                         {% endif %}

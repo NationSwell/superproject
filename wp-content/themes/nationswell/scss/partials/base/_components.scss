@@ -555,6 +555,33 @@
   &.newsletter-subscribe {
 
   }
+  
+  /* Partner message widget */
+  &.module--partners {
+  	background-color:$ns_navy3;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$ns_navy3+0,013147+100 */
+	background: $ns_navy3; /* Old browsers */
+	background: -moz-linear-gradient($ns_navy3 0%, $ns_navy2 100%);
+	background: -webkit-linear-gradient($ns_navy3 0%, $ns_navy2 100%);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from($ns_navy3), to($ns_navy2));
+	background: -o-linear-gradient($ns_navy3 0%, $ns_navy2 100%);
+	background: linear-gradient($ns_navy3 0%, $ns_navy2 100%); /* FF3.6-15 */
+	 /* Chrome10-25,Safari5.1-6 */
+	 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$ns_navy3', endColorstr='$ns_navy2',GradientType=0 ); /* IE6-9 */
+	header {
+		margin-top:0 !important;
+		img {
+			width:100%;
+			height:auto;
+		}
+	}
+	p {
+		color:#FFF;
+		font-family: $montserrat;
+		margin-bottom:0;
+	}
+  }
 }
 
 .story-signup {

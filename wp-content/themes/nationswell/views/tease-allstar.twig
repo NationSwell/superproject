@@ -1,0 +1,33 @@
+<article class="story story--tease story--tease--{{ post.content_type }} {% if post.nofollow_on_category != 0 %}nofollow{% endif %}">
+    {% if post.nofollow_on_category == 0 %}<a href="{{ post.permalink }}" class="link-wrapper">{% endif %}
+        {% if post.thumbnail is not empty %}
+        <figure class="story__feature">
+
+            {% include 'sponsorship-tout.twig' %}
+
+            <img src="{{ post.thumbnail.src|resize(748, 421) }}" alt="{{ post.thumbnail._wp_attachment_image_alt }}" data-pin-no-hover="true"/>
+
+            {% if post.content_type in ['video','audio','photo','listory'] %}
+            <div class="type-indicator-container">
+                <span class="icon icon_{{ post.content_type }} type-indicator"></span>
+            </div>
+            {% endif %}
+        </figure>
+        {% endif %}
+
+        <header class="story__header">
+            {% if post.category is not empty %}
+            <span class="rubric">{{ post.category }}</span>
+            {% endif %}
+            <h2 class="hd-d story__hed">{{ post.tout_title }}</h2>
+
+            {% block dek %}
+	            <p class="story__dek">{{ post.tout_dek_text }}</p>
+            {% endblock %}
+
+            {% if post.call_to_action is not empty and post.call_to_action.show_action_stats_on_tout != '0' %}
+                {% include ['action-stats-'~post.call_to_action.type~'.twig', 'action-stats.twig'] %}
+            {% endif %}
+        </header>
+    {% if post.nofollow_on_category == 0 %}</a>{% endif %}
+</article>

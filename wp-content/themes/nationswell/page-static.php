@@ -28,8 +28,8 @@ $post = new TimberPost();
 
 $context['page_content'] = wpautop($post->post_content);
 $context['post'] = $post;
-$context['sidebar_static'] = Timber::get_widgets('sidebar_static');
-
+$context['sidebar_static'] = Timber::get_widgets('sidebar_story');
+$context['summit_breakout'] = do_shortcode( '[gravityform id="5" title="false" description="false" ajax="true"]' );
 if (post_password_required($post->ID)){
     Timber::render('static-password.twig', $context);
 } else {

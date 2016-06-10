@@ -16,7 +16,8 @@ if(function_exists("register_field_group"))
                         'audio' => 'Audio',
                         'photo' => 'Photo',
                         'listory' => 'Listory',
-                        'widescreen' => 'Widescreen'
+                        'widescreen' => 'Widescreen',
+                        'nsc_profile' => 'NSC Profile'
                     ),
                     'default_value' => 'story',
                     'allow_null' => 0,
