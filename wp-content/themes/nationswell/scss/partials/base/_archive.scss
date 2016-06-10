@@ -82,6 +82,9 @@
 body.category-whats-possible {
 	.hero--archive {
 		&.hero--category {
+			&:after {
+				background-image: none;
+			}				
 			.hero--category__title {
 				display: none;
 			}			

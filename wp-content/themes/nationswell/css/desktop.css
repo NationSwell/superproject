@@ -3993,14 +3993,18 @@ hr {
 }
 
 /* line 85, ../scss/partials/base/_archive.scss */
+body.category-whats-possible .hero--archive.hero--category:after {
+  background-image: none;
+}
+/* line 88, ../scss/partials/base/_archive.scss */
 body.category-whats-possible .hero--archive.hero--category .hero--category__title {
   display: none;
 }
-/* line 88, ../scss/partials/base/_archive.scss */
+/* line 91, ../scss/partials/base/_archive.scss */
 body.category-whats-possible .hero--archive.hero--category .hero--category__count {
   display: none;
 }
-/* line 96, ../scss/partials/base/_archive.scss */
+/* line 99, ../scss/partials/base/_archive.scss */
 body.category-whats-possible .sidebar .widget_partners .module--partners:before {
   display: none;
 }
