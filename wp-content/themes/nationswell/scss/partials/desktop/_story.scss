@@ -323,14 +323,6 @@
   overflow: hidden;
   height: 100%;
 
-  -webkit-transform: translate3d(0,0,0);
-
-  /*.bottomed {
-    position: absolute;
-    bottom: 0;
-    top: auto;
-  }*/
-
   &.stuck {
     top: 130px;
   }
