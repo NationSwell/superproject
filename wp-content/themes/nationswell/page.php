@@ -20,8 +20,18 @@
  * @subpackage  Timber
  * @since    Timber 0.1
  */
-
 $context = Timber::get_context();
-$post = new TimberPost();
-$context['post'] = $post;
+/* Hack for buddypress to render contents and assign it's own template */
+if ( function_exists('is_buddypress') && is_buddypress() ) {
+	global $wp_query;
+	$wp_query->in_the_loop=true; // Strange Hack due to Timber... see Buddypress - bp_do_theme_compat()
+	ob_start();
+	the_content();
+	$context['buddypress_content'] = ob_get_contents();
+	ob_end_clean();
+	$context['post'] = $post = new TimberPost();
+	$context['post']->post_name = $post->post_name = 'buddypress';
+}else{
+	$context['post'] = $post =  new TimberPost();
+}
 Timber::render(array('page-' . $post->post_name . '.twig', 'page.twig'), $context);
