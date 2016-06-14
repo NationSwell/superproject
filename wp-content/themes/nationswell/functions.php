@@ -1071,3 +1071,15 @@ function get_latest_stylesheet() {
 
 	return dirname(get_stylesheet_uri()) . "/" . $stylesheet;
 }
+
+
+
+// Add Conditional Widgets support (UI & Logic) for post type 'post' and taxonomy 'series'
+
+add_filter('conditional_widgets_type_tax_pairs', 'add_conditional_widget_type_tax_pairs',0);
+
+function add_conditional_widget_type_tax_pairs( $my_pair_array ) {
+	$my_pair = array('type'=>'post','tax'=>'series');
+	$my_pair_array[] = $my_pair;
+	return $my_pair_array;
+}
