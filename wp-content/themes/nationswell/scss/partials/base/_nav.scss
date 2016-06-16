@@ -117,10 +117,18 @@
 }
 
 
-/* trending topics */
-.full-header .trending-topics {
-  background-color: $ns_navy1;
-  padding: 0.8rem 0;
+/* trending topics & member nav items */
+.full-header {
+	.trending-topics, 
+	.member-nav {
+  		background-color: $ns_navy1;
+  		padding: 0.8rem 0;
+  	}
+  	.member-nav {
+  		background-color: $gray7;
+  		-webkit-box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+		box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+  	}
 }
 
 .trending-topics__heading {
@@ -128,15 +136,20 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.trending-topics__list {
+.trending-topics__list,
+.member-nav__list {
   display: inline-block;
 
   li {
     display: inline-block;
   }
 }
+.member-nav__list {
+	margin:0 3.4rem 0 2.2rem;
+}
 
-.trending-topics__topic {
+.trending-topics__topic,
+.member-nav__item {
   color: $white;
   font-family: $montserrat;
   font-weight: $regular;
@@ -145,9 +158,12 @@
 
   -webkit-font-smoothing: antialiased;
 
-  .trending-topics__list li:nth-child(-n+4) & {
+  /*.trending-topics__list li:nth-child(-n+4) & {
       font-weight: 700;
-  }
+  }*/
+}
+.member-nav__item {
+	color:$ns_navy1;
 }
 
 .btn-nav-subscribe {
