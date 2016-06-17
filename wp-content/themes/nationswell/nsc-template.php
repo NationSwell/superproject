@@ -65,8 +65,37 @@ Template Name: NSC Landing
 		<div class="content">
 			<h1 class="logo">NationSwell Council</h1>
 			<p>A diverse community of accomplished professionals who are passionate about service</p>
-      <a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>
-			<div class="sidenote">Not a member? <a href="mailto:nsc@nationswell.com">Apply</a></div>
+			<div class="login-form">
+				<div class="login-form-inputs">
+					<h2><?php _e( 'Member Login','example'); ?></h2>
+					<?php 
+					$lostpassword = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot password?').'</a>';
+					$args = array(
+					'echo'           => true,
+					'remember'       => true,
+					'redirect'       => '/activity/',
+					'form_id'        => 'loginform',
+					'id_username'    => 'user_login',
+					'id_password'    => 'user_pass',
+					'id_remember'    => 'rememberme',
+					'id_submit'      => 'wp-submit',
+					'label_username' => __( 'Your email address' ),
+					'label_password' => __( 'Password' ),
+					'label_remember' => __( 'Remember me' ),
+					'label_log_in'   => __( 'Log in' ),
+					'value_username' => '',
+					'value_remember' => false
+					);
+			
+					wp_login_form( $args ); ?> 
+			
+				</div>
+				<div class="login-form-bottom">
+					<?php _e( 'Are you a member but haven’t yet registered on our portal?','example'); ?> <a href="#">Register now!</a>
+				</div>
+			</div>
+      <!--<a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>-->
+			
 		</div>
 	</div>
 	<a class="learn-more" href="#welcome">Learn More</a>
