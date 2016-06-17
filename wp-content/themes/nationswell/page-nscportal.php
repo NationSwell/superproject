@@ -31,7 +31,7 @@ $context['post'] = $post;
 $context['sidebar_static'] = Timber::get_widgets('sidebar_static');
 
 if (post_password_required($post->ID)){
-    Timber::render('static-password.twig', $context);
+    //Timber::render('static-password.twig', $context);
 } else {
     Timber::render(array('nsc_portal.twig'), $context);
 }

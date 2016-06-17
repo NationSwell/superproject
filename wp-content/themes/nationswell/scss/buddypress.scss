@@ -1,4 +1,5 @@
-
+@import "modules/colors";
+@import "modules/font";
 /*--------------------------------------------------------------
 Hello, this is the BuddyPress Legacy stylesheet.
 
@@ -36,6 +37,66 @@ Hello, this is the BuddyPress Legacy stylesheet.
 /*--------------------------------------------------------------
 1.1 - Pagination
 --------------------------------------------------------------*/
+
+.member-form-input {
+	font-size: 1.1rem;
+    padding: .875rem;
+    box-sizing : border-box;
+ background-color: $white;
+  border: 1px solid $gray4;
+  border-radius: 0.2rem;
+  box-shadow: inset 0 0.2rem 0.7rem rgba(0, 0, 0, 0.08);
+  outline: none;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.login-form {
+	background:$white;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+	text-align:left;
+	font-style:normal;
+	h2 {
+		font-family: 'PT Serif', serif;
+		color:$black;
+	}
+	form {
+		label, input[type="text"], input[type="password"]{
+			display:block;
+			font-style:normal;
+		}
+		input[type="text"], input[type="password"] {
+			@extend .member-form-input;
+		}
+	}
+	.login-remember, .login-submit {
+		line-height:1 !important;
+		margin:5px 0 !important;
+		font-size:16px !important;
+	}
+	.login-remember {
+		float:left;
+	}
+	.login-submit {
+		input[type="submit"] {
+			float:right;
+		}
+
+	}
+}
+.login-form-inputs,
+.login-form-bottom {
+	padding:30px 30px 50px 30px;
+}
+.login-form-bottom {
+	background:$gray6;
+}
+
 #buddypress div.pagination {
 	background: transparent;
 	border: none;
