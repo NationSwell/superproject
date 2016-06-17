@@ -124,12 +124,53 @@
   		background-color: $ns_navy1;
   		padding: 0.8rem 0;
   	}
-  	.member-nav {
-  		background-color: $gray7;
-  		-webkit-box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
-		box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+}
+.member-nav {
+  	background-color: $gray7;
+  	-webkit-box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+  	box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+  	.container {
+  		@include clearfix;
+  	}
+  	.member-nav__list {
+  		float:left;
+  		li {
+  			margin-top:4px;
+  		}
+  	}
+  	.member-nav__icons {
+  		float:right;
+  		position:relative;
+  		li {
+  			display:inline;
+  			a {
+  				font-size:2.5rem;
+  				margin-right:1rem;
+  				position:relative;
+  				
+  				&.icon_alert {
+  					span {
+  						border-radius: 50%;
+  						width: 20px;
+  						height: 20px;
+  						padding: 4px;
+  						background: $ns_red2;
+  						border:1px solid $white;
+  						color:$white;
+  						text-align: center;
+  						font-size:10px;
+  						font-family:$oswald;
+  						font-weight: $bold;
+  						position:absolute;
+  						top:0;
+  						right:-8px;
+  					}
+  				}
+  			}
+  		}
   	}
 }
+
 
 .trending-topics__heading {
   font-family: $montserrat;
@@ -149,7 +190,7 @@
 }
 
 .trending-topics__topic,
-.member-nav__item {
+.member-nav__list {
   color: $white;
   font-family: $montserrat;
   font-weight: $regular;

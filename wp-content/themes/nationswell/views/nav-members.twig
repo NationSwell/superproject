@@ -6,10 +6,10 @@
             <li><a href="{{bp.BuddyPressdata.root_domain}}/members/" class="member-nav__item">Member Directory</a></li>
         </ul>
         <ul class="member-nav__icons">
-            <li><a href="#" class="member-nav__item icon">Question Mark</a></li>
-            <li><a href="{{ bp.bp_nav.settings.link}}" class="member-nav__item icon">Settings</a></li>
-            <li ><a href="{{ bp.bp_nav.notifications.link}}" class="member-nav__item icon notification">Notifications {{ bp_total_new_count }}</a></li>
-            <li><a href="{{ function('wp_logout_url') }}" class="member-nav__item icon">Logout</a></li>
+            <li><a href="#" class="member-nav__item icon icon_question" title="FAQ"></a></li>
+            <li><a href="{{ bp.bp_nav.settings.link}}" class="member-nav__item icon icon_settings" title="Settings"></a></li>
+            <li><a href="{{ bp.bp_nav.notifications.link}}" class="member-nav__item icon icon_alert" title="Notifications"><span>{{ bp_total_new_count }}</span></a></li>
+            <li><a href="{{ function('wp_logout_url') }}" class="member-nav__item icon icon_logout" title="Log out"></a></li>
         </ul>
     </div>
 </div>
