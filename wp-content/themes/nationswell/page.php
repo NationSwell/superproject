@@ -31,11 +31,6 @@ if ( function_exists('is_buddypress') && is_buddypress() ) {
 	ob_end_clean();
 	$context['post'] = $post = new TimberPost();
 	$context['post']->post_name = $post->post_name = 'buddypress';
-	/* Add buddypress global to context and global counters for nav */
-	$context['bp'] = (array)$bp;
-	$context['bp_new_mention_count'] = $new_mention_count = (int) bp_get_user_meta( $bp->loggedin_user->id, 'bp_new_mention_count', true );
-	$context['bp_unread_notification_count'] = $unread_notification_count = bp_notifications_get_unread_notification_count($bp->loggedin_user->id);
-	$context['bp_total_new_count'] = $new_mention_count + $unread_notification_count;
 }else{
 	$context['post'] = $post =  new TimberPost();
 }
