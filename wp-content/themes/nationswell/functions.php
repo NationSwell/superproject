@@ -122,6 +122,13 @@ function add_to_context( $data ) {
         $data[$option] = get_field( $option, 'option' );
     }
 
+    /* Add buddypress global to context and global counters for nav */
+	global $bp;
+	$data['bp'] = (array)$bp;
+	$data['bp_new_mention_count'] = $new_mention_count = (int) bp_get_user_meta( $bp->loggedin_user->id, 'bp_new_mention_count', true );
+	$data['bp_unread_notification_count'] = $unread_notification_count = bp_notifications_get_unread_notification_count($bp->loggedin_user->id);
+	$data['bp_total_new_count'] = $new_mention_count + $unread_notification_count;
+
     return $data;
 }
 
