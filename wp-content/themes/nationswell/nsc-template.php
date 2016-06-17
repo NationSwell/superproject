@@ -1,8 +1,10 @@
 <?php
 /*
 Template Name: NSC Landing
+Cloudred notes: no idea why this page exists and why it was created this way, clearly not good. Hijacking it for member login purposes.
 */
 ?>
+
 
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -27,12 +29,12 @@ Template Name: NSC Landing
 			}
 			?>
 		</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 		<meta name="viewport" content="width=device-width">
 		<?php if(is_search()) { ?>
 		<meta name="robots" content="noindex, nofollow" /> 
 	    <?php }?>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/nsc.css" media="screen" />
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
@@ -58,48 +60,88 @@ Template Name: NSC Landing
         	<header>
             </header>
             <div id="content">
-<a id="top"></a>
-<section class="fullscreen" id="landing">
-	<div class="overlay"></div>
-	<div class="content-holder">
-		<div class="content">
-			<h1 class="logo">NationSwell Council</h1>
-			<p>A diverse community of accomplished professionals who are passionate about service</p>
-			<div class="login-form">
-				<div class="login-form-inputs">
-					<h2><?php _e( 'Member Login','example'); ?></h2>
-					<?php 
-					$lostpassword = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot password?').'</a>';
-					$args = array(
-					'echo'           => true,
-					'remember'       => true,
-					'redirect'       => '/activity/',
-					'form_id'        => 'loginform',
-					'id_username'    => 'user_login',
-					'id_password'    => 'user_pass',
-					'id_remember'    => 'rememberme',
-					'id_submit'      => 'wp-submit',
-					'label_username' => __( 'Your email address' ),
-					'label_password' => __( 'Password' ),
-					'label_remember' => __( 'Remember me' ),
-					'label_log_in'   => __( 'Log in' ),
-					'value_username' => '',
-					'value_remember' => false
-					);
-			
-					wp_login_form( $args ); ?> 
-			
-				</div>
-				<div class="login-form-bottom">
-					<?php _e( 'Are you a member but haven’t yet registered on our portal?','example'); ?> <a href="#">Register now!</a>
-				</div>
-			</div>
-      <!--<a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>-->
-			
-		</div>
-	</div>
-	<a class="learn-more" href="#welcome">Learn More</a>
-</section>
+				<a id="top"></a>
+                <section class="auth-forms">
+                    <div class="content-wrapper">
+                        <div class="content">
+                            
+                            <h1 class="logo">NationSwell Council</h1>
+                            <p>A diverse community of accomplished professionals who are passionate about service</p>
+                            <div class="login-form">
+                                <div class="login-form-inputs">
+                                    <?php   
+									$lostpassword = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot password?','buddypress').'</a>';
+                                    
+									if( $_GET["register"] ) {
+										//show register form
+										echo '<h2>'.__( 'Register','example').'</h2>';
+										$bottom_message = __( 'Enter the primary email address we have on file for you.','example'); ?>
+										<form id="lostpasswordform" class="lostpassword-form" action="<?php echo wp_lostpassword_url(); ?>" method="post">
+											<p class="form-row">
+												<label for="user_first_name"><?php _e( 'First name', 'buddypress' ); ?>
+												<input type="text" name="user_first_name" id="user_first_name">
+											</p>
+                                            <p class="form-row">
+												<label for="user_last_name"><?php _e( 'Last name', 'buddypress' ); ?>
+												<input type="text" name="user_last_name" id="user_last_name">
+											</p>
+                                            <p class="form-row">
+												<label for="user_login"><?php _e( 'Email address', 'buddypress' ); ?>
+												<input type="text" name="user_login" id="user_login">
+											</p>
+									 		<div class="form-row">
+                                                <p class="login-remember">
+                                                    <a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Back to member login', 'buddypress' ); ?></a>
+                                                </p>
+                                                <p class="lostpassword-submit">
+                                                    <input type="submit" name="submit" class="lostpassword-button"
+                                                           value="<?php _e( 'Register', 'buddypress' ); ?>"/>
+                                                </p>
+                                            </div>
+										</form>
+                                    <?php    
+									} else {
+										//show login
+										echo '<h2>'.__( 'Member Login','example').'</h2>';
+										$bottom_message = __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
+										if( function_exists('bp_is_active') ) {
+											$redirect_url = '/'.bp_get_activity_root_slug();
+										} else {
+											$redirect_url = '/wp-admin';
+										}
+										$args = array(
+										'echo'           => true,
+										'remember'       => true,
+										'redirect'       => $redirect_url,
+										'form_id'        => 'loginform',
+										'id_username'    => 'user_login',
+										'id_password'    => 'user_pass',
+										'id_remember'    => 'rememberme',
+										'id_submit'      => 'wp-submit',
+										'label_username' => __( 'Your email address' ),
+										'label_password' => __( 'Password' ),
+										'label_remember' => __( 'Remember me' ),
+										'label_log_in'   => __( 'Log in' ),
+										'value_username' => '',
+										'value_remember' => false
+										);
+								
+										wp_login_form( $args );
+									}
+                                    ?> 
+                            
+                                </div>
+                                <div class="login-form-bottom">
+                                    <?php echo $bottom_message; ?>
+                                </div>
+                            </div>
+                      		<!--<a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>-->
+                            <div class="link-more">
+                            	<a class="learn-more" href="#welcome">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 <section class="photo-strip" id="welcome">
 <?php 
 
@@ -327,14 +369,14 @@ if( $images ): shuffle( $images ) ?>
   </div>
 </section>
 
-		</div>
-		<!--</END CONTENT>-->
+			</div>
+			<!--</END CONTENT>-->
         <footer>
         
         </footer>
 
-</div>
-<!--</END WRAPPER-->		
+	</div>
+	<!--</END WRAPPER-->		
 		<?php wp_footer(); ?>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

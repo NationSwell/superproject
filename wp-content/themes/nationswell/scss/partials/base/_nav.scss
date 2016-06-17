@@ -171,6 +171,9 @@
   						right:-8px;
   					}
   				}
+				&.icon_logout {
+					margin-right:0;
+				}
   			}
   		}
   	}
@@ -190,7 +193,7 @@
 	.icon_caret-up {
 		position: absolute;
     	top: -8px;
-    	right: 46px;
+    	right: 67px;
 		color: $gray7;
 	}
 }
