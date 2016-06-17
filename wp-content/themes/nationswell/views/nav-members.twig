@@ -1,8 +1,30 @@
+{% if function("is_user_logged_in") %}
 <div class="member-nav hide_mobile">
     <div class="container">
         <ul class="member-nav__list">
-            <li><a href="/activity/" class="member-nav__item">Member Home</a></li>
-            <li><a href="/members/" class="member-nav__item">Member Directory</a></li>
+            <li><a href="{{ bp.bp_nav.activity.link}}" class="member-nav__item">Member Home</a></li>
+            <li><a href="{{bp.BuddyPressdata.root_domain}}/members/" class="member-nav__item">Member Directory</a></li>
+        </ul>
+        <ul class="member-nav__icons">
+            <li><a href="#" class="member-nav__item icon">Question Mark</a></li>
+            <li><a href="{{ bp.bp_nav.settings.link}}" class="member-nav__item icon">Settings</a></li>
+            <li ><a href="{{ bp.bp_nav.notifications.link}}" class="member-nav__item icon notification">Notifications {{ bp_total_new_count }}</a></li>
+            <li><a href="{{ function('wp_logout_url') }}" class="member-nav__item icon">Logout</a></li>
         </ul>
     </div>
 </div>
+<div id="popup-counter" class="popup counter" style="display:none;">
+        <ul class="popup__list">
+            <li>You have {{ bp_new_mention_count }} new mentions</li>
+            <li>You have {{ bp_unread_notification_count }} new messages</li>
+        </ul>
+</div>
+<script>
+jQuery( ".member-nav li .notification" ).hover(function() {
+	jQuery( '#popup-counter' ).show();
+}, function() {
+    jQuery( '#popup-counter' ).hide();
+  }
+);
+</script>
+{% endif %}
