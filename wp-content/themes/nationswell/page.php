@@ -23,7 +23,7 @@
 $context = Timber::get_context();
 /* Hack for buddypress to render contents and assign it's own template */
 if ( function_exists('is_buddypress') && is_buddypress() ) {
-	global $wp_query;
+	global $wp_query, $bp;
 	$wp_query->in_the_loop=true; // Strange Hack due to Timber... see Buddypress - bp_do_theme_compat()
 	ob_start();
 	the_content();
@@ -31,6 +31,11 @@ if ( function_exists('is_buddypress') && is_buddypress() ) {
 	ob_end_clean();
 	$context['post'] = $post = new TimberPost();
 	$context['post']->post_name = $post->post_name = 'buddypress';
+	/* Add buddypress global to context and global counters for nav */
+	$context['bp'] = (array)$bp;
+	$context['bp_new_mention_count'] = $new_mention_count = (int) bp_get_user_meta( $bp->loggedin_user->id, 'bp_new_mention_count', true );
+	$context['bp_unread_notification_count'] = $unread_notification_count = bp_notifications_get_unread_notification_count($bp->loggedin_user->id);
+	$context['bp_total_new_count'] = $new_mention_count + $unread_notification_count;
 }else{
 	$context['post'] = $post =  new TimberPost();
 }
