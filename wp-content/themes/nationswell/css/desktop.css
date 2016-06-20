@@ -23,16 +23,16 @@
   background-origin: content-box;
 }
 /* line 10, ../scss/placeholders/_story.scss */
-.hero--cover.hero--story .container, .hero--cover.hero--story #buddypress {
+.hero--cover.hero--story .container {
   max-width: none;
 }
 /* line 13, ../scss/placeholders/_story.scss */
-.hero--cover.hero--story .container .hero--video__container, .hero--cover.hero--story #buddypress .hero--video__container {
+.hero--cover.hero--story .container .hero--video__container {
   width: 100%;
   height: 100%;
 }
 /* line 17, ../scss/placeholders/_story.scss */
-.hero--cover.hero--story .container .hero--video__container.video-container iframe, .hero--cover.hero--story #buddypress .hero--video__container.video-container iframe, .hero--cover.hero--story .container .hero--video__container.video-container object, .hero--cover.hero--story #buddypress .hero--video__container.video-container object, .hero--cover.hero--story .container .hero--video__container.video-container embed, .hero--cover.hero--story #buddypress .hero--video__container.video-container embed {
+.hero--cover.hero--story .container .hero--video__container.video-container iframe, .hero--cover.hero--story .container .hero--video__container.video-container object, .hero--cover.hero--story .container .hero--video__container.video-container embed {
   position: static;
   top: 0;
   left: 0;
@@ -165,13 +165,13 @@ table {
 }
 
 /* line 5, ../scss/partials/base/_grid.scss */
-.container, #buddypress {
+.container {
   max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 15, ../scss/bourbon/addons/_clearfix.scss */
-.container:after, #buddypress:after {
+.container:after {
   content: "";
   display: table;
   clear: both;
@@ -224,7 +224,7 @@ body {
 }
 
 /* line 41, ../scss/partials/base/_structure.scss */
-.container, #buddypress {
+.container {
   position: relative;
 }
 
@@ -1617,7 +1617,7 @@ input[type="submit"]:-moz-focus-inner {
   background-color: #f6f6f6;
 }
 /* line 15, ../scss/bourbon/addons/_clearfix.scss */
-.member-nav .container:after, .member-nav #buddypress:after {
+.member-nav .container:after {
   content: "";
   display: table;
   clear: both;
@@ -1770,12 +1770,12 @@ input[type="submit"]:-moz-focus-inner {
   height: auto;
 }
 /* line 17, ../scss/partials/base/_more-stories.scss */
-#more-stories .container:before, #more-stories #buddypress:before, #more-stories .container:after, #more-stories #buddypress:after {
+#more-stories .container:before, #more-stories .container:after {
   display: table;
   content: '';
 }
 /* line 23, ../scss/partials/base/_more-stories.scss */
-#more-stories .container:after, #more-stories #buddypress:after {
+#more-stories .container:after {
   clear: both;
 }
 /* line 28, ../scss/partials/base/_more-stories.scss */
@@ -1869,8 +1869,7 @@ input[type="submit"]:-moz-focus-inner {
 
 /* line 6, ../scss/partials/base/_footer.scss */
 #page-footer,
-#page-footer .container,
-#page-footer #buddypress {
+#page-footer .container {
   background-color: #002130;
 }
 
@@ -3191,16 +3190,16 @@ hr {
   background-origin: content-box;
 }
 /* line 12, ../scss/partials/base/_story.scss */
-.hero--story.hero--cover .container, .hero--story.hero--cover #buddypress {
+.hero--story.hero--cover .container {
   max-width: none;
 }
 /* line 16, ../scss/partials/base/_story.scss */
-.hero--story.hero--cover .container .hero--video__container, .hero--story.hero--cover #buddypress .hero--video__container {
+.hero--story.hero--cover .container .hero--video__container {
   width: 100%;
   height: 100%;
 }
 /* line 20, ../scss/partials/base/_story.scss */
-.hero--story.hero--cover .container .hero--video__container.video-container iframe, .hero--story.hero--cover #buddypress .hero--video__container.video-container iframe, .hero--story.hero--cover .container .hero--video__container.video-container object, .hero--story.hero--cover #buddypress .hero--video__container.video-container object, .hero--story.hero--cover .container .hero--video__container.video-container embed, .hero--story.hero--cover #buddypress .hero--video__container.video-container embed {
+.hero--story.hero--cover .container .hero--video__container.video-container iframe, .hero--story.hero--cover .container .hero--video__container.video-container object, .hero--story.hero--cover .container .hero--video__container.video-container embed {
   position: static;
   top: 0;
   left: 0;
@@ -4053,7 +4052,7 @@ hr {
   text-align: center;
 }
 /* line 20, ../scss/partials/base/_archive.scss */
-.hero--archive.hero--category .container, .hero--archive.hero--category #buddypress {
+.hero--archive.hero--category .container {
   padding: 2rem 12rem;
 }
 /* line 24, ../scss/partials/base/_archive.scss */
@@ -4083,7 +4082,7 @@ hr {
   background-color: transparent;
 }
 /* line 50, ../scss/partials/base/_archive.scss */
-.hero--archive.hero--author .container, .hero--archive.hero--author #buddypress {
+.hero--archive.hero--author .container {
   border-bottom: 0.7rem solid #eeeeee;
 }
 /* line 54, ../scss/partials/base/_archive.scss */
@@ -5205,7 +5204,7 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
   padding: 0.8rem 0;
 }
 /* line 145, ../scss/partials/desktop/_nav.scss */
-.trending-topics .container, .trending-topics #buddypress, .member-nav .container, .member-nav #buddypress {
+.trending-topics .container, .member-nav .container {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -5240,7 +5239,7 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
   width: 100%;
 }
 /* line 5, ../scss/partials/desktop/_footer.scss */
-#page-footer .container, #page-footer #buddypress {
+#page-footer .container {
   height: 13rem;
 }
 
@@ -6185,7 +6184,7 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
   bottom: 0;
 }
 /* line 59, ../scss/partials/desktop/_story.scss */
-.story__main-column .hero--story.hero--image .hero-information .container, .story__main-column .hero--story.hero--image .hero-information #buddypress, .story__main-column .hero--story.hero-widescreen-image .hero-information .container, .story__main-column .hero--story.hero-widescreen-image .hero-information #buddypress, .story__main-column .hero--story.hero--video .hero-information .container, .story__main-column .hero--story.hero--video .hero-information #buddypress {
+.story__main-column .hero--story.hero--image .hero-information .container, .story__main-column .hero--story.hero-widescreen-image .hero-information .container, .story__main-column .hero--story.hero--video .hero-information .container {
   padding: 0;
 }
 /* line 65, ../scss/partials/desktop/_story.scss */
@@ -6196,7 +6195,7 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
   bottom: 0;
 }
 /* line 71, ../scss/partials/desktop/_story.scss */
-.widescreen__main-column .hero--story.hero--image .hero-information .container, .widescreen__main-column .hero--story.hero--image .hero-information #buddypress, .widescreen__main-column .hero--story.hero-widescreen-image .hero-information .container, .widescreen__main-column .hero--story.hero-widescreen-image .hero-information #buddypress, .widescreen__main-column .hero--story.hero--video .hero-information .container, .widescreen__main-column .hero--story.hero--video .hero-information #buddypress {
+.widescreen__main-column .hero--story.hero--image .hero-information .container, .widescreen__main-column .hero--story.hero-widescreen-image .hero-information .container, .widescreen__main-column .hero--story.hero--video .hero-information .container {
   padding: 0;
 }
 /* line 78, ../scss/partials/desktop/_story.scss */
@@ -6781,7 +6780,7 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
   top: 2rem;
 }
 /* line 11, ../scss/partials/desktop/_archive.scss */
-.hero--archive.hero--series .container, .hero--archive.hero--series #buddypress {
+.hero--archive.hero--series .container {
   padding: 2rem 12rem;
 }
 /* line 16, ../scss/partials/desktop/_archive.scss */
@@ -6803,7 +6802,7 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
   background-color: transparent;
 }
 /* line 33, ../scss/partials/desktop/_archive.scss */
-.hero--archive.hero--author .container, .hero--archive.hero--author #buddypress {
+.hero--archive.hero--author .container {
   padding: 4rem 12rem;
 }
 /* line 37, ../scss/partials/desktop/_archive.scss */
@@ -6838,7 +6837,7 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
 }
 
 /* line 1, ../scss/partials/desktop/_nscportal.scss */
-.sticky-wrapper #page-header .container, .sticky-wrapper #page-header #buddypress {
+.sticky-wrapper #page-header .container {
   padding: 0 2.5rem;
 }
 

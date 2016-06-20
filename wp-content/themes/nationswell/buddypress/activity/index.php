@@ -148,9 +148,9 @@ do_action( 'bp_before_directory_activity' ); ?>
 			 *
 			 * @since 1.2.0
 			 */
-			do_action( 'bp_activity_syndication_options' ); ?>
+			//do_action( 'bp_activity_syndication_options' ); ?>
 
-			<li id="activity-filter-select" class="last">
+			<!--<li id="activity-filter-select" class="last">
 				<label for="activity-filter-by"><?php _e( 'Show:', 'buddypress' ); ?></label>
 				<select id="activity-filter-by">
 					<option value="-1"><?php _e( '&mdash; Everything &mdash;', 'buddypress' ); ?></option>
@@ -167,7 +167,7 @@ do_action( 'bp_before_directory_activity' ); ?>
 					do_action( 'bp_activity_filter_options' ); ?>
 
 				</select>
-			</li>
+			</li>-->
 		</ul>
 	</div><!-- .item-list-tabs -->
 

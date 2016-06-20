@@ -1,13 +1,42 @@
 //*** COMMON ******//
-.box {
-	background:$gray7;
-	padding:30px;
+//http://www.ryanscherler.com/notes/entry/omega-reset-for-bourbon-neat/
+@mixin omega-reset($nth, $context: null) {
+  @if $context == null { 
+    &:nth-child(#{$nth}) { margin-right: flex-gutter(); } 
+  } @else { 
+    &:nth-child(#{$nth}) { margin-right: flex-gutter($context); } 
+  }
+  &:nth-child(#{$nth}+1) { clear: none; }
+}
+
+.box-margin {
 	margin:3.4rem 2.2rem;
+}
+.box-padding {
+	padding:30px;
 }
 .box-shadow {
 	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
 }
+.box {
+	background:$gray7;
+	@extend .box-padding;
+	@extend .box-margin;
+}
+
+h1, h2 {
+	color:$black;
+	font-family:$noto-serif;
+	font-weight:$bold;
+}
+h1 {
+	font-size:24px;
+}
+h2 {
+	font-size:20px;
+}
+
 
 .button {
 	cursor: pointer;
@@ -100,8 +129,9 @@
 }
 
 .member-form-input {
-	font-size: 1.1rem;
-    padding: .875rem;
+	font-family:$gudea;
+	font-size: 2rem;
+    padding: 1.3rem;
     box-sizing : border-box;
     background-color: $white;
     border: 1px solid $gray4;
@@ -156,19 +186,22 @@
 	background:$gray6;
 	padding:30px;
 }
-// ********** END LOGIN FORM *****************//
-
+// ********** END LOGIN FORMS *****************//
 
 
 // ********** BUDDYPRESS STYLES *****************//
 //using flexbox mixins available in bourbon
 //https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/css3/_flex-box.scss
 #buddypress {
+	@extend .container;
+	//@extend .container--flex;
+
 	font-family:$gudea;
 	img.avatar {
 		border-radius:50%;
 	}
-	#item-header-cover-image {
+	#item-header-cover-image,
+	#item-header {
 		@extend .box;
 		@extend .box-shadow;
 		@include display(flex);
@@ -208,6 +241,101 @@
 		#aw-whats-new-submit {
 			@extend .button;
 		}
+	}
+	#members-dir-search {
+		//@include outer-container;
+		@extend .box-margin;
+		
+		.page-header,
+		.member-search-filter {
+			@include span-columns(6);
+		}
+		.member-search-filter {
+			text-align:right;
+		}
+		input[type="text"] {
+			@extend .member-form-input;
+			margin:30px 0;
+		}
+		input[type="submit"] {
+			@extend .button;
+		}
+	}
+	#members-directory-form {
+		@extend .box-margin;
+	}
+	#pag-top {
+		display:none;
+	}
+	#members-list {
+		@include outer-container;
+		li {
+			background:$gray7;
+			margin-bottom:2rem;
+			padding:30px 3%;
+			
+			$large: new-breakpoint(min-width 992px);
+			$medium: new-breakpoint(min-width 580px);
+			
+			@include omega(1n);
+			@include span-columns(12);
+			
+			@include media($medium) {
+  				@include span-columns(6);
+  				@include display(flex);
+  				@include flex-direction(row);
+  				@include omega-reset(1n, 12);
+  				@include omega(2n);
+			}
+			
+			@include media($large) {
+  				@include span-columns(4);
+  				@include display(flex);
+  				@include flex-direction(row);
+  				@include omega-reset(2n, 12);
+  				@include omega(3n);
+			}
+			
+			
+			//this is for positioning items inside
+			@include display(flex);
+			@include justify-content(flex-start);
+			@include align-items(center);
+			@include flex-direction(column);
+			@extend .box-shadow;
+			
+			
+			.item-avatar,
+			.item {
+				text-align:center;
+				padding-bottom:10px;
+				@include media($medium) {
+					text-align:left;
+				}
+			}
+			.item-avatar {
+				width:20%;
+				margin-right:5%;
+			}
+			.item {
+				width:75%;
+			}
+			.item-title {
+				@extend h2;
+				a {
+					color:$black;
+				}
+			}
+			
+		}
+	}
+	.pagination {
+		.pag-count,
+		.pagination-links {
+			padding-bottom:10px;
+			text-align:center;
+		}
+	
 	}
 	
 }
