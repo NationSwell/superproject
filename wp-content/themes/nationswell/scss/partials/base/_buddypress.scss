@@ -200,7 +200,6 @@ h2 {
 	img.avatar {
 		border-radius:50%;
 	}
-	#item-header-cover-image,
 	#item-header {
 		@extend .box;
 		@extend .box-shadow;
@@ -211,13 +210,15 @@ h2 {
   		@include justify-content(flex-start);
 	}
 	#item-header-avatar {
+		width:15%;
+		margin-right:5%;
 		img.avatar {
-			width:120px !important;
-			height:120px !important;
+			width:100% !important;
+			height:auto !important;
 		}
 	}
 	#item-header-content {
-		padding: 0 3.4em;
+		width:80%;
 	}
 	
 	#whats-new-form {
