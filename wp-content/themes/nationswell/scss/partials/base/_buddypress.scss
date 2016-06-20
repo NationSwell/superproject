@@ -10,7 +10,7 @@
 }
 
 .box-margin {
-	margin:3.4rem 2.2rem;
+	margin:3.4rem 2.2rem !important;
 }
 .box-padding {
 	padding:30px;
@@ -25,7 +25,7 @@
 	@extend .box-margin;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	color:$black;
 	font-family:$noto-serif;
 	font-weight:$bold;
@@ -36,30 +36,35 @@ h1 {
 h2 {
 	font-size:20px;
 }
+h3 {
+	font-size:16px;
+}
 
 
 .button {
 	cursor: pointer;
 	display:inline-block;
   	border-radius: 0;
-	border:none;
   	text-rendering: optimizeLegibility;
   	outline: 0;
   	-webkit-font-smoothing: antialiased;
 	font-family:$oswald;
 	font-weight:$bold;
-	color:$white;
-	background-color:$ns_red2;
 	padding:10px 15px;
 	text-transform:uppercase;
 	font-size:18px;
+	
+	background-color:transparent;
+	border:1px solid $ns_red2;
+	color:$ns_red2;
+	
 	&:hover {
-		background-color:$ns_blue1;
-		color:$white;
+		border:1px solid $ns_blue1;
+		color:$ns_blue1;
 	}
 	&:active, &:focus {
-		background-color:$ns_navy2;
-		color:$white;
+		border:1px solid $ns_navy2;
+		color:$ns_navy2;
 	}
 }
 
@@ -193,6 +198,27 @@ h2 {
 //using flexbox mixins available in bourbon
 //https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/css3/_flex-box.scss
 #buddypress {
+	//all styles are mobile first, with overwrites for these breakpoints
+	$large: new-breakpoint(min-width 992px);
+	$medium: new-breakpoint(min-width 580px);
+	
+	
+	p {
+		line-height:2rem;
+	}
+	
+	
+	a:link, a:visited {
+		color: $ns_red2;
+		text-decoration:none;
+	}
+	a:hover {
+		color: $ns_blue1;
+	}
+	a:active {
+		color: $ns_navy2;
+	}
+	
 	@extend .container;
 	//@extend .container--flex;
 
@@ -200,26 +226,118 @@ h2 {
 	img.avatar {
 		border-radius:50%;
 	}
-	#item-header {
-		@extend .box;
-		@extend .box-shadow;
-		@include display(flex);
-		@include flex-direction(row);
-		@include align-items(center);
-		@include align-content(center);
-  		@include justify-content(flex-start);
-	}
-	#item-header-avatar {
-		width:15%;
-		margin-right:5%;
-		img.avatar {
-			width:100% !important;
-			height:auto !important;
+	
+	.member-row {
+		
+		@include outer-container;
+		@extend .box-margin;
+		@include omega(3n);
+		
+		.member-info-card {
+			@include span-columns(12);
+			@include media($large) {
+				@include span-columns(6);
+				@include display(flex);
+			}
+			@extend .box-shadow;
+			@extend .box-padding;
+			background-color:$gray7;
+			
+			//this is for positioning avatar and name areas
+			@include display(flex);
+			@include justify-content(flex-start);
+			@include align-items(center);
+			@include flex-direction(row);
+			
+			.member-header-avatar {
+				width:15%;
+				margin-right:5%;
+				min-width:120px;
+				img.avatar {
+					width:100% !important;
+					height:auto !important;
+				}
+			}
+			.member-meta-bio {
+				width:80%;
+				
+				.item-block-content {
+					margin-top:20px;
+					.icon {
+						text-align:center;
+						border-radius: 50%;
+						border:1px solid $black;
+						color:$black;
+						width:50px;
+						height:50px;
+						font-size: 32px;
+    					padding-top: 10px;
+    					padding-left: 2px;
+					}
+					.item-subblock {
+						display:inline-block;
+						margin-right:20px;
+						vertical-align:middle;
+					}
+				}
+			}
+		}
+		.member-change-avatar {
+			background-color:$gray7;
+			@include span-columns(12);
+			margin-top:15px;
+			@include media($large) {
+				@include span-columns(6);
+				margin-top:0;
+			}
+			@extend .box-shadow;
+			@extend .box-padding;
+			
+			a.button.edit {
+				margin:30px 0;
+			}
+			.bp-progress {
+				margin:0;
+			}
+		}
+		.callout-block {
+			background-color:$gray7;
+			@include span-columns(6);
+			margin-top:15px;
+			@include media($large) {
+				@include span-columns(3);
+				margin-top:0;
+			}
+			@extend .box-shadow;
+			@extend .box-padding;
+			
+			h3 {
+				color:$ns_red2;
+				.icon {
+					font-size: 80%;
+					display: inline-block;
+					margin-right: 10px;
+					margin-top: -2px;
+				}
+			}
+			.item-block-content {
+				margin:20px 0;
+			}
+			.item-block-button-go {
+				@extend .button;
+			}
 		}
 	}
-	#item-header-content {
-		width:80%;
+	
+	//Avatar upload form
+	.bp-avatar {
+		.drag-drop-buttons {
+			label {
+				display:none;
+			}
+		}
 	}
+	
 	
 	#whats-new-form {
 		@extend .box;
@@ -275,8 +393,6 @@ h2 {
 			margin-bottom:2rem;
 			padding:30px 3%;
 			
-			$large: new-breakpoint(min-width 992px);
-			$medium: new-breakpoint(min-width 580px);
 			
 			@include omega(1n);
 			@include span-columns(12);

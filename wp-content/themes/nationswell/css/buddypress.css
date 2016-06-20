@@ -670,248 +670,258 @@ small a {
 }
 
 /* line 106, ../scss/partials/base/_icons.scss */
-.icon_contact:before {
+.icon_comments:before {
   content: "\f10e";
 }
 
 /* line 111, ../scss/partials/base/_icons.scss */
-.icon_cta-signup:before {
+.icon_contact:before {
   content: "\f10f";
 }
 
 /* line 116, ../scss/partials/base/_icons.scss */
-.icon_cta-speak-out-chat:before {
+.icon_cta-signup:before {
   content: "\f110";
 }
 
 /* line 121, ../scss/partials/base/_icons.scss */
-.icon_cta-speak-out:before {
+.icon_cta-speak-out-chat:before {
   content: "\f111";
 }
 
 /* line 126, ../scss/partials/base/_icons.scss */
-.icon_donate:before {
+.icon_cta-speak-out:before {
   content: "\f112";
 }
 
 /* line 131, ../scss/partials/base/_icons.scss */
-.icon_email:before {
+.icon_donate:before {
   content: "\f113";
 }
 
 /* line 136, ../scss/partials/base/_icons.scss */
-.icon_envelope:before {
+.icon_email:before {
   content: "\f114";
 }
 
 /* line 141, ../scss/partials/base/_icons.scss */
-.icon_explorer:before {
+.icon_envelope:before {
   content: "\f115";
 }
 
 /* line 146, ../scss/partials/base/_icons.scss */
-.icon_external:before {
+.icon_explorer:before {
   content: "\f116";
 }
 
 /* line 151, ../scss/partials/base/_icons.scss */
-.icon_facebook:before {
+.icon_external:before {
   content: "\f117";
 }
 
 /* line 156, ../scss/partials/base/_icons.scss */
-.icon_firefox:before {
+.icon_facebook:before {
   content: "\f118";
 }
 
 /* line 161, ../scss/partials/base/_icons.scss */
-.icon_fullscreen:before {
+.icon_firefox:before {
   content: "\f119";
 }
 
 /* line 166, ../scss/partials/base/_icons.scss */
-.icon_get_involved:before {
+.icon_fullscreen:before {
   content: "\f11a";
 }
 
 /* line 171, ../scss/partials/base/_icons.scss */
-.icon_google-plus:before {
+.icon_get_involved:before {
   content: "\f11b";
 }
 
 /* line 176, ../scss/partials/base/_icons.scss */
-.icon_hamburger:before {
+.icon_google-plus:before {
   content: "\f11c";
 }
 
 /* line 181, ../scss/partials/base/_icons.scss */
-.icon_information:before {
+.icon_hamburger:before {
   content: "\f11d";
 }
 
 /* line 186, ../scss/partials/base/_icons.scss */
-.icon_instagram:before {
+.icon_information:before {
   content: "\f11e";
 }
 
 /* line 191, ../scss/partials/base/_icons.scss */
-.icon_link:before {
+.icon_instagram:before {
   content: "\f11f";
 }
 
 /* line 196, ../scss/partials/base/_icons.scss */
-.icon_linkedin:before {
+.icon_link:before {
   content: "\f120";
 }
 
 /* line 201, ../scss/partials/base/_icons.scss */
-.icon_listcicle_stream:before {
+.icon_linkedin:before {
   content: "\f121";
 }
 
 /* line 206, ../scss/partials/base/_icons.scss */
-.icon_listory:before {
+.icon_listcicle_stream:before {
   content: "\f122";
 }
 
 /* line 211, ../scss/partials/base/_icons.scss */
-.icon_load-more:before {
+.icon_listory:before {
   content: "\f123";
 }
 
 /* line 216, ../scss/partials/base/_icons.scss */
-.icon_logout:before {
+.icon_load-more:before {
   content: "\f124";
 }
 
 /* line 221, ../scss/partials/base/_icons.scss */
-.icon_nationswell-flag:before {
+.icon_logout:before {
   content: "\f125";
 }
 
 /* line 226, ../scss/partials/base/_icons.scss */
-.icon_photo:before {
+.icon_nationswell-flag:before {
   content: "\f126";
 }
 
 /* line 231, ../scss/partials/base/_icons.scss */
-.icon_photo_stream-01:before {
+.icon_people:before {
   content: "\f127";
 }
 
 /* line 236, ../scss/partials/base/_icons.scss */
-.icon_photo_stream:before {
+.icon_photo:before {
   content: "\f128";
 }
 
 /* line 241, ../scss/partials/base/_icons.scss */
-.icon_play:before {
+.icon_photo_stream-01:before {
   content: "\f129";
 }
 
 /* line 246, ../scss/partials/base/_icons.scss */
-.icon_question:before {
+.icon_photo_stream:before {
   content: "\f12a";
 }
 
 /* line 251, ../scss/partials/base/_icons.scss */
-.icon_quote:before {
+.icon_play:before {
   content: "\f12b";
 }
 
 /* line 256, ../scss/partials/base/_icons.scss */
-.icon_search:before {
+.icon_question:before {
   content: "\f12c";
 }
 
 /* line 261, ../scss/partials/base/_icons.scss */
-.icon_separator:before {
+.icon_quote:before {
   content: "\f12d";
 }
 
 /* line 266, ../scss/partials/base/_icons.scss */
-.icon_series:before {
+.icon_search:before {
   content: "\f12e";
 }
 
 /* line 271, ../scss/partials/base/_icons.scss */
-.icon_series_stream:before {
+.icon_separator:before {
   content: "\f12f";
 }
 
 /* line 276, ../scss/partials/base/_icons.scss */
-.icon_settings:before {
+.icon_series:before {
   content: "\f130";
 }
 
 /* line 281, ../scss/partials/base/_icons.scss */
-.icon_speak_out:before {
+.icon_series_stream:before {
   content: "\f131";
 }
 
 /* line 286, ../scss/partials/base/_icons.scss */
+.icon_settings:before {
+  content: "\f132";
+}
+
+/* line 291, ../scss/partials/base/_icons.scss */
+.icon_speak_out:before {
+  content: "\f133";
+}
+
+/* line 296, ../scss/partials/base/_icons.scss */
 .icon_star:before {
   content: "\f100";
 }
 
-/* line 291, ../scss/partials/base/_icons.scss */
-.icon_story:before {
-  content: "\f132";
-}
-
-/* line 296, ../scss/partials/base/_icons.scss */
-.icon_story_stream_01:before {
-  content: "\f133";
-}
-
 /* line 301, ../scss/partials/base/_icons.scss */
-.icon_story_stream_02:before {
+.icon_story:before {
   content: "\f134";
 }
 
 /* line 306, ../scss/partials/base/_icons.scss */
-.icon_story_stream_03:before {
+.icon_story_stream_01:before {
   content: "\f135";
 }
 
 /* line 311, ../scss/partials/base/_icons.scss */
-.icon_tumblr:before {
+.icon_story_stream_02:before {
   content: "\f136";
 }
 
 /* line 316, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
+.icon_story_stream_03:before {
   content: "\f137";
 }
 
 /* line 321, ../scss/partials/base/_icons.scss */
-.icon_video:before {
+.icon_tumblr:before {
   content: "\f138";
 }
 
 /* line 326, ../scss/partials/base/_icons.scss */
-.icon_video_stream:before {
+.icon_twitter:before {
   content: "\f139";
 }
 
 /* line 331, ../scss/partials/base/_icons.scss */
-.icon_volume:before {
+.icon_video:before {
   content: "\f13a";
 }
 
 /* line 336, ../scss/partials/base/_icons.scss */
-.icon_widescreen:before {
+.icon_video_stream:before {
   content: "\f13b";
 }
 
 /* line 341, ../scss/partials/base/_icons.scss */
-.icon_write:before {
+.icon_volume:before {
   content: "\f13c";
 }
 
 /* line 346, ../scss/partials/base/_icons.scss */
-.icon_youtube:before {
+.icon_widescreen:before {
   content: "\f13d";
+}
+
+/* line 351, ../scss/partials/base/_icons.scss */
+.icon_write:before {
+  content: "\f13e";
+}
+
+/* line 356, ../scss/partials/base/_icons.scss */
+.icon_youtube:before {
+  content: "\f13f";
 }
 
 /* line 1, ../scss/partials/base/_buttons.scss */
@@ -4338,28 +4348,28 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
 }
 
 /* line 12, ../scss/partials/base/_buddypress.scss */
-.box-margin, .box, #buddypress #item-header, #buddypress #whats-new-form, #buddypress #members-dir-search, #buddypress #members-directory-form {
-  margin: 3.4rem 2.2rem;
+.box-margin, .box, #buddypress #whats-new-form, #buddypress .member-row, #buddypress #members-dir-search, #buddypress #members-directory-form {
+  margin: 3.4rem 2.2rem !important;
 }
 
 /* line 15, ../scss/partials/base/_buddypress.scss */
-.box-padding, .box, #buddypress #item-header, #buddypress #whats-new-form {
+.box-padding, .box, #buddypress #whats-new-form, #buddypress .member-row .member-info-card, #buddypress .member-row .member-change-avatar, #buddypress .member-row .callout-block {
   padding: 30px;
 }
 
 /* line 18, ../scss/partials/base/_buddypress.scss */
-.box-shadow, #buddypress #item-header, #buddypress #whats-new-form, #buddypress #members-list li {
+.box-shadow, #buddypress .member-row .member-info-card, #buddypress .member-row .member-change-avatar, #buddypress .member-row .callout-block, #buddypress #whats-new-form, #buddypress #members-list li {
   -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* line 22, ../scss/partials/base/_buddypress.scss */
-.box, #buddypress #item-header, #buddypress #whats-new-form {
+.box, #buddypress #whats-new-form {
   background: #f6f6f6;
 }
 
 /* line 28, ../scss/partials/base/_buddypress.scss */
-h1, h2, #buddypress #members-list li .item-title {
+h1, h2, #buddypress #members-list li .item-title, h3 {
   color: #000;
   font-family: "Noto Serif", Georgia, serif;
   font-weight: 700;
@@ -4375,40 +4385,45 @@ h2, #buddypress #members-list li .item-title {
   font-size: 20px;
 }
 
-/* line 41, ../scss/partials/base/_buddypress.scss */
-.button, .lostpassword-button, .login-form .login-submit input[type="submit"], #buddypress #whats-new-form #aw-whats-new-submit, #buddypress #members-dir-search input[type="submit"] {
+/* line 39, ../scss/partials/base/_buddypress.scss */
+h3 {
+  font-size: 16px;
+}
+
+/* line 44, ../scss/partials/base/_buddypress.scss */
+.button, .lostpassword-button, .login-form .login-submit input[type="submit"], #buddypress .member-row .callout-block .item-block-button-go, #buddypress #whats-new-form #aw-whats-new-submit, #buddypress #members-dir-search input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   border-radius: 0;
-  border: none;
   text-rendering: optimizeLegibility;
   outline: 0;
   -webkit-font-smoothing: antialiased;
   font-family: "oswaldregular", Arial, sans-serif;
   font-weight: 700;
-  color: #fff;
-  background-color: #fd6464;
   padding: 10px 15px;
   text-transform: uppercase;
   font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #fd6464;
+  color: #fd6464;
 }
-/* line 56, ../scss/partials/base/_buddypress.scss */
-.button:hover, .lostpassword-button:hover, .login-form .login-submit input[type="submit"]:hover, #buddypress #whats-new-form #aw-whats-new-submit:hover, #buddypress #members-dir-search input[type="submit"]:hover {
-  background-color: #0098d8;
-  color: #fff;
+/* line 61, ../scss/partials/base/_buddypress.scss */
+.button:hover, .lostpassword-button:hover, .login-form .login-submit input[type="submit"]:hover, #buddypress .member-row .callout-block .item-block-button-go:hover, #buddypress #whats-new-form #aw-whats-new-submit:hover, #buddypress #members-dir-search input[type="submit"]:hover {
+  border: 1px solid #0098d8;
+  color: #0098d8;
 }
-/* line 60, ../scss/partials/base/_buddypress.scss */
-.button:active, .lostpassword-button:active, .login-form .login-submit input[type="submit"]:active, #buddypress #whats-new-form #aw-whats-new-submit:active, #buddypress #members-dir-search input[type="submit"]:active, .button:focus, .lostpassword-button:focus, .login-form .login-submit input[type="submit"]:focus, #buddypress #whats-new-form #aw-whats-new-submit:focus, #buddypress #members-dir-search input[type="submit"]:focus {
-  background-color: #003046;
-  color: #fff;
+/* line 65, ../scss/partials/base/_buddypress.scss */
+.button:active, .lostpassword-button:active, .login-form .login-submit input[type="submit"]:active, #buddypress .member-row .callout-block .item-block-button-go:active, #buddypress #whats-new-form #aw-whats-new-submit:active, #buddypress #members-dir-search input[type="submit"]:active, .button:focus, .lostpassword-button:focus, .login-form .login-submit input[type="submit"]:focus, #buddypress .member-row .callout-block .item-block-button-go:focus, #buddypress #whats-new-form #aw-whats-new-submit:focus, #buddypress #members-dir-search input[type="submit"]:focus {
+  border: 1px solid #003046;
+  color: #003046;
 }
 
-/* line 67, ../scss/partials/base/_buddypress.scss */
+/* line 72, ../scss/partials/base/_buddypress.scss */
 .auth-forms {
   background: url(../img/headerbg-bnw.jpg);
   background-size: cover;
 }
-/* line 72, ../scss/partials/base/_buddypress.scss */
+/* line 77, ../scss/partials/base/_buddypress.scss */
 .auth-forms .content-wrapper {
   padding: 30px 30px 0 30px;
   color: #003046;
@@ -4449,12 +4464,12 @@ h2, #buddypress #members-list li .item-title {
   justify-content: center;
   -ms-flex-pack: center;
 }
-/* line 82, ../scss/partials/base/_buddypress.scss */
+/* line 87, ../scss/partials/base/_buddypress.scss */
 .auth-forms .content-wrapper .link-more {
   width: 100%;
   padding-top: 30px;
 }
-/* line 86, ../scss/partials/base/_buddypress.scss */
+/* line 91, ../scss/partials/base/_buddypress.scss */
 .auth-forms .content-wrapper .learn-more {
   text-align: center;
   color: #b7b7b7;
@@ -4468,11 +4483,11 @@ h2, #buddypress #members-list li .item-title {
   position: relative;
   display: block;
 }
-/* line 99, ../scss/partials/base/_buddypress.scss */
+/* line 104, ../scss/partials/base/_buddypress.scss */
 .auth-forms .content-wrapper .learn-more.hover {
   color: #003046;
 }
-/* line 103, ../scss/partials/base/_buddypress.scss */
+/* line 108, ../scss/partials/base/_buddypress.scss */
 .auth-forms .content-wrapper .learn-more:after {
   width: 36px;
   height: 13px;
@@ -4490,16 +4505,16 @@ h2, #buddypress #members-list li .item-title {
   display: table;
   clear: both;
 }
-/* line 123, ../scss/partials/base/_buddypress.scss */
+/* line 128, ../scss/partials/base/_buddypress.scss */
 .lostpassword-form .login-remember {
   float: left;
 }
-/* line 126, ../scss/partials/base/_buddypress.scss */
+/* line 131, ../scss/partials/base/_buddypress.scss */
 .lostpassword-form .lostpassword-submit {
   float: right;
 }
 
-/* line 131, ../scss/partials/base/_buddypress.scss */
+/* line 136, ../scss/partials/base/_buddypress.scss */
 .member-form-input, .login-form form input[type="text"], .login-form form input[type="password"], #buddypress #members-dir-search input[type="text"] {
   font-family: "Gudea", Arial, sans-serif;
   font-size: 2rem;
@@ -4519,58 +4534,100 @@ h2, #buddypress #members-list li .item-title {
   appearance: none;
 }
 
-/* line 149, ../scss/partials/base/_buddypress.scss */
+/* line 154, ../scss/partials/base/_buddypress.scss */
 .login-form {
   background: #fff;
   text-align: left;
   font-style: normal;
 }
-/* line 153, ../scss/partials/base/_buddypress.scss */
+/* line 158, ../scss/partials/base/_buddypress.scss */
 .login-form h2, .login-form #buddypress #members-list li .item-title, #buddypress #members-list li .login-form .item-title {
   font-family: 'PT Serif', serif;
   color: #000;
 }
-/* line 158, ../scss/partials/base/_buddypress.scss */
+/* line 163, ../scss/partials/base/_buddypress.scss */
 .login-form form label, .login-form form input[type="text"], .login-form form input[type="password"] {
   display: block;
   font-style: normal;
 }
-/* line 166, ../scss/partials/base/_buddypress.scss */
+/* line 171, ../scss/partials/base/_buddypress.scss */
 .login-form .login-remember, .login-form .login-submit {
   line-height: 1 !important;
   margin: 5px 0 !important;
   font-size: 16px !important;
 }
-/* line 171, ../scss/partials/base/_buddypress.scss */
+/* line 176, ../scss/partials/base/_buddypress.scss */
 .login-form .login-remember {
   float: left;
 }
-/* line 175, ../scss/partials/base/_buddypress.scss */
+/* line 180, ../scss/partials/base/_buddypress.scss */
 .login-form .login-submit input[type="submit"] {
   float: right;
 }
 
-/* line 182, ../scss/partials/base/_buddypress.scss */
+/* line 187, ../scss/partials/base/_buddypress.scss */
 .login-form-inputs {
   padding: 15px 30px 70px 30px;
 }
 
-/* line 185, ../scss/partials/base/_buddypress.scss */
+/* line 190, ../scss/partials/base/_buddypress.scss */
 .login-form-bottom {
   background: #eeeeee;
   padding: 30px;
 }
 
-/* line 195, ../scss/partials/base/_buddypress.scss */
+/* line 200, ../scss/partials/base/_buddypress.scss */
 #buddypress {
   font-family: "Gudea", Arial, sans-serif;
 }
-/* line 200, ../scss/partials/base/_buddypress.scss */
+/* line 206, ../scss/partials/base/_buddypress.scss */
+#buddypress p {
+  line-height: 2rem;
+}
+/* line 211, ../scss/partials/base/_buddypress.scss */
+#buddypress a:link, #buddypress a:visited {
+  color: #fd6464;
+  text-decoration: none;
+}
+/* line 215, ../scss/partials/base/_buddypress.scss */
+#buddypress a:hover {
+  color: #0098d8;
+}
+/* line 218, ../scss/partials/base/_buddypress.scss */
+#buddypress a:active {
+  color: #003046;
+}
+/* line 226, ../scss/partials/base/_buddypress.scss */
 #buddypress img.avatar {
   border-radius: 50%;
 }
-/* line 203, ../scss/partials/base/_buddypress.scss */
-#buddypress #item-header {
+/* line 230, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, ../scss/bourbon/addons/_clearfix.scss */
+#buddypress .member-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 52, ../scss/neat/grid/_omega.scss */
+#buddypress .member-row:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 57, ../scss/neat/grid/_omega.scss */
+#buddypress .member-row:nth-child(3n+1) {
+  clear: left;
+}
+/* line 236, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-info-card {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #f6f6f6;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -4578,26 +4635,6 @@ h2, #buddypress #members-list li .item-title {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-direction: row;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  -webkit-align-content: center;
-  -moz-align-content: center;
-  align-content: center;
-  -ms-flex-line-pack: center;
   -webkit-box-pack: start;
   -moz-box-pack: start;
   box-pack: start;
@@ -4607,40 +4644,184 @@ h2, #buddypress #members-list li .item-title {
   -o-justify-content: flex-start;
   justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
 }
-/* line 212, ../scss/partials/base/_buddypress.scss */
-#buddypress #item-header-avatar {
+/* line 38, ../scss/neat/grid/_span-columns.scss */
+#buddypress .member-row .member-info-card:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 992px) {
+  /* line 236, ../scss/partials/base/_buddypress.scss */
+  #buddypress .member-row .member-info-card {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  #buddypress .member-row .member-info-card:last-child {
+    margin-right: 0;
+  }
+}
+/* line 252, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-info-card .member-header-avatar {
   width: 15%;
   margin-right: 5%;
+  min-width: 120px;
 }
-/* line 215, ../scss/partials/base/_buddypress.scss */
-#buddypress #item-header-avatar img.avatar {
+/* line 256, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-info-card .member-header-avatar img.avatar {
   width: 100% !important;
   height: auto !important;
 }
-/* line 220, ../scss/partials/base/_buddypress.scss */
-#buddypress #item-header-content {
+/* line 261, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-info-card .member-meta-bio {
   width: 80%;
 }
-/* line 227, ../scss/partials/base/_buddypress.scss */
+/* line 264, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-info-card .member-meta-bio .item-block-content {
+  margin-top: 20px;
+}
+/* line 266, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-info-card .member-meta-bio .item-block-content .icon {
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-left: 2px;
+}
+/* line 277, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-info-card .member-meta-bio .item-block-content .item-subblock {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+/* line 285, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-change-avatar {
+  background-color: #f6f6f6;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 15px;
+}
+/* line 38, ../scss/neat/grid/_span-columns.scss */
+#buddypress .member-row .member-change-avatar:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 992px) {
+  /* line 285, ../scss/partials/base/_buddypress.scss */
+  #buddypress .member-row .member-change-avatar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-top: 0;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  #buddypress .member-row .member-change-avatar:last-child {
+    margin-right: 0;
+  }
+}
+/* line 296, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-change-avatar a.button.edit, #buddypress .member-row .member-change-avatar a.edit.lostpassword-button, #buddypress .member-row .member-change-avatar .callout-block a.edit.item-block-button-go, #buddypress .member-row .callout-block .member-change-avatar a.edit.item-block-button-go, #buddypress .member-row .member-change-avatar #whats-new-form a.edit#aw-whats-new-submit, #buddypress #whats-new-form .member-row .member-change-avatar a.edit#aw-whats-new-submit {
+  margin: 30px 0;
+}
+/* line 299, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .member-change-avatar .bp-progress {
+  margin: 0;
+}
+/* line 303, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .callout-block {
+  background-color: #f6f6f6;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-top: 15px;
+}
+/* line 38, ../scss/neat/grid/_span-columns.scss */
+#buddypress .member-row .callout-block:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 992px) {
+  /* line 303, ../scss/partials/base/_buddypress.scss */
+  #buddypress .member-row .callout-block {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-top: 0;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  #buddypress .member-row .callout-block:last-child {
+    margin-right: 0;
+  }
+}
+/* line 314, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .callout-block h3 {
+  color: #fd6464;
+}
+/* line 316, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .callout-block h3 .icon {
+  font-size: 80%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+/* line 323, ../scss/partials/base/_buddypress.scss */
+#buddypress .member-row .callout-block .item-block-content {
+  margin: 20px 0;
+}
+/* line 335, ../scss/partials/base/_buddypress.scss */
+#buddypress .bp-avatar .drag-drop-buttons label {
+  display: none;
+}
+/* line 345, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form p.activity-greeting {
   font-size: 2rem;
   display: inline-block;
   vertical-align: top;
   padding: 1.5rem;
 }
-/* line 233, ../scss/partials/base/_buddypress.scss */
+/* line 351, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-avatar,
 #buddypress #whats-new-form p.activity-greeting {
   display: inline-block;
 }
-/* line 237, ../scss/partials/base/_buddypress.scss */
+/* line 355, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-textarea {
   margin-top: 15px;
   float: none;
   clear: both;
 }
-/* line 250, ../scss/partials/base/_buddypress.scss */
+/* line 368, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search .page-header,
 #buddypress #members-dir-search .member-search-filter {
   float: left;
@@ -4653,19 +4834,19 @@ h2, #buddypress #members-list li .item-title {
 #buddypress #members-dir-search .member-search-filter:last-child {
   margin-right: 0;
 }
-/* line 254, ../scss/partials/base/_buddypress.scss */
+/* line 372, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search .member-search-filter {
   text-align: right;
 }
-/* line 257, ../scss/partials/base/_buddypress.scss */
+/* line 375, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search input[type="text"] {
   margin: 30px 0;
 }
-/* line 268, ../scss/partials/base/_buddypress.scss */
+/* line 386, ../scss/partials/base/_buddypress.scss */
 #buddypress #pag-top {
   display: none;
 }
-/* line 271, ../scss/partials/base/_buddypress.scss */
+/* line 389, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list {
   max-width: 68em;
   margin-left: auto;
@@ -4677,7 +4858,7 @@ h2, #buddypress #members-list li .item-title {
   display: table;
   clear: both;
 }
-/* line 273, ../scss/partials/base/_buddypress.scss */
+/* line 391, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li {
   background: #f6f6f6;
   margin-bottom: 2rem;
@@ -4732,7 +4913,7 @@ h2, #buddypress #members-list li .item-title {
   margin-right: 0;
 }
 @media screen and (min-width: 580px) {
-  /* line 273, ../scss/partials/base/_buddypress.scss */
+  /* line 391, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li {
     float: left;
     display: block;
@@ -4775,7 +4956,7 @@ h2, #buddypress #members-list li .item-title {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 273, ../scss/partials/base/_buddypress.scss */
+  /* line 391, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li {
     float: left;
     display: block;
@@ -4817,33 +4998,33 @@ h2, #buddypress #members-list li .item-title {
     clear: left;
   }
 }
-/* line 309, ../scss/partials/base/_buddypress.scss */
+/* line 425, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-avatar,
 #buddypress #members-list li .item {
   text-align: center;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 580px) {
-  /* line 309, ../scss/partials/base/_buddypress.scss */
+  /* line 425, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li .item-avatar,
   #buddypress #members-list li .item {
     text-align: left;
   }
 }
-/* line 317, ../scss/partials/base/_buddypress.scss */
+/* line 433, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-avatar {
   width: 20%;
   margin-right: 5%;
 }
-/* line 321, ../scss/partials/base/_buddypress.scss */
+/* line 437, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item {
   width: 75%;
 }
-/* line 326, ../scss/partials/base/_buddypress.scss */
+/* line 442, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-title a {
   color: #000;
 }
-/* line 334, ../scss/partials/base/_buddypress.scss */
+/* line 450, ../scss/partials/base/_buddypress.scss */
 #buddypress .pagination .pag-count,
 #buddypress .pagination .pagination-links {
   padding-bottom: 10px;
