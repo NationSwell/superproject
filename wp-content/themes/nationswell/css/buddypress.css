@@ -4338,27 +4338,23 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
 }
 
 /* line 12, ../scss/partials/base/_buddypress.scss */
-.box-margin, .box, #buddypress #item-header-cover-image,
-#buddypress #item-header, #buddypress #whats-new-form, #buddypress #members-dir-search, #buddypress #members-directory-form {
+.box-margin, .box, #buddypress #item-header, #buddypress #whats-new-form, #buddypress #members-dir-search, #buddypress #members-directory-form {
   margin: 3.4rem 2.2rem;
 }
 
 /* line 15, ../scss/partials/base/_buddypress.scss */
-.box-padding, .box, #buddypress #item-header-cover-image,
-#buddypress #item-header, #buddypress #whats-new-form {
+.box-padding, .box, #buddypress #item-header, #buddypress #whats-new-form {
   padding: 30px;
 }
 
 /* line 18, ../scss/partials/base/_buddypress.scss */
-.box-shadow, #buddypress #item-header-cover-image,
-#buddypress #item-header, #buddypress #whats-new-form, #buddypress #members-list li {
+.box-shadow, #buddypress #item-header, #buddypress #whats-new-form, #buddypress #members-list li {
   -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* line 22, ../scss/partials/base/_buddypress.scss */
-.box, #buddypress #item-header-cover-image,
-#buddypress #item-header, #buddypress #whats-new-form {
+.box, #buddypress #item-header, #buddypress #whats-new-form {
   background: #f6f6f6;
 }
 
@@ -4574,7 +4570,6 @@ h2, #buddypress #members-list li .item-title {
   border-radius: 50%;
 }
 /* line 203, ../scss/partials/base/_buddypress.scss */
-#buddypress #item-header-cover-image,
 #buddypress #item-header {
   display: -webkit-box;
   display: -moz-box;
@@ -4613,34 +4608,39 @@ h2, #buddypress #members-list li .item-title {
   justify-content: flex-start;
   -ms-flex-pack: start;
 }
-/* line 214, ../scss/partials/base/_buddypress.scss */
+/* line 212, ../scss/partials/base/_buddypress.scss */
+#buddypress #item-header-avatar {
+  width: 15%;
+  margin-right: 5%;
+}
+/* line 215, ../scss/partials/base/_buddypress.scss */
 #buddypress #item-header-avatar img.avatar {
-  width: 120px !important;
-  height: 120px !important;
+  width: 100% !important;
+  height: auto !important;
 }
-/* line 219, ../scss/partials/base/_buddypress.scss */
+/* line 220, ../scss/partials/base/_buddypress.scss */
 #buddypress #item-header-content {
-  padding: 0 3.4em;
+  width: 80%;
 }
-/* line 226, ../scss/partials/base/_buddypress.scss */
+/* line 227, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form p.activity-greeting {
   font-size: 2rem;
   display: inline-block;
   vertical-align: top;
   padding: 1.5rem;
 }
-/* line 232, ../scss/partials/base/_buddypress.scss */
+/* line 233, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-avatar,
 #buddypress #whats-new-form p.activity-greeting {
   display: inline-block;
 }
-/* line 236, ../scss/partials/base/_buddypress.scss */
+/* line 237, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-textarea {
   margin-top: 15px;
   float: none;
   clear: both;
 }
-/* line 249, ../scss/partials/base/_buddypress.scss */
+/* line 250, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search .page-header,
 #buddypress #members-dir-search .member-search-filter {
   float: left;
@@ -4653,19 +4653,19 @@ h2, #buddypress #members-list li .item-title {
 #buddypress #members-dir-search .member-search-filter:last-child {
   margin-right: 0;
 }
-/* line 253, ../scss/partials/base/_buddypress.scss */
+/* line 254, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search .member-search-filter {
   text-align: right;
 }
-/* line 256, ../scss/partials/base/_buddypress.scss */
+/* line 257, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search input[type="text"] {
   margin: 30px 0;
 }
-/* line 267, ../scss/partials/base/_buddypress.scss */
+/* line 268, ../scss/partials/base/_buddypress.scss */
 #buddypress #pag-top {
   display: none;
 }
-/* line 270, ../scss/partials/base/_buddypress.scss */
+/* line 271, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list {
   max-width: 68em;
   margin-left: auto;
@@ -4677,7 +4677,7 @@ h2, #buddypress #members-list li .item-title {
   display: table;
   clear: both;
 }
-/* line 272, ../scss/partials/base/_buddypress.scss */
+/* line 273, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li {
   background: #f6f6f6;
   margin-bottom: 2rem;
@@ -4732,7 +4732,7 @@ h2, #buddypress #members-list li .item-title {
   margin-right: 0;
 }
 @media screen and (min-width: 580px) {
-  /* line 272, ../scss/partials/base/_buddypress.scss */
+  /* line 273, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li {
     float: left;
     display: block;
@@ -4775,7 +4775,7 @@ h2, #buddypress #members-list li .item-title {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 272, ../scss/partials/base/_buddypress.scss */
+  /* line 273, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li {
     float: left;
     display: block;
@@ -4817,33 +4817,33 @@ h2, #buddypress #members-list li .item-title {
     clear: left;
   }
 }
-/* line 308, ../scss/partials/base/_buddypress.scss */
+/* line 309, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-avatar,
 #buddypress #members-list li .item {
   text-align: center;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 580px) {
-  /* line 308, ../scss/partials/base/_buddypress.scss */
+  /* line 309, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li .item-avatar,
   #buddypress #members-list li .item {
     text-align: left;
   }
 }
-/* line 316, ../scss/partials/base/_buddypress.scss */
+/* line 317, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-avatar {
   width: 20%;
   margin-right: 5%;
 }
-/* line 320, ../scss/partials/base/_buddypress.scss */
+/* line 321, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item {
   width: 75%;
 }
-/* line 325, ../scss/partials/base/_buddypress.scss */
+/* line 326, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-title a {
   color: #000;
 }
-/* line 333, ../scss/partials/base/_buddypress.scss */
+/* line 334, ../scss/partials/base/_buddypress.scss */
 #buddypress .pagination .pag-count,
 #buddypress .pagination .pagination-links {
   padding-bottom: 10px;
