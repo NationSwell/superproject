@@ -1133,4 +1133,37 @@ function restrictBuddypressPages(){
 		die();
 	}
 }
-add_action( 'wp', 'restrictBuddypressPages' );
+
+// modify the buddypress nav links
+function bp_custom_setup_nav() {
+    global $bp;
+	// Add events
+    $args = array(
+            'name' => __('Events', 'buddypress'),
+            'slug' => 'nsc-events',
+            'default_subnav_slug' => 'nsc-events',
+            'position' => 50,
+            'screen_function' => 'bp_custom_event_screen',
+            'item_css_id' => 'user-events'
+    );
+    bp_core_new_nav_item( $args );
+    //Remove links
+    unset($bp->bp_nav['profile']);
+    unset($bp->bp_nav['activity']);
+    unset($bp->bp_nav['friends']);
+    unset($bp->bp_nav['messages']);
+    unset($bp->bp_nav['notifications']);
+    unset($bp->bp_nav['settings']);
+}
+add_action( 'bp_setup_nav', 'bp_custom_setup_nav', 99 );
+
+// calback function for events nav item
+function bp_custom_event_screen() {
+    add_action( 'bp_template_content', 'bp_custom_event_screen_content' );
+    bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
+}
+
+// the function hooked to bp_template_content, this hook is in plugns.php
+function bp_custom_event_screen_content() {
+	get_template_part( 'buddypress/events/listing-nscevent' );
+}
