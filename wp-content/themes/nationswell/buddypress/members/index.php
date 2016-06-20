@@ -39,6 +39,19 @@ do_action( 'bp_before_directory_members_page' ); ?>
 				<h1><?php _e('Member Directory','buddypress'); ?></h1>
 			</div>
 			<div id="members-order-select" class="member-search-filter last filter">
+				
+				<div class="item-list-tabs" id="subnav" role="navigation">
+			<ul>
+				<?php
+
+				/**
+				 * Fires inside the members directory member sub-types.
+				 *
+				 * @since 1.5.0
+				 */
+				do_action( 'bp_members_directory_member_sub_types' ); ?>
+				
+				<li id="members-order-select" class="last filter">
 					<label for="members-order-by"><?php _e( 'Order By:', 'buddypress' ); ?></label>
 					<select id="members-order-by">
 						<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
@@ -57,7 +70,14 @@ do_action( 'bp_before_directory_members_page' ); ?>
 						 */
 						do_action( 'bp_members_directory_order_options' ); ?>
 					</select>
-				</div>
+				</li>
+
+				
+			</ul>
+		</div>
+				
+						
+			</div>
 		</header>
 		<?php bp_directory_members_search_form(); ?>
 	</div><!-- #members-dir-search -->
@@ -93,20 +113,7 @@ do_action( 'bp_before_directory_members_page' ); ?>
 			</ul>
 		</div><!-- .item-list-tabs -->
 
-		<div class="item-list-tabs" id="subnav" role="navigation">
-			<ul>
-				<?php
-
-				/**
-				 * Fires inside the members directory member sub-types.
-				 *
-				 * @since 1.5.0
-				 */
-				do_action( 'bp_members_directory_member_sub_types' ); ?>
-
-				
-			</ul>
-		</div>
+		
 
 		<div id="members-dir-list" class="members dir-list">
 			<?php bp_get_template_part( 'members/members-loop' ); ?>
