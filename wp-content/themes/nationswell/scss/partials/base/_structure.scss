@@ -46,3 +46,7 @@ body {
   @include display(flex);
   @include flex-direction(row);
 }
+
+#buddypress {
+	@extend .container;
+}

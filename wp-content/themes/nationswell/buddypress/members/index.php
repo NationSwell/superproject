@@ -13,7 +13,7 @@
  */
 do_action( 'bp_before_directory_members_page' ); ?>
 
-<div id="buddypress" class="container container--flex">
+<div id="buddypress">
 
 	<?php
 

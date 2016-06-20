@@ -8,16 +8,19 @@
         <ul class="member-nav__icons">
             <li><a href="#" class="member-nav__item icon icon_question" title="FAQ"></a></li>
             <li><a href="{{ bp.bp_nav.settings.link}}" class="member-nav__item icon icon_settings" title="Settings"></a></li>
-            <li><a href="{{ bp.bp_nav.notifications.link}}" class="member-nav__item icon icon_alert" title="Notifications"><span>{{ bp_total_new_count }}</span></a></li>
+            <li><a href="{{ bp.bp_nav.notifications.link}}" class="member-nav__item icon icon_alert notification" title="Notifications"><span>{{ bp_total_new_count }}</span></a></li>
             <li><a href="{{ function('wp_logout_url') }}" class="member-nav__item icon icon_logout" title="Log out"></a></li>
         </ul>
     </div>
 </div>
-<div id="popup-counter" class="popup counter" style="display:none;">
+<div class="container">
+	<div id="popup-counter" class="popup counter" style="display:none;">
+		<div class="icon icon_caret-up"></div>
         <ul class="popup__list">
             <li>You have {{ bp_new_mention_count }} new mentions</li>
             <li>You have {{ bp_unread_notification_count }} new messages</li>
         </ul>
+	</div>
 </div>
 <script>
 jQuery( ".member-nav li .notification" ).hover(function() {
