@@ -1106,3 +1106,14 @@ add_filter('show_admin_bar', '__return_false');
 if ( ! current_user_can( 'manage_options' ) ) {
     show_admin_bar( false );
 }
+
+//add custom placeholder avatar
+add_filter( 'avatar_defaults', 'new_default_avatar' );
+
+function new_default_avatar ( $avatar_defaults ) {
+		//Set the URL where the image file for your avatar is located
+		$new_avatar_url = get_bloginfo( 'template_directory' ) . '/img/ns-gravatar.jpg';
+		//Set the text that will appear to the right of your avatar in Settings>>Discussion
+		$avatar_defaults[$new_avatar_url] = 'NationSwell Default';
+		return $avatar_defaults;
+}
