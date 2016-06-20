@@ -1118,3 +1118,18 @@ function new_default_avatar ( $avatar_defaults ) {
 		$avatar_defaults[$new_avatar_url] = 'NationSwell Default';
 		return $avatar_defaults;
 }
+
+//restrict buddypress pages to logged in users
+function restrictBuddypressPages(){
+	if( ( function_exists('is_buddypress') && is_buddypress() ) && !is_user_logged_in() ){
+		// allow some public pages to non logged in users
+		if (function_exists('bp_is_register_page') && function_exists('bp_is_activation_page') ){
+			if ( bp_is_register_page() || bp_is_activation_page() ){ return;}
+		}
+		// redirect to login page
+		$redirect_url = wp_login_url();
+		header( 'Location: ' . $redirect_url );
+		die();
+	}
+}
+add_action( 'wp', 'restrictBuddypressPages' );
