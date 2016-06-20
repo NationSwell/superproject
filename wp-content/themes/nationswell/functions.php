@@ -1126,8 +1126,9 @@ function restrictBuddypressPages(){
 		if (function_exists('bp_is_register_page') && function_exists('bp_is_activation_page') ){
 			if ( bp_is_register_page() || bp_is_activation_page() ){ return;}
 		}
+
 		// redirect to login page
-		$redirect_url = wp_login_url();
+		$redirect_url = site_url('nationswell-council');
 		header( 'Location: ' . $redirect_url );
 		die();
 	}
