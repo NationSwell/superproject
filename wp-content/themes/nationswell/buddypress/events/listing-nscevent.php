@@ -18,10 +18,10 @@ $past_events= NSCEvent::getPastEvents();
                         </ul>
                     </div>
                     <div class="about-event">
-                        <a ng-href="<?php echo($event['url']); ?>"><h1 class="hd-n"><?php echo($event['name']); ?></h1></a>
+                        <a href="<?php echo($event['url']); ?>"><h1 class="hd-n"><?php echo($event['name']); ?></h1></a>
                         <div class="event-details"><?php echo($event['time']); ?> at <?php echo($event['location']); ?></div>
-                        <div class="event-description" ng-bind-html="echo($event['description']);"></div>
-                        <div class="event-link"><a ng-href="<?php echo($event['url']); ?>">Click here for more information</a></div>
+                        <div class="event-description"><?php echo(esc_html($event['description']));?></div>
+                        <div class="event-link"><a href="<?php echo($event['url']); ?>">Click here for more information</a></div>
                     </div>
                 </div>
             </li>
@@ -40,10 +40,10 @@ $past_events= NSCEvent::getPastEvents();
                         </ul>
                     </div>
                     <div class="about-event">
-                        <a ng-href="<?php echo($event['url']); ?>"><h1 class="hd-n"><?php echo($event['name']); ?></h1></a>
+                        <a href="<?php echo($event['url']); ?>"><h1 class="hd-n"><?php echo($event['name']); ?></h1></a>
                         <div class="event-details"><?php echo($event['time']); ?> at <?php echo($event['location']); ?></div>
-                        <div class="event-description" ng-bind-html="echo($event['description']);"></div>
-                        <div class="event-link"><a ng-href="<?php echo($event['url']); ?>">Click here for more information</a></div>
+                        <div class="event-description"><?php echo(esc_html($event['description']));?></div>
+                        <div class="event-link"><a href="<?php echo($event['url']); ?>">Click here for more information</a></div>
                     </div>
                 </div>
             </li>
