@@ -1120,19 +1120,33 @@ function new_default_avatar ( $avatar_defaults ) {
 		return $avatar_defaults;
 }
 
-//restrict buddypress pages to logged in users
-function restrictBuddypressPages(){
-	if( ( function_exists('is_buddypress') && is_buddypress() ) && !is_user_logged_in() ){
-		// allow some public pages to non logged in users
-		if (function_exists('bp_is_register_page') && function_exists('bp_is_activation_page') ){
-			if ( bp_is_register_page() || bp_is_activation_page() ){ return;}
+//restrict to logged in users
+function restrictPages(){
+	if(!is_user_logged_in()){
+		// restrict pages
+		global $post;
+		switch($post->post_name){
+			case'faq':
+				loginPageRedirect();
+			break;
 		}
-
-		// redirect to login page
-		$redirect_url = site_url('nationswell-council');
-		header( 'Location: ' . $redirect_url );
-		die();
+		// restrict buddypress pages
+		if( ( function_exists('is_buddypress') && is_buddypress() ) ){
+			// allow some public pages to non logged in users
+			if (function_exists('bp_is_register_page') && function_exists('bp_is_activation_page') ){
+				if ( bp_is_register_page() || bp_is_activation_page() ){ return;}
+			}
+			loginPageRedirect();
+		}
 	}
+}
+add_action( 'wp', 'restrictPages');
+
+function loginPageRedirect(){
+	// redirect to login page
+	$redirect_url = site_url('nationswell-council');
+	header( 'Location: ' . $redirect_url );
+	die();
 }
 
 // modify the buddypress nav links
