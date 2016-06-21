@@ -1153,16 +1153,29 @@ function bp_custom_setup_nav() {
             'name' => __('Events', 'buddypress'),
             'slug' => 'nsc-events',
             'default_subnav_slug' => 'nsc-events',
-            'position' => 50,
+            'position' => 51,
             'screen_function' => 'bp_custom_event_screen',
             'item_css_id' => 'user-events'
     );
     bp_core_new_nav_item( $args );
+
+	// Add events
+    $args = array(
+            'name' => __('Service Opportunities', 'buddypress'),
+            'slug' => 'service-opportunities',
+            'default_subnav_slug' => 'service-opportunities',
+            'position' => 52,
+            'screen_function' => 'bp_custom_service_opportunities_screen',
+            'item_css_id' => 'user-service-opportunities'
+    );
+
+    bp_core_new_nav_item( $args );
+    //Change name
+    $bp->bp_nav['activity']['name'] = 'Annoucements';
+    $bp->bp_nav['messages']['name'] = 'Your Messages';
     //Remove links
     unset($bp->bp_nav['profile']);
-    unset($bp->bp_nav['activity']);
     unset($bp->bp_nav['friends']);
-    unset($bp->bp_nav['messages']);
     unset($bp->bp_nav['notifications']);
     unset($bp->bp_nav['settings']);
 }
@@ -1179,6 +1192,16 @@ function bp_custom_event_screen_content() {
 	get_template_part( 'buddypress/events/listing-nscevent' );
 }
 
+// calback function for service-opportunities nav item
+function bp_custom_service_opportunities_screen(){
+    add_action( 'bp_template_content', 'bp_custom_service_opportunities_screen_content' );
+    bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
+}
+
+// the function hooked to bp_template_content, this hook is in plugns.php
+function bp_custom_service_opportunities_screen_content() {
+	get_template_part( 'buddypress/service-opportunities/listing-service-opportunities' );
+}
 //adjustments to default wordpress login screen
 function ns_default_login_adjust() { 
 	echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/css/custom-login.css" />'; 
