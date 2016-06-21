@@ -61,12 +61,14 @@ Cloudred notes: no idea why this page exists and why it was created this way, cl
             </header>
             <div id="content">
 				<a id="top"></a>
-                <section class="auth-forms">
+                <section class="member-login-forms">
                     <div class="content-wrapper">
                         <div class="content">
                             
-                            <h1 class="logo">NationSwell Council</h1>
-                            <p>A diverse community of accomplished professionals who are passionate about service</p>
+                            <div class="intro">
+                            	<h1 class="logo"><?php _e( 'NationSwell Council', 'buddypress' ); ?></h1>
+                           		<p><?php _e( 'A diverse community of accomplished professionals who are passionate about service', 'buddypress' ); ?></p>
+                            </div>
                             <div class="login-form">
                                 <div class="login-form-inputs">
                                     <?php   
@@ -103,7 +105,8 @@ Cloudred notes: no idea why this page exists and why it was created this way, cl
 									} else {
 										//show login
 										echo '<h2>'.__( 'Member Login','example').'</h2>';
-										$bottom_message = __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
+										$bottom_message = __( 'Forgot your password?','buddypress') . '<a href="'.wp_lostpassword_url().'">'.__( 'Reset it here.','buddypress').'</a><br>';
+										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
 										if( function_exists('bp_is_active') ) {
 											$redirect_url = '/'.bp_get_activity_root_slug();
 										} else {
@@ -132,7 +135,7 @@ Cloudred notes: no idea why this page exists and why it was created this way, cl
                             
                                 </div>
                                 <div class="login-form-bottom">
-                                    <?php echo $bottom_message; ?>
+                                    <p><?php echo $bottom_message; ?></p>
                                 </div>
                             </div>
                       		<!--<a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>-->

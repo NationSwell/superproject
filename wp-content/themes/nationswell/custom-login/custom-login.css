@@ -1,4 +1,5 @@
-html,body {height:100%;}
+/* NOT USED */
+/*html,body {height:100%;}
 html {background-color:#0d3058; background-image:none;}
 #login h1 a {
 background:url(../img/nsc-logo.png) 0 0 no-repeat;
@@ -8,9 +9,9 @@ background-size: 100% auto;
 margin-left: 35px;
 } 
  
-body.login {background-color:#fff; min-height:100%; height:auto !important; height:100%;}	/* Top bar background color */
-.login p#backtoblog a:link, .login p#backtoblog a:visited {color:#ed423c; text-shadow:none;}	/* Link effects in top bar */
-.login p#backtoblog a:hover, .login p#backtoblog a:active {color:#ed423c;}	/* Rollover link effects in top bar */
+body.login {background-color:#fff; min-height:100%; height:auto !important; height:100%;}	
+.login p#backtoblog a:link, .login p#backtoblog a:visited {color:#ed423c; text-shadow:none;}	
+.login p#backtoblog a:hover, .login p#backtoblog a:active {color:#ed423c;}	
 #loginform {background:none; border:none; box-shadow:none; width:435px; margin-left:-60px; margin-top: 0; padding-bottom: 0;}
 #loginform input[type=text], #loginform input[type=password] {width:435px;}
 .wp-core-ui .button-primary {background-image:none; background-color:#0d3058; border:2px solid ##0d3058; font-weight: bold; }
@@ -35,4 +36,4 @@ body.login {background-color:#fff; min-height:100%; height:auto !important; heig
 .login #backtoblog, .login #nav {
   text-align: center;
   width: 100%;
-}
+}*/

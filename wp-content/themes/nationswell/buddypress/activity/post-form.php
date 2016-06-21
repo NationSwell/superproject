@@ -8,6 +8,9 @@
 
 ?>
 
+<?php
+//only available for admins
+//if ( is_user_logged_in () && is_admin() ): ?>
 <form action="<?php bp_activity_post_form_action(); ?>" method="post" id="whats-new-form" name="whats-new-form" role="complementary">
 
 	<?php
@@ -96,3 +99,4 @@
 	do_action( 'bp_after_activity_post_form' ); ?>
 
 </form><!-- #whats-new-form -->
+<?php //endif; ?>

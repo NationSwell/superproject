@@ -1,3 +1,49 @@
+.button {
+	cursor: pointer;
+	display:inline-block;
+  	border-radius: 0;
+  	text-rendering: optimizeLegibility;
+  	outline: 0;
+  	-webkit-font-smoothing: antialiased;
+	font-family:$oswald;
+	font-weight:$bold;
+	padding:10px 15px;
+	text-transform:uppercase;
+	font-size:18px;
+	
+	background-color:transparent;
+	border:1px solid $ns_red2;
+	color:$ns_red2;
+	
+	&:hover {
+		border:1px solid $ns_blue1;
+		color:$ns_blue1;
+	}
+	&:active, &:focus {
+		border:1px solid $ns_navy2;
+		color:$ns_navy2;
+	}
+}
+
+.member-form-input {
+	font-family:$gudea;
+	font-size: 2rem;
+    padding: 1.3rem;
+    box-sizing : border-box;
+    background-color: $white;
+    border: 1px solid $gray4;
+    border-radius: 0.2rem;
+    box-shadow: inset 0 0.2rem 0.7rem rgba(0, 0, 0, 0.08);
+    outline: none;
+    width: 100%;
+   -webkit-font-smoothing: antialiased;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   -o-appearance: none;
+   appearance: none;
+}
+
 %btn--submit {
   background-color: $ns_red2;
   color: $white;

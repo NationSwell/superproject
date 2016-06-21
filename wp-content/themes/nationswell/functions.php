@@ -1059,11 +1059,7 @@ function clear_portal_transient($post_id, $post) {
 
 add_action('save_post', 'clear_portal_transient', 1, 2);
 	
-//Customize login screen
-function custom_login() { 
-echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/custom-login/custom-login.css" />'; 
-}
-add_action('login_head', 'custom_login');
+
 
 add_image_size( 'member-thumb', 380, 380, true );
 add_image_size( 'event-thumb', 400, 260, true );
@@ -1206,3 +1202,17 @@ function bp_custom_service_opportunities_screen(){
 function bp_custom_service_opportunities_screen_content() {
 	get_template_part( 'buddypress/service-opportunities/listing-service-opportunities' );
 }
+//adjustments to default wordpress login screen
+function ns_default_login_adjust() { 
+	echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('template_directory').'/css/custom-login.css" />'; 
+}
+add_action( 'login_enqueue_scripts', 'ns_default_login_adjust' );
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return get_bloginfo( 'name' );
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
