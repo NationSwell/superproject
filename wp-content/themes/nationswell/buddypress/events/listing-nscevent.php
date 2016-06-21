@@ -3,56 +3,69 @@ $upcoming_events = NSCEvent::getUpcomingEvents();
 $past_events= NSCEvent::getPastEvents();
 
 ?>
-<div id="nsc-events">
-    <div class="member-title"><h2>Upcoming Events</h2></div>
-    <div class="events">
-        <ul>
-        	<?php foreach($upcoming_events as $key=>$event){ ?>
-            <li>
-                <div class="event-info">
-                    <div class="upcoming event-date">
-                        <ul>
-                            <li><?php echo($event['month']); ?></li>
-                            <li><?php echo($event['day']); ?></li>
-							<li class="year"><?php echo($event['year']); ?></li>
-                        </ul>
-                    </div>
-                    <div class="about-event">
-                    	<ul>
-                            <li><?php echo($event['month']); ?></li>
-                            <li><?php echo($event['day']); ?></li>
-							<li class="year"><?php echo($event['year']); ?></li>
-                        </ul>
-                        <a href="<?php echo($event['url']); ?>"><h3><?php echo($event['name']); ?></h3></a>
-                        <div class="event-details"><?php echo($event['time']); ?> at <?php echo($event['location']); ?></div>
-                        <div class="event-description"><?php echo(esc_html($event['description']));?></div>
-                        <div class="event-link"><a href="<?php echo($event['url']); ?>">Click here for more information</a></div>
-                    </div>
-                </div>
-            </li>
-            <?php } ?>
-        </ul>
-        <div class="member-title"><h1>Past Events</h1></div>
-        <ul>
-        	<?php unset($event); foreach($past_events as $key=>$event){ ?>
-            <li>
-                <div class="event-info">
-                    <div class="past event-date">
-                        <ul>
-                            <li><?php echo($event['month']); ?></li>
-                            <li><?php echo($event['day']); ?></li>
-                            <li class="year"><?php echo($event['year']); ?></li>
-                        </ul>
-                    </div>
-                    <div class="about-event">
-                        <a href="<?php echo($event['url']); ?>"><h1 class="hd-n"><?php echo($event['name']); ?></h1></a>
-                        <div class="event-details"><?php echo($event['time']); ?> at <?php echo($event['location']); ?></div>
-                        <div class="event-description"><?php echo(esc_html($event['description']));?></div>
-                        <div class="event-link"><a href="<?php echo($event['url']); ?>">Click here for more information</a></div>
-                    </div>
-                </div>
-            </li>
-            <?php } ?>
-        </ul>
+<div id="nsc-events" class="tab-content">
+    <div class="intro-text">
+    	<p><?php _e( 'Council events are unique forums in which members engage in collaborative discussions with featured guests and one another around important national challenges and how best to advance their solutions. Format and size vary. Need to see past events?', 'buddypress' ); ?></p>
     </div>
+    <div class="nsc-item-listing">
+        <!-- upcoming events -->
+        <div class="upcoming-events">
+        	<?php foreach($upcoming_events as $key=>$event){ ?>
+                <div class="item-info">
+                    <div class="item-icon">
+                        <span class="icon icon_calendar"></span>
+                    </div>
+                    <div class="item-details">
+                        <div class="description">
+                        	<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
+                        	<p class="event-description"><?php echo(esc_html($event['description']));?></p>
+                        </div>
+                        <div class="date-location">
+                        	<div class="date-time icon icon_calendar">
+                               <span>
+									<?php echo($event['month']); ?> <?php echo($event['day']); ?>, <?php echo($event['year']); ?><br>
+                                    <?php echo($event['time']); ?>
+                                </span>
+                            </div>
+                            <div class="location icon icon_marker">
+                            	<span><?php echo($event['location']); ?></span>
+                            </div>
+                       	</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            <?php } ?>
+        </div>
+        <!-- //END -->
+        
+        <!-- PAST events -->
+        <div class="upcoming-events">
+        	<?php unset($event); foreach($past_events as $key=>$event){ ?>
+                <div class="item-info">
+                    <div class="item-icon">
+                        <span class="icon icon_calendar"></span>
+                    </div>
+                    <div class="item-details">
+                        <div class="description">
+                        	<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
+                        	<p class="event-description"><?php echo(esc_html($event['description']));?></p>
+                        </div>
+                        <div class="date-location">
+                        	<div class="date-time icon icon_calendar">
+                               <span>
+									<?php echo($event['month']); ?> <?php echo($event['day']); ?>, <?php echo($event['year']); ?><br>
+                                    <?php echo($event['time']); ?>
+                                </span>
+                            </div>
+                            <div class="location icon icon_marker">
+                            	<span><?php echo($event['location']); ?></span>
+                            </div>
+                       	</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            <?php } ?>
+        </div>
+         <!-- //END -->
+     </div>
 </div>
