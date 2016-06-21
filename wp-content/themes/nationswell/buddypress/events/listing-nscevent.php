@@ -4,7 +4,7 @@ $past_events= NSCEvent::getPastEvents();
 
 ?>
 <div id="nsc-events">
-    <div class="member-title"><h1>Upcoming Events</h1></div>
+    <div class="member-title"><h2>Upcoming Events</h2></div>
     <div class="events">
         <ul>
         	<?php foreach($upcoming_events as $key=>$event){ ?>
@@ -18,7 +18,12 @@ $past_events= NSCEvent::getPastEvents();
                         </ul>
                     </div>
                     <div class="about-event">
-                        <a href="<?php echo($event['url']); ?>"><h1 class="hd-n"><?php echo($event['name']); ?></h1></a>
+                    	<ul>
+                            <li><?php echo($event['month']); ?></li>
+                            <li><?php echo($event['day']); ?></li>
+							<li class="year"><?php echo($event['year']); ?></li>
+                        </ul>
+                        <a href="<?php echo($event['url']); ?>"><h3><?php echo($event['name']); ?></h3></a>
                         <div class="event-details"><?php echo($event['time']); ?> at <?php echo($event['location']); ?></div>
                         <div class="event-description"><?php echo(esc_html($event['description']));?></div>
                         <div class="event-link"><a href="<?php echo($event['url']); ?>">Click here for more information</a></div>

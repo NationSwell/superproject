@@ -7,8 +7,8 @@
         </ul>
         <ul class="member-nav__icons">
             <li><a href="{{bp.root_domain}}/faq" class="member-nav__item icon icon_question" title="FAQ"></a></li>
-            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/notifications/" class="member-nav__item icon icon_settings" title="Settings"></a></li>
-            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/settings/" class="member-nav__item icon icon_alert notification" title="Notifications"><span>{{ bp_total_new_count }}</span></a></li>
+            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/settings/" class="member-nav__item icon icon_settings" title="Settings"></a></li>
+            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/notifications/" class="member-nav__item icon icon_alert notification" title="Notifications"><span>{{ bp_total_new_count }}</span></a></li>
             <li><a href="{{ function('wp_logout_url') }}" class="member-nav__item icon icon_logout" title="Log out"></a></li>
         </ul>
     </div>
