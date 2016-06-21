@@ -227,18 +227,62 @@ h3 {
 		border-radius:50%;
 	}
 	
+	
+	//TO DO: move colors to vars
+	#pass-strength-result {
+		background-color: #eee;
+		border-color: #ddd;
+		border-style: solid;
+		border-width: 1px;
+		display: none;
+		margin: 0 0 20px 0;
+		padding: 5px;
+		text-align: center;
+		width: 100%;
+		
+		&.error, &.bad {
+			background-color: #ffb78c;
+			border-color: #ff853c !important;
+			display: block;
+		}
+		&.good {
+			background-color: #ffec8b;
+			border-color: #fc0 !important;
+			display: block;
+		}
+		
+		&.short {
+			background-color: #ffa0a0;
+			border-color: #f04040 !important;
+			display: block;
+		}
+		
+		.strong {
+			background-color: #c3ff88;
+			border-color: #8dff1c !important;
+			display: block;
+		}
+	
+	}
+	
+	
 	.member-row {
 		
 		@include outer-container;
 		@extend .box-margin;
 		@include omega(3n);
 		
-		.member-info-card {
+		
+		.left-wrapper {
 			@include span-columns(12);
 			@include media($large) {
 				@include span-columns(6);
-				@include display(flex);
 			}
+		}
+		
+		
+		.member-info-card {
+			
 			@extend .box-shadow;
 			@extend .box-padding;
 			background-color:$gray7;
@@ -282,6 +326,21 @@ h3 {
 				}
 			}
 		}
+		.member-notifications {
+			background-color:$gray7;
+			margin-top:15px;
+			h3 {
+				margin-bottom:30px;
+			}
+			@extend .box-shadow;
+			@extend .box-padding;
+			
+			.prompt {
+				font-weight:$bold;
+			}
+		}
+			
+		.member-settings,
 		.member-change-avatar {
 			background-color:$gray7;
 			@include span-columns(12);
@@ -289,6 +348,9 @@ h3 {
 			@include media($large) {
 				@include span-columns(6);
 				margin-top:0;
+			}
+			h3 {
+				margin-bottom:30px;
 			}
 			@extend .box-shadow;
 			@extend .box-padding;
@@ -299,7 +361,34 @@ h3 {
 			.bp-progress {
 				margin:0;
 			}
+			
+			
+			
 		}
+		.divider {
+			background-color:$gray5;
+			-webkit-box-shadow: 0 1px 0 0 $white;
+			box-shadow: 0 1px 0 0 $white;
+			height:1px;
+			width:100%;
+			display:block;
+			margin:30px 0;
+		}
+		.form-row {
+				
+			label {
+				font-weight:$bold;
+			}
+			.settings-input {
+			margin-top:15px;
+			display:block;
+				@extend .member-form-input;
+			}
+			input[type="submit"] {
+				@extend .button;
+			}
+		}
+		
 		.callout-block {
 			background-color:$gray7;
 			@include span-columns(6);
@@ -328,6 +417,7 @@ h3 {
 			}
 		}
 	}
+	
 	
 	//Avatar upload form
 	.bp-avatar {
@@ -456,5 +546,57 @@ h3 {
 	}
 	
 }
+
+// ********** END  *****************//
+
+//TABLES!
+.bp-screen-reader-text {
+	position: absolute;
+	margin: -1px;
+	padding: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+	word-wrap: normal !important;
+}
+
+#buddypress table.notifications tr.alt td,
+#buddypress table.notifications-settings tr.alt td,
+#buddypress table.profile-settings tr.alt td,
+#buddypress table.profile-fields tr.alt td,
+#buddypress table.wp-profile-fields tr.alt td,
+#buddypress table.messages-notices tr.alt td,
+#buddypress table.forum tr.alt td {
+	background: #f5f5f5;
+}
+#buddypress table.notification-settings {
+	margin-bottom: 20px;
+	text-align: left;
+}
+#buddypress #groups-notification-settings {
+	margin-bottom: 0;
+}
+#buddypress table.notifications th.icon,
+#buddypress table.notifications td:first-child,
+#buddypress table.notification-settings th.icon,
+#buddypress table.notification-settings td:first-child {
+	display: none;
+}
+#buddypress table.notification-settings td {
+	padding:15px 0;
+}
+#buddypress table.notification-settings th.title,
+#buddypress table.profile-settings th.title {
+	width: 80%;
+	@extend .bp-screen-reader-text;
+}
+#buddypress table.notification-settings .yes,
+#buddypress table.notification-settings .no {
+	text-align: center;
+	width: 40px;
+}
+
 
 // ********** END  *****************//
