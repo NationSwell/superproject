@@ -28,7 +28,6 @@ do_action( 'bp_before_member_header' ); ?>
     
                 </a>
             </div><!-- #item-header-avatar -->
-            
             <div id="item-meta-bio" class="member-meta-bio">
                 <h2 class="user-nicename"><?php echo get_user_meta( $bp->displayed_user->id, 'first_name', true )." ".get_user_meta( $bp->displayed_user->id, 'last_name', true );?></h2>
                 <p class="user-company">Title, Company</p>
@@ -39,8 +38,8 @@ do_action( 'bp_before_member_header' ); ?>
                     <div class="item-subblock">
                         <ul>
                             <li><a href="<?php echo($bp->bp_options_nav['profile']['public']['link']); ?>"><?php _e("View profile","buddypress");?></a></li>
-                            <li><a href="<?php echo($bp->bp_options_nav['profile']['edit']['link']); ?>"><?php _e("Edit profile","buddypress");?></a></li>
-                            <li><a href="<?php echo($bp->bp_options_nav['profile']['change-avatar']['link']); ?>"><?php _e("Change photo","buddypress");?></a></li>
+                            <?php if($bp->loggedin_user->id == $bp->displayed_user->id ){?> <li><a href="<?php echo($bp->bp_options_nav['profile']['edit']['link']); ?>"><?php _e("Edit profile","buddypress");?></a></li><?php }?>
+                            <?php if($bp->loggedin_user->id == $bp->displayed_user->id ){?><li><a href="<?php echo($bp->bp_options_nav['profile']['change-avatar']['link']); ?>"><?php _e("Change photo","buddypress");?></a></li><?php }?>
                         <ul>
                     </div>
                 </div>
