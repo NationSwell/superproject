@@ -28,7 +28,7 @@ global $bp;
                         <div class="date-location">
                         	<div class="date-time icon icon_calendar">
                                <span>
-									<?php echo($event['month']); ?> <?php echo($event['day']); ?>, <?php echo($event['year']); ?><br>
+									<?php echo($event['fulldate']); ?><br>
                                     <?php echo($event['time']); ?>
                                 </span>
                             </div>
@@ -60,7 +60,7 @@ global $bp;
                         <div class="date-location">
                         	<div class="date-time icon icon_calendar">
                                <span>
-									<?php echo($event['month']); ?> <?php echo($event['day']); ?>, <?php echo($event['year']); ?><br>
+									<?php echo($event['fulldate']); ?><br>
                                     <?php echo($event['time']); ?>
                                 </span>
                             </div>
