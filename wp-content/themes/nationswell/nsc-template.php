@@ -3,6 +3,8 @@
 Template Name: NSC Landing
 Cloudred notes: no idea why this page exists and why it was created this way, clearly not good. Hijacking it for member login purposes.
 */
+global $bp;
+
 ?>
 
 
@@ -108,7 +110,7 @@ Cloudred notes: no idea why this page exists and why it was created this way, cl
 										$bottom_message = __( 'Forgot your password?','buddypress') . '<a href="'.wp_lostpassword_url().'">'.__( 'Reset it here.','buddypress').'</a><br>';
 										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
 										if( function_exists('bp_is_active') ) {
-											$redirect_url = '/'.bp_get_activity_root_slug();
+											$redirect_url = bp_get_root_domain().'/members/'.bp_members_get_user_nicename($bp->loggedin_user->id).'/activity/';
 										} else {
 											$redirect_url = '/wp-admin';
 										}
