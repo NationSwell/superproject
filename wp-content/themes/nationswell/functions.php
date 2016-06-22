@@ -1145,6 +1145,34 @@ function loginPageRedirect(){
 	die();
 }
 
+/**
+ * Redirect user after successful login.
+ *
+ * @param string $redirect_to URL to redirect to.
+ * @param string $request URL the user is coming from.
+ * @param object $user Logged user's data.
+ * @return string
+ */
+function user_login_redirect( $redirect_to, $request, $user ) {
+	//is there a user to check?
+	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+		//check for admins
+		if ( in_array( 'administrator', $user->roles ) ) {
+			// redirect them to the default place
+			return $redirect_to;
+		} else {
+			if( function_exists('bp_is_active') ) {
+				return bp_get_root_domain().'/members/'.$user->data->user_nicename.'/activity/';
+			}else{
+				return home_url();
+			}
+		}
+	} else {
+		return $redirect_to;
+	}
+}
+add_filter( 'login_redirect', 'user_login_redirect', 10, 3 );
+
 // modify the buddypress nav links
 function bp_custom_setup_nav() {
     global $bp;

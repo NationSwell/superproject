@@ -110,7 +110,7 @@ global $bp;
 										$bottom_message = __( 'Forgot your password?','buddypress') . '<a href="'.wp_lostpassword_url().'">'.__( 'Reset it here.','buddypress').'</a><br>';
 										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
 										if( function_exists('bp_is_active') ) {
-											$redirect_url = bp_get_root_domain().'/members/'.bp_members_get_user_nicename($bp->loggedin_user->id).'/activity/';
+											$redirect_url = home_url();
 										} else {
 											$redirect_url = '/wp-admin';
 										}
