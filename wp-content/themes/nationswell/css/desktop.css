@@ -947,108 +947,123 @@ small a {
 }
 
 /* line 291, ../scss/partials/base/_icons.scss */
-.icon_search:before {
+.icon_read:before {
   content: "\f133";
 }
 
 /* line 296, ../scss/partials/base/_icons.scss */
-.icon_sent:before {
+.icon_search:before {
   content: "\f134";
 }
 
 /* line 301, ../scss/partials/base/_icons.scss */
-.icon_separator:before {
+.icon_sent:before {
   content: "\f135";
 }
 
 /* line 306, ../scss/partials/base/_icons.scss */
-.icon_series:before {
+.icon_separator:before {
   content: "\f136";
 }
 
 /* line 311, ../scss/partials/base/_icons.scss */
-.icon_series_stream:before {
+.icon_series:before {
   content: "\f137";
 }
 
 /* line 316, ../scss/partials/base/_icons.scss */
-.icon_settings:before {
+.icon_series_stream:before {
   content: "\f138";
 }
 
 /* line 321, ../scss/partials/base/_icons.scss */
-.icon_speak_out:before {
+.icon_settings:before {
   content: "\f139";
 }
 
 /* line 326, ../scss/partials/base/_icons.scss */
-.icon_star-hollow:before {
+.icon_speak_out:before {
   content: "\f13a";
 }
 
 /* line 331, ../scss/partials/base/_icons.scss */
+.icon_star-hollow:before {
+  content: "\f13b";
+}
+
+/* line 336, ../scss/partials/base/_icons.scss */
 .icon_star:before {
   content: "\f100";
 }
 
-/* line 336, ../scss/partials/base/_icons.scss */
-.icon_story:before {
-  content: "\f13b";
-}
-
 /* line 341, ../scss/partials/base/_icons.scss */
-.icon_story_stream_01:before {
+.icon_story:before {
   content: "\f13c";
 }
 
 /* line 346, ../scss/partials/base/_icons.scss */
-.icon_story_stream_02:before {
+.icon_story_stream_01:before {
   content: "\f13d";
 }
 
 /* line 351, ../scss/partials/base/_icons.scss */
-.icon_story_stream_03:before {
+.icon_story_stream_02:before {
   content: "\f13e";
 }
 
 /* line 356, ../scss/partials/base/_icons.scss */
-.icon_tumblr:before {
+.icon_story_stream_03:before {
   content: "\f13f";
 }
 
 /* line 361, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
+.icon_trash:before {
   content: "\f140";
 }
 
 /* line 366, ../scss/partials/base/_icons.scss */
-.icon_video:before {
+.icon_tumblr:before {
   content: "\f141";
 }
 
 /* line 371, ../scss/partials/base/_icons.scss */
-.icon_video_stream:before {
+.icon_twitter:before {
   content: "\f142";
 }
 
 /* line 376, ../scss/partials/base/_icons.scss */
-.icon_volume:before {
+.icon_unread:before {
   content: "\f143";
 }
 
 /* line 381, ../scss/partials/base/_icons.scss */
-.icon_widescreen:before {
+.icon_video:before {
   content: "\f144";
 }
 
 /* line 386, ../scss/partials/base/_icons.scss */
-.icon_write:before {
+.icon_video_stream:before {
   content: "\f145";
 }
 
 /* line 391, ../scss/partials/base/_icons.scss */
-.icon_youtube:before {
+.icon_volume:before {
   content: "\f146";
+}
+
+/* line 396, ../scss/partials/base/_icons.scss */
+.icon_widescreen:before {
+  content: "\f147";
+}
+
+/* line 401, ../scss/partials/base/_icons.scss */
+.icon_write:before {
+  content: "\f148";
+}
+
+/* line 406, ../scss/partials/base/_icons.scss */
+.icon_youtube:before {
+  content: "\f149";
 }
 
 /* line 1, ../scss/partials/base/_buttons.scss */
@@ -1372,10 +1387,10 @@ input[type="submit"]:-moz-focus-inner {
 .member-form-input {
   font-family: "Gudea", Arial, sans-serif;
   font-size: 2rem;
-  padding: 1.3rem;
+  padding: 1.1rem;
   box-sizing: border-box;
   background-color: #fff;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #dbdbdb;
   border-radius: 0.2rem;
   box-shadow: inset 0 0.2rem 0.7rem rgba(0, 0, 0, 0.08);
   outline: none;

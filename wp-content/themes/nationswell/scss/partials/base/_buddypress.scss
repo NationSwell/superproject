@@ -226,8 +226,13 @@ h3 {
 	font-family:$gudea;
 	img.avatar {
 		border-radius:50%;
+		max-width:100%;
+		height:auto;
 	}
 	
+	#message {
+		@extend .box-margin;
+	}
 	
 	//TO DO: move colors to vars
 	#pass-strength-result {
@@ -317,6 +322,25 @@ h3 {
 					font-weight:$bold;
 					font-size:20px;
 					letter-spacing:1px;
+					position:relative;
+					
+					span {
+						border-radius: 50%;
+  						width: 30px;
+  						height: 30px;
+  						padding: 8px;
+  						background: $ns_red2;
+  						border:1px solid $white;
+  						color:$white;
+  						text-align: center;
+  						font-size:12px;
+  						font-family:$oswald;
+  						font-weight: $bold;
+  						position:absolute;
+  						top:-10px;
+  						right:-8px;
+						z-index:100;
+					}
 					
 				}
 				
@@ -336,6 +360,40 @@ h3 {
 	.ns-messages {
 		@extend .box-margin;
 		@include outer-container;
+		
+		/* legacy styles */
+		table#message-threads tr.unread td {
+			background: #fff9db;
+			border-top: 1px solid #ffe8c4;
+			border-bottom: 1px solid #ffe8c4;
+			font-weight: bold;
+		}
+		a.message-action-star,
+		a.message-action-unstar {
+			border-bottom: 0;
+			text-decoration: none;
+			outline: none;
+		}
+		a.message-action-star {
+			opacity: .7;
+		}
+		a.message-action-star:hover {
+			opacity: 1;
+		}
+		.message-action-star span.icon:before,
+		.message-action-unstar span.icon:before {
+			font-family: dashicons;
+			font-size: 24px;
+		}
+		.message-action-star span.icon:before {
+			color: $ns_red2;
+			content: "\f154";
+		}
+		.message-action-unstar span.icon:before {
+			color: $ns_red2;
+			content: "\f155";
+		}
+		/*end legacy*/
 		
 		.messages-nav {
 			@include span-columns(3);
@@ -416,6 +474,7 @@ h3 {
 		}
 		.messages {
 			@include span-columns(9);
+			position:relative;
 			label {
 				display:block;
 				font-weight:$bold;
@@ -431,7 +490,10 @@ h3 {
 			}
 			.message-search {
 				padding:15px 20px;
-				
+				margin-top:5px;
+				float:right;
+				position:relative;
+				z-index:80;
 				form {
 					position:relative;
 					label {
@@ -440,23 +502,151 @@ h3 {
 					
 					input[type="submit"] {
 						border:none;
-						bpadding:none;
 						&:hover {
 							border:none;
 						}
+						text-indent: -9999px;
+						background-image: url(../icons/search.svg);
+						border: none;
 						position: absolute;
 						top: 0;
 						right: 0;
-						z-index: 50;
+						z-index: 90;
+						background-repeat: no-repeat;
+						background-position: center;
+						background-color: transparent;
+						height: 51px;
+						width: 50px;
+						padding: 0;
+						background-size: 30px;
 					}
 				}
 			}
+			.messages-options-nav {
+				position:absolute;
+				top:20px;
+				left:20px;
+				select {
+					@extend .member-form-input;
+					width:170px;
+					background-image: url(../icons/arrow-down.svg);
+					background-color:$white;
+					background-repeat: no-repeat;
+					background-position: 128px 7px;
+					background-size: 30px;
+					
+				}
+			}
+			
 			#send_message_form {
 				margin-top:15px;
 				display:block;
 				
 					
 			}
+			
+			/* STARRED / SENT MESSAGES */
+			.message-header-wrapper {
+				@include clearfix;
+				background-color:$gray6;
+				@extend .box-shadow;
+				position:relative;
+			}
+			//.messages-list {
+				
+				.single {
+					background-color:$gray7;
+					
+					.content-padding {
+						padding:20px;
+					}
+					.single-header {
+						@include outer-container;
+						.message-recipients {
+							@include span-columns(10);
+						}
+						.single-actions {
+							@include span-columns(2);
+							text-align:right;
+							.icon {
+								font-size:24px;
+							}
+						}
+					}
+					.single-message {
+						.message-data {
+							@include outer-container;
+							
+							.message-avatar {
+								margin-bottom:20px;
+								text-align:center;
+								@include media($medium) {
+									@include span-columns(2);
+									text-align:left;
+								}
+							}
+							.message-content {
+								@include media($medium) {
+									@include span-columns(10);
+									margin-right:0;
+								}
+								
+								h3 {
+									padding-bottom:10px;
+								}
+							}
+						}
+					}
+				}
+				
+				
+				.loop {
+					background-color:$gray7;
+					.pagination.top {
+						display:none;
+					}
+					table {
+						width:100%;
+						th {
+							font-weight:$bold;
+							text-transform:uppercase;	
+						}
+						th,td {
+							padding:20px;
+							text-align:left;
+						}
+						td.messages-divider {
+							padding:0;
+							.divider {
+								margin:0;
+							}
+						}
+						td.thread-from {
+							max-width:100px;
+							font-size:14px;
+							line-height:16px;
+							.avatar {
+								display:block;
+							}
+						}
+						td.thread-info {
+							max-width:300px;
+							p.subject {
+								font-weight:$bold;
+							}
+						}
+						td.thread-options {
+							text-align:center;
+							.icon {
+								font-size:24px;
+								display:inline-block;
+								margin:0 5px;
+							}
+						}
+						
+					}
+				}
+			//}
 			
 		}
 		.info {
@@ -525,9 +715,8 @@ h3 {
 						color:$black;
 						width:50px;
 						height:50px;
-						font-size: 32px;
-    					padding-top: 10px;
-    					padding-left: 2px;
+						font-size: 28px;
+    					padding-top: 12px;
 					}
 					.item-subblock {
 						display:inline-block;
@@ -623,6 +812,44 @@ h3 {
 			}
 		}
 	}
+	
+	
+	/* NOTIFICATIONS */
+	.notifications-menu {
+		@extend .box-margin;
+		
+		ul {
+			@include clearfix;
+			li {
+				float:left;
+				margin-right:20px;
+				&.filters-title {
+					font-weight:$bold;
+				}
+				&.last {
+					float:right;
+					margin-right:0;
+				}
+			}
+		}
+	}
+	.notifications-list {
+		@extend .box-margin;	
+		table {
+			width:100%;
+			th {
+				font-weight:$bold;
+				text-transform:capitalize;
+				background-color:$gray6;
+				@extend .box-shadow;
+			}
+			th, td {
+				padding:10px;
+				text-align:left;
+			}
+		}
+	}
+	
 	
 	//Activity
 	.activity-list {
@@ -1256,5 +1483,109 @@ a.bp-title-button {
 	border: 0;
 	word-wrap: normal !important;
 }
-
+/*--------------------------------------------------------------
+3.4 - Errors / Success Messages
+--------------------------------------------------------------*/
+#buddypress div#message {
+	margin: 0 0 15px;
+}
+#buddypress #message.info {
+	margin-bottom: 0;
+}
+#buddypress div#message.updated {
+	clear: both;
+	display: block;
+}
+#buddypress div#message p,
+#sitewide-notice p {
+	font-size: 90%;
+	display: block;
+	padding: 10px 15px;
+}
+#buddypress div#message.error p {
+	background-color: #fdc;
+	border: 1px solid #a00;
+	clear: left;
+	color: #800;
+}
+#buddypress div#message.warning p {
+	background-color: #ffe0af;
+	border: 1px solid #ffd087;
+	clear: left;
+	color: #800;
+}
+#buddypress div#message.updated p {
+	background-color: #efc;
+	border: 1px solid #591;
+	color: #250;
+}
+#buddypress #pass-strength-result {
+	background-color: #eee;
+	border-color: #ddd;
+	border-style: solid;
+	border-width: 1px;
+	display: none;
+	margin: 5px 5px 5px 0;
+	padding: 5px;
+	text-align: center;
+	width: 150px;
+}
+#buddypress .standard-form #basic-details-section #pass-strength-result {
+	width: 35%;
+}
+#buddypress #pass-strength-result.error,
+#buddypress #pass-strength-result.bad {
+	background-color: #ffb78c;
+	border-color: #ff853c !important;
+	display: block;
+}
+#buddypress #pass-strength-result.good {
+	background-color: #ffec8b;
+	border-color: #fc0 !important;
+	display: block;
+}
+#buddypress #pass-strength-result.short {
+	background-color: #ffa0a0;
+	border-color: #f04040 !important;
+	display: block;
+}
+#buddypress #pass-strength-result.strong {
+	background-color: #c3ff88;
+	border-color: #8dff1c !important;
+	display: block;
+}
+#buddypress .standard-form#signup_form div div.error {
+	background: #faa;
+	color: #a00;
+	margin: 0 0 10px 0;
+	padding: 6px;
+	width: 90%;
+}
+#buddypress div.accept,
+#buddypress div.reject {
+	float: left;
+	margin-left: 10px;
+}
+#buddypress ul.button-nav li {
+	float: left;
+	margin: 0 10px 10px 0;
+	list-style: none;
+}
+#buddypress ul.button-nav li.current a {
+	font-weight: bold;
+}
+#sitewide-notice #message {
+	left: 2%;
+	position: fixed;
+	top: 1em;
+	width: 96%;
+	z-index: 9999;
+}
+#sitewide-notice.admin-bar-on #message {
+	top: 3.3em;
+}
+#sitewide-notice strong {
+	display: block;
+	margin-bottom: -1em;
+}
 

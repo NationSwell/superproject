@@ -34,6 +34,7 @@ do_action( 'bp_before_member_header' ); ?>
                 <div class="item-block-content">
                     <div class="item-subblock">
                         <a href="<?php echo("#"); ?>" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
+                        <a href="<?php echo("#"); ?>" title="<?php _e("Email","buddypress");?>"><span class="item-block-button-email icon icon_envelope-empty"></span></a>
                     </div>
                     <div class="item-subblock">
                         <ul>

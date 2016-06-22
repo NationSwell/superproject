@@ -3,7 +3,7 @@
     
         <?php do_action( 'bp_before_messages_compose_content' ); ?>
     
-        <label for="send-to-input"><?php _e("Send To (Username or Friend's Name)", 'buddypress'); ?></label>
+        <label for="send-to-input"><?php _e("Send to (start typing recipient’s name or username)", 'buddypress'); ?></label>
         <ul class="first acfb-holder">
             <li>
                 <?php bp_message_get_recipient_tabs(); ?>
@@ -12,7 +12,7 @@
         </ul>
     
         <?php if ( bp_current_user_can( 'bp_moderate' ) ) : ?>
-            <input type="checkbox" id="send-notice" name="send-notice" value="1" /> <?php _e( "This is a notice to all users.", "buddypress" ); ?>
+            <input type="checkbox" id="send-notice" name="send-notice" value="1" /> <?php _e( "Send this message to all members.", "buddypress" ); ?>
         <?php endif; ?>
     
         <label for="subject"><?php _e( 'Subject', 'buddypress'); ?></label>
@@ -35,4 +35,6 @@
     <script type="text/javascript">
         document.getElementById("send-to-input").focus();
     </script>
+    <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul>
+
 </div>
