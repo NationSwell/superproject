@@ -40,6 +40,18 @@ h3 {
 	font-size:16px;
 }
 
+.bp-screen-reader-text {
+	position: absolute;
+	margin: -1px;
+	padding: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+	word-wrap: normal !important;
+}
+
 
 // ********** FORMs *****************//
 
@@ -263,6 +275,206 @@ h3 {
 		display:block;
 		margin:30px 0;
 	}
+	
+	
+	//TABS
+	
+	//*^*^*^*^*^*^*^*^*^*^*
+	/* GRADIENT DIVIDER */
+	.bot-left {
+	  position: relative;
+	}
+	.bot-left:after {
+	  content: "";
+	  position: absolute;
+	  bottom: -13px;
+	  left: 0;
+	  
+	}
+	
+	.bot-left:after {
+	  right: -1px;
+	  height: 1px;
+	  background-image: -webkit-gradient(linear, 0 0, 100% 0, from($ns_blue3), to(transparent));
+	  background-image: -webkit-linear-gradient(left, $ns_blue3, transparent);
+	  background-image: -moz-linear-gradient(left, $ns_blue3, transparent);
+	  background-image: -o-linear-gradient(left, $ns_blue3, transparent);
+	}
+	/* //END GRADIENT DIVIDER */
+	
+	#object-nav {
+		@extend .box-margin;
+		
+		ul {
+			@extend .bot-left;
+			li {
+				display:inline;
+				border-right:1px solid $white;
+				a {
+					padding:10px 20px;
+					background-color:$gray7;
+					color:$gray4;
+					font-weight:$bold;
+					font-size:20px;
+					letter-spacing:1px;
+					
+				}
+				
+				&.current {
+					a {
+						background-color:$ns_blue3;
+						color:$white;
+					
+					}
+				}
+			}
+		}
+	}
+	
+	/*******************************************/
+	/* MESSAGES */
+	.ns-messages {
+		@extend .box-margin;
+		@include outer-container;
+		
+		.messages-nav {
+			@include span-columns(3);
+			
+			ul {
+				background-color:$gray7;
+				li {
+					//wanted to extend .icon here, but can't
+					//becuase the text inside the link isn't wrapped
+					display:block;
+					border-bottom:1px solid $gray5;
+					-webkit-box-shadow: 0 1px 0 0 $white;
+					box-shadow: 0 1px 0 0 $white;
+					padding:30px 20px;
+					
+					a {
+						text-align:center;
+						margin:0 auto;
+						@include hide-text;
+						height:25px;
+						@include media($large) {
+							text-align:left;
+							margin:0;
+							height:auto;
+						}
+						display:block;
+						font-size:18px; //for text
+						
+						&:before {
+							font-family:"icons";
+							font-size:24px;
+							padding-right:15px;
+							vertical-align: text-top;
+							text-align:center;
+							margin:0 auto;
+							display:block;
+							@include media($large) {
+								text-align:left;
+								margin:0;
+								display:inline;
+							}
+						}
+					}
+					&.current {
+						a {
+							color:$ns_blue2;
+						}
+					}
+						
+				}
+				li#inbox-personal-li {
+					a:before {
+						@extend .icon_inbox;
+					}
+				}
+				li#starred-personal-li {
+					a:before {
+						@extend .icon_star-hollow;
+					}
+				}
+				li#sentbox-personal-li {
+					a:before {
+						@extend .icon_sent;
+					}
+				}
+				li#compose-personal-li {
+					a:before {
+						@extend .icon_envelope-empty;
+					}
+				}
+				li#notices-personal-li {
+					a:before {
+						@extend .icon_contact;
+					}
+				}
+					
+			}
+		}
+		.messages {
+			@include span-columns(9);
+			label {
+				display:block;
+				font-weight:$bold;
+				padding-bottom:10px;
+			}
+			input[type="text"], textarea {
+				@extend .member-form-input;
+				display:block;
+				margin-bottom:15px;
+			}
+			input[type="submit"] {
+				@extend .button;
+			}
+			.message-search {
+				padding:15px 20px;
+				
+				form {
+					position:relative;
+					label {
+						@extend .bp-screen-reader-text;
+					}
+					
+					input[type="submit"] {
+						border:none;
+						bpadding:none;
+						&:hover {
+							border:none;
+						}
+						position: absolute;
+						top: 0;
+						right: 0;
+						z-index: 50;
+					}
+				}
+			}
+			#send_message_form {
+				margin-top:15px;
+				display:block;
+				
+					
+			}
+			
+		}
+		.info {
+			text-align:center;
+			padding:50px 0;
+			
+			&.bad-news {
+				.icon {
+					font-size:100px;
+					color:$ns_red0;
+				}
+			}
+		}
+	}
+	
+	/* END MESSAGES */
+	
+	
 	.member-row {
 		
 		@include outer-container;
@@ -279,6 +491,7 @@ h3 {
 		
 		
 		.member-info-card {
+			min-height:200px;
 			
 			@extend .box-shadow;
 			@extend .box-padding;
@@ -304,6 +517,7 @@ h3 {
 				
 				.item-block-content {
 					margin-top:20px;
+					
 					.icon {
 						text-align:center;
 						border-radius: 50%;
@@ -369,8 +583,8 @@ h3 {
 				font-weight:$bold;
 			}
 			.settings-input {
-			margin-top:15px;
-			display:block;
+				margin-top:15px;
+				display:block;
 				@extend .member-form-input;
 			}
 			input[type="submit"] {
@@ -379,6 +593,7 @@ h3 {
 		}
 		
 		.callout-block {
+			min-height:200px;
 			background-color:$gray7;
 			@include span-columns(6);
 			margin-top:15px;
@@ -400,12 +615,68 @@ h3 {
 			}
 			.item-block-content {
 				margin:20px 0;
+				font-size:14px;
+				color:$gray2;
 			}
 			.item-block-button-go {
 				@extend .button;
 			}
 		}
 	}
+	
+	//Activity
+	.activity-list {
+		@extend .box-margin;
+		
+		.activity-item {
+			padding:15px 0;
+			border-bottom:1px solid $gray5;
+			position:relative;
+			@include outer-container;
+			
+			.activity-avatar {
+				@include span-columns(1);
+			}
+			.activity-content {
+				@include span-columns(11);
+				margin-right:0;
+				.activity-header {
+					color: $gray1;
+    				line-height: 220%;
+				}
+				.activity-meta {
+					margin:15px 0 0 0;
+				}
+			}
+			.activity-comments {
+				clear:both;
+				padding:15px 0;
+				form {
+					@include outer-container;
+					.ac-reply-avatar {
+						@include span-columns(1);
+					}
+					.ac-reply-content {
+						@include span-columns(11);
+						margin-right:0;
+						
+						textarea {
+							@extend .member-form-input;
+							margin-bottom:10px;
+						}
+					}
+				}
+			}
+			
+			
+			.activity-inner {
+				margin:10px 10px 5px 0;
+			}
+			
+		}
+	}
+	
+	
 	
 	//EVENTS and OPPS
 	.tab-content {
@@ -613,17 +884,7 @@ h3 {
 // ********** END  *****************//
 
 //TABLES!
-.bp-screen-reader-text {
-	position: absolute;
-	margin: -1px;
-	padding: 0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	border: 0;
-	word-wrap: normal !important;
-}
+
 
 #buddypress table.notifications tr.alt td,
 #buddypress table.notifications-settings tr.alt td,
@@ -664,3 +925,336 @@ h3 {
 
 
 // ********** END  *****************//
+
+
+
+
+
+
+/*--------------------------------------------------------------
+LEGACY STYLES CARRIED OVER FROM DEFAULT CSS
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+Ajax Loading
+--------------------------------------------------------------*/
+#buddypress a.loading,
+#buddypress input.loading {
+	-webkit-animation: loader-pulsate .5s infinite ease-in-out alternate;
+	-moz-animation: loader-pulsate .5s infinite ease-in-out alternate;
+	border-color: #aaa;
+}
+@-webkit-keyframes loader-pulsate {
+	from {
+		border-color: #aaa;
+		-webkit-box-shadow: 0 0 6px #ccc;
+		box-shadow: 0 0 6px #ccc;
+	}
+	to {
+		border-color: #ccc;
+		-webkit-box-shadow: 0 0 6px #f8f8f8;
+		box-shadow: 0 0 6px #f8f8f8;
+	}
+}
+@-moz-keyframes loader-pulsate {
+	from {
+		border-color: #aaa;
+		-moz-box-shadow: 0 0 6px #ccc;
+		box-shadow: 0 0 6px #ccc;
+	}
+	to {
+		border-color: #ccc;
+		-moz-box-shadow: 0 0 6px #f8f8f8;
+		box-shadow: 0 0 6px #f8f8f8;
+	}
+}
+
+#buddypress a.loading:hover,
+#buddypress input.loading:hover {
+	color: #767676;
+}
+#buddypress input[type="submit"].pending,
+#buddypress input[type="button"].pending,
+#buddypress input[type="reset"].pending,
+#buddypress input[type="submit"].disabled,
+#buddypress input[type="button"].disabled,
+#buddypress input[type="reset"].disabled,
+#buddypress input[type="submit"][disabled=disabled],
+#buddypress button.pending,
+#buddypress button.disabled,
+#buddypress div.pending a,
+#buddypress a.disabled {
+	border-color: #eee;
+	color: #bbb;
+	cursor: default;
+}
+#buddypress input[type="submit"]:hover.pending,
+#buddypress input[type="button"]:hover.pending,
+#buddypress input[type="reset"]:hover.pending,
+#buddypress input[type="submit"]:hover.disabled,
+#buddypress input[type="button"]:hover.disabled,
+#buddypress input[type="reset"]:hover.disabled,
+#buddypress button.pending:hover,
+#buddypress button.disabled:hover,
+#buddypress div.pending a:hover,
+#buddypress a.disabled:hover {
+	border-color: #eee;
+	color: #bbb;
+}
+
+
+
+
+/*--------------------------------------------------------------
+3.5 - Forms
+--------------------------------------------------------------*/
+#buddypress .standard-form textarea,
+#buddypress .standard-form input[type=text],
+#buddypress .standard-form input[type=text],
+#buddypress .standard-form input[type=color],
+#buddypress .standard-form input[type=date],
+#buddypress .standard-form input[type=datetime],
+#buddypress .standard-form input[type=datetime-local],
+#buddypress .standard-form input[type=email],
+#buddypress .standard-form input[type=month],
+#buddypress .standard-form input[type=number],
+#buddypress .standard-form input[type=range],
+#buddypress .standard-form input[type=search],
+#buddypress .standard-form input[type=tel],
+#buddypress .standard-form input[type=time],
+#buddypress .standard-form input[type=url],
+#buddypress .standard-form input[type=week],
+#buddypress .standard-form select,
+#buddypress .standard-form input[type=password],
+#buddypress .dir-search input[type=search],
+#buddypress .dir-search input[type=text],
+#buddypress .groups-members-search input[type=search],
+#buddypress .groups-members-search input[type=text] {
+	border: 1px solid #ccc;
+	background: #fafafa;
+	border-radius: 0;
+	color: #767676;
+	font: inherit;
+	font-size: 100%;
+	padding: 6px;
+}
+#buddypress .standard-form select {
+	padding: 3px;
+}
+#buddypress .standard-form input[type=password] {
+	margin-bottom: 5px;
+}
+#buddypress .standard-form label,
+#buddypress .standard-form span.label {
+	display: block;
+	font-weight: bold;
+	margin: 15px 0 5px 0;
+	width: auto;
+}
+#buddypress .standard-form p label,
+#buddypress .standard-form #invite-list label {
+	font-weight: normal;
+	margin: auto;
+}
+#buddypress .standard-form div.checkbox label:nth-child(n+2),
+#buddypress .standard-form div.radio div label {
+	color: #767676;
+	font-size: 100%;
+	font-weight: normal;
+	margin: 5px 0 0 0;
+}
+#buddypress .standard-form#sidebar-login-form label {
+	margin-top: 5px;
+}
+#buddypress .standard-form input[type=text] {
+	width: 75%;
+}
+#buddypress .standard-form#sidebar-login-form input[type=text],
+#buddypress .standard-form#sidebar-login-form input[type=password] {
+	padding: 4px;
+	width: 95%;
+}
+#buddypress .standard-form #basic-details-section input[type=password],
+#buddypress .standard-form #blog-details-section input#signup_blog_url {
+	width: 35%;
+}
+#buddypress .standard-form#signup_form input[type=text],
+#buddypress .standard-form#signup_form textarea,
+#buddypress .form-allowed-tags,
+#buddypress #commentform input[type=text],
+#buddypress #commentform textarea {
+	width: 90%;
+}
+#buddypress .standard-form#signup_form div.submit {
+	float: right;
+}
+#buddypress div#signup-avatar img {
+	margin: 0 15px 10px 0;
+}
+#buddypress .standard-form textarea {
+	width: 75%;
+	height: 120px;
+}
+#buddypress .standard-form textarea#message_content {
+	height: 200px;
+}
+#buddypress .standard-form#send-reply textarea {
+	width: 97.5%;
+}
+#buddypress .standard-form p.description {
+	color: #767676;
+	font-size: 80%;
+	margin: 5px 0;
+}
+#buddypress .standard-form div.submit {
+	clear: both;
+	padding: 15px 0 0 0;
+}
+#buddypress .standard-form p.submit {
+	margin-bottom: 0;
+	padding: 15px 0 0 0;
+}
+#buddypress .standard-form div.submit input {
+	margin-right: 15px;
+}
+#buddypress .standard-form div.radio ul {
+	margin: 10px 0 15px 38px;
+	list-style: disc;
+}
+#buddypress .standard-form div.radio ul li {
+	margin-bottom: 5px;
+}
+#buddypress .standard-form a.clear-value {
+	display: block;
+	margin-top: 5px;
+	outline: none;
+}
+#buddypress .standard-form #basic-details-section,
+#buddypress .standard-form #blog-details-section,
+#buddypress .standard-form #profile-details-section {
+	float: left;
+	width: 48%;
+}
+#buddypress .standard-form #profile-details-section {
+	float: right;
+}
+#buddypress .standard-form #blog-details-section,
+#buddypress #notifications-bulk-management {
+	clear: left;
+}
+body.no-js #buddypress #notifications-bulk-management #select-all-notifications,
+body.no-js #buddypress label[for="message-type-select"],
+body.no-js #buddypress #message-type-select,
+body.no-js #buddypress #delete_inbox_messages,
+body.no-js #buddypress #delete_sentbox_messages,
+body.no-js #buddypress #messages-bulk-management #select-all-messages {
+	display: none;
+}
+#buddypress .standard-form input:focus,
+#buddypress .standard-form textarea:focus,
+#buddypress .standard-form select:focus {
+	background: #fafafa;
+	color: #555;
+}
+#buddypress form#send-invite-form {
+	margin-top: 20px;
+}
+#buddypress div#invite-list {
+	background: #f5f5f5;
+	height: 400px;
+	margin: 0 0 10px;
+	overflow: auto;
+	padding: 5px;
+	width: 160px;
+}
+#buddypress button,
+#buddypress a.button,
+#buddypress input[type=submit],
+#buddypress input[type=button],
+#buddypress input[type=reset],
+#buddypress ul.button-nav li a,
+#buddypress .generic-button a,
+#buddypress .comment-reply-link,
+a.bp-title-button {
+	background: #fff; /* Old browsers */
+	border: 1px solid #ccc;
+	color: #767676;
+	font-size: small;
+	cursor: pointer;
+	outline: none;
+	padding: 4px 10px;
+	text-align: center;
+	text-decoration: none;
+}
+#buddypress button:hover,
+#buddypress a.button:hover,
+#buddypress a.button:focus,
+#buddypress input[type=submit]:hover,
+#buddypress input[type=button]:hover,
+#buddypress input[type=reset]:hover,
+#buddypress ul.button-nav li a:hover,
+#buddypress ul.button-nav li.current a,
+#buddypress div.generic-button a:hover,
+#buddypress .comment-reply-link:hover {
+	background: #ededed;
+	border: 1px solid #bbb;
+	color: #555;
+	outline: none;
+	text-decoration: none;
+}
+
+#buddypress form.standard-form .left-menu {
+	float: left;
+}
+
+#buddypress form.standard-form .left-menu #invite-list ul{
+	margin:1%;
+	list-style: none;
+}
+
+#buddypress form.standard-form .left-menu #invite-list ul li {
+	margin:0 0 0 1%;
+}
+
+#buddypress form.standard-form .main-column {
+	margin-left: 190px;
+}
+
+#buddypress form.standard-form .main-column ul#friend-list {
+	clear:none;
+	float: left;
+}
+
+#buddypress form.standard-form .main-column ul#friend-list h4 {
+	clear:none;
+}
+
+/* Overrides for embedded WP editors */
+#buddypress .wp-editor-wrap a.button,
+#buddypress .wp-editor-wrap button,
+#buddypress .wp-editor-wrap input[type=submit],
+#buddypress .wp-editor-wrap input[type=button],
+#buddypress .wp-editor-wrap input[type=reset] {
+	padding: 0 8px 1px;
+}
+
+/* Form classes & generic attr styling */
+#buddypress form *[disabled="disabled"]{
+	cursor: default;
+	opacity: .4;
+}
+
+.bp-screen-reader-text {
+	position: absolute;
+	margin: -1px;
+	padding: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+	word-wrap: normal !important;
+}
+
+
