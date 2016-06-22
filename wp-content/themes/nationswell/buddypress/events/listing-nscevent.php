@@ -4,10 +4,15 @@ global $bp;
 <div id="nsc-events" class="tab-content">
     <div class="intro-text">
 		<?php if(empty( $_REQUEST['past_events'])){ ?>
-			<p><?php _e( 'Council events are unique forums in which members engage in collaborative discussions with featured guests and one another around important national challenges and how best to advance their solutions. Format and size vary.', 'buddypress' ); echo(" <a href='".$bp->bp_nav['nsc-events']['link']."?past_events=true'>"._('Need to see past events?','buddypress')."</a>"); ?></p>
-		<?php }else{ ?>
-			<p><?php _e( 'Your viewing past events', 'buddypress' ); echo(" <a href='".$bp->bp_nav['nsc-events']['link']."'>"._('See upcoming events?','buddypress')."</a>"); ?></p>
-		<?php } ?>
+			<?php 
+			$header_copy = __( 'Council events are unique forums in which members engage in collaborative discussions with featured guests and one another around important national challenges and how best to advance their solutions. Format and size vary.', 'buddypress' );
+			$header_copy .= __(" <a href='".$bp->bp_nav['nsc-events']['link']."?past_events=true'>".__('Need to see past events?','buddypress')."</a>");
+			echo '<p>'. $header_copy .'</p>';
+		 } else {
+			 $header_copy = __( 'You’re viewing past events.', 'buddypress' );
+			 $header_copy .= __(" <a href='".$bp->bp_nav['nsc-events']['link']."'>".__('See upcoming events &#8594;','buddypress')."</a>");
+			 echo '<p>'. $header_copy .'</p>';
+		 } ?>
     </div>
     <div class="nsc-item-listing">
 		<?php if(empty( $_REQUEST['past_events'])){
@@ -36,6 +41,13 @@ global $bp;
                             	<span><?php echo($event['location']); ?></span>
                             </div>
                        	</div>
+                        <div class="rsvp">
+                        	<?php
+								$rsvp_link = "#";
+								$rsvp_label = "RSVP";
+							?>
+                        	<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_label,'buddypress'); ?></a>
+                        </div>
                     </div>
                 </div>
                 <div class="divider"></div>

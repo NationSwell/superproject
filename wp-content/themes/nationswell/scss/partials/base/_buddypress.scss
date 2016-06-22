@@ -909,9 +909,13 @@ h3 {
 	.tab-content {
 		@extend .box-margin;
 		.intro-text {
-			font-style:italic;
 			font-family:$noto-serif;
 			color:$ns_navy2;
+			padding:30px 0;
+			font-size:2rem;
+			p {
+				line-height:3rem;
+			}
 		}
 		
 		//events and opportunities
@@ -971,6 +975,11 @@ h3 {
 							}
 							
 							
+						}
+					}
+					.rsvp {
+						a {
+							@extend .button;
 						}
 					}
 				}
@@ -1395,8 +1404,7 @@ body.no-js #buddypress #messages-bulk-management #select-all-messages {
 	padding: 5px;
 	width: 160px;
 }
-#buddypress button,
-#buddypress a.button,
+
 #buddypress input[type=submit],
 #buddypress input[type=button],
 #buddypress input[type=reset],
@@ -1414,9 +1422,7 @@ a.bp-title-button {
 	text-align: center;
 	text-decoration: none;
 }
-#buddypress button:hover,
-#buddypress a.button:hover,
-#buddypress a.button:focus,
+
 #buddypress input[type=submit]:hover,
 #buddypress input[type=button]:hover,
 #buddypress input[type=reset]:hover,
