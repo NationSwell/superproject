@@ -28,6 +28,10 @@ body.login div#login {
 				font-size:14px;
 			}
 		}
+		
+		.pass-strength-result {
+			width:100%;
+		}
 
 		p.submit input#wp-submit {
 			@extend .button;

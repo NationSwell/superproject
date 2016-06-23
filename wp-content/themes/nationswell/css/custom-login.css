@@ -4502,12 +4502,16 @@ body.login div#login form p.forgetmenot label {
   font-size: 14px;
 }
 /* line 32, ../scss/partials/base/_custom-login.scss */
+body.login div#login form .pass-strength-result {
+  width: 100%;
+}
+/* line 36, ../scss/partials/base/_custom-login.scss */
 body.login div#login form p.submit input#wp-submit {
   height: auto;
   box-shadow: none;
   text-shadow: none;
 }
-/* line 40, ../scss/partials/base/_custom-login.scss */
+/* line 44, ../scss/partials/base/_custom-login.scss */
 body.login div#login p#backtoblog {
   display: none;
 }
