@@ -21,8 +21,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 		<a href="<?php bp_activity_user_link(); ?>">
 			<?php
 			//if user is logged/admin or author, print a NS flag over avatar
-			//$user = wp_get_current_user();
-			//if ( is_user_logged_in () && (is_admin() || in_array( 'author', (array) $user->roles))): ?>
+			if ( is_user_logged_in () && current_user_can( 'publish_posts' ) ): ?>
             	<span class="icon icon_nationswell-flag"></span>
             <?php //endif; ?>
 			<?php bp_activity_avatar('type=thumb&width=100&height=100'); ?>
