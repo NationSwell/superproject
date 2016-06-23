@@ -863,6 +863,26 @@ h3 {
 			
 			.activity-avatar {
 				@include span-columns(2);
+				
+				a {
+					position:relative;
+					
+				
+					//icon over the image for staff
+					span {
+						position:absolute;
+						width:30px;
+						height:30px;
+						background-color:$ns_red1;
+						border-radius:50%;
+						color:$white;
+						text-align:center;
+						padding-top:6px;
+						font-size:24px;
+						bottom:10px;
+						right:0;
+					}
+				}
 			}
 			.activity-content {
 				@include span-columns(10);
