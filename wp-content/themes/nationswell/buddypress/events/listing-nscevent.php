@@ -43,10 +43,10 @@ global $bp;
                        	</div>
                         <div class="rsvp">
                         	<?php
-								$rsvp_link = "#";
-								$rsvp_label = "RSVP";
+								$rsvp_link = $event['rsvp_link'];
+								$rsvp_link_type = $event['rsvp_link_type'];
 							?>
-                        	<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_label,'buddypress'); ?></a>
+							<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_link_type,'buddypress'); ?></a>
                         </div>
                     </div>
                 </div>

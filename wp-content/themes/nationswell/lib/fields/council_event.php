@@ -183,6 +183,21 @@ if (function_exists("register_field_group")) {
                     'formatting' => 'none',
                     'maxlength' => '',
                 ),
+                  array(
+                    'key' => 'field_100fp496o1430',
+                    'label' => 'Link type',
+                    'name' => 'rsvp_link_type',
+                    'type' => 'select',
+                    'instructions' => 'The type of link',
+                    'default_value' => 'RSVP',
+                    'choices' => array(
+						'RSVP'	=> 'RSVP',
+						'Request Invite' => 'Request Invite'
+					),
+					'allow_null' => 0,
+                    'multiple' => 0,
+                ),
+
             ),
             'location' => array(
                 array(

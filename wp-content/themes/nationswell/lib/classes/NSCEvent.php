@@ -49,7 +49,9 @@ if (class_exists('TimberPost')) {
                     'fulldate' => $dateObj->format('F d, Y'),
                     'date' => $dateObj->format('j-M'),
                     'year' => $dateObj->format('Y'),
-                    'sortdate' => $dateObj->format('Ymd')
+                    'sortdate' => $dateObj->format('Ymd'),
+                    'rsvp_link' => get_field('rsvp_link', $event->ID),
+                    'rsvp_link_type' => get_field('rsvp_link_type', $event->ID),
                 );
             }
 
