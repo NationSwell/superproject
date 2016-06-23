@@ -906,17 +906,22 @@ h3 {
 	
 	
 	//EVENTS and OPPS
+	.intro-text {
+		font-family:$noto-serif;
+		color:$ns_navy2;
+		padding:30px 0;
+		font-size:2rem;
+		p {
+			line-height:3rem;
+		}
+		&.announcements {
+			@extend .box-margin;
+		}
+	}
+	
 	.tab-content {
 		@extend .box-margin;
-		.intro-text {
-			font-family:$noto-serif;
-			color:$ns_navy2;
-			padding:30px 0;
-			font-size:2rem;
-			p {
-				line-height:3rem;
-			}
-		}
+		
 		
 		//events and opportunities
 		.nsc-item-listing {

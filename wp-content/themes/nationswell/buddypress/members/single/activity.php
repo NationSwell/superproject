@@ -43,6 +43,13 @@
  */
 do_action( 'bp_before_member_activity_post_form' ); ?>
 
+<div class="intro-text announcements">
+			<?php 
+			$header_copy = __( 'Hello from NationSwell! Here’s what’s happening within the Council community.<br>Have something to share? ','buddypress');
+			$header_copy .= '<a href="/contact">'.__('Let us know!','buddypress').'</a>';
+			echo '<p>'. $header_copy .'</p>';
+			?>
+    </div>
 <?php
 if ( is_user_logged_in() && bp_is_my_profile() && ( !bp_current_action() || bp_is_current_action( 'just-me' ) ) )
 	bp_get_template_part( 'activity/post-form' );
