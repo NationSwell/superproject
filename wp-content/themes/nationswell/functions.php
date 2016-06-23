@@ -21,6 +21,8 @@ add_action( 'wp_head', 'nocache_headers' );
 
 define( 'THEME_URL', get_template_directory_uri() );
 
+define( 'BP_MESSAGES_AUTOCOMPLETE_ALL', true );
+
 
 add_filter( 'wpseo_opengraph_title', 'yoast_wpseo_title');
 
