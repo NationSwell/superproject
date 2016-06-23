@@ -9,8 +9,10 @@
 ?>
 
 <div class="item-list-tabs no-ajax notifications-menu" id="subnav" role="navigation">
-	<ul>
-		<li class="filters-title">Filter your notifications by:</li>
+	<h2><?php esc_attr_e( 'Your notifications', 'buddypress' ); ?></h2>
+    <p>&nbsp;</p>
+    <ul>
+		<li class="filters-title"><?php esc_attr_e( 'Filter your notifications by:', 'buddypress' ); ?></li>
 		<?php bp_get_options_nav(); ?>
 		
 		<li id="members-order-select" class="last filter">

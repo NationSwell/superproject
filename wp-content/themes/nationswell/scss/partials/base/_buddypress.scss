@@ -9,6 +9,13 @@
   &:nth-child(#{$nth}+1) { clear: none; }
 }
 
+body.notifications,
+body.settings {
+	#object-nav {
+		display:none;
+	}
+}
+
 .box-margin {
 	margin:3.4rem 2.2rem !important;
 }
@@ -893,6 +900,57 @@ h3 {
 				}
 				.activity-meta {
 					margin:15px 0 0 0;
+					a {
+						@extend .icon;
+						@include hide-text;
+						font-size:36px;
+						height:36px;
+						width:36px;
+						padding:0 10px 0 0;
+						color:$gray4;
+						
+						
+						&.loading {
+							border:none;
+							-webkit-animation:none;
+							-moz-animation:none;
+							border-color:transparent;
+							width:60px;
+							background-image:url(../img/ring.gif);
+							background-repeat:no-repeat;
+							background-position:center right;
+							background-size:24px 24px;
+						}
+						&:visited {
+							color:$gray4;
+						}
+						&:hover {
+							color:$ns_blue2;
+						}
+						&:active {
+							color:$ns_navy2;
+						}
+						
+						&.acomment-reply {
+							@extend .icon_reply;
+						}
+						&.fav {
+							@extend .icon_thumbsup-empty;
+						}
+						&.unfav {
+							@extend .icon_thumbsup-filled;
+							color:$ns_red2;
+						}
+						&.delete-activity {
+							@extend .icon_trash;
+							font-size:30px;
+							border:none;
+							padding-top:2px;
+							&:hover {
+								border:none;
+							}
+						}
+					}
 				}
 			}
 			.activity-comments {

@@ -21,7 +21,9 @@ do_action( 'bp_before_activity_entry' ); ?>
 		<a href="<?php bp_activity_user_link(); ?>">
 			<?php
 			//if user is logged/admin or author, print a NS flag over avatar
-			if ( is_user_logged_in () && current_user_can( 'publish_posts' ) ): ?>
+			$user_id = bp_get_activity_user_id(); 
+			$user = new WP_User( $user_id );
+			if ( $user->roles[0] == 'author' || $user->roles[0] == 'administrator' ) : ?>
             	<span class="icon icon_nationswell-flag"></span>
             <?php endif; ?>
 			<?php bp_activity_avatar('type=thumb&width=100&height=100'); ?>
@@ -68,7 +70,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 
 				<?php if ( bp_activity_can_comment() ) : ?>
 
-					<a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comment %s', 'buddypress' ), '<span>' . bp_activity_get_comment_count() . '</span>' ); ?></a>
+					<a href="<?php bp_activity_comment_link(); ?>" class="acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>" title="<?php  _e( 'Comment', 'buddypress' ); ?>"><span><?php //echo bp_activity_get_comment_count(); ?></span></a>
 
 				<?php endif; ?>
 
@@ -76,11 +78,11 @@ do_action( 'bp_before_activity_entry' ); ?>
 
 					<?php if ( !bp_get_activity_is_favorite() ) : ?>
 
-						<a href="<?php bp_activity_favorite_link(); ?>" class="button fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
+						<a href="<?php bp_activity_favorite_link(); ?>" class="fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"></a>
 
 					<?php else : ?>
 
-						<a href="<?php bp_activity_unfavorite_link(); ?>" class="button unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
+						<a href="<?php bp_activity_unfavorite_link(); ?>" class="unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove favorite', 'buddypress' ); ?>"></a>
 
 					<?php endif; ?>
 
