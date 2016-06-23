@@ -862,10 +862,10 @@ h3 {
 			@include outer-container;
 			
 			.activity-avatar {
-				@include span-columns(1);
+				@include span-columns(2);
 			}
 			.activity-content {
-				@include span-columns(11);
+				@include span-columns(10);
 				margin-right:0;
 				.activity-header {
 					color: $gray1;
@@ -881,10 +881,10 @@ h3 {
 				form {
 					@include outer-container;
 					.ac-reply-avatar {
-						@include span-columns(1);
+						@include span-columns(2);
 					}
 					.ac-reply-content {
-						@include span-columns(11);
+						@include span-columns(10);
 						margin-right:0;
 						
 						textarea {
