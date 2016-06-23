@@ -23,7 +23,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 			//if user is logged/admin or author, print a NS flag over avatar
 			if ( is_user_logged_in () && current_user_can( 'publish_posts' ) ): ?>
             	<span class="icon icon_nationswell-flag"></span>
-            <?php //endif; ?>
+            <?php endif; ?>
 			<?php bp_activity_avatar('type=thumb&width=100&height=100'); ?>
 
 		</a>
