@@ -4472,46 +4472,51 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
 
 /* Added June 21, 2016 */
 /* line 4, ../scss/partials/base/_custom-login.scss */
+body.login {
+  background: url(../img/headerbg-bnw.jpg);
+  background-size: cover;
+}
+/* line 8, ../scss/partials/base/_custom-login.scss */
 body.login div#login {
   width: 85%;
   font-family: "Gudea", Arial, sans-serif;
 }
 @media screen and (min-width: 768px) {
-  /* line 4, ../scss/partials/base/_custom-login.scss */
+  /* line 8, ../scss/partials/base/_custom-login.scss */
   body.login div#login {
     width: 50%;
   }
 }
-/* line 11, ../scss/partials/base/_custom-login.scss */
+/* line 17, ../scss/partials/base/_custom-login.scss */
 body.login div#login h1 a {
   background: url(../img/nsc-logo.png) 0 0 no-repeat;
   width: 300px;
   height: 146px;
   background-size: 100% auto;
 }
-/* line 18, ../scss/partials/base/_custom-login.scss */
+/* line 24, ../scss/partials/base/_custom-login.scss */
 body.login div#login form label {
   font-size: 18px;
 }
-/* line 25, ../scss/partials/base/_custom-login.scss */
+/* line 31, ../scss/partials/base/_custom-login.scss */
 body.login div#login form p.forgetmenot {
   margin-top: 15px;
 }
-/* line 27, ../scss/partials/base/_custom-login.scss */
+/* line 33, ../scss/partials/base/_custom-login.scss */
 body.login div#login form p.forgetmenot label {
   font-size: 14px;
 }
-/* line 32, ../scss/partials/base/_custom-login.scss */
+/* line 38, ../scss/partials/base/_custom-login.scss */
 body.login div#login form .pass-strength-result {
   width: 100%;
 }
-/* line 36, ../scss/partials/base/_custom-login.scss */
+/* line 42, ../scss/partials/base/_custom-login.scss */
 body.login div#login form p.submit input#wp-submit {
   height: auto;
   box-shadow: none;
   text-shadow: none;
 }
-/* line 44, ../scss/partials/base/_custom-login.scss */
+/* line 50, ../scss/partials/base/_custom-login.scss */
 body.login div#login p#backtoblog {
   display: none;
 }

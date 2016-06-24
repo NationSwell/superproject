@@ -4,6 +4,97 @@ Template Name: NSC Landing
 Cloudred notes: no idea why this page exists and why it was created this way, clearly not good. Hijacking it for member login purposes.
 */
 global $bp;
+global $wpdb, $current_site;
+//bad email entered
+$error_email = '';
+//general system error
+$error_system = '';
+//no such user exists
+$error_user = '';
+$success = false;
+
+//figure out if the form has been submitted
+if (isset($_POST['action']) && $_POST['action']=='reset') :
+	//get form values
+	$user_login = sanitize_text_field($_POST['user_login']);
+	$user_first_name = sanitize_text_field($_POST['user_first_name']);
+	$user_last_name = sanitize_text_field($_POST['user_last_name']);
+	
+	if( empty( $user_login ) ) {
+		$error_email = 'Enter your e-mail address...';
+	} else if( ! is_email( $user_login )) {
+		$error_email = 'Invalid e-mail address';
+	} else if( ! email_exists( $user_login ) ) {
+		$error_user = 'There is no member registered with that email address';
+	} else {
+		//we got the email, all good, now send the password reset link to user.
+		$user_data = get_user_by('email', $user_login);
+		
+		//print_r($user_data);
+		
+		do_action('lostpassword_post');
+	
+	
+		if ( !$user_data ) {
+			$error_user = 'Oh no! Something has gone horribly wrong (frown)';
+		}
+	
+		// redefining user_login ensures we return the right case in the email
+		$user_login = $user_data->user_login;
+		$user_email = $user_data->user_email;
+		$user_info = get_userdata( $user_data->ID );
+		$first_name = $user_info->first_name;
+	
+		//do_action('retreive_password', $user_login);  // Misspelled and deprecated
+		do_action('retrieve_password', $user_login);
+	
+		$allow = apply_filters('allow_password_reset', true, $user_data->ID);
+	
+		if ( ! $allow ) {
+			$error_system = 'This action istn’s allowed at this time';
+		} else if ( is_wp_error($allow) ) {
+			$error_system = 'Oh no! Something has gone horribly wrong (frown)';
+		}
+	
+		$key = $wpdb->get_var($wpdb->prepare("SELECT user_activation_key FROM $wpdb->users WHERE user_login = %s", $user_login));
+		if ( empty($key) ) {
+			// Generate something random for a key...
+			$key = wp_generate_password(20, false);
+			do_action('retrieve_password_key', $user_login, $key);
+			// Now insert the new md5 key into the db
+			$wpdb->update($wpdb->users, array('user_activation_key' => $key), array('user_login' => $user_login));
+		}
+		$message = sprintf(__('Hi %s,'), $first_name) . "\r\n\r\n";
+		$message .= __('Thank you for claiming your NationSwell Member account. There is just one more step before you can start exploring all the new features the member area has to offer. Please take a moment to set your password now.') . "\r\n\r\n";
+		//$message .= network_home_url( '/' ) . "\r\n\r\n";
+		//$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
+		$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
+		$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n\r\n";
+		
+		$message .= __('Note that this link will remain valid for the next 24 hours only. If this window has passed, please come back to our site and request a new link! If this was a mistake, just ignore this email and nothing will happen.') . "\r\n\r\n";
+		
+		$message .= __('---') . "\r\n";
+		$message .= __('Regards,') . "\r\n";
+		$message .= __('All at NationSwell') . "\r\n";
+		$message .= network_home_url( '/' );
+	
+		$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
+	
+		$title = __('Welcome to NationSwell');
+	
+		$title = apply_filters('retrieve_password_title', $title);
+		$message = apply_filters('retrieve_password_message', $message, $key);
+	
+		if ( $message && !wp_mail($user_email, $title, $message) ) {
+			wp_die( __('The e-mail could not be sent.') . "<br />\n" . __('Possible reason: your host may have disabled the mail() function...') );
+		} else {
+			$success = true;
+		}
+	}
+
+endif;
+
+
 
 ?>
 
@@ -72,37 +163,66 @@ global $bp;
                            		<p><?php _e( 'A diverse community of accomplished professionals who are passionate about service', 'buddypress' ); ?></p>
                             </div>
                             <div class="login-form">
-                                <div class="login-form-inputs">
+                                <div class="login-form-inputs"<?php if ($_GET["register"]): echo ' style="padding-bottom:0;"'; endif; ?>>
                                     <?php   
 									$lostpassword = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot password?','buddypress').'</a>';
                                     
 									if( $_GET["register"] ) {
 										//show register form
 										echo '<h2>'.__( 'Register','example').'</h2>';
-										$bottom_message = __( 'Enter the primary email address we have on file for you.','example'); ?>
-										<form id="lostpasswordform" class="lostpassword-form" action="<?php echo wp_lostpassword_url(); ?>" method="post">
-											<p class="form-row">
-												<label for="user_first_name"><?php _e( 'First name', 'buddypress' ); ?>
-												<input type="text" name="user_first_name" id="user_first_name">
-											</p>
-                                            <p class="form-row">
-												<label for="user_last_name"><?php _e( 'Last name', 'buddypress' ); ?>
-												<input type="text" name="user_last_name" id="user_last_name">
-											</p>
-                                            <p class="form-row">
-												<label for="user_login"><?php _e( 'Email address', 'buddypress' ); ?>
-												<input type="text" name="user_login" id="user_login">
-											</p>
-									 		<div class="form-row">
-                                                <p class="login-remember">
-                                                    <a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Back to member login', 'buddypress' ); ?></a>
+										 ?>
+										
+                                        <?php if ($success) : ?>
+                                        	<?php $bottom_message = '<a href="'.get_permalink().'">'.__( '&#8592; Back to member login','buddypress').'</a>'; ?>
+                                        	<p style="margin-bottom:100px"><?php _e('A match was made with the information you provided. Please check your email account for a message from us.','buddypress'); ?></p>
+                                            
+                                            <?php else : ?>
+                                        	<?php $bottom_message = __( 'Enter the primary email address we have on file for you.','buddypress'); ?>
+                                            <form id="lostpasswordform" class="lostpassword-form" action="<?php echo the_permalink(); ?>?register=true" method="post">
+                                                <?php if (!empty($error_user)) : 
+                                                            $contact_link = '<a href="'.get_site_url().'/contact/">'.__('Contact us.','buddypress').'</a>';						
+                                                            echo '<p class="form-row login-error">';
+                                                            echo __('The information you submitted does not match our records&#8212;please try again! If you think this is an error, please get in touch! ','buddypress') . $contact_link;
+                                                       elseif (!empty($error_system)) :
+                                                             echo $error_system .' '. $contact_link;
+                                                            echo '</p>';
+                                                       endif;
+                                                    ?>
+                                                
+                                                <p class="form-row">
+                                                    <label for="user_first_name"><?php _e( 'First name', 'buddypress' ); ?></label>
+                                                    <input type="text" name="user_first_name" id="user_first_name">
                                                 </p>
-                                                <p class="lostpassword-submit">
-                                                    <input type="submit" name="submit" class="lostpassword-button"
-                                                           value="<?php _e( 'Register', 'buddypress' ); ?>"/>
+                                                <p class="form-row">
+                                                    <label for="user_last_name"><?php _e( 'Last name', 'buddypress' ); ?></label>
+                                                    <input type="text" name="user_last_name" id="user_last_name">
                                                 </p>
-                                            </div>
-										</form>
+                                                <p class="form-row">
+                                                    <label for="user_login">
+                                                    
+                                                    <?php if( ! empty( $error_email ) ) {
+                                                            echo '<span class="login-error">'. $error_email .'</span>';
+                                                          } else {
+                                                              echo __( 'Email address', 'buddypress' );
+                                                          }
+                                                        $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : '';
+                                                    ?>
+                                                    </label>
+                                                    <input type="text" name="user_login" id="user_login" value="<?php echo $user_login; ?>" <?php if(!empty($error_email) || !empty($error_user)): echo 'class="login-error-field"'; endif; ?>>
+                                                </p>
+                                                <div class="form-row">
+                                                    <p class="login-remember">
+                                                        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Back to member login', 'buddypress' ); ?></a>
+                                                    </p>
+                                                    <p class="lostpassword-submit">
+                                                        <input type="hidden" name="action" value="reset" />
+                                                        <input type="submit" name="submit" class="lostpassword-button"
+                                                               value="<?php _e( 'Register', 'buddypress' ); ?>"/>
+                                                    </p>
+                                                </div>
+                                            </form>
+                                            
+                                            <?php endif; ?>
                                     <?php    
 									} else {
 										//show login

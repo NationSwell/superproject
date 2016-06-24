@@ -1,47 +1,54 @@
 /* Added June 21, 2016 */
 
 
-body.login div#login {
-	width:85%;
-	@include media($desktop) {
-		width:50%;
-	}
+body.login {
+	background:url(../img/headerbg-bnw.jpg);
+	background-size:cover;
 	
-	font-family:$gudea;
-	h1 a {
-		background:url(../img/nsc-logo.png) 0 0 no-repeat;
-		width:300px;
-		height:146px;
-		background-size: 100% auto;
-	}
-	form {
-		label {
-			font-size:18px;
-		}
-		input#user_login,
-		input#user_pass {
-			@extend .member-form-input;
-		}
-		p.forgetmenot {
-			margin-top:15px;
-			label {
-				font-size:14px;
-			}
+	div#login {
+	
+	
+		width:85%;
+		@include media($desktop) {
+			width:50%;
 		}
 		
-		.pass-strength-result {
-			width:100%;
+		font-family:$gudea;
+		h1 a {
+			background:url(../img/nsc-logo.png) 0 0 no-repeat;
+			width:300px;
+			height:146px;
+			background-size: 100% auto;
 		}
-
-		p.submit input#wp-submit {
-			@extend .button;
-			height:auto;
-			box-shadow:none;
-			text-shadow:none;
+		form {
+			label {
+				font-size:18px;
+			}
+			input#user_login,
+			input#user_pass {
+				@extend .member-form-input;
+			}
+			p.forgetmenot {
+				margin-top:15px;
+				label {
+					font-size:14px;
+				}
+			}
+			
+			.pass-strength-result {
+				width:100%;
+			}
+	
+			p.submit input#wp-submit {
+				@extend .button;
+				height:auto;
+				box-shadow:none;
+				text-shadow:none;
+			}
 		}
-	}
-
-	p#backtoblog {
-		display:none;
+	
+		p#backtoblog {
+			display:none;
+		}
 	}
 }

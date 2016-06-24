@@ -77,6 +77,11 @@ h3 {
 		padding:30px 30px 0 30px;
 		color:$ns_navy2;
 		font-family: $noto-serif;
+		max-width:80%;
+		margin:auto;
+		@include media($desktop) {
+			max-width:50%;
+		}
 		
 		//height:100%;
 		@include display(flex);
@@ -101,6 +106,8 @@ h3 {
 			margin: 0 auto;
 			
 		}
+		
+		
 		
 		.login-form {
 			@extend .box-shadow;
@@ -139,6 +146,15 @@ h3 {
 					@extend .button;
 				}
 		
+			}
+			.login-error {
+				color:$ns_red1;
+			}
+			.login-error-field {
+				border-color:$ns_red1;
+				&:focus {
+					border-color:$gray5;
+				}
 			}
 		}
 		.login-form-inputs {
