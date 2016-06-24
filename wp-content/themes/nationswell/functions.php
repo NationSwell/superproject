@@ -1284,3 +1284,21 @@ function wp_password_change_notification($user) {
 	wp_mail($user->user_email, sprintf(__('[%s] Your username and password'), $blogname), $message);
 
 }*/
+
+function bp_update_user_wp_data() {
+	global $bp;
+    if(!empty($_REQUEST['profile-wp-edit-submit'])){
+    	$first_name =sanitize_text_field($_REQUEST['first_name']);
+		$last_name =sanitize_text_field($_REQUEST['last_name']);
+		$user_id = wp_update_user( array( 'ID' => $bp->displayed_user->id, 'first_name' => $first_name,'last_name' => $last_name,'description' => sanitize_text_field($_REQUEST['description']),'nickname'=>$first_name.' '.$last_name  ) );
+		if ( is_wp_error( $user_id ) ) {
+			$messagetype = 'error';
+			$message=_('Sorry, could not save your information');
+		} else {
+			$messagetype = 'success';
+			$message=_('Changes saved');
+		}
+		echo('<div id="message" class="bp-template-notice '.$messagetype.'">'.$message.'</div>');
+    }
+}
+add_filter( 'bp_before_profile_edit_content', 'bp_update_user_wp_data' );

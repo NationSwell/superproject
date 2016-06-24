@@ -30,10 +30,10 @@ do_action( 'bp_before_member_header' ); ?>
             </div><!-- #item-header-avatar -->
             <div id="item-meta-bio" class="member-meta-bio">
                 <h2 class="user-nicename"><?php echo get_user_meta( $bp->displayed_user->id, 'first_name', true )." ".get_user_meta( $bp->displayed_user->id, 'last_name', true );?></h2>
-                <p class="user-company">Title, Company</p>
+                <p class="user-company"><?php echo( bp_get_profile_field_data(array('field'=>'Title','user_id'=>$bp->displayed_user->id))); ?>, <?php echo( bp_get_profile_field_data(array('field'=>'Company','user_id'=>$bp->displayed_user->id))); ?> </p>
                 <div class="item-block-content">
                     <div class="item-subblock">
-                        <a href="<?php echo("#"); ?>" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
+                        <a href="<?php $url = wp_extract_urls( bp_get_profile_field_data(array('field'=>'Linkedin','user_id'=>$bp->displayed_user->id))); echo($url[0]); ?>" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
                         <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Email","buddypress");?>"><span class="item-block-button-email icon icon_envelope-empty"></span></a><?php }?>
                     </div>
                     <div class="item-subblock">
@@ -74,19 +74,38 @@ do_action( 'bp_before_member_header' ); ?>
 		} else {
 
 		?>
-	
-	<div id="item-meta-member-directory" class="callout-block">
-		<h3><span class="icon icon_people"></span><?php _e("Member Directory");?></h3>
-		<div class="item-block-content"><?php _e("Connect with other members!");?></div>
-		<a href="<?php echo($bp->root_domain."/".$bp->members->root_slug); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
-	</div><!-- #item-meta-member-directory -->
+	<?php if($bp->current_component=='profile' && $bp->current_action =='public'){?>
+		<div id="item-meta-member-profile" class="callout-block">
+			<div class="council-branch">
+				<h3><span class="icon icon_people"></span><?php _e("Council Branch");?></h3>
+				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->displayed_user->id));?></div>
+			</div>
+			<div class="Industry">
+				<h3><span class="icon icon_people"></span><?php _e("Industry");?></h3>
+				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Industry','user_id'=>$bp->displayed_user->id));?></div>
+			</div>
+			<div class="date-joined">
+				<h3><span class="icon icon_people"></span><?php _e("Date Joined");?></h3>
+				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Date joined','user_id'=>$bp->displayed_user->id));?></div>
+			</div>
+			<div class="member-status">
+				<h3><span class="icon icon_people"></span><?php _e("Member Status");?></h3>
+				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Member status','user_id'=>$bp->displayed_user->id));?></div>
+			</div>
+		</div><!-- #item-meta-member-directory -->
+	<?php }else{ ?>
+		<div id="item-meta-member-directory" class="callout-block">
+			<h3><span class="icon icon_people"></span><?php _e("Member Directory");?></h3>
+			<div class="item-block-content"><?php _e("Connect with other members!");?></div>
+			<a href="<?php echo($bp->root_domain."/".$bp->members->root_slug); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
+		</div><!-- #item-meta-member-directory -->
 
-	<div id="item-meta-get-in-touch" class="callout-block">
-		<h3><span class="icon icon_comments"></span><?php _e("Get in touch!");?></h3>
-		<div class="item-block-content"><?php _e("Refer a member, recommend a speaker, or tell us about your experience.");?></div>
-		<a href="<?php echo($bp->root_domain."/contact"); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
-	</div><!-- #item-meta-get-in-touch -->
-    
+		<div id="item-meta-get-in-touch" class="callout-block">
+			<h3><span class="icon icon_comments"></span><?php _e("Get in touch!");?></h3>
+			<div class="item-block-content"><?php _e("Refer a member, recommend a speaker, or tell us about your experience.");?></div>
+			<a href="<?php echo($bp->root_domain."/contact"); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
+		</div><!-- #item-meta-get-in-touch -->
+    <?php } ?>
     	<?php } ?>
 
 </div>
