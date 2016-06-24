@@ -30,7 +30,17 @@ do_action( 'bp_before_member_header' ); ?>
             </div><!-- #item-header-avatar -->
             <div id="item-meta-bio" class="member-meta-bio">
                 <h2 class="user-nicename"><?php echo get_user_meta( $bp->displayed_user->id, 'first_name', true )." ".get_user_meta( $bp->displayed_user->id, 'last_name', true );?></h2>
-                <p class="user-company"><?php echo( bp_get_profile_field_data(array('field'=>'Title','user_id'=>$bp->displayed_user->id))); ?>, <?php echo( bp_get_profile_field_data(array('field'=>'Company','user_id'=>$bp->displayed_user->id))); ?> </p>
+                <p class="user-company">
+				<?php 
+				$user_title = bp_get_profile_field_data(array('field'=>'Title','user_id'=>$bp->displayed_user->id));
+				$user_company = bp_get_profile_field_data(array('field'=>'Company','user_id'=>$bp->displayed_user->id));
+				if (!empty($user_title)) :
+                	echo $user_title .', ';
+                elseif (!empty($user_company)):
+					echo $user_company;
+				endif;
+				?>
+                </p>
                 <div class="item-block-content">
                     <div class="item-subblock">
                         <a href="<?php $url = wp_extract_urls( bp_get_profile_field_data(array('field'=>'Linkedin','user_id'=>$bp->displayed_user->id))); echo($url[0]); ?>" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>

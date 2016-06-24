@@ -48,6 +48,28 @@ h3 {
 	font-size:16px;
 }
 
+
+/* ELASTIC VIDEO EMBEDS */
+.elastic {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	
+	iframe,
+	object,  
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+/* //END */
+
+
 .bp-screen-reader-text {
 	position: absolute;
 	margin: -1px;
@@ -886,7 +908,12 @@ h3 {
 			@include outer-container;
 			
 			.activity-avatar {
-				@include span-columns(2);
+				text-align:center;
+				margin-bottom:20px;
+				@include media($medium) {
+					@include span-columns(2);
+					text-align:left;
+				}
 				
 				a {
 					position:relative;
@@ -909,11 +936,21 @@ h3 {
 				}
 			}
 			.activity-content {
-				@include span-columns(10);
-				margin-right:0;
+							
+				@include media($medium) {
+					@include span-columns(10);
+					margin-right:0;
+				}
 				.activity-header {
 					color: $gray1;
     				line-height: 220%;
+					a {
+						font-weight:$bold;
+						
+						&.activity-time-since {
+							display:none;
+						}
+					}
 				}
 				.activity-meta {
 					margin:15px 0 0 0;
