@@ -51,7 +51,7 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		$allow = apply_filters('allow_password_reset', true, $user_data->ID);
 	
 		if ( ! $allow ) {
-			$error_system = 'This action istn’s allowed at this time';
+			$error_system = 'This action isn’t allowed at this time';
 		} else if ( is_wp_error($allow) ) {
 			$error_system = 'Oh no! Something has gone horribly wrong (frown)';
 		}
@@ -65,17 +65,21 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 			$wpdb->update($wpdb->users, array('user_activation_key' => $key), array('user_login' => $user_login));
 		}
 		$message = sprintf(__('Hi %s,'), $first_name) . "\r\n\r\n";
-		$message .= __('Thank you for claiming your NationSwell Member account. There is just one more step before you can start exploring all the new features the member area has to offer. Please take a moment to set your password now.') . "\r\n\r\n";
+		$message .= __('Thank you for activating your NationSwell Council portal account! The final step is creating a unique password by using the link below:') . "\r\n\r\n";
 		//$message .= network_home_url( '/' ) . "\r\n\r\n";
 		//$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
-		$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
+		//$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
 		$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n\r\n";
 		
-		$message .= __('Note that this link will remain valid for the next 24 hours only. If this window has passed, please come back to our site and request a new link! If this was a mistake, just ignore this email and nothing will happen.') . "\r\n\r\n";
+		$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to '.network_home_url( '/nationswell-council/?register=true'). 'and request a new link.') . "\r\n\r\n";
 		
-		$message .= __('---') . "\r\n";
-		$message .= __('Regards,') . "\r\n";
-		$message .= __('All at NationSwell') . "\r\n";
+		$message .= __('Please reach out to our ops expert, Melissa, with any questions: Melissa@nationswell.com') . "\r\n\r\n";
+		
+		$message .= __('Enjoy!') . "\r\n\r\n";
+		
+		
+		$message .= __('Warmly,') . "\r\n";
+		$message .= __('The NationSwell Council Team') . "\r\n";
 		$message .= network_home_url( '/' );
 	
 		$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
@@ -226,8 +230,8 @@ endif;
                                     <?php    
 									} else {
 										//show login
-										echo '<h2>'.__( 'Member Login','example').'</h2>';
-										$bottom_message = __( 'Forgot your password?','buddypress') . '<a href="'.wp_lostpassword_url().'">'.__( 'Reset it here.','buddypress').'</a><br>';
+										echo '<h2>'.__( 'Member login','buddypress').'</h2>';
+										$bottom_message = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot your password?','buddypress') .'</a><br>';
 										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
 										if( function_exists('bp_is_active') ) {
 											$redirect_url = home_url();

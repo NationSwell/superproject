@@ -26,7 +26,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 			if ( $user->roles[0] == 'author' || $user->roles[0] == 'administrator' ) : ?>
             	<span class="icon icon_nationswell-flag"></span>
             <?php endif; ?>
-			<?php bp_activity_avatar('type=thumb&width=100&height=100'); ?>
+			<?php bp_activity_avatar('type=full&width=100&height=100'); ?>
 
 		</a>
 	</div>

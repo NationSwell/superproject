@@ -44,7 +44,11 @@ do_action( 'bp_before_member_header' ); ?>
                 </p>
                 <div class="item-block-content">
                     <div class="item-subblock">
-                        <a href="<?php $url = wp_extract_urls( bp_get_profile_field_data(array('field'=>'Linkedin','user_id'=>$bp->displayed_user->id))); echo($url[0]); ?>" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
+                        <?php 
+                        $url = wp_extract_urls( bp_get_profile_field_data(array('field'=>'Linkedin','user_id'=>$bp->displayed_user->id))); ?>						<?php 
+                        if (!empty($url[0])): ?>
+                        	<a href="" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
+                        <?php endif; ?>
                         <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Email","buddypress");?>"><span class="item-block-button-email icon icon_envelope-empty"></span></a><?php }?>
                     </div>
                     <div class="item-subblock">

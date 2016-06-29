@@ -175,7 +175,7 @@ if (function_exists("register_field_group")) {
                     'label' => 'RSVP',
                     'name' => 'rsvp_link',
                     'type' => 'text',
-                    'instructions' => 'E-mail address to send RSVP',
+                    'instructions' => 'Enter full URL or email address. For URLs be sure to include the "http://" prefix. For email addresses, add a "mailto:" prefix.',
                     'default_value' => '',
                     'placeholder' => '',
                     'prepend' => '',
@@ -188,7 +188,7 @@ if (function_exists("register_field_group")) {
                     'label' => 'Link type',
                     'name' => 'rsvp_link_type',
                     'type' => 'select',
-                    'instructions' => 'The type of link',
+                    'instructions' => '',
                     'default_value' => 'RSVP',
                     'choices' => array(
 						'RSVP'	=> 'RSVP',
