@@ -18,6 +18,7 @@ global $bp;
  */
 do_action( 'bp_before_member_header' ); ?>
 
+
 <div class="member-row">
      <div class="left-wrapper">
         <div class="member-info-card">
@@ -80,27 +81,61 @@ do_action( 'bp_before_member_header' ); ?>
 			require( 'settings/cloudred-general.php' );
 			//require( 'settings/cloudred-notifications.php' );
 			echo '</div>';
+		
+		
+		} else if( $bp->current_component=='profile' && $bp->current_action =='edit' ) {
+		//print the about form field
+		?>
+		
+		<div class="profile-callout-block">
+			<div class="profile-edit-form-bio">
+				<form action="" method="post" id="profile-wp-edit-form">
+					<div class="field_type_textarea">	
+						<label for="description"><?php _e('Something about you:','buddypress'); ?></label><span class="icon icon_information"></span>
+						<textarea id="description" name="description"><?php echo get_user_meta($bp->displayed_user->id, 'description', true );?></textarea>
+					</div>
+					<div class="submit">
+						<input type="submit" name="profile-wp-edit-submit" id="profile-wp-edit-submit" value="Save">
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		
+		<?php
 		//in all other cases, show the two callouts
 		} else {
 
 		?>
+	
+	
 	<?php if($bp->current_component=='profile' && $bp->current_action =='public'){?>
-		<div id="item-meta-member-profile" class="callout-block">
-			<div class="council-branch">
-				<h3><span class="icon icon_people"></span><?php _e("Council Branch");?></h3>
-				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->displayed_user->id));?></div>
-			</div>
-			<div class="Industry">
-				<h3><span class="icon icon_people"></span><?php _e("Industry");?></h3>
-				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Industry','user_id'=>$bp->displayed_user->id));?></div>
-			</div>
-			<div class="date-joined">
-				<h3><span class="icon icon_people"></span><?php _e("Date Joined");?></h3>
-				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Date joined','user_id'=>$bp->displayed_user->id));?></div>
-			</div>
-			<div class="member-status">
-				<h3><span class="icon icon_people"></span><?php _e("Member Status");?></h3>
-				<div class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Member status','user_id'=>$bp->displayed_user->id));?></div>
+		<div id="item-meta-member-profile" class="profile-callout-block">
+			
+			<div class="profile-info">
+				<div class="one">
+					<div class="council-branch border">
+						<p class="headline"><span class="icon icon_marker"></span><?php _e("Council Branch");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->displayed_user->id));?></span></p>
+					</div>
+					<div class="industry" style="padding-top:20px;">
+						<p class="headline"><span class="icon icon_briefcase"></span><?php _e("Industry");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Industry','user_id'=>$bp->displayed_user->id));?></span></p>
+						
+					</div>
+				</div>
+						
+				<div class="two">
+					<div class="date-joined border">
+						<p class="headline"><span class="icon icon_calendar"></span><?php _e("Date Joined");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Date joined','user_id'=>$bp->displayed_user->id));?></span></p>
+					</div>
+				
+					<?php
+					if (!empty(bp_get_profile_field_data(array('field'=>'Member status','user_id'=>$bp->displayed_user->id)))) : ?>
+					<div class="member-status" style="padding-top:20px;">
+						<p class="headline"><span class="icon icon_heart"></span><?php _e("Member Status");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Member status','user_id'=>$bp->displayed_user->id));?></span></p>
+						
+					</div>
+					<?php endif; ?>
+				</div>
 			</div>
 		</div><!-- #item-meta-member-directory -->
 	<?php }else{ ?>
