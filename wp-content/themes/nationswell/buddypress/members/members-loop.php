@@ -158,8 +158,10 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&type=alphabetical&incl
 
 <?php else: ?>
 
-	<div id="message" class="info">
+	<div id="message" class="info" style="text-align:center;">
+		<span class="icon icon_frown" style="font-size:100px;"></span>
 		<p><?php _e( "Sorry, no members were found.", 'buddypress' ); ?></p>
+		<a href="<?php echo $bp->root_domain . '/' . BP_MEMBERS_SLUG . '/' ?>" class="reset-search button">Reset search form</a>
 	</div>
 
 <?php endif; ?>

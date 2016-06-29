@@ -91,7 +91,7 @@ do_action( 'bp_before_member_header' ); ?>
 			<div class="profile-edit-form-bio">
 				<form action="" method="post" id="profile-wp-edit-form">
 					<div class="field_type_textarea">	
-						<label for="description"><?php _e('Something about you:','buddypress'); ?></label><span class="icon icon_information"></span>
+						<label for="description"><?php _e('Bio:','buddypress'); ?></label><span class="icon icon_information"></span>
 						<textarea id="description" name="description"><?php echo get_user_meta($bp->displayed_user->id, 'description', true );?></textarea>
 					</div>
 					<div class="submit">
@@ -141,7 +141,7 @@ do_action( 'bp_before_member_header' ); ?>
 	<?php }else{ ?>
 		<div id="item-meta-member-directory" class="callout-block">
 			<h3><span class="icon icon_people"></span><?php _e("Member Directory");?></h3>
-			<div class="item-block-content"><?php _e("Connect with other members!");?></div>
+			<div class="item-block-content"><?php _e("Connect directly with other leaders who are passionate about impact!");?></div>
 			<a href="<?php echo($bp->root_domain."/".$bp->members->root_slug); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
 		</div><!-- #item-meta-member-directory -->
 
