@@ -15,11 +15,26 @@
  */
 do_action( 'bp_before_members_loop' ); ?>
 
+<?php
+
+// to include only defined roles in the Buddypress Members LOOP
+function include_only_subscribers() {
+	$subscriber_array = array();
+	$subscribers = get_users(array('role' => 'subscriber', 'fields' => array('ID')));
+	foreach ( $subscribers as $user ) {
+		array_push($subscriber_array,esc_html( $user->ID));
+	}
+	$subscribers = implode(",",$subscriber_array);
+    return $subscribers;
+}
+?>
+
 <?php if ( bp_get_current_member_type() ) : ?>
 	<p class="current-member-type"><?php bp_current_member_type_message() ?></p>
 <?php endif; ?>
 
-<?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
+<?php
+if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&type=alphabetical&include=' . include_only_subscribers() ) ) : ?>
 
 	<div id="pag-top" class="pagination">
 
@@ -51,9 +66,9 @@ do_action( 'bp_before_members_loop' ); ?>
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<?php //only show subscribers,
 		
-		$user_id = bp_get_member_user_id(); 
-   		$user = new WP_User( $user_id );
-		if ( $user->roles[0] == 'subscriber' ) : ?>
+		//$user_id = bp_get_member_user_id(); 
+   		//$user = new WP_User( $user_id );
+		//if ( $user->roles[0] == 'subscriber' ) : ?>
 		
             <li <?php bp_member_class(); ?>>
                 <div class="item-avatar">
@@ -109,7 +124,7 @@ do_action( 'bp_before_members_loop' ); ?>
     
                 <div class="clear"></div>
             </li>
-		<?php endif; ?>
+		<?php //endif; ?>
 	<?php endwhile; ?>
 
 	</ul>
