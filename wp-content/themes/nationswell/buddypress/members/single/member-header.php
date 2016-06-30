@@ -36,7 +36,7 @@ do_action( 'bp_before_member_header' ); ?>
 				$user_title = bp_get_profile_field_data(array('field'=>'Title','user_id'=>$bp->displayed_user->id));
 				$user_company = bp_get_profile_field_data(array('field'=>'Company','user_id'=>$bp->displayed_user->id));
 				if (!empty($user_title)) :
-                	echo $user_title .', ';
+					echo $user_title .', '.$user_company;
                 elseif (!empty($user_company)):
 					echo $user_company;
 				endif;
@@ -45,9 +45,10 @@ do_action( 'bp_before_member_header' ); ?>
                 <div class="item-block-content">
                     <div class="item-subblock">
                         <?php 
-                        $url = wp_extract_urls( bp_get_profile_field_data(array('field'=>'Linkedin','user_id'=>$bp->displayed_user->id))); ?>						<?php 
+                        $url = wp_extract_urls( bp_get_profile_field_data(array('field'=>'Linkedin','user_id'=>$bp->displayed_user->id))); ?>
+                        <?php
                         if (!empty($url[0])): ?>
-                        	<a href="" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
+                        <a href="<?php echo $url[0]; ?>" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
                         <?php endif; ?>
                         <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Message","buddypress");?>"><span class="item-block-button-email icon icon_comments" style="font-size:22px"></span></a><?php }?>
                         
