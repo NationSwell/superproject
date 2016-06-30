@@ -50,7 +50,19 @@ global $bp;
 
 							<?php
 							$field_type = bp_xprofile_create_field_type( bp_get_the_profile_field_type() );
-							$field_type->edit_field_html();
+							switch( bp_get_the_profile_field_name() ){
+								case 'Date joined':
+								case 'Member Status':
+									echo("<div class='editfield'>");
+									echo "<label>".bp_get_the_profile_field_name()."</label>";
+									echo bp_get_the_profile_field_value();
+									echo("</div'>");
+								break;
+								default:
+									$field_type->edit_field_html();
+								break;
+							}
+
 
 							/**
 					 		* Fires before the display of visibility options for the field.
