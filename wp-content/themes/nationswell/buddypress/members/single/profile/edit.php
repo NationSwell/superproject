@@ -53,10 +53,10 @@ global $bp;
 							switch( bp_get_the_profile_field_name() ){
 								case 'Date joined':
 								case 'Member Status':
-									echo("<div class='editfield'>");
+									echo("<div class='editfield' style='margin-bottom:20px'>");
 									echo "<label>".bp_get_the_profile_field_name()."</label>";
 									echo bp_get_the_profile_field_value();
-									echo("</div'>");
+									echo("</div>");
 								break;
 								default:
 									$field_type->edit_field_html();

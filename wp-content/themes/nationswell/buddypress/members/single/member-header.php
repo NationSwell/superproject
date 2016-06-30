@@ -49,7 +49,15 @@ do_action( 'bp_before_member_header' ); ?>
                         if (!empty($url[0])): ?>
                         	<a href="" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
                         <?php endif; ?>
-                        <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Email","buddypress");?>"><span class="item-block-button-email icon icon_envelope-empty"></span></a><?php }?>
+                        <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Message","buddypress");?>"><span class="item-block-button-email icon icon_comments" style="font-size:22px"></span></a><?php }?>
+                        
+                        <?php 
+                        //if  user checked email ok to share in profile, print this icon
+                        //if( WRITE IF CASE HERE ): ?>
+                        <a href="mailto:" title="<?php _e("Send email","buddypress");?>"><span class="item-block-button-email icon icon_envelope-empty"></span></a>
+                        <?php //endif; ?>
+                        
+                        
                     </div>
                     <div class="item-subblock">
                         <ul>
@@ -96,7 +104,7 @@ do_action( 'bp_before_member_header' ); ?>
 				<form action="" method="post" id="profile-wp-edit-form">
 					<div class="field_type_textarea">	
 						<label for="description"><?php _e('Bio:','buddypress'); ?></label><span class="icon icon_information"></span>
-						<textarea id="description" name="description"><?php echo get_user_meta($bp->displayed_user->id, 'description', true );?></textarea>
+						<textarea id="description" name="description" style="height:150px"><?php echo get_user_meta($bp->displayed_user->id, 'description', true );?></textarea>
 					</div>
 					<div class="submit">
 						<input type="submit" name="profile-wp-edit-submit" id="profile-wp-edit-submit" value="Save">

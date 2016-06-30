@@ -1006,6 +1006,11 @@ h3 {
 		@include media($medium) {
 			width:48.82117%;
 		}
+		&:first-child {
+			@include media($large) {
+				margin-top:-105px;
+			}
+		}
 		
 	}
 	.profile-edit-form-bio {
