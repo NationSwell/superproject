@@ -105,7 +105,7 @@ do_action( 'bp_before_member_header' ); ?>
 				<form action="" method="post" id="profile-wp-edit-form">
 					<div class="field_type_textarea">	
 						<label for="description"><?php _e('Bio:','buddypress'); ?></label><span class="icon icon_information"></span>
-						<textarea id="description" name="description" style="height:150px"><?php echo get_user_meta($bp->displayed_user->id, 'description', true );?></textarea>
+						<textarea id="description" name="description"><?php echo get_user_meta($bp->displayed_user->id, 'description', true );?></textarea>
 					</div>
 					<div class="submit">
 						<input type="submit" name="profile-wp-edit-submit" id="profile-wp-edit-submit" value="Save">
