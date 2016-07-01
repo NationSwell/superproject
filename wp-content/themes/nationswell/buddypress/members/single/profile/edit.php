@@ -144,3 +144,26 @@ global $bp;
  * @since 1.1.0
  */
 do_action( 'bp_after_profile_edit_content' ); ?>
+<div class="container">
+	<div id="popup-counter-info" class="popup counter" style="display:none;">
+		<bold>NSC Bio Best Practices</bold>
+        <ul class="popup__list">
+            <li>> Less is more (4 – 6 sentences)</li>
+            <li>> A healthy mix of professional and personal! </li>
+        </ul>
+        <span>Bios are subject to editing.</span>
+	</div>
+</div>
+
+<script>
+jQuery( document ).ready(function() {
+	jQuery( ".my-account .profile-edit-form-bio .icon_information" ).hover(function() {
+		jQuery( '#popup-counter-info' ).show();
+	}, function() {
+		jQuery( '#popup-counter-info' ).hide();
+	  }
+	);
+
+	jQuery(".field_type_multiselectbox select").chosen();
+});
+</script>

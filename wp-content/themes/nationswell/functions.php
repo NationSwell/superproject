@@ -1331,3 +1331,17 @@ function slugify($text) {
 
   return $text;
 }
+
+function ns_custom_scripts(){
+	// Register and Enqueue a Stylesheet
+	// get_template_directory_uri will look up parent theme location
+	wp_register_style( 'chosen', get_template_directory_uri() . '/css/chosen.min.css');
+	wp_enqueue_style( 'chosen' );
+
+	// Register and Enqueue a Script
+	// get_stylesheet_directory_uri will look up child theme location
+	wp_register_script( 'chosen', get_stylesheet_directory_uri() . '/js/src/vendor/chosen.jquery.min.js', array('jquery'));
+	wp_enqueue_script( 'chosen' );
+}
+
+add_action('wp_enqueue_scripts', 'ns_custom_scripts');
