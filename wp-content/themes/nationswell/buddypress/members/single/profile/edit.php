@@ -147,23 +147,21 @@ global $bp;
  * @since 1.1.0
  */
 do_action( 'bp_after_profile_edit_content' ); ?>
-<div class="container">
-	<div id="popup-counter-info" class="popup counter" style="display:none;">
-		<bold>NSC Bio Best Practices</bold>
-        <ul class="popup__list">
-            <li>> Less is more (4 – 6 sentences)</li>
-            <li>> A healthy mix of professional and personal! </li>
-        </ul>
-        <span>Bios are subject to editing.</span>
-	</div>
+<div id="popup-bio-info" class="popup bio" style="display:none;">
+	<h3><?php _e('NSC Bio Best Practices','buddypress'); ?></h3>
+    <ul class="popup__list">
+    	<li><?php _e('Less is more (4 – 6 sentences)','buddypress'); ?></li>
+        <li><?php _e('A healthy mix of professional and personal!','buddypress'); ?></li>
+    </ul>
+    <span><?php _e('Bios are subject to editing.','buddypress'); ?></span>
 </div>
 
 <script>
 jQuery( document ).ready(function() {
 	jQuery( ".my-account .profile-edit-form-bio .icon_information" ).hover(function() {
-		jQuery( '#popup-counter-info' ).show();
+		jQuery( '#popup-bio-info' ).show();
 	}, function() {
-		jQuery( '#popup-counter-info' ).hide();
+		jQuery( '#popup-bio-info' ).hide();
 	  }
 	);
 
