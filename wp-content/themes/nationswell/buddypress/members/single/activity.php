@@ -5,7 +5,7 @@
  * @package BuddyPress
  * @subpackage bp-legacy
  */
-
+global $bp;
 ?>
 
 <!--<div class="item-list-tabs no-ajax" id="subnav" role="navigation">
@@ -69,9 +69,12 @@ do_action( 'bp_after_member_activity_post_form' );
 do_action( 'bp_before_member_activity_content' ); ?>
 
 <div class="activity">
-
-	<?php bp_get_template_part( 'activity/activity-loop' ) ?>
-
+	<?php
+		// Hack to retrieve all site activities on logged in users profile page
+		if(is_user_logged_in() && bp_is_my_profile() && $bp->displayed_user->id==$bp->loggedin_user->id){$bp->displayed_user->id =0; $reset_action=$bp->current_action; $bp->current_action=false; }
+		bp_get_template_part( 'activity/activity-loop' );
+		if(!empty($reset_action)){$bp->displayed_user->id=$bp->loggedin_user->id;$bp->current_action=$reset_action;}
+	?>
 </div><!-- .activity -->
 
 <?php
