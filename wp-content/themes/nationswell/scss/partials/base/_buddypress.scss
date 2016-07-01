@@ -956,14 +956,36 @@ h3 {
 				@extend .icon;
 				@extend .icon_star;
 				padding-bottom:10px;
+				position:relative;
 			    &:before {
 			    	color: $ns_blue1;
 			    	padding-right:10px;
 			    	vertical-align:middle;
-			    	font-size:120%;
+			    	font-size:24px;
+			    	position:absolute;
+			    	top:1px;
 			    }
+			    
+			    &.advancing-national-service {
+			    	@extend .icon_crest;
+			    	
+			    }
+			    &.bridging-the-opportunity-divide {
+			    	@extend .icon_bridge;
+			    }
+			    &.making-government-work {
+			    	@extend .icon_government;
+			    }
+			    &.preserving-our-environment {
+			    	@extend .icon_environment;
+			    }
+			    
 			    span {
 			    	font-family:$gudea;
+			    	font-size:18px;
+			    	display: inline-block;
+   					padding-left: 38px;
+   					padding-bottom: 10px;
 			    }
     		}
     	}

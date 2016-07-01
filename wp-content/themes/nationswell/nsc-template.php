@@ -32,7 +32,7 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		
 		//print_r($user_data);
 		
-		do_action('lostpassword_post');
+		//do_action('lostpassword_post');
 	
 	
 		if ( !$user_data ) {
@@ -46,7 +46,7 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		$first_name = $user_info->first_name;
 	
 		//do_action('retreive_password', $user_login);  // Misspelled and deprecated
-		do_action('retrieve_password', $user_login);
+		//do_action('retrieve_password', $user_login);
 	
 		$allow = apply_filters('allow_password_reset', true, $user_data->ID);
 	
@@ -55,14 +55,16 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		} else if ( is_wp_error($allow) ) {
 			$error_system = 'Oh no! Something has gone horribly wrong (frown)';
 		}
-	
+		
+		
 		$key = $wpdb->get_var($wpdb->prepare("SELECT user_activation_key FROM $wpdb->users WHERE user_login = %s", $user_login));
 		if ( empty($key) ) {
 			// Generate something random for a key...
 			$key = wp_generate_password(20, false);
-			do_action('retrieve_password_key', $user_login, $key);
+			$hash_key = wp_hash_password($key);
+			//do_action('retrieve_password_key', $user_login, $key);
 			// Now insert the new md5 key into the db
-			$wpdb->update($wpdb->users, array('user_activation_key' => $key), array('user_login' => $user_login));
+			$wpdb->update($wpdb->users, array('user_activation_key' => time() . ':' . $hash_key), array('user_login' => $user_login));
 		}
 		$message = sprintf(__('Hi %s,'), $first_name) . "\r\n\r\n";
 		$message .= __('Thank you for activating your NationSwell Council portal account! The final step is creating a unique password by using the link below:') . "\r\n\r\n";
@@ -71,7 +73,7 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		//$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
 		$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n\r\n";
 		
-		$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to '.network_home_url( '/nationswell-council/?register=true'). 'and request a new link.') . "\r\n\r\n";
+		$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to <'.network_home_url( "/nationswell-council/?register=true","register"). '> and request a new link.') . "\r\n\r\n";
 		
 		$message .= __('Please reach out to our ops expert, Melissa, with any questions: Melissa@nationswell.com') . "\r\n\r\n";
 		
