@@ -218,7 +218,7 @@ include_once('lib/classes/MailChimpFeed.php');
 include_once('lib/classes/EditorsPicksFeed.php');
 include_once('lib/classes/BIContributorsFeed.php');
 include_once('lib/classes/NSCEvent.php');
-
+include_once('lib/classes/NSCOpportunity.php');
 
 
 // Shortcodes
@@ -263,6 +263,7 @@ function prefix_remove_wp_seo_meta_box() {
     remove_meta_box( 'wpseo_meta', 'ns_bi_contributors', 'normal' );
     remove_meta_box( 'wpseo_meta', 'nsccontact', 'normal' );
     remove_meta_box( 'wpseo_meta', 'nscevent', 'normal' );
+    remove_meta_box( 'wpseo_meta', 'opportunity', 'normal' );
 }
 add_action( 'add_meta_boxes', 'prefix_remove_wp_seo_meta_box', 100000 );
 
@@ -1192,8 +1193,8 @@ function bp_custom_setup_nav() {
 	// Add events
     $args = array(
             'name' => __('Service Opportunities', 'buddypress'),
-            'slug' => 'service-opportunities',
-            'default_subnav_slug' => 'service-opportunities',
+            'slug' => 'opportunity',
+            'default_subnav_slug' => 'opportunity',
             'position' => 52,
             'screen_function' => 'bp_custom_service_opportunities_screen',
             'item_css_id' => 'user-service-opportunities'
