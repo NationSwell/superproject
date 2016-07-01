@@ -125,7 +125,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 				<form action="<?php bp_activity_comment_form_action(); ?>" method="post" id="ac-form-<?php bp_activity_id(); ?>" class="ac-form"<?php bp_activity_comment_form_nojs_display(); ?>>
 					<div class="ac-reply-avatar">
 						<?php //bp_loggedin_user_avatar( 'width=' . BP_AVATAR_THUMB_WIDTH . '&height=' . BP_AVATAR_THUMB_HEIGHT ); ?>
-                        <?php bp_loggedin_user_avatar( 'type=thumb&width=100&height=100' ); ?>
+                        <?php bp_loggedin_user_avatar( 'type=full&width=100&height=100' ); ?>
                     </div>
 					<div class="ac-reply-content">
 						<div class="ac-textarea">

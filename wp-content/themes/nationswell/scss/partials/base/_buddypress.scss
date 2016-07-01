@@ -1252,6 +1252,19 @@ h3 {
 			.activity-comments {
 				clear:both;
 				padding:15px 0;
+				
+				ul {
+					margin-bottom: 30px;
+					margin-left:17.05961%;
+					li {
+						@include clearfix;
+						.acomment-avatar {
+							float:left;
+							margin-right:30px;
+						}
+					}
+				}
+				
 				form {
 					@include outer-container;
 					.ac-reply-avatar {

@@ -1202,7 +1202,7 @@ function bp_custom_setup_nav() {
 
     bp_core_new_nav_item( $args );
     //Change name
-    $bp->bp_nav['activity']['name'] = 'Anouncements';
+    $bp->bp_nav['activity']['name'] = 'Announcements';
     $bp->bp_nav['messages']['name'] = 'Your Messages';
     //Remove links
     unset($bp->bp_nav['profile']);
