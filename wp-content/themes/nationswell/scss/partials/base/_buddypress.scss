@@ -1254,14 +1254,20 @@ h3 {
 				padding:15px 0;
 				
 				ul {
-					margin-bottom: 30px;
-					margin-left:17.05961%;
+					@include media($medium) {
+						margin-left:17.05961%;
+					}
 					li {
 						@include clearfix;
+						margin-bottom: 30px;
 						.acomment-avatar {
 							float:left;
 							margin-right:30px;
 						}
+						.activity-time-since,
+						.acomment-reply {
+							display:none;
+						}	
 					}
 				}
 				
