@@ -53,7 +53,6 @@ if(!empty( $_REQUEST )  && !empty( $_REQUEST['members_search_submit'] )){
 	if(!empty($whereSql2)){
 		$whereSql.= ' and '.implode(" or ",$whereSql2);
 	}
-	echo("SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where ".$whereSql);
 	global $wpdb;
 	$useridHash = $wpdb->get_col( "SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where ".$whereSql);
 	if(!empty($useridHash)){
