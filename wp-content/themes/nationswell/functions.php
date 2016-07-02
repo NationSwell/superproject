@@ -1404,3 +1404,16 @@ function ns_custom_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'ns_custom_scripts');
+
+// Hack to remove component name off profile pages
+function ns_bp_page_title($page_title){
+	if ( function_exists('is_buddypress') && is_buddypress() ) {
+		global $bp;
+		if($bp->current_component == 'profile'){
+			$blogname = get_bloginfo( 'name', 'display' );
+			return $bp->displayed_user->userdata->display_name.' | '.$blogname;
+		}
+	}
+	return $page_title;
+}
+add_filter( 'wp_title', 'ns_bp_page_title', 100, 3 );
