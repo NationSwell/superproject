@@ -1305,6 +1305,65 @@ function bp_update_user_wp_data() {
 add_filter( 'bp_before_profile_edit_content', 'bp_update_user_wp_data' );
 
 
+/**
+ * Output the Members directory search form.
+ */
+function bp_directory_members_custom_search_form() {
+	global $wpdb;
+
+	$profilefields = $wpdb->get_results( "SELECT id, name FROM ".$wpdb->prefix."bp_xprofile_fields where parent_id =0");
+	$fieldsHash = array();
+	foreach ( $profilefields as $profilefield ) {
+		$fieldsHash[$profilefield->name]=$profilefield->id;
+	}
+
+	$query_arg = bp_core_get_component_search_query_arg( 'members' );
+	if ( ! empty( $_REQUEST[ $query_arg ] ) ) {
+		$search_value = stripslashes( $_REQUEST[ $query_arg ] );
+	} else {
+		$search_value = __('Search by name, title, or company','buddypress');
+	}
+
+	$search_form_html = '<form action="" method="post" id="search-members-form"><label for="members_search"><input type="text" name="' . esc_attr( $query_arg ) . '" id="members_search" placeholder="'. esc_attr( $search_value ) .'" /></label>';
+	// Council branch
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Council Branch'], 'Location', 'council_branch');
+	// Industry
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Industry'], 'Industry', 'industry');
+	// NationSwell topics
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['NationSwell topics'], 'NationSwell topics', 'nationswell_topics');
+	// Interested in
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interested in'], 'Interested in', 'interested_in');
+
+	$search_form_html .='<input type="submit" id="members_search_submit" name="members_search_submit" value="' . __( 'Search', 'buddypress' ) . '" /></form>';
+	/**
+	 * Filters the Members component search form.
+	 *
+	 * @since 1.9.0
+	 *
+	 * @param string $search_form_html HTML markup for the member search form.
+	 */
+	echo apply_filters( 'bp_directory_members_search_form', $search_form_html );
+}
+
+function bp_create_custom_search_form_dropdowns($field_id, $field_name, $field_key){
+	global $wpdb;
+	$search_form_html = '';
+	if( !empty($field_id) ){
+		$search_form_html .='<label for="'.$field_key.'"><select id="'.$field_key.'" name="'.$field_key.'">';
+		$options = $wpdb->get_results( "SELECT id, name FROM ".$wpdb->prefix."bp_xprofile_fields where type='option' and parent_id =".$field_id." order by name");
+		$search_form_html .= '<option value="">'.__($field_name).'</option>';
+		foreach ( $options as $option ) {
+			if($_REQUEST[$field_key]==$option->name){
+				$search_form_html .= '<option value="'.$option->name.'" selected="selected">'.__($option->name).'</option>';
+			}else{
+				$search_form_html .= '<option value="'.$option->name.'">'.__($option->name).'</option>';
+			}
+		}
+		$search_form_html .='</select></label>';
+	}
+	return $search_form_html;
+}
+
 // MAKE SLUGS FROM TEXT
 function slugify($text) {
   // replace non letter or digits by -

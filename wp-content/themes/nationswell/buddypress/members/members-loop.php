@@ -27,6 +27,43 @@ function include_only_subscribers() {
 	$subscribers = implode(",",$subscriber_array);
     return $subscribers;
 }
+
+// Custom search filters, retrieve ids and include them in master search query per documentation
+if(!empty( $_REQUEST )  && !empty( $_REQUEST['members_search_submit'] )){
+	$user_ids = include_only_subscribers();
+
+	$whereSql=" user_id in (".$user_ids.")";
+
+	if(!empty($_REQUEST['council_branch'])){
+		$whereSql2[]="lower(value)='".esc_sql($_REQUEST['council_branch'])."'";
+	}
+
+	if(!empty($_REQUEST['industry'])){
+		$whereSql2[]="lower(value) ='".esc_sql($_REQUEST['industry'])."'";
+	}
+
+	if(!empty($_REQUEST['nationswell_topics'])){
+		$whereSql2[]="lower(value) like '%".esc_sql($_REQUEST['nationswell_topics'])."%'";
+	}
+
+	if(!empty($_REQUEST['interested_in'])){
+		$whereSql2[].="lower(value)='%".esc_sql($_REQUEST['interested_in'])."%'";
+	}
+
+	if(!empty($whereSql2)){
+		$whereSql.= ' and '.implode(" or ",$whereSql2);
+	}
+	echo("SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where ".$whereSql);
+	global $wpdb;
+	$useridHash = $wpdb->get_col( "SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where ".$whereSql);
+	if(!empty($useridHash)){
+		$user_ids = implode(",",$useridHash);
+	}else{
+		$user_ids = 0;
+	}
+}else{
+	$user_ids = include_only_subscribers();
+}
 ?>
 
 <?php if ( bp_get_current_member_type() ) : ?>
@@ -34,7 +71,7 @@ function include_only_subscribers() {
 <?php endif; ?>
 
 <?php
-if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&type=alphabetical&include=' . include_only_subscribers() ) ) : ?>
+if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&type=alphabetical&include=' . $user_ids ) ) : ?>
 
 	<div id="pag-top" class="pagination">
 

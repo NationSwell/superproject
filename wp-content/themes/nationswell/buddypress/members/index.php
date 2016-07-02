@@ -79,7 +79,7 @@ do_action( 'bp_before_directory_members_page' ); ?>
 						
 			</div>
 		</header>
-		<?php bp_directory_members_search_form(); ?>
+		<?php bp_directory_members_custom_search_form(); ?>
 		
 	</div><!-- #members-dir-search -->
 
