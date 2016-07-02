@@ -10,7 +10,6 @@
 
 <?php
 global $bp;
-
 /**
  * Fires before the display of a member's header.
  *
@@ -53,10 +52,10 @@ do_action( 'bp_before_member_header' ); ?>
                         <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Message","buddypress");?>"><span class="item-block-button-email icon icon_comments" style="font-size:22px"></span></a><?php }?>
                         
                         <?php 
-                        //if  user checked email ok to share in profile, print this icon
-                        //if( WRITE IF CASE HERE ): ?>
-                        <a href="mailto:" title="<?php _e("Send email","buddypress");?>"><span class="item-block-button-email icon icon_envelope-empty"></span></a>
-                        <?php //endif; ?>
+                        $display_email = bp_get_profile_field_data(array('field'=>'Display email','user_id'=>$bp->displayed_user->id));
+                        if( !empty($display_email) ): ?>
+                        <a href="mailto:<?php echo($bp->displayed_user->userdata->user_email);?>" title="<?php _e("Send email","buddypress");?>"><span class="item-block-button-email icon icon_envelope-empty"></span></a>
+                        <?php endif; ?>
                         
                         
                     </div>
