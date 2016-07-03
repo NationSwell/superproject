@@ -83,7 +83,7 @@ if (class_exists('TimberPost')) {
         }
 
         private static function queryUpcomingEvents() {
-            $upcomingEvents = get_posts( array(
+			$queryHash = array(
                 'numberposts' => -1,
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
@@ -97,12 +97,21 @@ if (class_exists('TimberPost')) {
                             'type'    => 'DATE'
                         )
                     )
-            ));
+            );
+            if(!empty($_REQUEST['location'])){
+				$queryHash['meta_query'][] = array(
+					'key' => 'council_branch_location',
+					'value' => esc_sql($_REQUEST['location']),
+					'compare' => '=',
+					'type'    => 'text'
+				);
+            }
+            $upcomingEvents = get_posts( $queryHash );
             return $upcomingEvents;
         }
 
         private static function queryPastEvents() {
-            $pastEvents = get_posts( array(
+            $queryHash = array(
                 'numberposts' => -1,
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
@@ -116,7 +125,16 @@ if (class_exists('TimberPost')) {
                         'type'    => 'DATE'
                     )
                 )
-            ));
+            );
+            if(!empty($_REQUEST['location'])){
+				$queryHash['meta_query'][] = array(
+					'key' => 'council_branch_location',
+					'value' => esc_sql($_REQUEST['location']),
+					'compare' => '=',
+					'type'    => 'text'
+				);
+            }
+            $pastEvents = get_posts($queryHash);
             return $pastEvents;
         }
 

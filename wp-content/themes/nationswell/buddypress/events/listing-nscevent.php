@@ -15,6 +15,37 @@ global $bp;
 		 } ?>
     </div>
     <div class="nsc-item-listing">
+		<div class="search-filter">
+			<?php
+			$field_key = "field_576b17d4f5dac";
+			$field = get_field_object($field_key);
+			if( $field ){
+				echo '<form method="get">';
+				echo '<label for="location">'.__('Displaying events in','buddypress').'</label>';
+				echo '<select id="location" name="location">';
+					echo '<option value="">' .__('All locations','buddypress'). '</option>';
+					foreach( $field['choices'] as $key => $value )
+					{
+						if($_REQUEST['location']== $value){
+							echo '<option value="' . $key . '" selected="selected">' . $value . '</option>';
+						}else{
+							echo '<option value="' . $key . '">' . $value . '</option>';
+						}
+					}
+				echo '</select>';
+				if(!empty($_REQUEST['past_events'])){
+					echo '<input type="hidden" name="past_events" value="true"/>';
+				}
+				echo '</form>';
+			}?>
+			<script>
+			jQuery(function() {
+				jQuery("#location").change(function() {
+					jQuery("form").submit();
+				});
+			});
+			</script>
+		</div>
 		<?php if(empty( $_REQUEST['past_events'])){
 			$upcoming_events = NSCEvent::getUpcomingEvents();
 		?>

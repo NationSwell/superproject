@@ -197,7 +197,20 @@ if (function_exists("register_field_group")) {
 					'allow_null' => 0,
                     'multiple' => 0,
                 ),
-
+                  array(
+                    'key' => 'field_576b17d4f5dac',
+                    'label' => 'Council branch location',
+                    'name' => 'council_branch_location',
+                    'type' => 'select',
+                    'instructions' => 'Select Council branch location.',
+                    'default_value' => array('--- Select branch location ---'=>'--- Select branch location ---'),
+                    'choices' => array(
+						'New York, NY'	=> 'New York, NY',
+						'Bay Area, CA' => 'Bay Area, CA'
+					),
+					'allow_null' => 0,
+                    'multiple' => 0,
+                ),
             ),
             'location' => array(
                 array(

@@ -28,14 +28,24 @@ if (class_exists('TimberPost')) {
             return $oppData;
         }
         private static function queryUpcomingOpportunities() {
-            $upcomingOpps = get_posts( array(
+             $queryHash = array(
                 'numberposts' => -1,
                 'fields' => 'ids',
                 'post_type' => 'opportunity',
                 'orderby' => 'meta_value_num',
                 'order' => 'DESC',
                 'post_status'	=> array('publish')
-            ));
+            );
+            if(!empty($_REQUEST['location'])){
+				$queryHash['meta_query'] = array();
+				$queryHash['meta_query'][] = array(
+					'key' => 'location',
+					'value' => esc_sql($_REQUEST['location']),
+					'compare' => '=',
+					'type'    => 'text'
+				);
+            }
+            $upcomingOpps = get_posts( $queryHash );
             return $upcomingOpps;
         }
     }

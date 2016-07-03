@@ -9,6 +9,33 @@ global $bp;
 			?>
     </div>
     <div class="nsc-item-listing">
+		<div class="search-filter">
+			<?php
+			$field_key = "field_576b17d4f5dad";
+			$field = get_field_object($field_key);
+			if( $field ){
+				echo '<form method="get">';
+				echo '<label for="location">'.__('Displaying opportunities in','buddypress').'</label>';
+				echo '<select id="location" name="location">';
+					echo '<option value="">' .__('All locations','buddypress'). '</option>';
+					foreach( $field['choices'] as $key => $value )
+					{
+						if($_REQUEST['location']== $value){
+							echo '<option value="' . $key . '" selected="selected">' . $value . '</option>';
+						}else{
+							echo '<option value="' . $key . '">' . $value . '</option>';
+						}
+					}
+				echo '</select></form>';
+			}?>
+			<script>
+			jQuery(function() {
+				jQuery("#location").change(function() {
+					jQuery("form").submit();
+				});
+			});
+			</script>
+		</div>
 		<div class="service-opportunities">
 		<?php $upcoming_opps = NSCOpportunity::getUpcomingOpportunities();?>
 		<?php foreach($upcoming_opps as $key=>$opp){ ?>
