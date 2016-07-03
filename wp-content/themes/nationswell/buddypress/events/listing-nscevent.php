@@ -22,7 +22,7 @@ global $bp;
 			if( $field ){
 				echo '<form method="get">';
 				echo '<label for="location">'.__('Displaying events in','buddypress').'</label>';
-				echo '<select id="location" name="location">';
+				echo '<select id="location" name="location" class="member-form-input member-form-select short">';
 					echo '<option value="">' .__('All locations','buddypress'). '</option>';
 					foreach( $field['choices'] as $key => $value )
 					{

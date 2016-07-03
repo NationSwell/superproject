@@ -42,7 +42,21 @@
    -ms-appearance: none;
    -o-appearance: none;
    appearance: none;
+   
+   &.short {
+   	width:33%;
+   }
 }
+.member-form-select {
+	background-image: url(../icons/arrow-down.svg);
+	background-color:$white;
+	background-repeat: no-repeat;
+	background-position:95%;
+	background-size: 30px;
+	min-width:130px;
+	padding-right:70px;
+}
+
 
 %btn--submit {
   background-color: $ns_red2;

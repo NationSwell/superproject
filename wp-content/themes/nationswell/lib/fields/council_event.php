@@ -205,8 +205,9 @@ if (function_exists("register_field_group")) {
                     'instructions' => 'Select Council branch location.',
                     'default_value' => array('--- Select branch location ---'=>'--- Select branch location ---'),
                     'choices' => array(
-						'New York, NY'	=> 'New York, NY',
-						'Bay Area, CA' => 'Bay Area, CA'
+						'DC'	=> 'DC',
+						'New York City'	=> 'New York City',
+						'San Francisco' => 'San Francisco'
 					),
 					'allow_null' => 0,
                     'multiple' => 0,

@@ -601,10 +601,8 @@ h3 {
 				left:20px;
 				select {
 					@extend .member-form-input;
+					@extend .member-form-select;
 					width:170px;
-					background-image: url(../icons/arrow-down.svg);
-					background-color:$white;
-					background-repeat: no-repeat;
 					background-position: 128px 7px;
 					background-size: 30px;
 					
@@ -1103,13 +1101,7 @@ h3 {
 			max-width: 100%;
 		}
 		select {
-			background-image: url(../icons/arrow-down.svg);
-			background-color:$white;
-			background-repeat: no-repeat;
-			background-position:95%;
-			background-size: 30px;
-			min-width:130px;
-			padding-right:70px;	
+			@extend .member-form-select;
 		}
 		select[multiple] {
 			background-image:none;
@@ -1318,6 +1310,32 @@ h3 {
 		
 		//events and opportunities
 		.nsc-item-listing {
+			
+			.search-filter {
+				margin-bottom:30px;
+				form {
+					@include media($large) {
+						margin-left:17.05961%;
+					}	
+					label {
+						font-weight:$bold;
+						color:$gray3;
+						padding-right:20px;
+						display:block;
+						@include media($medium) {
+							display:inline;
+						}
+					}
+					select {
+						width:100%;
+						margin-top:10px;
+						@include media($medium) {
+							width:33%;
+						}
+					}
+				}
+			}
+			
 			.item-info {
 				@include outer-container;
 				margin:30px 0;
@@ -1360,6 +1378,7 @@ h3 {
 						.location {
 							@include span-columns(4);
 							margin-left:20px;
+							line-height:20px;
 						
 							&:before {
 								position:absolute;
