@@ -158,13 +158,19 @@ do_action( 'bp_after_profile_edit_content' ); ?>
 
 <script>
 jQuery( document ).ready(function() {
+	// Hack to counteract removing of content on focus
+	jQuery( "#description" ).focus(function() {
+		jQuery( "#description" ).val(<?php echo "'". get_user_meta($bp->displayed_user->id, 'description', true )."'";?>);
+		jQuery( "#description" ).off('focus');
+	});
+	// Show/hide popup
 	jQuery( ".my-account .profile-edit-form-bio .icon_information" ).hover(function() {
 		jQuery( '#popup-bio-info' ).show();
 	}, function() {
 		jQuery( '#popup-bio-info' ).hide();
 	  }
 	);
-
+	// Use chosen.js for multi select inputs
 	jQuery(".field_type_multiselectbox select").chosen();
 });
 </script>
