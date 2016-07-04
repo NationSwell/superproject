@@ -1334,7 +1334,11 @@ function bp_directory_members_custom_search_form() {
 	// Interested in
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interested in'], 'Interested in', 'interested_in');
 
-	$search_form_html .='<input type="submit" id="members_search_submit" name="members_search_submit" value="' . __( 'Search', 'buddypress' ) . '" /></form>';
+	$search_form_html .='<input type="submit" id="members_search_submit" name="members_search_submit" value="' . __( 'Search', 'buddypress' ) . '" />';
+	$search_form_html .= '<a href="'.$bp->root_domain . '/' . BP_MEMBERS_SLUG .'" class="reset">';
+	$search_form_html .= __('Clear','buddypress');
+	$search_form_html .= '</a>';
+	$search_form_html .= '</form>';
 	/**
 	 * Filters the Members component search form.
 	 *

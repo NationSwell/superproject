@@ -51,6 +51,7 @@ h3 {
 
 .chosen-container {
 	margin:10px 0 20px 0;
+	width:100% !important;
 	&.chosen-container-multi {
 		.chosen-choices {
 			li.search-choice {
@@ -1127,6 +1128,11 @@ h3 {
 				font-weight:normal;
 			}
 		}
+		.field_birthday-month,
+		.field_birthday-day {
+			width:49%;
+			display:inline-block;
+		}
 	}
 	
 	
@@ -1453,9 +1459,35 @@ h3 {
 			@extend .member-form-input;
 			margin:30px 0;
 		}
+		#council_branch,
+		#industry,
+		#nationswell_topics,
+		#interested_in {
+			margin-bottom:10px;
+			@extend .member-form-input;
+			@extend .member-form-select;
+			@include media($medium) {
+				width:23%;
+				margin-right:2.66666%;
+				margin-bottom:0;
+			}
+		}
+		#interested_in {
+			margin-right:0;
+		}
 		input[type="submit"] {
 			@extend .button;
+			margin-top:30px;
+			display:inline-block;
 		}
+		.reset {
+			margin-left:20px;
+			border-left: 1px solid $gray4;
+			padding:10px 20px;
+			vertical-align:baseline;
+			display:inline-block;
+		}
+			
 	}
 	#members-directory-form {
 		@extend .box-margin;

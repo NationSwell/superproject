@@ -52,7 +52,7 @@ global $bp;
 							$field_type = bp_xprofile_create_field_type( bp_get_the_profile_field_type() );
 							switch( bp_get_the_profile_field_name() ){
 								case 'Date joined':
-								case 'Member Status':
+								case 'Member status':
 									if (!empty(bp_get_the_profile_field_value())):
 										echo("<div class='editfield' style='margin-bottom:20px'>");
 										echo "<label>".bp_get_the_profile_field_name()."</label>";
@@ -172,5 +172,12 @@ jQuery( document ).ready(function() {
 	);
 	// Use chosen.js for multi select inputs
 	jQuery(".field_type_multiselectbox select").chosen();
+	
+	jQuery(function($){
+   		$(".field_phone input").mask("(999) 999-9999");
+   		$(".field_zip input").mask("99999");
+   		field_zip
+	});
+	
 });
 </script>
