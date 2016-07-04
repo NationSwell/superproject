@@ -390,6 +390,14 @@ a.clear-value {
 	#object-nav {
 		@extend .box-margin;
 		
+		//responsive dropdown
+		.object-nav-select {
+			select {
+				@extend .member-form-input;
+				@extend .member-form-select;
+			}
+		}
+		
 		ul {
 			@extend .bot-left;
 			li {
@@ -400,9 +408,12 @@ a.clear-value {
 					background-color:$gray7;
 					color:$gray4;
 					font-weight:$bold;
-					font-size:20px;
 					letter-spacing:1px;
 					position:relative;
+					font-size:16px;
+					@include media($large) {
+						font-size:20px;
+					}
 					
 					span {
 						border-radius: 50%;
@@ -1327,7 +1338,7 @@ a.clear-value {
 	.intro-text {
 		font-family:$noto-serif;
 		color:$ns_navy2;
-		padding:30px 0;
+		padding-bottom:15px;
 		font-size:2rem;
 		p {
 			line-height:3rem;

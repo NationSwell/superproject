@@ -53,6 +53,7 @@ module.exports = function(grunt) {
                         'js/src/vendor/imagesloaded.pkgd.js',
                         'js/src/events.js',
                         'js/src/masked-input.js',
+                        'js/src/vendor/ReSmenu-master/jquery.resmenu.min.js',
                         'js/src/ga-tracking.js',
                         'js/src/main.js',
                     ]

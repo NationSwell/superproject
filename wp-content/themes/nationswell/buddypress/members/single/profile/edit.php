@@ -178,7 +178,6 @@ jQuery( document ).ready(function() {
 	jQuery(function($){
    		$(".field_phone input").mask("(999) 999-9999");
    		$(".field_zip input").mask("99999");
-   		field_zip
 	});
 	
 	//take the message, if any, and prepend it to beginning of page

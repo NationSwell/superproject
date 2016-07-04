@@ -1,5 +1,18 @@
 (function ($) {
 
+    //For member pages, convert the tabs to dopdown in mobile view
+	if ($('#object-nav').length) {
+		$('#object-nav ul').ReSmenu({
+    		menuClass:    'object-nav-select',   // Responsive menu class
+    		selectId:     'resmenu',          // select ID
+    		//textBefore:   false,               // Text to add before the mobile menu
+    		selectOption: false,               // First select option
+    		activeClass:  'current', // Active menu li class
+    		maxWidth: 768
+		});
+	}
+    
+    
     $('.link-wrapper').on("click", function () {
         console.log(this);
     });
