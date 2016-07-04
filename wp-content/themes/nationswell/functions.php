@@ -1296,10 +1296,10 @@ function bp_update_user_wp_data() {
 			$messagetype = 'error';
 			$message=_('Sorry, could not save your information');
 		} else {
-			$messagetype = 'success';
+			$messagetype = 'updated';
 			$message=_('Changes saved');
 		}
-		echo('<div id="message" class="bp-template-notice '.$messagetype.'">'.$message.'</div>');
+		echo('<div id="message" class="bp-template-notice '.$messagetype.'"><p>'.$message.'</p></div>');
     }
 }
 add_filter( 'bp_before_profile_edit_content', 'bp_update_user_wp_data' );
@@ -1326,13 +1326,13 @@ function bp_directory_members_custom_search_form() {
 
 	$search_form_html = '<form action="" method="post" id="search-members-form"><label for="members_search"><input type="text" name="' . esc_attr( $query_arg ) . '" id="members_search" placeholder="'. esc_attr( $search_value ) .'" /></label>';
 	// Council branch
-	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Council Branch'], 'Location', 'council_branch');
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Council branch'], 'Location', 'council_branch');
 	// Industry
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Industry'], 'Industry', 'industry');
 	// NationSwell topics
-	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['NationSwell topics'], 'NationSwell topics', 'nationswell_topics');
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interest areas'], 'Interest areas', 'nationswell_topics');
 	// Interested in
-	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interested in'], 'Interested in', 'interested_in');
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interested in connecting about'], 'Interested in connecting about', 'interested_in');
 
 	$search_form_html .='<input type="submit" id="members_search_submit" name="members_search_submit" value="' . __( 'Search', 'buddypress' ) . '" />';
 	$search_form_html .= '<a href="'.$bp->root_domain . '/' . BP_MEMBERS_SLUG .'" class="reset">';

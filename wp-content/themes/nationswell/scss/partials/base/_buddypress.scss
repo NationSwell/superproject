@@ -49,16 +49,22 @@ h3 {
 	font-size:16px;
 }
 
+a.clear-value {
+	display:none !important;
+}
 .chosen-container {
-	margin:10px 0 20px 0;
 	width:100% !important;
+	
 	&.chosen-container-multi {
 		.chosen-choices {
+			padding-bottom: 10px;
+			border: 1px solid $gray5;
+    		border-radius: 0.2rem;
 			li.search-choice {
 				font-size:18px;
 				line-height:20px;
 				padding: 3px 20px 3px 10px;
-				margin:5px 5px 1px 0;
+				margin:5px 5px 5px 0;
 				
 				.search-choice-close {
 					background: url('images/chosen-sprite.png') -42px 1px no-repeat;
@@ -1024,6 +1030,9 @@ h3 {
 			@include media($medium) {
 				@include span-columns(4);
 			}
+			.interests {
+				margin-top:30px;
+			}
 		}
 	
 	}
@@ -1032,6 +1041,7 @@ h3 {
 	
 	/****************************/
 	/****** PROFLE EDIT ************/
+	
 	.profile-edit-forms {
 		@extend .box-margin;
 		@include display(flex);
@@ -1089,6 +1099,10 @@ h3 {
 	.profile-edit-form-bio,
 	.profile-edit-form {
 	
+		.editfield {
+			margin-bottom:20px;
+		}
+		
 		h3 {
 			padding-bottom:20px;
 			color:$black;
@@ -1098,7 +1112,6 @@ h3 {
 		}
 		input[type="text"], select, textarea {
 			@extend .member-form-input;
-			margin-bottom:20px;
 			max-width: 100%;
 		}
 		select {
@@ -1124,9 +1137,22 @@ h3 {
 			label {
 				&:first-child {
 					font-weight:$bold;
+					margin-bottom:5px;
 				}
 				font-weight:normal;
 			}
+			input {
+				margin-right:10px;
+				vertical-align:top;
+			}
+		}
+		p.description {
+			font-style:italic;
+			font-weight:$bold;
+			color:$gray4;
+		}
+		.bp-required-field-label {
+			@extend .bp-screen-reader-text;
 		}
 		.field_birthday-month,
 		.field_birthday-day {
@@ -1296,7 +1322,8 @@ h3 {
 	
 	
 	
-	//EVENTS and OPPS
+	//*****************************************/
+	//******* EVENTS and OPPS *****************/
 	.intro-text {
 		font-family:$noto-serif;
 		color:$ns_navy2;
@@ -1412,7 +1439,8 @@ h3 {
 	}
 	
 	
-	//Avatar upload form
+	//**********************************/
+	//******* Avatar upload form *******/
 	.bp-avatar {
 		.drag-drop-buttons {
 			label {

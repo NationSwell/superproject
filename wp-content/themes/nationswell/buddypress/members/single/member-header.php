@@ -129,10 +129,13 @@ do_action( 'bp_before_member_header' ); ?>
 					<div class="council-branch border">
 						<p class="headline"><span class="icon icon_marker"></span><?php _e("Council Branch");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->displayed_user->id));?></span></p>
 					</div>
+					<?php
+					if (!empty(bp_get_profile_field_data(array('field'=>'Industry','user_id'=>$bp->displayed_user->id)))) : ?>
 					<div class="industry" style="padding-top:20px;">
 						<p class="headline"><span class="icon icon_briefcase"></span><?php _e("Industry");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Industry','user_id'=>$bp->displayed_user->id));?></span></p>
 						
 					</div>
+					<?php endif; ?>
 				</div>
 						
 				<div class="two">

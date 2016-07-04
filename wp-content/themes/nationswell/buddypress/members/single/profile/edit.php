@@ -171,13 +171,20 @@ jQuery( document ).ready(function() {
 	  }
 	);
 	// Use chosen.js for multi select inputs
-	jQuery(".field_type_multiselectbox select").chosen();
+	jQuery(".field_type_multiselectbox select").chosen({
+    	placeholder_text_multiple: "<?php _e('Select some options','buddypress'); ?>"
+    });
 	
 	jQuery(function($){
    		$(".field_phone input").mask("(999) 999-9999");
    		$(".field_zip input").mask("99999");
    		field_zip
 	});
+	
+	//take the message, if any, and prepend it to beginning of page
+	if (jQuery("#message").length) {
+		jQuery("#message").prependTo("#buddypress");
+	}
 	
 });
 </script>
