@@ -1305,6 +1305,66 @@ function bp_update_user_wp_data() {
 add_filter( 'bp_before_profile_edit_content', 'bp_update_user_wp_data' );
 
 
+//Remove the rich text editor from bio field
+function bio_remove_rich_text( $field_id = null ) {
+    if ( ! $field_id ) {
+        $field_id = xprofile_get_field_id_from_name( 'bio' );
+    }
+ 
+    $field = xprofile_get_field( $field_id );
+  
+    if ( $field ) {
+        $enabled = false;
+    }
+}
+add_filter( 'bp_xprofile_is_richtext_enabled_for_field', 'bio_remove_rich_text' );
+
+
+
+
+/**
+ * Sync xprofile buddypress field "bio" to standard WP "Biographical Info" field
+ */
+function xprofile_sync_bio_bp_to_wp( $user_id = 0 ) {
+	  // Bail if profile syncing is disabled.
+	  if ( bp_disable_profile_sync() ) {
+		return true;
+	  }
+	
+	  if ( empty( $user_id ) ) {
+		$user_id = bp_loggedin_user_id();
+	  }
+	
+	  if ( empty( $user_id ) ) {
+		return false;
+	  }
+	  $bio = bp_get_profile_field_data(array('field'=>'Bio',$user_id));
+	  
+	  bp_update_user_meta( $user_id, 'description', $bio ); 
+}
+
+add_action('xprofile_updated_profile','xprofile_sync_bio_bp_to_wp');
+
+
+/**
+ * Sync standard WP "Biographical Info" field to xprofile buddypress field "bio"
+ */
+function xprofile_sync_bio_wp_to_bp( $user_id ) {
+  //echo "STOP!";
+  //break;
+  // Bail if profile syncing is disabled.
+  if ( bp_disable_profile_sync() ) {
+    return false;
+  }
+  $user_info = get_userdata($user_id);
+  $bio = $user_info->description;
+  //usage: xprofile_set_field_data( $field, $user_id, $value, $is_required );
+  xprofile_set_field_data( 'bio', $user_id, $bio );
+}
+add_action('profile_update', 'xprofile_sync_bio_wp_to_bp',10,2);
+
+
+
 /**
  * Output the Members directory search form.
  */

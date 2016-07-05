@@ -312,6 +312,7 @@ a.clear-value {
 	
 	#message {
 		@extend .box-margin;
+		display:none;
 	}
 	
 	//TO DO: move colors to vars
@@ -1075,18 +1076,18 @@ a.clear-value {
 			width:48.82117%;
 		}
 		
-	}
-	.profile-edit-form-bio {
-		.field_type_textarea {
-			position:relative;
-			.icon {
-				position:absolute;
-				right:0;
-				top:0;
-				font-size:24px;
-				cursor:pointer;
+		&:last-child {
+			margin-top:30px;
+			
+			@include media($medium) {
+				margin-top:0;
+			}
+			
+			@include media($large) {
+				margin-top:-234px;
 			}
 		}
+		
 	}
 	
 	#popup-bio-info {
@@ -1144,7 +1145,6 @@ a.clear-value {
 			display:block;
 		}
 		.checkbox {
-			margin-bottom:20px;
 			label {
 				&:first-child {
 					font-weight:$bold;
@@ -1988,7 +1988,7 @@ a.bp-title-button {
 }
 #buddypress div#message.updated {
 	clear: both;
-	display: block;
+	/*display: block;*/
 }
 #buddypress div#message p,
 #sitewide-notice p {

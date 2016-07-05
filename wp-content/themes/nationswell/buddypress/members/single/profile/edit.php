@@ -180,10 +180,5 @@ jQuery( document ).ready(function() {
    		$(".field_zip input").mask("99999");
 	});
 	
-	//take the message, if any, and prepend it to beginning of page
-	if (jQuery("#message").length) {
-		jQuery("#message").prependTo("#buddypress");
-	}
-	
 });
 </script>
