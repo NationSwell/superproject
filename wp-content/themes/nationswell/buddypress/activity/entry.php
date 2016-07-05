@@ -18,8 +18,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 
 <li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
 	<div class="activity-avatar">
-		<?php  $profile_link = bp_get_activity_user_link().'profile';?>
-		<a href="<?php echo($profile_link); ?>">
+		<a href="<?php bp_activity_user_link(); ?>">
 			<?php
 			//if user is logged/admin or author, print a NS flag over avatar
 			$user_id = bp_get_activity_user_id(); 
