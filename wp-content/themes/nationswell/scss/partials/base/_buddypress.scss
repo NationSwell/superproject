@@ -82,6 +82,18 @@ a.clear-value {
 			
 }
 
+/* LOAD MORE AJAX BUTTON */
+.load-more {
+	text-align: center;
+	padding: 30px 0;
+	a {
+		color:$gray4 !important;
+    	font-size: 2rem;
+    	text-transform: uppercase;
+		font-weight:$bold;
+	}
+}
+/* //END */
 
 /* ELASTIC VIDEO EMBEDS */
 .elastic {
@@ -1188,6 +1200,7 @@ a.clear-value {
 			border-bottom:1px solid $gray5;
 			position:relative;
 			@include outer-container;
+			@include omega(2n);
 			
 			.activity-avatar {
 				text-align:center;

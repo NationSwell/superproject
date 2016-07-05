@@ -18,6 +18,11 @@
 		jQuery("#message").prependTo("#buddypress");
 	}
     
+	//wrap any iFrame code posted into the buddypress activity feeds
+	//with mobile responsive wrapper
+	if (jQuery("#buddypress iframe").length) {
+		jQuery( "#buddypress iframe" ).wrap( "<div class='elastic'></div>" );	
+	}
     
     $('.link-wrapper').on("click", function () {
         console.log(this);

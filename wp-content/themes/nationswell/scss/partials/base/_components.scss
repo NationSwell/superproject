@@ -670,6 +670,17 @@
     text-align: center;
     max-width: 32rem;
     margin: 0 auto 7.6rem auto;
+	
+	.widget_sp_image-description {
+		font-family:$montserrat;
+		font-size:1.8rem;
+		padding:15px 0;
+		color:$ns_navy2;
+		p {
+			display:block;
+			padding-bottom:15px;
+		}
+	}
   }
 
   .widget_text {
