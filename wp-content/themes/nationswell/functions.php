@@ -1481,3 +1481,21 @@ function ns_bp_page_title($page_title){
 	return $page_title;
 }
 add_filter( 'wp_title', 'ns_bp_page_title', 100, 3 );
+
+function ns_profile_link( $link ) {
+   if( !empty($link) ) {
+       $link .= 'profile';
+	}
+   return $link;
+}
+add_filter( 'bp_get_activity_user_link', 'ns_profile_link', 15, 1 );
+add_filter( 'bp_get_member_permalink', 'ns_profile_link', 15, 1 );
+
+function ns_core_get_userlink ($string, $user_id) {
+	$url = bp_core_get_user_domain($user_id);
+	$user_info = get_userdata($user_id);
+	$name = $user_info->display_name;
+	$link = '<a href ="' . $url . 'profile">' . $name . '</a>';
+	return $link;
+}
+add_filter ('bp_core_get_userlink', 'ns_core_get_userlink', 10, 2);

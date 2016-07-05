@@ -102,12 +102,12 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&type=alphabetical&incl
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li <?php bp_member_class(); ?>>
 			<div class="item-avatar">
-				<a href="<?php echo(bp_get_member_permalink().'profile'); ?>"><?php bp_member_avatar(); ?></a>
+				<a href="<?php echo(bp_get_member_permalink()); ?>"><?php bp_member_avatar(); ?></a>
 			</div>
 
 			<div class="item">
 				<div class="item-title">
-					<a href="<?php echo(bp_get_member_permalink().'profile');?>"><?php bp_member_name(); ?></a>
+					<a href="<?php echo(bp_get_member_permalink());?>"><?php bp_member_name(); ?></a>
 
 					<!--<?php if ( bp_get_member_latest_update() ) : ?>
 
