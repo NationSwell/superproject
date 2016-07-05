@@ -17,6 +17,9 @@ global $bp;
     <div class="nsc-item-listing">
 		<div class="search-filter">
 			<?php
+			if(empty($_REQUEST['location']) && empty($_REQUEST['search_events'])){
+				$_REQUEST['location'] = bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->loggedin_user->id));
+			}
 			$field_key = "field_576b17d4f5dac";
 			$field = get_field_object($field_key);
 			if( $field ){
@@ -33,6 +36,7 @@ global $bp;
 						}
 					}
 				echo '</select>';
+				echo '<input type="hidden" name="search_events" value="true"/>';
 				if(!empty($_REQUEST['past_events'])){
 					echo '<input type="hidden" name="past_events" value="true"/>';
 				}
