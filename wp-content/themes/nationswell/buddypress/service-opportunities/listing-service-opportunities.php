@@ -11,6 +11,9 @@ global $bp;
     <div class="nsc-item-listing">
 		<div class="search-filter">
 			<?php
+			if(empty($_REQUEST['location']) && empty($_REQUEST['search_opportunities'])){
+				$_REQUEST['location'] = bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->loggedin_user->id));
+			}
 			$field_key = "field_576b17d4f5dad";
 			$field = get_field_object($field_key);
 			if( $field ){
@@ -26,7 +29,7 @@ global $bp;
 							echo '<option value="' . $key . '">' . $value . '</option>';
 						}
 					}
-				echo '</select></form>';
+				echo '</select><input type="hidden" name="search_opportunities" value="true"/></form>';
 			}?>
 			<script>
 			jQuery(function() {
