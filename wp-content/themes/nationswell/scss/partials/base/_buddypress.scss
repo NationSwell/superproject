@@ -1196,7 +1196,7 @@ a.clear-value {
 		@extend .box-margin;
 		
 		.activity-item {
-			padding:15px 0;
+			padding:50px 0 15px 0;
 			border-bottom:1px solid $gray5;
 			position:relative;
 			@include outer-container;
@@ -1343,7 +1343,7 @@ a.clear-value {
 			
 			
 			.activity-inner {
-				margin:10px 10px 5px 0;
+				margin:10px 0 5px 0;
 			}
 			
 		}

@@ -6079,7 +6079,7 @@ a.clear-value {
 }
 /* line 1198, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item {
-  padding: 15px 0;
+  padding: 50px 0 15px 0;
   border-bottom: 1px solid #dbdbdb;
   position: relative;
   max-width: 68em;
@@ -6294,7 +6294,7 @@ a.clear-value {
 }
 /* line 1345, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-inner {
-  margin: 10px 10px 5px 0;
+  margin: 10px 0 5px 0;
 }
 /* line 1356, ../scss/partials/base/_buddypress.scss */
 #buddypress .intro-text {

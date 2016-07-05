@@ -175,10 +175,14 @@ jQuery( document ).ready(function() {
     	placeholder_text_multiple: "<?php _e('Select some options','buddypress'); ?>"
     });
 	
-	jQuery(function($){
-   		$(".field_phone input").mask("(999) 999-9999");
-   		$(".field_zip input").mask("99999");
+	// Format the phone number as the user types it
+	jQuery(".field_phone input").keyup(function(event) {
+       var charCode = (event.which) ? event.which : event.keyCode;
+       jQuery(".field_phone input").val(phoneFormat(jQuery(".field_phone input").val()));
 	});
+
+	// We need to manually format the phone number on page load
+	jQuery(".field_phone input").val(phoneFormat(jQuery(".field_phone input").val()));
 	
 	//append "optional" to all fields that are NOT required
 	jQuery(".optional-field label").append(" <span class='optional'>optional</span>");
