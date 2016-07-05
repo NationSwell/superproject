@@ -41,44 +41,51 @@ global $bp;
 		</div>
 		<div class="service-opportunities">
 		<?php $upcoming_opps = NSCOpportunity::getUpcomingOpportunities();?>
-		<?php foreach($upcoming_opps as $key=>$opp){ ?>
-                <div class="item-info">
-                    <div class="item-icon">
-                        <span class="icon icon_opportunity"></span>
-                    </div>
-                    <div class="item-details">
-                        <div class="description">
-                        	<p><a href="<?php echo($opp['opportunity_url']); ?>" class="item-title"><?php echo($opp['name']); ?></a></p>
-                        	<p class="event-description"><?php echo(esc_html($opp['description']));?></p>
-                        </div>
-                        <div class="date-location">
-                        	<div class="date-time icon icon_calendar">
-                               <span>
-                               <?php echo('<div style="font-weight: bold;">'.$opp['opportunity_type'].'</div>'); ?>
-                               <?php if($opp['opportunity_type']=='One-time'){echo($opp['fulldate']); if(!empty($opp['time'])){echo(' at '.$opp['time']);}  echo('</br>');} ?>
-									<?php if(!empty($opp['application_deadline'])){
-										_e('Application deadline:','buddypress');
-										echo('</br>');
-										echo($opp['application_deadline']);
-									}
-                                    ?>
-                                </span>
-                            </div>
-                            <div class="location icon icon_marker">
-                            <span><?php echo($opp['location']); ?></span>
-                            </div>
-                       	</div>
-                        <div class="rsvp">
-                        	<?php
-								$rsvp_link = $opp['opportunity_url'];
-								$rsvp_label = "Get Involved";
-							?>
-                        	<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_label,'buddypress'); ?></a>
-                        </div>
-                    </div>
+		<?php 
+		if (!empty($upcoming_opps)):
+			foreach($upcoming_opps as $key=>$opp){ ?>
+					<div class="item-info">
+						<div class="item-icon">
+							<span class="icon icon_opportunity"></span>
+						</div>
+						<div class="item-details">
+							<div class="description">
+								<p><a href="<?php echo($opp['opportunity_url']); ?>" class="item-title"><?php echo($opp['name']); ?></a></p>
+								<p class="event-description"><?php echo(esc_html($opp['description']));?></p>
+							</div>
+							<div class="date-location">
+								<div class="date-time icon icon_calendar">
+								   <span>
+								   <?php echo('<div style="font-weight: bold;">'.$opp['opportunity_type'].'</div>'); ?>
+								   <?php if($opp['opportunity_type']=='One-time'){echo($opp['fulldate']); if(!empty($opp['time'])){echo(' at '.$opp['time']);}  echo('</br>');} ?>
+										<?php if(!empty($opp['application_deadline'])){
+											_e('Application deadline:','buddypress');
+											echo('</br>');
+											echo($opp['application_deadline']);
+										}
+										?>
+									</span>
+								</div>
+								<div class="location icon icon_marker">
+								<span><?php echo($opp['location']); ?></span>
+								</div>
+							</div>
+							<div class="rsvp">
+								<?php
+									$rsvp_link = $opp['opportunity_url'];
+									$rsvp_label = "Get Involved";
+								?>
+								<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_label,'buddypress'); ?></a>
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+				<?php } ?>
+            <?php else: ?>
+            	<div class="no-items">
+                    <p><?php _e('There are no service opportunities','buddypress'); ?></p>
                 </div>
-                <div class="divider"></div>
-            <?php } ?>
+            <?php endif; ?>
         </div>
    </div>
 </div>

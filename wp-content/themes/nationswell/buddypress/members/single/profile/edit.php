@@ -180,10 +180,8 @@ jQuery( document ).ready(function() {
    		$(".field_zip input").mask("99999");
 	});
 	
-	//take the message, if any, and prepend it to beginning of page
-	if (jQuery("#message").length) {
-		jQuery("#message").prependTo("#buddypress");
-	}
+	//append "optional" to all fields that are NOT required
+	jQuery(".optional-field label").append(" <span class='optional'>optional</span>");
 	
 });
 </script>

@@ -82,6 +82,18 @@ a.clear-value {
 			
 }
 
+/* LOAD MORE AJAX BUTTON */
+.load-more {
+	text-align: center;
+	padding: 30px 0;
+	a {
+		color:$gray4 !important;
+    	font-size: 2rem;
+    	text-transform: uppercase;
+		font-weight:$bold;
+	}
+}
+/* //END */
 
 /* ELASTIC VIDEO EMBEDS */
 .elastic {
@@ -312,6 +324,7 @@ a.clear-value {
 	
 	#message {
 		@extend .box-margin;
+		display:none;
 	}
 	
 	//TO DO: move colors to vars
@@ -1075,18 +1088,18 @@ a.clear-value {
 			width:48.82117%;
 		}
 		
-	}
-	.profile-edit-form-bio {
-		.field_type_textarea {
-			position:relative;
-			.icon {
-				position:absolute;
-				right:0;
-				top:0;
-				font-size:24px;
-				cursor:pointer;
+		&:last-child {
+			margin-top:30px;
+			
+			@include media($medium) {
+				margin-top:0;
+			}
+			
+			@include media($large) {
+				margin-top:-234px;
 			}
 		}
+		
 	}
 	
 	#popup-bio-info {
@@ -1144,11 +1157,15 @@ a.clear-value {
 			display:block;
 		}
 		.checkbox {
-			margin-bottom:20px;
 			label {
 				&:first-child {
 					font-weight:$bold;
 					margin-bottom:5px;
+				}
+				&:last-child {
+					span {
+						display:none;
+					}
 				}
 				font-weight:normal;
 			}
@@ -1157,7 +1174,7 @@ a.clear-value {
 				vertical-align:top;
 			}
 		}
-		p.description {
+		p.description, span.optional {
 			font-style:italic;
 			font-weight:$bold;
 			color:$gray4;
@@ -1183,6 +1200,7 @@ a.clear-value {
 			border-bottom:1px solid $gray5;
 			position:relative;
 			@include outer-container;
+			@include omega(2n);
 			
 			.activity-avatar {
 				text-align:center;
@@ -1444,6 +1462,10 @@ a.clear-value {
 						}
 					}
 				}
+			}
+			.no-items {
+				text-align:center;
+				padding:30px 0; 
 			}
 		}
 		
@@ -1988,7 +2010,7 @@ a.bp-title-button {
 }
 #buddypress div#message.updated {
 	clear: both;
-	display: block;
+	/*display: block;*/
 }
 #buddypress div#message p,
 #sitewide-notice p {

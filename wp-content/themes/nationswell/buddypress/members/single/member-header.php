@@ -15,6 +15,8 @@ global $bp;
  *
  * @since 1.2.0
  */
+ 
+ 
 do_action( 'bp_before_member_header' ); ?>
 
 
@@ -99,7 +101,7 @@ do_action( 'bp_before_member_header' ); ?>
 		//print the about form field
 		?>
 		
-		<div class="profile-callout-block">
+		<!--<div class="profile-callout-block">
 			<div class="profile-edit-form-bio">
 				<form action="" method="post" id="profile-wp-edit-form">
 					<div class="field_type_textarea">	
@@ -111,7 +113,7 @@ do_action( 'bp_before_member_header' ); ?>
 					</div>
 				</form>
 			</div>
-		</div>
+		</div>-->
 		
 		
 		<?php

@@ -55,38 +55,45 @@ global $bp;
 		?>
         <!-- upcoming events -->
 		<div class="upcoming-events">
-        	<?php foreach($upcoming_events as $key=>$event){ ?>
-                <div class="item-info">
-                    <div class="item-icon">
-                        <span class="icon icon_calendar"></span>
-                    </div>
-                    <div class="item-details">
-                        <div class="description">
-                        	<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
-                        	<p class="event-description"><?php echo(esc_html($event['description']));?></p>
-                        </div>
-                        <div class="date-location">
-                        	<div class="date-time icon icon_calendar">
-                               <span>
-									<?php echo($event['fulldate']); ?><br>
-                                    <?php echo($event['time']); ?>
-                                </span>
-                            </div>
-                            <div class="location icon icon_marker">
-                            	<span><?php echo($event['location']); ?></span>
-                            </div>
-                       	</div>
-                        <div class="rsvp">
-                        	<?php
-								$rsvp_link = $event['rsvp_link'];
-								$rsvp_link_type = $event['rsvp_link_type'];
-							?>
-							<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_link_type,'buddypress'); ?></a>
-                        </div>
-                    </div>
+        	<?php if (!empty($upcoming_events)):
+			
+				foreach($upcoming_events as $key=>$event){ ?>
+					<div class="item-info">
+						<div class="item-icon">
+							<span class="icon icon_calendar"></span>
+						</div>
+						<div class="item-details">
+							<div class="description">
+								<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
+								<p class="event-description"><?php echo(esc_html($event['description']));?></p>
+							</div>
+							<div class="date-location">
+								<div class="date-time icon icon_calendar">
+								   <span>
+										<?php echo($event['fulldate']); ?><br>
+										<?php echo($event['time']); ?>
+									</span>
+								</div>
+								<div class="location icon icon_marker">
+									<span><?php echo($event['location']); ?></span>
+								</div>
+							</div>
+							<div class="rsvp">
+								<?php
+									$rsvp_link = $event['rsvp_link'];
+									$rsvp_link_type = $event['rsvp_link_type'];
+								?>
+								<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_link_type,'buddypress'); ?></a>
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+				<?php } ?>
+            <?php else: ?>
+                <div class="no-items">
+                    <p><?php _e('There are no upcoming events','buddypress'); ?></p>
                 </div>
-                <div class="divider"></div>
-            <?php } ?>
+             <?php endif; ?>
         </div>
         <!-- //END -->
         <?php }else{
@@ -94,31 +101,38 @@ global $bp;
         ?>
         <!-- PAST events -->
         <div class="upcoming-events">
-        	<?php unset($event); foreach($past_events as $key=>$event){ ?>
-                <div class="item-info">
-                    <div class="item-icon">
-                        <span class="icon icon_calendar"></span>
-                    </div>
-                    <div class="item-details">
-                        <div class="description">
-                        	<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
-                        	<p class="event-description"><?php echo(esc_html($event['description']));?></p>
-                        </div>
-                        <div class="date-location">
-                        	<div class="date-time icon icon_calendar">
-                               <span>
-									<?php echo($event['fulldate']); ?><br>
-                                    <?php echo($event['time']); ?>
-                                </span>
-                            </div>
-                            <div class="location icon icon_marker">
-                            	<span><?php echo($event['location']); ?></span>
-                            </div>
-                       	</div>
-                    </div>
+        	<?php unset($event); 
+			if (!empty($past_events)):
+				foreach($past_events as $key=>$event){ ?>
+					<div class="item-info">
+						<div class="item-icon">
+							<span class="icon icon_calendar"></span>
+						</div>
+						<div class="item-details">
+							<div class="description">
+								<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
+								<p class="event-description"><?php echo(esc_html($event['description']));?></p>
+							</div>
+							<div class="date-location">
+								<div class="date-time icon icon_calendar">
+								   <span>
+										<?php echo($event['fulldate']); ?><br>
+										<?php echo($event['time']); ?>
+									</span>
+								</div>
+								<div class="location icon icon_marker">
+									<span><?php echo($event['location']); ?></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+				<?php } ?>
+            <?php else: ?>
+            	 <div class="no-items">
+                    <p><?php _e('There are no past events','buddypress'); ?></p>
                 </div>
-                <div class="divider"></div>
-            <?php } ?>
+            <?php endif; ?>
         </div>
          <!-- //END -->
          <?php } ?>

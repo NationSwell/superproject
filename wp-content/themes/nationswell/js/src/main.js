@@ -11,7 +11,18 @@
     		maxWidth: 768
 		});
 	}
+	
+	//take the message, if any, and prepend it to beginning of page
+	if (jQuery("#message").length) {
+		jQuery("#message").fadeIn();
+		jQuery("#message").prependTo("#buddypress");
+	}
     
+	//wrap any iFrame code posted into the buddypress activity feeds
+	//with mobile responsive wrapper
+	if (jQuery("#buddypress iframe").length) {
+		jQuery( "#buddypress iframe" ).wrap( "<div class='elastic'></div>" );	
+	}
     
     $('.link-wrapper').on("click", function () {
         console.log(this);
@@ -206,9 +217,10 @@
         });
 
         // clearing textarea placeholder text
-        $body.on('focus.textareaClear', 'textarea', function () {
-            $(this).empty().unbind('.textareaClear');
-        });
+		//this clears ALL text, not just placeholder, not the best idea.
+        //$body.on('focus.textareaClear', 'textarea', function () {
+            //$(this).empty().unbind('.textareaClear');
+        //});
 
         // Initialize Twitter API
         window.twttr = (function (d, s, id) {
