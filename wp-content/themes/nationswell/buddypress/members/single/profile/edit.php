@@ -180,5 +180,8 @@ jQuery( document ).ready(function() {
    		$(".field_zip input").mask("99999");
 	});
 	
+	//append "optional" to all fields that are NOT required
+	jQuery(".optional-field label").append(" <span class='optional'>optional</span>");
+	
 });
 </script>

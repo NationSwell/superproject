@@ -1150,6 +1150,11 @@ a.clear-value {
 					font-weight:$bold;
 					margin-bottom:5px;
 				}
+				&:last-child {
+					span {
+						display:none;
+					}
+				}
 				font-weight:normal;
 			}
 			input {
@@ -1157,7 +1162,7 @@ a.clear-value {
 				vertical-align:top;
 			}
 		}
-		p.description {
+		p.description, span.optional {
 			font-style:italic;
 			font-weight:$bold;
 			color:$gray4;
