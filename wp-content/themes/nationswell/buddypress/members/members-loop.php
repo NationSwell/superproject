@@ -47,7 +47,7 @@ if(!empty( $_REQUEST )  && !empty( $_REQUEST['members_search_submit'] )){
 	}
 
 	if(!empty($_REQUEST['interested_in'])){
-		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where lower(value)='%".esc_sql($_REQUEST['interested_in'])."%')";
+		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where lower(value) like '%".esc_sql($_REQUEST['interested_in'])."%')";
 	}
 
 	if(!empty($whereSql2)){
