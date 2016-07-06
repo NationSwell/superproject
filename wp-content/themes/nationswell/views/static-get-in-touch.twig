@@ -1,0 +1,18 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="static__container">
+        <div class="container container--flex">
+            <main class="static__main-column" role="main">
+                <header>
+                    <h1 class="hd-j static__hed">{{ post.title }}</h1>
+                </header>
+
+                <div class="static__content">
+                    {{post.content}}
+                </div>
+            </main>
+        </div>
+    </div>
+
+{% endblock %}

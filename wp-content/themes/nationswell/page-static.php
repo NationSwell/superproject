@@ -33,5 +33,5 @@ $context['summit_breakout'] = do_shortcode( '[gravityform id="5" title="false" d
 if (post_password_required($post->ID)){
     Timber::render('static-password.twig', $context);
 } else {
-    Timber::render(array('static.twig'), $context);
+    Timber::render(array('static-' . $post->post_name . '.twig', 'static.twig'), $context);
 }
