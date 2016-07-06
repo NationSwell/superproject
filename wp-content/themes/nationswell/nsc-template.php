@@ -5,6 +5,7 @@ Cloudred notes: no idea why this page exists and why it was created this way, cl
 */
 global $bp;
 global $wpdb, $current_site;
+
 //bad email entered
 $error_email = '';
 //general system error
@@ -12,6 +13,7 @@ $error_system = '';
 //no such user exists
 $error_user = '';
 $success = false;
+
 
 //figure out if the form has been submitted
 if (isset($_POST['action']) && $_POST['action']=='reset') :
@@ -173,14 +175,21 @@ endif;
                                     <?php   
 									$lostpassword = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot password?','buddypress').'</a>';
                                     
-									if( $_GET["register"] ) {
+									//if user is already logged in
+									if (is_user_logged_in()) {
+										echo '<h2>'.__( 'You’re logged in!','buddypress').'</h2>';
+										$bottom_message = '<a href="'.wp_logout_url(get_permalink()).'">'.__( '&#8592; Log out','buddypress').'</a>';
+										echo __('Learn about and connect with fellow members, explore all of the Council’s offerings, and engage with the community!','buddypress');
+										echo '<p style="margin-top:30px;"><a href=#"" class="btn red"><span>'.__('Go!','buddypress').'</span></a></p>';
+									} else if( $_GET["register"] ) {
 										//show register form
-										echo '<h2>'.__( 'Register','example').'</h2>';
+										echo '<h2>'.__( 'Register','buddypress').'</h2>';
 										 ?>
 										
                                         <?php if ($success) : ?>
                                         	<?php $bottom_message = '<a href="'.get_permalink().'">'.__( '&#8592; Back to member login','buddypress').'</a>'; ?>
                                         	<p style="margin-bottom:100px"><?php _e('A match was made with the information you provided. Please check your email account for a message from us.','buddypress'); ?></p>
+                                            
                                             
                                             <?php else : ?>
                                         	<?php $bottom_message = __( 'Enter the primary email address we have on file for you.','buddypress'); ?>
