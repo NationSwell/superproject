@@ -180,7 +180,7 @@ endif;
 										echo '<h2>'.__( 'You’re logged in!','buddypress').'</h2>';
 										$bottom_message = '<a href="'.wp_logout_url(get_permalink()).'">'.__( '&#8592; Log out','buddypress').'</a>';
 										echo __('Learn about and connect with fellow members, explore all of the Council’s offerings, and engage with the community!','buddypress');
-										echo '<p style="margin-top:30px;"><a href=#"" class="btn red"><span>'.__('Go!','buddypress').'</span></a></p>';
+										echo '<p style="margin-top:30px;"><a href="#" class="btn red"><span>'.__('Go!','buddypress').'</span></a></p>';
 									} else if( $_GET["register"] ) {
 										//show register form
 										echo '<h2>'.__( 'Register','buddypress').'</h2>';
