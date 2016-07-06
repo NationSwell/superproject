@@ -35,23 +35,23 @@ if(!empty( $_REQUEST )  && !empty( $_REQUEST['members_search_submit'] )){
 	$whereSql=" user_id in (".$user_ids.")";
 
 	if(!empty($_REQUEST['council_branch'])){
-		$whereSql2[]="lower(value)='".esc_sql($_REQUEST['council_branch'])."'";
+		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where lower(value)='".esc_sql($_REQUEST['council_branch'])."')";
 	}
 
 	if(!empty($_REQUEST['industry'])){
-		$whereSql2[]="lower(value) ='".esc_sql($_REQUEST['industry'])."'";
+		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where lower(value) ='".esc_sql($_REQUEST['industry'])."')";
 	}
 
 	if(!empty($_REQUEST['nationswell_topics'])){
-		$whereSql2[]="lower(value) like '%".esc_sql($_REQUEST['nationswell_topics'])."%'";
+		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where lower(value) like '%".esc_sql($_REQUEST['nationswell_topics'])."%')";
 	}
 
 	if(!empty($_REQUEST['interested_in'])){
-		$whereSql2[].="lower(value)='%".esc_sql($_REQUEST['interested_in'])."%'";
+		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where lower(value)='%".esc_sql($_REQUEST['interested_in'])."%')";
 	}
 
 	if(!empty($whereSql2)){
-		$whereSql.= ' and '.implode(" or ",$whereSql2);
+		$whereSql.= ' and '.implode(" and ",$whereSql2);
 	}
 	global $wpdb;
 	$useridHash = $wpdb->get_col( "SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where ".$whereSql);
