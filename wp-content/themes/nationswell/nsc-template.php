@@ -180,7 +180,13 @@ endif;
 										echo '<h2>'.__( 'You’re logged in!','buddypress').'</h2>';
 										$bottom_message = '<a href="'.wp_logout_url(get_permalink()).'">'.__( '&#8592; Log out','buddypress').'</a>';
 										echo __('Learn about and connect with fellow members, explore all of the Council’s offerings, and engage with the community!','buddypress');
-										echo '<p style="margin-top:30px;"><a href="#" class="btn red"><span>'.__('Go!','buddypress').'</span></a></p>';
+										if ( function_exists('is_buddypress') ) {
+											global $bp;
+											$memberHomeLink = bp_core_get_user_domain($bp->loggedin_user->id).'profile';
+										}else{
+											$memberHomeLink = get_home_url();
+										}
+										echo '<p style="margin-top:30px;"><a href="'.$memberHomeLink.'" class="btn red"><span>'.__('Go!','buddypress').'</span></a></p>';
 									} else if( $_GET["register"] ) {
 										//show register form
 										echo '<h2>'.__( 'Register','buddypress').'</h2>';
