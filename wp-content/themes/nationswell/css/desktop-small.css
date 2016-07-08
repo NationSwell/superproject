@@ -12,6 +12,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'pt-serif';
+  src: url("../fonts/pt-serif/pt_serif-web-regular-webfont.woff2") format("woff2"), url("../fonts/pt-serif/pt_serif-web-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt-serif-bold';
+  src: url("../fonts/pt-serif/pt_serif-web-bold-webfont.woff2") format("woff2"), url("../fonts/pt-serif/pt_serif-web-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt-serif-italic';
+  src: url("../fonts/pt-serif/pt_serif-web-italic-webfont.woff2") format("woff2"), url("../fonts/pt-serif/pt_serif-web-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 2, ../scss/placeholders/_story.scss */
 .hero--cover.hero--story {
   height: 100vh;

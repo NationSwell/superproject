@@ -10,6 +10,33 @@
 
 }
 
+@font-face {
+  font-family: 'pt-serif';
+  src: url('../fonts/pt-serif/pt_serif-web-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pt-serif/pt_serif-web-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'pt-serif-bold';
+  src: url('../fonts/pt-serif/pt_serif-web-bold-webfont.woff2') format('woff2'),
+         url('../fonts/pt-serif/pt_serif-web-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'pt-serif-italic';
+  src: url('../fonts/pt-serif/pt_serif-web-italic-webfont.woff2') format('woff2'),
+         url('../fonts/pt-serif/pt_serif-web-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
 // Font weights
 $light: 300;
 $regular: 400;
@@ -20,3 +47,7 @@ $gudea: 'Gudea', Arial, sans-serif;
 $oswald: 'oswaldregular', Arial, sans-serif;
 $montserrat: 'Montserrat', Arial, sans-serif;
 $noto-serif: 'Noto Serif', Georgia, serif;
+
+$pt-serif-regular: 'pt-serif', Georgia, serif;
+$pt-serif-italic: 'pt-serif-italic', Georgia, serif;
+$pt-serif-bold: 'pt-serif-bold', Georgia, serif;

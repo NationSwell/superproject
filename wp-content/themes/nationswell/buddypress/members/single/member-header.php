@@ -165,7 +165,7 @@ do_action( 'bp_before_member_header' ); ?>
 		<div id="item-meta-get-in-touch" class="callout-block">
 			<h3><span class="icon icon_comments"></span><?php _e("Get in touch!");?></h3>
 			<div class="item-block-content"><?php _e("Refer a member, recommend a speaker, or tell us about your experience.");?></div>
-			<a href="<?php echo($bp->root_domain."/contact"); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
+			<a href="<?php echo($bp->root_domain."/get-in-touch/"); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
 		</div><!-- #item-meta-get-in-touch -->
     <?php } ?>
     	<?php } ?>

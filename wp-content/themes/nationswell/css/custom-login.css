@@ -13,6 +13,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'pt-serif';
+  src: url("../fonts/pt-serif/pt_serif-web-regular-webfont.woff2") format("woff2"), url("../fonts/pt-serif/pt_serif-web-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt-serif-bold';
+  src: url("../fonts/pt-serif/pt_serif-web-bold-webfont.woff2") format("woff2"), url("../fonts/pt-serif/pt_serif-web-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt-serif-italic';
+  src: url("../fonts/pt-serif/pt_serif-web-italic-webfont.woff2") format("woff2"), url("../fonts/pt-serif/pt_serif-web-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 101, ../scss/placeholders/_story.scss */
 .story__container .story__content p a, .story__container .story__content > ol li a, .story__container .story__content > ul li a, .portal__main-column .static__content a {
   color: #0098d8;
@@ -1350,7 +1368,7 @@ input[type="submit"]:-moz-focus-inner {
 .member-form-input, body.login div#login form input#user_login,
 body.login div#login form input#user_pass {
   font-family: "Gudea", Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1.1rem;
   box-sizing: border-box;
   background-color: #fff;
