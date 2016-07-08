@@ -61,7 +61,7 @@ a.clear-value {
 			border: 1px solid $gray5;
     		border-radius: 0.2rem;
 			li.search-choice {
-				font-size:18px;
+				font-size:16px;
 				line-height:20px;
 				padding: 3px 20px 3px 10px;
 				margin:5px 5px 5px 0;
@@ -167,7 +167,7 @@ a.clear-value {
 		padding:30px 30px 0 30px;
 		color:$ns_navy2;
 		font-family:$pt-serif-regular;
-		max-width:80%;
+		max-width:90%;
 		margin:auto;
 		@include media($desktop) {
 			max-width:50%;
@@ -180,16 +180,30 @@ a.clear-value {
 		@include align-content(center);
   		@include justify-content(center); 
 		
-		font-size: 20px;
-		line-height: 26px;
+		font-size: 16px;
+		line-height: 20px;
+		
+		a { 
+			text-decoration:underline;
+			&:link,
+			&:visited {
+				color:$ns_red2;
+			}
+			&:hover {
+				color:$ns_blue2;
+			}
+			&:active {
+				color:$ns_navy2;
+			}
+		}
 		
 		.intro {
 			p {
 				display:block;
 				padding: 20px 0;
+				font-family:$pt-serif-italic;
 			}
 			
-			font-style: italic;
 			display: block;
 			max-width: 80%;
 			text-align: center;
@@ -206,8 +220,9 @@ a.clear-value {
 			font-style:normal;
 			h2 {
 				color:$black;
-				font-size:150%;
-				margin:30px 0;
+				font-size:130%;
+				margin:15px 0;
+				text-align:center;
 			}
 			form {
 				label, input[type="text"], input[type="password"]{
@@ -911,6 +926,7 @@ a.clear-value {
 		.profile-callout-block,
 		.callout-block {
 			min-height:200px;
+			text-align:center;
 			background-color:$gray7;
 			@include span-columns(6);
 			margin-top:15px;
@@ -921,19 +937,19 @@ a.clear-value {
 			@extend .box-shadow;
 			@extend .box-padding;
 			
-			h3 {
+			h2 {
 				color:$ns_red2;
 				.icon {
 					font-size: 80%;
-					display: inline-block;
-					margin-right: 10px;
-					margin-top: -2px;
+					display: block;
+					margin-bottom: 10px;
 				}
 			}
 			.item-block-content {
-				margin:20px 0;
-				font-size:14px;
+				font-size:16px;
+				line-height:20px;
 				color:$gray2;
+				margin-bottom:10px;
 			}
 			.item-block-button-go {
 				@extend .button;
@@ -1045,6 +1061,7 @@ a.clear-value {
 			    
 			    &.advancing-national-service {
 			    	@extend .icon_crest;
+					left:2px;
 			    	
 			    }
 			    &.bridging-the-opportunity-divide {
@@ -1052,9 +1069,11 @@ a.clear-value {
 			    }
 			    &.making-government-work {
 			    	@extend .icon_government;
+					left:2px;
 			    }
 			    &.preserving-our-environment {
 			    	@extend .icon_environment;
+					left:1px;
 			    }
 			    
 			    span {

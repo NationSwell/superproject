@@ -1390,9 +1390,9 @@ function bp_directory_members_custom_search_form() {
 	// Industry
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Industry'], 'Industry', 'industry');
 	// NationSwell topics
-	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interest areas'], 'Interest areas', 'nationswell_topics');
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['NationSwell topics'], 'NationSwell topics', 'nationswell_topics');
 	// Interested in
-	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interested in connecting about'], 'Interested in connecting about', 'interested_in');
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Interested in'], 'Interested in', 'interested_in');
 
 	$search_form_html .='<input type="submit" id="members_search_submit" name="members_search_submit" value="' . __( 'Search', 'buddypress' ) . '" />';
 	$search_form_html .= '<a href="'.$bp->root_domain . '/' . BP_MEMBERS_SLUG .'" class="reset">';

@@ -20,10 +20,10 @@ do_action( 'bp_before_profile_loop_content' ); ?>
 	<div class="right">
 
 		<?php 
-		$topics = bp_get_profile_field_data(array('field'=>'Interest areas','user_id'=>$bp->displayed_user->id)); ?>
+		$topics = bp_get_profile_field_data(array('field'=>'NationSwell topics','user_id'=>$bp->displayed_user->id)); ?>
 		<?php if(!empty($topics)): ?>
 		<div class="topics">
-			<h3><?php _e('Interest areas:','buddypress'); ?></h3>
+			<h3><?php _e('NationSwell topics:','buddypress'); ?></h3>
 		
 			<?php if(!empty($topics)){
 				echo('<ul>');
@@ -36,10 +36,10 @@ do_action( 'bp_before_profile_loop_content' ); ?>
 		</div>
 		<?php endif; ?>
 		<?php 
-		$interests = bp_get_profile_field_data(array('field'=>'Interested in connecting about','user_id'=>$bp->displayed_user->id)); ?>
+		$interests = bp_get_profile_field_data(array('field'=>'Interested in','user_id'=>$bp->displayed_user->id)); ?>
 		<?php if(!empty($interests)): ?>
 		<div class="interests">
-			<h3><?php _e('Interested in connecting about:','buddypress'); ?></h3>
+			<h3><?php _e('Interested in:','buddypress'); ?></h3>
 		
 			<?php if(!empty($interests)){
 				echo('<ul>');

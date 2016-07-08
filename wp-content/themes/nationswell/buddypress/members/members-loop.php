@@ -70,7 +70,7 @@ if(!empty( $_REQUEST )  && !empty( $_REQUEST['members_search_submit'] )){
 <?php endif; ?>
 
 <?php
-if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&type=alphabetical&include=' . $user_ids ) ) : ?>
+if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids ) ) : ?>
 
 	<div id="pag-top" class="pagination">
 

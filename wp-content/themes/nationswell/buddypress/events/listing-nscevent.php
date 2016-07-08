@@ -6,7 +6,7 @@ global $bp;
 		<?php if(empty( $_REQUEST['past_events'])){ ?>
 			<?php 
 			$header_copy = __( 'Council events are unique forums in which members engage in collaborative discussions with featured guests and one another around important national challenges and how best to advance their solutions. Format and size vary.', 'buddypress' );
-			$header_copy .= __(" <a href='".$bp->bp_nav['nsc-events']['link']."?past_events=true'>".__('Need to see past events?','buddypress')."</a>");
+			$header_copy .= __(" <a href='".$bp->bp_nav['nsc-events']['link']."?past_events=true'>".__('Interested in past events?','buddypress')."</a>");
 			echo '<p>'. $header_copy .'</p>';
 		 } else {
 			 $header_copy = __( 'You’re viewing past events.', 'buddypress' );

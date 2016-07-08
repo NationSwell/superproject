@@ -172,7 +172,7 @@ jQuery( document ).ready(function() {
 	);
 	// Use chosen.js for multi select inputs
 	jQuery(".field_type_multiselectbox select").chosen({
-    	placeholder_text_multiple: "<?php _e('Select some options','buddypress'); ?>"
+    	placeholder_text_multiple: "<?php _e('Select as many as you’d like','buddypress'); ?>"
     });
 	
 	// Format the phone number as the user types it

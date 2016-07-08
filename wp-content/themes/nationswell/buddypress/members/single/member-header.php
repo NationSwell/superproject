@@ -49,7 +49,7 @@ do_action( 'bp_before_member_header' ); ?>
                         $url = wp_extract_urls( bp_get_profile_field_data(array('field'=>'LinkedIn','user_id'=>$bp->displayed_user->id))); ?>
                         <?php
                         if (!empty($url[0])): ?>
-                        <a href="<?php echo $url[0]; ?>" title="<?php _e("LinkedIn","buddypress");?>"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
+                        <a href="<?php echo $url[0]; ?>" title="<?php _e("LinkedIn","buddypress");?>" target="_blank"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
                         <?php endif; ?>
                         <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Message","buddypress");?>"><span class="item-block-button-email icon icon_comments" style="font-size:22px"></span></a><?php }?>
                         
@@ -157,13 +157,13 @@ do_action( 'bp_before_member_header' ); ?>
 		</div><!-- #item-meta-member-directory -->
 	<?php }else{ ?>
 		<div id="item-meta-member-directory" class="callout-block">
-			<h3><span class="icon icon_people"></span><?php _e("Member Directory");?></h3>
+			<h2><span class="icon icon_people"></span><?php _e("Member Directory");?></h2>
 			<div class="item-block-content"><?php _e("Connect directly with other leaders who are passionate about impact!");?></div>
 			<a href="<?php echo($bp->root_domain."/".$bp->members->root_slug); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
 		</div><!-- #item-meta-member-directory -->
 
 		<div id="item-meta-get-in-touch" class="callout-block">
-			<h3><span class="icon icon_comments"></span><?php _e("Get in touch!");?></h3>
+			<h2><span class="icon icon_comments"></span><?php _e("Get in touch!");?></h2>
 			<div class="item-block-content"><?php _e("Refer a member, recommend a speaker, or tell us about your experience.");?></div>
 			<a href="<?php echo($bp->root_domain."/get-in-touch/"); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
 		</div><!-- #item-meta-get-in-touch -->

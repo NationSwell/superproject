@@ -247,7 +247,7 @@ endif;
                                     <?php    
 									} else {
 										//show login
-										echo '<h2>'.__( 'Member login','buddypress').'</h2>';
+										echo '<h2>'.__( 'Member Login','buddypress').'</h2>';
 										$bottom_message = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot your password?','buddypress') .'</a><br>';
 										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
 										if( function_exists('bp_is_active') ) {
@@ -264,7 +264,7 @@ endif;
 										'id_password'    => 'user_pass',
 										'id_remember'    => 'rememberme',
 										'id_submit'      => 'wp-submit',
-										'label_username' => __( 'Your email address' ),
+										'label_username' => __( 'Email address' ),
 										'label_password' => __( 'Password' ),
 										'label_remember' => __( 'Remember me' ),
 										'label_log_in'   => __( 'Log in' ),
