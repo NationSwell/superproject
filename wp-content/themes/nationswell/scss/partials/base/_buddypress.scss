@@ -676,6 +676,10 @@ a.clear-value {
 				left:20px;*/
 				border-top:1px solid $gray4;
 				padding:20px;
+				display:none;
+				@include media($medium) {
+					display:block;
+				}
 				select {
 					@extend .member-form-input;
 					@extend .member-form-select;
@@ -2201,9 +2205,11 @@ ul.tabletolist.nrh {
 }
 /* Table with no row headers columns */
 ul.tabletolist.nrh li:first-child,
-ul.tabletolist.nrh li:last-child  {
+ul.tabletolist.nrh li ul li:last-child,
+ul.tabletolist.nrh li ul li:first-child {
 	display:none;
 }
+
 ul.tabletolist.nrh > li  {
     border-top: 2px solid #ddd;
 }

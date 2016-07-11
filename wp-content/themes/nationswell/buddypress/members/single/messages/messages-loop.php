@@ -206,7 +206,7 @@ jQuery( document ).ready(function() {
 	//convert table to stackable in mobile
 	jQuery('#message-threads').ReStable({
     	rowHeaders: false, // Table has row headers?
-    	maxWidth: 960, // Size to which the table become responsive
+    	maxWidth: 580, // Size to which the table become responsive
     	keepHtml: true // Keep the html content of cells
 	});
 });
