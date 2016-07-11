@@ -292,7 +292,8 @@ a.clear-value {
 		}
 		.learn-more {
 			text-align:center;
-			color: $gray4;
+			color: $gray4 !important;
+			text-decoration:none !important;
 			font-family: "PT Sans";
 			font-size: 18px;
 			font-weight: 700;

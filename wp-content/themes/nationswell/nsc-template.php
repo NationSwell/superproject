@@ -186,7 +186,7 @@ endif;
 										}else{
 											$memberHomeLink = get_home_url();
 										}
-										echo '<p style="margin-top:30px;"><a href="'.$memberHomeLink.'" class="btn red"><span>'.__('Go!','buddypress').'</span></a></p>';
+										echo '<p style="margin-top:30px;"><a href="'.$memberHomeLink.'" class="btn red" style="text-decoration:none"><span style="color:#fff;">'.__('Go!','buddypress').'</span></a></p>';
 									} else if( $_GET["register"] ) {
 										//show register form
 										echo '<h2>'.__( 'Register','buddypress').'</h2>';
@@ -248,7 +248,7 @@ endif;
 									} else {
 										//show login
 										echo '<h2>'.__( 'Member Login','buddypress').'</h2>';
-										$bottom_message = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot your password?','buddypress') .'</a><br>';
+										$bottom_message = '<a href="'.wp_lostpassword_url().'" class="lostpassword-link" style="display:none">'.__( 'Forgot your password?','buddypress') .'</a>';
 										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
 										if( function_exists('bp_is_active') ) {
 											$redirect_url = home_url();
@@ -265,7 +265,7 @@ endif;
 										'id_remember'    => 'rememberme',
 										'id_submit'      => 'wp-submit',
 										'label_username' => __( 'Email address' ),
-										'label_password' => __( 'Password' ),
+										'label_password' => __( 'Password  &nbsp;' ),
 										'label_remember' => __( 'Remember me' ),
 										'label_log_in'   => __( 'Log in' ),
 										'value_username' => '',
@@ -540,7 +540,35 @@ if( $images ): shuffle( $images ) ?>
   ga('create', 'UA-65566331-1', 'auto');
   ga('send', 'pageview');
 
-</script>      
+</script> 
+<script>
+jQuery( document ).ready(function() {
+	//move forgot password link to the password label
+	jQuery('.lostpassword-link').css('display','inline-block');
+	jQuery('.lostpassword-link').appendTo('.login-password label');
+	
+	//set home section height
+	jQuery(function(){
+		var windowH = jQuery(window).height();
+		var wrapperH = jQuery('.member-login-forms').height();
+		if(windowH > wrapperH) {                            
+			jQuery('.member-login-forms').css({'height':(jQuery(window).height())+'px'});
+		}                                                                               
+		jQuery(window).resize(function(){
+			var windowH = jQuery(window).height();
+			var wrapperH = jQuery('.member-login-forms').height();
+			var differenceH = windowH - wrapperH;
+			var newH = wrapperH + differenceH;
+			var truecontentH = jQuery('.member-login-forms .content-wrapper').height();
+			if(windowH > truecontentH) {
+				jQuery('.member-login-forms').css('height', (newH)+'px');
+			}
+	
+		})          
+	});
+});
+	
+</script>     
 	</body>
 
 </html>
