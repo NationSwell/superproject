@@ -54,6 +54,7 @@ module.exports = function(grunt) {
                         'js/src/events.js',
                         'js/src/masked-input.js',
                         'js/src/vendor/ReSmenu-master/jquery.resmenu.min.js',
+                        'js/src/vendor/ReStable/jquery.restable.js',
                         'js/src/ga-tracking.js',
                         'js/src/main.js',
                     ]

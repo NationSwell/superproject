@@ -362,6 +362,11 @@ a.clear-value {
 	
 	#message {
 		@extend .box-margin;
+	}
+	
+	//hide it initially on profile edit screen
+	//we fade it in and move it to top with jQuery on this page
+	.profile-edit div#message {
 		display:none;
 	}
 	
@@ -632,14 +637,15 @@ a.clear-value {
 			}
 			.message-search {
 				padding:15px 20px;
-				margin-top:5px;
-				float:right;
 				position:relative;
 				z-index:80;
 				form {
 					position:relative;
 					label {
 						@extend .bp-screen-reader-text;
+					}
+					input#messages_search {
+						margin-bottom:0;
 					}
 					
 					input[type="submit"] {
@@ -657,7 +663,7 @@ a.clear-value {
 						background-repeat: no-repeat;
 						background-position: center;
 						background-color: transparent;
-						height: 51px;
+						height: 44px;
 						width: 50px;
 						padding: 0;
 						background-size: 30px;
@@ -665,9 +671,11 @@ a.clear-value {
 				}
 			}
 			.messages-options-nav {
-				position:absolute;
+				/*position:absolute;
 				top:20px;
-				left:20px;
+				left:20px;*/
+				border-top:1px solid $gray4;
+				padding:20px;
 				select {
 					@extend .member-form-input;
 					@extend .member-form-select;
@@ -676,6 +684,30 @@ a.clear-value {
 					background-size: 30px;
 					
 				}
+			}
+			
+			//redo the table for mobile
+			table#message-threads {
+				/*thead,
+				.bulk-select-check,
+				.thread-options {
+					display:none;
+				}
+				.thread-from,
+				.thread-info {
+					display:table-row;
+					padding:20px;
+				}
+				@include media($medium) {
+					thead,
+					.bulk-select-check,
+					.thread-options,
+					.thread-from,
+					.thread-info {
+						display:inherit;	
+					}
+				}*/
+				
 			}
 			
 			#send_message_form {
@@ -2151,3 +2183,71 @@ a.bp-title-button {
 	margin-bottom: -1em;
 }
 
+
+
+
+
+/* Table */
+ul.tabletolist {
+	border-bottom: 2px solid #eee;font-size: 14px;margin:0 0 20px 0;
+}
+/* Image */
+ul.tabletolist img {
+    max-width: 100%;
+}
+/* Table with no row headers */
+ul.tabletolist.nrh {
+	border-bottom: 2px solid #ddd;
+}
+/* Table with no row headers columns */
+ul.tabletolist.nrh li:first-child,
+ul.tabletolist.nrh li:last-child  {
+	display:none;
+}
+ul.tabletolist.nrh > li  {
+    border-top: 2px solid #ddd;
+}
+/* Table defaults */
+ul.tabletolist, ul.tabletolist > li > ul {
+    padding:0 !important;list-style:none !important;
+}
+/* Inner list */
+ul.tabletolist > li > ul {
+    margin:0 !important;
+}
+/* Table titles */
+ul.tabletolist > li .titles {
+    background-color: #bbb;display:block;color:#fff;padding:10px;font-weight:800;
+}
+/* Table rows */
+ul.tabletolist > li > ul > li {
+    font-weight:200;border-bottom:1px solid #eee;padding:10px;
+}
+/* Table rows hover */
+ul.tabletolist > li > ul > li:hover {
+    background-color: #efefef
+}
+/* Table last child row */
+ul.tabletolist > li > ul > li:last-child {
+    border-bottom:none;
+}
+/* Table row header */
+ul.tabletolist ul > li .row_headers {
+    /*font-size:12px;max-width: 100%;float:none;margin-right: 3%;*/
+	display:none;
+}
+/* Table row data */
+ul.tabletolist ul > li .row_data {
+    float:none; max-width: 100%;
+}
+/* Clearfix */
+ul.tabletolist > li > ul > li {*zoom: 1;}
+ul.tabletolist > li > ul > li:before, ul.tabletolist > li > ul > li:after {content: " ";display: table;}
+ul.tabletolist > li > ul > li:after {clear: both;}
+/* Html table row data */
+ul.tabletolist ul > li .row_data.html {
+    font-weight: 400;
+}
+ul.tabletolist ul > li .row_data.html ul {
+    list-style-type: disc;
+}

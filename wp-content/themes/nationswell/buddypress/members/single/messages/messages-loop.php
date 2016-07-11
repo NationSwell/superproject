@@ -186,9 +186,8 @@ do_action( 'bp_before_member_messages_loop' ); ?>
 	
 	<?php else: ?>
 	
-		<div id="message" class="info bad-news">
-			<span class="icon icon_frown"></span>
-			<p><?php _e( 'There’s nothing here, make friends much?', 'buddypress' ); ?></p>
+		<div id="message" class="info bad-news" style="margin-top:0 !important">
+			<p><?php _e( 'Sorry, couldn’t find any messages.', 'buddypress' ); ?></p>
 		</div>
 	
 	<?php endif;?>
@@ -201,3 +200,14 @@ do_action( 'bp_before_member_messages_loop' ); ?>
  * @since 1.2.0
  */
 do_action( 'bp_after_member_messages_loop' ); ?>
+
+<script>
+jQuery( document ).ready(function() {
+	//convert table to stackable in mobile
+	jQuery('#message-threads').ReStable({
+    	rowHeaders: false, // Table has row headers?
+    	maxWidth: 960, // Size to which the table become responsive
+    	keepHtml: true // Keep the html content of cells
+	});
+});
+</script>
