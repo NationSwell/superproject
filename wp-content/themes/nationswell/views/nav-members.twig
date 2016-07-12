@@ -14,6 +14,7 @@
     </div>
 </div>
 <div class="container">
+	{% if bp_new_mention_count > 0 or bp_unread_notification_count > 0 %}
 	<div id="popup-counter" class="popup counter" style="display:none;">
 		<div class="icon icon_caret-up"></div>
         <ul class="popup__list">
@@ -26,6 +27,7 @@
 			{% endif %}
         </ul>
 	</div>
+	{% endif %}
 </div>
 <script>
 jQuery( ".member-nav li .notification" ).click(function() {
