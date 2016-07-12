@@ -83,7 +83,7 @@ global $bp;
 									$rsvp_link = $event['rsvp_link'];
 									$rsvp_link_type = $event['rsvp_link_type'];
 								?>
-								<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button"><?php _e($rsvp_link_type,'buddypress'); ?></a>
+								<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button" target="_blank"><?php _e($rsvp_link_type,'buddypress'); ?></a>
 							</div>
 						</div>
 					</div>

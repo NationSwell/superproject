@@ -34,20 +34,6 @@ body.xprofile {
 	@extend .box-margin;
 }
 
-h1, h2, h3 {
-	color:$black;
-	font-family:$pt-serif-bold;
-	font-weight:$bold;
-}
-h1 {
-	font-size:24px;
-}
-h2 {
-	font-size:20px;
-}
-h3 {
-	font-size:16px;
-}
 
 a.clear-value {
 	display:none !important;
@@ -333,6 +319,21 @@ a.clear-value {
 	$large: new-breakpoint(min-width 992px);
 	$medium: new-breakpoint(min-width 580px);
 	
+	h1, h2, h3 {
+		color:$black;
+		font-family:$pt-serif-bold;
+		font-weight:$bold;
+	}
+	h1 {
+		font-size:24px;
+	}
+	h2 {
+		font-size:20px;
+	}
+	h3 {
+		font-size:16px;
+	}
+
 	
 	p {
 		line-height:2rem;
@@ -1096,6 +1097,7 @@ a.clear-value {
 				@extend .icon_star;
 				padding-bottom:10px;
 				position:relative;
+				display:block;
 			    &:before {
 			    	color: $ns_blue1;
 			    	padding-right:10px;
