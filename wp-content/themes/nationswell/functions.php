@@ -1209,6 +1209,14 @@ function bp_custom_setup_nav() {
     unset($bp->bp_nav['friends']);
     unset($bp->bp_nav['notifications']);
     unset($bp->bp_nav['settings']);
+
+    // Reorder messages componet sub tabs
+    $messagesNavHash =  $bp->bp_options_nav['messages'];
+    unset($bp->bp_options_nav['messages']);
+    $bp->bp_options_nav['messages']['compose'] = $messagesNavHash['compose'];
+    $bp->bp_options_nav['messages']['inbox'] = $messagesNavHash['inbox'];
+    $bp->bp_options_nav['messages']['starred'] = $messagesNavHash['starred'];
+    $bp->bp_options_nav['messages']['sentbox'] = $messagesNavHash['sentbox'];
 }
 add_action( 'bp_setup_nav', 'bp_custom_setup_nav', 99 );
 
