@@ -5314,11 +5314,11 @@ a.clear-value {
 }
 /* line 610, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li#compose-personal-li {
-  background-color: #fd6464;
+  /*background-color:$ns_red2;*/
 }
 /* line 612, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li#compose-personal-li a {
-  color: #fff;
+  /*color:$white;*/
 }
 /* line 627, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages {

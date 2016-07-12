@@ -608,9 +608,9 @@ a.clear-value {
 					}
 				}
 				li#compose-personal-li {
-					background-color:$ns_red2;
+					/*background-color:$ns_red2;*/
 					a {
-						color:$white;
+						/*color:$white;*/
 						&:before {
 							@extend .icon_chat-bubble;
 						}
