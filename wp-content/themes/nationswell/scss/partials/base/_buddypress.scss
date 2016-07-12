@@ -598,7 +598,8 @@ a.clear-value {
 				}
 				li#starred-personal-li {
 					a:before {
-						@extend .icon_star-hollow;
+						@extend .icon_star;
+						font-size:30px;
 					}
 				}
 				li#sentbox-personal-li {
@@ -611,7 +612,7 @@ a.clear-value {
 					a {
 						color:$white;
 						&:before {
-							@extend .icon_envelope-empty;
+							@extend .icon_chat-bubble;
 						}
 					}
 				}
