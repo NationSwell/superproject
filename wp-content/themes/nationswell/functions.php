@@ -1212,6 +1212,13 @@ function bp_custom_setup_nav() {
 }
 add_action( 'bp_setup_nav', 'bp_custom_setup_nav', 99 );
 
+// Override message tab link
+function bp_custom_message_nav() {
+	global $bp;
+	$bp->bp_nav['messages']['name'] = 'Your Messages';
+}
+add_action( 'bp_screens', 'bp_custom_message_nav',99 );
+
 // calback function for events nav item
 function bp_custom_event_screen() {
     add_action( 'bp_template_content', 'bp_custom_event_screen_content' );
