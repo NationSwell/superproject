@@ -51,7 +51,7 @@ do_action( 'bp_before_member_header' ); ?>
                         if (!empty($url[0])): ?>
                         <a href="<?php echo $url[0]; ?>" title="<?php _e("LinkedIn","buddypress");?>" target="_blank"><span class="item-block-button-linkedin icon icon_linkedin"></span></a>
                         <?php endif; ?>
-                        <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Message","buddypress");?>"><span class="item-block-button-email icon icon_comments" style="font-size:22px"></span></a><?php }?>
+                        <?php if($bp->loggedin_user->id != $bp->displayed_user->id ){?><a href="<?php echo($bp->root_domain."/members/".$bp->loggedin_user->userdata->user_nicename."/messages/compose/?r=".$bp->displayed_user->userdata->user_nicename); ?>" title="<?php _e("Message","buddypress");?>"><span class="item-block-button-email icon icon_chat-bubble" style="font-size:22px"></span></a><?php }?>
                         
                         <?php 
                         $display_email = bp_get_profile_field_data(array('field'=>'Enable other members to email you?','user_id'=>$bp->displayed_user->id));
