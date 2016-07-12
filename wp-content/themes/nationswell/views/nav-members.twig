@@ -17,8 +17,13 @@
 	<div id="popup-counter" class="popup counter" style="display:none;">
 		<div class="icon icon_caret-up"></div>
         <ul class="popup__list">
-            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/activity/">You have {{ bp_new_mention_count }} new mentions</a></li>
-            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/notifications/">You have {{ bp_unread_notification_count }} new messages</a></li>
+			<li>You have:</li>
+            {% if bp_new_mention_count > 0 %}
+			<li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/activity/">{{ bp_new_mention_count }} new mentions</a></li>
+			{% endif %}
+			{% if bp_unread_notification_count > 0 %}
+            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/messages/">{{ bp_unread_notification_count }} new messages</a></li>
+			{% endif %}
         </ul>
 	</div>
 </div>

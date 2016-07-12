@@ -1720,6 +1720,7 @@ body.login div#login form input.short#user_pass {
 /* line 133, ../scss/partials/base/_nav.scss */
 .member-nav {
   background-color: #f6f6f6;
+  padding: 0;
 }
 /* line 15, ../scss/bourbon/addons/_clearfix.scss */
 .member-nav .container:after {
@@ -1727,31 +1728,42 @@ body.login div#login form input.short#user_pass {
   display: table;
   clear: both;
 }
-/* line 139, ../scss/partials/base/_nav.scss */
+/* line 140, ../scss/partials/base/_nav.scss */
 .member-nav .member-nav__list {
   float: left;
 }
-/* line 141, ../scss/partials/base/_nav.scss */
+/* line 142, ../scss/partials/base/_nav.scss */
 .member-nav .member-nav__list li {
   margin-top: 4px;
 }
-/* line 145, ../scss/partials/base/_nav.scss */
+/* line 144, ../scss/partials/base/_nav.scss */
+.member-nav .member-nav__list li .member-nav__item {
+  padding: 0.8rem 0;
+  display: inline-block;
+}
+/* line 147, ../scss/partials/base/_nav.scss */
+.member-nav .member-nav__list li .member-nav__item.current {
+  border-bottom: 3px solid #002130;
+}
+/* line 153, ../scss/partials/base/_nav.scss */
 .member-nav .member-nav__icons {
   float: right;
   position: relative;
   margin-right: 3.4rem;
 }
-/* line 149, ../scss/partials/base/_nav.scss */
+/* line 157, ../scss/partials/base/_nav.scss */
 .member-nav .member-nav__icons li {
   display: inline;
 }
-/* line 151, ../scss/partials/base/_nav.scss */
+/* line 159, ../scss/partials/base/_nav.scss */
 .member-nav .member-nav__icons li a {
   font-size: 2.5rem;
   margin-right: 1rem;
   position: relative;
+  padding: 0.6rem 0;
+  display: inline-block;
 }
-/* line 157, ../scss/partials/base/_nav.scss */
+/* line 166, ../scss/partials/base/_nav.scss */
 .member-nav .member-nav__icons li a.icon_alert span {
   border-radius: 50%;
   width: 20px;
@@ -1765,15 +1777,15 @@ body.login div#login form input.short#user_pass {
   font-family: "oswaldregular", Arial, sans-serif;
   font-weight: 700;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: -8px;
 }
-/* line 174, ../scss/partials/base/_nav.scss */
+/* line 183, ../scss/partials/base/_nav.scss */
 .member-nav .member-nav__icons li a.icon_logout {
   margin-right: 0;
 }
 
-/* line 182, ../scss/partials/base/_nav.scss */
+/* line 191, ../scss/partials/base/_nav.scss */
 .popup.counter {
   position: absolute;
   z-index: 500;
@@ -1784,7 +1796,7 @@ body.login div#login form input.short#user_pass {
   margin-top: 10px;
   right: 0;
 }
-/* line 193, ../scss/partials/base/_nav.scss */
+/* line 202, ../scss/partials/base/_nav.scss */
 .popup.counter .icon_caret-up {
   position: absolute;
   top: -8px;
@@ -1792,30 +1804,47 @@ body.login div#login form input.short#user_pass {
   color: #f6f6f6;
 }
 
-/* line 201, ../scss/partials/base/_nav.scss */
+/* line 210, ../scss/partials/base/_nav.scss */
 .trending-topics__heading,
 .popup.counter .popup__list {
   font-family: "Montserrat", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 207, ../scss/partials/base/_nav.scss */
+/* line 217, ../scss/partials/base/_nav.scss */
+.popup.counter .popup__list a {
+  text-decoration: underline;
+}
+/* line 219, ../scss/partials/base/_nav.scss */
+.popup.counter .popup__list a:link, .popup.counter .popup__list a:visited {
+  color: #fd6464;
+}
+/* line 223, ../scss/partials/base/_nav.scss */
+.popup.counter .popup__list a:hover {
+  color: #1fade0;
+}
+/* line 226, ../scss/partials/base/_nav.scss */
+.popup.counter .popup__list a:active {
+  color: #003046;
+}
+
+/* line 231, ../scss/partials/base/_nav.scss */
 .trending-topics__list,
 .member-nav__list {
   display: inline-block;
 }
-/* line 211, ../scss/partials/base/_nav.scss */
+/* line 235, ../scss/partials/base/_nav.scss */
 .trending-topics__list li,
 .member-nav__list li {
   display: inline-block;
 }
 
-/* line 215, ../scss/partials/base/_nav.scss */
+/* line 239, ../scss/partials/base/_nav.scss */
 .member-nav__list {
   margin: 0 3.4rem 0 2.2rem;
 }
 
-/* line 219, ../scss/partials/base/_nav.scss */
+/* line 243, ../scss/partials/base/_nav.scss */
 .trending-topics__topic,
 .member-nav__list {
   color: #fff;
@@ -1829,12 +1858,12 @@ body.login div#login form input.short#user_pass {
   }*/
 }
 
-/* line 233, ../scss/partials/base/_nav.scss */
+/* line 257, ../scss/partials/base/_nav.scss */
 .member-nav__item {
   color: #002130;
 }
 
-/* line 237, ../scss/partials/base/_nav.scss */
+/* line 261, ../scss/partials/base/_nav.scss */
 .btn-nav-subscribe {
   background-color: #0098d8;
   color: #fff;
@@ -1850,7 +1879,7 @@ body.login div#login form input.short#user_pass {
   display: none;
 }
 
-/* line 253, ../scss/partials/base/_nav.scss */
+/* line 277, ../scss/partials/base/_nav.scss */
 .expand-field#page-subscribe input.is-open + .btn-nav-subscribe {
   width: auto;
   padding: .4rem .7rem;

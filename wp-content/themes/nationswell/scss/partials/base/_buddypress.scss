@@ -607,8 +607,12 @@ a.clear-value {
 					}
 				}
 				li#compose-personal-li {
-					a:before {
-						@extend .icon_envelope-empty;
+					background-color:$ns_red2;
+					a {
+						color:$white;
+						&:before {
+							@extend .icon_envelope-empty;
+						}
 					}
 				}
 				li#notices-personal-li {
@@ -1006,10 +1010,14 @@ a.clear-value {
 				}
 				.headline {
 					color:$gray2;
+					text-align:left;
 					.icon {
 						font-size:33px;
 						width:35px;
 						text-align:top;
+						&.icon_marker:before {
+							margin-left:5px;
+						}
 					}
 				}
 				
@@ -1119,6 +1127,7 @@ a.clear-value {
 			    	display: inline-block;
    					padding-left: 38px;
    					padding-bottom: 10px;
+					padding-top:4px;
 			    }
     		}
     	}

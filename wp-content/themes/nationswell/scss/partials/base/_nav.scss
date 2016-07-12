@@ -132,6 +132,7 @@
 }
 .member-nav {
   	background-color: $gray7;
+	padding:0;
   	@extend .member-nav-boxshadow;
   	.container {
   		@include clearfix;
@@ -140,6 +141,13 @@
   		float:left;
   		li {
   			margin-top:4px;
+			.member-nav__item {
+				padding:0.8rem 0;
+				display:inline-block;
+				&.current {
+					border-bottom:3px solid $ns_navy1;		
+				}
+			}
   		}
   	}
   	.member-nav__icons {
@@ -152,7 +160,8 @@
   				font-size:2.5rem;
   				margin-right:1rem;
   				position:relative;
-  				
+  				padding:0.6rem 0;
+				display:inline-block;
   				&.icon_alert {
   					span {
   						border-radius: 50%;
@@ -167,7 +176,7 @@
   						font-family:$oswald;
   						font-weight: $bold;
   						position:absolute;
-  						top:0;
+  						top:5px;
   						right:-8px;
   					}
   				}
@@ -204,6 +213,21 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.popup.counter .popup__list {
+	a { 
+		text-decoration:underline;
+		&:link,
+		&:visited {
+			color:$ns_red2;
+		}
+		&:hover {
+			color:$ns_blue2;
+		}
+		&:active {
+			color:$ns_navy2;
+		}
+	}
+}
 .trending-topics__list,
 .member-nav__list {
   display: inline-block;
