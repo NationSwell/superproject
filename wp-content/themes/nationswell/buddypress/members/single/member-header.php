@@ -63,8 +63,8 @@ do_action( 'bp_before_member_header' ); ?>
                     </div>
                     <div class="item-subblock">
                         <ul>
-                            <?php if($bp->current_component != 'profile' && $bp->current_action != 'public' ){?><li><a href="<?php echo($bp->bp_options_nav['profile']['public']['link']); ?>"><?php _e("View profile","buddypress");?></a></li><?php }?>
-                            <?php if($bp->loggedin_user->id == $bp->displayed_user->id ){?> <li><a href="<?php echo($bp->bp_options_nav['profile']['edit']['link']); ?>"><?php _e("Edit profile","buddypress");?></a></li><?php }?>
+                            <?php if( ($bp->current_component != 'profile' && $bp->current_action != 'public') ||  ($bp->current_component == 'profile' && $bp->current_action == 'edit') ){?><li><a href="<?php echo($bp->bp_options_nav['profile']['public']['link']); ?>"><?php _e("View profile","buddypress");?></a></li><?php }?>
+                            <?php if($bp->loggedin_user->id == $bp->displayed_user->id && $bp->current_component != 'profile' && $bp->current_action != 'edit' ){?> <li><a href="<?php echo($bp->bp_options_nav['profile']['edit']['link']); ?>"><?php _e("Edit profile","buddypress");?></a></li><?php }?>
                             <?php if($bp->loggedin_user->id == $bp->displayed_user->id ){?><li><a href="<?php echo($bp->bp_options_nav['profile']['change-avatar']['link']); ?>"><?php _e("Change photo","buddypress");?></a></li><?php }?>
                         <ul>
                     </div>
