@@ -567,6 +567,8 @@
 
   .take-action__inner {
     overflow-y: scroll;
+	  -webkit-overflow-scrolling: touch;
+
     padding: 0 1.2rem;
 
     @include transition(all 0.3s ease-in-out);

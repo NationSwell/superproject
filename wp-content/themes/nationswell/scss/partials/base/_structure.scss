@@ -17,6 +17,8 @@ html {
   }
   // force scrollbar show during modal display
   overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
 }
 
 body {
