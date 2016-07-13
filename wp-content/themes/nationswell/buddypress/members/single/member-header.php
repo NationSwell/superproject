@@ -158,13 +158,13 @@ do_action( 'bp_before_member_header' ); ?>
 	<?php }else{ ?>
 		<div id="item-meta-member-directory" class="callout-block">
 			<h2><span class="icon icon_people"></span><?php _e("Member Directory");?></h2>
-			<div class="item-block-content"><?php _e("Connect directly with other leaders who are passionate about impact!");?></div>
+			<div class="item-block-content"><?php _e("Connect directly with other Council Members who are passionate about impact!");?></div>
 			<a href="<?php echo($bp->root_domain."/".$bp->members->root_slug); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
 		</div><!-- #item-meta-member-directory -->
 
 		<div id="item-meta-get-in-touch" class="callout-block">
 			<h2><span class="icon icon_comments"></span><?php _e("Get in touch!");?></h2>
-			<div class="item-block-content"><?php _e("Refer a member, recommend a speaker, or tell us about your experience.");?></div>
+			<div class="item-block-content"><?php _e("Refer a member, recommend a speaker, or tell NationSwell about your experience.");?></div>
 			<a href="<?php echo($bp->root_domain."/get-in-touch/"); ?>"><span class="item-block-button-go"><?php _e("Go!");?></span></a>
 		</div><!-- #item-meta-get-in-touch -->
     <?php } ?>

@@ -9,7 +9,7 @@
 ?>
 <div class="notifications-list">
     <form action="" method="post" id="notifications-bulk-management">
-        <table class="notifications">
+        <table class="notifications" id="notifications-thread">
             <thead>
                 <tr>
                     <th class="icon"></th>
@@ -44,3 +44,14 @@
         <?php wp_nonce_field( 'notifications_bulk_nonce', 'notifications_bulk_nonce' ); ?>
     </form>
 </div>
+
+<script>
+jQuery( document ).ready(function() {
+	//convert table to stackable in mobile
+	jQuery('#notifications-thread').ReStable({
+    	rowHeaders: false, // Table has row headers?
+    	maxWidth: 580, // Size to which the table become responsive
+    	keepHtml: true // Keep the html content of cells
+	});
+});
+</script>

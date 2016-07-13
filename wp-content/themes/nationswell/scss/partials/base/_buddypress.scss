@@ -322,7 +322,6 @@ a.clear-value {
 	h1, h2, h3 {
 		color:$black;
 		font-family:$pt-serif-bold;
-		font-weight:$bold;
 	}
 	h1 {
 		font-size:24px;
@@ -982,6 +981,7 @@ a.clear-value {
 			
 			h2 {
 				color:$ns_red2;
+				margin-bottom:10px;
 				.icon {
 					font-size: 80%;
 					display: block;

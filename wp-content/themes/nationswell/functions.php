@@ -1264,7 +1264,6 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
-
 /** changing default wordpres email settings */
  
 add_filter('wp_mail_from', 'ns_mail_from');

@@ -30,15 +30,15 @@
 	{% endif %}
 </div>
 <script>
-jQuery( ".member-nav li .notification" ).click(function() {
-	jQuery( '#popup-counter' ).show();
-	jQuery( ".member-nav li .notification" ).off('hover');
+jQuery(document).ready(function(){
+	jQuery(".member-nav li .notification, #popup-counter").hover(function() {
+    	jQuery('#popup-counter').fadeIn('fast')
+	},function() {
+        setTimeout(function() {
+        if(!(jQuery('#popup-counter:hover').length > 0))
+            jQuery('#popup-counter').fadeOut('fast');
+        }, 300);
+    });  
 });
-jQuery( ".member-nav li .notification" ).hover(function() {
-	jQuery( '#popup-counter' ).show();
-}, function() {
-    jQuery( '#popup-counter' ).hide();
-  }
-);
 </script>
 {% endif %}

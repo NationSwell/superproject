@@ -11,7 +11,10 @@ html, body {
 }
 
 html {
-  font-size: 10px;
+  font-size: 8px;
+  @include media($desktop) {
+	  font-size: 10px;
+  }
   // force scrollbar show during modal display
   overflow-y: scroll;
 }
