@@ -19,6 +19,7 @@
     
     <div class="messages">
     <?php
+	//echo "current action: ".bp_current_action();
     switch ( bp_current_action() ) :
     
         // Inbox/Sentbox
@@ -43,9 +44,7 @@
                 <div class="messages-list">
                     <?php bp_get_template_part( 'members/single/messages/messages-loop' ); ?>
                 </div>
-                
-            
-    
+
             <?php
     
             /**

@@ -679,7 +679,6 @@ a.clear-value {
 				/*position:absolute;
 				top:20px;
 				left:20px;*/
-				border-top:1px solid $gray4;
 				padding:20px;
 				display:none;
 				@include media($medium) {
@@ -784,7 +783,7 @@ a.clear-value {
 				.loop {
 					background-color:$gray7;
 					.pagination.top {
-						display:none;
+						margin-bottom:15px;
 					}
 					table {
 						width:100%;
@@ -1938,6 +1937,7 @@ Ajax Loading
 }
 #buddypress .standard-form textarea#message_content {
 	height: 200px;
+	line-height:normal;
 }
 #buddypress .standard-form#send-reply textarea {
 	width: 97.5%;

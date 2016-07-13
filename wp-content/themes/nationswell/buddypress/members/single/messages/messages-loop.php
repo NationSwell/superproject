@@ -15,18 +15,6 @@ do_action( 'bp_before_member_messages_loop' ); ?>
 <div class="loop">
 	<?php if ( bp_has_message_threads( bp_ajax_querystring( 'messages' ) ) ) : ?>
 	
-		<div class="pagination no-ajax top" id="user-pag">
-	
-			<div class="pag-count" id="messages-dir-count">
-				<?php bp_messages_pagination_count(); ?>
-			</div>
-	
-			<div class="pagination-links" id="messages-dir-pag">
-				<?php bp_messages_pagination(); ?>
-			</div>
-	
-		</div><!-- .pagination -->
-	
 		<?php
 	
 		/**
@@ -156,7 +144,7 @@ do_action( 'bp_before_member_messages_loop' ); ?>
 				</tbody>
 	
 			</table><!-- #message-threads -->
-			
+			<div class="divider"></div>
             <?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
 				<div class="messages-options-nav">
 					<?php bp_messages_bulk_management_dropdown(); ?>
@@ -165,6 +153,18 @@ do_action( 'bp_before_member_messages_loop' ); ?>
 	
 			<?php wp_nonce_field( 'messages_bulk_nonce', 'messages_bulk_nonce' ); ?>
 		</form>
+        <div class="divider"></div>
+        <div class="pagination no-ajax" id="user-pag">
+	
+			<div class="pag-count" id="messages-dir-count">
+				<?php bp_messages_pagination_count(); ?>
+			</div>
+	
+			<div class="pagination-links" id="messages-dir-pag">
+				<?php bp_messages_pagination(); ?>
+			</div>
+	
+		</div><!-- .pagination -->
 	
 		<?php
 	

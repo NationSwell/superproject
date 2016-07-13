@@ -5221,28 +5221,29 @@ html {
   top: 0;
   bottom: 0;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
-/* line 40, ../scss/partials/mobile/_nav.scss */
+/* line 42, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit {
   display: block;
   padding: 4.2rem 3.2rem 4.2rem 6.2rem;
 }
-/* line 44, ../scss/partials/mobile/_nav.scss */
+/* line 46, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--dark {
   background-color: #002130;
 }
-/* line 47, ../scss/partials/mobile/_nav.scss */
+/* line 49, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--member-nav {
   background-color: #f6f6f6;
 }
-/* line 49, ../scss/partials/mobile/_nav.scss */
+/* line 51, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--member-nav a {
   color: #003046;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
 }
-/* line 54, ../scss/partials/mobile/_nav.scss */
+/* line 56, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--member-nav a span.count {
   background: #dd322c;
   border-radius: 13px;
@@ -5256,16 +5257,16 @@ html {
   text-align: center;
   width: 23px;
 }
-/* line 71, ../scss/partials/mobile/_nav.scss */
+/* line 73, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .site-logo {
   display: block;
   margin: 0 0 3.2rem;
 }
-/* line 76, ../scss/partials/mobile/_nav.scss */
+/* line 78, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search {
   position: relative;
 }
-/* line 79, ../scss/partials/mobile/_nav.scss */
+/* line 81, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search [for='panel-search'] {
   font-size: 3.4rem;
   position: absolute;
@@ -5273,7 +5274,7 @@ html {
   top: 1.6rem;
   color: #fff;
 }
-/* line 87, ../scss/partials/mobile/_nav.scss */
+/* line 89, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search #panel-search {
   border: 0 none;
   border-radius: 0;
@@ -5285,18 +5286,18 @@ html {
   color: #fff;
   font-size: 2.4rem;
 }
-/* line 98, ../scss/partials/mobile/_nav.scss */
+/* line 100, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search #panel-search label {
   top: 1.4rem;
   left: 1.4rem;
   font-size: 3rem;
 }
-/* line 110, ../scss/partials/mobile/_nav.scss */
+/* line 112, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 115, ../scss/partials/mobile/_nav.scss */
+/* line 117, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list .trending-topics__topic {
   color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
@@ -5305,12 +5306,12 @@ html {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 128, ../scss/partials/mobile/_nav.scss */
+/* line 130, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 133, ../scss/partials/mobile/_nav.scss */
+/* line 135, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list .categories__category {
   color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
@@ -5321,22 +5322,22 @@ html {
 }
 
 /* mobile panel */
-/* line 147, ../scss/partials/mobile/_nav.scss */
+/* line 149, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper {
   overflow-x: hidden;
   right: 47rem;
 }
-/* line 151, ../scss/partials/mobile/_nav.scss */
+/* line 153, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper #page-content {
   pointer-events: none;
   overflow: hidden;
 }
-/* line 157, ../scss/partials/mobile/_nav.scss */
+/* line 159, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header {
   background-color: #fff;
   right: 47rem;
 }
-/* line 161, ../scss/partials/mobile/_nav.scss */
+/* line 163, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header .more-stories-toggle {
   color: #003046;
 }
