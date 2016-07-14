@@ -11,7 +11,19 @@
  *
  * @since 1.2.0
  */
-do_action( 'bp_before_member_messages_loop' ); ?>
+
+// Hack to return search form during ajax search
+if( !empty($_REQUEST['action']) && $_REQUEST['action'] =='messages_filter' ){
+	$_REQUEST['s'] = $_REQUEST['search_terms'];
+?>
+	<div class="message-header-wrapper">
+		<div class="messages-header">
+			<div class="message-search"><?php bp_message_search_form(); ?></div>
+		</div>
+	</div>
+<?php }
+do_action( 'bp_before_member_messages_loop' );
+?>
 <div class="loop">
 	<?php if ( bp_has_message_threads( bp_ajax_querystring( 'messages' ) ) ) : ?>
 	
