@@ -1,4 +1,4 @@
-<?php /* Template name: NSC Portal */ ?>
+<?php header( 'Location: /nationswell-council/' ) ; ?>
 
 <?php
 /**

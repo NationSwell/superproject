@@ -148,6 +148,21 @@ endif;
 		
 		
 		<?php wp_head(); ?>
+        
+        <style>
+			section#events #event-list {
+				font-family:'PT Sans', sans-serif;
+			}
+			section#events h2 {
+				font-family:'PT Serif', serif;
+				font-size:24px;
+				color:#000;
+				margin-bottom:15px;
+			}
+			.byline {
+				color:#fff;
+			}
+		</style>
 
 	</head>
 
@@ -281,7 +296,7 @@ endif;
                                     <p><?php echo $bottom_message; ?></p>
                                 </div>
                             </div>
-                      		<!--<a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>-->
+                      		<!--<a href="#content" class="btn red"><span>Sign in</span></a>-->
                             <div class="link-more">
                             	<a class="learn-more" href="#welcome">Learn More</a>
                             </div>
@@ -329,11 +344,11 @@ if( $images ): shuffle( $images ) ?>
   	<?php endif; ?>
   	<p class="highlight">NationSwell Council members have access to</p>
   	<img src="<?php bloginfo('template_directory'); ?>/img/star-embellishment.png" alt="NationSwell" class="embellishment" />
-  	<p>Meetings with America’s leading problem-solvers<br />
+  	<p style="line-height:34px; margin-bottom:30px;">Meetings with America’s leading problem-solvers<br />
 Jeffersonian-style dinners to unpack and advance solutions<br />
 Introductions to the broader NationSwell network of innovators<br />
 Opportunities for direct service and impact</p>
-      <a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>
+      <a href="#content" class="btn red"><span>Log in</span></a>
   	<?php if(get_field('testimonials')): ?>
   	 
   		<ul class="testimonial-list bxslider">
@@ -377,7 +392,7 @@ Opportunities for direct service and impact</p>
     ?>
     <div class="copy">
       <p><?php echo $first_row['quote' ]; ?></p>
-      <div class="byline"><?php echo $first_row['byline' ]; ?></div>
+      <div class="byline" style="color:#fff;"><?php echo $first_row['byline' ]; ?></div>
     </div>
     <?php $image =  $first_row['associated_image' ]; ?>
     <img src="<?php echo $image['sizes']['quote-thumb']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -419,13 +434,13 @@ Opportunities for direct service and impact</p>
   			<?php } ?>
 			  <div class="text">
   			  <div class="date"><?php the_field('date'); ?></div>
-  				<h3><?php the_title(); ?></h3>
+  				<h2><?php the_title(); ?></h2>
   				<?php the_content(); ?>
 			  </div>
 			</li>
 		<?php endwhile;?>
 		<?php } else { ?>
-			<h3>Currently, no events are scheduled.</h3>
+			<h2>Currently, no events are scheduled.</h2>
 		<?php } ?>
 		<?php wp_reset_query(); ?>
     </ul>
@@ -477,8 +492,10 @@ Opportunities for direct service and impact</p>
 <section id="apply">
   <div class="overlay"></div>
   <div class="inner">
-      <p class="large">Members join the council by invitation or application.</p>
-      <a href="http://nationswell.com/nsc-portal/" class="btn red"><span>Sign in</span></a>
+      <p class="large">Members join the council by invitation or application.<br>
+<br>
+</p>
+      <a href="#content" class="btn red"><span>Log in</span></a>
 			<div class="sidenote">Not a member? <a href="mailto:nsc@nationswell.com">Apply</a></div>
 			<p class="spacer">For inquiries about membership or for more information about the NationSwell Council, please contact us at <a href="mailto:nsc@nationswell.com">nsc@nationswell.com</a>.</p>
   </div>
@@ -504,7 +521,6 @@ if( $images ): shuffle( $images ) ?>
     </div>
     <div class="copyright">
       &copy;<?php echo date('Y'); ?> NationSwell. All rights reserved.<br />
-      <span class="site-design">Carefully crafted by <a href="http://milkandpixels.com" target="_blank">Milk & Pixels</a></span>
     </div>
     <a class="back-top" href="#top">
 	    <div class="star-container">
