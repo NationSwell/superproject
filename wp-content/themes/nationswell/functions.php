@@ -1504,6 +1504,7 @@ function ns_profile_link( $link ) {
 }
 add_filter( 'bp_get_activity_user_link', 'ns_profile_link', 15, 1 );
 add_filter( 'bp_get_member_permalink', 'ns_profile_link', 15, 1 );
+add_filter( 'bp_core_get_user_domain', 'ns_profile_link', 15, 1 );
 
 function ns_core_get_userlink ($string, $user_id) {
 	$url = bp_core_get_user_domain($user_id);
