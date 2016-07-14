@@ -264,6 +264,10 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display:none;
+  @include media($desktop) {
+	  display:block;
+  }
 }
 
 .type-indicator {
