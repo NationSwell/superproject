@@ -975,7 +975,7 @@ small a {
 }
 
 /* line 386, ../scss/partials/base/_icons.scss */
-.icon_star:before {
+.icon_star:before, .static__container.buddy ul li:before {
   content: "\f100";
 }
 
@@ -4083,6 +4083,10 @@ hr {
   max-width: none;
 }
 
+/* line 1, ../scss/partials/base/_static.scss */
+.static__container {
+  /* new styles for static template v 2.0 added by cloudred with classname 'buddy' since this is part of the buddypress integration work. */
+}
 /* line 3, ../scss/partials/base/_static.scss */
 .static__container .static__main-column header {
   position: relative;
@@ -4218,6 +4222,135 @@ hr {
   font-family: 'icons';
   content: "";
   position: absolute;
+}
+/* line 143, ../scss/partials/base/_static.scss */
+.static__container.buddy {
+  /* set up new list styles */
+}
+/* line 146, ../scss/partials/base/_static.scss */
+.static__container.buddy ul {
+  margin-bottom: 1rem;
+  padding-left: 4rem;
+}
+/* line 149, ../scss/partials/base/_static.scss */
+.static__container.buddy ul li {
+  position: relative;
+  padding-bottom: 1rem;
+}
+/* line 152, ../scss/partials/base/_static.scss */
+.static__container.buddy ul li:before {
+  font-family: "icons";
+  padding-right: 2rem;
+  position: absolute;
+  color: #fd6464;
+  top: 2px;
+  left: -2rem;
+}
+/* line 161, ../scss/partials/base/_static.scss */
+.static__container.buddy ul li ul {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+/* line 164, ../scss/partials/base/_static.scss */
+.static__container.buddy ul li ul li:before {
+  color: #1fade0;
+}
+/* line 171, ../scss/partials/base/_static.scss */
+.static__container.buddy ol {
+  counter-reset: item;
+  margin-bottom: 1rem;
+  padding-left: 4rem;
+}
+/* line 175, ../scss/partials/base/_static.scss */
+.static__container.buddy ol li {
+  display: block;
+  position: relative;
+  padding-bottom: 1rem;
+}
+/* line 179, ../scss/partials/base/_static.scss */
+.static__container.buddy ol li:before {
+  font-weight: 700;
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: #fd6464;
+  position: absolute;
+  top: 0;
+  left: -2rem;
+}
+/* line 188, ../scss/partials/base/_static.scss */
+.static__container.buddy ol li ol {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+/* line 191, ../scss/partials/base/_static.scss */
+.static__container.buddy ol li ol li:before {
+  color: #1fade0;
+}
+/* line 198, ../scss/partials/base/_static.scss */
+.static__container.buddy h1, .static__container.buddy h2, .static__container.buddy h3, .static__container.buddy h4, .static__container.buddy h5, .static__container.buddy h6 {
+  font-family: "pt-serif-bold", Georgia, serif;
+  margin: 0 0 20px 0;
+}
+/* line 202, ../scss/partials/base/_static.scss */
+.static__container.buddy h1 {
+  font-size: 4rem;
+}
+/* line 205, ../scss/partials/base/_static.scss */
+.static__container.buddy h2 {
+  font-size: 3rem;
+  color: #fd6464;
+}
+/* line 209, ../scss/partials/base/_static.scss */
+.static__container.buddy h3 {
+  font-size: 2rem;
+}
+/* line 213, ../scss/partials/base/_static.scss */
+.static__container.buddy a {
+  font-weight: normal;
+}
+/* line 218, ../scss/partials/base/_static.scss */
+.static__container.buddy main {
+  margin: 0 2.2rem;
+}
+/* line 220, ../scss/partials/base/_static.scss */
+.static__container.buddy main .static__content {
+  max-width: 98.3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, ../scss/bourbon/addons/_clearfix.scss */
+.static__container.buddy main .static__content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  /* line 222, ../scss/partials/base/_static.scss */
+  .static__container.buddy main .static__content .static__left,
+  .static__container.buddy main .static__content .static__right {
+    float: left;
+    display: block;
+    margin-right: 4%;
+    width: 30.66667%;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  .static__container.buddy main .static__content .static__left:last-child,
+  .static__container.buddy main .static__content .static__right:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 228, ../scss/partials/base/_static.scss */
+  .static__container.buddy main .static__content .static__main {
+    float: left;
+    display: block;
+    margin-right: 4%;
+    width: 134.66667%;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  .static__container.buddy main .static__content .static__main:last-child {
+    margin-right: 0;
+  }
 }
 
 /* line 1, ../scss/partials/base/_archive.scss */

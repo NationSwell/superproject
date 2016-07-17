@@ -138,4 +138,99 @@
       }
     }
   }
+  
+  /* new styles for static template v 2.0 added by cloudred with classname 'buddy' since this is part of the buddypress integration work. */
+  &.buddy {
+  	
+	/* set up new list styles */
+	ul {
+		margin-bottom: 1rem;
+    	padding-left: 4rem;
+		li {
+			position:relative;
+			padding-bottom:1rem;
+			&:before {
+    			font-family:"icons";
+    			padding-right:2rem;
+    			position:absolute;
+    			@extend .icon_star;
+				color: $ns_red2;
+				top:2px;
+				left:-2rem;
+			}
+			ul {
+				margin-top:2rem;
+				margin-bottom: 0;
+				li:before {
+					color:$ns_blue2;
+				}
+			}
+		}
+	}
+	
+	ol { 
+		counter-reset: item;
+		margin-bottom: 1rem;
+    	padding-left: 4rem;
+        li {
+        	display: block;
+        	position:relative;
+			padding-bottom:1rem;
+        	&:before {
+            	font-weight:$bold;
+            	content: counter(item) ". ";
+            	counter-increment: item;
+            	color: $ns_red2;
+            	position:absolute;
+            	top:0;
+				left:-2rem;
+            }
+            ol {
+				margin-top:2rem;
+				margin-bottom: 0;
+				li:before {
+					color:$ns_blue2;
+				}
+			}
+        }
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    	font-family:$pt-serif-bold;
+    	margin: 0 0 20px 0;
+    }
+    h1 {
+  		font-size:4rem;
+  	}
+  	h2 {
+  		font-size:3rem;
+  		color: $ns_red2;
+  	}
+  	h3 {
+  		font-size:2rem;
+  	}
+  	
+  	a {
+  		font-weight:normal;
+  	}
+  	
+  	
+  	main {
+  		margin:0 2.2rem;
+  		.static__content {
+  			@include outer-container;
+  			.static__left,
+  			.static__right {
+  				@include media($desktop) {
+  					@include span-columns(2);
+  				}
+  			}
+  			.static__main {
+  				@include media($desktop) {
+  					@include span-columns(8);
+  				}
+  			}
+  		}
+  	}
+  }
 }

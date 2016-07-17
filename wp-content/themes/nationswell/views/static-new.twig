@@ -1,0 +1,30 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="static__container buddy">
+        <div class="container container--flex">
+            <main role="main">
+                <header>
+                    <h1 class="static__head">{{ post.title }}</h1>
+                    {#<h3 class="static__last-updated">Last updated on {{ post.post_modified|date('F j, Y') }}</h3>#}
+                </header>
+				
+				<div class="static__content">
+                	<div class="static__left">
+                		&nbsp;
+                	</div>
+                	<div class="static__main">
+                    	{{ page_content }}
+                    	{% if post.id == "18650" %}
+								{{ summit_breakout }}
+						{% endif %}
+                	</div>
+                	<div class="static__right">
+                		&nbsp;
+                	</div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+{% endblock %}

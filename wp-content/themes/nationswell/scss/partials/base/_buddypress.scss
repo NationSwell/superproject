@@ -34,6 +34,11 @@ body.xprofile {
 	@extend .box-margin;
 }
 
+.bp-header {
+	color:$black;
+	font-family:$pt-serif-bold;
+}
+
 
 a.clear-value {
 	display:none !important;
@@ -157,6 +162,10 @@ a.clear-value {
 		margin:auto;
 		@include media($desktop) {
 			max-width:50%;
+		}
+		
+		h1, h2, h3 {
+			@extend .bp-header;
 		}
 		
 		//height:100%;
@@ -320,8 +329,7 @@ a.clear-value {
 	$medium: new-breakpoint(min-width 580px);
 	
 	h1, h2, h3 {
-		color:$black;
-		font-family:$pt-serif-bold;
+		@extend .bp-header;
 	}
 	h1 {
 		font-size:24px;
@@ -1405,14 +1413,26 @@ a.clear-value {
 					}
 					li {
 						@include clearfix;
+						border-top: 1px solid $gray6;
+    					padding-top: 10px;
+						position:relative;
 						margin-bottom: 30px;
 						.acomment-avatar {
 							float:left;
 							margin-right:30px;
 						}
+						.acomment-content {
+							padding-top: 15px;
+						}
 						.activity-time-since,
 						.acomment-reply {
 							display:none;
+						}
+						.acomment-options {
+							float: right;
+							position: absolute;
+							right: 0;
+							top: 10px;
 						}	
 					}
 				}
@@ -1702,6 +1722,7 @@ a.clear-value {
 			}
 			.item-title {
 				@extend h2;
+				margin-bottom:2px;
 				a {
 					color:$black;
 				}

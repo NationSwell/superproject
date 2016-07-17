@@ -129,9 +129,17 @@ function add_to_context( $data ) {
 	if( function_exists('is_buddypress') &&!empty($bp)){
 		$data['bp'] = $bp;
 		$data['loggedin_user_user_nicename'] = $bp->loggedin_user->userdata->user_nicename;
+		
+		//new messages
+		$data['bp_new_message_count'] = $new_message_count = (int) messages_get_unread_count();
+		
+		//new mentions
 		$data['bp_new_mention_count'] = $new_mention_count = (int) bp_get_user_meta( $bp->loggedin_user->id, 'bp_new_mention_count', true );
+	
+		//total notifications
+		$data['bp_total_new_count'] = $new_mention_count + $new_message_count;
+		
 		$data['bp_unread_notification_count'] = $unread_notification_count = bp_notifications_get_unread_notification_count($bp->loggedin_user->id);
-		$data['bp_total_new_count'] = $new_mention_count + $unread_notification_count;
 	}
     return $data;
 }
@@ -1504,7 +1512,7 @@ function ns_profile_link( $link ) {
 }
 add_filter( 'bp_get_activity_user_link', 'ns_profile_link', 15, 1 );
 add_filter( 'bp_get_member_permalink', 'ns_profile_link', 15, 1 );
-add_filter( 'bp_core_get_user_domain', 'ns_profile_link', 15, 1 );
+//add_filter( 'bp_core_get_user_domain', 'ns_profile_link', 15, 1 );
 
 function ns_core_get_userlink ($string, $user_id) {
 	$url = bp_core_get_user_domain($user_id);

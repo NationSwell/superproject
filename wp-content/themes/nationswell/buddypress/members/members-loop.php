@@ -116,6 +116,17 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 					<?php endif; ?>-->
 
 				</div>
+				<div>
+					<p><?php 
+					$user_title = bp_get_profile_field_data(array('field'=>'Title','user_id'=>bp_get_member_user_id()));
+					$user_company = bp_get_profile_field_data(array('field'=>'Company','user_id'=>bp_get_member_user_id()));
+					if (!empty($user_title)) :
+						echo $user_title .', '.$user_company;
+                	elseif (!empty($user_company)):
+						echo $user_company;
+					endif;
+					?></p>
+				</div>
 
 				<!--<div class="item-meta"><span class="activity"><?php bp_member_last_active(); ?></span></div>-->
 
