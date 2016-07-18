@@ -12,6 +12,11 @@ html, body {
 
 html {
   font-size: 8px;
+  @media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 568px) {
+	  font-size: 6.8px;
+	}
   @include media($desktop) {
 	  font-size: 10px;
   }
