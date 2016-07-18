@@ -182,7 +182,7 @@ endif;
                         <div class="content">
                             
                             <div class="intro">
-                            	<h1 class="logo"><?php _e( 'NationSwell Council', 'buddypress' ); ?></h1>
+                            	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1 class="logo"><?php _e( 'NationSwell Council', 'buddypress' ); ?></h1></a>
                            		<p><?php _e( 'A diverse community of accomplished professionals who are passionate about service', 'buddypress' ); ?></p>
                             </div>
                             <div class="login-form">
