@@ -1,15 +1,23 @@
 {% extends "base.twig" %}
 
 {% block content %}
-    <div class="static__container">
+    <div class="static__container buddy">
         <div class="container container--flex">
-            <main class="static__main-column" role="main">
+            <main role="main">
                 <header>
                     <h1 class="hd-j static__hed">{{ post.title }}</h1>
                 </header>
-
-                <div class="static__content">
-                    {{post.content}}
+				
+				<div class="static__content">
+                	<div class="static__left">
+                		&nbsp;
+                	</div>
+                	<div class="static__main">
+                    	{{ page_content }}
+                	</div>
+                	<div class="static__right">
+                		&nbsp;
+                	</div>
                 </div>
             </main>
         </div>
