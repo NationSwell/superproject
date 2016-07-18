@@ -121,9 +121,9 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 					$user_title = bp_get_profile_field_data(array('field'=>'Title','user_id'=>bp_get_member_user_id()));
 					$user_company = bp_get_profile_field_data(array('field'=>'Company','user_id'=>bp_get_member_user_id()));
 					if (!empty($user_title)) :
-						echo $user_title .', '.$user_company;
+						echo $user_title .', '.trunc($user_company,3);
                 	elseif (!empty($user_company)):
-						echo $user_company;
+						echo trunc($user_company,3);
 					endif;
 					?></p>
 				</div>
