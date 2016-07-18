@@ -925,7 +925,7 @@ small a {
 }
 
 /* line 331, ../scss/partials/base/_icons.scss */
-.icon_quote:before {
+.icon_quote:before, .static__container.buddy blockquote:before {
   content: "\f13b";
 }
 
@@ -4372,7 +4372,7 @@ hr {
 }
 /* line 202, ../scss/partials/base/_static.scss */
 .static__container.buddy h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 /* line 205, ../scss/partials/base/_static.scss */
 .static__container.buddy h2, .static__container.buddy #buddypress #members-list li .item-title, #buddypress #members-list li .static__container.buddy .item-title {
@@ -4387,15 +4387,40 @@ hr {
 .static__container.buddy a {
   font-weight: normal;
 }
-/* line 218, ../scss/partials/base/_static.scss */
+/* line 217, ../scss/partials/base/_static.scss */
+.static__container.buddy blockquote {
+  font-family: "pt-serif-italic", Georgia, serif;
+  position: relative;
+  padding-left: 4.5rem;
+}
+/* line 221, ../scss/partials/base/_static.scss */
+.static__container.buddy blockquote:before {
+  font-family: "icons";
+  font-size: 3.5rem;
+  color: #fd6464;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 230, ../scss/partials/base/_static.scss */
+.static__container.buddy blockquote p {
+  padding-top: .5rem;
+  display: block;
+}
+/* line 237, ../scss/partials/base/_static.scss */
 .static__container.buddy main {
   margin: 0 2.2rem;
 }
-/* line 220, ../scss/partials/base/_static.scss */
+/* line 239, ../scss/partials/base/_static.scss */
 .static__container.buddy main .static__content {
+  font-size: inherit !important;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+}
+/* line 241, ../scss/partials/base/_static.scss */
+.static__container.buddy main .static__content p {
+  font-size: inherit !important;
 }
 /* line 15, ../scss/bourbon/addons/_clearfix.scss */
 .static__container.buddy main .static__content:after {
@@ -4404,7 +4429,7 @@ hr {
   clear: both;
 }
 @media screen and (min-width: 768px) {
-  /* line 222, ../scss/partials/base/_static.scss */
+  /* line 245, ../scss/partials/base/_static.scss */
   .static__container.buddy main .static__content .static__left,
   .static__container.buddy main .static__content .static__right {
     float: left;
@@ -4419,7 +4444,7 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 228, ../scss/partials/base/_static.scss */
+  /* line 251, ../scss/partials/base/_static.scss */
   .static__container.buddy main .static__content .static__main {
     float: left;
     display: block;

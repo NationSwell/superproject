@@ -200,7 +200,7 @@
     	margin: 0 0 20px 0;
     }
     h1 {
-  		font-size:4rem;
+  		font-size:3.5rem;
   	}
   	h2 {
   		font-size:3rem;
@@ -214,10 +214,33 @@
   		font-weight:normal;
   	}
   	
+  	blockquote {
+  		font-family:$pt-serif;
+  		position:relative;
+  		padding-left:4.5rem;
+  		&:before {
+  			font-family:"icons";
+  			@extend .icon_quote;
+  			font-size:3.5rem;
+  			color: $ns_red2;
+  			position:absolute;
+  			top:0;
+  			left:0;
+  		}
+  		p {
+  			padding-top:.5rem;
+  			display:block;
+  		}
+  	}
+  	
   	
   	main {
   		margin:0 2.2rem;
   		.static__content {
+  			font-size:inherit !important;
+  			p {
+  				font-size:inherit !important;
+  			}	
   			@include outer-container;
   			.static__left,
   			.static__right {
