@@ -672,7 +672,8 @@
 
   .widget_sp_image {
     text-align: center;
-    max-width: 32rem;
+    /*max-width: 32rem;*/
+	max-width: 100%;
     margin: 0 auto 7.6rem auto;
 	border:1px solid $gray6;
 	
