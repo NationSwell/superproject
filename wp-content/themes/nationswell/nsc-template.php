@@ -208,7 +208,7 @@ endif;
 										 ?>
 										
                                         <?php if ($success) : ?>
-                                        	<?php $bottom_message = '<a href="'.get_permalink().'">'.__( '&#8592; Back to member login','buddypress').'</a>'; ?>
+                                        	<?php $bottom_message = '<a href="'.get_permalink().'">'.__( '&#8592; Back to Member Login','buddypress').'</a>'; ?>
                                         	<p style="margin-bottom:100px"><?php _e('A match was made with the information you provided. Please check your email account for a message from us.','buddypress'); ?></p>
                                             
                                             
@@ -248,7 +248,7 @@ endif;
                                                 </p>
                                                 <div class="form-row">
                                                     <p class="login-remember">
-                                                        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Back to member login', 'buddypress' ); ?></a>
+                                                        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Back to Member Login', 'buddypress' ); ?></a>
                                                     </p>
                                                     <p class="lostpassword-submit">
                                                         <input type="hidden" name="action" value="reset" />

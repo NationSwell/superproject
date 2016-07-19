@@ -4792,8 +4792,21 @@ body.login {
 }
 /* line 8, ../scss/partials/base/_custom-login.scss */
 body.login div#login {
-  width: 85%;
+  width: 90%;
   font-family: "Gudea", Arial, sans-serif;
+}
+/* line 11, ../scss/partials/base/_custom-login.scss */
+body.login div#login a:link, body.login div#login a:visited {
+  color: #fd6464;
+  text-decoration: underline;
+}
+/* line 16, ../scss/partials/base/_custom-login.scss */
+body.login div#login a:hover {
+  color: #1fade0;
+}
+/* line 19, ../scss/partials/base/_custom-login.scss */
+body.login div#login a:active {
+  color: #003046;
 }
 @media screen and (min-width: 768px) {
   /* line 8, ../scss/partials/base/_custom-login.scss */
@@ -4801,38 +4814,54 @@ body.login div#login {
     width: 50%;
   }
 }
-/* line 17, ../scss/partials/base/_custom-login.scss */
+/* line 31, ../scss/partials/base/_custom-login.scss */
 body.login div#login h1 a {
   background: url(../img/nsc-logo.png) 0 0 no-repeat;
   width: 300px;
   height: 146px;
   background-size: 100% auto;
 }
-/* line 24, ../scss/partials/base/_custom-login.scss */
+/* line 38, ../scss/partials/base/_custom-login.scss */
 body.login div#login form label {
   font-size: 18px;
 }
-/* line 31, ../scss/partials/base/_custom-login.scss */
+/* line 45, ../scss/partials/base/_custom-login.scss */
 body.login div#login form p.forgetmenot {
   margin-top: 15px;
 }
-/* line 33, ../scss/partials/base/_custom-login.scss */
+/* line 47, ../scss/partials/base/_custom-login.scss */
 body.login div#login form p.forgetmenot label {
   font-size: 14px;
 }
-/* line 38, ../scss/partials/base/_custom-login.scss */
+/* line 52, ../scss/partials/base/_custom-login.scss */
 body.login div#login form .pass-strength-result {
   width: 100%;
 }
-/* line 42, ../scss/partials/base/_custom-login.scss */
+/* line 56, ../scss/partials/base/_custom-login.scss */
 body.login div#login form p.submit input#wp-submit {
   height: auto;
   box-shadow: none;
   text-shadow: none;
 }
-/* line 50, ../scss/partials/base/_custom-login.scss */
-body.login div#login p#backtoblog {
+/* line 64, ../scss/partials/base/_custom-login.scss */
+body.login div#login p#backtoblog,
+body.login div#login p#nav {
   display: none;
+}
+/* line 70, ../scss/partials/base/_custom-login.scss */
+body.login .custom-login-footer {
+  float: left;
+  padding-top: 10px;
+  font-size: 1.5rem;
+  /*width:90%;
+  margin:0 auto;
+  padding:26px;
+  background-color:$white;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+  @include media($desktop) {
+  	width:50%;
+  }*/
 }
 
 /*# sourceMappingURL=custom-login.css.map */

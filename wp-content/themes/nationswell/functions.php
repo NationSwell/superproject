@@ -1529,3 +1529,26 @@ function ns_core_get_userlink ($string, $user_id) {
 	return $link;
 }
 add_filter ('bp_core_get_userlink', 'ns_core_get_userlink', 10, 2);
+
+
+/********* Login/password reset pages hook callbacks *****************/
+// define the login_footer callback 
+function ns_login_footer( $wp_print_footer_scripts, $int ) { 
+	echo '<div class="custom-login-footer">';
+	echo '<a href="/nationswell-council/">';
+	echo __('Back to Member Login','buddypress');
+	echo '</a>';
+	echo '</div>';
+	echo '<script>
+		jQuery( document ).ready(function() {
+			if (jQuery("body").hasClass("login-action-lostpassword")) {
+				jQuery(".custom-login-footer").prependTo("p.submit");
+			} else {
+				jQuery(".custom-login-footer").css("display","none");
+			}
+		});
+	</script>';
+}; 
+         
+// add the action 
+add_action( 'login_footer', 'ns_login_footer', 10, 2 ); 
