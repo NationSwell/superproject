@@ -4328,44 +4328,63 @@ hr {
 /* line 146, ../scss/partials/base/_static.scss */
 .static__container.buddy ul {
   margin-bottom: 1rem;
-  padding-left: 4rem;
+  padding-left: 8rem;
 }
-/* line 149, ../scss/partials/base/_static.scss */
+@media screen and (min-width: 768px) {
+  /* line 146, ../scss/partials/base/_static.scss */
+  .static__container.buddy ul {
+    padding-left: 4rem;
+  }
+}
+/* line 152, ../scss/partials/base/_static.scss */
 .static__container.buddy ul li {
   position: relative;
   padding-bottom: 1rem;
 }
-/* line 152, ../scss/partials/base/_static.scss */
+/* line 155, ../scss/partials/base/_static.scss */
 .static__container.buddy ul li:before {
   font-family: "icons";
-  padding-right: 2rem;
   position: absolute;
   color: #fd6464;
   top: 2px;
-  left: -2rem;
+  padding-right: 4rem;
+  left: -4rem;
 }
-/* line 161, ../scss/partials/base/_static.scss */
+@media screen and (min-width: 768px) {
+  /* line 155, ../scss/partials/base/_static.scss */
+  .static__container.buddy ul li:before {
+    padding-right: 2rem;
+    left: -2rem;
+  }
+}
+/* line 170, ../scss/partials/base/_static.scss */
 .static__container.buddy ul li ul {
   margin-top: 2rem;
   margin-bottom: 0;
 }
-/* line 164, ../scss/partials/base/_static.scss */
+/* line 173, ../scss/partials/base/_static.scss */
 .static__container.buddy ul li ul li:before {
   color: #1fade0;
 }
-/* line 171, ../scss/partials/base/_static.scss */
+/* line 180, ../scss/partials/base/_static.scss */
 .static__container.buddy ol {
   counter-reset: item;
   margin-bottom: 1rem;
-  padding-left: 4rem;
+  padding-left: 8rem;
 }
-/* line 175, ../scss/partials/base/_static.scss */
+@media screen and (min-width: 768px) {
+  /* line 180, ../scss/partials/base/_static.scss */
+  .static__container.buddy ol {
+    padding-left: 4rem;
+  }
+}
+/* line 187, ../scss/partials/base/_static.scss */
 .static__container.buddy ol li {
   display: block;
   position: relative;
   padding-bottom: 1rem;
 }
-/* line 179, ../scss/partials/base/_static.scss */
+/* line 191, ../scss/partials/base/_static.scss */
 .static__container.buddy ol li:before {
   font-weight: 700;
   content: counter(item) ". ";
@@ -4373,46 +4392,70 @@ hr {
   color: #fd6464;
   position: absolute;
   top: 0;
-  left: -2rem;
+  left: -4rem;
 }
-/* line 188, ../scss/partials/base/_static.scss */
+@media screen and (min-width: 768px) {
+  /* line 191, ../scss/partials/base/_static.scss */
+  .static__container.buddy ol li:before {
+    left: -2rem;
+  }
+}
+/* line 204, ../scss/partials/base/_static.scss */
 .static__container.buddy ol li ol {
   margin-top: 2rem;
   margin-bottom: 0;
 }
-/* line 191, ../scss/partials/base/_static.scss */
+/* line 207, ../scss/partials/base/_static.scss */
 .static__container.buddy ol li ol li:before {
   color: #1fade0;
 }
-/* line 198, ../scss/partials/base/_static.scss */
+/* line 214, ../scss/partials/base/_static.scss */
 .static__container.buddy h1, .static__container.buddy h2, .static__container.buddy h3, .static__container.buddy h4, .static__container.buddy h5, .static__container.buddy h6 {
   font-family: "pt-serif-bold", Georgia, serif;
   margin: 0 0 20px 0;
 }
-/* line 202, ../scss/partials/base/_static.scss */
+/* line 218, ../scss/partials/base/_static.scss */
 .static__container.buddy h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
-/* line 205, ../scss/partials/base/_static.scss */
+@media screen and (min-width: 768px) {
+  /* line 218, ../scss/partials/base/_static.scss */
+  .static__container.buddy h1 {
+    font-size: 3.5rem;
+  }
+}
+/* line 224, ../scss/partials/base/_static.scss */
 .static__container.buddy h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fd6464;
 }
-/* line 209, ../scss/partials/base/_static.scss */
-.static__container.buddy h3 {
-  font-size: 2rem;
+@media screen and (min-width: 768px) {
+  /* line 224, ../scss/partials/base/_static.scss */
+  .static__container.buddy h2 {
+    font-size: 3rem;
+  }
 }
-/* line 213, ../scss/partials/base/_static.scss */
+/* line 231, ../scss/partials/base/_static.scss */
+.static__container.buddy h3 {
+  font-size: 3.2rem;
+}
+@media screen and (min-width: 768px) {
+  /* line 231, ../scss/partials/base/_static.scss */
+  .static__container.buddy h3 {
+    font-size: 2rem;
+  }
+}
+/* line 238, ../scss/partials/base/_static.scss */
 .static__container.buddy a {
   font-weight: normal;
 }
-/* line 217, ../scss/partials/base/_static.scss */
+/* line 242, ../scss/partials/base/_static.scss */
 .static__container.buddy blockquote {
   font-family: "pt-serif", Georgia, serif;
   position: relative;
   padding-left: 4.5rem;
 }
-/* line 221, ../scss/partials/base/_static.scss */
+/* line 246, ../scss/partials/base/_static.scss */
 .static__container.buddy blockquote:before {
   font-family: "icons";
   font-size: 3.5rem;
@@ -4421,16 +4464,16 @@ hr {
   top: 0;
   left: 0;
 }
-/* line 230, ../scss/partials/base/_static.scss */
+/* line 255, ../scss/partials/base/_static.scss */
 .static__container.buddy blockquote p {
   padding-top: .5rem;
   display: block;
 }
-/* line 237, ../scss/partials/base/_static.scss */
+/* line 262, ../scss/partials/base/_static.scss */
 .static__container.buddy main {
   margin: 0 2.2rem;
 }
-/* line 239, ../scss/partials/base/_static.scss */
+/* line 264, ../scss/partials/base/_static.scss */
 .static__container.buddy main .static__content {
   max-width: 120rem;
   margin-left: auto;
@@ -4443,7 +4486,7 @@ hr {
   clear: both;
 }
 @media screen and (min-width: 768px) {
-  /* line 241, ../scss/partials/base/_static.scss */
+  /* line 266, ../scss/partials/base/_static.scss */
   .static__container.buddy main .static__content .static__left,
   .static__container.buddy main .static__content .static__right {
     float: left;
@@ -4458,7 +4501,7 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 247, ../scss/partials/base/_static.scss */
+  /* line 272, ../scss/partials/base/_static.scss */
   .static__container.buddy main .static__content .static__main {
     float: left;
     display: block;

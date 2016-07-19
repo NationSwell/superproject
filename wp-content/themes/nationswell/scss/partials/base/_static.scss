@@ -145,18 +145,27 @@
 	/* set up new list styles */
 	ul {
 		margin-bottom: 1rem;
-    	padding-left: 4rem;
+    	padding-left: 8rem;
+		@include media($desktop) {
+			padding-left: 4rem;
+		}
 		li {
 			position:relative;
 			padding-bottom:1rem;
 			&:before {
     			font-family:"icons";
-    			padding-right:2rem;
     			position:absolute;
     			@extend .icon_star;
 				color: $ns_red2;
 				top:2px;
-				left:-2rem;
+				
+				padding-right:4rem;
+				left:-4rem;
+    			
+				@include media($desktop) {
+					padding-right:2rem;
+					left:-2rem;
+				}
 			}
 			ul {
 				margin-top:2rem;
@@ -171,7 +180,10 @@
 	ol { 
 		counter-reset: item;
 		margin-bottom: 1rem;
-    	padding-left: 4rem;
+    	padding-left: 8rem;
+		@include media($desktop) {
+			padding-left: 4rem;
+		}
         li {
         	display: block;
         	position:relative;
@@ -183,7 +195,11 @@
             	color: $ns_red2;
             	position:absolute;
             	top:0;
-				left:-2rem;
+				left:-4rem;
+    			
+				@include media($desktop) {
+					left:-2rem;
+				}
             }
             ol {
 				margin-top:2rem;
@@ -200,14 +216,23 @@
     	margin: 0 0 20px 0;
     }
     h1 {
-  		font-size:3.5rem;
+		font-size:5rem;
+		@include media($desktop) {
+  			font-size:3.5rem;
+		}
   	}
   	h2 {
-  		font-size:3rem;
+  		font-size:4rem;
+		@include media($desktop) {
+			font-size:3rem;
+		}
   		color: $ns_red2;
   	}
   	h3 {
-  		font-size:2rem;
+		font-size:3.2rem;
+		@include media($desktop) {
+  			font-size:2rem;
+		}
   	}
   	
   	a {
