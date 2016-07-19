@@ -107,7 +107,7 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 
 			<div class="item">
 				<div class="item-title">
-					<a href="<?php echo(bp_get_member_permalink());?>"><?php bp_member_name(); ?></a>
+					<a href="<?php echo(bp_get_member_permalink());?>"><?php echo mb_strimwidth(bp_get_member_name(), 0, 35, "..."); ?></a>
 
 					<!--<?php if ( bp_get_member_latest_update() ) : ?>
 
@@ -119,11 +119,13 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 				<div>
 					<p><?php 
 					$user_title = bp_get_profile_field_data(array('field'=>'Title','user_id'=>bp_get_member_user_id()));
+					$user_title = mb_strimwidth($user_title , 0, 25, "...");
 					$user_company = bp_get_profile_field_data(array('field'=>'Company','user_id'=>bp_get_member_user_id()));
+					$user_company = mb_strimwidth($user_company , 0, 25, "...");
 					if (!empty($user_title)) :
-						echo $user_title .', '.trunc($user_company,3);
+						echo $user_title .'<br>'.$user_company;
                 	elseif (!empty($user_company)):
-						echo trunc($user_company,3);
+						echo $user_company;
 					endif;
 					?></p>
 				</div>

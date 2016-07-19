@@ -328,7 +328,7 @@ a.clear-value {
 	$large: new-breakpoint(min-width 992px);
 	$medium: new-breakpoint(min-width 580px);
 	
-	h1, h2, h3 {
+	h1, h2, h3, h4 {
 		@extend .bp-header;
 	}
 	h1 {
@@ -341,11 +341,16 @@ a.clear-value {
 		font-size:16px;
 	}
 
-	
-	p {
-		line-height:2rem;
+	font-size:2rem;
+	line-height:130%;
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 568px) {
+	  font-size: 3.2rem;
 	}
-	
+	@include media($desktop) {
+		font-size:1.6rem;
+	}
 	
 	a:link, a:visited {
 		color: $ns_red2;
@@ -811,8 +816,6 @@ a.clear-value {
 						}
 						td.thread-from {
 							max-width:100px;
-							font-size:14px;
-							line-height:16px;
 							.avatar {
 								display:block;
 							}
@@ -996,8 +999,6 @@ a.clear-value {
 				}
 			}
 			.item-block-content {
-				font-size:16px;
-				line-height:20px;
 				color:$gray2;
 				margin-bottom:10px;
 			}
@@ -1142,7 +1143,6 @@ a.clear-value {
     		}
     	}
 		.left {
-			line-height:2rem;
 			@include media($medium) {
 				@include span-columns(8);
 			}
@@ -1339,7 +1339,6 @@ a.clear-value {
 				}
 				.activity-header {
 					color: $gray1;
-    				line-height: 220%;
 					a {
 						font-weight:$bold;
 						
@@ -1471,9 +1470,7 @@ a.clear-value {
 		color:$ns_navy2;
 		padding-bottom:15px;
 		font-size:2rem;
-		p {
-			line-height:3rem;
-		}
+		
 		&.announcements {
 			@extend .box-margin;
 		}
@@ -1553,7 +1550,6 @@ a.clear-value {
 						.location {
 							@include span-columns(4);
 							margin-left:20px;
-							line-height:20px;
 						
 							&:before {
 								position:absolute;
@@ -1674,7 +1670,8 @@ a.clear-value {
 		li {
 			background:$gray7;
 			margin-bottom:2rem;
-			padding:30px 3%;
+			padding:15px;
+			min-height:125px;
 			
 			
 			@include omega(1n);
@@ -1958,7 +1955,6 @@ Ajax Loading
 }
 #buddypress .standard-form textarea#message_content {
 	height: 200px;
-	line-height:2rem;
 }
 #buddypress .standard-form#send-reply textarea {
 	width: 97.5%;
