@@ -915,6 +915,10 @@ a.clear-value {
 					.item-subblock {
 						display:inline-block;
 						margin-right:20px;
+						margin-bottom:20px;
+						@include media($desktop) {
+							margin-bottom:0;
+						}
 						vertical-align:middle;
 					}
 				}
@@ -1228,7 +1232,7 @@ a.clear-value {
 			padding-bottom:20px;
 			color:$black;
 			span {
-				font-size:1rem;
+				font-size:12px;
 			}
 		}
 		input[type="text"], select, textarea {
@@ -1469,8 +1473,11 @@ a.clear-value {
 		font-family:$pt-serif-italic;
 		color:$ns_navy2;
 		padding-bottom:15px;
-		font-size:2rem;
-		
+		font-size:4rem;
+		line-height:130%;
+		@include media($desktop) {
+			font-size:2rem;
+		}
 		&.announcements {
 			@extend .box-margin;
 		}
