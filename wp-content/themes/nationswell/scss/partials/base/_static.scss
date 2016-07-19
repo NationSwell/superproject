@@ -237,10 +237,6 @@
   	main {
   		margin:0 2.2rem;
   		.static__content {
-  			font-size:inherit !important;
-  			p {
-  				font-size:inherit !important;
-  			}	
   			@include outer-container;
   			.static__left,
   			.static__right {

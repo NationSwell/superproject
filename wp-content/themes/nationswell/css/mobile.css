@@ -126,7 +126,7 @@ html {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   /* line 13, ../scss/partials/base/_structure.scss */
   html {
-    font-size: 6.8px;
+    font-size: 5px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -4340,14 +4340,9 @@ hr {
 }
 /* line 239, ../scss/partials/base/_static.scss */
 .static__container.buddy main .static__content {
-  font-size: inherit !important;
   max-width: 98.3rem;
   margin-left: auto;
   margin-right: auto;
-}
-/* line 241, ../scss/partials/base/_static.scss */
-.static__container.buddy main .static__content p {
-  font-size: inherit !important;
 }
 /* line 15, ../scss/bourbon/addons/_clearfix.scss */
 .static__container.buddy main .static__content:after {
@@ -4356,7 +4351,7 @@ hr {
   clear: both;
 }
 @media screen and (min-width: 768px) {
-  /* line 245, ../scss/partials/base/_static.scss */
+  /* line 241, ../scss/partials/base/_static.scss */
   .static__container.buddy main .static__content .static__left,
   .static__container.buddy main .static__content .static__right {
     float: left;
@@ -4371,7 +4366,7 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 251, ../scss/partials/base/_static.scss */
+  /* line 247, ../scss/partials/base/_static.scss */
   .static__container.buddy main .static__content .static__main {
     float: left;
     display: block;
