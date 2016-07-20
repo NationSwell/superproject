@@ -1090,6 +1090,8 @@ a.clear-value {
 				.headline {
 					color:$gray2;
 					text-align:left;
+					white-space:nowrap;
+					
 					.icon {
 						font-size:33px;
 						width:45px;
