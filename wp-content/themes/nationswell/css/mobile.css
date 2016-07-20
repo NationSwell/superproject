@@ -2721,7 +2721,7 @@ input[type="submit"]:-moz-focus-inner {
 /* line 692, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description p {
   display: block;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 /* line 696, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a {

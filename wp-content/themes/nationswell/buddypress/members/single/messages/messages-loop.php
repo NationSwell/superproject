@@ -156,11 +156,13 @@ do_action( 'bp_before_member_messages_loop' );
 				</tbody>
 	
 			</table><!-- #message-threads -->
-			<div class="divider"></div>
+			
             <?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
-				<div class="messages-options-nav">
+				<div class="divider"></div>
+                <div class="messages-options-nav">
 					<?php bp_messages_bulk_management_dropdown(); ?>
 				</div><!-- .messages-options-nav -->
+                
             <?php endif; ?>
 	
 			<?php wp_nonce_field( 'messages_bulk_nonce', 'messages_bulk_nonce' ); ?>

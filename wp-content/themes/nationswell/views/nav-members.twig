@@ -23,7 +23,7 @@
 			<li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/activity/mentions/#activity-stream">{{ bp_new_mention_count }} new mention{% if bp_new_mention_count > 1 %}s{% endif %}</a></li>
 			{% endif %}
 			{% if bp_new_message_count > 0 %}
-            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/messages/">{{ bp_new_message_count }} new message{% if bp_new_message_count > 1 %}s{% endif %}</a></li>
+            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/messages/#ns-messages">{{ bp_new_message_count }} new message{% if bp_new_message_count > 1 %}s{% endif %}</a></li>
 			{% endif %}
         </ul>
 	</div>

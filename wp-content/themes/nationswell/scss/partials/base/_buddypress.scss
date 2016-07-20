@@ -1073,7 +1073,7 @@ a.clear-value {
 				@include display(flex);
 				@include flex-direction(row);
 				@include justify-content(space-around);
-				@include align-items(center);
+				@include align-items(flex-start);
 				@include align-content(center);
 				
 				@include media($medium) {
@@ -2309,7 +2309,7 @@ a.bp-title-button {
 
 /* Table */
 ul.tabletolist {
-	border-bottom: 2px solid #eee;margin:0 0 20px 0;
+	/*border-bottom: 2px solid #eee;margin:0 0 20px 0;*/
 }
 /* Image */
 ul.tabletolist img {
@@ -2317,7 +2317,7 @@ ul.tabletolist img {
 }
 /* Table with no row headers */
 ul.tabletolist.nrh {
-	border-bottom: 2px solid #ddd;
+	/*border-bottom: 2px solid #ddd;*/
 }
 /* Table with no row headers columns */
 ul.tabletolist.nrh li:first-child,
@@ -2327,7 +2327,7 @@ ul.tabletolist.nrh li ul li:first-child {
 }
 
 ul.tabletolist.nrh > li  {
-    border-top: 2px solid #ddd;
+    /*border-top: 2px solid #ddd;*/
 }
 /* Table defaults */
 ul.tabletolist, ul.tabletolist > li > ul {
@@ -2344,7 +2344,8 @@ ul.tabletolist > li .titles {
 }
 /* Table rows */
 ul.tabletolist > li > ul > li {
-    border-bottom:1px solid #eee;padding:10px;
+   /* border-bottom:1px solid #eee;*/
+	padding:10px;
 }
 /* Table rows hover 
 ul.tabletolist > li > ul > li:hover {
@@ -2362,6 +2363,9 @@ ul.tabletolist ul > li .row_headers {
 /* Table row data */
 ul.tabletolist ul > li .row_data {
     float:none; max-width: 100%;
+	p.subject {
+		font-weight:bold;
+	}
 }
 /* Clearfix */
 ul.tabletolist > li > ul > li {*zoom: 1;}

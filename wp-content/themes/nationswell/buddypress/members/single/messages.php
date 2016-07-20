@@ -7,7 +7,7 @@
  */
 
 ?>
-<div class="ns-messages">
+<div class="ns-messages" id="ns-messages">
     <div class="item-list-tabs no-ajax messages-nav" id="subnav" role="navigation">
         <ul>
         
