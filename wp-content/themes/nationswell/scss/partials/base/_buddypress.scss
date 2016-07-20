@@ -1068,10 +1068,22 @@ a.clear-value {
 			}
 			
 			.profile-info {
-				@include outer-container;
+				@include display(flex);
+				@include flex-direction(row);
+				@include justify-content(space-around);
+				@include align-items(center);
+				@include align-content(center);
+				
+				padding-top:15px;
+				
 				.one,
 				.two {
-					@include span-columns(6);
+					
+				}
+				
+				.industry,
+				.member-status {
+					margin-top:15px;
 				}
 				.headline {
 					color:$gray2;

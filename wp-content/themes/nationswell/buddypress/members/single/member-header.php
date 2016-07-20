@@ -138,7 +138,7 @@ do_action( 'bp_before_member_header' ); ?>
 					</div>
 					<?php
 					if (!empty(bp_get_profile_field_data(array('field'=>'Industry','user_id'=>$bp->displayed_user->id)))) : ?>
-					<div class="industry" style="padding-top:20px;">
+					<div class="industry">
 						<p class="headline"><span class="icon icon_briefcase"></span><?php _e("Industry");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Industry','user_id'=>$bp->displayed_user->id));?></span></p>
 						
 					</div>
@@ -152,7 +152,7 @@ do_action( 'bp_before_member_header' ); ?>
 				
 					<?php
 					if (!empty(bp_get_profile_field_data(array('field'=>'Member status','user_id'=>$bp->displayed_user->id)))) : ?>
-					<div class="member-status" style="padding-top:20px;">
+					<div class="member-status">
 						<p class="headline"><span class="icon icon_heart"></span><?php _e("Member Status");?><span class="item-block-content"><?php echo bp_get_profile_field_data(array('field'=>'Member status','user_id'=>$bp->displayed_user->id));?></span></p>
 						
 					</div>
