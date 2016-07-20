@@ -556,18 +556,44 @@ a.clear-value {
 		/*end legacy*/
 		
 		.messages-nav {
-			@include span-columns(3);
+			@include media($medium) {
+				@include span-columns(3);
+			}
 			
 			ul {
 				background-color:$gray7;
+				@include align-items(stretch);
+				@include display(flex);
+				@include flex-direction(row);
+				@include justify-content(space-around);
+				margin-bottom:30px;
+				@extend .box-shadow;
+				@include media($medium) {
+					box-shadow:none;
+					@include flex-direction(column);
+				}
+				
 				li {
 					//wanted to extend .icon here, but can't
 					//becuase the text inside the link isn't wrapped
-					display:block;
-					border-bottom:1px solid $gray5;
-					-webkit-box-shadow: 0 1px 0 0 $white;
-					box-shadow: 0 1px 0 0 $white;
-					padding:30px 20px;
+					
+					width:25%;
+					border-right:1px solid $gray5;
+					border-bottom:none;
+					&:last-child {
+						border-right:none;
+					}
+					
+					padding:30px 0;
+					@include media($medium) {
+						border-bottom:1px solid $gray5;
+						border-right:none;
+						-webkit-box-shadow: 0 1px 0 0 $white;
+						box-shadow: 0 1px 0 0 $white;
+						padding:30px 20px;
+						width:100%;
+					}
+					
 					
 					a {
 						text-align:center;
@@ -585,11 +611,19 @@ a.clear-value {
 						&:before {
 							font-family:"icons";
 							font-size:24px;
-							padding-right:15px;
+							padding:0;
+							margin:0 auto;
+							display:table;
+							@include media($medium) {
+								padding-right:15px;
+								display:block;
+							}
+							@include media($large) {
+								display:inline;
+							}
 							vertical-align: text-top;
 							text-align:center;
-							margin:0 auto;
-							display:block;
+							
 							@include media($large) {
 								text-align:left;
 								margin:0;
@@ -607,12 +641,15 @@ a.clear-value {
 				li#inbox-personal-li {
 					a:before {
 						@extend .icon_inbox;
+						
 					}
 				}
 				li#starred-personal-li {
 					a:before {
 						@extend .icon_star;
 						font-size:30px;
+						position:relative;
+						top:4px;
 					}
 				}
 				li#sentbox-personal-li {
@@ -624,6 +661,7 @@ a.clear-value {
 					/*background-color:$ns_red2;*/
 					a {
 						/*color:$white;*/
+						padding-top:3px;
 						&:before {
 							@extend .icon_chat-bubble;
 						}
@@ -638,8 +676,16 @@ a.clear-value {
 			}
 		}
 		.messages {
-			@include span-columns(9);
+			@include media($medium) {
+				@include span-columns(9);
+			}
 			position:relative;
+			
+			img.avatar {
+				vertical-align:top;
+				margin-top:-2px;
+			}
+			
 			label {
 				display:block;
 				font-weight:$bold;
@@ -981,11 +1027,16 @@ a.clear-value {
 		
 		.profile-callout-block,
 		.callout-block {
-			min-height:200px;
+		
 			text-align:center;
 			background-color:$gray7;
-			@include span-columns(6);
+			@include span-columns(12);
 			margin-top:15px;
+			@include media($medium) {
+				@include span-columns(6);
+				margin-top:0;
+				min-height:200px;
+			}
 			@include media($large) {
 				@include span-columns(3);
 				margin-top:0;
@@ -2259,16 +2310,17 @@ ul.tabletolist > li > ul {
 }
 /* Table titles */
 ul.tabletolist > li .titles {
-    background-color: #bbb;display:block;color:#fff;padding:10px;
+    /*background-color: #bbb;*/
+	display:block;color:#fff;padding:10px;
 }
 /* Table rows */
 ul.tabletolist > li > ul > li {
     border-bottom:1px solid #eee;padding:10px;
 }
-/* Table rows hover */
+/* Table rows hover 
 ul.tabletolist > li > ul > li:hover {
     background-color: #efefef
-}
+}*/
 /* Table last child row */
 ul.tabletolist > li > ul > li:last-child {
     border-bottom:none;

@@ -53,7 +53,11 @@
     	font-family: $montserrat;
     	font-size: 2.5rem;
     	font-weight: 400;
+		position:relative;
 		span.count {
+			position:absolute;
+			top:0;
+			right:0;
 			background: $ns_red1;
 			border-radius: 13px;
 			color: #fff;
@@ -65,6 +69,11 @@
 			position: relative;
 			text-align: center;
 			width: 23px;
+			@media only screen
+			and (min-device-width : 320px)
+			and (max-device-width : 568px) {
+			  top:-6px
+			}
 		}
 	  }
     }

@@ -5468,9 +5468,13 @@ html {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
+  position: relative;
 }
-/* line 56, ../scss/partials/mobile/_nav.scss */
+/* line 57, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit.drawer-unit--member-nav a span.count {
+  position: absolute;
+  top: 0;
+  right: 0;
   background: #dd322c;
   border-radius: 13px;
   color: #fff;
@@ -5483,16 +5487,22 @@ html {
   text-align: center;
   width: 23px;
 }
-/* line 73, ../scss/partials/mobile/_nav.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 57, ../scss/partials/mobile/_nav.scss */
+  .more-stories-drawer .drawer-unit.drawer-unit--member-nav a span.count {
+    top: -6px;
+  }
+}
+/* line 82, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .site-logo {
   display: block;
   margin: 0 0 3.2rem;
 }
-/* line 78, ../scss/partials/mobile/_nav.scss */
+/* line 87, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search {
   position: relative;
 }
-/* line 81, ../scss/partials/mobile/_nav.scss */
+/* line 90, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search [for='panel-search'] {
   font-size: 3.4rem;
   position: absolute;
@@ -5500,7 +5510,7 @@ html {
   top: 1.6rem;
   color: #fff;
 }
-/* line 89, ../scss/partials/mobile/_nav.scss */
+/* line 98, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search #panel-search {
   border: 0 none;
   border-radius: 0;
@@ -5512,18 +5522,18 @@ html {
   color: #fff;
   font-size: 2.4rem;
 }
-/* line 100, ../scss/partials/mobile/_nav.scss */
+/* line 109, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer #page-search #panel-search label {
   top: 1.4rem;
   left: 1.4rem;
   font-size: 3rem;
 }
-/* line 112, ../scss/partials/mobile/_nav.scss */
+/* line 121, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 117, ../scss/partials/mobile/_nav.scss */
+/* line 126, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .trending-topics .trending-topics__list .trending-topics__topic {
   color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
@@ -5532,12 +5542,12 @@ html {
   text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
 }
-/* line 130, ../scss/partials/mobile/_nav.scss */
+/* line 139, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list li {
   display: block;
   margin-top: 3.2rem;
 }
-/* line 135, ../scss/partials/mobile/_nav.scss */
+/* line 144, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .categories .categories__list .categories__category {
   color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
@@ -5548,22 +5558,22 @@ html {
 }
 
 /* mobile panel */
-/* line 149, ../scss/partials/mobile/_nav.scss */
+/* line 158, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper {
   overflow-x: hidden;
   right: 47rem;
 }
-/* line 153, ../scss/partials/mobile/_nav.scss */
+/* line 162, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-wrapper #page-content {
   pointer-events: none;
   overflow: hidden;
 }
-/* line 159, ../scss/partials/mobile/_nav.scss */
+/* line 168, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header {
   background-color: #fff;
   right: 47rem;
 }
-/* line 163, ../scss/partials/mobile/_nav.scss */
+/* line 172, ../scss/partials/mobile/_nav.scss */
 body.panel--is-open #page-header .more-stories-toggle {
   color: #003046;
 }
