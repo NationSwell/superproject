@@ -45,14 +45,23 @@
             <h3 class="hd-r trending-topics__heading">Member Access</h3>
 
             <ul class="trending-topics__list">
-           		 <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/activity/" class="member-nav__item {% if bp.unfiltered_uri[0] == 'members' and  bp.unfiltered_uri|length > 1  %}current{% endif %}">Member Home</a></li>
-            <li><a href="{{bp.BuddyPressdata.root_domain}}/members/" class="member-nav__item {% if bp.unfiltered_uri[0] == 'members' and bp.unfiltered_uri|length == 1 %}current{% endif %}">Member Directory</a></li>
-			<li><a href="{{bp.root_domain}}/faq" class="member-nav__item" title="FAQ">FAQs</a></li>
-            <li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/settings/" class="member-nav__item" title="Settings">Settings</a></li>
-			{% if bp_total_new_count > 0 %}
-			<li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/notifications#notifications-thread" class="member-nav__item" title="Notifications"><span class="label">Notifications</span> <span class="count">{{ bp_total_new_count }}</span></a></li>
-			{% endif %}
-            <li><a href="{{ function('wp_logout_url') }}" class="member-nav__item" title="Log out">Log out</a></li>
+           		<li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/activity/" class="member-nav__item {% if bp.unfiltered_uri[0] == 'members' and  bp.unfiltered_uri|length > 1  %}current{% endif %}">Member Home</a></li>
+				<li><a href="{{bp.BuddyPressdata.root_domain}}/members/" class="member-nav__item {% if bp.unfiltered_uri[0] == 'members' and bp.unfiltered_uri|length == 1 %}current{% endif %}">Member Directory</a></li>
+				<li><a href="{{bp.root_domain}}/faq" class="member-nav__item" title="FAQ">FAQs</a></li>
+				<li><a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/settings/" class="member-nav__item" title="Settings">Settings</a></li>
+				{% if bp_total_new_count > 0 %}
+				<li class="notifications"><a href="#" class="member-nav__item notifications-item" title="Notifications"><span class="label">Notifications</span> <span class="count">{{ bp_total_new_count }}</span></a>
+					<ul class="submenu">
+						{% if bp_new_mention_count > 0 %}
+						<li>&#8594; <a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/activity/mentions/#activity-stream">{{ bp_new_mention_count }} new mention{% if bp_new_mention_count > 1 %}s{% endif %}</a></li>
+						{% endif %}
+						{% if bp_new_message_count > 0 %}
+						<li>&#8594; <a href="{{bp.root_domain}}/members/{{loggedin_user_user_nicename}}/messages/">{{ bp_new_message_count }} new message{% if bp_new_message_count > 1 %}s{% endif %}</a></li>
+						{% endif %}
+					</ul>
+				</li>		
+				{% endif %}
+				<li><a href="{{ function('wp_logout_url') }}" class="member-nav__item" title="Log out">Log out</a></li>
             </ul>
         </div>
     </div>

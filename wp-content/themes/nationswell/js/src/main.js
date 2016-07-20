@@ -17,6 +17,11 @@
 		jQuery("#message").fadeIn();
 		jQuery("#message").prependTo("#buddypress");
 	}
+	
+	//in mobile view, toggle notification links
+	$("li.notifications a").click(function(){
+    	$("ul.submenu").toggle();
+	});
     
 	//wrap any iFrame code posted into the buddypress activity feeds
 	//with mobile responsive wrapper
