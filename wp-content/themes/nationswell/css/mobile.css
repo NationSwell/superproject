@@ -5446,7 +5446,6 @@ html {
   top: 0;
   bottom: 0;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 /* line 42, ../scss/partials/mobile/_nav.scss */
 .more-stories-drawer .drawer-unit {
