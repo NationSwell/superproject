@@ -213,7 +213,6 @@ html, body {
 html {
   font-size: 8px;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   /* line 13, ../scss/partials/base/_structure.scss */
