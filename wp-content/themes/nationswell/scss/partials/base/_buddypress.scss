@@ -1076,7 +1076,9 @@ a.clear-value {
 				@include align-items(center);
 				@include align-content(center);
 				
-				padding-top:15px;
+				@include media($medium) {
+					padding-top:15px;
+				}
 				
 				.one,
 				.two {
@@ -1089,13 +1091,22 @@ a.clear-value {
 				}
 				.headline {
 					color:$gray2;
-					text-align:left;
-					white-space:nowrap;
+					text-align:center;
+					
+					@include media($medium) {
+						text-align:left;
+					}
 					
 					.icon {
 						font-size:33px;
-						width:45px;
 						text-align:top;
+						width:100%;
+						display:block;
+						@include media($medium) {
+							width:45px;
+							display:inline-block;
+						}
+						
 						&.icon_marker:before {
 							margin-left:5px;
 						}
@@ -1109,13 +1120,13 @@ a.clear-value {
 			
 				.item-block-content {
 					color:$black;
-					@include media($medium) {
-						font-size:120%;
-					}
 					font-weight:$bold;
 					display:block;
-					padding-left:45px;
-					margin:-5px 10px 0 0;
+					@include media($medium) {
+						font-size:120%;
+						padding-left:45px;
+						margin:-5px 10px 0 0;
+					}
 				}
 			}	
 		}
@@ -1216,12 +1227,12 @@ a.clear-value {
     		}
     	}
 		.left {
-			@include media($medium) {
+			@include media($large) {
 				@include span-columns(8);
 			}
 		}
 		.right {
-			@include media($medium) {
+			@include media($large) {
 				@include span-columns(4);
 			}
 			.interests {
