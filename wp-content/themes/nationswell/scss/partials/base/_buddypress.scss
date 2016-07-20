@@ -1063,7 +1063,9 @@ a.clear-value {
 		}
 		.profile-callout-block {
 			@include span-columns(12);
+			margin-top:30px;
 			@include media($large) {
+				margin-top:0;
 				@include span-columns(6);
 			}
 			
@@ -1105,7 +1107,9 @@ a.clear-value {
 			
 				.item-block-content {
 					color:$black;
-					font-size:120%;
+					@include media($medium) {
+						font-size:120%;
+					}
 					font-weight:$bold;
 					display:block;
 					padding-left:45px;
