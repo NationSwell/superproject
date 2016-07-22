@@ -2757,7 +2757,7 @@ input[type="submit"]:-moz-focus-inner {
 .sidebar .widget_sp_image {
   text-align: center;
   max-width: 100% !important;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 30px auto !important;
   border: 1px solid #eeeeee;
 }
 @media screen and (min-width: 768px) {
@@ -2774,16 +2774,16 @@ input[type="submit"]:-moz-focus-inner {
 /* line 694, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description {
   font-family: "Montserrat", Arial, sans-serif;
-  font-size: 3.2rem;
-  line-height: 4rem;
-  padding: 0 15px 0;
+  font-size: 3.2rem !important;
+  line-height: 4rem !important;
+  padding: 0 15px 0 !important;
   color: #003046;
 }
 @media screen and (min-width: 768px) {
   /* line 694, ../scss/partials/base/_components.scss */
   .sidebar .widget_sp_image .widget_sp_image-description {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 1.8rem !important;
+    line-height: 2.2rem !important;
   }
 }
 /* line 704, ../scss/partials/base/_components.scss */
@@ -4970,7 +4970,7 @@ body.xprofile #subnav {
 #buddypress .member-row .member-change-avatar, #buddypress .member-row .profile-callout-block,
 #buddypress .member-row .callout-block, #buddypress .profile-view .left,
 #buddypress .profile-view .right, #buddypress .profile-edit-form {
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
 }
 
 /* line 27, ../scss/partials/base/_buddypress.scss */
