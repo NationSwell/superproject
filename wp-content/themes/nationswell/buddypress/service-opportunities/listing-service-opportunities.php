@@ -75,7 +75,9 @@ global $bp;
 									$rsvp_link = $opp['opportunity_url'];
 									$rsvp_label = "Get Involved";
 								?>
-								<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button" target="_blank"><?php _e($rsvp_label,'buddypress'); ?></a>
+								<?php if (!empty($rsvp_link)): ?>
+                                	<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button" target="_blank"><?php _e($rsvp_label,'buddypress'); ?></a>
+                                <?php endif; ?>
 							</div>
 						</div>
 					</div>

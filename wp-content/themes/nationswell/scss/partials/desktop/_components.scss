@@ -155,9 +155,12 @@
 .type-indicator {
   width: 7.4rem;
   height: 7.4rem;
-
+  padding-top:1.8rem;
+  &.icon_video {
+	  padding-top:1.45rem;
+  }
   &:before {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 

@@ -4463,7 +4463,7 @@ hr {
 }
 /* line 20, ../scss/partials/base/_archive.scss */
 .hero--archive.hero--category .container {
-  padding: 2rem 12rem;
+  padding: 2rem 5%;
 }
 /* line 24, ../scss/partials/base/_archive.scss */
 .hero--archive.hero--category .hero--category__count {
