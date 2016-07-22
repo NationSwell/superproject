@@ -686,15 +686,19 @@
     
 	.widget_sp_image-image-link {
 		img {
-			padding:20px !important;
+			padding:20px;
 			height:auto;
 		}
 	}
 	
 	.widget_sp_image-description {
 		font-family:$montserrat;
-		font-size:1.8rem;
-		line-height:2.2rem;
+		font-size:3.2rem;
+		line-height:4rem;
+		@include media($desktop) {
+			font-size:1.8rem;
+			line-height:2.2rem;
+		}
 		padding:0 15px 0;
 		color:$ns_navy2;
 		p {
