@@ -88,7 +88,7 @@ if (class_exists('TimberPost')) {
                 'fields' => 'ids',
                 'post_type' => 'nscevent',
                 'orderby' => 'meta_value_num',
-                'order' => 'DESC',
+                'order' => 'ASC',
                 'meta_query' => array(
                         array(
                             'key' => 'event_date',
