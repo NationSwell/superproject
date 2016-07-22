@@ -2797,19 +2797,19 @@ input[type="submit"]:-moz-focus-inner {
 /* line 677, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image {
   text-align: center;
-  max-width: 100%;
+  max-width: 100% !important;
   margin: 0 auto 30px auto;
   border: 1px solid #eeeeee;
 }
 @media screen and (min-width: 768px) {
   /* line 677, ../scss/partials/base/_components.scss */
   .sidebar .widget_sp_image {
-    max-width: 32rem;
+    max-width: 32rem !important;
   }
 }
 /* line 688, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-image-link img {
-  padding: 20px;
+  padding: 20px !important;
   height: auto;
 }
 /* line 694, ../scss/partials/base/_components.scss */
