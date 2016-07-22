@@ -2766,12 +2766,12 @@ input[type="submit"]:-moz-focus-inner {
     max-width: 32rem;
   }
 }
-/* line 687, ../scss/partials/base/_components.scss */
+/* line 688, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-image-link img {
-  padding: 20px;
+  padding: 20px !important;
   height: auto;
 }
-/* line 693, ../scss/partials/base/_components.scss */
+/* line 694, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 1.8rem;
@@ -2779,49 +2779,49 @@ input[type="submit"]:-moz-focus-inner {
   padding: 0 15px 0;
   color: #003046;
 }
-/* line 699, ../scss/partials/base/_components.scss */
+/* line 700, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description p {
   display: block;
   padding: 15px;
 }
-/* line 703, ../scss/partials/base/_components.scss */
+/* line 704, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a {
   text-decoration: underline;
 }
-/* line 705, ../scss/partials/base/_components.scss */
+/* line 706, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a.button, .sidebar .widget_sp_image .widget_sp_image-description .member-login-forms .content-wrapper a.lostpassword-button, .member-login-forms .content-wrapper .sidebar .widget_sp_image .widget_sp_image-description a.lostpassword-button, .sidebar .widget_sp_image .widget_sp_image-description #buddypress .member-row .profile-callout-block a.item-block-button-go, #buddypress .member-row .profile-callout-block .sidebar .widget_sp_image .widget_sp_image-description a.item-block-button-go,
 .sidebar .widget_sp_image .widget_sp_image-description #buddypress .member-row .callout-block a.item-block-button-go,
 #buddypress .member-row .callout-block .sidebar .widget_sp_image .widget_sp_image-description a.item-block-button-go, .sidebar .widget_sp_image .widget_sp_image-description #buddypress .tab-content .nsc-item-listing .item-info .item-details .rsvp a, #buddypress .tab-content .nsc-item-listing .item-info .item-details .rsvp .sidebar .widget_sp_image .widget_sp_image-description a, .sidebar .widget_sp_image .widget_sp_image-description #buddypress #whats-new-form a#aw-whats-new-submit, #buddypress #whats-new-form .sidebar .widget_sp_image .widget_sp_image-description a#aw-whats-new-submit {
   text-decoration: none;
 }
-/* line 708, ../scss/partials/base/_components.scss */
+/* line 709, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a:link, .sidebar .widget_sp_image .widget_sp_image-description a:visited {
   color: #fd6464;
 }
-/* line 712, ../scss/partials/base/_components.scss */
+/* line 713, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a:hover {
   color: #1fade0;
 }
-/* line 715, ../scss/partials/base/_components.scss */
+/* line 716, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a:active {
   color: #003046;
 }
-/* line 722, ../scss/partials/base/_components.scss */
+/* line 723, ../scss/partials/base/_components.scss */
 .sidebar .widget_text {
   margin-bottom: 7.6rem;
   text-align: center;
 }
-/* line 727, ../scss/partials/base/_components.scss */
+/* line 728, ../scss/partials/base/_components.scss */
 .sidebar .widget_youtube_responsive {
   text-align: center;
 }
 
 /* pullquote */
-/* line 734, ../scss/partials/base/_components.scss */
+/* line 735, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 737, ../scss/partials/base/_components.scss */
+/* line 738, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -2830,7 +2830,7 @@ input[type="submit"]:-moz-focus-inner {
   border-radius: 50%;
   text-align: center;
 }
-/* line 746, ../scss/partials/base/_components.scss */
+/* line 747, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "oswaldregular", Arial, sans-serif;
@@ -2840,33 +2840,33 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* tags */
-/* line 756, ../scss/partials/base/_components.scss */
+/* line 757, ../scss/partials/base/_components.scss */
 .tag-tag {
   background-color: #fc3b40;
   color: #fff;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 762, ../scss/partials/base/_components.scss */
+/* line 763, ../scss/partials/base/_components.scss */
 .tag-tag:hover {
   background-color: #0098d8;
   color: #fff;
 }
 
 /* author */
-/* line 769, ../scss/partials/base/_components.scss */
+/* line 770, ../scss/partials/base/_components.scss */
 .author-box {
   background-color: #f6f6f6;
 }
 
-/* line 773, ../scss/partials/base/_components.scss */
+/* line 774, ../scss/partials/base/_components.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 779, ../scss/partials/base/_components.scss */
+/* line 780, ../scss/partials/base/_components.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -2875,26 +2875,26 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 787, ../scss/partials/base/_components.scss */
+/* line 788, ../scss/partials/base/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 792, ../scss/partials/base/_components.scss */
+/* line 793, ../scss/partials/base/_components.scss */
 .social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 797, ../scss/partials/base/_components.scss */
+/* line 798, ../scss/partials/base/_components.scss */
 .social li {
   display: inline-block;
 }
-/* line 800, ../scss/partials/base/_components.scss */
+/* line 801, ../scss/partials/base/_components.scss */
 .social li:first-child {
   margin-left: 0;
 }
-/* line 805, ../scss/partials/base/_components.scss */
+/* line 806, ../scss/partials/base/_components.scss */
 .social .icon, .social #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social ul > li,
 .social #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social ul > li, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a {
@@ -2902,114 +2902,114 @@ input[type="submit"]:-moz-focus-inner {
   text-align: center;
   vertical-align: middle;
 }
-/* line 810, ../scss/partials/base/_components.scss */
+/* line 811, ../scss/partials/base/_components.scss */
 .social .icon.icon_facebook, .social #buddypress .profile-view .left ul > li.icon_facebook, #buddypress .profile-view .left .social ul > li.icon_facebook,
 .social #buddypress .profile-view .right ul > li.icon_facebook,
 #buddypress .profile-view .right .social ul > li.icon_facebook, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_facebook, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_facebook {
   background-color: #5973aa;
 }
-/* line 811, ../scss/partials/base/_components.scss */
+/* line 812, ../scss/partials/base/_components.scss */
 .social .icon.icon_twitter, .social #buddypress .profile-view .left ul > li.icon_twitter, #buddypress .profile-view .left .social ul > li.icon_twitter,
 .social #buddypress .profile-view .right ul > li.icon_twitter,
 #buddypress .profile-view .right .social ul > li.icon_twitter, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_twitter, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 812, ../scss/partials/base/_components.scss */
+/* line 813, ../scss/partials/base/_components.scss */
 .social .icon.icon_google-plus, .social #buddypress .profile-view .left ul > li.icon_google-plus, #buddypress .profile-view .left .social ul > li.icon_google-plus,
 .social #buddypress .profile-view .right ul > li.icon_google-plus,
 #buddypress .profile-view .right .social ul > li.icon_google-plus, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_google-plus, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_google-plus {
   background-color: #d34836;
 }
-/* line 813, ../scss/partials/base/_components.scss */
+/* line 814, ../scss/partials/base/_components.scss */
 .social .icon.icon_instagram, .social #buddypress .profile-view .left ul > li.icon_instagram, #buddypress .profile-view .left .social ul > li.icon_instagram,
 .social #buddypress .profile-view .right ul > li.icon_instagram,
 #buddypress .profile-view .right .social ul > li.icon_instagram, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_instagram, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_instagram {
   background-color: #37668d;
 }
-/* line 814, ../scss/partials/base/_components.scss */
+/* line 815, ../scss/partials/base/_components.scss */
 .social .icon.icon_tumblr, .social #buddypress .profile-view .left ul > li.icon_tumblr, #buddypress .profile-view .left .social ul > li.icon_tumblr,
 .social #buddypress .profile-view .right ul > li.icon_tumblr,
 #buddypress .profile-view .right .social ul > li.icon_tumblr, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_tumblr, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 815, ../scss/partials/base/_components.scss */
+/* line 816, ../scss/partials/base/_components.scss */
 .social .icon.icon_linkedin, .social #buddypress .profile-view .left ul > li.icon_linkedin, #buddypress .profile-view .left .social ul > li.icon_linkedin,
 .social #buddypress .profile-view .right ul > li.icon_linkedin,
 #buddypress .profile-view .right .social ul > li.icon_linkedin, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_linkedin, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_linkedin {
   background-color: #017bb6;
 }
-/* line 816, ../scss/partials/base/_components.scss */
+/* line 817, ../scss/partials/base/_components.scss */
 .social .icon.icon_envelope, .social #buddypress .profile-view .left ul > li.icon_envelope, #buddypress .profile-view .left .social ul > li.icon_envelope,
 .social #buddypress .profile-view .right ul > li.icon_envelope,
 #buddypress .profile-view .right .social ul > li.icon_envelope, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_envelope, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_envelope {
   background-color: #46b525;
 }
-/* line 820, ../scss/partials/base/_components.scss */
+/* line 821, ../scss/partials/base/_components.scss */
 .social.author__social .icon, .social.author__social #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social.author__social ul > li,
 .social.author__social #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social.author__social ul > li, .social.author__social #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social a {
   line-height: 1.4;
 }
-/* line 825, ../scss/partials/base/_components.scss */
+/* line 826, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon, .social.author__social.author__social--page #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social.author__social.author__social--page ul > li,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a {
   background-color: #dbdbdb;
 }
-/* line 829, ../scss/partials/base/_components.scss */
+/* line 830, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_facebook, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_facebook, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_facebook,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_facebook,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_facebook, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_facebook, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_facebook {
   background-color: #5973aa;
 }
-/* line 830, ../scss/partials/base/_components.scss */
+/* line 831, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_twitter, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_twitter, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_twitter,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_twitter,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_twitter, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_twitter, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 831, ../scss/partials/base/_components.scss */
+/* line 832, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_google-plus, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_google-plus, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_google-plus,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_google-plus,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_google-plus, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_google-plus, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_google-plus {
   background-color: #d34836;
 }
-/* line 832, ../scss/partials/base/_components.scss */
+/* line 833, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_instagram, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_instagram, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_instagram,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_instagram,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_instagram, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_instagram, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_instagram {
   background-color: #37668d;
 }
-/* line 833, ../scss/partials/base/_components.scss */
+/* line 834, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_tumblr, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_tumblr, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_tumblr,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_tumblr,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_tumblr, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_tumblr, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 834, ../scss/partials/base/_components.scss */
+/* line 835, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_linkedin, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_linkedin, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_linkedin,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_linkedin,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_linkedin, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_linkedin, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_linkedin {
   background-color: #017bb6;
 }
-/* line 835, ../scss/partials/base/_components.scss */
+/* line 836, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_envelope, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_envelope, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_envelope,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_envelope,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_envelope, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_envelope, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_envelope {
   background-color: #46b525;
 }
-/* line 842, ../scss/partials/base/_components.scss */
+/* line 843, ../scss/partials/base/_components.scss */
 .social.take-action__social .icon, .social.take-action__social #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social.take-action__social ul > li,
 .social.take-action__social #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social.take-action__social ul > li, .social.take-action__social #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.take-action__social a {
   line-height: 1.6;
 }
 
-/* line 849, ../scss/partials/base/_components.scss */
+/* line 850, ../scss/partials/base/_components.scss */
 .author__byline a {
   color: inherit;
 }
-/* line 853, ../scss/partials/base/_components.scss */
+/* line 854, ../scss/partials/base/_components.scss */
 .author__byline .author__byline__prefix {
   color: #fc3b40;
   display: block;
@@ -3017,38 +3017,38 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
 }
 
-/* line 861, ../scss/partials/base/_components.scss */
+/* line 862, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 866, ../scss/partials/base/_components.scss */
+/* line 867, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid #000;
 }
-/* line 870, ../scss/partials/base/_components.scss */
+/* line 871, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 876, ../scss/partials/base/_components.scss */
+/* line 877, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 881, ../scss/partials/base/_components.scss */
+/* line 882, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 887, ../scss/partials/base/_components.scss */
+/* line 888, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 893, ../scss/partials/base/_components.scss */
+/* line 894, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon, .prev-next .prev-next__link #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .prev-next .prev-next__link ul > li,
 .prev-next .prev-next__link #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .prev-next .prev-next__link ul > li, .prev-next .prev-next__link #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .prev-next .prev-next__link a {
@@ -3056,39 +3056,39 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* read next */
-/* line 901, ../scss/partials/base/_components.scss */
+/* line 902, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 907, ../scss/partials/base/_components.scss */
+/* line 908, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 911, ../scss/partials/base/_components.scss */
+/* line 912, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
 
 /* subscribe status */
-/* line 918, ../scss/partials/base/_components.scss */
+/* line 919, ../scss/partials/base/_components.scss */
 .module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
   display: block;
   clear: both;
 }
-/* line 924, ../scss/partials/base/_components.scss */
+/* line 925, ../scss/partials/base/_components.scss */
 .module.mc-email-status.valid {
   color: #46b525;
 }
-/* line 928, ../scss/partials/base/_components.scss */
+/* line 929, ../scss/partials/base/_components.scss */
 .module.mc-email-status.error {
   color: #fc3b40;
 }
 
 /* hrs */
-/* line 934, ../scss/partials/base/_components.scss */
+/* line 935, ../scss/partials/base/_components.scss */
 hr {
   border-style: none;
   border: 0 none;
@@ -3098,7 +3098,7 @@ hr {
 }
 
 /* read more */
-/* line 943, ../scss/partials/base/_components.scss */
+/* line 944, ../scss/partials/base/_components.scss */
 .read-more {
   color: #0098d8;
   font-weight: 500;
