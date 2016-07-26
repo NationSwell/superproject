@@ -1110,7 +1110,7 @@ function add_conditional_widget_type_tax_pairs( $my_pair_array ) {
 add_action('wp_logout','nsc_login');
 function nsc_login(){
   if( function_exists('bp_is_active') ) {
-  	wp_redirect( '/nationswell-council/' );
+  	wp_redirect( '/nationswell-council/?beta=true' );
   } else {
   	wp_redirect( home_url() );
   }
