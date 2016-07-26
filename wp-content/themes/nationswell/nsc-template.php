@@ -176,18 +176,21 @@ endif;
         	<header>
             </header>
             <div id="content">
-				<a id="top"></a>
-                <?php if ($_GET["beta"]) : ?>
+				<a id="top"></a>               
                 <section class="member-login-forms">
-                    <div class="content-wrapper">
+                    <div class="content-wrapper" <?php if (!$_GET["beta"]) : ?> style="padding-top:100px"<?php endif; ?>>
                         <div class="content">
                             
                             <div class="intro">
                             	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1 class="logo"><?php _e( 'NationSwell Council', 'buddypress' ); ?></h1></a>
-                           		<p><?php _e( 'A diverse community of accomplished professionals who are passionate about service', 'buddypress' ); ?></p>
+                           		<p style="font-size:2rem;"><?php _e( 'A diverse community of accomplished professionals who are passionate about service', 'buddypress' ); ?></p>
                             </div>
-                            <div class="login-form">
+                            
+                            
+                            <?php if ($_GET["beta"]) : ?>
+                            <div class="login-form">   
                                 <div class="login-form-inputs"<?php if ($_GET["register"]): echo ' style="padding-bottom:0;"'; endif; ?>>
+                                    
                                     <?php   
 									$lostpassword = '<a href="'.wp_lostpassword_url().'">'.__( 'Forgot password?','buddypress').'</a>';
                                     
@@ -293,10 +296,19 @@ endif;
                                     ?> 
                             
                                 </div>
+                                
                                 <div class="login-form-bottom">
                                     <p><?php echo $bottom_message; ?></p>
                                 </div>
+                               
                             </div>
+                            
+                            <?php else : ?>
+                            	<div style="margin:0 auto; text-align:center;">
+                            		<p><a href="/nsc-portal/" class="btn red" style="color:#FFF; text-decoration:none"><span>Log in</span></a><br><br></p>
+                            		<p>Not a member? <a href="mailto:nsc@nationswell.com">Apply</a></p>
+                            	</div>
+                            <?php endif; ?>
                       		<!--<a href="#content" class="btn red"><span>Sign in</span></a>-->
                             <div class="link-more">
                             	<a class="learn-more" href="#welcome">Learn More</a>
@@ -304,7 +316,7 @@ endif;
                         </div>
                     </div>
                 </section>
-                <?php endif; ?>
+                
 <section class="photo-strip" id="welcome">
 <?php 
 
