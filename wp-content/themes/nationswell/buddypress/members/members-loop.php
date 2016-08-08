@@ -179,10 +179,9 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 	 * @since 1.1.0
 	 */
 	do_action( 'bp_after_directory_members_list' ); ?>
-
 	<?php bp_member_hidden_fields(); ?>
 
-	<div id="pag-bottom" class="pagination">
+	<div id="pag-bottom" class="pagination no-ajax">
 
 		<div class="pag-count" id="member-dir-count-bottom">
 
@@ -191,8 +190,23 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 		</div>
 
 		<div class="pagination-links" id="member-dir-pag-bottom">
+		<?php
+			/*Create custom pagination*/
+			global $members_template;
+			$add_args = $_REQUEST;
+			$pag_links = paginate_links( array(
+				'format'    => '?'.$members_template->pag_arg.'=%#%',
+				'total'     => ceil( (int) $members_template->total_member_count / (int) $members_template->pag_num ),
+				'current'   => (int) $members_template->pag_page,
+				'prev_text' => _x( '&larr;', 'Member pagination previous text', 'buddypress' ),
+				'next_text' => _x( '&rarr;', 'Member pagination next text', 'buddypress' ),
+				'mid_size'  => 1,
+				'add_args'  => $add_args,
+			) );
 
-			<?php bp_members_pagination_links(); ?>
+			echo($pag_links );
+			//bp_members_pagination_links();
+			?>
 
 		</div>
 
