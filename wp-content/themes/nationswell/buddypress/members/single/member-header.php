@@ -103,25 +103,8 @@ do_action( 'bp_before_member_header' ); ?>
 		
 		
 		} else if( $bp->current_component=='profile' && $bp->current_action =='edit' ) {
-		//print the about form field
-		?>
-		
-		<!--<div class="profile-callout-block">
-			<div class="profile-edit-form-bio">
-				<form action="" method="post" id="profile-wp-edit-form">
-					<div class="field_type_textarea">	
-						<label for="description"><?php _e('Bio:','buddypress'); ?></label><span class="icon icon_information"></span>
-						<textarea id="description" name="description"><?php echo get_user_meta($bp->displayed_user->id, 'description', true );?></textarea>
-					</div>
-					<div class="submit">
-						<input type="submit" name="profile-wp-edit-submit" id="profile-wp-edit-submit" value="Save">
-					</div>
-				</form>
-			</div>
-		</div>-->
-		
-		
-		<?php
+		//print the edit form
+			require( 'profile/cloudred-profile-edit.php' );
 		//in all other cases, show the two callouts
 		} else {
 
