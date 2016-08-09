@@ -1367,8 +1367,7 @@ function xprofile_sync_bio_bp_to_wp( $user_id = 0 ) {
 	  if ( empty( $user_id ) ) {
 		return false;
 	  }
-	  $bio = bp_get_profile_field_data(array('field'=>'Bio',$user_id));
-	  
+	  $bio = xprofile_get_field_data('bio',$user_id);
 	  bp_update_user_meta( $user_id, 'description', $bio ); 
 }
 
