@@ -4961,7 +4961,7 @@ body.xprofile #subnav {
 }
 
 /* line 21, ../scss/partials/base/_buddypress.scss */
-.box-margin, .box, #buddypress #whats-new-form, #buddypress #message, #buddypress #object-nav, #buddypress .ns-messages, #buddypress .member-row, #buddypress .notifications-menu, #buddypress .notifications-list, #buddypress .profile-view, #buddypress .profile-edit-forms, #buddypress .activity-list, #buddypress .intro-text.announcements, #buddypress .tab-content, #buddypress #members-dir-search, #buddypress #members-directory-form {
+.box-margin, .box, #buddypress #whats-new-form, #buddypress #message, #buddypress #object-nav, #buddypress .ns-messages, #buddypress .member-row, #buddypress .notifications-menu, #buddypress .notifications-list, #buddypress .profile-view, #buddypress .activity-list, #buddypress .intro-text.announcements, #buddypress .tab-content, #buddypress #members-dir-search, #buddypress #members-directory-form {
   margin: 3.4rem 2.2rem !important;
 }
 
@@ -4969,7 +4969,7 @@ body.xprofile #subnav {
 .box-padding, .box, #buddypress #whats-new-form, #buddypress .member-row .member-info-card, #buddypress .member-row .member-notifications, #buddypress .member-row .member-settings,
 #buddypress .member-row .member-change-avatar, #buddypress .member-row .profile-callout-block,
 #buddypress .member-row .callout-block, #buddypress .profile-view .left,
-#buddypress .profile-view .right, #buddypress .profile-edit-form {
+#buddypress .profile-view .right, #buddypress .profile-edit-form form {
   padding: 15px 15px 15px 15px;
 }
 
@@ -4977,7 +4977,7 @@ body.xprofile #subnav {
 .box-shadow, .member-login-forms .content-wrapper .login-form, #buddypress .ns-messages .messages-nav ul, #buddypress .ns-messages .messages .message-header-wrapper, #buddypress .member-row .member-info-card, #buddypress .member-row .member-notifications, #buddypress .member-row .member-settings,
 #buddypress .member-row .member-change-avatar, #buddypress .member-row .profile-callout-block,
 #buddypress .member-row .callout-block, #buddypress .notifications-list table th, #buddypress .profile-view .left,
-#buddypress .profile-view .right, #buddypress .profile-edit-form, #buddypress #popup-bio-info, #buddypress #whats-new-form, #buddypress #members-list li {
+#buddypress .profile-view .right, #buddypress .profile-edit-form form, #buddypress #popup-bio-info, #buddypress #whats-new-form, #buddypress #members-list li {
   -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -5089,10 +5089,11 @@ a.clear-value {
 
 /* line 149, ../scss/partials/base/_buddypress.scss */
 .member-login-forms {
-  background: url(../img/headerbg-bnw.jpg);
+  background-image: url(../img/nsc-header9.jpg);
   background-size: cover;
+  background-position: center;
 }
-/* line 155, ../scss/partials/base/_buddypress.scss */
+/* line 156, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper {
   padding: 30px 30px 0 30px;
   color: #003046;
@@ -5139,94 +5140,94 @@ a.clear-value {
   line-height: 20px;
 }
 @media screen and (min-width: 768px) {
-  /* line 155, ../scss/partials/base/_buddypress.scss */
+  /* line 156, ../scss/partials/base/_buddypress.scss */
   .member-login-forms .content-wrapper {
     max-width: 50%;
   }
 }
-/* line 179, ../scss/partials/base/_buddypress.scss */
+/* line 180, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper a {
   text-decoration: underline;
 }
-/* line 181, ../scss/partials/base/_buddypress.scss */
+/* line 182, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper a:link, .member-login-forms .content-wrapper a:visited {
   color: #fd6464;
 }
-/* line 185, ../scss/partials/base/_buddypress.scss */
+/* line 186, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper a:hover {
   color: #1fade0;
 }
-/* line 188, ../scss/partials/base/_buddypress.scss */
+/* line 189, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper a:active {
   color: #003046;
 }
-/* line 193, ../scss/partials/base/_buddypress.scss */
+/* line 194, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .intro {
   display: block;
   max-width: 80%;
   text-align: center;
   margin: 0 auto;
 }
-/* line 194, ../scss/partials/base/_buddypress.scss */
+/* line 195, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .intro p {
   display: block;
   padding: 20px 0;
   font-family: "pt-serif-italic", Georgia, serif;
 }
-/* line 209, ../scss/partials/base/_buddypress.scss */
+/* line 210, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form {
   background: #fff;
   text-align: left;
   font-style: normal;
 }
-/* line 214, ../scss/partials/base/_buddypress.scss */
+/* line 215, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form h2, .member-login-forms .content-wrapper .login-form #buddypress #members-list li .item-title, #buddypress #members-list li .member-login-forms .content-wrapper .login-form .item-title {
   color: #000;
   font-size: 130%;
   margin: 15px 0;
   text-align: center;
 }
-/* line 221, ../scss/partials/base/_buddypress.scss */
+/* line 222, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form form label, .member-login-forms .content-wrapper .login-form form input[type="text"], .member-login-forms .content-wrapper .login-form form input[type="password"] {
   display: block;
   font-style: normal;
 }
-/* line 229, ../scss/partials/base/_buddypress.scss */
+/* line 230, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form p {
   margin-bottom: 15px;
 }
-/* line 232, ../scss/partials/base/_buddypress.scss */
+/* line 233, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form .login-remember, .member-login-forms .content-wrapper .login-form .login-submit {
   line-height: 1 !important;
   margin: 5px 0 !important;
   font-size: 16px !important;
 }
-/* line 237, ../scss/partials/base/_buddypress.scss */
+/* line 238, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form .login-remember {
   float: left;
   padding-top: 8px;
 }
-/* line 242, ../scss/partials/base/_buddypress.scss */
+/* line 243, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form .login-submit input[type="submit"] {
   float: right;
 }
-/* line 248, ../scss/partials/base/_buddypress.scss */
+/* line 249, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form .login-error {
   color: #dd322c;
 }
-/* line 251, ../scss/partials/base/_buddypress.scss */
+/* line 252, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form .login-error-field {
   border-color: #dd322c;
 }
-/* line 253, ../scss/partials/base/_buddypress.scss */
+/* line 254, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form .login-error-field:focus {
   border-color: #dbdbdb;
 }
-/* line 258, ../scss/partials/base/_buddypress.scss */
+/* line 259, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form-inputs {
   padding: 15px 30px 70px 30px;
 }
-/* line 261, ../scss/partials/base/_buddypress.scss */
+/* line 262, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .login-form-bottom {
   background: #eeeeee;
   padding: 30px;
@@ -5237,20 +5238,20 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 273, ../scss/partials/base/_buddypress.scss */
+/* line 274, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .lostpassword-form .login-remember {
   float: left;
 }
-/* line 276, ../scss/partials/base/_buddypress.scss */
+/* line 277, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .lostpassword-form .lostpassword-submit {
   float: right;
 }
-/* line 282, ../scss/partials/base/_buddypress.scss */
+/* line 283, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .link-more {
   width: 100%;
   padding-top: 30px;
 }
-/* line 286, ../scss/partials/base/_buddypress.scss */
+/* line 287, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .learn-more {
   text-align: center;
   color: #b7b7b7 !important;
@@ -5265,11 +5266,11 @@ a.clear-value {
   position: relative;
   display: block;
 }
-/* line 300, ../scss/partials/base/_buddypress.scss */
+/* line 301, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .learn-more.hover {
   color: #003046;
 }
-/* line 304, ../scss/partials/base/_buddypress.scss */
+/* line 305, ../scss/partials/base/_buddypress.scss */
 .member-login-forms .content-wrapper .learn-more:after {
   width: 36px;
   height: 13px;
@@ -5281,7 +5282,7 @@ a.clear-value {
   right: 48%;
 }
 
-/* line 324, ../scss/partials/base/_buddypress.scss */
+/* line 325, ../scss/partials/base/_buddypress.scss */
 #buddypress {
   font-size: 2rem;
   line-height: 130%;
@@ -5300,54 +5301,54 @@ a.clear-value {
   /****************************/
   /****** PROFLE EDIT ************/
 }
-/* line 332, ../scss/partials/base/_buddypress.scss */
+/* line 333, ../scss/partials/base/_buddypress.scss */
 #buddypress h1 {
   font-size: 24px;
 }
-/* line 335, ../scss/partials/base/_buddypress.scss */
+/* line 336, ../scss/partials/base/_buddypress.scss */
 #buddypress h2, #buddypress #members-list li .item-title {
   font-size: 20px;
 }
-/* line 338, ../scss/partials/base/_buddypress.scss */
+/* line 339, ../scss/partials/base/_buddypress.scss */
 #buddypress h3 {
   font-size: 16px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 324, ../scss/partials/base/_buddypress.scss */
+  /* line 325, ../scss/partials/base/_buddypress.scss */
   #buddypress {
     font-size: 3.2rem;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 324, ../scss/partials/base/_buddypress.scss */
+  /* line 325, ../scss/partials/base/_buddypress.scss */
   #buddypress {
     font-size: 1.6rem;
   }
 }
-/* line 353, ../scss/partials/base/_buddypress.scss */
+/* line 354, ../scss/partials/base/_buddypress.scss */
 #buddypress a:link, #buddypress a:visited {
   color: #fd6464;
   text-decoration: none;
 }
-/* line 357, ../scss/partials/base/_buddypress.scss */
+/* line 358, ../scss/partials/base/_buddypress.scss */
 #buddypress a:hover {
   color: #0098d8;
 }
-/* line 360, ../scss/partials/base/_buddypress.scss */
+/* line 361, ../scss/partials/base/_buddypress.scss */
 #buddypress a:active {
   color: #003046;
 }
-/* line 368, ../scss/partials/base/_buddypress.scss */
+/* line 369, ../scss/partials/base/_buddypress.scss */
 #buddypress img.avatar {
   border-radius: 50%;
   max-width: 100%;
   height: auto;
 }
-/* line 380, ../scss/partials/base/_buddypress.scss */
+/* line 381, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit div#message {
   display: none;
 }
-/* line 385, ../scss/partials/base/_buddypress.scss */
+/* line 386, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result {
   background-color: #eee;
   border-color: #ddd;
@@ -5359,31 +5360,31 @@ a.clear-value {
   text-align: center;
   width: 100%;
 }
-/* line 396, ../scss/partials/base/_buddypress.scss */
+/* line 397, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result.error, #buddypress #pass-strength-result.bad {
   background-color: #ffb78c;
   border-color: #ff853c !important;
   display: block;
 }
-/* line 401, ../scss/partials/base/_buddypress.scss */
+/* line 402, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result.good {
   background-color: #ffec8b;
   border-color: #fc0 !important;
   display: block;
 }
-/* line 407, ../scss/partials/base/_buddypress.scss */
+/* line 408, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result.short {
   background-color: #ffa0a0;
   border-color: #f04040 !important;
   display: block;
 }
-/* line 413, ../scss/partials/base/_buddypress.scss */
+/* line 414, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result .strong {
   background-color: #c3ff88;
   border-color: #8dff1c !important;
   display: block;
 }
-/* line 421, ../scss/partials/base/_buddypress.scss */
+/* line 422, ../scss/partials/base/_buddypress.scss */
 #buddypress .divider {
   background-color: #dbdbdb;
   -webkit-box-shadow: 0 1px 0 0 #fff;
@@ -5393,18 +5394,18 @@ a.clear-value {
   display: block;
   margin: 30px 0;
 }
-/* line 436, ../scss/partials/base/_buddypress.scss */
+/* line 437, ../scss/partials/base/_buddypress.scss */
 #buddypress .bot-left, #buddypress #object-nav ul {
   position: relative;
 }
-/* line 439, ../scss/partials/base/_buddypress.scss */
+/* line 440, ../scss/partials/base/_buddypress.scss */
 #buddypress .bot-left:after, #buddypress #object-nav ul:after {
   content: "";
   position: absolute;
   bottom: -13px;
   left: 0;
 }
-/* line 447, ../scss/partials/base/_buddypress.scss */
+/* line 448, ../scss/partials/base/_buddypress.scss */
 #buddypress .bot-left:after, #buddypress #object-nav ul:after {
   right: -1px;
   height: 1px;
@@ -5413,12 +5414,12 @@ a.clear-value {
   background-image: -moz-linear-gradient(left, #5ec2e8, transparent);
   background-image: -o-linear-gradient(left, #5ec2e8, transparent);
 }
-/* line 470, ../scss/partials/base/_buddypress.scss */
+/* line 471, ../scss/partials/base/_buddypress.scss */
 #buddypress #object-nav ul li {
   display: inline;
   border-right: 1px solid #fff;
 }
-/* line 473, ../scss/partials/base/_buddypress.scss */
+/* line 474, ../scss/partials/base/_buddypress.scss */
 #buddypress #object-nav ul li a {
   padding: 10px 20px;
   background-color: #f6f6f6;
@@ -5429,12 +5430,12 @@ a.clear-value {
   font-size: 16px;
 }
 @media screen and (min-width: 992px) {
-  /* line 473, ../scss/partials/base/_buddypress.scss */
+  /* line 474, ../scss/partials/base/_buddypress.scss */
   #buddypress #object-nav ul li a {
     font-size: 20px;
   }
 }
-/* line 485, ../scss/partials/base/_buddypress.scss */
+/* line 486, ../scss/partials/base/_buddypress.scss */
 #buddypress #object-nav ul li a span {
   border-radius: 50%;
   width: 30px;
@@ -5452,12 +5453,12 @@ a.clear-value {
   right: -8px;
   z-index: 100;
 }
-/* line 506, ../scss/partials/base/_buddypress.scss */
+/* line 507, ../scss/partials/base/_buddypress.scss */
 #buddypress #object-nav ul li.current a {
   background-color: #5ec2e8;
   color: #fff;
 }
-/* line 518, ../scss/partials/base/_buddypress.scss */
+/* line 519, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages {
   max-width: 68em;
   margin-left: auto;
@@ -5471,46 +5472,46 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 523, ../scss/partials/base/_buddypress.scss */
+/* line 524, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages table#message-threads tr.unread td {
   background: #fff9db;
   border-top: 1px solid #ffe8c4;
   border-bottom: 1px solid #ffe8c4;
   font-weight: bold;
 }
-/* line 529, ../scss/partials/base/_buddypress.scss */
+/* line 530, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages a.message-action-star,
 #buddypress .ns-messages a.message-action-unstar {
   border-bottom: 0;
   text-decoration: none;
   outline: none;
 }
-/* line 535, ../scss/partials/base/_buddypress.scss */
+/* line 536, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages a.message-action-star {
   opacity: .7;
 }
-/* line 538, ../scss/partials/base/_buddypress.scss */
+/* line 539, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages a.message-action-star:hover {
   opacity: 1;
 }
-/* line 541, ../scss/partials/base/_buddypress.scss */
+/* line 542, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .message-action-star span.icon:before,
 #buddypress .ns-messages .message-action-unstar span.icon:before {
   font-family: dashicons;
   font-size: 24px;
 }
-/* line 546, ../scss/partials/base/_buddypress.scss */
+/* line 547, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .message-action-star span.icon:before {
   color: #fd6464;
   content: "\f154";
 }
-/* line 550, ../scss/partials/base/_buddypress.scss */
+/* line 551, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .message-action-unstar span.icon:before {
   color: #fd6464;
   content: "\f155";
 }
 @media screen and (min-width: 580px) {
-  /* line 556, ../scss/partials/base/_buddypress.scss */
+  /* line 557, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages-nav {
     float: left;
     display: block;
@@ -5522,7 +5523,7 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 561, ../scss/partials/base/_buddypress.scss */
+/* line 562, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul {
   background-color: #f6f6f6;
   -webkit-box-align: stretch;
@@ -5560,7 +5561,7 @@ a.clear-value {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 580px) {
-  /* line 561, ../scss/partials/base/_buddypress.scss */
+  /* line 562, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages-nav ul {
     box-shadow: none;
     -webkit-box-orient: vertical;
@@ -5572,19 +5573,19 @@ a.clear-value {
     -ms-flex-direction: column;
   }
 }
-/* line 574, ../scss/partials/base/_buddypress.scss */
+/* line 575, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li {
   width: 25%;
   border-right: 1px solid #dbdbdb;
   border-bottom: none;
   padding: 30px 0;
 }
-/* line 581, ../scss/partials/base/_buddypress.scss */
+/* line 582, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li:last-child {
   border-right: none;
 }
 @media screen and (min-width: 580px) {
-  /* line 574, ../scss/partials/base/_buddypress.scss */
+  /* line 575, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages-nav ul li {
     border-bottom: 1px solid #dbdbdb;
     border-right: none;
@@ -5594,7 +5595,7 @@ a.clear-value {
     width: 100%;
   }
 }
-/* line 596, ../scss/partials/base/_buddypress.scss */
+/* line 597, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li a {
   text-align: center;
   margin: 0 auto;
@@ -5611,14 +5612,14 @@ a.clear-value {
   height: 100%;
 }
 @media screen and (min-width: 992px) {
-  /* line 596, ../scss/partials/base/_buddypress.scss */
+  /* line 597, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages-nav ul li a {
     text-align: left;
     margin: 0;
     height: auto;
   }
 }
-/* line 609, ../scss/partials/base/_buddypress.scss */
+/* line 610, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li a:before {
   font-family: "icons";
   font-size: 24px;
@@ -5629,52 +5630,52 @@ a.clear-value {
   text-align: center;
 }
 @media screen and (min-width: 580px) {
-  /* line 609, ../scss/partials/base/_buddypress.scss */
+  /* line 610, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages-nav ul li a:before {
     padding-right: 15px;
     display: block;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 609, ../scss/partials/base/_buddypress.scss */
+  /* line 610, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages-nav ul li a:before {
     display: inline;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 609, ../scss/partials/base/_buddypress.scss */
+  /* line 610, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages-nav ul li a:before {
     text-align: left;
     margin: 0;
     display: inline;
   }
 }
-/* line 633, ../scss/partials/base/_buddypress.scss */
+/* line 634, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li.current a {
   color: #1fade0;
 }
-/* line 646, ../scss/partials/base/_buddypress.scss */
+/* line 647, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li#starred-personal-li a:before {
   font-size: 30px;
   position: relative;
   top: 4px;
 }
-/* line 658, ../scss/partials/base/_buddypress.scss */
+/* line 659, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li#compose-personal-li {
   /*background-color:$ns_red2;*/
 }
-/* line 660, ../scss/partials/base/_buddypress.scss */
+/* line 661, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages-nav ul li#compose-personal-li a {
   /*color:$white;*/
   padding-top: 3px;
 }
-/* line 676, ../scss/partials/base/_buddypress.scss */
+/* line 677, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages {
   position: relative;
   /* STARRED / SENT MESSAGES */
 }
 @media screen and (min-width: 580px) {
-  /* line 676, ../scss/partials/base/_buddypress.scss */
+  /* line 677, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages {
     float: left;
     display: block;
@@ -5686,37 +5687,37 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 682, ../scss/partials/base/_buddypress.scss */
+/* line 683, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages img.avatar {
   vertical-align: top;
   margin-top: -2px;
 }
-/* line 687, ../scss/partials/base/_buddypress.scss */
+/* line 688, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages label {
   display: block;
   font-weight: 700;
   padding-bottom: 10px;
 }
-/* line 692, ../scss/partials/base/_buddypress.scss */
+/* line 693, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages input[type="text"], #buddypress .ns-messages .messages textarea {
   display: block;
   margin-bottom: 15px;
 }
-/* line 700, ../scss/partials/base/_buddypress.scss */
+/* line 701, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .message-search {
   padding: 15px 20px;
   position: relative;
   z-index: 80;
 }
-/* line 704, ../scss/partials/base/_buddypress.scss */
+/* line 705, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .message-search form {
   position: relative;
 }
-/* line 709, ../scss/partials/base/_buddypress.scss */
+/* line 710, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .message-search form input#messages_search {
   margin-bottom: 0;
 }
-/* line 713, ../scss/partials/base/_buddypress.scss */
+/* line 714, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .message-search form input[type="submit"] {
   border: none;
   text-indent: -9999px;
@@ -5734,11 +5735,11 @@ a.clear-value {
   padding: 0;
   background-size: 30px;
 }
-/* line 715, ../scss/partials/base/_buddypress.scss */
+/* line 716, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .message-search form input[type="submit"]:hover {
   border: none;
 }
-/* line 735, ../scss/partials/base/_buddypress.scss */
+/* line 736, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .messages-options-nav {
   /*position:absolute;
   top:20px;
@@ -5747,18 +5748,18 @@ a.clear-value {
   display: none;
 }
 @media screen and (min-width: 580px) {
-  /* line 735, ../scss/partials/base/_buddypress.scss */
+  /* line 736, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages .messages-options-nav {
     display: block;
   }
 }
-/* line 744, ../scss/partials/base/_buddypress.scss */
+/* line 745, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .messages-options-nav select {
   width: 170px;
   background-position: 128px 7px;
   background-size: 30px;
 }
-/* line 755, ../scss/partials/base/_buddypress.scss */
+/* line 756, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages table#message-threads {
   /*thead,
   .bulk-select-check,
@@ -5780,12 +5781,12 @@ a.clear-value {
   	}
   }*/
 }
-/* line 778, ../scss/partials/base/_buddypress.scss */
+/* line 779, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages #send_message_form {
   margin-top: 15px;
   display: block;
 }
-/* line 786, ../scss/partials/base/_buddypress.scss */
+/* line 787, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .message-header-wrapper {
   background-color: #eeeeee;
   position: relative;
@@ -5796,15 +5797,15 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 794, ../scss/partials/base/_buddypress.scss */
+/* line 795, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single {
   background-color: #f6f6f6;
 }
-/* line 797, ../scss/partials/base/_buddypress.scss */
+/* line 798, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .content-padding {
   padding: 20px;
 }
-/* line 800, ../scss/partials/base/_buddypress.scss */
+/* line 801, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .single-header {
   max-width: 68em;
   margin-left: auto;
@@ -5816,7 +5817,7 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 802, ../scss/partials/base/_buddypress.scss */
+/* line 803, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .single-header .message-recipients {
   float: left;
   display: block;
@@ -5827,7 +5828,7 @@ a.clear-value {
 #buddypress .ns-messages .messages .single .single-header .message-recipients:last-child {
   margin-right: 0;
 }
-/* line 805, ../scss/partials/base/_buddypress.scss */
+/* line 806, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .single-header .single-actions {
   float: left;
   display: block;
@@ -5839,13 +5840,13 @@ a.clear-value {
 #buddypress .ns-messages .messages .single .single-header .single-actions:last-child {
   margin-right: 0;
 }
-/* line 808, ../scss/partials/base/_buddypress.scss */
+/* line 809, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .single-header .single-actions .icon, #buddypress .ns-messages .messages .single .single-header .single-actions .profile-view .left ul > li, #buddypress .profile-view .left .ns-messages .messages .single .single-header .single-actions ul > li,
 #buddypress .ns-messages .messages .single .single-header .single-actions .profile-view .right ul > li,
 #buddypress .profile-view .right .ns-messages .messages .single .single-header .single-actions ul > li, #buddypress .ns-messages .messages .single .single-header .single-actions .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .ns-messages .messages .single .single-header .single-actions a {
   font-size: 24px;
 }
-/* line 814, ../scss/partials/base/_buddypress.scss */
+/* line 815, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .single-message .message-data {
   max-width: 68em;
   margin-left: auto;
@@ -5857,13 +5858,13 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 817, ../scss/partials/base/_buddypress.scss */
+/* line 818, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .single-message .message-data .message-avatar {
   margin-bottom: 20px;
   text-align: center;
 }
 @media screen and (min-width: 580px) {
-  /* line 817, ../scss/partials/base/_buddypress.scss */
+  /* line 818, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages .single .single-message .message-data .message-avatar {
     float: left;
     display: block;
@@ -5877,7 +5878,7 @@ a.clear-value {
   }
 }
 @media screen and (min-width: 580px) {
-  /* line 825, ../scss/partials/base/_buddypress.scss */
+  /* line 826, ../scss/partials/base/_buddypress.scss */
   #buddypress .ns-messages .messages .single .single-message .message-data .message-content {
     float: left;
     display: block;
@@ -5890,61 +5891,61 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 831, ../scss/partials/base/_buddypress.scss */
+/* line 832, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .single .single-message .message-data .message-content h3 {
   padding-bottom: 10px;
 }
-/* line 840, ../scss/partials/base/_buddypress.scss */
+/* line 841, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop {
   background-color: #f6f6f6;
 }
-/* line 842, ../scss/partials/base/_buddypress.scss */
+/* line 843, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop .pagination.top {
   margin-bottom: 15px;
 }
-/* line 845, ../scss/partials/base/_buddypress.scss */
+/* line 846, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table {
   width: 100%;
 }
-/* line 847, ../scss/partials/base/_buddypress.scss */
+/* line 848, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table th {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 851, ../scss/partials/base/_buddypress.scss */
+/* line 852, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table th, #buddypress .ns-messages .messages .loop table td {
   padding: 20px;
   text-align: left;
 }
-/* line 855, ../scss/partials/base/_buddypress.scss */
+/* line 856, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.messages-divider {
   padding: 0;
 }
-/* line 857, ../scss/partials/base/_buddypress.scss */
+/* line 858, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.messages-divider .divider {
   margin: 0;
 }
-/* line 861, ../scss/partials/base/_buddypress.scss */
+/* line 862, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.thread-from {
   max-width: 100px;
 }
-/* line 863, ../scss/partials/base/_buddypress.scss */
+/* line 864, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.thread-from .avatar {
   display: block;
 }
-/* line 867, ../scss/partials/base/_buddypress.scss */
+/* line 868, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.thread-info {
   max-width: 300px;
 }
-/* line 869, ../scss/partials/base/_buddypress.scss */
+/* line 870, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.thread-info p.subject {
   font-weight: 700;
 }
-/* line 873, ../scss/partials/base/_buddypress.scss */
+/* line 874, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.thread-options {
   text-align: center;
 }
-/* line 875, ../scss/partials/base/_buddypress.scss */
+/* line 876, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .messages .loop table td.thread-options .icon, #buddypress .ns-messages .messages .loop table td.thread-options .profile-view .left ul > li, #buddypress .profile-view .left .ns-messages .messages .loop table td.thread-options ul > li,
 #buddypress .ns-messages .messages .loop table td.thread-options .profile-view .right ul > li,
 #buddypress .profile-view .right .ns-messages .messages .loop table td.thread-options ul > li, #buddypress .ns-messages .messages .loop table td.thread-options .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .ns-messages .messages .loop table td.thread-options a {
@@ -5952,19 +5953,19 @@ a.clear-value {
   display: inline-block;
   margin: 0 5px;
 }
-/* line 887, ../scss/partials/base/_buddypress.scss */
+/* line 888, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .info {
   text-align: center;
   padding: 50px 0;
 }
-/* line 892, ../scss/partials/base/_buddypress.scss */
+/* line 893, ../scss/partials/base/_buddypress.scss */
 #buddypress .ns-messages .info.bad-news .icon, #buddypress .ns-messages .info.bad-news .profile-view .left ul > li, #buddypress .profile-view .left .ns-messages .info.bad-news ul > li,
 #buddypress .ns-messages .info.bad-news .profile-view .right ul > li,
 #buddypress .profile-view .right .ns-messages .info.bad-news ul > li, #buddypress .ns-messages .info.bad-news .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .ns-messages .info.bad-news a {
   font-size: 100px;
   color: #832f2d;
 }
-/* line 906, ../scss/partials/base/_buddypress.scss */
+/* line 907, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row {
   max-width: 68em;
   margin-left: auto;
@@ -5984,7 +5985,7 @@ a.clear-value {
 #buddypress .member-row:nth-child(3n+1) {
   clear: left;
 }
-/* line 913, ../scss/partials/base/_buddypress.scss */
+/* line 914, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .left-wrapper {
   float: left;
   display: block;
@@ -5996,7 +5997,7 @@ a.clear-value {
   margin-right: 0;
 }
 @media screen and (min-width: 992px) {
-  /* line 913, ../scss/partials/base/_buddypress.scss */
+  /* line 914, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .left-wrapper {
     float: left;
     display: block;
@@ -6008,7 +6009,7 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 921, ../scss/partials/base/_buddypress.scss */
+/* line 922, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-info-card {
   min-height: 200px;
   background-color: #f6f6f6;
@@ -6045,26 +6046,26 @@ a.clear-value {
   flex-direction: row;
   -ms-flex-direction: row;
 }
-/* line 934, ../scss/partials/base/_buddypress.scss */
+/* line 935, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-info-card .member-header-avatar {
   width: 15%;
   margin-right: 5%;
   min-width: 120px;
 }
-/* line 938, ../scss/partials/base/_buddypress.scss */
+/* line 939, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-info-card .member-header-avatar img.avatar {
   width: 100% !important;
   height: auto !important;
 }
-/* line 943, ../scss/partials/base/_buddypress.scss */
+/* line 944, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-info-card .member-meta-bio {
   width: 80%;
 }
-/* line 946, ../scss/partials/base/_buddypress.scss */
+/* line 947, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-info-card .member-meta-bio .item-block-content {
   margin-top: 20px;
 }
-/* line 949, ../scss/partials/base/_buddypress.scss */
+/* line 950, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-info-card .member-meta-bio .item-block-content .icon, #buddypress .member-row .member-info-card .member-meta-bio .item-block-content .profile-view .left ul > li, #buddypress .profile-view .left .member-row .member-info-card .member-meta-bio .item-block-content ul > li,
 #buddypress .member-row .member-info-card .member-meta-bio .item-block-content .profile-view .right ul > li,
 #buddypress .profile-view .right .member-row .member-info-card .member-meta-bio .item-block-content ul > li, #buddypress .member-row .member-info-card .member-meta-bio .item-block-content .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .member-row .member-info-card .member-meta-bio .item-block-content a {
@@ -6077,7 +6078,7 @@ a.clear-value {
   font-size: 28px;
   padding-top: 12px;
 }
-/* line 959, ../scss/partials/base/_buddypress.scss */
+/* line 960, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-info-card .member-meta-bio .item-block-content .item-subblock {
   display: inline-block;
   margin-right: 20px;
@@ -6085,25 +6086,25 @@ a.clear-value {
   vertical-align: middle;
 }
 @media screen and (min-width: 768px) {
-  /* line 959, ../scss/partials/base/_buddypress.scss */
+  /* line 960, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .member-info-card .member-meta-bio .item-block-content .item-subblock {
     margin-bottom: 0;
   }
 }
-/* line 971, ../scss/partials/base/_buddypress.scss */
+/* line 972, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-notifications {
   background-color: #f6f6f6;
   margin-top: 15px;
 }
-/* line 974, ../scss/partials/base/_buddypress.scss */
+/* line 975, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-notifications h3 {
   margin-bottom: 30px;
 }
-/* line 980, ../scss/partials/base/_buddypress.scss */
+/* line 981, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-notifications .prompt {
   font-weight: 700;
 }
-/* line 985, ../scss/partials/base/_buddypress.scss */
+/* line 986, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-settings,
 #buddypress .member-row .member-change-avatar {
   background-color: #f6f6f6;
@@ -6119,7 +6120,7 @@ a.clear-value {
   margin-right: 0;
 }
 @media screen and (min-width: 992px) {
-  /* line 985, ../scss/partials/base/_buddypress.scss */
+  /* line 986, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .member-settings,
   #buddypress .member-row .member-change-avatar {
     float: left;
@@ -6134,12 +6135,12 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 994, ../scss/partials/base/_buddypress.scss */
+/* line 995, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-settings h3,
 #buddypress .member-row .member-change-avatar h3 {
   margin-bottom: 30px;
 }
-/* line 1000, ../scss/partials/base/_buddypress.scss */
+/* line 1001, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-settings a.button.edit, #buddypress .member-row .member-settings .member-login-forms .content-wrapper a.edit.lostpassword-button, .member-login-forms .content-wrapper #buddypress .member-row .member-settings a.edit.lostpassword-button, #buddypress .member-row .member-settings .profile-callout-block a.edit.item-block-button-go, #buddypress .member-row .profile-callout-block .member-settings a.edit.item-block-button-go,
 #buddypress .member-row .member-settings .callout-block a.edit.item-block-button-go,
 #buddypress .member-row .callout-block .member-settings a.edit.item-block-button-go, #buddypress .member-row .member-settings .tab-content .nsc-item-listing .item-info .item-details .rsvp a.edit, #buddypress .tab-content .nsc-item-listing .item-info .item-details .rsvp .member-row .member-settings a.edit, #buddypress .member-row .member-settings #whats-new-form a.edit#aw-whats-new-submit, #buddypress #whats-new-form .member-row .member-settings a.edit#aw-whats-new-submit,
@@ -6156,21 +6157,21 @@ a.clear-value {
 #buddypress #whats-new-form .member-row .member-change-avatar a.edit#aw-whats-new-submit {
   margin: 30px 0;
 }
-/* line 1003, ../scss/partials/base/_buddypress.scss */
+/* line 1004, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .member-settings .bp-progress,
 #buddypress .member-row .member-change-avatar .bp-progress {
   margin: 0;
 }
-/* line 1013, ../scss/partials/base/_buddypress.scss */
+/* line 1014, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .form-row label {
   font-weight: 700;
 }
-/* line 1016, ../scss/partials/base/_buddypress.scss */
+/* line 1017, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .form-row .settings-input {
   margin-top: 15px;
   display: block;
 }
-/* line 1026, ../scss/partials/base/_buddypress.scss */
+/* line 1027, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block,
 #buddypress .member-row .callout-block {
   text-align: center;
@@ -6187,7 +6188,7 @@ a.clear-value {
   margin-right: 0;
 }
 @media screen and (min-width: 580px) {
-  /* line 1026, ../scss/partials/base/_buddypress.scss */
+  /* line 1027, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .profile-callout-block,
   #buddypress .member-row .callout-block {
     float: left;
@@ -6204,7 +6205,7 @@ a.clear-value {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 1026, ../scss/partials/base/_buddypress.scss */
+  /* line 1027, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .profile-callout-block,
   #buddypress .member-row .callout-block {
     float: left;
@@ -6219,7 +6220,7 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 1045, ../scss/partials/base/_buddypress.scss */
+/* line 1046, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block h2, #buddypress .member-row .profile-callout-block #members-list li .item-title, #buddypress #members-list li .member-row .profile-callout-block .item-title,
 #buddypress .member-row .callout-block h2,
 #buddypress .member-row .callout-block #members-list li .item-title,
@@ -6227,7 +6228,7 @@ a.clear-value {
   color: #fd6464;
   margin-bottom: 10px;
 }
-/* line 1048, ../scss/partials/base/_buddypress.scss */
+/* line 1049, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block h2 .icon, #buddypress .member-row .profile-callout-block #members-list li .item-title .icon, #buddypress #members-list li .member-row .profile-callout-block .item-title .icon, #buddypress .member-row .profile-callout-block h2 .profile-view .left ul > li, #buddypress .profile-view .left .member-row .profile-callout-block h2 ul > li, #buddypress .member-row .profile-callout-block #members-list li .item-title .profile-view .left ul > li, #buddypress .profile-view .left .member-row .profile-callout-block #members-list li .item-title ul > li, #buddypress #members-list li .member-row .profile-callout-block .item-title .profile-view .left ul > li, #buddypress .profile-view .left #members-list li .member-row .profile-callout-block .item-title ul > li,
 #buddypress .member-row .profile-callout-block h2 .profile-view .right ul > li,
 #buddypress .profile-view .right .member-row .profile-callout-block h2 ul > li,
@@ -6260,13 +6261,13 @@ a.clear-value {
   display: block;
   margin-bottom: 10px;
 }
-/* line 1054, ../scss/partials/base/_buddypress.scss */
+/* line 1055, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .item-block-content,
 #buddypress .member-row .callout-block .item-block-content {
   color: #9d9d9d;
   margin-bottom: 10px;
 }
-/* line 1062, ../scss/partials/base/_buddypress.scss */
+/* line 1063, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block {
   float: left;
   display: block;
@@ -6279,7 +6280,7 @@ a.clear-value {
   margin-right: 0;
 }
 @media screen and (min-width: 992px) {
-  /* line 1062, ../scss/partials/base/_buddypress.scss */
+  /* line 1063, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .profile-callout-block {
     margin-top: 0;
     float: left;
@@ -6292,7 +6293,7 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 1070, ../scss/partials/base/_buddypress.scss */
+/* line 1071, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .profile-info {
   display: -webkit-box;
   display: -moz-box;
@@ -6332,28 +6333,28 @@ a.clear-value {
   -ms-flex-line-pack: center;
 }
 @media screen and (min-width: 580px) {
-  /* line 1070, ../scss/partials/base/_buddypress.scss */
+  /* line 1071, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .profile-callout-block .profile-info {
     padding-top: 15px;
   }
 }
-/* line 1086, ../scss/partials/base/_buddypress.scss */
+/* line 1087, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .profile-info .industry,
 #buddypress .member-row .profile-callout-block .profile-info .member-status {
   margin-top: 15px;
 }
-/* line 1090, ../scss/partials/base/_buddypress.scss */
+/* line 1091, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .profile-info .headline {
   color: #9d9d9d;
   text-align: center;
 }
 @media screen and (min-width: 580px) {
-  /* line 1090, ../scss/partials/base/_buddypress.scss */
+  /* line 1091, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .profile-callout-block .profile-info .headline {
     text-align: left;
   }
 }
-/* line 1098, ../scss/partials/base/_buddypress.scss */
+/* line 1099, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .profile-info .headline .icon, #buddypress .member-row .profile-callout-block .profile-info .headline .profile-view .left ul > li, #buddypress .profile-view .left .member-row .profile-callout-block .profile-info .headline ul > li,
 #buddypress .member-row .profile-callout-block .profile-info .headline .profile-view .right ul > li,
 #buddypress .profile-view .right .member-row .profile-callout-block .profile-info .headline ul > li, #buddypress .member-row .profile-callout-block .profile-info .headline .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .member-row .profile-callout-block .profile-info .headline a {
@@ -6363,7 +6364,7 @@ a.clear-value {
   display: block;
 }
 @media screen and (min-width: 580px) {
-  /* line 1098, ../scss/partials/base/_buddypress.scss */
+  /* line 1099, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .profile-callout-block .profile-info .headline .icon, #buddypress .member-row .profile-callout-block .profile-info .headline .profile-view .left ul > li, #buddypress .profile-view .left .member-row .profile-callout-block .profile-info .headline ul > li,
   #buddypress .member-row .profile-callout-block .profile-info .headline .profile-view .right ul > li,
   #buddypress .profile-view .right .member-row .profile-callout-block .profile-info .headline ul > li, #buddypress .member-row .profile-callout-block .profile-info .headline .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .member-row .profile-callout-block .profile-info .headline a {
@@ -6371,25 +6372,25 @@ a.clear-value {
     display: inline-block;
   }
 }
-/* line 1108, ../scss/partials/base/_buddypress.scss */
+/* line 1109, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .profile-info .headline .icon.icon_marker:before, #buddypress .member-row .profile-callout-block .profile-info .headline .profile-view .left ul > li.icon_marker:before, #buddypress .profile-view .left .member-row .profile-callout-block .profile-info .headline ul > li.icon_marker:before,
 #buddypress .member-row .profile-callout-block .profile-info .headline .profile-view .right ul > li.icon_marker:before,
 #buddypress .profile-view .right .member-row .profile-callout-block .profile-info .headline ul > li.icon_marker:before, #buddypress .member-row .profile-callout-block .profile-info .headline .activity-list .activity-item .activity-content .activity-meta a.icon_marker:before, #buddypress .activity-list .activity-item .activity-content .activity-meta .member-row .profile-callout-block .profile-info .headline a.icon_marker:before {
   margin-left: 5px;
 }
-/* line 1114, ../scss/partials/base/_buddypress.scss */
+/* line 1115, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .profile-info .border {
   padding-bottom: 20px;
   border-bottom: 1px solid #dbdbdb;
 }
-/* line 1119, ../scss/partials/base/_buddypress.scss */
+/* line 1120, ../scss/partials/base/_buddypress.scss */
 #buddypress .member-row .profile-callout-block .profile-info .item-block-content {
   color: #000;
   font-weight: 700;
   display: block;
 }
 @media screen and (min-width: 580px) {
-  /* line 1119, ../scss/partials/base/_buddypress.scss */
+  /* line 1120, ../scss/partials/base/_buddypress.scss */
   #buddypress .member-row .profile-callout-block .profile-info .item-block-content {
     font-size: 120%;
     padding-left: 45px;
@@ -6402,36 +6403,36 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 1140, ../scss/partials/base/_buddypress.scss */
+/* line 1141, ../scss/partials/base/_buddypress.scss */
 #buddypress .notifications-menu ul li {
   float: left;
   margin-right: 20px;
 }
-/* line 1143, ../scss/partials/base/_buddypress.scss */
+/* line 1144, ../scss/partials/base/_buddypress.scss */
 #buddypress .notifications-menu ul li.filters-title {
   font-weight: 700;
 }
-/* line 1146, ../scss/partials/base/_buddypress.scss */
+/* line 1147, ../scss/partials/base/_buddypress.scss */
 #buddypress .notifications-menu ul li.last {
   float: right;
   margin-right: 0;
 }
-/* line 1155, ../scss/partials/base/_buddypress.scss */
+/* line 1156, ../scss/partials/base/_buddypress.scss */
 #buddypress .notifications-list table {
   width: 100%;
 }
-/* line 1157, ../scss/partials/base/_buddypress.scss */
+/* line 1158, ../scss/partials/base/_buddypress.scss */
 #buddypress .notifications-list table th {
   font-weight: 700;
   text-transform: capitalize;
   background-color: #eeeeee;
 }
-/* line 1163, ../scss/partials/base/_buddypress.scss */
+/* line 1164, ../scss/partials/base/_buddypress.scss */
 #buddypress .notifications-list table th, #buddypress .notifications-list table td {
   padding: 10px;
   text-align: left;
 }
-/* line 1172, ../scss/partials/base/_buddypress.scss */
+/* line 1173, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view {
   max-width: 68em;
   margin-left: auto;
@@ -6443,24 +6444,24 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 1176, ../scss/partials/base/_buddypress.scss */
+/* line 1177, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left,
 #buddypress .profile-view .right {
   background: #f6f6f6;
 }
-/* line 1181, ../scss/partials/base/_buddypress.scss */
+/* line 1182, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left h3,
 #buddypress .profile-view .right h3 {
   padding-bottom: 20px;
 }
-/* line 1185, ../scss/partials/base/_buddypress.scss */
+/* line 1186, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left ul > li,
 #buddypress .profile-view .right ul > li {
   padding-bottom: 10px;
   position: relative;
   display: block;
 }
-/* line 1191, ../scss/partials/base/_buddypress.scss */
+/* line 1192, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left ul > li:before,
 #buddypress .profile-view .right ul > li:before {
   color: #0098d8;
@@ -6470,22 +6471,22 @@ a.clear-value {
   position: absolute;
   top: 1px;
 }
-/* line 1200, ../scss/partials/base/_buddypress.scss */
+/* line 1201, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left ul > li.advancing-national-service,
 #buddypress .profile-view .right ul > li.advancing-national-service {
   left: 2px;
 }
-/* line 1208, ../scss/partials/base/_buddypress.scss */
+/* line 1209, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left ul > li.making-government-work,
 #buddypress .profile-view .right ul > li.making-government-work {
   left: 2px;
 }
-/* line 1212, ../scss/partials/base/_buddypress.scss */
+/* line 1213, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left ul > li.preserving-our-environment,
 #buddypress .profile-view .right ul > li.preserving-our-environment {
   left: 1px;
 }
-/* line 1217, ../scss/partials/base/_buddypress.scss */
+/* line 1218, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .left ul > li span,
 #buddypress .profile-view .right ul > li span {
   font-family: "Gudea", Arial, sans-serif;
@@ -6496,7 +6497,7 @@ a.clear-value {
   padding-top: 4px;
 }
 @media screen and (min-width: 992px) {
-  /* line 1227, ../scss/partials/base/_buddypress.scss */
+  /* line 1228, ../scss/partials/base/_buddypress.scss */
   #buddypress .profile-view .left {
     float: left;
     display: block;
@@ -6509,7 +6510,7 @@ a.clear-value {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 1232, ../scss/partials/base/_buddypress.scss */
+  /* line 1233, ../scss/partials/base/_buddypress.scss */
   #buddypress .profile-view .right {
     float: left;
     display: block;
@@ -6521,92 +6522,89 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 1236, ../scss/partials/base/_buddypress.scss */
+/* line 1237, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-view .right .interests {
   margin-top: 30px;
 }
-/* line 1248, ../scss/partials/base/_buddypress.scss */
+/* line 1249, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-forms {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  box-align: start;
-  -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  -ms-align-items: flex-start;
-  -o-align-items: flex-start;
-  align-items: flex-start;
-  -ms-flex-align: start;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-}
-@media screen and (min-width: 580px) {
-  /* line 1248, ../scss/partials/base/_buddypress.scss */
-  #buddypress .profile-edit-forms {
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-direction: row;
-  }
-}
-/* line 1261, ../scss/partials/base/_buddypress.scss */
-#buddypress .profile-edit-form {
-  background: #f6f6f6;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
   width: 100%;
+  margin-right: 0 !important;
+  margin-top: 30px;
+  /*@include display(flex);
+  @include justify-content(space-between);
+  @include align-items(flex-start);
+  @include flex-wrap(wrap);
+  @include flex-direction(column);
+  @include media($medium) {
+  	@include flex-direction(row);
+  }*/
 }
-@media screen and (min-width: 580px) {
-  /* line 1261, ../scss/partials/base/_buddypress.scss */
-  #buddypress .profile-edit-form {
+/* line 38, ../scss/neat/grid/_span-columns.scss */
+#buddypress .profile-edit-forms:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 992px) {
+  /* line 1249, ../scss/partials/base/_buddypress.scss */
+  #buddypress .profile-edit-forms {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
     width: 48.82117%;
+    margin-top: 0;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  #buddypress .profile-edit-forms:last-child {
+    margin-right: 0;
   }
 }
 /* line 1270, ../scss/partials/base/_buddypress.scss */
-#buddypress .profile-edit-form:last-child {
-  margin-top: 30px;
+#buddypress .profile-edit-form .button-nav li {
+  margin: 0 5px 0 0;
 }
-@media screen and (min-width: 580px) {
-  /* line 1270, ../scss/partials/base/_buddypress.scss */
-  #buddypress .profile-edit-form:last-child {
-    margin-top: 0;
-  }
+/* line 1272, ../scss/partials/base/_buddypress.scss */
+#buddypress .profile-edit-form .button-nav li a {
+  border: none;
+  background-color: #f6f6f6;
 }
-@media screen and (min-width: 992px) {
-  /* line 1270, ../scss/partials/base/_buddypress.scss */
-  #buddypress .profile-edit-form:last-child {
-    margin-top: -234px;
-  }
+/* line 1275, ../scss/partials/base/_buddypress.scss */
+#buddypress .profile-edit-form .button-nav li a:hover {
+  border: none;
 }
-/* line 1284, ../scss/partials/base/_buddypress.scss */
+/* line 1280, ../scss/partials/base/_buddypress.scss */
+#buddypress .profile-edit-form .button-nav li.current a {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bbbbbb+0,f6f6f6+100 */
+  background: #b7b7b7;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b7b7b7 0%, #f6f6f6 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b7b7b7 0%, #f6f6f6 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b7b7b7 0%, #f6f6f6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gray4', endColorstr='$gray7',GradientType=0 );
+  /* IE6-9 */
+  border: none;
+}
+/* line 1293, ../scss/partials/base/_buddypress.scss */
+#buddypress .profile-edit-form form {
+  background: #f6f6f6;
+  /*&:last-child {
+  	margin-top:30px;
+  	
+  	@include media($medium) {
+  		margin-top:0;
+  	}
+  	
+  	@include media($large) {
+  		//margin-top:-234px;
+  	}
+  }*/
+}
+/* line 1313, ../scss/partials/base/_buddypress.scss */
 #buddypress #popup-bio-info {
   position: absolute;
   top: 50px;
@@ -6615,76 +6613,76 @@ a.clear-value {
   background: #fff;
   padding: 30px;
 }
-/* line 1292, ../scss/partials/base/_buddypress.scss */
+/* line 1321, ../scss/partials/base/_buddypress.scss */
 #buddypress #popup-bio-info ul {
   list-style-type: circle;
   padding-left: 30px;
   margin: 10px 0 20px 0;
 }
-/* line 1305, ../scss/partials/base/_buddypress.scss */
+/* line 1334, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio .editfield,
 #buddypress .profile-edit-form .editfield {
   margin-bottom: 20px;
 }
-/* line 1309, ../scss/partials/base/_buddypress.scss */
+/* line 1338, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio h3,
 #buddypress .profile-edit-form h3 {
   padding-bottom: 20px;
   color: #000;
 }
-/* line 1312, ../scss/partials/base/_buddypress.scss */
+/* line 1341, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio h3 span,
 #buddypress .profile-edit-form h3 span {
   font-size: 12px;
 }
-/* line 1316, ../scss/partials/base/_buddypress.scss */
+/* line 1345, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio input[type="text"], #buddypress .profile-edit-form-bio select, #buddypress .profile-edit-form-bio textarea,
 #buddypress .profile-edit-form input[type="text"],
 #buddypress .profile-edit-form select,
 #buddypress .profile-edit-form textarea {
   max-width: 100%;
 }
-/* line 1323, ../scss/partials/base/_buddypress.scss */
+/* line 1352, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio select[multiple],
 #buddypress .profile-edit-form select[multiple] {
   background-image: none;
 }
-/* line 1326, ../scss/partials/base/_buddypress.scss */
+/* line 1355, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio .datebox select,
 #buddypress .profile-edit-form .datebox select {
   width: 32.7%;
   padding-right: inherit;
 }
-/* line 1333, ../scss/partials/base/_buddypress.scss */
+/* line 1362, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio label,
 #buddypress .profile-edit-form label {
   font-weight: 700;
   padding: 0 0 5px 0;
   display: block;
 }
-/* line 1339, ../scss/partials/base/_buddypress.scss */
+/* line 1368, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio .checkbox label,
 #buddypress .profile-edit-form .checkbox label {
   font-weight: normal;
 }
-/* line 1340, ../scss/partials/base/_buddypress.scss */
+/* line 1369, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio .checkbox label:first-child,
 #buddypress .profile-edit-form .checkbox label:first-child {
   font-weight: 700;
   margin-bottom: 5px;
 }
-/* line 1345, ../scss/partials/base/_buddypress.scss */
+/* line 1374, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio .checkbox label:last-child span,
 #buddypress .profile-edit-form .checkbox label:last-child span {
   display: none;
 }
-/* line 1351, ../scss/partials/base/_buddypress.scss */
+/* line 1380, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio .checkbox input,
 #buddypress .profile-edit-form .checkbox input {
   margin-right: 10px;
   vertical-align: top;
 }
-/* line 1356, ../scss/partials/base/_buddypress.scss */
+/* line 1385, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio p.description, #buddypress .profile-edit-form-bio span.optional,
 #buddypress .profile-edit-form p.description,
 #buddypress .profile-edit-form span.optional {
@@ -6692,7 +6690,7 @@ a.clear-value {
   font-weight: 700;
   color: #b7b7b7;
 }
-/* line 1364, ../scss/partials/base/_buddypress.scss */
+/* line 1393, ../scss/partials/base/_buddypress.scss */
 #buddypress .profile-edit-form-bio .field_birthday-month,
 #buddypress .profile-edit-form-bio .field_birthday-day,
 #buddypress .profile-edit-form .field_birthday-month,
@@ -6700,7 +6698,7 @@ a.clear-value {
   width: 49%;
   display: inline-block;
 }
-/* line 1377, ../scss/partials/base/_buddypress.scss */
+/* line 1406, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item {
   padding: 50px 0 15px 0;
   border-bottom: 1px solid #dbdbdb;
@@ -6723,17 +6721,17 @@ a.clear-value {
 #buddypress .activity-list .activity-item:nth-child(2n+1) {
   clear: left;
 }
-/* line 1384, ../scss/partials/base/_buddypress.scss */
+/* line 1413, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item:first-child {
   padding-top: 0;
 }
-/* line 1388, ../scss/partials/base/_buddypress.scss */
+/* line 1417, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-avatar {
   text-align: center;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 580px) {
-  /* line 1388, ../scss/partials/base/_buddypress.scss */
+  /* line 1417, ../scss/partials/base/_buddypress.scss */
   #buddypress .activity-list .activity-item .activity-avatar {
     float: left;
     display: block;
@@ -6746,11 +6744,11 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 1396, ../scss/partials/base/_buddypress.scss */
+/* line 1425, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-avatar a {
   position: relative;
 }
-/* line 1401, ../scss/partials/base/_buddypress.scss */
+/* line 1430, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-avatar a span {
   position: absolute;
   width: 30px;
@@ -6765,7 +6763,7 @@ a.clear-value {
   right: 0;
 }
 @media screen and (min-width: 580px) {
-  /* line 1416, ../scss/partials/base/_buddypress.scss */
+  /* line 1445, ../scss/partials/base/_buddypress.scss */
   #buddypress .activity-list .activity-item .activity-content {
     float: left;
     display: block;
@@ -6778,23 +6776,23 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 1422, ../scss/partials/base/_buddypress.scss */
+/* line 1451, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-header {
   color: #7e7e7e;
 }
-/* line 1424, ../scss/partials/base/_buddypress.scss */
+/* line 1453, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-header a {
   font-weight: 700;
 }
-/* line 1427, ../scss/partials/base/_buddypress.scss */
+/* line 1456, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-header a.activity-time-since {
   display: none;
 }
-/* line 1432, ../scss/partials/base/_buddypress.scss */
+/* line 1461, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta {
   margin: 15px 0 0 0;
 }
-/* line 1434, ../scss/partials/base/_buddypress.scss */
+/* line 1463, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a {
   overflow: hidden;
   font-size: 36px;
@@ -6810,7 +6808,7 @@ a.clear-value {
   width: 0;
   height: 100%;
 }
-/* line 1444, ../scss/partials/base/_buddypress.scss */
+/* line 1473, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a.loading {
   border: none;
   -webkit-animation: none;
@@ -6822,44 +6820,44 @@ a.clear-value {
   background-position: center right;
   background-size: 24px 24px;
 }
-/* line 1455, ../scss/partials/base/_buddypress.scss */
+/* line 1484, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a:visited {
   color: #b7b7b7;
 }
-/* line 1458, ../scss/partials/base/_buddypress.scss */
+/* line 1487, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover {
   color: #1fade0;
 }
-/* line 1461, ../scss/partials/base/_buddypress.scss */
+/* line 1490, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a:active {
   color: #003046;
 }
-/* line 1471, ../scss/partials/base/_buddypress.scss */
+/* line 1500, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a.unfav {
   color: #fd6464;
 }
-/* line 1475, ../scss/partials/base/_buddypress.scss */
+/* line 1504, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a.delete-activity {
   font-size: 30px;
   border: none;
   padding-top: 2px;
 }
-/* line 1480, ../scss/partials/base/_buddypress.scss */
+/* line 1509, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-content .activity-meta a.delete-activity:hover {
   border: none;
 }
-/* line 1487, ../scss/partials/base/_buddypress.scss */
+/* line 1516, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments {
   clear: both;
   padding: 15px 0;
 }
 @media screen and (min-width: 580px) {
-  /* line 1491, ../scss/partials/base/_buddypress.scss */
+  /* line 1520, ../scss/partials/base/_buddypress.scss */
   #buddypress .activity-list .activity-item .activity-comments ul {
     margin-left: 17.05961%;
   }
 }
-/* line 1495, ../scss/partials/base/_buddypress.scss */
+/* line 1524, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments ul li {
   border-top: 1px solid #eeeeee;
   padding-top: 10px;
@@ -6872,28 +6870,28 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 1501, ../scss/partials/base/_buddypress.scss */
+/* line 1530, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments ul li .acomment-avatar {
   float: left;
   margin-right: 30px;
 }
-/* line 1505, ../scss/partials/base/_buddypress.scss */
+/* line 1534, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments ul li .acomment-content {
   padding-top: 15px;
 }
-/* line 1508, ../scss/partials/base/_buddypress.scss */
+/* line 1537, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments ul li .activity-time-since,
 #buddypress .activity-list .activity-item .activity-comments ul li .acomment-reply {
   display: none;
 }
-/* line 1512, ../scss/partials/base/_buddypress.scss */
+/* line 1541, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments ul li .acomment-options {
   float: right;
   position: absolute;
   right: 0;
   top: 10px;
 }
-/* line 1521, ../scss/partials/base/_buddypress.scss */
+/* line 1550, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments form {
   max-width: 68em;
   margin-left: auto;
@@ -6905,7 +6903,7 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 1523, ../scss/partials/base/_buddypress.scss */
+/* line 1552, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments form .ac-reply-avatar {
   float: left;
   display: block;
@@ -6916,7 +6914,7 @@ a.clear-value {
 #buddypress .activity-list .activity-item .activity-comments form .ac-reply-avatar:last-child {
   margin-right: 0;
 }
-/* line 1526, ../scss/partials/base/_buddypress.scss */
+/* line 1555, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments form .ac-reply-content {
   float: left;
   display: block;
@@ -6928,15 +6926,15 @@ a.clear-value {
 #buddypress .activity-list .activity-item .activity-comments form .ac-reply-content:last-child {
   margin-right: 0;
 }
-/* line 1530, ../scss/partials/base/_buddypress.scss */
+/* line 1559, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-comments form .ac-reply-content textarea {
   margin-bottom: 10px;
 }
-/* line 1539, ../scss/partials/base/_buddypress.scss */
+/* line 1568, ../scss/partials/base/_buddypress.scss */
 #buddypress .activity-list .activity-item .activity-inner {
   margin: 10px 0 5px 0;
 }
-/* line 1550, ../scss/partials/base/_buddypress.scss */
+/* line 1579, ../scss/partials/base/_buddypress.scss */
 #buddypress .intro-text {
   font-family: "pt-serif-italic", Georgia, serif;
   color: #003046;
@@ -6945,22 +6943,22 @@ a.clear-value {
   line-height: 130%;
 }
 @media screen and (min-width: 768px) {
-  /* line 1550, ../scss/partials/base/_buddypress.scss */
+  /* line 1579, ../scss/partials/base/_buddypress.scss */
   #buddypress .intro-text {
     font-size: 2rem;
   }
 }
-/* line 1571, ../scss/partials/base/_buddypress.scss */
+/* line 1600, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .search-filter {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 992px) {
-  /* line 1573, ../scss/partials/base/_buddypress.scss */
+  /* line 1602, ../scss/partials/base/_buddypress.scss */
   #buddypress .tab-content .nsc-item-listing .search-filter form {
     margin-left: 17.05961%;
   }
 }
-/* line 1577, ../scss/partials/base/_buddypress.scss */
+/* line 1606, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .search-filter form label {
   font-weight: 700;
   color: #a7a7a7;
@@ -6968,23 +6966,23 @@ a.clear-value {
   display: block;
 }
 @media screen and (min-width: 580px) {
-  /* line 1577, ../scss/partials/base/_buddypress.scss */
+  /* line 1606, ../scss/partials/base/_buddypress.scss */
   #buddypress .tab-content .nsc-item-listing .search-filter form label {
     display: inline;
   }
 }
-/* line 1586, ../scss/partials/base/_buddypress.scss */
+/* line 1615, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .search-filter form select {
   width: 100%;
   margin-top: 10px;
 }
 @media screen and (min-width: 580px) {
-  /* line 1586, ../scss/partials/base/_buddypress.scss */
+  /* line 1615, ../scss/partials/base/_buddypress.scss */
   #buddypress .tab-content .nsc-item-listing .search-filter form select {
     width: 33%;
   }
 }
-/* line 1596, ../scss/partials/base/_buddypress.scss */
+/* line 1625, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info {
   max-width: 68em;
   margin-left: auto;
@@ -6997,11 +6995,11 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 1599, ../scss/partials/base/_buddypress.scss */
+/* line 1628, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info .item-icon {
   margin-bottom: 20px;
 }
-/* line 1601, ../scss/partials/base/_buddypress.scss */
+/* line 1630, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info .item-icon .icon, #buddypress .tab-content .nsc-item-listing .item-info .item-icon .profile-view .left ul > li, #buddypress .profile-view .left .tab-content .nsc-item-listing .item-info .item-icon ul > li,
 #buddypress .tab-content .nsc-item-listing .item-info .item-icon .profile-view .right ul > li,
 #buddypress .profile-view .right .tab-content .nsc-item-listing .item-info .item-icon ul > li, #buddypress .tab-content .nsc-item-listing .item-info .item-icon .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .tab-content .nsc-item-listing .item-info .item-icon a {
@@ -7018,7 +7016,7 @@ a.clear-value {
   margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
-  /* line 1599, ../scss/partials/base/_buddypress.scss */
+  /* line 1628, ../scss/partials/base/_buddypress.scss */
   #buddypress .tab-content .nsc-item-listing .item-info .item-icon {
     float: left;
     display: block;
@@ -7031,7 +7029,7 @@ a.clear-value {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 1619, ../scss/partials/base/_buddypress.scss */
+  /* line 1648, ../scss/partials/base/_buddypress.scss */
   #buddypress .tab-content .nsc-item-listing .item-info .item-details {
     float: left;
     display: block;
@@ -7043,7 +7041,7 @@ a.clear-value {
     margin-right: 0;
   }
 }
-/* line 1623, ../scss/partials/base/_buddypress.scss */
+/* line 1652, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info .item-details a.item-title {
   color: #000;
   font-weight: 700;
@@ -7051,7 +7049,7 @@ a.clear-value {
   display: block;
   margin-bottom: 20px;
 }
-/* line 1630, ../scss/partials/base/_buddypress.scss */
+/* line 1659, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location {
   max-width: 68em;
   margin-left: auto;
@@ -7064,7 +7062,7 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 1634, ../scss/partials/base/_buddypress.scss */
+/* line 1663, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location .date-time,
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location .location {
   float: left;
@@ -7078,48 +7076,48 @@ a.clear-value {
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location .location:last-child {
   margin-right: 0;
 }
-/* line 1639, ../scss/partials/base/_buddypress.scss */
+/* line 1668, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location .date-time:before,
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location .location:before {
   position: absolute;
   margin-left: -20px;
   font-size: 28px;
 }
-/* line 1644, ../scss/partials/base/_buddypress.scss */
+/* line 1673, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location .date-time span,
 #buddypress .tab-content .nsc-item-listing .item-info .item-details .date-location .location span {
   font-family: "Gudea", Arial, sans-serif;
   display: block;
   padding-left: 20px;
 }
-/* line 1660, ../scss/partials/base/_buddypress.scss */
+/* line 1689, ../scss/partials/base/_buddypress.scss */
 #buddypress .tab-content .nsc-item-listing .no-items {
   text-align: center;
   padding: 30px 0;
 }
-/* line 1673, ../scss/partials/base/_buddypress.scss */
+/* line 1702, ../scss/partials/base/_buddypress.scss */
 #buddypress .bp-avatar .drag-drop-buttons label {
   display: none;
 }
-/* line 1683, ../scss/partials/base/_buddypress.scss */
+/* line 1712, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form p.activity-greeting {
   font-size: 2rem;
   display: inline-block;
   vertical-align: top;
   padding: 1.5rem;
 }
-/* line 1689, ../scss/partials/base/_buddypress.scss */
+/* line 1718, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-avatar,
 #buddypress #whats-new-form p.activity-greeting {
   display: inline-block;
 }
-/* line 1693, ../scss/partials/base/_buddypress.scss */
+/* line 1722, ../scss/partials/base/_buddypress.scss */
 #buddypress #whats-new-form #whats-new-textarea {
   margin-top: 15px;
   float: none;
   clear: both;
 }
-/* line 1706, ../scss/partials/base/_buddypress.scss */
+/* line 1735, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search .page-header,
 #buddypress #members-dir-search .member-search-filter {
   float: left;
@@ -7132,15 +7130,15 @@ a.clear-value {
 #buddypress #members-dir-search .member-search-filter:last-child {
   margin-right: 0;
 }
-/* line 1710, ../scss/partials/base/_buddypress.scss */
+/* line 1739, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search .member-search-filter {
   text-align: right;
 }
-/* line 1713, ../scss/partials/base/_buddypress.scss */
+/* line 1742, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search input[type="text"] {
   margin: 30px 0;
 }
-/* line 1717, ../scss/partials/base/_buddypress.scss */
+/* line 1746, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search #council_branch,
 #buddypress #members-dir-search #industry,
 #buddypress #members-dir-search #nationswell_topics,
@@ -7148,7 +7146,7 @@ a.clear-value {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 580px) {
-  /* line 1717, ../scss/partials/base/_buddypress.scss */
+  /* line 1746, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-dir-search #council_branch,
   #buddypress #members-dir-search #industry,
   #buddypress #members-dir-search #nationswell_topics,
@@ -7158,16 +7156,16 @@ a.clear-value {
     margin-bottom: 0;
   }
 }
-/* line 1730, ../scss/partials/base/_buddypress.scss */
+/* line 1759, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search #interested_in {
   margin-right: 0;
 }
-/* line 1733, ../scss/partials/base/_buddypress.scss */
+/* line 1762, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search input[type="submit"] {
   margin-top: 30px;
   display: inline-block;
 }
-/* line 1738, ../scss/partials/base/_buddypress.scss */
+/* line 1767, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-dir-search .reset {
   margin-left: 20px;
   border-left: 1px solid #b7b7b7;
@@ -7175,11 +7173,11 @@ a.clear-value {
   vertical-align: baseline;
   display: inline-block;
 }
-/* line 1750, ../scss/partials/base/_buddypress.scss */
+/* line 1779, ../scss/partials/base/_buddypress.scss */
 #buddypress #pag-top {
   display: none;
 }
-/* line 1753, ../scss/partials/base/_buddypress.scss */
+/* line 1782, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list {
   max-width: 68em;
   margin-left: auto;
@@ -7191,7 +7189,7 @@ a.clear-value {
   display: table;
   clear: both;
 }
-/* line 1755, ../scss/partials/base/_buddypress.scss */
+/* line 1784, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li {
   background: #f6f6f6;
   margin-bottom: 2rem;
@@ -7247,7 +7245,7 @@ a.clear-value {
   margin-right: 0;
 }
 @media screen and (min-width: 580px) {
-  /* line 1755, ../scss/partials/base/_buddypress.scss */
+  /* line 1784, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li {
     float: left;
     display: block;
@@ -7290,7 +7288,7 @@ a.clear-value {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 1755, ../scss/partials/base/_buddypress.scss */
+  /* line 1784, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li {
     float: left;
     display: block;
@@ -7332,44 +7330,44 @@ a.clear-value {
     clear: left;
   }
 }
-/* line 1790, ../scss/partials/base/_buddypress.scss */
+/* line 1819, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-avatar,
 #buddypress #members-list li .item {
   text-align: center;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 580px) {
-  /* line 1790, ../scss/partials/base/_buddypress.scss */
+  /* line 1819, ../scss/partials/base/_buddypress.scss */
   #buddypress #members-list li .item-avatar,
   #buddypress #members-list li .item {
     text-align: left;
   }
 }
-/* line 1798, ../scss/partials/base/_buddypress.scss */
+/* line 1827, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-avatar {
   width: 20%;
   margin-right: 5%;
 }
-/* line 1802, ../scss/partials/base/_buddypress.scss */
+/* line 1831, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item {
   width: 75%;
 }
-/* line 1805, ../scss/partials/base/_buddypress.scss */
+/* line 1834, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-title {
   margin-bottom: 2px;
 }
-/* line 1808, ../scss/partials/base/_buddypress.scss */
+/* line 1837, ../scss/partials/base/_buddypress.scss */
 #buddypress #members-list li .item-title a {
   color: #000;
 }
-/* line 1816, ../scss/partials/base/_buddypress.scss */
+/* line 1845, ../scss/partials/base/_buddypress.scss */
 #buddypress .pagination .pag-count,
 #buddypress .pagination .pagination-links {
   padding-bottom: 10px;
   text-align: center;
 }
 
-/* line 1831, ../scss/partials/base/_buddypress.scss */
+/* line 1860, ../scss/partials/base/_buddypress.scss */
 #buddypress table.notifications tr.alt td,
 #buddypress table.notifications-settings tr.alt td,
 #buddypress table.profile-settings tr.alt td,
@@ -7380,19 +7378,19 @@ a.clear-value {
   background: #f5f5f5;
 }
 
-/* line 1840, ../scss/partials/base/_buddypress.scss */
+/* line 1869, ../scss/partials/base/_buddypress.scss */
 #buddypress table.notification-settings {
   margin-bottom: 20px;
   text-align: left;
   width: 100%;
 }
 
-/* line 1845, ../scss/partials/base/_buddypress.scss */
+/* line 1874, ../scss/partials/base/_buddypress.scss */
 #buddypress #groups-notification-settings {
   margin-bottom: 0;
 }
 
-/* line 1848, ../scss/partials/base/_buddypress.scss */
+/* line 1877, ../scss/partials/base/_buddypress.scss */
 #buddypress table.notifications th.icon,
 #buddypress table.notifications td:first-child,
 #buddypress table.notification-settings th.icon,
@@ -7400,18 +7398,18 @@ a.clear-value {
   display: none;
 }
 
-/* line 1854, ../scss/partials/base/_buddypress.scss */
+/* line 1883, ../scss/partials/base/_buddypress.scss */
 #buddypress table.notification-settings td {
   padding: 15px 0;
 }
 
-/* line 1857, ../scss/partials/base/_buddypress.scss */
+/* line 1886, ../scss/partials/base/_buddypress.scss */
 #buddypress table.notification-settings th.title,
 #buddypress table.profile-settings th.title {
   width: 80%;
 }
 
-/* line 1862, ../scss/partials/base/_buddypress.scss */
+/* line 1891, ../scss/partials/base/_buddypress.scss */
 #buddypress table.notification-settings .yes,
 #buddypress table.notification-settings .no {
   text-align: center;
@@ -7424,7 +7422,7 @@ LEGACY STYLES CARRIED OVER FROM DEFAULT CSS
 /*--------------------------------------------------------------
 Ajax Loading
 --------------------------------------------------------------*/
-/* line 1884, ../scss/partials/base/_buddypress.scss */
+/* line 1913, ../scss/partials/base/_buddypress.scss */
 #buddypress a.loading,
 #buddypress input.loading {
   -webkit-animation: loader-pulsate .5s infinite ease-in-out alternate;
@@ -7456,13 +7454,13 @@ Ajax Loading
     box-shadow: 0 0 6px #f8f8f8;
   }
 }
-/* line 1915, ../scss/partials/base/_buddypress.scss */
+/* line 1944, ../scss/partials/base/_buddypress.scss */
 #buddypress a.loading:hover,
 #buddypress input.loading:hover {
   color: #767676;
 }
 
-/* line 1919, ../scss/partials/base/_buddypress.scss */
+/* line 1948, ../scss/partials/base/_buddypress.scss */
 #buddypress input[type="submit"].pending,
 #buddypress input[type="button"].pending,
 #buddypress input[type="reset"].pending,
@@ -7479,7 +7477,7 @@ Ajax Loading
   cursor: default;
 }
 
-/* line 1934, ../scss/partials/base/_buddypress.scss */
+/* line 1963, ../scss/partials/base/_buddypress.scss */
 #buddypress input[type="submit"]:hover.pending,
 #buddypress input[type="button"]:hover.pending,
 #buddypress input[type="reset"]:hover.pending,
@@ -7497,7 +7495,7 @@ Ajax Loading
 /*--------------------------------------------------------------
 3.5 - Forms
 --------------------------------------------------------------*/
-/* line 1954, ../scss/partials/base/_buddypress.scss */
+/* line 1983, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form textarea,
 #buddypress .standard-form input[type=text],
 #buddypress .standard-form input[type=text],
@@ -7529,17 +7527,17 @@ Ajax Loading
   padding: 6px;
 }
 
-/* line 1984, ../scss/partials/base/_buddypress.scss */
+/* line 2013, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form select {
   padding: 3px;
 }
 
-/* line 1987, ../scss/partials/base/_buddypress.scss */
+/* line 2016, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form input[type=password] {
   margin-bottom: 5px;
 }
 
-/* line 1990, ../scss/partials/base/_buddypress.scss */
+/* line 2019, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form label,
 #buddypress .standard-form span.label {
   display: block;
@@ -7548,14 +7546,14 @@ Ajax Loading
   width: auto;
 }
 
-/* line 1997, ../scss/partials/base/_buddypress.scss */
+/* line 2026, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form p label,
 #buddypress .standard-form #invite-list label {
   font-weight: normal;
   margin: auto;
 }
 
-/* line 2002, ../scss/partials/base/_buddypress.scss */
+/* line 2031, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form div.checkbox label:nth-child(n+2),
 #buddypress .standard-form div.radio div label {
   color: #767676;
@@ -7564,30 +7562,30 @@ Ajax Loading
   margin: 5px 0 0 0;
 }
 
-/* line 2009, ../scss/partials/base/_buddypress.scss */
+/* line 2038, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form#sidebar-login-form label {
   margin-top: 5px;
 }
 
-/* line 2012, ../scss/partials/base/_buddypress.scss */
+/* line 2041, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form input[type=text] {
   width: 75%;
 }
 
-/* line 2015, ../scss/partials/base/_buddypress.scss */
+/* line 2044, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form#sidebar-login-form input[type=text],
 #buddypress .standard-form#sidebar-login-form input[type=password] {
   padding: 4px;
   width: 95%;
 }
 
-/* line 2020, ../scss/partials/base/_buddypress.scss */
+/* line 2049, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form #basic-details-section input[type=password],
 #buddypress .standard-form #blog-details-section input#signup_blog_url {
   width: 35%;
 }
 
-/* line 2024, ../scss/partials/base/_buddypress.scss */
+/* line 2053, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form#signup_form input[type=text],
 #buddypress .standard-form#signup_form textarea,
 #buddypress .form-allowed-tags,
@@ -7596,75 +7594,75 @@ Ajax Loading
   width: 90%;
 }
 
-/* line 2031, ../scss/partials/base/_buddypress.scss */
+/* line 2060, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form#signup_form div.submit {
   float: right;
 }
 
-/* line 2034, ../scss/partials/base/_buddypress.scss */
+/* line 2063, ../scss/partials/base/_buddypress.scss */
 #buddypress div#signup-avatar img {
   margin: 0 15px 10px 0;
 }
 
-/* line 2037, ../scss/partials/base/_buddypress.scss */
+/* line 2066, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form textarea {
   width: 75%;
   height: 120px;
 }
 
-/* line 2041, ../scss/partials/base/_buddypress.scss */
+/* line 2070, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form textarea#message_content {
   height: 200px;
 }
 
-/* line 2044, ../scss/partials/base/_buddypress.scss */
+/* line 2073, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form#send-reply textarea {
   width: 97.5%;
 }
 
-/* line 2047, ../scss/partials/base/_buddypress.scss */
+/* line 2076, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form p.description {
   color: #767676;
   font-size: 80%;
   margin: 5px 0;
 }
 
-/* line 2052, ../scss/partials/base/_buddypress.scss */
+/* line 2081, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form div.submit {
   clear: both;
   padding: 15px 0 0 0;
 }
 
-/* line 2056, ../scss/partials/base/_buddypress.scss */
+/* line 2085, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form p.submit {
   margin-bottom: 0;
   padding: 15px 0 0 0;
 }
 
-/* line 2060, ../scss/partials/base/_buddypress.scss */
+/* line 2089, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form div.submit input {
   margin-right: 15px;
 }
 
-/* line 2063, ../scss/partials/base/_buddypress.scss */
+/* line 2092, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form div.radio ul {
   margin: 10px 0 15px 38px;
   list-style: disc;
 }
 
-/* line 2067, ../scss/partials/base/_buddypress.scss */
+/* line 2096, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form div.radio ul li {
   margin-bottom: 5px;
 }
 
-/* line 2070, ../scss/partials/base/_buddypress.scss */
+/* line 2099, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form a.clear-value {
   display: block;
   margin-top: 5px;
   outline: none;
 }
 
-/* line 2075, ../scss/partials/base/_buddypress.scss */
+/* line 2104, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form #basic-details-section,
 #buddypress .standard-form #blog-details-section,
 #buddypress .standard-form #profile-details-section {
@@ -7672,18 +7670,18 @@ Ajax Loading
   width: 48%;
 }
 
-/* line 2081, ../scss/partials/base/_buddypress.scss */
+/* line 2110, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form #profile-details-section {
   float: right;
 }
 
-/* line 2084, ../scss/partials/base/_buddypress.scss */
+/* line 2113, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form #blog-details-section,
 #buddypress #notifications-bulk-management {
   clear: left;
 }
 
-/* line 2088, ../scss/partials/base/_buddypress.scss */
+/* line 2117, ../scss/partials/base/_buddypress.scss */
 body.no-js #buddypress #notifications-bulk-management #select-all-notifications,
 body.no-js #buddypress label[for="message-type-select"],
 body.no-js #buddypress #message-type-select,
@@ -7693,7 +7691,7 @@ body.no-js #buddypress #messages-bulk-management #select-all-messages {
   display: none;
 }
 
-/* line 2096, ../scss/partials/base/_buddypress.scss */
+/* line 2125, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form input:focus,
 #buddypress .standard-form textarea:focus,
 #buddypress .standard-form select:focus {
@@ -7701,12 +7699,12 @@ body.no-js #buddypress #messages-bulk-management #select-all-messages {
   color: #555;
 }
 
-/* line 2102, ../scss/partials/base/_buddypress.scss */
+/* line 2131, ../scss/partials/base/_buddypress.scss */
 #buddypress form#send-invite-form {
   margin-top: 20px;
 }
 
-/* line 2105, ../scss/partials/base/_buddypress.scss */
+/* line 2134, ../scss/partials/base/_buddypress.scss */
 #buddypress div#invite-list {
   background: #f5f5f5;
   height: 400px;
@@ -7716,7 +7714,7 @@ body.no-js #buddypress #messages-bulk-management #select-all-messages {
   width: 160px;
 }
 
-/* line 2114, ../scss/partials/base/_buddypress.scss */
+/* line 2143, ../scss/partials/base/_buddypress.scss */
 #buddypress input[type=submit],
 #buddypress input[type=button],
 #buddypress input[type=reset],
@@ -7736,7 +7734,7 @@ a.bp-title-button {
   text-decoration: none;
 }
 
-/* line 2132, ../scss/partials/base/_buddypress.scss */
+/* line 2161, ../scss/partials/base/_buddypress.scss */
 #buddypress input[type=submit]:hover,
 #buddypress input[type=button]:hover,
 #buddypress input[type=reset]:hover,
@@ -7751,40 +7749,40 @@ a.bp-title-button {
   text-decoration: none;
 }
 
-/* line 2146, ../scss/partials/base/_buddypress.scss */
+/* line 2175, ../scss/partials/base/_buddypress.scss */
 #buddypress form.standard-form .left-menu {
   float: left;
 }
 
-/* line 2150, ../scss/partials/base/_buddypress.scss */
+/* line 2179, ../scss/partials/base/_buddypress.scss */
 #buddypress form.standard-form .left-menu #invite-list ul {
   margin: 1%;
   list-style: none;
 }
 
-/* line 2155, ../scss/partials/base/_buddypress.scss */
+/* line 2184, ../scss/partials/base/_buddypress.scss */
 #buddypress form.standard-form .left-menu #invite-list ul li {
   margin: 0 0 0 1%;
 }
 
-/* line 2159, ../scss/partials/base/_buddypress.scss */
+/* line 2188, ../scss/partials/base/_buddypress.scss */
 #buddypress form.standard-form .main-column {
   margin-left: 190px;
 }
 
-/* line 2163, ../scss/partials/base/_buddypress.scss */
+/* line 2192, ../scss/partials/base/_buddypress.scss */
 #buddypress form.standard-form .main-column ul#friend-list {
   clear: none;
   float: left;
 }
 
-/* line 2168, ../scss/partials/base/_buddypress.scss */
+/* line 2197, ../scss/partials/base/_buddypress.scss */
 #buddypress form.standard-form .main-column ul#friend-list h4 {
   clear: none;
 }
 
 /* Overrides for embedded WP editors */
-/* line 2173, ../scss/partials/base/_buddypress.scss */
+/* line 2202, ../scss/partials/base/_buddypress.scss */
 #buddypress .wp-editor-wrap a.button, #buddypress .wp-editor-wrap .member-login-forms .content-wrapper a.lostpassword-button, .member-login-forms .content-wrapper #buddypress .wp-editor-wrap a.lostpassword-button, #buddypress .wp-editor-wrap .member-row .profile-callout-block a.item-block-button-go, #buddypress .member-row .profile-callout-block .wp-editor-wrap a.item-block-button-go,
 #buddypress .wp-editor-wrap .member-row .callout-block a.item-block-button-go,
 #buddypress .member-row .callout-block .wp-editor-wrap a.item-block-button-go, #buddypress .wp-editor-wrap .tab-content .nsc-item-listing .item-info .item-details .rsvp a, #buddypress .tab-content .nsc-item-listing .item-info .item-details .rsvp .wp-editor-wrap a, #buddypress .wp-editor-wrap #whats-new-form a#aw-whats-new-submit, #buddypress #whats-new-form .wp-editor-wrap a#aw-whats-new-submit,
@@ -7796,13 +7794,13 @@ a.bp-title-button {
 }
 
 /* Form classes & generic attr styling */
-/* line 2182, ../scss/partials/base/_buddypress.scss */
+/* line 2211, ../scss/partials/base/_buddypress.scss */
 #buddypress form *[disabled="disabled"] {
   cursor: default;
   opacity: .4;
 }
 
-/* line 2187, ../scss/partials/base/_buddypress.scss */
+/* line 2216, ../scss/partials/base/_buddypress.scss */
 .bp-screen-reader-text, #buddypress .ns-messages .messages .message-search form label, #buddypress .profile-edit-form-bio .bp-required-field-label,
 #buddypress .profile-edit-form .bp-required-field-label, #buddypress table.notification-settings th.title,
 #buddypress table.profile-settings th.title {
@@ -7820,23 +7818,23 @@ a.bp-title-button {
 /*--------------------------------------------------------------
 3.4 - Errors / Success Messages
 --------------------------------------------------------------*/
-/* line 2201, ../scss/partials/base/_buddypress.scss */
+/* line 2230, ../scss/partials/base/_buddypress.scss */
 #buddypress div#message {
   margin: 0 0 15px;
 }
 
-/* line 2204, ../scss/partials/base/_buddypress.scss */
+/* line 2233, ../scss/partials/base/_buddypress.scss */
 #buddypress #message.info {
   margin-bottom: 0;
 }
 
-/* line 2207, ../scss/partials/base/_buddypress.scss */
+/* line 2236, ../scss/partials/base/_buddypress.scss */
 #buddypress div#message.updated {
   clear: both;
   /*display: block;*/
 }
 
-/* line 2211, ../scss/partials/base/_buddypress.scss */
+/* line 2240, ../scss/partials/base/_buddypress.scss */
 #buddypress div#message p,
 #sitewide-notice p {
   font-size: 90%;
@@ -7844,7 +7842,7 @@ a.bp-title-button {
   padding: 10px 15px;
 }
 
-/* line 2217, ../scss/partials/base/_buddypress.scss */
+/* line 2246, ../scss/partials/base/_buddypress.scss */
 #buddypress div#message.error p {
   background-color: #fdc;
   border: 1px solid #a00;
@@ -7852,7 +7850,7 @@ a.bp-title-button {
   color: #800;
 }
 
-/* line 2223, ../scss/partials/base/_buddypress.scss */
+/* line 2252, ../scss/partials/base/_buddypress.scss */
 #buddypress div#message.warning p {
   background-color: #ffe0af;
   border: 1px solid #ffd087;
@@ -7860,14 +7858,14 @@ a.bp-title-button {
   color: #800;
 }
 
-/* line 2229, ../scss/partials/base/_buddypress.scss */
+/* line 2258, ../scss/partials/base/_buddypress.scss */
 #buddypress div#message.updated p {
   background-color: #efc;
   border: 1px solid #591;
   color: #250;
 }
 
-/* line 2234, ../scss/partials/base/_buddypress.scss */
+/* line 2263, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result {
   background-color: #eee;
   border-color: #ddd;
@@ -7880,12 +7878,12 @@ a.bp-title-button {
   width: 150px;
 }
 
-/* line 2245, ../scss/partials/base/_buddypress.scss */
+/* line 2274, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form #basic-details-section #pass-strength-result {
   width: 35%;
 }
 
-/* line 2248, ../scss/partials/base/_buddypress.scss */
+/* line 2277, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result.error,
 #buddypress #pass-strength-result.bad {
   background-color: #ffb78c;
@@ -7893,28 +7891,28 @@ a.bp-title-button {
   display: block;
 }
 
-/* line 2254, ../scss/partials/base/_buddypress.scss */
+/* line 2283, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result.good {
   background-color: #ffec8b;
   border-color: #fc0 !important;
   display: block;
 }
 
-/* line 2259, ../scss/partials/base/_buddypress.scss */
+/* line 2288, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result.short {
   background-color: #ffa0a0;
   border-color: #f04040 !important;
   display: block;
 }
 
-/* line 2264, ../scss/partials/base/_buddypress.scss */
+/* line 2293, ../scss/partials/base/_buddypress.scss */
 #buddypress #pass-strength-result.strong {
   background-color: #c3ff88;
   border-color: #8dff1c !important;
   display: block;
 }
 
-/* line 2269, ../scss/partials/base/_buddypress.scss */
+/* line 2298, ../scss/partials/base/_buddypress.scss */
 #buddypress .standard-form#signup_form div div.error {
   background: #faa;
   color: #a00;
@@ -7923,26 +7921,26 @@ a.bp-title-button {
   width: 90%;
 }
 
-/* line 2276, ../scss/partials/base/_buddypress.scss */
+/* line 2305, ../scss/partials/base/_buddypress.scss */
 #buddypress div.accept,
 #buddypress div.reject {
   float: left;
   margin-left: 10px;
 }
 
-/* line 2281, ../scss/partials/base/_buddypress.scss */
+/* line 2310, ../scss/partials/base/_buddypress.scss */
 #buddypress ul.button-nav li {
   float: left;
   margin: 0 10px 10px 0;
   list-style: none;
 }
 
-/* line 2286, ../scss/partials/base/_buddypress.scss */
+/* line 2315, ../scss/partials/base/_buddypress.scss */
 #buddypress ul.button-nav li.current a {
   font-weight: bold;
 }
 
-/* line 2289, ../scss/partials/base/_buddypress.scss */
+/* line 2318, ../scss/partials/base/_buddypress.scss */
 #sitewide-notice #message {
   left: 2%;
   position: fixed;
@@ -7951,63 +7949,63 @@ a.bp-title-button {
   z-index: 9999;
 }
 
-/* line 2296, ../scss/partials/base/_buddypress.scss */
+/* line 2325, ../scss/partials/base/_buddypress.scss */
 #sitewide-notice.admin-bar-on #message {
   top: 3.3em;
 }
 
-/* line 2299, ../scss/partials/base/_buddypress.scss */
+/* line 2328, ../scss/partials/base/_buddypress.scss */
 #sitewide-notice strong {
   display: block;
   margin-bottom: -1em;
 }
 
 /* Table */
-/* line 2309, ../scss/partials/base/_buddypress.scss */
+/* line 2338, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist {
   /*border-bottom: 2px solid #eee;margin:0 0 20px 0;*/
 }
 
 /* Image */
-/* line 2313, ../scss/partials/base/_buddypress.scss */
+/* line 2342, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist img {
   max-width: 100%;
 }
 
 /* Table with no row headers */
-/* line 2317, ../scss/partials/base/_buddypress.scss */
+/* line 2346, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist.nrh {
   /*border-bottom: 2px solid #ddd;*/
 }
 
 /* Table with no row headers columns */
-/* line 2321, ../scss/partials/base/_buddypress.scss */
+/* line 2350, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist.nrh li:first-child,
 ul.tabletolist.nrh li ul li:last-child,
 ul.tabletolist.nrh li ul li:first-child {
   display: none;
 }
 
-/* line 2327, ../scss/partials/base/_buddypress.scss */
+/* line 2356, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist.nrh > li {
   /*border-top: 2px solid #ddd;*/
 }
 
 /* Table defaults */
-/* line 2331, ../scss/partials/base/_buddypress.scss */
+/* line 2360, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist, ul.tabletolist > li > ul {
   padding: 0 !important;
   list-style: none !important;
 }
 
 /* Inner list */
-/* line 2335, ../scss/partials/base/_buddypress.scss */
+/* line 2364, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist > li > ul {
   margin: 0 !important;
 }
 
 /* Table titles */
-/* line 2339, ../scss/partials/base/_buddypress.scss */
+/* line 2368, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist > li .titles {
   /*background-color: #bbb;*/
   display: block;
@@ -8016,7 +8014,7 @@ ul.tabletolist > li .titles {
 }
 
 /* Table rows */
-/* line 2344, ../scss/partials/base/_buddypress.scss */
+/* line 2373, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist > li > ul > li {
   /* border-bottom:1px solid #eee;*/
   padding: 10px;
@@ -8027,48 +8025,48 @@ ul.tabletolist > li > ul > li:hover {
     background-color: #efefef
 }*/
 /* Table last child row */
-/* line 2353, ../scss/partials/base/_buddypress.scss */
+/* line 2382, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist > li > ul > li:last-child {
   border-bottom: none;
 }
 
 /* Table row header */
-/* line 2357, ../scss/partials/base/_buddypress.scss */
+/* line 2386, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist ul > li .row_headers {
   /*font-size:12px;max-width: 100%;float:none;margin-right: 3%;*/
   display: none;
 }
 
 /* Table row data */
-/* line 2362, ../scss/partials/base/_buddypress.scss */
+/* line 2391, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist ul > li .row_data {
   float: none;
   max-width: 100%;
 }
-/* line 2364, ../scss/partials/base/_buddypress.scss */
+/* line 2393, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist ul > li .row_data p.subject {
   font-weight: bold;
 }
 
 /* Clearfix */
-/* line 2369, ../scss/partials/base/_buddypress.scss */
+/* line 2398, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist > li > ul > li {
   *zoom: 1;
 }
 
-/* line 2370, ../scss/partials/base/_buddypress.scss */
+/* line 2399, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist > li > ul > li:before, ul.tabletolist > li > ul > li:after {
   content: " ";
   display: table;
 }
 
-/* line 2371, ../scss/partials/base/_buddypress.scss */
+/* line 2400, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist > li > ul > li:after {
   clear: both;
 }
 
 /* Html table row data */
-/* line 2375, ../scss/partials/base/_buddypress.scss */
+/* line 2404, ../scss/partials/base/_buddypress.scss */
 ul.tabletolist ul > li .row_data.html ul {
   list-style-type: disc;
 }

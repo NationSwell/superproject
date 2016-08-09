@@ -148,8 +148,9 @@ a.clear-value {
 //LOGIN
 .member-login-forms {
 	
-	background:url(../img/headerbg-bnw.jpg);
+	background-image:url(../img/nsc-header9.jpg);
 	background-size:cover;
+	background-position:center;
 	//height:100vh;
 	
 	.content-wrapper {
@@ -1246,39 +1247,67 @@ a.clear-value {
 	/****** PROFLE EDIT ************/
 	
 	.profile-edit-forms {
-		@extend .box-margin;
-		@include display(flex);
+		@include span-columns(12);
+		margin-right:0 !important;
+		margin-top:30px;
+		@include media($large) {
+			@include span-columns(6);
+			margin-top:0;
+		}
+		/*@include display(flex);
 		@include justify-content(space-between);
 		@include align-items(flex-start);
 		@include flex-wrap(wrap);
 		@include flex-direction(column);
 		@include media($medium) {
 			@include flex-direction(row);
-		}
+		}*/
 	}
 	
 	
 	.profile-edit-form {
-		background:$gray7;
-		@extend .box-padding;
-		@extend .box-shadow;
-		width:100%;
-		@include media($medium) {
-			width:48.82117%;
+		.button-nav {
+			li {
+				margin:0 5px 0 0;
+				a {
+					border:none;
+					background-color:$gray7;
+					&:hover {
+						border:none;
+					}
+				}
+				&.current {
+					a {
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bbbbbb+0,f6f6f6+100 */
+						background: $gray4; /* Old browsers */
+						background: -moz-linear-gradient(top,  $gray4 0%, $gray7 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top,  $gray4 0%,$gray7 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom,  $gray4 0%,$gray7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gray4', endColorstr='$gray7',GradientType=0 ); /* IE6-9 */
+						border:none;
+					}
+				}
+			}
 		}
 		
-		&:last-child {
-			margin-top:30px;
+		form {
+			background:$gray7;
+			@extend .box-padding;
+			@extend .box-shadow;
 			
-			@include media($medium) {
-				margin-top:0;
-			}
 			
-			@include media($large) {
-				margin-top:-234px;
-			}
+			/*&:last-child {
+				margin-top:30px;
+				
+				@include media($medium) {
+					margin-top:0;
+				}
+				
+				@include media($large) {
+					//margin-top:-234px;
+				}
+			}*/
 		}
-		
 	}
 	
 	#popup-bio-info {
