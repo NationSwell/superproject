@@ -193,15 +193,17 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 		<?php
 			/*Create custom pagination*/
 			global $members_template;
-			$add_args = $_REQUEST;
+			$pag_args = $_REQUEST;
+			$pag_args[$members_template->pag_arg] = '%#%';
+			$base ='';
 			$pag_links = paginate_links( array(
-				'format'    => '?'.$members_template->pag_arg.'=%#%',
+				'base'      => add_query_arg( $pag_args, $base ),
+				'format'    => '',
 				'total'     => ceil( (int) $members_template->total_member_count / (int) $members_template->pag_num ),
 				'current'   => (int) $members_template->pag_page,
 				'prev_text' => _x( '&larr;', 'Member pagination previous text', 'buddypress' ),
 				'next_text' => _x( '&rarr;', 'Member pagination next text', 'buddypress' ),
 				'mid_size'  => 1,
-				'add_args'  => $add_args,
 			) );
 
 			echo($pag_links );
