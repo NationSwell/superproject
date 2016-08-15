@@ -14,8 +14,9 @@ global $bp;
 			if(empty($_REQUEST['location']) && empty($_REQUEST['search_opportunities'])){
 				$_REQUEST['location'] = bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->loggedin_user->id));
 			}
-			$field_key = "field_576b17d4f5dad";
+			$field_key = "field_578ff22261702";
 			$field = get_field_object($field_key);
+			print_r($field);
 			if( $field ){
 				echo '<form method="get">';
 				echo '<label for="location">'.__('Displaying opportunities in','buddypress').'</label>';
