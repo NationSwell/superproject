@@ -90,9 +90,9 @@
 	}
 	
 	//take the message, if any, and prepend it to beginning of page
-	if (jQuery("#message").length) {
-		jQuery("#message").fadeIn();
-		jQuery("#message").prependTo("#buddypress");
+	if (jQuery("#message, #sitewide-notice").length) {
+		jQuery("#message, #sitewide-notice").prependTo("#buddypress");
+		jQuery("#message, #sitewide-notice").fadeIn();
 	}
 	
 	//in mobile view, toggle notification links

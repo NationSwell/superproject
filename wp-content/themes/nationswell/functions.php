@@ -1232,6 +1232,7 @@ function bp_custom_setup_nav() {
     $bp->bp_options_nav['messages']['inbox'] = $messagesNavHash['inbox'];
     $bp->bp_options_nav['messages']['starred'] = $messagesNavHash['starred'];
     $bp->bp_options_nav['messages']['sentbox'] = $messagesNavHash['sentbox'];
+	$bp->bp_options_nav['messages']['notices'] = $messagesNavHash['notices'];
 }
 add_action( 'bp_setup_nav', 'bp_custom_setup_nav', 99 );
 

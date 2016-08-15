@@ -12,7 +12,7 @@
         </ul>
     
         <?php if ( bp_current_user_can( 'bp_moderate' ) ) : ?>
-            <input type="checkbox" id="send-notice" name="send-notice" value="1" /> <?php _e( "Send this message to all members.", "buddypress" ); ?>
+            <input type="checkbox" id="send-notice" name="send-notice" value="1" /> <label for="send-notice"><?php _e( "Send this message to all members.", "buddypress" ); ?></label>
         <?php endif; ?>
     
         <label for="subject"><?php _e( 'Subject', 'buddypress'); ?></label>

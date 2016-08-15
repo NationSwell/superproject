@@ -2310,6 +2310,24 @@ a.bp-title-button {
 	display: block;
 	padding: 10px 15px;
 }
+#buddypress div#message.notice p {
+	background-color: #fff9db;
+	border: 1px solid #e9e0b0;
+	clear: left;
+	color: $ns_black;
+	position:relative;
+	strong {
+		font-weight:$bold;
+		font-size:2rem;
+	}
+	a#close-notice {
+		padding: 5px 10px;
+    	position: absolute;
+   		right: 0;
+    	top: 0;
+	}
+}
+
 #buddypress div#message.error p {
 	background-color: #fdc;
 	border: 1px solid #a00;
