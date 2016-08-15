@@ -21,11 +21,13 @@ do_action( 'bp_before_members_loop' ); ?>
 function include_only_members() {
 	$member_array = array();
 	$members = get_users(array('role' => 'member', 'fields' => array('ID')));
-	foreach ( $members as $user ) {
+	$editors = get_users(array('role' => 'editor', 'fields' => array('ID')));
+	$users = array_merge( $members, $editors );
+	foreach ( $users as $user ) {
 		array_push($member_array,esc_html( $user->ID));
 	}
-	$members = implode(",",$member_array);
-    return $members;
+	$users = implode(",",$member_array);
+    return $users;
 }
 
 // Custom search filters, retrieve ids and include them in master search query per documentation
@@ -101,7 +103,14 @@ if ( bp_has_members( bp_ajax_querystring( 'members' ) . '&include=' . $user_ids 
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li <?php bp_member_class(); ?>>
-			<div class="item-avatar">
+			<div class="item-avatar ns-flag-overlay">
+            	<?php 
+                $user_id = bp_get_member_user_id(); 
+   				$user = new WP_User( $user_id );
+				?>
+				<?php if ( $user->roles[0] == 'author' || $user->roles[0] == 'administrator' || $user->roles[0] == 'editor' ) : ?>
+            		<span class="icon icon_nationswell-flag"></span>
+            	<?php endif; ?>
 				<a href="<?php echo(bp_get_member_permalink()); ?>"><?php bp_member_avatar(); ?></a>
 			</div>
 

@@ -1398,6 +1398,25 @@ a.clear-value {
 	}
 	
 	
+	.ns-flag-overlay {
+		position:relative;
+		//icon over the image for staff
+		span {
+			position:absolute;
+			width:30px;
+			height:30px;
+			background-color:$ns_red1;
+			border-radius:50%;
+			color:$white;
+			text-align:center;
+			padding-top:6px;
+			font-size:24px;
+			bottom:10px;
+			right:0;
+		}
+	}
+	
+	
 	
 	//Activity
 	.activity-list {
@@ -1422,25 +1441,7 @@ a.clear-value {
 					text-align:left;
 				}
 				
-				a {
-					position:relative;
-					
 				
-					//icon over the image for staff
-					span {
-						position:absolute;
-						width:30px;
-						height:30px;
-						background-color:$ns_red1;
-						border-radius:50%;
-						color:$white;
-						text-align:center;
-						padding-top:6px;
-						font-size:24px;
-						bottom:10px;
-						right:0;
-					}
-				}
 			}
 			.activity-content {
 							
@@ -1680,8 +1681,15 @@ a.clear-value {
 						}
 					}
 					.rsvp {
-						a {
+						a.action {
 							@extend .button;
+						}
+						span {
+							font-size:2rem;
+							vertical-align: text-top;
+							display:inline-block;
+							color:$ns_red2;
+							margin:0 20px;
 						}
 					}
 				}
@@ -1827,6 +1835,15 @@ a.clear-value {
 			.item-avatar {
 				width:20%;
 				margin-right:5%;
+				span {
+					width:16px;
+					height:16px;
+					padding-top:3px;
+					font-size:14px;
+					bottom:20px;
+					right:7px;
+
+				}
 			}
 			.item {
 				width:75%;
@@ -1850,9 +1867,59 @@ a.clear-value {
 	
 	}
 	
+	
 }
 
 // ********** END  *****************//
+
+// Tooltip
+	
+	#tooltip {
+		text-align: center;
+		color: $white;
+		background: $ns_black;
+		position: absolute;
+		z-index: 100;
+		padding: 15px 15px 20px 15px;
+		font-family:$gudea;
+		line-height:125%;
+		em {
+			font-family:$pt-serif-italic;
+		}
+	}
+ 
+    #tooltip:after /* triangle decoration */
+    {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $ns_black;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+    }
+ 
+    #tooltip.top:after {
+            border-top-color: transparent;
+            border-bottom: 10px solid $ns_black;
+            top: -20px;
+            bottom: auto;
+    }
+ 
+    #tooltip.left:after {
+		left: 10px;
+        margin: 0;
+    }
+ 
+    #tooltip.right:after {
+        right: 10px;
+        left: auto;
+        margin: 0;
+    }
+
 
 //TABLES!
 

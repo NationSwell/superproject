@@ -18,12 +18,12 @@ do_action( 'bp_before_activity_entry' ); ?>
 
 <li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
 	<div class="activity-avatar">
-		<a href="<?php bp_activity_user_link(); ?>">
+		<a href="<?php bp_activity_user_link(); ?>" class="ns-flag-overlay">
 			<?php
 			//if user is logged/admin or author, print a NS flag over avatar
 			$user_id = bp_get_activity_user_id(); 
 			$user = new WP_User( $user_id );
-			if ( $user->roles[0] == 'author' || $user->roles[0] == 'administrator' ) : ?>
+			if ( $user->roles[0] == 'author' || $user->roles[0] == 'administrator' || $user->roles[0] == 'editor' ) : ?>
             	<span class="icon icon_nationswell-flag"></span>
             <?php endif; ?>
 			<?php bp_activity_avatar('type=full&width=100&height=100'); ?>
