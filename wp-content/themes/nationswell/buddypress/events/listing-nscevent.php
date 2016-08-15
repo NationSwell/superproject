@@ -86,7 +86,7 @@ global $bp;
 								<?php if (!empty($rsvp_link)): ?>
                                 	<a href="<?php echo esc_url( $rsvp_link ); ?>" class="button action" target="_blank"><?php _e($rsvp_link_type,'buddypress'); ?></a>
                                     <?php if (strtolower($rsvp_link_type) =='request invite'): ?>
-                                    	<a href="#" title="<?php _e('This is an <em>Off the Record</em> event: a shared conversation between an influential expert and a curated group of members. These discussions provide an opportunity to dive deeply into an issue in a confidential, intimate setting; attendance ranges from 20 to 25 people. Space is limited – please request an invite for the opportunity to be included.  
+                                    	<a href="javascript:void(0);" title="<?php _e('This is an <em>Off the Record</em> event: a shared conversation between an influential expert and a curated group of members. These discussions provide an opportunity to dive deeply into an issue in a confidential, intimate setting; attendance ranges from 20 to 25 people. Space is limited – please request an invite for the opportunity to be included.  
 ','buddypress'); ?>" rel="tooltip"><span class="icon icon_information-button"></span></a>
                                     <?php endif; ?>
                                 <?php endif; ?>
