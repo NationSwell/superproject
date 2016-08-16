@@ -5,7 +5,7 @@
     
         <label for="send-to-input"><?php _e("Send to (start typing recipient’s name or username)", 'buddypress'); ?></label>
         <ul class="first acfb-holder">
-            <li style="width:50%">
+            <li>
                 <?php bp_message_get_recipient_tabs(); ?>
                 <input type="text" name="send-to-input" class="send-to-input" id="send-to-input" />
             </li>
