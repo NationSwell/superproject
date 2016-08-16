@@ -1110,7 +1110,7 @@ function add_conditional_widget_type_tax_pairs( $my_pair_array ) {
 add_action('wp_logout','nsc_login');
 function nsc_login(){
   if( function_exists('bp_is_active') ) {
-  	wp_redirect( '/nationswell-council/?beta=true' );
+  	wp_redirect( '/nationswell-council/' );
   } else {
   	wp_redirect( home_url() );
   }
@@ -1535,7 +1535,7 @@ add_filter ('bp_core_get_userlink', 'ns_core_get_userlink', 10, 2);
 // define the login_footer callback 
 function ns_login_footer( $wp_print_footer_scripts, $int ) { 
 	echo '<div class="custom-login-footer">';
-	echo '<a href="/nationswell-council/?beta=true">';
+	echo '<a href="/nationswell-council/">';
 	echo __('Back to Member Login','buddypress');
 	echo '</a>';
 	echo '</div>';

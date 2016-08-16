@@ -73,11 +73,11 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		//$message .= network_home_url( '/' ) . "\r\n\r\n";
 		//$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
 		//$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
-		$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login)."&beta=true", 'login') . ">\r\n\r\n";
+		$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n\r\n";
 		
-		$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to <'.network_home_url( "/nationswell-council/?register=true&beta=true","register"). '> and request a new link.') . "\r\n\r\n";
+		$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to <'.network_home_url( "/nationswell-council/?register=true","register"). '> and request a new link.') . "\r\n\r\n";
 		
-		$message .= __('Please reach out to our ops expert, Melissa, with any questions: Melissa@nationswell.com') . "\r\n\r\n";
+		$message .= __('Please reach out to our ops expert, Kate, with any questions: kate@nationswell.com') . "\r\n\r\n";
 		
 		$message .= __('Enjoy!') . "\r\n\r\n";
 		
@@ -178,7 +178,7 @@ endif;
             <div id="content">
 				<a id="top"></a>               
                 <section class="member-login-forms">
-                    <div class="content-wrapper" <?php if (!$_GET["beta"]) : ?> style="padding-top:100px"<?php endif; ?>>
+                    <div class="content-wrapper">
                         <div class="content">
                             
                             <div class="intro">
@@ -187,7 +187,7 @@ endif;
                             </div>
                             
                             
-                            <?php if ($_GET["beta"]) : ?>
+                            
                             <div class="login-form">   
                                 <div class="login-form-inputs"<?php if ($_GET["register"]): echo ' style="padding-bottom:0;"'; endif; ?>>
                                     
@@ -212,13 +212,13 @@ endif;
 										 ?>
 										
                                         <?php if ($success) : ?>
-                                        	<?php $bottom_message = '<a href="'.get_permalink().'/?beta='.$_GET['beta'].'">'.__( '&#8592; Back to Member Login','buddypress').'</a>'; ?>
+                                        	<?php $bottom_message = '<a href="'.get_permalink().'">'.__( '&#8592; Back to Member Login','buddypress').'</a>'; ?>
                                         	<p style="margin-bottom:100px"><?php _e('A match was made with the information you provided. Please check your email account for a message from us.','buddypress'); ?></p>
                                             
                                             
                                             <?php else : ?>
                                         	<?php $bottom_message = __( 'Enter the primary email address we have on file for you.','buddypress'); ?>
-                                            <form id="lostpasswordform" class="lostpassword-form" action="<?php echo the_permalink(); ?>?register=true&beta=<?php echo $_GET["beta"]; ?>" method="post">
+                                            <form id="lostpasswordform" class="lostpassword-form" action="<?php echo the_permalink(); ?>?register=true" method="post">
                                                 <?php if (!empty($error_user)) : 
                                                             $contact_link = '<a href="'.get_site_url().'/contact/">'.__('Contact us.','buddypress').'</a>';						
                                                             echo '<p class="form-row login-error">';
@@ -252,7 +252,7 @@ endif;
                                                 </p>
                                                 <div class="form-row">
                                                     <p class="login-remember">
-                                                        <a href="<?php echo esc_url( get_permalink() ); ?>/?beta=<?php echo $_GET['beta']; ?>"><?php _e( 'Back to Member Login', 'buddypress' ); ?></a>
+                                                        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Back to Member Login', 'buddypress' ); ?></a>
                                                     </p>
                                                     <p class="lostpassword-submit">
                                                         <input type="hidden" name="action" value="reset" />
@@ -268,7 +268,7 @@ endif;
 										//show login
 										echo '<h2>'.__( 'Member Login','buddypress').'</h2>';
 										$bottom_message = '<a href="'.wp_lostpassword_url().'" class="lostpassword-link" style="display:none">'.__( 'Forgot your password?','buddypress') .'</a>';
-										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true&beta='.$_GET['beta'].'">'. __( 'Register now!','example').'</a>';
+										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
 										if( function_exists('bp_is_active') ) {
 											$redirect_url = home_url();
 										} else {
@@ -302,13 +302,6 @@ endif;
                                 </div>
                                
                             </div>
-                            
-                            <?php else : ?>
-                            	<div style="margin:0 auto; text-align:center;">
-                            		<p><a href="/nsc-portal/" class="btn red" style="color:#FFF; text-decoration:none"><span>Log in</span></a><br><br></p>
-                            		<p>Not a member? <a href="mailto:nsc@nationswell.com">Apply</a></p>
-                            	</div>
-                            <?php endif; ?>
                       		<!--<a href="#content" class="btn red"><span>Sign in</span></a>-->
                             <div class="link-more">
                             	<a class="learn-more" href="#welcome">Learn More</a>
@@ -362,7 +355,7 @@ if( $images ): shuffle( $images ) ?>
 Jeffersonian-style dinners to unpack and advance solutions<br />
 Introductions to the broader NationSwell network of innovators<br />
 Opportunities for direct service and impact</p>
-      <a href="/nsc-portal/" class="btn red"><span>Log in</span></a>
+      <a href="#content" class="btn red"><span>Log in</span></a>
   	<?php if(get_field('testimonials')): ?>
   	 
   		<ul class="testimonial-list bxslider">
@@ -509,7 +502,7 @@ Opportunities for direct service and impact</p>
       <p class="large">Members join the council by invitation or application.<br>
 <br>
 </p>
-      <a href="/nsc-portal/" class="btn red"><span>Log in</span></a>
+      <a href="#content" class="btn red"><span>Log in</span></a>
 			<div class="sidenote">Not a member? <a href="mailto:nsc@nationswell.com">Apply</a></div>
 			<p class="spacer">For inquiries about membership or for more information about the NationSwell Council, please contact us at <a href="mailto:nsc@nationswell.com">nsc@nationswell.com</a>.</p>
   </div>
