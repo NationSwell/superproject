@@ -77,7 +77,7 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		
 		$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to <'.network_home_url( "/nationswell-council/?register=true","register"). '> and request a new link.') . "\r\n\r\n";
 		
-		$message .= __('Please reach out to our ops expert, Kate, with any questions: kate@nationswell.com') . "\r\n\r\n";
+		$message .= __('Please reach out to us with any questions, anytime, at: nsc@nationswell.com') . "\r\n\r\n";
 		
 		$message .= __('Enjoy!') . "\r\n\r\n";
 		
