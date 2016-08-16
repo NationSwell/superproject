@@ -5,14 +5,14 @@
     
         <label for="send-to-input"><?php _e("Send to (start typing recipient’s name or username)", 'buddypress'); ?></label>
         <ul class="first acfb-holder">
-            <li>
+            <li style="width:50%">
                 <?php bp_message_get_recipient_tabs(); ?>
                 <input type="text" name="send-to-input" class="send-to-input" id="send-to-input" />
             </li>
         </ul>
     
         <?php if ( bp_current_user_can( 'bp_moderate' ) ) : ?>
-            <input type="checkbox" id="send-notice" name="send-notice" value="1" /> <?php _e( "Send this message to all members.", "buddypress" ); ?>
+            <input type="checkbox" id="send-notice" name="send-notice" value="1" /> <label for="send-notice" style="display:inline; font-weight:normal;"><?php _e( "Send this message to all members", "buddypress" ); ?></label>
         <?php endif; ?>
     
         <label for="subject"><?php _e( 'Subject', 'buddypress'); ?></label>
