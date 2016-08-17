@@ -1413,7 +1413,7 @@ function bp_directory_members_custom_search_form() {
 		$search_value = __('Search by name, title, or company','buddypress');
 	}
 
-	$search_form_html = '<form action="" method="post" id="search-members-form"><label for="members_search"><input type="text" name="' . esc_attr( $query_arg ) . '" id="members_search" placeholder="'. esc_attr( $search_value ) .'" /></label>';
+	$search_form_html = '<form action="'.$bp->root_domain . '/' . BP_MEMBERS_SLUG.'" method="post" id="search-members-form"><label for="members_search"><input type="text" name="' . esc_attr( $query_arg ) . '" id="members_search" placeholder="'. esc_attr( $search_value ) .'" /></label>';
 	// Council branch
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Council branch'], 'Location', 'council_branch');
 	// Industry
@@ -1427,6 +1427,7 @@ function bp_directory_members_custom_search_form() {
 	$search_form_html .= '<a href="'.$bp->root_domain . '/' . BP_MEMBERS_SLUG .'" class="reset">';
 	$search_form_html .= __('Clear','buddypress');
 	$search_form_html .= '</a>';
+	$search_form_html .= '<input type="hidden" name="upage" id="upage" value="1" />';
 	$search_form_html .= '</form>';
 	/**
 	 * Filters the Members component search form.

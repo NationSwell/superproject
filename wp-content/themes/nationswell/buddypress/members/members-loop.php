@@ -73,7 +73,7 @@ if(!empty( $_REQUEST )  && !empty( $_REQUEST['members_search_submit'] )){
 
 <?php
 if ( bp_ajax_querystring( 'members' ) ==""){
-	$queryString = bp_ajax_querystring( 'members' ) .'type=alphabetical&action=alphabetical&page=1&include=' . $user_ids;
+	$queryString = bp_ajax_querystring( 'members' ) .'type=alphabetical&action=alphabetical&upage=1&include=' . $user_ids;
 } else {
 	$queryString = bp_ajax_querystring( 'members' ) . '&include=' . $user_ids;
 }
