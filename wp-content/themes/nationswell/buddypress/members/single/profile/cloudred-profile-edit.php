@@ -154,7 +154,7 @@ do_action( 'bp_after_profile_edit_content' ); ?>
 jQuery( document ).ready(function() {
 	// Hack to counteract removing of content on focus
 	jQuery( "#description" ).focus(function() {
-		jQuery( "#description" ).val(<?php echo "'". get_user_meta($bp->displayed_user->id, 'description', true )."'";?>);
+		jQuery( "#description" ).val(<?php echo "'". addslashes(get_user_meta($bp->displayed_user->id, 'description', true ))."'";?>);
 		jQuery( "#description" ).off('focus');
 	});
 	// Show/hide popup
