@@ -785,7 +785,13 @@ a.clear-value {
 			#send_message_form {
 				margin-top:15px;
 				display:block;
-				
+				.friend-tab {
+					img.avatar {
+						margin-top:0;
+						margin-right:6px;
+						vertical-align:initial;	
+					}
+				}
 					
 			}
 			

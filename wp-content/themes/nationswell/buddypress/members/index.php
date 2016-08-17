@@ -54,13 +54,11 @@ do_action( 'bp_before_directory_members_page' ); ?>
 				<li id="members-order-select" class="last filter">
 					<label for="members-order-by"><?php _e( 'Order By:', 'buddypress' ); ?></label>
 					<select id="members-order-by">
-						<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
-						<option value="newest"><?php _e( 'Newest Registered', 'buddypress' ); ?></option>
-
 						<?php if ( bp_is_active( 'xprofile' ) ) : ?>
 							<option value="alphabetical"><?php _e( 'Alphabetical', 'buddypress' ); ?></option>
 						<?php endif; ?>
-
+                        <option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
+						<option value="newest"><?php _e( 'Newest Registered', 'buddypress' ); ?></option>
 						<?php
 
 						/**

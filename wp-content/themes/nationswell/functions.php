@@ -1552,3 +1552,11 @@ function ns_login_footer( $wp_print_footer_scripts, $int ) {
          
 // add the action 
 add_action( 'login_footer', 'ns_login_footer', 10, 2 ); 
+
+
+/** Sort alphabetical member name listings by lastname */
+function alphabetize_by_last_name( $bp_user_query ) {
+    if ( 'alphabetical' == $bp_user_query->query_vars['type'] )
+        $bp_user_query->uid_clauses['orderby'] = "ORDER BY substring_index(u.display_name, ' ', -1)";
+}
+add_action ( 'bp_pre_user_query', 'alphabetize_by_last_name' );
