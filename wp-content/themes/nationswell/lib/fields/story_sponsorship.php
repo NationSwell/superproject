@@ -6,12 +6,41 @@ if (function_exists("register_field_group")) {
         'fields' => array(
             array(
                 'key' => 'field_54e657693b5bf',
-                'label' => 'Sponsored Story',
+                'label' => '',
                 'name' => 'sponsored_story',
-                'type' => 'true_false',
-                'message' => '',
+                'type' => 'checkbox',
+                'choices' => array(
+					'1'	=> 'This is a sponsored story'
+				),
                 'default_value' => 0,
+				'layout' => 'horizontal',
+				
             ),
+			array(
+                'key' => 'field_54e657693b5d0',
+                'label' => 'Label',
+                'name' => 'sponsored_story_label',
+                'type' => 'radio',
+				'instructions' => 'Please choose the label that describes the type of this story.',
+                'message' => '',
+                'default_value' => 1,
+				'choices' => array(
+					'Presented by'	=> 'Presented by',
+					'In partnership with'	=> 'In partnership with',
+				),
+				'conditional_logic' => array(
+                    'status' => 1,
+                    'rules' => array(
+                        array(
+                            'field' => 'field_54e657693b5bf',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+            ),
+
             array(
                 'key' => 'field_54e657963b5c0',
                 'label' => 'Sponsor name',
@@ -36,8 +65,8 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
             ),
             array(
-                'key' => 'field_54e657963b5c1',
-                'label' => 'Sponsor Link',
+                'key' => 'field_54e657963b5c2',
+                'label' => 'Sponsor link',
                 'name' => 'sponsor_link',
                 'type' => 'text',
                 'conditional_logic' => array(

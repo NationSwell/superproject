@@ -2,12 +2,12 @@
 		{% if post.get_field('partnership') %}
     {% else %}
 	    <div class="sponsorship-text">
-	        <p><a href="http://nationswell.com/sponsored-content-nationswell/">Presented by</a>
+	        <p><a href="http://nationswell.com/sponsored-content-nationswell/">{% if post.sponsored_story_label is not empty %}{{ post.sponsored_story_label }}{% else %}Presented by{% endif %}</a>
 	        {% if post.sponsor_image is not empty %}
 	            {% if post.sponsor_link is not empty %}<a href="{{ post.sponsor_link }}" target="_blank">{% endif %}
 	                <img src="{{ TimberImage(post.sponsor_image).src|resize(88) }}"/>
 	            {% if post.sponsor_link is not empty %}</a>{% endif %}
-	        {% else %}<span>{{ post.sponsor_name }}</span>
+	        {% else %}{% if post.sponsor_link is not empty %}<a href="{{ post.sponsor_link }}" target="_blank">{% endif %}<span>{{ post.sponsor_name }}</span>{% if post.sponsor_link is not empty %}</a>{% endif %}
 	        {% endif %}
 	        </p>
 	    </div>

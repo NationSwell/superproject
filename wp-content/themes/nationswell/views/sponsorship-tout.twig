@@ -3,6 +3,6 @@
     	{% if post.get_field('partnership') %}
     		<p>In Partnership With <span>{{ post.sponsor_name }}</span></p></div>
     	{% else %}
-	    	<p>Presented by <span>{{ post.sponsor_name }}</span></p></div>
+	    	<p>{% if post.sponsored_story_label is not empty %}{{ post.sponsored_story_label }}{% else %}Presented by{% endif %} <span>{{ post.sponsor_name }}</span></p></div>
 	    {% endif %}
 {% endif %}
