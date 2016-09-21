@@ -2,7 +2,7 @@
 if (function_exists("register_field_group")) {
     register_field_group(array(
         'id' => 'acf_sponsored-story',
-        'title' => 'Sponsored Story',
+        'title' => 'Sponsored/Partner Story',
         'fields' => array(
             array(
                 'key' => 'field_54e657693b5bf',
@@ -10,7 +10,7 @@ if (function_exists("register_field_group")) {
                 'name' => 'sponsored_story',
                 'type' => 'checkbox',
                 'choices' => array(
-					'1'	=> 'This is a sponsored story'
+					'1'	=> 'This is a sponsored story or a story being published in partnership with a third party'
 				),
                 'default_value' => 0,
 				'layout' => 'horizontal',
@@ -43,7 +43,7 @@ if (function_exists("register_field_group")) {
 
             array(
                 'key' => 'field_54e657963b5c0',
-                'label' => 'Sponsor name',
+                'label' => 'Sponsor/Partner name',
                 'name' => 'sponsor_name',
                 'type' => 'text',
                 'conditional_logic' => array(
@@ -66,7 +66,7 @@ if (function_exists("register_field_group")) {
             ),
             array(
                 'key' => 'field_54e657963b5c2',
-                'label' => 'Sponsor link',
+                'label' => 'Sponsor/Partner link',
                 'name' => 'sponsor_link',
                 'type' => 'text',
                 'conditional_logic' => array(
@@ -89,7 +89,7 @@ if (function_exists("register_field_group")) {
             ),
             array(
                 'key' => 'field_54e657aa3b5c1',
-                'label' => 'Sponsor Image',
+                'label' => 'Sponsor/Partner Image',
                 'name' => 'sponsor_image',
                 'type' => 'image',
                 'conditional_logic' => array(
@@ -106,6 +106,30 @@ if (function_exists("register_field_group")) {
                 'save_format' => 'id',
                 'preview_size' => 'thumbnail',
                 'library' => 'all',
+            ),
+			array(
+                'key' => 'field_54e657693b5d1',
+                'label' => 'Sponsor/Partner image toggle',
+                'name' => 'sponsored_image_toggle',
+                'type' => 'radio',
+				'instructions' => 'Please choose if you want to display the sponsor/partner image you added above in header banner',
+                'message' => '',
+                'default_value' => 'Yes',
+				'choices' => array(
+					'Yes'	=> 'Yes',
+					'No'	=> 'No',
+				),
+				'conditional_logic' => array(
+                    'status' => 1,
+                    'rules' => array(
+                        array(
+                            'field' => 'field_54e657693b5bf',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
             ),
         ),
         'location' => array(
