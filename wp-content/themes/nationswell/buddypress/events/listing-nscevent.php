@@ -117,7 +117,8 @@ global $bp;
 						<div class="item-details">
 							<div class="description">
 								<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
-								<p class="event-description"><?php echo(esc_html($event['description']));?></p>
+								<p class="event-description"><?php echo $event['description'];?></p>
+                                <p class="event-description"><?php echo $event['full_description'];?></p>
 							</div>
 							<div class="date-location">
 								<div class="date-time icon icon_calendar">
