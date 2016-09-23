@@ -56,7 +56,6 @@ global $bp;
         <!-- upcoming events -->
 		<div class="upcoming-events">
         	<?php if (!empty($upcoming_events)):
-			
 				foreach($upcoming_events as $key=>$event){ ?>
 					<div class="item-info">
 						<div class="item-icon">
@@ -64,8 +63,9 @@ global $bp;
 						</div>
 						<div class="item-details">
 							<div class="description">
-								<p><a href="<?php echo($event['url']); ?>" class="item-title"><?php echo($event['name']); ?></a></p>
-								<p class="event-description"><?php echo(esc_html($event['description']));?></p>
+								<p class="item-title"><?php echo($event['name']); ?></p>
+								<p class="event-description"><?php echo $event['description'];?></p>
+                                <p class="event-description"><?php echo $event['full_description'];?></p>
 							</div>
 							<div class="date-location">
 								<div class="date-time icon icon_calendar">

@@ -77,6 +77,13 @@ a.clear-value {
 			
 }
 
+p {
+	margin-bottom:1.5rem;
+}
+strong, b {
+	font-weight:700;
+}
+
 /* LOAD MORE AJAX BUTTON */
 .load-more {
 	text-align: center;
@@ -1662,7 +1669,7 @@ a.clear-value {
 					@include media($large) {
 						@include span-columns(10);
 					}
-					a.item-title {
+					.item-title {
 						color:$black;
 						font-weight:$bold;
 						font-size:20px;

@@ -55,7 +55,7 @@ global $bp;
 						<div class="item-details">
 							<div class="description">
 								<p><a href="<?php echo($opp['opportunity_url']); ?>" class="item-title"><?php echo($opp['name']); ?></a></p>
-								<p class="event-description"><?php echo(esc_html($opp['description']));?></p>
+								<p class="event-description"><?php echo $opp['description']; ?></p>
 							</div>
 							<div class="date-location">
 								<div class="date-time icon icon_calendar">
