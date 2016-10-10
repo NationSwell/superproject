@@ -1,9 +1,7 @@
 <?php
 /**
- * The template for displaying Archive pages.
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
+ * The template for displaying NationSwell All-Stars (See post categories)
+
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -13,21 +11,15 @@
  * @subpackage 	Timber
  * @since 		Timber 0.2
  */
+
 global $wp_query;
 
 $term = isset($wp_query->queried_object) ? $wp_query->queried_object : false;
-$templates = array('archive.twig', 'index.twig');
+$templates = array('allstars.twig', 'index.twig');
 
 $context = Timber::get_context();
 
-$context['title'] = 'Topics';
-$category_array = get_the_category();
-//print_r($category_array);
-foreach ($category_array as $cat) {
-    //does this cat have a parent?
-    $cat_id = $cat->term_id;
-}
-
+$context['title'] = 'Archive';
 if (is_day()){
     $context['title'] = 'Archive: '.get_the_date( 'D M Y' );
 }
@@ -59,20 +51,8 @@ if($term && (is_tag() || is_category() || is_tax())) {
     $context['video_url'] = get_field('video_url', $term->taxonomy . '_' . $term->term_id);
     $context['video_caption'] = get_field('video_caption', $term->taxonomy . '_' . $term->term_id);
     $context['video_credit'] = get_field('video_credit', $term->taxonomy . '_' . $term->term_id);
-    $context['custom_title'] = get_field('custom_title', $term->taxonomy . '_' . $term->term_id);
-    $context['display_desc'] = get_field('display_desc', $term->taxonomy . '_' . $term->term_id);
-    
-    $context['sponsored_category'] = get_field('sponsored_category', $term->taxonomy . '_' . $term->term_id);
-    $context['category_type'] = get_field('category_type', $term->taxonomy . '_' . $term->term_id);
-    $context['category_sponsor_name'] = get_field('category_sponsor_name', $term->taxonomy . '_' . $term->term_id);
-    $context['category_sponsor_link'] = get_field('category_sponsor_link', $term->taxonomy . '_' . $term->term_id);
-    $category_sponsor_image_id = get_field('category_sponsor_image', $term->taxonomy . '_' . $term->term_id);
-    $category_sponsor_image_array =  wp_get_attachment_image_src($category_sponsor_image_id,$size = 'medium');
-    //print_r($category_sponsor_image_array);
-    $context['category_sponsor_image'] = $category_sponsor_image_array[0];
 
     $context['description'] = $term->description;
-    $context['category_url'] = get_category_link( $cat_id );
     $context['term_facebook_link'] = term_facebook_link( $term );
     $context['term_twitter_link'] = term_twitter_link( $term );
     $context['total_posts'] = $wp_query->found_posts;

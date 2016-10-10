@@ -4619,35 +4619,91 @@ hr {
 .archive-intro {
   border-bottom: 6px solid #eeeeee;
   overflow: hidden;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 66, ../scss/partials/base/_archive.scss */
-.archive-intro .archive-share {
-  float: left;
+/* line 15, ../scss/bourbon/addons/_clearfix.scss */
+.archive-intro:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-/* line 70, ../scss/partials/base/_archive.scss */
+@media screen and (min-width: 580px) {
+  /* line 68, ../scss/partials/base/_archive.scss */
+  .archive-intro .archive-share {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  .archive-intro .archive-share:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 580px) {
+  /* line 73, ../scss/partials/base/_archive.scss */
+  .archive-intro .archive-spacer-left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  .archive-intro .archive-spacer-left:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 580px) {
+  /* line 78, ../scss/partials/base/_archive.scss */
+  .archive-intro .archive-spacer-right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  .archive-intro .archive-spacer-right:last-child {
+    margin-right: 0;
+  }
+}
+/* line 84, ../scss/partials/base/_archive.scss */
 .archive-intro .archive-description-copy {
   font-family: "Gudea", Arial, sans-serif;
   font-size: 19px;
   font-size: 1.9rem;
   line-height: 2.4rem;
   color: #0098d8;
-  width: 60%;
   margin: 0 auto 3rem;
 }
+@media screen and (min-width: 580px) {
+  /* line 84, ../scss/partials/base/_archive.scss */
+  .archive-intro .archive-description-copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  .archive-intro .archive-description-copy:last-child {
+    margin-right: 0;
+  }
+}
 
-/* line 85, ../scss/partials/base/_archive.scss */
+/* line 101, ../scss/partials/base/_archive.scss */
 body.category-whats-possible .hero--archive.hero--category:after {
   background-image: none;
 }
-/* line 88, ../scss/partials/base/_archive.scss */
+/* line 104, ../scss/partials/base/_archive.scss */
 body.category-whats-possible .hero--archive.hero--category .hero--category__title {
   display: none;
 }
-/* line 91, ../scss/partials/base/_archive.scss */
+/* line 107, ../scss/partials/base/_archive.scss */
 body.category-whats-possible .hero--archive.hero--category .hero--category__count {
   display: none;
 }
-/* line 99, ../scss/partials/base/_archive.scss */
+/* line 115, ../scss/partials/base/_archive.scss */
 body.category-whats-possible .sidebar .widget_partners .module--partners:before {
   display: none;
 }

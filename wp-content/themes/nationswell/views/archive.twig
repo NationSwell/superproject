@@ -3,16 +3,43 @@
 {% block content %}
 
     {% block header %}
-        <div class="hero hero--archive hero--category{% if header_image is empty %} no-image{% endif %}" {% if header_image is not empty %}style="background-image: url({{ header_image.url|resize(1300,600) }})"{% endif %}>
-        <div class="container z1">
-            <h2 class="hd-a hero--category__title">{{ title }}</h2>
-            <span class="hero--category__count">{{ total_posts }} Stories</span>
+        <div class="hero hero--archive hero-overlay hero--category{% if header_image is empty %} no-image{% endif %}" {% if header_image is not empty %}style="background-image: url({{ header_image.url|resize(1300,600) }})"{% endif %}>
+        <div class="container z1 content">
+            <h3 class="hd-a hero--category__title" style="max-width:100%">{% if custom_title is not empty %}{{ custom_title }}{% else %}{{ title }}{% endif %}</h3>
+            {% if sponsored_category is not empty %}
+            	<p style="line-height:140px;margin-bottom:50px;">{{ category_type }} {% if category_sponsor_link %}<a href="{{ category_sponsor_link }}" target="_blank">{% endif %}<img src="{{ category_sponsor_image }}" alt="{{ category_sponsor_name }}" style="max-width: 200px; height:auto; vertical-align:middle; margin-left:20px;" />{% if category_sponsor_link %}</a>{% endif %}</p>
+            {% endif %}
+            {% if sponsored_category  %}
+        	{% else %}
+            	<span class="hero--category__count">{{ total_posts }} Stories</span>
+            {% endif %}
 
             {#<div class="sponsor">Presented by <img src="{{ theme_dir }}/img/sponsor_gm-dark.png" class="sponsor__logo"/></div>#}
         </div>
     </div>
-    {% endblock %}
+    
+    {% if display_desc %}
+    <div class="container">
+            <div class="archive-intro">
+                <div class="archive-share" data-module='{"name": "archive-series"}'>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{category_url}}" class="btn btn--facebook btn--share btn--rectangle icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a>
+                    <a href="https://twitter.com/home?status=Meet%20the%20NationSwell%20AllStars%20{{category_url}}" class="btn btn--twitter btn--share btn--rectangle icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a>
+                </div>
 
+                <div class="archive-spacer-left">&nbsp;</div>
+                <div class="archive-description-copy">
+                    <p>
+                        {{ description }}
+                    </p>
+                </div>
+                <div class="archive-spacer-right">&nbsp;</div>
+            </div>
+	</div>
+    {% endif %}
+    
+    {% endblock %}
+	
+	
 
     <div class="container container--flex">
         <div class="river river--two-col">

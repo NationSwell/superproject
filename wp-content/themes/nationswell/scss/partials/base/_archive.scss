@@ -62,19 +62,35 @@
 .archive-intro {
   border-bottom: 6px solid $gray6;
   overflow: hidden;
+  @include outer-container;
+  $medium: new-breakpoint(min-width 580px);
 
   .archive-share {
-    float: left;
+    @include media($medium) {
+  		@include span-columns(2);
+	}
+  }
+  .archive-spacer-left {
+    @include media($medium) {
+  		@include span-columns(1);
+	}
+  }
+  .archive-spacer-right {
+    @include media($medium) {
+  		@include span-columns(2);
+	}
   }
 
   .archive-description-copy {
+    @include media($medium) {
+  		@include span-columns(7);
+	}
     font-family: $gudea;
     font-size: 19px;
     font-size: 1.9rem;
 
     line-height: 2.4rem;
     color: $ns_blue1;
-    width: 60%;
     margin: 0 auto 3rem;
   }
 }
