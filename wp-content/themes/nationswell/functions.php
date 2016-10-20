@@ -1561,3 +1561,17 @@ function alphabetize_by_last_name( $bp_user_query ) {
         $bp_user_query->uid_clauses['orderby'] = "ORDER BY substring_index(u.display_name, ' ', -1)";
 }
 add_action ( 'bp_pre_user_query', 'alphabetize_by_last_name' );
+
+
+//**********************************************
+//----- Custom hook for gravity forms used in AllStar voting widget
+//set the dropdown containing the candidates with the current candidate if we're looking at the endividual post
+//more: https://www.gravityhelp.com/documentation/article/using-dynamic-population/
+
+add_filter( 'gform_field_value_candidate', 'allstars_population_function' );
+function allstars_population_function( $value ) {
+    $candidate = get_the_title();
+	return $candidate;
+}
+
+//**** END custom gravity forms hook ***************/

@@ -48,7 +48,7 @@ Author URI:         http://www.ronikdesign.com
 	margin: 15px 0 0;
 }
 
-.gform_wrapper:before, .gform_confirmation_wrapper:before {
+/*.gform_wrapper:before, .gform_confirmation_wrapper:before {
   font-family: "icons";
   content: "\f100";
   color: #fff;
@@ -69,7 +69,7 @@ Author URI:         http://www.ronikdesign.com
 
 #gform_wrapper_3:before, #gform_wrapper_4:before {
 	content: '\f10d';
-}
+}*/
 
 .gform_wrapper input[type=text], .gform_wrapper input[type=email], textarea {
   font-family: "Gudea",Arial,sans-serif;
@@ -144,14 +144,14 @@ button:focus {
 	background-color: #fc3b40;
 }
 
-.gform_wrapper > form, .gform_confirmation_message_1, .gform_confirmation_message_3, , .gform_confirmation_message_4 {
+/*.gform_wrapper > form, .gform_confirmation_message_1, .gform_confirmation_message_3, , .gform_confirmation_message_4 {
   max-width: 575px;
   width: 90%;
   margin: 0 auto;
   color: #111;
 	font-size: 2.6rem;
 	line-height: 31px;
-}
+}*/
 
 .gform_footer {
 	text-align: center;
@@ -279,7 +279,7 @@ body .hd-a {
 	background-color: #fc3b40;
 	color: #fff;
 	font-family: 'icons';
-  content: "";
+  content: "";
   position: absolute;
   top: 0;
   right: -27px;

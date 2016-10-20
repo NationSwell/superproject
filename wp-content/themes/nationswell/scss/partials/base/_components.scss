@@ -371,6 +371,50 @@
 
 }
 
+.widget.widget_voting_widget {
+	
+	.gform_wrapper, .gform_confirmation_wrapper {
+	  @extend .icon_cta-signup;
+	  
+	  background: $gray6;
+	  padding: 65px 0 50px;
+	  margin: 45px 0;
+	  border-top: 7px solid $ns_red;
+	  font-family: $gudea;
+	  position: relative;
+	  
+	  &:before {
+		font-family:"icons";
+		width: 7.6rem;
+  		height: 7.6rem;
+		color:$white;
+		margin-left: -3.8rem;
+  		position: absolute;
+  		top: -3.8rem;
+  		left: 50%;
+  		font-size: 4rem;
+		background-color: $ns_red;
+		line-height: 2.1em;
+		-moz-border-radius: 50%; 
+		-webkit-border-radius: 50%; 
+		border-radius: 50%;
+		text-align: center;
+	  }
+	}
+	.gform_confirmation_message {
+		h3 {
+			font-weight:$bold;
+			font-size: 3rem;
+		}
+		font-size: 1.8rem;
+    	line-height: 1.4;
+    	margin-bottom: 3rem;
+  		margin: 0 auto;
+		padding:3.4rem;
+  		color: $ns_black;
+	}
+}
+
 /* module */
 .module {
   display: block;
@@ -379,6 +423,36 @@
 
   &.module--sidebar {
     margin: 0 auto;
+  }
+  
+  /* dropdown select, used for AllStars voting */
+  .gform_body {
+  	&.form-unavailable {
+		font-size: 1.8rem;
+    	line-height: 1.4;
+  		margin: 0 auto;
+		padding:3.4rem;
+  		color: $ns_black;
+		text-align:center;
+	}
+	label {
+		display:block;
+		padding-bottom:5px;
+	}
+	select {
+		background-color: $white;
+		line-height: 68px;
+		height: 68px;
+		width: 100%;
+		border-radius: 0px;
+		font-family: $oswald;
+		font-size: 22px;
+		color: $ns_blue1;
+		border: 1px solid $gray5;
+		padding: 0 4%;
+		position: relative;
+		text-transform:uppercase;
+	}
   }
 
   &.module--story-signup {
