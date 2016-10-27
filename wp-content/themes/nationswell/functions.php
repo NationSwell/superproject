@@ -716,10 +716,12 @@ function ns_newsletter_shortcode() {
 }
 add_shortcode( 'newsletter', 'ns_newsletter_shortcode' );
 
-function ns_currentPage() {
-	return get_permalink();
+function ns_currentPageSlug() {
+	global $post;
+	$post_slug=$post->post_name;
+	return $post_slug;
 }
-add_shortcode( 'currentpage', 'ns_currentPage' );
+add_shortcode( 'currentpage', 'ns_currentPageSlug' );
 
 function voting_shortcode() {
   return "" . do_shortcode('[gravityform id="3" title="false" description="false" ajax="true"]') ."";
