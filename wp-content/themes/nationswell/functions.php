@@ -140,6 +140,8 @@ function add_to_context( $data ) {
 		$data['bp_total_new_count'] = $new_mention_count + $new_message_count;
 		
 		$data['bp_unread_notification_count'] = $unread_notification_count = bp_notifications_get_unread_notification_count($bp->loggedin_user->id);
+
+		$data['bp_is_member'] = isUserMember();
 	}
     return $data;
 }
@@ -1159,7 +1161,7 @@ function restrictPages(){
 			$roles = $current_user->roles;
 			foreach($roles as $role){
 				switch($role){
-					case'administrators':
+					case'administrator':
 					case'editor':
 					case'member':
 						return;
@@ -1172,6 +1174,21 @@ function restrictPages(){
 	}
 }
 add_action( 'wp', 'restrictPages');
+
+function isUserMember(){
+	$current_user = wp_get_current_user();
+	$roles = $current_user->roles;
+	foreach($roles as $role){
+		switch($role){
+			case'administrator':
+			case'editor':
+			case'member':
+				return true;
+			break;
+		}
+	}
+	return false;
+}
 
 function loginPageRedirect(){
 	// redirect to login page
