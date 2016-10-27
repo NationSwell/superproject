@@ -716,6 +716,11 @@ function ns_newsletter_shortcode() {
 }
 add_shortcode( 'newsletter', 'ns_newsletter_shortcode' );
 
+function ns_currentPage() {
+	return get_permalink();
+}
+add_shortcode( 'currentpage', 'ns_currentPage' );
+
 function voting_shortcode() {
   return "" . do_shortcode('[gravityform id="3" title="false" description="false" ajax="true"]') ."";
 }

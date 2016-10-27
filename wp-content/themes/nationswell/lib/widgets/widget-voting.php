@@ -24,7 +24,7 @@ class Voting_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		extract( $args );
 		echo $args['before_widget'];
-		if ( $instance['gravity_form_id'] > 0 ) {
+		if ( $instance['gravity_form_id'] > 0 ):
 			//check if the user is logged in
 			if ( is_user_logged_in() ):
 				$current_user = wp_get_current_user();
@@ -36,18 +36,37 @@ class Voting_Widget extends WP_Widget {
 				if ( count($entries)>0 ):
 					echo '<div class="gf_browser_chrome gform_wrapper module module--bg_wrapper">';
 					echo '<div class="gform_body form-unavailable">';
+					echo '<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1174971189235255";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, \'script\', \'facebook-jssdk\'));</script>';
 					echo '<p>';
-					echo __('Thank you for your vote!','buddypress');
+					echo '<strong>';
+					echo __('You have already voted.','buddypress');
+					echo '</strong>';
+					echo '<br>';
+					echo __('Thank you for your vote!<br>Spread the word:','buddypress');
 					echo '</p>';
+					echo '<div><a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Vote for your favorite  #NationSwellAllStars!" data-url="'.get_permalink().'" data-via="NationSwell" data-lang="en" data-show-count="false">'.__('Tweet','buddypress').'</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
+					
+					echo '<div class="fb-share-button" data-href="'.get_permalink().'" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.urlencode(get_permalink()).'%2F&amp;src=sdkpreparse">'.__('Share','buddypress').'</a></div>';
+					
 					echo '</div></div>';
 				else:
 					//otherwise, show the form;
 					echo do_shortcode('[gravityform id="'.$instance['gravity_form_id'].'" title="false" description="false" ajax="true"]');
 				endif;
+			else:
+				echo do_shortcode('[gravityform id="'.$instance['gravity_form_id'].'" title="false" description="false" ajax="true"]');
 			endif;
-		}
+		endif;
 		echo $args['after_widget'];
 	}
+				
 	
 	/**
 	 * Back-end widget form.

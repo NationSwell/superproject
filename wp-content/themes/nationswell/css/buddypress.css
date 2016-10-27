@@ -794,7 +794,7 @@ small a {
 }
 
 /* line 196, ../scss/partials/base/_icons.scss */
-.icon_facebook:before {
+.icon_facebook:before, .wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-facebook:before {
   content: "\f120";
 }
 
@@ -819,7 +819,7 @@ small a {
 }
 
 /* line 221, ../scss/partials/base/_icons.scss */
-.icon_google-plus:before {
+.icon_google-plus:before, .wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-google:before {
   content: "\f125";
 }
 
@@ -855,7 +855,7 @@ small a {
 }
 
 /* line 256, ../scss/partials/base/_icons.scss */
-.icon_instagram:before {
+.icon_instagram:before, .wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-instagram:before {
   content: "\f12c";
 }
 
@@ -865,7 +865,7 @@ small a {
 }
 
 /* line 266, ../scss/partials/base/_icons.scss */
-.icon_linkedin:before {
+.icon_linkedin:before, .wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-linkedin:before {
   content: "\f12e";
 }
 
@@ -1036,7 +1036,7 @@ small a {
 }
 
 /* line 436, ../scss/partials/base/_icons.scss */
-.icon_twitter:before {
+.icon_twitter:before, .wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-twitter:before {
   content: "\f14f";
 }
 
@@ -2474,16 +2474,84 @@ input[type="submit"]:-moz-focus-inner {
   color: #0098d8;
 }
 
+/**********  SOCIAL SIGN-IN BUTTONS ***************/
 /* line 376, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list {
+  padding: 0;
+  margin-top: 15px;
+}
+/* line 380, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider {
+  width: 100%;
+  display: inline-block;
+  padding: 5px 0;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+/* line 388, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider:before {
+  font-family: "icons";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+/* line 406, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-facebook {
+  background-color: #6983ba;
+}
+/* line 410, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-twitter {
+  background-color: #2fb8ed;
+}
+/* line 414, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-google {
+  background-color: #dd4b39;
+}
+/* line 418, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-linkedin {
+  background-color: #0077B5;
+}
+/* line 422, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-tumblr {
+  background-color: #32506d;
+}
+/* line 425, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-pinterest {
+  background-color: #cb2027;
+}
+/* line 428, ../scss/partials/base/_components.scss */
+.wp-social-login-widget .wp-social-login-provider-list .wp-social-login-provider.wp-social-login-provider-instagram {
+  background-color: #e95950;
+}
+
+/*****************  //END **********************/
+/* line 442, ../scss/partials/base/_components.scss */
 .widget.widget_voting_widget .gform_wrapper, .widget.widget_voting_widget .gform_confirmation_wrapper {
+  margin: 0 auto 30px;
   background: #eeeeee;
   padding: 65px 0 50px;
-  margin: 45px 0;
   border-top: 7px solid #fc3b40;
   font-family: "Gudea", Arial, sans-serif;
   position: relative;
 }
-/* line 386, ../scss/partials/base/_components.scss */
+@media screen and (min-width: 768px) {
+  /* line 442, ../scss/partials/base/_components.scss */
+  .widget.widget_voting_widget .gform_wrapper, .widget.widget_voting_widget .gform_confirmation_wrapper {
+    max-width: 32rem;
+  }
+}
+/* line 456, ../scss/partials/base/_components.scss */
 .widget.widget_voting_widget .gform_wrapper:before, .widget.widget_voting_widget .gform_confirmation_wrapper:before {
   font-family: "icons";
   width: 7.6rem;
@@ -2501,23 +2569,29 @@ input[type="submit"]:-moz-focus-inner {
   border-radius: 50%;
   text-align: center;
 }
-/* line 404, ../scss/partials/base/_components.scss */
+/* line 475, ../scss/partials/base/_components.scss */
+.widget.widget_voting_widget .ps {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 15px;
+}
+/* line 481, ../scss/partials/base/_components.scss */
 .widget.widget_voting_widget .gform_confirmation_message {
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 3rem;
   margin: 0 auto;
-  padding: 3.4rem;
+  padding: 0 3.4rem;
   color: #2d2d2d;
 }
-/* line 405, ../scss/partials/base/_components.scss */
+/* line 482, ../scss/partials/base/_components.scss */
 .widget.widget_voting_widget .gform_confirmation_message h3 {
   font-weight: 700;
   font-size: 3rem;
 }
 
 /* module */
-/* line 419, ../scss/partials/base/_components.scss */
+/* line 496, ../scss/partials/base/_components.scss */
 .module {
   display: block;
   position: relative;
@@ -2527,25 +2601,25 @@ input[type="submit"]:-moz-focus-inner {
   /* subscribe module */
   /* Partner message widget */
 }
-/* line 424, ../scss/partials/base/_components.scss */
+/* line 501, ../scss/partials/base/_components.scss */
 .module.module--sidebar {
   margin: 0 auto;
 }
-/* line 430, ../scss/partials/base/_components.scss */
+/* line 507, ../scss/partials/base/_components.scss */
 .module .gform_body.form-unavailable {
   font-size: 1.8rem;
   line-height: 1.4;
   margin: 0 auto;
-  padding: 3.4rem;
+  padding: 0 3.4rem;
   color: #2d2d2d;
   text-align: center;
 }
-/* line 438, ../scss/partials/base/_components.scss */
+/* line 515, ../scss/partials/base/_components.scss */
 .module .gform_body label {
   display: block;
   padding-bottom: 5px;
 }
-/* line 442, ../scss/partials/base/_components.scss */
+/* line 519, ../scss/partials/base/_components.scss */
 .module .gform_body select {
   background-color: #fff;
   line-height: 68px;
@@ -2560,17 +2634,17 @@ input[type="submit"]:-moz-focus-inner {
   position: relative;
   text-transform: uppercase;
 }
-/* line 458, ../scss/partials/base/_components.scss */
+/* line 535, ../scss/partials/base/_components.scss */
 .module.module--story-signup {
   width: 100%;
   display: block;
   margin: 2rem 0;
 }
-/* line 464, ../scss/partials/base/_components.scss */
+/* line 541, ../scss/partials/base/_components.scss */
 .module.module--bg {
   background-color: #eeeeee;
 }
-/* line 467, ../scss/partials/base/_components.scss */
+/* line 544, ../scss/partials/base/_components.scss */
 .module.module--bg:before {
   content: '';
   display: block;
@@ -2579,17 +2653,17 @@ input[type="submit"]:-moz-focus-inner {
   top: 0;
   left: 0;
 }
-/* line 476, ../scss/partials/base/_components.scss */
+/* line 553, ../scss/partials/base/_components.scss */
 .module.module--bg header {
   position: relative;
   text-align: center;
 }
-/* line 481, ../scss/partials/base/_components.scss */
+/* line 558, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading {
   display: inline-block;
   position: relative;
 }
-/* line 485, ../scss/partials/base/_components.scss */
+/* line 562, ../scss/partials/base/_components.scss */
 .module.module--bg .module__heading:before, .module.module--bg .module__heading:after {
   display: inline-block;
   font-weight: normal;
@@ -2602,32 +2676,32 @@ input[type="submit"]:-moz-focus-inner {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 501, ../scss/partials/base/_components.scss */
+/* line 578, ../scss/partials/base/_components.scss */
 .module.module--bg p {
   color: #2d2d2d;
   font-family: "Gudea", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 508, ../scss/partials/base/_components.scss */
+/* line 585, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue:before,
 .module.module--bg.module--blue .indicator {
   background-color: #0098d8;
 }
-/* line 513, ../scss/partials/base/_components.scss */
+/* line 590, ../scss/partials/base/_components.scss */
 .module.module--bg.module--blue .module__heading {
   background-color: #002130;
   box-shadow: 0 2px 0 #eeeeee, 0 5px 0 #002130;
 }
-/* line 520, ../scss/partials/base/_components.scss */
+/* line 597, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red:before,
 .module.module--bg.module--red .indicator {
   background-color: #fc3b40;
 }
-/* line 525, ../scss/partials/base/_components.scss */
+/* line 602, ../scss/partials/base/_components.scss */
 .module.module--bg.module--red .module__heading {
   background-color: #832f2d;
 }
-/* line 532, ../scss/partials/base/_components.scss */
+/* line 609, ../scss/partials/base/_components.scss */
 .module.module--list:after {
   background-color: #eeeeee;
   content: '';
@@ -2636,83 +2710,83 @@ input[type="submit"]:-moz-focus-inner {
   position: absolute;
   left: 0;
 }
-/* line 541, ../scss/partials/base/_components.scss */
+/* line 618, ../scss/partials/base/_components.scss */
 .module.module--list .module__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 547, ../scss/partials/base/_components.scss */
+/* line 624, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li {
   border-bottom: 1px solid #eeeeee;
 }
-/* line 550, ../scss/partials/base/_components.scss */
+/* line 627, ../scss/partials/base/_components.scss */
 .module.module--list .story-list li:last-child {
   border-bottom: 0 none;
 }
-/* line 555, ../scss/partials/base/_components.scss */
+/* line 632, ../scss/partials/base/_components.scss */
 .module.module--list .story-list .story__feature img {
   width: 100%;
   height: auto;
 }
-/* line 562, ../scss/partials/base/_components.scss */
+/* line 639, ../scss/partials/base/_components.scss */
 .module.module--list .story--link .story__hed {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-bottom: 0;
 }
-/* line 568, ../scss/partials/base/_components.scss */
+/* line 645, ../scss/partials/base/_components.scss */
 .module.module--list .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 576, ../scss/partials/base/_components.scss */
+/* line 653, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li {
   display: inline-block;
   border-bottom: 0 none;
   margin-right: 4.2%;
   vertical-align: top;
 }
-/* line 582, ../scss/partials/base/_components.scss */
+/* line 659, ../scss/partials/base/_components.scss */
 .module.module--list.module--horizontal .story-list li:last-child {
   margin-right: 0;
 }
-/* line 590, ../scss/partials/base/_components.scss */
+/* line 667, ../scss/partials/base/_components.scss */
 .module.module--image-overlay {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-/* line 596, ../scss/partials/base/_components.scss */
+/* line 673, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story {
   background-color: rgba(6, 24, 34, 0.6);
   display: block;
   float: none;
   margin: 0;
 }
-/* line 604, ../scss/partials/base/_components.scss */
+/* line 681, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 608, ../scss/partials/base/_components.scss */
+/* line 685, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .story__hed,
 .module.module--image-overlay .story__dek {
   color: #fff;
 }
-/* line 613, ../scss/partials/base/_components.scss */
+/* line 690, ../scss/partials/base/_components.scss */
 .module.module--image-overlay .sponsor {
   color: #fff;
   display: block;
 }
-/* line 619, ../scss/partials/base/_components.scss */
+/* line 696, ../scss/partials/base/_components.scss */
 .module.module--image-overlay:hover .story__hed {
   color: #95d6ef;
 }
-/* line 627, ../scss/partials/base/_components.scss */
+/* line 704, ../scss/partials/base/_components.scss */
 .module .join-us .btn--bar {
   width: auto;
 }
-/* line 638, ../scss/partials/base/_components.scss */
+/* line 715, ../scss/partials/base/_components.scss */
 .module.module--partners {
   background-color: #355a6b;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$ns_navy3+0,013147+100 */
@@ -2729,24 +2803,24 @@ input[type="submit"]:-moz-focus-inner {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$ns_navy3', endColorstr='$ns_navy2',GradientType=0 );
   /* IE6-9 */
 }
-/* line 650, ../scss/partials/base/_components.scss */
+/* line 727, ../scss/partials/base/_components.scss */
 .module.module--partners header {
   margin-top: 0 !important;
 }
-/* line 652, ../scss/partials/base/_components.scss */
+/* line 729, ../scss/partials/base/_components.scss */
 .module.module--partners header img {
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
-/* line 658, ../scss/partials/base/_components.scss */
+/* line 735, ../scss/partials/base/_components.scss */
 .module.module--partners p {
   color: #FFF;
   font-family: "Montserrat", Arial, sans-serif;
   margin-bottom: 0;
 }
 
-/* line 666, ../scss/partials/base/_components.scss */
+/* line 743, ../scss/partials/base/_components.scss */
 .story-signup {
   position: relative;
   padding: 2rem;
@@ -2755,12 +2829,12 @@ input[type="submit"]:-moz-focus-inner {
   display: block;
   margin: 6rem 0;
 }
-/* line 674, ../scss/partials/base/_components.scss */
+/* line 751, ../scss/partials/base/_components.scss */
 .story-signup:before,
 .story-signup .indicator {
   background-color: #5ec2e8;
 }
-/* line 679, ../scss/partials/base/_components.scss */
+/* line 756, ../scss/partials/base/_components.scss */
 .story-signup:before {
   content: '';
   display: block;
@@ -2770,35 +2844,35 @@ input[type="submit"]:-moz-focus-inner {
   left: 0;
   height: 0.7rem;
 }
-/* line 689, ../scss/partials/base/_components.scss */
+/* line 766, ../scss/partials/base/_components.scss */
 .story-signup header {
   position: relative;
   text-align: center;
   margin-top: -5.5rem;
   margin-bottom: 1.05rem;
 }
-/* line 695, ../scss/partials/base/_components.scss */
+/* line 772, ../scss/partials/base/_components.scss */
 .story-signup header .indicator-story-signup {
   width: 7.6rem;
   height: 7.6rem;
 }
-/* line 699, ../scss/partials/base/_components.scss */
+/* line 776, ../scss/partials/base/_components.scss */
 .story-signup header .indicator-story-signup:before {
   font-size: 4rem;
   line-height: 2.2;
 }
-/* line 706, ../scss/partials/base/_components.scss */
+/* line 783, ../scss/partials/base/_components.scss */
 .story-signup p {
   text-align: center;
   font-size: 2rem;
   color: #7e7e7e;
 }
-/* line 712, ../scss/partials/base/_components.scss */
+/* line 789, ../scss/partials/base/_components.scss */
 .story-signup .form-fields {
   width: 100%;
   position: relative;
 }
-/* line 716, ../scss/partials/base/_components.scss */
+/* line 793, ../scss/partials/base/_components.scss */
 .story-signup .form-fields input[type="email"] {
   margin-bottom: 1.2rem;
   padding: 1.48rem;
@@ -2807,7 +2881,7 @@ input[type="submit"]:-moz-focus-inner {
   border: none;
   font-size: 1.5rem;
 }
-/* line 725, ../scss/partials/base/_components.scss */
+/* line 802, ../scss/partials/base/_components.scss */
 .story-signup .form-fields .btn--solid {
   background-color: #5ec2e8;
   float: right;
@@ -2816,21 +2890,21 @@ input[type="submit"]:-moz-focus-inner {
   top: 0;
   padding: 1.08rem;
 }
-/* line 733, ../scss/partials/base/_components.scss */
+/* line 810, ../scss/partials/base/_components.scss */
 .story-signup .form-fields .btn--solid:hover {
   background-color: #fc3b40;
 }
 
 /* sidebar */
-/* line 743, ../scss/partials/base/_components.scss */
+/* line 820, ../scss/partials/base/_components.scss */
 .sidebar li {
   list-style: none;
 }
-/* line 747, ../scss/partials/base/_components.scss */
+/* line 824, ../scss/partials/base/_components.scss */
 .sidebar .widget.story {
   margin-bottom: 30px;
 }
-/* line 751, ../scss/partials/base/_components.scss */
+/* line 828, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image {
   text-align: center;
   max-width: 100% !important;
@@ -2838,17 +2912,17 @@ input[type="submit"]:-moz-focus-inner {
   border: 1px solid #eeeeee;
 }
 @media screen and (min-width: 768px) {
-  /* line 751, ../scss/partials/base/_components.scss */
+  /* line 828, ../scss/partials/base/_components.scss */
   .sidebar .widget_sp_image {
     max-width: 32rem !important;
   }
 }
-/* line 762, ../scss/partials/base/_components.scss */
+/* line 839, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-image-link img {
   padding: 20px !important;
   height: auto;
 }
-/* line 768, ../scss/partials/base/_components.scss */
+/* line 845, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 3.2rem !important;
@@ -2857,55 +2931,55 @@ input[type="submit"]:-moz-focus-inner {
   color: #003046;
 }
 @media screen and (min-width: 768px) {
-  /* line 768, ../scss/partials/base/_components.scss */
+  /* line 845, ../scss/partials/base/_components.scss */
   .sidebar .widget_sp_image .widget_sp_image-description {
     font-size: 1.8rem !important;
     line-height: 2.2rem !important;
   }
 }
-/* line 778, ../scss/partials/base/_components.scss */
+/* line 855, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description p {
   display: block;
   padding: 15px;
 }
-/* line 782, ../scss/partials/base/_components.scss */
+/* line 859, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a {
   text-decoration: underline;
 }
-/* line 784, ../scss/partials/base/_components.scss */
+/* line 861, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a.button, .sidebar .widget_sp_image .widget_sp_image-description .member-login-forms .content-wrapper a.lostpassword-button, .member-login-forms .content-wrapper .sidebar .widget_sp_image .widget_sp_image-description a.lostpassword-button, .sidebar .widget_sp_image .widget_sp_image-description #buddypress .member-row .profile-callout-block a.item-block-button-go, #buddypress .member-row .profile-callout-block .sidebar .widget_sp_image .widget_sp_image-description a.item-block-button-go,
 .sidebar .widget_sp_image .widget_sp_image-description #buddypress .member-row .callout-block a.item-block-button-go,
 #buddypress .member-row .callout-block .sidebar .widget_sp_image .widget_sp_image-description a.item-block-button-go, .sidebar .widget_sp_image .widget_sp_image-description #buddypress .tab-content .nsc-item-listing .item-info .item-details .rsvp a.action, #buddypress .tab-content .nsc-item-listing .item-info .item-details .rsvp .sidebar .widget_sp_image .widget_sp_image-description a.action, .sidebar .widget_sp_image .widget_sp_image-description #buddypress #whats-new-form a#aw-whats-new-submit, #buddypress #whats-new-form .sidebar .widget_sp_image .widget_sp_image-description a#aw-whats-new-submit {
   text-decoration: none;
 }
-/* line 787, ../scss/partials/base/_components.scss */
+/* line 864, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a:link, .sidebar .widget_sp_image .widget_sp_image-description a:visited {
   color: #fd6464;
 }
-/* line 791, ../scss/partials/base/_components.scss */
+/* line 868, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a:hover {
   color: #1fade0;
 }
-/* line 794, ../scss/partials/base/_components.scss */
+/* line 871, ../scss/partials/base/_components.scss */
 .sidebar .widget_sp_image .widget_sp_image-description a:active {
   color: #003046;
 }
-/* line 801, ../scss/partials/base/_components.scss */
+/* line 878, ../scss/partials/base/_components.scss */
 .sidebar .widget_text {
   margin-bottom: 7.6rem;
   text-align: center;
 }
-/* line 806, ../scss/partials/base/_components.scss */
+/* line 883, ../scss/partials/base/_components.scss */
 .sidebar .widget_youtube_responsive {
   text-align: center;
 }
 
 /* pullquote */
-/* line 813, ../scss/partials/base/_components.scss */
+/* line 890, ../scss/partials/base/_components.scss */
 .pullquote {
   position: relative;
 }
-/* line 816, ../scss/partials/base/_components.scss */
+/* line 893, ../scss/partials/base/_components.scss */
 .pullquote:before {
   background-color: #fc3b40;
   font-family: 'icons';
@@ -2914,7 +2988,7 @@ input[type="submit"]:-moz-focus-inner {
   border-radius: 50%;
   text-align: center;
 }
-/* line 825, ../scss/partials/base/_components.scss */
+/* line 902, ../scss/partials/base/_components.scss */
 .pullquote .pullquote__attribution {
   color: #fc3b40;
   font-family: "oswaldregular", Arial, sans-serif;
@@ -2924,33 +2998,33 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* tags */
-/* line 835, ../scss/partials/base/_components.scss */
+/* line 912, ../scss/partials/base/_components.scss */
 .tag-tag {
   background-color: #fc3b40;
   color: #fff;
   display: block;
   font-family: "Montserrat", Arial, sans-serif;
 }
-/* line 841, ../scss/partials/base/_components.scss */
+/* line 918, ../scss/partials/base/_components.scss */
 .tag-tag:hover {
   background-color: #0098d8;
   color: #fff;
 }
 
 /* author */
-/* line 848, ../scss/partials/base/_components.scss */
+/* line 925, ../scss/partials/base/_components.scss */
 .author-box {
   background-color: #f6f6f6;
 }
 
-/* line 852, ../scss/partials/base/_components.scss */
+/* line 929, ../scss/partials/base/_components.scss */
 .author__portrait {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 858, ../scss/partials/base/_components.scss */
+/* line 935, ../scss/partials/base/_components.scss */
 .author__url {
   color: #0098d8;
   display: block;
@@ -2959,26 +3033,26 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 866, ../scss/partials/base/_components.scss */
+/* line 943, ../scss/partials/base/_components.scss */
 .author__url:hover {
   color: #fc3b40;
 }
 
-/* line 871, ../scss/partials/base/_components.scss */
+/* line 948, ../scss/partials/base/_components.scss */
 .social {
   margin: 1.2rem auto 0;
   display: block;
   text-align: center;
 }
-/* line 876, ../scss/partials/base/_components.scss */
+/* line 953, ../scss/partials/base/_components.scss */
 .social li {
   display: inline-block;
 }
-/* line 879, ../scss/partials/base/_components.scss */
+/* line 956, ../scss/partials/base/_components.scss */
 .social li:first-child {
   margin-left: 0;
 }
-/* line 884, ../scss/partials/base/_components.scss */
+/* line 961, ../scss/partials/base/_components.scss */
 .social .icon, .social #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social ul > li,
 .social #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social ul > li, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a {
@@ -2986,114 +3060,154 @@ input[type="submit"]:-moz-focus-inner {
   text-align: center;
   vertical-align: middle;
 }
-/* line 889, ../scss/partials/base/_components.scss */
-.social .icon.icon_facebook, .social #buddypress .profile-view .left ul > li.icon_facebook, #buddypress .profile-view .left .social ul > li.icon_facebook,
+/* line 966, ../scss/partials/base/_components.scss */
+.social .icon.icon_facebook, .social .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-facebook, .wp-social-login-widget .wp-social-login-provider-list .social .icon.wp-social-login-provider.wp-social-login-provider-facebook, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-facebook, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social ul > li.wp-social-login-provider.wp-social-login-provider-facebook, .social #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-facebook, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-facebook,
+.social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-facebook,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social ul > li.wp-social-login-provider.wp-social-login-provider-facebook,
+.social #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-facebook,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-facebook, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-facebook, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.wp-social-login-provider.wp-social-login-provider-facebook, .social #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-facebook, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social a.wp-social-login-provider.wp-social-login-provider-facebook, .social #buddypress .profile-view .left ul > li.icon_facebook, #buddypress .profile-view .left .social ul > li.icon_facebook,
 .social #buddypress .profile-view .right ul > li.icon_facebook,
 #buddypress .profile-view .right .social ul > li.icon_facebook, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_facebook, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_facebook {
   background-color: #5973aa;
 }
-/* line 890, ../scss/partials/base/_components.scss */
-.social .icon.icon_twitter, .social #buddypress .profile-view .left ul > li.icon_twitter, #buddypress .profile-view .left .social ul > li.icon_twitter,
+/* line 967, ../scss/partials/base/_components.scss */
+.social .icon.icon_twitter, .social .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-twitter, .wp-social-login-widget .wp-social-login-provider-list .social .icon.wp-social-login-provider.wp-social-login-provider-twitter, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-twitter, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social ul > li.wp-social-login-provider.wp-social-login-provider-twitter, .social #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-twitter, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-twitter,
+.social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-twitter,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social ul > li.wp-social-login-provider.wp-social-login-provider-twitter,
+.social #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-twitter,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-twitter, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-twitter, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.wp-social-login-provider.wp-social-login-provider-twitter, .social #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-twitter, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social a.wp-social-login-provider.wp-social-login-provider-twitter, .social #buddypress .profile-view .left ul > li.icon_twitter, #buddypress .profile-view .left .social ul > li.icon_twitter,
 .social #buddypress .profile-view .right ul > li.icon_twitter,
 #buddypress .profile-view .right .social ul > li.icon_twitter, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_twitter, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 891, ../scss/partials/base/_components.scss */
-.social .icon.icon_google-plus, .social #buddypress .profile-view .left ul > li.icon_google-plus, #buddypress .profile-view .left .social ul > li.icon_google-plus,
+/* line 968, ../scss/partials/base/_components.scss */
+.social .icon.icon_google-plus, .social .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-google, .wp-social-login-widget .wp-social-login-provider-list .social .icon.wp-social-login-provider.wp-social-login-provider-google, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-google, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social ul > li.wp-social-login-provider.wp-social-login-provider-google, .social #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-google, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-google,
+.social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-google,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social ul > li.wp-social-login-provider.wp-social-login-provider-google,
+.social #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-google,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-google, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-google, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.wp-social-login-provider.wp-social-login-provider-google, .social #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-google, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social a.wp-social-login-provider.wp-social-login-provider-google, .social #buddypress .profile-view .left ul > li.icon_google-plus, #buddypress .profile-view .left .social ul > li.icon_google-plus,
 .social #buddypress .profile-view .right ul > li.icon_google-plus,
 #buddypress .profile-view .right .social ul > li.icon_google-plus, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_google-plus, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_google-plus {
   background-color: #d34836;
 }
-/* line 892, ../scss/partials/base/_components.scss */
-.social .icon.icon_instagram, .social #buddypress .profile-view .left ul > li.icon_instagram, #buddypress .profile-view .left .social ul > li.icon_instagram,
+/* line 969, ../scss/partials/base/_components.scss */
+.social .icon.icon_instagram, .social .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-instagram, .wp-social-login-widget .wp-social-login-provider-list .social .icon.wp-social-login-provider.wp-social-login-provider-instagram, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-instagram, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social ul > li.wp-social-login-provider.wp-social-login-provider-instagram, .social #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-instagram, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-instagram,
+.social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-instagram,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social ul > li.wp-social-login-provider.wp-social-login-provider-instagram,
+.social #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-instagram,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-instagram, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-instagram, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.wp-social-login-provider.wp-social-login-provider-instagram, .social #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-instagram, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social a.wp-social-login-provider.wp-social-login-provider-instagram, .social #buddypress .profile-view .left ul > li.icon_instagram, #buddypress .profile-view .left .social ul > li.icon_instagram,
 .social #buddypress .profile-view .right ul > li.icon_instagram,
 #buddypress .profile-view .right .social ul > li.icon_instagram, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_instagram, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_instagram {
   background-color: #37668d;
 }
-/* line 893, ../scss/partials/base/_components.scss */
+/* line 970, ../scss/partials/base/_components.scss */
 .social .icon.icon_tumblr, .social #buddypress .profile-view .left ul > li.icon_tumblr, #buddypress .profile-view .left .social ul > li.icon_tumblr,
 .social #buddypress .profile-view .right ul > li.icon_tumblr,
 #buddypress .profile-view .right .social ul > li.icon_tumblr, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_tumblr, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 894, ../scss/partials/base/_components.scss */
-.social .icon.icon_linkedin, .social #buddypress .profile-view .left ul > li.icon_linkedin, #buddypress .profile-view .left .social ul > li.icon_linkedin,
+/* line 971, ../scss/partials/base/_components.scss */
+.social .icon.icon_linkedin, .social .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-linkedin, .wp-social-login-widget .wp-social-login-provider-list .social .icon.wp-social-login-provider.wp-social-login-provider-linkedin, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-linkedin, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social ul > li.wp-social-login-provider.wp-social-login-provider-linkedin, .social #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-linkedin, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-linkedin,
+.social .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-linkedin,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social ul > li.wp-social-login-provider.wp-social-login-provider-linkedin,
+.social #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-linkedin,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social ul > li.wp-social-login-provider.wp-social-login-provider-linkedin, .social .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-linkedin, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.wp-social-login-provider.wp-social-login-provider-linkedin, .social #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-linkedin, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social a.wp-social-login-provider.wp-social-login-provider-linkedin, .social #buddypress .profile-view .left ul > li.icon_linkedin, #buddypress .profile-view .left .social ul > li.icon_linkedin,
 .social #buddypress .profile-view .right ul > li.icon_linkedin,
 #buddypress .profile-view .right .social ul > li.icon_linkedin, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_linkedin, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_linkedin {
   background-color: #017bb6;
 }
-/* line 895, ../scss/partials/base/_components.scss */
+/* line 972, ../scss/partials/base/_components.scss */
 .social .icon.icon_envelope, .social #buddypress .profile-view .left ul > li.icon_envelope, #buddypress .profile-view .left .social ul > li.icon_envelope,
 .social #buddypress .profile-view .right ul > li.icon_envelope,
 #buddypress .profile-view .right .social ul > li.icon_envelope, .social #buddypress .activity-list .activity-item .activity-content .activity-meta a.icon_envelope, #buddypress .activity-list .activity-item .activity-content .activity-meta .social a.icon_envelope {
   background-color: #46b525;
 }
-/* line 899, ../scss/partials/base/_components.scss */
+/* line 976, ../scss/partials/base/_components.scss */
 .social.author__social .icon, .social.author__social #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social.author__social ul > li,
 .social.author__social #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social.author__social ul > li, .social.author__social #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social a {
   line-height: 1.4;
 }
-/* line 904, ../scss/partials/base/_components.scss */
+/* line 981, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon, .social.author__social.author__social--page #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social.author__social.author__social--page ul > li,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a {
   background-color: #dbdbdb;
 }
-/* line 908, ../scss/partials/base/_components.scss */
-.social.author__social.author__social--page .icon:hover.icon_facebook, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_facebook, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_facebook,
+/* line 985, ../scss/partials/base/_components.scss */
+.social.author__social.author__social--page .icon:hover.icon_facebook, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-facebook:hover, .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page .icon.wp-social-login-provider.wp-social-login-provider-facebook:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover, .social.author__social.author__social--page #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover,
+.social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover,
+.social.author__social.author__social--page #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-facebook:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-facebook:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-facebook:hover, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-facebook:hover, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-facebook:hover, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_facebook, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_facebook,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_facebook,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_facebook, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_facebook, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_facebook {
   background-color: #5973aa;
 }
-/* line 909, ../scss/partials/base/_components.scss */
-.social.author__social.author__social--page .icon:hover.icon_twitter, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_twitter, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_twitter,
+/* line 986, ../scss/partials/base/_components.scss */
+.social.author__social.author__social--page .icon:hover.icon_twitter, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-twitter:hover, .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page .icon.wp-social-login-provider.wp-social-login-provider-twitter:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover, .social.author__social.author__social--page #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover,
+.social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover,
+.social.author__social.author__social--page #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-twitter:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-twitter:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-twitter:hover, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-twitter:hover, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-twitter:hover, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_twitter, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_twitter,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_twitter,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_twitter, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_twitter, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_twitter {
   background-color: #2fb8ed;
 }
-/* line 910, ../scss/partials/base/_components.scss */
-.social.author__social.author__social--page .icon:hover.icon_google-plus, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_google-plus, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_google-plus,
+/* line 987, ../scss/partials/base/_components.scss */
+.social.author__social.author__social--page .icon:hover.icon_google-plus, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-google:hover, .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page .icon.wp-social-login-provider.wp-social-login-provider-google:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-google:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-google:hover, .social.author__social.author__social--page #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-google:hover, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-google:hover,
+.social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-google:hover,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-google:hover,
+.social.author__social.author__social--page #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-google:hover,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-google:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-google:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-google:hover, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-google:hover, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-google:hover, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_google-plus, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_google-plus,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_google-plus,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_google-plus, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_google-plus, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_google-plus {
   background-color: #d34836;
 }
-/* line 911, ../scss/partials/base/_components.scss */
-.social.author__social.author__social--page .icon:hover.icon_instagram, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_instagram, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_instagram,
+/* line 988, ../scss/partials/base/_components.scss */
+.social.author__social.author__social--page .icon:hover.icon_instagram, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-instagram:hover, .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page .icon.wp-social-login-provider.wp-social-login-provider-instagram:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover, .social.author__social.author__social--page #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover,
+.social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover,
+.social.author__social.author__social--page #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-instagram:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-instagram:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-instagram:hover, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-instagram:hover, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-instagram:hover, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_instagram, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_instagram,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_instagram,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_instagram, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_instagram, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_instagram {
   background-color: #37668d;
 }
-/* line 912, ../scss/partials/base/_components.scss */
+/* line 989, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_tumblr, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_tumblr, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_tumblr,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_tumblr,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_tumblr, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_tumblr, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_tumblr {
   background-color: #2c4762;
 }
-/* line 913, ../scss/partials/base/_components.scss */
-.social.author__social.author__social--page .icon:hover.icon_linkedin, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_linkedin, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_linkedin,
+/* line 990, ../scss/partials/base/_components.scss */
+.social.author__social.author__social--page .icon:hover.icon_linkedin, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list .icon.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page .icon.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .left .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .social.author__social.author__social--page #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover, #buddypress .profile-view .left .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover,
+.social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover,
+.wp-social-login-widget .wp-social-login-provider-list #buddypress .profile-view .right .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover,
+.social.author__social.author__social--page #buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover,
+#buddypress .profile-view .right .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page ul > li.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .social.author__social.author__social--page .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta a.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .wp-social-login-widget .wp-social-login-provider-list #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list a.wp-social-login-provider.wp-social-login-provider-linkedin:hover, #buddypress .activity-list .activity-item .activity-content .activity-meta .wp-social-login-widget .wp-social-login-provider-list .social.author__social.author__social--page a.wp-social-login-provider.wp-social-login-provider-linkedin:hover, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_linkedin, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_linkedin,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_linkedin,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_linkedin, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_linkedin, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_linkedin {
   background-color: #017bb6;
 }
-/* line 914, ../scss/partials/base/_components.scss */
+/* line 991, ../scss/partials/base/_components.scss */
 .social.author__social.author__social--page .icon:hover.icon_envelope, .social.author__social.author__social--page #buddypress .profile-view .left ul > li:hover.icon_envelope, #buddypress .profile-view .left .social.author__social.author__social--page ul > li:hover.icon_envelope,
 .social.author__social.author__social--page #buddypress .profile-view .right ul > li:hover.icon_envelope,
 #buddypress .profile-view .right .social.author__social.author__social--page ul > li:hover.icon_envelope, .social.author__social.author__social--page #buddypress .activity-list .activity-item .activity-content .activity-meta a:hover.icon_envelope, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.author__social.author__social--page a:hover.icon_envelope {
   background-color: #46b525;
 }
-/* line 921, ../scss/partials/base/_components.scss */
+/* line 998, ../scss/partials/base/_components.scss */
 .social.take-action__social .icon, .social.take-action__social #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .social.take-action__social ul > li,
 .social.take-action__social #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .social.take-action__social ul > li, .social.take-action__social #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .social.take-action__social a {
   line-height: 1.6;
 }
 
-/* line 928, ../scss/partials/base/_components.scss */
+/* line 1005, ../scss/partials/base/_components.scss */
 .author__byline a {
   color: inherit;
 }
-/* line 932, ../scss/partials/base/_components.scss */
+/* line 1009, ../scss/partials/base/_components.scss */
 .author__byline .author__byline__prefix {
   color: #fc3b40;
   display: block;
@@ -3101,38 +3215,38 @@ input[type="submit"]:-moz-focus-inner {
   font-weight: 700;
 }
 
-/* line 940, ../scss/partials/base/_components.scss */
+/* line 1017, ../scss/partials/base/_components.scss */
 .author__bio {
   font-family: "Gudea", Arial, sans-serif;
 }
 
 /* prev/next */
-/* line 945, ../scss/partials/base/_components.scss */
+/* line 1022, ../scss/partials/base/_components.scss */
 .prev-next {
   border-top: 7px solid #000;
 }
-/* line 949, ../scss/partials/base/_components.scss */
+/* line 1026, ../scss/partials/base/_components.scss */
 .prev-next li:last-child {
   text-align: right;
 }
-/* line 955, ../scss/partials/base/_components.scss */
+/* line 1032, ../scss/partials/base/_components.scss */
 .prev-next .story--link .story__hed {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 960, ../scss/partials/base/_components.scss */
+/* line 1037, ../scss/partials/base/_components.scss */
 .prev-next .story--link:hover .story__hed {
   color: #0098d8;
 }
-/* line 966, ../scss/partials/base/_components.scss */
+/* line 1043, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link {
   color: #0098d8;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
-/* line 972, ../scss/partials/base/_components.scss */
+/* line 1049, ../scss/partials/base/_components.scss */
 .prev-next .prev-next__link .icon, .prev-next .prev-next__link #buddypress .profile-view .left ul > li, #buddypress .profile-view .left .prev-next .prev-next__link ul > li,
 .prev-next .prev-next__link #buddypress .profile-view .right ul > li,
 #buddypress .profile-view .right .prev-next .prev-next__link ul > li, .prev-next .prev-next__link #buddypress .activity-list .activity-item .activity-content .activity-meta a, #buddypress .activity-list .activity-item .activity-content .activity-meta .prev-next .prev-next__link a {
@@ -3140,39 +3254,39 @@ input[type="submit"]:-moz-focus-inner {
 }
 
 /* read next */
-/* line 980, ../scss/partials/base/_components.scss */
+/* line 1057, ../scss/partials/base/_components.scss */
 .read-next .read-next__heading {
   display: block;
   border-bottom: 3px solid #2d2d2d;
 }
-/* line 986, ../scss/partials/base/_components.scss */
+/* line 1063, ../scss/partials/base/_components.scss */
 .read-next li:first-child {
   padding-left: 0;
 }
-/* line 990, ../scss/partials/base/_components.scss */
+/* line 1067, ../scss/partials/base/_components.scss */
 .read-next li:last-child {
   padding-right: 0;
 }
 
 /* subscribe status */
-/* line 997, ../scss/partials/base/_components.scss */
+/* line 1074, ../scss/partials/base/_components.scss */
 .module.mc-email-status {
   line-height: 1;
   padding: .5rem 0 0 0;
   display: block;
   clear: both;
 }
-/* line 1003, ../scss/partials/base/_components.scss */
+/* line 1080, ../scss/partials/base/_components.scss */
 .module.mc-email-status.valid {
   color: #46b525;
 }
-/* line 1007, ../scss/partials/base/_components.scss */
+/* line 1084, ../scss/partials/base/_components.scss */
 .module.mc-email-status.error {
   color: #fc3b40;
 }
 
 /* hrs */
-/* line 1013, ../scss/partials/base/_components.scss */
+/* line 1090, ../scss/partials/base/_components.scss */
 hr {
   border-style: none;
   border: 0 none;
@@ -3182,7 +3296,7 @@ hr {
 }
 
 /* read more */
-/* line 1022, ../scss/partials/base/_components.scss */
+/* line 1099, ../scss/partials/base/_components.scss */
 .read-more {
   color: #0098d8;
   font-weight: 500;
