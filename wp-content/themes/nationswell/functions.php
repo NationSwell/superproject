@@ -1157,6 +1157,23 @@ function restrictPages(){
 			}
 			loginPageRedirect();
 		}
+	}else{
+		// restrict buddypress pages to specific role
+		if( ( function_exists('is_buddypress') && is_buddypress() ) ){
+			$current_user = wp_get_current_user();
+			$roles = $current_user->roles;
+			foreach($roles as $role){
+				switch($role){
+					case'administrators':
+					case'editor':
+					case'member':
+						return;
+					break;
+				}
+			}
+			wp_redirect( home_url() );
+			die();
+		}
 	}
 }
 add_action( 'wp', 'restrictPages');
@@ -1183,12 +1200,14 @@ function user_login_redirect( $redirect_to, $request, $user ) {
 		if ( in_array( 'administrator', $user->roles ) ) {
 			// redirect them to the default place
 			return $redirect_to;
-		} else {
+		} elseif(home_url() ==  $redirect_to) {
 			if( function_exists('bp_is_active') ) {
 				return bp_get_root_domain().'/members/'.$user->data->user_nicename.'/activity/';
 			}else{
 				return home_url();
 			}
+		}else{
+			return $redirect_to;
 		}
 	} else {
 		return $redirect_to;

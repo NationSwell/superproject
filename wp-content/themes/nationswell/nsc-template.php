@@ -32,71 +32,74 @@ if (isset($_POST['action']) && $_POST['action']=='reset') :
 		//we got the email, all good, now send the password reset link to user.
 		$user_data = get_user_by('email', $user_login);
 		
-		//print_r($user_data);
-		
-		//do_action('lostpassword_post');
+		if( !in_array('member', $user_data->roles) ){
+			$error_user = 'User account is not a member';
+			unset($user_data );
+		}
 	
+		//do_action('lostpassword_post');
 	
 		if ( !$user_data ) {
 			$error_user = 'Oh no! Something has gone horribly wrong (frown)';
-		}
+		}else{
 	
-		// redefining user_login ensures we return the right case in the email
-		$user_login = $user_data->user_login;
-		$user_email = $user_data->user_email;
-		$user_info = get_userdata( $user_data->ID );
-		$first_name = $user_info->first_name;
+			// redefining user_login ensures we return the right case in the email
+			$user_login = $user_data->user_login;
+			$user_email = $user_data->user_email;
+			$user_info = get_userdata( $user_data->ID );
+			$first_name = $user_info->first_name;
 	
-		//do_action('retreive_password', $user_login);  // Misspelled and deprecated
-		//do_action('retrieve_password', $user_login);
+			//do_action('retreive_password', $user_login);  // Misspelled and deprecated
+			//do_action('retrieve_password', $user_login);
 	
-		$allow = apply_filters('allow_password_reset', true, $user_data->ID);
+			$allow = apply_filters('allow_password_reset', true, $user_data->ID);
 	
-		if ( ! $allow ) {
-			$error_system = 'This action isn’t allowed at this time';
-		} else if ( is_wp_error($allow) ) {
-			$error_system = 'Oh no! Something has gone horribly wrong (frown)';
-		}
+			if ( ! $allow ) {
+				$error_system = 'This action isn’t allowed at this time';
+			} else if ( is_wp_error($allow) ) {
+				$error_system = 'Oh no! Something has gone horribly wrong (frown)';
+			}
 		
 		
-		//$key = $wpdb->get_var($wpdb->prepare("SELECT user_activation_key FROM $wpdb->users WHERE user_login = %s", $user_login));
-		//if ( empty($key) ) {
-			// Generate something random for a key...
-			$key = wp_generate_password(20, false);
-			$hash_key = wp_hash_password($key);
-			//do_action('retrieve_password_key', $user_login, $key);
-			// Now insert the new md5 key into the db
-			$wpdb->update($wpdb->users, array('user_activation_key' => time() . ':' . $hash_key), array('user_login' => $user_login));
-		//}
-		$message = sprintf(__('Hi %s,'), $first_name) . "\r\n\r\n";
-		$message .= __('Thank you for activating your NationSwell Council portal account! The final step is creating a unique password by using the link below:') . "\r\n\r\n";
-		//$message .= network_home_url( '/' ) . "\r\n\r\n";
-		//$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
-		//$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
-		$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n\r\n";
+			//$key = $wpdb->get_var($wpdb->prepare("SELECT user_activation_key FROM $wpdb->users WHERE user_login = %s", $user_login));
+			//if ( empty($key) ) {
+				// Generate something random for a key...
+				$key = wp_generate_password(20, false);
+				$hash_key = wp_hash_password($key);
+				//do_action('retrieve_password_key', $user_login, $key);
+				// Now insert the new md5 key into the db
+				$wpdb->update($wpdb->users, array('user_activation_key' => time() . ':' . $hash_key), array('user_login' => $user_login));
+			//}
+			$message = sprintf(__('Hi %s,'), $first_name) . "\r\n\r\n";
+			$message .= __('Thank you for activating your NationSwell Council portal account! The final step is creating a unique password by using the link below:') . "\r\n\r\n";
+			//$message .= network_home_url( '/' ) . "\r\n\r\n";
+			//$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
+			//$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
+			$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n\r\n";
 		
-		$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to <'.network_home_url( "/nationswell-council/?register=true","register"). '> and request a new link.') . "\r\n\r\n";
+			$message .= __('This link will remain valid for the next 24 hours only. If this window has passed, please return to <'.network_home_url( "/nationswell-council/?register=true","register"). '> and request a new link.') . "\r\n\r\n";
 		
-		$message .= __('Please reach out to us with any questions, anytime, at: nsc@nationswell.com') . "\r\n\r\n";
+			$message .= __('Please reach out to us with any questions, anytime, at: nsc@nationswell.com') . "\r\n\r\n";
 		
-		$message .= __('Enjoy!') . "\r\n\r\n";
+			$message .= __('Enjoy!') . "\r\n\r\n";
 		
 		
-		$message .= __('Warmly,') . "\r\n";
-		$message .= __('The NationSwell Council Team') . "\r\n";
-		$message .= network_home_url( '/' );
+			$message .= __('Warmly,') . "\r\n";
+			$message .= __('The NationSwell Council Team') . "\r\n";
+			$message .= network_home_url( '/' );
 	
-		$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
+			$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
 	
-		$title = __('Welcome to NationSwell');
+			$title = __('Welcome to NationSwell');
 	
-		$title = apply_filters('retrieve_password_title', $title);
-		$message = apply_filters('retrieve_password_message', $message, $key);
+			$title = apply_filters('retrieve_password_title', $title);
+			$message = apply_filters('retrieve_password_message', $message, $key);
 	
-		if ( $message && !wp_mail($user_email, $title, $message) ) {
-			wp_die( __('The e-mail could not be sent.') . "<br />\n" . __('Possible reason: your host may have disabled the mail() function...') );
-		} else {
-			$success = true;
+			if ( $message && !wp_mail($user_email, $title, $message) ) {
+				wp_die( __('The e-mail could not be sent.') . "<br />\n" . __('Possible reason: your host may have disabled the mail() function...') );
+			} else {
+				$success = true;
+			}
 		}
 	}
 
@@ -269,7 +272,9 @@ endif;
 										echo '<h2>'.__( 'Member Login','buddypress').'</h2>';
 										$bottom_message = '<a href="'.wp_lostpassword_url().'" class="lostpassword-link" style="display:none">'.__( 'Forgot your password?','buddypress') .'</a>';
 										$bottom_message .= __( 'Are you a member but haven’t yet registered on our portal?','example') .' <a href="'. esc_url( get_permalink() ).'?register=true">'. __( 'Register now!','example').'</a>';
-										if( function_exists('bp_is_active') ) {
+										if( !empty( $_REQUEST['redirect'] ) ){
+											$redirect_url =  site_url( '/'.$_REQUEST['redirect'].'/ ' );
+										}elseif( function_exists('bp_is_active') ) {
 											$redirect_url = home_url();
 										} else {
 											$redirect_url = '/wp-admin';
