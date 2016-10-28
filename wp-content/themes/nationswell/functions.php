@@ -1636,3 +1636,33 @@ function allstars_population_function( $value ) {
 //**** END custom gravity forms hook ***************/
 
 
+
+//**********************************************
+//----- Add shortcode to display share buttons
+function showShareButtons($atts) {
+	//Attributes
+	$atts = shortcode_atts( 
+		array(
+        	'tweet' => '',
+        	'hashtags' => '',
+    	),$atts, 'share' );
+    	
+	$facebook = '<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1174971189235255";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, \'script\', \'facebook-jssdk\'));</script>';
+
+	$facebook .= '<div><a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="'.$atts['tweet'].'" data-hashtags="'.$atts['hashtags'].'" data-url="'.get_permalink().'" data-via="NationSwell" data-lang="en" data-show-count="false">'.__('Tweet','buddypress').'</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
+	
+	$twitter = '<div class="fb-share-button" data-href="'.get_permalink().'" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.urlencode(get_permalink()).'%2F&amp;src=sdkpreparse">'.__('Share on Facebook','buddypress').'</a></div>';
+	$share_buttons = $facebook.$twitter;
+	return $share_buttons;
+}
+add_shortcode( 'share', 'showShareButtons' );
+
+//************ //End share buttons *********************/
+

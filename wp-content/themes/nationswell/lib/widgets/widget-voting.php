@@ -36,14 +36,7 @@ class Voting_Widget extends WP_Widget {
 				if ( count($entries)>0 ):
 					echo '<div class="gf_browser_chrome gform_wrapper module module--bg_wrapper">';
 					echo '<div class="gform_body form-unavailable">';
-					echo '<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1174971189235255";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, \'script\', \'facebook-jssdk\'));</script>';
+					
 					echo '<p>';
 					echo '<strong>';
 					echo __('You have already voted.','buddypress');
@@ -51,12 +44,11 @@ class Voting_Widget extends WP_Widget {
 					echo '<br>';
 					echo __('Thank you for your vote!<br>Spread the word:','buddypress');
 					echo '</p>';
-					echo '<div><a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Vote for your favorite  #NationSwellAllStars!" data-url="'.get_permalink().'" data-via="NationSwell" data-lang="en" data-show-count="false">'.__('Tweet','buddypress').'</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>';
-					
-					echo '<div class="fb-share-button" data-href="'.get_permalink().'" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.urlencode(get_permalink()).'%2F&amp;src=sdkpreparse">'.__('Share','buddypress').'</a></div>';
+					//share buttons
+					echo  do_shortcode('[share tweet="'.$instance['tweet'].'" hashtags="'.$instance['hashtags'].'"]');
 					
 					echo '<p class="ps">';
-					echo 'You’re logged in as '.$current_user->user_email.'.<br>Not '.$current_user->user_firstname.'? <a href="'.wp_logout_url( get_permalink() ).'">Log out &#8594;</a>';
+					echo 'You’re logged in as '.$current_user->user_email.'.<br>Not you? <a href="'.wp_logout_url( get_permalink() ).'">Log out &#8594;</a>';
 					echo '</p>';
 					
 					echo '</div></div>';
@@ -106,6 +98,22 @@ class Voting_Widget extends WP_Widget {
 		echo '<label for="'.$this->get_field_id('gravity_form_id').'">'. __( esc_attr( 'Gravity form:' ) ) .'</label>';
 		echo $select;
 		echo '</p>'; 
+		
+		echo '<p>';
+		$tweet = ! empty( $instance['tweet'] ) ? $instance['tweet'] : '';
+		
+		echo '<label for="'.$this->get_field_id( 'tweet' ).'">'. __( esc_attr( 'Tweet text (for share buttons):' ) ) .'</label>';
+		
+		echo '<input class="widefat" id="'.$this->get_field_id( 'tweet' ).'" name="'.$this->get_field_name( 'tweet' ).'" type="text" value="'.$tweet.'">';
+		echo '</p>';
+		
+		echo '<p>';
+		$hashtags = ! empty( $instance['hashtags'] ) ? $instance['hashtags'] : '';
+		
+		echo '<label for="'.$this->get_field_id( 'hashtags' ).'">'. __( esc_attr( 'Hashtags (use spaces to separate multiple hashtags, omit the #, it will be added automatically):' ) ) .'</label>';
+		
+		echo '<input class="widefat" id="'.$this->get_field_id( 'hashtags' ).'" name="'.$this->get_field_name( 'hashtags' ).'" type="text" value="'.$hashtags.'">';
+		echo '</p>';
 	}
 	/**
 	 * Sanitize widget form values as they are saved.
@@ -119,6 +127,11 @@ class Voting_Widget extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
+		
+		$instance['tweet'] = ( ! empty( $new_instance['tweet'] ) ) ? strip_tags( $new_instance['tweet'] ) : '';
+		
+		$instance['hashtags'] = ( ! empty( $new_instance['hashtags'] ) ) ? strip_tags( $new_instance['hashtags'] ) : '';
+		
 		$instance['gravity_form_id'] = ( ! empty( $new_instance['gravity_form_id'] ) ) ? strip_tags( $new_instance['gravity_form_id'] ) : '0';
 
 		return $instance;
