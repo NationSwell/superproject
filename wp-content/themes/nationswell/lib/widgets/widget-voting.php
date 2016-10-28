@@ -55,6 +55,10 @@ class Voting_Widget extends WP_Widget {
 					
 					echo '<div class="fb-share-button" data-href="'.get_permalink().'" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='.urlencode(get_permalink()).'%2F&amp;src=sdkpreparse">'.__('Share','buddypress').'</a></div>';
 					
+					echo '<p class="ps">';
+					echo 'You’re logged in as '.$current_user->user_email.'.<br>Not '.$current_user->user_firstname.'? <a href="'.wp_logout_url( get_permalink() ).'">Log out &#8594;</a>';
+					echo '</p>';
+					
 					echo '</div></div>';
 				else:
 					//otherwise, show the form;

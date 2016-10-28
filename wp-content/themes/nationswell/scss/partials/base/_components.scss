@@ -410,10 +410,16 @@
 			&.wp-social-login-provider-twitter {
 				background-color:$twitter;
 				@extend .icon_twitter;
+				&:before {
+					margin-top:2px;
+				}
 			}
 			&.wp-social-login-provider-google {
 				background-color:$google;
 				@extend .icon_google-plus;
+				&:before {
+					margin-top:5px;
+				}
 			}
 			&.wp-social-login-provider-linkedin {
 				background-color:$linkedin;
