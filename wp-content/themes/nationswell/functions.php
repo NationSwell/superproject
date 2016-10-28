@@ -1616,8 +1616,15 @@ add_action ( 'bp_pre_user_query', 'alphabetize_by_last_name' );
 
 add_filter( 'gform_field_value_candidate', 'allstars_population_function' );
 function allstars_population_function( $value ) {
-    $candidate = get_the_title();
+    //do this only of this is not the listing page
+    if ( !is_archive() ) {
+    	$candidate = get_the_title();
+    } else {
+    	$candidate="";
+    }
 	return $candidate;
 }
 
 //**** END custom gravity forms hook ***************/
+
+
