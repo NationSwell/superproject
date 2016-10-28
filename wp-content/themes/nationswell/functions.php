@@ -719,9 +719,17 @@ function ns_newsletter_shortcode() {
 add_shortcode( 'newsletter', 'ns_newsletter_shortcode' );
 
 function ns_currentPageSlug() {
-	global $post;
-	$post_slug=$post->post_name;
-	return $post_slug;
+	 //do this only of this is not the listing page
+    global $post;
+    if ( !is_archive() ) {
+		$page_slug=$post->post_name;
+	} else {
+		foreach((get_the_category()) as $cat) { 
+			$category_name = $cat->category_nicename;
+		}
+		$page_slug="/category/".$category_name;
+	}
+	return $page_slug;
 }
 add_shortcode( 'currentpage', 'ns_currentPageSlug' );
 
