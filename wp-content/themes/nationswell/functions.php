@@ -1672,9 +1672,16 @@ add_shortcode( 'share', 'showShareButtons' );
 //----- Add shortcode to print a logout link ---- //
 function show_logged_in_user() {
 	$logout_link = "";
+	if ( !is_archive() ):
+		$redirect = get_permalink();
+	else:
+		$queried_object = get_queried_object();
+		//var_dump( $queried_object );
+		$redirect = get_category_link($queried_object->term_id);
+	endif;
 	if ( is_user_logged_in() ):
 		$current_user = wp_get_current_user();
-		$logout_link = 'You’re logged in as '.$current_user->user_email.'.<br>Not you? <a href="'.wp_logout_url( get_permalink() ).'">Log out &#8594;</a>';
+		$logout_link = 'You’re logged in as '.$current_user->user_email.'.<br>Not you? <a href="'.wp_logout_url( $redirect ).'">Log out &#8594;</a>';
 	endif;
 	return $logout_link;
 }
