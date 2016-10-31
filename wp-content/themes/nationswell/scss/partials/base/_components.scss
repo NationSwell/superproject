@@ -380,7 +380,10 @@
 		.wp-social-login-provider {
 			width:100%;
 			display:inline-block;
-			padding:5px 0;
+			padding:3rem 0;
+			@include media($desktop) {
+				padding:5px 0;
+			}
 			color:$white;
 			font-weight:$bold;
 			margin-bottom:10px;
@@ -399,7 +402,11 @@
 				-webkit-font-smoothing:antialiased;
 				-moz-osx-font-smoothing:grayscale;
 				
-				font-size: 3rem;
+				font-size: 5rem;
+				@include media($desktop) {
+					font-size: 3rem;
+				}
+				
 				padding-right:1rem;
 			}
 			
@@ -461,25 +468,42 @@
 	  
 	  &:before {
 		font-family:"icons";
-		width: 7.6rem;
-  		height: 7.6rem;
+		
+		width: 13rem;
+  		height: 13rem;
+		margin-left: -7rem;
+		top: -7rem;
+		font-size: 8rem;
+		line-height: 15rem;
+			
+		@include media($desktop) {
+			width: 7.6rem;
+  			height: 7.6rem;
+			margin-left: -3.8rem;
+			top: -3.8rem;
+			font-size: 4rem;
+			line-height: 2.1em;
+		}
 		color:$white;
-		margin-left: -3.8rem;
-  		position: absolute;
-  		top: -3.8rem;
+		position: absolute;
   		left: 50%;
-  		font-size: 4rem;
-		background-color: $ns_red;
-		line-height: 2.1em;
+  		background-color: $ns_red;
+		
 		-moz-border-radius: 50%; 
 		-webkit-border-radius: 50%; 
 		border-radius: 50%;
 		text-align: center;
+		
+		@include media($desktop) {
+		}
 	  }
 	}
 	
 	.ps {
-		font-size: 1.3rem;
+		font-size: 3rem;
+		@include media($desktop) {
+			font-size: 1.3rem;
+		}
     	font-style: italic;
     	margin-top: 15px;
     }
@@ -487,9 +511,16 @@
 	.gform_confirmation_message {
 		h3 {
 			font-weight:$bold;
-			font-size: 3rem;
+			font-size: 5rem;
+			@include media($desktop) {
+				font-size: 3rem;
+			}
 		}
-		font-size: 1.8rem;
+		font-size: 3.4rem;
+		@include media($desktop) {
+			font-size: 1.8rem;
+		}
+		
     	line-height: 1.4;
     	margin-bottom: 3rem;
   		margin: 0 auto;
@@ -511,7 +542,10 @@
   /* dropdown select, used for AllStars voting */
   .gform_body {
   	&.form-unavailable {
-		font-size: 1.8rem;
+		font-size: 3.4rem;
+    	@include media($desktop) {
+    		font-size:1.8rem;
+    	}
     	line-height: 1.4;
   		margin: 0 auto;
 		padding:0 3.4rem;
@@ -585,6 +619,10 @@
       color: $ns_black;
       font-family: $gudea;
       -webkit-font-smoothing:antialiased;
+      font-size:3.4rem;
+      @include media($desktop) {
+      	font-size:1.8rem;
+      }
     }
 
     &.module--blue {

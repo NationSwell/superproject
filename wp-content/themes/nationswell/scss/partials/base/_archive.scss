@@ -66,6 +66,14 @@
   $medium: new-breakpoint(min-width 580px);
 
   .archive-share {
+  	.btn {
+  		font-size: 3.4rem;
+  		padding:3rem;
+  		@include media($medium) {
+			font-size: 1.4rem;
+			padding:1rem;
+		}
+	}
     @include media($medium) {
   		@include span-columns(2);
 	}
@@ -86,10 +94,13 @@
   		@include span-columns(7);
 	}
     font-family: $gudea;
-    font-size: 19px;
-    font-size: 1.9rem;
-
-    line-height: 2.4rem;
+    
+    font-size: 3.4rem;
+    line-height:auto;
+    @include media($medium) {
+		font-size: 1.9rem;
+	}
+    
     color: $ns_blue1;
     margin: 0 auto 3rem;
   }
