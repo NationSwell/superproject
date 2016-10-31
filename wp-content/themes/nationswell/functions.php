@@ -1666,3 +1666,19 @@ add_shortcode( 'share', 'showShareButtons' );
 
 //************ //End share buttons *********************/
 
+
+
+//**********************************************
+//----- Add shortcode to print a logout link ---- //
+function show_logged_in_user() {
+	$logout_link = "";
+	if ( is_user_logged_in() ):
+		$current_user = wp_get_current_user();
+		$logout_link = 'You’re logged in as '.$current_user->user_email.'.<br>Not you? <a href="'.wp_logout_url( get_permalink() ).'">Log out &#8594;</a>';
+	endif;
+	return $logout_link;
+}
+add_shortcode( 'show_current_user', 'show_logged_in_user' );
+//************ //End logout link *********************/
+
+

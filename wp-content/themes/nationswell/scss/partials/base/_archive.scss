@@ -88,17 +88,16 @@
   		@include span-columns(2);
 	}
   }
-
   .archive-description-copy {
     @include media($medium) {
   		@include span-columns(7);
 	}
-    font-family: $gudea;
-    
+    font-family: $gudea;  
     font-size: 3.4rem;
     line-height:auto;
     @include media($medium) {
 		font-size: 1.9rem;
+		line-height: 2.5rem;
 	}
     
     color: $ns_blue1;

@@ -501,6 +501,7 @@
 	
 	.ps {
 		font-size: 3rem;
+		text-align:center;
 		@include media($desktop) {
 			font-size: 1.3rem;
 		}

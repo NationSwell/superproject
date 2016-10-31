@@ -48,16 +48,18 @@ class Voting_Widget extends WP_Widget {
 					echo  do_shortcode('[share tweet="'.$instance['tweet'].'" hashtags="'.$instance['hashtags'].'"]');
 					
 					echo '<p class="ps">';
-					echo 'You’re logged in as '.$current_user->user_email.'.<br>Not you? <a href="'.wp_logout_url( get_permalink() ).'">Log out &#8594;</a>';
+					//show currently logged in user with a logout link
+					echo do_shortcode('[show_current_user]');
+					//echo 'You’re logged in as '.$current_user->user_email.'.<br>Not you? <a href="'.wp_logout_url( get_permalink() ).'">Log out &#8594;</a>';
 					echo '</p>';
 					
 					echo '</div></div>';
 				else:
 					//otherwise, show the form;
-					echo do_shortcode('[gravityform id="'.$instance['gravity_form_id'].'" title="false" description="false" ajax="true"]');
+					echo do_shortcode('[gravityform id="'.$instance['gravity_form_id'].'" title="false" description="true" ajax="true"]');
 				endif;
 			else:
-				echo do_shortcode('[gravityform id="'.$instance['gravity_form_id'].'" title="false" description="false" ajax="true"]');
+				echo do_shortcode('[gravityform id="'.$instance['gravity_form_id'].'" title="false" description="true" ajax="true"]');
 			endif;
 		endif;
 		echo $args['after_widget'];
