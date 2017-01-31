@@ -186,7 +186,7 @@ endif;
                             
                             <div class="intro">
                             	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1 class="logo"><?php _e( 'NationSwell Council', 'buddypress' ); ?></h1></a>
-                           		<p style="font-size:2rem;"><?php _e( 'A diverse community of accomplished professionals who are passionate about service', 'buddypress' ); ?></p>
+                           		<p style="font-size:1.8rem;"><?php _e( 'A diverse community of accomplished professionals who are passionate about service. Log in to the member portal below, or keep scrolling to learn more.', 'buddypress' ); ?></p>
                             </div>
                             
                             
@@ -309,7 +309,7 @@ endif;
                             </div>
                       		<!--<a href="#content" class="btn red"><span>Sign in</span></a>-->
                             <div class="link-more">
-                            	<a class="learn-more" href="#welcome">Learn More</a>
+                            	<a class="learn-more button-primary" href="#welcome">Learn More</a>
                             </div>
                         </div>
                     </div>
