@@ -208,6 +208,10 @@ strong, b {
 		h1, h2, h3 {
 			@extend .bp-header;
 		}
+		h1.logo {
+			 background-size: 75% auto;
+			 
+		}
 		
 		//height:100%;
 		@include display(flex);
@@ -215,7 +219,8 @@ strong, b {
 		@include align-items(center);
 		@include align-content(center);
   		@include justify-content(center); 
-		
+  		
+  				
 		font-size: 16px;
 		line-height: 20px;
 		
@@ -236,12 +241,12 @@ strong, b {
 		.intro {
 			p {
 				display:block;
-				padding: 20px 0;
+				padding: 0;
 				font-family:$pt-serif-italic;
 			}
 			
 			display: block;
-			max-width: 80%;
+			max-width: 100%;
 			text-align: center;
 			margin: 0 auto;
 			
@@ -270,7 +275,7 @@ strong, b {
 				}
 			}
 			p {
-				margin-bottom:15px;
+				margin-bottom:1rem;
 			}
 			.login-remember, .login-submit {
 				line-height:1 !important;
@@ -299,11 +304,14 @@ strong, b {
 			}
 		}
 		.login-form-inputs {
-			padding:15px 30px 70px 30px;
+			padding:1rem 3rem 6rem 3rem;
 		}
 		.login-form-bottom {
 			background:$gray6;
-			padding:30px;
+			padding:1rem 3rem;
+			p {
+				margin-bottom:0;
+			}
 		}
 		
 		.lostpassword-button {
@@ -324,7 +332,7 @@ strong, b {
 		
 		.link-more {
 			width:100%;
-			padding-top:30px;
+			padding-top:15px;
 		}
 		.learn-more {
 			text-align:center;
