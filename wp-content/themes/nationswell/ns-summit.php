@@ -73,8 +73,8 @@ Template Name: Summit
 	<div class="overlay" style="background-image:url(<?php echo $feat_image; ?>);"></div>
 		<div class="logo-content">
 			<h1 class="logo">Summit on Service</h1>
-      <a href="#" class="btn red lightbox-trigger"><span>Request Invitation</span></a>
-      <a href="https://www.eventbrite.com/e/nationswell-summit-on-service-tickets-18025091534" class="btn red" target="_blank"><span>Register Now</span></a>
+      <!--<a href="#" class="btn red lightbox-trigger"><span>Request Invitation</span></a>
+      <a href="https://www.eventbrite.com/e/nationswell-summit-on-service-tickets-18025091534" class="btn red" target="_blank"><span>Register Now</span></a>-->
 		</div>
 	<div class="content-holder">
 		<div class="photo-strips">
@@ -210,8 +210,8 @@ Template Name: Summit
 <section id="footer">
   <div class="inner">
 	  <h1 class="dark-logo">Summit on Service</h1>
-	  <a href="#" class="btn red lightbox-trigger"><span>Request Invitation</span></a>
-    <a href="https://www.eventbrite.com/e/nationswell-summit-on-service-tickets-18025091534" class="btn red" target="_blank"><span>Register Now</span></a>
+	  <!--<a href="#" class="btn red lightbox-trigger"><span>Request Invitation</span></a>
+    <a href="https://www.eventbrite.com/e/nationswell-summit-on-service-tickets-18025091534" class="btn red" target="_blank"><span>Register Now</span></a>-->
     <div class="copyright">
       &copy;<?php echo date('Y'); ?> NationSwell. All rights reserved.<br />
       <span class="site-design">Carefully crafted by <a href="http://milkandpixels.com" target="_blank">Milk & Pixels</a></span>
