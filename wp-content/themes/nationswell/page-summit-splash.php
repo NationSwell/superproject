@@ -38,6 +38,7 @@ $context['background_image_alt'] = $background_image[alt];
 $context['previous_years'] = get_field('previous_years');
 $context['email_sign_up_copy'] = get_field('email_sign_up_copy');
 $context['current_year'] = date("Y");
+$context['home'] = esc_url( home_url( '/' ) );
 
 if (post_password_required($post->ID)){
     Timber::render('static-password.twig', $context);

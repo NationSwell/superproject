@@ -13,21 +13,27 @@
 
 {% block content %}
 	<header class="summit_splash_header">
-		<img src="" alt="NationSwell logo">
+		<a href="{{ home }}"><img src="http://nationswell.com/wp-content/uploads/2014/03/logo.png" alt="NationSwell logo"></a>
     </header>
     <div class="summit_splash__container">
         <main class="summit_splash__main-column" role="main">
+        	<!-- Start main content box -->
         	<div class="summit_splash__content">
         		<h1 class="summit_splash__hed">{{ post.title }}</h1>
                 <h3>{{ page_content }}</h3>
                 
                 <div class="summit_splash__details">
-                     <span class="location">{{ when }}</span> <span class="time">{{ where }}</span>
+                     {% if when %}
+                     	<div class="time icon icon_calendar_v2"><span>{{ when }}</span></div> 
+                     {% endif %}
+                     {% if where %}
+                     	<div class="location icon icon_marker_v2"><span>{{ where }}</span></div>
+                     {% endif %}
                 </div>
                 
                  <div class="summit_splash__mailchimp">
                     
-                    {% if mailchimp_list_id %}
+                    {% if mailchimp_list_id and mailchimp_user_id %}
                     	<p>{{ email_sign_up_copy }}</p>
                     
                     	<!-- Begin MailChimp Signup Form -->
@@ -51,25 +57,25 @@
                 </div>
                 <div class="summit_splash__previous">
                 	{% for item in previous_years %}
-                	
-                		<a href="{{ item.summit_url }}">{{ item.year }}</a> &nbsp;
-                		
-                	
+                		<a href="{{ item.summit_url }}">{{ item.year }}</a> &nbsp;       		
                 	{% endfor %}
                 </div>
             </div>
+            <!-- //END main content box -->
         </main>
-        
+        <!-- start footer -->
+    		<footer>
+    			<div class="summit_splash_social">
+    				 <a href="{{ nationswell_facebook }}" target="_blank" data-track='{"label": "facebook"}' class="icon icon_facebook"></a> &nbsp;  
+                	<a href="{{ nationswell_twitter }}" target="_blank" data-track='{"label": "twitter"}' class="icon icon_twitter"></a>
+    			</div>
+    			<div class="summit_splash_copyright">
+    				All content &#169; {{ current_year }} NationSwell. All rights reserved.
+    			</div>
+    		</footer>
+    	<!-- //end footer -->
     </div>
-    <!-- start footer -->
-    <footer>
-    	<div class="">
-    	</div>
-    	<div class="">
-    		All content &#169; {{ current_year }} NationSwell. All rights reserved.
-    	</div>
-    </footer>
-    <!-- //end footer -->
+    
    
 
 {% endblock %}
