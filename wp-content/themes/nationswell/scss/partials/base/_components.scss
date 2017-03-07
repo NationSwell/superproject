@@ -542,7 +542,9 @@
 				padding:20px 0 0 !important
 			}
 		}
+		
 	}
+	
 	.summit_splash__previous {
 		margin-top:3rem;
 		font-family: 'Montserrat', sans-serif;
@@ -550,6 +552,14 @@
 		a {
 			color:$ns_navy1 !important;
 		}
+	}
+	footer {
+		position:absolute;
+		bottom:0;
+		text-align:center;
+		margin:3rem;
+		color:$ns_navy1 !important;
+		width:100%;
 	}
 }
 
