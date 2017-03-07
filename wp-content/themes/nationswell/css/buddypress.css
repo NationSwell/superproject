@@ -2774,7 +2774,7 @@ input[type="submit"]:-moz-focus-inner {
 }
 /* line 599, ../scss/partials/base/_components.scss */
 .summit_splash__container footer a {
-  font-size: 3rem;
+  font-size: 24px;
 }
 /* line 601, ../scss/partials/base/_components.scss */
 .summit_splash__container footer a:link, .summit_splash__container footer a:active, .summit_splash__container footer a:visited {
