@@ -2659,8 +2659,8 @@ input[type="submit"]:-moz-focus-inner {
 }
 /* line 497, ../scss/partials/base/_components.scss */
 .summit_splash__container .summit_splash__main-column h3 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
 }
 /* line 502, ../scss/partials/base/_components.scss */
 .summit_splash__container .summit_splash__main-column .summit_splash__details .location, .summit_splash__container .summit_splash__main-column .summit_splash__details .time {
