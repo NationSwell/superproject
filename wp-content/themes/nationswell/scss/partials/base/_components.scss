@@ -473,6 +473,7 @@
 	font-family: 'Roboto', sans-serif;
 	color:$ns_navy1;
 	font-size:16px;
+	line-height:24px;
 		
 	.summit_splash__main-column {
 		background-color:$white;
@@ -489,12 +490,13 @@
 			font-weight:700;
 		}
 		h1 {
-			font-size:4rem;
+			font-size:43px;
+			line-height:47px;
 			padding-bottom:1rem;
 		}
 		h3 {
-			font-size:1.7rem;
-			line-height:2.2rem;
+			font-size:20px;
+			line-height:24px;
 		}
 		.summit_splash__details {
 			.location, .time {
@@ -506,7 +508,7 @@
 					margin:0 auto;
 				}
 				span {
-					font-size:2.5rem;
+					font-size:24px;
 					padding:2rem 0;
 					font-family: 'Roboto', sans-serif;
 				}
@@ -521,7 +523,7 @@
 		
 		.summit_splash__mailchimp {
 			margin-top:3rem;
-			line-height:2.3rem;
+			line-height:24px;
 		}
 			
 		.email-signup {
@@ -603,6 +605,14 @@
 			}
 			&:hover {
 				color:$ns_red1;
+			}
+		}
+		.summit_splash_copyright {
+			span {
+				display:block;
+				@include media($desktop) {
+					display:inline;
+				}
 			}
 		}
 	}
