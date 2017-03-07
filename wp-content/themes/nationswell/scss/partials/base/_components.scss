@@ -448,6 +448,114 @@
 /*****************  //END **********************/
 
 
+/**********  Summit Splash Page ***************/
+.summit_splash_header {
+	text-align:center;
+	padding:3rem;
+	position:absolute;
+	text-align:center;
+	width:100%;
+	top:0;
+	left:0;
+}
+.summit_splash__container {
+	height:100vh;
+	width:100vw;
+	@include display(flex);
+	@include align-items(center);
+	@include align-content(center);		
+	@include flex-direction(column);
+	@include justify-content(center);
+		
+	.summit_splash__main-column {
+		background-color:$white;
+		text-align:center;
+		max-width:75%;
+		padding:3rem;
+		font-family: 'Roboto', sans-serif;
+		color:$ns_navy1;
+		font-size:16px;
+		h1, h3 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight:700;
+		}
+		h1 {
+			font-size:4rem;
+			padding-bottom:1rem;
+		}
+		h3 {
+			font-size:2rem;
+		}
+		.summit_splash__details {
+			span {
+				display: inline-block;
+			}
+		}
+		
+		.summit_splash__mailchimp {
+			margin-top:3rem;
+		}
+			
+		.email-signup {
+			margin-top:3rem;
+			#mce-EMAIL {
+				border-top:none;
+				border-right:none;
+				border-left:none;
+				border-bottom:2px solid $ns_navy1;
+				font-size:16px;
+				font-family: 'Roboto', sans-serif;
+				padding:7px 0;
+				margin-right:0;
+				width:100%;
+				@include media($desktop) {
+					margin-right:5%;
+					width:70%;
+				}
+			}
+			#mc-embedded-subscribe {
+				font-family: 'Roboto', sans-serif;
+				text-transform:none;
+				font-size:16px;
+				color:$ns_navy1;
+				border:2px solid $ns_navy1;
+				width:100%;
+				margin-top:2rem;
+				display:block;
+				@include media($desktop) {
+					width:25%;
+					margin-top:0;
+					display:inline;
+				}
+				&:hover {
+					background:$ns_navy1;
+					color:$white;
+				}
+			}
+			.mce_inline_error, #mce-error-response {
+				background:none !important;
+				color: $ns_red1 !important;
+				padding:5px !important;
+				text-align:left;
+			}
+			#mce-success-response {
+				padding:20px 0 0 !important
+			}
+		}
+	}
+	.summit_splash__previous {
+		margin-top:3rem;
+		font-family: 'Montserrat', sans-serif;
+		font-weight:700;
+		a {
+			color:$ns_navy1 !important;
+		}
+	}
+}
+
+
+/*****************  //END **********************/
+
 
 
 .widget.widget_voting_widget {

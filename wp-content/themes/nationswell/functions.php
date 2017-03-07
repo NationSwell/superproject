@@ -1688,4 +1688,3 @@ function show_logged_in_user() {
 add_shortcode( 'show_current_user', 'show_logged_in_user' );
 //************ //End logout link *********************/
 
-
