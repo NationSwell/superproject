@@ -1616,6 +1616,29 @@ function alphabetize_by_last_name( $bp_user_query ) {
 }
 add_action ( 'bp_pre_user_query', 'alphabetize_by_last_name' );
 
+/* Set notification component for notifying users about new events */
+function ns_event_post_published_notification( $post_id, $post ) {
+	if( $post->post_type=='nscevent' ){
+		if ( bp_is_active( 'messages' ) ) {
+			$author_id = $post->post_author;
+			$blogusers = get_users( 'role=member' );
+			$recipient_ids = array();
+			// Array of WP_User objects.
+			foreach ( $blogusers as $user ) {
+				$recipient_ids[] = $user->ID;
+			}
+			// send buddypress notification to matched user ids
+			$msg_args = array(
+				'sender_id' => $author_id,
+				'recipients' => $recipient_ids,
+				'subject' => 'Notification: a new event has been published',
+				'content' => 'Event '.get_the_title( $post_id ).' has been published. For more details, please visit '.get_post_permalink( $post_id ),
+			);
+			messages_new_message($msg_args);
+		}
+	}
+}
+add_action( 'publish_nscevent', 'ns_event_post_published_notification', 99, 2 );
 
 //**********************************************
 //----- Custom hook for gravity forms used in AllStar voting widget
