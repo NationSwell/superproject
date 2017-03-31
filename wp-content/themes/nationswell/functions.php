@@ -1525,6 +1525,16 @@ function bp_create_custom_search_form_dropdowns($field_id, $field_name, $field_k
 	return $search_form_html;
 }
 
+/* Hook bp_activity_before_save to check what activity types to save */
+function bp_exclude_activity_types_from_recording( &$activity ) {
+	$excluded_types = array( 'updated_profile' );
+	if ( empty( $activity->id ) && in_array( $activity->type , $excluded_types ) ) {
+		//reset either component or type, both will cause a failure in saving activity
+		$activity->type = '';
+    }
+}
+add_action( 'bp_activity_before_save', 'bp_exclude_activity_types_from_recording' );
+
 // MAKE SLUGS FROM TEXT
 function slugify($text) {
   // replace non letter or digits by -
