@@ -1459,7 +1459,6 @@ function bp_directory_members_custom_search_form() {
 	foreach ( $profilefields as $profilefield ) {
 		$fieldsHash[$profilefield->name]=$profilefield->id;
 	}
-
 	$query_arg = bp_core_get_component_search_query_arg( 'members' );
 	if ( ! empty( $_REQUEST[ $query_arg ] ) ) {
 		$search_value = stripslashes( $_REQUEST[ $query_arg ] );
@@ -1471,7 +1470,7 @@ function bp_directory_members_custom_search_form() {
 	// Council branch
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Council branch'], 'Location', 'council_branch');
 	// Industry
-	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Industry'], 'Industry', 'industry');
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Industry'], 'Industry', 'industry', true);
 	// NationSwell topics
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['NationSwell topics'], 'NationSwell topics', 'nationswell_topics');
 	// Interested in
@@ -1483,6 +1482,9 @@ function bp_directory_members_custom_search_form() {
 	$search_form_html .= '</a>';
 	$search_form_html .= '<input type="hidden" name="upage" id="upage" value="1" />';
 	$search_form_html .= '</form>';
+	$search_form_html .= '<script>jQuery( document ).ready(function() {';
+	$search_form_html .=' jQuery(".multiselectbox").chosen({placeholder_text_multiple: \''.__('Industry','buddypress').'\'});';
+	$search_form_html .= '});</script>';
 	/**
 	 * Filters the Members component search form.
 	 *
@@ -1493,15 +1495,26 @@ function bp_directory_members_custom_search_form() {
 	echo apply_filters( 'bp_directory_members_search_form', $search_form_html );
 }
 
-function bp_create_custom_search_form_dropdowns($field_id, $field_name, $field_key){
+function bp_create_custom_search_form_dropdowns($field_id, $field_name, $field_key, $is_multiple_select=false){
 	global $wpdb;
 	$search_form_html = '';
 	if( !empty($field_id) ){
-		$search_form_html .='<label for="'.$field_key.'"><select id="'.$field_key.'" name="'.$field_key.'">';
 		$options = $wpdb->get_results( "SELECT id, name FROM ".$wpdb->prefix."bp_xprofile_fields where type='option' and parent_id =".$field_id." order by name");
-		$search_form_html .= '<option value="">'.__($field_name).'</option>';
+		$search_form_html .='<label for="'.$field_key.'">';
+		if($is_multiple_select){
+			$search_form_html .='<select id="'.$field_key.'" name="'.$field_key.'[]" class="multiselectbox" multiple="multiple">';
+		}else{
+			$search_form_html .='<select id="'.$field_key.'" name="'.$field_key.'">';
+			$search_form_html .= '<option value="">'.__($field_name).'</option>';
+		}
+		$selectedHash = array();
+		if(is_array($_REQUEST[$field_key])){
+			$selectedHash = $_REQUEST[$field_key];
+		}else{
+			$selectedHash[] = $_REQUEST[$field_key];
+		}
 		foreach ( $options as $option ) {
-			if($_REQUEST[$field_key]==$option->name){
+			if(in_array($option->name, $selectedHash)){
 				$search_form_html .= '<option value="'.$option->name.'" selected="selected">'.__($option->name).'</option>';
 			}else{
 				$search_form_html .= '<option value="'.$option->name.'">'.__($option->name).'</option>';

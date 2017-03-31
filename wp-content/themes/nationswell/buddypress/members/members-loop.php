@@ -41,7 +41,11 @@ if(!empty( $_REQUEST )  && !empty( $_REQUEST['members_search_submit'] )){
 	}
 
 	if(!empty($_REQUEST['industry'])){
-		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where lower(value) ='".esc_sql($_REQUEST['industry'])."')";
+		$dataHash = array();
+		foreach($_REQUEST['industry'] as $industry_value){
+			$dataHash[]="lower(value) ='".esc_sql($industry_value)."'";
+		}
+		$whereSql2[]="user_id in (SELECT user_id FROM ".$wpdb->prefix."bp_xprofile_data where ".implode(" or ", $dataHash).")";
 	}
 
 	if(!empty($_REQUEST['nationswell_topics'])){

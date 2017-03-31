@@ -1830,6 +1830,13 @@ strong, b {
 		#interested_in {
 			margin-right:0;
 		}
+		#industry_chosen{
+			@include media($medium) {
+				width:23%!important;
+				margin-right:2.66666%;
+				margin-bottom:0;
+			}
+		}
 		input[type="submit"] {
 			@extend .button;
 			margin-top:30px;
