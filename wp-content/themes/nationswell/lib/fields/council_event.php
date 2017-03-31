@@ -206,6 +206,7 @@ if (function_exists("register_field_group")) {
                     'default_value' => array('--- Select branch location ---'=>'--- Select branch location ---'),
                     'choices' => array(
 						'DC'	=> 'DC',
+						'National'	=> 'National',
 						'New York City'	=> 'New York City',
 						'San Francisco' => 'San Francisco'
 					),
