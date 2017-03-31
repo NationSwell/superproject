@@ -112,6 +112,28 @@
         console.log(this);
     });
 
+    //Add warning if user tries to navigate away with unsaved changes
+    if($('.bp-user.my-account.my-profile.profile-edit').length){
+		$('select').change(function() {
+			setProfileWindowUnload();
+		});
+		$('input').change(function() {
+			setProfileWindowUnload();
+		});
+		$('textarea').change(function() {
+			setProfileWindowUnload();
+		});
+		$('form#profile-edit-form-').submit(function() {
+			$(window).unbind('beforeunload');
+		});
+    }
+
+    function setProfileWindowUnload(){
+		$(window).bind('beforeunload', function(){
+			return 'Are you sure you want to leave profile edit without saving changes';
+		});
+    }
+
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
