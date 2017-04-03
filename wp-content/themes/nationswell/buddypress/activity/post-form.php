@@ -9,8 +9,19 @@
 ?>
 
 <?php
-//only available for admins
-if ( is_user_logged_in () && current_user_can( 'manage_options' ) ): ?>
+//only available for admins and members
+
+$user_can_post_activity = false;
+if(current_user_can( 'manage_options' )){
+	$user_can_post_activity = true;
+}else{
+	$user = wp_get_current_user();
+	if ( in_array( 'member', (array) $user->roles ) ) {
+		$user_can_post_activity = true;
+	}
+}
+
+if ( is_user_logged_in () &&  $user_can_post_activity): ?>
 <form action="<?php bp_activity_post_form_action(); ?>" method="post" id="whats-new-form" name="whats-new-form" role="complementary">
 
 	<?php

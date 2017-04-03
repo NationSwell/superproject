@@ -1532,6 +1532,14 @@ function bp_exclude_activity_types_from_recording( &$activity ) {
 		//reset either component or type, both will cause a failure in saving activity
 		$activity->type = '';
     }
+    // Send email if there is an activity update
+    if($activity->type == 'activity_update'){
+		$email = get_bloginfo('admin_email');
+		$to = $email;
+		$subject = 'NationSwell: Activity update from user';
+		$body = 'A NationSwell user has posted an announcement. You can review at '.get_admin_url().'admin.php?page=bp-activity' ;
+		wp_mail( $to, $subject, $body, array() );
+    }
 }
 add_action( 'bp_activity_before_save', 'bp_exclude_activity_types_from_recording' );
 
