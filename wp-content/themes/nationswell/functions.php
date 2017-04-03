@@ -1535,6 +1535,21 @@ function bp_exclude_activity_types_from_recording( &$activity ) {
 }
 add_action( 'bp_activity_before_save', 'bp_exclude_activity_types_from_recording' );
 
+/* Hook bp_get_activity_content_body to add target attribute to anchor */
+function ns_get_activity_content_body_add_link_target($content, $activity){
+	$dom = new DomDocument();
+	$dom->loadHTML($content,LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+	$output = array();
+	if($dom->getElementsByTagName('a')->length){
+		foreach ($dom->getElementsByTagName('a') as $item) {
+		   $item->setAttribute('target','_blank');
+		}
+		$content = $dom->saveHTML();
+	}
+	return $content;
+}
+add_action('bp_get_activity_content_body','ns_get_activity_content_body_add_link_target');
+
 // MAKE SLUGS FROM TEXT
 function slugify($text) {
   // replace non letter or digits by -
