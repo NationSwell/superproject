@@ -99,6 +99,7 @@ a.clear-value {
 				input {
 					box-shadow:none !important;
 					padding-top:19px !important;
+					
 				}
 			}
 		}
@@ -1819,6 +1820,7 @@ strong, b {
 		#nationswell_topics,
 		#interested_in {
 			margin-bottom:10px;
+			vertical-align:top;
 			@extend .member-form-input;
 			@extend .member-form-select;
 			@include media($medium) {
@@ -1831,10 +1833,30 @@ strong, b {
 			margin-right:0;
 		}
 		#industry_chosen{
+			.chosen-choices {
+				margin-bottom:10px;
+				@include media($medium) {
+					margin-bottom:0;
+				}
+				li.search-field {
+					//width:100%;
+					input {
+						/*background-image: url(../icons/arrow-down.svg) !important;
+						background-repeat: no-repeat  !important;
+						background-position:98% 3px  !important;
+						background-size: 30px  !important;
+						width:100% !important;*/
+						margin:0;
+						color:$ns_black;
+					}
+				}
+			}
+			
 			@include media($medium) {
 				width:23%!important;
 				margin-right:2.66666%;
 				margin-bottom:0;
+				
 			}
 		}
 		input[type="submit"] {
