@@ -1695,8 +1695,8 @@ function ns_event_post_published_notification( $new_status, $old_status, $post  
 					$msg_args = array(
 						'sender_id' => $author_id,
 						'recipients' => $user->ID,
-						'subject' => 'Notification: a new event has been published',
-						'content' => 'Event '.get_the_title( $post->ID ).' has been published. For more details, please visit '.$event_url,
+						'subject' => 'A new event has been added to the NationSwell Council member portal',
+						'content' => '<strong>'.get_the_title( $post->ID ).'</strong>... For details, please visit: '.$event_url,
 					);
 					messages_new_message($msg_args);
 				}
