@@ -1467,10 +1467,11 @@ function bp_directory_members_custom_search_form() {
 	}
 
 	$search_form_html = '<form action="'.$bp->root_domain . '/' . BP_MEMBERS_SLUG.'" method="post" id="search-members-form"><label for="members_search"><input type="text" name="' . esc_attr( $query_arg ) . '" id="members_search" placeholder="'. esc_attr( $search_value ) .'" /></label>';
-	// Council branch
-	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Council branch'], 'Location', 'council_branch');
 	// Industry
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Industry'], 'Industry', 'industry', true);
+	// Council branch
+	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['Council branch'], 'Location', 'council_branch');
+	
 	// NationSwell topics
 	$search_form_html .= bp_create_custom_search_form_dropdowns($fieldsHash['NationSwell topics'], 'NationSwell topics', 'nationswell_topics');
 	// Interested in
