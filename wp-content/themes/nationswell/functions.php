@@ -1533,7 +1533,8 @@ function bp_exclude_activity_types_from_recording( &$activity ) {
 		$activity->type = '';
     }
     // Send email if there is an activity update
-    if($activity->type == 'activity_update'){
+    if($activity->type == 'activity_update' || $activity->type == 'activity_comment'){
+		$activity->content = ns_replace_smart_chars($activity->content);
 		$email = get_bloginfo('admin_email');
 		$to = $email;
 		$subject = 'NationSwell: Activity update from user';
@@ -1557,6 +1558,23 @@ function ns_get_activity_content_body_add_link_target($content, $activity){
 	return $content;
 }
 add_action('bp_get_activity_content_body','ns_get_activity_content_body_add_link_target');
+
+function ns_replace_smart_chars( $str ) {
+	// Replace the smart quotes that cause question marks to appear
+	$str = str_replace(
+		array("\xe2\x80\x98", "\xe2\x80\x99", "\xe2\x80\x9c", "\xe2\x80\x9d", "\xe2\x80\x93", "\xe2\x80\x94", "\xe2\x80\xa6"),
+		array("'", "'", '"', '"', '-', '--', '...'), $str);
+	// Replace the smart quotes that cause question marks to appear
+	$str = str_replace(
+		array(chr(145), chr(146), chr(147), chr(148), chr(150), chr(151), chr(133)),
+		array("'", "'", '"', '"', '-', '--', '...'), $str);
+	// Replace special chars (tm) (c) (r)
+	$str = str_replace(
+		array('™', '©', '®'),
+		array('&trade;', '&copy;', '&reg;'), $str);
+	// Return the fixed string
+	return $str;
+}
 
 // MAKE SLUGS FROM TEXT
 function slugify($text) {
