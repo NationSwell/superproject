@@ -56,7 +56,8 @@ global $bp;
         <!-- upcoming events -->
 		<div class="upcoming-events">
         	<?php if (!empty($upcoming_events)):
-				foreach($upcoming_events as $key=>$event){ ?>
+				foreach($upcoming_events as $key=>$event){?>
+					<a name="event-<?php echo($event['ID']); ?>"></a>
 					<div class="item-info">
 						<div class="item-icon">
 							<span class="icon icon_calendar"></span>

@@ -1688,19 +1688,18 @@ function ns_event_post_published_notification( $new_status, $old_status, $post  
 			if ( bp_is_active( 'messages' ) ) {
 				$author_id = $post->post_author;
 				$blogusers = get_users( 'role=member' );
-				$recipient_ids = array();
 				// Array of WP_User objects.
 				foreach ( $blogusers as $user ) {
-					$recipient_ids[] = $user->ID;
-				}
 				// send buddypress notification to matched user ids
-				$msg_args = array(
-					'sender_id' => $author_id,
-					'recipients' => $recipient_ids,
-					'subject' => 'Notification: a new event has been published',
-					'content' => 'Event '.get_the_title( $post->ID ).' has been published. For more details, please visit '.get_post_permalink( $post->ID ),
-				);
-				messages_new_message($msg_args);
+					$event_url = get_site_url().'/members/'.bp_core_get_username( $user->ID ).'/nsc-events/?location=&search_events=true#event-'.$post->ID;
+					$msg_args = array(
+						'sender_id' => $author_id,
+						'recipients' => $user->ID,
+						'subject' => 'Notification: a new event has been published',
+						'content' => 'Event '.get_the_title( $post->ID ).' has been published. For more details, please visit '.$event_url,
+					);
+					messages_new_message($msg_args);
+				}
 			}
 		}
 	}

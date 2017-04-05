@@ -41,6 +41,7 @@ if (class_exists('TimberPost')) {
             foreach ($eventPosts as $event) {
                 $dateObj = DateTime::createFromFormat('Ymd', get_field('event_date', $event->ID));
                 $eventData[] = array (
+					'ID' => $event->ID,
                     'name' => $event->post_title,
                     'url' => get_permalink($event),
                     'description' => get_field('dek', $event->ID),
@@ -68,6 +69,7 @@ if (class_exists('TimberPost')) {
             foreach ($eventPosts as $event) {
                 $dateObj = DateTime::createFromFormat('Ymd', get_field('event_date', $event->ID));
                 $eventData[] = array (
+					'ID' => $event->ID,
                     'name' => $event->post_title,
                     'url' => get_permalink($event),
                     'description' => get_field('dek', $event->ID),
