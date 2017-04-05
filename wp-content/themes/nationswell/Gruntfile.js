@@ -117,11 +117,11 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['js/src/*.js', 'js/src/vendor/*.js'],
-                tasks: ['js']
+                tasks: ['default']
             },
             twig: {
                 files: 'views-client/*.twig',
-                tasks: ['js']
+                tasks: ['default']
             }
         }
     });
