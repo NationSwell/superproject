@@ -20,6 +20,7 @@ global $bp;
 			if(empty($_REQUEST['location']) && empty($_REQUEST['search_events'])){
 				$_REQUEST['location'] = bp_get_profile_field_data(array('field'=>'Council branch','user_id'=>$bp->loggedin_user->id));
 			}
+			$location_exist = false;
 			$field_key = "field_576b17d4f5dac";
 			$field = get_field_object($field_key);
 			if( $field ){
@@ -30,6 +31,7 @@ global $bp;
 					foreach( $field['choices'] as $key => $value )
 					{
 						if($_REQUEST['location']== $value){
+							$location_exist = true;
 							echo '<option value="' . $key . '" selected="selected">' . $value . '</option>';
 						}else{
 							echo '<option value="' . $key . '">' . $value . '</option>';
@@ -41,7 +43,11 @@ global $bp;
 					echo '<input type="hidden" name="past_events" value="true"/>';
 				}
 				echo '</form>';
-			}?>
+			}
+			if(empty($location_exist)){
+				$_REQUEST['location'] = '';
+			}
+			?>
 			<script>
 			jQuery(function() {
 				jQuery("#location").change(function() {
