@@ -207,8 +207,8 @@ if (function_exists("register_field_group")) {
                     'choices' => array(
 						'DC'	=> 'DC',
 						'New York City'	=> 'New York City',
-						'Other Locations'	=> 'Other Locations',
-						'San Francisco' => 'San Francisco'
+						'San Francisco' => 'San Francisco',
+						'Other Cities'	=> 'Other Cities',
 					),
 					'allow_null' => 0,
                     'multiple' => 0,
