@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" {{ language_attributes }}>
+<head>
+	 <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300" rel="stylesheet">
+     <link href="/wp-content/themes/nationswell/css/allstars.css" rel="stylesheet">
+
+    
+    {% block head %}
+        {% include 'html-header.twig' %}
+    {% endblock %}
+
+
+</head>
+<body class="{{ body_class }}" >
+
+
+{% block content %}
+	<header class="">
+		<a href="{{ home }}"><img src="http://nationswell.com/wp-content/uploads/2014/03/logo.png" alt="NationSwell logo"></a>
+        {% if button_link %}
+            <div class="location icon icon_marker_v2"><span>{{ button_link }}</span></div>
+        {% endif %}
+    </header>
+
+    <!-- Hero -->
+    <section id="allstar_hero">
+        <div class="container">
+            <div id="logo_container">
+                <h1>
+                    <img class="" src="/wp-content/themes/nationswell/img/allstars_2017/allstars_logo_@2x.png" alt="Tech Impact AllStars 2017" title="Tech Impact AllStars 2017" style="">
+                </h1>
+
+                <div class="container">
+                    <div id="partner_copy">
+                        <p style="float: left;">
+                            in partnership with
+                        </p>
+                    </div>
+
+                    <div id="partner_logo">
+                        <img class="" src="/wp-content/themes/nationswell/img/allstars_2017/Comcast_NBC_white.png" alt="Comcast NBC" title="Tech Impact AllStars 2017" style="width: 100%; max-width: 150px; float: right;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- End Hero -->
+
+    <div class="container">
+
+        <section id="main_info">
+            <h4 style="text-align: center;">
+                Who’s using technology to solve America’s greatest challenges? Tell us who should be a Tech Impact AllStar! 
+            </h4>
+
+            <p>
+                Technology is at the forefront of solutions in almost every major sector today: healthcare, food equity, government, education, national service, environment, and beyond. It is more relevant than ever before, with advancements from alternative energy to voter access tools to customized digital learning.
+            </p>
+
+            <p>
+                Together with Comcast NBCUniversal, we’re on a mission to find the innovators behind these solutions and help them continue to move the needle forward.
+            </p>
+        </section>
+        
+    </div>
+
+
+
+    <!-- Previous AllStars -->
+    <section id="previous_allstars">
+        <div id="allstars_content">
+            <h3>
+                Previous AllStars
+            </h3>
+        </div>
+
+        <div id="allstars_photo">
+            <img src="http://placehold.it/500x250" style="width: 100%;"/>
+        </div>
+    </section>
+    <!-- END Previous AllStars -->
+
+
+
+    <!-- Finalists -->
+    <div class="container">
+        <section class="finalists">
+            <h3 style="text-align: center;">
+                5 AllStar Finalists will receive:
+            </h3>
+
+            <div class="finalist-benefit">
+                <img src="http://placehold.it/200x150"/>
+                <p>
+                    One 3-5 minute video about their incredible work, produced by our award-winning journalists
+                </p>
+            </div>
+
+            <div class="finalist-benefit">
+                <img src="http://placehold.it/200x150"/>
+                <p>
+                    One 700-900 word feature article to accompany the video spotlight
+                </p>
+            </div>
+
+            <div class="finalist-benefit">
+                <img src="http://placehold.it/200x150"/>
+                <p>
+                    Targeted distribution of the above to prominent media outlets, bloggers, influencers, and more
+                </p>
+            </div>
+        </section>
+
+        <section class="finalists">
+
+            <div class="finalist-benefit">
+                <img src="http://placehold.it/200x150"/>
+                <p>
+                    An all-expense-paid trip to New York City
+                </p>
+            </div>
+
+            <div class="finalist-benefit">
+                <img src="http://placehold.it/200x150"/>
+                <p>
+                    A speaking slot at the NationSwell Summit on Solutions
+                </p>
+            </div>
+
+            <div class="finalist-benefit">
+                <img src="http://placehold.it/200x150"/>
+                <p>
+                    A chance to win the Tech Impact Award, a $10,000 grant to help further their important work
+                </p>
+            </div>
+
+        </section>
+    </div>
+    <!-- END Finalists -->
+
+
+
+    <!-- Ballot -->
+    <div class="container">
+        <section id="ballot">
+            <h4 style="text-align: center;">
+                We need you to help us find our next Tech AllStars. Nominate someone using technology to solve America’s greatest challenges.
+            </h4>
+
+            <div class="nominate-ballot">
+                <h2>
+                    Tech AllStars 2017 <br>Nomination Form
+                </h2>
+            </div>
+
+        </section>
+    </div>
+    <!-- END Ballot -->
+
+
+    <!-- In the News -->
+    
+    <section id="allstar_news">
+        <div class="container">
+            <div class="allstar-news-block">
+                <h3>AllStars in the News</h3>
+            </div>
+
+            <div class="allstar-news-block">
+                <h3>#TechImpactAllStars</h3>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- END In the News -->
+
+
+    <!-- start footer -->
+    <footer>
+        <div class="summit_splash_social">
+             <a href="{{ nationswell_facebook }}" target="_blank" data-track='{"label": "facebook"}' class="icon icon_facebook"></a> &nbsp;  
+            <a href="{{ nationswell_twitter }}" target="_blank" data-track='{"label": "twitter"}' class="icon icon_twitter"></a>
+        </div>
+        <div class="summit_splash_copyright">
+            <span>All content &#169; {{ current_year }} NationSwell.</span> <span>All rights reserved.</span>
+        </div>
+    </footer>
+<!-- //end footer -->
+   
+
+{% endblock %}

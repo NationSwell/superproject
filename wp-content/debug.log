@@ -1,0 +1,1213 @@
+[19-Apr-2017 21:47:07 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:47:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:47:07 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:50:13 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:50:13 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:50:13 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:55:35 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:55:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:55:35 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:40 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:58:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:40 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:42 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:58:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:42 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:43 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:58:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:43 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:43 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:58:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:43 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:56 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 21:58:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 21:58:56 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:02:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:02:26 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:02:26 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:10:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:10:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:10:18 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:06 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:24:06 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:06 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:20 UTC] PHP Warning:  mysqli_real_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:24:20 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:24:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:25 UTC] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:25 UTC] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:24:37 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:37 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:59 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:24:59 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:24:59 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:25:08 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:25:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:25:08 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:25:13 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:25:13 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:25:13 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:25:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:25:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:25:18 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:30:23 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1538
+[19-Apr-2017 22:30:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:30:23 UTC] PHP Warning:  mysql_connect(): No such file or directory in /Users/tedchang/Sites/nationswell/wp-includes/wp-db.php on line 1568
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[19-Apr-2017 22:41:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[19-Apr-2017 22:44:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[19-Apr-2017 22:44:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[19-Apr-2017 22:44:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[19-Apr-2017 22:44:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[19-Apr-2017 22:46:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[19-Apr-2017 22:47:38 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[20-Apr-2017 15:58:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[20-Apr-2017 15:58:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:58:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[20-Apr-2017 15:59:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:09 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:09 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:09 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[20-Apr-2017 15:59:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 15:59:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 15:59:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 15:59:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:08 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[20-Apr-2017 17:22:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[20-Apr-2017 17:22:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[20-Apr-2017 17:22:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:22:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:24:08 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:26:09 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:28:12 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:30:13 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:32:14 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:47:19 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[20-Apr-2017 17:47:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[20-Apr-2017 17:47:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:32 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:47:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 17:47:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 17:47:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 17:48:59 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:49:59 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:51:21 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:52:21 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:54:21 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:09 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:11 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:12 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:13 UTC] {"status_code":200,"status_txt":"OK","data":{"url":"http://bit.ly/2pHwOmw","hash":"2pHwOmw","global_hash":"2pHEwN8","long_url":"http://nationswell.local/?page_id=19815","new_hash":1}}
+[20-Apr-2017 17:55:28 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:31 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:31 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:31 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:42 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:43 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:45 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:46 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:47 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:47 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:55:49 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:56:04 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:56:32 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:56:42 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:56:43 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:56:44 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:56:52 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:56:53 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:57:08 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:57:23 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:57:38 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:57:53 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:08 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:16 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:23 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:32 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:33 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:34 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:34 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:49 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:58:58 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:04 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:05 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:06 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:07 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:07 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:12 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:12 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:13 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:22 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:23 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:25 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:42 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:53 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:56 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:56 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 17:59:58 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:13 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:28 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:41 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:42 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:46 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:47 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:48 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:50 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:52 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:53 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:56 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:00:58 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:01:13 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:02:16 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:04:16 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:06:17 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:08:18 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:10:19 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:12:20 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:30:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:34:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 18:35:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:26:12 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 19:26:27 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[20-Apr-2017 19:27:33 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[20-Apr-2017 19:28:28 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 19:28:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/SA_Hawaii_3.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/Crop_4th.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/TP_1_Hintsa_101215_21680.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/11/EDIT_2_Salgado_NS_015.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/general_013.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2015/12/GoAK_1.png
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/05/GettyImages-1669630.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/Katrina_SpadeCOMPOST36.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/ConnectHome-66-1.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/DSC_0603-e1454704194199.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/02/1.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/03/3_Pamela-2014-2.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/467512355.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/2.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2016/04/George_Hirsch.jpg
+[20-Apr-2017 19:28:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/05/stargate1.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:49 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:28:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:30:29 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 19:31:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:31:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:31:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:31:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:31:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:31:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:32:30 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 19:34:31 UTC] PHP Notice:  bp_setup_current_user was called <strong>incorrectly</strong>. The current user is being initialized without using $wp->init(). Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 1.7.) in /Users/tedchang/Sites/nationswell/wp-includes/functions.php on line 4137
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:39:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:41:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:41:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:41:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:41:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:41:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:41:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:41:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:41:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:41:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:41:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:41:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:41:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:42:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:42:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:42:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 19:49:23 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:20:15 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:21:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:23:44 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:23:44 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:23:44 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:23:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:23:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:23:45 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:23:46 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:23:46 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:23:46 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:23:46 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:23:46 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:23:46 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:29:19 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:44:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:45:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:49:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:50:14 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 20:50:16 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 20:50:16 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 20:50:16 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:04:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:04:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:04:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:04:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:04:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:07:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:07:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:07:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:07:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:07:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:07:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:07:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:08:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:08:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:08:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:08:29 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:08:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:09:21 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:11:42 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:16:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[20-Apr-2017 21:16:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 04:26:36 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 04:26:36 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 04:26:36 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 04:27:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 04:27:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 04:27:34 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 04:32:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 04:32:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 04:32:35 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 04:33:57 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 04:33:57 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 04:33:57 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 04:35:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 04:35:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 04:35:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:14:11 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:14:11 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:14:11 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:16:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:16:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:16:04 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:16:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:16:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:16:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:17:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:17:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:17:31 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:19:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:19:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:19:37 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:20:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:20:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:20:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:22:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:22:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:22:30 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 06:22:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 06:22:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 06:22:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:36:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:36:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:36:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:37:24 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:37:24 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:37:24 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:39:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:39:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:39:20 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:39:56 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:39:56 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:39:56 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:40:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:40:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:40:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:40:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:40:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:40:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:40:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:40:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:40:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:40:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:40:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:40:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:41:01 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:41:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:41:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:46:57 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:46:57 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:46:57 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:47:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:47:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:47:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:48:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:48:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:48:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:50:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:50:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:50:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:52:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:52:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:52:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:53:05 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:53:05 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:53:06 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:53:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:53:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:53:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:55:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:55:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:55:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 15:57:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 15:57:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 15:57:07 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:01:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:01:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:01:17 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:01:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:01:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:01:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:07:09 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:07:09 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:07:09 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:09:24 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:09:24 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:09:24 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:10:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:10:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:10:48 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:12:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:12:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:12:27 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:14:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:14:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:14:43 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:14:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:14:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:14:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:26:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:26:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:26:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:29:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:30:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:30:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:30:08 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 16:30:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 16:30:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 16:30:10 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:35:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:35:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:35:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:43:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:43:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:43:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:44:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:44:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:44:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:45:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:45:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:45:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:45:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:45:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:45:22 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:47:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:47:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:47:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:49:00 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:49:00 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:49:00 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:49:36 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:49:36 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:49:36 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:49:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:49:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:49:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:49:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:49:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:49:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:50:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:50:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:50:50 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:50:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:51:00 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:51:00 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:52:13 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:52:13 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:52:13 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 17:59:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 17:59:02 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 17:59:03 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:01:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:01:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:01:47 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:04:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:04:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:04:28 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:06:58 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:06:58 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:06:58 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:08:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:08:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:08:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:11:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:11:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:11:51 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:15:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:15:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:15:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:16:26 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:16:26 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:16:26 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:16:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:16:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:16:59 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:18:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:18:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:18:18 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:18:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:18:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:18:52 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:18:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:18:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:18:55 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:19:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:19:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:19:12 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:21:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:21:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:21:53 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
+[21-Apr-2017 18:22:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/mobile-shower.jpg
+[21-Apr-2017 18:22:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2013/12/welcome-nationswell.jpg
+[21-Apr-2017 18:22:54 UTC] Error loading /Users/tedchang/Sites/nationswell/wp-content/uploads/2014/01/jason-redman-portrait.jpg
