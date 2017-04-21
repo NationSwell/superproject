@@ -9,9 +9,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'montserratBold';
+  src: url('../fonts/montserrat/montserrat-bold.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'austin';
+  src: url('../fonts/austin/austin-bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $purple-allstar: #7E1F86;
 $purple-hero: #3D3B74;
-
+$tiny: (max-width 450px);
 
 
 
@@ -20,12 +35,56 @@ div.container {
 	max-width: 1000px !important;
 }
 
+body.page-template-page-allstar {
+	background-color: #fff;
+	font-size: 13px;
+	line-height: 22px;
+
+	@include media($desktop) {
+		font-size: 14px;
+		line-height: 28px;
+	}
+
+	p {
+		color: #5f5f5f;
+		font-family: montserrat;
+	}
+
+	h1, h2 {
+		font-family: austin;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-family: montserratBold;
+		font-size: 15px;
+		line-height: 24px;
+		margin-bottom: 20px;
+
+		@include media($desktop) {
+			font-size: 22px;
+			line-height: 36px;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+
+
 #allstar_hero {
 	@include span-columns(12);
 	background-color: $purple-hero;
 	background-image: url('../img/allstars_2017/allstars_hero_@2x.jpg');
 	background-repeat: none;
 	background-size: cover;
+	padding: 40px 0;
+
+	@include media($tiny) {
+		padding: 20px 0;
+	}
 }
 
 #logo_container {
@@ -42,25 +101,80 @@ div.container {
 	}
 
 	img {
-		max-width: 110px;
-		margin: 20px auto;
+		width: 100%;
+		max-width: 170px;
+		margin: 0px auto 20px;
+
+		@include media($tiny) {
+	        max-width: 110px;
+	    }
 
 		@include media($desktop) {
 			max-width: 300px;
+			margin: 0px auto 60px;
 		}
 	}
 }
 
 #partner_copy {
 	@include span-columns(6);
+
+	@include media($tiny) {
+        p {
+        	font-size: 11px;
+        	margin-right: 15px;
+        }
+    }
+
+	p {
+		color: #fff;
+		margin-top: 20px;
+		margin-right: 10px;
+		float: right;
+	}
 }
 
 #partner_logo {
 	@include span-columns(6);
+
+	img {
+		width: 100%;
+		max-width: 135px;
+		margin-left: 10px;
+	}
+	
+	@include media($tiny) {
+		max-width: 120px;
+	}
+
+	@include media($desktop) {
+		img {
+			max-width: 150px;
+		}
+	}
+
+	
 }
 
 #main_info {
-	@include span-columns(12);
+	@include span-columns(10);
+	@include shift(1);
+
+	@include media($tiny) {
+        @include span-columns(12);
+        @include shift(0);
+    }
+
+	@include media($desktop) {
+		@include span-columns(8);
+		@include shift(2);
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
 }
 
 #previous_allstars {
@@ -151,16 +265,6 @@ div.container {
 /* END Deslete */
 
 
-
-body.page-template-page-allstar {
-	background-color: #fff;
-	font-size: 12px;
-
-	p {
-		color: #5f5f5f;
-		font-family: montserrat;
-	}
-}
 
 
 

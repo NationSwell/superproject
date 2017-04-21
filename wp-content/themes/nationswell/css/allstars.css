@@ -3658,6 +3658,16 @@ body.category-whats-possible .sidebar .widget_partners .module--partners:before 
   src: url("../fonts/montserrat/montserrat-regular.woff") format("woff"), url("../fonts/montserrat/montserrat-regular.otf") format("otf");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'montserratBold';
+  src: url("../fonts/montserrat/montserrat-bold.woff") format("woff"), url("../fonts/montserrat/montserrat-bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'austin';
+  src: url("../fonts/austin/austin-bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
 div.container {
   max-width: 68em;
   margin-left: auto;
@@ -3668,6 +3678,32 @@ div.container {
     display: table;
     clear: both; }
 
+body.page-template-page-allstar {
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 22px; }
+  @media screen and (min-width: 768px) {
+    body.page-template-page-allstar {
+      font-size: 14px;
+      line-height: 28px; } }
+  body.page-template-page-allstar p {
+    color: #5f5f5f;
+    font-family: montserrat; }
+  body.page-template-page-allstar h1, body.page-template-page-allstar h2 {
+    font-family: austin; }
+  body.page-template-page-allstar h2 {
+    font-size: 24px; }
+  body.page-template-page-allstar h3 {
+    font-family: montserratBold;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      body.page-template-page-allstar h3 {
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 40px; } }
+
 #allstar_hero {
   float: left;
   display: block;
@@ -3676,9 +3712,13 @@ div.container {
   background-color: #3D3B74;
   background-image: url("../img/allstars_2017/allstars_hero_@2x.jpg");
   background-repeat: none;
-  background-size: cover; }
+  background-size: cover;
+  padding: 40px 0; }
   #allstar_hero:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 450px) {
+    #allstar_hero {
+      padding: 20px 0; } }
 
 #logo_container {
   float: left;
@@ -3700,11 +3740,16 @@ div.container {
   #logo_container h1 {
     text-align: center; }
   #logo_container img {
-    max-width: 110px;
-    margin: 20px auto; }
+    width: 100%;
+    max-width: 170px;
+    margin: 0px auto 20px; }
+    @media screen and (max-width: 450px) {
+      #logo_container img {
+        max-width: 110px; } }
     @media screen and (min-width: 768px) {
       #logo_container img {
-        max-width: 300px; } }
+        max-width: 300px;
+        margin: 0px auto 60px; } }
 
 #partner_copy {
   float: left;
@@ -3713,6 +3758,15 @@ div.container {
   width: 48.82117%; }
   #partner_copy:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 450px) {
+    #partner_copy p {
+      font-size: 11px;
+      margin-right: 15px; } }
+  #partner_copy p {
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right; }
 
 #partner_logo {
   float: left;
@@ -3721,14 +3775,47 @@ div.container {
   width: 48.82117%; }
   #partner_logo:last-child {
     margin-right: 0; }
+  #partner_logo img {
+    width: 100%;
+    max-width: 135px;
+    margin-left: 10px; }
+  @media screen and (max-width: 450px) {
+    #partner_logo {
+      max-width: 120px; } }
+  @media screen and (min-width: 768px) {
+    #partner_logo img {
+      max-width: 150px; } }
 
 #main_info {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   #main_info:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 450px) {
+    #main_info {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      #main_info:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 768px) {
+    #main_info {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      #main_info:last-child {
+        margin-right: 0; } }
 
 #previous_allstars {
   float: left;
@@ -3886,11 +3973,5 @@ div.container {
       margin-right: 0; } }
 
 /* END Deslete */
-body.page-template-page-allstar {
-  background-color: #fff;
-  font-size: 12px; }
-  body.page-template-page-allstar p {
-    color: #5f5f5f;
-    font-family: montserrat; }
 
 /*# sourceMappingURL=allstars.css.map */
