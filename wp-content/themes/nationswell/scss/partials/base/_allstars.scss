@@ -55,7 +55,8 @@ body.page-template-page-allstar {
 	}
 
 	h2 {
-		font-size: 24px;
+		font-size: 42px;
+		margin-bottom: 16px;
 	}
 
 	h3 {
@@ -142,7 +143,7 @@ body.page-template-page-allstar {
 		max-width: 135px;
 		margin-left: 10px;
 	}
-	
+
 	@include media($tiny) {
 		max-width: 120px;
 	}
@@ -179,6 +180,11 @@ body.page-template-page-allstar {
 
 #previous_allstars {
 	@include span-columns(12);
+
+	p, h2 {
+		color: #fff;
+	}
+
 	background-color: $purple-allstar;
 }
 
@@ -199,9 +205,15 @@ body.page-template-page-allstar {
 #allstars_content {
 	@include span-columns(12);
 
+	@include media($tiny) {
+		@include span-columns(12);
+	}
+
 	@include media($desktop) {
 		@include span-columns(6);
 	}
+
+	padding: 40px 0 40px 20px;
 }
 
 #allstars_photo {
@@ -216,6 +228,11 @@ body.page-template-page-allstar {
 	@include span-columns(12);
 	margin-bottom: 20px;
 	text-align: center;
+
+	img {
+		width: 100%;
+		max-width: 124px;
+	}
 
 	@include media($desktop) {
 		@include span-columns(4);

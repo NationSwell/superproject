@@ -3692,7 +3692,8 @@ body.page-template-page-allstar {
   body.page-template-page-allstar h1, body.page-template-page-allstar h2 {
     font-family: austin; }
   body.page-template-page-allstar h2 {
-    font-size: 24px; }
+    font-size: 42px;
+    margin-bottom: 16px; }
   body.page-template-page-allstar h3 {
     font-family: montserratBold;
     font-size: 15px;
@@ -3825,6 +3826,8 @@ body.page-template-page-allstar {
   background-color: #7E1F86; }
   #previous_allstars:last-child {
     margin-right: 0; }
+  #previous_allstars p, #previous_allstars h2 {
+    color: #fff; }
 
 .finalists {
   float: left;
@@ -3855,9 +3858,18 @@ body.page-template-page-allstar {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  padding: 40px 0 40px 20px; }
   #allstars_content:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 450px) {
+    #allstars_content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #allstars_content:last-child {
+        margin-right: 0; } }
   @media screen and (min-width: 768px) {
     #allstars_content {
       float: left;
@@ -3892,6 +3904,9 @@ body.page-template-page-allstar {
   text-align: center; }
   .finalist-benefit:last-child {
     margin-right: 0; }
+  .finalist-benefit img {
+    width: 100%;
+    max-width: 124px; }
   @media screen and (min-width: 768px) {
     .finalist-benefit {
       float: left;
