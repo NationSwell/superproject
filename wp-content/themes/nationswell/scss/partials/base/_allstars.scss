@@ -196,12 +196,43 @@ body.page-template-page-allstar {
 	@include span-columns(12);
 }
 
-#allstar_news {
-	background-color: $purple-allstar;
+.finalist-benefit {
 	@include span-columns(12);
+	margin-bottom: 20px;
+	text-align: center;
+
+	img {
+		width: 100%;
+		max-width: 124px;
+	}
+
+	@include media($desktop) {
+		@include span-columns(4);
+	}
+}
+
+.nominate-ballot {
+	@include span-columns(12);
+	background-color: #EFEFEF;
+	margin-bottom: 60px;
+
+	@include media($desktop) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+.nominate-ballot-content {
+	@include span-columns(12);
+
+	@include media($desktop) {
+		@include span-columns(8);
+		@include shift(2);
+	}
 }
 
 
+/* Previous AllStars */
 #allstars_content {
 	@include span-columns(12);
 
@@ -223,29 +254,17 @@ body.page-template-page-allstar {
 		@include span-columns(6);
 	}
 }
+/* END Previous AllStars */
 
-.finalist-benefit {
+
+/* AllStars News */
+#allstar_news {
 	@include span-columns(12);
-	margin-bottom: 20px;
-	text-align: center;
-
-	img {
-		width: 100%;
-		max-width: 124px;
-	}
-
-	@include media($desktop) {
-		@include span-columns(4);
-	}
-}
-
-.nominate-ballot {
-	@include span-columns(12);
-	background-color: #EFEFEF;
-
-	@include media($desktop) {
-		@include span-columns(8);
-		@include shift(2);
+	background-color: $purple-allstar;
+	padding: 40px 0;
+	h2 {
+		color: #fff;
+		text-align: center;
 	}
 }
 
@@ -257,29 +276,57 @@ body.page-template-page-allstar {
 	}
 }
 
-
-/* Delete after */
-#red {
-	background-color: red;
-	@include span-columns(4 of 12);
+.news-container {
+	background-color: #fff;
+	margin-bottom: 40px;
 }
 
-#blue {
-	background-color: blue;
-	@include span-columns(4 of 12);
+.news-article-container {
+	height: 300px;
+	overflow: auto;
+	padding: 10px 0;
+
+	@include media($desktop) {
+		height: 500px;
+	}
+
 }
 
-#green {
-	background-color: green;
-	@include span-columns(4 of 12);
+.twitter-container {
+	height: 300px;
+
+	@include media($desktop) {
+		height: 500px;
+	}
 }
 
-#red, #blue, #green {
-	@media screen and (max-width: 768px){
-        @include span-columns(12 of 12);
-    }
+.news-article  {
+	border-bottom: solid 1px #e5e5e5;
+	margin-bottom: 10px;
+
+	@include media($desktop) {
+		padding: 10px;
+	}
 }
-/* END Deslete */
+
+.news-article-photo {
+	@include span-columns(2);
+
+	img {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+.news-article-content {
+	@include span-columns(10);
+}
+
+/* END AllStars News */
+
+
+
+
 
 
 

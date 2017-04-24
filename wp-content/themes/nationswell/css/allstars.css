@@ -3845,15 +3845,64 @@ body.page-template-page-allstar {
   #ballot:last-child {
     margin-right: 0; }
 
-#allstar_news {
-  background-color: #7E1F86;
+.finalist-benefit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center; }
+  .finalist-benefit:last-child {
+    margin-right: 0; }
+  .finalist-benefit img {
+    width: 100%;
+    max-width: 124px; }
+  @media screen and (min-width: 768px) {
+    .finalist-benefit {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .finalist-benefit:last-child {
+        margin-right: 0; } }
+
+.nominate-ballot {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #EFEFEF;
+  margin-bottom: 60px; }
+  .nominate-ballot:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 768px) {
+    .nominate-ballot {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .nominate-ballot:last-child {
+        margin-right: 0; } }
+
+.nominate-ballot-content {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
-  #allstar_news:last-child {
+  .nominate-ballot-content:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 768px) {
+    .nominate-ballot-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .nominate-ballot-content:last-child {
+        margin-right: 0; } }
 
+/* Previous AllStars */
 #allstars_content {
   float: left;
   display: block;
@@ -3895,44 +3944,20 @@ body.page-template-page-allstar {
       #allstars_photo:last-child {
         margin-right: 0; } }
 
-.finalist-benefit {
+/* END Previous AllStars */
+/* AllStars News */
+#allstar_news {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-bottom: 20px;
-  text-align: center; }
-  .finalist-benefit:last-child {
+  background-color: #7E1F86;
+  padding: 40px 0; }
+  #allstar_news:last-child {
     margin-right: 0; }
-  .finalist-benefit img {
-    width: 100%;
-    max-width: 124px; }
-  @media screen and (min-width: 768px) {
-    .finalist-benefit {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .finalist-benefit:last-child {
-        margin-right: 0; } }
-
-.nominate-ballot {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  background-color: #EFEFEF; }
-  .nominate-ballot:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 768px) {
-    .nominate-ballot {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%; }
-      .nominate-ballot:last-child {
-        margin-right: 0; } }
+  #allstar_news h2 {
+    color: #fff;
+    text-align: center; }
 
 .allstar-news-block {
   float: left;
@@ -3950,43 +3975,50 @@ body.page-template-page-allstar {
       .allstar-news-block:last-child {
         margin-right: 0; } }
 
-/* Delete after */
-#red {
-  background-color: red;
+.news-container {
+  background-color: #fff;
+  margin-bottom: 40px; }
+
+.news-article-container {
+  height: 300px;
+  overflow: auto;
+  padding: 10px 0; }
+  @media screen and (min-width: 768px) {
+    .news-article-container {
+      height: 500px; } }
+
+.twitter-container {
+  height: 300px; }
+  @media screen and (min-width: 768px) {
+    .twitter-container {
+      height: 500px; } }
+
+.news-article {
+  border-bottom: solid 1px #e5e5e5;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 768px) {
+    .news-article {
+      padding: 10px; } }
+
+.news-article-photo {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
-  #red:last-child {
+  width: 14.70196%; }
+  .news-article-photo:last-child {
     margin-right: 0; }
+  .news-article-photo img {
+    width: 100%;
+    margin-bottom: 10px; }
 
-#blue {
-  background-color: blue;
+.news-article-content {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
-  #blue:last-child {
+  width: 82.94039%; }
+  .news-article-content:last-child {
     margin-right: 0; }
 
-#green {
-  background-color: green;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%; }
-  #green:last-child {
-    margin-right: 0; }
-
-@media screen and (max-width: 768px) {
-  #red, #blue, #green {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    #red:last-child, #blue:last-child, #green:last-child {
-      margin-right: 0; } }
-
-/* END Deslete */
+/* END AllStars News */
 
 /*# sourceMappingURL=allstars.css.map */
