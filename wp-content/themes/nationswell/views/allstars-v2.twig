@@ -16,10 +16,12 @@
 
 {% block content %}
 	<header class="">
-		<a href="{{ home }}"><img src="http://nationswell.com/wp-content/uploads/2014/03/logo.png" alt="NationSwell logo"></a>
-        {% if button_link %}
-            <div class="location icon icon_marker_v2"><span>{{ button_link }}</span></div>
-        {% endif %}
+        <div class="container">
+    		<a href="{{ home }}"><img src="http://nationswell.com/wp-content/uploads/2014/03/logo.png" alt="NationSwell logo"></a>
+            {% if button_link %}
+                <div class="location icon icon_marker_v2"><span>{{ button_link }}</span></div>
+            {% endif %}
+        </div>
     </header>
 
     <!-- Hero -->
