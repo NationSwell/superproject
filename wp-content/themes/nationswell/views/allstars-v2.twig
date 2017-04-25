@@ -15,12 +15,19 @@
 
 
 {% block content %}
-	<header class="">
+	<header id="header-bg">
         <div class="container">
-    		<a href="{{ home }}"><img src="http://nationswell.com/wp-content/uploads/2014/03/logo.png" alt="NationSwell logo"></a>
-            {% if button_link %}
-                <div class="location icon icon_marker_v2"><span>{{ button_link }}</span></div>
-            {% endif %}
+            
+    		<a href="{{ home }}">
+                <img class="ns_header_logo" src="/wp-content/themes/nationswell/img/allstars_2017/nationswell_blue.png" alt="NationSwell logo">
+            </a>
+            
+            <a href="#ballot" class="" style="float: right;">
+                Nominate
+            </a>
+            <!-- {% if button_link %} -->
+                <!-- <div class="location icon icon_marker_v2"><span>{{ button_link }}</span></div> -->
+            <!-- {% endif %} -->
         </div>
     </header>
 
@@ -338,6 +345,17 @@
         </div>
     </footer>
 <!-- //end footer -->
-   
+
+<script>
+    window.addEventListener('scroll', function () {
+      document.body.classList[
+        window.scrollY > 100 ? 'add': 'remove'
+      ]('scrolled');
+    });
+</script>
 
 {% endblock %}
+
+
+
+
