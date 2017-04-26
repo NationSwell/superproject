@@ -1,0 +1,50 @@
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2017 Schwartzco Inc.
+        License: 1704-FTAAML     
+*/
+
+
+@font-face {
+  font-family: 'Austin Web';
+  src: url('Austin-BoldItalic-Web.eot');
+  src: url('Austin-BoldItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('Austin-BoldItalic-Web.woff2') format('woff2'),
+       url('Austin-BoldItalic-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Austin-BoldItalic-Web {
+  font-family: 'Austin Web';
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Austin Web';
+  src: url('Austin-Bold-Web.eot');
+  src: url('Austin-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('Austin-Bold-Web.woff2') format('woff2'),
+       url('Austin-Bold-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Austin-Bold-Web {
+  font-family: 'Austin Web';
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+

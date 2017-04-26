@@ -24,8 +24,9 @@
   font-style: normal;
 }
 
-$purple-allstar: #7E1F86;
+$purple-allstar: #400095;
 $purple-hero: #3D3B74;
+$aqua: #66CEDB;
 $grey-ballot: #EAEDED;
 $blue-link: #00AEEF;
 $tiny: (max-width 450px);
@@ -47,7 +48,7 @@ body.page-template-page-allstar {
 		line-height: 28px;
 	}
 
-	p, label {
+	p, label, ul li {
 		color: #5f5f5f;
 		font-family: montserrat;
 	}
@@ -352,9 +353,7 @@ body.scrolled  {
 		}
 	}
 
-	
-
-	background-color: $purple-allstar;
+	background-color: $blue-link;
 }
 
 .finalists {
@@ -365,11 +364,13 @@ body.scrolled  {
 	h2.title-receive {
 		font-size: 35px;
 		margin-top: 20px;
+		color: $blue-link;
 	}
 
 	span.title-5 {
 		font-size: 104px;
 		line-height: 0.8;
+		color: $purple-allstar;
 	}
 
 	@include media($desktop) {
@@ -499,13 +500,21 @@ body.scrolled  {
 
 
 /* AllStars News */
+#allstar_news_bg {
+	background-color: $aqua;
+}
+
 #allstar_news {
 	@include span-columns(12);
-	background-color: $purple-allstar;
 	padding: 40px 0;
+
 	h2 {
 		color: #fff;
 		text-align: center;
+	}
+
+	@include media($desktop) {
+		padding: 80px 0;
 	}
 }
 
@@ -566,8 +575,60 @@ body.scrolled  {
 /* END AllStars News */
 
 
+/* Footer */
+
+.footer-container {
+	@include span-columns(12);
+
+	margin: 20px auto;
+
+	small {
+		font-size: 11px;
+	}
+}
+
+.footer-allstar-logo {
+	@include span-columns(6);
+
+	img.ns_header_logo {
+		width: 174px;
+	}
+
+	@include media($desktop) {
+		@include span-columns(8);
+	}
+
+	@include media($tiny) {
+		@include span-columns(12);
+	}
+}
+
+.footer-allstar-links {
+	@include span-columns(6);
+
+	ul li {
+		font-size: 11px;
+		line-height: 1.5;
+		display: inline;
+		margin-right: 17px;
+
+		@include media($tiny) {
+			display: block;
+		}
+	}
 
 
+	@include media($desktop) {
+		@include span-columns(4);
+
+	}
+
+	@include media($tiny) {
+		@include span-columns(12);
+	}
+}
+
+/* END Footer */
 
 
 

@@ -3686,7 +3686,7 @@ body.page-template-page-allstar {
     body.page-template-page-allstar {
       font-size: 16px;
       line-height: 28px; } }
-  body.page-template-page-allstar p, body.page-template-page-allstar label {
+  body.page-template-page-allstar p, body.page-template-page-allstar label, body.page-template-page-allstar ul li {
     color: #5f5f5f;
     font-family: montserrat; }
   body.page-template-page-allstar label {
@@ -3751,7 +3751,7 @@ body.page-template-page-allstar {
     padding-right: 0; }
   body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
     background-color: #fff;
-    color: #7E1F86;
+    color: #400095;
     margin-top: 8px;
     margin-bottom: 0;
     font-size: 13px;
@@ -3818,7 +3818,7 @@ body.scrolled #header-bg {
   background-color: #fff;
   transition: background-color .5s; }
 body.scrolled button.nominate, body.scrolled .button.nominate {
-  background-color: #7E1F86;
+  background-color: #400095;
   color: #fff;
   transition: background-color .5s; }
 
@@ -3940,7 +3940,7 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-color: #7E1F86; }
+  background-color: #00AEEF; }
   #previous_allstars:last-child {
     margin-right: 0; }
   #previous_allstars p, #previous_allstars h2 {
@@ -3960,10 +3960,12 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
     margin-right: 0; }
   .finalists h2.title-receive {
     font-size: 35px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #00AEEF; }
   .finalists span.title-5 {
     font-size: 104px;
-    line-height: 0.8; }
+    line-height: 0.8;
+    color: #400095; }
   @media screen and (min-width: 768px) {
     .finalists p {
       font-size: 14px; }
@@ -4132,18 +4134,23 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
 
 /* END Previous AllStars */
 /* AllStars News */
+#allstar_news_bg {
+  background-color: #66CEDB; }
+
 #allstar_news {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-color: #7E1F86;
   padding: 40px 0; }
   #allstar_news:last-child {
     margin-right: 0; }
   #allstar_news h2 {
     color: #fff;
     text-align: center; }
+  @media screen and (min-width: 768px) {
+    #allstar_news {
+      padding: 80px 0; } }
 
 .allstar-news-block {
   float: left;
@@ -4206,5 +4213,76 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
     margin-right: 0; }
 
 /* END AllStars News */
+/* Footer */
+.footer-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin: 20px auto; }
+  .footer-container:last-child {
+    margin-right: 0; }
+  .footer-container small {
+    font-size: 11px; }
+
+.footer-allstar-logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .footer-allstar-logo:last-child {
+    margin-right: 0; }
+  .footer-allstar-logo img.ns_header_logo {
+    width: 174px; }
+  @media screen and (min-width: 768px) {
+    .footer-allstar-logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      .footer-allstar-logo:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 450px) {
+    .footer-allstar-logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .footer-allstar-logo:last-child {
+        margin-right: 0; } }
+
+.footer-allstar-links {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .footer-allstar-links:last-child {
+    margin-right: 0; }
+  .footer-allstar-links ul li {
+    font-size: 11px;
+    line-height: 1.5;
+    display: inline;
+    margin-right: 17px; }
+    @media screen and (max-width: 450px) {
+      .footer-allstar-links ul li {
+        display: block; } }
+  @media screen and (min-width: 768px) {
+    .footer-allstar-links {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .footer-allstar-links:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 450px) {
+    .footer-allstar-links {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .footer-allstar-links:last-child {
+        margin-right: 0; } }
+
+/* END Footer */
 
 /*# sourceMappingURL=allstars.css.map */
