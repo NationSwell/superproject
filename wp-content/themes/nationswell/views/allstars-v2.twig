@@ -22,7 +22,7 @@
                 <img class="ns_header_logo" src="/wp-content/themes/nationswell/img/allstars_2017/nationswell_blue.png" alt="NationSwell logo">
             </a>
             
-            <a href="#ballot" class="" style="float: right;">
+            <a href="#ballot" class="button nominate" style="float: right;">
                 Nominate
             </a>
             <!-- {% if button_link %} -->
@@ -101,9 +101,9 @@
     <!-- Finalists -->
     <div class="container">
         <section class="finalists">
-            <h3 style="text-align: center;">
-                5 AllStar Finalists will receive:
-            </h3>
+            <h2 class="title-receive">
+                <span class="title-5">5</span><br>AllStar Finalists<br>will receive:
+            </h2>
 
             <div class="finalist-benefit">
                 <img src="/wp-content/themes/nationswell/img/allstars_2017/benefits_video_@2x.png" style=""/>
@@ -151,6 +151,10 @@
             </div>
 
         </section>
+
+        <p style="text-align: center;">
+            For full contest rules, visit <a href="#">TKTKTKTKTKTK</a>
+        </p>
     </div>
     <!-- END Finalists -->
 
@@ -160,7 +164,7 @@
     <div class="container">
         <section id="ballot">
             <h3 style="text-align: center;">
-                We need you to help us find our next Tech AllStars. Nominate someone using technology to solve America’s greatest challenges.
+                We need you to help us find our next <span style="white-space: nowrap;">Tech AllStars.</span><br>Nominate someone using technology to solve America’s <span style="white-space: nowrap;">greatest challenges.</span>
             </h3>
 
             <div class="nominate-ballot">
@@ -174,8 +178,8 @@
                             <label class="form-label">
                                 Are you nominating yourself?
                             </label>
-                            <input id="nominate_yes" type="radio" name="nominate-yourself" value="yes" checked> <label for="nominate_yes">Male</label>
-                            <input id="nominate_no" type="radio" name="nominate-yourself" value="no"> <label for="nominate_no">Female</label>
+                            <input id="nominate_yes" type="radio" name="nominate-yourself" value="yes" checked> <label for="nominate_yes">Yes</label>
+                            <input id="nominate_no" type="radio" name="nominate-yourself" value="no"> <label for="nominate_no">No</label>
 
 
                             <label class="form-label">
@@ -239,11 +243,14 @@
 
                             <input type="checkbox" name="subscribe" value="subscribe" checked> <label class="subscribe-allstar">Yes, I would like to receive updates on the 2017 AllStar program, including finalist and winner announcements!</label>
 
-                            <div class="">
-                                <a href="#" class="">
+
+                            <div id="nominate_button_container">
+                                <a href="#" class="button full">
                                     submit
                                 </a>
                             </div>
+                           
+
                         </form>
                     </div>
                 </div>

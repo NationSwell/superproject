@@ -3698,12 +3698,14 @@ body.page-template-page-allstar {
     display: block;
     margin-bottom: 10px;
     line-height: 1.7; }
+  body.page-template-page-allstar a {
+    color: #00AEEF; }
   body.page-template-page-allstar h1, body.page-template-page-allstar h2 {
     font-family: austin;
     text-align: center; }
   body.page-template-page-allstar h2 {
     font-size: 42px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     line-height: 1; }
   body.page-template-page-allstar h3 {
     font-family: montserratBold;
@@ -3715,11 +3717,59 @@ body.page-template-page-allstar {
         font-size: 22px;
         line-height: 36px;
         margin-bottom: 40px; } }
+  body.page-template-page-allstar button, body.page-template-page-allstar .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: montserrat;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 0 1.11111rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px 30px 22px;
+    font-size: 17px;
+    background-color: #00AEEF;
+    color: #FFFFFF;
+    transition: background-color 300ms ease-out; }
+    @media screen and (min-width: 768px) {
+      body.page-template-page-allstar button, body.page-template-page-allstar .button {
+        font-size: 19px; } }
+    @media screen and (max-width: 450px) {
+      body.page-template-page-allstar button, body.page-template-page-allstar .button {
+        font-size: 15px;
+        padding-top: 12px;
+        padding-bottom: 15px; } }
+  body.page-template-page-allstar button.full, body.page-template-page-allstar .button.full {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+  body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
+    background-color: #fff;
+    color: #7E1F86;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 13px;
+    padding: 8px 18px 10px; }
+    @media screen and (min-width: 768px) {
+      body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
+        font-size: 16px;
+        margin-top: 9px;
+        padding: 10px 20px 12px; } }
+    @media screen and (max-width: 450px) {
+      body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
+        margin-top: 8px;
+        font-size: 11px; } }
   body.page-template-page-allstar input[type=text], body.page-template-page-allstar input[type=email], body.page-template-page-allstar textarea {
     display: block;
     width: 100%;
     padding: 7px 12px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.5;
     color: #555;
@@ -3754,7 +3804,7 @@ body.page-template-page-allstar {
       height: 60px; } }
 
 #header-bg .ns_header_logo {
-  width: 120px;
+  width: 110px;
   margin-top: 18px; }
   @media screen and (max-width: 450px) {
     #header-bg .ns_header_logo {
@@ -3763,9 +3813,13 @@ body.page-template-page-allstar {
     #header-bg .ns_header_logo {
       width: 150px; } }
 
-body.scrolled > #header-bg {
+body.scrolled #header-bg {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  transition: background-color .5s; }
+body.scrolled button.nominate, body.scrolled .button.nominate {
+  background-color: #7E1F86;
+  color: #fff;
   transition: background-color .5s; }
 
 #allstar_hero {
@@ -3900,17 +3954,59 @@ body.scrolled > #header-bg {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  margin: 40px auto; }
   .finalists:last-child {
     margin-right: 0; }
+  .finalists h2.title-receive {
+    font-size: 35px;
+    margin-top: 20px; }
+  .finalists span.title-5 {
+    font-size: 104px;
+    line-height: 0.8; }
+  @media screen and (min-width: 768px) {
+    .finalists p {
+      font-size: 14px; }
+    .finalists h2.title-receive {
+      font-size: 52px;
+      margin-top: 20px; }
+    .finalists span.title-5 {
+      font-size: 154px;
+      line-height: 0.8; } }
+  @media screen and (max-width: 450px) {
+    .finalists p {
+      font-size: 14px; }
+    .finalists h2.title-receive {
+      font-size: 24px;
+      margin-top: 0px; }
+    .finalists span.title-5 {
+      font-size: 84px;
+      line-height: 0.8; } }
 
 #ballot {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  margin: 40px auto; }
   #ballot:last-child {
     margin-right: 0; }
+  #ballot h3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #ballot h3:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 768px) {
+      #ballot h3 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
+        #ballot h3:last-child {
+          margin-right: 0; } }
 
 .finalist-benefit {
   float: left;
@@ -3972,6 +4068,24 @@ body.scrolled > #header-bg {
       width: 65.88078%;
       margin-left: 17.05961%; }
       .nominate-ballot-content:last-child {
+        margin-right: 0; } }
+
+#nominate_button_container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 40px; }
+  #nominate_button_container:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 768px) {
+    #nominate_button_container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 68.23843%; }
+      #nominate_button_container:last-child {
         margin-right: 0; } }
 
 /* Previous AllStars */

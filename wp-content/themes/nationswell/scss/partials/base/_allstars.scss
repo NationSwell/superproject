@@ -27,6 +27,7 @@
 $purple-allstar: #7E1F86;
 $purple-hero: #3D3B74;
 $grey-ballot: #EAEDED;
+$blue-link: #00AEEF;
 $tiny: (max-width 450px);
 
 
@@ -66,7 +67,11 @@ body.page-template-page-allstar {
 	}
 
 	label.subscribe-allstar {
-		
+
+	}
+
+	a {
+		color: $blue-link;
 	}
 
 	h1, h2 {
@@ -76,7 +81,7 @@ body.page-template-page-allstar {
 
 	h2 {
 		font-size: 42px;
-		margin-bottom: 16px;
+		margin-bottom: 30px;
 		line-height: 1;
 	}
 
@@ -93,11 +98,69 @@ body.page-template-page-allstar {
 		}
 	}
 
+	button, .button {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    font-family: montserrat;
+	    border-radius: 4px;
+	    border-style: solid;
+	    border-width: 0;
+	    cursor: pointer;
+	    font-weight: bold;
+	    line-height: normal;
+	    margin: 0 0 1.11111rem;
+	    position: relative;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    padding: 18px 30px 22px;
+	    font-size: 17px;
+	    background-color: $blue-link;
+	    color: #FFFFFF;
+	    transition: background-color 300ms ease-out;
+
+	    @include media($desktop) {
+	    	font-size: 19px;
+	    }
+
+	    @include media($tiny) {
+	    	font-size: 15px;
+	    	padding-top: 12px;
+    		padding-bottom: 15px;
+	    }
+	}
+
+	button.full, .button.full {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	button.nominate, .button.nominate {
+		background-color: #fff;
+		color: $purple-allstar;
+		margin-top: 8px;
+		margin-bottom: 0;
+		font-size: 13px;
+	    padding: 8px 18px 10px;
+
+		@include media($desktop) {
+	    	font-size: 16px;
+	    	margin-top: 9px;
+	    	padding: 10px 20px 12px;
+	    }
+
+	    @include media($tiny) {
+	    	margin-top: 8px;
+			font-size: 11px;
+	    }
+	}
+
 	input[type=text], input[type=email], textarea {
 	    display: block;
 	    width: 100%;
 	    padding: 7px 12px;
-	    margin-bottom: 25px;
+	    margin-bottom: 30px;
 	    font-size: 14px;
 	    line-height: 1.5;
 	    color: #555;
@@ -147,7 +210,7 @@ body.page-template-page-allstar {
 }
 
 #header-bg .ns_header_logo {
-	width: 120px;
+	width: 110px;
 	margin-top: 18px;
 
 	@include media($tiny) {
@@ -159,10 +222,19 @@ body.page-template-page-allstar {
 	}
 }
 
-body.scrolled > #header-bg {
-	box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-	background-color: #fff;
-	transition: background-color .5s;
+body.scrolled  {
+	#header-bg {
+		box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+		background-color: #fff;
+		transition: background-color .5s;
+	}
+	
+	button.nominate, .button.nominate {
+		background-color: $purple-allstar;
+		color: #fff;
+		transition: background-color .5s;
+	}
+	
 }
 
 #allstar_hero {
@@ -287,10 +359,67 @@ body.scrolled > #header-bg {
 
 .finalists {
 	@include span-columns(12);
+
+	margin: 40px auto;
+
+	h2.title-receive {
+		font-size: 35px;
+		margin-top: 20px;
+	}
+
+	span.title-5 {
+		font-size: 104px;
+		line-height: 0.8;
+	}
+
+	@include media($desktop) {
+		p {
+			font-size: 14px;
+		}
+
+		h2.title-receive {
+			font-size: 52px;
+			margin-top: 20px;
+		}
+
+		span.title-5 {
+			font-size: 154px;
+			line-height: 0.8;
+		}
+	}
+
+	@include media($tiny) {
+		p {
+			font-size: 14px;
+		}
+
+		h2.title-receive {
+			font-size: 24px;
+			margin-top: 0px;
+		}
+
+		span.title-5 {
+			font-size: 84px;
+			line-height: 0.8;
+		}
+	}
 }
 
 #ballot {
 	@include span-columns(12);
+	margin: 40px auto;
+
+	h3 {
+		@include span-columns(12);
+
+		@include media($desktop) {
+			@include span-columns(10);
+			@include shift(1);
+		}
+
+		
+	}
+
 }
 
 .finalist-benefit {
@@ -330,6 +459,16 @@ body.scrolled > #header-bg {
 	@include media($desktop) {
 		@include span-columns(8);
 		@include shift(2);
+	}
+}
+
+#nominate_button_container {
+	@include span-columns(12);
+	margin-top: 40px;
+
+	@include media($desktop) {
+		@include span-columns(4);
+		@include shift(8);
 	}
 }
 
