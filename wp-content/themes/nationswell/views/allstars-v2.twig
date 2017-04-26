@@ -171,74 +171,73 @@
                         </h2>
 
                         <form action="#">
-                            <p>
+                            <label class="form-label">
                                 Are you nominating yourself?
-                            </p>
-                            <input type="radio" name="nominate-yourself" value="yes" checked> Male
-                            <input type="radio" name="nominate-yourself" value="no"> Female
+                            </label>
+                            <input id="nominate_yes" type="radio" name="nominate-yourself" value="yes" checked> <label for="nominate_yes">Male</label>
+                            <input id="nominate_no" type="radio" name="nominate-yourself" value="no"> <label for="nominate_no">Female</label>
 
-                            <p>
+
+                            <label class="form-label">
                                 Nominee’s Full Name:
-                            </p>
+                            </label>
                             <input type="text" name="nominee-name">
+                            
 
-                            <p>
+                            <label class="form-label">
                                 Nominee’s Location:
-                            </p>
+                            </label>
                             <input type="text" name="nominee-location">
 
-                            <p>
+                            <label class="form-label">
                                 Nominee’s Email:
-                            </p>
+                            </label>
                             <input type="email" name="nominee-email">
 
-                            <p>
+                            <label class="form-label">
                                 Nominee’s Phone Number:
-                            </p>
-                            <input type="tel" name="nominee-phone">
+                            </label>
+                            <input type="text" name="nominee-phone" class="phone-number">
 
-                            <p>
+                            <label class="form-label">
                                 Select which best describes the work of the nominee:
-                            </p>
-                            <input type="radio" name="nominee-work" value="" checked> Making Government Work<br>
-                            <input type="radio" name="nominee-work" value=""> Bridging the Opportunity Divide<br>
-                            <input type="radio" name="nominee-work" value=""> Preserving the Environment<br>
-                            <input type="radio" name="nominee-work" value=""> Advancing National Service<br>
+                            </label>
+                            <input type="radio" id="gov" name="nominee-work" value="" checked > <label for="gov_work">Making Government Work</label><br>
+                            <input type="radio" id="bridge" name="nominee-work" value=""> <label for="bridge">Bridging the Opportunity Divide</label><br>
+                            <input type="radio" id="preserving" name="nominee-work" value=""> <label for="preserving">Preserving the Environment</label><br>
+                            <input type="radio" id="advancing" name="nominee-work" value="" > <label for="advancing">Advancing National Service</label><br>
 
-                            <input type="radio" name="nominee-work" value="Other"> Other<br>
-                            <input type="text" name="nominee-work">
+                            <input type="radio" id="other" name="nominee-work" value="Other"> <label for="other">Other</label><br>
+                            <input type="text" class="other-work" name="nominee-work">
 
-                            <p>
+                            <label class="form-label">
                                 How are they using innovative technology to creatively and impactfully address this challenge?
-                            </p>
-                            <textarea rows="5">
-                            </textarea>
+                            </label>
+                            <textarea rows="5"></textarea>
 
-                            <p>
+                            <label class="form-label">
                                What about them inspires you the most? 
-                            </p>
-                            <textarea rows="5">
-                            </textarea>
+                            </label>
+                            <textarea rows="5"></textarea>
 
-                            <p>
+                            <label class="form-label">
                                Please share relevant links (e.g. website, articles, videos, social media).
-                            </p>
-                            <textarea rows="5">
-                            </textarea>
+                            </label>
+                            <textarea rows="5"></textarea>
 
                             <hr>
 
-                            <p>
+                            <label class="form-label">
                                 Your Full Name:
-                            </p>
+                            </label>
                             <input type="text" name="your-name">
 
-                            <p>
+                            <label class="form-label">
                                 Your Email:
-                            </p>
-                            <input type="email" name="your-email"><br>
+                            </label>
+                            <input type="email" name="your-email">
 
-                            <input type="checkbox" name="subscribe" value="subscribe" checked> Yes, I would like to receive updates on the 2017 AllStar program, including finalist and winner announcements!
+                            <input type="checkbox" name="subscribe" value="subscribe" checked> <label class="subscribe-allstar">Yes, I would like to receive updates on the 2017 AllStar program, including finalist and winner announcements!</label>
 
                             <div class="">
                                 <a href="#" class="">
