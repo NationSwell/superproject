@@ -29,6 +29,7 @@ $purple-hero: #3D3B74;
 $aqua: #66CEDB;
 $grey-ballot: #EAEDED;
 $blue-link: #00AEEF;
+$grey-light: #DCDADA;
 $tiny: (max-width 450px);
 
 
@@ -582,20 +583,39 @@ body.scrolled  {
 
 	margin: 20px auto;
 
+	p.footer-copyright {
+		margin-top: 20px;
+		text-align: center;
+
+		@include media($desktop) {
+			margin-top: 0;
+			text-align: left;
+		}
+	}
+
 	small {
 		font-size: 11px;
 	}
+
 }
 
 .footer-allstar-logo {
-	@include span-columns(6);
+	@include span-columns(12);
+
+	text-align: center;
 
 	img.ns_header_logo {
-		width: 174px;
+		width: 130px;
+		margin-top: 8px;
+
+		@include media($desktop) {
+			width: 160px;
+		}
 	}
 
 	@include media($desktop) {
-		@include span-columns(8);
+		@include span-columns(7);
+		text-align: left;
 	}
 
 	@include media($tiny) {
@@ -604,22 +624,30 @@ body.scrolled  {
 }
 
 .footer-allstar-links {
-	@include span-columns(6);
+	@include span-columns(12);
 
 	ul li {
 		font-size: 11px;
 		line-height: 1.5;
-		display: inline;
+		display: block;
 		margin-right: 17px;
+		white-space: nowrap;
+		border-bottom: solid 1px $grey-light;
+		padding: 12px 0;
 
-		@include media($tiny) {
-			display: block;
+		@include media($desktop) {
+			display: inline;
+			border-bottom: none;
+			padding: 0;
 		}
 	}
 
+	ul li:last-child {
+		border-bottom: none;
+	}
 
 	@include media($desktop) {
-		@include span-columns(4);
+		@include span-columns(5);
 
 	}
 

@@ -4222,6 +4222,13 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
   margin: 20px auto; }
   .footer-container:last-child {
     margin-right: 0; }
+  .footer-container p.footer-copyright {
+    margin-top: 20px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .footer-container p.footer-copyright {
+        margin-top: 0;
+        text-align: left; } }
   .footer-container small {
     font-size: 11px; }
 
@@ -4229,17 +4236,23 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 100%;
+  text-align: center; }
   .footer-allstar-logo:last-child {
     margin-right: 0; }
   .footer-allstar-logo img.ns_header_logo {
-    width: 174px; }
+    width: 130px;
+    margin-top: 8px; }
+    @media screen and (min-width: 768px) {
+      .footer-allstar-logo img.ns_header_logo {
+        width: 160px; } }
   @media screen and (min-width: 768px) {
     .footer-allstar-logo {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%; }
+      width: 57.35098%;
+      text-align: left; }
       .footer-allstar-logo:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 450px) {
@@ -4255,23 +4268,30 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 100%; }
   .footer-allstar-links:last-child {
     margin-right: 0; }
   .footer-allstar-links ul li {
     font-size: 11px;
     line-height: 1.5;
-    display: inline;
-    margin-right: 17px; }
-    @media screen and (max-width: 450px) {
+    display: block;
+    margin-right: 17px;
+    white-space: nowrap;
+    border-bottom: solid 1px #DCDADA;
+    padding: 12px 0; }
+    @media screen and (min-width: 768px) {
       .footer-allstar-links ul li {
-        display: block; } }
+        display: inline;
+        border-bottom: none;
+        padding: 0; } }
+  .footer-allstar-links ul li:last-child {
+    border-bottom: none; }
   @media screen and (min-width: 768px) {
     .footer-allstar-links {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 40.29137%; }
       .footer-allstar-links:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 450px) {
