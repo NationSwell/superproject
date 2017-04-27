@@ -3821,6 +3821,15 @@ body.page-template-page-allstar {
     #header-bg {
       height: 60px; } }
 
+.header-logo-container {
+  position: relative; }
+
+#header_logo_blue, #header_logo_white {
+  position: absolute; }
+
+#header_logo_blue {
+  opacity: 0; }
+
 #header-bg .ns_header_logo {
   width: 110px;
   margin-top: 18px; }
@@ -3839,6 +3848,12 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
   background-color: #400095;
   color: #fff;
   transition: background-color .5s; }
+body.scrolled #header_logo_blue {
+  opacity: 1;
+  transition: opacity .5s; }
+body.scrolled #header_logo_white {
+  opacity: 0;
+  transition: opacity .5s; }
 
 #allstar_hero {
   float: left;
