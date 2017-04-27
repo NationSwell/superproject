@@ -3704,9 +3704,16 @@ body.page-template-page-allstar {
     font-family: austin;
     text-align: center; }
   body.page-template-page-allstar h2 {
-    font-size: 42px;
-    margin-bottom: 30px;
+    font-size: 33px;
+    margin-bottom: 20px;
     line-height: 1; }
+    @media screen and (min-width: 768px) {
+      body.page-template-page-allstar h2 {
+        font-size: 42px;
+        margin-bottom: 30px; } }
+    @media screen and (max-width: 450px) {
+      body.page-template-page-allstar h2 {
+        font-size: 24px; } }
   body.page-template-page-allstar h3 {
     font-family: montserratBold;
     font-size: 15px;
@@ -3717,7 +3724,7 @@ body.page-template-page-allstar {
         font-size: 22px;
         line-height: 36px;
         margin-bottom: 40px; } }
-  body.page-template-page-allstar button, body.page-template-page-allstar .button {
+  body.page-template-page-allstar .button, body.page-template-page-allstar button {
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: montserrat;
@@ -3737,11 +3744,13 @@ body.page-template-page-allstar {
     background-color: #00AEEF;
     color: #FFFFFF;
     transition: background-color 300ms ease-out; }
+    body.page-template-page-allstar .button:hover, body.page-template-page-allstar button:hover {
+      background-color: #44CAFB; }
     @media screen and (min-width: 768px) {
-      body.page-template-page-allstar button, body.page-template-page-allstar .button {
+      body.page-template-page-allstar .button, body.page-template-page-allstar button {
         font-size: 19px; } }
     @media screen and (max-width: 450px) {
-      body.page-template-page-allstar button, body.page-template-page-allstar .button {
+      body.page-template-page-allstar .button, body.page-template-page-allstar button {
         font-size: 15px;
         padding-top: 12px;
         padding-bottom: 15px; } }
@@ -3749,6 +3758,15 @@ body.page-template-page-allstar {
     width: 100%;
     padding-left: 0;
     padding-right: 0; }
+  body.page-template-page-allstar .button.outline-btn {
+    /*@extend .button;*/
+    background-color: transparent;
+    border: solid 5px #fff;
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 6px 30px 10px; }
+  body.page-template-page-allstar .outline-btn:hover {
+    opacity: 0.8; }
   body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
     background-color: #fff;
     color: #400095;
@@ -3965,7 +3983,8 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 100%;
+        padding: 20px 0; }
         #previous_allstars #allstars_content:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -3995,11 +4014,13 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
   #previous_allstars #allstar_float_container {
     max-width: 440px;
     margin: 0 auto;
-    float: none; }
+    float: none;
+    text-align: center; }
     @media screen and (min-width: 768px) {
       #previous_allstars #allstar_float_container {
-        max-width: 500px;
-        float: right; } }
+        max-width: 510px;
+        float: right;
+        text-align: left; } }
     @media screen and (max-width: 450px) {
       #previous_allstars #allstar_float_container {
         max-width: 300px; } }
@@ -4016,8 +4037,8 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
     @media screen and (min-width: 768px) {
       #previous_allstars #allstar_previous_photo_container {
         max-width: 640px;
-        height: 350px;
-        margin-top: -50px; } }
+        height: 380px;
+        margin-top: -30px; } }
     @media screen and (min-width: 1400px) {
       #previous_allstars #allstar_previous_photo_container {
         margin-top: -60px;

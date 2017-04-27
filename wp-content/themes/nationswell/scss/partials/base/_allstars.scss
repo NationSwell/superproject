@@ -29,6 +29,7 @@ $purple-hero: #3D3B74;
 $aqua: #66CEDB;
 $grey-ballot: #EAEDED;
 $blue-link: #00AEEF;
+$blue-link-hover: #44CAFB;
 $grey-light: #DCDADA;
 $tiny: (max-width 450px);
 $huge: (min-width 1400px);
@@ -83,9 +84,18 @@ body.page-template-page-allstar {
 	}
 
 	h2 {
-		font-size: 42px;
-		margin-bottom: 30px;
+		font-size: 33px;
+		margin-bottom: 20px;
 		line-height: 1;
+
+		@include media($desktop) {
+			font-size: 42px;
+			margin-bottom: 30px;
+		}
+
+		@include media($tiny) {
+			font-size: 24px;
+		}
 	}
 
 	h3 {
@@ -101,7 +111,7 @@ body.page-template-page-allstar {
 		}
 	}
 
-	button, .button {
+	.button, button,  {
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
 	    font-family: montserrat;
@@ -122,6 +132,10 @@ body.page-template-page-allstar {
 	    color: #FFFFFF;
 	    transition: background-color 300ms ease-out;
 
+	    &:hover {
+			background-color:$blue-link-hover;
+		}
+
 	    @include media($desktop) {
 	    	font-size: 19px;
 	    }
@@ -137,6 +151,19 @@ body.page-template-page-allstar {
 		width: 100%;
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.button.outline-btn {
+		/*@extend .button;*/
+		background-color: transparent;
+		border: solid 5px #fff;
+		border-radius: 9px;
+		font-size: 16px;
+		padding: 6px 30px 10px;
+	}
+
+	.outline-btn:hover {
+		opacity: 0.8;
 	}
 
 	button.nominate, .button.nominate {
@@ -369,6 +396,7 @@ body.scrolled  {
 
 		@include media($tiny) {
 			@include span-columns(12);
+			padding: 20px 0;
 		}
 
 		@include media($desktop) {
@@ -391,10 +419,12 @@ body.scrolled  {
 		max-width: 440px;
 		margin: 0 auto;
 		float: none;
+		text-align: center;
 
 		@include media($desktop) {
-			max-width: 500px;
+			max-width: 510px;
 			float: right;
+			text-align: left;
 		}
 
 		@include media($tiny) {
@@ -416,8 +446,8 @@ body.scrolled  {
 
 		@include media($desktop) {
 			max-width: 640px;
-			height: 350px;
-			margin-top: -50px;
+			height: 380px;
+			margin-top: -30px;
 		}
 
 		@include media($huge) {
