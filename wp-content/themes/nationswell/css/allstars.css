@@ -3935,6 +3935,7 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
       #main_info:last-child {
         margin-right: 0; } }
 
+/* Previous AllStars */
 #previous_allstars {
   float: left;
   display: block;
@@ -3949,7 +3950,85 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
     @media screen and (min-width: 768px) {
       #previous_allstars p, #previous_allstars h2 {
         text-align: left; } }
+  #previous_allstars h2 {
+    margin-bottom: 5px; }
+  #previous_allstars #allstars_content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 40px 0; }
+    #previous_allstars #allstars_content:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 450px) {
+      #previous_allstars #allstars_content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #previous_allstars #allstars_content:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+      #previous_allstars #allstars_content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        padding: 40px 0 40px 20px; }
+        #previous_allstars #allstars_content:last-child {
+          margin-right: 0; } }
+  #previous_allstars #allstars_photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #previous_allstars #allstars_photo:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 768px) {
+      #previous_allstars #allstars_photo {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        #previous_allstars #allstars_photo:last-child {
+          margin-right: 0; } }
+  #previous_allstars #allstar_float_container {
+    max-width: 440px;
+    margin: 0 auto;
+    float: none; }
+    @media screen and (min-width: 768px) {
+      #previous_allstars #allstar_float_container {
+        max-width: 500px;
+        float: right; } }
+    @media screen and (max-width: 450px) {
+      #previous_allstars #allstar_float_container {
+        max-width: 300px; } }
+  #previous_allstars #allstar_previous_photo_container {
+    background-image: url("/wp-content/themes/nationswell/img/allstars_2017/past_allstars.png");
+    width: 100%;
+    max-width: 560px;
+    height: 300px;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (min-width: 768px) {
+      #previous_allstars #allstar_previous_photo_container {
+        max-width: 640px;
+        height: 350px;
+        margin-top: -50px; } }
+    @media screen and (min-width: 1400px) {
+      #previous_allstars #allstar_previous_photo_container {
+        margin-top: -60px;
+        max-width: 700px;
+        height: 400px; } }
+    @media screen and (max-width: 450px) {
+      #previous_allstars #allstar_previous_photo_container {
+        height: 220px;
+        margin-top: -10px; } }
 
+/* END Previous AllStars */
 .finalists {
   float: left;
   display: block;
@@ -4090,49 +4169,6 @@ body.scrolled button.nominate, body.scrolled .button.nominate {
       #nominate_button_container:last-child {
         margin-right: 0; } }
 
-/* Previous AllStars */
-#allstars_content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  padding: 40px 0 40px 20px; }
-  #allstars_content:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 450px) {
-    #allstars_content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      #allstars_content:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 768px) {
-    #allstars_content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      #allstars_content:last-child {
-        margin-right: 0; } }
-
-#allstars_photo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  #allstars_photo:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 768px) {
-    #allstars_photo {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      #allstars_photo:last-child {
-        margin-right: 0; } }
-
-/* END Previous AllStars */
 /* AllStars News */
 #allstar_news_bg {
   background-color: #66CEDB; }

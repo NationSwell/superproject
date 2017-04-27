@@ -31,6 +31,7 @@ $grey-ballot: #EAEDED;
 $blue-link: #00AEEF;
 $grey-light: #DCDADA;
 $tiny: (max-width 450px);
+$huge: (min-width 1400px);
 
 
 
@@ -342,6 +343,8 @@ body.scrolled  {
 
 }
 
+/* Previous AllStars */
+
 #previous_allstars {
 	@include span-columns(12);
 
@@ -354,8 +357,83 @@ body.scrolled  {
 		}
 	}
 
+	h2 {
+		margin-bottom: 5px;
+	}
+
 	background-color: $blue-link;
+
+	#allstars_content {
+		@include span-columns(12);
+		padding: 40px 0;
+
+		@include media($tiny) {
+			@include span-columns(12);
+		}
+
+		@include media($desktop) {
+			@include span-columns(6);
+			padding: 40px 0 40px 20px;
+		}
+
+		
+	}
+
+	#allstars_photo {
+		@include span-columns(12);
+
+		@include media($desktop) {
+			@include span-columns(6);
+		}
+	}
+
+	#allstar_float_container {
+		max-width: 440px;
+		margin: 0 auto;
+		float: none;
+
+		@include media($desktop) {
+			max-width: 500px;
+			float: right;
+		}
+
+		@include media($tiny) {
+			max-width: 300px;
+		}
+	}
+
+	#allstar_previous_photo_container {
+		background-image: url('/wp-content/themes/nationswell/img/allstars_2017/past_allstars.png');
+		width: 100%;
+		max-width: 560px;
+		height: 300px;
+		margin-top: -10px;
+		margin-left: auto;
+    	margin-right: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+		@include media($desktop) {
+			max-width: 640px;
+			height: 350px;
+			margin-top: -50px;
+		}
+
+		@include media($huge) {
+			margin-top: -60px;
+			max-width: 700px;
+			height: 400px;
+		}
+
+		@include media($tiny) {
+			height: 220px;
+			margin-top: -10px;
+		}
+	}
 }
+
+/* END Previous AllStars */
 
 .finalists {
 	@include span-columns(12);
@@ -474,30 +552,6 @@ body.scrolled  {
 	}
 }
 
-
-/* Previous AllStars */
-#allstars_content {
-	@include span-columns(12);
-
-	@include media($tiny) {
-		@include span-columns(12);
-	}
-
-	@include media($desktop) {
-		@include span-columns(6);
-	}
-
-	padding: 40px 0 40px 20px;
-}
-
-#allstars_photo {
-	@include span-columns(12);
-
-	@include media($desktop) {
-		@include span-columns(6);
-	}
-}
-/* END Previous AllStars */
 
 
 /* AllStars News */
