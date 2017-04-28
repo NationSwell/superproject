@@ -292,13 +292,28 @@ body.scrolled  {
 #allstar_hero {
 	@include span-columns(12);
 	background-color: $purple-hero;
-	background-image: url('../img/allstars_2017/allstars_hero_@2x.jpg');
+	background-image: url('../img/allstars_2017/allstars_hero_zikiya_@2x.jpg');
 	background-repeat: none;
 	background-size: cover;
 	padding: 60px 0 40px;
 
 	@include media($tiny) {
 		padding: 50px 0 20px;
+	}
+}
+
+.play-btn {
+	width: 60px;
+	height: auto;
+	margin: 0px auto;
+
+	@include media($desktop) {
+		width: 80px;
+	}
+
+	@include media($tiny) {
+		width: 45px;
+		margin: 0 auto;
 	}
 }
 
@@ -311,14 +326,16 @@ body.scrolled  {
 		@include shift(4);
 	}
 
+	text-align: center;
+
 	h1 {
 		text-align: center;
 	}
 
-	img {
+	img.allstar-2017-logo {
 		width: 100%;
 		max-width: 170px;
-		margin: 0px auto 20px;
+		margin: 0px auto 10px;
 
 		@include media($tiny) {
 	        max-width: 110px;
@@ -326,7 +343,7 @@ body.scrolled  {
 
 		@include media($desktop) {
 			max-width: 300px;
-			margin: 0px auto 60px;
+			margin: 0px auto 20px;
 		}
 	}
 }

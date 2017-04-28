@@ -3861,7 +3861,7 @@ body.scrolled #header_logo_white {
   margin-right: 2.35765%;
   width: 100%;
   background-color: #3D3B74;
-  background-image: url("../img/allstars_2017/allstars_hero_@2x.jpg");
+  background-image: url("../img/allstars_2017/allstars_hero_zikiya_@2x.jpg");
   background-repeat: none;
   background-size: cover;
   padding: 60px 0 40px; }
@@ -3871,12 +3871,25 @@ body.scrolled #header_logo_white {
     #allstar_hero {
       padding: 50px 0 20px; } }
 
+.play-btn {
+  width: 60px;
+  height: auto;
+  margin: 0px auto; }
+  @media screen and (min-width: 768px) {
+    .play-btn {
+      width: 80px; } }
+  @media screen and (max-width: 450px) {
+    .play-btn {
+      width: 45px;
+      margin: 0 auto; } }
+
 #logo_container {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  margin-left: 8.5298%; }
+  margin-left: 8.5298%;
+  text-align: center; }
   #logo_container:last-child {
     margin-right: 0; }
   @media screen and (min-width: 768px) {
@@ -3890,17 +3903,17 @@ body.scrolled #header_logo_white {
         margin-right: 0; } }
   #logo_container h1 {
     text-align: center; }
-  #logo_container img {
+  #logo_container img.allstar-2017-logo {
     width: 100%;
     max-width: 170px;
-    margin: 0px auto 20px; }
+    margin: 0px auto 10px; }
     @media screen and (max-width: 450px) {
-      #logo_container img {
+      #logo_container img.allstar-2017-logo {
         max-width: 110px; } }
     @media screen and (min-width: 768px) {
-      #logo_container img {
+      #logo_container img.allstar-2017-logo {
         max-width: 300px;
-        margin: 0px auto 60px; } }
+        margin: 0px auto 20px; } }
 
 #partner_copy {
   float: left;
