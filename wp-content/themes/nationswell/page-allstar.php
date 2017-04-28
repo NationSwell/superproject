@@ -1,4 +1,4 @@
-<?php /* Template name: AllStars 2017 */ ?>
+<?php /* Template name: AllStars (Minisite) */ ?>
 
 <?php
 /**
@@ -27,22 +27,15 @@ $context = Timber::get_context();
 $post = new TimberPost();
 
 $context['page_content'] = wpautop($post->post_content);
+$context['form'] = gravity_form( get_field('nomination_form_id'), $display_title = true, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = false );
 $context['post'] = $post;
-$context['button_link'] = get_field('nominate_button');
-$context['when'] = get_field('when');
-$context['mailchimp_list_id'] = get_field('mailchimp_list_id');
-$context['mailchimp_user_id'] = get_field('mailchimp_user_id');
-$background_image = get_field('background_image');
-$context['background_image_url'] = $background_image[url];
-$context['background_image_alt'] = $background_image[alt];
 $context['previous_years'] = get_field('previous_years');
-$context['email_sign_up_copy'] = get_field('email_sign_up_copy');
-$context['current_year'] = date("Y");
 $context['home'] = esc_url( home_url( '/' ) );
+
+
 
 if (post_password_required($post->ID)){
     Timber::render('static-password.twig', $context);
 } else {
-    print_r($context['background_image']);
     Timber::render(array('static-' . $post->post_name . '.twig', 'allstars-v2.twig'), $context);
 }
