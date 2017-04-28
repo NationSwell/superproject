@@ -4159,6 +4159,7 @@ body.scrolled #header_logo_white {
   .finalists h2.title-receive, .finalists body.page-template-page-allstar .gform_heading h3.title-receive, body.page-template-page-allstar .gform_heading .finalists h3.title-receive {
     font-size: 35px;
     margin-top: 20px;
+    margin-bottom: 40px;
     color: #00AEEF; }
   .finalists span.title-5 {
     font-size: 104px;
@@ -4178,7 +4179,8 @@ body.scrolled #header_logo_white {
       font-size: 14px; }
     .finalists h2.title-receive, .finalists body.page-template-page-allstar .gform_heading h3.title-receive, body.page-template-page-allstar .gform_heading .finalists h3.title-receive {
       font-size: 24px;
-      margin-top: 0px; }
+      margin-top: 0px;
+      margin-bottom: 20px; }
     .finalists span.title-5 {
       font-size: 84px;
       line-height: 0.8; } }
