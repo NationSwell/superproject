@@ -32,7 +32,7 @@
     color: #fc3b40; }
 
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading h3:last-child, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -932,7 +932,7 @@ input[type="submit"] {
   input[type="submit"]:-moz-focus-inner {
     border: 0; }
 
-.button {
+.button, body.page-template-page-allstar .gform_wrapper input[type=submit] {
   cursor: pointer;
   display: inline-block;
   border-radius: 0;
@@ -947,10 +947,10 @@ input[type="submit"] {
   background-color: transparent;
   border: 1px solid #fd6464;
   color: #fd6464; }
-  .button:hover {
+  .button:hover, body.page-template-page-allstar .gform_wrapper input[type=submit]:hover {
     border: 1px solid #0098d8;
     color: #0098d8; }
-  .button:active, .button:focus {
+  .button:active, body.page-template-page-allstar .gform_wrapper input[type=submit]:active, .button:focus, body.page-template-page-allstar .gform_wrapper input[type=submit]:focus {
     border: 1px solid #003046;
     color: #003046; }
 
@@ -2855,7 +2855,7 @@ hr {
     border-bottom: 3px solid lightgray;
     text-transform: capitalize;
     -webkit-font-smoothing: antialiased; }
-  .story__container .story__content > h2 {
+  .story__container .story__content > h2, .story__container body.page-template-page-allstar .gform_heading .story__content > h3, body.page-template-page-allstar .gform_heading .story__container .story__content > h3 {
     color: #1fade0;
     font-family: "oswaldregular", Arial, sans-serif;
     font-weight: 700;
@@ -3174,7 +3174,7 @@ hr {
       border-bottom: 3px solid lightgray;
       text-transform: capitalize;
       -webkit-font-smoothing: antialiased; }
-    .static__container .static__content > h2 {
+    .static__container .static__content > h2, .static__container body.page-template-page-allstar .gform_heading .static__content > h3, body.page-template-page-allstar .gform_heading .static__container .static__content > h3 {
       color: #1fade0;
       font-family: "oswaldregular", Arial, sans-serif;
       font-weight: 700;
@@ -3287,7 +3287,7 @@ hr {
           margin-bottom: 0; }
           .static__container.buddy ol li ol li:before {
             color: #1fade0; }
-    .static__container.buddy h1, .static__container.buddy h2, .static__container.buddy h3, .static__container.buddy h4, .static__container.buddy h5, .static__container.buddy h6 {
+    .static__container.buddy h1, .static__container.buddy h2, .static__container.buddy body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading .static__container.buddy h3, .static__container.buddy h3, .static__container.buddy h4, .static__container.buddy h5, .static__container.buddy h6 {
       font-family: "pt-serif-bold", Georgia, serif;
       margin: 0 0 20px 0; }
     .static__container.buddy h1 {
@@ -3295,11 +3295,11 @@ hr {
       @media screen and (min-width: 768px) {
         .static__container.buddy h1 {
           font-size: 3.5rem; } }
-    .static__container.buddy h2 {
+    .static__container.buddy h2, .static__container.buddy body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading .static__container.buddy h3 {
       font-size: 4rem;
       color: #fd6464; }
       @media screen and (min-width: 768px) {
-        .static__container.buddy h2 {
+        .static__container.buddy h2, .static__container.buddy body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading .static__container.buddy h3 {
           font-size: 3rem; } }
     .static__container.buddy h3 {
       font-size: 3.2rem; }
@@ -3681,7 +3681,9 @@ div.container {
 body.page-template-page-allstar {
   background-color: #fff;
   font-size: 13px;
-  line-height: 22px; }
+  line-height: 22px;
+  /* Overwrite gform */
+  /* END Overwrite gform */ }
   @media screen and (min-width: 768px) {
     body.page-template-page-allstar {
       font-size: 16px;
@@ -3689,10 +3691,10 @@ body.page-template-page-allstar {
   body.page-template-page-allstar p, body.page-template-page-allstar label, body.page-template-page-allstar ul li {
     color: #5f5f5f;
     font-family: montserrat; }
-  body.page-template-page-allstar label {
+  body.page-template-page-allstar label, body.page-template-page-allstar .validation_error, body.page-template-page-allstar .validation_message {
     font-size: 14px; }
     @media screen and (max-width: 450px) {
-      body.page-template-page-allstar label {
+      body.page-template-page-allstar label, body.page-template-page-allstar .validation_error, body.page-template-page-allstar .validation_message {
         font-size: 12px; } }
   body.page-template-page-allstar label.form-label {
     display: block;
@@ -3700,19 +3702,18 @@ body.page-template-page-allstar {
     line-height: 1.7; }
   body.page-template-page-allstar a {
     color: #00AEEF; }
-  body.page-template-page-allstar h1, body.page-template-page-allstar h2 {
+  body.page-template-page-allstar h1, body.page-template-page-allstar h2, body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading h3:last-child {
     font-family: austin;
     text-align: center; }
-  body.page-template-page-allstar h2 {
+  body.page-template-page-allstar h2, body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading h3:last-child {
     font-size: 33px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     line-height: 1; }
     @media screen and (min-width: 768px) {
-      body.page-template-page-allstar h2 {
-        font-size: 42px;
-        margin-bottom: 30px; } }
+      body.page-template-page-allstar h2, body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading h3:last-child {
+        font-size: 42px; } }
     @media screen and (max-width: 450px) {
-      body.page-template-page-allstar h2 {
+      body.page-template-page-allstar h2, body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading h3:last-child {
         font-size: 24px; } }
   body.page-template-page-allstar h3 {
     font-family: montserratBold;
@@ -3724,7 +3725,7 @@ body.page-template-page-allstar {
         font-size: 22px;
         line-height: 36px;
         margin-bottom: 40px; } }
-  body.page-template-page-allstar .button, body.page-template-page-allstar button {
+  body.page-template-page-allstar .button, body.page-template-page-allstar .gform_wrapper input[type=submit], body.page-template-page-allstar button {
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: montserrat;
@@ -3744,21 +3745,21 @@ body.page-template-page-allstar {
     background-color: #00AEEF;
     color: #FFFFFF;
     transition: background-color 300ms ease-out; }
-    body.page-template-page-allstar .button:hover, body.page-template-page-allstar button:hover {
+    body.page-template-page-allstar .button:hover, body.page-template-page-allstar .gform_wrapper input[type=submit]:hover, body.page-template-page-allstar button:hover {
       background-color: #44CAFB; }
     @media screen and (min-width: 768px) {
-      body.page-template-page-allstar .button, body.page-template-page-allstar button {
+      body.page-template-page-allstar .button, body.page-template-page-allstar .gform_wrapper input[type=submit], body.page-template-page-allstar button {
         font-size: 19px; } }
     @media screen and (max-width: 450px) {
-      body.page-template-page-allstar .button, body.page-template-page-allstar button {
+      body.page-template-page-allstar .button, body.page-template-page-allstar .gform_wrapper input[type=submit], body.page-template-page-allstar button {
         font-size: 15px;
         padding-top: 12px;
         padding-bottom: 15px; } }
-  body.page-template-page-allstar button.full, body.page-template-page-allstar .button.full {
+  body.page-template-page-allstar button.full, body.page-template-page-allstar .button.full, body.page-template-page-allstar .gform_wrapper input.full[type=submit] {
     width: 100%;
     padding-left: 0;
     padding-right: 0; }
-  body.page-template-page-allstar .button.outline-btn {
+  body.page-template-page-allstar .button.outline-btn, body.page-template-page-allstar .gform_wrapper input.outline-btn[type=submit] {
     /*@extend .button;*/
     background-color: transparent;
     border: solid 5px #fff;
@@ -3767,7 +3768,7 @@ body.page-template-page-allstar {
     padding: 6px 30px 10px; }
   body.page-template-page-allstar .outline-btn:hover {
     opacity: 0.8; }
-  body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
+  body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate, body.page-template-page-allstar .gform_wrapper input.nominate[type=submit] {
     background-color: #fff;
     color: #400095;
     margin-top: 8px;
@@ -3775,19 +3776,19 @@ body.page-template-page-allstar {
     font-size: 13px;
     padding: 8px 18px 10px; }
     @media screen and (min-width: 768px) {
-      body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
+      body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate, body.page-template-page-allstar .gform_wrapper input.nominate[type=submit] {
         font-size: 16px;
         margin-top: 9px;
         padding: 10px 20px 12px; } }
     @media screen and (max-width: 450px) {
-      body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate {
+      body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate, body.page-template-page-allstar .gform_wrapper input.nominate[type=submit] {
         margin-top: 8px;
         font-size: 11px; } }
-  body.page-template-page-allstar input[type=text], body.page-template-page-allstar input[type=email], body.page-template-page-allstar textarea {
+  body.page-template-page-allstar input[type=text], body.page-template-page-allstar input[type=email], body.page-template-page-allstar input[type=tel], body.page-template-page-allstar textarea {
     display: block;
     width: 100%;
     padding: 7px 12px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.5;
     color: #555;
@@ -3795,9 +3796,13 @@ body.page-template-page-allstar {
     background-image: none;
     border: 1px solid #e6e6e6;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.01);
+    font-family: montserrat;
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+    @media screen and (max-width: 450px) {
+      body.page-template-page-allstar input[type=text], body.page-template-page-allstar input[type=email], body.page-template-page-allstar input[type=tel], body.page-template-page-allstar textarea {
+        font-size: 12px; } }
   body.page-template-page-allstar input[type=text], body.page-template-page-allstar input[type=email] {
     height: 34px; }
   body.page-template-page-allstar input[type=radio] {
@@ -3808,6 +3813,71 @@ body.page-template-page-allstar {
     font-weight: bold; }
   body.page-template-page-allstar :checked + label.subscribe-allstar {
     font-weight: normal; }
+  body.page-template-page-allstar .gform_wrapper, body.page-template-page-allstar .gform_confirmation_wrapper {
+    background: transparent;
+    border-top: none;
+    padding: 0;
+    margin: 0; }
+  body.page-template-page-allstar .gform_heading {
+    display: inline-block;
+    width: 100%;
+    text-align: center; }
+  body.page-template-page-allstar .gform_wrapper .validation_error, body.page-template-page-allstar .gform_wrapper .validation_message {
+    font-family: montserrat;
+    font-size: 14px;
+    margin-top: 5px; }
+    @media screen and (max-width: 450px) {
+      body.page-template-page-allstar .gform_wrapper .validation_error, body.page-template-page-allstar .gform_wrapper .validation_message {
+        font-size: 12px; } }
+  body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading h3:last-child {
+    max-width: 300px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading h3:last-child {
+        max-width: 400px; } }
+  body.page-template-page-allstar .gfield_radio li label {
+    padding-left: 10px; }
+  body.page-template-page-allstar .gfield_radio li {
+    margin: 5px 0; }
+  body.page-template-page-allstar li.ballot-nominate-yourself {
+    margin-bottom: 20px; }
+    body.page-template-page-allstar li.ballot-nominate-yourself ul li {
+      display: inline; }
+    body.page-template-page-allstar li.ballot-nominate-yourself label {
+      margin-right: 20px; }
+  body.page-template-page-allstar li.ballot-category ul li:last-child input {
+    display: inline; }
+  body.page-template-page-allstar li.ballot-category ul li:last-child input[type=text] {
+    width: 65%;
+    margin-bottom: 0px; }
+  body.page-template-page-allstar li.ballot-category ul li:last-child input[type=radio] {
+    margin-right: 13px; }
+  body.page-template-page-allstar li.ballot-subscribe input {
+    display: inline;
+    float: left;
+    margin-top: 8px;
+    margin-right: 12px; }
+  body.page-template-page-allstar li.ballot-subscribe label {
+    overflow: auto;
+    display: block; }
+  body.page-template-page-allstar .gform_footer {
+    text-align: right; }
+    @media screen and (max-width: 450px) {
+      body.page-template-page-allstar .gform_footer {
+        text-align: center; } }
+  body.page-template-page-allstar .gform_wrapper input[type=submit] {
+    width: 100%;
+    max-width: 200px;
+    height: auto; }
+    body.page-template-page-allstar .gform_wrapper input[type=submit]:hover, body.page-template-page-allstar .gform_wrapper input[type=submit]:focus {
+      border: none;
+      color: #fff; }
+    @media screen and (max-width: 450px) {
+      body.page-template-page-allstar .gform_wrapper input[type=submit] {
+        max-width: 100%; } }
 
 #header-bg {
   width: 100%;
@@ -3844,7 +3914,7 @@ body.scrolled #header-bg {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: background-color .5s; }
-body.scrolled button.nominate, body.scrolled .button.nominate {
+body.scrolled button.nominate, body.scrolled .button.nominate, body.scrolled body.page-template-page-allstar .gform_wrapper input.nominate[type=submit], body.page-template-page-allstar .gform_wrapper body.scrolled input.nominate[type=submit] {
   background-color: #400095;
   color: #fff;
   transition: background-color .5s; }
@@ -3990,13 +4060,13 @@ body.scrolled #header_logo_white {
   background-color: #00AEEF; }
   #previous_allstars:last-child {
     margin-right: 0; }
-  #previous_allstars p, #previous_allstars h2 {
+  #previous_allstars p, #previous_allstars h2, #previous_allstars body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading #previous_allstars h3 {
     color: #fff;
     text-align: center; }
     @media screen and (min-width: 768px) {
-      #previous_allstars p, #previous_allstars h2 {
+      #previous_allstars p, #previous_allstars h2, #previous_allstars body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading #previous_allstars h3 {
         text-align: left; } }
-  #previous_allstars h2 {
+  #previous_allstars h2, #previous_allstars body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading #previous_allstars h3 {
     margin-bottom: 5px; }
   #previous_allstars #allstars_content {
     float: left;
@@ -4086,7 +4156,7 @@ body.scrolled #header_logo_white {
   margin: 40px auto; }
   .finalists:last-child {
     margin-right: 0; }
-  .finalists h2.title-receive {
+  .finalists h2.title-receive, .finalists body.page-template-page-allstar .gform_heading h3.title-receive, body.page-template-page-allstar .gform_heading .finalists h3.title-receive {
     font-size: 35px;
     margin-top: 20px;
     color: #00AEEF; }
@@ -4097,7 +4167,7 @@ body.scrolled #header_logo_white {
   @media screen and (min-width: 768px) {
     .finalists p {
       font-size: 14px; }
-    .finalists h2.title-receive {
+    .finalists h2.title-receive, .finalists body.page-template-page-allstar .gform_heading h3.title-receive, body.page-template-page-allstar .gform_heading .finalists h3.title-receive {
       font-size: 52px;
       margin-top: 20px; }
     .finalists span.title-5 {
@@ -4106,7 +4176,7 @@ body.scrolled #header_logo_white {
   @media screen and (max-width: 450px) {
     .finalists p {
       font-size: 14px; }
-    .finalists h2.title-receive {
+    .finalists h2.title-receive, .finalists body.page-template-page-allstar .gform_heading h3.title-receive, body.page-template-page-allstar .gform_heading .finalists h3.title-receive {
       font-size: 24px;
       margin-top: 0px; }
     .finalists span.title-5 {
@@ -4121,21 +4191,22 @@ body.scrolled #header_logo_white {
   margin: 40px auto; }
   #ballot:last-child {
     margin-right: 0; }
-  #ballot h3 {
+  #ballot h3.nom-instructions {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
-    #ballot h3:last-child {
+    width: 100%;
+    text-align: center; }
+    #ballot h3.nom-instructions:last-child {
       margin-right: 0; }
     @media screen and (min-width: 768px) {
-      #ballot h3 {
+      #ballot h3.nom-instructions {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 82.94039%;
         margin-left: 8.5298%; }
-        #ballot h3:last-child {
+        #ballot h3.nom-instructions:last-child {
           margin-right: 0; } }
 
 .finalist-benefit {
@@ -4230,7 +4301,7 @@ body.scrolled #header_logo_white {
   padding: 40px 0; }
   #allstar_news:last-child {
     margin-right: 0; }
-  #allstar_news h2 {
+  #allstar_news h2, #allstar_news body.page-template-page-allstar .gform_heading h3, body.page-template-page-allstar .gform_heading #allstar_news h3 {
     color: #fff;
     text-align: center; }
   @media screen and (min-width: 768px) {

@@ -144,101 +144,18 @@
     <!-- Ballot -->
     <div class="container">
         <section id="ballot">
-            <h3 style="text-align: center;">
+            <h3 class="nom-instructions">
                 We need you to help us find our next <span style="white-space: nowrap;">Tech AllStars.</span><br>Nominate someone using technology to solve America’s <span style="white-space: nowrap;">greatest challenges.</span>
             </h3>
-            
-            {{ form }}
-
             <div class="nominate-ballot">
                 <div class="container">
                     <div class="nominate-ballot-content">
-                        <h2>
-                            Tech AllStars 2017 <br>Nomination Form
-                        </h2>
-
-                        <form action="#">
-                            <label class="form-label">
-                                Are you nominating yourself?
-                            </label>
-                            <input id="nominate_yes" type="radio" name="nominate-yourself" value="yes" checked> <label for="nominate_yes">Yes</label>
-                            <input id="nominate_no" type="radio" name="nominate-yourself" value="no"> <label for="nominate_no">No</label>
-
-
-                            <label class="form-label">
-                                Nominee’s Full Name:
-                            </label>
-                            <input type="text" name="nominee-name">
-                            
-
-                            <label class="form-label">
-                                Nominee’s Location:
-                            </label>
-                            <input type="text" name="nominee-location">
-
-                            <label class="form-label">
-                                Nominee’s Email:
-                            </label>
-                            <input type="email" name="nominee-email">
-
-                            <label class="form-label">
-                                Nominee’s Phone Number:
-                            </label>
-                            <input type="text" name="nominee-phone" class="phone-number">
-
-                            <label class="form-label">
-                                Select which best describes the work of the nominee:
-                            </label>
-                            <input type="radio" id="gov" name="nominee-work" value="" checked > <label for="gov_work">Making Government Work</label><br>
-                            <input type="radio" id="bridge" name="nominee-work" value=""> <label for="bridge">Bridging the Opportunity Divide</label><br>
-                            <input type="radio" id="preserving" name="nominee-work" value=""> <label for="preserving">Preserving the Environment</label><br>
-                            <input type="radio" id="advancing" name="nominee-work" value="" > <label for="advancing">Advancing National Service</label><br>
-
-                            <input type="radio" id="other" name="nominee-work" value="Other"> <label for="other">Other</label><br>
-                            <input type="text" class="other-work" name="nominee-work">
-
-                            <label class="form-label">
-                                How are they using innovative technology to creatively and impactfully address this challenge?
-                            </label>
-                            <textarea rows="5"></textarea>
-
-                            <label class="form-label">
-                               What about them inspires you the most? 
-                            </label>
-                            <textarea rows="5"></textarea>
-
-                            <label class="form-label">
-                               Please share relevant links (e.g. website, articles, videos, social media).
-                            </label>
-                            <textarea rows="5"></textarea>
-
-                            <hr>
-
-                            <label class="form-label">
-                                Your Full Name:
-                            </label>
-                            <input type="text" name="your-name">
-
-                            <label class="form-label">
-                                Your Email:
-                            </label>
-                            <input type="email" name="your-email">
-
-                            <input type="checkbox" name="subscribe" value="subscribe" checked> <label class="subscribe-allstar">Yes, I would like to receive updates on the 2017 AllStar program, including finalist and winner announcements!</label>
-
-
-                            <div id="nominate_button_container">
-                                <a href="#" class="button full">
-                                    submit
-                                </a>
-                            </div>
-                           
-
-                        </form>
+                        
+                        {{ form }}
+                        
                     </div>
                 </div>
             </div>
-
         </section>
     </div>
     <!-- END Ballot -->

@@ -56,7 +56,7 @@ body.page-template-page-allstar {
 		font-family: montserrat;
 	}
 
-	label {
+	label, .validation_error, .validation_message {
 		font-size: 14px;
 
 		@include media($tiny) {
@@ -85,12 +85,11 @@ body.page-template-page-allstar {
 
 	h2 {
 		font-size: 33px;
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 		line-height: 1;
 
 		@include media($desktop) {
 			font-size: 42px;
-			margin-bottom: 30px;
 		}
 
 		@include media($tiny) {
@@ -186,11 +185,11 @@ body.page-template-page-allstar {
 	    }
 	}
 
-	input[type=text], input[type=email], textarea {
+	input[type=text], input[type=email], input[type=tel], textarea {
 	    display: block;
 	    width: 100%;
 	    padding: 7px 12px;
-	    margin-bottom: 30px;
+	    margin-bottom: 10px;
 	    font-size: 14px;
 	    line-height: 1.5;
 	    color: #555;
@@ -198,9 +197,14 @@ body.page-template-page-allstar {
 	    background-image: none;
 	    border: 1px solid #e6e6e6;
 	    box-shadow: inset 0 1px 1px rgba(0,0,0,.01);
+	    font-family: montserrat;
 	    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 	    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+	    @include media($tiny) {
+			font-size: 12px;
+		}
 	}
 
 	input[type=text], input[type=email] {
@@ -222,6 +226,129 @@ body.page-template-page-allstar {
 	:checked + label.subscribe-allstar {
 		font-weight: normal;
 	}
+
+	/* Overwrite gform */
+	.gform_wrapper, .gform_confirmation_wrapper {
+		background: transparent;
+		border-top: none;
+		padding: 0;
+		margin: 0;
+
+	}
+
+	.gform_heading {
+		
+		@include media($tiny) {
+			
+		}
+
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.gform_wrapper .validation_error, .gform_wrapper .validation_message {
+		font-family: montserrat;
+		font-size: 14px;
+		margin-top: 5px;
+
+		@include media($tiny) {
+			font-size: 12px;
+		}
+	}
+
+	.gform_heading h3, .gform_heading h3:last-child {
+		@extend h2;
+		max-width: 300px;
+		float: none;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 10px;
+		
+
+		@include media($desktop) {
+			max-width: 400px;
+		}
+	}
+
+	.gfield_radio li label {
+	    padding-left: 10px;
+	}
+
+	.gfield_radio li {
+	    margin: 5px 0;
+	}
+
+	li.ballot-nominate-yourself {
+		margin-bottom: 20px;
+
+		ul li {
+			display: inline;
+		}
+
+		label {
+			margin-right: 20px;
+		}
+		
+	}
+
+	li.ballot-category {
+		ul li:last-child {
+			input{
+				display: inline;
+			} 
+
+			input[type=text] {
+				width: 65%;
+				margin-bottom: 0px;
+			}
+
+			input[type=radio] {
+				margin-right: 13px;
+			}
+		}
+	}
+
+	li.ballot-subscribe {
+		input {
+			display: inline;
+			float:left;
+			margin-top: 8px;
+			margin-right: 12px;
+		}
+
+		label {
+			overflow:auto;
+			display:block;
+		}
+	}
+
+	.gform_footer {
+		text-align: right;
+
+		@include media($tiny) {
+		    text-align: center;
+		}
+	}
+
+	.gform_wrapper input[type=submit] {
+		@extend .button;
+
+		&:hover, &:focus {
+			border: none;
+    		color: #fff;
+		}		
+
+		width: 100%;
+		max-width: 200px;
+    	height: auto;
+
+    	@include media($tiny) {
+		    max-width: 100%;
+		}
+	}
+
+	/* END Overwrite gform */
 }
 
 #header-bg {
@@ -558,8 +685,9 @@ body.scrolled  {
 	@include span-columns(12);
 	margin: 40px auto;
 
-	h3 {
+	h3.nom-instructions {
 		@include span-columns(12);
+		text-align: center;
 
 		@include media($desktop) {
 			@include span-columns(10);
