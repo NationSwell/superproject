@@ -304,33 +304,17 @@
                 <img class="ns_header_logo" src="/wp-content/themes/nationswell/img/allstars_2017/nationswell_grey.png" alt="NationSwell logo">
                  
             </div>
-
+			{% if footer_links  %}
             <div class="footer-allstar-links">
                 <ul>
+					{% for link in footer_links %}
                     <li>
-                        Home
+                        <a href="{{link.url}}">{{link.title}}</a>
                     </li>
-                    <li>
-                        About Us
-                    </li>
-                    <li>
-                        NationSwell Council
-                    </li>
-                    <li>
-                        Contact Us
-                    </li>
-                    <li>
-                        Privacy Policy
-                    </li>
-                    <li>
-                        Terms of Service
-                    </li>
-                    <li>
-                        Work With Us
-                    </li>
+					{% endfor %}
                 </ul>
             </div>
-            
+           {% endif %}
         </div>
     
         <div class="container">

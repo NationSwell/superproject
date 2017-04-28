@@ -31,6 +31,7 @@ $context['form'] = gravity_form( get_field('nomination_form_id'), $display_title
 $context['previous_years'] = get_field('previous_years');
 $context['home'] = esc_url( home_url( '/' ) );
 $context['site_url'] = get_site_url();
+$context['footer_links'] = wp_get_nav_menu_items('Footer Links');
 
 //Get category term by its ID
 $context['term'] = new TimberTerm($post->custom['category']);
