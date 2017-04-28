@@ -28,11 +28,43 @@ $post = new TimberPost();
 
 $context['page_content'] = wpautop($post->post_content);
 $context['form'] = gravity_form( get_field('nomination_form_id'), $display_title = true, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = false );
-$context['post'] = $post;
 $context['previous_years'] = get_field('previous_years');
 $context['home'] = esc_url( home_url( '/' ) );
+$context['site_url'] = get_site_url();
 
+//Get category term by its ID
+$context['term'] = new TimberTerm($post->custom['category']);
 
+// Get allstar_finalists_will_receive content
+if( !empty($post->custom['allstar_finalists_will_receive']) ){
+	$post->custom['allstar_finalists_will_receive_hash'] = array();
+	for($x=0;$x<$post->custom['allstar_finalists_will_receive']; $x++){
+		$post->custom['allstar_finalists_will_receive_hash'][$x]['allstar_finalists_will_receive_description']=$post->custom['allstar_finalists_will_receive_'.$x.'_description'];
+		if( !empty($post->custom['allstar_finalists_will_receive_'.$x.'_icon'] ) ){
+			$post->custom['allstar_finalists_will_receive_hash'][$x]['allstar_finalists_will_receive_icon']= wp_get_attachment_image_src($post->custom['allstar_finalists_will_receive_'.$x.'_icon'],'full');
+			$post->custom['allstar_finalists_will_receive_hash'][$x]['allstar_finalists_will_receive_icon_meta']= wp_get_attachment_metadata($post->custom['allstar_finalists_will_receive_'.$x.'_icon']);
+			$post->custom['allstar_finalists_will_receive_hash'][$x]['allstar_finalists_will_receive_icon_image_alt'] = get_post_meta( $post->custom['allstar_finalists_will_receive_'.$x.'_icon'], '_wp_attachment_image_alt', true);
+		}
+	}
+}
+
+// Get allstars_in_the_news content
+if( !empty($post->custom['allstars_in_the_news']) ){
+	$post->custom['allstars_in_the_news_hash'] = array();
+	for($x=0;$x<$post->custom['allstars_in_the_news']; $x++){
+		$post->custom['allstars_in_the_news_hash'][$x]['allstars_in_the_news_title']=$post->custom['allstars_in_the_news_'.$x.'_title'];
+		$post->custom['allstars_in_the_news_hash'][$x]['allstars_in_the_news_excerpt']=$post->custom['allstars_in_the_news_'.$x.'_excerpt'];
+		$post->custom['allstars_in_the_news_hash'][$x]['allstars_in_the_news_link']=$post->custom['allstars_in_the_news_'.$x.'_link'];
+		if( !empty($post->custom['allstars_in_the_news_'.$x.'_featured_image'] ) ){
+			$post->custom['allstars_in_the_news_hash'][$x]['allstars_in_the_news_featured_image']= wp_get_attachment_image_src($post->custom['allstars_in_the_news_'.$x.'_featured_image'],'thumbnail');
+			$post->custom['allstars_in_the_news_hash'][$x]['allstars_in_the_news_featured_image_meta']= wp_get_attachment_metadata($post->custom['allstars_in_the_news_'.$x.'_featured_image']);
+			$post->custom['allstars_in_the_news_hash'][$x]['allstars_in_the_news_featured_image_image_alt'] = get_post_meta( $post->custom['allstars_in_the_news_'.$x.'_featured_image'], '_wp_attachment_image_alt', true);
+		}
+	}
+}
+
+// Assign full post data
+$context['post'] = $post;
 
 if (post_password_required($post->ID)){
     Timber::render('static-password.twig', $context);
