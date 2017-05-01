@@ -33,32 +33,46 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section id="allstar_hero">
-        <div class="container">
-            <div class="container" id="logo_container">
-                <h1>
-                    <img class="allstar-2017-logo" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/allstars_logo_@2x.png" alt="Tech Impact AllStars 2017" title="Tech Impact AllStars 2017" style="">
-                </h1>
-                <a href="#nominate">
-                    <img class="play-btn" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/play_btn.svg" >
-                </a>
-            </div>
+    <!-- The Modal -->
+    <div id="video_allstar_modal" class="modal-allstar">
 
-            <div class="container">
-                <div id="partner_copy">
-                    <p style="float: right;">
-                        in partnership with
-                    </p>
-                </div>
-
-                <div id="partner_logo">
-                    <img class="" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/Comcast_NBC_white.png" alt="Comcast NBC" title="Tech Impact AllStars 2017" >
-                </div>
-            </div>
+        <span class="close-modal-allstar">&times;</span>
+        <!-- Modal content -->
+        <div class="modal-allstar-content ">
+            <iframe id="allstar_video" style="width: 100%; height: 100%; position: absolute; top: 0; bottom: 0; left: 0;" src=" " frameborder="0" allowfullscreen></iframe>
+            
         </div>
-        
-    </section>
+
+    </div>
+    <!-- END Modal -->
+
+    <!-- Hero -->
+    <div class="container" id="allstar_hero_background">
+        <section id="allstar_hero">
+            <div class="container">
+                <div class="container" id="logo_container">
+                    <h1>
+                        <img class="allstar-2017-logo" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/allstars_logo_@2x.png" alt="Tech Impact AllStars 2017" title="Tech Impact AllStars 2017" style="">
+                    </h1>
+                    <a href="javascript:void(0)" id="play_allstar_btn">
+                        <img class="play-btn" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/play_btn.svg" >
+                    </a>
+                </div>
+
+                <div>
+                    <div id="partner_copy">
+                        <p style="float: right;">
+                            in partnership with
+                        </p>
+                    </div>
+
+                    <div id="partner_logo">
+                        <img class="" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/Comcast_NBC_white.png" alt="Comcast NBC" title="Tech Impact AllStars 2017" >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- End Hero -->
 <div class="container"></div>
 
@@ -246,13 +260,75 @@
             <a href="{{ nationswell_twitter }}" target="_blank" data-track='{"label": "twitter"}' class="icon icon_twitter"></a> -->
     
 
-
 <script>
     window.addEventListener('scroll', function () {
       document.body.classList[
         window.scrollY > 100 ? 'add': 'remove'
       ]('scrolled');
     });
+</script>
+
+<script>
+    
+    (function($) {
+        // Get the modal
+        var modal = $('#video_allstar_modal');
+
+        // Get the button that opens the modal
+        var btn = $("#play_allstar_btn");
+
+        // Get the <span> element that closes the modal
+        var closebtn = $(".close-modal-allstar");
+
+        // When the user clicks the button, open the modal 
+        btn.click(function() {
+          $('body.page-template-page-allstar').css("overflow", "hidden");
+          $( modal ).fadeIn( "normal", function() {
+            // Animation complete
+            console.log("play the vid");
+            $('#allstar_video').attr("src", "https://www.youtube.com/embed/ByeF5HljIL4?autoplay=1");
+            
+          });
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        closebtn.click(function() {
+            $('body.page-template-page-allstar').css("overflow", "scroll");
+            modal.fadeOut( "fast", function() {
+                $('#allstar_video').attr("src", " ");
+            });
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        $(window).click(function(event) {
+            $('body.page-template-page-allstar').css("overflow", "scroll");
+            var target = $( event.target );
+            if ( target.is(modal) ) {
+                    modal.fadeOut( "fast", function() {
+                    $('#allstar_video').attr("src", " ");
+                });
+            }
+        });
+
+    })( jQuery );
+
+</script>
+
+<script>
+    (function($) {
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+    })( jQuery );
 </script>
 
 {% endblock %}
