@@ -2,8 +2,8 @@
 <html class="no-js" {{ language_attributes }}>
 <head>
 	 <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="/wp-content/themes/nationswell/css/1704-FTAAML.css">
-     <link href="/wp-content/themes/nationswell/css/allstars.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="{{site_url}}/wp-content/themes/nationswell/css/1704-FTAAML.css">
+     <link href="{{site_url}}/wp-content/themes/nationswell/css/allstars.css" rel="stylesheet">
 
     
     {% block head %}
@@ -14,14 +14,13 @@
 </head>
 <body class="{{ body_class }}" >
 
-
 {% block content %}
 	<header id="header-bg">
         <div class="container">
             <div class="header-logo-container">
         		<a href="{{ home }}">
-                    <img id="header_logo_blue" class="ns_header_logo" src="/wp-content/themes/nationswell/img/allstars_2017/nationswell_blue.png" alt="NationSwell logo">
-                     <img id="header_logo_white" class="ns_header_logo" src="/wp-content/themes/nationswell/img/allstars_2017/nationswell_white.png" alt="NationSwell logo">
+                    <img id="header_logo_blue" class="ns_header_logo" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/nationswell_blue.png" alt="NationSwell logo">
+                     <img id="header_logo_white" class="ns_header_logo" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/nationswell_white.png" alt="NationSwell logo">
                 </a>
             </div>
             
@@ -39,10 +38,10 @@
         <div class="container">
             <div class="container" id="logo_container">
                 <h1>
-                    <img class="allstar-2017-logo" src="/wp-content/themes/nationswell/img/allstars_2017/allstars_logo_@2x.png" alt="Tech Impact AllStars 2017" title="Tech Impact AllStars 2017" style="">
+                    <img class="allstar-2017-logo" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/allstars_logo_@2x.png" alt="Tech Impact AllStars 2017" title="Tech Impact AllStars 2017" style="">
                 </h1>
                 <a href="#nominate">
-                    <img class="play-btn" src="/wp-content/themes/nationswell/img/allstars_2017/play_btn.svg" >
+                    <img class="play-btn" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/play_btn.svg" >
                 </a>
             </div>
 
@@ -54,7 +53,7 @@
                 </div>
 
                 <div id="partner_logo">
-                    <img class="" src="/wp-content/themes/nationswell/img/allstars_2017/Comcast_NBC_white.png" alt="Comcast NBC" title="Tech Impact AllStars 2017" >
+                    <img class="" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/Comcast_NBC_white.png" alt="Comcast NBC" title="Tech Impact AllStars 2017" >
                 </div>
             </div>
         </div>
@@ -67,7 +66,7 @@
 
         <section id="main_info">
             <h3 style="text-align: center;">
-                Who’s using technology to solve America’s greatest challenges? Tell us who should be a Tech Impact AllStar! 
+                {{ term.description }}
             </h3>
 
             {{ page_content }}
@@ -104,7 +103,7 @@
             <div id="allstars_photo">
                 <div id="allstar_previous_photo_container" >
                 </div>
-                <!-- <img src="/wp-content/themes/nationswell/img/allstars_2017/past_allstars.png" style="width: 100%;"/> -->
+                <!-- <img src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/past_allstars.png" style="width: 100%;"/> -->
             </div>
         </section>
     </div>
@@ -112,68 +111,34 @@
     <!-- END Previous AllStars -->
 
 
-
-    <!-- Finalists -->
+	{% if post.custom.allstar_finalists_will_receive_hash  %}
+	<!-- Finalists -->
     <div class="container">
-        <section class="finalists">
-            <h2 class="title-receive">
-                <span class="title-5">5</span><br>AllStar Finalists<br>will receive:
-            </h2>
-
-            <div class="container">
-                <div class="finalist-benefit">
-                    <img src="/wp-content/themes/nationswell/img/allstars_2017/benefits_video_@2x.png" style=""/>
-                    <p>
-                        One 3-5 minute video about their incredible work, produced by our award-winning journalists
-                    </p>
-                </div>
-
-                <div class="finalist-benefit">
-                    <img src="/wp-content/themes/nationswell/img/allstars_2017/benefits_article_@2x.png" style=""/>
-                    <p>
-                        One 700-900 word feature article to accompany the video spotlight
-                    </p>
-                </div>
-
-                <div class="finalist-benefit">
-                    <img src="/wp-content/themes/nationswell/img/allstars_2017/benefits_media_@2x.png" style=""/>
-                    <p>
-                        Targeted distribution of the above to prominent media outlets, bloggers, influencers, and more
-                    </p>
-                </div>
+		<section class="finalists">
+			<h2 class="title-receive">
+				<span class="title-5">5</span><br>AllStar Finalists<br>will receive:
+			</h2>
+		{% for allstar_finalists_will_receive in post.custom.allstar_finalists_will_receive_hash %}
+			<div class="finalist-benefit">
+				{% if allstar_finalists_will_receive.allstar_finalists_will_receive_icon %}
+					<img src="{{ allstar_finalists_will_receive.allstar_finalists_will_receive_icon.0}}" alt="{{allstar_finalists_will_receive.allstar_finalists_will_receive_icon_image_alt}}" style=""/>
+                {% endif %}
+                <p>
+                    {{ allstar_finalists_will_receive.allstar_finalists_will_receive_description }}
+                </p>
             </div>
-            
-            <div class="container">
-                <div class="finalist-benefit">
-                    <img src="/wp-content/themes/nationswell/img/allstars_2017/benefits_nyc_@2x.png" style=""/>
-                    <p>
-                        An all-expense-paid trip to New York City
-                    </p>
-                </div>
-
-                <div class="finalist-benefit">
-                    <img src="/wp-content/themes/nationswell/img/allstars_2017/benefits_speaking_@2x.png" style=""/>
-                    <p>
-                        A speaking slot at the NationSwell Summit on Solutions
-                    </p>
-                </div>
-
-                <div class="finalist-benefit">
-                    <img src="/wp-content/themes/nationswell/img/allstars_2017/benefits_grant_@2x.png" style=""/>
-                    <p>
-                        A chance to win the Tech Impact Award, a $10,000 grant to help further their important work
-                    </p>
-                </div>
-            </div>
-
+			{% if loop.index is divisible by(3) %}
+				</section>
+				<section class="finalists">
+			{% endif %}
+		{% endfor %}
         </section>
-
         <p style="text-align: center;">
             For full contest rules, visit <a href="#">TKTKTKTKTKTK</a>
         </p>
     </div>
     <!-- END Finalists -->
-
+	{% endif %}
 
 
     <!-- Ballot -->
@@ -192,11 +157,9 @@
                 </div>
             </div>
 
-            
         </section>
     </div>
     <!-- END Ballot -->
-
 
     <!-- In the News -->
     
@@ -204,67 +167,39 @@
         <div class="container">
             <section id="allstar_news">
                 <div class="container">
+					{% if post.custom.allstars_in_the_news_hash  %}
                     <div class="allstar-news-block">
                         <h2>AllStars in the News</h2>
 
                         <div class="news-container">
                             <div class="news-article-container">
-                                <div class="container news-article">
-                                    <div class="news-article-photo">
-                                        <img src="http://placehold.it/80x80" style="float: left;" />
-                                    </div>
 
+                                {% for allstars_in_the_news in post.custom.allstars_in_the_news_hash %}
+                                <div class="container news-article">
+                                    {% if allstars_in_the_news.allstars_in_the_news_featured_image %}
+                                    <div class="news-article-photo">
+                                        <img src="{{ allstars_in_the_news.allstars_in_the_news_featured_image.0}}" alt="{{allstars_in_the_news.allstars_in_the_news_featured_image_image_alt}}" style="float: left;" />
+                                    </div>
+									{% endif %}
                                     <div class="news-article-content">
-                                        <p>Raj Karmani - Zero Percent</p>
                                         <p>
-                                            Zero Percent turns to crowdfunding to prevent food waste
+                                        {% if allstars_in_the_news.allstars_in_the_news_link %}
+											<a href="{{ allstars_in_the_news.allstars_in_the_news_link }}" target="_BLANK">{{ allstars_in_the_news.allstars_in_the_news_title }}</a>
+                                        {% else %}
+											{{ allstars_in_the_news.allstars_in_the_news_title }}
+                                        {% endif %}
+                                        </p>
+                                        <p>
+                                            {{ allstars_in_the_news.allstars_in_the_news_excerpt }}
                                         </p>
                                     </div>
                                 </div>
-
-                                <div class="container news-article">
-                                    <div class="news-article-photo">
-                                        <img src="http://placehold.it/80x80" style="float: left;" />
-                                    </div>
-
-                                    <div class="news-article-content">
-                                        <p>Raj Karmani - Zero Percent</p>
-                                        <p>
-                                            Zero Percent turns to crowdfunding to prevent food waste
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="container news-article">
-                                    <div class="news-article-photo">
-                                        <img src="http://placehold.it/80x80" style="float: left;" />
-                                    </div>
-
-                                    <div class="news-article-content">
-                                        <p>Raj Karmani - Zero Percent</p>
-                                        <p>
-                                            Zero Percent turns to crowdfunding to prevent food waste
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="container news-article">
-                                    <div class="news-article-photo">
-                                        <img src="http://placehold.it/80x80" style="float: left;" />
-                                    </div>
-
-                                    <div class="news-article-content">
-                                        <p>Raj Karmani - Zero Percent</p>
-                                        <p>
-                                            Zero Percent turns to crowdfunding to prevent food waste
-                                        </p>
-                                    </div>
-                                </div>
+								{% endfor %}
                             </div>
                         </div>
 
                     </div>
-
+					{% endif %}
                     <div class="allstar-news-block">
                         <h2>#TechImpactAllStars</h2>
                         <div class="twitter-container">
@@ -279,42 +214,25 @@
     </div>
     <!-- END In the News -->
 
-
     <!-- start footer -->
     <div class="footer-container">
         <div class="container">
             
             <div class="footer-allstar-logo">
-                <img class="ns_header_logo" src="/wp-content/themes/nationswell/img/allstars_2017/nationswell_grey.png" alt="NationSwell logo">
+                <img class="ns_header_logo" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/nationswell_grey.png" alt="NationSwell logo">
                  
             </div>
-
+			{% if footer_links  %}
             <div class="footer-allstar-links">
                 <ul>
+					{% for link in footer_links %}
                     <li>
-                        Home
+                        <a href="{{link.url}}">{{link.title}}</a>
                     </li>
-                    <li>
-                        About Us
-                    </li>
-                    <li>
-                        NationSwell Council
-                    </li>
-                    <li>
-                        Contact Us
-                    </li>
-                    <li>
-                        Privacy Policy
-                    </li>
-                    <li>
-                        Terms of Service
-                    </li>
-                    <li>
-                        Work With Us
-                    </li>
+					{% endfor %}
                 </ul>
             </div>
-            
+           {% endif %}
         </div>
     
         <div class="container">
@@ -338,7 +256,3 @@
 </script>
 
 {% endblock %}
-
-
-
-
