@@ -31,6 +31,7 @@ $grey-ballot: #EAEDED;
 $blue-link: #00AEEF;
 $blue-link-hover: #44CAFB;
 $grey-light: #DCDADA;
+$grey-dark: #5f5f5f;
 $tiny: (max-width 450px);
 $huge: (min-width 1400px);
 $link-hover: 0.8;
@@ -52,8 +53,8 @@ body.page-template-page-allstar {
 		line-height: 28px;
 	}
 
-	p, label, ul li {
-		color: #5f5f5f;
+	p, label, ul li, .footer-allstar-links ul li a {
+		color: $grey-dark;
 		font-family: montserrat;
 	}
 
@@ -86,7 +87,7 @@ body.page-template-page-allstar {
 
 	h2 {
 		font-size: 33px;
-		margin-bottom: 0px;
+		margin-bottom: 10px;
 		line-height: 1;
 
 		@include media($desktop) {
@@ -423,6 +424,7 @@ body.scrolled  {
 	background-image: url('../img/allstars_2017/allstars_hero_zikiya_@2x.jpg');
 	background-repeat: none;
 	background-size: cover;
+	background-position: center;
 	max-width: 100% !important;
 }
 
