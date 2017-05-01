@@ -524,21 +524,42 @@ body.scrolled  {
 		}
 	}
 
-	
+}
+
+.story__sticky-mobile {
+	margin: 10px auto;
+}
+
+#allstar_social_share {
+	@include span-columns(1);
+
+	@include media($tiny) {
+        @include span-columns(12);
+        /*@include shift(0);*/
+    }
+
+	@include media($desktop) {
+		@include span-columns(2);
+	}
+}
+
+#allstar_social_share.story__sticky {
+	margin-top: 20px;
+	min-width: 0;
 }
 
 #main_info {
 	@include span-columns(10);
-	@include shift(1);
+	/*@include shift(1);*/
 
 	@include media($tiny) {
         @include span-columns(12);
-        @include shift(0);
+        /*@include shift(0);*/
     }
 
 	@include media($desktop) {
 		@include span-columns(8);
-		@include shift(2);
+		/*@include shift(2);*/
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}

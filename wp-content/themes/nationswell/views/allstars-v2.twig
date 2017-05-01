@@ -5,7 +5,7 @@
      <link rel="stylesheet" type="text/css" href="{{site_url}}/wp-content/themes/nationswell/css/1704-FTAAML.css">
      <link href="{{site_url}}/wp-content/themes/nationswell/css/allstars.css" rel="stylesheet">
 
-    
+        
     {% block head %}
         {% include 'html-header.twig' %}
     {% endblock %}
@@ -71,18 +71,60 @@
         </section>
     </div>
     <!-- End Hero -->
-<div class="container"></div>
 
     <div class="container">
+        <div class="story__sticky-mobile hide_desktop">
+    
+            {% if post.call_to_action is not empty %}
+                <style>
+                .story__sticky-mobile ul li
+                {
+                    width:25%;
+                }
+                </style>
+            {% else %}
+                <style>
+                .story__sticky-mobile ul li
+                {
+                    width:33.3%;
+                }
+                </style>
+            {% endif %}
+        
+                <ul>
+                    <li><a href="{{ post.facebook_share_url }}" class="btn btn--nav btn--facebook btn--share icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a></li>
+                    <li><a href="{{ post.twitter_share_url }}" class="btn btn--nav btn--twitter btn--share icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a></li>
+                     <li><a class="btn btn--nav btn--email icon icon_envelope" href="mailto:?subject={{ post.post_title }}&body={{ post.dek }}%0D%0A%0D%0A{{ post.permalink }}
+                     %0D%0A%0D%0AMeet the people renewing America at NationSwell. Sign up for more stories here:%0D%0Ahttp://www.nationswell.com/daily-newsletter-signup/">Email</a></li>   
+                    
+            {% if post.call_to_action is not empty %}
+                    <li><a href="#" class="btn btn--nav btn--sticky-take-action-mobile icon icon_nationswell-flag" data-modal-target="take-action" data-modal-disable="{{ modal_joinus_close_expiration }}">{{ take_action_header_text }}</a></li>
+                    {% endif %}
+                </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="allstar_social_share" class="story__sticky hide_mobile">
+            <div class="story__sticky-container">
+                <div class="sticky-social" data-module='{"name": "sticky-sidebar"}'>
+                    <a href="{{ post.facebook_share_url }}" class="btn btn--facebook2 btn--share btn--circle icon icon_facebook" data-track='{"action": "facebook"}'></a>
+                    <a href="{{ post.twitter_share_url }}" class="btn btn--twitter2 btn--share btn--circle icon icon_twitter"  data-track='{"action": "twitter"}'></a>
+                </div>
+
+                {% if post.call_to_action is not empty %}
+                {% include 'action-sidebar.twig' %}
+                {% endif %}
+            </div>
+        </div>
 
         <section id="main_info">
+
             <h3 style="text-align: center;">
                 {{ term.description }}
             </h3>
 
-            {{ page_content }}
-            
-             
+            {{ page_content }}             
         </section>
         
     </div>
@@ -171,6 +213,14 @@
         </section>
     </div>
     <!-- END Ballot -->
+
+    <div class="container">
+        <div class="story__social cf hide_mobile" data-module='{"name": "story:social"}'>
+            <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--share btn--facebook icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_expanded_text }}</a>
+            <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--share btn--twitter icon icon_twitter" data-track='{"action": "twitter"}'>{{ twitter_button_expanded_text }}</a>
+        </div>
+    </div>
+
 
     <!-- In the News -->
     
@@ -323,5 +373,7 @@
         });
     })( jQuery );
 </script>
+
+<script src="{{ static_dir }}/js/build/{{ js_main }}"></script>
 
 {% endblock %}
