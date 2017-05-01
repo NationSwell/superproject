@@ -3775,7 +3775,8 @@ body.page-template-page-allstar {
     margin-top: 8px;
     margin-bottom: 0;
     font-size: 13px;
-    padding: 8px 18px 10px; }
+    padding: 8px 18px 10px;
+    float: right; }
     @media screen and (min-width: 768px) {
       body.page-template-page-allstar button.nominate, body.page-template-page-allstar .button.nominate, body.page-template-page-allstar .gform_wrapper input.nominate[type=submit] {
         font-size: 16px;
@@ -3949,6 +3950,8 @@ body.scrolled #header_logo_white {
   width: 60px;
   height: auto;
   margin: 0px auto; }
+  .play-btn:hover {
+    opacity: 0.8; }
   @media screen and (min-width: 768px) {
     .play-btn {
       width: 80px; } }
@@ -4480,7 +4483,7 @@ body.scrolled #header_logo_white {
   /* Full width */
   height: 100%;
   /* Full height */
-  overflow: auto;
+  overflow: hidden;
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
@@ -4508,7 +4511,7 @@ body.scrolled #header_logo_white {
 
 .close-modal-allstar:hover,
 .close-modal-allstar:focus {
-  color: #000;
+  opacity: 0.8;
   text-decoration: none;
   cursor: pointer; }
 

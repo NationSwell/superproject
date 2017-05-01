@@ -33,6 +33,7 @@ $blue-link-hover: #44CAFB;
 $grey-light: #DCDADA;
 $tiny: (max-width 450px);
 $huge: (min-width 1400px);
+$link-hover: 0.8;
 
 
 
@@ -162,7 +163,7 @@ body.page-template-page-allstar {
 	}
 
 	.outline-btn:hover {
-		opacity: 0.8;
+		opacity: $link-hover;
 	}
 
 	button.nominate, .button.nominate {
@@ -172,6 +173,7 @@ body.page-template-page-allstar {
 		margin-bottom: 0;
 		font-size: 13px;
 	    padding: 8px 18px 10px;
+	    float: right;
 
 		@include media($desktop) {
 	    	font-size: 16px;
@@ -437,6 +439,10 @@ body.scrolled  {
 	width: 60px;
 	height: auto;
 	margin: 0px auto;
+
+	&:hover {
+		opacity: $link-hover;
+	}
 
 	@include media($desktop) {
 		width: 80px;
@@ -924,7 +930,7 @@ body.scrolled  {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
@@ -952,7 +958,7 @@ body.scrolled  {
 
 .close-modal-allstar:hover,
 .close-modal-allstar:focus {
-    color: #000;
+    opacity: $link-hover;
     text-decoration: none;
     cursor: pointer;
 }
