@@ -212,6 +212,7 @@
 
     <!-- Ballot -->
     <div class="container">
+		<a id="ballot" class="gform_anchor"></a>
         <section id="ballot">
             <h3 class="nom-instructions">
                 We need you to help us find our next <span style="white-space: nowrap;">Tech AllStars.</span><br>Nominate someone using technology to solve America’s <span style="white-space: nowrap;">greatest challenges.</span>
@@ -384,6 +385,9 @@
                 window.location.hash = target;
             });
         });
+        if(window.location.hash=='#gf_9'){
+			window.location.hash= '#ballot';
+		}
     })( jQuery );
 	</script>
 
