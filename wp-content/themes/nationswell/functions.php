@@ -1776,3 +1776,7 @@ function show_logged_in_user() {
 add_shortcode( 'show_current_user', 'show_logged_in_user' );
 //************ //End logout link *********************/
 
+//**********************************************
+//----- Add gform confirmation anchor ---- //
+add_filter( 'gform_confirmation_anchor', '__return_true' );
+//************ //End gform_confirmation_anchor *********************/
