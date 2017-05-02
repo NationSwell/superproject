@@ -1,28 +1,45 @@
 
 // ********** AllStars 2017 STYLES *****************//
 
-@font-face {
-  font-family: 'montserrat';
-  src: url('../fonts/montserrat/montserrat-regular.woff') format('woff'),
-         url('../fonts/montserrat/montserrat-regular.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
-  font-family: 'montserratBold';
-  src: url('../fonts/montserrat/montserrat-bold.woff') format('woff'),
-         url('../fonts/montserrat/montserrat-bold.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Austin Web';
+  src: url('../fonts/austin/Austin-BoldItalic-Web.eot');
+  src: url('../fonts/austin/Austin-BoldItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/austin/Austin-BoldItalic-Web.woff2') format('woff2'),
+       url('../fonts/austin/Austin-BoldItalic-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
 }
 
-/*@font-face {
-  font-family: 'austin';
-  src: url('../fonts/austin/austin-bold.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-}*/
+.Austin-BoldItalic-Web {
+  font-family: 'Austin Web';
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Austin Web';
+  src: url('../fonts/austin/Austin-Bold-Web.eot');
+  src: url('../fonts/austin/Austin-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/austin/Austin-Bold-Web.woff2') format('woff2'),
+       url('../fonts/austin/Austin-Bold-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Austin-Bold-Web {
+  font-family: 'Austin Web';
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
 
 $purple-allstar: #400095;
 $purple-hero: #3D3B74;
@@ -47,6 +64,9 @@ body.page-template-page-allstar {
 	background-color: #fff;
 	font-size: 13px;
 	line-height: 22px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+
 
 	@include media($desktop) {
 		font-size: 16px;
@@ -55,7 +75,6 @@ body.page-template-page-allstar {
 
 	p, label, ul li, .footer-allstar-links ul li a {
 		color: $grey-dark;
-		font-family: montserrat;
 	}
 
 	label, .validation_error, .validation_message {
@@ -81,10 +100,18 @@ body.page-template-page-allstar {
 	a {
 		color: $blue-link;
 	}
+	
+	strong, b {
+		font-weight:700;
+	}
 
 	h1, h2 {
-		font-family: 'Austin Web';
+		@extend .Austin-Bold-Web;
 		text-align: center;
+		
+		i, em {
+			@extend .Austin-BoldItalic-Web;
+		}
 	}
 
 	h2 {
@@ -102,10 +129,10 @@ body.page-template-page-allstar {
 	}
 
 	h3 {
-		font-family: montserratBold;
 		font-size: 15px;
 		line-height: 24px;
 		margin-bottom: 20px;
+		font-weight:700;
 
 		@include media($desktop) {
 			font-size: 22px;
@@ -113,11 +140,15 @@ body.page-template-page-allstar {
 			margin-bottom: 40px;
 		}
 	}
+	p {
+    	margin-bottom: 1.5rem;
+	}
 
 	.button, button,  {
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
-	    font-family: montserrat;
+	    font-family: 'Montserrat', sans-serif;
+
 	    border-radius: 4px;
 	    border-style: solid;
 	    border-width: 0;
@@ -204,7 +235,8 @@ body.page-template-page-allstar {
 	    background-image: none;
 	    border: 1px solid #e6e6e6;
 	    box-shadow: inset 0 1px 1px rgba(0,0,0,.01);
-	    font-family: montserrat;
+	    font-family: 'Montserrat', sans-serif;
+
 	    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 	    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
@@ -263,7 +295,8 @@ body.page-template-page-allstar {
 	}
 
 	.gform_wrapper .validation_error, .gform_wrapper .validation_message {
-		font-family: montserrat;
+		font-family: 'Montserrat', sans-serif;
+
 		font-size: 14px;
 		margin-top: 5px;
 
