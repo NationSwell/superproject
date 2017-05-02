@@ -12,18 +12,18 @@
   <!-- Social -->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Core Hydration">
-  <meta property="og:title" content="Core Hydration | Be true to your core">
-  <meta property="og:url" content="http://core-hydration.com">
-  <meta property="og:description" content="Stay True To The Core with Ellie Goulding and Core Hydration. #truetothecore">
-  <meta property="og:image" content="http://core-hydration.com/img/facebook-ellie-goulding.jpg">
+  <meta property="og:site_name" content="{{ site_title }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:url" content="{{ site_url }}">
+  <meta property="og:description" content="{{ term.description }}">
+  <meta property="og:image" content="{{ term.header_image.url }}">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@COREdrinks">
-  <meta name="twitter:creator" content="@COREdrinks">
-  <meta name="twitter:title" content="Core Hydration | Be true to your core">
-  <meta name="twitter:description" content="Stay True To The Core with Ellie Goulding and Core Hydration. #truetothecore">
-  <meta name="twitter:image" content="http://core-hydration.com/img/twitter-ellie-goulding.jpg">
+  <meta name="twitter:site" content="@NationSwell">
+  <meta name="twitter:creator" content="@NationSwell">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ term.description }}">
+  <meta name="twitter:image" content="{{ term.header_image.url }}">
   <!-- END Social -->
   
   
@@ -108,8 +108,8 @@
             {% endif %}
         
                 <ul>
-                    <li><a href="{{ post.facebook_share_url }}" class="btn btn--nav btn--facebook btn--share icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a></li>
-                    <li><a href="{{ post.twitter_share_url }}" class="btn btn--nav btn--twitter btn--share icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a></li>
+                    <li><a href="{{ facebook_share_url }}" class="btn btn--nav btn--facebook btn--share icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_bingo_text }}</a></li>
+                    <li><a href="{{ twitter_share_url }}" class="btn btn--nav btn--twitter btn--share icon icon_twitter"  data-track='{"action": "twitter"}'>{{ twitter_button_bingo_text }}</a></li>
                      <li><a class="btn btn--nav btn--email icon icon_envelope" href="mailto:?subject={{ post.post_title }}&body={{ post.dek }}%0D%0A%0D%0A{{ post.permalink }}
                      %0D%0A%0D%0AMeet the people renewing America at NationSwell. Sign up for more stories here:%0D%0Ahttp://www.nationswell.com/daily-newsletter-signup/">Email</a></li>   
                     
@@ -124,8 +124,8 @@
         <div id="allstar_social_share" class="hide_mobile">
             <div>
                 <div>
-                    <a href="{{ post.facebook_share_url }}" class="btn btn--facebook2 btn--share btn--circle icon icon_facebook" data-track='{"action": "facebook"}'></a>
-                    <a href="{{ post.twitter_share_url }}" class="btn btn--twitter2 btn--share btn--circle icon icon_twitter"  data-track='{"action": "twitter"}'></a>
+                    <a href="{{ facebook_share_url }}" class="btn btn--facebook2 btn--share btn--circle icon icon_facebook" data-track='{"action": "facebook"}'></a>
+                    <a href="{{ twitter_share_url }}" class="btn btn--twitter2 btn--share btn--circle icon icon_twitter"  data-track='{"action": "twitter"}'></a>
                 </div>
 
                 {% if post.call_to_action is not empty %}
@@ -232,8 +232,8 @@
 
     <div class="container">
         <div class="story__social cf hide_mobile" data-module='{"name": "story:social"}'>
-            <a href="{{ post.facebook_share_url }}" class="btn btn--bar btn--share btn--facebook icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_expanded_text }}</a>
-            <a href="{{ post.twitter_share_url }}" class="btn btn--bar btn--share btn--twitter icon icon_twitter" data-track='{"action": "twitter"}'>{{ twitter_button_expanded_text }}</a>
+            <a href="{{ facebook_share_url }}" class="btn btn--bar btn--share btn--facebook icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_expanded_text }}</a>
+            <a href="{{ twitter_share_url }}" class="btn btn--bar btn--share btn--twitter icon icon_twitter" data-track='{"action": "twitter"}'>{{ twitter_button_expanded_text }}</a>
         </div>
     </div>
 

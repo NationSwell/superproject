@@ -26,11 +26,20 @@
 $context = Timber::get_context();
 $post = new TimberPost();
 
+$context['site_title'] = get_bloginfo('name');
+$context['site_url'] = get_site_url();
+
+$context['tweet'] = get_field('tweet_text');
+$context['hashtags'] = get_field('hashtags');
+$context['facebook_share_url'] = 'https://www.facebook.com/sharer/sharer.php?u='.get_permalink();
+$context['twitter_share_url'] = 'https://twitter.com/share?url='.urlencode(get_permalink()).'&via=NationSwell&hashtags='.$context['hashtags'].'&text='.urlencode($context['tweet']);
+
 $context['page_content'] = wpautop($post->post_content);
+$context['page_title'] = get_the_title();
 $context['form'] = gravity_form( get_field('nomination_form_id'), $display_title = true, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = false );
 $context['previous_years'] = get_field('previous_years');
 $context['home'] = esc_url( home_url( '/' ) );
-$context['site_url'] = get_site_url();
+
 $context['footer_links'] = wp_get_nav_menu_items('Footer Links');
 
 
