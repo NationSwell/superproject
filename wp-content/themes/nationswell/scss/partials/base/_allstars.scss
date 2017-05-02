@@ -466,7 +466,6 @@ body.scrolled  {
 
 #allstar_hero_background {
 	background-color: $purple-hero;
-	background-image: url('../img/allstars_2017/allstars_hero_zikiya_@2x.jpg');
 	background-repeat: none;
 	background-size: cover;
 	background-position: center;
@@ -782,6 +781,7 @@ body.scrolled  {
 .finalist-benefit {
 	@include span-columns(12);
 	margin-bottom: 20px;
+	padding:0 20px;
 	text-align: center;
 
 	img {
