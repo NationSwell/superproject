@@ -70,5 +70,5 @@ $context['post'] = $post;
 if (post_password_required($post->ID)){
     Timber::render('static-password.twig', $context);
 } else {
-    Timber::render(array('static-' . $post->post_name . '.twig', 'allstars-v2.twig'), $context);
+    Timber::render('allstars-v2.twig', $context);
 }

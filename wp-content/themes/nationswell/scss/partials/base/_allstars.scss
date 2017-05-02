@@ -60,6 +60,8 @@ body.page-template-page-allstar {
 
 	label, .validation_error, .validation_message {
 		font-size: 14px;
+		display:inline-block;
+		line-height:normal;
 
 		@include media($tiny) {
 			font-size: 12px;
@@ -192,6 +194,7 @@ body.page-template-page-allstar {
 	    display: block;
 	    width: 100%;
 	    padding: 7px 12px;
+	    margin:0;
 	    margin-bottom: 10px;
 	    font-size: 14px;
 	    line-height: 1.5;
@@ -215,8 +218,16 @@ body.page-template-page-allstar {
 	}
 
 	input[type=radio] {
-		margin: 10px 5px 15px 0;
+		/*margin: 10px 5px 15px 0;*/
 	}
+	.work-category ul li:last-child {
+		input:last-child {
+			width: 50%;
+    		display: inline;
+    		margin-left: 10px;
+    	}
+	}
+	//#gform_wrapper_9{display:block!important;} //WTF
 
 	input.phone-number, input.other-work {
 		max-width: 240px;
