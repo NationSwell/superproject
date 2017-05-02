@@ -9,7 +9,24 @@
         {% include 'html-header.twig' %}
     {% endblock %}
 
+  <!-- Social -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Core Hydration">
+  <meta property="og:title" content="Core Hydration | Be true to your core">
+  <meta property="og:url" content="http://core-hydration.com">
+  <meta property="og:description" content="Stay True To The Core with Ellie Goulding and Core Hydration. #truetothecore">
+  <meta property="og:image" content="http://core-hydration.com/img/facebook-ellie-goulding.jpg">
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@COREdrinks">
+  <meta name="twitter:creator" content="@COREdrinks">
+  <meta name="twitter:title" content="Core Hydration | Be true to your core">
+  <meta name="twitter:description" content="Stay True To The Core with Ellie Goulding and Core Hydration. #truetothecore">
+  <meta name="twitter:image" content="http://core-hydration.com/img/twitter-ellie-goulding.jpg">
+  <!-- END Social -->
+  
+  
 </head>
 <body class="{{ body_class }}" >
 
@@ -58,12 +75,12 @@
                 <div>
                     <div id="partner_copy">
                         <p style="float: right;">
-                            {{term.category_type}}
+                            in partnership with
                         </p>
                     </div>
 
                     <div id="partner_logo">
-                        <img class="" src="{{category_sponsor_image_src.0}}" alt="{{category_sponsor_image_meta_alt}}" title="{{term.title}}" >
+                        <img class="" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/Comcast_NBC_white.png" alt="Comcast NBC" title="Tech Impact AllStars 2017" >
                     </div>
                 </div>
             </div>
@@ -104,9 +121,9 @@
     </div>
 
     <div class="container">
-        <div id="allstar_social_share" class="story__sticky hide_mobile">
-            <div class="story__sticky-container">
-                <div class="sticky-social" data-module='{"name": "sticky-sidebar"}'>
+        <div id="allstar_social_share" class="hide_mobile">
+            <div>
+                <div>
                     <a href="{{ post.facebook_share_url }}" class="btn btn--facebook2 btn--share btn--circle icon icon_facebook" data-track='{"action": "facebook"}'></a>
                     <a href="{{ post.twitter_share_url }}" class="btn btn--twitter2 btn--share btn--circle icon icon_twitter"  data-track='{"action": "twitter"}'></a>
                 </div>
@@ -327,7 +344,7 @@
         btn.click(function() {
           $( modal ).fadeIn( "normal", function() {
             // Animation complete
-            $('#allstar_video').attr("src", "{{ term.video_url }}");
+            $('#allstar_video').attr("src", "https://www.youtube.com/embed/ByeF5HljIL4?autoplay=1");
             
           });
         });

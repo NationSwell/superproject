@@ -81,6 +81,7 @@ body.page-template-page-allstar {
 		font-size: 14px;
 		display:inline-block;
 		line-height:normal;
+		font-family: 'Montserrat', sans-serif;
 
 		@include media($tiny) {
 			font-size: 12px;
@@ -147,7 +148,7 @@ body.page-template-page-allstar {
 	.button, button,  {
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
-	    font-family: 'Montserrat', sans-serif;
+	    font-family: 'Montserrat', sans-serif !important;
 
 	    border-radius: 4px;
 	    border-style: solid;
@@ -235,7 +236,7 @@ body.page-template-page-allstar {
 	    background-image: none;
 	    border: 1px solid #e6e6e6;
 	    box-shadow: inset 0 1px 1px rgba(0,0,0,.01);
-	    font-family: 'Montserrat', sans-serif;
+	    font-family: 'Montserrat', sans-serif !important;
 
 	    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 	    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
@@ -575,6 +576,7 @@ body.scrolled  {
 }
 
 #allstar_social_share {
+	margin-top:3em;
 	@include span-columns(1);
 
 	@include media($tiny) {
