@@ -33,8 +33,13 @@ $context['home'] = esc_url( home_url( '/' ) );
 $context['site_url'] = get_site_url();
 $context['footer_links'] = wp_get_nav_menu_items('Footer Links');
 
+
 //Get category term by its ID
 $context['term'] = new TimberTerm($post->custom['category']);
+if( !empty($context['term']->category_sponsor_image) ){
+	$context['category_sponsor_image_src'] = wp_get_attachment_image_src($context['term']->category_sponsor_image,'thumbnail');
+	$context['category_sponsor_image_meta_alt']= get_post_meta($context['term']->category_sponsor_image, '_wp_attachment_image_alt', true);
+}
 
 // Get allstar_finalists_will_receive content
 if( !empty($post->custom['allstar_finalists_will_receive']) ){

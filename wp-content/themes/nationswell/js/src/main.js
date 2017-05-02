@@ -344,7 +344,7 @@
         }(document, "script", "twitter-wjs"));
 
         // Subscribe to Twitter Events
-        twttr.ready(function (twttr) {
+        jQuery.ready(function (twttr) {
             var event_names = {
                 "click": "",
                 "tweet": "",

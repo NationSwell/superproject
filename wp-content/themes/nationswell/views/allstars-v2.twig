@@ -58,12 +58,12 @@
                 <div>
                     <div id="partner_copy">
                         <p style="float: right;">
-                            in partnership with
+                            {{term.category_type}}
                         </p>
                     </div>
 
                     <div id="partner_logo">
-                        <img class="" src="{{site_url}}/wp-content/themes/nationswell/img/allstars_2017/Comcast_NBC_white.png" alt="Comcast NBC" title="Tech Impact AllStars 2017" >
+                        <img class="" src="{{category_sponsor_image_src.0}}" alt="{{category_sponsor_image_meta_alt}}" title="{{term.title}}" >
                     </div>
                 </div>
             </div>
@@ -327,7 +327,7 @@
         btn.click(function() {
           $( modal ).fadeIn( "normal", function() {
             // Animation complete
-            $('#allstar_video').attr("src", "https://www.youtube.com/embed/ByeF5HljIL4?autoplay=1");
+            $('#allstar_video').attr("src", "{{ term.video_url }}");
             
           });
         });
