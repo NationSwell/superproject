@@ -6524,45 +6524,47 @@ body.scrolled #header_logo_white {
 .news-container {
   background-color: #fff;
   margin-bottom: 40px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
-/* line 868, ../scss/partials/base/_allstars.scss */
+/* line 870, ../scss/partials/base/_allstars.scss */
 .news-article-container {
   height: 300px;
   overflow: auto;
   padding: 10px 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 868, ../scss/partials/base/_allstars.scss */
+  /* line 870, ../scss/partials/base/_allstars.scss */
   .news-article-container {
     height: 500px;
   }
 }
 
-/* line 879, ../scss/partials/base/_allstars.scss */
+/* line 881, ../scss/partials/base/_allstars.scss */
 .twitter-container {
   height: 300px;
 }
 @media screen and (min-width: 768px) {
-  /* line 879, ../scss/partials/base/_allstars.scss */
+  /* line 881, ../scss/partials/base/_allstars.scss */
   .twitter-container {
     height: 500px;
   }
 }
 
-/* line 887, ../scss/partials/base/_allstars.scss */
+/* line 889, ../scss/partials/base/_allstars.scss */
 .news-article {
   border-bottom: solid 1px #e5e5e5;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
-  /* line 887, ../scss/partials/base/_allstars.scss */
+  /* line 889, ../scss/partials/base/_allstars.scss */
   .news-article {
     padding: 10px;
   }
 }
 
-/* line 896, ../scss/partials/base/_allstars.scss */
+/* line 898, ../scss/partials/base/_allstars.scss */
 .news-article-photo {
   float: left;
   display: block;
@@ -6573,27 +6575,33 @@ body.scrolled #header_logo_white {
 .news-article-photo:last-child {
   margin-right: 0;
 }
-/* line 899, ../scss/partials/base/_allstars.scss */
+/* line 901, ../scss/partials/base/_allstars.scss */
 .news-article-photo img {
   width: 100%;
   margin-bottom: 10px;
 }
 
-/* line 905, ../scss/partials/base/_allstars.scss */
+/* line 907, ../scss/partials/base/_allstars.scss */
 .news-article-content {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
+  margin-bottom: 10px;
 }
 /* line 38, ../scss/neat/grid/_span-columns.scss */
 .news-article-content:last-child {
   margin-right: 0;
 }
+/* line 909, ../scss/partials/base/_allstars.scss */
+.news-article-content p {
+  margin-bottom: 0;
+  line-height: normal;
+}
 
 /* END AllStars News */
 /* Footer */
-/* line 914, ../scss/partials/base/_allstars.scss */
+/* line 922, ../scss/partials/base/_allstars.scss */
 .footer-container {
   float: left;
   display: block;
@@ -6605,24 +6613,24 @@ body.scrolled #header_logo_white {
 .footer-container:last-child {
   margin-right: 0;
 }
-/* line 919, ../scss/partials/base/_allstars.scss */
+/* line 927, ../scss/partials/base/_allstars.scss */
 .footer-container p.footer-copyright {
   margin-top: 20px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  /* line 919, ../scss/partials/base/_allstars.scss */
+  /* line 927, ../scss/partials/base/_allstars.scss */
   .footer-container p.footer-copyright {
     margin-top: 0;
     text-align: left;
   }
 }
-/* line 929, ../scss/partials/base/_allstars.scss */
+/* line 937, ../scss/partials/base/_allstars.scss */
 .footer-container small {
   font-size: 11px;
 }
 
-/* line 935, ../scss/partials/base/_allstars.scss */
+/* line 943, ../scss/partials/base/_allstars.scss */
 .footer-allstar-logo {
   float: left;
   display: block;
@@ -6634,19 +6642,19 @@ body.scrolled #header_logo_white {
 .footer-allstar-logo:last-child {
   margin-right: 0;
 }
-/* line 940, ../scss/partials/base/_allstars.scss */
+/* line 948, ../scss/partials/base/_allstars.scss */
 .footer-allstar-logo img.ns_header_logo {
   width: 130px;
   margin-top: 8px;
 }
 @media screen and (min-width: 768px) {
-  /* line 940, ../scss/partials/base/_allstars.scss */
+  /* line 948, ../scss/partials/base/_allstars.scss */
   .footer-allstar-logo img.ns_header_logo {
     width: 160px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 935, ../scss/partials/base/_allstars.scss */
+  /* line 943, ../scss/partials/base/_allstars.scss */
   .footer-allstar-logo {
     float: left;
     display: block;
@@ -6660,7 +6668,7 @@ body.scrolled #header_logo_white {
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 935, ../scss/partials/base/_allstars.scss */
+  /* line 943, ../scss/partials/base/_allstars.scss */
   .footer-allstar-logo {
     float: left;
     display: block;
@@ -6673,7 +6681,7 @@ body.scrolled #header_logo_white {
   }
 }
 
-/* line 959, ../scss/partials/base/_allstars.scss */
+/* line 967, ../scss/partials/base/_allstars.scss */
 .footer-allstar-links {
   float: left;
   display: block;
@@ -6684,7 +6692,7 @@ body.scrolled #header_logo_white {
 .footer-allstar-links:last-child {
   margin-right: 0;
 }
-/* line 962, ../scss/partials/base/_allstars.scss */
+/* line 970, ../scss/partials/base/_allstars.scss */
 .footer-allstar-links ul li {
   font-size: 11px;
   line-height: 1.5;
@@ -6695,19 +6703,19 @@ body.scrolled #header_logo_white {
   padding: 12px 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 962, ../scss/partials/base/_allstars.scss */
+  /* line 970, ../scss/partials/base/_allstars.scss */
   .footer-allstar-links ul li {
     display: inline;
     border-bottom: none;
     padding: 0;
   }
 }
-/* line 978, ../scss/partials/base/_allstars.scss */
+/* line 986, ../scss/partials/base/_allstars.scss */
 .footer-allstar-links ul li:last-child {
   border-bottom: none;
 }
 @media screen and (min-width: 768px) {
-  /* line 959, ../scss/partials/base/_allstars.scss */
+  /* line 967, ../scss/partials/base/_allstars.scss */
   .footer-allstar-links {
     float: left;
     display: block;
@@ -6720,7 +6728,7 @@ body.scrolled #header_logo_white {
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 959, ../scss/partials/base/_allstars.scss */
+  /* line 967, ../scss/partials/base/_allstars.scss */
   .footer-allstar-links {
     float: left;
     display: block;
@@ -6735,7 +6743,7 @@ body.scrolled #header_logo_white {
 
 /* END Footer */
 /* Modal */
-/* line 995, ../scss/partials/base/_allstars.scss */
+/* line 1003, ../scss/partials/base/_allstars.scss */
 .modal-allstar {
   display: none;
   /* Hidden by default */
@@ -6757,7 +6765,7 @@ body.scrolled #header_logo_white {
   /* Black w/ opacity */
 }
 
-/* line 1008, ../scss/partials/base/_allstars.scss */
+/* line 1016, ../scss/partials/base/_allstars.scss */
 .modal-allstar-content {
   background-color: transparent;
   margin: auto;
@@ -6768,7 +6776,7 @@ body.scrolled #header_logo_white {
   padding-bottom: 56.25%;
 }
 
-/* line 1018, ../scss/partials/base/_allstars.scss */
+/* line 1026, ../scss/partials/base/_allstars.scss */
 .close-modal-allstar {
   color: #fff;
   text-align: right;
@@ -6780,7 +6788,7 @@ body.scrolled #header_logo_white {
   display: block;
 }
 
-/* line 1029, ../scss/partials/base/_allstars.scss */
+/* line 1037, ../scss/partials/base/_allstars.scss */
 .close-modal-allstar:hover,
 .close-modal-allstar:focus {
   opacity: 0.8;

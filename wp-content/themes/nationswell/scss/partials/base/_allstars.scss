@@ -863,6 +863,8 @@ body.scrolled  {
 .news-container {
 	background-color: #fff;
 	margin-bottom: 40px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 
 .news-article-container {
@@ -904,6 +906,12 @@ body.scrolled  {
 
 .news-article-content {
 	@include span-columns(10);
+	p {
+		margin-bottom:0;
+		line-height:normal;
+	}
+	margin-bottom:10px;
+	
 }
 
 /* END AllStars News */
