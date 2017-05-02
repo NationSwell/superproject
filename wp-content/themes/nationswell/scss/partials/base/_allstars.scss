@@ -1002,7 +1002,7 @@ body.scrolled  {
 /* Modal */
 .modal-allstar {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 100; /* Sit on top */
     left: 0;
     top: 0;
@@ -1014,13 +1014,18 @@ body.scrolled  {
 }
 
 .modal-allstar-content {
-    background-color: transparent;
-    margin: auto;
     position: relative;
-    width: 100%;
-    height: 0;
-    max-width: 1100px;
     padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	
+	iframe,  object,  embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .close-modal-allstar {
@@ -1032,6 +1037,17 @@ body.scrolled  {
     margin: 10px auto;
     max-width: 1100px;
     display: block;
+    position:absolute;
+    z-index:1000;
+    right:10%;
+    top:10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+
 }
 
 .close-modal-allstar:hover,

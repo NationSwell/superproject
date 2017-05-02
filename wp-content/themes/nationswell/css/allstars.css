@@ -6747,7 +6747,7 @@ body.scrolled #header_logo_white {
 .modal-allstar {
   display: none;
   /* Hidden by default */
-  position: fixed;
+  position: absolute;
   /* Stay in place */
   z-index: 100;
   /* Sit on top */
@@ -6767,16 +6767,21 @@ body.scrolled #header_logo_white {
 
 /* line 1016, ../scss/partials/base/_allstars.scss */
 .modal-allstar-content {
-  background-color: transparent;
-  margin: auto;
   position: relative;
-  width: 100%;
-  height: 0;
-  max-width: 1100px;
   padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+/* line 1022, ../scss/partials/base/_allstars.scss */
+.modal-allstar-content iframe, .modal-allstar-content object, .modal-allstar-content embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 1026, ../scss/partials/base/_allstars.scss */
+/* line 1031, ../scss/partials/base/_allstars.scss */
 .close-modal-allstar {
   color: #fff;
   text-align: right;
@@ -6786,9 +6791,19 @@ body.scrolled #header_logo_white {
   margin: 10px auto;
   max-width: 1100px;
   display: block;
+  position: absolute;
+  z-index: 1000;
+  right: 10%;
+  top: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 12px;
 }
 
-/* line 1037, ../scss/partials/base/_allstars.scss */
+/* line 1053, ../scss/partials/base/_allstars.scss */
 .close-modal-allstar:hover,
 .close-modal-allstar:focus {
   opacity: 0.8;
