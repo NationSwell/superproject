@@ -598,11 +598,6 @@ body.scrolled  {
 	@include span-columns(10);
 	/*@include shift(1);*/
 
-	@include media($tiny) {
-        @include span-columns(12);
-        /*@include shift(0);*/
-    }
-
 	@include media($desktop) {
 		@include span-columns(8);
 		/*@include shift(2);*/
@@ -610,8 +605,24 @@ body.scrolled  {
 		margin-bottom: 40px;
 	}
 
+	@include media($tiny) {
+        @include span-columns(12);
+        
+        p {
+	    	/*text-align: center;*/
+	    }
+        /*@include shift(0);*/
+    }
+
+    &:last-child {
+    	margin-right: auto;
+    }
+
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    float: none;
 
 }
 
@@ -713,7 +724,11 @@ body.scrolled  {
 .finalists {
 	@include span-columns(12);
 
-	margin: 40px auto;
+	margin: 0px auto;
+
+	&:first-child {
+		margin-top: 40px;
+	}
 
 	h2.title-receive {
 		font-size: 35px;
@@ -729,6 +744,9 @@ body.scrolled  {
 	}
 
 	@include media($desktop) {
+
+		margin: 40px auto;
+
 		p {
 			font-size: 14px;
 		}
