@@ -222,7 +222,7 @@
         });
 
         // share popup window
-        $body.on('click touchstart', '.btn--share', function (event) {
+        $body.on('click', '.btn--share', function (event) {
             event.preventDefault();
             event.stopPropagation();
 
@@ -236,7 +236,7 @@
                     ',height=' + height +
                     ',top=' + top +
                     ',left=' + left;
-            window.open(url, '', opts);
+            window.open(url, '_blank', opts);
         });
 
         // pageload modals
