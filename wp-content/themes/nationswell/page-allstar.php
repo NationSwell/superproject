@@ -31,6 +31,12 @@ $context['site_url'] = get_site_url();
 
 $context['tweet'] = get_field('tweet_text');
 $context['nomination_form_description'] = get_field('nomination_form_description');
+
+$field_name = "full_contest_rules_url";
+$field = get_field_object($field_name);
+$context['full_contest_rules_label'] = $field['label'];
+$context['full_contest_rules_url'] = $field['value'];
+
 $context['hashtags'] = get_field('hashtags');
 $context['facebook_share_url'] = 'https://www.facebook.com/sharer/sharer.php?u='.get_permalink();
 $context['twitter_share_url'] = 'https://twitter.com/share?url='.urlencode(get_permalink()).'&via=NationSwell&hashtags='.$context['hashtags'].'&text='.urlencode($context['tweet']);
