@@ -43,6 +43,7 @@ $context['twitter_share_url'] = 'https://twitter.com/share?url='.urlencode(get_p
 
 $context['page_content'] = wpautop($post->post_content);
 $context['page_title'] = get_the_title();
+$context['form_id'] = get_field('nomination_form_id');
 $context['form'] = gravity_form( get_field('nomination_form_id'), $display_title = true, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = false );
 $context['previous_years'] = get_field('previous_years');
 $context['home'] = esc_url( home_url( '/' ) );

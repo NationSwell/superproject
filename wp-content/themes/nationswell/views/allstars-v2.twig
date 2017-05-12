@@ -185,7 +185,7 @@
 			{% endif %}
 		{% endfor %}
         </section>
-        <p style="text-align: center;">
+        <p style="text-align: center;" id="contest">
             <a href="{{ full_contest_rules_url }}">{{ full_contest_rules_label }}</a>
         </p>
     </div>
@@ -368,7 +368,7 @@
                 window.location.hash = target;
             });
         });
-        if(window.location.hash=='#gf_9'){
+        if(window.location.hash=='#gf_{{ form_id }}'){
 			window.location.hash= '#ballot';
 		}
     })( jQuery );
