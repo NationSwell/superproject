@@ -4416,7 +4416,8 @@ body.scrolled #header_logo_white {
       height: 500px; } }
 
 .twitter-container {
-  height: 300px; }
+  height: 300px;
+  overflow: auto; }
   @media screen and (min-width: 768px) {
     .twitter-container {
       height: 500px; } }
