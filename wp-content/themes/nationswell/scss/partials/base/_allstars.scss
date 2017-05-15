@@ -898,6 +898,7 @@ body.scrolled  {
 
 .twitter-container {
 	height: 300px;
+	overflow: auto;
 
 	@include media($desktop) {
 		height: 500px;
