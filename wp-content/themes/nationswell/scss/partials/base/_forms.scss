@@ -211,3 +211,12 @@
   font-weight: $regular;
   color: $ns_red1;
 }
+
+
+.gform_wrapper, .gform_confirmation_wrapper {
+     padding:20px;
+}
+.gfield_label,
+.gform_description {
+     line-height:normal;
+}

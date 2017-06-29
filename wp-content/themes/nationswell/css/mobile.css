@@ -1597,6 +1597,17 @@ input[type="submit"]:-moz-focus-inner {
   color: #dd322c;
 }
 
+/* line 216, ../scss/partials/base/_forms.scss */
+.gform_wrapper, .gform_confirmation_wrapper {
+  padding: 20px;
+}
+
+/* line 219, ../scss/partials/base/_forms.scss */
+.gfield_label,
+.gform_description {
+  line-height: normal;
+}
+
 /* line 1, ../scss/partials/base/_nav.scss */
 #page-header {
   background-color: #003046;
