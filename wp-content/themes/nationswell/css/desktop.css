@@ -1700,6 +1700,17 @@ input[type="submit"]:-moz-focus-inner {
   line-height: normal;
 }
 
+/* line 224, ../scss/partials/base/_forms.scss */
+.gform_fields input[type=tel] {
+  margin: 1.2rem 0;
+  padding: 1.48rem;
+  width: 100%;
+  position: relative;
+  border: none;
+  font-size: 1.5rem;
+  font-family: "Gudea",Arial,sans-serif;
+}
+
 /* line 1, ../scss/partials/base/_nav.scss */
 #page-header {
   background-color: #003046;
