@@ -88,7 +88,16 @@ if( !empty($post->custom['allstars_in_the_news']) ){
 
 // Assign full post data
 $context['post'] = $post;
+$args = array(
+	'post_type' => 'post',
+	'posts_per_page' => -1,
+	'cat' => $post->custom['category'],
+	'post_status' => 'publish',
+	'orderby' => 'title',
+	'order' => 'ASC'
 
+);
+$context['posts'] = Timber::get_posts($args);
 if (post_password_required($post->ID)){
     Timber::render('static-password.twig', $context);
 } else {

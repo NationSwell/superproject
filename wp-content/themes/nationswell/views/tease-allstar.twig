@@ -19,10 +19,22 @@
             {% if post.category is not empty %}
             <span class="rubric">{{ post.category }}</span>
             {% endif %}
-            <h2 class="hd-d story__hed">{{ post.tout_title }}</h2>
+            <h2 class="hd-d story__hed">
+                {% if post.tout_title %}
+                    {{ post.tout_title }}
+                {% else %}
+                     {{ post.post_title }}
+                {% endif %}
+            </h2>
 
             {% block dek %}
-	            <p class="story__dek">{{ post.tout_dek_text }}</p>
+	            <p class="story__dek">
+                {% if post.tout_dek_text %}
+                    {{ post.tout_dek_text }}
+                {% else %}
+                     {{ post.dek }}
+                {% endif %}
+                </p>
             {% endblock %}
 
             {% if post.call_to_action is not empty and post.call_to_action.show_action_stats_on_tout != '0' %}

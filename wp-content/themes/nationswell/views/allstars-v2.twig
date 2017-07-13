@@ -24,9 +24,9 @@
                 </a>
             </div>
             
-            <a href="#ballot" class="button nominate">
+            <!--<a href="#ballot" class="button nominate">
                 Nominate
-            </a>
+            </a>-->
         </div>
     </header>
 
@@ -129,6 +129,26 @@
         
     </div>
 
+    <!-- This year's finalists -->
+     <div class="container finalists">
+     	<h2>AllStar Finalists 2017</h2>
+     	<div class="river river--two-col">
+            <ul class="story-teases">
+                {% for post in posts %}
+                    <li>{% include ['tease-allstar.twig', 'tease.twig'] %}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- <div class="sidebar hide-mobile">
+            
+        </div> -->
+     </div>
+     <div class="container finalists-message">
+     	<p>Check back in the fall to watch their stories and vote for your favorite!</p>
+     </div>
+
+    <!-- END finalists section -->
+
 
     <!-- Previous AllStars -->
     
@@ -168,7 +188,7 @@
     <div class="container">
 		<section class="finalists">
 			<h2 class="title-receive">
-				<span class="title-5">5</span><br>AllStar Finalists<br>will receive:
+				<span class="title-5">All 5</span><br>AllStar Finalists<br>will receive:
 			</h2>
 		{% for allstar_finalists_will_receive in post.custom.allstar_finalists_will_receive_hash %}
 			<div class="finalist-benefit">
@@ -194,7 +214,7 @@
 
 
     <!-- Ballot -->
-    <div class="container">
+    <!-- <div class="container">
 		<a id="ballot" class="gform_anchor"></a>
         <section id="ballot">
             <h3 class="nom-instructions">
@@ -211,9 +231,11 @@
             </div>
 
         </section>
-    </div>
+    </div> -->
     <!-- END Ballot -->
 
+   <br><br>
+   
     <div class="container">
         <div class="story__social cf hide_mobile" data-module='{"name": "story:social"}'>
             <a href="{{ facebook_share_url }}" class="btn btn--bar btn--share btn--facebook icon icon_facebook" data-track='{"action": "facebook"}'>{{ facebook_button_expanded_text }}</a>

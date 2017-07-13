@@ -6854,5 +6854,35 @@ body.scrolled #header_logo_white {
 }
 
 /* END Modal */
+/* line 1083, ../scss/partials/base/_allstars.scss */
+.finalists {
+  margin: 0 auto;
+  clear: both;
+  float: none;
+}
+/* line 1088, ../scss/partials/base/_allstars.scss */
+.finalists .story-teases {
+  float: none !important;
+  clear: both !important;
+  margin: 0 auto !important;
+}
+/* line 1092, ../scss/partials/base/_allstars.scss */
+.finalists .story-teases .story__hed {
+  font-size: 3.2rem;
+  /* font-family: inherit; */
+  text-align: left;
+  text-indent: 0;
+  margin-top: 2rem;
+}
+/* line 1099, ../scss/partials/base/_allstars.scss */
+.finalists .story-teases .rubric {
+  display: none;
+}
+
+/* line 1104, ../scss/partials/base/_allstars.scss */
+.finalists-message {
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
 
 /*# sourceMappingURL=allstars.css.map */
