@@ -1619,6 +1619,13 @@ input[type="submit"]:-moz-focus-inner {
   font-family: "Gudea",Arial,sans-serif;
 }
 
+/* line 234, ../scss/partials/base/_forms.scss */
+.gform_fields input[value=Other] {
+  width: 50%;
+  margin-left: 25px;
+  margin-top: 0;
+}
+
 /* line 1, ../scss/partials/base/_nav.scss */
 #page-header {
   background-color: #003046;
